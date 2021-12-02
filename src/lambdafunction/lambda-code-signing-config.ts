@@ -1,0 +1,263 @@
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+/**
+* AWS Lambda
+*/
+export interface LambdaCodeSigningConfigConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config.html#description LambdaCodeSigningConfig#description}
+  */
+  readonly description?: string;
+  /**
+  * allowed_publishers block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config.html#allowed_publishers LambdaCodeSigningConfig#allowed_publishers}
+  */
+  readonly allowedPublishers: LambdaCodeSigningConfigAllowedPublishers;
+  /**
+  * policies block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config.html#policies LambdaCodeSigningConfig#policies}
+  */
+  readonly policies?: LambdaCodeSigningConfigPolicies;
+}
+export interface LambdaCodeSigningConfigAllowedPublishers {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config.html#signing_profile_version_arns LambdaCodeSigningConfig#signing_profile_version_arns}
+  */
+  readonly signingProfileVersionArns: string[];
+}
+
+export function lambdaCodeSigningConfigAllowedPublishersToTerraform(struct?: LambdaCodeSigningConfigAllowedPublishersOutputReference | LambdaCodeSigningConfigAllowedPublishers): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    signing_profile_version_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.signingProfileVersionArns),
+  }
+}
+
+export class LambdaCodeSigningConfigAllowedPublishersOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LambdaCodeSigningConfigAllowedPublishers | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._signingProfileVersionArns) {
+      hasAnyValues = true;
+      internalValueResult.signingProfileVersionArns = this._signingProfileVersionArns;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LambdaCodeSigningConfigAllowedPublishers | undefined) {
+    if (value === undefined) {
+      this._signingProfileVersionArns = undefined;
+    }
+    else {
+      this._signingProfileVersionArns = value.signingProfileVersionArns;
+    }
+  }
+
+  // signing_profile_version_arns - computed: false, optional: false, required: true
+  private _signingProfileVersionArns?: string[]; 
+  public get signingProfileVersionArns() {
+    return this.getListAttribute('signing_profile_version_arns');
+  }
+  public set signingProfileVersionArns(value: string[]) {
+    this._signingProfileVersionArns = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get signingProfileVersionArnsInput() {
+    return this._signingProfileVersionArns;
+  }
+}
+export interface LambdaCodeSigningConfigPolicies {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config.html#untrusted_artifact_on_deployment LambdaCodeSigningConfig#untrusted_artifact_on_deployment}
+  */
+  readonly untrustedArtifactOnDeployment: string;
+}
+
+export function lambdaCodeSigningConfigPoliciesToTerraform(struct?: LambdaCodeSigningConfigPoliciesOutputReference | LambdaCodeSigningConfigPolicies): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    untrusted_artifact_on_deployment: cdktf.stringToTerraform(struct!.untrustedArtifactOnDeployment),
+  }
+}
+
+export class LambdaCodeSigningConfigPoliciesOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LambdaCodeSigningConfigPolicies | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._untrustedArtifactOnDeployment) {
+      hasAnyValues = true;
+      internalValueResult.untrustedArtifactOnDeployment = this._untrustedArtifactOnDeployment;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LambdaCodeSigningConfigPolicies | undefined) {
+    if (value === undefined) {
+      this._untrustedArtifactOnDeployment = undefined;
+    }
+    else {
+      this._untrustedArtifactOnDeployment = value.untrustedArtifactOnDeployment;
+    }
+  }
+
+  // untrusted_artifact_on_deployment - computed: false, optional: false, required: true
+  private _untrustedArtifactOnDeployment?: string; 
+  public get untrustedArtifactOnDeployment() {
+    return this.getStringAttribute('untrusted_artifact_on_deployment');
+  }
+  public set untrustedArtifactOnDeployment(value: string) {
+    this._untrustedArtifactOnDeployment = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get untrustedArtifactOnDeploymentInput() {
+    return this._untrustedArtifactOnDeployment;
+  }
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config.html aws_lambda_code_signing_config}
+*/
+export class LambdaCodeSigningConfig extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lambda_code_signing_config";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config.html aws_lambda_code_signing_config} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options LambdaCodeSigningConfigConfig
+  */
+  public constructor(scope: Construct, id: string, config: LambdaCodeSigningConfigConfig) {
+    super(scope, id, {
+      terraformResourceType: 'aws_lambda_code_signing_config',
+      terraformGeneratorMetadata: {
+        providerName: 'aws'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._description = config.description;
+    this._allowedPublishers.internalValue = config.allowedPublishers;
+    this._policies.internalValue = config.policies;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
+  // config_id - computed: true, optional: false, required: false
+  public get configId() {
+    return this.getStringAttribute('config_id');
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // last_modified - computed: true, optional: false, required: false
+  public get lastModified() {
+    return this.getStringAttribute('last_modified');
+  }
+
+  // allowed_publishers - computed: false, optional: false, required: true
+  private _allowedPublishers = new LambdaCodeSigningConfigAllowedPublishersOutputReference(this as any, "allowed_publishers", true);
+  public get allowedPublishers() {
+    return this._allowedPublishers;
+  }
+  public putAllowedPublishers(value: LambdaCodeSigningConfigAllowedPublishers) {
+    this._allowedPublishers.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedPublishersInput() {
+    return this._allowedPublishers.internalValue;
+  }
+
+  // policies - computed: false, optional: true, required: false
+  private _policies = new LambdaCodeSigningConfigPoliciesOutputReference(this as any, "policies", true);
+  public get policies() {
+    return this._policies;
+  }
+  public putPolicies(value: LambdaCodeSigningConfigPolicies) {
+    this._policies.internalValue = value;
+  }
+  public resetPolicies() {
+    this._policies.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policiesInput() {
+    return this._policies.internalValue;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      description: cdktf.stringToTerraform(this._description),
+      allowed_publishers: lambdaCodeSigningConfigAllowedPublishersToTerraform(this._allowedPublishers.internalValue),
+      policies: lambdaCodeSigningConfigPoliciesToTerraform(this._policies.internalValue),
+    };
+  }
+}

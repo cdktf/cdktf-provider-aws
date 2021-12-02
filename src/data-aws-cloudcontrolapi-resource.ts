@@ -82,7 +82,7 @@ export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get identifierInput() {
-    return this._identifier
+    return this._identifier;
   }
 
   // properties - computed: true, optional: false, required: false
@@ -91,11 +91,11 @@ export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
   }
 
   // role_arn - computed: false, optional: true, required: false
-  private _roleArn?: string | undefined; 
+  private _roleArn?: string; 
   public get roleArn() {
     return this.getStringAttribute('role_arn');
   }
-  public set roleArn(value: string | undefined) {
+  public set roleArn(value: string) {
     this._roleArn = value;
   }
   public resetRoleArn() {
@@ -103,7 +103,7 @@ export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get roleArnInput() {
-    return this._roleArn
+    return this._roleArn;
   }
 
   // type_name - computed: false, optional: false, required: true
@@ -116,15 +116,15 @@ export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeNameInput() {
-    return this._typeName
+    return this._typeName;
   }
 
   // type_version_id - computed: false, optional: true, required: false
-  private _typeVersionId?: string | undefined; 
+  private _typeVersionId?: string; 
   public get typeVersionId() {
     return this.getStringAttribute('type_version_id');
   }
-  public set typeVersionId(value: string | undefined) {
+  public set typeVersionId(value: string) {
     this._typeVersionId = value;
   }
   public resetTypeVersionId() {
@@ -132,7 +132,7 @@ export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeVersionIdInput() {
-    return this._typeVersionId
+    return this._typeVersionId;
   }
 
   // =========

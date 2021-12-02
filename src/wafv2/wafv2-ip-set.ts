@@ -1,0 +1,220 @@
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+/**
+* AWS WAF V2
+*/
+export interface Wafv2IpSetConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_ip_set.html#addresses Wafv2IpSet#addresses}
+  */
+  readonly addresses?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_ip_set.html#description Wafv2IpSet#description}
+  */
+  readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_ip_set.html#ip_address_version Wafv2IpSet#ip_address_version}
+  */
+  readonly ipAddressVersion: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_ip_set.html#name Wafv2IpSet#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_ip_set.html#scope Wafv2IpSet#scope}
+  */
+  readonly scope: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_ip_set.html#tags Wafv2IpSet#tags}
+  */
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_ip_set.html#tags_all Wafv2IpSet#tags_all}
+  */
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafv2_ip_set.html aws_wafv2_ip_set}
+*/
+export class Wafv2IpSet extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafv2_ip_set";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafv2_ip_set.html aws_wafv2_ip_set} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options Wafv2IpSetConfig
+  */
+  public constructor(scope: Construct, id: string, config: Wafv2IpSetConfig) {
+    super(scope, id, {
+      terraformResourceType: 'aws_wafv2_ip_set',
+      terraformGeneratorMetadata: {
+        providerName: 'aws'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._addresses = config.addresses;
+    this._description = config.description;
+    this._ipAddressVersion = config.ipAddressVersion;
+    this._name = config.name;
+    this._scope = config.scope;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // addresses - computed: false, optional: true, required: false
+  private _addresses?: string[]; 
+  public get addresses() {
+    return this.getListAttribute('addresses');
+  }
+  public set addresses(value: string[]) {
+    this._addresses = value;
+  }
+  public resetAddresses() {
+    this._addresses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressesInput() {
+    return this._addresses;
+  }
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // ip_address_version - computed: false, optional: false, required: true
+  private _ipAddressVersion?: string; 
+  public get ipAddressVersion() {
+    return this.getStringAttribute('ip_address_version');
+  }
+  public set ipAddressVersion(value: string) {
+    this._ipAddressVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressVersionInput() {
+    return this._ipAddressVersion;
+  }
+
+  // lock_token - computed: true, optional: false, required: false
+  public get lockToken() {
+    return this.getStringAttribute('lock_token');
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // scope - computed: false, optional: false, required: true
+  private _scope?: string; 
+  public get scope() {
+    return this.getStringAttribute('scope');
+  }
+  public set scope(value: string) {
+    this._scope = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  public get tags() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  public get tagsAll() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('tags_all') as any;
+  }
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._addresses),
+      description: cdktf.stringToTerraform(this._description),
+      ip_address_version: cdktf.stringToTerraform(this._ipAddressVersion),
+      name: cdktf.stringToTerraform(this._name),
+      scope: cdktf.stringToTerraform(this._scope),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+    };
+  }
+}

@@ -33,7 +33,7 @@ export interface DataAwsIdentitystoreUserFilter {
   readonly attributeValue: string;
 }
 
-function dataAwsIdentitystoreUserFilterToTerraform(struct?: DataAwsIdentitystoreUserFilter): any {
+export function dataAwsIdentitystoreUserFilterToTerraform(struct?: DataAwsIdentitystoreUserFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -101,15 +101,15 @@ export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get identityStoreIdInput() {
-    return this._identityStoreId
+    return this._identityStoreId;
   }
 
   // user_id - computed: true, optional: true, required: false
-  private _userId?: string | undefined; 
+  private _userId?: string; 
   public get userId() {
     return this.getStringAttribute('user_id');
   }
-  public set userId(value: string | undefined) {
+  public set userId(value: string) {
     this._userId = value;
   }
   public resetUserId() {
@@ -117,7 +117,7 @@ export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get userIdInput() {
-    return this._userId
+    return this._userId;
   }
 
   // user_name - computed: true, optional: false, required: false
@@ -136,7 +136,7 @@ export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get filterInput() {
-    return this._filter
+    return this._filter;
   }
 
   // =========
