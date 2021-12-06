@@ -80,6 +80,8 @@ export function appmeshRouteSpecGrpcRouteActionToTerraform(struct?: AppmeshRoute
 }
 
 export class AppmeshRouteSpecGrpcRouteActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -90,7 +92,7 @@ export class AppmeshRouteSpecGrpcRouteActionOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._weightedTarget) {
       hasAnyValues = true;
@@ -101,9 +103,11 @@ export class AppmeshRouteSpecGrpcRouteActionOutputReference extends cdktf.Comple
 
   public set internalValue(value: AppmeshRouteSpecGrpcRouteAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._weightedTarget = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._weightedTarget = value.weightedTarget;
     }
   }
@@ -145,6 +149,8 @@ export function appmeshRouteSpecGrpcRouteMatchMetadataMatchRangeToTerraform(stru
 }
 
 export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -155,7 +161,7 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference ext
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._end) {
       hasAnyValues = true;
@@ -170,10 +176,12 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference ext
 
   public set internalValue(value: AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._end = undefined;
       this._start = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._end = value.end;
       this._start = value.start;
     }
@@ -245,6 +253,8 @@ export function appmeshRouteSpecGrpcRouteMatchMetadataMatchToTerraform(struct?: 
 }
 
 export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -255,7 +265,7 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference extends 
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteMatchMetadataMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._exact) {
       hasAnyValues = true;
@@ -273,7 +283,7 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference extends 
       hasAnyValues = true;
       internalValueResult.suffix = this._suffix;
     }
-    if (this._range) {
+    if (this._range?.internalValue) {
       hasAnyValues = true;
       internalValueResult.range = this._range?.internalValue;
     }
@@ -282,6 +292,7 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference extends 
 
   public set internalValue(value: AppmeshRouteSpecGrpcRouteMatchMetadataMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._exact = undefined;
       this._prefix = undefined;
       this._regex = undefined;
@@ -289,6 +300,7 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference extends 
       this._range.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._exact = value.exact;
       this._prefix = value.prefix;
       this._regex = value.regex;
@@ -441,6 +453,8 @@ export function appmeshRouteSpecGrpcRouteMatchToTerraform(struct?: AppmeshRouteS
 }
 
 export class AppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -451,7 +465,7 @@ export class AppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._methodName) {
       hasAnyValues = true;
@@ -474,12 +488,14 @@ export class AppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.Complex
 
   public set internalValue(value: AppmeshRouteSpecGrpcRouteMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._methodName = undefined;
       this._prefix = undefined;
       this._serviceName = undefined;
       this._metadata = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._methodName = value.methodName;
       this._prefix = value.prefix;
       this._serviceName = value.serviceName;
@@ -575,6 +591,8 @@ export function appmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutToTerraform(s
 }
 
 export class AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -585,7 +603,7 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference 
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -600,10 +618,12 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference 
 
   public set internalValue(value: AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -675,6 +695,8 @@ export function appmeshRouteSpecGrpcRouteRetryPolicyToTerraform(struct?: Appmesh
 }
 
 export class AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -685,7 +707,7 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends cdktf.C
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteRetryPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._grpcRetryEvents) {
       hasAnyValues = true;
@@ -703,7 +725,7 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends cdktf.C
       hasAnyValues = true;
       internalValueResult.tcpRetryEvents = this._tcpRetryEvents;
     }
-    if (this._perRetryTimeout) {
+    if (this._perRetryTimeout?.internalValue) {
       hasAnyValues = true;
       internalValueResult.perRetryTimeout = this._perRetryTimeout?.internalValue;
     }
@@ -712,6 +734,7 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends cdktf.C
 
   public set internalValue(value: AppmeshRouteSpecGrpcRouteRetryPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._grpcRetryEvents = undefined;
       this._httpRetryEvents = undefined;
       this._maxRetries = undefined;
@@ -719,6 +742,7 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends cdktf.C
       this._perRetryTimeout.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._grpcRetryEvents = value.grpcRetryEvents;
       this._httpRetryEvents = value.httpRetryEvents;
       this._maxRetries = value.maxRetries;
@@ -824,6 +848,8 @@ export function appmeshRouteSpecGrpcRouteTimeoutIdleToTerraform(struct?: Appmesh
 }
 
 export class AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -834,7 +860,7 @@ export class AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference extends cdktf.C
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteTimeoutIdle | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -849,10 +875,12 @@ export class AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference extends cdktf.C
 
   public set internalValue(value: AppmeshRouteSpecGrpcRouteTimeoutIdle | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -907,6 +935,8 @@ export function appmeshRouteSpecGrpcRouteTimeoutPerRequestToTerraform(struct?: A
 }
 
 export class AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -917,7 +947,7 @@ export class AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference extends c
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteTimeoutPerRequest | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -932,10 +962,12 @@ export class AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference extends c
 
   public set internalValue(value: AppmeshRouteSpecGrpcRouteTimeoutPerRequest | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -994,6 +1026,8 @@ export function appmeshRouteSpecGrpcRouteTimeoutToTerraform(struct?: AppmeshRout
 }
 
 export class AppmeshRouteSpecGrpcRouteTimeoutOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1004,13 +1038,13 @@ export class AppmeshRouteSpecGrpcRouteTimeoutOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteTimeout | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle) {
+    if (this._idle?.internalValue) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
-    if (this._perRequest) {
+    if (this._perRequest?.internalValue) {
       hasAnyValues = true;
       internalValueResult.perRequest = this._perRequest?.internalValue;
     }
@@ -1019,10 +1053,12 @@ export class AppmeshRouteSpecGrpcRouteTimeoutOutputReference extends cdktf.Compl
 
   public set internalValue(value: AppmeshRouteSpecGrpcRouteTimeout | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._idle.internalValue = undefined;
       this._perRequest.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._idle.internalValue = value.idle;
       this._perRequest.internalValue = value.perRequest;
     }
@@ -1101,6 +1137,8 @@ export function appmeshRouteSpecGrpcRouteToTerraform(struct?: AppmeshRouteSpecGr
 }
 
 export class AppmeshRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1111,21 +1149,21 @@ export class AppmeshRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRoute | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action) {
+    if (this._action?.internalValue) {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
-    if (this._match) {
+    if (this._match?.internalValue) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
-    if (this._retryPolicy) {
+    if (this._retryPolicy?.internalValue) {
       hasAnyValues = true;
       internalValueResult.retryPolicy = this._retryPolicy?.internalValue;
     }
-    if (this._timeout) {
+    if (this._timeout?.internalValue) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout?.internalValue;
     }
@@ -1134,12 +1172,14 @@ export class AppmeshRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: AppmeshRouteSpecGrpcRoute | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._action.internalValue = undefined;
       this._match.internalValue = undefined;
       this._retryPolicy.internalValue = undefined;
       this._timeout.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._action.internalValue = value.action;
       this._match.internalValue = value.match;
       this._retryPolicy.internalValue = value.retryPolicy;
@@ -1250,6 +1290,8 @@ export function appmeshRouteSpecHttp2RouteActionToTerraform(struct?: AppmeshRout
 }
 
 export class AppmeshRouteSpecHttp2RouteActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1260,7 +1302,7 @@ export class AppmeshRouteSpecHttp2RouteActionOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._weightedTarget) {
       hasAnyValues = true;
@@ -1271,9 +1313,11 @@ export class AppmeshRouteSpecHttp2RouteActionOutputReference extends cdktf.Compl
 
   public set internalValue(value: AppmeshRouteSpecHttp2RouteAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._weightedTarget = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._weightedTarget = value.weightedTarget;
     }
   }
@@ -1315,6 +1359,8 @@ export function appmeshRouteSpecHttp2RouteMatchHeaderMatchRangeToTerraform(struc
 }
 
 export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1325,7 +1371,7 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference exte
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._end) {
       hasAnyValues = true;
@@ -1340,10 +1386,12 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference exte
 
   public set internalValue(value: AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._end = undefined;
       this._start = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._end = value.end;
       this._start = value.start;
     }
@@ -1415,6 +1463,8 @@ export function appmeshRouteSpecHttp2RouteMatchHeaderMatchToTerraform(struct?: A
 }
 
 export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1425,7 +1475,7 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference extends c
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteMatchHeaderMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._exact) {
       hasAnyValues = true;
@@ -1443,7 +1493,7 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference extends c
       hasAnyValues = true;
       internalValueResult.suffix = this._suffix;
     }
-    if (this._range) {
+    if (this._range?.internalValue) {
       hasAnyValues = true;
       internalValueResult.range = this._range?.internalValue;
     }
@@ -1452,6 +1502,7 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference extends c
 
   public set internalValue(value: AppmeshRouteSpecHttp2RouteMatchHeaderMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._exact = undefined;
       this._prefix = undefined;
       this._regex = undefined;
@@ -1459,6 +1510,7 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference extends c
       this._range.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._exact = value.exact;
       this._prefix = value.prefix;
       this._regex = value.regex;
@@ -1611,6 +1663,8 @@ export function appmeshRouteSpecHttp2RouteMatchToTerraform(struct?: AppmeshRoute
 }
 
 export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1621,7 +1675,7 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._method) {
       hasAnyValues = true;
@@ -1644,12 +1698,14 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
 
   public set internalValue(value: AppmeshRouteSpecHttp2RouteMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._method = undefined;
       this._prefix = undefined;
       this._scheme = undefined;
       this._header = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._method = value.method;
       this._prefix = value.prefix;
       this._scheme = value.scheme;
@@ -1742,6 +1798,8 @@ export function appmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutToTerraform(
 }
 
 export class AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1752,7 +1810,7 @@ export class AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -1767,10 +1825,12 @@ export class AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference
 
   public set internalValue(value: AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -1837,6 +1897,8 @@ export function appmeshRouteSpecHttp2RouteRetryPolicyToTerraform(struct?: Appmes
 }
 
 export class AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1847,7 +1909,7 @@ export class AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends cdktf.
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteRetryPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._httpRetryEvents) {
       hasAnyValues = true;
@@ -1861,7 +1923,7 @@ export class AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends cdktf.
       hasAnyValues = true;
       internalValueResult.tcpRetryEvents = this._tcpRetryEvents;
     }
-    if (this._perRetryTimeout) {
+    if (this._perRetryTimeout?.internalValue) {
       hasAnyValues = true;
       internalValueResult.perRetryTimeout = this._perRetryTimeout?.internalValue;
     }
@@ -1870,12 +1932,14 @@ export class AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends cdktf.
 
   public set internalValue(value: AppmeshRouteSpecHttp2RouteRetryPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._httpRetryEvents = undefined;
       this._maxRetries = undefined;
       this._tcpRetryEvents = undefined;
       this._perRetryTimeout.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._httpRetryEvents = value.httpRetryEvents;
       this._maxRetries = value.maxRetries;
       this._tcpRetryEvents = value.tcpRetryEvents;
@@ -1964,6 +2028,8 @@ export function appmeshRouteSpecHttp2RouteTimeoutIdleToTerraform(struct?: Appmes
 }
 
 export class AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1974,7 +2040,7 @@ export class AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference extends cdktf.
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteTimeoutIdle | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -1989,10 +2055,12 @@ export class AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference extends cdktf.
 
   public set internalValue(value: AppmeshRouteSpecHttp2RouteTimeoutIdle | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -2047,6 +2115,8 @@ export function appmeshRouteSpecHttp2RouteTimeoutPerRequestToTerraform(struct?: 
 }
 
 export class AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2057,7 +2127,7 @@ export class AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference extends 
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteTimeoutPerRequest | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -2072,10 +2142,12 @@ export class AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference extends 
 
   public set internalValue(value: AppmeshRouteSpecHttp2RouteTimeoutPerRequest | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -2134,6 +2206,8 @@ export function appmeshRouteSpecHttp2RouteTimeoutToTerraform(struct?: AppmeshRou
 }
 
 export class AppmeshRouteSpecHttp2RouteTimeoutOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2144,13 +2218,13 @@ export class AppmeshRouteSpecHttp2RouteTimeoutOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteTimeout | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle) {
+    if (this._idle?.internalValue) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
-    if (this._perRequest) {
+    if (this._perRequest?.internalValue) {
       hasAnyValues = true;
       internalValueResult.perRequest = this._perRequest?.internalValue;
     }
@@ -2159,10 +2233,12 @@ export class AppmeshRouteSpecHttp2RouteTimeoutOutputReference extends cdktf.Comp
 
   public set internalValue(value: AppmeshRouteSpecHttp2RouteTimeout | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._idle.internalValue = undefined;
       this._perRequest.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._idle.internalValue = value.idle;
       this._perRequest.internalValue = value.perRequest;
     }
@@ -2241,6 +2317,8 @@ export function appmeshRouteSpecHttp2RouteToTerraform(struct?: AppmeshRouteSpecH
 }
 
 export class AppmeshRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2251,21 +2329,21 @@ export class AppmeshRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2Route | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action) {
+    if (this._action?.internalValue) {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
-    if (this._match) {
+    if (this._match?.internalValue) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
-    if (this._retryPolicy) {
+    if (this._retryPolicy?.internalValue) {
       hasAnyValues = true;
       internalValueResult.retryPolicy = this._retryPolicy?.internalValue;
     }
-    if (this._timeout) {
+    if (this._timeout?.internalValue) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout?.internalValue;
     }
@@ -2274,12 +2352,14 @@ export class AppmeshRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: AppmeshRouteSpecHttp2Route | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._action.internalValue = undefined;
       this._match.internalValue = undefined;
       this._retryPolicy.internalValue = undefined;
       this._timeout.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._action.internalValue = value.action;
       this._match.internalValue = value.match;
       this._retryPolicy.internalValue = value.retryPolicy;
@@ -2387,6 +2467,8 @@ export function appmeshRouteSpecHttpRouteActionToTerraform(struct?: AppmeshRoute
 }
 
 export class AppmeshRouteSpecHttpRouteActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2397,7 +2479,7 @@ export class AppmeshRouteSpecHttpRouteActionOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._weightedTarget) {
       hasAnyValues = true;
@@ -2408,9 +2490,11 @@ export class AppmeshRouteSpecHttpRouteActionOutputReference extends cdktf.Comple
 
   public set internalValue(value: AppmeshRouteSpecHttpRouteAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._weightedTarget = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._weightedTarget = value.weightedTarget;
     }
   }
@@ -2452,6 +2536,8 @@ export function appmeshRouteSpecHttpRouteMatchHeaderMatchRangeToTerraform(struct
 }
 
 export class AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2462,7 +2548,7 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference exten
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteMatchHeaderMatchRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._end) {
       hasAnyValues = true;
@@ -2477,10 +2563,12 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference exten
 
   public set internalValue(value: AppmeshRouteSpecHttpRouteMatchHeaderMatchRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._end = undefined;
       this._start = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._end = value.end;
       this._start = value.start;
     }
@@ -2552,6 +2640,8 @@ export function appmeshRouteSpecHttpRouteMatchHeaderMatchToTerraform(struct?: Ap
 }
 
 export class AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2562,7 +2652,7 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference extends cd
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteMatchHeaderMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._exact) {
       hasAnyValues = true;
@@ -2580,7 +2670,7 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.suffix = this._suffix;
     }
-    if (this._range) {
+    if (this._range?.internalValue) {
       hasAnyValues = true;
       internalValueResult.range = this._range?.internalValue;
     }
@@ -2589,6 +2679,7 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference extends cd
 
   public set internalValue(value: AppmeshRouteSpecHttpRouteMatchHeaderMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._exact = undefined;
       this._prefix = undefined;
       this._regex = undefined;
@@ -2596,6 +2687,7 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference extends cd
       this._range.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._exact = value.exact;
       this._prefix = value.prefix;
       this._regex = value.regex;
@@ -2748,6 +2840,8 @@ export function appmeshRouteSpecHttpRouteMatchToTerraform(struct?: AppmeshRouteS
 }
 
 export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2758,7 +2852,7 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._method) {
       hasAnyValues = true;
@@ -2781,12 +2875,14 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
 
   public set internalValue(value: AppmeshRouteSpecHttpRouteMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._method = undefined;
       this._prefix = undefined;
       this._scheme = undefined;
       this._header = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._method = value.method;
       this._prefix = value.prefix;
       this._scheme = value.scheme;
@@ -2879,6 +2975,8 @@ export function appmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutToTerraform(s
 }
 
 export class AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2889,7 +2987,7 @@ export class AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference 
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -2904,10 +3002,12 @@ export class AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference 
 
   public set internalValue(value: AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -2974,6 +3074,8 @@ export function appmeshRouteSpecHttpRouteRetryPolicyToTerraform(struct?: Appmesh
 }
 
 export class AppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2984,7 +3086,7 @@ export class AppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends cdktf.C
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteRetryPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._httpRetryEvents) {
       hasAnyValues = true;
@@ -2998,7 +3100,7 @@ export class AppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends cdktf.C
       hasAnyValues = true;
       internalValueResult.tcpRetryEvents = this._tcpRetryEvents;
     }
-    if (this._perRetryTimeout) {
+    if (this._perRetryTimeout?.internalValue) {
       hasAnyValues = true;
       internalValueResult.perRetryTimeout = this._perRetryTimeout?.internalValue;
     }
@@ -3007,12 +3109,14 @@ export class AppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends cdktf.C
 
   public set internalValue(value: AppmeshRouteSpecHttpRouteRetryPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._httpRetryEvents = undefined;
       this._maxRetries = undefined;
       this._tcpRetryEvents = undefined;
       this._perRetryTimeout.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._httpRetryEvents = value.httpRetryEvents;
       this._maxRetries = value.maxRetries;
       this._tcpRetryEvents = value.tcpRetryEvents;
@@ -3101,6 +3205,8 @@ export function appmeshRouteSpecHttpRouteTimeoutIdleToTerraform(struct?: Appmesh
 }
 
 export class AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3111,7 +3217,7 @@ export class AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference extends cdktf.C
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteTimeoutIdle | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -3126,10 +3232,12 @@ export class AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference extends cdktf.C
 
   public set internalValue(value: AppmeshRouteSpecHttpRouteTimeoutIdle | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -3184,6 +3292,8 @@ export function appmeshRouteSpecHttpRouteTimeoutPerRequestToTerraform(struct?: A
 }
 
 export class AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3194,7 +3304,7 @@ export class AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference extends c
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteTimeoutPerRequest | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -3209,10 +3319,12 @@ export class AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference extends c
 
   public set internalValue(value: AppmeshRouteSpecHttpRouteTimeoutPerRequest | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -3271,6 +3383,8 @@ export function appmeshRouteSpecHttpRouteTimeoutToTerraform(struct?: AppmeshRout
 }
 
 export class AppmeshRouteSpecHttpRouteTimeoutOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3281,13 +3395,13 @@ export class AppmeshRouteSpecHttpRouteTimeoutOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteTimeout | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle) {
+    if (this._idle?.internalValue) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
-    if (this._perRequest) {
+    if (this._perRequest?.internalValue) {
       hasAnyValues = true;
       internalValueResult.perRequest = this._perRequest?.internalValue;
     }
@@ -3296,10 +3410,12 @@ export class AppmeshRouteSpecHttpRouteTimeoutOutputReference extends cdktf.Compl
 
   public set internalValue(value: AppmeshRouteSpecHttpRouteTimeout | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._idle.internalValue = undefined;
       this._perRequest.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._idle.internalValue = value.idle;
       this._perRequest.internalValue = value.perRequest;
     }
@@ -3378,6 +3494,8 @@ export function appmeshRouteSpecHttpRouteToTerraform(struct?: AppmeshRouteSpecHt
 }
 
 export class AppmeshRouteSpecHttpRouteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3388,21 +3506,21 @@ export class AppmeshRouteSpecHttpRouteOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRoute | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action) {
+    if (this._action?.internalValue) {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
-    if (this._match) {
+    if (this._match?.internalValue) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
-    if (this._retryPolicy) {
+    if (this._retryPolicy?.internalValue) {
       hasAnyValues = true;
       internalValueResult.retryPolicy = this._retryPolicy?.internalValue;
     }
-    if (this._timeout) {
+    if (this._timeout?.internalValue) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout?.internalValue;
     }
@@ -3411,12 +3529,14 @@ export class AppmeshRouteSpecHttpRouteOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: AppmeshRouteSpecHttpRoute | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._action.internalValue = undefined;
       this._match.internalValue = undefined;
       this._retryPolicy.internalValue = undefined;
       this._timeout.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._action.internalValue = value.action;
       this._match.internalValue = value.match;
       this._retryPolicy.internalValue = value.retryPolicy;
@@ -3524,6 +3644,8 @@ export function appmeshRouteSpecTcpRouteActionToTerraform(struct?: AppmeshRouteS
 }
 
 export class AppmeshRouteSpecTcpRouteActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3534,7 +3656,7 @@ export class AppmeshRouteSpecTcpRouteActionOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): AppmeshRouteSpecTcpRouteAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._weightedTarget) {
       hasAnyValues = true;
@@ -3545,9 +3667,11 @@ export class AppmeshRouteSpecTcpRouteActionOutputReference extends cdktf.Complex
 
   public set internalValue(value: AppmeshRouteSpecTcpRouteAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._weightedTarget = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._weightedTarget = value.weightedTarget;
     }
   }
@@ -3589,6 +3713,8 @@ export function appmeshRouteSpecTcpRouteTimeoutIdleToTerraform(struct?: AppmeshR
 }
 
 export class AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3599,7 +3725,7 @@ export class AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference extends cdktf.Co
   }
 
   public get internalValue(): AppmeshRouteSpecTcpRouteTimeoutIdle | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -3614,10 +3740,12 @@ export class AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference extends cdktf.Co
 
   public set internalValue(value: AppmeshRouteSpecTcpRouteTimeoutIdle | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -3669,6 +3797,8 @@ export function appmeshRouteSpecTcpRouteTimeoutToTerraform(struct?: AppmeshRoute
 }
 
 export class AppmeshRouteSpecTcpRouteTimeoutOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3679,9 +3809,9 @@ export class AppmeshRouteSpecTcpRouteTimeoutOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): AppmeshRouteSpecTcpRouteTimeout | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle) {
+    if (this._idle?.internalValue) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
@@ -3690,9 +3820,11 @@ export class AppmeshRouteSpecTcpRouteTimeoutOutputReference extends cdktf.Comple
 
   public set internalValue(value: AppmeshRouteSpecTcpRouteTimeout | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._idle.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._idle.internalValue = value.idle;
     }
   }
@@ -3740,6 +3872,8 @@ export function appmeshRouteSpecTcpRouteToTerraform(struct?: AppmeshRouteSpecTcp
 }
 
 export class AppmeshRouteSpecTcpRouteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3750,13 +3884,13 @@ export class AppmeshRouteSpecTcpRouteOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): AppmeshRouteSpecTcpRoute | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action) {
+    if (this._action?.internalValue) {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
-    if (this._timeout) {
+    if (this._timeout?.internalValue) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout?.internalValue;
     }
@@ -3765,10 +3899,12 @@ export class AppmeshRouteSpecTcpRouteOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: AppmeshRouteSpecTcpRoute | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._action.internalValue = undefined;
       this._timeout.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._action.internalValue = value.action;
       this._timeout.internalValue = value.timeout;
     }
@@ -3849,6 +3985,8 @@ export function appmeshRouteSpecToTerraform(struct?: AppmeshRouteSpecOutputRefer
 }
 
 export class AppmeshRouteSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3859,25 +3997,25 @@ export class AppmeshRouteSpecOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): AppmeshRouteSpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._priority) {
       hasAnyValues = true;
       internalValueResult.priority = this._priority;
     }
-    if (this._grpcRoute) {
+    if (this._grpcRoute?.internalValue) {
       hasAnyValues = true;
       internalValueResult.grpcRoute = this._grpcRoute?.internalValue;
     }
-    if (this._http2Route) {
+    if (this._http2Route?.internalValue) {
       hasAnyValues = true;
       internalValueResult.http2Route = this._http2Route?.internalValue;
     }
-    if (this._httpRoute) {
+    if (this._httpRoute?.internalValue) {
       hasAnyValues = true;
       internalValueResult.httpRoute = this._httpRoute?.internalValue;
     }
-    if (this._tcpRoute) {
+    if (this._tcpRoute?.internalValue) {
       hasAnyValues = true;
       internalValueResult.tcpRoute = this._tcpRoute?.internalValue;
     }
@@ -3886,6 +4024,7 @@ export class AppmeshRouteSpecOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: AppmeshRouteSpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._priority = undefined;
       this._grpcRoute.internalValue = undefined;
       this._http2Route.internalValue = undefined;
@@ -3893,6 +4032,7 @@ export class AppmeshRouteSpecOutputReference extends cdktf.ComplexObject {
       this._tcpRoute.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._priority = value.priority;
       this._grpcRoute.internalValue = value.grpcRoute;
       this._http2Route.internalValue = value.http2Route;

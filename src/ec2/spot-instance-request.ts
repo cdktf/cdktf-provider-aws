@@ -246,6 +246,8 @@ export function spotInstanceRequestCapacityReservationSpecificationCapacityReser
 }
 
 export class SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -256,7 +258,7 @@ export class SpotInstanceRequestCapacityReservationSpecificationCapacityReservat
   }
 
   public get internalValue(): SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._capacityReservationId) {
       hasAnyValues = true;
@@ -267,9 +269,11 @@ export class SpotInstanceRequestCapacityReservationSpecificationCapacityReservat
 
   public set internalValue(value: SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._capacityReservationId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._capacityReservationId = value.capacityReservationId;
     }
   }
@@ -315,6 +319,8 @@ export function spotInstanceRequestCapacityReservationSpecificationToTerraform(s
 }
 
 export class SpotInstanceRequestCapacityReservationSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -325,13 +331,13 @@ export class SpotInstanceRequestCapacityReservationSpecificationOutputReference 
   }
 
   public get internalValue(): SpotInstanceRequestCapacityReservationSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._capacityReservationPreference) {
       hasAnyValues = true;
       internalValueResult.capacityReservationPreference = this._capacityReservationPreference;
     }
-    if (this._capacityReservationTarget) {
+    if (this._capacityReservationTarget?.internalValue) {
       hasAnyValues = true;
       internalValueResult.capacityReservationTarget = this._capacityReservationTarget?.internalValue;
     }
@@ -340,10 +346,12 @@ export class SpotInstanceRequestCapacityReservationSpecificationOutputReference 
 
   public set internalValue(value: SpotInstanceRequestCapacityReservationSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._capacityReservationPreference = undefined;
       this._capacityReservationTarget.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._capacityReservationPreference = value.capacityReservationPreference;
       this._capacityReservationTarget.internalValue = value.capacityReservationTarget;
     }
@@ -399,6 +407,8 @@ export function spotInstanceRequestCreditSpecificationToTerraform(struct?: SpotI
 }
 
 export class SpotInstanceRequestCreditSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -409,7 +419,7 @@ export class SpotInstanceRequestCreditSpecificationOutputReference extends cdktf
   }
 
   public get internalValue(): SpotInstanceRequestCreditSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cpuCredits) {
       hasAnyValues = true;
@@ -420,9 +430,11 @@ export class SpotInstanceRequestCreditSpecificationOutputReference extends cdktf
 
   public set internalValue(value: SpotInstanceRequestCreditSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cpuCredits = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cpuCredits = value.cpuCredits;
     }
   }
@@ -523,6 +535,8 @@ export function spotInstanceRequestEnclaveOptionsToTerraform(struct?: SpotInstan
 }
 
 export class SpotInstanceRequestEnclaveOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -533,7 +547,7 @@ export class SpotInstanceRequestEnclaveOptionsOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): SpotInstanceRequestEnclaveOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -544,9 +558,11 @@ export class SpotInstanceRequestEnclaveOptionsOutputReference extends cdktf.Comp
 
   public set internalValue(value: SpotInstanceRequestEnclaveOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
     }
   }
@@ -621,6 +637,8 @@ export function spotInstanceRequestLaunchTemplateToTerraform(struct?: SpotInstan
 }
 
 export class SpotInstanceRequestLaunchTemplateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -631,7 +649,7 @@ export class SpotInstanceRequestLaunchTemplateOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): SpotInstanceRequestLaunchTemplate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -646,10 +664,12 @@ export class SpotInstanceRequestLaunchTemplateOutputReference extends cdktf.Comp
 
   public set internalValue(value: SpotInstanceRequestLaunchTemplate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._version = value.version;
     }
@@ -720,6 +740,8 @@ export function spotInstanceRequestMetadataOptionsToTerraform(struct?: SpotInsta
 }
 
 export class SpotInstanceRequestMetadataOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -730,7 +752,7 @@ export class SpotInstanceRequestMetadataOptionsOutputReference extends cdktf.Com
   }
 
   public get internalValue(): SpotInstanceRequestMetadataOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._httpEndpoint) {
       hasAnyValues = true;
@@ -749,11 +771,13 @@ export class SpotInstanceRequestMetadataOptionsOutputReference extends cdktf.Com
 
   public set internalValue(value: SpotInstanceRequestMetadataOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._httpEndpoint = undefined;
       this._httpPutResponseHopLimit = undefined;
       this._httpTokens = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._httpEndpoint = value.httpEndpoint;
       this._httpPutResponseHopLimit = value.httpPutResponseHopLimit;
       this._httpTokens = value.httpTokens;
@@ -888,6 +912,8 @@ export function spotInstanceRequestRootBlockDeviceToTerraform(struct?: SpotInsta
 }
 
 export class SpotInstanceRequestRootBlockDeviceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -898,7 +924,7 @@ export class SpotInstanceRequestRootBlockDeviceOutputReference extends cdktf.Com
   }
 
   public get internalValue(): SpotInstanceRequestRootBlockDevice | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._deleteOnTermination) {
       hasAnyValues = true;
@@ -937,6 +963,7 @@ export class SpotInstanceRequestRootBlockDeviceOutputReference extends cdktf.Com
 
   public set internalValue(value: SpotInstanceRequestRootBlockDevice | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._deleteOnTermination = undefined;
       this._encrypted = undefined;
       this._iops = undefined;
@@ -947,6 +974,7 @@ export class SpotInstanceRequestRootBlockDeviceOutputReference extends cdktf.Com
       this._volumeType = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._deleteOnTermination = value.deleteOnTermination;
       this._encrypted = value.encrypted;
       this._iops = value.iops;
@@ -1110,6 +1138,8 @@ export function spotInstanceRequestTimeoutsToTerraform(struct?: SpotInstanceRequ
 }
 
 export class SpotInstanceRequestTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1120,7 +1150,7 @@ export class SpotInstanceRequestTimeoutsOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): SpotInstanceRequestTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -1135,10 +1165,12 @@ export class SpotInstanceRequestTimeoutsOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: SpotInstanceRequestTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
     }

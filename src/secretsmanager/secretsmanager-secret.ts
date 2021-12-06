@@ -100,6 +100,8 @@ export function secretsmanagerSecretRotationRulesToTerraform(struct?: Secretsman
 }
 
 export class SecretsmanagerSecretRotationRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -110,7 +112,7 @@ export class SecretsmanagerSecretRotationRulesOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): SecretsmanagerSecretRotationRules | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._automaticallyAfterDays) {
       hasAnyValues = true;
@@ -121,9 +123,11 @@ export class SecretsmanagerSecretRotationRulesOutputReference extends cdktf.Comp
 
   public set internalValue(value: SecretsmanagerSecretRotationRules | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._automaticallyAfterDays = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._automaticallyAfterDays = value.automaticallyAfterDays;
     }
   }

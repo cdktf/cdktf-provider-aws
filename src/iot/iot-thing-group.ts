@@ -78,6 +78,8 @@ export function iotThingGroupPropertiesAttributePayloadToTerraform(struct?: IotT
 }
 
 export class IotThingGroupPropertiesAttributePayloadOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -88,7 +90,7 @@ export class IotThingGroupPropertiesAttributePayloadOutputReference extends cdkt
   }
 
   public get internalValue(): IotThingGroupPropertiesAttributePayload | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._attributes) {
       hasAnyValues = true;
@@ -99,9 +101,11 @@ export class IotThingGroupPropertiesAttributePayloadOutputReference extends cdkt
 
   public set internalValue(value: IotThingGroupPropertiesAttributePayload | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._attributes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._attributes = value.attributes;
     }
   }
@@ -148,6 +152,8 @@ export function iotThingGroupPropertiesToTerraform(struct?: IotThingGroupPropert
 }
 
 export class IotThingGroupPropertiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -158,13 +164,13 @@ export class IotThingGroupPropertiesOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): IotThingGroupProperties | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._description) {
       hasAnyValues = true;
       internalValueResult.description = this._description;
     }
-    if (this._attributePayload) {
+    if (this._attributePayload?.internalValue) {
       hasAnyValues = true;
       internalValueResult.attributePayload = this._attributePayload?.internalValue;
     }
@@ -173,10 +179,12 @@ export class IotThingGroupPropertiesOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: IotThingGroupProperties | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._description = undefined;
       this._attributePayload.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._description = value.description;
       this._attributePayload.internalValue = value.attributePayload;
     }

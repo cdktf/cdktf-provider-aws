@@ -80,6 +80,8 @@ export function appsyncDatasourceDynamodbConfigToTerraform(struct?: AppsyncDatas
 }
 
 export class AppsyncDatasourceDynamodbConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -90,7 +92,7 @@ export class AppsyncDatasourceDynamodbConfigOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): AppsyncDatasourceDynamodbConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._region) {
       hasAnyValues = true;
@@ -109,11 +111,13 @@ export class AppsyncDatasourceDynamodbConfigOutputReference extends cdktf.Comple
 
   public set internalValue(value: AppsyncDatasourceDynamodbConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._region = undefined;
       this._tableName = undefined;
       this._useCallerCredentials = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._region = value.region;
       this._tableName = value.tableName;
       this._useCallerCredentials = value.useCallerCredentials;
@@ -188,6 +192,8 @@ export function appsyncDatasourceElasticsearchConfigToTerraform(struct?: Appsync
 }
 
 export class AppsyncDatasourceElasticsearchConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -198,7 +204,7 @@ export class AppsyncDatasourceElasticsearchConfigOutputReference extends cdktf.C
   }
 
   public get internalValue(): AppsyncDatasourceElasticsearchConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._endpoint) {
       hasAnyValues = true;
@@ -213,10 +219,12 @@ export class AppsyncDatasourceElasticsearchConfigOutputReference extends cdktf.C
 
   public set internalValue(value: AppsyncDatasourceElasticsearchConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._endpoint = undefined;
       this._region = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._endpoint = value.endpoint;
       this._region = value.region;
     }
@@ -269,6 +277,8 @@ export function appsyncDatasourceHttpConfigToTerraform(struct?: AppsyncDatasourc
 }
 
 export class AppsyncDatasourceHttpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -279,7 +289,7 @@ export class AppsyncDatasourceHttpConfigOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): AppsyncDatasourceHttpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._endpoint) {
       hasAnyValues = true;
@@ -290,9 +300,11 @@ export class AppsyncDatasourceHttpConfigOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: AppsyncDatasourceHttpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._endpoint = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._endpoint = value.endpoint;
     }
   }
@@ -328,6 +340,8 @@ export function appsyncDatasourceLambdaConfigToTerraform(struct?: AppsyncDatasou
 }
 
 export class AppsyncDatasourceLambdaConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -338,7 +352,7 @@ export class AppsyncDatasourceLambdaConfigOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): AppsyncDatasourceLambdaConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._functionArn) {
       hasAnyValues = true;
@@ -349,9 +363,11 @@ export class AppsyncDatasourceLambdaConfigOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: AppsyncDatasourceLambdaConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._functionArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._functionArn = value.functionArn;
     }
   }

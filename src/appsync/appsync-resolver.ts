@@ -71,6 +71,8 @@ export function appsyncResolverCachingConfigToTerraform(struct?: AppsyncResolver
 }
 
 export class AppsyncResolverCachingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -81,7 +83,7 @@ export class AppsyncResolverCachingConfigOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): AppsyncResolverCachingConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cachingKeys) {
       hasAnyValues = true;
@@ -96,10 +98,12 @@ export class AppsyncResolverCachingConfigOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: AppsyncResolverCachingConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cachingKeys = undefined;
       this._ttl = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cachingKeys = value.cachingKeys;
       this._ttl = value.ttl;
     }
@@ -155,6 +159,8 @@ export function appsyncResolverPipelineConfigToTerraform(struct?: AppsyncResolve
 }
 
 export class AppsyncResolverPipelineConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -165,7 +171,7 @@ export class AppsyncResolverPipelineConfigOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): AppsyncResolverPipelineConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._functions) {
       hasAnyValues = true;
@@ -176,9 +182,11 @@ export class AppsyncResolverPipelineConfigOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: AppsyncResolverPipelineConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._functions = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._functions = value.functions;
     }
   }

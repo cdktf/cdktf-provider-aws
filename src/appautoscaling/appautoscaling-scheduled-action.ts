@@ -69,6 +69,8 @@ export function appautoscalingScheduledActionScalableTargetActionToTerraform(str
 }
 
 export class AppautoscalingScheduledActionScalableTargetActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -79,7 +81,7 @@ export class AppautoscalingScheduledActionScalableTargetActionOutputReference ex
   }
 
   public get internalValue(): AppautoscalingScheduledActionScalableTargetAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxCapacity) {
       hasAnyValues = true;
@@ -94,10 +96,12 @@ export class AppautoscalingScheduledActionScalableTargetActionOutputReference ex
 
   public set internalValue(value: AppautoscalingScheduledActionScalableTargetAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxCapacity = undefined;
       this._minCapacity = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxCapacity = value.maxCapacity;
       this._minCapacity = value.minCapacity;
     }

@@ -94,6 +94,8 @@ export function transferAccessPosixProfileToTerraform(struct?: TransferAccessPos
 }
 
 export class TransferAccessPosixProfileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -104,7 +106,7 @@ export class TransferAccessPosixProfileOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): TransferAccessPosixProfile | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._gid) {
       hasAnyValues = true;
@@ -123,11 +125,13 @@ export class TransferAccessPosixProfileOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: TransferAccessPosixProfile | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._gid = undefined;
       this._secondaryGids = undefined;
       this._uid = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._gid = value.gid;
       this._secondaryGids = value.secondaryGids;
       this._uid = value.uid;

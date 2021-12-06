@@ -44,6 +44,8 @@ export function appmeshMeshSpecEgressFilterToTerraform(struct?: AppmeshMeshSpecE
 }
 
 export class AppmeshMeshSpecEgressFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -54,7 +56,7 @@ export class AppmeshMeshSpecEgressFilterOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): AppmeshMeshSpecEgressFilter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -65,9 +67,11 @@ export class AppmeshMeshSpecEgressFilterOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: AppmeshMeshSpecEgressFilter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
     }
   }
@@ -108,6 +112,8 @@ export function appmeshMeshSpecToTerraform(struct?: AppmeshMeshSpecOutputReferen
 }
 
 export class AppmeshMeshSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -118,9 +124,9 @@ export class AppmeshMeshSpecOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): AppmeshMeshSpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._egressFilter) {
+    if (this._egressFilter?.internalValue) {
       hasAnyValues = true;
       internalValueResult.egressFilter = this._egressFilter?.internalValue;
     }
@@ -129,9 +135,11 @@ export class AppmeshMeshSpecOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: AppmeshMeshSpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._egressFilter.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._egressFilter.internalValue = value.egressFilter;
     }
   }

@@ -194,6 +194,8 @@ export function glueCrawlerLineageConfigurationToTerraform(struct?: GlueCrawlerL
 }
 
 export class GlueCrawlerLineageConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -204,7 +206,7 @@ export class GlueCrawlerLineageConfigurationOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): GlueCrawlerLineageConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._crawlerLineageSettings) {
       hasAnyValues = true;
@@ -215,9 +217,11 @@ export class GlueCrawlerLineageConfigurationOutputReference extends cdktf.Comple
 
   public set internalValue(value: GlueCrawlerLineageConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._crawlerLineageSettings = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._crawlerLineageSettings = value.crawlerLineageSettings;
     }
   }
@@ -283,6 +287,8 @@ export function glueCrawlerRecrawlPolicyToTerraform(struct?: GlueCrawlerRecrawlP
 }
 
 export class GlueCrawlerRecrawlPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -293,7 +299,7 @@ export class GlueCrawlerRecrawlPolicyOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): GlueCrawlerRecrawlPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._recrawlBehavior) {
       hasAnyValues = true;
@@ -304,9 +310,11 @@ export class GlueCrawlerRecrawlPolicyOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: GlueCrawlerRecrawlPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._recrawlBehavior = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._recrawlBehavior = value.recrawlBehavior;
     }
   }
@@ -392,6 +400,8 @@ export function glueCrawlerSchemaChangePolicyToTerraform(struct?: GlueCrawlerSch
 }
 
 export class GlueCrawlerSchemaChangePolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -402,7 +412,7 @@ export class GlueCrawlerSchemaChangePolicyOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): GlueCrawlerSchemaChangePolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._deleteBehavior) {
       hasAnyValues = true;
@@ -417,10 +427,12 @@ export class GlueCrawlerSchemaChangePolicyOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: GlueCrawlerSchemaChangePolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._deleteBehavior = undefined;
       this._updateBehavior = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._deleteBehavior = value.deleteBehavior;
       this._updateBehavior = value.updateBehavior;
     }

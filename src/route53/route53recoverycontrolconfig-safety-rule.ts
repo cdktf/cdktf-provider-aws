@@ -66,6 +66,8 @@ export function route53RecoverycontrolconfigSafetyRuleRuleConfigToTerraform(stru
 }
 
 export class Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -76,7 +78,7 @@ export class Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference ext
   }
 
   public get internalValue(): Route53RecoverycontrolconfigSafetyRuleRuleConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._inverted) {
       hasAnyValues = true;
@@ -95,11 +97,13 @@ export class Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference ext
 
   public set internalValue(value: Route53RecoverycontrolconfigSafetyRuleRuleConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._inverted = undefined;
       this._threshold = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._inverted = value.inverted;
       this._threshold = value.threshold;
       this._type = value.type;

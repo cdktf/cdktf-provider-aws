@@ -36,6 +36,8 @@ export function s3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipar
 }
 
 export class S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -46,7 +48,7 @@ export class S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUp
   }
 
   public get internalValue(): S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._daysAfterInitiation) {
       hasAnyValues = true;
@@ -57,9 +59,11 @@ export class S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUp
 
   public set internalValue(value: S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._daysAfterInitiation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._daysAfterInitiation = value.daysAfterInitiation;
     }
   }
@@ -105,6 +109,8 @@ export function s3ControlBucketLifecycleConfigurationRuleExpirationToTerraform(s
 }
 
 export class S3ControlBucketLifecycleConfigurationRuleExpirationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -115,7 +121,7 @@ export class S3ControlBucketLifecycleConfigurationRuleExpirationOutputReference 
   }
 
   public get internalValue(): S3ControlBucketLifecycleConfigurationRuleExpiration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._date) {
       hasAnyValues = true;
@@ -134,11 +140,13 @@ export class S3ControlBucketLifecycleConfigurationRuleExpirationOutputReference 
 
   public set internalValue(value: S3ControlBucketLifecycleConfigurationRuleExpiration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._date = undefined;
       this._days = undefined;
       this._expiredObjectDeleteMarker = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._date = value.date;
       this._days = value.days;
       this._expiredObjectDeleteMarker = value.expiredObjectDeleteMarker;
@@ -216,6 +224,8 @@ export function s3ControlBucketLifecycleConfigurationRuleFilterToTerraform(struc
 }
 
 export class S3ControlBucketLifecycleConfigurationRuleFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -226,7 +236,7 @@ export class S3ControlBucketLifecycleConfigurationRuleFilterOutputReference exte
   }
 
   public get internalValue(): S3ControlBucketLifecycleConfigurationRuleFilter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._prefix) {
       hasAnyValues = true;
@@ -241,10 +251,12 @@ export class S3ControlBucketLifecycleConfigurationRuleFilterOutputReference exte
 
   public set internalValue(value: S3ControlBucketLifecycleConfigurationRuleFilter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._prefix = undefined;
       this._tags = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._prefix = value.prefix;
       this._tags = value.tags;
     }

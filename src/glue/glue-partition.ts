@@ -89,6 +89,8 @@ export function gluePartitionStorageDescriptorSerDeInfoToTerraform(struct?: Glue
 }
 
 export class GluePartitionStorageDescriptorSerDeInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -99,7 +101,7 @@ export class GluePartitionStorageDescriptorSerDeInfoOutputReference extends cdkt
   }
 
   public get internalValue(): GluePartitionStorageDescriptorSerDeInfo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -118,11 +120,13 @@ export class GluePartitionStorageDescriptorSerDeInfoOutputReference extends cdkt
 
   public set internalValue(value: GluePartitionStorageDescriptorSerDeInfo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
       this._parameters = undefined;
       this._serializationLibrary = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._parameters = value.parameters;
       this._serializationLibrary = value.serializationLibrary;
@@ -206,6 +210,8 @@ export function gluePartitionStorageDescriptorSkewedInfoToTerraform(struct?: Glu
 }
 
 export class GluePartitionStorageDescriptorSkewedInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -216,7 +222,7 @@ export class GluePartitionStorageDescriptorSkewedInfoOutputReference extends cdk
   }
 
   public get internalValue(): GluePartitionStorageDescriptorSkewedInfo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._skewedColumnNames) {
       hasAnyValues = true;
@@ -235,11 +241,13 @@ export class GluePartitionStorageDescriptorSkewedInfoOutputReference extends cdk
 
   public set internalValue(value: GluePartitionStorageDescriptorSkewedInfo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._skewedColumnNames = undefined;
       this._skewedColumnValueLocationMaps = undefined;
       this._skewedColumnValues = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._skewedColumnNames = value.skewedColumnNames;
       this._skewedColumnValueLocationMaps = value.skewedColumnValueLocationMaps;
       this._skewedColumnValues = value.skewedColumnValues;
@@ -398,6 +406,8 @@ export function gluePartitionStorageDescriptorToTerraform(struct?: GluePartition
 }
 
 export class GluePartitionStorageDescriptorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -408,7 +418,7 @@ export class GluePartitionStorageDescriptorOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): GluePartitionStorageDescriptor | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketColumns) {
       hasAnyValues = true;
@@ -446,11 +456,11 @@ export class GluePartitionStorageDescriptorOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.columns = this._columns;
     }
-    if (this._serDeInfo) {
+    if (this._serDeInfo?.internalValue) {
       hasAnyValues = true;
       internalValueResult.serDeInfo = this._serDeInfo?.internalValue;
     }
-    if (this._skewedInfo) {
+    if (this._skewedInfo?.internalValue) {
       hasAnyValues = true;
       internalValueResult.skewedInfo = this._skewedInfo?.internalValue;
     }
@@ -463,6 +473,7 @@ export class GluePartitionStorageDescriptorOutputReference extends cdktf.Complex
 
   public set internalValue(value: GluePartitionStorageDescriptor | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketColumns = undefined;
       this._compressed = undefined;
       this._inputFormat = undefined;
@@ -477,6 +488,7 @@ export class GluePartitionStorageDescriptorOutputReference extends cdktf.Complex
       this._sortColumns = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketColumns = value.bucketColumns;
       this._compressed = value.compressed;
       this._inputFormat = value.inputFormat;

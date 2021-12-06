@@ -66,6 +66,8 @@ export function sagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivat
 }
 
 export class SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -76,7 +78,7 @@ export class SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivation
   }
 
   public get internalValue(): SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._humanLoopActivationConditions) {
       hasAnyValues = true;
@@ -87,9 +89,11 @@ export class SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivation
 
   public set internalValue(value: SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._humanLoopActivationConditions = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._humanLoopActivationConditions = value.humanLoopActivationConditions;
     }
   }
@@ -127,6 +131,8 @@ export function sagemakerFlowDefinitionHumanLoopActivationConfigToTerraform(stru
 }
 
 export class SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -137,9 +143,9 @@ export class SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference ext
   }
 
   public get internalValue(): SagemakerFlowDefinitionHumanLoopActivationConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._humanLoopActivationConditionsConfig) {
+    if (this._humanLoopActivationConditionsConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.humanLoopActivationConditionsConfig = this._humanLoopActivationConditionsConfig?.internalValue;
     }
@@ -148,9 +154,11 @@ export class SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference ext
 
   public set internalValue(value: SagemakerFlowDefinitionHumanLoopActivationConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._humanLoopActivationConditionsConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._humanLoopActivationConditionsConfig.internalValue = value.humanLoopActivationConditionsConfig;
     }
   }
@@ -199,6 +207,8 @@ export function sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAm
 }
 
 export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -209,7 +219,7 @@ export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmoun
   }
 
   public get internalValue(): SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cents) {
       hasAnyValues = true;
@@ -228,11 +238,13 @@ export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmoun
 
   public set internalValue(value: SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cents = undefined;
       this._dollars = undefined;
       this._tenthFractionsOfACent = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cents = value.cents;
       this._dollars = value.dollars;
       this._tenthFractionsOfACent = value.tenthFractionsOfACent;
@@ -307,6 +319,8 @@ export function sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceTo
 }
 
 export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -317,9 +331,9 @@ export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutpu
   }
 
   public get internalValue(): SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._amountInUsd) {
+    if (this._amountInUsd?.internalValue) {
       hasAnyValues = true;
       internalValueResult.amountInUsd = this._amountInUsd?.internalValue;
     }
@@ -328,9 +342,11 @@ export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutpu
 
   public set internalValue(value: SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._amountInUsd.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._amountInUsd.internalValue = value.amountInUsd;
     }
   }
@@ -411,6 +427,8 @@ export function sagemakerFlowDefinitionHumanLoopConfigToTerraform(struct?: Sagem
 }
 
 export class SagemakerFlowDefinitionHumanLoopConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -421,7 +439,7 @@ export class SagemakerFlowDefinitionHumanLoopConfigOutputReference extends cdktf
   }
 
   public get internalValue(): SagemakerFlowDefinitionHumanLoopConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._humanTaskUiArn) {
       hasAnyValues = true;
@@ -455,7 +473,7 @@ export class SagemakerFlowDefinitionHumanLoopConfigOutputReference extends cdktf
       hasAnyValues = true;
       internalValueResult.workteamArn = this._workteamArn;
     }
-    if (this._publicWorkforceTaskPrice) {
+    if (this._publicWorkforceTaskPrice?.internalValue) {
       hasAnyValues = true;
       internalValueResult.publicWorkforceTaskPrice = this._publicWorkforceTaskPrice?.internalValue;
     }
@@ -464,6 +482,7 @@ export class SagemakerFlowDefinitionHumanLoopConfigOutputReference extends cdktf
 
   public set internalValue(value: SagemakerFlowDefinitionHumanLoopConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._humanTaskUiArn = undefined;
       this._taskAvailabilityLifetimeInSeconds = undefined;
       this._taskCount = undefined;
@@ -475,6 +494,7 @@ export class SagemakerFlowDefinitionHumanLoopConfigOutputReference extends cdktf
       this._publicWorkforceTaskPrice.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._humanTaskUiArn = value.humanTaskUiArn;
       this._taskAvailabilityLifetimeInSeconds = value.taskAvailabilityLifetimeInSeconds;
       this._taskCount = value.taskCount;
@@ -634,6 +654,8 @@ export function sagemakerFlowDefinitionHumanLoopRequestSourceToTerraform(struct?
 }
 
 export class SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -644,7 +666,7 @@ export class SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference extend
   }
 
   public get internalValue(): SagemakerFlowDefinitionHumanLoopRequestSource | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._awsManagedHumanLoopRequestSource) {
       hasAnyValues = true;
@@ -655,9 +677,11 @@ export class SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference extend
 
   public set internalValue(value: SagemakerFlowDefinitionHumanLoopRequestSource | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._awsManagedHumanLoopRequestSource = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._awsManagedHumanLoopRequestSource = value.awsManagedHumanLoopRequestSource;
     }
   }
@@ -698,6 +722,8 @@ export function sagemakerFlowDefinitionOutputConfigToTerraform(struct?: Sagemake
 }
 
 export class SagemakerFlowDefinitionOutputConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -708,7 +734,7 @@ export class SagemakerFlowDefinitionOutputConfigOutputReference extends cdktf.Co
   }
 
   public get internalValue(): SagemakerFlowDefinitionOutputConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._kmsKeyId) {
       hasAnyValues = true;
@@ -723,10 +749,12 @@ export class SagemakerFlowDefinitionOutputConfigOutputReference extends cdktf.Co
 
   public set internalValue(value: SagemakerFlowDefinitionOutputConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._kmsKeyId = undefined;
       this._s3OutputPath = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._kmsKeyId = value.kmsKeyId;
       this._s3OutputPath = value.s3OutputPath;
     }

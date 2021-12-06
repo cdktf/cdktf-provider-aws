@@ -77,6 +77,8 @@ export function fmsPolicyExcludeMapToTerraform(struct?: FmsPolicyExcludeMapOutpu
 }
 
 export class FmsPolicyExcludeMapOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -87,7 +89,7 @@ export class FmsPolicyExcludeMapOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): FmsPolicyExcludeMap | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._account) {
       hasAnyValues = true;
@@ -102,10 +104,12 @@ export class FmsPolicyExcludeMapOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: FmsPolicyExcludeMap | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._account = undefined;
       this._orgunit = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._account = value.account;
       this._orgunit = value.orgunit;
     }
@@ -166,6 +170,8 @@ export function fmsPolicyIncludeMapToTerraform(struct?: FmsPolicyIncludeMapOutpu
 }
 
 export class FmsPolicyIncludeMapOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -176,7 +182,7 @@ export class FmsPolicyIncludeMapOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): FmsPolicyIncludeMap | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._account) {
       hasAnyValues = true;
@@ -191,10 +197,12 @@ export class FmsPolicyIncludeMapOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: FmsPolicyIncludeMap | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._account = undefined;
       this._orgunit = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._account = value.account;
       this._orgunit = value.orgunit;
     }
@@ -255,6 +263,8 @@ export function fmsPolicySecurityServicePolicyDataToTerraform(struct?: FmsPolicy
 }
 
 export class FmsPolicySecurityServicePolicyDataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -265,7 +275,7 @@ export class FmsPolicySecurityServicePolicyDataOutputReference extends cdktf.Com
   }
 
   public get internalValue(): FmsPolicySecurityServicePolicyData | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._managedServiceData) {
       hasAnyValues = true;
@@ -280,10 +290,12 @@ export class FmsPolicySecurityServicePolicyDataOutputReference extends cdktf.Com
 
   public set internalValue(value: FmsPolicySecurityServicePolicyData | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._managedServiceData = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._managedServiceData = value.managedServiceData;
       this._type = value.type;
     }

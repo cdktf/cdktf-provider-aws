@@ -108,6 +108,8 @@ export function transferServerEndpointDetailsToTerraform(struct?: TransferServer
 }
 
 export class TransferServerEndpointDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -118,7 +120,7 @@ export class TransferServerEndpointDetailsOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): TransferServerEndpointDetails | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._addressAllocationIds) {
       hasAnyValues = true;
@@ -145,6 +147,7 @@ export class TransferServerEndpointDetailsOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: TransferServerEndpointDetails | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._addressAllocationIds = undefined;
       this._securityGroupIds = undefined;
       this._subnetIds = undefined;
@@ -152,6 +155,7 @@ export class TransferServerEndpointDetailsOutputReference extends cdktf.ComplexO
       this._vpcId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._addressAllocationIds = value.addressAllocationIds;
       this._securityGroupIds = value.securityGroupIds;
       this._subnetIds = value.subnetIds;

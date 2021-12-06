@@ -60,6 +60,8 @@ export function sagemakerEndpointConfigurationAsyncInferenceConfigClientConfigTo
 }
 
 export class SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -70,7 +72,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutpu
   }
 
   public get internalValue(): SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxConcurrentInvocationsPerInstance) {
       hasAnyValues = true;
@@ -81,9 +83,11 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutpu
 
   public set internalValue(value: SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxConcurrentInvocationsPerInstance = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxConcurrentInvocationsPerInstance = value.maxConcurrentInvocationsPerInstance;
     }
   }
@@ -127,6 +131,8 @@ export function sagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNo
 }
 
 export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -137,7 +143,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotif
   }
 
   public get internalValue(): SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._errorTopic) {
       hasAnyValues = true;
@@ -152,10 +158,12 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotif
 
   public set internalValue(value: SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._errorTopic = undefined;
       this._successTopic = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._errorTopic = value.errorTopic;
       this._successTopic = value.successTopic;
     }
@@ -223,6 +231,8 @@ export function sagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigTo
 }
 
 export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -233,7 +243,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutpu
   }
 
   public get internalValue(): SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._kmsKeyId) {
       hasAnyValues = true;
@@ -243,7 +253,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutpu
       hasAnyValues = true;
       internalValueResult.s3OutputPath = this._s3OutputPath;
     }
-    if (this._notificationConfig) {
+    if (this._notificationConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.notificationConfig = this._notificationConfig?.internalValue;
     }
@@ -252,11 +262,13 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutpu
 
   public set internalValue(value: SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._kmsKeyId = undefined;
       this._s3OutputPath = undefined;
       this._notificationConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._kmsKeyId = value.kmsKeyId;
       this._s3OutputPath = value.s3OutputPath;
       this._notificationConfig.internalValue = value.notificationConfig;
@@ -335,6 +347,8 @@ export function sagemakerEndpointConfigurationAsyncInferenceConfigToTerraform(st
 }
 
 export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -345,13 +359,13 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference e
   }
 
   public get internalValue(): SagemakerEndpointConfigurationAsyncInferenceConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clientConfig) {
+    if (this._clientConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.clientConfig = this._clientConfig?.internalValue;
     }
-    if (this._outputConfig) {
+    if (this._outputConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.outputConfig = this._outputConfig?.internalValue;
     }
@@ -360,10 +374,12 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference e
 
   public set internalValue(value: SagemakerEndpointConfigurationAsyncInferenceConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clientConfig.internalValue = undefined;
       this._outputConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clientConfig.internalValue = value.clientConfig;
       this._outputConfig.internalValue = value.outputConfig;
     }
@@ -421,6 +437,8 @@ export function sagemakerEndpointConfigurationDataCaptureConfigCaptureContentTyp
 }
 
 export class SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -431,7 +449,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHe
   }
 
   public get internalValue(): SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._csvContentTypes) {
       hasAnyValues = true;
@@ -446,10 +464,12 @@ export class SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHe
 
   public set internalValue(value: SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._csvContentTypes = undefined;
       this._jsonContentTypes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._csvContentTypes = value.csvContentTypes;
       this._jsonContentTypes = value.jsonContentTypes;
     }
@@ -551,6 +571,8 @@ export function sagemakerEndpointConfigurationDataCaptureConfigToTerraform(struc
 }
 
 export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -561,7 +583,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
   }
 
   public get internalValue(): SagemakerEndpointConfigurationDataCaptureConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._destinationS3Uri) {
       hasAnyValues = true;
@@ -579,7 +601,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
       hasAnyValues = true;
       internalValueResult.kmsKeyId = this._kmsKeyId;
     }
-    if (this._captureContentTypeHeader) {
+    if (this._captureContentTypeHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.captureContentTypeHeader = this._captureContentTypeHeader?.internalValue;
     }
@@ -592,6 +614,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
 
   public set internalValue(value: SagemakerEndpointConfigurationDataCaptureConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._destinationS3Uri = undefined;
       this._enableCapture = undefined;
       this._initialSamplingPercentage = undefined;
@@ -600,6 +623,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
       this._captureOptions = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._destinationS3Uri = value.destinationS3Uri;
       this._enableCapture = value.enableCapture;
       this._initialSamplingPercentage = value.initialSamplingPercentage;

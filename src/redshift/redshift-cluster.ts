@@ -203,6 +203,8 @@ export function redshiftClusterLoggingToTerraform(struct?: RedshiftClusterLoggin
 }
 
 export class RedshiftClusterLoggingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -213,7 +215,7 @@ export class RedshiftClusterLoggingOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): RedshiftClusterLogging | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketName) {
       hasAnyValues = true;
@@ -232,11 +234,13 @@ export class RedshiftClusterLoggingOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: RedshiftClusterLogging | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketName = undefined;
       this._enable = undefined;
       this._s3KeyPrefix = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketName = value.bucketName;
       this._enable = value.enable;
       this._s3KeyPrefix = value.s3KeyPrefix;
@@ -316,6 +320,8 @@ export function redshiftClusterSnapshotCopyToTerraform(struct?: RedshiftClusterS
 }
 
 export class RedshiftClusterSnapshotCopyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -326,7 +332,7 @@ export class RedshiftClusterSnapshotCopyOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): RedshiftClusterSnapshotCopy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._destinationRegion) {
       hasAnyValues = true;
@@ -345,11 +351,13 @@ export class RedshiftClusterSnapshotCopyOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: RedshiftClusterSnapshotCopy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._destinationRegion = undefined;
       this._grantName = undefined;
       this._retentionPeriod = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._destinationRegion = value.destinationRegion;
       this._grantName = value.grantName;
       this._retentionPeriod = value.retentionPeriod;
@@ -429,6 +437,8 @@ export function redshiftClusterTimeoutsToTerraform(struct?: RedshiftClusterTimeo
 }
 
 export class RedshiftClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -439,7 +449,7 @@ export class RedshiftClusterTimeoutsOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): RedshiftClusterTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -458,11 +468,13 @@ export class RedshiftClusterTimeoutsOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: RedshiftClusterTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;

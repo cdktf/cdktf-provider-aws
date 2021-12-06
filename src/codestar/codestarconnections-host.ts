@@ -59,6 +59,8 @@ export function codestarconnectionsHostVpcConfigurationToTerraform(struct?: Code
 }
 
 export class CodestarconnectionsHostVpcConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -69,7 +71,7 @@ export class CodestarconnectionsHostVpcConfigurationOutputReference extends cdkt
   }
 
   public get internalValue(): CodestarconnectionsHostVpcConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._securityGroupIds) {
       hasAnyValues = true;
@@ -92,12 +94,14 @@ export class CodestarconnectionsHostVpcConfigurationOutputReference extends cdkt
 
   public set internalValue(value: CodestarconnectionsHostVpcConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._securityGroupIds = undefined;
       this._subnetIds = undefined;
       this._tlsCertificate = undefined;
       this._vpcId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._securityGroupIds = value.securityGroupIds;
       this._subnetIds = value.subnetIds;
       this._tlsCertificate = value.tlsCertificate;

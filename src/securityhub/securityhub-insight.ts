@@ -138,6 +138,8 @@ export function securityhubInsightFiltersCreatedAtDateRangeToTerraform(struct?: 
 }
 
 export class SecurityhubInsightFiltersCreatedAtDateRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -148,7 +150,7 @@ export class SecurityhubInsightFiltersCreatedAtDateRangeOutputReference extends 
   }
 
   public get internalValue(): SecurityhubInsightFiltersCreatedAtDateRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -163,10 +165,12 @@ export class SecurityhubInsightFiltersCreatedAtDateRangeOutputReference extends 
 
   public set internalValue(value: SecurityhubInsightFiltersCreatedAtDateRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -463,6 +467,8 @@ export function securityhubInsightFiltersFirstObservedAtDateRangeToTerraform(str
 }
 
 export class SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -473,7 +479,7 @@ export class SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference ex
   }
 
   public get internalValue(): SecurityhubInsightFiltersFirstObservedAtDateRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -488,10 +494,12 @@ export class SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference ex
 
   public set internalValue(value: SecurityhubInsightFiltersFirstObservedAtDateRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -636,6 +644,8 @@ export function securityhubInsightFiltersLastObservedAtDateRangeToTerraform(stru
 }
 
 export class SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -646,7 +656,7 @@ export class SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference ext
   }
 
   public get internalValue(): SecurityhubInsightFiltersLastObservedAtDateRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -661,10 +671,12 @@ export class SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference ext
 
   public set internalValue(value: SecurityhubInsightFiltersLastObservedAtDateRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -1090,6 +1102,8 @@ export function securityhubInsightFiltersNoteUpdatedAtDateRangeToTerraform(struc
 }
 
 export class SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1100,7 +1114,7 @@ export class SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference exte
   }
 
   public get internalValue(): SecurityhubInsightFiltersNoteUpdatedAtDateRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -1115,10 +1129,12 @@ export class SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference exte
 
   public set internalValue(value: SecurityhubInsightFiltersNoteUpdatedAtDateRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -1224,6 +1240,8 @@ export function securityhubInsightFiltersProcessLaunchedAtDateRangeToTerraform(s
 }
 
 export class SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1234,7 +1252,7 @@ export class SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference 
   }
 
   public get internalValue(): SecurityhubInsightFiltersProcessLaunchedAtDateRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -1249,10 +1267,12 @@ export class SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference 
 
   public set internalValue(value: SecurityhubInsightFiltersProcessLaunchedAtDateRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -1434,6 +1454,8 @@ export function securityhubInsightFiltersProcessTerminatedAtDateRangeToTerraform
 }
 
 export class SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1444,7 +1466,7 @@ export class SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReferenc
   }
 
   public get internalValue(): SecurityhubInsightFiltersProcessTerminatedAtDateRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -1459,10 +1481,12 @@ export class SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReferenc
 
   public set internalValue(value: SecurityhubInsightFiltersProcessTerminatedAtDateRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -1805,6 +1829,8 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRan
 }
 
 export class SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1815,7 +1841,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeO
   }
 
   public get internalValue(): SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -1830,10 +1856,12 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeO
 
   public set internalValue(value: SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -1983,6 +2011,8 @@ export function securityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRan
 }
 
 export class SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1993,7 +2023,7 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeO
   }
 
   public get internalValue(): SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -2008,10 +2038,12 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeO
 
   public set internalValue(value: SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -2227,6 +2259,8 @@ export function securityhubInsightFiltersResourceContainerLaunchedAtDateRangeToT
 }
 
 export class SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2237,7 +2271,7 @@ export class SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutput
   }
 
   public get internalValue(): SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -2252,10 +2286,12 @@ export class SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutput
 
   public set internalValue(value: SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -2569,6 +2605,8 @@ export function securityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateR
 }
 
 export class SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2579,7 +2617,7 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRang
   }
 
   public get internalValue(): SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -2594,10 +2632,12 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRang
 
   public set internalValue(value: SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -2813,6 +2853,8 @@ export function securityhubInsightFiltersUpdatedAtDateRangeToTerraform(struct?: 
 }
 
 export class SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2823,7 +2865,7 @@ export class SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference extends 
   }
 
   public get internalValue(): SecurityhubInsightFiltersUpdatedAtDateRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -2838,10 +2880,12 @@ export class SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference extends 
 
   public set internalValue(value: SecurityhubInsightFiltersUpdatedAtDateRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -3602,6 +3646,8 @@ export function securityhubInsightFiltersToTerraform(struct?: SecurityhubInsight
 }
 
 export class SecurityhubInsightFiltersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3612,7 +3658,7 @@ export class SecurityhubInsightFiltersOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): SecurityhubInsightFilters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._awsAccountId) {
       hasAnyValues = true;
@@ -3971,6 +4017,7 @@ export class SecurityhubInsightFiltersOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: SecurityhubInsightFilters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._awsAccountId = undefined;
       this._companyName = undefined;
       this._complianceStatus = undefined;
@@ -4061,6 +4108,7 @@ export class SecurityhubInsightFiltersOutputReference extends cdktf.ComplexObjec
       this._workflowStatus = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._awsAccountId = value.awsAccountId;
       this._companyName = value.companyName;
       this._complianceStatus = value.complianceStatus;

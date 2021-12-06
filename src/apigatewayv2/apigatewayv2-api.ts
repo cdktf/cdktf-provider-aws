@@ -113,6 +113,8 @@ export function apigatewayv2ApiCorsConfigurationToTerraform(struct?: Apigatewayv
 }
 
 export class Apigatewayv2ApiCorsConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -123,7 +125,7 @@ export class Apigatewayv2ApiCorsConfigurationOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): Apigatewayv2ApiCorsConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allowCredentials) {
       hasAnyValues = true;
@@ -154,6 +156,7 @@ export class Apigatewayv2ApiCorsConfigurationOutputReference extends cdktf.Compl
 
   public set internalValue(value: Apigatewayv2ApiCorsConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allowCredentials = undefined;
       this._allowHeaders = undefined;
       this._allowMethods = undefined;
@@ -162,6 +165,7 @@ export class Apigatewayv2ApiCorsConfigurationOutputReference extends cdktf.Compl
       this._maxAge = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allowCredentials = value.allowCredentials;
       this._allowHeaders = value.allowHeaders;
       this._allowMethods = value.allowMethods;

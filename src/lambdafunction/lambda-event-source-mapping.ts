@@ -104,6 +104,8 @@ export function lambdaEventSourceMappingDestinationConfigOnFailureToTerraform(st
 }
 
 export class LambdaEventSourceMappingDestinationConfigOnFailureOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -114,7 +116,7 @@ export class LambdaEventSourceMappingDestinationConfigOnFailureOutputReference e
   }
 
   public get internalValue(): LambdaEventSourceMappingDestinationConfigOnFailure | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._destinationArn) {
       hasAnyValues = true;
@@ -125,9 +127,11 @@ export class LambdaEventSourceMappingDestinationConfigOnFailureOutputReference e
 
   public set internalValue(value: LambdaEventSourceMappingDestinationConfigOnFailure | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._destinationArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._destinationArn = value.destinationArn;
     }
   }
@@ -165,6 +169,8 @@ export function lambdaEventSourceMappingDestinationConfigToTerraform(struct?: La
 }
 
 export class LambdaEventSourceMappingDestinationConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -175,9 +181,9 @@ export class LambdaEventSourceMappingDestinationConfigOutputReference extends cd
   }
 
   public get internalValue(): LambdaEventSourceMappingDestinationConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._onFailure) {
+    if (this._onFailure?.internalValue) {
       hasAnyValues = true;
       internalValueResult.onFailure = this._onFailure?.internalValue;
     }
@@ -186,9 +192,11 @@ export class LambdaEventSourceMappingDestinationConfigOutputReference extends cd
 
   public set internalValue(value: LambdaEventSourceMappingDestinationConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._onFailure.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._onFailure.internalValue = value.onFailure;
     }
   }
@@ -227,6 +235,8 @@ export function lambdaEventSourceMappingSelfManagedEventSourceToTerraform(struct
 }
 
 export class LambdaEventSourceMappingSelfManagedEventSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -237,7 +247,7 @@ export class LambdaEventSourceMappingSelfManagedEventSourceOutputReference exten
   }
 
   public get internalValue(): LambdaEventSourceMappingSelfManagedEventSource | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._endpoints) {
       hasAnyValues = true;
@@ -248,9 +258,11 @@ export class LambdaEventSourceMappingSelfManagedEventSourceOutputReference exten
 
   public set internalValue(value: LambdaEventSourceMappingSelfManagedEventSource | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._endpoints = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._endpoints = value.endpoints;
     }
   }

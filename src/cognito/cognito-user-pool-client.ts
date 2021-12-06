@@ -130,6 +130,8 @@ export function cognitoUserPoolClientAnalyticsConfigurationToTerraform(struct?: 
 }
 
 export class CognitoUserPoolClientAnalyticsConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -140,7 +142,7 @@ export class CognitoUserPoolClientAnalyticsConfigurationOutputReference extends 
   }
 
   public get internalValue(): CognitoUserPoolClientAnalyticsConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._applicationArn) {
       hasAnyValues = true;
@@ -167,6 +169,7 @@ export class CognitoUserPoolClientAnalyticsConfigurationOutputReference extends 
 
   public set internalValue(value: CognitoUserPoolClientAnalyticsConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._applicationArn = undefined;
       this._applicationId = undefined;
       this._externalId = undefined;
@@ -174,6 +177,7 @@ export class CognitoUserPoolClientAnalyticsConfigurationOutputReference extends 
       this._userDataShared = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._applicationArn = value.applicationArn;
       this._applicationId = value.applicationId;
       this._externalId = value.externalId;
@@ -290,6 +294,8 @@ export function cognitoUserPoolClientTokenValidityUnitsToTerraform(struct?: Cogn
 }
 
 export class CognitoUserPoolClientTokenValidityUnitsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -300,7 +306,7 @@ export class CognitoUserPoolClientTokenValidityUnitsOutputReference extends cdkt
   }
 
   public get internalValue(): CognitoUserPoolClientTokenValidityUnits | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accessToken) {
       hasAnyValues = true;
@@ -319,11 +325,13 @@ export class CognitoUserPoolClientTokenValidityUnitsOutputReference extends cdkt
 
   public set internalValue(value: CognitoUserPoolClientTokenValidityUnits | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accessToken = undefined;
       this._idToken = undefined;
       this._refreshToken = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accessToken = value.accessToken;
       this._idToken = value.idToken;
       this._refreshToken = value.refreshToken;

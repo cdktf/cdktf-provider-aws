@@ -275,6 +275,8 @@ export function dbInstanceRestoreToPointInTimeToTerraform(struct?: DbInstanceRes
 }
 
 export class DbInstanceRestoreToPointInTimeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -285,7 +287,7 @@ export class DbInstanceRestoreToPointInTimeOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): DbInstanceRestoreToPointInTime | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._restoreTime) {
       hasAnyValues = true;
@@ -308,12 +310,14 @@ export class DbInstanceRestoreToPointInTimeOutputReference extends cdktf.Complex
 
   public set internalValue(value: DbInstanceRestoreToPointInTime | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._restoreTime = undefined;
       this._sourceDbInstanceIdentifier = undefined;
       this._sourceDbiResourceId = undefined;
       this._useLatestRestorableTime = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._restoreTime = value.restoreTime;
       this._sourceDbInstanceIdentifier = value.sourceDbInstanceIdentifier;
       this._sourceDbiResourceId = value.sourceDbiResourceId;
@@ -423,6 +427,8 @@ export function dbInstanceS3ImportToTerraform(struct?: DbInstanceS3ImportOutputR
 }
 
 export class DbInstanceS3ImportOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -433,7 +439,7 @@ export class DbInstanceS3ImportOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): DbInstanceS3Import | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketName) {
       hasAnyValues = true;
@@ -460,6 +466,7 @@ export class DbInstanceS3ImportOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: DbInstanceS3Import | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketName = undefined;
       this._bucketPrefix = undefined;
       this._ingestionRole = undefined;
@@ -467,6 +474,7 @@ export class DbInstanceS3ImportOutputReference extends cdktf.ComplexObject {
       this._sourceEngineVersion = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketName = value.bucketName;
       this._bucketPrefix = value.bucketPrefix;
       this._ingestionRole = value.ingestionRole;
@@ -571,6 +579,8 @@ export function dbInstanceTimeoutsToTerraform(struct?: DbInstanceTimeoutsOutputR
 }
 
 export class DbInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -581,7 +591,7 @@ export class DbInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): DbInstanceTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -600,11 +610,13 @@ export class DbInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: DbInstanceTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;

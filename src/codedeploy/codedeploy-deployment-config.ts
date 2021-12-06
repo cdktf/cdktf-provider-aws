@@ -51,6 +51,8 @@ export function codedeployDeploymentConfigMinimumHealthyHostsToTerraform(struct?
 }
 
 export class CodedeployDeploymentConfigMinimumHealthyHostsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -61,7 +63,7 @@ export class CodedeployDeploymentConfigMinimumHealthyHostsOutputReference extend
   }
 
   public get internalValue(): CodedeployDeploymentConfigMinimumHealthyHosts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -76,10 +78,12 @@ export class CodedeployDeploymentConfigMinimumHealthyHostsOutputReference extend
 
   public set internalValue(value: CodedeployDeploymentConfigMinimumHealthyHosts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._value = value.value;
     }
@@ -140,6 +144,8 @@ export function codedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryToT
 }
 
 export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -150,7 +156,7 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutput
   }
 
   public get internalValue(): CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._interval) {
       hasAnyValues = true;
@@ -165,10 +171,12 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutput
 
   public set internalValue(value: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._interval = undefined;
       this._percentage = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._interval = value.interval;
       this._percentage = value.percentage;
     }
@@ -229,6 +237,8 @@ export function codedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearToT
 }
 
 export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -239,7 +249,7 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutput
   }
 
   public get internalValue(): CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._interval) {
       hasAnyValues = true;
@@ -254,10 +264,12 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutput
 
   public set internalValue(value: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._interval = undefined;
       this._percentage = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._interval = value.interval;
       this._percentage = value.percentage;
     }
@@ -327,6 +339,8 @@ export function codedeployDeploymentConfigTrafficRoutingConfigToTerraform(struct
 }
 
 export class CodedeployDeploymentConfigTrafficRoutingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -337,17 +351,17 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigOutputReference exten
   }
 
   public get internalValue(): CodedeployDeploymentConfigTrafficRoutingConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._timeBasedCanary) {
+    if (this._timeBasedCanary?.internalValue) {
       hasAnyValues = true;
       internalValueResult.timeBasedCanary = this._timeBasedCanary?.internalValue;
     }
-    if (this._timeBasedLinear) {
+    if (this._timeBasedLinear?.internalValue) {
       hasAnyValues = true;
       internalValueResult.timeBasedLinear = this._timeBasedLinear?.internalValue;
     }
@@ -356,11 +370,13 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigOutputReference exten
 
   public set internalValue(value: CodedeployDeploymentConfigTrafficRoutingConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._timeBasedCanary.internalValue = undefined;
       this._timeBasedLinear.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._timeBasedCanary.internalValue = value.timeBasedCanary;
       this._timeBasedLinear.internalValue = value.timeBasedLinear;

@@ -96,6 +96,8 @@ export function elastictranscoderPresetAudioToTerraform(struct?: Elastictranscod
 }
 
 export class ElastictranscoderPresetAudioOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -106,7 +108,7 @@ export class ElastictranscoderPresetAudioOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): ElastictranscoderPresetAudio | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._audioPackingMode) {
       hasAnyValues = true;
@@ -133,6 +135,7 @@ export class ElastictranscoderPresetAudioOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: ElastictranscoderPresetAudio | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._audioPackingMode = undefined;
       this._bitRate = undefined;
       this._channels = undefined;
@@ -140,6 +143,7 @@ export class ElastictranscoderPresetAudioOutputReference extends cdktf.ComplexOb
       this._sampleRate = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._audioPackingMode = value.audioPackingMode;
       this._bitRate = value.bitRate;
       this._channels = value.channels;
@@ -261,6 +265,8 @@ export function elastictranscoderPresetAudioCodecOptionsToTerraform(struct?: Ela
 }
 
 export class ElastictranscoderPresetAudioCodecOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -271,7 +277,7 @@ export class ElastictranscoderPresetAudioCodecOptionsOutputReference extends cdk
   }
 
   public get internalValue(): ElastictranscoderPresetAudioCodecOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bitDepth) {
       hasAnyValues = true;
@@ -294,12 +300,14 @@ export class ElastictranscoderPresetAudioCodecOptionsOutputReference extends cdk
 
   public set internalValue(value: ElastictranscoderPresetAudioCodecOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bitDepth = undefined;
       this._bitOrder = undefined;
       this._profile = undefined;
       this._signed = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bitDepth = value.bitDepth;
       this._bitOrder = value.bitOrder;
       this._profile = value.profile;
@@ -424,6 +432,8 @@ export function elastictranscoderPresetThumbnailsToTerraform(struct?: Elastictra
 }
 
 export class ElastictranscoderPresetThumbnailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -434,7 +444,7 @@ export class ElastictranscoderPresetThumbnailsOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): ElastictranscoderPresetThumbnails | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._aspectRatio) {
       hasAnyValues = true;
@@ -473,6 +483,7 @@ export class ElastictranscoderPresetThumbnailsOutputReference extends cdktf.Comp
 
   public set internalValue(value: ElastictranscoderPresetThumbnails | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._aspectRatio = undefined;
       this._format = undefined;
       this._interval = undefined;
@@ -483,6 +494,7 @@ export class ElastictranscoderPresetThumbnailsOutputReference extends cdktf.Comp
       this._sizingPolicy = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._aspectRatio = value.aspectRatio;
       this._format = value.format;
       this._interval = value.interval;
@@ -700,6 +712,8 @@ export function elastictranscoderPresetVideoToTerraform(struct?: Elastictranscod
 }
 
 export class ElastictranscoderPresetVideoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -710,7 +724,7 @@ export class ElastictranscoderPresetVideoOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): ElastictranscoderPresetVideo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._aspectRatio) {
       hasAnyValues = true;
@@ -769,6 +783,7 @@ export class ElastictranscoderPresetVideoOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: ElastictranscoderPresetVideo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._aspectRatio = undefined;
       this._bitRate = undefined;
       this._codec = undefined;
@@ -784,6 +799,7 @@ export class ElastictranscoderPresetVideoOutputReference extends cdktf.ComplexOb
       this._sizingPolicy = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._aspectRatio = value.aspectRatio;
       this._bitRate = value.bitRate;
       this._codec = value.codec;

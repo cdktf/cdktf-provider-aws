@@ -45,6 +45,8 @@ export function s3ControlObjectLambdaAccessPointConfigurationTransformationConfi
 }
 
 export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -55,7 +57,7 @@ export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigur
   }
 
   public get internalValue(): S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambda | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._functionArn) {
       hasAnyValues = true;
@@ -70,10 +72,12 @@ export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigur
 
   public set internalValue(value: S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambda | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._functionArn = undefined;
       this._functionPayload = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._functionArn = value.functionArn;
       this._functionPayload = value.functionPayload;
     }
@@ -128,6 +132,8 @@ export function s3ControlObjectLambdaAccessPointConfigurationTransformationConfi
 }
 
 export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -138,9 +144,9 @@ export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigur
   }
 
   public get internalValue(): S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._awsLambda) {
+    if (this._awsLambda?.internalValue) {
       hasAnyValues = true;
       internalValueResult.awsLambda = this._awsLambda?.internalValue;
     }
@@ -149,9 +155,11 @@ export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigur
 
   public set internalValue(value: S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._awsLambda.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._awsLambda.internalValue = value.awsLambda;
     }
   }
@@ -228,6 +236,8 @@ export function s3ControlObjectLambdaAccessPointConfigurationToTerraform(struct?
 }
 
 export class S3ControlObjectLambdaAccessPointConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -238,7 +248,7 @@ export class S3ControlObjectLambdaAccessPointConfigurationOutputReference extend
   }
 
   public get internalValue(): S3ControlObjectLambdaAccessPointConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allowedFeatures) {
       hasAnyValues = true;
@@ -261,12 +271,14 @@ export class S3ControlObjectLambdaAccessPointConfigurationOutputReference extend
 
   public set internalValue(value: S3ControlObjectLambdaAccessPointConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allowedFeatures = undefined;
       this._cloudWatchMetricsEnabled = undefined;
       this._supportingAccessPoint = undefined;
       this._transformationConfiguration = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allowedFeatures = value.allowedFeatures;
       this._cloudWatchMetricsEnabled = value.cloudWatchMetricsEnabled;
       this._supportingAccessPoint = value.supportingAccessPoint;

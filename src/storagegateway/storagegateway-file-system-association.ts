@@ -60,6 +60,8 @@ export function storagegatewayFileSystemAssociationCacheAttributesToTerraform(st
 }
 
 export class StoragegatewayFileSystemAssociationCacheAttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -70,7 +72,7 @@ export class StoragegatewayFileSystemAssociationCacheAttributesOutputReference e
   }
 
   public get internalValue(): StoragegatewayFileSystemAssociationCacheAttributes | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cacheStaleTimeoutInSeconds) {
       hasAnyValues = true;
@@ -81,9 +83,11 @@ export class StoragegatewayFileSystemAssociationCacheAttributesOutputReference e
 
   public set internalValue(value: StoragegatewayFileSystemAssociationCacheAttributes | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cacheStaleTimeoutInSeconds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cacheStaleTimeoutInSeconds = value.cacheStaleTimeoutInSeconds;
     }
   }

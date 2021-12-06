@@ -49,6 +49,8 @@ export function gluePartitionIndexPartitionIndexToTerraform(struct?: GluePartiti
 }
 
 export class GluePartitionIndexPartitionIndexOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -59,7 +61,7 @@ export class GluePartitionIndexPartitionIndexOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): GluePartitionIndexPartitionIndex | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._indexName) {
       hasAnyValues = true;
@@ -74,10 +76,12 @@ export class GluePartitionIndexPartitionIndexOutputReference extends cdktf.Compl
 
   public set internalValue(value: GluePartitionIndexPartitionIndex | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._indexName = undefined;
       this._keys = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._indexName = value.indexName;
       this._keys = value.keys;
     }

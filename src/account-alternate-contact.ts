@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface AccountAlternateContactConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact.html#account_id AccountAlternateContact#account_id}
+  */
+  readonly accountId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact.html#alternate_contact_type AccountAlternateContact#alternate_contact_type}
   */
   readonly alternateContactType: string;
@@ -61,6 +65,7 @@ export class AccountAlternateContact extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._accountId = config.accountId;
     this._alternateContactType = config.alternateContactType;
     this._emailAddress = config.emailAddress;
     this._name = config.name;
@@ -71,6 +76,22 @@ export class AccountAlternateContact extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // account_id - computed: false, optional: true, required: false
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+  public set accountId(value: string) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
 
   // alternate_contact_type - computed: false, optional: false, required: true
   private _alternateContactType?: string; 
@@ -148,6 +169,7 @@ export class AccountAlternateContact extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      account_id: cdktf.stringToTerraform(this._accountId),
       alternate_contact_type: cdktf.stringToTerraform(this._alternateContactType),
       email_address: cdktf.stringToTerraform(this._emailAddress),
       name: cdktf.stringToTerraform(this._name),

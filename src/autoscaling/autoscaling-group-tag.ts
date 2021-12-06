@@ -46,6 +46,8 @@ export function autoscalingGroupTagTagToTerraform(struct?: AutoscalingGroupTagTa
 }
 
 export class AutoscalingGroupTagTagOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -56,7 +58,7 @@ export class AutoscalingGroupTagTagOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): AutoscalingGroupTagTag | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key) {
       hasAnyValues = true;
@@ -75,11 +77,13 @@ export class AutoscalingGroupTagTagOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: AutoscalingGroupTagTag | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._key = undefined;
       this._propagateAtLaunch = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._key = value.key;
       this._propagateAtLaunch = value.propagateAtLaunch;
       this._value = value.value;

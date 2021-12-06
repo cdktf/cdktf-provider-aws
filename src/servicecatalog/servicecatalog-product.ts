@@ -101,6 +101,8 @@ export function servicecatalogProductProvisioningArtifactParametersToTerraform(s
 }
 
 export class ServicecatalogProductProvisioningArtifactParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -111,7 +113,7 @@ export class ServicecatalogProductProvisioningArtifactParametersOutputReference 
   }
 
   public get internalValue(): ServicecatalogProductProvisioningArtifactParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._description) {
       hasAnyValues = true;
@@ -142,6 +144,7 @@ export class ServicecatalogProductProvisioningArtifactParametersOutputReference 
 
   public set internalValue(value: ServicecatalogProductProvisioningArtifactParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._description = undefined;
       this._disableTemplateValidation = undefined;
       this._name = undefined;
@@ -150,6 +153,7 @@ export class ServicecatalogProductProvisioningArtifactParametersOutputReference 
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._description = value.description;
       this._disableTemplateValidation = value.disableTemplateValidation;
       this._name = value.name;

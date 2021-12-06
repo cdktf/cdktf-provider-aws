@@ -50,6 +50,8 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActio
 }
 
 export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -60,7 +62,7 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCo
   }
 
   public get internalValue(): Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._action) {
       hasAnyValues = true;
@@ -71,9 +73,11 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCo
 
   public set internalValue(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._action = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._action = value.action;
     }
   }
@@ -109,6 +113,8 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabel
 }
 
 export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -119,7 +125,7 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNam
   }
 
   public get internalValue(): Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._labelName) {
       hasAnyValues = true;
@@ -130,9 +136,11 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNam
 
   public set internalValue(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._labelName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._labelName = value.labelName;
     }
   }
@@ -230,6 +238,8 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterToTerraform(struct?:
 }
 
 export class Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -240,7 +250,7 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference extends
   }
 
   public get internalValue(): Wafv2WebAclLoggingConfigurationLoggingFilter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._defaultBehavior) {
       hasAnyValues = true;
@@ -255,10 +265,12 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference extends
 
   public set internalValue(value: Wafv2WebAclLoggingConfigurationLoggingFilter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._defaultBehavior = undefined;
       this._filter = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._defaultBehavior = value.defaultBehavior;
       this._filter = value.filter;
     }
@@ -304,6 +316,8 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArgumentsTo
 }
 
 export class Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -314,15 +328,17 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArgumentsOutpu
   }
 
   public get internalValue(): Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -339,6 +355,8 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsBodyToTerraform(str
 }
 
 export class Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -349,15 +367,17 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference ex
   }
 
   public get internalValue(): Wafv2WebAclLoggingConfigurationRedactedFieldsBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclLoggingConfigurationRedactedFieldsBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -374,6 +394,8 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsMethodToTerraform(s
 }
 
 export class Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -384,15 +406,17 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference 
   }
 
   public get internalValue(): Wafv2WebAclLoggingConfigurationRedactedFieldsMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclLoggingConfigurationRedactedFieldsMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -409,6 +433,8 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringToTerraf
 }
 
 export class Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -419,15 +445,17 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputRefer
   }
 
   public get internalValue(): Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -449,6 +477,8 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderToTerra
 }
 
 export class Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -459,7 +489,7 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputRefe
   }
 
   public get internalValue(): Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -470,9 +500,11 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputRefe
 
   public set internalValue(value: Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -508,6 +540,8 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument
 }
 
 export class Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -518,7 +552,7 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOut
   }
 
   public get internalValue(): Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -529,9 +563,11 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOut
 
   public set internalValue(value: Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -562,6 +598,8 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsUriPathToTerraform(
 }
 
 export class Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -572,15 +610,17 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference
   }
 
   public get internalValue(): Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }

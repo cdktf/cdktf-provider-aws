@@ -36,6 +36,8 @@ export function efsBackupPolicyBackupPolicyToTerraform(struct?: EfsBackupPolicyB
 }
 
 export class EfsBackupPolicyBackupPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -46,7 +48,7 @@ export class EfsBackupPolicyBackupPolicyOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): EfsBackupPolicyBackupPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._status) {
       hasAnyValues = true;
@@ -57,9 +59,11 @@ export class EfsBackupPolicyBackupPolicyOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: EfsBackupPolicyBackupPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._status = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._status = value.status;
     }
   }

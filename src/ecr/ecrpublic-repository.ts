@@ -71,6 +71,8 @@ export function ecrpublicRepositoryCatalogDataToTerraform(struct?: EcrpublicRepo
 }
 
 export class EcrpublicRepositoryCatalogDataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -81,7 +83,7 @@ export class EcrpublicRepositoryCatalogDataOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): EcrpublicRepositoryCatalogData | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._aboutText) {
       hasAnyValues = true;
@@ -112,6 +114,7 @@ export class EcrpublicRepositoryCatalogDataOutputReference extends cdktf.Complex
 
   public set internalValue(value: EcrpublicRepositoryCatalogData | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._aboutText = undefined;
       this._architectures = undefined;
       this._description = undefined;
@@ -120,6 +123,7 @@ export class EcrpublicRepositoryCatalogDataOutputReference extends cdktf.Complex
       this._usageText = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._aboutText = value.aboutText;
       this._architectures = value.architectures;
       this._description = value.description;
@@ -243,6 +247,8 @@ export function ecrpublicRepositoryTimeoutsToTerraform(struct?: EcrpublicReposit
 }
 
 export class EcrpublicRepositoryTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -253,7 +259,7 @@ export class EcrpublicRepositoryTimeoutsOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): EcrpublicRepositoryTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete) {
       hasAnyValues = true;
@@ -264,9 +270,11 @@ export class EcrpublicRepositoryTimeoutsOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: EcrpublicRepositoryTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._delete = value.delete;
     }
   }

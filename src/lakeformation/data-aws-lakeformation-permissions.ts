@@ -67,6 +67,8 @@ export function dataAwsLakeformationPermissionsDataLocationToTerraform(struct?: 
 }
 
 export class DataAwsLakeformationPermissionsDataLocationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -77,7 +79,7 @@ export class DataAwsLakeformationPermissionsDataLocationOutputReference extends 
   }
 
   public get internalValue(): DataAwsLakeformationPermissionsDataLocation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
@@ -92,10 +94,12 @@ export class DataAwsLakeformationPermissionsDataLocationOutputReference extends 
 
   public set internalValue(value: DataAwsLakeformationPermissionsDataLocation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._catalogId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._catalogId = value.catalogId;
     }
@@ -153,6 +157,8 @@ export function dataAwsLakeformationPermissionsDatabaseToTerraform(struct?: Data
 }
 
 export class DataAwsLakeformationPermissionsDatabaseOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -163,7 +169,7 @@ export class DataAwsLakeformationPermissionsDatabaseOutputReference extends cdkt
   }
 
   public get internalValue(): DataAwsLakeformationPermissionsDatabase | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._catalogId) {
       hasAnyValues = true;
@@ -178,10 +184,12 @@ export class DataAwsLakeformationPermissionsDatabaseOutputReference extends cdkt
 
   public set internalValue(value: DataAwsLakeformationPermissionsDatabase | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._catalogId = undefined;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._catalogId = value.catalogId;
       this._name = value.name;
     }
@@ -249,6 +257,8 @@ export function dataAwsLakeformationPermissionsTableToTerraform(struct?: DataAws
 }
 
 export class DataAwsLakeformationPermissionsTableOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -259,7 +269,7 @@ export class DataAwsLakeformationPermissionsTableOutputReference extends cdktf.C
   }
 
   public get internalValue(): DataAwsLakeformationPermissionsTable | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._catalogId) {
       hasAnyValues = true;
@@ -282,12 +292,14 @@ export class DataAwsLakeformationPermissionsTableOutputReference extends cdktf.C
 
   public set internalValue(value: DataAwsLakeformationPermissionsTable | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._catalogId = undefined;
       this._databaseName = undefined;
       this._name = undefined;
       this._wildcard = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._catalogId = value.catalogId;
       this._databaseName = value.databaseName;
       this._name = value.name;
@@ -399,6 +411,8 @@ export function dataAwsLakeformationPermissionsTableWithColumnsToTerraform(struc
 }
 
 export class DataAwsLakeformationPermissionsTableWithColumnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -409,7 +423,7 @@ export class DataAwsLakeformationPermissionsTableWithColumnsOutputReference exte
   }
 
   public get internalValue(): DataAwsLakeformationPermissionsTableWithColumns | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._catalogId) {
       hasAnyValues = true;
@@ -440,6 +454,7 @@ export class DataAwsLakeformationPermissionsTableWithColumnsOutputReference exte
 
   public set internalValue(value: DataAwsLakeformationPermissionsTableWithColumns | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._catalogId = undefined;
       this._columnNames = undefined;
       this._databaseName = undefined;
@@ -448,6 +463,7 @@ export class DataAwsLakeformationPermissionsTableWithColumnsOutputReference exte
       this._wildcard = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._catalogId = value.catalogId;
       this._columnNames = value.columnNames;
       this._databaseName = value.databaseName;

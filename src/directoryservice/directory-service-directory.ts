@@ -97,6 +97,8 @@ export function directoryServiceDirectoryConnectSettingsToTerraform(struct?: Dir
 }
 
 export class DirectoryServiceDirectoryConnectSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -107,7 +109,7 @@ export class DirectoryServiceDirectoryConnectSettingsOutputReference extends cdk
   }
 
   public get internalValue(): DirectoryServiceDirectoryConnectSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._customerDnsIps) {
       hasAnyValues = true;
@@ -130,12 +132,14 @@ export class DirectoryServiceDirectoryConnectSettingsOutputReference extends cdk
 
   public set internalValue(value: DirectoryServiceDirectoryConnectSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._customerDnsIps = undefined;
       this._customerUsername = undefined;
       this._subnetIds = undefined;
       this._vpcId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._customerDnsIps = value.customerDnsIps;
       this._customerUsername = value.customerUsername;
       this._subnetIds = value.subnetIds;
@@ -218,6 +222,8 @@ export function directoryServiceDirectoryVpcSettingsToTerraform(struct?: Directo
 }
 
 export class DirectoryServiceDirectoryVpcSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -228,7 +234,7 @@ export class DirectoryServiceDirectoryVpcSettingsOutputReference extends cdktf.C
   }
 
   public get internalValue(): DirectoryServiceDirectoryVpcSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._subnetIds) {
       hasAnyValues = true;
@@ -243,10 +249,12 @@ export class DirectoryServiceDirectoryVpcSettingsOutputReference extends cdktf.C
 
   public set internalValue(value: DirectoryServiceDirectoryVpcSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._subnetIds = undefined;
       this._vpcId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._subnetIds = value.subnetIds;
       this._vpcId = value.vpcId;
     }

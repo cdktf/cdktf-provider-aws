@@ -64,6 +64,8 @@ export function ecsCapacityProviderAutoScalingGroupProviderManagedScalingToTerra
 }
 
 export class EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -74,7 +76,7 @@ export class EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputRefe
   }
 
   public get internalValue(): EcsCapacityProviderAutoScalingGroupProviderManagedScaling | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._instanceWarmupPeriod) {
       hasAnyValues = true;
@@ -101,6 +103,7 @@ export class EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputRefe
 
   public set internalValue(value: EcsCapacityProviderAutoScalingGroupProviderManagedScaling | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._instanceWarmupPeriod = undefined;
       this._maximumScalingStepSize = undefined;
       this._minimumScalingStepSize = undefined;
@@ -108,6 +111,7 @@ export class EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputRefe
       this._targetCapacity = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._instanceWarmupPeriod = value.instanceWarmupPeriod;
       this._maximumScalingStepSize = value.maximumScalingStepSize;
       this._minimumScalingStepSize = value.minimumScalingStepSize;
@@ -226,6 +230,8 @@ export function ecsCapacityProviderAutoScalingGroupProviderToTerraform(struct?: 
 }
 
 export class EcsCapacityProviderAutoScalingGroupProviderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -236,7 +242,7 @@ export class EcsCapacityProviderAutoScalingGroupProviderOutputReference extends 
   }
 
   public get internalValue(): EcsCapacityProviderAutoScalingGroupProvider | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._autoScalingGroupArn) {
       hasAnyValues = true;
@@ -246,7 +252,7 @@ export class EcsCapacityProviderAutoScalingGroupProviderOutputReference extends 
       hasAnyValues = true;
       internalValueResult.managedTerminationProtection = this._managedTerminationProtection;
     }
-    if (this._managedScaling) {
+    if (this._managedScaling?.internalValue) {
       hasAnyValues = true;
       internalValueResult.managedScaling = this._managedScaling?.internalValue;
     }
@@ -255,11 +261,13 @@ export class EcsCapacityProviderAutoScalingGroupProviderOutputReference extends 
 
   public set internalValue(value: EcsCapacityProviderAutoScalingGroupProvider | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._autoScalingGroupArn = undefined;
       this._managedTerminationProtection = undefined;
       this._managedScaling.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._autoScalingGroupArn = value.autoScalingGroupArn;
       this._managedTerminationProtection = value.managedTerminationProtection;
       this._managedScaling.internalValue = value.managedScaling;

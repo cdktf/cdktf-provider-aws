@@ -203,6 +203,8 @@ export function launchConfigurationMetadataOptionsToTerraform(struct?: LaunchCon
 }
 
 export class LaunchConfigurationMetadataOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -213,7 +215,7 @@ export class LaunchConfigurationMetadataOptionsOutputReference extends cdktf.Com
   }
 
   public get internalValue(): LaunchConfigurationMetadataOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._httpEndpoint) {
       hasAnyValues = true;
@@ -232,11 +234,13 @@ export class LaunchConfigurationMetadataOptionsOutputReference extends cdktf.Com
 
   public set internalValue(value: LaunchConfigurationMetadataOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._httpEndpoint = undefined;
       this._httpPutResponseHopLimit = undefined;
       this._httpTokens = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._httpEndpoint = value.httpEndpoint;
       this._httpPutResponseHopLimit = value.httpPutResponseHopLimit;
       this._httpTokens = value.httpTokens;
@@ -334,6 +338,8 @@ export function launchConfigurationRootBlockDeviceToTerraform(struct?: LaunchCon
 }
 
 export class LaunchConfigurationRootBlockDeviceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -344,7 +350,7 @@ export class LaunchConfigurationRootBlockDeviceOutputReference extends cdktf.Com
   }
 
   public get internalValue(): LaunchConfigurationRootBlockDevice | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._deleteOnTermination) {
       hasAnyValues = true;
@@ -375,6 +381,7 @@ export class LaunchConfigurationRootBlockDeviceOutputReference extends cdktf.Com
 
   public set internalValue(value: LaunchConfigurationRootBlockDevice | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._deleteOnTermination = undefined;
       this._encrypted = undefined;
       this._iops = undefined;
@@ -383,6 +390,7 @@ export class LaunchConfigurationRootBlockDeviceOutputReference extends cdktf.Com
       this._volumeType = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._deleteOnTermination = value.deleteOnTermination;
       this._encrypted = value.encrypted;
       this._iops = value.iops;

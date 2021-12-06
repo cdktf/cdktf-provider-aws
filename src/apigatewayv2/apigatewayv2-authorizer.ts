@@ -73,6 +73,8 @@ export function apigatewayv2AuthorizerJwtConfigurationToTerraform(struct?: Apiga
 }
 
 export class Apigatewayv2AuthorizerJwtConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -83,7 +85,7 @@ export class Apigatewayv2AuthorizerJwtConfigurationOutputReference extends cdktf
   }
 
   public get internalValue(): Apigatewayv2AuthorizerJwtConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._audience) {
       hasAnyValues = true;
@@ -98,10 +100,12 @@ export class Apigatewayv2AuthorizerJwtConfigurationOutputReference extends cdktf
 
   public set internalValue(value: Apigatewayv2AuthorizerJwtConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._audience = undefined;
       this._issuer = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._audience = value.audience;
       this._issuer = value.issuer;
     }

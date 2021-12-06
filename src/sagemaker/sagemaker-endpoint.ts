@@ -67,6 +67,8 @@ export function sagemakerEndpointDeploymentConfigAutoRollbackConfigurationToTerr
 }
 
 export class SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -77,7 +79,7 @@ export class SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputRef
   }
 
   public get internalValue(): SagemakerEndpointDeploymentConfigAutoRollbackConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._alarms) {
       hasAnyValues = true;
@@ -88,9 +90,11 @@ export class SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputRef
 
   public set internalValue(value: SagemakerEndpointDeploymentConfigAutoRollbackConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._alarms = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._alarms = value.alarms;
     }
   }
@@ -135,6 +139,8 @@ export function sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRou
 }
 
 export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -145,7 +151,7 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
   }
 
   public get internalValue(): SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -160,10 +166,12 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
 
   public set internalValue(value: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._value = value.value;
     }
@@ -218,6 +226,8 @@ export function sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRou
 }
 
 export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -228,7 +238,7 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
   }
 
   public get internalValue(): SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -243,10 +253,12 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
 
   public set internalValue(value: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._value = value.value;
     }
@@ -315,6 +327,8 @@ export function sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRou
 }
 
 export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -325,7 +339,7 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
   }
 
   public get internalValue(): SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -335,11 +349,11 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
       hasAnyValues = true;
       internalValueResult.waitIntervalInSeconds = this._waitIntervalInSeconds;
     }
-    if (this._canarySize) {
+    if (this._canarySize?.internalValue) {
       hasAnyValues = true;
       internalValueResult.canarySize = this._canarySize?.internalValue;
     }
-    if (this._linearStepSize) {
+    if (this._linearStepSize?.internalValue) {
       hasAnyValues = true;
       internalValueResult.linearStepSize = this._linearStepSize?.internalValue;
     }
@@ -348,12 +362,14 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
 
   public set internalValue(value: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._waitIntervalInSeconds = undefined;
       this._canarySize.internalValue = undefined;
       this._linearStepSize.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._waitIntervalInSeconds = value.waitIntervalInSeconds;
       this._canarySize.internalValue = value.canarySize;
@@ -449,6 +465,8 @@ export function sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyToTerrafor
 }
 
 export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -459,7 +477,7 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReferen
   }
 
   public get internalValue(): SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maximumExecutionTimeoutInSeconds) {
       hasAnyValues = true;
@@ -469,7 +487,7 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReferen
       hasAnyValues = true;
       internalValueResult.terminationWaitInSeconds = this._terminationWaitInSeconds;
     }
-    if (this._trafficRoutingConfiguration) {
+    if (this._trafficRoutingConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.trafficRoutingConfiguration = this._trafficRoutingConfiguration?.internalValue;
     }
@@ -478,11 +496,13 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReferen
 
   public set internalValue(value: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maximumExecutionTimeoutInSeconds = undefined;
       this._terminationWaitInSeconds = undefined;
       this._trafficRoutingConfiguration.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maximumExecutionTimeoutInSeconds = value.maximumExecutionTimeoutInSeconds;
       this._terminationWaitInSeconds = value.terminationWaitInSeconds;
       this._trafficRoutingConfiguration.internalValue = value.trafficRoutingConfiguration;
@@ -561,6 +581,8 @@ export function sagemakerEndpointDeploymentConfigToTerraform(struct?: SagemakerE
 }
 
 export class SagemakerEndpointDeploymentConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -571,13 +593,13 @@ export class SagemakerEndpointDeploymentConfigOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): SagemakerEndpointDeploymentConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._autoRollbackConfiguration) {
+    if (this._autoRollbackConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.autoRollbackConfiguration = this._autoRollbackConfiguration?.internalValue;
     }
-    if (this._blueGreenUpdatePolicy) {
+    if (this._blueGreenUpdatePolicy?.internalValue) {
       hasAnyValues = true;
       internalValueResult.blueGreenUpdatePolicy = this._blueGreenUpdatePolicy?.internalValue;
     }
@@ -586,10 +608,12 @@ export class SagemakerEndpointDeploymentConfigOutputReference extends cdktf.Comp
 
   public set internalValue(value: SagemakerEndpointDeploymentConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._autoRollbackConfiguration.internalValue = undefined;
       this._blueGreenUpdatePolicy.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._autoRollbackConfiguration.internalValue = value.autoRollbackConfiguration;
       this._blueGreenUpdatePolicy.internalValue = value.blueGreenUpdatePolicy;
     }

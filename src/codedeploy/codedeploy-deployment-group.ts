@@ -124,6 +124,8 @@ export function codedeployDeploymentGroupAlarmConfigurationToTerraform(struct?: 
 }
 
 export class CodedeployDeploymentGroupAlarmConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -134,7 +136,7 @@ export class CodedeployDeploymentGroupAlarmConfigurationOutputReference extends 
   }
 
   public get internalValue(): CodedeployDeploymentGroupAlarmConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._alarms) {
       hasAnyValues = true;
@@ -153,11 +155,13 @@ export class CodedeployDeploymentGroupAlarmConfigurationOutputReference extends 
 
   public set internalValue(value: CodedeployDeploymentGroupAlarmConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._alarms = undefined;
       this._enabled = undefined;
       this._ignorePollAlarmFailure = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._alarms = value.alarms;
       this._enabled = value.enabled;
       this._ignorePollAlarmFailure = value.ignorePollAlarmFailure;
@@ -235,6 +239,8 @@ export function codedeployDeploymentGroupAutoRollbackConfigurationToTerraform(st
 }
 
 export class CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -245,7 +251,7 @@ export class CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference e
   }
 
   public get internalValue(): CodedeployDeploymentGroupAutoRollbackConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -260,10 +266,12 @@ export class CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference e
 
   public set internalValue(value: CodedeployDeploymentGroupAutoRollbackConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._events = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._events = value.events;
     }
@@ -324,6 +332,8 @@ export function codedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentRead
 }
 
 export class CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -334,7 +344,7 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOp
   }
 
   public get internalValue(): CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._actionOnTimeout) {
       hasAnyValues = true;
@@ -349,10 +359,12 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOp
 
   public set internalValue(value: CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._actionOnTimeout = undefined;
       this._waitTimeInMinutes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._actionOnTimeout = value.actionOnTimeout;
       this._waitTimeInMinutes = value.waitTimeInMinutes;
     }
@@ -408,6 +420,8 @@ export function codedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProv
 }
 
 export class CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -418,7 +432,7 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisi
   }
 
   public get internalValue(): CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._action) {
       hasAnyValues = true;
@@ -429,9 +443,11 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisi
 
   public set internalValue(value: CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._action = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._action = value.action;
     }
   }
@@ -475,6 +491,8 @@ export function codedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueI
 }
 
 export class CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -485,7 +503,7 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInst
   }
 
   public get internalValue(): CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._action) {
       hasAnyValues = true;
@@ -500,10 +518,12 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInst
 
   public set internalValue(value: CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._action = undefined;
       this._terminationWaitTimeInMinutes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._action = value.action;
       this._terminationWaitTimeInMinutes = value.terminationWaitTimeInMinutes;
     }
@@ -575,6 +595,8 @@ export function codedeployDeploymentGroupBlueGreenDeploymentConfigToTerraform(st
 }
 
 export class CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -585,17 +607,17 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference e
   }
 
   public get internalValue(): CodedeployDeploymentGroupBlueGreenDeploymentConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._deploymentReadyOption) {
+    if (this._deploymentReadyOption?.internalValue) {
       hasAnyValues = true;
       internalValueResult.deploymentReadyOption = this._deploymentReadyOption?.internalValue;
     }
-    if (this._greenFleetProvisioningOption) {
+    if (this._greenFleetProvisioningOption?.internalValue) {
       hasAnyValues = true;
       internalValueResult.greenFleetProvisioningOption = this._greenFleetProvisioningOption?.internalValue;
     }
-    if (this._terminateBlueInstancesOnDeploymentSuccess) {
+    if (this._terminateBlueInstancesOnDeploymentSuccess?.internalValue) {
       hasAnyValues = true;
       internalValueResult.terminateBlueInstancesOnDeploymentSuccess = this._terminateBlueInstancesOnDeploymentSuccess?.internalValue;
     }
@@ -604,11 +626,13 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference e
 
   public set internalValue(value: CodedeployDeploymentGroupBlueGreenDeploymentConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._deploymentReadyOption.internalValue = undefined;
       this._greenFleetProvisioningOption.internalValue = undefined;
       this._terminateBlueInstancesOnDeploymentSuccess.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._deploymentReadyOption.internalValue = value.deploymentReadyOption;
       this._greenFleetProvisioningOption.internalValue = value.greenFleetProvisioningOption;
       this._terminateBlueInstancesOnDeploymentSuccess.internalValue = value.terminateBlueInstancesOnDeploymentSuccess;
@@ -686,6 +710,8 @@ export function codedeployDeploymentGroupDeploymentStyleToTerraform(struct?: Cod
 }
 
 export class CodedeployDeploymentGroupDeploymentStyleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -696,7 +722,7 @@ export class CodedeployDeploymentGroupDeploymentStyleOutputReference extends cdk
   }
 
   public get internalValue(): CodedeployDeploymentGroupDeploymentStyle | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._deploymentOption) {
       hasAnyValues = true;
@@ -711,10 +737,12 @@ export class CodedeployDeploymentGroupDeploymentStyleOutputReference extends cdk
 
   public set internalValue(value: CodedeployDeploymentGroupDeploymentStyle | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._deploymentOption = undefined;
       this._deploymentType = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._deploymentOption = value.deploymentOption;
       this._deploymentType = value.deploymentType;
     }
@@ -848,6 +876,8 @@ export function codedeployDeploymentGroupEcsServiceToTerraform(struct?: Codedepl
 }
 
 export class CodedeployDeploymentGroupEcsServiceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -858,7 +888,7 @@ export class CodedeployDeploymentGroupEcsServiceOutputReference extends cdktf.Co
   }
 
   public get internalValue(): CodedeployDeploymentGroupEcsService | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._clusterName) {
       hasAnyValues = true;
@@ -873,10 +903,12 @@ export class CodedeployDeploymentGroupEcsServiceOutputReference extends cdktf.Co
 
   public set internalValue(value: CodedeployDeploymentGroupEcsService | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clusterName = undefined;
       this._serviceName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clusterName = value.clusterName;
       this._serviceName = value.serviceName;
     }
@@ -960,6 +992,8 @@ export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProd
 }
 
 export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -970,7 +1004,7 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTra
   }
 
   public get internalValue(): CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._listenerArns) {
       hasAnyValues = true;
@@ -981,9 +1015,11 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTra
 
   public set internalValue(value: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._listenerArns = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._listenerArns = value.listenerArns;
     }
   }
@@ -1036,6 +1072,8 @@ export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTest
 }
 
 export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1046,7 +1084,7 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTra
   }
 
   public get internalValue(): CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._listenerArns) {
       hasAnyValues = true;
@@ -1057,9 +1095,11 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTra
 
   public set internalValue(value: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._listenerArns = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._listenerArns = value.listenerArns;
     }
   }
@@ -1111,6 +1151,8 @@ export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoToTe
 }
 
 export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1121,9 +1163,9 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputR
   }
 
   public get internalValue(): CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._prodTrafficRoute) {
+    if (this._prodTrafficRoute?.internalValue) {
       hasAnyValues = true;
       internalValueResult.prodTrafficRoute = this._prodTrafficRoute?.internalValue;
     }
@@ -1131,7 +1173,7 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputR
       hasAnyValues = true;
       internalValueResult.targetGroup = this._targetGroup;
     }
-    if (this._testTrafficRoute) {
+    if (this._testTrafficRoute?.internalValue) {
       hasAnyValues = true;
       internalValueResult.testTrafficRoute = this._testTrafficRoute?.internalValue;
     }
@@ -1140,11 +1182,13 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputR
 
   public set internalValue(value: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._prodTrafficRoute.internalValue = undefined;
       this._targetGroup = undefined;
       this._testTrafficRoute.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._prodTrafficRoute.internalValue = value.prodTrafficRoute;
       this._targetGroup = value.targetGroup;
       this._testTrafficRoute.internalValue = value.testTrafficRoute;
@@ -1228,6 +1272,8 @@ export function codedeployDeploymentGroupLoadBalancerInfoToTerraform(struct?: Co
 }
 
 export class CodedeployDeploymentGroupLoadBalancerInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1238,7 +1284,7 @@ export class CodedeployDeploymentGroupLoadBalancerInfoOutputReference extends cd
   }
 
   public get internalValue(): CodedeployDeploymentGroupLoadBalancerInfo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._elbInfo) {
       hasAnyValues = true;
@@ -1248,7 +1294,7 @@ export class CodedeployDeploymentGroupLoadBalancerInfoOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.targetGroupInfo = this._targetGroupInfo;
     }
-    if (this._targetGroupPairInfo) {
+    if (this._targetGroupPairInfo?.internalValue) {
       hasAnyValues = true;
       internalValueResult.targetGroupPairInfo = this._targetGroupPairInfo?.internalValue;
     }
@@ -1257,11 +1303,13 @@ export class CodedeployDeploymentGroupLoadBalancerInfoOutputReference extends cd
 
   public set internalValue(value: CodedeployDeploymentGroupLoadBalancerInfo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._elbInfo = undefined;
       this._targetGroupInfo = undefined;
       this._targetGroupPairInfo.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._elbInfo = value.elbInfo;
       this._targetGroupInfo = value.targetGroupInfo;
       this._targetGroupPairInfo.internalValue = value.targetGroupPairInfo;

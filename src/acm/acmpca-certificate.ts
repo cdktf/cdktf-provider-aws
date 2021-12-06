@@ -53,6 +53,8 @@ export function acmpcaCertificateValidityToTerraform(struct?: AcmpcaCertificateV
 }
 
 export class AcmpcaCertificateValidityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -63,7 +65,7 @@ export class AcmpcaCertificateValidityOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): AcmpcaCertificateValidity | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -78,10 +80,12 @@ export class AcmpcaCertificateValidityOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: AcmpcaCertificateValidity | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._value = value.value;
     }

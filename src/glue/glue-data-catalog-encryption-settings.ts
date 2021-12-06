@@ -41,6 +41,8 @@ export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsCo
 }
 
 export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -51,7 +53,7 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConne
   }
 
   public get internalValue(): GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._awsKmsKeyId) {
       hasAnyValues = true;
@@ -66,10 +68,12 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConne
 
   public set internalValue(value: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._awsKmsKeyId = undefined;
       this._returnConnectionPasswordEncrypted = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._awsKmsKeyId = value.awsKmsKeyId;
       this._returnConnectionPasswordEncrypted = value.returnConnectionPasswordEncrypted;
     }
@@ -127,6 +131,8 @@ export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEn
 }
 
 export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -137,7 +143,7 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncry
   }
 
   public get internalValue(): GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._catalogEncryptionMode) {
       hasAnyValues = true;
@@ -152,10 +158,12 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncry
 
   public set internalValue(value: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._catalogEncryptionMode = undefined;
       this._sseAwsKmsKeyId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._catalogEncryptionMode = value.catalogEncryptionMode;
       this._sseAwsKmsKeyId = value.sseAwsKmsKeyId;
     }
@@ -217,6 +225,8 @@ export function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsTo
 }
 
 export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -227,13 +237,13 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutpu
   }
 
   public get internalValue(): GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._connectionPasswordEncryption) {
+    if (this._connectionPasswordEncryption?.internalValue) {
       hasAnyValues = true;
       internalValueResult.connectionPasswordEncryption = this._connectionPasswordEncryption?.internalValue;
     }
-    if (this._encryptionAtRest) {
+    if (this._encryptionAtRest?.internalValue) {
       hasAnyValues = true;
       internalValueResult.encryptionAtRest = this._encryptionAtRest?.internalValue;
     }
@@ -242,10 +252,12 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutpu
 
   public set internalValue(value: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._connectionPasswordEncryption.internalValue = undefined;
       this._encryptionAtRest.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._connectionPasswordEncryption.internalValue = value.connectionPasswordEncryption;
       this._encryptionAtRest.internalValue = value.encryptionAtRest;
     }

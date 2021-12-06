@@ -114,6 +114,8 @@ export function glueJobCommandToTerraform(struct?: GlueJobCommandOutputReference
 }
 
 export class GlueJobCommandOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -124,7 +126,7 @@ export class GlueJobCommandOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): GlueJobCommand | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -143,11 +145,13 @@ export class GlueJobCommandOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: GlueJobCommand | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
       this._pythonVersion = undefined;
       this._scriptLocation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._pythonVersion = value.pythonVersion;
       this._scriptLocation = value.scriptLocation;
@@ -217,6 +221,8 @@ export function glueJobExecutionPropertyToTerraform(struct?: GlueJobExecutionPro
 }
 
 export class GlueJobExecutionPropertyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -227,7 +233,7 @@ export class GlueJobExecutionPropertyOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): GlueJobExecutionProperty | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxConcurrentRuns) {
       hasAnyValues = true;
@@ -238,9 +244,11 @@ export class GlueJobExecutionPropertyOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: GlueJobExecutionProperty | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxConcurrentRuns = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxConcurrentRuns = value.maxConcurrentRuns;
     }
   }
@@ -279,6 +287,8 @@ export function glueJobNotificationPropertyToTerraform(struct?: GlueJobNotificat
 }
 
 export class GlueJobNotificationPropertyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -289,7 +299,7 @@ export class GlueJobNotificationPropertyOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): GlueJobNotificationProperty | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._notifyDelayAfter) {
       hasAnyValues = true;
@@ -300,9 +310,11 @@ export class GlueJobNotificationPropertyOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: GlueJobNotificationProperty | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._notifyDelayAfter = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._notifyDelayAfter = value.notifyDelayAfter;
     }
   }

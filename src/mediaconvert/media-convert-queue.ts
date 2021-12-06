@@ -66,6 +66,8 @@ export function mediaConvertQueueReservationPlanSettingsToTerraform(struct?: Med
 }
 
 export class MediaConvertQueueReservationPlanSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -76,7 +78,7 @@ export class MediaConvertQueueReservationPlanSettingsOutputReference extends cdk
   }
 
   public get internalValue(): MediaConvertQueueReservationPlanSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._commitment) {
       hasAnyValues = true;
@@ -95,11 +97,13 @@ export class MediaConvertQueueReservationPlanSettingsOutputReference extends cdk
 
   public set internalValue(value: MediaConvertQueueReservationPlanSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._commitment = undefined;
       this._renewalType = undefined;
       this._reservedSlots = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._commitment = value.commitment;
       this._renewalType = value.renewalType;
       this._reservedSlots = value.reservedSlots;

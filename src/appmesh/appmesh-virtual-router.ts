@@ -57,6 +57,8 @@ export function appmeshVirtualRouterSpecListenerPortMappingToTerraform(struct?: 
 }
 
 export class AppmeshVirtualRouterSpecListenerPortMappingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -67,7 +69,7 @@ export class AppmeshVirtualRouterSpecListenerPortMappingOutputReference extends 
   }
 
   public get internalValue(): AppmeshVirtualRouterSpecListenerPortMapping | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._port) {
       hasAnyValues = true;
@@ -82,10 +84,12 @@ export class AppmeshVirtualRouterSpecListenerPortMappingOutputReference extends 
 
   public set internalValue(value: AppmeshVirtualRouterSpecListenerPortMapping | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._port = undefined;
       this._protocol = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._port = value.port;
       this._protocol = value.protocol;
     }
@@ -137,6 +141,8 @@ export function appmeshVirtualRouterSpecListenerToTerraform(struct?: AppmeshVirt
 }
 
 export class AppmeshVirtualRouterSpecListenerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -147,9 +153,9 @@ export class AppmeshVirtualRouterSpecListenerOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): AppmeshVirtualRouterSpecListener | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._portMapping) {
+    if (this._portMapping?.internalValue) {
       hasAnyValues = true;
       internalValueResult.portMapping = this._portMapping?.internalValue;
     }
@@ -158,9 +164,11 @@ export class AppmeshVirtualRouterSpecListenerOutputReference extends cdktf.Compl
 
   public set internalValue(value: AppmeshVirtualRouterSpecListener | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._portMapping.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._portMapping.internalValue = value.portMapping;
     }
   }
@@ -198,6 +206,8 @@ export function appmeshVirtualRouterSpecToTerraform(struct?: AppmeshVirtualRoute
 }
 
 export class AppmeshVirtualRouterSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -208,9 +218,9 @@ export class AppmeshVirtualRouterSpecOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): AppmeshVirtualRouterSpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._listener) {
+    if (this._listener?.internalValue) {
       hasAnyValues = true;
       internalValueResult.listener = this._listener?.internalValue;
     }
@@ -219,9 +229,11 @@ export class AppmeshVirtualRouterSpecOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: AppmeshVirtualRouterSpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._listener.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._listener.internalValue = value.listener;
     }
   }

@@ -36,6 +36,8 @@ export function sesDomainIdentityVerificationTimeoutsToTerraform(struct?: SesDom
 }
 
 export class SesDomainIdentityVerificationTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -46,7 +48,7 @@ export class SesDomainIdentityVerificationTimeoutsOutputReference extends cdktf.
   }
 
   public get internalValue(): SesDomainIdentityVerificationTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -57,9 +59,11 @@ export class SesDomainIdentityVerificationTimeoutsOutputReference extends cdktf.
 
   public set internalValue(value: SesDomainIdentityVerificationTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
     }
   }

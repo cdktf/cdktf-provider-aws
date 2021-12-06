@@ -75,6 +75,8 @@ export function sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaul
 }
 
 export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -85,7 +87,7 @@ export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultRe
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._instanceType) {
       hasAnyValues = true;
@@ -100,10 +102,12 @@ export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultRe
 
   public set internalValue(value: SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._instanceType = undefined;
       this._sagemakerImageArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._instanceType = value.instanceType;
       this._sagemakerImageArn = value.sagemakerImageArn;
     }
@@ -166,6 +170,8 @@ export function sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsToTerr
 }
 
 export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -176,13 +182,13 @@ export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputRef
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettingsJupyterServerAppSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._lifecycleConfigArns) {
       hasAnyValues = true;
       internalValueResult.lifecycleConfigArns = this._lifecycleConfigArns;
     }
-    if (this._defaultResourceSpec) {
+    if (this._defaultResourceSpec?.internalValue) {
       hasAnyValues = true;
       internalValueResult.defaultResourceSpec = this._defaultResourceSpec?.internalValue;
     }
@@ -191,10 +197,12 @@ export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputRef
 
   public set internalValue(value: SagemakerDomainDefaultUserSettingsJupyterServerAppSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._lifecycleConfigArns = undefined;
       this._defaultResourceSpec.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._lifecycleConfigArns = value.lifecycleConfigArns;
       this._defaultResourceSpec.internalValue = value.defaultResourceSpec;
     }
@@ -282,6 +290,8 @@ export function sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaul
 }
 
 export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -292,7 +302,7 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultRe
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._instanceType) {
       hasAnyValues = true;
@@ -307,10 +317,12 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultRe
 
   public set internalValue(value: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._instanceType = undefined;
       this._sagemakerImageArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._instanceType = value.instanceType;
       this._sagemakerImageArn = value.sagemakerImageArn;
     }
@@ -380,6 +392,8 @@ export function sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsToTerr
 }
 
 export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -390,7 +404,7 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputRef
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._lifecycleConfigArns) {
       hasAnyValues = true;
@@ -400,7 +414,7 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputRef
       hasAnyValues = true;
       internalValueResult.customImage = this._customImage;
     }
-    if (this._defaultResourceSpec) {
+    if (this._defaultResourceSpec?.internalValue) {
       hasAnyValues = true;
       internalValueResult.defaultResourceSpec = this._defaultResourceSpec?.internalValue;
     }
@@ -409,11 +423,13 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputRef
 
   public set internalValue(value: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._lifecycleConfigArns = undefined;
       this._customImage = undefined;
       this._defaultResourceSpec.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._lifecycleConfigArns = value.lifecycleConfigArns;
       this._customImage = value.customImage;
       this._defaultResourceSpec.internalValue = value.defaultResourceSpec;
@@ -497,6 +513,8 @@ export function sagemakerDomainDefaultUserSettingsSharingSettingsToTerraform(str
 }
 
 export class SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -507,7 +525,7 @@ export class SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference ex
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettingsSharingSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._notebookOutputOption) {
       hasAnyValues = true;
@@ -526,11 +544,13 @@ export class SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference ex
 
   public set internalValue(value: SagemakerDomainDefaultUserSettingsSharingSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._notebookOutputOption = undefined;
       this._s3KmsKeyId = undefined;
       this._s3OutputPath = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._notebookOutputOption = value.notebookOutputOption;
       this._s3KmsKeyId = value.s3KmsKeyId;
       this._s3OutputPath = value.s3OutputPath;
@@ -608,6 +628,8 @@ export function sagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultR
 }
 
 export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -618,7 +640,7 @@ export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultReso
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._instanceType) {
       hasAnyValues = true;
@@ -633,10 +655,12 @@ export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultReso
 
   public set internalValue(value: SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._instanceType = undefined;
       this._sagemakerImageArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._instanceType = value.instanceType;
       this._sagemakerImageArn = value.sagemakerImageArn;
     }
@@ -694,6 +718,8 @@ export function sagemakerDomainDefaultUserSettingsTensorBoardAppSettingsToTerraf
 }
 
 export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -704,9 +730,9 @@ export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputRefer
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettingsTensorBoardAppSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._defaultResourceSpec) {
+    if (this._defaultResourceSpec?.internalValue) {
       hasAnyValues = true;
       internalValueResult.defaultResourceSpec = this._defaultResourceSpec?.internalValue;
     }
@@ -715,9 +741,11 @@ export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputRefer
 
   public set internalValue(value: SagemakerDomainDefaultUserSettingsTensorBoardAppSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._defaultResourceSpec.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._defaultResourceSpec.internalValue = value.defaultResourceSpec;
     }
   }
@@ -789,6 +817,8 @@ export function sagemakerDomainDefaultUserSettingsToTerraform(struct?: Sagemaker
 }
 
 export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -799,7 +829,7 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._executionRole) {
       hasAnyValues = true;
@@ -809,19 +839,19 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.securityGroups = this._securityGroups;
     }
-    if (this._jupyterServerAppSettings) {
+    if (this._jupyterServerAppSettings?.internalValue) {
       hasAnyValues = true;
       internalValueResult.jupyterServerAppSettings = this._jupyterServerAppSettings?.internalValue;
     }
-    if (this._kernelGatewayAppSettings) {
+    if (this._kernelGatewayAppSettings?.internalValue) {
       hasAnyValues = true;
       internalValueResult.kernelGatewayAppSettings = this._kernelGatewayAppSettings?.internalValue;
     }
-    if (this._sharingSettings) {
+    if (this._sharingSettings?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sharingSettings = this._sharingSettings?.internalValue;
     }
-    if (this._tensorBoardAppSettings) {
+    if (this._tensorBoardAppSettings?.internalValue) {
       hasAnyValues = true;
       internalValueResult.tensorBoardAppSettings = this._tensorBoardAppSettings?.internalValue;
     }
@@ -830,6 +860,7 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
 
   public set internalValue(value: SagemakerDomainDefaultUserSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._executionRole = undefined;
       this._securityGroups = undefined;
       this._jupyterServerAppSettings.internalValue = undefined;
@@ -838,6 +869,7 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
       this._tensorBoardAppSettings.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._executionRole = value.executionRole;
       this._securityGroups = value.securityGroups;
       this._jupyterServerAppSettings.internalValue = value.jupyterServerAppSettings;
@@ -958,6 +990,8 @@ export function sagemakerDomainRetentionPolicyToTerraform(struct?: SagemakerDoma
 }
 
 export class SagemakerDomainRetentionPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -968,7 +1002,7 @@ export class SagemakerDomainRetentionPolicyOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): SagemakerDomainRetentionPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._homeEfsFileSystem) {
       hasAnyValues = true;
@@ -979,9 +1013,11 @@ export class SagemakerDomainRetentionPolicyOutputReference extends cdktf.Complex
 
   public set internalValue(value: SagemakerDomainRetentionPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._homeEfsFileSystem = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._homeEfsFileSystem = value.homeEfsFileSystem;
     }
   }

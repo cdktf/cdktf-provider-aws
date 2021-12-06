@@ -242,6 +242,8 @@ export function autoscalingGroupInstanceRefreshPreferencesToTerraform(struct?: A
 }
 
 export class AutoscalingGroupInstanceRefreshPreferencesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -252,7 +254,7 @@ export class AutoscalingGroupInstanceRefreshPreferencesOutputReference extends c
   }
 
   public get internalValue(): AutoscalingGroupInstanceRefreshPreferences | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._checkpointDelay) {
       hasAnyValues = true;
@@ -275,12 +277,14 @@ export class AutoscalingGroupInstanceRefreshPreferencesOutputReference extends c
 
   public set internalValue(value: AutoscalingGroupInstanceRefreshPreferences | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._checkpointDelay = undefined;
       this._checkpointPercentages = undefined;
       this._instanceWarmup = undefined;
       this._minHealthyPercentage = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._checkpointDelay = value.checkpointDelay;
       this._checkpointPercentages = value.checkpointPercentages;
       this._instanceWarmup = value.instanceWarmup;
@@ -383,6 +387,8 @@ export function autoscalingGroupInstanceRefreshToTerraform(struct?: AutoscalingG
 }
 
 export class AutoscalingGroupInstanceRefreshOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -393,7 +399,7 @@ export class AutoscalingGroupInstanceRefreshOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): AutoscalingGroupInstanceRefresh | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._strategy) {
       hasAnyValues = true;
@@ -403,7 +409,7 @@ export class AutoscalingGroupInstanceRefreshOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.triggers = this._triggers;
     }
-    if (this._preferences) {
+    if (this._preferences?.internalValue) {
       hasAnyValues = true;
       internalValueResult.preferences = this._preferences?.internalValue;
     }
@@ -412,11 +418,13 @@ export class AutoscalingGroupInstanceRefreshOutputReference extends cdktf.Comple
 
   public set internalValue(value: AutoscalingGroupInstanceRefresh | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._strategy = undefined;
       this._triggers = undefined;
       this._preferences.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._strategy = value.strategy;
       this._triggers = value.triggers;
       this._preferences.internalValue = value.preferences;
@@ -495,6 +503,8 @@ export function autoscalingGroupLaunchTemplateToTerraform(struct?: AutoscalingGr
 }
 
 export class AutoscalingGroupLaunchTemplateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -505,7 +515,7 @@ export class AutoscalingGroupLaunchTemplateOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): AutoscalingGroupLaunchTemplate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -520,10 +530,12 @@ export class AutoscalingGroupLaunchTemplateOutputReference extends cdktf.Complex
 
   public set internalValue(value: AutoscalingGroupLaunchTemplate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._version = value.version;
     }
@@ -609,6 +621,8 @@ export function autoscalingGroupMixedInstancesPolicyInstancesDistributionToTerra
 }
 
 export class AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -619,7 +633,7 @@ export class AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputRefe
   }
 
   public get internalValue(): AutoscalingGroupMixedInstancesPolicyInstancesDistribution | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._onDemandAllocationStrategy) {
       hasAnyValues = true;
@@ -650,6 +664,7 @@ export class AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputRefe
 
   public set internalValue(value: AutoscalingGroupMixedInstancesPolicyInstancesDistribution | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._onDemandAllocationStrategy = undefined;
       this._onDemandBaseCapacity = undefined;
       this._onDemandPercentageAboveBaseCapacity = undefined;
@@ -658,6 +673,7 @@ export class AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputRefe
       this._spotMaxPrice = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._onDemandAllocationStrategy = value.onDemandAllocationStrategy;
       this._onDemandBaseCapacity = value.onDemandBaseCapacity;
       this._onDemandPercentageAboveBaseCapacity = value.onDemandPercentageAboveBaseCapacity;
@@ -791,6 +807,8 @@ export function autoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplate
 }
 
 export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -801,7 +819,7 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpe
   }
 
   public get internalValue(): AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._launchTemplateId) {
       hasAnyValues = true;
@@ -820,11 +838,13 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpe
 
   public set internalValue(value: AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._launchTemplateId = undefined;
       this._launchTemplateName = undefined;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._launchTemplateId = value.launchTemplateId;
       this._launchTemplateName = value.launchTemplateName;
       this._version = value.version;
@@ -907,6 +927,8 @@ export function autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunch
 }
 
 export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -917,7 +939,7 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTem
   }
 
   public get internalValue(): AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._launchTemplateId) {
       hasAnyValues = true;
@@ -936,11 +958,13 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTem
 
   public set internalValue(value: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._launchTemplateId = undefined;
       this._launchTemplateName = undefined;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._launchTemplateId = value.launchTemplateId;
       this._launchTemplateName = value.launchTemplateName;
       this._version = value.version;
@@ -1051,6 +1075,8 @@ export function autoscalingGroupMixedInstancesPolicyLaunchTemplateToTerraform(st
 }
 
 export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1061,9 +1087,9 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference e
   }
 
   public get internalValue(): AutoscalingGroupMixedInstancesPolicyLaunchTemplate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._launchTemplateSpecification) {
+    if (this._launchTemplateSpecification?.internalValue) {
       hasAnyValues = true;
       internalValueResult.launchTemplateSpecification = this._launchTemplateSpecification?.internalValue;
     }
@@ -1076,10 +1102,12 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference e
 
   public set internalValue(value: AutoscalingGroupMixedInstancesPolicyLaunchTemplate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._launchTemplateSpecification.internalValue = undefined;
       this._override = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._launchTemplateSpecification.internalValue = value.launchTemplateSpecification;
       this._override = value.override;
     }
@@ -1142,6 +1170,8 @@ export function autoscalingGroupMixedInstancesPolicyToTerraform(struct?: Autosca
 }
 
 export class AutoscalingGroupMixedInstancesPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1152,13 +1182,13 @@ export class AutoscalingGroupMixedInstancesPolicyOutputReference extends cdktf.C
   }
 
   public get internalValue(): AutoscalingGroupMixedInstancesPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._instancesDistribution) {
+    if (this._instancesDistribution?.internalValue) {
       hasAnyValues = true;
       internalValueResult.instancesDistribution = this._instancesDistribution?.internalValue;
     }
-    if (this._launchTemplate) {
+    if (this._launchTemplate?.internalValue) {
       hasAnyValues = true;
       internalValueResult.launchTemplate = this._launchTemplate?.internalValue;
     }
@@ -1167,10 +1197,12 @@ export class AutoscalingGroupMixedInstancesPolicyOutputReference extends cdktf.C
 
   public set internalValue(value: AutoscalingGroupMixedInstancesPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._instancesDistribution.internalValue = undefined;
       this._launchTemplate.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._instancesDistribution.internalValue = value.instancesDistribution;
       this._launchTemplate.internalValue = value.launchTemplate;
     }
@@ -1250,6 +1282,8 @@ export function autoscalingGroupTimeoutsToTerraform(struct?: AutoscalingGroupTim
 }
 
 export class AutoscalingGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1260,7 +1294,7 @@ export class AutoscalingGroupTimeoutsOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): AutoscalingGroupTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete) {
       hasAnyValues = true;
@@ -1271,9 +1305,11 @@ export class AutoscalingGroupTimeoutsOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: AutoscalingGroupTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._delete = value.delete;
     }
   }
@@ -1322,6 +1358,8 @@ export function autoscalingGroupWarmPoolToTerraform(struct?: AutoscalingGroupWar
 }
 
 export class AutoscalingGroupWarmPoolOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1332,7 +1370,7 @@ export class AutoscalingGroupWarmPoolOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): AutoscalingGroupWarmPool | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxGroupPreparedCapacity) {
       hasAnyValues = true;
@@ -1351,11 +1389,13 @@ export class AutoscalingGroupWarmPoolOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: AutoscalingGroupWarmPool | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxGroupPreparedCapacity = undefined;
       this._minSize = undefined;
       this._poolState = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxGroupPreparedCapacity = value.maxGroupPreparedCapacity;
       this._minSize = value.minSize;
       this._poolState = value.poolState;

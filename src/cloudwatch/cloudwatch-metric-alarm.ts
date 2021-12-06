@@ -145,6 +145,8 @@ export function cloudwatchMetricAlarmMetricQueryMetricToTerraform(struct?: Cloud
 }
 
 export class CloudwatchMetricAlarmMetricQueryMetricOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -155,7 +157,7 @@ export class CloudwatchMetricAlarmMetricQueryMetricOutputReference extends cdktf
   }
 
   public get internalValue(): CloudwatchMetricAlarmMetricQueryMetric | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dimensions) {
       hasAnyValues = true;
@@ -186,6 +188,7 @@ export class CloudwatchMetricAlarmMetricQueryMetricOutputReference extends cdktf
 
   public set internalValue(value: CloudwatchMetricAlarmMetricQueryMetric | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dimensions = undefined;
       this._metricName = undefined;
       this._namespace = undefined;
@@ -194,6 +197,7 @@ export class CloudwatchMetricAlarmMetricQueryMetricOutputReference extends cdktf
       this._unit = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dimensions = value.dimensions;
       this._metricName = value.metricName;
       this._namespace = value.namespace;

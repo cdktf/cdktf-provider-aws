@@ -210,6 +210,8 @@ export function instanceCapacityReservationSpecificationCapacityReservationTarge
 }
 
 export class InstanceCapacityReservationSpecificationCapacityReservationTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -220,7 +222,7 @@ export class InstanceCapacityReservationSpecificationCapacityReservationTargetOu
   }
 
   public get internalValue(): InstanceCapacityReservationSpecificationCapacityReservationTarget | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._capacityReservationId) {
       hasAnyValues = true;
@@ -231,9 +233,11 @@ export class InstanceCapacityReservationSpecificationCapacityReservationTargetOu
 
   public set internalValue(value: InstanceCapacityReservationSpecificationCapacityReservationTarget | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._capacityReservationId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._capacityReservationId = value.capacityReservationId;
     }
   }
@@ -279,6 +283,8 @@ export function instanceCapacityReservationSpecificationToTerraform(struct?: Ins
 }
 
 export class InstanceCapacityReservationSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -289,13 +295,13 @@ export class InstanceCapacityReservationSpecificationOutputReference extends cdk
   }
 
   public get internalValue(): InstanceCapacityReservationSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._capacityReservationPreference) {
       hasAnyValues = true;
       internalValueResult.capacityReservationPreference = this._capacityReservationPreference;
     }
-    if (this._capacityReservationTarget) {
+    if (this._capacityReservationTarget?.internalValue) {
       hasAnyValues = true;
       internalValueResult.capacityReservationTarget = this._capacityReservationTarget?.internalValue;
     }
@@ -304,10 +310,12 @@ export class InstanceCapacityReservationSpecificationOutputReference extends cdk
 
   public set internalValue(value: InstanceCapacityReservationSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._capacityReservationPreference = undefined;
       this._capacityReservationTarget.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._capacityReservationPreference = value.capacityReservationPreference;
       this._capacityReservationTarget.internalValue = value.capacityReservationTarget;
     }
@@ -363,6 +371,8 @@ export function instanceCreditSpecificationToTerraform(struct?: InstanceCreditSp
 }
 
 export class InstanceCreditSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -373,7 +383,7 @@ export class InstanceCreditSpecificationOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): InstanceCreditSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cpuCredits) {
       hasAnyValues = true;
@@ -384,9 +394,11 @@ export class InstanceCreditSpecificationOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: InstanceCreditSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cpuCredits = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cpuCredits = value.cpuCredits;
     }
   }
@@ -487,6 +499,8 @@ export function instanceEnclaveOptionsToTerraform(struct?: InstanceEnclaveOption
 }
 
 export class InstanceEnclaveOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -497,7 +511,7 @@ export class InstanceEnclaveOptionsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): InstanceEnclaveOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -508,9 +522,11 @@ export class InstanceEnclaveOptionsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: InstanceEnclaveOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
     }
   }
@@ -585,6 +601,8 @@ export function instanceLaunchTemplateToTerraform(struct?: InstanceLaunchTemplat
 }
 
 export class InstanceLaunchTemplateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -595,7 +613,7 @@ export class InstanceLaunchTemplateOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): InstanceLaunchTemplate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -610,10 +628,12 @@ export class InstanceLaunchTemplateOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: InstanceLaunchTemplate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._version = value.version;
     }
@@ -684,6 +704,8 @@ export function instanceMetadataOptionsToTerraform(struct?: InstanceMetadataOpti
 }
 
 export class InstanceMetadataOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -694,7 +716,7 @@ export class InstanceMetadataOptionsOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): InstanceMetadataOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._httpEndpoint) {
       hasAnyValues = true;
@@ -713,11 +735,13 @@ export class InstanceMetadataOptionsOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: InstanceMetadataOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._httpEndpoint = undefined;
       this._httpPutResponseHopLimit = undefined;
       this._httpTokens = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._httpEndpoint = value.httpEndpoint;
       this._httpPutResponseHopLimit = value.httpPutResponseHopLimit;
       this._httpTokens = value.httpTokens;
@@ -852,6 +876,8 @@ export function instanceRootBlockDeviceToTerraform(struct?: InstanceRootBlockDev
 }
 
 export class InstanceRootBlockDeviceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -862,7 +888,7 @@ export class InstanceRootBlockDeviceOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): InstanceRootBlockDevice | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._deleteOnTermination) {
       hasAnyValues = true;
@@ -901,6 +927,7 @@ export class InstanceRootBlockDeviceOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: InstanceRootBlockDevice | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._deleteOnTermination = undefined;
       this._encrypted = undefined;
       this._iops = undefined;
@@ -911,6 +938,7 @@ export class InstanceRootBlockDeviceOutputReference extends cdktf.ComplexObject 
       this._volumeType = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._deleteOnTermination = value.deleteOnTermination;
       this._encrypted = value.encrypted;
       this._iops = value.iops;
@@ -1079,6 +1107,8 @@ export function instanceTimeoutsToTerraform(struct?: InstanceTimeoutsOutputRefer
 }
 
 export class InstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1089,7 +1119,7 @@ export class InstanceTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): InstanceTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -1108,11 +1138,13 @@ export class InstanceTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: InstanceTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;

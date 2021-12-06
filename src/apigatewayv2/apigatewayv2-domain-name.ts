@@ -66,6 +66,8 @@ export function apigatewayv2DomainNameDomainNameConfigurationToTerraform(struct?
 }
 
 export class Apigatewayv2DomainNameDomainNameConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -76,7 +78,7 @@ export class Apigatewayv2DomainNameDomainNameConfigurationOutputReference extend
   }
 
   public get internalValue(): Apigatewayv2DomainNameDomainNameConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateArn) {
       hasAnyValues = true;
@@ -95,11 +97,13 @@ export class Apigatewayv2DomainNameDomainNameConfigurationOutputReference extend
 
   public set internalValue(value: Apigatewayv2DomainNameDomainNameConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateArn = undefined;
       this._endpointType = undefined;
       this._securityPolicy = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateArn = value.certificateArn;
       this._endpointType = value.endpointType;
       this._securityPolicy = value.securityPolicy;
@@ -168,6 +172,8 @@ export function apigatewayv2DomainNameMutualTlsAuthenticationToTerraform(struct?
 }
 
 export class Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -178,7 +184,7 @@ export class Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference extend
   }
 
   public get internalValue(): Apigatewayv2DomainNameMutualTlsAuthentication | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._truststoreUri) {
       hasAnyValues = true;
@@ -193,10 +199,12 @@ export class Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference extend
 
   public set internalValue(value: Apigatewayv2DomainNameMutualTlsAuthentication | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._truststoreUri = undefined;
       this._truststoreVersion = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._truststoreUri = value.truststoreUri;
       this._truststoreVersion = value.truststoreVersion;
     }
@@ -254,6 +262,8 @@ export function apigatewayv2DomainNameTimeoutsToTerraform(struct?: Apigatewayv2D
 }
 
 export class Apigatewayv2DomainNameTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -264,7 +274,7 @@ export class Apigatewayv2DomainNameTimeoutsOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): Apigatewayv2DomainNameTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -279,10 +289,12 @@ export class Apigatewayv2DomainNameTimeoutsOutputReference extends cdktf.Complex
 
   public set internalValue(value: Apigatewayv2DomainNameTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._update = value.update;
     }

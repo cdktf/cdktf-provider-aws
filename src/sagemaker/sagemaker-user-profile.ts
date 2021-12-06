@@ -61,6 +61,8 @@ export function sagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultR
 }
 
 export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -71,7 +73,7 @@ export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultReso
   }
 
   public get internalValue(): SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._instanceType) {
       hasAnyValues = true;
@@ -86,10 +88,12 @@ export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultReso
 
   public set internalValue(value: SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._instanceType = undefined;
       this._sagemakerImageArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._instanceType = value.instanceType;
       this._sagemakerImageArn = value.sagemakerImageArn;
     }
@@ -152,6 +156,8 @@ export function sagemakerUserProfileUserSettingsJupyterServerAppSettingsToTerraf
 }
 
 export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -162,13 +168,13 @@ export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputRefer
   }
 
   public get internalValue(): SagemakerUserProfileUserSettingsJupyterServerAppSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._lifecycleConfigArns) {
       hasAnyValues = true;
       internalValueResult.lifecycleConfigArns = this._lifecycleConfigArns;
     }
-    if (this._defaultResourceSpec) {
+    if (this._defaultResourceSpec?.internalValue) {
       hasAnyValues = true;
       internalValueResult.defaultResourceSpec = this._defaultResourceSpec?.internalValue;
     }
@@ -177,10 +183,12 @@ export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputRefer
 
   public set internalValue(value: SagemakerUserProfileUserSettingsJupyterServerAppSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._lifecycleConfigArns = undefined;
       this._defaultResourceSpec.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._lifecycleConfigArns = value.lifecycleConfigArns;
       this._defaultResourceSpec.internalValue = value.defaultResourceSpec;
     }
@@ -265,6 +273,8 @@ export function sagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultR
 }
 
 export class SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -275,7 +285,7 @@ export class SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultReso
   }
 
   public get internalValue(): SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._instanceType) {
       hasAnyValues = true;
@@ -290,10 +300,12 @@ export class SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultReso
 
   public set internalValue(value: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._instanceType = undefined;
       this._sagemakerImageArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._instanceType = value.instanceType;
       this._sagemakerImageArn = value.sagemakerImageArn;
     }
@@ -363,6 +375,8 @@ export function sagemakerUserProfileUserSettingsKernelGatewayAppSettingsToTerraf
 }
 
 export class SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -373,7 +387,7 @@ export class SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputRefer
   }
 
   public get internalValue(): SagemakerUserProfileUserSettingsKernelGatewayAppSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._lifecycleConfigArns) {
       hasAnyValues = true;
@@ -383,7 +397,7 @@ export class SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputRefer
       hasAnyValues = true;
       internalValueResult.customImage = this._customImage;
     }
-    if (this._defaultResourceSpec) {
+    if (this._defaultResourceSpec?.internalValue) {
       hasAnyValues = true;
       internalValueResult.defaultResourceSpec = this._defaultResourceSpec?.internalValue;
     }
@@ -392,11 +406,13 @@ export class SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputRefer
 
   public set internalValue(value: SagemakerUserProfileUserSettingsKernelGatewayAppSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._lifecycleConfigArns = undefined;
       this._customImage = undefined;
       this._defaultResourceSpec.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._lifecycleConfigArns = value.lifecycleConfigArns;
       this._customImage = value.customImage;
       this._defaultResourceSpec.internalValue = value.defaultResourceSpec;
@@ -477,6 +493,8 @@ export function sagemakerUserProfileUserSettingsSharingSettingsToTerraform(struc
 }
 
 export class SagemakerUserProfileUserSettingsSharingSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -487,7 +505,7 @@ export class SagemakerUserProfileUserSettingsSharingSettingsOutputReference exte
   }
 
   public get internalValue(): SagemakerUserProfileUserSettingsSharingSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._notebookOutputOption) {
       hasAnyValues = true;
@@ -506,11 +524,13 @@ export class SagemakerUserProfileUserSettingsSharingSettingsOutputReference exte
 
   public set internalValue(value: SagemakerUserProfileUserSettingsSharingSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._notebookOutputOption = undefined;
       this._s3KmsKeyId = undefined;
       this._s3OutputPath = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._notebookOutputOption = value.notebookOutputOption;
       this._s3KmsKeyId = value.s3KmsKeyId;
       this._s3OutputPath = value.s3OutputPath;
@@ -588,6 +608,8 @@ export function sagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultRes
 }
 
 export class SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -598,7 +620,7 @@ export class SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResour
   }
 
   public get internalValue(): SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._instanceType) {
       hasAnyValues = true;
@@ -613,10 +635,12 @@ export class SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResour
 
   public set internalValue(value: SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._instanceType = undefined;
       this._sagemakerImageArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._instanceType = value.instanceType;
       this._sagemakerImageArn = value.sagemakerImageArn;
     }
@@ -674,6 +698,8 @@ export function sagemakerUserProfileUserSettingsTensorBoardAppSettingsToTerrafor
 }
 
 export class SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -684,9 +710,9 @@ export class SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReferen
   }
 
   public get internalValue(): SagemakerUserProfileUserSettingsTensorBoardAppSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._defaultResourceSpec) {
+    if (this._defaultResourceSpec?.internalValue) {
       hasAnyValues = true;
       internalValueResult.defaultResourceSpec = this._defaultResourceSpec?.internalValue;
     }
@@ -695,9 +721,11 @@ export class SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReferen
 
   public set internalValue(value: SagemakerUserProfileUserSettingsTensorBoardAppSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._defaultResourceSpec.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._defaultResourceSpec.internalValue = value.defaultResourceSpec;
     }
   }
@@ -766,6 +794,8 @@ export function sagemakerUserProfileUserSettingsToTerraform(struct?: SagemakerUs
 }
 
 export class SagemakerUserProfileUserSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -776,7 +806,7 @@ export class SagemakerUserProfileUserSettingsOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): SagemakerUserProfileUserSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._executionRole) {
       hasAnyValues = true;
@@ -786,19 +816,19 @@ export class SagemakerUserProfileUserSettingsOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.securityGroups = this._securityGroups;
     }
-    if (this._jupyterServerAppSettings) {
+    if (this._jupyterServerAppSettings?.internalValue) {
       hasAnyValues = true;
       internalValueResult.jupyterServerAppSettings = this._jupyterServerAppSettings?.internalValue;
     }
-    if (this._kernelGatewayAppSettings) {
+    if (this._kernelGatewayAppSettings?.internalValue) {
       hasAnyValues = true;
       internalValueResult.kernelGatewayAppSettings = this._kernelGatewayAppSettings?.internalValue;
     }
-    if (this._sharingSettings) {
+    if (this._sharingSettings?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sharingSettings = this._sharingSettings?.internalValue;
     }
-    if (this._tensorBoardAppSettings) {
+    if (this._tensorBoardAppSettings?.internalValue) {
       hasAnyValues = true;
       internalValueResult.tensorBoardAppSettings = this._tensorBoardAppSettings?.internalValue;
     }
@@ -807,6 +837,7 @@ export class SagemakerUserProfileUserSettingsOutputReference extends cdktf.Compl
 
   public set internalValue(value: SagemakerUserProfileUserSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._executionRole = undefined;
       this._securityGroups = undefined;
       this._jupyterServerAppSettings.internalValue = undefined;
@@ -815,6 +846,7 @@ export class SagemakerUserProfileUserSettingsOutputReference extends cdktf.Compl
       this._tensorBoardAppSettings.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._executionRole = value.executionRole;
       this._securityGroups = value.securityGroups;
       this._jupyterServerAppSettings.internalValue = value.jupyterServerAppSettings;

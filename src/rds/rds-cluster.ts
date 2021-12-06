@@ -217,6 +217,8 @@ export function rdsClusterRestoreToPointInTimeToTerraform(struct?: RdsClusterRes
 }
 
 export class RdsClusterRestoreToPointInTimeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -227,7 +229,7 @@ export class RdsClusterRestoreToPointInTimeOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): RdsClusterRestoreToPointInTime | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._restoreToTime) {
       hasAnyValues = true;
@@ -250,12 +252,14 @@ export class RdsClusterRestoreToPointInTimeOutputReference extends cdktf.Complex
 
   public set internalValue(value: RdsClusterRestoreToPointInTime | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._restoreToTime = undefined;
       this._restoreType = undefined;
       this._sourceClusterIdentifier = undefined;
       this._useLatestRestorableTime = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._restoreToTime = value.restoreToTime;
       this._restoreType = value.restoreType;
       this._sourceClusterIdentifier = value.sourceClusterIdentifier;
@@ -362,6 +366,8 @@ export function rdsClusterS3ImportToTerraform(struct?: RdsClusterS3ImportOutputR
 }
 
 export class RdsClusterS3ImportOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -372,7 +378,7 @@ export class RdsClusterS3ImportOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): RdsClusterS3Import | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketName) {
       hasAnyValues = true;
@@ -399,6 +405,7 @@ export class RdsClusterS3ImportOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: RdsClusterS3Import | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketName = undefined;
       this._bucketPrefix = undefined;
       this._ingestionRole = undefined;
@@ -406,6 +413,7 @@ export class RdsClusterS3ImportOutputReference extends cdktf.ComplexObject {
       this._sourceEngineVersion = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketName = value.bucketName;
       this._bucketPrefix = value.bucketPrefix;
       this._ingestionRole = value.ingestionRole;
@@ -520,6 +528,8 @@ export function rdsClusterScalingConfigurationToTerraform(struct?: RdsClusterSca
 }
 
 export class RdsClusterScalingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -530,7 +540,7 @@ export class RdsClusterScalingConfigurationOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): RdsClusterScalingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._autoPause) {
       hasAnyValues = true;
@@ -557,6 +567,7 @@ export class RdsClusterScalingConfigurationOutputReference extends cdktf.Complex
 
   public set internalValue(value: RdsClusterScalingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._autoPause = undefined;
       this._maxCapacity = undefined;
       this._minCapacity = undefined;
@@ -564,6 +575,7 @@ export class RdsClusterScalingConfigurationOutputReference extends cdktf.Complex
       this._timeoutAction = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._autoPause = value.autoPause;
       this._maxCapacity = value.maxCapacity;
       this._minCapacity = value.minCapacity;
@@ -680,6 +692,8 @@ export function rdsClusterTimeoutsToTerraform(struct?: RdsClusterTimeoutsOutputR
 }
 
 export class RdsClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -690,7 +704,7 @@ export class RdsClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): RdsClusterTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -709,11 +723,13 @@ export class RdsClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: RdsClusterTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;

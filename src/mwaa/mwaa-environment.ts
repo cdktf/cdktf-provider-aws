@@ -145,6 +145,8 @@ export function mwaaEnvironmentLoggingConfigurationDagProcessingLogsToTerraform(
 }
 
 export class MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -155,7 +157,7 @@ export class MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference
   }
 
   public get internalValue(): MwaaEnvironmentLoggingConfigurationDagProcessingLogs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -170,10 +172,12 @@ export class MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference
 
   public set internalValue(value: MwaaEnvironmentLoggingConfigurationDagProcessingLogs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._logLevel = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._logLevel = value.logLevel;
     }
@@ -234,6 +238,8 @@ export function mwaaEnvironmentLoggingConfigurationSchedulerLogsToTerraform(stru
 }
 
 export class MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -244,7 +250,7 @@ export class MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference ext
   }
 
   public get internalValue(): MwaaEnvironmentLoggingConfigurationSchedulerLogs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -259,10 +265,12 @@ export class MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference ext
 
   public set internalValue(value: MwaaEnvironmentLoggingConfigurationSchedulerLogs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._logLevel = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._logLevel = value.logLevel;
     }
@@ -323,6 +331,8 @@ export function mwaaEnvironmentLoggingConfigurationTaskLogsToTerraform(struct?: 
 }
 
 export class MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -333,7 +343,7 @@ export class MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference extends 
   }
 
   public get internalValue(): MwaaEnvironmentLoggingConfigurationTaskLogs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -348,10 +358,12 @@ export class MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference extends 
 
   public set internalValue(value: MwaaEnvironmentLoggingConfigurationTaskLogs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._logLevel = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._logLevel = value.logLevel;
     }
@@ -412,6 +424,8 @@ export function mwaaEnvironmentLoggingConfigurationWebserverLogsToTerraform(stru
 }
 
 export class MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -422,7 +436,7 @@ export class MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference ext
   }
 
   public get internalValue(): MwaaEnvironmentLoggingConfigurationWebserverLogs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -437,10 +451,12 @@ export class MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference ext
 
   public set internalValue(value: MwaaEnvironmentLoggingConfigurationWebserverLogs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._logLevel = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._logLevel = value.logLevel;
     }
@@ -501,6 +517,8 @@ export function mwaaEnvironmentLoggingConfigurationWorkerLogsToTerraform(struct?
 }
 
 export class MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -511,7 +529,7 @@ export class MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference extend
   }
 
   public get internalValue(): MwaaEnvironmentLoggingConfigurationWorkerLogs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -526,10 +544,12 @@ export class MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference extend
 
   public set internalValue(value: MwaaEnvironmentLoggingConfigurationWorkerLogs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._logLevel = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._logLevel = value.logLevel;
     }
@@ -615,6 +635,8 @@ export function mwaaEnvironmentLoggingConfigurationToTerraform(struct?: MwaaEnvi
 }
 
 export class MwaaEnvironmentLoggingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -625,25 +647,25 @@ export class MwaaEnvironmentLoggingConfigurationOutputReference extends cdktf.Co
   }
 
   public get internalValue(): MwaaEnvironmentLoggingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dagProcessingLogs) {
+    if (this._dagProcessingLogs?.internalValue) {
       hasAnyValues = true;
       internalValueResult.dagProcessingLogs = this._dagProcessingLogs?.internalValue;
     }
-    if (this._schedulerLogs) {
+    if (this._schedulerLogs?.internalValue) {
       hasAnyValues = true;
       internalValueResult.schedulerLogs = this._schedulerLogs?.internalValue;
     }
-    if (this._taskLogs) {
+    if (this._taskLogs?.internalValue) {
       hasAnyValues = true;
       internalValueResult.taskLogs = this._taskLogs?.internalValue;
     }
-    if (this._webserverLogs) {
+    if (this._webserverLogs?.internalValue) {
       hasAnyValues = true;
       internalValueResult.webserverLogs = this._webserverLogs?.internalValue;
     }
-    if (this._workerLogs) {
+    if (this._workerLogs?.internalValue) {
       hasAnyValues = true;
       internalValueResult.workerLogs = this._workerLogs?.internalValue;
     }
@@ -652,6 +674,7 @@ export class MwaaEnvironmentLoggingConfigurationOutputReference extends cdktf.Co
 
   public set internalValue(value: MwaaEnvironmentLoggingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dagProcessingLogs.internalValue = undefined;
       this._schedulerLogs.internalValue = undefined;
       this._taskLogs.internalValue = undefined;
@@ -659,6 +682,7 @@ export class MwaaEnvironmentLoggingConfigurationOutputReference extends cdktf.Co
       this._workerLogs.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dagProcessingLogs.internalValue = value.dagProcessingLogs;
       this._schedulerLogs.internalValue = value.schedulerLogs;
       this._taskLogs.internalValue = value.taskLogs;
@@ -770,6 +794,8 @@ export function mwaaEnvironmentNetworkConfigurationToTerraform(struct?: MwaaEnvi
 }
 
 export class MwaaEnvironmentNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -780,7 +806,7 @@ export class MwaaEnvironmentNetworkConfigurationOutputReference extends cdktf.Co
   }
 
   public get internalValue(): MwaaEnvironmentNetworkConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._securityGroupIds) {
       hasAnyValues = true;
@@ -795,10 +821,12 @@ export class MwaaEnvironmentNetworkConfigurationOutputReference extends cdktf.Co
 
   public set internalValue(value: MwaaEnvironmentNetworkConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._securityGroupIds = undefined;
       this._subnetIds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._securityGroupIds = value.securityGroupIds;
       this._subnetIds = value.subnetIds;
     }

@@ -69,6 +69,8 @@ export function cloudwatchLogMetricFilterMetricTransformationToTerraform(struct?
 }
 
 export class CloudwatchLogMetricFilterMetricTransformationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -79,7 +81,7 @@ export class CloudwatchLogMetricFilterMetricTransformationOutputReference extend
   }
 
   public get internalValue(): CloudwatchLogMetricFilterMetricTransformation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._defaultValue) {
       hasAnyValues = true;
@@ -110,6 +112,7 @@ export class CloudwatchLogMetricFilterMetricTransformationOutputReference extend
 
   public set internalValue(value: CloudwatchLogMetricFilterMetricTransformation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._defaultValue = undefined;
       this._dimensions = undefined;
       this._name = undefined;
@@ -118,6 +121,7 @@ export class CloudwatchLogMetricFilterMetricTransformationOutputReference extend
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._defaultValue = value.defaultValue;
       this._dimensions = value.dimensions;
       this._name = value.name;

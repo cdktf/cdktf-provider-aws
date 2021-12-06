@@ -75,6 +75,8 @@ export function lakeformationPermissionsDataLocationToTerraform(struct?: Lakefor
 }
 
 export class LakeformationPermissionsDataLocationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -85,7 +87,7 @@ export class LakeformationPermissionsDataLocationOutputReference extends cdktf.C
   }
 
   public get internalValue(): LakeformationPermissionsDataLocation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
@@ -100,10 +102,12 @@ export class LakeformationPermissionsDataLocationOutputReference extends cdktf.C
 
   public set internalValue(value: LakeformationPermissionsDataLocation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._catalogId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._catalogId = value.catalogId;
     }
@@ -161,6 +165,8 @@ export function lakeformationPermissionsDatabaseToTerraform(struct?: Lakeformati
 }
 
 export class LakeformationPermissionsDatabaseOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -171,7 +177,7 @@ export class LakeformationPermissionsDatabaseOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): LakeformationPermissionsDatabase | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._catalogId) {
       hasAnyValues = true;
@@ -186,10 +192,12 @@ export class LakeformationPermissionsDatabaseOutputReference extends cdktf.Compl
 
   public set internalValue(value: LakeformationPermissionsDatabase | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._catalogId = undefined;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._catalogId = value.catalogId;
       this._name = value.name;
     }
@@ -257,6 +265,8 @@ export function lakeformationPermissionsTableToTerraform(struct?: LakeformationP
 }
 
 export class LakeformationPermissionsTableOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -267,7 +277,7 @@ export class LakeformationPermissionsTableOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): LakeformationPermissionsTable | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._catalogId) {
       hasAnyValues = true;
@@ -290,12 +300,14 @@ export class LakeformationPermissionsTableOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: LakeformationPermissionsTable | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._catalogId = undefined;
       this._databaseName = undefined;
       this._name = undefined;
       this._wildcard = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._catalogId = value.catalogId;
       this._databaseName = value.databaseName;
       this._name = value.name;
@@ -407,6 +419,8 @@ export function lakeformationPermissionsTableWithColumnsToTerraform(struct?: Lak
 }
 
 export class LakeformationPermissionsTableWithColumnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -417,7 +431,7 @@ export class LakeformationPermissionsTableWithColumnsOutputReference extends cdk
   }
 
   public get internalValue(): LakeformationPermissionsTableWithColumns | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._catalogId) {
       hasAnyValues = true;
@@ -448,6 +462,7 @@ export class LakeformationPermissionsTableWithColumnsOutputReference extends cdk
 
   public set internalValue(value: LakeformationPermissionsTableWithColumns | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._catalogId = undefined;
       this._columnNames = undefined;
       this._databaseName = undefined;
@@ -456,6 +471,7 @@ export class LakeformationPermissionsTableWithColumnsOutputReference extends cdk
       this._wildcard = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._catalogId = value.catalogId;
       this._columnNames = value.columnNames;
       this._databaseName = value.databaseName;

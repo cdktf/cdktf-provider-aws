@@ -48,6 +48,8 @@ export function lambdaAliasRoutingConfigToTerraform(struct?: LambdaAliasRoutingC
 }
 
 export class LambdaAliasRoutingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -58,7 +60,7 @@ export class LambdaAliasRoutingConfigOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): LambdaAliasRoutingConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._additionalVersionWeights) {
       hasAnyValues = true;
@@ -69,9 +71,11 @@ export class LambdaAliasRoutingConfigOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: LambdaAliasRoutingConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._additionalVersionWeights = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._additionalVersionWeights = value.additionalVersionWeights;
     }
   }

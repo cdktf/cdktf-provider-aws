@@ -85,6 +85,8 @@ export function quicksightDataSourceCredentialsCredentialPairToTerraform(struct?
 }
 
 export class QuicksightDataSourceCredentialsCredentialPairOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -95,7 +97,7 @@ export class QuicksightDataSourceCredentialsCredentialPairOutputReference extend
   }
 
   public get internalValue(): QuicksightDataSourceCredentialsCredentialPair | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._password) {
       hasAnyValues = true;
@@ -110,10 +112,12 @@ export class QuicksightDataSourceCredentialsCredentialPairOutputReference extend
 
   public set internalValue(value: QuicksightDataSourceCredentialsCredentialPair | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._password = undefined;
       this._username = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._password = value.password;
       this._username = value.username;
     }
@@ -170,6 +174,8 @@ export function quicksightDataSourceCredentialsToTerraform(struct?: QuicksightDa
 }
 
 export class QuicksightDataSourceCredentialsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -180,13 +186,13 @@ export class QuicksightDataSourceCredentialsOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): QuicksightDataSourceCredentials | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._copySourceArn) {
       hasAnyValues = true;
       internalValueResult.copySourceArn = this._copySourceArn;
     }
-    if (this._credentialPair) {
+    if (this._credentialPair?.internalValue) {
       hasAnyValues = true;
       internalValueResult.credentialPair = this._credentialPair?.internalValue;
     }
@@ -195,10 +201,12 @@ export class QuicksightDataSourceCredentialsOutputReference extends cdktf.Comple
 
   public set internalValue(value: QuicksightDataSourceCredentials | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._copySourceArn = undefined;
       this._credentialPair.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._copySourceArn = value.copySourceArn;
       this._credentialPair.internalValue = value.credentialPair;
     }
@@ -254,6 +262,8 @@ export function quicksightDataSourceParametersAmazonElasticsearchToTerraform(str
 }
 
 export class QuicksightDataSourceParametersAmazonElasticsearchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -264,7 +274,7 @@ export class QuicksightDataSourceParametersAmazonElasticsearchOutputReference ex
   }
 
   public get internalValue(): QuicksightDataSourceParametersAmazonElasticsearch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._domain) {
       hasAnyValues = true;
@@ -275,9 +285,11 @@ export class QuicksightDataSourceParametersAmazonElasticsearchOutputReference ex
 
   public set internalValue(value: QuicksightDataSourceParametersAmazonElasticsearch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._domain = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._domain = value.domain;
     }
   }
@@ -313,6 +325,8 @@ export function quicksightDataSourceParametersAthenaToTerraform(struct?: Quicksi
 }
 
 export class QuicksightDataSourceParametersAthenaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -323,7 +337,7 @@ export class QuicksightDataSourceParametersAthenaOutputReference extends cdktf.C
   }
 
   public get internalValue(): QuicksightDataSourceParametersAthena | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._workGroup) {
       hasAnyValues = true;
@@ -334,9 +348,11 @@ export class QuicksightDataSourceParametersAthenaOutputReference extends cdktf.C
 
   public set internalValue(value: QuicksightDataSourceParametersAthena | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._workGroup = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._workGroup = value.workGroup;
     }
   }
@@ -385,6 +401,8 @@ export function quicksightDataSourceParametersAuroraToTerraform(struct?: Quicksi
 }
 
 export class QuicksightDataSourceParametersAuroraOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -395,7 +413,7 @@ export class QuicksightDataSourceParametersAuroraOutputReference extends cdktf.C
   }
 
   public get internalValue(): QuicksightDataSourceParametersAurora | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._database) {
       hasAnyValues = true;
@@ -414,11 +432,13 @@ export class QuicksightDataSourceParametersAuroraOutputReference extends cdktf.C
 
   public set internalValue(value: QuicksightDataSourceParametersAurora | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._database = undefined;
       this._host = undefined;
       this._port = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._database = value.database;
       this._host = value.host;
       this._port = value.port;
@@ -492,6 +512,8 @@ export function quicksightDataSourceParametersAuroraPostgresqlToTerraform(struct
 }
 
 export class QuicksightDataSourceParametersAuroraPostgresqlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -502,7 +524,7 @@ export class QuicksightDataSourceParametersAuroraPostgresqlOutputReference exten
   }
 
   public get internalValue(): QuicksightDataSourceParametersAuroraPostgresql | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._database) {
       hasAnyValues = true;
@@ -521,11 +543,13 @@ export class QuicksightDataSourceParametersAuroraPostgresqlOutputReference exten
 
   public set internalValue(value: QuicksightDataSourceParametersAuroraPostgresql | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._database = undefined;
       this._host = undefined;
       this._port = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._database = value.database;
       this._host = value.host;
       this._port = value.port;
@@ -589,6 +613,8 @@ export function quicksightDataSourceParametersAwsIotAnalyticsToTerraform(struct?
 }
 
 export class QuicksightDataSourceParametersAwsIotAnalyticsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -599,7 +625,7 @@ export class QuicksightDataSourceParametersAwsIotAnalyticsOutputReference extend
   }
 
   public get internalValue(): QuicksightDataSourceParametersAwsIotAnalytics | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dataSetName) {
       hasAnyValues = true;
@@ -610,9 +636,11 @@ export class QuicksightDataSourceParametersAwsIotAnalyticsOutputReference extend
 
   public set internalValue(value: QuicksightDataSourceParametersAwsIotAnalytics | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dataSetName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dataSetName = value.dataSetName;
     }
   }
@@ -648,6 +676,8 @@ export function quicksightDataSourceParametersJiraToTerraform(struct?: Quicksigh
 }
 
 export class QuicksightDataSourceParametersJiraOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -658,7 +688,7 @@ export class QuicksightDataSourceParametersJiraOutputReference extends cdktf.Com
   }
 
   public get internalValue(): QuicksightDataSourceParametersJira | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._siteBaseUrl) {
       hasAnyValues = true;
@@ -669,9 +699,11 @@ export class QuicksightDataSourceParametersJiraOutputReference extends cdktf.Com
 
   public set internalValue(value: QuicksightDataSourceParametersJira | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._siteBaseUrl = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._siteBaseUrl = value.siteBaseUrl;
     }
   }
@@ -717,6 +749,8 @@ export function quicksightDataSourceParametersMariaDbToTerraform(struct?: Quicks
 }
 
 export class QuicksightDataSourceParametersMariaDbOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -727,7 +761,7 @@ export class QuicksightDataSourceParametersMariaDbOutputReference extends cdktf.
   }
 
   public get internalValue(): QuicksightDataSourceParametersMariaDb | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._database) {
       hasAnyValues = true;
@@ -746,11 +780,13 @@ export class QuicksightDataSourceParametersMariaDbOutputReference extends cdktf.
 
   public set internalValue(value: QuicksightDataSourceParametersMariaDb | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._database = undefined;
       this._host = undefined;
       this._port = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._database = value.database;
       this._host = value.host;
       this._port = value.port;
@@ -824,6 +860,8 @@ export function quicksightDataSourceParametersMysqlToTerraform(struct?: Quicksig
 }
 
 export class QuicksightDataSourceParametersMysqlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -834,7 +872,7 @@ export class QuicksightDataSourceParametersMysqlOutputReference extends cdktf.Co
   }
 
   public get internalValue(): QuicksightDataSourceParametersMysql | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._database) {
       hasAnyValues = true;
@@ -853,11 +891,13 @@ export class QuicksightDataSourceParametersMysqlOutputReference extends cdktf.Co
 
   public set internalValue(value: QuicksightDataSourceParametersMysql | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._database = undefined;
       this._host = undefined;
       this._port = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._database = value.database;
       this._host = value.host;
       this._port = value.port;
@@ -931,6 +971,8 @@ export function quicksightDataSourceParametersOracleToTerraform(struct?: Quicksi
 }
 
 export class QuicksightDataSourceParametersOracleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -941,7 +983,7 @@ export class QuicksightDataSourceParametersOracleOutputReference extends cdktf.C
   }
 
   public get internalValue(): QuicksightDataSourceParametersOracle | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._database) {
       hasAnyValues = true;
@@ -960,11 +1002,13 @@ export class QuicksightDataSourceParametersOracleOutputReference extends cdktf.C
 
   public set internalValue(value: QuicksightDataSourceParametersOracle | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._database = undefined;
       this._host = undefined;
       this._port = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._database = value.database;
       this._host = value.host;
       this._port = value.port;
@@ -1038,6 +1082,8 @@ export function quicksightDataSourceParametersPostgresqlToTerraform(struct?: Qui
 }
 
 export class QuicksightDataSourceParametersPostgresqlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1048,7 +1094,7 @@ export class QuicksightDataSourceParametersPostgresqlOutputReference extends cdk
   }
 
   public get internalValue(): QuicksightDataSourceParametersPostgresql | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._database) {
       hasAnyValues = true;
@@ -1067,11 +1113,13 @@ export class QuicksightDataSourceParametersPostgresqlOutputReference extends cdk
 
   public set internalValue(value: QuicksightDataSourceParametersPostgresql | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._database = undefined;
       this._host = undefined;
       this._port = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._database = value.database;
       this._host = value.host;
       this._port = value.port;
@@ -1145,6 +1193,8 @@ export function quicksightDataSourceParametersPrestoToTerraform(struct?: Quicksi
 }
 
 export class QuicksightDataSourceParametersPrestoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1155,7 +1205,7 @@ export class QuicksightDataSourceParametersPrestoOutputReference extends cdktf.C
   }
 
   public get internalValue(): QuicksightDataSourceParametersPresto | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._catalog) {
       hasAnyValues = true;
@@ -1174,11 +1224,13 @@ export class QuicksightDataSourceParametersPrestoOutputReference extends cdktf.C
 
   public set internalValue(value: QuicksightDataSourceParametersPresto | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._catalog = undefined;
       this._host = undefined;
       this._port = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._catalog = value.catalog;
       this._host = value.host;
       this._port = value.port;
@@ -1247,6 +1299,8 @@ export function quicksightDataSourceParametersRdsToTerraform(struct?: Quicksight
 }
 
 export class QuicksightDataSourceParametersRdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1257,7 +1311,7 @@ export class QuicksightDataSourceParametersRdsOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): QuicksightDataSourceParametersRds | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._database) {
       hasAnyValues = true;
@@ -1272,10 +1326,12 @@ export class QuicksightDataSourceParametersRdsOutputReference extends cdktf.Comp
 
   public set internalValue(value: QuicksightDataSourceParametersRds | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._database = undefined;
       this._instanceId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._database = value.database;
       this._instanceId = value.instanceId;
     }
@@ -1340,6 +1396,8 @@ export function quicksightDataSourceParametersRedshiftToTerraform(struct?: Quick
 }
 
 export class QuicksightDataSourceParametersRedshiftOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1350,7 +1408,7 @@ export class QuicksightDataSourceParametersRedshiftOutputReference extends cdktf
   }
 
   public get internalValue(): QuicksightDataSourceParametersRedshift | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._clusterId) {
       hasAnyValues = true;
@@ -1373,12 +1431,14 @@ export class QuicksightDataSourceParametersRedshiftOutputReference extends cdktf
 
   public set internalValue(value: QuicksightDataSourceParametersRedshift | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clusterId = undefined;
       this._database = undefined;
       this._host = undefined;
       this._port = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clusterId = value.clusterId;
       this._database = value.database;
       this._host = value.host;
@@ -1470,6 +1530,8 @@ export function quicksightDataSourceParametersS3ManifestFileLocationToTerraform(
 }
 
 export class QuicksightDataSourceParametersS3ManifestFileLocationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1480,7 +1542,7 @@ export class QuicksightDataSourceParametersS3ManifestFileLocationOutputReference
   }
 
   public get internalValue(): QuicksightDataSourceParametersS3ManifestFileLocation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucket) {
       hasAnyValues = true;
@@ -1495,10 +1557,12 @@ export class QuicksightDataSourceParametersS3ManifestFileLocationOutputReference
 
   public set internalValue(value: QuicksightDataSourceParametersS3ManifestFileLocation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucket = undefined;
       this._key = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucket = value.bucket;
       this._key = value.key;
     }
@@ -1550,6 +1614,8 @@ export function quicksightDataSourceParametersS3ToTerraform(struct?: QuicksightD
 }
 
 export class QuicksightDataSourceParametersS3OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1560,9 +1626,9 @@ export class QuicksightDataSourceParametersS3OutputReference extends cdktf.Compl
   }
 
   public get internalValue(): QuicksightDataSourceParametersS3 | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._manifestFileLocation) {
+    if (this._manifestFileLocation?.internalValue) {
       hasAnyValues = true;
       internalValueResult.manifestFileLocation = this._manifestFileLocation?.internalValue;
     }
@@ -1571,9 +1637,11 @@ export class QuicksightDataSourceParametersS3OutputReference extends cdktf.Compl
 
   public set internalValue(value: QuicksightDataSourceParametersS3 | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._manifestFileLocation.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._manifestFileLocation.internalValue = value.manifestFileLocation;
     }
   }
@@ -1609,6 +1677,8 @@ export function quicksightDataSourceParametersServiceNowToTerraform(struct?: Qui
 }
 
 export class QuicksightDataSourceParametersServiceNowOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1619,7 +1689,7 @@ export class QuicksightDataSourceParametersServiceNowOutputReference extends cdk
   }
 
   public get internalValue(): QuicksightDataSourceParametersServiceNow | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._siteBaseUrl) {
       hasAnyValues = true;
@@ -1630,9 +1700,11 @@ export class QuicksightDataSourceParametersServiceNowOutputReference extends cdk
 
   public set internalValue(value: QuicksightDataSourceParametersServiceNow | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._siteBaseUrl = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._siteBaseUrl = value.siteBaseUrl;
     }
   }
@@ -1678,6 +1750,8 @@ export function quicksightDataSourceParametersSnowflakeToTerraform(struct?: Quic
 }
 
 export class QuicksightDataSourceParametersSnowflakeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1688,7 +1762,7 @@ export class QuicksightDataSourceParametersSnowflakeOutputReference extends cdkt
   }
 
   public get internalValue(): QuicksightDataSourceParametersSnowflake | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._database) {
       hasAnyValues = true;
@@ -1707,11 +1781,13 @@ export class QuicksightDataSourceParametersSnowflakeOutputReference extends cdkt
 
   public set internalValue(value: QuicksightDataSourceParametersSnowflake | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._database = undefined;
       this._host = undefined;
       this._warehouse = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._database = value.database;
       this._host = value.host;
       this._warehouse = value.warehouse;
@@ -1780,6 +1856,8 @@ export function quicksightDataSourceParametersSparkToTerraform(struct?: Quicksig
 }
 
 export class QuicksightDataSourceParametersSparkOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1790,7 +1868,7 @@ export class QuicksightDataSourceParametersSparkOutputReference extends cdktf.Co
   }
 
   public get internalValue(): QuicksightDataSourceParametersSpark | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._host) {
       hasAnyValues = true;
@@ -1805,10 +1883,12 @@ export class QuicksightDataSourceParametersSparkOutputReference extends cdktf.Co
 
   public set internalValue(value: QuicksightDataSourceParametersSpark | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._host = undefined;
       this._port = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._host = value.host;
       this._port = value.port;
     }
@@ -1868,6 +1948,8 @@ export function quicksightDataSourceParametersSqlServerToTerraform(struct?: Quic
 }
 
 export class QuicksightDataSourceParametersSqlServerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1878,7 +1960,7 @@ export class QuicksightDataSourceParametersSqlServerOutputReference extends cdkt
   }
 
   public get internalValue(): QuicksightDataSourceParametersSqlServer | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._database) {
       hasAnyValues = true;
@@ -1897,11 +1979,13 @@ export class QuicksightDataSourceParametersSqlServerOutputReference extends cdkt
 
   public set internalValue(value: QuicksightDataSourceParametersSqlServer | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._database = undefined;
       this._host = undefined;
       this._port = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._database = value.database;
       this._host = value.host;
       this._port = value.port;
@@ -1975,6 +2059,8 @@ export function quicksightDataSourceParametersTeradataToTerraform(struct?: Quick
 }
 
 export class QuicksightDataSourceParametersTeradataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1985,7 +2071,7 @@ export class QuicksightDataSourceParametersTeradataOutputReference extends cdktf
   }
 
   public get internalValue(): QuicksightDataSourceParametersTeradata | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._database) {
       hasAnyValues = true;
@@ -2004,11 +2090,13 @@ export class QuicksightDataSourceParametersTeradataOutputReference extends cdktf
 
   public set internalValue(value: QuicksightDataSourceParametersTeradata | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._database = undefined;
       this._host = undefined;
       this._port = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._database = value.database;
       this._host = value.host;
       this._port = value.port;
@@ -2077,6 +2165,8 @@ export function quicksightDataSourceParametersTwitterToTerraform(struct?: Quicks
 }
 
 export class QuicksightDataSourceParametersTwitterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2087,7 +2177,7 @@ export class QuicksightDataSourceParametersTwitterOutputReference extends cdktf.
   }
 
   public get internalValue(): QuicksightDataSourceParametersTwitter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxRows) {
       hasAnyValues = true;
@@ -2102,10 +2192,12 @@ export class QuicksightDataSourceParametersTwitterOutputReference extends cdktf.
 
   public set internalValue(value: QuicksightDataSourceParametersTwitter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxRows = undefined;
       this._query = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxRows = value.maxRows;
       this._query = value.query;
     }
@@ -2290,6 +2382,8 @@ export function quicksightDataSourceParametersToTerraform(struct?: QuicksightDat
 }
 
 export class QuicksightDataSourceParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2300,85 +2394,85 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): QuicksightDataSourceParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._amazonElasticsearch) {
+    if (this._amazonElasticsearch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.amazonElasticsearch = this._amazonElasticsearch?.internalValue;
     }
-    if (this._athena) {
+    if (this._athena?.internalValue) {
       hasAnyValues = true;
       internalValueResult.athena = this._athena?.internalValue;
     }
-    if (this._aurora) {
+    if (this._aurora?.internalValue) {
       hasAnyValues = true;
       internalValueResult.aurora = this._aurora?.internalValue;
     }
-    if (this._auroraPostgresql) {
+    if (this._auroraPostgresql?.internalValue) {
       hasAnyValues = true;
       internalValueResult.auroraPostgresql = this._auroraPostgresql?.internalValue;
     }
-    if (this._awsIotAnalytics) {
+    if (this._awsIotAnalytics?.internalValue) {
       hasAnyValues = true;
       internalValueResult.awsIotAnalytics = this._awsIotAnalytics?.internalValue;
     }
-    if (this._jira) {
+    if (this._jira?.internalValue) {
       hasAnyValues = true;
       internalValueResult.jira = this._jira?.internalValue;
     }
-    if (this._mariaDb) {
+    if (this._mariaDb?.internalValue) {
       hasAnyValues = true;
       internalValueResult.mariaDb = this._mariaDb?.internalValue;
     }
-    if (this._mysql) {
+    if (this._mysql?.internalValue) {
       hasAnyValues = true;
       internalValueResult.mysql = this._mysql?.internalValue;
     }
-    if (this._oracle) {
+    if (this._oracle?.internalValue) {
       hasAnyValues = true;
       internalValueResult.oracle = this._oracle?.internalValue;
     }
-    if (this._postgresql) {
+    if (this._postgresql?.internalValue) {
       hasAnyValues = true;
       internalValueResult.postgresql = this._postgresql?.internalValue;
     }
-    if (this._presto) {
+    if (this._presto?.internalValue) {
       hasAnyValues = true;
       internalValueResult.presto = this._presto?.internalValue;
     }
-    if (this._rds) {
+    if (this._rds?.internalValue) {
       hasAnyValues = true;
       internalValueResult.rds = this._rds?.internalValue;
     }
-    if (this._redshift) {
+    if (this._redshift?.internalValue) {
       hasAnyValues = true;
       internalValueResult.redshift = this._redshift?.internalValue;
     }
-    if (this._s3) {
+    if (this._s3?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3 = this._s3?.internalValue;
     }
-    if (this._serviceNow) {
+    if (this._serviceNow?.internalValue) {
       hasAnyValues = true;
       internalValueResult.serviceNow = this._serviceNow?.internalValue;
     }
-    if (this._snowflake) {
+    if (this._snowflake?.internalValue) {
       hasAnyValues = true;
       internalValueResult.snowflake = this._snowflake?.internalValue;
     }
-    if (this._spark) {
+    if (this._spark?.internalValue) {
       hasAnyValues = true;
       internalValueResult.spark = this._spark?.internalValue;
     }
-    if (this._sqlServer) {
+    if (this._sqlServer?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sqlServer = this._sqlServer?.internalValue;
     }
-    if (this._teradata) {
+    if (this._teradata?.internalValue) {
       hasAnyValues = true;
       internalValueResult.teradata = this._teradata?.internalValue;
     }
-    if (this._twitter) {
+    if (this._twitter?.internalValue) {
       hasAnyValues = true;
       internalValueResult.twitter = this._twitter?.internalValue;
     }
@@ -2387,6 +2481,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
 
   public set internalValue(value: QuicksightDataSourceParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._amazonElasticsearch.internalValue = undefined;
       this._athena.internalValue = undefined;
       this._aurora.internalValue = undefined;
@@ -2409,6 +2504,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
       this._twitter.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._amazonElasticsearch.internalValue = value.amazonElasticsearch;
       this._athena.internalValue = value.athena;
       this._aurora.internalValue = value.aurora;
@@ -2792,6 +2888,8 @@ export function quicksightDataSourceSslPropertiesToTerraform(struct?: Quicksight
 }
 
 export class QuicksightDataSourceSslPropertiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2802,7 +2900,7 @@ export class QuicksightDataSourceSslPropertiesOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): QuicksightDataSourceSslProperties | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._disableSsl) {
       hasAnyValues = true;
@@ -2813,9 +2911,11 @@ export class QuicksightDataSourceSslPropertiesOutputReference extends cdktf.Comp
 
   public set internalValue(value: QuicksightDataSourceSslProperties | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._disableSsl = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._disableSsl = value.disableSsl;
     }
   }
@@ -2851,6 +2951,8 @@ export function quicksightDataSourceVpcConnectionPropertiesToTerraform(struct?: 
 }
 
 export class QuicksightDataSourceVpcConnectionPropertiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2861,7 +2963,7 @@ export class QuicksightDataSourceVpcConnectionPropertiesOutputReference extends 
   }
 
   public get internalValue(): QuicksightDataSourceVpcConnectionProperties | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._vpcConnectionArn) {
       hasAnyValues = true;
@@ -2872,9 +2974,11 @@ export class QuicksightDataSourceVpcConnectionPropertiesOutputReference extends 
 
   public set internalValue(value: QuicksightDataSourceVpcConnectionProperties | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._vpcConnectionArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._vpcConnectionArn = value.vpcConnectionArn;
     }
   }

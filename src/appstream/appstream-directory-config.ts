@@ -45,6 +45,8 @@ export function appstreamDirectoryConfigServiceAccountCredentialsToTerraform(str
 }
 
 export class AppstreamDirectoryConfigServiceAccountCredentialsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -55,7 +57,7 @@ export class AppstreamDirectoryConfigServiceAccountCredentialsOutputReference ex
   }
 
   public get internalValue(): AppstreamDirectoryConfigServiceAccountCredentials | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accountName) {
       hasAnyValues = true;
@@ -70,10 +72,12 @@ export class AppstreamDirectoryConfigServiceAccountCredentialsOutputReference ex
 
   public set internalValue(value: AppstreamDirectoryConfigServiceAccountCredentials | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accountName = undefined;
       this._accountPassword = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accountName = value.accountName;
       this._accountPassword = value.accountPassword;
     }

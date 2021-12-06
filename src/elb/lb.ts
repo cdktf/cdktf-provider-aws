@@ -122,6 +122,8 @@ export function lbAccessLogsToTerraform(struct?: LbAccessLogsOutputReference | L
 }
 
 export class LbAccessLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -132,7 +134,7 @@ export class LbAccessLogsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): LbAccessLogs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucket) {
       hasAnyValues = true;
@@ -151,11 +153,13 @@ export class LbAccessLogsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: LbAccessLogs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucket = undefined;
       this._enabled = undefined;
       this._prefix = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucket = value.bucket;
       this._enabled = value.enabled;
       this._prefix = value.prefix;
@@ -267,6 +271,8 @@ export function lbTimeoutsToTerraform(struct?: LbTimeoutsOutputReference | LbTim
 }
 
 export class LbTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -277,7 +283,7 @@ export class LbTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): LbTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -296,11 +302,13 @@ export class LbTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: LbTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;

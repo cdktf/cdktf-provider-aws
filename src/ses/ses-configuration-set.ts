@@ -44,6 +44,8 @@ export function sesConfigurationSetDeliveryOptionsToTerraform(struct?: SesConfig
 }
 
 export class SesConfigurationSetDeliveryOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -54,7 +56,7 @@ export class SesConfigurationSetDeliveryOptionsOutputReference extends cdktf.Com
   }
 
   public get internalValue(): SesConfigurationSetDeliveryOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._tlsPolicy) {
       hasAnyValues = true;
@@ -65,9 +67,11 @@ export class SesConfigurationSetDeliveryOptionsOutputReference extends cdktf.Com
 
   public set internalValue(value: SesConfigurationSetDeliveryOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._tlsPolicy = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._tlsPolicy = value.tlsPolicy;
     }
   }

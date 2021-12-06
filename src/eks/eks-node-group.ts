@@ -151,6 +151,8 @@ export function eksNodeGroupLaunchTemplateToTerraform(struct?: EksNodeGroupLaunc
 }
 
 export class EksNodeGroupLaunchTemplateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -161,7 +163,7 @@ export class EksNodeGroupLaunchTemplateOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): EksNodeGroupLaunchTemplate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -176,10 +178,12 @@ export class EksNodeGroupLaunchTemplateOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: EksNodeGroupLaunchTemplate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._version = value.version;
     }
@@ -242,6 +246,8 @@ export function eksNodeGroupRemoteAccessToTerraform(struct?: EksNodeGroupRemoteA
 }
 
 export class EksNodeGroupRemoteAccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -252,7 +258,7 @@ export class EksNodeGroupRemoteAccessOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): EksNodeGroupRemoteAccess | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._ec2SshKey) {
       hasAnyValues = true;
@@ -267,10 +273,12 @@ export class EksNodeGroupRemoteAccessOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: EksNodeGroupRemoteAccess | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._ec2SshKey = undefined;
       this._sourceSecurityGroupIds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._ec2SshKey = value.ec2SshKey;
       this._sourceSecurityGroupIds = value.sourceSecurityGroupIds;
     }
@@ -336,6 +344,8 @@ export function eksNodeGroupScalingConfigToTerraform(struct?: EksNodeGroupScalin
 }
 
 export class EksNodeGroupScalingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -346,7 +356,7 @@ export class EksNodeGroupScalingConfigOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): EksNodeGroupScalingConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._desiredSize) {
       hasAnyValues = true;
@@ -365,11 +375,13 @@ export class EksNodeGroupScalingConfigOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: EksNodeGroupScalingConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._desiredSize = undefined;
       this._maxSize = undefined;
       this._minSize = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._desiredSize = value.desiredSize;
       this._maxSize = value.maxSize;
       this._minSize = value.minSize;
@@ -470,6 +482,8 @@ export function eksNodeGroupTimeoutsToTerraform(struct?: EksNodeGroupTimeoutsOut
 }
 
 export class EksNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -480,7 +494,7 @@ export class EksNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): EksNodeGroupTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -499,11 +513,13 @@ export class EksNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: EksNodeGroupTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -581,6 +597,8 @@ export function eksNodeGroupUpdateConfigToTerraform(struct?: EksNodeGroupUpdateC
 }
 
 export class EksNodeGroupUpdateConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -591,7 +609,7 @@ export class EksNodeGroupUpdateConfigOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): EksNodeGroupUpdateConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxUnavailable) {
       hasAnyValues = true;
@@ -606,10 +624,12 @@ export class EksNodeGroupUpdateConfigOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: EksNodeGroupUpdateConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxUnavailable = undefined;
       this._maxUnavailablePercentage = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxUnavailable = value.maxUnavailable;
       this._maxUnavailablePercentage = value.maxUnavailablePercentage;
     }

@@ -102,6 +102,8 @@ export function imagebuilderImageImageTestsConfigurationToTerraform(struct?: Ima
 }
 
 export class ImagebuilderImageImageTestsConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -112,7 +114,7 @@ export class ImagebuilderImageImageTestsConfigurationOutputReference extends cdk
   }
 
   public get internalValue(): ImagebuilderImageImageTestsConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._imageTestsEnabled) {
       hasAnyValues = true;
@@ -127,10 +129,12 @@ export class ImagebuilderImageImageTestsConfigurationOutputReference extends cdk
 
   public set internalValue(value: ImagebuilderImageImageTestsConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._imageTestsEnabled = undefined;
       this._timeoutMinutes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._imageTestsEnabled = value.imageTestsEnabled;
       this._timeoutMinutes = value.timeoutMinutes;
     }
@@ -186,6 +190,8 @@ export function imagebuilderImageTimeoutsToTerraform(struct?: ImagebuilderImageT
 }
 
 export class ImagebuilderImageTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -196,7 +202,7 @@ export class ImagebuilderImageTimeoutsOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): ImagebuilderImageTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -207,9 +213,11 @@ export class ImagebuilderImageTimeoutsOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: ImagebuilderImageTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
     }
   }

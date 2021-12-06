@@ -74,6 +74,8 @@ export function glueConnectionPhysicalConnectionRequirementsToTerraform(struct?:
 }
 
 export class GlueConnectionPhysicalConnectionRequirementsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -84,7 +86,7 @@ export class GlueConnectionPhysicalConnectionRequirementsOutputReference extends
   }
 
   public get internalValue(): GlueConnectionPhysicalConnectionRequirements | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._availabilityZone) {
       hasAnyValues = true;
@@ -103,11 +105,13 @@ export class GlueConnectionPhysicalConnectionRequirementsOutputReference extends
 
   public set internalValue(value: GlueConnectionPhysicalConnectionRequirements | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._availabilityZone = undefined;
       this._securityGroupIdList = undefined;
       this._subnetId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._availabilityZone = value.availabilityZone;
       this._securityGroupIdList = value.securityGroupIdList;
       this._subnetId = value.subnetId;

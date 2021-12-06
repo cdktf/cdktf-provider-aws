@@ -128,6 +128,8 @@ export function lexBotAbortStatementToTerraform(struct?: LexBotAbortStatementOut
 }
 
 export class LexBotAbortStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -138,7 +140,7 @@ export class LexBotAbortStatementOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): LexBotAbortStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._responseCard) {
       hasAnyValues = true;
@@ -153,10 +155,12 @@ export class LexBotAbortStatementOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: LexBotAbortStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._responseCard = undefined;
       this._message = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._responseCard = value.responseCard;
       this._message = value.message;
     }
@@ -249,6 +253,8 @@ export function lexBotClarificationPromptToTerraform(struct?: LexBotClarificatio
 }
 
 export class LexBotClarificationPromptOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -259,7 +265,7 @@ export class LexBotClarificationPromptOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): LexBotClarificationPrompt | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxAttempts) {
       hasAnyValues = true;
@@ -278,11 +284,13 @@ export class LexBotClarificationPromptOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: LexBotClarificationPrompt | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxAttempts = undefined;
       this._responseCard = undefined;
       this._message = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxAttempts = value.maxAttempts;
       this._responseCard = value.responseCard;
       this._message = value.message;
@@ -382,6 +390,8 @@ export function lexBotTimeoutsToTerraform(struct?: LexBotTimeoutsOutputReference
 }
 
 export class LexBotTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -392,7 +402,7 @@ export class LexBotTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): LexBotTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -411,11 +421,13 @@ export class LexBotTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: LexBotTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;

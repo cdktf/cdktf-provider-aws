@@ -72,6 +72,8 @@ export function sfnStateMachineLoggingConfigurationToTerraform(struct?: SfnState
 }
 
 export class SfnStateMachineLoggingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -82,7 +84,7 @@ export class SfnStateMachineLoggingConfigurationOutputReference extends cdktf.Co
   }
 
   public get internalValue(): SfnStateMachineLoggingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._includeExecutionData) {
       hasAnyValues = true;
@@ -101,11 +103,13 @@ export class SfnStateMachineLoggingConfigurationOutputReference extends cdktf.Co
 
   public set internalValue(value: SfnStateMachineLoggingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._includeExecutionData = undefined;
       this._level = undefined;
       this._logDestination = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._includeExecutionData = value.includeExecutionData;
       this._level = value.level;
       this._logDestination = value.logDestination;
@@ -178,6 +182,8 @@ export function sfnStateMachineTracingConfigurationToTerraform(struct?: SfnState
 }
 
 export class SfnStateMachineTracingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -188,7 +194,7 @@ export class SfnStateMachineTracingConfigurationOutputReference extends cdktf.Co
   }
 
   public get internalValue(): SfnStateMachineTracingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -199,9 +205,11 @@ export class SfnStateMachineTracingConfigurationOutputReference extends cdktf.Co
 
   public set internalValue(value: SfnStateMachineTracingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
     }
   }

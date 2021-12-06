@@ -109,6 +109,8 @@ export function batchJobDefinitionRetryStrategyToTerraform(struct?: BatchJobDefi
 }
 
 export class BatchJobDefinitionRetryStrategyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -119,7 +121,7 @@ export class BatchJobDefinitionRetryStrategyOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): BatchJobDefinitionRetryStrategy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._attempts) {
       hasAnyValues = true;
@@ -134,10 +136,12 @@ export class BatchJobDefinitionRetryStrategyOutputReference extends cdktf.Comple
 
   public set internalValue(value: BatchJobDefinitionRetryStrategy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._attempts = undefined;
       this._evaluateOnExit = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._attempts = value.attempts;
       this._evaluateOnExit = value.evaluateOnExit;
     }
@@ -194,6 +198,8 @@ export function batchJobDefinitionTimeoutToTerraform(struct?: BatchJobDefinition
 }
 
 export class BatchJobDefinitionTimeoutOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -204,7 +210,7 @@ export class BatchJobDefinitionTimeoutOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): BatchJobDefinitionTimeout | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._attemptDurationSeconds) {
       hasAnyValues = true;
@@ -215,9 +221,11 @@ export class BatchJobDefinitionTimeoutOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: BatchJobDefinitionTimeout | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._attemptDurationSeconds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._attemptDurationSeconds = value.attemptDurationSeconds;
     }
   }

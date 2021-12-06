@@ -60,6 +60,8 @@ export function apiGatewayDocumentationPartLocationToTerraform(struct?: ApiGatew
 }
 
 export class ApiGatewayDocumentationPartLocationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -70,7 +72,7 @@ export class ApiGatewayDocumentationPartLocationOutputReference extends cdktf.Co
   }
 
   public get internalValue(): ApiGatewayDocumentationPartLocation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._method) {
       hasAnyValues = true;
@@ -97,6 +99,7 @@ export class ApiGatewayDocumentationPartLocationOutputReference extends cdktf.Co
 
   public set internalValue(value: ApiGatewayDocumentationPartLocation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._method = undefined;
       this._name = undefined;
       this._path = undefined;
@@ -104,6 +107,7 @@ export class ApiGatewayDocumentationPartLocationOutputReference extends cdktf.Co
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._method = value.method;
       this._name = value.name;
       this._path = value.path;

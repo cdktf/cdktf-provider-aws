@@ -286,6 +286,8 @@ export function iotTopicRuleDynamodbv2PutItemToTerraform(struct?: IotTopicRuleDy
 }
 
 export class IotTopicRuleDynamodbv2PutItemOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -296,7 +298,7 @@ export class IotTopicRuleDynamodbv2PutItemOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): IotTopicRuleDynamodbv2PutItem | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._tableName) {
       hasAnyValues = true;
@@ -307,9 +309,11 @@ export class IotTopicRuleDynamodbv2PutItemOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: IotTopicRuleDynamodbv2PutItem | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._tableName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._tableName = value.tableName;
     }
   }
@@ -421,6 +425,8 @@ export function iotTopicRuleErrorActionCloudwatchAlarmToTerraform(struct?: IotTo
 }
 
 export class IotTopicRuleErrorActionCloudwatchAlarmOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -431,7 +437,7 @@ export class IotTopicRuleErrorActionCloudwatchAlarmOutputReference extends cdktf
   }
 
   public get internalValue(): IotTopicRuleErrorActionCloudwatchAlarm | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._alarmName) {
       hasAnyValues = true;
@@ -454,12 +460,14 @@ export class IotTopicRuleErrorActionCloudwatchAlarmOutputReference extends cdktf
 
   public set internalValue(value: IotTopicRuleErrorActionCloudwatchAlarm | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._alarmName = undefined;
       this._roleArn = undefined;
       this._stateReason = undefined;
       this._stateValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._alarmName = value.alarmName;
       this._roleArn = value.roleArn;
       this._stateReason = value.stateReason;
@@ -562,6 +570,8 @@ export function iotTopicRuleErrorActionCloudwatchMetricToTerraform(struct?: IotT
 }
 
 export class IotTopicRuleErrorActionCloudwatchMetricOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -572,7 +582,7 @@ export class IotTopicRuleErrorActionCloudwatchMetricOutputReference extends cdkt
   }
 
   public get internalValue(): IotTopicRuleErrorActionCloudwatchMetric | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._metricName) {
       hasAnyValues = true;
@@ -603,6 +613,7 @@ export class IotTopicRuleErrorActionCloudwatchMetricOutputReference extends cdkt
 
   public set internalValue(value: IotTopicRuleErrorActionCloudwatchMetric | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._metricName = undefined;
       this._metricNamespace = undefined;
       this._metricTimestamp = undefined;
@@ -611,6 +622,7 @@ export class IotTopicRuleErrorActionCloudwatchMetricOutputReference extends cdkt
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._metricName = value.metricName;
       this._metricNamespace = value.metricNamespace;
       this._metricTimestamp = value.metricTimestamp;
@@ -764,6 +776,8 @@ export function iotTopicRuleErrorActionDynamodbToTerraform(struct?: IotTopicRule
 }
 
 export class IotTopicRuleErrorActionDynamodbOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -774,7 +788,7 @@ export class IotTopicRuleErrorActionDynamodbOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): IotTopicRuleErrorActionDynamodb | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._hashKeyField) {
       hasAnyValues = true;
@@ -821,6 +835,7 @@ export class IotTopicRuleErrorActionDynamodbOutputReference extends cdktf.Comple
 
   public set internalValue(value: IotTopicRuleErrorActionDynamodb | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._hashKeyField = undefined;
       this._hashKeyType = undefined;
       this._hashKeyValue = undefined;
@@ -833,6 +848,7 @@ export class IotTopicRuleErrorActionDynamodbOutputReference extends cdktf.Comple
       this._tableName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._hashKeyField = value.hashKeyField;
       this._hashKeyType = value.hashKeyType;
       this._hashKeyValue = value.hashKeyValue;
@@ -1012,6 +1028,8 @@ export function iotTopicRuleErrorActionDynamodbv2PutItemToTerraform(struct?: Iot
 }
 
 export class IotTopicRuleErrorActionDynamodbv2PutItemOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1022,7 +1040,7 @@ export class IotTopicRuleErrorActionDynamodbv2PutItemOutputReference extends cdk
   }
 
   public get internalValue(): IotTopicRuleErrorActionDynamodbv2PutItem | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._tableName) {
       hasAnyValues = true;
@@ -1033,9 +1051,11 @@ export class IotTopicRuleErrorActionDynamodbv2PutItemOutputReference extends cdk
 
   public set internalValue(value: IotTopicRuleErrorActionDynamodbv2PutItem | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._tableName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._tableName = value.tableName;
     }
   }
@@ -1078,6 +1098,8 @@ export function iotTopicRuleErrorActionDynamodbv2ToTerraform(struct?: IotTopicRu
 }
 
 export class IotTopicRuleErrorActionDynamodbv2OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1088,13 +1110,13 @@ export class IotTopicRuleErrorActionDynamodbv2OutputReference extends cdktf.Comp
   }
 
   public get internalValue(): IotTopicRuleErrorActionDynamodbv2 | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._roleArn) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._putItem) {
+    if (this._putItem?.internalValue) {
       hasAnyValues = true;
       internalValueResult.putItem = this._putItem?.internalValue;
     }
@@ -1103,10 +1125,12 @@ export class IotTopicRuleErrorActionDynamodbv2OutputReference extends cdktf.Comp
 
   public set internalValue(value: IotTopicRuleErrorActionDynamodbv2 | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._roleArn = undefined;
       this._putItem.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._roleArn = value.roleArn;
       this._putItem.internalValue = value.putItem;
     }
@@ -1179,6 +1203,8 @@ export function iotTopicRuleErrorActionElasticsearchToTerraform(struct?: IotTopi
 }
 
 export class IotTopicRuleErrorActionElasticsearchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1189,7 +1215,7 @@ export class IotTopicRuleErrorActionElasticsearchOutputReference extends cdktf.C
   }
 
   public get internalValue(): IotTopicRuleErrorActionElasticsearch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._endpoint) {
       hasAnyValues = true;
@@ -1216,6 +1242,7 @@ export class IotTopicRuleErrorActionElasticsearchOutputReference extends cdktf.C
 
   public set internalValue(value: IotTopicRuleErrorActionElasticsearch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._endpoint = undefined;
       this._id = undefined;
       this._index = undefined;
@@ -1223,6 +1250,7 @@ export class IotTopicRuleErrorActionElasticsearchOutputReference extends cdktf.C
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._endpoint = value.endpoint;
       this._id = value.id;
       this._index = value.index;
@@ -1324,6 +1352,8 @@ export function iotTopicRuleErrorActionFirehoseToTerraform(struct?: IotTopicRule
 }
 
 export class IotTopicRuleErrorActionFirehoseOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1334,7 +1364,7 @@ export class IotTopicRuleErrorActionFirehoseOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): IotTopicRuleErrorActionFirehose | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._deliveryStreamName) {
       hasAnyValues = true;
@@ -1353,11 +1383,13 @@ export class IotTopicRuleErrorActionFirehoseOutputReference extends cdktf.Comple
 
   public set internalValue(value: IotTopicRuleErrorActionFirehose | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._deliveryStreamName = undefined;
       this._roleArn = undefined;
       this._separator = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._deliveryStreamName = value.deliveryStreamName;
       this._roleArn = value.roleArn;
       this._separator = value.separator;
@@ -1429,6 +1461,8 @@ export function iotTopicRuleErrorActionIotAnalyticsToTerraform(struct?: IotTopic
 }
 
 export class IotTopicRuleErrorActionIotAnalyticsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1439,7 +1473,7 @@ export class IotTopicRuleErrorActionIotAnalyticsOutputReference extends cdktf.Co
   }
 
   public get internalValue(): IotTopicRuleErrorActionIotAnalytics | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._channelName) {
       hasAnyValues = true;
@@ -1454,10 +1488,12 @@ export class IotTopicRuleErrorActionIotAnalyticsOutputReference extends cdktf.Co
 
   public set internalValue(value: IotTopicRuleErrorActionIotAnalytics | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._channelName = undefined;
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._channelName = value.channelName;
       this._roleArn = value.roleArn;
     }
@@ -1517,6 +1553,8 @@ export function iotTopicRuleErrorActionIotEventsToTerraform(struct?: IotTopicRul
 }
 
 export class IotTopicRuleErrorActionIotEventsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1527,7 +1565,7 @@ export class IotTopicRuleErrorActionIotEventsOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): IotTopicRuleErrorActionIotEvents | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._inputName) {
       hasAnyValues = true;
@@ -1546,11 +1584,13 @@ export class IotTopicRuleErrorActionIotEventsOutputReference extends cdktf.Compl
 
   public set internalValue(value: IotTopicRuleErrorActionIotEvents | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._inputName = undefined;
       this._messageId = undefined;
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._inputName = value.inputName;
       this._messageId = value.messageId;
       this._roleArn = value.roleArn;
@@ -1627,6 +1667,8 @@ export function iotTopicRuleErrorActionKinesisToTerraform(struct?: IotTopicRuleE
 }
 
 export class IotTopicRuleErrorActionKinesisOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1637,7 +1679,7 @@ export class IotTopicRuleErrorActionKinesisOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): IotTopicRuleErrorActionKinesis | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._partitionKey) {
       hasAnyValues = true;
@@ -1656,11 +1698,13 @@ export class IotTopicRuleErrorActionKinesisOutputReference extends cdktf.Complex
 
   public set internalValue(value: IotTopicRuleErrorActionKinesis | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._partitionKey = undefined;
       this._roleArn = undefined;
       this._streamName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._partitionKey = value.partitionKey;
       this._roleArn = value.roleArn;
       this._streamName = value.streamName;
@@ -1727,6 +1771,8 @@ export function iotTopicRuleErrorActionLambdaToTerraform(struct?: IotTopicRuleEr
 }
 
 export class IotTopicRuleErrorActionLambdaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1737,7 +1783,7 @@ export class IotTopicRuleErrorActionLambdaOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): IotTopicRuleErrorActionLambda | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._functionArn) {
       hasAnyValues = true;
@@ -1748,9 +1794,11 @@ export class IotTopicRuleErrorActionLambdaOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: IotTopicRuleErrorActionLambda | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._functionArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._functionArn = value.functionArn;
     }
   }
@@ -1796,6 +1844,8 @@ export function iotTopicRuleErrorActionRepublishToTerraform(struct?: IotTopicRul
 }
 
 export class IotTopicRuleErrorActionRepublishOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1806,7 +1856,7 @@ export class IotTopicRuleErrorActionRepublishOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): IotTopicRuleErrorActionRepublish | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._qos) {
       hasAnyValues = true;
@@ -1825,11 +1875,13 @@ export class IotTopicRuleErrorActionRepublishOutputReference extends cdktf.Compl
 
   public set internalValue(value: IotTopicRuleErrorActionRepublish | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._qos = undefined;
       this._roleArn = undefined;
       this._topic = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._qos = value.qos;
       this._roleArn = value.roleArn;
       this._topic = value.topic;
@@ -1906,6 +1958,8 @@ export function iotTopicRuleErrorActionS3ToTerraform(struct?: IotTopicRuleErrorA
 }
 
 export class IotTopicRuleErrorActionS3OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1916,7 +1970,7 @@ export class IotTopicRuleErrorActionS3OutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): IotTopicRuleErrorActionS3 | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketName) {
       hasAnyValues = true;
@@ -1935,11 +1989,13 @@ export class IotTopicRuleErrorActionS3OutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: IotTopicRuleErrorActionS3 | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketName = undefined;
       this._key = undefined;
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketName = value.bucketName;
       this._key = value.key;
       this._roleArn = value.roleArn;
@@ -2013,6 +2069,8 @@ export function iotTopicRuleErrorActionSnsToTerraform(struct?: IotTopicRuleError
 }
 
 export class IotTopicRuleErrorActionSnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2023,7 +2081,7 @@ export class IotTopicRuleErrorActionSnsOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): IotTopicRuleErrorActionSns | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._messageFormat) {
       hasAnyValues = true;
@@ -2042,11 +2100,13 @@ export class IotTopicRuleErrorActionSnsOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: IotTopicRuleErrorActionSns | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._messageFormat = undefined;
       this._roleArn = undefined;
       this._targetArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._messageFormat = value.messageFormat;
       this._roleArn = value.roleArn;
       this._targetArn = value.targetArn;
@@ -2123,6 +2183,8 @@ export function iotTopicRuleErrorActionSqsToTerraform(struct?: IotTopicRuleError
 }
 
 export class IotTopicRuleErrorActionSqsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2133,7 +2195,7 @@ export class IotTopicRuleErrorActionSqsOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): IotTopicRuleErrorActionSqs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._queueUrl) {
       hasAnyValues = true;
@@ -2152,11 +2214,13 @@ export class IotTopicRuleErrorActionSqsOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: IotTopicRuleErrorActionSqs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._queueUrl = undefined;
       this._roleArn = undefined;
       this._useBase64 = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._queueUrl = value.queueUrl;
       this._roleArn = value.roleArn;
       this._useBase64 = value.useBase64;
@@ -2230,6 +2294,8 @@ export function iotTopicRuleErrorActionStepFunctionsToTerraform(struct?: IotTopi
 }
 
 export class IotTopicRuleErrorActionStepFunctionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2240,7 +2306,7 @@ export class IotTopicRuleErrorActionStepFunctionsOutputReference extends cdktf.C
   }
 
   public get internalValue(): IotTopicRuleErrorActionStepFunctions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._executionNamePrefix) {
       hasAnyValues = true;
@@ -2259,11 +2325,13 @@ export class IotTopicRuleErrorActionStepFunctionsOutputReference extends cdktf.C
 
   public set internalValue(value: IotTopicRuleErrorActionStepFunctions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._executionNamePrefix = undefined;
       this._roleArn = undefined;
       this._stateMachineName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._executionNamePrefix = value.executionNamePrefix;
       this._roleArn = value.roleArn;
       this._stateMachineName = value.stateMachineName;
@@ -2430,6 +2498,8 @@ export function iotTopicRuleErrorActionToTerraform(struct?: IotTopicRuleErrorAct
 }
 
 export class IotTopicRuleErrorActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2440,65 +2510,65 @@ export class IotTopicRuleErrorActionOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): IotTopicRuleErrorAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cloudwatchAlarm) {
+    if (this._cloudwatchAlarm?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cloudwatchAlarm = this._cloudwatchAlarm?.internalValue;
     }
-    if (this._cloudwatchMetric) {
+    if (this._cloudwatchMetric?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cloudwatchMetric = this._cloudwatchMetric?.internalValue;
     }
-    if (this._dynamodb) {
+    if (this._dynamodb?.internalValue) {
       hasAnyValues = true;
       internalValueResult.dynamodb = this._dynamodb?.internalValue;
     }
-    if (this._dynamodbv2) {
+    if (this._dynamodbv2?.internalValue) {
       hasAnyValues = true;
       internalValueResult.dynamodbv2 = this._dynamodbv2?.internalValue;
     }
-    if (this._elasticsearch) {
+    if (this._elasticsearch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.elasticsearch = this._elasticsearch?.internalValue;
     }
-    if (this._firehose) {
+    if (this._firehose?.internalValue) {
       hasAnyValues = true;
       internalValueResult.firehose = this._firehose?.internalValue;
     }
-    if (this._iotAnalytics) {
+    if (this._iotAnalytics?.internalValue) {
       hasAnyValues = true;
       internalValueResult.iotAnalytics = this._iotAnalytics?.internalValue;
     }
-    if (this._iotEvents) {
+    if (this._iotEvents?.internalValue) {
       hasAnyValues = true;
       internalValueResult.iotEvents = this._iotEvents?.internalValue;
     }
-    if (this._kinesis) {
+    if (this._kinesis?.internalValue) {
       hasAnyValues = true;
       internalValueResult.kinesis = this._kinesis?.internalValue;
     }
-    if (this._lambda) {
+    if (this._lambda?.internalValue) {
       hasAnyValues = true;
       internalValueResult.lambda = this._lambda?.internalValue;
     }
-    if (this._republish) {
+    if (this._republish?.internalValue) {
       hasAnyValues = true;
       internalValueResult.republish = this._republish?.internalValue;
     }
-    if (this._s3) {
+    if (this._s3?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3 = this._s3?.internalValue;
     }
-    if (this._sns) {
+    if (this._sns?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sns = this._sns?.internalValue;
     }
-    if (this._sqs) {
+    if (this._sqs?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sqs = this._sqs?.internalValue;
     }
-    if (this._stepFunctions) {
+    if (this._stepFunctions?.internalValue) {
       hasAnyValues = true;
       internalValueResult.stepFunctions = this._stepFunctions?.internalValue;
     }
@@ -2507,6 +2577,7 @@ export class IotTopicRuleErrorActionOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: IotTopicRuleErrorAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cloudwatchAlarm.internalValue = undefined;
       this._cloudwatchMetric.internalValue = undefined;
       this._dynamodb.internalValue = undefined;
@@ -2524,6 +2595,7 @@ export class IotTopicRuleErrorActionOutputReference extends cdktf.ComplexObject 
       this._stepFunctions.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cloudwatchAlarm.internalValue = value.cloudwatchAlarm;
       this._cloudwatchMetric.internalValue = value.cloudwatchMetric;
       this._dynamodb.internalValue = value.dynamodb;

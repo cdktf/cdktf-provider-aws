@@ -48,6 +48,8 @@ export function lambdaFunctionEventInvokeConfigDestinationConfigOnFailureToTerra
 }
 
 export class LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -58,7 +60,7 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputRefe
   }
 
   public get internalValue(): LambdaFunctionEventInvokeConfigDestinationConfigOnFailure | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._destination) {
       hasAnyValues = true;
@@ -69,9 +71,11 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputRefe
 
   public set internalValue(value: LambdaFunctionEventInvokeConfigDestinationConfigOnFailure | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._destination = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._destination = value.destination;
     }
   }
@@ -107,6 +111,8 @@ export function lambdaFunctionEventInvokeConfigDestinationConfigOnSuccessToTerra
 }
 
 export class LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -117,7 +123,7 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputRefe
   }
 
   public get internalValue(): LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._destination) {
       hasAnyValues = true;
@@ -128,9 +134,11 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputRefe
 
   public set internalValue(value: LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._destination = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._destination = value.destination;
     }
   }
@@ -175,6 +183,8 @@ export function lambdaFunctionEventInvokeConfigDestinationConfigToTerraform(stru
 }
 
 export class LambdaFunctionEventInvokeConfigDestinationConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -185,13 +195,13 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOutputReference ext
   }
 
   public get internalValue(): LambdaFunctionEventInvokeConfigDestinationConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._onFailure) {
+    if (this._onFailure?.internalValue) {
       hasAnyValues = true;
       internalValueResult.onFailure = this._onFailure?.internalValue;
     }
-    if (this._onSuccess) {
+    if (this._onSuccess?.internalValue) {
       hasAnyValues = true;
       internalValueResult.onSuccess = this._onSuccess?.internalValue;
     }
@@ -200,10 +210,12 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOutputReference ext
 
   public set internalValue(value: LambdaFunctionEventInvokeConfigDestinationConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._onFailure.internalValue = undefined;
       this._onSuccess.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._onFailure.internalValue = value.onFailure;
       this._onSuccess.internalValue = value.onSuccess;
     }

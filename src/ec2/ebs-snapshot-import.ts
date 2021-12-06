@@ -83,6 +83,8 @@ export function ebsSnapshotImportClientDataToTerraform(struct?: EbsSnapshotImpor
 }
 
 export class EbsSnapshotImportClientDataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -93,7 +95,7 @@ export class EbsSnapshotImportClientDataOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): EbsSnapshotImportClientData | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comment) {
       hasAnyValues = true;
@@ -116,12 +118,14 @@ export class EbsSnapshotImportClientDataOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: EbsSnapshotImportClientData | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._comment = undefined;
       this._uploadEnd = undefined;
       this._uploadSize = undefined;
       this._uploadStart = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._comment = value.comment;
       this._uploadEnd = value.uploadEnd;
       this._uploadSize = value.uploadSize;
@@ -216,6 +220,8 @@ export function ebsSnapshotImportDiskContainerUserBucketToTerraform(struct?: Ebs
 }
 
 export class EbsSnapshotImportDiskContainerUserBucketOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -226,7 +232,7 @@ export class EbsSnapshotImportDiskContainerUserBucketOutputReference extends cdk
   }
 
   public get internalValue(): EbsSnapshotImportDiskContainerUserBucket | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._s3Bucket) {
       hasAnyValues = true;
@@ -241,10 +247,12 @@ export class EbsSnapshotImportDiskContainerUserBucketOutputReference extends cdk
 
   public set internalValue(value: EbsSnapshotImportDiskContainerUserBucket | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._s3Bucket = undefined;
       this._s3Key = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._s3Bucket = value.s3Bucket;
       this._s3Key = value.s3Key;
     }
@@ -311,6 +319,8 @@ export function ebsSnapshotImportDiskContainerToTerraform(struct?: EbsSnapshotIm
 }
 
 export class EbsSnapshotImportDiskContainerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -321,7 +331,7 @@ export class EbsSnapshotImportDiskContainerOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): EbsSnapshotImportDiskContainer | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._description) {
       hasAnyValues = true;
@@ -335,7 +345,7 @@ export class EbsSnapshotImportDiskContainerOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.url = this._url;
     }
-    if (this._userBucket) {
+    if (this._userBucket?.internalValue) {
       hasAnyValues = true;
       internalValueResult.userBucket = this._userBucket?.internalValue;
     }
@@ -344,12 +354,14 @@ export class EbsSnapshotImportDiskContainerOutputReference extends cdktf.Complex
 
   public set internalValue(value: EbsSnapshotImportDiskContainer | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._description = undefined;
       this._format = undefined;
       this._url = undefined;
       this._userBucket.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._description = value.description;
       this._format = value.format;
       this._url = value.url;
@@ -441,6 +453,8 @@ export function ebsSnapshotImportTimeoutsToTerraform(struct?: EbsSnapshotImportT
 }
 
 export class EbsSnapshotImportTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -451,7 +465,7 @@ export class EbsSnapshotImportTimeoutsOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): EbsSnapshotImportTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -466,10 +480,12 @@ export class EbsSnapshotImportTimeoutsOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: EbsSnapshotImportTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
     }

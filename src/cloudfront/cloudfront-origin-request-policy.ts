@@ -52,6 +52,8 @@ export function cloudfrontOriginRequestPolicyCookiesConfigCookiesToTerraform(str
 }
 
 export class CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -62,7 +64,7 @@ export class CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference ex
   }
 
   public get internalValue(): CloudfrontOriginRequestPolicyCookiesConfigCookies | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -73,9 +75,11 @@ export class CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference ex
 
   public set internalValue(value: CloudfrontOriginRequestPolicyCookiesConfigCookies | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }
@@ -121,6 +125,8 @@ export function cloudfrontOriginRequestPolicyCookiesConfigToTerraform(struct?: C
 }
 
 export class CloudfrontOriginRequestPolicyCookiesConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -131,13 +137,13 @@ export class CloudfrontOriginRequestPolicyCookiesConfigOutputReference extends c
   }
 
   public get internalValue(): CloudfrontOriginRequestPolicyCookiesConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cookieBehavior) {
       hasAnyValues = true;
       internalValueResult.cookieBehavior = this._cookieBehavior;
     }
-    if (this._cookies) {
+    if (this._cookies?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cookies = this._cookies?.internalValue;
     }
@@ -146,10 +152,12 @@ export class CloudfrontOriginRequestPolicyCookiesConfigOutputReference extends c
 
   public set internalValue(value: CloudfrontOriginRequestPolicyCookiesConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cookieBehavior = undefined;
       this._cookies.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cookieBehavior = value.cookieBehavior;
       this._cookies.internalValue = value.cookies;
     }
@@ -202,6 +210,8 @@ export function cloudfrontOriginRequestPolicyHeadersConfigHeadersToTerraform(str
 }
 
 export class CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -212,7 +222,7 @@ export class CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference ex
   }
 
   public get internalValue(): CloudfrontOriginRequestPolicyHeadersConfigHeaders | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -223,9 +233,11 @@ export class CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference ex
 
   public set internalValue(value: CloudfrontOriginRequestPolicyHeadersConfigHeaders | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }
@@ -271,6 +283,8 @@ export function cloudfrontOriginRequestPolicyHeadersConfigToTerraform(struct?: C
 }
 
 export class CloudfrontOriginRequestPolicyHeadersConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -281,13 +295,13 @@ export class CloudfrontOriginRequestPolicyHeadersConfigOutputReference extends c
   }
 
   public get internalValue(): CloudfrontOriginRequestPolicyHeadersConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._headerBehavior) {
       hasAnyValues = true;
       internalValueResult.headerBehavior = this._headerBehavior;
     }
-    if (this._headers) {
+    if (this._headers?.internalValue) {
       hasAnyValues = true;
       internalValueResult.headers = this._headers?.internalValue;
     }
@@ -296,10 +310,12 @@ export class CloudfrontOriginRequestPolicyHeadersConfigOutputReference extends c
 
   public set internalValue(value: CloudfrontOriginRequestPolicyHeadersConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._headerBehavior = undefined;
       this._headers.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._headerBehavior = value.headerBehavior;
       this._headers.internalValue = value.headers;
     }
@@ -355,6 +371,8 @@ export function cloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsToTer
 }
 
 export class CloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -365,7 +383,7 @@ export class CloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsOutputRe
   }
 
   public get internalValue(): CloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -376,9 +394,11 @@ export class CloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsOutputRe
 
   public set internalValue(value: CloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }
@@ -424,6 +444,8 @@ export function cloudfrontOriginRequestPolicyQueryStringsConfigToTerraform(struc
 }
 
 export class CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -434,13 +456,13 @@ export class CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference exte
   }
 
   public get internalValue(): CloudfrontOriginRequestPolicyQueryStringsConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._queryStringBehavior) {
       hasAnyValues = true;
       internalValueResult.queryStringBehavior = this._queryStringBehavior;
     }
-    if (this._queryStrings) {
+    if (this._queryStrings?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryStrings = this._queryStrings?.internalValue;
     }
@@ -449,10 +471,12 @@ export class CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference exte
 
   public set internalValue(value: CloudfrontOriginRequestPolicyQueryStringsConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._queryStringBehavior = undefined;
       this._queryStrings.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._queryStringBehavior = value.queryStringBehavior;
       this._queryStrings.internalValue = value.queryStrings;
     }

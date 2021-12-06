@@ -49,6 +49,8 @@ export function cloudwatchEventConnectionAuthParametersApiKeyToTerraform(struct?
 }
 
 export class CloudwatchEventConnectionAuthParametersApiKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -59,7 +61,7 @@ export class CloudwatchEventConnectionAuthParametersApiKeyOutputReference extend
   }
 
   public get internalValue(): CloudwatchEventConnectionAuthParametersApiKey | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key) {
       hasAnyValues = true;
@@ -74,10 +76,12 @@ export class CloudwatchEventConnectionAuthParametersApiKeyOutputReference extend
 
   public set internalValue(value: CloudwatchEventConnectionAuthParametersApiKey | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._key = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._key = value.key;
       this._value = value.value;
     }
@@ -132,6 +136,8 @@ export function cloudwatchEventConnectionAuthParametersBasicToTerraform(struct?:
 }
 
 export class CloudwatchEventConnectionAuthParametersBasicOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -142,7 +148,7 @@ export class CloudwatchEventConnectionAuthParametersBasicOutputReference extends
   }
 
   public get internalValue(): CloudwatchEventConnectionAuthParametersBasic | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._password) {
       hasAnyValues = true;
@@ -157,10 +163,12 @@ export class CloudwatchEventConnectionAuthParametersBasicOutputReference extends
 
   public set internalValue(value: CloudwatchEventConnectionAuthParametersBasic | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._password = undefined;
       this._username = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._password = value.password;
       this._username = value.username;
     }
@@ -307,6 +315,8 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersT
 }
 
 export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -317,7 +327,7 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutp
   }
 
   public get internalValue(): CloudwatchEventConnectionAuthParametersInvocationHttpParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._body) {
       hasAnyValues = true;
@@ -336,11 +346,13 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutp
 
   public set internalValue(value: CloudwatchEventConnectionAuthParametersInvocationHttpParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._body = undefined;
       this._header = undefined;
       this._queryString = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._body = value.body;
       this._header = value.header;
       this._queryString = value.queryString;
@@ -421,6 +433,8 @@ export function cloudwatchEventConnectionAuthParametersOauthClientParametersToTe
 }
 
 export class CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -431,7 +445,7 @@ export class CloudwatchEventConnectionAuthParametersOauthClientParametersOutputR
   }
 
   public get internalValue(): CloudwatchEventConnectionAuthParametersOauthClientParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._clientId) {
       hasAnyValues = true;
@@ -446,10 +460,12 @@ export class CloudwatchEventConnectionAuthParametersOauthClientParametersOutputR
 
   public set internalValue(value: CloudwatchEventConnectionAuthParametersOauthClientParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clientId = undefined;
       this._clientSecret = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clientId = value.clientId;
       this._clientSecret = value.clientSecret;
     }
@@ -596,6 +612,8 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersT
 }
 
 export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -606,7 +624,7 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutp
   }
 
   public get internalValue(): CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._body) {
       hasAnyValues = true;
@@ -625,11 +643,13 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutp
 
   public set internalValue(value: CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._body = undefined;
       this._header = undefined;
       this._queryString = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._body = value.body;
       this._header = value.header;
       this._queryString = value.queryString;
@@ -724,6 +744,8 @@ export function cloudwatchEventConnectionAuthParametersOauthToTerraform(struct?:
 }
 
 export class CloudwatchEventConnectionAuthParametersOauthOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -734,7 +756,7 @@ export class CloudwatchEventConnectionAuthParametersOauthOutputReference extends
   }
 
   public get internalValue(): CloudwatchEventConnectionAuthParametersOauth | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._authorizationEndpoint) {
       hasAnyValues = true;
@@ -744,11 +766,11 @@ export class CloudwatchEventConnectionAuthParametersOauthOutputReference extends
       hasAnyValues = true;
       internalValueResult.httpMethod = this._httpMethod;
     }
-    if (this._clientParameters) {
+    if (this._clientParameters?.internalValue) {
       hasAnyValues = true;
       internalValueResult.clientParameters = this._clientParameters?.internalValue;
     }
-    if (this._oauthHttpParameters) {
+    if (this._oauthHttpParameters?.internalValue) {
       hasAnyValues = true;
       internalValueResult.oauthHttpParameters = this._oauthHttpParameters?.internalValue;
     }
@@ -757,12 +779,14 @@ export class CloudwatchEventConnectionAuthParametersOauthOutputReference extends
 
   public set internalValue(value: CloudwatchEventConnectionAuthParametersOauth | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._authorizationEndpoint = undefined;
       this._httpMethod = undefined;
       this._clientParameters.internalValue = undefined;
       this._oauthHttpParameters.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._authorizationEndpoint = value.authorizationEndpoint;
       this._httpMethod = value.httpMethod;
       this._clientParameters.internalValue = value.clientParameters;
@@ -866,6 +890,8 @@ export function cloudwatchEventConnectionAuthParametersToTerraform(struct?: Clou
 }
 
 export class CloudwatchEventConnectionAuthParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -876,21 +902,21 @@ export class CloudwatchEventConnectionAuthParametersOutputReference extends cdkt
   }
 
   public get internalValue(): CloudwatchEventConnectionAuthParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._apiKey) {
+    if (this._apiKey?.internalValue) {
       hasAnyValues = true;
       internalValueResult.apiKey = this._apiKey?.internalValue;
     }
-    if (this._basic) {
+    if (this._basic?.internalValue) {
       hasAnyValues = true;
       internalValueResult.basic = this._basic?.internalValue;
     }
-    if (this._invocationHttpParameters) {
+    if (this._invocationHttpParameters?.internalValue) {
       hasAnyValues = true;
       internalValueResult.invocationHttpParameters = this._invocationHttpParameters?.internalValue;
     }
-    if (this._oauth) {
+    if (this._oauth?.internalValue) {
       hasAnyValues = true;
       internalValueResult.oauth = this._oauth?.internalValue;
     }
@@ -899,12 +925,14 @@ export class CloudwatchEventConnectionAuthParametersOutputReference extends cdkt
 
   public set internalValue(value: CloudwatchEventConnectionAuthParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._apiKey.internalValue = undefined;
       this._basic.internalValue = undefined;
       this._invocationHttpParameters.internalValue = undefined;
       this._oauth.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._apiKey.internalValue = value.apiKey;
       this._basic.internalValue = value.basic;
       this._invocationHttpParameters.internalValue = value.invocationHttpParameters;

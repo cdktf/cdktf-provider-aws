@@ -60,6 +60,8 @@ export function efsAccessPointPosixUserToTerraform(struct?: EfsAccessPointPosixU
 }
 
 export class EfsAccessPointPosixUserOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -70,7 +72,7 @@ export class EfsAccessPointPosixUserOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): EfsAccessPointPosixUser | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._gid) {
       hasAnyValues = true;
@@ -89,11 +91,13 @@ export class EfsAccessPointPosixUserOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: EfsAccessPointPosixUser | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._gid = undefined;
       this._secondaryGids = undefined;
       this._uid = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._gid = value.gid;
       this._secondaryGids = value.secondaryGids;
       this._uid = value.uid;
@@ -171,6 +175,8 @@ export function efsAccessPointRootDirectoryCreationInfoToTerraform(struct?: EfsA
 }
 
 export class EfsAccessPointRootDirectoryCreationInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -181,7 +187,7 @@ export class EfsAccessPointRootDirectoryCreationInfoOutputReference extends cdkt
   }
 
   public get internalValue(): EfsAccessPointRootDirectoryCreationInfo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._ownerGid) {
       hasAnyValues = true;
@@ -200,11 +206,13 @@ export class EfsAccessPointRootDirectoryCreationInfoOutputReference extends cdkt
 
   public set internalValue(value: EfsAccessPointRootDirectoryCreationInfo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._ownerGid = undefined;
       this._ownerUid = undefined;
       this._permissions = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._ownerGid = value.ownerGid;
       this._ownerUid = value.ownerUid;
       this._permissions = value.permissions;
@@ -275,6 +283,8 @@ export function efsAccessPointRootDirectoryToTerraform(struct?: EfsAccessPointRo
 }
 
 export class EfsAccessPointRootDirectoryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -285,13 +295,13 @@ export class EfsAccessPointRootDirectoryOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): EfsAccessPointRootDirectory | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._path) {
       hasAnyValues = true;
       internalValueResult.path = this._path;
     }
-    if (this._creationInfo) {
+    if (this._creationInfo?.internalValue) {
       hasAnyValues = true;
       internalValueResult.creationInfo = this._creationInfo?.internalValue;
     }
@@ -300,10 +310,12 @@ export class EfsAccessPointRootDirectoryOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: EfsAccessPointRootDirectory | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._path = undefined;
       this._creationInfo.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._path = value.path;
       this._creationInfo.internalValue = value.creationInfo;
     }

@@ -53,6 +53,8 @@ export function datasyncLocationEfsEc2ConfigToTerraform(struct?: DatasyncLocatio
 }
 
 export class DatasyncLocationEfsEc2ConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -63,7 +65,7 @@ export class DatasyncLocationEfsEc2ConfigOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): DatasyncLocationEfsEc2Config | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._securityGroupArns) {
       hasAnyValues = true;
@@ -78,10 +80,12 @@ export class DatasyncLocationEfsEc2ConfigOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: DatasyncLocationEfsEc2Config | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._securityGroupArns = undefined;
       this._subnetArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._securityGroupArns = value.securityGroupArns;
       this._subnetArn = value.subnetArn;
     }

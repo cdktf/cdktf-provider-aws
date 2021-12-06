@@ -57,6 +57,8 @@ export function s3ControlMultiRegionAccessPointDetailsPublicAccessBlockToTerrafo
 }
 
 export class S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -67,7 +69,7 @@ export class S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputRefere
   }
 
   public get internalValue(): S3ControlMultiRegionAccessPointDetailsPublicAccessBlock | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._blockPublicAcls) {
       hasAnyValues = true;
@@ -90,12 +92,14 @@ export class S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputRefere
 
   public set internalValue(value: S3ControlMultiRegionAccessPointDetailsPublicAccessBlock | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._blockPublicAcls = undefined;
       this._blockPublicPolicy = undefined;
       this._ignorePublicAcls = undefined;
       this._restrictPublicBuckets = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._blockPublicAcls = value.blockPublicAcls;
       this._blockPublicPolicy = value.blockPublicPolicy;
       this._ignorePublicAcls = value.ignorePublicAcls;
@@ -216,6 +220,8 @@ export function s3ControlMultiRegionAccessPointDetailsToTerraform(struct?: S3Con
 }
 
 export class S3ControlMultiRegionAccessPointDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -226,13 +232,13 @@ export class S3ControlMultiRegionAccessPointDetailsOutputReference extends cdktf
   }
 
   public get internalValue(): S3ControlMultiRegionAccessPointDetails | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._publicAccessBlock) {
+    if (this._publicAccessBlock?.internalValue) {
       hasAnyValues = true;
       internalValueResult.publicAccessBlock = this._publicAccessBlock?.internalValue;
     }
@@ -245,11 +251,13 @@ export class S3ControlMultiRegionAccessPointDetailsOutputReference extends cdktf
 
   public set internalValue(value: S3ControlMultiRegionAccessPointDetails | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
       this._publicAccessBlock.internalValue = undefined;
       this._region = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._publicAccessBlock.internalValue = value.publicAccessBlock;
       this._region = value.region;
@@ -322,6 +330,8 @@ export function s3ControlMultiRegionAccessPointTimeoutsToTerraform(struct?: S3Co
 }
 
 export class S3ControlMultiRegionAccessPointTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -332,7 +342,7 @@ export class S3ControlMultiRegionAccessPointTimeoutsOutputReference extends cdkt
   }
 
   public get internalValue(): S3ControlMultiRegionAccessPointTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -347,10 +357,12 @@ export class S3ControlMultiRegionAccessPointTimeoutsOutputReference extends cdkt
 
   public set internalValue(value: S3ControlMultiRegionAccessPointTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
     }

@@ -54,6 +54,8 @@ export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTar
 }
 
 export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -64,7 +66,7 @@ export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTarget
   }
 
   public get internalValue(): Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResource | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
@@ -75,9 +77,11 @@ export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTarget
 
   public set internalValue(value: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResource | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
     }
   }
@@ -121,6 +125,8 @@ export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTar
 }
 
 export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -131,7 +137,7 @@ export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTarget
   }
 
   public get internalValue(): Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53Resource | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._domainName) {
       hasAnyValues = true;
@@ -146,10 +152,12 @@ export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTarget
 
   public set internalValue(value: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53Resource | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._domainName = undefined;
       this._recordSetId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._domainName = value.domainName;
       this._recordSetId = value.recordSetId;
     }
@@ -214,6 +222,8 @@ export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTar
 }
 
 export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -224,13 +234,13 @@ export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTarget
   }
 
   public get internalValue(): Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResource | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._nlbResource) {
+    if (this._nlbResource?.internalValue) {
       hasAnyValues = true;
       internalValueResult.nlbResource = this._nlbResource?.internalValue;
     }
-    if (this._r53Resource) {
+    if (this._r53Resource?.internalValue) {
       hasAnyValues = true;
       internalValueResult.r53Resource = this._r53Resource?.internalValue;
     }
@@ -239,10 +249,12 @@ export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTarget
 
   public set internalValue(value: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResource | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._nlbResource.internalValue = undefined;
       this._r53Resource.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._nlbResource.internalValue = value.nlbResource;
       this._r53Resource.internalValue = value.r53Resource;
     }
@@ -320,6 +332,8 @@ export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceToT
 }
 
 export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -330,7 +344,7 @@ export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutput
   }
 
   public get internalValue(): Route53RecoveryreadinessResourceSetResourcesDnsTargetResource | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._domainName) {
       hasAnyValues = true;
@@ -348,7 +362,7 @@ export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutput
       hasAnyValues = true;
       internalValueResult.recordType = this._recordType;
     }
-    if (this._targetResource) {
+    if (this._targetResource?.internalValue) {
       hasAnyValues = true;
       internalValueResult.targetResource = this._targetResource?.internalValue;
     }
@@ -357,6 +371,7 @@ export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutput
 
   public set internalValue(value: Route53RecoveryreadinessResourceSetResourcesDnsTargetResource | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._domainName = undefined;
       this._hostedZoneArn = undefined;
       this._recordSetId = undefined;
@@ -364,6 +379,7 @@ export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutput
       this._targetResource.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._domainName = value.domainName;
       this._hostedZoneArn = value.hostedZoneArn;
       this._recordSetId = value.recordSetId;
@@ -496,6 +512,8 @@ export function route53RecoveryreadinessResourceSetTimeoutsToTerraform(struct?: 
 }
 
 export class Route53RecoveryreadinessResourceSetTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -506,7 +524,7 @@ export class Route53RecoveryreadinessResourceSetTimeoutsOutputReference extends 
   }
 
   public get internalValue(): Route53RecoveryreadinessResourceSetTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete) {
       hasAnyValues = true;
@@ -517,9 +535,11 @@ export class Route53RecoveryreadinessResourceSetTimeoutsOutputReference extends 
 
   public set internalValue(value: Route53RecoveryreadinessResourceSetTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._delete = value.delete;
     }
   }

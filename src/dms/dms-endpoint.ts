@@ -131,6 +131,8 @@ export function dmsEndpointElasticsearchSettingsToTerraform(struct?: DmsEndpoint
 }
 
 export class DmsEndpointElasticsearchSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -141,7 +143,7 @@ export class DmsEndpointElasticsearchSettingsOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): DmsEndpointElasticsearchSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._endpointUri) {
       hasAnyValues = true;
@@ -164,12 +166,14 @@ export class DmsEndpointElasticsearchSettingsOutputReference extends cdktf.Compl
 
   public set internalValue(value: DmsEndpointElasticsearchSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._endpointUri = undefined;
       this._errorRetryDuration = undefined;
       this._fullLoadErrorPercentage = undefined;
       this._serviceAccessRoleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._endpointUri = value.endpointUri;
       this._errorRetryDuration = value.errorRetryDuration;
       this._fullLoadErrorPercentage = value.fullLoadErrorPercentage;
@@ -338,6 +342,8 @@ export function dmsEndpointKafkaSettingsToTerraform(struct?: DmsEndpointKafkaSet
 }
 
 export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -348,7 +354,7 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): DmsEndpointKafkaSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._broker) {
       hasAnyValues = true;
@@ -427,6 +433,7 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: DmsEndpointKafkaSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._broker = undefined;
       this._includeControlDetails = undefined;
       this._includeNullAndEmpty = undefined;
@@ -447,6 +454,7 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
       this._topic = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._broker = value.broker;
       this._includeControlDetails = value.includeControlDetails;
       this._includeNullAndEmpty = value.includeNullAndEmpty;
@@ -811,6 +819,8 @@ export function dmsEndpointKinesisSettingsToTerraform(struct?: DmsEndpointKinesi
 }
 
 export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -821,7 +831,7 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): DmsEndpointKinesisSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._includeControlDetails) {
       hasAnyValues = true;
@@ -864,6 +874,7 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: DmsEndpointKinesisSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._includeControlDetails = undefined;
       this._includeNullAndEmpty = undefined;
       this._includePartitionValue = undefined;
@@ -875,6 +886,7 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
       this._streamArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._includeControlDetails = value.includeControlDetails;
       this._includeNullAndEmpty = value.includeNullAndEmpty;
       this._includePartitionValue = value.includePartitionValue;
@@ -1074,6 +1086,8 @@ export function dmsEndpointMongodbSettingsToTerraform(struct?: DmsEndpointMongod
 }
 
 export class DmsEndpointMongodbSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1084,7 +1098,7 @@ export class DmsEndpointMongodbSettingsOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): DmsEndpointMongodbSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._authMechanism) {
       hasAnyValues = true;
@@ -1115,6 +1129,7 @@ export class DmsEndpointMongodbSettingsOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: DmsEndpointMongodbSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._authMechanism = undefined;
       this._authSource = undefined;
       this._authType = undefined;
@@ -1123,6 +1138,7 @@ export class DmsEndpointMongodbSettingsOutputReference extends cdktf.ComplexObje
       this._nestingLevel = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._authMechanism = value.authMechanism;
       this._authSource = value.authSource;
       this._authType = value.authType;
@@ -1306,6 +1322,8 @@ export function dmsEndpointS3SettingsToTerraform(struct?: DmsEndpointS3SettingsO
 }
 
 export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1316,7 +1334,7 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): DmsEndpointS3Settings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketFolder) {
       hasAnyValues = true;
@@ -1375,6 +1393,7 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: DmsEndpointS3Settings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketFolder = undefined;
       this._bucketName = undefined;
       this._compressionType = undefined;
@@ -1390,6 +1409,7 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
       this._serviceAccessRoleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketFolder = value.bucketFolder;
       this._bucketName = value.bucketName;
       this._compressionType = value.compressionType;

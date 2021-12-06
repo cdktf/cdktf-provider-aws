@@ -77,6 +77,8 @@ export function configConfigRuleScopeToTerraform(struct?: ConfigConfigRuleScopeO
 }
 
 export class ConfigConfigRuleScopeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -87,7 +89,7 @@ export class ConfigConfigRuleScopeOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): ConfigConfigRuleScope | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._complianceResourceId) {
       hasAnyValues = true;
@@ -110,12 +112,14 @@ export class ConfigConfigRuleScopeOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: ConfigConfigRuleScope | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._complianceResourceId = undefined;
       this._complianceResourceTypes = undefined;
       this._tagKey = undefined;
       this._tagValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._complianceResourceId = value.complianceResourceId;
       this._complianceResourceTypes = value.complianceResourceTypes;
       this._tagKey = value.tagKey;
@@ -244,6 +248,8 @@ export function configConfigRuleSourceToTerraform(struct?: ConfigConfigRuleSourc
 }
 
 export class ConfigConfigRuleSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -254,7 +260,7 @@ export class ConfigConfigRuleSourceOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): ConfigConfigRuleSource | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._owner) {
       hasAnyValues = true;
@@ -273,11 +279,13 @@ export class ConfigConfigRuleSourceOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: ConfigConfigRuleSource | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._owner = undefined;
       this._sourceIdentifier = undefined;
       this._sourceDetail = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._owner = value.owner;
       this._sourceIdentifier = value.sourceIdentifier;
       this._sourceDetail = value.sourceDetail;

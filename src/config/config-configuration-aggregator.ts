@@ -60,6 +60,8 @@ export function configConfigurationAggregatorAccountAggregationSourceToTerraform
 }
 
 export class ConfigConfigurationAggregatorAccountAggregationSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -70,7 +72,7 @@ export class ConfigConfigurationAggregatorAccountAggregationSourceOutputReferenc
   }
 
   public get internalValue(): ConfigConfigurationAggregatorAccountAggregationSource | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accountIds) {
       hasAnyValues = true;
@@ -89,11 +91,13 @@ export class ConfigConfigurationAggregatorAccountAggregationSourceOutputReferenc
 
   public set internalValue(value: ConfigConfigurationAggregatorAccountAggregationSource | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accountIds = undefined;
       this._allRegions = undefined;
       this._regions = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accountIds = value.accountIds;
       this._allRegions = value.allRegions;
       this._regions = value.regions;
@@ -173,6 +177,8 @@ export function configConfigurationAggregatorOrganizationAggregationSourceToTerr
 }
 
 export class ConfigConfigurationAggregatorOrganizationAggregationSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -183,7 +189,7 @@ export class ConfigConfigurationAggregatorOrganizationAggregationSourceOutputRef
   }
 
   public get internalValue(): ConfigConfigurationAggregatorOrganizationAggregationSource | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allRegions) {
       hasAnyValues = true;
@@ -202,11 +208,13 @@ export class ConfigConfigurationAggregatorOrganizationAggregationSourceOutputRef
 
   public set internalValue(value: ConfigConfigurationAggregatorOrganizationAggregationSource | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allRegions = undefined;
       this._regions = undefined;
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allRegions = value.allRegions;
       this._regions = value.regions;
       this._roleArn = value.roleArn;

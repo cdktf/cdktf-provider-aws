@@ -61,6 +61,8 @@ export function sagemakerAppResourceSpecToTerraform(struct?: SagemakerAppResourc
 }
 
 export class SagemakerAppResourceSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -71,7 +73,7 @@ export class SagemakerAppResourceSpecOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): SagemakerAppResourceSpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._instanceType) {
       hasAnyValues = true;
@@ -86,10 +88,12 @@ export class SagemakerAppResourceSpecOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: SagemakerAppResourceSpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._instanceType = undefined;
       this._sagemakerImageArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._instanceType = value.instanceType;
       this._sagemakerImageArn = value.sagemakerImageArn;
     }

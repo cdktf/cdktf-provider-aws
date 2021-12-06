@@ -124,6 +124,8 @@ export function apigatewayv2IntegrationTlsConfigToTerraform(struct?: Apigatewayv
 }
 
 export class Apigatewayv2IntegrationTlsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -134,7 +136,7 @@ export class Apigatewayv2IntegrationTlsConfigOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): Apigatewayv2IntegrationTlsConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._serverNameToVerify) {
       hasAnyValues = true;
@@ -145,9 +147,11 @@ export class Apigatewayv2IntegrationTlsConfigOutputReference extends cdktf.Compl
 
   public set internalValue(value: Apigatewayv2IntegrationTlsConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._serverNameToVerify = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._serverNameToVerify = value.serverNameToVerify;
     }
   }

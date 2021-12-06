@@ -61,6 +61,8 @@ export function sagemakerDeviceFleetOutputConfigToTerraform(struct?: SagemakerDe
 }
 
 export class SagemakerDeviceFleetOutputConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -71,7 +73,7 @@ export class SagemakerDeviceFleetOutputConfigOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): SagemakerDeviceFleetOutputConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._kmsKeyId) {
       hasAnyValues = true;
@@ -86,10 +88,12 @@ export class SagemakerDeviceFleetOutputConfigOutputReference extends cdktf.Compl
 
   public set internalValue(value: SagemakerDeviceFleetOutputConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._kmsKeyId = undefined;
       this._s3OutputLocation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._kmsKeyId = value.kmsKeyId;
       this._s3OutputLocation = value.s3OutputLocation;
     }

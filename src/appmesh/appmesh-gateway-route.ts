@@ -56,6 +56,8 @@ export function appmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceToTerr
 }
 
 export class AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -66,7 +68,7 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputRef
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._virtualServiceName) {
       hasAnyValues = true;
@@ -77,9 +79,11 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputRef
 
   public set internalValue(value: AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._virtualServiceName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._virtualServiceName = value.virtualServiceName;
     }
   }
@@ -117,6 +121,8 @@ export function appmeshGatewayRouteSpecGrpcRouteActionTargetToTerraform(struct?:
 }
 
 export class AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -127,9 +133,9 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference extends
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRouteActionTarget | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._virtualService) {
+    if (this._virtualService?.internalValue) {
       hasAnyValues = true;
       internalValueResult.virtualService = this._virtualService?.internalValue;
     }
@@ -138,9 +144,11 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference extends
 
   public set internalValue(value: AppmeshGatewayRouteSpecGrpcRouteActionTarget | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._virtualService.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._virtualService.internalValue = value.virtualService;
     }
   }
@@ -178,6 +186,8 @@ export function appmeshGatewayRouteSpecGrpcRouteActionToTerraform(struct?: Appme
 }
 
 export class AppmeshGatewayRouteSpecGrpcRouteActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -188,9 +198,9 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionOutputReference extends cdktf
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRouteAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._target) {
+    if (this._target?.internalValue) {
       hasAnyValues = true;
       internalValueResult.target = this._target?.internalValue;
     }
@@ -199,9 +209,11 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionOutputReference extends cdktf
 
   public set internalValue(value: AppmeshGatewayRouteSpecGrpcRouteAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._target.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._target.internalValue = value.target;
     }
   }
@@ -237,6 +249,8 @@ export function appmeshGatewayRouteSpecGrpcRouteMatchToTerraform(struct?: Appmes
 }
 
 export class AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -247,7 +261,7 @@ export class AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference extends cdktf.
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRouteMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._serviceName) {
       hasAnyValues = true;
@@ -258,9 +272,11 @@ export class AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference extends cdktf.
 
   public set internalValue(value: AppmeshGatewayRouteSpecGrpcRouteMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._serviceName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._serviceName = value.serviceName;
     }
   }
@@ -305,6 +321,8 @@ export function appmeshGatewayRouteSpecGrpcRouteToTerraform(struct?: AppmeshGate
 }
 
 export class AppmeshGatewayRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -315,13 +333,13 @@ export class AppmeshGatewayRouteSpecGrpcRouteOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRoute | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action) {
+    if (this._action?.internalValue) {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
-    if (this._match) {
+    if (this._match?.internalValue) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
@@ -330,10 +348,12 @@ export class AppmeshGatewayRouteSpecGrpcRouteOutputReference extends cdktf.Compl
 
   public set internalValue(value: AppmeshGatewayRouteSpecGrpcRoute | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._action.internalValue = undefined;
       this._match.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._action.internalValue = value.action;
       this._match.internalValue = value.match;
     }
@@ -383,6 +403,8 @@ export function appmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceToTer
 }
 
 export class AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -393,7 +415,7 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputRe
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._virtualServiceName) {
       hasAnyValues = true;
@@ -404,9 +426,11 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputRe
 
   public set internalValue(value: AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._virtualServiceName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._virtualServiceName = value.virtualServiceName;
     }
   }
@@ -444,6 +468,8 @@ export function appmeshGatewayRouteSpecHttp2RouteActionTargetToTerraform(struct?
 }
 
 export class AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -454,9 +480,9 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference extend
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteActionTarget | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._virtualService) {
+    if (this._virtualService?.internalValue) {
       hasAnyValues = true;
       internalValueResult.virtualService = this._virtualService?.internalValue;
     }
@@ -465,9 +491,11 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference extend
 
   public set internalValue(value: AppmeshGatewayRouteSpecHttp2RouteActionTarget | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._virtualService.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._virtualService.internalValue = value.virtualService;
     }
   }
@@ -505,6 +533,8 @@ export function appmeshGatewayRouteSpecHttp2RouteActionToTerraform(struct?: Appm
 }
 
 export class AppmeshGatewayRouteSpecHttp2RouteActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -515,9 +545,9 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionOutputReference extends cdkt
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._target) {
+    if (this._target?.internalValue) {
       hasAnyValues = true;
       internalValueResult.target = this._target?.internalValue;
     }
@@ -526,9 +556,11 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionOutputReference extends cdkt
 
   public set internalValue(value: AppmeshGatewayRouteSpecHttp2RouteAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._target.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._target.internalValue = value.target;
     }
   }
@@ -564,6 +596,8 @@ export function appmeshGatewayRouteSpecHttp2RouteMatchToTerraform(struct?: Appme
 }
 
 export class AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -574,7 +608,7 @@ export class AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference extends cdktf
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._prefix) {
       hasAnyValues = true;
@@ -585,9 +619,11 @@ export class AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference extends cdktf
 
   public set internalValue(value: AppmeshGatewayRouteSpecHttp2RouteMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._prefix = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._prefix = value.prefix;
     }
   }
@@ -632,6 +668,8 @@ export function appmeshGatewayRouteSpecHttp2RouteToTerraform(struct?: AppmeshGat
 }
 
 export class AppmeshGatewayRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -642,13 +680,13 @@ export class AppmeshGatewayRouteSpecHttp2RouteOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttp2Route | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action) {
+    if (this._action?.internalValue) {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
-    if (this._match) {
+    if (this._match?.internalValue) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
@@ -657,10 +695,12 @@ export class AppmeshGatewayRouteSpecHttp2RouteOutputReference extends cdktf.Comp
 
   public set internalValue(value: AppmeshGatewayRouteSpecHttp2Route | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._action.internalValue = undefined;
       this._match.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._action.internalValue = value.action;
       this._match.internalValue = value.match;
     }
@@ -710,6 +750,8 @@ export function appmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceToTerr
 }
 
 export class AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -720,7 +762,7 @@ export class AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputRef
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._virtualServiceName) {
       hasAnyValues = true;
@@ -731,9 +773,11 @@ export class AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputRef
 
   public set internalValue(value: AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._virtualServiceName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._virtualServiceName = value.virtualServiceName;
     }
   }
@@ -771,6 +815,8 @@ export function appmeshGatewayRouteSpecHttpRouteActionTargetToTerraform(struct?:
 }
 
 export class AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -781,9 +827,9 @@ export class AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference extends
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttpRouteActionTarget | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._virtualService) {
+    if (this._virtualService?.internalValue) {
       hasAnyValues = true;
       internalValueResult.virtualService = this._virtualService?.internalValue;
     }
@@ -792,9 +838,11 @@ export class AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference extends
 
   public set internalValue(value: AppmeshGatewayRouteSpecHttpRouteActionTarget | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._virtualService.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._virtualService.internalValue = value.virtualService;
     }
   }
@@ -832,6 +880,8 @@ export function appmeshGatewayRouteSpecHttpRouteActionToTerraform(struct?: Appme
 }
 
 export class AppmeshGatewayRouteSpecHttpRouteActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -842,9 +892,9 @@ export class AppmeshGatewayRouteSpecHttpRouteActionOutputReference extends cdktf
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttpRouteAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._target) {
+    if (this._target?.internalValue) {
       hasAnyValues = true;
       internalValueResult.target = this._target?.internalValue;
     }
@@ -853,9 +903,11 @@ export class AppmeshGatewayRouteSpecHttpRouteActionOutputReference extends cdktf
 
   public set internalValue(value: AppmeshGatewayRouteSpecHttpRouteAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._target.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._target.internalValue = value.target;
     }
   }
@@ -891,6 +943,8 @@ export function appmeshGatewayRouteSpecHttpRouteMatchToTerraform(struct?: Appmes
 }
 
 export class AppmeshGatewayRouteSpecHttpRouteMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -901,7 +955,7 @@ export class AppmeshGatewayRouteSpecHttpRouteMatchOutputReference extends cdktf.
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttpRouteMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._prefix) {
       hasAnyValues = true;
@@ -912,9 +966,11 @@ export class AppmeshGatewayRouteSpecHttpRouteMatchOutputReference extends cdktf.
 
   public set internalValue(value: AppmeshGatewayRouteSpecHttpRouteMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._prefix = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._prefix = value.prefix;
     }
   }
@@ -959,6 +1015,8 @@ export function appmeshGatewayRouteSpecHttpRouteToTerraform(struct?: AppmeshGate
 }
 
 export class AppmeshGatewayRouteSpecHttpRouteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -969,13 +1027,13 @@ export class AppmeshGatewayRouteSpecHttpRouteOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttpRoute | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action) {
+    if (this._action?.internalValue) {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
-    if (this._match) {
+    if (this._match?.internalValue) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
@@ -984,10 +1042,12 @@ export class AppmeshGatewayRouteSpecHttpRouteOutputReference extends cdktf.Compl
 
   public set internalValue(value: AppmeshGatewayRouteSpecHttpRoute | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._action.internalValue = undefined;
       this._match.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._action.internalValue = value.action;
       this._match.internalValue = value.match;
     }
@@ -1053,6 +1113,8 @@ export function appmeshGatewayRouteSpecToTerraform(struct?: AppmeshGatewayRouteS
 }
 
 export class AppmeshGatewayRouteSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1063,17 +1125,17 @@ export class AppmeshGatewayRouteSpecOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): AppmeshGatewayRouteSpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._grpcRoute) {
+    if (this._grpcRoute?.internalValue) {
       hasAnyValues = true;
       internalValueResult.grpcRoute = this._grpcRoute?.internalValue;
     }
-    if (this._http2Route) {
+    if (this._http2Route?.internalValue) {
       hasAnyValues = true;
       internalValueResult.http2Route = this._http2Route?.internalValue;
     }
-    if (this._httpRoute) {
+    if (this._httpRoute?.internalValue) {
       hasAnyValues = true;
       internalValueResult.httpRoute = this._httpRoute?.internalValue;
     }
@@ -1082,11 +1144,13 @@ export class AppmeshGatewayRouteSpecOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: AppmeshGatewayRouteSpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._grpcRoute.internalValue = undefined;
       this._http2Route.internalValue = undefined;
       this._httpRoute.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._grpcRoute.internalValue = value.grpcRoute;
       this._http2Route.internalValue = value.http2Route;
       this._httpRoute.internalValue = value.httpRoute;

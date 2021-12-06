@@ -69,6 +69,8 @@ export function s3AccessPointPublicAccessBlockConfigurationToTerraform(struct?: 
 }
 
 export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -79,7 +81,7 @@ export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends 
   }
 
   public get internalValue(): S3AccessPointPublicAccessBlockConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._blockPublicAcls) {
       hasAnyValues = true;
@@ -102,12 +104,14 @@ export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends 
 
   public set internalValue(value: S3AccessPointPublicAccessBlockConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._blockPublicAcls = undefined;
       this._blockPublicPolicy = undefined;
       this._ignorePublicAcls = undefined;
       this._restrictPublicBuckets = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._blockPublicAcls = value.blockPublicAcls;
       this._blockPublicPolicy = value.blockPublicPolicy;
       this._ignorePublicAcls = value.ignorePublicAcls;
@@ -197,6 +201,8 @@ export function s3AccessPointVpcConfigurationToTerraform(struct?: S3AccessPointV
 }
 
 export class S3AccessPointVpcConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -207,7 +213,7 @@ export class S3AccessPointVpcConfigurationOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): S3AccessPointVpcConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._vpcId) {
       hasAnyValues = true;
@@ -218,9 +224,11 @@ export class S3AccessPointVpcConfigurationOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: S3AccessPointVpcConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._vpcId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._vpcId = value.vpcId;
     }
   }

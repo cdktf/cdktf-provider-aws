@@ -181,6 +181,8 @@ export function glueCatalogTableStorageDescriptorSchemaReferenceSchemaIdToTerraf
 }
 
 export class GlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -191,7 +193,7 @@ export class GlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputRefer
   }
 
   public get internalValue(): GlueCatalogTableStorageDescriptorSchemaReferenceSchemaId | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._registryName) {
       hasAnyValues = true;
@@ -210,11 +212,13 @@ export class GlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputRefer
 
   public set internalValue(value: GlueCatalogTableStorageDescriptorSchemaReferenceSchemaId | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._registryName = undefined;
       this._schemaArn = undefined;
       this._schemaName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._registryName = value.registryName;
       this._schemaArn = value.schemaArn;
       this._schemaName = value.schemaName;
@@ -299,6 +303,8 @@ export function glueCatalogTableStorageDescriptorSchemaReferenceToTerraform(stru
 }
 
 export class GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -309,7 +315,7 @@ export class GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference ext
   }
 
   public get internalValue(): GlueCatalogTableStorageDescriptorSchemaReference | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._schemaVersionId) {
       hasAnyValues = true;
@@ -319,7 +325,7 @@ export class GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference ext
       hasAnyValues = true;
       internalValueResult.schemaVersionNumber = this._schemaVersionNumber;
     }
-    if (this._schemaId) {
+    if (this._schemaId?.internalValue) {
       hasAnyValues = true;
       internalValueResult.schemaId = this._schemaId?.internalValue;
     }
@@ -328,11 +334,13 @@ export class GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference ext
 
   public set internalValue(value: GlueCatalogTableStorageDescriptorSchemaReference | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._schemaVersionId = undefined;
       this._schemaVersionNumber = undefined;
       this._schemaId.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._schemaVersionId = value.schemaVersionId;
       this._schemaVersionNumber = value.schemaVersionNumber;
       this._schemaId.internalValue = value.schemaId;
@@ -412,6 +420,8 @@ export function glueCatalogTableStorageDescriptorSerDeInfoToTerraform(struct?: G
 }
 
 export class GlueCatalogTableStorageDescriptorSerDeInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -422,7 +432,7 @@ export class GlueCatalogTableStorageDescriptorSerDeInfoOutputReference extends c
   }
 
   public get internalValue(): GlueCatalogTableStorageDescriptorSerDeInfo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -441,11 +451,13 @@ export class GlueCatalogTableStorageDescriptorSerDeInfoOutputReference extends c
 
   public set internalValue(value: GlueCatalogTableStorageDescriptorSerDeInfo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
       this._parameters = undefined;
       this._serializationLibrary = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._parameters = value.parameters;
       this._serializationLibrary = value.serializationLibrary;
@@ -529,6 +541,8 @@ export function glueCatalogTableStorageDescriptorSkewedInfoToTerraform(struct?: 
 }
 
 export class GlueCatalogTableStorageDescriptorSkewedInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -539,7 +553,7 @@ export class GlueCatalogTableStorageDescriptorSkewedInfoOutputReference extends 
   }
 
   public get internalValue(): GlueCatalogTableStorageDescriptorSkewedInfo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._skewedColumnNames) {
       hasAnyValues = true;
@@ -558,11 +572,13 @@ export class GlueCatalogTableStorageDescriptorSkewedInfoOutputReference extends 
 
   public set internalValue(value: GlueCatalogTableStorageDescriptorSkewedInfo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._skewedColumnNames = undefined;
       this._skewedColumnValueLocationMaps = undefined;
       this._skewedColumnValues = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._skewedColumnNames = value.skewedColumnNames;
       this._skewedColumnValueLocationMaps = value.skewedColumnValueLocationMaps;
       this._skewedColumnValues = value.skewedColumnValues;
@@ -728,6 +744,8 @@ export function glueCatalogTableStorageDescriptorToTerraform(struct?: GlueCatalo
 }
 
 export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -738,7 +756,7 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): GlueCatalogTableStorageDescriptor | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketColumns) {
       hasAnyValues = true;
@@ -776,15 +794,15 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.columns = this._columns;
     }
-    if (this._schemaReference) {
+    if (this._schemaReference?.internalValue) {
       hasAnyValues = true;
       internalValueResult.schemaReference = this._schemaReference?.internalValue;
     }
-    if (this._serDeInfo) {
+    if (this._serDeInfo?.internalValue) {
       hasAnyValues = true;
       internalValueResult.serDeInfo = this._serDeInfo?.internalValue;
     }
-    if (this._skewedInfo) {
+    if (this._skewedInfo?.internalValue) {
       hasAnyValues = true;
       internalValueResult.skewedInfo = this._skewedInfo?.internalValue;
     }
@@ -797,6 +815,7 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.Comp
 
   public set internalValue(value: GlueCatalogTableStorageDescriptor | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketColumns = undefined;
       this._compressed = undefined;
       this._inputFormat = undefined;
@@ -812,6 +831,7 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.Comp
       this._sortColumns = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketColumns = value.bucketColumns;
       this._compressed = value.compressed;
       this._inputFormat = value.inputFormat;
@@ -1067,6 +1087,8 @@ export function glueCatalogTableTargetTableToTerraform(struct?: GlueCatalogTable
 }
 
 export class GlueCatalogTableTargetTableOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1077,7 +1099,7 @@ export class GlueCatalogTableTargetTableOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): GlueCatalogTableTargetTable | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._catalogId) {
       hasAnyValues = true;
@@ -1096,11 +1118,13 @@ export class GlueCatalogTableTargetTableOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: GlueCatalogTableTargetTable | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._catalogId = undefined;
       this._databaseName = undefined;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._catalogId = value.catalogId;
       this._databaseName = value.databaseName;
       this._name = value.name;

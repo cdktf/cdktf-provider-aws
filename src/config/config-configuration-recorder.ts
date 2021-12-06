@@ -50,6 +50,8 @@ export function configConfigurationRecorderRecordingGroupToTerraform(struct?: Co
 }
 
 export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -60,7 +62,7 @@ export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cd
   }
 
   public get internalValue(): ConfigConfigurationRecorderRecordingGroup | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allSupported) {
       hasAnyValues = true;
@@ -79,11 +81,13 @@ export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cd
 
   public set internalValue(value: ConfigConfigurationRecorderRecordingGroup | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allSupported = undefined;
       this._includeGlobalResourceTypes = undefined;
       this._resourceTypes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allSupported = value.allSupported;
       this._includeGlobalResourceTypes = value.includeGlobalResourceTypes;
       this._resourceTypes = value.resourceTypes;

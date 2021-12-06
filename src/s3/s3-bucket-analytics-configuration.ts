@@ -51,6 +51,8 @@ export function s3BucketAnalyticsConfigurationFilterToTerraform(struct?: S3Bucke
 }
 
 export class S3BucketAnalyticsConfigurationFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -61,7 +63,7 @@ export class S3BucketAnalyticsConfigurationFilterOutputReference extends cdktf.C
   }
 
   public get internalValue(): S3BucketAnalyticsConfigurationFilter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._prefix) {
       hasAnyValues = true;
@@ -76,10 +78,12 @@ export class S3BucketAnalyticsConfigurationFilterOutputReference extends cdktf.C
 
   public set internalValue(value: S3BucketAnalyticsConfigurationFilter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._prefix = undefined;
       this._tags = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._prefix = value.prefix;
       this._tags = value.tags;
     }
@@ -151,6 +155,8 @@ export function s3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDest
 }
 
 export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -161,7 +167,7 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestina
   }
 
   public get internalValue(): S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketAccountId) {
       hasAnyValues = true;
@@ -184,12 +190,14 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestina
 
   public set internalValue(value: S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketAccountId = undefined;
       this._bucketArn = undefined;
       this._format = undefined;
       this._prefix = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketAccountId = value.bucketAccountId;
       this._bucketArn = value.bucketArn;
       this._format = value.format;
@@ -278,6 +286,8 @@ export function s3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDest
 }
 
 export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -288,9 +298,9 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestina
   }
 
   public get internalValue(): S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestination | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._s3BucketDestination) {
+    if (this._s3BucketDestination?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3BucketDestination = this._s3BucketDestination?.internalValue;
     }
@@ -299,9 +309,11 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestina
 
   public set internalValue(value: S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestination | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._s3BucketDestination.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._s3BucketDestination.internalValue = value.s3BucketDestination;
     }
   }
@@ -344,6 +356,8 @@ export function s3BucketAnalyticsConfigurationStorageClassAnalysisDataExportToTe
 }
 
 export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -354,13 +368,13 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputR
   }
 
   public get internalValue(): S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._outputSchemaVersion) {
       hasAnyValues = true;
       internalValueResult.outputSchemaVersion = this._outputSchemaVersion;
     }
-    if (this._destination) {
+    if (this._destination?.internalValue) {
       hasAnyValues = true;
       internalValueResult.destination = this._destination?.internalValue;
     }
@@ -369,10 +383,12 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputR
 
   public set internalValue(value: S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._outputSchemaVersion = undefined;
       this._destination.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._outputSchemaVersion = value.outputSchemaVersion;
       this._destination.internalValue = value.destination;
     }
@@ -427,6 +443,8 @@ export function s3BucketAnalyticsConfigurationStorageClassAnalysisToTerraform(st
 }
 
 export class S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -437,9 +455,9 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference e
   }
 
   public get internalValue(): S3BucketAnalyticsConfigurationStorageClassAnalysis | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataExport) {
+    if (this._dataExport?.internalValue) {
       hasAnyValues = true;
       internalValueResult.dataExport = this._dataExport?.internalValue;
     }
@@ -448,9 +466,11 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference e
 
   public set internalValue(value: S3BucketAnalyticsConfigurationStorageClassAnalysis | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dataExport.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dataExport.internalValue = value.dataExport;
     }
   }

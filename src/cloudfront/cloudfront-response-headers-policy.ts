@@ -56,6 +56,8 @@ export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeade
 }
 
 export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -66,7 +68,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersO
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -77,9 +79,11 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersO
 
   public set internalValue(value: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }
@@ -118,6 +122,8 @@ export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMetho
 }
 
 export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -128,7 +134,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsO
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -139,9 +145,11 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsO
 
   public set internalValue(value: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }
@@ -180,6 +188,8 @@ export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigi
 }
 
 export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -190,7 +200,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsO
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -201,9 +211,11 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsO
 
   public set internalValue(value: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }
@@ -242,6 +254,8 @@ export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHead
 }
 
 export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -252,7 +266,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -263,9 +277,11 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders
 
   public set internalValue(value: CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }
@@ -342,6 +358,8 @@ export function cloudfrontResponseHeadersPolicyCorsConfigToTerraform(struct?: Cl
 }
 
 export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -352,7 +370,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicyCorsConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accessControlAllowCredentials) {
       hasAnyValues = true;
@@ -366,19 +384,19 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.originOverride = this._originOverride;
     }
-    if (this._accessControlAllowHeaders) {
+    if (this._accessControlAllowHeaders?.internalValue) {
       hasAnyValues = true;
       internalValueResult.accessControlAllowHeaders = this._accessControlAllowHeaders?.internalValue;
     }
-    if (this._accessControlAllowMethods) {
+    if (this._accessControlAllowMethods?.internalValue) {
       hasAnyValues = true;
       internalValueResult.accessControlAllowMethods = this._accessControlAllowMethods?.internalValue;
     }
-    if (this._accessControlAllowOrigins) {
+    if (this._accessControlAllowOrigins?.internalValue) {
       hasAnyValues = true;
       internalValueResult.accessControlAllowOrigins = this._accessControlAllowOrigins?.internalValue;
     }
-    if (this._accessControlExposeHeaders) {
+    if (this._accessControlExposeHeaders?.internalValue) {
       hasAnyValues = true;
       internalValueResult.accessControlExposeHeaders = this._accessControlExposeHeaders?.internalValue;
     }
@@ -387,6 +405,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
 
   public set internalValue(value: CloudfrontResponseHeadersPolicyCorsConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accessControlAllowCredentials = undefined;
       this._accessControlMaxAgeSec = undefined;
       this._originOverride = undefined;
@@ -396,6 +415,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
       this._accessControlExposeHeaders.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accessControlAllowCredentials = value.accessControlAllowCredentials;
       this._accessControlMaxAgeSec = value.accessControlMaxAgeSec;
       this._originOverride = value.originOverride;
@@ -550,6 +570,8 @@ export function cloudfrontResponseHeadersPolicyCustomHeadersConfigToTerraform(st
 }
 
 export class CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -560,7 +582,7 @@ export class CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference e
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicyCustomHeadersConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -571,9 +593,11 @@ export class CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference e
 
   public set internalValue(value: CloudfrontResponseHeadersPolicyCustomHeadersConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }
@@ -618,6 +642,8 @@ export function cloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecur
 }
 
 export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -628,7 +654,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurity
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._contentSecurityPolicy) {
       hasAnyValues = true;
@@ -643,10 +669,12 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurity
 
   public set internalValue(value: CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._contentSecurityPolicy = undefined;
       this._override = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._contentSecurityPolicy = value.contentSecurityPolicy;
       this._override = value.override;
     }
@@ -696,6 +724,8 @@ export function cloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeO
 }
 
 export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -706,7 +736,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOpti
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._override) {
       hasAnyValues = true;
@@ -717,9 +747,11 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOpti
 
   public set internalValue(value: CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._override = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._override = value.override;
     }
   }
@@ -760,6 +792,8 @@ export function cloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions
 }
 
 export class CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -770,7 +804,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOut
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._frameOption) {
       hasAnyValues = true;
@@ -785,10 +819,12 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOut
 
   public set internalValue(value: CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._frameOption = undefined;
       this._override = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._frameOption = value.frameOption;
       this._override = value.override;
     }
@@ -843,6 +879,8 @@ export function cloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPoli
 }
 
 export class CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -853,7 +891,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyO
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._override) {
       hasAnyValues = true;
@@ -868,10 +906,12 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyO
 
   public set internalValue(value: CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._override = undefined;
       this._referrerPolicy = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._override = value.override;
       this._referrerPolicy = value.referrerPolicy;
     }
@@ -936,6 +976,8 @@ export function cloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransp
 }
 
 export class CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -946,7 +988,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransport
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accessControlMaxAgeSec) {
       hasAnyValues = true;
@@ -969,12 +1011,14 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransport
 
   public set internalValue(value: CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accessControlMaxAgeSec = undefined;
       this._includeSubdomains = undefined;
       this._override = undefined;
       this._preload = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accessControlMaxAgeSec = value.accessControlMaxAgeSec;
       this._includeSubdomains = value.includeSubdomains;
       this._override = value.override;
@@ -1073,6 +1117,8 @@ export function cloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectio
 }
 
 export class CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1083,7 +1129,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOu
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._modeBlock) {
       hasAnyValues = true;
@@ -1106,12 +1152,14 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOu
 
   public set internalValue(value: CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._modeBlock = undefined;
       this._override = undefined;
       this._protection = undefined;
       this._reportUri = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._modeBlock = value.modeBlock;
       this._override = value.override;
       this._protection = value.protection;
@@ -1232,6 +1280,8 @@ export function cloudfrontResponseHeadersPolicySecurityHeadersConfigToTerraform(
 }
 
 export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1242,29 +1292,29 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicySecurityHeadersConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._contentSecurityPolicy) {
+    if (this._contentSecurityPolicy?.internalValue) {
       hasAnyValues = true;
       internalValueResult.contentSecurityPolicy = this._contentSecurityPolicy?.internalValue;
     }
-    if (this._contentTypeOptions) {
+    if (this._contentTypeOptions?.internalValue) {
       hasAnyValues = true;
       internalValueResult.contentTypeOptions = this._contentTypeOptions?.internalValue;
     }
-    if (this._frameOptions) {
+    if (this._frameOptions?.internalValue) {
       hasAnyValues = true;
       internalValueResult.frameOptions = this._frameOptions?.internalValue;
     }
-    if (this._referrerPolicy) {
+    if (this._referrerPolicy?.internalValue) {
       hasAnyValues = true;
       internalValueResult.referrerPolicy = this._referrerPolicy?.internalValue;
     }
-    if (this._strictTransportSecurity) {
+    if (this._strictTransportSecurity?.internalValue) {
       hasAnyValues = true;
       internalValueResult.strictTransportSecurity = this._strictTransportSecurity?.internalValue;
     }
-    if (this._xssProtection) {
+    if (this._xssProtection?.internalValue) {
       hasAnyValues = true;
       internalValueResult.xssProtection = this._xssProtection?.internalValue;
     }
@@ -1273,6 +1323,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
 
   public set internalValue(value: CloudfrontResponseHeadersPolicySecurityHeadersConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._contentSecurityPolicy.internalValue = undefined;
       this._contentTypeOptions.internalValue = undefined;
       this._frameOptions.internalValue = undefined;
@@ -1281,6 +1332,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
       this._xssProtection.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._contentSecurityPolicy.internalValue = value.contentSecurityPolicy;
       this._contentTypeOptions.internalValue = value.contentTypeOptions;
       this._frameOptions.internalValue = value.frameOptions;

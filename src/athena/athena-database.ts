@@ -49,6 +49,8 @@ export function athenaDatabaseEncryptionConfigurationToTerraform(struct?: Athena
 }
 
 export class AthenaDatabaseEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -59,7 +61,7 @@ export class AthenaDatabaseEncryptionConfigurationOutputReference extends cdktf.
   }
 
   public get internalValue(): AthenaDatabaseEncryptionConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._encryptionOption) {
       hasAnyValues = true;
@@ -74,10 +76,12 @@ export class AthenaDatabaseEncryptionConfigurationOutputReference extends cdktf.
 
   public set internalValue(value: AthenaDatabaseEncryptionConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._encryptionOption = undefined;
       this._kmsKey = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._encryptionOption = value.encryptionOption;
       this._kmsKey = value.kmsKey;
     }

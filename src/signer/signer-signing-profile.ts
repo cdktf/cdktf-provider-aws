@@ -74,6 +74,8 @@ export function signerSigningProfileSignatureValidityPeriodToTerraform(struct?: 
 }
 
 export class SignerSigningProfileSignatureValidityPeriodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -84,7 +86,7 @@ export class SignerSigningProfileSignatureValidityPeriodOutputReference extends 
   }
 
   public get internalValue(): SignerSigningProfileSignatureValidityPeriod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -99,10 +101,12 @@ export class SignerSigningProfileSignatureValidityPeriodOutputReference extends 
 
   public set internalValue(value: SignerSigningProfileSignatureValidityPeriod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._value = value.value;
     }

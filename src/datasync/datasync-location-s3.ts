@@ -56,6 +56,8 @@ export function datasyncLocationS3S3ConfigToTerraform(struct?: DatasyncLocationS
 }
 
 export class DatasyncLocationS3S3ConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -66,7 +68,7 @@ export class DatasyncLocationS3S3ConfigOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): DatasyncLocationS3S3Config | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketAccessRoleArn) {
       hasAnyValues = true;
@@ -77,9 +79,11 @@ export class DatasyncLocationS3S3ConfigOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: DatasyncLocationS3S3Config | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketAccessRoleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketAccessRoleArn = value.bucketAccessRoleArn;
     }
   }

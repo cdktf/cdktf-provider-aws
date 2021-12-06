@@ -45,6 +45,8 @@ export function s3BucketMetricFilterToTerraform(struct?: S3BucketMetricFilterOut
 }
 
 export class S3BucketMetricFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -55,7 +57,7 @@ export class S3BucketMetricFilterOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): S3BucketMetricFilter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._prefix) {
       hasAnyValues = true;
@@ -70,10 +72,12 @@ export class S3BucketMetricFilterOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: S3BucketMetricFilter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._prefix = undefined;
       this._tags = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._prefix = value.prefix;
       this._tags = value.tags;
     }

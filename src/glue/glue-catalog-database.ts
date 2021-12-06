@@ -57,6 +57,8 @@ export function glueCatalogDatabaseTargetDatabaseToTerraform(struct?: GlueCatalo
 }
 
 export class GlueCatalogDatabaseTargetDatabaseOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -67,7 +69,7 @@ export class GlueCatalogDatabaseTargetDatabaseOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): GlueCatalogDatabaseTargetDatabase | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._catalogId) {
       hasAnyValues = true;
@@ -82,10 +84,12 @@ export class GlueCatalogDatabaseTargetDatabaseOutputReference extends cdktf.Comp
 
   public set internalValue(value: GlueCatalogDatabaseTargetDatabase | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._catalogId = undefined;
       this._databaseName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._catalogId = value.catalogId;
       this._databaseName = value.databaseName;
     }

@@ -108,6 +108,8 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatc
 }
 
 export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -118,7 +120,7 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLo
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -137,11 +139,13 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLo
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._logGroupName = undefined;
       this._logStreamName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._logGroupName = value.logGroupName;
       this._logStreamName = value.logStreamName;
@@ -267,6 +271,8 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessin
 }
 
 export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -277,7 +283,7 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -292,10 +298,12 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._processors = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._processors = value.processors;
     }
@@ -362,6 +370,8 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig
 }
 
 export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -372,7 +382,7 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOut
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._roleArn) {
       hasAnyValues = true;
@@ -391,11 +401,13 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOut
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._roleArn = undefined;
       this._securityGroupIds = undefined;
       this._subnetIds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._roleArn = value.roleArn;
       this._securityGroupIds = value.securityGroupIds;
       this._subnetIds = value.subnetIds;
@@ -525,6 +537,8 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationToTerrafo
 }
 
 export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -535,7 +549,7 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputRefere
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamElasticsearchConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bufferingInterval) {
       hasAnyValues = true;
@@ -577,15 +591,15 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputRefere
       hasAnyValues = true;
       internalValueResult.typeName = this._typeName;
     }
-    if (this._cloudwatchLoggingOptions) {
+    if (this._cloudwatchLoggingOptions?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
-    if (this._processingConfiguration) {
+    if (this._processingConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.processingConfiguration = this._processingConfiguration?.internalValue;
     }
-    if (this._vpcConfig) {
+    if (this._vpcConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.vpcConfig = this._vpcConfig?.internalValue;
     }
@@ -594,6 +608,7 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputRefere
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamElasticsearchConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bufferingInterval = undefined;
       this._bufferingSize = undefined;
       this._clusterEndpoint = undefined;
@@ -609,6 +624,7 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputRefere
       this._vpcConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bufferingInterval = value.bufferingInterval;
       this._bufferingSize = value.bufferingSize;
       this._clusterEndpoint = value.clusterEndpoint;
@@ -855,6 +871,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLo
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -865,7 +883,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggi
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -884,11 +902,13 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggi
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._logGroupName = undefined;
       this._logStreamName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._logGroupName = value.logGroupName;
       this._logStreamName = value.logStreamName;
@@ -961,6 +981,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -971,7 +993,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._timestampFormats) {
       hasAnyValues = true;
@@ -982,9 +1004,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._timestampFormats = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._timestampFormats = value.timestampFormats;
     }
   }
@@ -1033,6 +1057,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1043,7 +1069,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._caseInsensitive) {
       hasAnyValues = true;
@@ -1062,11 +1088,13 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._caseInsensitive = undefined;
       this._columnToJsonKeyMappings = undefined;
       this._convertDotsInJsonKeysToUnderscores = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._caseInsensitive = value.caseInsensitive;
       this._columnToJsonKeyMappings = value.columnToJsonKeyMappings;
       this._convertDotsInJsonKeysToUnderscores = value.convertDotsInJsonKeysToUnderscores;
@@ -1149,6 +1177,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1159,13 +1189,13 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._hiveJsonSerDe) {
+    if (this._hiveJsonSerDe?.internalValue) {
       hasAnyValues = true;
       internalValueResult.hiveJsonSerDe = this._hiveJsonSerDe?.internalValue;
     }
-    if (this._openXJsonSerDe) {
+    if (this._openXJsonSerDe?.internalValue) {
       hasAnyValues = true;
       internalValueResult.openXJsonSerDe = this._openXJsonSerDe?.internalValue;
     }
@@ -1174,10 +1204,12 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._hiveJsonSerDe.internalValue = undefined;
       this._openXJsonSerDe.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._hiveJsonSerDe.internalValue = value.hiveJsonSerDe;
       this._openXJsonSerDe.internalValue = value.openXJsonSerDe;
     }
@@ -1235,6 +1267,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1245,9 +1279,9 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._deserializer) {
+    if (this._deserializer?.internalValue) {
       hasAnyValues = true;
       internalValueResult.deserializer = this._deserializer?.internalValue;
     }
@@ -1256,9 +1290,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._deserializer.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._deserializer.internalValue = value.deserializer;
     }
   }
@@ -1339,6 +1375,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1349,7 +1387,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._blockSizeBytes) {
       hasAnyValues = true;
@@ -1396,6 +1434,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._blockSizeBytes = undefined;
       this._bloomFilterColumns = undefined;
       this._bloomFilterFalsePositiveProbability = undefined;
@@ -1408,6 +1447,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
       this._stripeSizeBytes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._blockSizeBytes = value.blockSizeBytes;
       this._bloomFilterColumns = value.bloomFilterColumns;
       this._bloomFilterFalsePositiveProbability = value.bloomFilterFalsePositiveProbability;
@@ -1624,6 +1664,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1634,7 +1676,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._blockSizeBytes) {
       hasAnyValues = true;
@@ -1665,6 +1707,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._blockSizeBytes = undefined;
       this._compression = undefined;
       this._enableDictionaryCompression = undefined;
@@ -1673,6 +1716,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
       this._writerVersion = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._blockSizeBytes = value.blockSizeBytes;
       this._compression = value.compression;
       this._enableDictionaryCompression = value.enableDictionaryCompression;
@@ -1805,6 +1849,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1815,13 +1861,13 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._orcSerDe) {
+    if (this._orcSerDe?.internalValue) {
       hasAnyValues = true;
       internalValueResult.orcSerDe = this._orcSerDe?.internalValue;
     }
-    if (this._parquetSerDe) {
+    if (this._parquetSerDe?.internalValue) {
       hasAnyValues = true;
       internalValueResult.parquetSerDe = this._parquetSerDe?.internalValue;
     }
@@ -1830,10 +1876,12 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._orcSerDe.internalValue = undefined;
       this._parquetSerDe.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._orcSerDe.internalValue = value.orcSerDe;
       this._parquetSerDe.internalValue = value.parquetSerDe;
     }
@@ -1891,6 +1939,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1901,9 +1951,9 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._serializer) {
+    if (this._serializer?.internalValue) {
       hasAnyValues = true;
       internalValueResult.serializer = this._serializer?.internalValue;
     }
@@ -1912,9 +1962,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._serializer.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._serializer.internalValue = value.serializer;
     }
   }
@@ -1975,6 +2027,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1985,7 +2039,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._catalogId) {
       hasAnyValues = true;
@@ -2016,6 +2070,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._catalogId = undefined;
       this._databaseName = undefined;
       this._region = undefined;
@@ -2024,6 +2079,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
       this._versionId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._catalogId = value.catalogId;
       this._databaseName = value.databaseName;
       this._region = value.region;
@@ -2159,6 +2215,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2169,21 +2227,21 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._inputFormatConfiguration) {
+    if (this._inputFormatConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.inputFormatConfiguration = this._inputFormatConfiguration?.internalValue;
     }
-    if (this._outputFormatConfiguration) {
+    if (this._outputFormatConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.outputFormatConfiguration = this._outputFormatConfiguration?.internalValue;
     }
-    if (this._schemaConfiguration) {
+    if (this._schemaConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.schemaConfiguration = this._schemaConfiguration?.internalValue;
     }
@@ -2192,12 +2250,14 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._inputFormatConfiguration.internalValue = undefined;
       this._outputFormatConfiguration.internalValue = undefined;
       this._schemaConfiguration.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._inputFormatConfiguration.internalValue = value.inputFormatConfiguration;
       this._outputFormatConfiguration.internalValue = value.outputFormatConfiguration;
@@ -2283,6 +2343,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicParti
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2293,7 +2355,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitio
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -2308,10 +2370,12 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitio
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._retryDuration = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._retryDuration = value.retryDuration;
     }
@@ -2420,6 +2484,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingCo
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2430,7 +2496,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -2445,10 +2511,12 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._processors = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._processors = value.processors;
     }
@@ -2515,6 +2583,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConf
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2525,7 +2595,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigu
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -2544,11 +2614,13 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigu
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._logGroupName = undefined;
       this._logStreamName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._logGroupName = value.logGroupName;
       this._logStreamName = value.logStreamName;
@@ -2658,6 +2730,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConf
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2668,7 +2742,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigu
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketArn) {
       hasAnyValues = true;
@@ -2698,7 +2772,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigu
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._cloudwatchLoggingOptions) {
+    if (this._cloudwatchLoggingOptions?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
@@ -2707,6 +2781,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigu
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketArn = undefined;
       this._bufferInterval = undefined;
       this._bufferSize = undefined;
@@ -2717,6 +2792,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigu
       this._cloudwatchLoggingOptions.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketArn = value.bucketArn;
       this._bufferInterval = value.bufferInterval;
       this._bufferSize = value.bufferSize;
@@ -2943,6 +3019,8 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationToTerraform(
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2953,7 +3031,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3Configuration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketArn) {
       hasAnyValues = true;
@@ -2991,23 +3069,23 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference
       hasAnyValues = true;
       internalValueResult.s3BackupMode = this._s3BackupMode;
     }
-    if (this._cloudwatchLoggingOptions) {
+    if (this._cloudwatchLoggingOptions?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
-    if (this._dataFormatConversionConfiguration) {
+    if (this._dataFormatConversionConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.dataFormatConversionConfiguration = this._dataFormatConversionConfiguration?.internalValue;
     }
-    if (this._dynamicPartitioningConfiguration) {
+    if (this._dynamicPartitioningConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.dynamicPartitioningConfiguration = this._dynamicPartitioningConfiguration?.internalValue;
     }
-    if (this._processingConfiguration) {
+    if (this._processingConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.processingConfiguration = this._processingConfiguration?.internalValue;
     }
-    if (this._s3BackupConfiguration) {
+    if (this._s3BackupConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3BackupConfiguration = this._s3BackupConfiguration?.internalValue;
     }
@@ -3016,6 +3094,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3Configuration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketArn = undefined;
       this._bufferInterval = undefined;
       this._bufferSize = undefined;
@@ -3032,6 +3111,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference
       this._s3BackupConfiguration.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketArn = value.bucketArn;
       this._bufferInterval = value.bufferInterval;
       this._bufferSize = value.bufferSize;
@@ -3295,6 +3375,8 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatch
 }
 
 export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3305,7 +3387,7 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLog
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -3324,11 +3406,13 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLog
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._logGroupName = undefined;
       this._logStreamName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._logGroupName = value.logGroupName;
       this._logStreamName = value.logStreamName;
@@ -3454,6 +3538,8 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessing
 }
 
 export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3464,7 +3550,7 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -3479,10 +3565,12 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._processors = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._processors = value.processors;
     }
@@ -3568,6 +3656,8 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestCon
 }
 
 export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3578,7 +3668,7 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfig
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._contentEncoding) {
       hasAnyValues = true;
@@ -3593,10 +3683,12 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfig
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._contentEncoding = undefined;
       this._commonAttributes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._contentEncoding = value.contentEncoding;
       this._commonAttributes = value.commonAttributes;
     }
@@ -3709,6 +3801,8 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationToTerrafor
 }
 
 export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3719,7 +3813,7 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReferen
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accessKey) {
       hasAnyValues = true;
@@ -3753,15 +3847,15 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReferen
       hasAnyValues = true;
       internalValueResult.url = this._url;
     }
-    if (this._cloudwatchLoggingOptions) {
+    if (this._cloudwatchLoggingOptions?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
-    if (this._processingConfiguration) {
+    if (this._processingConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.processingConfiguration = this._processingConfiguration?.internalValue;
     }
-    if (this._requestConfiguration) {
+    if (this._requestConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.requestConfiguration = this._requestConfiguration?.internalValue;
     }
@@ -3770,6 +3864,7 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReferen
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamHttpEndpointConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accessKey = undefined;
       this._bufferingInterval = undefined;
       this._bufferingSize = undefined;
@@ -3783,6 +3878,7 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReferen
       this._requestConfiguration.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accessKey = value.accessKey;
       this._bufferingInterval = value.bufferingInterval;
       this._bufferingSize = value.bufferingSize;
@@ -3993,6 +4089,8 @@ export function kinesisFirehoseDeliveryStreamKinesisSourceConfigurationToTerrafo
 }
 
 export class KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4003,7 +4101,7 @@ export class KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputRefere
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamKinesisSourceConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._kinesisStreamArn) {
       hasAnyValues = true;
@@ -4018,10 +4116,12 @@ export class KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputRefere
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamKinesisSourceConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._kinesisStreamArn = undefined;
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._kinesisStreamArn = value.kinesisStreamArn;
       this._roleArn = value.roleArn;
     }
@@ -4081,6 +4181,8 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLogg
 }
 
 export class KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4091,7 +4193,7 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLogging
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -4110,11 +4212,13 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLogging
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._logGroupName = undefined;
       this._logStreamName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._logGroupName = value.logGroupName;
       this._logStreamName = value.logStreamName;
@@ -4240,6 +4344,8 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConf
 }
 
 export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4250,7 +4356,7 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -4265,10 +4371,12 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._processors = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._processors = value.processors;
     }
@@ -4335,6 +4443,8 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfig
 }
 
 export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4345,7 +4455,7 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigura
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -4364,11 +4474,13 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigura
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._logGroupName = undefined;
       this._logStreamName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._logGroupName = value.logGroupName;
       this._logStreamName = value.logStreamName;
@@ -4478,6 +4590,8 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfig
 }
 
 export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4488,7 +4602,7 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigura
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketArn) {
       hasAnyValues = true;
@@ -4518,7 +4632,7 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigura
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._cloudwatchLoggingOptions) {
+    if (this._cloudwatchLoggingOptions?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
@@ -4527,6 +4641,7 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigura
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketArn = undefined;
       this._bufferInterval = undefined;
       this._bufferSize = undefined;
@@ -4537,6 +4652,7 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigura
       this._cloudwatchLoggingOptions.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketArn = value.bucketArn;
       this._bufferInterval = value.bufferInterval;
       this._bufferSize = value.bufferSize;
@@ -4749,6 +4865,8 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationToTerraform(st
 }
 
 export class KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4759,7 +4877,7 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference e
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._clusterJdbcurl) {
       hasAnyValues = true;
@@ -4797,15 +4915,15 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference e
       hasAnyValues = true;
       internalValueResult.username = this._username;
     }
-    if (this._cloudwatchLoggingOptions) {
+    if (this._cloudwatchLoggingOptions?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
-    if (this._processingConfiguration) {
+    if (this._processingConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.processingConfiguration = this._processingConfiguration?.internalValue;
     }
-    if (this._s3BackupConfiguration) {
+    if (this._s3BackupConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3BackupConfiguration = this._s3BackupConfiguration?.internalValue;
     }
@@ -4814,6 +4932,7 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference e
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamRedshiftConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clusterJdbcurl = undefined;
       this._copyOptions = undefined;
       this._dataTableColumns = undefined;
@@ -4828,6 +4947,7 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference e
       this._s3BackupConfiguration.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clusterJdbcurl = value.clusterJdbcurl;
       this._copyOptions = value.copyOptions;
       this._dataTableColumns = value.dataTableColumns;
@@ -5048,6 +5168,8 @@ export function kinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOpt
 }
 
 export class KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5058,7 +5180,7 @@ export class KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOption
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -5077,11 +5199,13 @@ export class KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOption
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._logGroupName = undefined;
       this._logStreamName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._logGroupName = value.logGroupName;
       this._logStreamName = value.logStreamName;
@@ -5191,6 +5315,8 @@ export function kinesisFirehoseDeliveryStreamS3ConfigurationToTerraform(struct?:
 }
 
 export class KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5201,7 +5327,7 @@ export class KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference extends
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamS3Configuration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketArn) {
       hasAnyValues = true;
@@ -5231,7 +5357,7 @@ export class KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference extends
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._cloudwatchLoggingOptions) {
+    if (this._cloudwatchLoggingOptions?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
@@ -5240,6 +5366,7 @@ export class KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference extends
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamS3Configuration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketArn = undefined;
       this._bufferInterval = undefined;
       this._bufferSize = undefined;
@@ -5250,6 +5377,7 @@ export class KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference extends
       this._cloudwatchLoggingOptions.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketArn = value.bucketArn;
       this._bufferInterval = value.bufferInterval;
       this._bufferSize = value.bufferSize;
@@ -5411,6 +5539,8 @@ export function kinesisFirehoseDeliveryStreamServerSideEncryptionToTerraform(str
 }
 
 export class KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5421,7 +5551,7 @@ export class KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference ex
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamServerSideEncryption | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -5440,11 +5570,13 @@ export class KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference ex
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamServerSideEncryption | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._keyArn = undefined;
       this._keyType = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._keyArn = value.keyArn;
       this._keyType = value.keyType;
@@ -5527,6 +5659,8 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggin
 }
 
 export class KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5537,7 +5671,7 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOp
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -5556,11 +5690,13 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOp
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._logGroupName = undefined;
       this._logStreamName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._logGroupName = value.logGroupName;
       this._logStreamName = value.logStreamName;
@@ -5686,6 +5822,8 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfig
 }
 
 export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5696,7 +5834,7 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -5711,10 +5849,12 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._processors = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._processors = value.processors;
     }
@@ -5810,6 +5950,8 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationToTerraform(stru
 }
 
 export class KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5820,7 +5962,7 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference ext
   }
 
   public get internalValue(): KinesisFirehoseDeliveryStreamSplunkConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._hecAcknowledgmentTimeout) {
       hasAnyValues = true;
@@ -5846,11 +5988,11 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference ext
       hasAnyValues = true;
       internalValueResult.s3BackupMode = this._s3BackupMode;
     }
-    if (this._cloudwatchLoggingOptions) {
+    if (this._cloudwatchLoggingOptions?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
-    if (this._processingConfiguration) {
+    if (this._processingConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.processingConfiguration = this._processingConfiguration?.internalValue;
     }
@@ -5859,6 +6001,7 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference ext
 
   public set internalValue(value: KinesisFirehoseDeliveryStreamSplunkConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._hecAcknowledgmentTimeout = undefined;
       this._hecEndpoint = undefined;
       this._hecEndpointType = undefined;
@@ -5869,6 +6012,7 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference ext
       this._processingConfiguration.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._hecAcknowledgmentTimeout = value.hecAcknowledgmentTimeout;
       this._hecEndpoint = value.hecEndpoint;
       this._hecEndpointType = value.hecEndpointType;

@@ -52,6 +52,8 @@ export function cloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCoo
 }
 
 export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -62,7 +64,7 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookie
   }
 
   public get internalValue(): CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookies | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -73,9 +75,11 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookie
 
   public set internalValue(value: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookies | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }
@@ -121,6 +125,8 @@ export function cloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCoo
 }
 
 export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -131,13 +137,13 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookie
   }
 
   public get internalValue(): CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cookieBehavior) {
       hasAnyValues = true;
       internalValueResult.cookieBehavior = this._cookieBehavior;
     }
-    if (this._cookies) {
+    if (this._cookies?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cookies = this._cookies?.internalValue;
     }
@@ -146,10 +152,12 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookie
 
   public set internalValue(value: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cookieBehavior = undefined;
       this._cookies.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cookieBehavior = value.cookieBehavior;
       this._cookies.internalValue = value.cookies;
     }
@@ -202,6 +210,8 @@ export function cloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHea
 }
 
 export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -212,7 +222,7 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeader
   }
 
   public get internalValue(): CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeaders | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -223,9 +233,11 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeader
 
   public set internalValue(value: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeaders | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }
@@ -271,6 +283,8 @@ export function cloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHea
 }
 
 export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -281,13 +295,13 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeader
   }
 
   public get internalValue(): CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._headerBehavior) {
       hasAnyValues = true;
       internalValueResult.headerBehavior = this._headerBehavior;
     }
-    if (this._headers) {
+    if (this._headers?.internalValue) {
       hasAnyValues = true;
       internalValueResult.headers = this._headers?.internalValue;
     }
@@ -296,10 +310,12 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeader
 
   public set internalValue(value: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._headerBehavior = undefined;
       this._headers.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._headerBehavior = value.headerBehavior;
       this._headers.internalValue = value.headers;
     }
@@ -355,6 +371,8 @@ export function cloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQue
 }
 
 export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -365,7 +383,7 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryS
   }
 
   public get internalValue(): CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -376,9 +394,11 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryS
 
   public set internalValue(value: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }
@@ -424,6 +444,8 @@ export function cloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQue
 }
 
 export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -434,13 +456,13 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryS
   }
 
   public get internalValue(): CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._queryStringBehavior) {
       hasAnyValues = true;
       internalValueResult.queryStringBehavior = this._queryStringBehavior;
     }
-    if (this._queryStrings) {
+    if (this._queryStrings?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryStrings = this._queryStrings?.internalValue;
     }
@@ -449,10 +471,12 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryS
 
   public set internalValue(value: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._queryStringBehavior = undefined;
       this._queryStrings.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._queryStringBehavior = value.queryStringBehavior;
       this._queryStrings.internalValue = value.queryStrings;
     }
@@ -531,6 +555,8 @@ export function cloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginToT
 }
 
 export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -541,7 +567,7 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginOutput
   }
 
   public get internalValue(): CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enableAcceptEncodingBrotli) {
       hasAnyValues = true;
@@ -551,15 +577,15 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginOutput
       hasAnyValues = true;
       internalValueResult.enableAcceptEncodingGzip = this._enableAcceptEncodingGzip;
     }
-    if (this._cookiesConfig) {
+    if (this._cookiesConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cookiesConfig = this._cookiesConfig?.internalValue;
     }
-    if (this._headersConfig) {
+    if (this._headersConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.headersConfig = this._headersConfig?.internalValue;
     }
-    if (this._queryStringsConfig) {
+    if (this._queryStringsConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryStringsConfig = this._queryStringsConfig?.internalValue;
     }
@@ -568,6 +594,7 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginOutput
 
   public set internalValue(value: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enableAcceptEncodingBrotli = undefined;
       this._enableAcceptEncodingGzip = undefined;
       this._cookiesConfig.internalValue = undefined;
@@ -575,6 +602,7 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginOutput
       this._queryStringsConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enableAcceptEncodingBrotli = value.enableAcceptEncodingBrotli;
       this._enableAcceptEncodingGzip = value.enableAcceptEncodingGzip;
       this._cookiesConfig.internalValue = value.cookiesConfig;

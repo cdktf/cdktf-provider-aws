@@ -184,6 +184,8 @@ export function ecsServiceDeploymentCircuitBreakerToTerraform(struct?: EcsServic
 }
 
 export class EcsServiceDeploymentCircuitBreakerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -194,7 +196,7 @@ export class EcsServiceDeploymentCircuitBreakerOutputReference extends cdktf.Com
   }
 
   public get internalValue(): EcsServiceDeploymentCircuitBreaker | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enable) {
       hasAnyValues = true;
@@ -209,10 +211,12 @@ export class EcsServiceDeploymentCircuitBreakerOutputReference extends cdktf.Com
 
   public set internalValue(value: EcsServiceDeploymentCircuitBreaker | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enable = undefined;
       this._rollback = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enable = value.enable;
       this._rollback = value.rollback;
     }
@@ -262,6 +266,8 @@ export function ecsServiceDeploymentControllerToTerraform(struct?: EcsServiceDep
 }
 
 export class EcsServiceDeploymentControllerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -272,7 +278,7 @@ export class EcsServiceDeploymentControllerOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): EcsServiceDeploymentController | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -283,9 +289,11 @@ export class EcsServiceDeploymentControllerOutputReference extends cdktf.Complex
 
   public set internalValue(value: EcsServiceDeploymentController | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
     }
   }
@@ -366,6 +374,8 @@ export function ecsServiceNetworkConfigurationToTerraform(struct?: EcsServiceNet
 }
 
 export class EcsServiceNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -376,7 +386,7 @@ export class EcsServiceNetworkConfigurationOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): EcsServiceNetworkConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._assignPublicIp) {
       hasAnyValues = true;
@@ -395,11 +405,13 @@ export class EcsServiceNetworkConfigurationOutputReference extends cdktf.Complex
 
   public set internalValue(value: EcsServiceNetworkConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._assignPublicIp = undefined;
       this._securityGroups = undefined;
       this._subnets = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._assignPublicIp = value.assignPublicIp;
       this._securityGroups = value.securityGroups;
       this._subnets = value.subnets;
@@ -528,6 +540,8 @@ export function ecsServiceServiceRegistriesToTerraform(struct?: EcsServiceServic
 }
 
 export class EcsServiceServiceRegistriesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -538,7 +552,7 @@ export class EcsServiceServiceRegistriesOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): EcsServiceServiceRegistries | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._containerName) {
       hasAnyValues = true;
@@ -561,12 +575,14 @@ export class EcsServiceServiceRegistriesOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: EcsServiceServiceRegistries | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._containerName = undefined;
       this._containerPort = undefined;
       this._port = undefined;
       this._registryArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._containerName = value.containerName;
       this._containerPort = value.containerPort;
       this._port = value.port;
@@ -653,6 +669,8 @@ export function ecsServiceTimeoutsToTerraform(struct?: EcsServiceTimeoutsOutputR
 }
 
 export class EcsServiceTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -663,7 +681,7 @@ export class EcsServiceTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): EcsServiceTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete) {
       hasAnyValues = true;
@@ -674,9 +692,11 @@ export class EcsServiceTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: EcsServiceTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._delete = value.delete;
     }
   }

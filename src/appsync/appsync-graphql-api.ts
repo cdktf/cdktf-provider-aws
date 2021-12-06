@@ -89,6 +89,8 @@ export function appsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectCo
 }
 
 export class AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -99,7 +101,7 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfi
   }
 
   public get internalValue(): AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._authTtl) {
       hasAnyValues = true;
@@ -122,12 +124,14 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfi
 
   public set internalValue(value: AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._authTtl = undefined;
       this._clientId = undefined;
       this._iatTtl = undefined;
       this._issuer = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._authTtl = value.authTtl;
       this._clientId = value.clientId;
       this._iatTtl = value.iatTtl;
@@ -224,6 +228,8 @@ export function appsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigT
 }
 
 export class AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -234,7 +240,7 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutp
   }
 
   public get internalValue(): AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._appIdClientRegex) {
       hasAnyValues = true;
@@ -253,11 +259,13 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutp
 
   public set internalValue(value: AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._appIdClientRegex = undefined;
       this._awsRegion = undefined;
       this._userPoolId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._appIdClientRegex = value.appIdClientRegex;
       this._awsRegion = value.awsRegion;
       this._userPoolId = value.userPoolId;
@@ -368,6 +376,8 @@ export function appsyncGraphqlApiLogConfigToTerraform(struct?: AppsyncGraphqlApi
 }
 
 export class AppsyncGraphqlApiLogConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -378,7 +388,7 @@ export class AppsyncGraphqlApiLogConfigOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): AppsyncGraphqlApiLogConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cloudwatchLogsRoleArn) {
       hasAnyValues = true;
@@ -397,11 +407,13 @@ export class AppsyncGraphqlApiLogConfigOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: AppsyncGraphqlApiLogConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cloudwatchLogsRoleArn = undefined;
       this._excludeVerboseContent = undefined;
       this._fieldLogLevel = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cloudwatchLogsRoleArn = value.cloudwatchLogsRoleArn;
       this._excludeVerboseContent = value.excludeVerboseContent;
       this._fieldLogLevel = value.fieldLogLevel;
@@ -483,6 +495,8 @@ export function appsyncGraphqlApiOpenidConnectConfigToTerraform(struct?: Appsync
 }
 
 export class AppsyncGraphqlApiOpenidConnectConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -493,7 +507,7 @@ export class AppsyncGraphqlApiOpenidConnectConfigOutputReference extends cdktf.C
   }
 
   public get internalValue(): AppsyncGraphqlApiOpenidConnectConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._authTtl) {
       hasAnyValues = true;
@@ -516,12 +530,14 @@ export class AppsyncGraphqlApiOpenidConnectConfigOutputReference extends cdktf.C
 
   public set internalValue(value: AppsyncGraphqlApiOpenidConnectConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._authTtl = undefined;
       this._clientId = undefined;
       this._iatTtl = undefined;
       this._issuer = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._authTtl = value.authTtl;
       this._clientId = value.clientId;
       this._iatTtl = value.iatTtl;
@@ -623,6 +639,8 @@ export function appsyncGraphqlApiUserPoolConfigToTerraform(struct?: AppsyncGraph
 }
 
 export class AppsyncGraphqlApiUserPoolConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -633,7 +651,7 @@ export class AppsyncGraphqlApiUserPoolConfigOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): AppsyncGraphqlApiUserPoolConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._appIdClientRegex) {
       hasAnyValues = true;
@@ -656,12 +674,14 @@ export class AppsyncGraphqlApiUserPoolConfigOutputReference extends cdktf.Comple
 
   public set internalValue(value: AppsyncGraphqlApiUserPoolConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._appIdClientRegex = undefined;
       this._awsRegion = undefined;
       this._defaultAction = undefined;
       this._userPoolId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._appIdClientRegex = value.appIdClientRegex;
       this._awsRegion = value.awsRegion;
       this._defaultAction = value.defaultAction;

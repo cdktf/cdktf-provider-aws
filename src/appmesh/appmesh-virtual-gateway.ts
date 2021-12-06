@@ -57,6 +57,8 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertifica
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -67,7 +69,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateF
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateChain) {
       hasAnyValues = true;
@@ -82,10 +84,12 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateF
 
   public set internalValue(value: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateChain = undefined;
       this._privateKey = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateChain = value.certificateChain;
       this._privateKey = value.privateKey;
     }
@@ -135,6 +139,8 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertifica
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -145,7 +151,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateS
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._secretName) {
       hasAnyValues = true;
@@ -156,9 +162,11 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateS
 
   public set internalValue(value: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._secretName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._secretName = value.secretName;
     }
   }
@@ -203,6 +211,8 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertifica
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -213,13 +223,13 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateO
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._file) {
+    if (this._file?.internalValue) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds) {
+    if (this._sds?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -228,10 +238,12 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateO
 
   public set internalValue(value: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._file.internalValue = undefined;
       this._sds.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._file.internalValue = value.file;
       this._sds.internalValue = value.sds;
     }
@@ -287,6 +299,8 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidatio
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -297,7 +311,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSu
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._exact) {
       hasAnyValues = true;
@@ -308,9 +322,11 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSu
 
   public set internalValue(value: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._exact = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._exact = value.exact;
     }
   }
@@ -348,6 +364,8 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidatio
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -358,9 +376,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSu
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._match) {
+    if (this._match?.internalValue) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
@@ -369,9 +387,11 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSu
 
   public set internalValue(value: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._match.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._match.internalValue = value.match;
     }
   }
@@ -407,6 +427,8 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidatio
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -417,7 +439,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateAuthorityArns) {
       hasAnyValues = true;
@@ -428,9 +450,11 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
 
   public set internalValue(value: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateAuthorityArns = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateAuthorityArns = value.certificateAuthorityArns;
     }
   }
@@ -466,6 +490,8 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidatio
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -476,7 +502,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateChain) {
       hasAnyValues = true;
@@ -487,9 +513,11 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
 
   public set internalValue(value: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateChain = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateChain = value.certificateChain;
     }
   }
@@ -525,6 +553,8 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidatio
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -535,7 +565,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._secretName) {
       hasAnyValues = true;
@@ -546,9 +576,11 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
 
   public set internalValue(value: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._secretName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._secretName = value.secretName;
     }
   }
@@ -600,6 +632,8 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidatio
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -610,17 +644,17 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._acm) {
+    if (this._acm?.internalValue) {
       hasAnyValues = true;
       internalValueResult.acm = this._acm?.internalValue;
     }
-    if (this._file) {
+    if (this._file?.internalValue) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds) {
+    if (this._sds?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -629,11 +663,13 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
 
   public set internalValue(value: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._acm.internalValue = undefined;
       this._file.internalValue = undefined;
       this._sds.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._acm.internalValue = value.acm;
       this._file.internalValue = value.file;
       this._sds.internalValue = value.sds;
@@ -715,6 +751,8 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidatio
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -725,13 +763,13 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOu
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._subjectAlternativeNames) {
+    if (this._subjectAlternativeNames?.internalValue) {
       hasAnyValues = true;
       internalValueResult.subjectAlternativeNames = this._subjectAlternativeNames?.internalValue;
     }
-    if (this._trust) {
+    if (this._trust?.internalValue) {
       hasAnyValues = true;
       internalValueResult.trust = this._trust?.internalValue;
     }
@@ -740,10 +778,12 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOu
 
   public set internalValue(value: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._subjectAlternativeNames.internalValue = undefined;
       this._trust.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._subjectAlternativeNames.internalValue = value.subjectAlternativeNames;
       this._trust.internalValue = value.trust;
     }
@@ -815,6 +855,8 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsToTerrafo
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -825,7 +867,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputRefere
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enforce) {
       hasAnyValues = true;
@@ -835,11 +877,11 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputRefere
       hasAnyValues = true;
       internalValueResult.ports = this._ports;
     }
-    if (this._certificate) {
+    if (this._certificate?.internalValue) {
       hasAnyValues = true;
       internalValueResult.certificate = this._certificate?.internalValue;
     }
-    if (this._validation) {
+    if (this._validation?.internalValue) {
       hasAnyValues = true;
       internalValueResult.validation = this._validation?.internalValue;
     }
@@ -848,12 +890,14 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputRefere
 
   public set internalValue(value: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enforce = undefined;
       this._ports = undefined;
       this._certificate.internalValue = undefined;
       this._validation.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enforce = value.enforce;
       this._ports = value.ports;
       this._certificate.internalValue = value.certificate;
@@ -943,6 +987,8 @@ export function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyToTerraform(
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -953,9 +999,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._tls) {
+    if (this._tls?.internalValue) {
       hasAnyValues = true;
       internalValueResult.tls = this._tls?.internalValue;
     }
@@ -964,9 +1010,11 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference
 
   public set internalValue(value: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._tls.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._tls.internalValue = value.tls;
     }
   }
@@ -1007,6 +1055,8 @@ export function appmeshVirtualGatewaySpecBackendDefaultsToTerraform(struct?: App
 }
 
 export class AppmeshVirtualGatewaySpecBackendDefaultsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1017,9 +1067,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsOutputReference extends cdk
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaults | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clientPolicy) {
+    if (this._clientPolicy?.internalValue) {
       hasAnyValues = true;
       internalValueResult.clientPolicy = this._clientPolicy?.internalValue;
     }
@@ -1028,9 +1078,11 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsOutputReference extends cdk
 
   public set internalValue(value: AppmeshVirtualGatewaySpecBackendDefaults | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clientPolicy.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clientPolicy.internalValue = value.clientPolicy;
     }
   }
@@ -1069,6 +1121,8 @@ export function appmeshVirtualGatewaySpecListenerConnectionPoolGrpcToTerraform(s
 }
 
 export class AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1079,7 +1133,7 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference 
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxRequests) {
       hasAnyValues = true;
@@ -1090,9 +1144,11 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference 
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxRequests = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxRequests = value.maxRequests;
     }
   }
@@ -1133,6 +1189,8 @@ export function appmeshVirtualGatewaySpecListenerConnectionPoolHttpToTerraform(s
 }
 
 export class AppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1143,7 +1201,7 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference 
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerConnectionPoolHttp | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxConnections) {
       hasAnyValues = true;
@@ -1158,10 +1216,12 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference 
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerConnectionPoolHttp | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxConnections = undefined;
       this._maxPendingRequests = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxConnections = value.maxConnections;
       this._maxPendingRequests = value.maxPendingRequests;
     }
@@ -1214,6 +1274,8 @@ export function appmeshVirtualGatewaySpecListenerConnectionPoolHttp2ToTerraform(
 }
 
 export class AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1224,7 +1286,7 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2 | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxRequests) {
       hasAnyValues = true;
@@ -1235,9 +1297,11 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2 | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxRequests = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxRequests = value.maxRequests;
     }
   }
@@ -1289,6 +1353,8 @@ export function appmeshVirtualGatewaySpecListenerConnectionPoolToTerraform(struc
 }
 
 export class AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1299,17 +1365,17 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference exte
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerConnectionPool | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._grpc) {
+    if (this._grpc?.internalValue) {
       hasAnyValues = true;
       internalValueResult.grpc = this._grpc?.internalValue;
     }
-    if (this._http) {
+    if (this._http?.internalValue) {
       hasAnyValues = true;
       internalValueResult.http = this._http?.internalValue;
     }
-    if (this._http2) {
+    if (this._http2?.internalValue) {
       hasAnyValues = true;
       internalValueResult.http2 = this._http2?.internalValue;
     }
@@ -1318,11 +1384,13 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference exte
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerConnectionPool | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._grpc.internalValue = undefined;
       this._http.internalValue = undefined;
       this._http2.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._grpc.internalValue = value.grpc;
       this._http.internalValue = value.http;
       this._http2.internalValue = value.http2;
@@ -1425,6 +1493,8 @@ export function appmeshVirtualGatewaySpecListenerHealthCheckToTerraform(struct?:
 }
 
 export class AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1435,7 +1505,7 @@ export class AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference extends
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerHealthCheck | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._healthyThreshold) {
       hasAnyValues = true;
@@ -1470,6 +1540,7 @@ export class AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference extends
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerHealthCheck | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._healthyThreshold = undefined;
       this._intervalMillis = undefined;
       this._path = undefined;
@@ -1479,6 +1550,7 @@ export class AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference extends
       this._unhealthyThreshold = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._healthyThreshold = value.healthyThreshold;
       this._intervalMillis = value.intervalMillis;
       this._path = value.path;
@@ -1609,6 +1681,8 @@ export function appmeshVirtualGatewaySpecListenerPortMappingToTerraform(struct?:
 }
 
 export class AppmeshVirtualGatewaySpecListenerPortMappingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1619,7 +1693,7 @@ export class AppmeshVirtualGatewaySpecListenerPortMappingOutputReference extends
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerPortMapping | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._port) {
       hasAnyValues = true;
@@ -1634,10 +1708,12 @@ export class AppmeshVirtualGatewaySpecListenerPortMappingOutputReference extends
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerPortMapping | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._port = undefined;
       this._protocol = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._port = value.port;
       this._protocol = value.protocol;
     }
@@ -1687,6 +1763,8 @@ export function appmeshVirtualGatewaySpecListenerTlsCertificateAcmToTerraform(st
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1697,7 +1775,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference e
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsCertificateAcm | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateArn) {
       hasAnyValues = true;
@@ -1708,9 +1786,11 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference e
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerTlsCertificateAcm | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateArn = value.certificateArn;
     }
   }
@@ -1751,6 +1831,8 @@ export function appmeshVirtualGatewaySpecListenerTlsCertificateFileToTerraform(s
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1761,7 +1843,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference 
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsCertificateFile | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateChain) {
       hasAnyValues = true;
@@ -1776,10 +1858,12 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference 
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerTlsCertificateFile | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateChain = undefined;
       this._privateKey = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateChain = value.certificateChain;
       this._privateKey = value.privateKey;
     }
@@ -1829,6 +1913,8 @@ export function appmeshVirtualGatewaySpecListenerTlsCertificateSdsToTerraform(st
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1839,7 +1925,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference e
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsCertificateSds | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._secretName) {
       hasAnyValues = true;
@@ -1850,9 +1936,11 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference e
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerTlsCertificateSds | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._secretName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._secretName = value.secretName;
     }
   }
@@ -1904,6 +1992,8 @@ export function appmeshVirtualGatewaySpecListenerTlsCertificateToTerraform(struc
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1914,17 +2004,17 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference exte
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsCertificate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._acm) {
+    if (this._acm?.internalValue) {
       hasAnyValues = true;
       internalValueResult.acm = this._acm?.internalValue;
     }
-    if (this._file) {
+    if (this._file?.internalValue) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds) {
+    if (this._sds?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -1933,11 +2023,13 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference exte
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerTlsCertificate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._acm.internalValue = undefined;
       this._file.internalValue = undefined;
       this._sds.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._acm.internalValue = value.acm;
       this._file.internalValue = value.file;
       this._sds.internalValue = value.sds;
@@ -2010,6 +2102,8 @@ export function appmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternative
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2020,7 +2114,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNam
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._exact) {
       hasAnyValues = true;
@@ -2031,9 +2125,11 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNam
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._exact = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._exact = value.exact;
     }
   }
@@ -2071,6 +2167,8 @@ export function appmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternative
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2081,9 +2179,9 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNam
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._match) {
+    if (this._match?.internalValue) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
@@ -2092,9 +2190,11 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNam
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._match.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._match.internalValue = value.match;
     }
   }
@@ -2130,6 +2230,8 @@ export function appmeshVirtualGatewaySpecListenerTlsValidationTrustFileToTerrafo
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2140,7 +2242,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputRefere
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateChain) {
       hasAnyValues = true;
@@ -2151,9 +2253,11 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputRefere
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateChain = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateChain = value.certificateChain;
     }
   }
@@ -2189,6 +2293,8 @@ export function appmeshVirtualGatewaySpecListenerTlsValidationTrustSdsToTerrafor
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2199,7 +2305,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReferen
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsValidationTrustSds | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._secretName) {
       hasAnyValues = true;
@@ -2210,9 +2316,11 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReferen
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerTlsValidationTrustSds | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._secretName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._secretName = value.secretName;
     }
   }
@@ -2257,6 +2365,8 @@ export function appmeshVirtualGatewaySpecListenerTlsValidationTrustToTerraform(s
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2267,13 +2377,13 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference 
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsValidationTrust | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._file) {
+    if (this._file?.internalValue) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds) {
+    if (this._sds?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -2282,10 +2392,12 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference 
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerTlsValidationTrust | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._file.internalValue = undefined;
       this._sds.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._file.internalValue = value.file;
       this._sds.internalValue = value.sds;
     }
@@ -2350,6 +2462,8 @@ export function appmeshVirtualGatewaySpecListenerTlsValidationToTerraform(struct
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2360,13 +2474,13 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference exten
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsValidation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._subjectAlternativeNames) {
+    if (this._subjectAlternativeNames?.internalValue) {
       hasAnyValues = true;
       internalValueResult.subjectAlternativeNames = this._subjectAlternativeNames?.internalValue;
     }
-    if (this._trust) {
+    if (this._trust?.internalValue) {
       hasAnyValues = true;
       internalValueResult.trust = this._trust?.internalValue;
     }
@@ -2375,10 +2489,12 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference exten
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerTlsValidation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._subjectAlternativeNames.internalValue = undefined;
       this._trust.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._subjectAlternativeNames.internalValue = value.subjectAlternativeNames;
       this._trust.internalValue = value.trust;
     }
@@ -2445,6 +2561,8 @@ export function appmeshVirtualGatewaySpecListenerTlsToTerraform(struct?: Appmesh
 }
 
 export class AppmeshVirtualGatewaySpecListenerTlsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2455,17 +2573,17 @@ export class AppmeshVirtualGatewaySpecListenerTlsOutputReference extends cdktf.C
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTls | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._mode) {
       hasAnyValues = true;
       internalValueResult.mode = this._mode;
     }
-    if (this._certificate) {
+    if (this._certificate?.internalValue) {
       hasAnyValues = true;
       internalValueResult.certificate = this._certificate?.internalValue;
     }
-    if (this._validation) {
+    if (this._validation?.internalValue) {
       hasAnyValues = true;
       internalValueResult.validation = this._validation?.internalValue;
     }
@@ -2474,11 +2592,13 @@ export class AppmeshVirtualGatewaySpecListenerTlsOutputReference extends cdktf.C
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListenerTls | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._mode = undefined;
       this._certificate.internalValue = undefined;
       this._validation.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._mode = value.mode;
       this._certificate.internalValue = value.certificate;
       this._validation.internalValue = value.validation;
@@ -2568,6 +2688,8 @@ export function appmeshVirtualGatewaySpecListenerToTerraform(struct?: AppmeshVir
 }
 
 export class AppmeshVirtualGatewaySpecListenerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2578,21 +2700,21 @@ export class AppmeshVirtualGatewaySpecListenerOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListener | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._connectionPool) {
+    if (this._connectionPool?.internalValue) {
       hasAnyValues = true;
       internalValueResult.connectionPool = this._connectionPool?.internalValue;
     }
-    if (this._healthCheck) {
+    if (this._healthCheck?.internalValue) {
       hasAnyValues = true;
       internalValueResult.healthCheck = this._healthCheck?.internalValue;
     }
-    if (this._portMapping) {
+    if (this._portMapping?.internalValue) {
       hasAnyValues = true;
       internalValueResult.portMapping = this._portMapping?.internalValue;
     }
-    if (this._tls) {
+    if (this._tls?.internalValue) {
       hasAnyValues = true;
       internalValueResult.tls = this._tls?.internalValue;
     }
@@ -2601,12 +2723,14 @@ export class AppmeshVirtualGatewaySpecListenerOutputReference extends cdktf.Comp
 
   public set internalValue(value: AppmeshVirtualGatewaySpecListener | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._connectionPool.internalValue = undefined;
       this._healthCheck.internalValue = undefined;
       this._portMapping.internalValue = undefined;
       this._tls.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._connectionPool.internalValue = value.connectionPool;
       this._healthCheck.internalValue = value.healthCheck;
       this._portMapping.internalValue = value.portMapping;
@@ -2693,6 +2817,8 @@ export function appmeshVirtualGatewaySpecLoggingAccessLogFileToTerraform(struct?
 }
 
 export class AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2703,7 +2829,7 @@ export class AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference extend
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecLoggingAccessLogFile | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._path) {
       hasAnyValues = true;
@@ -2714,9 +2840,11 @@ export class AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference extend
 
   public set internalValue(value: AppmeshVirtualGatewaySpecLoggingAccessLogFile | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._path = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._path = value.path;
     }
   }
@@ -2754,6 +2882,8 @@ export function appmeshVirtualGatewaySpecLoggingAccessLogToTerraform(struct?: Ap
 }
 
 export class AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2764,9 +2894,9 @@ export class AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference extends cd
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecLoggingAccessLog | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._file) {
+    if (this._file?.internalValue) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
@@ -2775,9 +2905,11 @@ export class AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference extends cd
 
   public set internalValue(value: AppmeshVirtualGatewaySpecLoggingAccessLog | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._file.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._file.internalValue = value.file;
     }
   }
@@ -2818,6 +2950,8 @@ export function appmeshVirtualGatewaySpecLoggingToTerraform(struct?: AppmeshVirt
 }
 
 export class AppmeshVirtualGatewaySpecLoggingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2828,9 +2962,9 @@ export class AppmeshVirtualGatewaySpecLoggingOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecLogging | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accessLog) {
+    if (this._accessLog?.internalValue) {
       hasAnyValues = true;
       internalValueResult.accessLog = this._accessLog?.internalValue;
     }
@@ -2839,9 +2973,11 @@ export class AppmeshVirtualGatewaySpecLoggingOutputReference extends cdktf.Compl
 
   public set internalValue(value: AppmeshVirtualGatewaySpecLogging | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accessLog.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accessLog.internalValue = value.accessLog;
     }
   }
@@ -2896,6 +3032,8 @@ export function appmeshVirtualGatewaySpecToTerraform(struct?: AppmeshVirtualGate
 }
 
 export class AppmeshVirtualGatewaySpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2906,17 +3044,17 @@ export class AppmeshVirtualGatewaySpecOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._backendDefaults) {
+    if (this._backendDefaults?.internalValue) {
       hasAnyValues = true;
       internalValueResult.backendDefaults = this._backendDefaults?.internalValue;
     }
-    if (this._listener) {
+    if (this._listener?.internalValue) {
       hasAnyValues = true;
       internalValueResult.listener = this._listener?.internalValue;
     }
-    if (this._logging) {
+    if (this._logging?.internalValue) {
       hasAnyValues = true;
       internalValueResult.logging = this._logging?.internalValue;
     }
@@ -2925,11 +3063,13 @@ export class AppmeshVirtualGatewaySpecOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: AppmeshVirtualGatewaySpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._backendDefaults.internalValue = undefined;
       this._listener.internalValue = undefined;
       this._logging.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._backendDefaults.internalValue = value.backendDefaults;
       this._listener.internalValue = value.listener;
       this._logging.internalValue = value.logging;

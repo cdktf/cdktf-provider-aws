@@ -48,6 +48,8 @@ export function guarddutyDetectorDatasourcesS3LogsToTerraform(struct?: Guardduty
 }
 
 export class GuarddutyDetectorDatasourcesS3LogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -58,7 +60,7 @@ export class GuarddutyDetectorDatasourcesS3LogsOutputReference extends cdktf.Com
   }
 
   public get internalValue(): GuarddutyDetectorDatasourcesS3Logs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enable) {
       hasAnyValues = true;
@@ -69,9 +71,11 @@ export class GuarddutyDetectorDatasourcesS3LogsOutputReference extends cdktf.Com
 
   public set internalValue(value: GuarddutyDetectorDatasourcesS3Logs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enable = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enable = value.enable;
     }
   }
@@ -109,6 +113,8 @@ export function guarddutyDetectorDatasourcesToTerraform(struct?: GuarddutyDetect
 }
 
 export class GuarddutyDetectorDatasourcesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -119,9 +125,9 @@ export class GuarddutyDetectorDatasourcesOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): GuarddutyDetectorDatasources | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._s3Logs) {
+    if (this._s3Logs?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3Logs = this._s3Logs?.internalValue;
     }
@@ -130,9 +136,11 @@ export class GuarddutyDetectorDatasourcesOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: GuarddutyDetectorDatasources | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._s3Logs.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._s3Logs.internalValue = value.s3Logs;
     }
   }

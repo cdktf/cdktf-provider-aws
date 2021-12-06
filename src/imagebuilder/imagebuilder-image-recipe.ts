@@ -96,6 +96,8 @@ export function imagebuilderImageRecipeBlockDeviceMappingEbsToTerraform(struct?:
 }
 
 export class ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -106,7 +108,7 @@ export class ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference extends
   }
 
   public get internalValue(): ImagebuilderImageRecipeBlockDeviceMappingEbs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._deleteOnTermination) {
       hasAnyValues = true;
@@ -141,6 +143,7 @@ export class ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference extends
 
   public set internalValue(value: ImagebuilderImageRecipeBlockDeviceMappingEbs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._deleteOnTermination = undefined;
       this._encrypted = undefined;
       this._iops = undefined;
@@ -150,6 +153,7 @@ export class ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference extends
       this._volumeType = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._deleteOnTermination = value.deleteOnTermination;
       this._encrypted = value.encrypted;
       this._iops = value.iops;

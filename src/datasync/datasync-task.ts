@@ -79,6 +79,8 @@ export function datasyncTaskExcludesToTerraform(struct?: DatasyncTaskExcludesOut
 }
 
 export class DatasyncTaskExcludesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -89,7 +91,7 @@ export class DatasyncTaskExcludesOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): DatasyncTaskExcludes | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._filterType) {
       hasAnyValues = true;
@@ -104,10 +106,12 @@ export class DatasyncTaskExcludesOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: DatasyncTaskExcludes | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._filterType = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._filterType = value.filterType;
       this._value = value.value;
     }
@@ -223,6 +227,8 @@ export function datasyncTaskOptionsToTerraform(struct?: DatasyncTaskOptionsOutpu
 }
 
 export class DatasyncTaskOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -233,7 +239,7 @@ export class DatasyncTaskOptionsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): DatasyncTaskOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._atime) {
       hasAnyValues = true;
@@ -292,6 +298,7 @@ export class DatasyncTaskOptionsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: DatasyncTaskOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._atime = undefined;
       this._bytesPerSecond = undefined;
       this._gid = undefined;
@@ -307,6 +314,7 @@ export class DatasyncTaskOptionsOutputReference extends cdktf.ComplexObject {
       this._verifyMode = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._atime = value.atime;
       this._bytesPerSecond = value.bytesPerSecond;
       this._gid = value.gid;
@@ -549,6 +557,8 @@ export function datasyncTaskScheduleToTerraform(struct?: DatasyncTaskScheduleOut
 }
 
 export class DatasyncTaskScheduleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -559,7 +569,7 @@ export class DatasyncTaskScheduleOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): DatasyncTaskSchedule | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._scheduleExpression) {
       hasAnyValues = true;
@@ -570,9 +580,11 @@ export class DatasyncTaskScheduleOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: DatasyncTaskSchedule | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._scheduleExpression = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._scheduleExpression = value.scheduleExpression;
     }
   }
@@ -608,6 +620,8 @@ export function datasyncTaskTimeoutsToTerraform(struct?: DatasyncTaskTimeoutsOut
 }
 
 export class DatasyncTaskTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -618,7 +632,7 @@ export class DatasyncTaskTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): DatasyncTaskTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -629,9 +643,11 @@ export class DatasyncTaskTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: DatasyncTaskTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
     }
   }

@@ -80,6 +80,8 @@ export function globalacceleratorAcceleratorAttributesToTerraform(struct?: Globa
 }
 
 export class GlobalacceleratorAcceleratorAttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -90,7 +92,7 @@ export class GlobalacceleratorAcceleratorAttributesOutputReference extends cdktf
   }
 
   public get internalValue(): GlobalacceleratorAcceleratorAttributes | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._flowLogsEnabled) {
       hasAnyValues = true;
@@ -109,11 +111,13 @@ export class GlobalacceleratorAcceleratorAttributesOutputReference extends cdktf
 
   public set internalValue(value: GlobalacceleratorAcceleratorAttributes | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._flowLogsEnabled = undefined;
       this._flowLogsS3Bucket = undefined;
       this._flowLogsS3Prefix = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._flowLogsEnabled = value.flowLogsEnabled;
       this._flowLogsS3Bucket = value.flowLogsS3Bucket;
       this._flowLogsS3Prefix = value.flowLogsS3Prefix;
@@ -191,6 +195,8 @@ export function globalacceleratorAcceleratorTimeoutsToTerraform(struct?: Globala
 }
 
 export class GlobalacceleratorAcceleratorTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -201,7 +207,7 @@ export class GlobalacceleratorAcceleratorTimeoutsOutputReference extends cdktf.C
   }
 
   public get internalValue(): GlobalacceleratorAcceleratorTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -216,10 +222,12 @@ export class GlobalacceleratorAcceleratorTimeoutsOutputReference extends cdktf.C
 
   public set internalValue(value: GlobalacceleratorAcceleratorTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._update = value.update;
     }

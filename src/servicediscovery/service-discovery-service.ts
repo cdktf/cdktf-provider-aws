@@ -102,6 +102,8 @@ export function serviceDiscoveryServiceDnsConfigToTerraform(struct?: ServiceDisc
 }
 
 export class ServiceDiscoveryServiceDnsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -112,7 +114,7 @@ export class ServiceDiscoveryServiceDnsConfigOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): ServiceDiscoveryServiceDnsConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._namespaceId) {
       hasAnyValues = true;
@@ -131,11 +133,13 @@ export class ServiceDiscoveryServiceDnsConfigOutputReference extends cdktf.Compl
 
   public set internalValue(value: ServiceDiscoveryServiceDnsConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._namespaceId = undefined;
       this._routingPolicy = undefined;
       this._dnsRecords = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._namespaceId = value.namespaceId;
       this._routingPolicy = value.routingPolicy;
       this._dnsRecords = value.dnsRecords;
@@ -213,6 +217,8 @@ export function serviceDiscoveryServiceHealthCheckConfigToTerraform(struct?: Ser
 }
 
 export class ServiceDiscoveryServiceHealthCheckConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -223,7 +229,7 @@ export class ServiceDiscoveryServiceHealthCheckConfigOutputReference extends cdk
   }
 
   public get internalValue(): ServiceDiscoveryServiceHealthCheckConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._failureThreshold) {
       hasAnyValues = true;
@@ -242,11 +248,13 @@ export class ServiceDiscoveryServiceHealthCheckConfigOutputReference extends cdk
 
   public set internalValue(value: ServiceDiscoveryServiceHealthCheckConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._failureThreshold = undefined;
       this._resourcePath = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._failureThreshold = value.failureThreshold;
       this._resourcePath = value.resourcePath;
       this._type = value.type;
@@ -319,6 +327,8 @@ export function serviceDiscoveryServiceHealthCheckCustomConfigToTerraform(struct
 }
 
 export class ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -329,7 +339,7 @@ export class ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference exten
   }
 
   public get internalValue(): ServiceDiscoveryServiceHealthCheckCustomConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._failureThreshold) {
       hasAnyValues = true;
@@ -340,9 +350,11 @@ export class ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference exten
 
   public set internalValue(value: ServiceDiscoveryServiceHealthCheckCustomConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._failureThreshold = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._failureThreshold = value.failureThreshold;
     }
   }

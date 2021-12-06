@@ -119,6 +119,8 @@ export function elbAccessLogsToTerraform(struct?: ElbAccessLogsOutputReference |
 }
 
 export class ElbAccessLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -129,7 +131,7 @@ export class ElbAccessLogsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): ElbAccessLogs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucket) {
       hasAnyValues = true;
@@ -152,12 +154,14 @@ export class ElbAccessLogsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: ElbAccessLogs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucket = undefined;
       this._bucketPrefix = undefined;
       this._enabled = undefined;
       this._interval = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucket = value.bucket;
       this._bucketPrefix = value.bucketPrefix;
       this._enabled = value.enabled;
@@ -264,6 +268,8 @@ export function elbHealthCheckToTerraform(struct?: ElbHealthCheckOutputReference
 }
 
 export class ElbHealthCheckOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -274,7 +280,7 @@ export class ElbHealthCheckOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): ElbHealthCheck | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._healthyThreshold) {
       hasAnyValues = true;
@@ -301,6 +307,7 @@ export class ElbHealthCheckOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: ElbHealthCheck | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._healthyThreshold = undefined;
       this._interval = undefined;
       this._target = undefined;
@@ -308,6 +315,7 @@ export class ElbHealthCheckOutputReference extends cdktf.ComplexObject {
       this._unhealthyThreshold = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._healthyThreshold = value.healthyThreshold;
       this._interval = value.interval;
       this._target = value.target;

@@ -62,6 +62,8 @@ export function gameliftBuildStorageLocationToTerraform(struct?: GameliftBuildSt
 }
 
 export class GameliftBuildStorageLocationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -72,7 +74,7 @@ export class GameliftBuildStorageLocationOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): GameliftBuildStorageLocation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucket) {
       hasAnyValues = true;
@@ -91,11 +93,13 @@ export class GameliftBuildStorageLocationOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: GameliftBuildStorageLocation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucket = undefined;
       this._key = undefined;
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucket = value.bucket;
       this._key = value.key;
       this._roleArn = value.roleArn;

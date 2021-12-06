@@ -127,6 +127,8 @@ export function gameliftFleetResourceCreationLimitPolicyToTerraform(struct?: Gam
 }
 
 export class GameliftFleetResourceCreationLimitPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -137,7 +139,7 @@ export class GameliftFleetResourceCreationLimitPolicyOutputReference extends cdk
   }
 
   public get internalValue(): GameliftFleetResourceCreationLimitPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._newGameSessionsPerCreator) {
       hasAnyValues = true;
@@ -152,10 +154,12 @@ export class GameliftFleetResourceCreationLimitPolicyOutputReference extends cdk
 
   public set internalValue(value: GameliftFleetResourceCreationLimitPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._newGameSessionsPerCreator = undefined;
       this._policyPeriodInMinutes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._newGameSessionsPerCreator = value.newGameSessionsPerCreator;
       this._policyPeriodInMinutes = value.policyPeriodInMinutes;
     }
@@ -250,6 +254,8 @@ export function gameliftFleetRuntimeConfigurationToTerraform(struct?: GameliftFl
 }
 
 export class GameliftFleetRuntimeConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -260,7 +266,7 @@ export class GameliftFleetRuntimeConfigurationOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): GameliftFleetRuntimeConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._gameSessionActivationTimeoutSeconds) {
       hasAnyValues = true;
@@ -279,11 +285,13 @@ export class GameliftFleetRuntimeConfigurationOutputReference extends cdktf.Comp
 
   public set internalValue(value: GameliftFleetRuntimeConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._gameSessionActivationTimeoutSeconds = undefined;
       this._maxConcurrentGameSessionActivations = undefined;
       this._serverProcess = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._gameSessionActivationTimeoutSeconds = value.gameSessionActivationTimeoutSeconds;
       this._maxConcurrentGameSessionActivations = value.maxConcurrentGameSessionActivations;
       this._serverProcess = value.serverProcess;
@@ -362,6 +370,8 @@ export function gameliftFleetTimeoutsToTerraform(struct?: GameliftFleetTimeoutsO
 }
 
 export class GameliftFleetTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -372,7 +382,7 @@ export class GameliftFleetTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): GameliftFleetTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -387,10 +397,12 @@ export class GameliftFleetTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: GameliftFleetTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
     }

@@ -64,6 +64,8 @@ export function s3BucketInventoryDestinationBucketEncryptionSseKmsToTerraform(st
 }
 
 export class S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -74,7 +76,7 @@ export class S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference e
   }
 
   public get internalValue(): S3BucketInventoryDestinationBucketEncryptionSseKms | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._keyId) {
       hasAnyValues = true;
@@ -85,9 +87,11 @@ export class S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference e
 
   public set internalValue(value: S3BucketInventoryDestinationBucketEncryptionSseKms | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._keyId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._keyId = value.keyId;
     }
   }
@@ -118,6 +122,8 @@ export function s3BucketInventoryDestinationBucketEncryptionSseS3ToTerraform(str
 }
 
 export class S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -128,15 +134,17 @@ export class S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference ex
   }
 
   public get internalValue(): S3BucketInventoryDestinationBucketEncryptionSseS3 | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: S3BucketInventoryDestinationBucketEncryptionSseS3 | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -167,6 +175,8 @@ export function s3BucketInventoryDestinationBucketEncryptionToTerraform(struct?:
 }
 
 export class S3BucketInventoryDestinationBucketEncryptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -177,13 +187,13 @@ export class S3BucketInventoryDestinationBucketEncryptionOutputReference extends
   }
 
   public get internalValue(): S3BucketInventoryDestinationBucketEncryption | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._sseKms) {
+    if (this._sseKms?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sseKms = this._sseKms?.internalValue;
     }
-    if (this._sseS3) {
+    if (this._sseS3?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sseS3 = this._sseS3?.internalValue;
     }
@@ -192,10 +202,12 @@ export class S3BucketInventoryDestinationBucketEncryptionOutputReference extends
 
   public set internalValue(value: S3BucketInventoryDestinationBucketEncryption | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._sseKms.internalValue = undefined;
       this._sseS3.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._sseKms.internalValue = value.sseKms;
       this._sseS3.internalValue = value.sseS3;
     }
@@ -273,6 +285,8 @@ export function s3BucketInventoryDestinationBucketToTerraform(struct?: S3BucketI
 }
 
 export class S3BucketInventoryDestinationBucketOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -283,7 +297,7 @@ export class S3BucketInventoryDestinationBucketOutputReference extends cdktf.Com
   }
 
   public get internalValue(): S3BucketInventoryDestinationBucket | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accountId) {
       hasAnyValues = true;
@@ -301,7 +315,7 @@ export class S3BucketInventoryDestinationBucketOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._encryption) {
+    if (this._encryption?.internalValue) {
       hasAnyValues = true;
       internalValueResult.encryption = this._encryption?.internalValue;
     }
@@ -310,6 +324,7 @@ export class S3BucketInventoryDestinationBucketOutputReference extends cdktf.Com
 
   public set internalValue(value: S3BucketInventoryDestinationBucket | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accountId = undefined;
       this._bucketArn = undefined;
       this._format = undefined;
@@ -317,6 +332,7 @@ export class S3BucketInventoryDestinationBucketOutputReference extends cdktf.Com
       this._encryption.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accountId = value.accountId;
       this._bucketArn = value.bucketArn;
       this._format = value.format;
@@ -419,6 +435,8 @@ export function s3BucketInventoryDestinationToTerraform(struct?: S3BucketInvento
 }
 
 export class S3BucketInventoryDestinationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -429,9 +447,9 @@ export class S3BucketInventoryDestinationOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): S3BucketInventoryDestination | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucket) {
+    if (this._bucket?.internalValue) {
       hasAnyValues = true;
       internalValueResult.bucket = this._bucket?.internalValue;
     }
@@ -440,9 +458,11 @@ export class S3BucketInventoryDestinationOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: S3BucketInventoryDestination | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucket.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucket.internalValue = value.bucket;
     }
   }
@@ -478,6 +498,8 @@ export function s3BucketInventoryFilterToTerraform(struct?: S3BucketInventoryFil
 }
 
 export class S3BucketInventoryFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -488,7 +510,7 @@ export class S3BucketInventoryFilterOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): S3BucketInventoryFilter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._prefix) {
       hasAnyValues = true;
@@ -499,9 +521,11 @@ export class S3BucketInventoryFilterOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: S3BucketInventoryFilter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._prefix = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._prefix = value.prefix;
     }
   }
@@ -540,6 +564,8 @@ export function s3BucketInventoryScheduleToTerraform(struct?: S3BucketInventoryS
 }
 
 export class S3BucketInventoryScheduleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -550,7 +576,7 @@ export class S3BucketInventoryScheduleOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): S3BucketInventorySchedule | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._frequency) {
       hasAnyValues = true;
@@ -561,9 +587,11 @@ export class S3BucketInventoryScheduleOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: S3BucketInventorySchedule | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._frequency = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._frequency = value.frequency;
     }
   }

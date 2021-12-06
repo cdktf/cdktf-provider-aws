@@ -139,6 +139,8 @@ export function mqBrokerConfigurationToTerraform(struct?: MqBrokerConfigurationO
 }
 
 export class MqBrokerConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -149,7 +151,7 @@ export class MqBrokerConfigurationOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): MqBrokerConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._revision) {
       hasAnyValues = true;
@@ -160,9 +162,11 @@ export class MqBrokerConfigurationOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: MqBrokerConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._revision = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._revision = value.revision;
     }
   }
@@ -211,6 +215,8 @@ export function mqBrokerEncryptionOptionsToTerraform(struct?: MqBrokerEncryption
 }
 
 export class MqBrokerEncryptionOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -221,7 +227,7 @@ export class MqBrokerEncryptionOptionsOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): MqBrokerEncryptionOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._kmsKeyId) {
       hasAnyValues = true;
@@ -236,10 +242,12 @@ export class MqBrokerEncryptionOptionsOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: MqBrokerEncryptionOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._kmsKeyId = undefined;
       this._useAwsOwnedKey = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._kmsKeyId = value.kmsKeyId;
       this._useAwsOwnedKey = value.useAwsOwnedKey;
     }
@@ -345,6 +353,8 @@ export function mqBrokerLdapServerMetadataToTerraform(struct?: MqBrokerLdapServe
 }
 
 export class MqBrokerLdapServerMetadataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -355,7 +365,7 @@ export class MqBrokerLdapServerMetadataOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): MqBrokerLdapServerMetadata | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._hosts) {
       hasAnyValues = true;
@@ -406,6 +416,7 @@ export class MqBrokerLdapServerMetadataOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: MqBrokerLdapServerMetadata | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._hosts = undefined;
       this._roleBase = undefined;
       this._roleName = undefined;
@@ -419,6 +430,7 @@ export class MqBrokerLdapServerMetadataOutputReference extends cdktf.ComplexObje
       this._userSearchSubtree = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._hosts = value.hosts;
       this._roleBase = value.roleBase;
       this._roleName = value.roleName;
@@ -632,6 +644,8 @@ export function mqBrokerLogsToTerraform(struct?: MqBrokerLogsOutputReference | M
 }
 
 export class MqBrokerLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -642,7 +656,7 @@ export class MqBrokerLogsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): MqBrokerLogs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._audit) {
       hasAnyValues = true;
@@ -657,10 +671,12 @@ export class MqBrokerLogsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: MqBrokerLogs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._audit = undefined;
       this._general = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._audit = value.audit;
       this._general = value.general;
     }
@@ -726,6 +742,8 @@ export function mqBrokerMaintenanceWindowStartTimeToTerraform(struct?: MqBrokerM
 }
 
 export class MqBrokerMaintenanceWindowStartTimeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -736,7 +754,7 @@ export class MqBrokerMaintenanceWindowStartTimeOutputReference extends cdktf.Com
   }
 
   public get internalValue(): MqBrokerMaintenanceWindowStartTime | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dayOfWeek) {
       hasAnyValues = true;
@@ -755,11 +773,13 @@ export class MqBrokerMaintenanceWindowStartTimeOutputReference extends cdktf.Com
 
   public set internalValue(value: MqBrokerMaintenanceWindowStartTime | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dayOfWeek = undefined;
       this._timeOfDay = undefined;
       this._timeZone = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dayOfWeek = value.dayOfWeek;
       this._timeOfDay = value.timeOfDay;
       this._timeZone = value.timeZone;

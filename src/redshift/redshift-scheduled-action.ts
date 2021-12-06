@@ -60,6 +60,8 @@ export function redshiftScheduledActionTargetActionPauseClusterToTerraform(struc
 }
 
 export class RedshiftScheduledActionTargetActionPauseClusterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -70,7 +72,7 @@ export class RedshiftScheduledActionTargetActionPauseClusterOutputReference exte
   }
 
   public get internalValue(): RedshiftScheduledActionTargetActionPauseCluster | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._clusterIdentifier) {
       hasAnyValues = true;
@@ -81,9 +83,11 @@ export class RedshiftScheduledActionTargetActionPauseClusterOutputReference exte
 
   public set internalValue(value: RedshiftScheduledActionTargetActionPauseCluster | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clusterIdentifier = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clusterIdentifier = value.clusterIdentifier;
     }
   }
@@ -139,6 +143,8 @@ export function redshiftScheduledActionTargetActionResizeClusterToTerraform(stru
 }
 
 export class RedshiftScheduledActionTargetActionResizeClusterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -149,7 +155,7 @@ export class RedshiftScheduledActionTargetActionResizeClusterOutputReference ext
   }
 
   public get internalValue(): RedshiftScheduledActionTargetActionResizeCluster | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._classic) {
       hasAnyValues = true;
@@ -176,6 +182,7 @@ export class RedshiftScheduledActionTargetActionResizeClusterOutputReference ext
 
   public set internalValue(value: RedshiftScheduledActionTargetActionResizeCluster | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._classic = undefined;
       this._clusterIdentifier = undefined;
       this._clusterType = undefined;
@@ -183,6 +190,7 @@ export class RedshiftScheduledActionTargetActionResizeClusterOutputReference ext
       this._numberOfNodes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._classic = value.classic;
       this._clusterIdentifier = value.clusterIdentifier;
       this._clusterType = value.clusterType;
@@ -286,6 +294,8 @@ export function redshiftScheduledActionTargetActionResumeClusterToTerraform(stru
 }
 
 export class RedshiftScheduledActionTargetActionResumeClusterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -296,7 +306,7 @@ export class RedshiftScheduledActionTargetActionResumeClusterOutputReference ext
   }
 
   public get internalValue(): RedshiftScheduledActionTargetActionResumeCluster | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._clusterIdentifier) {
       hasAnyValues = true;
@@ -307,9 +317,11 @@ export class RedshiftScheduledActionTargetActionResumeClusterOutputReference ext
 
   public set internalValue(value: RedshiftScheduledActionTargetActionResumeCluster | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clusterIdentifier = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clusterIdentifier = value.clusterIdentifier;
     }
   }
@@ -361,6 +373,8 @@ export function redshiftScheduledActionTargetActionToTerraform(struct?: Redshift
 }
 
 export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -371,17 +385,17 @@ export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.Co
   }
 
   public get internalValue(): RedshiftScheduledActionTargetAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._pauseCluster) {
+    if (this._pauseCluster?.internalValue) {
       hasAnyValues = true;
       internalValueResult.pauseCluster = this._pauseCluster?.internalValue;
     }
-    if (this._resizeCluster) {
+    if (this._resizeCluster?.internalValue) {
       hasAnyValues = true;
       internalValueResult.resizeCluster = this._resizeCluster?.internalValue;
     }
-    if (this._resumeCluster) {
+    if (this._resumeCluster?.internalValue) {
       hasAnyValues = true;
       internalValueResult.resumeCluster = this._resumeCluster?.internalValue;
     }
@@ -390,11 +404,13 @@ export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.Co
 
   public set internalValue(value: RedshiftScheduledActionTargetAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._pauseCluster.internalValue = undefined;
       this._resizeCluster.internalValue = undefined;
       this._resumeCluster.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._pauseCluster.internalValue = value.pauseCluster;
       this._resizeCluster.internalValue = value.resizeCluster;
       this._resumeCluster.internalValue = value.resumeCluster;

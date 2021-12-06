@@ -170,6 +170,8 @@ export function codebuildProjectArtifactsToTerraform(struct?: CodebuildProjectAr
 }
 
 export class CodebuildProjectArtifactsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -180,7 +182,7 @@ export class CodebuildProjectArtifactsOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): CodebuildProjectArtifacts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._artifactIdentifier) {
       hasAnyValues = true;
@@ -223,6 +225,7 @@ export class CodebuildProjectArtifactsOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: CodebuildProjectArtifacts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._artifactIdentifier = undefined;
       this._encryptionDisabled = undefined;
       this._location = undefined;
@@ -234,6 +237,7 @@ export class CodebuildProjectArtifactsOutputReference extends cdktf.ComplexObjec
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._artifactIdentifier = value.artifactIdentifier;
       this._encryptionDisabled = value.encryptionDisabled;
       this._location = value.location;
@@ -410,6 +414,8 @@ export function codebuildProjectBuildBatchConfigRestrictionsToTerraform(struct?:
 }
 
 export class CodebuildProjectBuildBatchConfigRestrictionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -420,7 +426,7 @@ export class CodebuildProjectBuildBatchConfigRestrictionsOutputReference extends
   }
 
   public get internalValue(): CodebuildProjectBuildBatchConfigRestrictions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._computeTypesAllowed) {
       hasAnyValues = true;
@@ -435,10 +441,12 @@ export class CodebuildProjectBuildBatchConfigRestrictionsOutputReference extends
 
   public set internalValue(value: CodebuildProjectBuildBatchConfigRestrictions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._computeTypesAllowed = undefined;
       this._maximumBuildsAllowed = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._computeTypesAllowed = value.computeTypesAllowed;
       this._maximumBuildsAllowed = value.maximumBuildsAllowed;
     }
@@ -511,6 +519,8 @@ export function codebuildProjectBuildBatchConfigToTerraform(struct?: CodebuildPr
 }
 
 export class CodebuildProjectBuildBatchConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -521,7 +531,7 @@ export class CodebuildProjectBuildBatchConfigOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): CodebuildProjectBuildBatchConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._combineArtifacts) {
       hasAnyValues = true;
@@ -535,7 +545,7 @@ export class CodebuildProjectBuildBatchConfigOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.timeoutInMins = this._timeoutInMins;
     }
-    if (this._restrictions) {
+    if (this._restrictions?.internalValue) {
       hasAnyValues = true;
       internalValueResult.restrictions = this._restrictions?.internalValue;
     }
@@ -544,12 +554,14 @@ export class CodebuildProjectBuildBatchConfigOutputReference extends cdktf.Compl
 
   public set internalValue(value: CodebuildProjectBuildBatchConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._combineArtifacts = undefined;
       this._serviceRole = undefined;
       this._timeoutInMins = undefined;
       this._restrictions.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._combineArtifacts = value.combineArtifacts;
       this._serviceRole = value.serviceRole;
       this._timeoutInMins = value.timeoutInMins;
@@ -646,6 +658,8 @@ export function codebuildProjectCacheToTerraform(struct?: CodebuildProjectCacheO
 }
 
 export class CodebuildProjectCacheOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -656,7 +670,7 @@ export class CodebuildProjectCacheOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CodebuildProjectCache | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._location) {
       hasAnyValues = true;
@@ -675,11 +689,13 @@ export class CodebuildProjectCacheOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CodebuildProjectCache | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._location = undefined;
       this._modes = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._location = value.location;
       this._modes = value.modes;
       this._type = value.type;
@@ -784,6 +800,8 @@ export function codebuildProjectEnvironmentRegistryCredentialToTerraform(struct?
 }
 
 export class CodebuildProjectEnvironmentRegistryCredentialOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -794,7 +812,7 @@ export class CodebuildProjectEnvironmentRegistryCredentialOutputReference extend
   }
 
   public get internalValue(): CodebuildProjectEnvironmentRegistryCredential | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._credential) {
       hasAnyValues = true;
@@ -809,10 +827,12 @@ export class CodebuildProjectEnvironmentRegistryCredentialOutputReference extend
 
   public set internalValue(value: CodebuildProjectEnvironmentRegistryCredential | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._credential = undefined;
       this._credentialProvider = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._credential = value.credential;
       this._credentialProvider = value.credentialProvider;
     }
@@ -901,6 +921,8 @@ export function codebuildProjectEnvironmentToTerraform(struct?: CodebuildProject
 }
 
 export class CodebuildProjectEnvironmentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -911,7 +933,7 @@ export class CodebuildProjectEnvironmentOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): CodebuildProjectEnvironment | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificate) {
       hasAnyValues = true;
@@ -941,7 +963,7 @@ export class CodebuildProjectEnvironmentOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.environmentVariable = this._environmentVariable;
     }
-    if (this._registryCredential) {
+    if (this._registryCredential?.internalValue) {
       hasAnyValues = true;
       internalValueResult.registryCredential = this._registryCredential?.internalValue;
     }
@@ -950,6 +972,7 @@ export class CodebuildProjectEnvironmentOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: CodebuildProjectEnvironment | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificate = undefined;
       this._computeType = undefined;
       this._image = undefined;
@@ -960,6 +983,7 @@ export class CodebuildProjectEnvironmentOutputReference extends cdktf.ComplexObj
       this._registryCredential.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificate = value.certificate;
       this._computeType = value.computeType;
       this._image = value.image;
@@ -1156,6 +1180,8 @@ export function codebuildProjectLogsConfigCloudwatchLogsToTerraform(struct?: Cod
 }
 
 export class CodebuildProjectLogsConfigCloudwatchLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1166,7 +1192,7 @@ export class CodebuildProjectLogsConfigCloudwatchLogsOutputReference extends cdk
   }
 
   public get internalValue(): CodebuildProjectLogsConfigCloudwatchLogs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._groupName) {
       hasAnyValues = true;
@@ -1185,11 +1211,13 @@ export class CodebuildProjectLogsConfigCloudwatchLogsOutputReference extends cdk
 
   public set internalValue(value: CodebuildProjectLogsConfigCloudwatchLogs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._groupName = undefined;
       this._status = undefined;
       this._streamName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._groupName = value.groupName;
       this._status = value.status;
       this._streamName = value.streamName;
@@ -1272,6 +1300,8 @@ export function codebuildProjectLogsConfigS3LogsToTerraform(struct?: CodebuildPr
 }
 
 export class CodebuildProjectLogsConfigS3LogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1282,7 +1312,7 @@ export class CodebuildProjectLogsConfigS3LogsOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): CodebuildProjectLogsConfigS3Logs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._encryptionDisabled) {
       hasAnyValues = true;
@@ -1301,11 +1331,13 @@ export class CodebuildProjectLogsConfigS3LogsOutputReference extends cdktf.Compl
 
   public set internalValue(value: CodebuildProjectLogsConfigS3Logs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._encryptionDisabled = undefined;
       this._location = undefined;
       this._status = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._encryptionDisabled = value.encryptionDisabled;
       this._location = value.location;
       this._status = value.status;
@@ -1387,6 +1419,8 @@ export function codebuildProjectLogsConfigToTerraform(struct?: CodebuildProjectL
 }
 
 export class CodebuildProjectLogsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1397,13 +1431,13 @@ export class CodebuildProjectLogsConfigOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): CodebuildProjectLogsConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cloudwatchLogs) {
+    if (this._cloudwatchLogs?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLogs = this._cloudwatchLogs?.internalValue;
     }
-    if (this._s3Logs) {
+    if (this._s3Logs?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3Logs = this._s3Logs?.internalValue;
     }
@@ -1412,10 +1446,12 @@ export class CodebuildProjectLogsConfigOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: CodebuildProjectLogsConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cloudwatchLogs.internalValue = undefined;
       this._s3Logs.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cloudwatchLogs.internalValue = value.cloudwatchLogs;
       this._s3Logs.internalValue = value.s3Logs;
     }
@@ -1533,6 +1569,8 @@ export function codebuildProjectSecondarySourcesAuthToTerraform(struct?: Codebui
 }
 
 export class CodebuildProjectSecondarySourcesAuthOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1543,7 +1581,7 @@ export class CodebuildProjectSecondarySourcesAuthOutputReference extends cdktf.C
   }
 
   public get internalValue(): CodebuildProjectSecondarySourcesAuth | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._resource) {
       hasAnyValues = true;
@@ -1558,10 +1596,12 @@ export class CodebuildProjectSecondarySourcesAuthOutputReference extends cdktf.C
 
   public set internalValue(value: CodebuildProjectSecondarySourcesAuth | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._resource = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._resource = value.resource;
       this._type = value.type;
     }
@@ -1619,6 +1659,8 @@ export function codebuildProjectSecondarySourcesBuildStatusConfigToTerraform(str
 }
 
 export class CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1629,7 +1671,7 @@ export class CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference ex
   }
 
   public get internalValue(): CodebuildProjectSecondarySourcesBuildStatusConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._context) {
       hasAnyValues = true;
@@ -1644,10 +1686,12 @@ export class CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference ex
 
   public set internalValue(value: CodebuildProjectSecondarySourcesBuildStatusConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._context = undefined;
       this._targetUrl = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._context = value.context;
       this._targetUrl = value.targetUrl;
     }
@@ -1703,6 +1747,8 @@ export function codebuildProjectSecondarySourcesGitSubmodulesConfigToTerraform(s
 }
 
 export class CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1713,7 +1759,7 @@ export class CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference 
   }
 
   public get internalValue(): CodebuildProjectSecondarySourcesGitSubmodulesConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fetchSubmodules) {
       hasAnyValues = true;
@@ -1724,9 +1770,11 @@ export class CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference 
 
   public set internalValue(value: CodebuildProjectSecondarySourcesGitSubmodulesConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fetchSubmodules = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fetchSubmodules = value.fetchSubmodules;
     }
   }
@@ -1835,6 +1883,8 @@ export function codebuildProjectSourceAuthToTerraform(struct?: CodebuildProjectS
 }
 
 export class CodebuildProjectSourceAuthOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1845,7 +1895,7 @@ export class CodebuildProjectSourceAuthOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): CodebuildProjectSourceAuth | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._resource) {
       hasAnyValues = true;
@@ -1860,10 +1910,12 @@ export class CodebuildProjectSourceAuthOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: CodebuildProjectSourceAuth | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._resource = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._resource = value.resource;
       this._type = value.type;
     }
@@ -1921,6 +1973,8 @@ export function codebuildProjectSourceBuildStatusConfigToTerraform(struct?: Code
 }
 
 export class CodebuildProjectSourceBuildStatusConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1931,7 +1985,7 @@ export class CodebuildProjectSourceBuildStatusConfigOutputReference extends cdkt
   }
 
   public get internalValue(): CodebuildProjectSourceBuildStatusConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._context) {
       hasAnyValues = true;
@@ -1946,10 +2000,12 @@ export class CodebuildProjectSourceBuildStatusConfigOutputReference extends cdkt
 
   public set internalValue(value: CodebuildProjectSourceBuildStatusConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._context = undefined;
       this._targetUrl = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._context = value.context;
       this._targetUrl = value.targetUrl;
     }
@@ -2005,6 +2061,8 @@ export function codebuildProjectSourceGitSubmodulesConfigToTerraform(struct?: Co
 }
 
 export class CodebuildProjectSourceGitSubmodulesConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2015,7 +2073,7 @@ export class CodebuildProjectSourceGitSubmodulesConfigOutputReference extends cd
   }
 
   public get internalValue(): CodebuildProjectSourceGitSubmodulesConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fetchSubmodules) {
       hasAnyValues = true;
@@ -2026,9 +2084,11 @@ export class CodebuildProjectSourceGitSubmodulesConfigOutputReference extends cd
 
   public set internalValue(value: CodebuildProjectSourceGitSubmodulesConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fetchSubmodules = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fetchSubmodules = value.fetchSubmodules;
     }
   }
@@ -2110,6 +2170,8 @@ export function codebuildProjectSourceToTerraform(struct?: CodebuildProjectSourc
 }
 
 export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2120,7 +2182,7 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CodebuildProjectSource | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._buildspec) {
       hasAnyValues = true;
@@ -2146,15 +2208,15 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._auth) {
+    if (this._auth?.internalValue) {
       hasAnyValues = true;
       internalValueResult.auth = this._auth?.internalValue;
     }
-    if (this._buildStatusConfig) {
+    if (this._buildStatusConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.buildStatusConfig = this._buildStatusConfig?.internalValue;
     }
-    if (this._gitSubmodulesConfig) {
+    if (this._gitSubmodulesConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.gitSubmodulesConfig = this._gitSubmodulesConfig?.internalValue;
     }
@@ -2163,6 +2225,7 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CodebuildProjectSource | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._buildspec = undefined;
       this._gitCloneDepth = undefined;
       this._insecureSsl = undefined;
@@ -2174,6 +2237,7 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
       this._gitSubmodulesConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._buildspec = value.buildspec;
       this._gitCloneDepth = value.gitCloneDepth;
       this._insecureSsl = value.insecureSsl;
@@ -2355,6 +2419,8 @@ export function codebuildProjectVpcConfigToTerraform(struct?: CodebuildProjectVp
 }
 
 export class CodebuildProjectVpcConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2365,7 +2431,7 @@ export class CodebuildProjectVpcConfigOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): CodebuildProjectVpcConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._securityGroupIds) {
       hasAnyValues = true;
@@ -2384,11 +2450,13 @@ export class CodebuildProjectVpcConfigOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: CodebuildProjectVpcConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._securityGroupIds = undefined;
       this._subnets = undefined;
       this._vpcId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._securityGroupIds = value.securityGroupIds;
       this._subnets = value.subnets;
       this._vpcId = value.vpcId;

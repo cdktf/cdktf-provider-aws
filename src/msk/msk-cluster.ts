@@ -112,6 +112,8 @@ export function mskClusterBrokerNodeGroupInfoToTerraform(struct?: MskClusterBrok
 }
 
 export class MskClusterBrokerNodeGroupInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -122,7 +124,7 @@ export class MskClusterBrokerNodeGroupInfoOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): MskClusterBrokerNodeGroupInfo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._azDistribution) {
       hasAnyValues = true;
@@ -149,6 +151,7 @@ export class MskClusterBrokerNodeGroupInfoOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: MskClusterBrokerNodeGroupInfo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._azDistribution = undefined;
       this._clientSubnets = undefined;
       this._ebsVolumeSize = undefined;
@@ -156,6 +159,7 @@ export class MskClusterBrokerNodeGroupInfoOutputReference extends cdktf.ComplexO
       this._securityGroups = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._azDistribution = value.azDistribution;
       this._clientSubnets = value.clientSubnets;
       this._ebsVolumeSize = value.ebsVolumeSize;
@@ -255,6 +259,8 @@ export function mskClusterClientAuthenticationSaslToTerraform(struct?: MskCluste
 }
 
 export class MskClusterClientAuthenticationSaslOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -265,7 +271,7 @@ export class MskClusterClientAuthenticationSaslOutputReference extends cdktf.Com
   }
 
   public get internalValue(): MskClusterClientAuthenticationSasl | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._iam) {
       hasAnyValues = true;
@@ -280,10 +286,12 @@ export class MskClusterClientAuthenticationSaslOutputReference extends cdktf.Com
 
   public set internalValue(value: MskClusterClientAuthenticationSasl | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._iam = undefined;
       this._scram = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._iam = value.iam;
       this._scram = value.scram;
     }
@@ -339,6 +347,8 @@ export function mskClusterClientAuthenticationTlsToTerraform(struct?: MskCluster
 }
 
 export class MskClusterClientAuthenticationTlsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -349,7 +359,7 @@ export class MskClusterClientAuthenticationTlsOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): MskClusterClientAuthenticationTls | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateAuthorityArns) {
       hasAnyValues = true;
@@ -360,9 +370,11 @@ export class MskClusterClientAuthenticationTlsOutputReference extends cdktf.Comp
 
   public set internalValue(value: MskClusterClientAuthenticationTls | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateAuthorityArns = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateAuthorityArns = value.certificateAuthorityArns;
     }
   }
@@ -410,6 +422,8 @@ export function mskClusterClientAuthenticationToTerraform(struct?: MskClusterCli
 }
 
 export class MskClusterClientAuthenticationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -420,13 +434,13 @@ export class MskClusterClientAuthenticationOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): MskClusterClientAuthentication | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._sasl) {
+    if (this._sasl?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sasl = this._sasl?.internalValue;
     }
-    if (this._tls) {
+    if (this._tls?.internalValue) {
       hasAnyValues = true;
       internalValueResult.tls = this._tls?.internalValue;
     }
@@ -435,10 +449,12 @@ export class MskClusterClientAuthenticationOutputReference extends cdktf.Complex
 
   public set internalValue(value: MskClusterClientAuthentication | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._sasl.internalValue = undefined;
       this._tls.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._sasl.internalValue = value.sasl;
       this._tls.internalValue = value.tls;
     }
@@ -499,6 +515,8 @@ export function mskClusterConfigurationInfoToTerraform(struct?: MskClusterConfig
 }
 
 export class MskClusterConfigurationInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -509,7 +527,7 @@ export class MskClusterConfigurationInfoOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): MskClusterConfigurationInfo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
@@ -524,10 +542,12 @@ export class MskClusterConfigurationInfoOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: MskClusterConfigurationInfo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._revision = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._revision = value.revision;
     }
@@ -582,6 +602,8 @@ export function mskClusterEncryptionInfoEncryptionInTransitToTerraform(struct?: 
 }
 
 export class MskClusterEncryptionInfoEncryptionInTransitOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -592,7 +614,7 @@ export class MskClusterEncryptionInfoEncryptionInTransitOutputReference extends 
   }
 
   public get internalValue(): MskClusterEncryptionInfoEncryptionInTransit | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._clientBroker) {
       hasAnyValues = true;
@@ -607,10 +629,12 @@ export class MskClusterEncryptionInfoEncryptionInTransitOutputReference extends 
 
   public set internalValue(value: MskClusterEncryptionInfoEncryptionInTransit | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clientBroker = undefined;
       this._inCluster = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clientBroker = value.clientBroker;
       this._inCluster = value.inCluster;
     }
@@ -673,6 +697,8 @@ export function mskClusterEncryptionInfoToTerraform(struct?: MskClusterEncryptio
 }
 
 export class MskClusterEncryptionInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -683,13 +709,13 @@ export class MskClusterEncryptionInfoOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): MskClusterEncryptionInfo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._encryptionAtRestKmsKeyArn) {
       hasAnyValues = true;
       internalValueResult.encryptionAtRestKmsKeyArn = this._encryptionAtRestKmsKeyArn;
     }
-    if (this._encryptionInTransit) {
+    if (this._encryptionInTransit?.internalValue) {
       hasAnyValues = true;
       internalValueResult.encryptionInTransit = this._encryptionInTransit?.internalValue;
     }
@@ -698,10 +724,12 @@ export class MskClusterEncryptionInfoOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: MskClusterEncryptionInfo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._encryptionAtRestKmsKeyArn = undefined;
       this._encryptionInTransit.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._encryptionAtRestKmsKeyArn = value.encryptionAtRestKmsKeyArn;
       this._encryptionInTransit.internalValue = value.encryptionInTransit;
     }
@@ -762,6 +790,8 @@ export function mskClusterLoggingInfoBrokerLogsCloudwatchLogsToTerraform(struct?
 }
 
 export class MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -772,7 +802,7 @@ export class MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference extend
   }
 
   public get internalValue(): MskClusterLoggingInfoBrokerLogsCloudwatchLogs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -787,10 +817,12 @@ export class MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference extend
 
   public set internalValue(value: MskClusterLoggingInfoBrokerLogsCloudwatchLogs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._logGroup = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._logGroup = value.logGroup;
     }
@@ -848,6 +880,8 @@ export function mskClusterLoggingInfoBrokerLogsFirehoseToTerraform(struct?: MskC
 }
 
 export class MskClusterLoggingInfoBrokerLogsFirehoseOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -858,7 +892,7 @@ export class MskClusterLoggingInfoBrokerLogsFirehoseOutputReference extends cdkt
   }
 
   public get internalValue(): MskClusterLoggingInfoBrokerLogsFirehose | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._deliveryStream) {
       hasAnyValues = true;
@@ -873,10 +907,12 @@ export class MskClusterLoggingInfoBrokerLogsFirehoseOutputReference extends cdkt
 
   public set internalValue(value: MskClusterLoggingInfoBrokerLogsFirehose | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._deliveryStream = undefined;
       this._enabled = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._deliveryStream = value.deliveryStream;
       this._enabled = value.enabled;
     }
@@ -939,6 +975,8 @@ export function mskClusterLoggingInfoBrokerLogsS3ToTerraform(struct?: MskCluster
 }
 
 export class MskClusterLoggingInfoBrokerLogsS3OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -949,7 +987,7 @@ export class MskClusterLoggingInfoBrokerLogsS3OutputReference extends cdktf.Comp
   }
 
   public get internalValue(): MskClusterLoggingInfoBrokerLogsS3 | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucket) {
       hasAnyValues = true;
@@ -968,11 +1006,13 @@ export class MskClusterLoggingInfoBrokerLogsS3OutputReference extends cdktf.Comp
 
   public set internalValue(value: MskClusterLoggingInfoBrokerLogsS3 | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucket = undefined;
       this._enabled = undefined;
       this._prefix = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucket = value.bucket;
       this._enabled = value.enabled;
       this._prefix = value.prefix;
@@ -1058,6 +1098,8 @@ export function mskClusterLoggingInfoBrokerLogsToTerraform(struct?: MskClusterLo
 }
 
 export class MskClusterLoggingInfoBrokerLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1068,17 +1110,17 @@ export class MskClusterLoggingInfoBrokerLogsOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): MskClusterLoggingInfoBrokerLogs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cloudwatchLogs) {
+    if (this._cloudwatchLogs?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLogs = this._cloudwatchLogs?.internalValue;
     }
-    if (this._firehose) {
+    if (this._firehose?.internalValue) {
       hasAnyValues = true;
       internalValueResult.firehose = this._firehose?.internalValue;
     }
-    if (this._s3) {
+    if (this._s3?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3 = this._s3?.internalValue;
     }
@@ -1087,11 +1129,13 @@ export class MskClusterLoggingInfoBrokerLogsOutputReference extends cdktf.Comple
 
   public set internalValue(value: MskClusterLoggingInfoBrokerLogs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cloudwatchLogs.internalValue = undefined;
       this._firehose.internalValue = undefined;
       this._s3.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cloudwatchLogs.internalValue = value.cloudwatchLogs;
       this._firehose.internalValue = value.firehose;
       this._s3.internalValue = value.s3;
@@ -1166,6 +1210,8 @@ export function mskClusterLoggingInfoToTerraform(struct?: MskClusterLoggingInfoO
 }
 
 export class MskClusterLoggingInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1176,9 +1222,9 @@ export class MskClusterLoggingInfoOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): MskClusterLoggingInfo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._brokerLogs) {
+    if (this._brokerLogs?.internalValue) {
       hasAnyValues = true;
       internalValueResult.brokerLogs = this._brokerLogs?.internalValue;
     }
@@ -1187,9 +1233,11 @@ export class MskClusterLoggingInfoOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: MskClusterLoggingInfo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._brokerLogs.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._brokerLogs.internalValue = value.brokerLogs;
     }
   }
@@ -1225,6 +1273,8 @@ export function mskClusterOpenMonitoringPrometheusJmxExporterToTerraform(struct?
 }
 
 export class MskClusterOpenMonitoringPrometheusJmxExporterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1235,7 +1285,7 @@ export class MskClusterOpenMonitoringPrometheusJmxExporterOutputReference extend
   }
 
   public get internalValue(): MskClusterOpenMonitoringPrometheusJmxExporter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabledInBroker) {
       hasAnyValues = true;
@@ -1246,9 +1296,11 @@ export class MskClusterOpenMonitoringPrometheusJmxExporterOutputReference extend
 
   public set internalValue(value: MskClusterOpenMonitoringPrometheusJmxExporter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabledInBroker = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabledInBroker = value.enabledInBroker;
     }
   }
@@ -1284,6 +1336,8 @@ export function mskClusterOpenMonitoringPrometheusNodeExporterToTerraform(struct
 }
 
 export class MskClusterOpenMonitoringPrometheusNodeExporterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1294,7 +1348,7 @@ export class MskClusterOpenMonitoringPrometheusNodeExporterOutputReference exten
   }
 
   public get internalValue(): MskClusterOpenMonitoringPrometheusNodeExporter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabledInBroker) {
       hasAnyValues = true;
@@ -1305,9 +1359,11 @@ export class MskClusterOpenMonitoringPrometheusNodeExporterOutputReference exten
 
   public set internalValue(value: MskClusterOpenMonitoringPrometheusNodeExporter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabledInBroker = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabledInBroker = value.enabledInBroker;
     }
   }
@@ -1352,6 +1408,8 @@ export function mskClusterOpenMonitoringPrometheusToTerraform(struct?: MskCluste
 }
 
 export class MskClusterOpenMonitoringPrometheusOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1362,13 +1420,13 @@ export class MskClusterOpenMonitoringPrometheusOutputReference extends cdktf.Com
   }
 
   public get internalValue(): MskClusterOpenMonitoringPrometheus | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._jmxExporter) {
+    if (this._jmxExporter?.internalValue) {
       hasAnyValues = true;
       internalValueResult.jmxExporter = this._jmxExporter?.internalValue;
     }
-    if (this._nodeExporter) {
+    if (this._nodeExporter?.internalValue) {
       hasAnyValues = true;
       internalValueResult.nodeExporter = this._nodeExporter?.internalValue;
     }
@@ -1377,10 +1435,12 @@ export class MskClusterOpenMonitoringPrometheusOutputReference extends cdktf.Com
 
   public set internalValue(value: MskClusterOpenMonitoringPrometheus | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._jmxExporter.internalValue = undefined;
       this._nodeExporter.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._jmxExporter.internalValue = value.jmxExporter;
       this._nodeExporter.internalValue = value.nodeExporter;
     }
@@ -1438,6 +1498,8 @@ export function mskClusterOpenMonitoringToTerraform(struct?: MskClusterOpenMonit
 }
 
 export class MskClusterOpenMonitoringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1448,9 +1510,9 @@ export class MskClusterOpenMonitoringOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): MskClusterOpenMonitoring | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._prometheus) {
+    if (this._prometheus?.internalValue) {
       hasAnyValues = true;
       internalValueResult.prometheus = this._prometheus?.internalValue;
     }
@@ -1459,9 +1521,11 @@ export class MskClusterOpenMonitoringOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: MskClusterOpenMonitoring | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._prometheus.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._prometheus.internalValue = value.prometheus;
     }
   }
@@ -1507,6 +1571,8 @@ export function mskClusterTimeoutsToTerraform(struct?: MskClusterTimeoutsOutputR
 }
 
 export class MskClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1517,7 +1583,7 @@ export class MskClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): MskClusterTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -1536,11 +1602,13 @@ export class MskClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: MskClusterTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;

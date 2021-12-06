@@ -40,6 +40,8 @@ export function guarddutyOrganizationConfigurationDatasourcesS3LogsToTerraform(s
 }
 
 export class GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -50,7 +52,7 @@ export class GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference 
   }
 
   public get internalValue(): GuarddutyOrganizationConfigurationDatasourcesS3Logs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._autoEnable) {
       hasAnyValues = true;
@@ -61,9 +63,11 @@ export class GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference 
 
   public set internalValue(value: GuarddutyOrganizationConfigurationDatasourcesS3Logs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._autoEnable = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._autoEnable = value.autoEnable;
     }
   }
@@ -101,6 +105,8 @@ export function guarddutyOrganizationConfigurationDatasourcesToTerraform(struct?
 }
 
 export class GuarddutyOrganizationConfigurationDatasourcesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -111,9 +117,9 @@ export class GuarddutyOrganizationConfigurationDatasourcesOutputReference extend
   }
 
   public get internalValue(): GuarddutyOrganizationConfigurationDatasources | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._s3Logs) {
+    if (this._s3Logs?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3Logs = this._s3Logs?.internalValue;
     }
@@ -122,9 +128,11 @@ export class GuarddutyOrganizationConfigurationDatasourcesOutputReference extend
 
   public set internalValue(value: GuarddutyOrganizationConfigurationDatasources | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._s3Logs.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._s3Logs.internalValue = value.s3Logs;
     }
   }

@@ -121,6 +121,8 @@ export function ec2ClientVpnEndpointConnectionLogOptionsToTerraform(struct?: Ec2
 }
 
 export class Ec2ClientVpnEndpointConnectionLogOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -131,7 +133,7 @@ export class Ec2ClientVpnEndpointConnectionLogOptionsOutputReference extends cdk
   }
 
   public get internalValue(): Ec2ClientVpnEndpointConnectionLogOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cloudwatchLogGroup) {
       hasAnyValues = true;
@@ -150,11 +152,13 @@ export class Ec2ClientVpnEndpointConnectionLogOptionsOutputReference extends cdk
 
   public set internalValue(value: Ec2ClientVpnEndpointConnectionLogOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cloudwatchLogGroup = undefined;
       this._cloudwatchLogStream = undefined;
       this._enabled = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cloudwatchLogGroup = value.cloudwatchLogGroup;
       this._cloudwatchLogStream = value.cloudwatchLogStream;
       this._enabled = value.enabled;

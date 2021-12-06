@@ -112,6 +112,8 @@ export function storagegatewayNfsFileShareCacheAttributesToTerraform(struct?: St
 }
 
 export class StoragegatewayNfsFileShareCacheAttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -122,7 +124,7 @@ export class StoragegatewayNfsFileShareCacheAttributesOutputReference extends cd
   }
 
   public get internalValue(): StoragegatewayNfsFileShareCacheAttributes | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cacheStaleTimeoutInSeconds) {
       hasAnyValues = true;
@@ -133,9 +135,11 @@ export class StoragegatewayNfsFileShareCacheAttributesOutputReference extends cd
 
   public set internalValue(value: StoragegatewayNfsFileShareCacheAttributes | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cacheStaleTimeoutInSeconds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cacheStaleTimeoutInSeconds = value.cacheStaleTimeoutInSeconds;
     }
   }
@@ -189,6 +193,8 @@ export function storagegatewayNfsFileShareNfsFileShareDefaultsToTerraform(struct
 }
 
 export class StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -199,7 +205,7 @@ export class StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference exten
   }
 
   public get internalValue(): StoragegatewayNfsFileShareNfsFileShareDefaults | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._directoryMode) {
       hasAnyValues = true;
@@ -222,12 +228,14 @@ export class StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference exten
 
   public set internalValue(value: StoragegatewayNfsFileShareNfsFileShareDefaults | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._directoryMode = undefined;
       this._fileMode = undefined;
       this._groupId = undefined;
       this._ownerId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._directoryMode = value.directoryMode;
       this._fileMode = value.fileMode;
       this._groupId = value.groupId;
@@ -327,6 +335,8 @@ export function storagegatewayNfsFileShareTimeoutsToTerraform(struct?: Storagega
 }
 
 export class StoragegatewayNfsFileShareTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -337,7 +347,7 @@ export class StoragegatewayNfsFileShareTimeoutsOutputReference extends cdktf.Com
   }
 
   public get internalValue(): StoragegatewayNfsFileShareTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -356,11 +366,13 @@ export class StoragegatewayNfsFileShareTimeoutsOutputReference extends cdktf.Com
 
   public set internalValue(value: StoragegatewayNfsFileShareTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;

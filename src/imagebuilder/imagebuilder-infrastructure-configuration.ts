@@ -85,6 +85,8 @@ export function imagebuilderInfrastructureConfigurationLoggingS3LogsToTerraform(
 }
 
 export class ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -95,7 +97,7 @@ export class ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference
   }
 
   public get internalValue(): ImagebuilderInfrastructureConfigurationLoggingS3Logs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._s3BucketName) {
       hasAnyValues = true;
@@ -110,10 +112,12 @@ export class ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference
 
   public set internalValue(value: ImagebuilderInfrastructureConfigurationLoggingS3Logs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._s3BucketName = undefined;
       this._s3KeyPrefix = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._s3BucketName = value.s3BucketName;
       this._s3KeyPrefix = value.s3KeyPrefix;
     }
@@ -168,6 +172,8 @@ export function imagebuilderInfrastructureConfigurationLoggingToTerraform(struct
 }
 
 export class ImagebuilderInfrastructureConfigurationLoggingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -178,9 +184,9 @@ export class ImagebuilderInfrastructureConfigurationLoggingOutputReference exten
   }
 
   public get internalValue(): ImagebuilderInfrastructureConfigurationLogging | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._s3Logs) {
+    if (this._s3Logs?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3Logs = this._s3Logs?.internalValue;
     }
@@ -189,9 +195,11 @@ export class ImagebuilderInfrastructureConfigurationLoggingOutputReference exten
 
   public set internalValue(value: ImagebuilderInfrastructureConfigurationLogging | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._s3Logs.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._s3Logs.internalValue = value.s3Logs;
     }
   }
