@@ -268,7 +268,7 @@ export interface S3BucketReplicationConfigurationRuleDestinationMetrics {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#event_threshold S3BucketReplicationConfigurationA#event_threshold}
   */
-  readonly eventThreshold: S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold;
+  readonly eventThreshold?: S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold;
 }
 
 export function s3BucketReplicationConfigurationRuleDestinationMetricsToTerraform(struct?: S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference | S3BucketReplicationConfigurationRuleDestinationMetrics): any {
@@ -330,13 +330,16 @@ export class S3BucketReplicationConfigurationRuleDestinationMetricsOutputReferen
     return this._status;
   }
 
-  // event_threshold - computed: false, optional: false, required: true
+  // event_threshold - computed: false, optional: true, required: false
   private _eventThreshold = new S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference(this as any, "event_threshold", true);
   public get eventThreshold() {
     return this._eventThreshold;
   }
   public putEventThreshold(value: S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold) {
     this._eventThreshold.internalValue = value;
+  }
+  public resetEventThreshold() {
+    this._eventThreshold.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get eventThresholdInput() {

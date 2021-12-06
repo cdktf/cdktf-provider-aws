@@ -10,7 +10,15 @@ export interface VpcIpv4CidrBlockAssociationConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv4_cidr_block_association.html#cidr_block VpcIpv4CidrBlockAssociation#cidr_block}
   */
-  readonly cidrBlock: string;
+  readonly cidrBlock?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv4_cidr_block_association.html#ipv4_ipam_pool_id VpcIpv4CidrBlockAssociation#ipv4_ipam_pool_id}
+  */
+  readonly ipv4IpamPoolId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv4_cidr_block_association.html#ipv4_netmask_length VpcIpv4CidrBlockAssociation#ipv4_netmask_length}
+  */
+  readonly ipv4NetmaskLength?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv4_cidr_block_association.html#vpc_id VpcIpv4CidrBlockAssociation#vpc_id}
   */
@@ -145,6 +153,8 @@ export class VpcIpv4CidrBlockAssociation extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._cidrBlock = config.cidrBlock;
+    this._ipv4IpamPoolId = config.ipv4IpamPoolId;
+    this._ipv4NetmaskLength = config.ipv4NetmaskLength;
     this._vpcId = config.vpcId;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -153,13 +163,16 @@ export class VpcIpv4CidrBlockAssociation extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // cidr_block - computed: false, optional: false, required: true
+  // cidr_block - computed: true, optional: true, required: false
   private _cidrBlock?: string; 
   public get cidrBlock() {
     return this.getStringAttribute('cidr_block');
   }
   public set cidrBlock(value: string) {
     this._cidrBlock = value;
+  }
+  public resetCidrBlock() {
+    this._cidrBlock = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get cidrBlockInput() {
@@ -169,6 +182,38 @@ export class VpcIpv4CidrBlockAssociation extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ipv4_ipam_pool_id - computed: false, optional: true, required: false
+  private _ipv4IpamPoolId?: string; 
+  public get ipv4IpamPoolId() {
+    return this.getStringAttribute('ipv4_ipam_pool_id');
+  }
+  public set ipv4IpamPoolId(value: string) {
+    this._ipv4IpamPoolId = value;
+  }
+  public resetIpv4IpamPoolId() {
+    this._ipv4IpamPoolId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv4IpamPoolIdInput() {
+    return this._ipv4IpamPoolId;
+  }
+
+  // ipv4_netmask_length - computed: false, optional: true, required: false
+  private _ipv4NetmaskLength?: number; 
+  public get ipv4NetmaskLength() {
+    return this.getNumberAttribute('ipv4_netmask_length');
+  }
+  public set ipv4NetmaskLength(value: number) {
+    this._ipv4NetmaskLength = value;
+  }
+  public resetIpv4NetmaskLength() {
+    this._ipv4NetmaskLength = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv4NetmaskLengthInput() {
+    return this._ipv4NetmaskLength;
   }
 
   // vpc_id - computed: false, optional: false, required: true
@@ -207,6 +252,8 @@ export class VpcIpv4CidrBlockAssociation extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cidr_block: cdktf.stringToTerraform(this._cidrBlock),
+      ipv4_ipam_pool_id: cdktf.stringToTerraform(this._ipv4IpamPoolId),
+      ipv4_netmask_length: cdktf.numberToTerraform(this._ipv4NetmaskLength),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       timeouts: vpcIpv4CidrBlockAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };

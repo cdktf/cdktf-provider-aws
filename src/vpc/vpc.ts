@@ -14,7 +14,7 @@ export interface VpcConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#cidr_block Vpc#cidr_block}
   */
-  readonly cidrBlock: string;
+  readonly cidrBlock?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#enable_classiclink Vpc#enable_classiclink}
   */
@@ -35,6 +35,26 @@ export interface VpcConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#instance_tenancy Vpc#instance_tenancy}
   */
   readonly instanceTenancy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#ipv4_ipam_pool_id Vpc#ipv4_ipam_pool_id}
+  */
+  readonly ipv4IpamPoolId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#ipv4_netmask_length Vpc#ipv4_netmask_length}
+  */
+  readonly ipv4NetmaskLength?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#ipv6_cidr_block Vpc#ipv6_cidr_block}
+  */
+  readonly ipv6CidrBlock?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#ipv6_ipam_pool_id Vpc#ipv6_ipam_pool_id}
+  */
+  readonly ipv6IpamPoolId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#ipv6_netmask_length Vpc#ipv6_netmask_length}
+  */
+  readonly ipv6NetmaskLength?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#tags Vpc#tags}
   */
@@ -64,9 +84,9 @@ export class Vpc extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options VpcConfig
+  * @param options VpcConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: VpcConfig) {
+  public constructor(scope: Construct, id: string, config: VpcConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_vpc',
       terraformGeneratorMetadata: {
@@ -84,6 +104,11 @@ export class Vpc extends cdktf.TerraformResource {
     this._enableDnsHostnames = config.enableDnsHostnames;
     this._enableDnsSupport = config.enableDnsSupport;
     this._instanceTenancy = config.instanceTenancy;
+    this._ipv4IpamPoolId = config.ipv4IpamPoolId;
+    this._ipv4NetmaskLength = config.ipv4NetmaskLength;
+    this._ipv6CidrBlock = config.ipv6CidrBlock;
+    this._ipv6IpamPoolId = config.ipv6IpamPoolId;
+    this._ipv6NetmaskLength = config.ipv6NetmaskLength;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
   }
@@ -113,13 +138,16 @@ export class Vpc extends cdktf.TerraformResource {
     return this._assignGeneratedIpv6CidrBlock;
   }
 
-  // cidr_block - computed: false, optional: false, required: true
+  // cidr_block - computed: true, optional: true, required: false
   private _cidrBlock?: string; 
   public get cidrBlock() {
     return this.getStringAttribute('cidr_block');
   }
   public set cidrBlock(value: string) {
     this._cidrBlock = value;
+  }
+  public resetCidrBlock() {
+    this._cidrBlock = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get cidrBlockInput() {
@@ -231,14 +259,89 @@ export class Vpc extends cdktf.TerraformResource {
     return this._instanceTenancy;
   }
 
+  // ipv4_ipam_pool_id - computed: false, optional: true, required: false
+  private _ipv4IpamPoolId?: string; 
+  public get ipv4IpamPoolId() {
+    return this.getStringAttribute('ipv4_ipam_pool_id');
+  }
+  public set ipv4IpamPoolId(value: string) {
+    this._ipv4IpamPoolId = value;
+  }
+  public resetIpv4IpamPoolId() {
+    this._ipv4IpamPoolId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv4IpamPoolIdInput() {
+    return this._ipv4IpamPoolId;
+  }
+
+  // ipv4_netmask_length - computed: false, optional: true, required: false
+  private _ipv4NetmaskLength?: number; 
+  public get ipv4NetmaskLength() {
+    return this.getNumberAttribute('ipv4_netmask_length');
+  }
+  public set ipv4NetmaskLength(value: number) {
+    this._ipv4NetmaskLength = value;
+  }
+  public resetIpv4NetmaskLength() {
+    this._ipv4NetmaskLength = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv4NetmaskLengthInput() {
+    return this._ipv4NetmaskLength;
+  }
+
   // ipv6_association_id - computed: true, optional: false, required: false
   public get ipv6AssociationId() {
     return this.getStringAttribute('ipv6_association_id');
   }
 
-  // ipv6_cidr_block - computed: true, optional: false, required: false
+  // ipv6_cidr_block - computed: true, optional: true, required: false
+  private _ipv6CidrBlock?: string; 
   public get ipv6CidrBlock() {
     return this.getStringAttribute('ipv6_cidr_block');
+  }
+  public set ipv6CidrBlock(value: string) {
+    this._ipv6CidrBlock = value;
+  }
+  public resetIpv6CidrBlock() {
+    this._ipv6CidrBlock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6CidrBlockInput() {
+    return this._ipv6CidrBlock;
+  }
+
+  // ipv6_ipam_pool_id - computed: false, optional: true, required: false
+  private _ipv6IpamPoolId?: string; 
+  public get ipv6IpamPoolId() {
+    return this.getStringAttribute('ipv6_ipam_pool_id');
+  }
+  public set ipv6IpamPoolId(value: string) {
+    this._ipv6IpamPoolId = value;
+  }
+  public resetIpv6IpamPoolId() {
+    this._ipv6IpamPoolId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6IpamPoolIdInput() {
+    return this._ipv6IpamPoolId;
+  }
+
+  // ipv6_netmask_length - computed: false, optional: true, required: false
+  private _ipv6NetmaskLength?: number; 
+  public get ipv6NetmaskLength() {
+    return this.getNumberAttribute('ipv6_netmask_length');
+  }
+  public set ipv6NetmaskLength(value: number) {
+    this._ipv6NetmaskLength = value;
+  }
+  public resetIpv6NetmaskLength() {
+    this._ipv6NetmaskLength = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6NetmaskLengthInput() {
+    return this._ipv6NetmaskLength;
   }
 
   // main_route_table_id - computed: true, optional: false, required: false
@@ -298,6 +401,11 @@ export class Vpc extends cdktf.TerraformResource {
       enable_dns_hostnames: cdktf.booleanToTerraform(this._enableDnsHostnames),
       enable_dns_support: cdktf.booleanToTerraform(this._enableDnsSupport),
       instance_tenancy: cdktf.stringToTerraform(this._instanceTenancy),
+      ipv4_ipam_pool_id: cdktf.stringToTerraform(this._ipv4IpamPoolId),
+      ipv4_netmask_length: cdktf.numberToTerraform(this._ipv4NetmaskLength),
+      ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
+      ipv6_ipam_pool_id: cdktf.stringToTerraform(this._ipv6IpamPoolId),
+      ipv6_netmask_length: cdktf.numberToTerraform(this._ipv6NetmaskLength),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };

@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface AlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#connection_termination AlbTargetGroup#connection_termination}
+  */
+  readonly connectionTermination?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#deregistration_delay AlbTargetGroup#deregistration_delay}
   */
   readonly deregistrationDelay?: string;
@@ -531,6 +535,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._connectionTermination = config.connectionTermination;
     this._deregistrationDelay = config.deregistrationDelay;
     this._lambdaMultiValueHeadersEnabled = config.lambdaMultiValueHeadersEnabled;
     this._loadBalancingAlgorithmType = config.loadBalancingAlgorithmType;
@@ -562,6 +567,22 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
   // arn_suffix - computed: true, optional: false, required: false
   public get arnSuffix() {
     return this.getStringAttribute('arn_suffix');
+  }
+
+  // connection_termination - computed: false, optional: true, required: false
+  private _connectionTermination?: boolean | cdktf.IResolvable; 
+  public get connectionTermination() {
+    return this.getBooleanAttribute('connection_termination') as any;
+  }
+  public set connectionTermination(value: boolean | cdktf.IResolvable) {
+    this._connectionTermination = value;
+  }
+  public resetConnectionTermination() {
+    this._connectionTermination = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionTerminationInput() {
+    return this._connectionTermination;
   }
 
   // deregistration_delay - computed: false, optional: true, required: false
@@ -849,6 +870,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      connection_termination: cdktf.booleanToTerraform(this._connectionTermination),
       deregistration_delay: cdktf.stringToTerraform(this._deregistrationDelay),
       lambda_multi_value_headers_enabled: cdktf.booleanToTerraform(this._lambdaMultiValueHeadersEnabled),
       load_balancing_algorithm_type: cdktf.stringToTerraform(this._loadBalancingAlgorithmType),
