@@ -56,6 +56,8 @@ export function ecrReplicationConfigurationReplicationConfigurationRuleToTerrafo
 }
 
 export class EcrReplicationConfigurationReplicationConfigurationRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -66,7 +68,7 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleOutputRefere
   }
 
   public get internalValue(): EcrReplicationConfigurationReplicationConfigurationRule | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._destination) {
       hasAnyValues = true;
@@ -77,9 +79,11 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleOutputRefere
 
   public set internalValue(value: EcrReplicationConfigurationReplicationConfigurationRule | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._destination = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._destination = value.destination;
     }
   }
@@ -118,6 +122,8 @@ export function ecrReplicationConfigurationReplicationConfigurationToTerraform(s
 }
 
 export class EcrReplicationConfigurationReplicationConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -128,9 +134,9 @@ export class EcrReplicationConfigurationReplicationConfigurationOutputReference 
   }
 
   public get internalValue(): EcrReplicationConfigurationReplicationConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._rule) {
+    if (this._rule?.internalValue) {
       hasAnyValues = true;
       internalValueResult.rule = this._rule?.internalValue;
     }
@@ -139,9 +145,11 @@ export class EcrReplicationConfigurationReplicationConfigurationOutputReference 
 
   public set internalValue(value: EcrReplicationConfigurationReplicationConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._rule.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._rule.internalValue = value.rule;
     }
   }

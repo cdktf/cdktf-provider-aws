@@ -52,6 +52,8 @@ export function vpcPeeringConnectionOptionsAccepterToTerraform(struct?: VpcPeeri
 }
 
 export class VpcPeeringConnectionOptionsAccepterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -62,7 +64,7 @@ export class VpcPeeringConnectionOptionsAccepterOutputReference extends cdktf.Co
   }
 
   public get internalValue(): VpcPeeringConnectionOptionsAccepter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allowClassicLinkToRemoteVpc) {
       hasAnyValues = true;
@@ -81,11 +83,13 @@ export class VpcPeeringConnectionOptionsAccepterOutputReference extends cdktf.Co
 
   public set internalValue(value: VpcPeeringConnectionOptionsAccepter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allowClassicLinkToRemoteVpc = undefined;
       this._allowRemoteVpcDnsResolution = undefined;
       this._allowVpcToRemoteClassicLink = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allowClassicLinkToRemoteVpc = value.allowClassicLinkToRemoteVpc;
       this._allowRemoteVpcDnsResolution = value.allowRemoteVpcDnsResolution;
       this._allowVpcToRemoteClassicLink = value.allowVpcToRemoteClassicLink;
@@ -168,6 +172,8 @@ export function vpcPeeringConnectionOptionsRequesterToTerraform(struct?: VpcPeer
 }
 
 export class VpcPeeringConnectionOptionsRequesterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -178,7 +184,7 @@ export class VpcPeeringConnectionOptionsRequesterOutputReference extends cdktf.C
   }
 
   public get internalValue(): VpcPeeringConnectionOptionsRequester | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allowClassicLinkToRemoteVpc) {
       hasAnyValues = true;
@@ -197,11 +203,13 @@ export class VpcPeeringConnectionOptionsRequesterOutputReference extends cdktf.C
 
   public set internalValue(value: VpcPeeringConnectionOptionsRequester | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allowClassicLinkToRemoteVpc = undefined;
       this._allowRemoteVpcDnsResolution = undefined;
       this._allowVpcToRemoteClassicLink = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allowClassicLinkToRemoteVpc = value.allowClassicLinkToRemoteVpc;
       this._allowRemoteVpcDnsResolution = value.allowRemoteVpcDnsResolution;
       this._allowVpcToRemoteClassicLink = value.allowVpcToRemoteClassicLink;

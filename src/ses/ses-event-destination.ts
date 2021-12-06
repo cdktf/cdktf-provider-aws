@@ -92,6 +92,8 @@ export function sesEventDestinationKinesisDestinationToTerraform(struct?: SesEve
 }
 
 export class SesEventDestinationKinesisDestinationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -102,7 +104,7 @@ export class SesEventDestinationKinesisDestinationOutputReference extends cdktf.
   }
 
   public get internalValue(): SesEventDestinationKinesisDestination | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._roleArn) {
       hasAnyValues = true;
@@ -117,10 +119,12 @@ export class SesEventDestinationKinesisDestinationOutputReference extends cdktf.
 
   public set internalValue(value: SesEventDestinationKinesisDestination | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._roleArn = undefined;
       this._streamArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._roleArn = value.roleArn;
       this._streamArn = value.streamArn;
     }
@@ -170,6 +174,8 @@ export function sesEventDestinationSnsDestinationToTerraform(struct?: SesEventDe
 }
 
 export class SesEventDestinationSnsDestinationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -180,7 +186,7 @@ export class SesEventDestinationSnsDestinationOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): SesEventDestinationSnsDestination | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._topicArn) {
       hasAnyValues = true;
@@ -191,9 +197,11 @@ export class SesEventDestinationSnsDestinationOutputReference extends cdktf.Comp
 
   public set internalValue(value: SesEventDestinationSnsDestination | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._topicArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._topicArn = value.topicArn;
     }
   }

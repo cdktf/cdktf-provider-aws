@@ -104,6 +104,8 @@ export function ecsTaskDefinitionEphemeralStorageToTerraform(struct?: EcsTaskDef
 }
 
 export class EcsTaskDefinitionEphemeralStorageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -114,7 +116,7 @@ export class EcsTaskDefinitionEphemeralStorageOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): EcsTaskDefinitionEphemeralStorage | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._sizeInGib) {
       hasAnyValues = true;
@@ -125,9 +127,11 @@ export class EcsTaskDefinitionEphemeralStorageOutputReference extends cdktf.Comp
 
   public set internalValue(value: EcsTaskDefinitionEphemeralStorage | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._sizeInGib = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._sizeInGib = value.sizeInGib;
     }
   }
@@ -217,6 +221,8 @@ export function ecsTaskDefinitionProxyConfigurationToTerraform(struct?: EcsTaskD
 }
 
 export class EcsTaskDefinitionProxyConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -227,7 +233,7 @@ export class EcsTaskDefinitionProxyConfigurationOutputReference extends cdktf.Co
   }
 
   public get internalValue(): EcsTaskDefinitionProxyConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._containerName) {
       hasAnyValues = true;
@@ -246,11 +252,13 @@ export class EcsTaskDefinitionProxyConfigurationOutputReference extends cdktf.Co
 
   public set internalValue(value: EcsTaskDefinitionProxyConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._containerName = undefined;
       this._properties = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._containerName = value.containerName;
       this._properties = value.properties;
       this._type = value.type;
@@ -341,6 +349,8 @@ export function ecsTaskDefinitionVolumeDockerVolumeConfigurationToTerraform(stru
 }
 
 export class EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -351,7 +361,7 @@ export class EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference ext
   }
 
   public get internalValue(): EcsTaskDefinitionVolumeDockerVolumeConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._autoprovision) {
       hasAnyValues = true;
@@ -378,6 +388,7 @@ export class EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference ext
 
   public set internalValue(value: EcsTaskDefinitionVolumeDockerVolumeConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._autoprovision = undefined;
       this._driver = undefined;
       this._driverOpts = undefined;
@@ -385,6 +396,7 @@ export class EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference ext
       this._scope = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._autoprovision = value.autoprovision;
       this._driver = value.driver;
       this._driverOpts = value.driverOpts;
@@ -498,6 +510,8 @@ export function ecsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig
 }
 
 export class EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -508,7 +522,7 @@ export class EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOut
   }
 
   public get internalValue(): EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accessPointId) {
       hasAnyValues = true;
@@ -523,10 +537,12 @@ export class EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOut
 
   public set internalValue(value: EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accessPointId = undefined;
       this._iam = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accessPointId = value.accessPointId;
       this._iam = value.iam;
     }
@@ -604,6 +620,8 @@ export function ecsTaskDefinitionVolumeEfsVolumeConfigurationToTerraform(struct?
 }
 
 export class EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -614,7 +632,7 @@ export class EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference extend
   }
 
   public get internalValue(): EcsTaskDefinitionVolumeEfsVolumeConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fileSystemId) {
       hasAnyValues = true;
@@ -632,7 +650,7 @@ export class EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference extend
       hasAnyValues = true;
       internalValueResult.transitEncryptionPort = this._transitEncryptionPort;
     }
-    if (this._authorizationConfig) {
+    if (this._authorizationConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.authorizationConfig = this._authorizationConfig?.internalValue;
     }
@@ -641,6 +659,7 @@ export class EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference extend
 
   public set internalValue(value: EcsTaskDefinitionVolumeEfsVolumeConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fileSystemId = undefined;
       this._rootDirectory = undefined;
       this._transitEncryption = undefined;
@@ -648,6 +667,7 @@ export class EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference extend
       this._authorizationConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fileSystemId = value.fileSystemId;
       this._rootDirectory = value.rootDirectory;
       this._transitEncryption = value.transitEncryption;
@@ -756,6 +776,8 @@ export function ecsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAu
 }
 
 export class EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -766,7 +788,7 @@ export class EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAutho
   }
 
   public get internalValue(): EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._credentialsParameter) {
       hasAnyValues = true;
@@ -781,10 +803,12 @@ export class EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAutho
 
   public set internalValue(value: EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._credentialsParameter = undefined;
       this._domain = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._credentialsParameter = value.credentialsParameter;
       this._domain = value.domain;
     }
@@ -846,6 +870,8 @@ export function ecsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationTo
 }
 
 export class EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -856,7 +882,7 @@ export class EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutpu
   }
 
   public get internalValue(): EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fileSystemId) {
       hasAnyValues = true;
@@ -866,7 +892,7 @@ export class EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutpu
       hasAnyValues = true;
       internalValueResult.rootDirectory = this._rootDirectory;
     }
-    if (this._authorizationConfig) {
+    if (this._authorizationConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.authorizationConfig = this._authorizationConfig?.internalValue;
     }
@@ -875,11 +901,13 @@ export class EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutpu
 
   public set internalValue(value: EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fileSystemId = undefined;
       this._rootDirectory = undefined;
       this._authorizationConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fileSystemId = value.fileSystemId;
       this._rootDirectory = value.rootDirectory;
       this._authorizationConfig.internalValue = value.authorizationConfig;

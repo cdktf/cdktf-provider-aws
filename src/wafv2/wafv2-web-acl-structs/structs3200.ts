@@ -31,6 +31,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -41,15 +43,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -66,6 +70,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -76,15 +82,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -101,6 +109,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -111,15 +121,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -141,6 +153,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -151,7 +165,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -162,9 +176,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -200,6 +216,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -210,7 +228,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -221,9 +239,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -254,6 +274,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -264,15 +286,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -338,6 +362,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -348,33 +374,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -383,6 +409,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -392,6 +419,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -573,6 +601,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -583,7 +613,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comparisonOperator) {
       hasAnyValues = true;
@@ -593,7 +623,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -606,12 +636,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._comparisonOperator = undefined;
       this._size = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._comparisonOperator = value.comparisonOperator;
       this._size = value.size;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -688,6 +720,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -698,15 +732,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -723,6 +759,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -733,15 +771,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -758,6 +798,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -768,15 +810,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -793,6 +837,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -803,15 +849,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -833,6 +881,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -843,7 +893,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -854,9 +904,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -892,6 +944,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -902,7 +956,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -913,9 +967,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -946,6 +1002,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -956,15 +1014,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -1030,6 +1090,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1040,33 +1102,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -1075,6 +1137,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -1084,6 +1147,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -1255,6 +1319,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1265,9 +1331,9 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -1280,10 +1346,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSqliMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
     }
@@ -1332,6 +1400,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1342,15 +1412,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -1367,6 +1439,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1377,15 +1451,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -1402,6 +1478,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1412,15 +1490,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -1437,6 +1517,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1447,15 +1529,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -1477,6 +1561,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1487,7 +1573,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -1498,9 +1584,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -1536,6 +1624,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1546,7 +1636,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -1557,9 +1647,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -1590,6 +1682,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1600,15 +1694,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -1674,6 +1770,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1684,33 +1782,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -1719,6 +1817,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -1728,6 +1827,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -1899,6 +1999,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1909,9 +2011,9 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -1924,10 +2026,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementXssMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
     }
@@ -2072,6 +2176,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2082,7 +2188,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._statement) {
       hasAnyValues = true;
@@ -2093,9 +2199,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._statement = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._statement = value.statement;
     }
   }
@@ -2127,6 +2235,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByte
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2137,15 +2247,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -2162,6 +2274,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByte
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2172,15 +2286,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -2197,6 +2313,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByte
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2207,15 +2325,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -2232,6 +2352,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByte
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2242,15 +2364,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -2272,6 +2396,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByte
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2282,7 +2408,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -2293,9 +2419,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -2331,6 +2459,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByte
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2341,7 +2471,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -2352,9 +2482,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -2385,6 +2517,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByte
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2395,15 +2529,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -2469,6 +2605,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByte
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2479,33 +2617,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -2514,6 +2652,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -2523,6 +2662,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -2704,6 +2844,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByte
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2714,7 +2856,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._positionalConstraint) {
       hasAnyValues = true;
@@ -2724,7 +2866,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
       hasAnyValues = true;
       internalValueResult.searchString = this._searchString;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -2737,12 +2879,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._positionalConstraint = undefined;
       this._searchString = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._positionalConstraint = value.positionalConstraint;
       this._searchString = value.searchString;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -2829,6 +2973,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoM
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2839,7 +2985,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatc
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -2854,10 +3000,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatc
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
     }
@@ -2914,6 +3062,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoM
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2924,13 +3074,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatc
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._countryCodes) {
       hasAnyValues = true;
       internalValueResult.countryCodes = this._countryCodes;
     }
-    if (this._forwardedIpConfig) {
+    if (this._forwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.forwardedIpConfig = this._forwardedIpConfig?.internalValue;
     }
@@ -2939,10 +3089,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatc
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._countryCodes = undefined;
       this._forwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._countryCodes = value.countryCodes;
       this._forwardedIpConfig.internalValue = value.forwardedIpConfig;
     }
@@ -3005,6 +3157,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSe
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3015,7 +3169,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetRe
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -3034,11 +3188,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetRe
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
       this._position = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
       this._position = value.position;
@@ -3109,6 +3265,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSe
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3119,13 +3277,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetRe
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._ipSetForwardedIpConfig) {
+    if (this._ipSetForwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.ipSetForwardedIpConfig = this._ipSetForwardedIpConfig?.internalValue;
     }
@@ -3134,10 +3292,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetRe
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementIpSetReferenceStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._ipSetForwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._ipSetForwardedIpConfig.internalValue = value.ipSetForwardedIpConfig;
     }
@@ -3195,6 +3355,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementLabe
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3205,7 +3367,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementLabelMa
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key) {
       hasAnyValues = true;
@@ -3220,10 +3382,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementLabelMa
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementLabelMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._key = undefined;
       this._scope = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._key = value.key;
       this._scope = value.scope;
     }
@@ -3268,6 +3432,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3278,15 +3444,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -3303,6 +3471,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3313,15 +3483,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -3338,6 +3510,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3348,15 +3522,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -3373,6 +3549,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3383,15 +3561,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -3413,6 +3593,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3423,7 +3605,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -3434,9 +3616,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -3472,6 +3656,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3482,7 +3668,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -3493,9 +3679,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -3526,6 +3714,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3536,15 +3726,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -3610,6 +3802,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3620,33 +3814,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -3655,6 +3849,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -3664,6 +3859,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -3845,6 +4041,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3855,7 +4053,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._positionalConstraint) {
       hasAnyValues = true;
@@ -3865,7 +4063,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       hasAnyValues = true;
       internalValueResult.searchString = this._searchString;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -3878,12 +4076,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementByteMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._positionalConstraint = undefined;
       this._searchString = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._positionalConstraint = value.positionalConstraint;
       this._searchString = value.searchString;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -3970,6 +4170,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3980,7 +4182,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -3995,10 +4197,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
     }
@@ -4055,6 +4259,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementGeoMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4065,13 +4271,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementGeoMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._countryCodes) {
       hasAnyValues = true;
       internalValueResult.countryCodes = this._countryCodes;
     }
-    if (this._forwardedIpConfig) {
+    if (this._forwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.forwardedIpConfig = this._forwardedIpConfig?.internalValue;
     }
@@ -4080,10 +4286,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementGeoMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._countryCodes = undefined;
       this._forwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._countryCodes = value.countryCodes;
       this._forwardedIpConfig.internalValue = value.forwardedIpConfig;
     }
@@ -4146,6 +4354,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4156,7 +4366,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -4175,11 +4385,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
       this._position = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
       this._position = value.position;
@@ -4250,6 +4462,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementIpSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4260,13 +4474,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementIpSetReferenceStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._ipSetForwardedIpConfig) {
+    if (this._ipSetForwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.ipSetForwardedIpConfig = this._ipSetForwardedIpConfig?.internalValue;
     }
@@ -4275,10 +4489,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementIpSetReferenceStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._ipSetForwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._ipSetForwardedIpConfig.internalValue = value.ipSetForwardedIpConfig;
     }
@@ -4336,6 +4552,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementLabelMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4346,7 +4564,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementLabelMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key) {
       hasAnyValues = true;
@@ -4361,10 +4579,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementLabelMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._key = undefined;
       this._scope = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._key = value.key;
       this._scope = value.scope;
     }
@@ -4409,6 +4629,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4419,15 +4641,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -4444,6 +4668,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4454,15 +4680,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -4479,6 +4707,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4489,15 +4719,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -4514,6 +4746,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4524,15 +4758,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -4554,6 +4790,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4564,7 +4802,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -4575,9 +4813,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -4613,6 +4853,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4623,7 +4865,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -4634,9 +4876,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -4667,6 +4911,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4677,15 +4923,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -4751,6 +4999,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4761,33 +5011,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -4796,6 +5046,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -4805,6 +5056,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -4981,6 +5233,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4991,13 +5245,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -5010,11 +5264,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementRegexPatternSetReferenceStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
@@ -5077,6 +5333,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5087,15 +5345,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -5112,6 +5372,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5122,15 +5384,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -5147,6 +5411,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5157,15 +5423,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -5182,6 +5450,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5192,15 +5462,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -5222,6 +5494,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5232,7 +5506,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -5243,9 +5517,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -5281,6 +5557,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5291,7 +5569,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -5302,9 +5580,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -5335,6 +5615,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5345,15 +5627,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -5419,6 +5703,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5429,33 +5715,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -5464,6 +5750,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -5473,6 +5760,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -5654,6 +5942,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5664,7 +5954,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comparisonOperator) {
       hasAnyValues = true;
@@ -5674,7 +5964,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -5687,12 +5977,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSizeConstraintStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._comparisonOperator = undefined;
       this._size = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._comparisonOperator = value.comparisonOperator;
       this._size = value.size;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -5769,6 +6061,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5779,15 +6073,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -5804,6 +6100,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5814,15 +6112,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -5839,6 +6139,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5849,15 +6151,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -5874,6 +6178,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5884,15 +6190,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -5914,6 +6222,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5924,7 +6234,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -5935,9 +6245,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -5973,6 +6285,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5983,7 +6297,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -5994,9 +6308,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -6027,6 +6343,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -6037,15 +6355,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -6111,6 +6431,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -6121,33 +6443,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -6156,6 +6478,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -6165,6 +6488,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -6336,6 +6660,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -6346,9 +6672,9 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -6361,10 +6687,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementSqliMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
     }
@@ -6413,6 +6741,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -6423,15 +6753,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -6448,6 +6780,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -6458,15 +6792,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -6483,6 +6819,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -6493,15 +6831,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -6518,6 +6858,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -6528,15 +6870,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -6558,6 +6902,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -6568,7 +6914,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -6579,9 +6925,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -6617,6 +6965,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -6627,7 +6977,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -6638,9 +6988,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -6671,6 +7023,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -6681,15 +7035,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -6755,6 +7111,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -6765,33 +7123,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -6800,6 +7158,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -6809,6 +7168,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -6980,6 +7340,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -6990,9 +7352,9 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -7005,10 +7367,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementStatementXssMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
     }
@@ -7132,6 +7496,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -7142,7 +7508,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._statement) {
       hasAnyValues = true;
@@ -7153,9 +7519,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._statement = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._statement = value.statement;
     }
   }
@@ -7187,6 +7555,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -7197,15 +7567,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -7222,6 +7594,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -7232,15 +7606,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -7257,6 +7633,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -7267,15 +7645,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -7292,6 +7672,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -7302,15 +7684,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -7332,6 +7716,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -7342,7 +7728,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -7353,9 +7739,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -7391,6 +7779,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -7401,7 +7791,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -7412,9 +7802,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -7445,6 +7837,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -7455,15 +7849,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -7529,6 +7925,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -7539,33 +7937,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -7574,6 +7972,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -7583,6 +7982,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -7764,6 +8164,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -7774,7 +8176,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._positionalConstraint) {
       hasAnyValues = true;
@@ -7784,7 +8186,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       hasAnyValues = true;
       internalValueResult.searchString = this._searchString;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -7797,12 +8199,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._positionalConstraint = undefined;
       this._searchString = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._positionalConstraint = value.positionalConstraint;
       this._searchString = value.searchString;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -7889,6 +8293,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementGeoMatchStatementForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -7899,7 +8305,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementGeoMatchStatementForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -7914,10 +8320,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementGeoMatchStatementForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
     }
@@ -7974,6 +8382,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementGeoMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -7984,13 +8394,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementGeoMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._countryCodes) {
       hasAnyValues = true;
       internalValueResult.countryCodes = this._countryCodes;
     }
-    if (this._forwardedIpConfig) {
+    if (this._forwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.forwardedIpConfig = this._forwardedIpConfig?.internalValue;
     }
@@ -7999,10 +8409,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementGeoMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._countryCodes = undefined;
       this._forwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._countryCodes = value.countryCodes;
       this._forwardedIpConfig.internalValue = value.forwardedIpConfig;
     }
@@ -8065,6 +8477,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -8075,7 +8489,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -8094,11 +8508,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
       this._position = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
       this._position = value.position;
@@ -8169,6 +8585,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementIpSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -8179,13 +8597,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementIpSetReferenceStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._ipSetForwardedIpConfig) {
+    if (this._ipSetForwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.ipSetForwardedIpConfig = this._ipSetForwardedIpConfig?.internalValue;
     }
@@ -8194,10 +8612,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementIpSetReferenceStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._ipSetForwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._ipSetForwardedIpConfig.internalValue = value.ipSetForwardedIpConfig;
     }
@@ -8255,6 +8675,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementLabelMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -8265,7 +8687,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementLabelMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key) {
       hasAnyValues = true;
@@ -8280,10 +8702,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementLabelMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._key = undefined;
       this._scope = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._key = value.key;
       this._scope = value.scope;
     }
@@ -8328,6 +8752,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -8338,15 +8764,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -8363,6 +8791,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -8373,15 +8803,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -8398,6 +8830,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -8408,15 +8842,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -8433,6 +8869,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -8443,15 +8881,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -8473,6 +8913,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -8483,7 +8925,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -8494,9 +8936,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -8532,6 +8976,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -8542,7 +8988,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -8553,9 +8999,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -8586,6 +9034,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -8596,15 +9046,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -8670,6 +9122,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -8680,33 +9134,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -8715,6 +9169,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -8724,6 +9179,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -8905,6 +9361,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -8915,7 +9373,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._positionalConstraint) {
       hasAnyValues = true;
@@ -8925,7 +9383,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       hasAnyValues = true;
       internalValueResult.searchString = this._searchString;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -8938,12 +9396,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementByteMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._positionalConstraint = undefined;
       this._searchString = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._positionalConstraint = value.positionalConstraint;
       this._searchString = value.searchString;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -9030,6 +9490,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -9040,7 +9502,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -9055,10 +9517,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
     }
@@ -9115,6 +9579,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementGeoMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -9125,13 +9591,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementGeoMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._countryCodes) {
       hasAnyValues = true;
       internalValueResult.countryCodes = this._countryCodes;
     }
-    if (this._forwardedIpConfig) {
+    if (this._forwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.forwardedIpConfig = this._forwardedIpConfig?.internalValue;
     }
@@ -9140,10 +9606,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementGeoMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._countryCodes = undefined;
       this._forwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._countryCodes = value.countryCodes;
       this._forwardedIpConfig.internalValue = value.forwardedIpConfig;
     }
@@ -9206,6 +9674,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -9216,7 +9686,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -9235,11 +9705,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
       this._position = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
       this._position = value.position;
@@ -9310,6 +9782,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementIpSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -9320,13 +9794,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementIpSetReferenceStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._ipSetForwardedIpConfig) {
+    if (this._ipSetForwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.ipSetForwardedIpConfig = this._ipSetForwardedIpConfig?.internalValue;
     }
@@ -9335,10 +9809,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementIpSetReferenceStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._ipSetForwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._ipSetForwardedIpConfig.internalValue = value.ipSetForwardedIpConfig;
     }
@@ -9396,6 +9872,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementLabelMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -9406,7 +9884,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementLabelMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key) {
       hasAnyValues = true;
@@ -9421,10 +9899,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementLabelMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._key = undefined;
       this._scope = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._key = value.key;
       this._scope = value.scope;
     }
@@ -9469,6 +9949,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -9479,15 +9961,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -9504,6 +9988,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -9514,15 +10000,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -9539,6 +10027,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -9549,15 +10039,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -9574,6 +10066,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -9584,15 +10078,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -9614,6 +10110,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -9624,7 +10122,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -9635,9 +10133,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -9673,6 +10173,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -9683,7 +10185,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -9694,9 +10196,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -9727,6 +10231,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -9737,15 +10243,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -9811,6 +10319,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -9821,33 +10331,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -9856,6 +10366,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -9865,6 +10376,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -10041,6 +10553,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10051,13 +10565,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -10070,11 +10584,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
@@ -10137,6 +10653,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10147,15 +10665,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -10172,6 +10692,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10182,15 +10704,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -10207,6 +10731,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10217,15 +10743,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -10242,6 +10770,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10252,15 +10782,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -10282,6 +10814,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10292,7 +10826,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -10303,9 +10837,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -10341,6 +10877,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10351,7 +10889,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -10362,9 +10900,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -10395,6 +10935,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10405,15 +10947,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -10479,6 +11023,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10489,33 +11035,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -10524,6 +11070,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -10533,6 +11080,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -10714,6 +11262,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10724,7 +11274,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comparisonOperator) {
       hasAnyValues = true;
@@ -10734,7 +11284,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -10747,12 +11297,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSizeConstraintStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._comparisonOperator = undefined;
       this._size = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._comparisonOperator = value.comparisonOperator;
       this._size = value.size;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -10829,6 +11381,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10839,15 +11393,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -10864,6 +11420,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10874,15 +11432,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -10899,6 +11459,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10909,15 +11471,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -10934,6 +11498,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10944,15 +11510,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -10974,6 +11542,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -10984,7 +11554,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -10995,9 +11565,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -11033,6 +11605,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -11043,7 +11617,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -11054,9 +11628,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -11087,6 +11663,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -11097,15 +11675,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -11171,6 +11751,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -11181,33 +11763,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -11216,6 +11798,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -11225,6 +11808,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -11396,6 +11980,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -11406,9 +11992,9 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -11421,10 +12007,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementSqliMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
     }
@@ -11473,6 +12061,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -11483,15 +12073,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -11508,6 +12100,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -11518,15 +12112,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -11543,6 +12139,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -11553,15 +12151,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -11578,6 +12178,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -11588,15 +12190,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -11618,6 +12222,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -11628,7 +12234,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -11639,9 +12245,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -11677,6 +12285,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -11687,7 +12297,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -11698,9 +12308,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -11731,6 +12343,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -11741,15 +12355,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -11815,6 +12431,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -11825,33 +12443,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -11860,6 +12478,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -11869,6 +12488,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -12040,6 +12660,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -12050,9 +12672,9 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -12065,10 +12687,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementStatementXssMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
     }
@@ -12192,6 +12816,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -12202,7 +12828,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._statement) {
       hasAnyValues = true;
@@ -12213,9 +12839,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._statement = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._statement = value.statement;
     }
   }
@@ -12247,6 +12875,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -12257,15 +12887,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -12282,6 +12914,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -12292,15 +12926,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -12317,6 +12953,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -12327,15 +12965,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -12352,6 +12992,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -12362,15 +13004,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -12392,6 +13036,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -12402,7 +13048,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -12413,9 +13059,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -12451,6 +13099,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -12461,7 +13111,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -12472,9 +13122,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -12505,6 +13157,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -12515,15 +13169,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -12589,6 +13245,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -12599,33 +13257,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -12634,6 +13292,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -12643,6 +13302,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -12824,6 +13484,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -12834,7 +13496,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._positionalConstraint) {
       hasAnyValues = true;
@@ -12844,7 +13506,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       hasAnyValues = true;
       internalValueResult.searchString = this._searchString;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -12857,12 +13519,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementByteMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._positionalConstraint = undefined;
       this._searchString = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._positionalConstraint = value.positionalConstraint;
       this._searchString = value.searchString;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -12949,6 +13613,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -12959,7 +13625,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -12974,10 +13640,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
     }
@@ -13034,6 +13702,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementGeoMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -13044,13 +13714,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementGeoMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._countryCodes) {
       hasAnyValues = true;
       internalValueResult.countryCodes = this._countryCodes;
     }
-    if (this._forwardedIpConfig) {
+    if (this._forwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.forwardedIpConfig = this._forwardedIpConfig?.internalValue;
     }
@@ -13059,10 +13729,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementGeoMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._countryCodes = undefined;
       this._forwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._countryCodes = value.countryCodes;
       this._forwardedIpConfig.internalValue = value.forwardedIpConfig;
     }
@@ -13125,6 +13797,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -13135,7 +13809,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -13154,11 +13828,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
       this._position = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
       this._position = value.position;
@@ -13229,6 +13905,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementIpSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -13239,13 +13917,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementIpSetReferenceStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._ipSetForwardedIpConfig) {
+    if (this._ipSetForwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.ipSetForwardedIpConfig = this._ipSetForwardedIpConfig?.internalValue;
     }
@@ -13254,10 +13932,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementIpSetReferenceStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._ipSetForwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._ipSetForwardedIpConfig.internalValue = value.ipSetForwardedIpConfig;
     }
@@ -13315,6 +13995,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementLabelMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -13325,7 +14007,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementLabelMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key) {
       hasAnyValues = true;
@@ -13340,10 +14022,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementLabelMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._key = undefined;
       this._scope = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._key = value.key;
       this._scope = value.scope;
     }
@@ -13388,6 +14072,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -13398,15 +14084,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -13423,6 +14111,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -13433,15 +14123,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -13458,6 +14150,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -13468,15 +14162,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -13493,6 +14189,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -13503,15 +14201,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -13533,6 +14233,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -13543,7 +14245,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -13554,9 +14256,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -13592,6 +14296,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -13602,7 +14308,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -13613,9 +14319,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -13646,6 +14354,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -13656,15 +14366,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -13730,6 +14442,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -13740,33 +14454,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -13775,6 +14489,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -13784,6 +14499,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -13960,6 +14676,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -13970,13 +14688,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -13989,11 +14707,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementRegexPatternSetReferenceStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
@@ -14056,6 +14776,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14066,15 +14788,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -14091,6 +14815,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14101,15 +14827,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -14126,6 +14854,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14136,15 +14866,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -14161,6 +14893,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14171,15 +14905,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -14201,6 +14937,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14211,7 +14949,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -14222,9 +14960,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -14260,6 +15000,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14270,7 +15012,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -14281,9 +15023,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -14314,6 +15058,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14324,15 +15070,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -14398,6 +15146,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14408,33 +15158,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -14443,6 +15193,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -14452,6 +15203,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -14633,6 +15385,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14643,7 +15397,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comparisonOperator) {
       hasAnyValues = true;
@@ -14653,7 +15407,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -14666,12 +15420,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSizeConstraintStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._comparisonOperator = undefined;
       this._size = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._comparisonOperator = value.comparisonOperator;
       this._size = value.size;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -14748,6 +15504,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14758,15 +15516,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -14783,6 +15543,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14793,15 +15555,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -14818,6 +15582,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14828,15 +15594,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -14853,6 +15621,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14863,15 +15633,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -14893,6 +15665,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14903,7 +15677,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -14914,9 +15688,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -14952,6 +15728,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -14962,7 +15740,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -14973,9 +15751,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -15006,6 +15786,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -15016,15 +15798,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -15090,6 +15874,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -15100,33 +15886,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -15135,6 +15921,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -15144,6 +15931,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -15315,6 +16103,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -15325,9 +16115,9 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -15340,10 +16130,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementSqliMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
     }
@@ -15392,6 +16184,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -15402,15 +16196,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -15427,6 +16223,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -15437,15 +16235,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -15462,6 +16262,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -15472,15 +16274,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -15497,6 +16301,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -15507,15 +16313,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -15537,6 +16345,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -15547,7 +16357,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -15558,9 +16368,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -15596,6 +16408,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -15606,7 +16420,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -15617,9 +16431,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -15650,6 +16466,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -15660,15 +16478,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -15734,6 +16554,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -15744,33 +16566,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -15779,6 +16601,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -15788,6 +16611,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -15959,6 +16783,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -15969,9 +16795,9 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -15984,10 +16810,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementStatementXssMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
     }
@@ -16111,6 +16939,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16121,7 +16951,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._statement) {
       hasAnyValues = true;
@@ -16132,9 +16962,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._statement = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._statement = value.statement;
     }
   }
@@ -16166,6 +16998,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16176,15 +17010,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -16201,6 +17037,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16211,15 +17049,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -16236,6 +17076,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16246,15 +17088,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -16271,6 +17115,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16281,15 +17127,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -16311,6 +17159,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16321,7 +17171,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -16332,9 +17182,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -16370,6 +17222,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16380,7 +17234,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -16391,9 +17245,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -16424,6 +17280,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16434,15 +17292,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -16508,6 +17368,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16518,33 +17380,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -16553,6 +17415,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -16562,6 +17425,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -16738,6 +17602,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16748,13 +17614,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -16767,11 +17633,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
@@ -16834,6 +17702,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16844,15 +17714,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -16869,6 +17741,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16879,15 +17753,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -16904,6 +17780,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16914,15 +17792,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -16939,6 +17819,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16949,15 +17831,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -16979,6 +17863,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -16989,7 +17875,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -17000,9 +17886,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -17038,6 +17926,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -17048,7 +17938,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -17059,9 +17949,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -17092,6 +17984,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -17102,15 +17996,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -17176,6 +18072,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -17186,33 +18084,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -17221,6 +18119,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -17230,6 +18129,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -17411,6 +18311,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -17421,7 +18323,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comparisonOperator) {
       hasAnyValues = true;
@@ -17431,7 +18333,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -17444,12 +18346,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._comparisonOperator = undefined;
       this._size = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._comparisonOperator = value.comparisonOperator;
       this._size = value.size;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -17526,6 +18430,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -17536,15 +18442,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -17561,6 +18469,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -17571,15 +18481,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -17596,6 +18508,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -17606,15 +18520,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -17631,6 +18547,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -17641,15 +18559,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -17671,6 +18591,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -17681,7 +18603,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -17692,9 +18614,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -17730,6 +18654,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -17740,7 +18666,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -17751,9 +18677,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -17784,6 +18712,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -17794,15 +18724,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -17868,6 +18800,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -17878,33 +18812,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -17913,6 +18847,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -17922,6 +18857,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -18093,6 +19029,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -18103,9 +19041,9 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -18118,10 +19056,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
     }
@@ -18170,6 +19110,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -18180,15 +19122,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -18205,6 +19149,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -18215,15 +19161,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -18240,6 +19188,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -18250,15 +19200,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -18275,6 +19227,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -18285,15 +19239,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -18315,6 +19271,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -18325,7 +19283,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -18336,9 +19294,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -18374,6 +19334,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -18384,7 +19346,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -18395,9 +19357,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -18428,6 +19392,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -18438,15 +19404,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -18512,6 +19480,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -18522,33 +19492,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -18557,6 +19527,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -18566,6 +19537,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -18737,6 +19709,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -18747,9 +19721,9 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -18762,10 +19736,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
     }
@@ -18910,6 +19886,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotS
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -18920,7 +19898,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._statement) {
       hasAnyValues = true;
@@ -18931,9 +19909,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStat
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._statement = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._statement = value.statement;
     }
   }
@@ -18965,6 +19945,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -18975,15 +19957,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -19000,6 +19984,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -19010,15 +19996,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -19035,6 +20023,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -19045,15 +20035,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -19070,6 +20062,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -19080,15 +20074,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -19110,6 +20106,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -19120,7 +20118,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -19131,9 +20129,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -19169,6 +20169,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -19179,7 +20181,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -19190,9 +20192,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -19223,6 +20227,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -19233,15 +20239,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -19307,6 +20315,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -19317,33 +20327,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -19352,6 +20362,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -19361,6 +20372,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -19542,6 +20554,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -19552,7 +20566,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._positionalConstraint) {
       hasAnyValues = true;
@@ -19562,7 +20576,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       hasAnyValues = true;
       internalValueResult.searchString = this._searchString;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -19575,12 +20589,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementByteMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._positionalConstraint = undefined;
       this._searchString = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._positionalConstraint = value.positionalConstraint;
       this._searchString = value.searchString;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -19667,6 +20683,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -19677,7 +20695,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -19692,10 +20710,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
     }
@@ -19752,6 +20772,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementGeoMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -19762,13 +20784,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementGeoMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._countryCodes) {
       hasAnyValues = true;
       internalValueResult.countryCodes = this._countryCodes;
     }
-    if (this._forwardedIpConfig) {
+    if (this._forwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.forwardedIpConfig = this._forwardedIpConfig?.internalValue;
     }
@@ -19777,10 +20799,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementGeoMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._countryCodes = undefined;
       this._forwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._countryCodes = value.countryCodes;
       this._forwardedIpConfig.internalValue = value.forwardedIpConfig;
     }
@@ -19843,6 +20867,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -19853,7 +20879,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -19872,11 +20898,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
       this._position = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
       this._position = value.position;
@@ -19947,6 +20975,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementIpSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -19957,13 +20987,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementIpSetReferenceStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._ipSetForwardedIpConfig) {
+    if (this._ipSetForwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.ipSetForwardedIpConfig = this._ipSetForwardedIpConfig?.internalValue;
     }
@@ -19972,10 +21002,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementIpSetReferenceStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._ipSetForwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._ipSetForwardedIpConfig.internalValue = value.ipSetForwardedIpConfig;
     }
@@ -20033,6 +21065,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementLabelMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20043,7 +21077,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementLabelMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key) {
       hasAnyValues = true;
@@ -20058,10 +21092,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementLabelMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._key = undefined;
       this._scope = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._key = value.key;
       this._scope = value.scope;
     }
@@ -20106,6 +21142,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20116,15 +21154,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -20141,6 +21181,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20151,15 +21193,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -20176,6 +21220,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20186,15 +21232,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -20211,6 +21259,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20221,15 +21271,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -20251,6 +21303,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20261,7 +21315,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -20272,9 +21326,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -20310,6 +21366,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20320,7 +21378,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -20331,9 +21389,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -20364,6 +21424,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20374,15 +21436,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -20448,6 +21512,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20458,33 +21524,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -20493,6 +21559,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -20502,6 +21569,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -20678,6 +21746,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20688,13 +21758,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -20707,11 +21777,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
@@ -20774,6 +21846,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20784,15 +21858,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -20809,6 +21885,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20819,15 +21897,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -20844,6 +21924,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20854,15 +21936,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -20879,6 +21963,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20889,15 +21975,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -20919,6 +22007,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20929,7 +22019,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -20940,9 +22030,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -20978,6 +22070,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -20988,7 +22082,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -20999,9 +22093,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -21032,6 +22128,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -21042,15 +22140,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -21116,6 +22216,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -21126,33 +22228,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -21161,6 +22263,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -21170,6 +22273,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -21351,6 +22455,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -21361,7 +22467,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comparisonOperator) {
       hasAnyValues = true;
@@ -21371,7 +22477,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -21384,12 +22490,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSizeConstraintStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._comparisonOperator = undefined;
       this._size = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._comparisonOperator = value.comparisonOperator;
       this._size = value.size;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -21466,6 +22574,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -21476,15 +22586,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -21501,6 +22613,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -21511,15 +22625,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -21536,6 +22652,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -21546,15 +22664,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -21571,6 +22691,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -21581,15 +22703,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -21611,6 +22735,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -21621,7 +22747,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -21632,9 +22758,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -21670,6 +22798,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -21680,7 +22810,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -21691,9 +22821,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -21724,6 +22856,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -21734,15 +22868,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -21808,6 +22944,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -21818,33 +22956,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -21853,6 +22991,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -21862,6 +23001,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -22033,6 +23173,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22043,9 +23185,9 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -22058,10 +23200,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
     }
@@ -22110,6 +23254,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22120,15 +23266,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -22145,6 +23293,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22155,15 +23305,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -22180,6 +23332,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22190,15 +23344,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -22215,6 +23371,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22225,15 +23383,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -22255,6 +23415,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22265,7 +23427,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -22276,9 +23438,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -22314,6 +23478,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22324,7 +23490,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -22335,9 +23501,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -22368,6 +23536,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22378,15 +23548,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -22452,6 +23624,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22462,33 +23636,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -22497,6 +23671,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -22506,6 +23681,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -22677,6 +23853,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22687,9 +23865,9 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -22702,10 +23880,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
     }
@@ -22829,6 +24009,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22839,7 +24021,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._statement) {
       hasAnyValues = true;
@@ -22850,9 +24032,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._statement = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._statement = value.statement;
     }
   }
@@ -22884,6 +24068,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22894,15 +24080,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -22919,6 +24107,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22929,15 +24119,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -22954,6 +24146,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22964,15 +24158,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -22989,6 +24185,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -22999,15 +24197,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -23029,6 +24229,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -23039,7 +24241,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -23050,9 +24252,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -23088,6 +24292,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -23098,7 +24304,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -23109,9 +24315,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -23142,6 +24350,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -23152,15 +24362,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -23226,6 +24438,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -23236,33 +24450,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -23271,6 +24485,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -23280,6 +24495,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -23461,6 +24677,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -23471,7 +24689,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._positionalConstraint) {
       hasAnyValues = true;
@@ -23481,7 +24699,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       hasAnyValues = true;
       internalValueResult.searchString = this._searchString;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -23494,12 +24712,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementByteMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._positionalConstraint = undefined;
       this._searchString = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._positionalConstraint = value.positionalConstraint;
       this._searchString = value.searchString;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -23586,6 +24806,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementGeoMatchStatementForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -23596,7 +24818,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementGeoMatchStatementForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -23611,10 +24833,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementGeoMatchStatementForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
     }
@@ -23671,6 +24895,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementGeoMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -23681,13 +24907,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementGeoMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._countryCodes) {
       hasAnyValues = true;
       internalValueResult.countryCodes = this._countryCodes;
     }
-    if (this._forwardedIpConfig) {
+    if (this._forwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.forwardedIpConfig = this._forwardedIpConfig?.internalValue;
     }
@@ -23696,10 +24922,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementGeoMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._countryCodes = undefined;
       this._forwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._countryCodes = value.countryCodes;
       this._forwardedIpConfig.internalValue = value.forwardedIpConfig;
     }
@@ -23762,6 +24990,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -23772,7 +25002,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -23791,11 +25021,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
       this._position = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
       this._position = value.position;
@@ -23866,6 +25098,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementIpSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -23876,13 +25110,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementIpSetReferenceStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._ipSetForwardedIpConfig) {
+    if (this._ipSetForwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.ipSetForwardedIpConfig = this._ipSetForwardedIpConfig?.internalValue;
     }
@@ -23891,10 +25125,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementIpSetReferenceStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._ipSetForwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._ipSetForwardedIpConfig.internalValue = value.ipSetForwardedIpConfig;
     }
@@ -23952,6 +25188,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementLabelMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -23962,7 +25200,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementLabelMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key) {
       hasAnyValues = true;
@@ -23977,10 +25215,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementLabelMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._key = undefined;
       this._scope = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._key = value.key;
       this._scope = value.scope;
     }
@@ -24025,6 +25265,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -24035,15 +25277,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -24060,6 +25304,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -24070,15 +25316,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -24095,6 +25343,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -24105,15 +25355,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -24130,6 +25382,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -24140,15 +25394,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -24170,6 +25426,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -24180,7 +25438,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -24191,9 +25449,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -24229,6 +25489,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -24239,7 +25501,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -24250,9 +25512,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -24283,6 +25547,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -24293,15 +25559,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -24367,6 +25635,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -24377,33 +25647,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -24412,6 +25682,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -24421,6 +25692,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -24602,6 +25874,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -24612,7 +25886,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._positionalConstraint) {
       hasAnyValues = true;
@@ -24622,7 +25896,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       hasAnyValues = true;
       internalValueResult.searchString = this._searchString;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -24635,12 +25909,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._positionalConstraint = undefined;
       this._searchString = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._positionalConstraint = value.positionalConstraint;
       this._searchString = value.searchString;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -24727,6 +26003,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -24737,7 +26015,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -24752,10 +26030,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
     }
@@ -24812,6 +26092,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementGeoMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -24822,13 +26104,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementGeoMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._countryCodes) {
       hasAnyValues = true;
       internalValueResult.countryCodes = this._countryCodes;
     }
-    if (this._forwardedIpConfig) {
+    if (this._forwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.forwardedIpConfig = this._forwardedIpConfig?.internalValue;
     }
@@ -24837,10 +26119,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementGeoMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._countryCodes = undefined;
       this._forwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._countryCodes = value.countryCodes;
       this._forwardedIpConfig.internalValue = value.forwardedIpConfig;
     }
@@ -24903,6 +26187,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -24913,7 +26199,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fallbackBehavior) {
       hasAnyValues = true;
@@ -24932,11 +26218,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fallbackBehavior = undefined;
       this._headerName = undefined;
       this._position = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fallbackBehavior = value.fallbackBehavior;
       this._headerName = value.headerName;
       this._position = value.position;
@@ -25007,6 +26295,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25017,13 +26307,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementIpSetReferenceStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._ipSetForwardedIpConfig) {
+    if (this._ipSetForwardedIpConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.ipSetForwardedIpConfig = this._ipSetForwardedIpConfig?.internalValue;
     }
@@ -25032,10 +26322,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementIpSetReferenceStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._ipSetForwardedIpConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._ipSetForwardedIpConfig.internalValue = value.ipSetForwardedIpConfig;
     }
@@ -25093,6 +26385,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementLabelMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25103,7 +26397,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementLabelMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key) {
       hasAnyValues = true;
@@ -25118,10 +26412,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementLabelMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._key = undefined;
       this._scope = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._key = value.key;
       this._scope = value.scope;
     }
@@ -25166,6 +26462,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25176,15 +26474,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -25201,6 +26501,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25211,15 +26513,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -25236,6 +26540,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25246,15 +26552,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -25271,6 +26579,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25281,15 +26591,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -25311,6 +26623,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25321,7 +26635,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -25332,9 +26646,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -25370,6 +26686,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25380,7 +26698,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -25391,9 +26709,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -25424,6 +26744,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25434,15 +26756,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -25508,6 +26832,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25518,33 +26844,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -25553,6 +26879,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -25562,6 +26889,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -25738,6 +27066,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25748,13 +27078,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -25767,11 +27097,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementRegexPatternSetReferenceStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
@@ -25834,6 +27166,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25844,15 +27178,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -25869,6 +27205,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25879,15 +27217,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -25904,6 +27244,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25914,15 +27256,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -25939,6 +27283,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25949,15 +27295,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -25979,6 +27327,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -25989,7 +27339,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -26000,9 +27350,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -26038,6 +27390,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -26048,7 +27402,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -26059,9 +27413,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -26092,6 +27448,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -26102,15 +27460,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -26176,6 +27536,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -26186,33 +27548,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -26221,6 +27583,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -26230,6 +27593,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -26411,6 +27775,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -26421,7 +27787,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comparisonOperator) {
       hasAnyValues = true;
@@ -26431,7 +27797,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -26444,12 +27810,14 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSizeConstraintStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._comparisonOperator = undefined;
       this._size = undefined;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._comparisonOperator = value.comparisonOperator;
       this._size = value.size;
       this._fieldToMatch.internalValue = value.fieldToMatch;
@@ -26526,6 +27894,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -26536,15 +27906,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -26561,6 +27933,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -26571,15 +27945,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -26596,6 +27972,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -26606,15 +27984,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -26631,6 +28011,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -26641,15 +28023,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -26671,6 +28055,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -26681,7 +28067,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -26692,9 +28078,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -26730,6 +28118,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -26740,7 +28130,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -26751,9 +28141,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -26784,6 +28176,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -26794,15 +28188,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -26868,6 +28264,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -26878,33 +28276,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -26913,6 +28311,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -26922,6 +28321,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;
@@ -27093,6 +28493,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -27103,9 +28505,9 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch?.internalValue;
     }
@@ -27118,10 +28520,12 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementSqliMatchStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fieldToMatch.internalValue = undefined;
       this._textTransformation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fieldToMatch.internalValue = value.fieldToMatch;
       this._textTransformation = value.textTransformation;
     }
@@ -27170,6 +28574,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchAllQueryArgumentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -27180,15 +28586,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchAllQueryArguments | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -27205,6 +28613,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchBodyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -27215,15 +28625,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchBody | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchBody | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -27240,6 +28652,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -27250,15 +28664,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -27275,6 +28691,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchQueryStringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -27285,15 +28703,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchQueryString | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchQueryString | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -27315,6 +28735,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchSingleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -27325,7 +28747,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -27336,9 +28758,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchSingleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -27374,6 +28798,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchSingleQueryArgumentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -27384,7 +28810,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchSingleQueryArgument | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -27395,9 +28821,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchSingleQueryArgument | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
     }
   }
@@ -27428,6 +28856,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchUriPathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -27438,15 +28868,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchUriPath | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchUriPath | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }
@@ -27512,6 +28944,8 @@ export function wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrSt
 }
 
 export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -27522,33 +28956,33 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
   }
 
   public get internalValue(): Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allQueryArguments) {
+    if (this._allQueryArguments?.internalValue) {
       hasAnyValues = true;
       internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
     }
-    if (this._body) {
+    if (this._body?.internalValue) {
       hasAnyValues = true;
       internalValueResult.body = this._body?.internalValue;
     }
-    if (this._method) {
+    if (this._method?.internalValue) {
       hasAnyValues = true;
       internalValueResult.method = this._method?.internalValue;
     }
-    if (this._queryString) {
+    if (this._queryString?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._singleHeader) {
+    if (this._singleHeader?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleHeader = this._singleHeader?.internalValue;
     }
-    if (this._singleQueryArgument) {
+    if (this._singleQueryArgument?.internalValue) {
       hasAnyValues = true;
       internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
     }
-    if (this._uriPath) {
+    if (this._uriPath?.internalValue) {
       hasAnyValues = true;
       internalValueResult.uriPath = this._uriPath?.internalValue;
     }
@@ -27557,6 +28991,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
 
   public set internalValue(value: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allQueryArguments.internalValue = undefined;
       this._body.internalValue = undefined;
       this._method.internalValue = undefined;
@@ -27566,6 +29001,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrState
       this._uriPath.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allQueryArguments.internalValue = value.allQueryArguments;
       this._body.internalValue = value.body;
       this._method.internalValue = value.method;

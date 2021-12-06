@@ -115,6 +115,8 @@ export function appstreamImageBuilderDomainJoinInfoToTerraform(struct?: Appstrea
 }
 
 export class AppstreamImageBuilderDomainJoinInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -125,7 +127,7 @@ export class AppstreamImageBuilderDomainJoinInfoOutputReference extends cdktf.Co
   }
 
   public get internalValue(): AppstreamImageBuilderDomainJoinInfo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._directoryName) {
       hasAnyValues = true;
@@ -140,10 +142,12 @@ export class AppstreamImageBuilderDomainJoinInfoOutputReference extends cdktf.Co
 
   public set internalValue(value: AppstreamImageBuilderDomainJoinInfo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._directoryName = undefined;
       this._organizationalUnitDistinguishedName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._directoryName = value.directoryName;
       this._organizationalUnitDistinguishedName = value.organizationalUnitDistinguishedName;
     }
@@ -204,6 +208,8 @@ export function appstreamImageBuilderVpcConfigToTerraform(struct?: AppstreamImag
 }
 
 export class AppstreamImageBuilderVpcConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -214,7 +220,7 @@ export class AppstreamImageBuilderVpcConfigOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): AppstreamImageBuilderVpcConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._securityGroupIds) {
       hasAnyValues = true;
@@ -229,10 +235,12 @@ export class AppstreamImageBuilderVpcConfigOutputReference extends cdktf.Complex
 
   public set internalValue(value: AppstreamImageBuilderVpcConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._securityGroupIds = undefined;
       this._subnetIds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._securityGroupIds = value.securityGroupIds;
       this._subnetIds = value.subnetIds;
     }

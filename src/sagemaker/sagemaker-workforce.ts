@@ -53,6 +53,8 @@ export function sagemakerWorkforceCognitoConfigToTerraform(struct?: SagemakerWor
 }
 
 export class SagemakerWorkforceCognitoConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -63,7 +65,7 @@ export class SagemakerWorkforceCognitoConfigOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): SagemakerWorkforceCognitoConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._clientId) {
       hasAnyValues = true;
@@ -78,10 +80,12 @@ export class SagemakerWorkforceCognitoConfigOutputReference extends cdktf.Comple
 
   public set internalValue(value: SagemakerWorkforceCognitoConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clientId = undefined;
       this._userPool = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clientId = value.clientId;
       this._userPool = value.userPool;
     }
@@ -166,6 +170,8 @@ export function sagemakerWorkforceOidcConfigToTerraform(struct?: SagemakerWorkfo
 }
 
 export class SagemakerWorkforceOidcConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -176,7 +182,7 @@ export class SagemakerWorkforceOidcConfigOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): SagemakerWorkforceOidcConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._authorizationEndpoint) {
       hasAnyValues = true;
@@ -215,6 +221,7 @@ export class SagemakerWorkforceOidcConfigOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: SagemakerWorkforceOidcConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._authorizationEndpoint = undefined;
       this._clientId = undefined;
       this._clientSecret = undefined;
@@ -225,6 +232,7 @@ export class SagemakerWorkforceOidcConfigOutputReference extends cdktf.ComplexOb
       this._userInfoEndpoint = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._authorizationEndpoint = value.authorizationEndpoint;
       this._clientId = value.clientId;
       this._clientSecret = value.clientSecret;
@@ -358,6 +366,8 @@ export function sagemakerWorkforceSourceIpConfigToTerraform(struct?: SagemakerWo
 }
 
 export class SagemakerWorkforceSourceIpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -368,7 +378,7 @@ export class SagemakerWorkforceSourceIpConfigOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): SagemakerWorkforceSourceIpConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cidrs) {
       hasAnyValues = true;
@@ -379,9 +389,11 @@ export class SagemakerWorkforceSourceIpConfigOutputReference extends cdktf.Compl
 
   public set internalValue(value: SagemakerWorkforceSourceIpConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cidrs = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cidrs = value.cidrs;
     }
   }

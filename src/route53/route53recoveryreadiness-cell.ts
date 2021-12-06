@@ -48,6 +48,8 @@ export function route53RecoveryreadinessCellTimeoutsToTerraform(struct?: Route53
 }
 
 export class Route53RecoveryreadinessCellTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -58,7 +60,7 @@ export class Route53RecoveryreadinessCellTimeoutsOutputReference extends cdktf.C
   }
 
   public get internalValue(): Route53RecoveryreadinessCellTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete) {
       hasAnyValues = true;
@@ -69,9 +71,11 @@ export class Route53RecoveryreadinessCellTimeoutsOutputReference extends cdktf.C
 
   public set internalValue(value: Route53RecoveryreadinessCellTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._delete = value.delete;
     }
   }

@@ -166,6 +166,8 @@ export function cognitoUserPoolAccountRecoverySettingToTerraform(struct?: Cognit
 }
 
 export class CognitoUserPoolAccountRecoverySettingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -176,7 +178,7 @@ export class CognitoUserPoolAccountRecoverySettingOutputReference extends cdktf.
   }
 
   public get internalValue(): CognitoUserPoolAccountRecoverySetting | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._recoveryMechanism) {
       hasAnyValues = true;
@@ -187,9 +189,11 @@ export class CognitoUserPoolAccountRecoverySettingOutputReference extends cdktf.
 
   public set internalValue(value: CognitoUserPoolAccountRecoverySetting | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._recoveryMechanism = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._recoveryMechanism = value.recoveryMechanism;
     }
   }
@@ -236,6 +240,8 @@ export function cognitoUserPoolAdminCreateUserConfigInviteMessageTemplateToTerra
 }
 
 export class CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -246,7 +252,7 @@ export class CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputRefe
   }
 
   public get internalValue(): CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._emailMessage) {
       hasAnyValues = true;
@@ -265,11 +271,13 @@ export class CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputRefe
 
   public set internalValue(value: CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._emailMessage = undefined;
       this._emailSubject = undefined;
       this._smsMessage = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._emailMessage = value.emailMessage;
       this._emailSubject = value.emailSubject;
       this._smsMessage = value.smsMessage;
@@ -349,6 +357,8 @@ export function cognitoUserPoolAdminCreateUserConfigToTerraform(struct?: Cognito
 }
 
 export class CognitoUserPoolAdminCreateUserConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -359,13 +369,13 @@ export class CognitoUserPoolAdminCreateUserConfigOutputReference extends cdktf.C
   }
 
   public get internalValue(): CognitoUserPoolAdminCreateUserConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allowAdminCreateUserOnly) {
       hasAnyValues = true;
       internalValueResult.allowAdminCreateUserOnly = this._allowAdminCreateUserOnly;
     }
-    if (this._inviteMessageTemplate) {
+    if (this._inviteMessageTemplate?.internalValue) {
       hasAnyValues = true;
       internalValueResult.inviteMessageTemplate = this._inviteMessageTemplate?.internalValue;
     }
@@ -374,10 +384,12 @@ export class CognitoUserPoolAdminCreateUserConfigOutputReference extends cdktf.C
 
   public set internalValue(value: CognitoUserPoolAdminCreateUserConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allowAdminCreateUserOnly = undefined;
       this._inviteMessageTemplate.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allowAdminCreateUserOnly = value.allowAdminCreateUserOnly;
       this._inviteMessageTemplate.internalValue = value.inviteMessageTemplate;
     }
@@ -438,6 +450,8 @@ export function cognitoUserPoolDeviceConfigurationToTerraform(struct?: CognitoUs
 }
 
 export class CognitoUserPoolDeviceConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -448,7 +462,7 @@ export class CognitoUserPoolDeviceConfigurationOutputReference extends cdktf.Com
   }
 
   public get internalValue(): CognitoUserPoolDeviceConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._challengeRequiredOnNewDevice) {
       hasAnyValues = true;
@@ -463,10 +477,12 @@ export class CognitoUserPoolDeviceConfigurationOutputReference extends cdktf.Com
 
   public set internalValue(value: CognitoUserPoolDeviceConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._challengeRequiredOnNewDevice = undefined;
       this._deviceOnlyRememberedOnUserPrompt = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._challengeRequiredOnNewDevice = value.challengeRequiredOnNewDevice;
       this._deviceOnlyRememberedOnUserPrompt = value.deviceOnlyRememberedOnUserPrompt;
     }
@@ -542,6 +558,8 @@ export function cognitoUserPoolEmailConfigurationToTerraform(struct?: CognitoUse
 }
 
 export class CognitoUserPoolEmailConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -552,7 +570,7 @@ export class CognitoUserPoolEmailConfigurationOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): CognitoUserPoolEmailConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._configurationSet) {
       hasAnyValues = true;
@@ -579,6 +597,7 @@ export class CognitoUserPoolEmailConfigurationOutputReference extends cdktf.Comp
 
   public set internalValue(value: CognitoUserPoolEmailConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._configurationSet = undefined;
       this._emailSendingAccount = undefined;
       this._fromEmailAddress = undefined;
@@ -586,6 +605,7 @@ export class CognitoUserPoolEmailConfigurationOutputReference extends cdktf.Comp
       this._sourceArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._configurationSet = value.configurationSet;
       this._emailSendingAccount = value.emailSendingAccount;
       this._fromEmailAddress = value.fromEmailAddress;
@@ -697,6 +717,8 @@ export function cognitoUserPoolLambdaConfigCustomEmailSenderToTerraform(struct?:
 }
 
 export class CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -707,7 +729,7 @@ export class CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference extends
   }
 
   public get internalValue(): CognitoUserPoolLambdaConfigCustomEmailSender | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._lambdaArn) {
       hasAnyValues = true;
@@ -722,10 +744,12 @@ export class CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference extends
 
   public set internalValue(value: CognitoUserPoolLambdaConfigCustomEmailSender | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._lambdaArn = undefined;
       this._lambdaVersion = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._lambdaArn = value.lambdaArn;
       this._lambdaVersion = value.lambdaVersion;
     }
@@ -780,6 +804,8 @@ export function cognitoUserPoolLambdaConfigCustomSmsSenderToTerraform(struct?: C
 }
 
 export class CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -790,7 +816,7 @@ export class CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference extends c
   }
 
   public get internalValue(): CognitoUserPoolLambdaConfigCustomSmsSender | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._lambdaArn) {
       hasAnyValues = true;
@@ -805,10 +831,12 @@ export class CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference extends c
 
   public set internalValue(value: CognitoUserPoolLambdaConfigCustomSmsSender | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._lambdaArn = undefined;
       this._lambdaVersion = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._lambdaArn = value.lambdaArn;
       this._lambdaVersion = value.lambdaVersion;
     }
@@ -922,6 +950,8 @@ export function cognitoUserPoolLambdaConfigToTerraform(struct?: CognitoUserPoolL
 }
 
 export class CognitoUserPoolLambdaConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -932,7 +962,7 @@ export class CognitoUserPoolLambdaConfigOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): CognitoUserPoolLambdaConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._createAuthChallenge) {
       hasAnyValues = true;
@@ -978,11 +1008,11 @@ export class CognitoUserPoolLambdaConfigOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.verifyAuthChallengeResponse = this._verifyAuthChallengeResponse;
     }
-    if (this._customEmailSender) {
+    if (this._customEmailSender?.internalValue) {
       hasAnyValues = true;
       internalValueResult.customEmailSender = this._customEmailSender?.internalValue;
     }
-    if (this._customSmsSender) {
+    if (this._customSmsSender?.internalValue) {
       hasAnyValues = true;
       internalValueResult.customSmsSender = this._customSmsSender?.internalValue;
     }
@@ -991,6 +1021,7 @@ export class CognitoUserPoolLambdaConfigOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: CognitoUserPoolLambdaConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._createAuthChallenge = undefined;
       this._customMessage = undefined;
       this._defineAuthChallenge = undefined;
@@ -1006,6 +1037,7 @@ export class CognitoUserPoolLambdaConfigOutputReference extends cdktf.ComplexObj
       this._customSmsSender.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._createAuthChallenge = value.createAuthChallenge;
       this._customMessage = value.customMessage;
       this._defineAuthChallenge = value.defineAuthChallenge;
@@ -1273,6 +1305,8 @@ export function cognitoUserPoolPasswordPolicyToTerraform(struct?: CognitoUserPoo
 }
 
 export class CognitoUserPoolPasswordPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1283,7 +1317,7 @@ export class CognitoUserPoolPasswordPolicyOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): CognitoUserPoolPasswordPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._minimumLength) {
       hasAnyValues = true;
@@ -1314,6 +1348,7 @@ export class CognitoUserPoolPasswordPolicyOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: CognitoUserPoolPasswordPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._minimumLength = undefined;
       this._requireLowercase = undefined;
       this._requireNumbers = undefined;
@@ -1322,6 +1357,7 @@ export class CognitoUserPoolPasswordPolicyOutputReference extends cdktf.ComplexO
       this._temporaryPasswordValidityDays = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._minimumLength = value.minimumLength;
       this._requireLowercase = value.requireLowercase;
       this._requireNumbers = value.requireNumbers;
@@ -1450,6 +1486,8 @@ export function cognitoUserPoolSchemaNumberAttributeConstraintsToTerraform(struc
 }
 
 export class CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1460,7 +1498,7 @@ export class CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference exte
   }
 
   public get internalValue(): CognitoUserPoolSchemaNumberAttributeConstraints | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxValue) {
       hasAnyValues = true;
@@ -1475,10 +1513,12 @@ export class CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference exte
 
   public set internalValue(value: CognitoUserPoolSchemaNumberAttributeConstraints | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxValue = undefined;
       this._minValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxValue = value.maxValue;
       this._minValue = value.minValue;
     }
@@ -1539,6 +1579,8 @@ export function cognitoUserPoolSchemaStringAttributeConstraintsToTerraform(struc
 }
 
 export class CognitoUserPoolSchemaStringAttributeConstraintsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1549,7 +1591,7 @@ export class CognitoUserPoolSchemaStringAttributeConstraintsOutputReference exte
   }
 
   public get internalValue(): CognitoUserPoolSchemaStringAttributeConstraints | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxLength) {
       hasAnyValues = true;
@@ -1564,10 +1606,12 @@ export class CognitoUserPoolSchemaStringAttributeConstraintsOutputReference exte
 
   public set internalValue(value: CognitoUserPoolSchemaStringAttributeConstraints | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxLength = undefined;
       this._minLength = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxLength = value.maxLength;
       this._minLength = value.minLength;
     }
@@ -1679,6 +1723,8 @@ export function cognitoUserPoolSmsConfigurationToTerraform(struct?: CognitoUserP
 }
 
 export class CognitoUserPoolSmsConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1689,7 +1735,7 @@ export class CognitoUserPoolSmsConfigurationOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): CognitoUserPoolSmsConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._externalId) {
       hasAnyValues = true;
@@ -1704,10 +1750,12 @@ export class CognitoUserPoolSmsConfigurationOutputReference extends cdktf.Comple
 
   public set internalValue(value: CognitoUserPoolSmsConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._externalId = undefined;
       this._snsCallerArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._externalId = value.externalId;
       this._snsCallerArn = value.snsCallerArn;
     }
@@ -1757,6 +1805,8 @@ export function cognitoUserPoolSoftwareTokenMfaConfigurationToTerraform(struct?:
 }
 
 export class CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1767,7 +1817,7 @@ export class CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference extends
   }
 
   public get internalValue(): CognitoUserPoolSoftwareTokenMfaConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -1778,9 +1828,11 @@ export class CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference extends
 
   public set internalValue(value: CognitoUserPoolSoftwareTokenMfaConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
     }
   }
@@ -1816,6 +1868,8 @@ export function cognitoUserPoolUserPoolAddOnsToTerraform(struct?: CognitoUserPoo
 }
 
 export class CognitoUserPoolUserPoolAddOnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1826,7 +1880,7 @@ export class CognitoUserPoolUserPoolAddOnsOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): CognitoUserPoolUserPoolAddOns | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._advancedSecurityMode) {
       hasAnyValues = true;
@@ -1837,9 +1891,11 @@ export class CognitoUserPoolUserPoolAddOnsOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: CognitoUserPoolUserPoolAddOns | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._advancedSecurityMode = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._advancedSecurityMode = value.advancedSecurityMode;
     }
   }
@@ -1875,6 +1931,8 @@ export function cognitoUserPoolUsernameConfigurationToTerraform(struct?: Cognito
 }
 
 export class CognitoUserPoolUsernameConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1885,7 +1943,7 @@ export class CognitoUserPoolUsernameConfigurationOutputReference extends cdktf.C
   }
 
   public get internalValue(): CognitoUserPoolUsernameConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._caseSensitive) {
       hasAnyValues = true;
@@ -1896,9 +1954,11 @@ export class CognitoUserPoolUsernameConfigurationOutputReference extends cdktf.C
 
   public set internalValue(value: CognitoUserPoolUsernameConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._caseSensitive = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._caseSensitive = value.caseSensitive;
     }
   }
@@ -1959,6 +2019,8 @@ export function cognitoUserPoolVerificationMessageTemplateToTerraform(struct?: C
 }
 
 export class CognitoUserPoolVerificationMessageTemplateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1969,7 +2031,7 @@ export class CognitoUserPoolVerificationMessageTemplateOutputReference extends c
   }
 
   public get internalValue(): CognitoUserPoolVerificationMessageTemplate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._defaultEmailOption) {
       hasAnyValues = true;
@@ -2000,6 +2062,7 @@ export class CognitoUserPoolVerificationMessageTemplateOutputReference extends c
 
   public set internalValue(value: CognitoUserPoolVerificationMessageTemplate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._defaultEmailOption = undefined;
       this._emailMessage = undefined;
       this._emailMessageByLink = undefined;
@@ -2008,6 +2071,7 @@ export class CognitoUserPoolVerificationMessageTemplateOutputReference extends c
       this._smsMessage = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._defaultEmailOption = value.defaultEmailOption;
       this._emailMessage = value.emailMessage;
       this._emailMessageByLink = value.emailMessageByLink;

@@ -89,6 +89,8 @@ export function apiGatewayMethodSettingsSettingsToTerraform(struct?: ApiGatewayM
 }
 
 export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -99,7 +101,7 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): ApiGatewayMethodSettingsSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cacheDataEncrypted) {
       hasAnyValues = true;
@@ -146,6 +148,7 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
 
   public set internalValue(value: ApiGatewayMethodSettingsSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cacheDataEncrypted = undefined;
       this._cacheTtlInSeconds = undefined;
       this._cachingEnabled = undefined;
@@ -158,6 +161,7 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
       this._unauthorizedCacheControlHeaderStrategy = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cacheDataEncrypted = value.cacheDataEncrypted;
       this._cacheTtlInSeconds = value.cacheTtlInSeconds;
       this._cachingEnabled = value.cachingEnabled;

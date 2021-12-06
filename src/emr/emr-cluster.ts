@@ -217,6 +217,8 @@ export function emrClusterAutoTerminationPolicyToTerraform(struct?: EmrClusterAu
 }
 
 export class EmrClusterAutoTerminationPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -227,7 +229,7 @@ export class EmrClusterAutoTerminationPolicyOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): EmrClusterAutoTerminationPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._idleTimeout) {
       hasAnyValues = true;
@@ -238,9 +240,11 @@ export class EmrClusterAutoTerminationPolicyOutputReference extends cdktf.Comple
 
   public set internalValue(value: EmrClusterAutoTerminationPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._idleTimeout = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._idleTimeout = value.idleTimeout;
     }
   }
@@ -464,6 +468,8 @@ export function emrClusterCoreInstanceFleetLaunchSpecificationsToTerraform(struc
 }
 
 export class EmrClusterCoreInstanceFleetLaunchSpecificationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -474,7 +480,7 @@ export class EmrClusterCoreInstanceFleetLaunchSpecificationsOutputReference exte
   }
 
   public get internalValue(): EmrClusterCoreInstanceFleetLaunchSpecifications | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._onDemandSpecification) {
       hasAnyValues = true;
@@ -489,10 +495,12 @@ export class EmrClusterCoreInstanceFleetLaunchSpecificationsOutputReference exte
 
   public set internalValue(value: EmrClusterCoreInstanceFleetLaunchSpecifications | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._onDemandSpecification = undefined;
       this._spotSpecification = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._onDemandSpecification = value.onDemandSpecification;
       this._spotSpecification = value.spotSpecification;
     }
@@ -574,6 +582,8 @@ export function emrClusterCoreInstanceFleetToTerraform(struct?: EmrClusterCoreIn
 }
 
 export class EmrClusterCoreInstanceFleetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -584,7 +594,7 @@ export class EmrClusterCoreInstanceFleetOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): EmrClusterCoreInstanceFleet | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -602,7 +612,7 @@ export class EmrClusterCoreInstanceFleetOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.instanceTypeConfigs = this._instanceTypeConfigs;
     }
-    if (this._launchSpecifications) {
+    if (this._launchSpecifications?.internalValue) {
       hasAnyValues = true;
       internalValueResult.launchSpecifications = this._launchSpecifications?.internalValue;
     }
@@ -611,6 +621,7 @@ export class EmrClusterCoreInstanceFleetOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: EmrClusterCoreInstanceFleet | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
       this._targetOnDemandCapacity = undefined;
       this._targetSpotCapacity = undefined;
@@ -618,6 +629,7 @@ export class EmrClusterCoreInstanceFleetOutputReference extends cdktf.ComplexObj
       this._launchSpecifications.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._targetOnDemandCapacity = value.targetOnDemandCapacity;
       this._targetSpotCapacity = value.targetSpotCapacity;
@@ -784,6 +796,8 @@ export function emrClusterCoreInstanceGroupToTerraform(struct?: EmrClusterCoreIn
 }
 
 export class EmrClusterCoreInstanceGroupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -794,7 +808,7 @@ export class EmrClusterCoreInstanceGroupOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): EmrClusterCoreInstanceGroup | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._autoscalingPolicy) {
       hasAnyValues = true;
@@ -825,6 +839,7 @@ export class EmrClusterCoreInstanceGroupOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: EmrClusterCoreInstanceGroup | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._autoscalingPolicy = undefined;
       this._bidPrice = undefined;
       this._instanceCount = undefined;
@@ -833,6 +848,7 @@ export class EmrClusterCoreInstanceGroupOutputReference extends cdktf.ComplexObj
       this._ebsConfig = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._autoscalingPolicy = value.autoscalingPolicy;
       this._bidPrice = value.bidPrice;
       this._instanceCount = value.instanceCount;
@@ -994,6 +1010,8 @@ export function emrClusterEc2AttributesToTerraform(struct?: EmrClusterEc2Attribu
 }
 
 export class EmrClusterEc2AttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1004,7 +1022,7 @@ export class EmrClusterEc2AttributesOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): EmrClusterEc2Attributes | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._additionalMasterSecurityGroups) {
       hasAnyValues = true;
@@ -1047,6 +1065,7 @@ export class EmrClusterEc2AttributesOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: EmrClusterEc2Attributes | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._additionalMasterSecurityGroups = undefined;
       this._additionalSlaveSecurityGroups = undefined;
       this._emrManagedMasterSecurityGroup = undefined;
@@ -1058,6 +1077,7 @@ export class EmrClusterEc2AttributesOutputReference extends cdktf.ComplexObject 
       this._subnetIds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._additionalMasterSecurityGroups = value.additionalMasterSecurityGroups;
       this._additionalSlaveSecurityGroups = value.additionalSlaveSecurityGroups;
       this._emrManagedMasterSecurityGroup = value.emrManagedMasterSecurityGroup;
@@ -1249,6 +1269,8 @@ export function emrClusterKerberosAttributesToTerraform(struct?: EmrClusterKerbe
 }
 
 export class EmrClusterKerberosAttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1259,7 +1281,7 @@ export class EmrClusterKerberosAttributesOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): EmrClusterKerberosAttributes | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._adDomainJoinPassword) {
       hasAnyValues = true;
@@ -1286,6 +1308,7 @@ export class EmrClusterKerberosAttributesOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: EmrClusterKerberosAttributes | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._adDomainJoinPassword = undefined;
       this._adDomainJoinUser = undefined;
       this._crossRealmTrustPrincipalPassword = undefined;
@@ -1293,6 +1316,7 @@ export class EmrClusterKerberosAttributesOutputReference extends cdktf.ComplexOb
       this._realm = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._adDomainJoinPassword = value.adDomainJoinPassword;
       this._adDomainJoinUser = value.adDomainJoinUser;
       this._crossRealmTrustPrincipalPassword = value.crossRealmTrustPrincipalPassword;
@@ -1551,6 +1575,8 @@ export function emrClusterMasterInstanceFleetLaunchSpecificationsToTerraform(str
 }
 
 export class EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1561,7 +1587,7 @@ export class EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference ex
   }
 
   public get internalValue(): EmrClusterMasterInstanceFleetLaunchSpecifications | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._onDemandSpecification) {
       hasAnyValues = true;
@@ -1576,10 +1602,12 @@ export class EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference ex
 
   public set internalValue(value: EmrClusterMasterInstanceFleetLaunchSpecifications | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._onDemandSpecification = undefined;
       this._spotSpecification = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._onDemandSpecification = value.onDemandSpecification;
       this._spotSpecification = value.spotSpecification;
     }
@@ -1661,6 +1689,8 @@ export function emrClusterMasterInstanceFleetToTerraform(struct?: EmrClusterMast
 }
 
 export class EmrClusterMasterInstanceFleetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1671,7 +1701,7 @@ export class EmrClusterMasterInstanceFleetOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): EmrClusterMasterInstanceFleet | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -1689,7 +1719,7 @@ export class EmrClusterMasterInstanceFleetOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.instanceTypeConfigs = this._instanceTypeConfigs;
     }
-    if (this._launchSpecifications) {
+    if (this._launchSpecifications?.internalValue) {
       hasAnyValues = true;
       internalValueResult.launchSpecifications = this._launchSpecifications?.internalValue;
     }
@@ -1698,6 +1728,7 @@ export class EmrClusterMasterInstanceFleetOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: EmrClusterMasterInstanceFleet | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
       this._targetOnDemandCapacity = undefined;
       this._targetSpotCapacity = undefined;
@@ -1705,6 +1736,7 @@ export class EmrClusterMasterInstanceFleetOutputReference extends cdktf.ComplexO
       this._launchSpecifications.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._targetOnDemandCapacity = value.targetOnDemandCapacity;
       this._targetSpotCapacity = value.targetSpotCapacity;
@@ -1866,6 +1898,8 @@ export function emrClusterMasterInstanceGroupToTerraform(struct?: EmrClusterMast
 }
 
 export class EmrClusterMasterInstanceGroupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1876,7 +1910,7 @@ export class EmrClusterMasterInstanceGroupOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): EmrClusterMasterInstanceGroup | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bidPrice) {
       hasAnyValues = true;
@@ -1903,6 +1937,7 @@ export class EmrClusterMasterInstanceGroupOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: EmrClusterMasterInstanceGroup | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bidPrice = undefined;
       this._instanceCount = undefined;
       this._instanceType = undefined;
@@ -1910,6 +1945,7 @@ export class EmrClusterMasterInstanceGroupOutputReference extends cdktf.ComplexO
       this._ebsConfig = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bidPrice = value.bidPrice;
       this._instanceCount = value.instanceCount;
       this._instanceType = value.instanceType;

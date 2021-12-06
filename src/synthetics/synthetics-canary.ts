@@ -64,6 +64,12 @@ export interface SyntheticsCanaryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly zipFile?: string;
   /**
+  * artifact_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/synthetics_canary.html#artifact_config SyntheticsCanary#artifact_config}
+  */
+  readonly artifactConfig?: SyntheticsCanaryArtifactConfig;
+  /**
   * run_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/synthetics_canary.html#run_config SyntheticsCanary#run_config}
@@ -104,6 +110,167 @@ export class SyntheticsCanaryTimeline extends cdktf.ComplexComputedList {
     return this.getStringAttribute('last_stopped');
   }
 }
+export interface SyntheticsCanaryArtifactConfigS3Encryption {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/synthetics_canary.html#encryption_mode SyntheticsCanary#encryption_mode}
+  */
+  readonly encryptionMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/synthetics_canary.html#kms_key_arn SyntheticsCanary#kms_key_arn}
+  */
+  readonly kmsKeyArn?: string;
+}
+
+export function syntheticsCanaryArtifactConfigS3EncryptionToTerraform(struct?: SyntheticsCanaryArtifactConfigS3EncryptionOutputReference | SyntheticsCanaryArtifactConfigS3Encryption): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    encryption_mode: cdktf.stringToTerraform(struct!.encryptionMode),
+    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+  }
+}
+
+export class SyntheticsCanaryArtifactConfigS3EncryptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): SyntheticsCanaryArtifactConfigS3Encryption | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._encryptionMode) {
+      hasAnyValues = true;
+      internalValueResult.encryptionMode = this._encryptionMode;
+    }
+    if (this._kmsKeyArn) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyArn = this._kmsKeyArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsCanaryArtifactConfigS3Encryption | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._encryptionMode = undefined;
+      this._kmsKeyArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._encryptionMode = value.encryptionMode;
+      this._kmsKeyArn = value.kmsKeyArn;
+    }
+  }
+
+  // encryption_mode - computed: false, optional: true, required: false
+  private _encryptionMode?: string; 
+  public get encryptionMode() {
+    return this.getStringAttribute('encryption_mode');
+  }
+  public set encryptionMode(value: string) {
+    this._encryptionMode = value;
+  }
+  public resetEncryptionMode() {
+    this._encryptionMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionModeInput() {
+    return this._encryptionMode;
+  }
+
+  // kms_key_arn - computed: false, optional: true, required: false
+  private _kmsKeyArn?: string; 
+  public get kmsKeyArn() {
+    return this.getStringAttribute('kms_key_arn');
+  }
+  public set kmsKeyArn(value: string) {
+    this._kmsKeyArn = value;
+  }
+  public resetKmsKeyArn() {
+    this._kmsKeyArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyArnInput() {
+    return this._kmsKeyArn;
+  }
+}
+export interface SyntheticsCanaryArtifactConfig {
+  /**
+  * s3_encryption block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/synthetics_canary.html#s3_encryption SyntheticsCanary#s3_encryption}
+  */
+  readonly s3Encryption?: SyntheticsCanaryArtifactConfigS3Encryption;
+}
+
+export function syntheticsCanaryArtifactConfigToTerraform(struct?: SyntheticsCanaryArtifactConfigOutputReference | SyntheticsCanaryArtifactConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    s3_encryption: syntheticsCanaryArtifactConfigS3EncryptionToTerraform(struct!.s3Encryption),
+  }
+}
+
+export class SyntheticsCanaryArtifactConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): SyntheticsCanaryArtifactConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._s3Encryption?.internalValue) {
+      hasAnyValues = true;
+      internalValueResult.s3Encryption = this._s3Encryption?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsCanaryArtifactConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._s3Encryption.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._s3Encryption.internalValue = value.s3Encryption;
+    }
+  }
+
+  // s3_encryption - computed: false, optional: true, required: false
+  private _s3Encryption = new SyntheticsCanaryArtifactConfigS3EncryptionOutputReference(this as any, "s3_encryption", true);
+  public get s3Encryption() {
+    return this._s3Encryption;
+  }
+  public putS3Encryption(value: SyntheticsCanaryArtifactConfigS3Encryption) {
+    this._s3Encryption.internalValue = value;
+  }
+  public resetS3Encryption() {
+    this._s3Encryption.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3EncryptionInput() {
+    return this._s3Encryption.internalValue;
+  }
+}
 export interface SyntheticsCanaryRunConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/synthetics_canary.html#active_tracing SyntheticsCanary#active_tracing}
@@ -132,6 +299,8 @@ export function syntheticsCanaryRunConfigToTerraform(struct?: SyntheticsCanaryRu
 }
 
 export class SyntheticsCanaryRunConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -142,7 +311,7 @@ export class SyntheticsCanaryRunConfigOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): SyntheticsCanaryRunConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._activeTracing) {
       hasAnyValues = true;
@@ -161,11 +330,13 @@ export class SyntheticsCanaryRunConfigOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: SyntheticsCanaryRunConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._activeTracing = undefined;
       this._memoryInMb = undefined;
       this._timeoutInSeconds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._activeTracing = value.activeTracing;
       this._memoryInMb = value.memoryInMb;
       this._timeoutInSeconds = value.timeoutInSeconds;
@@ -243,6 +414,8 @@ export function syntheticsCanaryScheduleToTerraform(struct?: SyntheticsCanarySch
 }
 
 export class SyntheticsCanaryScheduleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -253,7 +426,7 @@ export class SyntheticsCanaryScheduleOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): SyntheticsCanarySchedule | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._durationInSeconds) {
       hasAnyValues = true;
@@ -268,10 +441,12 @@ export class SyntheticsCanaryScheduleOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: SyntheticsCanarySchedule | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._durationInSeconds = undefined;
       this._expression = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._durationInSeconds = value.durationInSeconds;
       this._expression = value.expression;
     }
@@ -329,6 +504,8 @@ export function syntheticsCanaryVpcConfigToTerraform(struct?: SyntheticsCanaryVp
 }
 
 export class SyntheticsCanaryVpcConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -339,7 +516,7 @@ export class SyntheticsCanaryVpcConfigOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): SyntheticsCanaryVpcConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._securityGroupIds) {
       hasAnyValues = true;
@@ -354,10 +531,12 @@ export class SyntheticsCanaryVpcConfigOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: SyntheticsCanaryVpcConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._securityGroupIds = undefined;
       this._subnetIds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._securityGroupIds = value.securityGroupIds;
       this._subnetIds = value.subnetIds;
     }
@@ -442,6 +621,7 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._zipFile = config.zipFile;
+    this._artifactConfig.internalValue = config.artifactConfig;
     this._runConfig.internalValue = config.runConfig;
     this._schedule.internalValue = config.schedule;
     this._vpcConfig.internalValue = config.vpcConfig;
@@ -692,6 +872,22 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
     return this._zipFile;
   }
 
+  // artifact_config - computed: false, optional: true, required: false
+  private _artifactConfig = new SyntheticsCanaryArtifactConfigOutputReference(this as any, "artifact_config", true);
+  public get artifactConfig() {
+    return this._artifactConfig;
+  }
+  public putArtifactConfig(value: SyntheticsCanaryArtifactConfig) {
+    this._artifactConfig.internalValue = value;
+  }
+  public resetArtifactConfig() {
+    this._artifactConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get artifactConfigInput() {
+    return this._artifactConfig.internalValue;
+  }
+
   // run_config - computed: false, optional: true, required: false
   private _runConfig = new SyntheticsCanaryRunConfigOutputReference(this as any, "run_config", true);
   public get runConfig() {
@@ -757,6 +953,7 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       zip_file: cdktf.stringToTerraform(this._zipFile),
+      artifact_config: syntheticsCanaryArtifactConfigToTerraform(this._artifactConfig.internalValue),
       run_config: syntheticsCanaryRunConfigToTerraform(this._runConfig.internalValue),
       schedule: syntheticsCanaryScheduleToTerraform(this._schedule.internalValue),
       vpc_config: syntheticsCanaryVpcConfigToTerraform(this._vpcConfig.internalValue),

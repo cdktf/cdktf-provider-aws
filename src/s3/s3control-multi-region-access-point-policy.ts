@@ -47,6 +47,8 @@ export function s3ControlMultiRegionAccessPointPolicyDetailsToTerraform(struct?:
 }
 
 export class S3ControlMultiRegionAccessPointPolicyDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -57,7 +59,7 @@ export class S3ControlMultiRegionAccessPointPolicyDetailsOutputReference extends
   }
 
   public get internalValue(): S3ControlMultiRegionAccessPointPolicyDetails | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._name) {
       hasAnyValues = true;
@@ -72,10 +74,12 @@ export class S3ControlMultiRegionAccessPointPolicyDetailsOutputReference extends
 
   public set internalValue(value: S3ControlMultiRegionAccessPointPolicyDetails | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._name = undefined;
       this._policy = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._policy = value.policy;
     }
@@ -130,6 +134,8 @@ export function s3ControlMultiRegionAccessPointPolicyTimeoutsToTerraform(struct?
 }
 
 export class S3ControlMultiRegionAccessPointPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -140,7 +146,7 @@ export class S3ControlMultiRegionAccessPointPolicyTimeoutsOutputReference extend
   }
 
   public get internalValue(): S3ControlMultiRegionAccessPointPolicyTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -155,10 +161,12 @@ export class S3ControlMultiRegionAccessPointPolicyTimeoutsOutputReference extend
 
   public set internalValue(value: S3ControlMultiRegionAccessPointPolicyTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._update = value.update;
     }

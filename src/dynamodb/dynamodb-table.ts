@@ -215,6 +215,8 @@ export function dynamodbTablePointInTimeRecoveryToTerraform(struct?: DynamodbTab
 }
 
 export class DynamodbTablePointInTimeRecoveryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -225,7 +227,7 @@ export class DynamodbTablePointInTimeRecoveryOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): DynamodbTablePointInTimeRecovery | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -236,9 +238,11 @@ export class DynamodbTablePointInTimeRecoveryOutputReference extends cdktf.Compl
 
   public set internalValue(value: DynamodbTablePointInTimeRecovery | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
     }
   }
@@ -301,6 +305,8 @@ export function dynamodbTableServerSideEncryptionToTerraform(struct?: DynamodbTa
 }
 
 export class DynamodbTableServerSideEncryptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -311,7 +317,7 @@ export class DynamodbTableServerSideEncryptionOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): DynamodbTableServerSideEncryption | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -326,10 +332,12 @@ export class DynamodbTableServerSideEncryptionOutputReference extends cdktf.Comp
 
   public set internalValue(value: DynamodbTableServerSideEncryption | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._kmsKeyArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._kmsKeyArn = value.kmsKeyArn;
     }
@@ -392,6 +400,8 @@ export function dynamodbTableTimeoutsToTerraform(struct?: DynamodbTableTimeoutsO
 }
 
 export class DynamodbTableTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -402,7 +412,7 @@ export class DynamodbTableTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): DynamodbTableTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -421,11 +431,13 @@ export class DynamodbTableTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: DynamodbTableTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -508,6 +520,8 @@ export function dynamodbTableTtlToTerraform(struct?: DynamodbTableTtlOutputRefer
 }
 
 export class DynamodbTableTtlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -518,7 +532,7 @@ export class DynamodbTableTtlOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): DynamodbTableTtl | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._attributeName) {
       hasAnyValues = true;
@@ -537,11 +551,13 @@ export class DynamodbTableTtlOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: DynamodbTableTtl | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._attributeName = undefined;
       this._enabled = undefined;
       this._kmsKeyArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._attributeName = value.attributeName;
       this._enabled = value.enabled;
       this._kmsKeyArn = value.kmsKeyArn;

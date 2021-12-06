@@ -128,6 +128,8 @@ export function lexIntentConclusionStatementToTerraform(struct?: LexIntentConclu
 }
 
 export class LexIntentConclusionStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -138,7 +140,7 @@ export class LexIntentConclusionStatementOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): LexIntentConclusionStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._responseCard) {
       hasAnyValues = true;
@@ -153,10 +155,12 @@ export class LexIntentConclusionStatementOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: LexIntentConclusionStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._responseCard = undefined;
       this._message = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._responseCard = value.responseCard;
       this._message = value.message;
     }
@@ -249,6 +253,8 @@ export function lexIntentConfirmationPromptToTerraform(struct?: LexIntentConfirm
 }
 
 export class LexIntentConfirmationPromptOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -259,7 +265,7 @@ export class LexIntentConfirmationPromptOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): LexIntentConfirmationPrompt | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxAttempts) {
       hasAnyValues = true;
@@ -278,11 +284,13 @@ export class LexIntentConfirmationPromptOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: LexIntentConfirmationPrompt | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxAttempts = undefined;
       this._responseCard = undefined;
       this._message = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxAttempts = value.maxAttempts;
       this._responseCard = value.responseCard;
       this._message = value.message;
@@ -355,6 +363,8 @@ export function lexIntentDialogCodeHookToTerraform(struct?: LexIntentDialogCodeH
 }
 
 export class LexIntentDialogCodeHookOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -365,7 +375,7 @@ export class LexIntentDialogCodeHookOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): LexIntentDialogCodeHook | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._messageVersion) {
       hasAnyValues = true;
@@ -380,10 +390,12 @@ export class LexIntentDialogCodeHookOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: LexIntentDialogCodeHook | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._messageVersion = undefined;
       this._uri = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._messageVersion = value.messageVersion;
       this._uri = value.uri;
     }
@@ -472,6 +484,8 @@ export function lexIntentFollowUpPromptPromptToTerraform(struct?: LexIntentFollo
 }
 
 export class LexIntentFollowUpPromptPromptOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -482,7 +496,7 @@ export class LexIntentFollowUpPromptPromptOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): LexIntentFollowUpPromptPrompt | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxAttempts) {
       hasAnyValues = true;
@@ -501,11 +515,13 @@ export class LexIntentFollowUpPromptPromptOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: LexIntentFollowUpPromptPrompt | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxAttempts = undefined;
       this._responseCard = undefined;
       this._message = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxAttempts = value.maxAttempts;
       this._responseCard = value.responseCard;
       this._message = value.message;
@@ -607,6 +623,8 @@ export function lexIntentFollowUpPromptRejectionStatementToTerraform(struct?: Le
 }
 
 export class LexIntentFollowUpPromptRejectionStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -617,7 +635,7 @@ export class LexIntentFollowUpPromptRejectionStatementOutputReference extends cd
   }
 
   public get internalValue(): LexIntentFollowUpPromptRejectionStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._responseCard) {
       hasAnyValues = true;
@@ -632,10 +650,12 @@ export class LexIntentFollowUpPromptRejectionStatementOutputReference extends cd
 
   public set internalValue(value: LexIntentFollowUpPromptRejectionStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._responseCard = undefined;
       this._message = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._responseCard = value.responseCard;
       this._message = value.message;
     }
@@ -698,6 +718,8 @@ export function lexIntentFollowUpPromptToTerraform(struct?: LexIntentFollowUpPro
 }
 
 export class LexIntentFollowUpPromptOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -708,13 +730,13 @@ export class LexIntentFollowUpPromptOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): LexIntentFollowUpPrompt | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._prompt) {
+    if (this._prompt?.internalValue) {
       hasAnyValues = true;
       internalValueResult.prompt = this._prompt?.internalValue;
     }
-    if (this._rejectionStatement) {
+    if (this._rejectionStatement?.internalValue) {
       hasAnyValues = true;
       internalValueResult.rejectionStatement = this._rejectionStatement?.internalValue;
     }
@@ -723,10 +745,12 @@ export class LexIntentFollowUpPromptOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: LexIntentFollowUpPrompt | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._prompt.internalValue = undefined;
       this._rejectionStatement.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._prompt.internalValue = value.prompt;
       this._rejectionStatement.internalValue = value.rejectionStatement;
     }
@@ -781,6 +805,8 @@ export function lexIntentFulfillmentActivityCodeHookToTerraform(struct?: LexInte
 }
 
 export class LexIntentFulfillmentActivityCodeHookOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -791,7 +817,7 @@ export class LexIntentFulfillmentActivityCodeHookOutputReference extends cdktf.C
   }
 
   public get internalValue(): LexIntentFulfillmentActivityCodeHook | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._messageVersion) {
       hasAnyValues = true;
@@ -806,10 +832,12 @@ export class LexIntentFulfillmentActivityCodeHookOutputReference extends cdktf.C
 
   public set internalValue(value: LexIntentFulfillmentActivityCodeHook | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._messageVersion = undefined;
       this._uri = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._messageVersion = value.messageVersion;
       this._uri = value.uri;
     }
@@ -866,6 +894,8 @@ export function lexIntentFulfillmentActivityToTerraform(struct?: LexIntentFulfil
 }
 
 export class LexIntentFulfillmentActivityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -876,13 +906,13 @@ export class LexIntentFulfillmentActivityOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): LexIntentFulfillmentActivity | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._codeHook) {
+    if (this._codeHook?.internalValue) {
       hasAnyValues = true;
       internalValueResult.codeHook = this._codeHook?.internalValue;
     }
@@ -891,10 +921,12 @@ export class LexIntentFulfillmentActivityOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: LexIntentFulfillmentActivity | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._codeHook.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._codeHook.internalValue = value.codeHook;
     }
@@ -981,6 +1013,8 @@ export function lexIntentRejectionStatementToTerraform(struct?: LexIntentRejecti
 }
 
 export class LexIntentRejectionStatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -991,7 +1025,7 @@ export class LexIntentRejectionStatementOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): LexIntentRejectionStatement | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._responseCard) {
       hasAnyValues = true;
@@ -1006,10 +1040,12 @@ export class LexIntentRejectionStatementOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: LexIntentRejectionStatement | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._responseCard = undefined;
       this._message = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._responseCard = value.responseCard;
       this._message = value.message;
     }
@@ -1102,6 +1138,8 @@ export function lexIntentSlotValueElicitationPromptToTerraform(struct?: LexInten
 }
 
 export class LexIntentSlotValueElicitationPromptOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1112,7 +1150,7 @@ export class LexIntentSlotValueElicitationPromptOutputReference extends cdktf.Co
   }
 
   public get internalValue(): LexIntentSlotValueElicitationPrompt | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxAttempts) {
       hasAnyValues = true;
@@ -1131,11 +1169,13 @@ export class LexIntentSlotValueElicitationPromptOutputReference extends cdktf.Co
 
   public set internalValue(value: LexIntentSlotValueElicitationPrompt | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxAttempts = undefined;
       this._responseCard = undefined;
       this._message = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxAttempts = value.maxAttempts;
       this._responseCard = value.responseCard;
       this._message = value.message;
@@ -1272,6 +1312,8 @@ export function lexIntentTimeoutsToTerraform(struct?: LexIntentTimeoutsOutputRef
 }
 
 export class LexIntentTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1282,7 +1324,7 @@ export class LexIntentTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): LexIntentTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -1301,11 +1343,13 @@ export class LexIntentTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: LexIntentTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;

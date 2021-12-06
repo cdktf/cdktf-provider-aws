@@ -141,6 +141,8 @@ export function glueMlTransformParametersFindMatchesParametersToTerraform(struct
 }
 
 export class GlueMlTransformParametersFindMatchesParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -151,7 +153,7 @@ export class GlueMlTransformParametersFindMatchesParametersOutputReference exten
   }
 
   public get internalValue(): GlueMlTransformParametersFindMatchesParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accuracyCostTradeOff) {
       hasAnyValues = true;
@@ -174,12 +176,14 @@ export class GlueMlTransformParametersFindMatchesParametersOutputReference exten
 
   public set internalValue(value: GlueMlTransformParametersFindMatchesParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accuracyCostTradeOff = undefined;
       this._enforceProvidedLabels = undefined;
       this._precisionRecallTradeOff = undefined;
       this._primaryKeyColumnName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accuracyCostTradeOff = value.accuracyCostTradeOff;
       this._enforceProvidedLabels = value.enforceProvidedLabels;
       this._precisionRecallTradeOff = value.precisionRecallTradeOff;
@@ -276,6 +280,8 @@ export function glueMlTransformParametersToTerraform(struct?: GlueMlTransformPar
 }
 
 export class GlueMlTransformParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -286,13 +292,13 @@ export class GlueMlTransformParametersOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): GlueMlTransformParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._transformType) {
       hasAnyValues = true;
       internalValueResult.transformType = this._transformType;
     }
-    if (this._findMatchesParameters) {
+    if (this._findMatchesParameters?.internalValue) {
       hasAnyValues = true;
       internalValueResult.findMatchesParameters = this._findMatchesParameters?.internalValue;
     }
@@ -301,10 +307,12 @@ export class GlueMlTransformParametersOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: GlueMlTransformParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._transformType = undefined;
       this._findMatchesParameters.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._transformType = value.transformType;
       this._findMatchesParameters.internalValue = value.findMatchesParameters;
     }

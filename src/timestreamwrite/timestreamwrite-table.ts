@@ -53,6 +53,8 @@ export function timestreamwriteTableRetentionPropertiesToTerraform(struct?: Time
 }
 
 export class TimestreamwriteTableRetentionPropertiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -63,7 +65,7 @@ export class TimestreamwriteTableRetentionPropertiesOutputReference extends cdkt
   }
 
   public get internalValue(): TimestreamwriteTableRetentionProperties | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._magneticStoreRetentionPeriodInDays) {
       hasAnyValues = true;
@@ -78,10 +80,12 @@ export class TimestreamwriteTableRetentionPropertiesOutputReference extends cdkt
 
   public set internalValue(value: TimestreamwriteTableRetentionProperties | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._magneticStoreRetentionPeriodInDays = undefined;
       this._memoryStoreRetentionPeriodInHours = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._magneticStoreRetentionPeriodInDays = value.magneticStoreRetentionPeriodInDays;
       this._memoryStoreRetentionPeriodInHours = value.memoryStoreRetentionPeriodInHours;
     }

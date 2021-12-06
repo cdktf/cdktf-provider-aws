@@ -60,6 +60,8 @@ export function networkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSetToTerra
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -70,7 +72,7 @@ export class NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSetOutputRefe
   }
 
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSet | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._definition) {
       hasAnyValues = true;
@@ -81,9 +83,11 @@ export class NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSetOutputRefe
 
   public set internalValue(value: NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSet | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._definition = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._definition = value.definition;
     }
   }
@@ -143,6 +147,8 @@ export function networkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetToT
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -153,7 +159,7 @@ export class NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutput
   }
 
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSet | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._definition) {
       hasAnyValues = true;
@@ -164,9 +170,11 @@ export class NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutput
 
   public set internalValue(value: NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSet | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._definition = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._definition = value.definition;
     }
   }
@@ -235,6 +243,8 @@ export function networkfirewallRuleGroupRuleGroupRuleVariablesToTerraform(struct
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRuleVariablesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -245,7 +255,7 @@ export class NetworkfirewallRuleGroupRuleGroupRuleVariablesOutputReference exten
   }
 
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRuleVariables | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._ipSets) {
       hasAnyValues = true;
@@ -260,10 +270,12 @@ export class NetworkfirewallRuleGroupRuleGroupRuleVariablesOutputReference exten
 
   public set internalValue(value: NetworkfirewallRuleGroupRuleGroupRuleVariables | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._ipSets = undefined;
       this._portSets = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._ipSets = value.ipSets;
       this._portSets = value.portSets;
     }
@@ -331,6 +343,8 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListToTer
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -341,7 +355,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListOutputRe
   }
 
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._generatedRulesType) {
       hasAnyValues = true;
@@ -360,11 +374,13 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListOutputRe
 
   public set internalValue(value: NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._generatedRulesType = undefined;
       this._targetTypes = undefined;
       this._targets = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._generatedRulesType = value.generatedRulesType;
       this._targetTypes = value.targetTypes;
       this._targets = value.targets;
@@ -453,6 +469,8 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderTo
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -463,7 +481,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderOutpu
   }
 
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._destination) {
       hasAnyValues = true;
@@ -494,6 +512,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderOutpu
 
   public set internalValue(value: NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._destination = undefined;
       this._destinationPort = undefined;
       this._direction = undefined;
@@ -502,6 +521,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderOutpu
       this._sourcePort = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._destination = value.destination;
       this._destinationPort = value.destinationPort;
       this._direction = value.direction;
@@ -679,6 +699,8 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -689,7 +711,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
   }
 
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dimension) {
       hasAnyValues = true;
@@ -700,9 +722,11 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
 
   public set internalValue(value: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dimension = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dimension = value.dimension;
     }
   }
@@ -741,6 +765,8 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -751,9 +777,9 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
   }
 
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._publishMetricAction) {
+    if (this._publishMetricAction?.internalValue) {
       hasAnyValues = true;
       internalValueResult.publishMetricAction = this._publishMetricAction?.internalValue;
     }
@@ -762,9 +788,11 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
 
   public set internalValue(value: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._publishMetricAction.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._publishMetricAction.internalValue = value.publishMetricAction;
     }
   }
@@ -959,6 +987,8 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -969,7 +999,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
   }
 
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._protocols) {
       hasAnyValues = true;
@@ -1000,6 +1030,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
 
   public set internalValue(value: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._protocols = undefined;
       this._destination = undefined;
       this._destinationPort = undefined;
@@ -1008,6 +1039,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
       this._tcpFlag = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._protocols = value.protocols;
       this._destination = value.destination;
       this._destinationPort = value.destinationPort;
@@ -1144,6 +1176,8 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1154,13 +1188,13 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
   }
 
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._actions) {
       hasAnyValues = true;
       internalValueResult.actions = this._actions;
     }
-    if (this._matchAttributes) {
+    if (this._matchAttributes?.internalValue) {
       hasAnyValues = true;
       internalValueResult.matchAttributes = this._matchAttributes?.internalValue;
     }
@@ -1169,10 +1203,12 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
 
   public set internalValue(value: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._actions = undefined;
       this._matchAttributes.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._actions = value.actions;
       this._matchAttributes.internalValue = value.matchAttributes;
     }
@@ -1255,6 +1291,8 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1265,7 +1303,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
   }
 
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._customAction) {
       hasAnyValues = true;
@@ -1280,10 +1318,12 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
 
   public set internalValue(value: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._customAction = undefined;
       this._statelessRule = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._customAction = value.customAction;
       this._statelessRule = value.statelessRule;
     }
@@ -1359,6 +1399,8 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceToTerraform(struct?:
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1369,13 +1411,13 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference extends
   }
 
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSource | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._rulesString) {
       hasAnyValues = true;
       internalValueResult.rulesString = this._rulesString;
     }
-    if (this._rulesSourceList) {
+    if (this._rulesSourceList?.internalValue) {
       hasAnyValues = true;
       internalValueResult.rulesSourceList = this._rulesSourceList?.internalValue;
     }
@@ -1383,7 +1425,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference extends
       hasAnyValues = true;
       internalValueResult.statefulRule = this._statefulRule;
     }
-    if (this._statelessRulesAndCustomActions) {
+    if (this._statelessRulesAndCustomActions?.internalValue) {
       hasAnyValues = true;
       internalValueResult.statelessRulesAndCustomActions = this._statelessRulesAndCustomActions?.internalValue;
     }
@@ -1392,12 +1434,14 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference extends
 
   public set internalValue(value: NetworkfirewallRuleGroupRuleGroupRulesSource | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._rulesString = undefined;
       this._rulesSourceList.internalValue = undefined;
       this._statefulRule = undefined;
       this._statelessRulesAndCustomActions.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._rulesString = value.rulesString;
       this._rulesSourceList.internalValue = value.rulesSourceList;
       this._statefulRule = value.statefulRule;
@@ -1497,6 +1541,8 @@ export function networkfirewallRuleGroupRuleGroupToTerraform(struct?: Networkfir
 }
 
 export class NetworkfirewallRuleGroupRuleGroupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1507,13 +1553,13 @@ export class NetworkfirewallRuleGroupRuleGroupOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): NetworkfirewallRuleGroupRuleGroup | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._ruleVariables) {
+    if (this._ruleVariables?.internalValue) {
       hasAnyValues = true;
       internalValueResult.ruleVariables = this._ruleVariables?.internalValue;
     }
-    if (this._rulesSource) {
+    if (this._rulesSource?.internalValue) {
       hasAnyValues = true;
       internalValueResult.rulesSource = this._rulesSource?.internalValue;
     }
@@ -1522,10 +1568,12 @@ export class NetworkfirewallRuleGroupRuleGroupOutputReference extends cdktf.Comp
 
   public set internalValue(value: NetworkfirewallRuleGroupRuleGroup | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._ruleVariables.internalValue = undefined;
       this._rulesSource.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._ruleVariables.internalValue = value.ruleVariables;
       this._rulesSource.internalValue = value.rulesSource;
     }

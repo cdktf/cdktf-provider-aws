@@ -107,6 +107,8 @@ export function appautoscalingPolicyStepScalingPolicyConfigurationToTerraform(st
 }
 
 export class AppautoscalingPolicyStepScalingPolicyConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -117,7 +119,7 @@ export class AppautoscalingPolicyStepScalingPolicyConfigurationOutputReference e
   }
 
   public get internalValue(): AppautoscalingPolicyStepScalingPolicyConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._adjustmentType) {
       hasAnyValues = true;
@@ -144,6 +146,7 @@ export class AppautoscalingPolicyStepScalingPolicyConfigurationOutputReference e
 
   public set internalValue(value: AppautoscalingPolicyStepScalingPolicyConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._adjustmentType = undefined;
       this._cooldown = undefined;
       this._metricAggregationType = undefined;
@@ -151,6 +154,7 @@ export class AppautoscalingPolicyStepScalingPolicyConfigurationOutputReference e
       this._stepAdjustment = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._adjustmentType = value.adjustmentType;
       this._cooldown = value.cooldown;
       this._metricAggregationType = value.metricAggregationType;
@@ -302,6 +306,8 @@ export function appautoscalingPolicyTargetTrackingScalingPolicyConfigurationCust
 }
 
 export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -312,7 +318,7 @@ export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomi
   }
 
   public get internalValue(): AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._metricName) {
       hasAnyValues = true;
@@ -339,6 +345,7 @@ export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomi
 
   public set internalValue(value: AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._metricName = undefined;
       this._namespace = undefined;
       this._statistic = undefined;
@@ -346,6 +353,7 @@ export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomi
       this._dimensions = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._metricName = value.metricName;
       this._namespace = value.namespace;
       this._statistic = value.statistic;
@@ -449,6 +457,8 @@ export function appautoscalingPolicyTargetTrackingScalingPolicyConfigurationPred
 }
 
 export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -459,7 +469,7 @@ export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefi
   }
 
   public get internalValue(): AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._predefinedMetricType) {
       hasAnyValues = true;
@@ -474,10 +484,12 @@ export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefi
 
   public set internalValue(value: AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._predefinedMetricType = undefined;
       this._resourceLabel = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._predefinedMetricType = value.predefinedMetricType;
       this._resourceLabel = value.resourceLabel;
     }
@@ -559,6 +571,8 @@ export function appautoscalingPolicyTargetTrackingScalingPolicyConfigurationToTe
 }
 
 export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -569,7 +583,7 @@ export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputR
   }
 
   public get internalValue(): AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._disableScaleIn) {
       hasAnyValues = true;
@@ -587,11 +601,11 @@ export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputR
       hasAnyValues = true;
       internalValueResult.targetValue = this._targetValue;
     }
-    if (this._customizedMetricSpecification) {
+    if (this._customizedMetricSpecification?.internalValue) {
       hasAnyValues = true;
       internalValueResult.customizedMetricSpecification = this._customizedMetricSpecification?.internalValue;
     }
-    if (this._predefinedMetricSpecification) {
+    if (this._predefinedMetricSpecification?.internalValue) {
       hasAnyValues = true;
       internalValueResult.predefinedMetricSpecification = this._predefinedMetricSpecification?.internalValue;
     }
@@ -600,6 +614,7 @@ export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputR
 
   public set internalValue(value: AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._disableScaleIn = undefined;
       this._scaleInCooldown = undefined;
       this._scaleOutCooldown = undefined;
@@ -608,6 +623,7 @@ export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputR
       this._predefinedMetricSpecification.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._disableScaleIn = value.disableScaleIn;
       this._scaleInCooldown = value.scaleInCooldown;
       this._scaleOutCooldown = value.scaleOutCooldown;

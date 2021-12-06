@@ -66,6 +66,8 @@ export function apprunnerServiceEncryptionConfigurationToTerraform(struct?: Appr
 }
 
 export class ApprunnerServiceEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -76,7 +78,7 @@ export class ApprunnerServiceEncryptionConfigurationOutputReference extends cdkt
   }
 
   public get internalValue(): ApprunnerServiceEncryptionConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._kmsKey) {
       hasAnyValues = true;
@@ -87,9 +89,11 @@ export class ApprunnerServiceEncryptionConfigurationOutputReference extends cdkt
 
   public set internalValue(value: ApprunnerServiceEncryptionConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._kmsKey = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._kmsKey = value.kmsKey;
     }
   }
@@ -150,6 +154,8 @@ export function apprunnerServiceHealthCheckConfigurationToTerraform(struct?: App
 }
 
 export class ApprunnerServiceHealthCheckConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -160,7 +166,7 @@ export class ApprunnerServiceHealthCheckConfigurationOutputReference extends cdk
   }
 
   public get internalValue(): ApprunnerServiceHealthCheckConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._healthyThreshold) {
       hasAnyValues = true;
@@ -191,6 +197,7 @@ export class ApprunnerServiceHealthCheckConfigurationOutputReference extends cdk
 
   public set internalValue(value: ApprunnerServiceHealthCheckConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._healthyThreshold = undefined;
       this._interval = undefined;
       this._path = undefined;
@@ -199,6 +206,7 @@ export class ApprunnerServiceHealthCheckConfigurationOutputReference extends cdk
       this._unhealthyThreshold = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._healthyThreshold = value.healthyThreshold;
       this._interval = value.interval;
       this._path = value.path;
@@ -332,6 +340,8 @@ export function apprunnerServiceInstanceConfigurationToTerraform(struct?: Apprun
 }
 
 export class ApprunnerServiceInstanceConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -342,7 +352,7 @@ export class ApprunnerServiceInstanceConfigurationOutputReference extends cdktf.
   }
 
   public get internalValue(): ApprunnerServiceInstanceConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cpu) {
       hasAnyValues = true;
@@ -361,11 +371,13 @@ export class ApprunnerServiceInstanceConfigurationOutputReference extends cdktf.
 
   public set internalValue(value: ApprunnerServiceInstanceConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cpu = undefined;
       this._instanceRoleArn = undefined;
       this._memory = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cpu = value.cpu;
       this._instanceRoleArn = value.instanceRoleArn;
       this._memory = value.memory;
@@ -443,6 +455,8 @@ export function apprunnerServiceSourceConfigurationAuthenticationConfigurationTo
 }
 
 export class ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -453,7 +467,7 @@ export class ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutpu
   }
 
   public get internalValue(): ApprunnerServiceSourceConfigurationAuthenticationConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accessRoleArn) {
       hasAnyValues = true;
@@ -468,10 +482,12 @@ export class ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutpu
 
   public set internalValue(value: ApprunnerServiceSourceConfigurationAuthenticationConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accessRoleArn = undefined;
       this._connectionArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accessRoleArn = value.accessRoleArn;
       this._connectionArn = value.connectionArn;
     }
@@ -547,6 +563,8 @@ export function apprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurati
 }
 
 export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -557,7 +575,7 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationC
   }
 
   public get internalValue(): ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._buildCommand) {
       hasAnyValues = true;
@@ -584,6 +602,7 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationC
 
   public set internalValue(value: ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._buildCommand = undefined;
       this._port = undefined;
       this._runtime = undefined;
@@ -591,6 +610,7 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationC
       this._startCommand = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._buildCommand = value.buildCommand;
       this._port = value.port;
       this._runtime = value.runtime;
@@ -702,6 +722,8 @@ export function apprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurati
 }
 
 export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -712,13 +734,13 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationO
   }
 
   public get internalValue(): ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._configurationSource) {
       hasAnyValues = true;
       internalValueResult.configurationSource = this._configurationSource;
     }
-    if (this._codeConfigurationValues) {
+    if (this._codeConfigurationValues?.internalValue) {
       hasAnyValues = true;
       internalValueResult.codeConfigurationValues = this._codeConfigurationValues?.internalValue;
     }
@@ -727,10 +749,12 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationO
 
   public set internalValue(value: ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._configurationSource = undefined;
       this._codeConfigurationValues.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._configurationSource = value.configurationSource;
       this._codeConfigurationValues.internalValue = value.codeConfigurationValues;
     }
@@ -788,6 +812,8 @@ export function apprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersi
 }
 
 export class ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -798,7 +824,7 @@ export class ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionO
   }
 
   public get internalValue(): ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -813,10 +839,12 @@ export class ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionO
 
   public set internalValue(value: ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._value = value.value;
     }
@@ -880,6 +908,8 @@ export function apprunnerServiceSourceConfigurationCodeRepositoryToTerraform(str
 }
 
 export class ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -890,17 +920,17 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference ex
   }
 
   public get internalValue(): ApprunnerServiceSourceConfigurationCodeRepository | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._repositoryUrl) {
       hasAnyValues = true;
       internalValueResult.repositoryUrl = this._repositoryUrl;
     }
-    if (this._codeConfiguration) {
+    if (this._codeConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.codeConfiguration = this._codeConfiguration?.internalValue;
     }
-    if (this._sourceCodeVersion) {
+    if (this._sourceCodeVersion?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sourceCodeVersion = this._sourceCodeVersion?.internalValue;
     }
@@ -909,11 +939,13 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference ex
 
   public set internalValue(value: ApprunnerServiceSourceConfigurationCodeRepository | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._repositoryUrl = undefined;
       this._codeConfiguration.internalValue = undefined;
       this._sourceCodeVersion.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._repositoryUrl = value.repositoryUrl;
       this._codeConfiguration.internalValue = value.codeConfiguration;
       this._sourceCodeVersion.internalValue = value.sourceCodeVersion;
@@ -990,6 +1022,8 @@ export function apprunnerServiceSourceConfigurationImageRepositoryImageConfigura
 }
 
 export class ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1000,7 +1034,7 @@ export class ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguratio
   }
 
   public get internalValue(): ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._port) {
       hasAnyValues = true;
@@ -1019,11 +1053,13 @@ export class ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguratio
 
   public set internalValue(value: ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._port = undefined;
       this._runtimeEnvironmentVariables = undefined;
       this._startCommand = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._port = value.port;
       this._runtimeEnvironmentVariables = value.runtimeEnvironmentVariables;
       this._startCommand = value.startCommand;
@@ -1109,6 +1145,8 @@ export function apprunnerServiceSourceConfigurationImageRepositoryToTerraform(st
 }
 
 export class ApprunnerServiceSourceConfigurationImageRepositoryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1119,7 +1157,7 @@ export class ApprunnerServiceSourceConfigurationImageRepositoryOutputReference e
   }
 
   public get internalValue(): ApprunnerServiceSourceConfigurationImageRepository | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._imageIdentifier) {
       hasAnyValues = true;
@@ -1129,7 +1167,7 @@ export class ApprunnerServiceSourceConfigurationImageRepositoryOutputReference e
       hasAnyValues = true;
       internalValueResult.imageRepositoryType = this._imageRepositoryType;
     }
-    if (this._imageConfiguration) {
+    if (this._imageConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.imageConfiguration = this._imageConfiguration?.internalValue;
     }
@@ -1138,11 +1176,13 @@ export class ApprunnerServiceSourceConfigurationImageRepositoryOutputReference e
 
   public set internalValue(value: ApprunnerServiceSourceConfigurationImageRepository | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._imageIdentifier = undefined;
       this._imageRepositoryType = undefined;
       this._imageConfiguration.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._imageIdentifier = value.imageIdentifier;
       this._imageRepositoryType = value.imageRepositoryType;
       this._imageConfiguration.internalValue = value.imageConfiguration;
@@ -1230,6 +1270,8 @@ export function apprunnerServiceSourceConfigurationToTerraform(struct?: Apprunne
 }
 
 export class ApprunnerServiceSourceConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1240,21 +1282,21 @@ export class ApprunnerServiceSourceConfigurationOutputReference extends cdktf.Co
   }
 
   public get internalValue(): ApprunnerServiceSourceConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._autoDeploymentsEnabled) {
       hasAnyValues = true;
       internalValueResult.autoDeploymentsEnabled = this._autoDeploymentsEnabled;
     }
-    if (this._authenticationConfiguration) {
+    if (this._authenticationConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.authenticationConfiguration = this._authenticationConfiguration?.internalValue;
     }
-    if (this._codeRepository) {
+    if (this._codeRepository?.internalValue) {
       hasAnyValues = true;
       internalValueResult.codeRepository = this._codeRepository?.internalValue;
     }
-    if (this._imageRepository) {
+    if (this._imageRepository?.internalValue) {
       hasAnyValues = true;
       internalValueResult.imageRepository = this._imageRepository?.internalValue;
     }
@@ -1263,12 +1305,14 @@ export class ApprunnerServiceSourceConfigurationOutputReference extends cdktf.Co
 
   public set internalValue(value: ApprunnerServiceSourceConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._autoDeploymentsEnabled = undefined;
       this._authenticationConfiguration.internalValue = undefined;
       this._codeRepository.internalValue = undefined;
       this._imageRepository.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._autoDeploymentsEnabled = value.autoDeploymentsEnabled;
       this._authenticationConfiguration.internalValue = value.authenticationConfiguration;
       this._codeRepository.internalValue = value.codeRepository;

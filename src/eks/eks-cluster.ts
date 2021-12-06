@@ -96,6 +96,8 @@ export function eksClusterEncryptionConfigProviderToTerraform(struct?: EksCluste
 }
 
 export class EksClusterEncryptionConfigProviderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -106,7 +108,7 @@ export class EksClusterEncryptionConfigProviderOutputReference extends cdktf.Com
   }
 
   public get internalValue(): EksClusterEncryptionConfigProvider | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._keyArn) {
       hasAnyValues = true;
@@ -117,9 +119,11 @@ export class EksClusterEncryptionConfigProviderOutputReference extends cdktf.Com
 
   public set internalValue(value: EksClusterEncryptionConfigProvider | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._keyArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._keyArn = value.keyArn;
     }
   }
@@ -162,6 +166,8 @@ export function eksClusterEncryptionConfigToTerraform(struct?: EksClusterEncrypt
 }
 
 export class EksClusterEncryptionConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -172,13 +178,13 @@ export class EksClusterEncryptionConfigOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): EksClusterEncryptionConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._resources) {
       hasAnyValues = true;
       internalValueResult.resources = this._resources;
     }
-    if (this._provider) {
+    if (this._provider?.internalValue) {
       hasAnyValues = true;
       internalValueResult.provider = this._provider?.internalValue;
     }
@@ -187,10 +193,12 @@ export class EksClusterEncryptionConfigOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: EksClusterEncryptionConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._resources = undefined;
       this._provider.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._resources = value.resources;
       this._provider.internalValue = value.provider;
     }
@@ -240,6 +248,8 @@ export function eksClusterKubernetesNetworkConfigToTerraform(struct?: EksCluster
 }
 
 export class EksClusterKubernetesNetworkConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -250,7 +260,7 @@ export class EksClusterKubernetesNetworkConfigOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): EksClusterKubernetesNetworkConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._serviceIpv4Cidr) {
       hasAnyValues = true;
@@ -261,9 +271,11 @@ export class EksClusterKubernetesNetworkConfigOutputReference extends cdktf.Comp
 
   public set internalValue(value: EksClusterKubernetesNetworkConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._serviceIpv4Cidr = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._serviceIpv4Cidr = value.serviceIpv4Cidr;
     }
   }
@@ -312,6 +324,8 @@ export function eksClusterTimeoutsToTerraform(struct?: EksClusterTimeoutsOutputR
 }
 
 export class EksClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -322,7 +336,7 @@ export class EksClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): EksClusterTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -341,11 +355,13 @@ export class EksClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: EksClusterTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -438,6 +454,8 @@ export function eksClusterVpcConfigToTerraform(struct?: EksClusterVpcConfigOutpu
 }
 
 export class EksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -448,7 +466,7 @@ export class EksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): EksClusterVpcConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._endpointPrivateAccess) {
       hasAnyValues = true;
@@ -475,6 +493,7 @@ export class EksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: EksClusterVpcConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._endpointPrivateAccess = undefined;
       this._endpointPublicAccess = undefined;
       this._publicAccessCidrs = undefined;
@@ -482,6 +501,7 @@ export class EksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
       this._subnetIds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._endpointPrivateAccess = value.endpointPrivateAccess;
       this._endpointPublicAccess = value.endpointPublicAccess;
       this._publicAccessCidrs = value.publicAccessCidrs;

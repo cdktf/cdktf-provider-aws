@@ -52,6 +52,8 @@ export function configDeliveryChannelSnapshotDeliveryPropertiesToTerraform(struc
 }
 
 export class ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -62,7 +64,7 @@ export class ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference exte
   }
 
   public get internalValue(): ConfigDeliveryChannelSnapshotDeliveryProperties | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._deliveryFrequency) {
       hasAnyValues = true;
@@ -73,9 +75,11 @@ export class ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference exte
 
   public set internalValue(value: ConfigDeliveryChannelSnapshotDeliveryProperties | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._deliveryFrequency = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._deliveryFrequency = value.deliveryFrequency;
     }
   }

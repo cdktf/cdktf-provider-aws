@@ -57,6 +57,8 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertif
 }
 
 export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -67,7 +69,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateChain) {
       hasAnyValues = true;
@@ -82,10 +84,12 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateChain = undefined;
       this._privateKey = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateChain = value.certificateChain;
       this._privateKey = value.privateKey;
     }
@@ -135,6 +139,8 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertif
 }
 
 export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -145,7 +151,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._secretName) {
       hasAnyValues = true;
@@ -156,9 +162,11 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._secretName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._secretName = value.secretName;
     }
   }
@@ -203,6 +211,8 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertif
 }
 
 export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -213,13 +223,13 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._file) {
+    if (this._file?.internalValue) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds) {
+    if (this._sds?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -228,10 +238,12 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._file.internalValue = undefined;
       this._sds.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._file.internalValue = value.file;
       this._sds.internalValue = value.sds;
     }
@@ -287,6 +299,8 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValida
 }
 
 export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -297,7 +311,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._exact) {
       hasAnyValues = true;
@@ -308,9 +322,11 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._exact = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._exact = value.exact;
     }
   }
@@ -348,6 +364,8 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValida
 }
 
 export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -358,9 +376,9 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._match) {
+    if (this._match?.internalValue) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
@@ -369,9 +387,11 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._match.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._match.internalValue = value.match;
     }
   }
@@ -407,6 +427,8 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValida
 }
 
 export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -417,7 +439,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateAuthorityArns) {
       hasAnyValues = true;
@@ -428,9 +450,11 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateAuthorityArns = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateAuthorityArns = value.certificateAuthorityArns;
     }
   }
@@ -466,6 +490,8 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValida
 }
 
 export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -476,7 +502,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateChain) {
       hasAnyValues = true;
@@ -487,9 +513,11 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateChain = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateChain = value.certificateChain;
     }
   }
@@ -525,6 +553,8 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValida
 }
 
 export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -535,7 +565,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._secretName) {
       hasAnyValues = true;
@@ -546,9 +576,11 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._secretName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._secretName = value.secretName;
     }
   }
@@ -600,6 +632,8 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValida
 }
 
 export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -610,17 +644,17 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._acm) {
+    if (this._acm?.internalValue) {
       hasAnyValues = true;
       internalValueResult.acm = this._acm?.internalValue;
     }
-    if (this._file) {
+    if (this._file?.internalValue) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds) {
+    if (this._sds?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -629,11 +663,13 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._acm.internalValue = undefined;
       this._file.internalValue = undefined;
       this._sds.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._acm.internalValue = value.acm;
       this._file.internalValue = value.file;
       this._sds.internalValue = value.sds;
@@ -715,6 +751,8 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValida
 }
 
 export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -725,13 +763,13 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._subjectAlternativeNames) {
+    if (this._subjectAlternativeNames?.internalValue) {
       hasAnyValues = true;
       internalValueResult.subjectAlternativeNames = this._subjectAlternativeNames?.internalValue;
     }
-    if (this._trust) {
+    if (this._trust?.internalValue) {
       hasAnyValues = true;
       internalValueResult.trust = this._trust?.internalValue;
     }
@@ -740,10 +778,12 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._subjectAlternativeNames.internalValue = undefined;
       this._trust.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._subjectAlternativeNames.internalValue = value.subjectAlternativeNames;
       this._trust.internalValue = value.trust;
     }
@@ -815,6 +855,8 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsToTerr
 }
 
 export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -825,7 +867,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputRef
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enforce) {
       hasAnyValues = true;
@@ -835,11 +877,11 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputRef
       hasAnyValues = true;
       internalValueResult.ports = this._ports;
     }
-    if (this._certificate) {
+    if (this._certificate?.internalValue) {
       hasAnyValues = true;
       internalValueResult.certificate = this._certificate?.internalValue;
     }
-    if (this._validation) {
+    if (this._validation?.internalValue) {
       hasAnyValues = true;
       internalValueResult.validation = this._validation?.internalValue;
     }
@@ -848,12 +890,14 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputRef
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enforce = undefined;
       this._ports = undefined;
       this._certificate.internalValue = undefined;
       this._validation.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enforce = value.enforce;
       this._ports = value.ports;
       this._certificate.internalValue = value.certificate;
@@ -943,6 +987,8 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyToTerrafo
 }
 
 export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -953,9 +999,9 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputRefere
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._tls) {
+    if (this._tls?.internalValue) {
       hasAnyValues = true;
       internalValueResult.tls = this._tls?.internalValue;
     }
@@ -964,9 +1010,11 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputRefere
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._tls.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._tls.internalValue = value.tls;
     }
   }
@@ -1012,6 +1060,8 @@ export function appmeshVirtualNodeSpecBackendVirtualServiceToTerraform(struct?: 
 }
 
 export class AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1022,13 +1072,13 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference extends 
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualService | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._virtualServiceName) {
       hasAnyValues = true;
       internalValueResult.virtualServiceName = this._virtualServiceName;
     }
-    if (this._clientPolicy) {
+    if (this._clientPolicy?.internalValue) {
       hasAnyValues = true;
       internalValueResult.clientPolicy = this._clientPolicy?.internalValue;
     }
@@ -1037,10 +1087,12 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference extends 
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendVirtualService | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._virtualServiceName = undefined;
       this._clientPolicy.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._virtualServiceName = value.virtualServiceName;
       this._clientPolicy.internalValue = value.clientPolicy;
     }
@@ -1117,6 +1169,8 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateF
 }
 
 export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1127,7 +1181,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateChain) {
       hasAnyValues = true;
@@ -1142,10 +1196,12 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateChain = undefined;
       this._privateKey = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateChain = value.certificateChain;
       this._privateKey = value.privateKey;
     }
@@ -1195,6 +1251,8 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateS
 }
 
 export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1205,7 +1263,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsO
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._secretName) {
       hasAnyValues = true;
@@ -1216,9 +1274,11 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsO
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._secretName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._secretName = value.secretName;
     }
   }
@@ -1263,6 +1323,8 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateT
 }
 
 export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1273,13 +1335,13 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutp
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._file) {
+    if (this._file?.internalValue) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds) {
+    if (this._sds?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -1288,10 +1350,12 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutp
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._file.internalValue = undefined;
       this._sds.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._file.internalValue = value.file;
       this._sds.internalValue = value.sds;
     }
@@ -1347,6 +1411,8 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSu
 }
 
 export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1357,7 +1423,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubje
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._exact) {
       hasAnyValues = true;
@@ -1368,9 +1434,11 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubje
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._exact = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._exact = value.exact;
     }
   }
@@ -1408,6 +1476,8 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSu
 }
 
 export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1418,9 +1488,9 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubje
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._match) {
+    if (this._match?.internalValue) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
@@ -1429,9 +1499,11 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubje
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._match.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._match.internalValue = value.match;
     }
   }
@@ -1467,6 +1539,8 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTr
 }
 
 export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1477,7 +1551,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateAuthorityArns) {
       hasAnyValues = true;
@@ -1488,9 +1562,11 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateAuthorityArns = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateAuthorityArns = value.certificateAuthorityArns;
     }
   }
@@ -1526,6 +1602,8 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTr
 }
 
 export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1536,7 +1614,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateChain) {
       hasAnyValues = true;
@@ -1547,9 +1625,11 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateChain = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateChain = value.certificateChain;
     }
   }
@@ -1585,6 +1665,8 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTr
 }
 
 export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1595,7 +1677,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._secretName) {
       hasAnyValues = true;
@@ -1606,9 +1688,11 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._secretName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._secretName = value.secretName;
     }
   }
@@ -1660,6 +1744,8 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTr
 }
 
 export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1670,17 +1756,17 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._acm) {
+    if (this._acm?.internalValue) {
       hasAnyValues = true;
       internalValueResult.acm = this._acm?.internalValue;
     }
-    if (this._file) {
+    if (this._file?.internalValue) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds) {
+    if (this._sds?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -1689,11 +1775,13 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._acm.internalValue = undefined;
       this._file.internalValue = undefined;
       this._sds.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._acm.internalValue = value.acm;
       this._file.internalValue = value.file;
       this._sds.internalValue = value.sds;
@@ -1775,6 +1863,8 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTo
 }
 
 export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1785,13 +1875,13 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutpu
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._subjectAlternativeNames) {
+    if (this._subjectAlternativeNames?.internalValue) {
       hasAnyValues = true;
       internalValueResult.subjectAlternativeNames = this._subjectAlternativeNames?.internalValue;
     }
-    if (this._trust) {
+    if (this._trust?.internalValue) {
       hasAnyValues = true;
       internalValueResult.trust = this._trust?.internalValue;
     }
@@ -1800,10 +1890,12 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutpu
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._subjectAlternativeNames.internalValue = undefined;
       this._trust.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._subjectAlternativeNames.internalValue = value.subjectAlternativeNames;
       this._trust.internalValue = value.trust;
     }
@@ -1875,6 +1967,8 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsToTerraform(
 }
 
 export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1885,7 +1979,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enforce) {
       hasAnyValues = true;
@@ -1895,11 +1989,11 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference
       hasAnyValues = true;
       internalValueResult.ports = this._ports;
     }
-    if (this._certificate) {
+    if (this._certificate?.internalValue) {
       hasAnyValues = true;
       internalValueResult.certificate = this._certificate?.internalValue;
     }
-    if (this._validation) {
+    if (this._validation?.internalValue) {
       hasAnyValues = true;
       internalValueResult.validation = this._validation?.internalValue;
     }
@@ -1908,12 +2002,14 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enforce = undefined;
       this._ports = undefined;
       this._certificate.internalValue = undefined;
       this._validation.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enforce = value.enforce;
       this._ports = value.ports;
       this._certificate.internalValue = value.certificate;
@@ -2003,6 +2099,8 @@ export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyToTerraform(str
 }
 
 export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2013,9 +2111,9 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference ex
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._tls) {
+    if (this._tls?.internalValue) {
       hasAnyValues = true;
       internalValueResult.tls = this._tls?.internalValue;
     }
@@ -2024,9 +2122,11 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference ex
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendDefaultsClientPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._tls.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._tls.internalValue = value.tls;
     }
   }
@@ -2067,6 +2167,8 @@ export function appmeshVirtualNodeSpecBackendDefaultsToTerraform(struct?: Appmes
 }
 
 export class AppmeshVirtualNodeSpecBackendDefaultsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2077,9 +2179,9 @@ export class AppmeshVirtualNodeSpecBackendDefaultsOutputReference extends cdktf.
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaults | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clientPolicy) {
+    if (this._clientPolicy?.internalValue) {
       hasAnyValues = true;
       internalValueResult.clientPolicy = this._clientPolicy?.internalValue;
     }
@@ -2088,9 +2190,11 @@ export class AppmeshVirtualNodeSpecBackendDefaultsOutputReference extends cdktf.
 
   public set internalValue(value: AppmeshVirtualNodeSpecBackendDefaults | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clientPolicy.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clientPolicy.internalValue = value.clientPolicy;
     }
   }
@@ -2129,6 +2233,8 @@ export function appmeshVirtualNodeSpecListenerConnectionPoolGrpcToTerraform(stru
 }
 
 export class AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2139,7 +2245,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference ext
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPoolGrpc | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxRequests) {
       hasAnyValues = true;
@@ -2150,9 +2256,11 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference ext
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerConnectionPoolGrpc | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxRequests = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxRequests = value.maxRequests;
     }
   }
@@ -2193,6 +2301,8 @@ export function appmeshVirtualNodeSpecListenerConnectionPoolHttpToTerraform(stru
 }
 
 export class AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2203,7 +2313,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference ext
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPoolHttp | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxConnections) {
       hasAnyValues = true;
@@ -2218,10 +2328,12 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference ext
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerConnectionPoolHttp | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxConnections = undefined;
       this._maxPendingRequests = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxConnections = value.maxConnections;
       this._maxPendingRequests = value.maxPendingRequests;
     }
@@ -2274,6 +2386,8 @@ export function appmeshVirtualNodeSpecListenerConnectionPoolHttp2ToTerraform(str
 }
 
 export class AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2284,7 +2398,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference ex
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxRequests) {
       hasAnyValues = true;
@@ -2295,9 +2409,11 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference ex
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxRequests = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxRequests = value.maxRequests;
     }
   }
@@ -2333,6 +2449,8 @@ export function appmeshVirtualNodeSpecListenerConnectionPoolTcpToTerraform(struc
 }
 
 export class AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2343,7 +2461,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference exte
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPoolTcp | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxConnections) {
       hasAnyValues = true;
@@ -2354,9 +2472,11 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference exte
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerConnectionPoolTcp | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxConnections = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxConnections = value.maxConnections;
     }
   }
@@ -2415,6 +2535,8 @@ export function appmeshVirtualNodeSpecListenerConnectionPoolToTerraform(struct?:
 }
 
 export class AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2425,21 +2547,21 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference extends
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPool | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._grpc) {
+    if (this._grpc?.internalValue) {
       hasAnyValues = true;
       internalValueResult.grpc = this._grpc?.internalValue;
     }
-    if (this._http) {
+    if (this._http?.internalValue) {
       hasAnyValues = true;
       internalValueResult.http = this._http?.internalValue;
     }
-    if (this._http2) {
+    if (this._http2?.internalValue) {
       hasAnyValues = true;
       internalValueResult.http2 = this._http2?.internalValue;
     }
-    if (this._tcp) {
+    if (this._tcp?.internalValue) {
       hasAnyValues = true;
       internalValueResult.tcp = this._tcp?.internalValue;
     }
@@ -2448,12 +2570,14 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference extends
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerConnectionPool | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._grpc.internalValue = undefined;
       this._http.internalValue = undefined;
       this._http2.internalValue = undefined;
       this._tcp.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._grpc.internalValue = value.grpc;
       this._http.internalValue = value.http;
       this._http2.internalValue = value.http2;
@@ -2573,6 +2697,8 @@ export function appmeshVirtualNodeSpecListenerHealthCheckToTerraform(struct?: Ap
 }
 
 export class AppmeshVirtualNodeSpecListenerHealthCheckOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2583,7 +2709,7 @@ export class AppmeshVirtualNodeSpecListenerHealthCheckOutputReference extends cd
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerHealthCheck | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._healthyThreshold) {
       hasAnyValues = true;
@@ -2618,6 +2744,7 @@ export class AppmeshVirtualNodeSpecListenerHealthCheckOutputReference extends cd
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerHealthCheck | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._healthyThreshold = undefined;
       this._intervalMillis = undefined;
       this._path = undefined;
@@ -2627,6 +2754,7 @@ export class AppmeshVirtualNodeSpecListenerHealthCheckOutputReference extends cd
       this._unhealthyThreshold = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._healthyThreshold = value.healthyThreshold;
       this._intervalMillis = value.intervalMillis;
       this._path = value.path;
@@ -2757,6 +2885,8 @@ export function appmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurati
 }
 
 export class AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2767,7 +2897,7 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationO
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -2782,10 +2912,12 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationO
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -2840,6 +2972,8 @@ export function appmeshVirtualNodeSpecListenerOutlierDetectionIntervalToTerrafor
 }
 
 export class AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2850,7 +2984,7 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReferen
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerOutlierDetectionInterval | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -2865,10 +2999,12 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReferen
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerOutlierDetectionInterval | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -2937,6 +3073,8 @@ export function appmeshVirtualNodeSpecListenerOutlierDetectionToTerraform(struct
 }
 
 export class AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2947,7 +3085,7 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference exten
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerOutlierDetection | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxEjectionPercent) {
       hasAnyValues = true;
@@ -2957,11 +3095,11 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference exten
       hasAnyValues = true;
       internalValueResult.maxServerErrors = this._maxServerErrors;
     }
-    if (this._baseEjectionDuration) {
+    if (this._baseEjectionDuration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.baseEjectionDuration = this._baseEjectionDuration?.internalValue;
     }
-    if (this._interval) {
+    if (this._interval?.internalValue) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval?.internalValue;
     }
@@ -2970,12 +3108,14 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference exten
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerOutlierDetection | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxEjectionPercent = undefined;
       this._maxServerErrors = undefined;
       this._baseEjectionDuration.internalValue = undefined;
       this._interval.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxEjectionPercent = value.maxEjectionPercent;
       this._maxServerErrors = value.maxServerErrors;
       this._baseEjectionDuration.internalValue = value.baseEjectionDuration;
@@ -3058,6 +3198,8 @@ export function appmeshVirtualNodeSpecListenerPortMappingToTerraform(struct?: Ap
 }
 
 export class AppmeshVirtualNodeSpecListenerPortMappingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3068,7 +3210,7 @@ export class AppmeshVirtualNodeSpecListenerPortMappingOutputReference extends cd
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerPortMapping | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._port) {
       hasAnyValues = true;
@@ -3083,10 +3225,12 @@ export class AppmeshVirtualNodeSpecListenerPortMappingOutputReference extends cd
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerPortMapping | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._port = undefined;
       this._protocol = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._port = value.port;
       this._protocol = value.protocol;
     }
@@ -3141,6 +3285,8 @@ export function appmeshVirtualNodeSpecListenerTimeoutGrpcIdleToTerraform(struct?
 }
 
 export class AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3151,7 +3297,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference extend
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -3166,10 +3312,12 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference extend
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -3224,6 +3372,8 @@ export function appmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestToTerraform(s
 }
 
 export class AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3234,7 +3384,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference 
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -3249,10 +3399,12 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference 
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -3311,6 +3463,8 @@ export function appmeshVirtualNodeSpecListenerTimeoutGrpcToTerraform(struct?: Ap
 }
 
 export class AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3321,13 +3475,13 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference extends cd
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutGrpc | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle) {
+    if (this._idle?.internalValue) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
-    if (this._perRequest) {
+    if (this._perRequest?.internalValue) {
       hasAnyValues = true;
       internalValueResult.perRequest = this._perRequest?.internalValue;
     }
@@ -3336,10 +3490,12 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference extends cd
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTimeoutGrpc | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._idle.internalValue = undefined;
       this._perRequest.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._idle.internalValue = value.idle;
       this._perRequest.internalValue = value.perRequest;
     }
@@ -3400,6 +3556,8 @@ export function appmeshVirtualNodeSpecListenerTimeoutHttpIdleToTerraform(struct?
 }
 
 export class AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3410,7 +3568,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference extend
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutHttpIdle | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -3425,10 +3583,12 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference extend
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTimeoutHttpIdle | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -3483,6 +3643,8 @@ export function appmeshVirtualNodeSpecListenerTimeoutHttpPerRequestToTerraform(s
 }
 
 export class AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3493,7 +3655,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference 
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -3508,10 +3670,12 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference 
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -3570,6 +3734,8 @@ export function appmeshVirtualNodeSpecListenerTimeoutHttpToTerraform(struct?: Ap
 }
 
 export class AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3580,13 +3746,13 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference extends cd
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutHttp | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle) {
+    if (this._idle?.internalValue) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
-    if (this._perRequest) {
+    if (this._perRequest?.internalValue) {
       hasAnyValues = true;
       internalValueResult.perRequest = this._perRequest?.internalValue;
     }
@@ -3595,10 +3761,12 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference extends cd
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTimeoutHttp | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._idle.internalValue = undefined;
       this._perRequest.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._idle.internalValue = value.idle;
       this._perRequest.internalValue = value.perRequest;
     }
@@ -3659,6 +3827,8 @@ export function appmeshVirtualNodeSpecListenerTimeoutHttp2IdleToTerraform(struct
 }
 
 export class AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3669,7 +3839,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference exten
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -3684,10 +3854,12 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference exten
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -3742,6 +3914,8 @@ export function appmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestToTerraform(
 }
 
 export class AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3752,7 +3926,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -3767,10 +3941,12 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -3829,6 +4005,8 @@ export function appmeshVirtualNodeSpecListenerTimeoutHttp2ToTerraform(struct?: A
 }
 
 export class AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3839,13 +4017,13 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference extends c
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutHttp2 | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle) {
+    if (this._idle?.internalValue) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
-    if (this._perRequest) {
+    if (this._perRequest?.internalValue) {
       hasAnyValues = true;
       internalValueResult.perRequest = this._perRequest?.internalValue;
     }
@@ -3854,10 +4032,12 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference extends c
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTimeoutHttp2 | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._idle.internalValue = undefined;
       this._perRequest.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._idle.internalValue = value.idle;
       this._perRequest.internalValue = value.perRequest;
     }
@@ -3918,6 +4098,8 @@ export function appmeshVirtualNodeSpecListenerTimeoutTcpIdleToTerraform(struct?:
 }
 
 export class AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3928,7 +4110,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference extends
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutTcpIdle | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._unit) {
       hasAnyValues = true;
@@ -3943,10 +4125,12 @@ export class AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference extends
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTimeoutTcpIdle | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._unit = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._unit = value.unit;
       this._value = value.value;
     }
@@ -3998,6 +4182,8 @@ export function appmeshVirtualNodeSpecListenerTimeoutTcpToTerraform(struct?: App
 }
 
 export class AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4008,9 +4194,9 @@ export class AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference extends cdk
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutTcp | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle) {
+    if (this._idle?.internalValue) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
@@ -4019,9 +4205,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference extends cdk
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTimeoutTcp | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._idle.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._idle.internalValue = value.idle;
     }
   }
@@ -4083,6 +4271,8 @@ export function appmeshVirtualNodeSpecListenerTimeoutToTerraform(struct?: Appmes
 }
 
 export class AppmeshVirtualNodeSpecListenerTimeoutOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4093,21 +4283,21 @@ export class AppmeshVirtualNodeSpecListenerTimeoutOutputReference extends cdktf.
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeout | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._grpc) {
+    if (this._grpc?.internalValue) {
       hasAnyValues = true;
       internalValueResult.grpc = this._grpc?.internalValue;
     }
-    if (this._http) {
+    if (this._http?.internalValue) {
       hasAnyValues = true;
       internalValueResult.http = this._http?.internalValue;
     }
-    if (this._http2) {
+    if (this._http2?.internalValue) {
       hasAnyValues = true;
       internalValueResult.http2 = this._http2?.internalValue;
     }
-    if (this._tcp) {
+    if (this._tcp?.internalValue) {
       hasAnyValues = true;
       internalValueResult.tcp = this._tcp?.internalValue;
     }
@@ -4116,12 +4306,14 @@ export class AppmeshVirtualNodeSpecListenerTimeoutOutputReference extends cdktf.
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTimeout | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._grpc.internalValue = undefined;
       this._http.internalValue = undefined;
       this._http2.internalValue = undefined;
       this._tcp.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._grpc.internalValue = value.grpc;
       this._http.internalValue = value.http;
       this._http2.internalValue = value.http2;
@@ -4211,6 +4403,8 @@ export function appmeshVirtualNodeSpecListenerTlsCertificateAcmToTerraform(struc
 }
 
 export class AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4221,7 +4415,7 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference exte
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsCertificateAcm | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateArn) {
       hasAnyValues = true;
@@ -4232,9 +4426,11 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference exte
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTlsCertificateAcm | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateArn = value.certificateArn;
     }
   }
@@ -4275,6 +4471,8 @@ export function appmeshVirtualNodeSpecListenerTlsCertificateFileToTerraform(stru
 }
 
 export class AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4285,7 +4483,7 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference ext
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsCertificateFile | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateChain) {
       hasAnyValues = true;
@@ -4300,10 +4498,12 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference ext
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTlsCertificateFile | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateChain = undefined;
       this._privateKey = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateChain = value.certificateChain;
       this._privateKey = value.privateKey;
     }
@@ -4353,6 +4553,8 @@ export function appmeshVirtualNodeSpecListenerTlsCertificateSdsToTerraform(struc
 }
 
 export class AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4363,7 +4565,7 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference exte
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsCertificateSds | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._secretName) {
       hasAnyValues = true;
@@ -4374,9 +4576,11 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference exte
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTlsCertificateSds | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._secretName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._secretName = value.secretName;
     }
   }
@@ -4428,6 +4632,8 @@ export function appmeshVirtualNodeSpecListenerTlsCertificateToTerraform(struct?:
 }
 
 export class AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4438,17 +4644,17 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference extends
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsCertificate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._acm) {
+    if (this._acm?.internalValue) {
       hasAnyValues = true;
       internalValueResult.acm = this._acm?.internalValue;
     }
-    if (this._file) {
+    if (this._file?.internalValue) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds) {
+    if (this._sds?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -4457,11 +4663,13 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference extends
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTlsCertificate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._acm.internalValue = undefined;
       this._file.internalValue = undefined;
       this._sds.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._acm.internalValue = value.acm;
       this._file.internalValue = value.file;
       this._sds.internalValue = value.sds;
@@ -4534,6 +4742,8 @@ export function appmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNam
 }
 
 export class AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4544,7 +4754,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesM
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._exact) {
       hasAnyValues = true;
@@ -4555,9 +4765,11 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesM
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._exact = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._exact = value.exact;
     }
   }
@@ -4595,6 +4807,8 @@ export function appmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNam
 }
 
 export class AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4605,9 +4819,9 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesO
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._match) {
+    if (this._match?.internalValue) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
@@ -4616,9 +4830,11 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesO
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._match.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._match.internalValue = value.match;
     }
   }
@@ -4654,6 +4870,8 @@ export function appmeshVirtualNodeSpecListenerTlsValidationTrustFileToTerraform(
 }
 
 export class AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4664,7 +4882,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsValidationTrustFile | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateChain) {
       hasAnyValues = true;
@@ -4675,9 +4893,11 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTlsValidationTrustFile | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateChain = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateChain = value.certificateChain;
     }
   }
@@ -4713,6 +4933,8 @@ export function appmeshVirtualNodeSpecListenerTlsValidationTrustSdsToTerraform(s
 }
 
 export class AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4723,7 +4945,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference 
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsValidationTrustSds | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._secretName) {
       hasAnyValues = true;
@@ -4734,9 +4956,11 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference 
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTlsValidationTrustSds | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._secretName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._secretName = value.secretName;
     }
   }
@@ -4781,6 +5005,8 @@ export function appmeshVirtualNodeSpecListenerTlsValidationTrustToTerraform(stru
 }
 
 export class AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4791,13 +5017,13 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference ext
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsValidationTrust | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._file) {
+    if (this._file?.internalValue) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds) {
+    if (this._sds?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -4806,10 +5032,12 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference ext
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTlsValidationTrust | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._file.internalValue = undefined;
       this._sds.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._file.internalValue = value.file;
       this._sds.internalValue = value.sds;
     }
@@ -4874,6 +5102,8 @@ export function appmeshVirtualNodeSpecListenerTlsValidationToTerraform(struct?: 
 }
 
 export class AppmeshVirtualNodeSpecListenerTlsValidationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4884,13 +5114,13 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationOutputReference extends 
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsValidation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._subjectAlternativeNames) {
+    if (this._subjectAlternativeNames?.internalValue) {
       hasAnyValues = true;
       internalValueResult.subjectAlternativeNames = this._subjectAlternativeNames?.internalValue;
     }
-    if (this._trust) {
+    if (this._trust?.internalValue) {
       hasAnyValues = true;
       internalValueResult.trust = this._trust?.internalValue;
     }
@@ -4899,10 +5129,12 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationOutputReference extends 
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTlsValidation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._subjectAlternativeNames.internalValue = undefined;
       this._trust.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._subjectAlternativeNames.internalValue = value.subjectAlternativeNames;
       this._trust.internalValue = value.trust;
     }
@@ -4969,6 +5201,8 @@ export function appmeshVirtualNodeSpecListenerTlsToTerraform(struct?: AppmeshVir
 }
 
 export class AppmeshVirtualNodeSpecListenerTlsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -4979,17 +5213,17 @@ export class AppmeshVirtualNodeSpecListenerTlsOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTls | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._mode) {
       hasAnyValues = true;
       internalValueResult.mode = this._mode;
     }
-    if (this._certificate) {
+    if (this._certificate?.internalValue) {
       hasAnyValues = true;
       internalValueResult.certificate = this._certificate?.internalValue;
     }
-    if (this._validation) {
+    if (this._validation?.internalValue) {
       hasAnyValues = true;
       internalValueResult.validation = this._validation?.internalValue;
     }
@@ -4998,11 +5232,13 @@ export class AppmeshVirtualNodeSpecListenerTlsOutputReference extends cdktf.Comp
 
   public set internalValue(value: AppmeshVirtualNodeSpecListenerTls | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._mode = undefined;
       this._certificate.internalValue = undefined;
       this._validation.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._mode = value.mode;
       this._certificate.internalValue = value.certificate;
       this._validation.internalValue = value.validation;
@@ -5106,6 +5342,8 @@ export function appmeshVirtualNodeSpecListenerToTerraform(struct?: AppmeshVirtua
 }
 
 export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5116,29 +5354,29 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecListener | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._connectionPool) {
+    if (this._connectionPool?.internalValue) {
       hasAnyValues = true;
       internalValueResult.connectionPool = this._connectionPool?.internalValue;
     }
-    if (this._healthCheck) {
+    if (this._healthCheck?.internalValue) {
       hasAnyValues = true;
       internalValueResult.healthCheck = this._healthCheck?.internalValue;
     }
-    if (this._outlierDetection) {
+    if (this._outlierDetection?.internalValue) {
       hasAnyValues = true;
       internalValueResult.outlierDetection = this._outlierDetection?.internalValue;
     }
-    if (this._portMapping) {
+    if (this._portMapping?.internalValue) {
       hasAnyValues = true;
       internalValueResult.portMapping = this._portMapping?.internalValue;
     }
-    if (this._timeout) {
+    if (this._timeout?.internalValue) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout?.internalValue;
     }
-    if (this._tls) {
+    if (this._tls?.internalValue) {
       hasAnyValues = true;
       internalValueResult.tls = this._tls?.internalValue;
     }
@@ -5147,6 +5385,7 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
 
   public set internalValue(value: AppmeshVirtualNodeSpecListener | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._connectionPool.internalValue = undefined;
       this._healthCheck.internalValue = undefined;
       this._outlierDetection.internalValue = undefined;
@@ -5155,6 +5394,7 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
       this._tls.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._connectionPool.internalValue = value.connectionPool;
       this._healthCheck.internalValue = value.healthCheck;
       this._outlierDetection.internalValue = value.outlierDetection;
@@ -5275,6 +5515,8 @@ export function appmeshVirtualNodeSpecLoggingAccessLogFileToTerraform(struct?: A
 }
 
 export class AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5285,7 +5527,7 @@ export class AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference extends c
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecLoggingAccessLogFile | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._path) {
       hasAnyValues = true;
@@ -5296,9 +5538,11 @@ export class AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference extends c
 
   public set internalValue(value: AppmeshVirtualNodeSpecLoggingAccessLogFile | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._path = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._path = value.path;
     }
   }
@@ -5336,6 +5580,8 @@ export function appmeshVirtualNodeSpecLoggingAccessLogToTerraform(struct?: Appme
 }
 
 export class AppmeshVirtualNodeSpecLoggingAccessLogOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5346,9 +5592,9 @@ export class AppmeshVirtualNodeSpecLoggingAccessLogOutputReference extends cdktf
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecLoggingAccessLog | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._file) {
+    if (this._file?.internalValue) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
@@ -5357,9 +5603,11 @@ export class AppmeshVirtualNodeSpecLoggingAccessLogOutputReference extends cdktf
 
   public set internalValue(value: AppmeshVirtualNodeSpecLoggingAccessLog | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._file.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._file.internalValue = value.file;
     }
   }
@@ -5400,6 +5648,8 @@ export function appmeshVirtualNodeSpecLoggingToTerraform(struct?: AppmeshVirtual
 }
 
 export class AppmeshVirtualNodeSpecLoggingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5410,9 +5660,9 @@ export class AppmeshVirtualNodeSpecLoggingOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecLogging | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accessLog) {
+    if (this._accessLog?.internalValue) {
       hasAnyValues = true;
       internalValueResult.accessLog = this._accessLog?.internalValue;
     }
@@ -5421,9 +5671,11 @@ export class AppmeshVirtualNodeSpecLoggingOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: AppmeshVirtualNodeSpecLogging | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accessLog.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accessLog.internalValue = value.accessLog;
     }
   }
@@ -5472,6 +5724,8 @@ export function appmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapToTerraform(str
 }
 
 export class AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5482,7 +5736,7 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference ex
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._attributes) {
       hasAnyValues = true;
@@ -5501,11 +5755,13 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference ex
 
   public set internalValue(value: AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._attributes = undefined;
       this._namespaceName = undefined;
       this._serviceName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._attributes = value.attributes;
       this._namespaceName = value.namespaceName;
       this._serviceName = value.serviceName;
@@ -5573,6 +5829,8 @@ export function appmeshVirtualNodeSpecServiceDiscoveryDnsToTerraform(struct?: Ap
 }
 
 export class AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5583,7 +5841,7 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference extends cd
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecServiceDiscoveryDns | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._hostname) {
       hasAnyValues = true;
@@ -5594,9 +5852,11 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference extends cd
 
   public set internalValue(value: AppmeshVirtualNodeSpecServiceDiscoveryDns | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._hostname = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._hostname = value.hostname;
     }
   }
@@ -5641,6 +5901,8 @@ export function appmeshVirtualNodeSpecServiceDiscoveryToTerraform(struct?: Appme
 }
 
 export class AppmeshVirtualNodeSpecServiceDiscoveryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5651,13 +5913,13 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryOutputReference extends cdktf
   }
 
   public get internalValue(): AppmeshVirtualNodeSpecServiceDiscovery | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._awsCloudMap) {
+    if (this._awsCloudMap?.internalValue) {
       hasAnyValues = true;
       internalValueResult.awsCloudMap = this._awsCloudMap?.internalValue;
     }
-    if (this._dns) {
+    if (this._dns?.internalValue) {
       hasAnyValues = true;
       internalValueResult.dns = this._dns?.internalValue;
     }
@@ -5666,10 +5928,12 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryOutputReference extends cdktf
 
   public set internalValue(value: AppmeshVirtualNodeSpecServiceDiscovery | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._awsCloudMap.internalValue = undefined;
       this._dns.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._awsCloudMap.internalValue = value.awsCloudMap;
       this._dns.internalValue = value.dns;
     }
@@ -5755,6 +6019,8 @@ export function appmeshVirtualNodeSpecToTerraform(struct?: AppmeshVirtualNodeSpe
 }
 
 export class AppmeshVirtualNodeSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -5765,25 +6031,25 @@ export class AppmeshVirtualNodeSpecOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): AppmeshVirtualNodeSpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._backend) {
       hasAnyValues = true;
       internalValueResult.backend = this._backend;
     }
-    if (this._backendDefaults) {
+    if (this._backendDefaults?.internalValue) {
       hasAnyValues = true;
       internalValueResult.backendDefaults = this._backendDefaults?.internalValue;
     }
-    if (this._listener) {
+    if (this._listener?.internalValue) {
       hasAnyValues = true;
       internalValueResult.listener = this._listener?.internalValue;
     }
-    if (this._logging) {
+    if (this._logging?.internalValue) {
       hasAnyValues = true;
       internalValueResult.logging = this._logging?.internalValue;
     }
-    if (this._serviceDiscovery) {
+    if (this._serviceDiscovery?.internalValue) {
       hasAnyValues = true;
       internalValueResult.serviceDiscovery = this._serviceDiscovery?.internalValue;
     }
@@ -5792,6 +6058,7 @@ export class AppmeshVirtualNodeSpecOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: AppmeshVirtualNodeSpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._backend = undefined;
       this._backendDefaults.internalValue = undefined;
       this._listener.internalValue = undefined;
@@ -5799,6 +6066,7 @@ export class AppmeshVirtualNodeSpecOutputReference extends cdktf.ComplexObject {
       this._serviceDiscovery.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._backend = value.backend;
       this._backendDefaults.internalValue = value.backendDefaults;
       this._listener.internalValue = value.listener;

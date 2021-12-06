@@ -56,6 +56,8 @@ export function athenaWorkgroupConfigurationEngineVersionToTerraform(struct?: At
 }
 
 export class AthenaWorkgroupConfigurationEngineVersionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -66,7 +68,7 @@ export class AthenaWorkgroupConfigurationEngineVersionOutputReference extends cd
   }
 
   public get internalValue(): AthenaWorkgroupConfigurationEngineVersion | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._selectedEngineVersion) {
       hasAnyValues = true;
@@ -77,9 +79,11 @@ export class AthenaWorkgroupConfigurationEngineVersionOutputReference extends cd
 
   public set internalValue(value: AthenaWorkgroupConfigurationEngineVersion | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._selectedEngineVersion = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._selectedEngineVersion = value.selectedEngineVersion;
     }
   }
@@ -123,6 +127,8 @@ export function athenaWorkgroupConfigurationResultConfigurationEncryptionConfigu
 }
 
 export class AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -133,7 +139,7 @@ export class AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurat
   }
 
   public get internalValue(): AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._encryptionOption) {
       hasAnyValues = true;
@@ -148,10 +154,12 @@ export class AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurat
 
   public set internalValue(value: AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._encryptionOption = undefined;
       this._kmsKeyArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._encryptionOption = value.encryptionOption;
       this._kmsKeyArn = value.kmsKeyArn;
     }
@@ -214,6 +222,8 @@ export function athenaWorkgroupConfigurationResultConfigurationToTerraform(struc
 }
 
 export class AthenaWorkgroupConfigurationResultConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -224,13 +234,13 @@ export class AthenaWorkgroupConfigurationResultConfigurationOutputReference exte
   }
 
   public get internalValue(): AthenaWorkgroupConfigurationResultConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._outputLocation) {
       hasAnyValues = true;
       internalValueResult.outputLocation = this._outputLocation;
     }
-    if (this._encryptionConfiguration) {
+    if (this._encryptionConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.encryptionConfiguration = this._encryptionConfiguration?.internalValue;
     }
@@ -239,10 +249,12 @@ export class AthenaWorkgroupConfigurationResultConfigurationOutputReference exte
 
   public set internalValue(value: AthenaWorkgroupConfigurationResultConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._outputLocation = undefined;
       this._encryptionConfiguration.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._outputLocation = value.outputLocation;
       this._encryptionConfiguration.internalValue = value.encryptionConfiguration;
     }
@@ -327,6 +339,8 @@ export function athenaWorkgroupConfigurationToTerraform(struct?: AthenaWorkgroup
 }
 
 export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -337,7 +351,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): AthenaWorkgroupConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bytesScannedCutoffPerQuery) {
       hasAnyValues = true;
@@ -355,11 +369,11 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.requesterPaysEnabled = this._requesterPaysEnabled;
     }
-    if (this._engineVersion) {
+    if (this._engineVersion?.internalValue) {
       hasAnyValues = true;
       internalValueResult.engineVersion = this._engineVersion?.internalValue;
     }
-    if (this._resultConfiguration) {
+    if (this._resultConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.resultConfiguration = this._resultConfiguration?.internalValue;
     }
@@ -368,6 +382,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: AthenaWorkgroupConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bytesScannedCutoffPerQuery = undefined;
       this._enforceWorkgroupConfiguration = undefined;
       this._publishCloudwatchMetricsEnabled = undefined;
@@ -376,6 +391,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
       this._resultConfiguration.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bytesScannedCutoffPerQuery = value.bytesScannedCutoffPerQuery;
       this._enforceWorkgroupConfiguration = value.enforceWorkgroupConfiguration;
       this._publishCloudwatchMetricsEnabled = value.publishCloudwatchMetricsEnabled;

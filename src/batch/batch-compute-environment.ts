@@ -65,6 +65,8 @@ export function batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerrafo
 }
 
 export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -75,7 +77,7 @@ export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputRefere
   }
 
   public get internalValue(): BatchComputeEnvironmentComputeResourcesEc2Configuration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._imageIdOverride) {
       hasAnyValues = true;
@@ -90,10 +92,12 @@ export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputRefere
 
   public set internalValue(value: BatchComputeEnvironmentComputeResourcesEc2Configuration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._imageIdOverride = undefined;
       this._imageType = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._imageIdOverride = value.imageIdOverride;
       this._imageType = value.imageType;
     }
@@ -159,6 +163,8 @@ export function batchComputeEnvironmentComputeResourcesLaunchTemplateToTerraform
 }
 
 export class BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -169,7 +175,7 @@ export class BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReferenc
   }
 
   public get internalValue(): BatchComputeEnvironmentComputeResourcesLaunchTemplate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._launchTemplateId) {
       hasAnyValues = true;
@@ -188,11 +194,13 @@ export class BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReferenc
 
   public set internalValue(value: BatchComputeEnvironmentComputeResourcesLaunchTemplate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._launchTemplateId = undefined;
       this._launchTemplateName = undefined;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._launchTemplateId = value.launchTemplateId;
       this._launchTemplateName = value.launchTemplateName;
       this._version = value.version;
@@ -344,6 +352,8 @@ export function batchComputeEnvironmentComputeResourcesToTerraform(struct?: Batc
 }
 
 export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -354,7 +364,7 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
   }
 
   public get internalValue(): BatchComputeEnvironmentComputeResources | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allocationStrategy) {
       hasAnyValues = true;
@@ -412,11 +422,11 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._ec2Configuration) {
+    if (this._ec2Configuration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.ec2Configuration = this._ec2Configuration?.internalValue;
     }
-    if (this._launchTemplate) {
+    if (this._launchTemplate?.internalValue) {
       hasAnyValues = true;
       internalValueResult.launchTemplate = this._launchTemplate?.internalValue;
     }
@@ -425,6 +435,7 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
 
   public set internalValue(value: BatchComputeEnvironmentComputeResources | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allocationStrategy = undefined;
       this._bidPercentage = undefined;
       this._desiredVcpus = undefined;
@@ -443,6 +454,7 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
       this._launchTemplate.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allocationStrategy = value.allocationStrategy;
       this._bidPercentage = value.bidPercentage;
       this._desiredVcpus = value.desiredVcpus;

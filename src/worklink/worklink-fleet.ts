@@ -63,6 +63,8 @@ export function worklinkFleetIdentityProviderToTerraform(struct?: WorklinkFleetI
 }
 
 export class WorklinkFleetIdentityProviderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -73,7 +75,7 @@ export class WorklinkFleetIdentityProviderOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): WorklinkFleetIdentityProvider | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._samlMetadata) {
       hasAnyValues = true;
@@ -88,10 +90,12 @@ export class WorklinkFleetIdentityProviderOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: WorklinkFleetIdentityProvider | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._samlMetadata = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._samlMetadata = value.samlMetadata;
       this._type = value.type;
     }
@@ -151,6 +155,8 @@ export function worklinkFleetNetworkToTerraform(struct?: WorklinkFleetNetworkOut
 }
 
 export class WorklinkFleetNetworkOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -161,7 +167,7 @@ export class WorklinkFleetNetworkOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): WorklinkFleetNetwork | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._securityGroupIds) {
       hasAnyValues = true;
@@ -180,11 +186,13 @@ export class WorklinkFleetNetworkOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: WorklinkFleetNetwork | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._securityGroupIds = undefined;
       this._subnetIds = undefined;
       this._vpcId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._securityGroupIds = value.securityGroupIds;
       this._subnetIds = value.subnetIds;
       this._vpcId = value.vpcId;

@@ -53,6 +53,8 @@ export function iotThingTypePropertiesToTerraform(struct?: IotThingTypePropertie
 }
 
 export class IotThingTypePropertiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -63,7 +65,7 @@ export class IotThingTypePropertiesOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): IotThingTypeProperties | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._description) {
       hasAnyValues = true;
@@ -78,10 +80,12 @@ export class IotThingTypePropertiesOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: IotThingTypeProperties | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._description = undefined;
       this._searchableAttributes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._description = value.description;
       this._searchableAttributes = value.searchableAttributes;
     }

@@ -104,6 +104,8 @@ export function sagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigToTerraf
 }
 
 export class SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -114,7 +116,7 @@ export class SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputRefer
   }
 
   public get internalValue(): SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._catalog) {
       hasAnyValues = true;
@@ -133,11 +135,13 @@ export class SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputRefer
 
   public set internalValue(value: SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._catalog = undefined;
       this._database = undefined;
       this._tableName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._catalog = value.catalog;
       this._database = value.database;
       this._tableName = value.tableName;
@@ -215,6 +219,8 @@ export function sagemakerFeatureGroupOfflineStoreConfigS3StorageConfigToTerrafor
 }
 
 export class SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -225,7 +231,7 @@ export class SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReferen
   }
 
   public get internalValue(): SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._kmsKeyId) {
       hasAnyValues = true;
@@ -240,10 +246,12 @@ export class SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReferen
 
   public set internalValue(value: SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._kmsKeyId = undefined;
       this._s3Uri = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._kmsKeyId = value.kmsKeyId;
       this._s3Uri = value.s3Uri;
     }
@@ -310,6 +318,8 @@ export function sagemakerFeatureGroupOfflineStoreConfigToTerraform(struct?: Sage
 }
 
 export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -320,17 +330,17 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
   }
 
   public get internalValue(): SagemakerFeatureGroupOfflineStoreConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._disableGlueTableCreation) {
       hasAnyValues = true;
       internalValueResult.disableGlueTableCreation = this._disableGlueTableCreation;
     }
-    if (this._dataCatalogConfig) {
+    if (this._dataCatalogConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.dataCatalogConfig = this._dataCatalogConfig?.internalValue;
     }
-    if (this._s3StorageConfig) {
+    if (this._s3StorageConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3StorageConfig = this._s3StorageConfig?.internalValue;
     }
@@ -339,11 +349,13 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
 
   public set internalValue(value: SagemakerFeatureGroupOfflineStoreConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._disableGlueTableCreation = undefined;
       this._dataCatalogConfig.internalValue = undefined;
       this._s3StorageConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._disableGlueTableCreation = value.disableGlueTableCreation;
       this._dataCatalogConfig.internalValue = value.dataCatalogConfig;
       this._s3StorageConfig.internalValue = value.s3StorageConfig;
@@ -413,6 +425,8 @@ export function sagemakerFeatureGroupOnlineStoreConfigSecurityConfigToTerraform(
 }
 
 export class SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -423,7 +437,7 @@ export class SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference
   }
 
   public get internalValue(): SagemakerFeatureGroupOnlineStoreConfigSecurityConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._kmsKeyId) {
       hasAnyValues = true;
@@ -434,9 +448,11 @@ export class SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference
 
   public set internalValue(value: SagemakerFeatureGroupOnlineStoreConfigSecurityConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._kmsKeyId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._kmsKeyId = value.kmsKeyId;
     }
   }
@@ -482,6 +498,8 @@ export function sagemakerFeatureGroupOnlineStoreConfigToTerraform(struct?: Sagem
 }
 
 export class SagemakerFeatureGroupOnlineStoreConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -492,13 +510,13 @@ export class SagemakerFeatureGroupOnlineStoreConfigOutputReference extends cdktf
   }
 
   public get internalValue(): SagemakerFeatureGroupOnlineStoreConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enableOnlineStore) {
       hasAnyValues = true;
       internalValueResult.enableOnlineStore = this._enableOnlineStore;
     }
-    if (this._securityConfig) {
+    if (this._securityConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.securityConfig = this._securityConfig?.internalValue;
     }
@@ -507,10 +525,12 @@ export class SagemakerFeatureGroupOnlineStoreConfigOutputReference extends cdktf
 
   public set internalValue(value: SagemakerFeatureGroupOnlineStoreConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enableOnlineStore = undefined;
       this._securityConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enableOnlineStore = value.enableOnlineStore;
       this._securityConfig.internalValue = value.securityConfig;
     }

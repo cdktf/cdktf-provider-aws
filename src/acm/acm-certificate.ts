@@ -90,6 +90,8 @@ export function acmCertificateOptionsToTerraform(struct?: AcmCertificateOptionsO
 }
 
 export class AcmCertificateOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -100,7 +102,7 @@ export class AcmCertificateOptionsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): AcmCertificateOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._certificateTransparencyLoggingPreference) {
       hasAnyValues = true;
@@ -111,9 +113,11 @@ export class AcmCertificateOptionsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: AcmCertificateOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._certificateTransparencyLoggingPreference = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateTransparencyLoggingPreference = value.certificateTransparencyLoggingPreference;
     }
   }

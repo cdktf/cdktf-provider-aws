@@ -40,6 +40,8 @@ export function acmCertificateValidationTimeoutsToTerraform(struct?: AcmCertific
 }
 
 export class AcmCertificateValidationTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -50,7 +52,7 @@ export class AcmCertificateValidationTimeoutsOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): AcmCertificateValidationTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -61,9 +63,11 @@ export class AcmCertificateValidationTimeoutsOutputReference extends cdktf.Compl
 
   public set internalValue(value: AcmCertificateValidationTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
     }
   }

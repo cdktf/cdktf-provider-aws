@@ -36,6 +36,8 @@ export function s3BucketOwnershipControlsRuleToTerraform(struct?: S3BucketOwners
 }
 
 export class S3BucketOwnershipControlsRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -46,7 +48,7 @@ export class S3BucketOwnershipControlsRuleOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): S3BucketOwnershipControlsRule | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._objectOwnership) {
       hasAnyValues = true;
@@ -57,9 +59,11 @@ export class S3BucketOwnershipControlsRuleOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: S3BucketOwnershipControlsRule | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._objectOwnership = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._objectOwnership = value.objectOwnership;
     }
   }

@@ -125,6 +125,8 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParame
 }
 
 export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -135,7 +137,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameter
   }
 
   public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._documentVersion) {
       hasAnyValues = true;
@@ -150,10 +152,12 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameter
 
   public set internalValue(value: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._documentVersion = undefined;
       this._parameter = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._documentVersion = value.documentVersion;
       this._parameter = value.parameter;
     }
@@ -220,6 +224,8 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters
 }
 
 export class SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -230,7 +236,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOut
   }
 
   public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._clientContext) {
       hasAnyValues = true;
@@ -249,11 +255,13 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOut
 
   public set internalValue(value: SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clientContext = undefined;
       this._payload = undefined;
       this._qualifier = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clientContext = value.clientContext;
       this._payload = value.payload;
       this._qualifier = value.qualifier;
@@ -331,6 +339,8 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParame
 }
 
 export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -341,7 +351,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   }
 
   public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cloudwatchLogGroupName) {
       hasAnyValues = true;
@@ -356,10 +366,12 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
 
   public set internalValue(value: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cloudwatchLogGroupName = undefined;
       this._cloudwatchOutputEnabled = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cloudwatchLogGroupName = value.cloudwatchLogGroupName;
       this._cloudwatchOutputEnabled = value.cloudwatchOutputEnabled;
     }
@@ -425,6 +437,8 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParame
 }
 
 export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -435,7 +449,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   }
 
   public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._notificationArn) {
       hasAnyValues = true;
@@ -454,11 +468,13 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
 
   public set internalValue(value: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._notificationArn = undefined;
       this._notificationEvents = undefined;
       this._notificationType = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._notificationArn = value.notificationArn;
       this._notificationEvents = value.notificationEvents;
       this._notificationType = value.notificationType;
@@ -609,6 +625,8 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParame
 }
 
 export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -619,7 +637,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   }
 
   public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comment) {
       hasAnyValues = true;
@@ -653,11 +671,11 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
       hasAnyValues = true;
       internalValueResult.timeoutSeconds = this._timeoutSeconds;
     }
-    if (this._cloudwatchConfig) {
+    if (this._cloudwatchConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cloudwatchConfig = this._cloudwatchConfig?.internalValue;
     }
-    if (this._notificationConfig) {
+    if (this._notificationConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.notificationConfig = this._notificationConfig?.internalValue;
     }
@@ -670,6 +688,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
 
   public set internalValue(value: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._comment = undefined;
       this._documentHash = undefined;
       this._documentHashType = undefined;
@@ -683,6 +702,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
       this._parameter = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._comment = value.comment;
       this._documentHash = value.documentHash;
       this._documentHashType = value.documentHashType;
@@ -897,6 +917,8 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsPar
 }
 
 export class SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -907,7 +929,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParame
   }
 
   public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._input) {
       hasAnyValues = true;
@@ -922,10 +944,12 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParame
 
   public set internalValue(value: SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._input = undefined;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._input = value.input;
       this._name = value.name;
     }
@@ -1004,6 +1028,8 @@ export function ssmMaintenanceWindowTaskTaskInvocationParametersToTerraform(stru
 }
 
 export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1014,21 +1040,21 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference ext
   }
 
   public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._automationParameters) {
+    if (this._automationParameters?.internalValue) {
       hasAnyValues = true;
       internalValueResult.automationParameters = this._automationParameters?.internalValue;
     }
-    if (this._lambdaParameters) {
+    if (this._lambdaParameters?.internalValue) {
       hasAnyValues = true;
       internalValueResult.lambdaParameters = this._lambdaParameters?.internalValue;
     }
-    if (this._runCommandParameters) {
+    if (this._runCommandParameters?.internalValue) {
       hasAnyValues = true;
       internalValueResult.runCommandParameters = this._runCommandParameters?.internalValue;
     }
-    if (this._stepFunctionsParameters) {
+    if (this._stepFunctionsParameters?.internalValue) {
       hasAnyValues = true;
       internalValueResult.stepFunctionsParameters = this._stepFunctionsParameters?.internalValue;
     }
@@ -1037,12 +1063,14 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference ext
 
   public set internalValue(value: SsmMaintenanceWindowTaskTaskInvocationParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._automationParameters.internalValue = undefined;
       this._lambdaParameters.internalValue = undefined;
       this._runCommandParameters.internalValue = undefined;
       this._stepFunctionsParameters.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._automationParameters.internalValue = value.automationParameters;
       this._lambdaParameters.internalValue = value.lambdaParameters;
       this._runCommandParameters.internalValue = value.runCommandParameters;

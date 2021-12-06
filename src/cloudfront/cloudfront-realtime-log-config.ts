@@ -49,6 +49,8 @@ export function cloudfrontRealtimeLogConfigEndpointKinesisStreamConfigToTerrafor
 }
 
 export class CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -59,7 +61,7 @@ export class CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReferen
   }
 
   public get internalValue(): CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._roleArn) {
       hasAnyValues = true;
@@ -74,10 +76,12 @@ export class CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReferen
 
   public set internalValue(value: CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._roleArn = undefined;
       this._streamArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._roleArn = value.roleArn;
       this._streamArn = value.streamArn;
     }
@@ -134,6 +138,8 @@ export function cloudfrontRealtimeLogConfigEndpointToTerraform(struct?: Cloudfro
 }
 
 export class CloudfrontRealtimeLogConfigEndpointOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -144,13 +150,13 @@ export class CloudfrontRealtimeLogConfigEndpointOutputReference extends cdktf.Co
   }
 
   public get internalValue(): CloudfrontRealtimeLogConfigEndpoint | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._streamType) {
       hasAnyValues = true;
       internalValueResult.streamType = this._streamType;
     }
-    if (this._kinesisStreamConfig) {
+    if (this._kinesisStreamConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.kinesisStreamConfig = this._kinesisStreamConfig?.internalValue;
     }
@@ -159,10 +165,12 @@ export class CloudfrontRealtimeLogConfigEndpointOutputReference extends cdktf.Co
 
   public set internalValue(value: CloudfrontRealtimeLogConfigEndpoint | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._streamType = undefined;
       this._kinesisStreamConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._streamType = value.streamType;
       this._kinesisStreamConfig.internalValue = value.kinesisStreamConfig;
     }

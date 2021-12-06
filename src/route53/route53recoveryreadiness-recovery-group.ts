@@ -48,6 +48,8 @@ export function route53RecoveryreadinessRecoveryGroupTimeoutsToTerraform(struct?
 }
 
 export class Route53RecoveryreadinessRecoveryGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -58,7 +60,7 @@ export class Route53RecoveryreadinessRecoveryGroupTimeoutsOutputReference extend
   }
 
   public get internalValue(): Route53RecoveryreadinessRecoveryGroupTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete) {
       hasAnyValues = true;
@@ -69,9 +71,11 @@ export class Route53RecoveryreadinessRecoveryGroupTimeoutsOutputReference extend
 
   public set internalValue(value: Route53RecoveryreadinessRecoveryGroupTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._delete = value.delete;
     }
   }

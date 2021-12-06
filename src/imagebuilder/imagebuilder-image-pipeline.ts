@@ -79,6 +79,8 @@ export function imagebuilderImagePipelineImageTestsConfigurationToTerraform(stru
 }
 
 export class ImagebuilderImagePipelineImageTestsConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -89,7 +91,7 @@ export class ImagebuilderImagePipelineImageTestsConfigurationOutputReference ext
   }
 
   public get internalValue(): ImagebuilderImagePipelineImageTestsConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._imageTestsEnabled) {
       hasAnyValues = true;
@@ -104,10 +106,12 @@ export class ImagebuilderImagePipelineImageTestsConfigurationOutputReference ext
 
   public set internalValue(value: ImagebuilderImagePipelineImageTestsConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._imageTestsEnabled = undefined;
       this._timeoutMinutes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._imageTestsEnabled = value.imageTestsEnabled;
       this._timeoutMinutes = value.timeoutMinutes;
     }
@@ -168,6 +172,8 @@ export function imagebuilderImagePipelineScheduleToTerraform(struct?: Imagebuild
 }
 
 export class ImagebuilderImagePipelineScheduleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -178,7 +184,7 @@ export class ImagebuilderImagePipelineScheduleOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): ImagebuilderImagePipelineSchedule | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._pipelineExecutionStartCondition) {
       hasAnyValues = true;
@@ -193,10 +199,12 @@ export class ImagebuilderImagePipelineScheduleOutputReference extends cdktf.Comp
 
   public set internalValue(value: ImagebuilderImagePipelineSchedule | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._pipelineExecutionStartCondition = undefined;
       this._scheduleExpression = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._pipelineExecutionStartCondition = value.pipelineExecutionStartCondition;
       this._scheduleExpression = value.scheduleExpression;
     }

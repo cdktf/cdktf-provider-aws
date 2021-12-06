@@ -81,6 +81,8 @@ export function apiGatewayRestApiEndpointConfigurationToTerraform(struct?: ApiGa
 }
 
 export class ApiGatewayRestApiEndpointConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -91,7 +93,7 @@ export class ApiGatewayRestApiEndpointConfigurationOutputReference extends cdktf
   }
 
   public get internalValue(): ApiGatewayRestApiEndpointConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._types) {
       hasAnyValues = true;
@@ -106,10 +108,12 @@ export class ApiGatewayRestApiEndpointConfigurationOutputReference extends cdktf
 
   public set internalValue(value: ApiGatewayRestApiEndpointConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._types = undefined;
       this._vpcEndpointIds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._types = value.types;
       this._vpcEndpointIds = value.vpcEndpointIds;
     }

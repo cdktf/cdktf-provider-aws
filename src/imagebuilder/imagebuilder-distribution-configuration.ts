@@ -53,6 +53,8 @@ export function imagebuilderDistributionConfigurationDistributionAmiDistribution
 }
 
 export class ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -63,7 +65,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   }
 
   public get internalValue(): ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._userGroups) {
       hasAnyValues = true;
@@ -78,10 +80,12 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
 
   public set internalValue(value: ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._userGroups = undefined;
       this._userIds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._userGroups = value.userGroups;
       this._userIds = value.userIds;
     }
@@ -164,6 +168,8 @@ export function imagebuilderDistributionConfigurationDistributionAmiDistribution
 }
 
 export class ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -174,7 +180,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   }
 
   public get internalValue(): ImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._amiTags) {
       hasAnyValues = true;
@@ -196,7 +202,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
       hasAnyValues = true;
       internalValueResult.targetAccountIds = this._targetAccountIds;
     }
-    if (this._launchPermission) {
+    if (this._launchPermission?.internalValue) {
       hasAnyValues = true;
       internalValueResult.launchPermission = this._launchPermission?.internalValue;
     }
@@ -205,6 +211,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
 
   public set internalValue(value: ImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._amiTags = undefined;
       this._description = undefined;
       this._kmsKeyId = undefined;
@@ -213,6 +220,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
       this._launchPermission.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._amiTags = value.amiTags;
       this._description = value.description;
       this._kmsKeyId = value.kmsKeyId;

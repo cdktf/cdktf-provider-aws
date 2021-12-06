@@ -89,6 +89,8 @@ export function albListenerRuleActionAuthenticateCognitoToTerraform(struct?: Alb
 }
 
 export class AlbListenerRuleActionAuthenticateCognitoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -99,7 +101,7 @@ export class AlbListenerRuleActionAuthenticateCognitoOutputReference extends cdk
   }
 
   public get internalValue(): AlbListenerRuleActionAuthenticateCognito | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._authenticationRequestExtraParams) {
       hasAnyValues = true;
@@ -138,6 +140,7 @@ export class AlbListenerRuleActionAuthenticateCognitoOutputReference extends cdk
 
   public set internalValue(value: AlbListenerRuleActionAuthenticateCognito | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._authenticationRequestExtraParams = undefined;
       this._onUnauthenticatedRequest = undefined;
       this._scope = undefined;
@@ -148,6 +151,7 @@ export class AlbListenerRuleActionAuthenticateCognitoOutputReference extends cdk
       this._userPoolDomain = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._authenticationRequestExtraParams = value.authenticationRequestExtraParams;
       this._onUnauthenticatedRequest = value.onUnauthenticatedRequest;
       this._scope = value.scope;
@@ -347,6 +351,8 @@ export function albListenerRuleActionAuthenticateOidcToTerraform(struct?: AlbLis
 }
 
 export class AlbListenerRuleActionAuthenticateOidcOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -357,7 +363,7 @@ export class AlbListenerRuleActionAuthenticateOidcOutputReference extends cdktf.
   }
 
   public get internalValue(): AlbListenerRuleActionAuthenticateOidc | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._authenticationRequestExtraParams) {
       hasAnyValues = true;
@@ -408,6 +414,7 @@ export class AlbListenerRuleActionAuthenticateOidcOutputReference extends cdktf.
 
   public set internalValue(value: AlbListenerRuleActionAuthenticateOidc | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._authenticationRequestExtraParams = undefined;
       this._authorizationEndpoint = undefined;
       this._clientId = undefined;
@@ -421,6 +428,7 @@ export class AlbListenerRuleActionAuthenticateOidcOutputReference extends cdktf.
       this._userInfoEndpoint = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._authenticationRequestExtraParams = value.authenticationRequestExtraParams;
       this._authorizationEndpoint = value.authorizationEndpoint;
       this._clientId = value.clientId;
@@ -622,6 +630,8 @@ export function albListenerRuleActionFixedResponseToTerraform(struct?: AlbListen
 }
 
 export class AlbListenerRuleActionFixedResponseOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -632,7 +642,7 @@ export class AlbListenerRuleActionFixedResponseOutputReference extends cdktf.Com
   }
 
   public get internalValue(): AlbListenerRuleActionFixedResponse | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._contentType) {
       hasAnyValues = true;
@@ -651,11 +661,13 @@ export class AlbListenerRuleActionFixedResponseOutputReference extends cdktf.Com
 
   public set internalValue(value: AlbListenerRuleActionFixedResponse | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._contentType = undefined;
       this._messageBody = undefined;
       this._statusCode = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._contentType = value.contentType;
       this._messageBody = value.messageBody;
       this._statusCode = value.statusCode;
@@ -730,6 +742,8 @@ export function albListenerRuleActionForwardStickinessToTerraform(struct?: AlbLi
 }
 
 export class AlbListenerRuleActionForwardStickinessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -740,7 +754,7 @@ export class AlbListenerRuleActionForwardStickinessOutputReference extends cdktf
   }
 
   public get internalValue(): AlbListenerRuleActionForwardStickiness | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._duration) {
       hasAnyValues = true;
@@ -755,10 +769,12 @@ export class AlbListenerRuleActionForwardStickinessOutputReference extends cdktf
 
   public set internalValue(value: AlbListenerRuleActionForwardStickiness | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._duration = undefined;
       this._enabled = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._duration = value.duration;
       this._enabled = value.enabled;
     }
@@ -842,6 +858,8 @@ export function albListenerRuleActionForwardToTerraform(struct?: AlbListenerRule
 }
 
 export class AlbListenerRuleActionForwardOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -852,9 +870,9 @@ export class AlbListenerRuleActionForwardOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): AlbListenerRuleActionForward | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._stickiness) {
+    if (this._stickiness?.internalValue) {
       hasAnyValues = true;
       internalValueResult.stickiness = this._stickiness?.internalValue;
     }
@@ -867,10 +885,12 @@ export class AlbListenerRuleActionForwardOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: AlbListenerRuleActionForward | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._stickiness.internalValue = undefined;
       this._targetGroup = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._stickiness.internalValue = value.stickiness;
       this._targetGroup = value.targetGroup;
     }
@@ -949,6 +969,8 @@ export function albListenerRuleActionRedirectToTerraform(struct?: AlbListenerRul
 }
 
 export class AlbListenerRuleActionRedirectOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -959,7 +981,7 @@ export class AlbListenerRuleActionRedirectOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): AlbListenerRuleActionRedirect | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._host) {
       hasAnyValues = true;
@@ -990,6 +1012,7 @@ export class AlbListenerRuleActionRedirectOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: AlbListenerRuleActionRedirect | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._host = undefined;
       this._path = undefined;
       this._port = undefined;
@@ -998,6 +1021,7 @@ export class AlbListenerRuleActionRedirectOutputReference extends cdktf.ComplexO
       this._statusCode = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._host = value.host;
       this._path = value.path;
       this._port = value.port;
@@ -1180,6 +1204,8 @@ export function albListenerRuleConditionHostHeaderToTerraform(struct?: AlbListen
 }
 
 export class AlbListenerRuleConditionHostHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1190,7 +1216,7 @@ export class AlbListenerRuleConditionHostHeaderOutputReference extends cdktf.Com
   }
 
   public get internalValue(): AlbListenerRuleConditionHostHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._values) {
       hasAnyValues = true;
@@ -1201,9 +1227,11 @@ export class AlbListenerRuleConditionHostHeaderOutputReference extends cdktf.Com
 
   public set internalValue(value: AlbListenerRuleConditionHostHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._values = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._values = value.values;
     }
   }
@@ -1244,6 +1272,8 @@ export function albListenerRuleConditionHttpHeaderToTerraform(struct?: AlbListen
 }
 
 export class AlbListenerRuleConditionHttpHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1254,7 +1284,7 @@ export class AlbListenerRuleConditionHttpHeaderOutputReference extends cdktf.Com
   }
 
   public get internalValue(): AlbListenerRuleConditionHttpHeader | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._httpHeaderName) {
       hasAnyValues = true;
@@ -1269,10 +1299,12 @@ export class AlbListenerRuleConditionHttpHeaderOutputReference extends cdktf.Com
 
   public set internalValue(value: AlbListenerRuleConditionHttpHeader | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._httpHeaderName = undefined;
       this._values = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._httpHeaderName = value.httpHeaderName;
       this._values = value.values;
     }
@@ -1322,6 +1354,8 @@ export function albListenerRuleConditionHttpRequestMethodToTerraform(struct?: Al
 }
 
 export class AlbListenerRuleConditionHttpRequestMethodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1332,7 +1366,7 @@ export class AlbListenerRuleConditionHttpRequestMethodOutputReference extends cd
   }
 
   public get internalValue(): AlbListenerRuleConditionHttpRequestMethod | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._values) {
       hasAnyValues = true;
@@ -1343,9 +1377,11 @@ export class AlbListenerRuleConditionHttpRequestMethodOutputReference extends cd
 
   public set internalValue(value: AlbListenerRuleConditionHttpRequestMethod | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._values = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._values = value.values;
     }
   }
@@ -1381,6 +1417,8 @@ export function albListenerRuleConditionPathPatternToTerraform(struct?: AlbListe
 }
 
 export class AlbListenerRuleConditionPathPatternOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1391,7 +1429,7 @@ export class AlbListenerRuleConditionPathPatternOutputReference extends cdktf.Co
   }
 
   public get internalValue(): AlbListenerRuleConditionPathPattern | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._values) {
       hasAnyValues = true;
@@ -1402,9 +1440,11 @@ export class AlbListenerRuleConditionPathPatternOutputReference extends cdktf.Co
 
   public set internalValue(value: AlbListenerRuleConditionPathPattern | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._values = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._values = value.values;
     }
   }
@@ -1462,6 +1502,8 @@ export function albListenerRuleConditionSourceIpToTerraform(struct?: AlbListener
 }
 
 export class AlbListenerRuleConditionSourceIpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1472,7 +1514,7 @@ export class AlbListenerRuleConditionSourceIpOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): AlbListenerRuleConditionSourceIp | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._values) {
       hasAnyValues = true;
@@ -1483,9 +1525,11 @@ export class AlbListenerRuleConditionSourceIpOutputReference extends cdktf.Compl
 
   public set internalValue(value: AlbListenerRuleConditionSourceIp | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._values = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._values = value.values;
     }
   }

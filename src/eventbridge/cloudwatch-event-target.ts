@@ -129,6 +129,8 @@ export function cloudwatchEventTargetBatchTargetToTerraform(struct?: CloudwatchE
 }
 
 export class CloudwatchEventTargetBatchTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -139,7 +141,7 @@ export class CloudwatchEventTargetBatchTargetOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): CloudwatchEventTargetBatchTarget | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arraySize) {
       hasAnyValues = true;
@@ -162,12 +164,14 @@ export class CloudwatchEventTargetBatchTargetOutputReference extends cdktf.Compl
 
   public set internalValue(value: CloudwatchEventTargetBatchTarget | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arraySize = undefined;
       this._jobAttempts = undefined;
       this._jobDefinition = undefined;
       this._jobName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arraySize = value.arraySize;
       this._jobAttempts = value.jobAttempts;
       this._jobDefinition = value.jobDefinition;
@@ -251,6 +255,8 @@ export function cloudwatchEventTargetDeadLetterConfigToTerraform(struct?: Cloudw
 }
 
 export class CloudwatchEventTargetDeadLetterConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -261,7 +267,7 @@ export class CloudwatchEventTargetDeadLetterConfigOutputReference extends cdktf.
   }
 
   public get internalValue(): CloudwatchEventTargetDeadLetterConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
@@ -272,9 +278,11 @@ export class CloudwatchEventTargetDeadLetterConfigOutputReference extends cdktf.
 
   public set internalValue(value: CloudwatchEventTargetDeadLetterConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
     }
   }
@@ -323,6 +331,8 @@ export function cloudwatchEventTargetEcsTargetNetworkConfigurationToTerraform(st
 }
 
 export class CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -333,7 +343,7 @@ export class CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference e
   }
 
   public get internalValue(): CloudwatchEventTargetEcsTargetNetworkConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._assignPublicIp) {
       hasAnyValues = true;
@@ -352,11 +362,13 @@ export class CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference e
 
   public set internalValue(value: CloudwatchEventTargetEcsTargetNetworkConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._assignPublicIp = undefined;
       this._securityGroups = undefined;
       this._subnets = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._assignPublicIp = value.assignPublicIp;
       this._securityGroups = value.securityGroups;
       this._subnets = value.subnets;
@@ -502,6 +514,8 @@ export function cloudwatchEventTargetEcsTargetToTerraform(struct?: CloudwatchEve
 }
 
 export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -512,7 +526,7 @@ export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): CloudwatchEventTargetEcsTarget | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enableEcsManagedTags) {
       hasAnyValues = true;
@@ -550,7 +564,7 @@ export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.taskDefinitionArn = this._taskDefinitionArn;
     }
-    if (this._networkConfiguration) {
+    if (this._networkConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.networkConfiguration = this._networkConfiguration?.internalValue;
     }
@@ -563,6 +577,7 @@ export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.Complex
 
   public set internalValue(value: CloudwatchEventTargetEcsTarget | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enableEcsManagedTags = undefined;
       this._enableExecuteCommand = undefined;
       this._group = undefined;
@@ -576,6 +591,7 @@ export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.Complex
       this._placementConstraint = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enableEcsManagedTags = value.enableEcsManagedTags;
       this._enableExecuteCommand = value.enableExecuteCommand;
       this._group = value.group;
@@ -793,6 +809,8 @@ export function cloudwatchEventTargetHttpTargetToTerraform(struct?: CloudwatchEv
 }
 
 export class CloudwatchEventTargetHttpTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -803,7 +821,7 @@ export class CloudwatchEventTargetHttpTargetOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): CloudwatchEventTargetHttpTarget | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._headerParameters) {
       hasAnyValues = true;
@@ -822,11 +840,13 @@ export class CloudwatchEventTargetHttpTargetOutputReference extends cdktf.Comple
 
   public set internalValue(value: CloudwatchEventTargetHttpTarget | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._headerParameters = undefined;
       this._pathParameterValues = undefined;
       this._queryStringParameters = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._headerParameters = value.headerParameters;
       this._pathParameterValues = value.pathParameterValues;
       this._queryStringParameters = value.queryStringParameters;
@@ -906,6 +926,8 @@ export function cloudwatchEventTargetInputTransformerToTerraform(struct?: Cloudw
 }
 
 export class CloudwatchEventTargetInputTransformerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -916,7 +938,7 @@ export class CloudwatchEventTargetInputTransformerOutputReference extends cdktf.
   }
 
   public get internalValue(): CloudwatchEventTargetInputTransformer | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._inputPaths) {
       hasAnyValues = true;
@@ -931,10 +953,12 @@ export class CloudwatchEventTargetInputTransformerOutputReference extends cdktf.
 
   public set internalValue(value: CloudwatchEventTargetInputTransformer | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._inputPaths = undefined;
       this._inputTemplate = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._inputPaths = value.inputPaths;
       this._inputTemplate = value.inputTemplate;
     }
@@ -988,6 +1012,8 @@ export function cloudwatchEventTargetKinesisTargetToTerraform(struct?: Cloudwatc
 }
 
 export class CloudwatchEventTargetKinesisTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -998,7 +1024,7 @@ export class CloudwatchEventTargetKinesisTargetOutputReference extends cdktf.Com
   }
 
   public get internalValue(): CloudwatchEventTargetKinesisTarget | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._partitionKeyPath) {
       hasAnyValues = true;
@@ -1009,9 +1035,11 @@ export class CloudwatchEventTargetKinesisTargetOutputReference extends cdktf.Com
 
   public set internalValue(value: CloudwatchEventTargetKinesisTarget | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._partitionKeyPath = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._partitionKeyPath = value.partitionKeyPath;
     }
   }
@@ -1075,6 +1103,8 @@ export function cloudwatchEventTargetRedshiftTargetToTerraform(struct?: Cloudwat
 }
 
 export class CloudwatchEventTargetRedshiftTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1085,7 +1115,7 @@ export class CloudwatchEventTargetRedshiftTargetOutputReference extends cdktf.Co
   }
 
   public get internalValue(): CloudwatchEventTargetRedshiftTarget | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._database) {
       hasAnyValues = true;
@@ -1116,6 +1146,7 @@ export class CloudwatchEventTargetRedshiftTargetOutputReference extends cdktf.Co
 
   public set internalValue(value: CloudwatchEventTargetRedshiftTarget | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._database = undefined;
       this._dbUser = undefined;
       this._secretsManagerArn = undefined;
@@ -1124,6 +1155,7 @@ export class CloudwatchEventTargetRedshiftTargetOutputReference extends cdktf.Co
       this._withEvent = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._database = value.database;
       this._dbUser = value.dbUser;
       this._secretsManagerArn = value.secretsManagerArn;
@@ -1249,6 +1281,8 @@ export function cloudwatchEventTargetRetryPolicyToTerraform(struct?: CloudwatchE
 }
 
 export class CloudwatchEventTargetRetryPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1259,7 +1293,7 @@ export class CloudwatchEventTargetRetryPolicyOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): CloudwatchEventTargetRetryPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maximumEventAgeInSeconds) {
       hasAnyValues = true;
@@ -1274,10 +1308,12 @@ export class CloudwatchEventTargetRetryPolicyOutputReference extends cdktf.Compl
 
   public set internalValue(value: CloudwatchEventTargetRetryPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maximumEventAgeInSeconds = undefined;
       this._maximumRetryAttempts = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maximumEventAgeInSeconds = value.maximumEventAgeInSeconds;
       this._maximumRetryAttempts = value.maximumRetryAttempts;
     }
@@ -1355,6 +1391,8 @@ export function cloudwatchEventTargetSqsTargetToTerraform(struct?: CloudwatchEve
 }
 
 export class CloudwatchEventTargetSqsTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1365,7 +1403,7 @@ export class CloudwatchEventTargetSqsTargetOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): CloudwatchEventTargetSqsTarget | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._messageGroupId) {
       hasAnyValues = true;
@@ -1376,9 +1414,11 @@ export class CloudwatchEventTargetSqsTargetOutputReference extends cdktf.Complex
 
   public set internalValue(value: CloudwatchEventTargetSqsTarget | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._messageGroupId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._messageGroupId = value.messageGroupId;
     }
   }

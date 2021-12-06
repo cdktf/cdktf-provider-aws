@@ -84,6 +84,8 @@ export function networkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction
 }
 
 export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -94,7 +96,7 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionAct
   }
 
   public get internalValue(): NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dimension) {
       hasAnyValues = true;
@@ -105,9 +107,11 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionAct
 
   public set internalValue(value: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dimension = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dimension = value.dimension;
     }
   }
@@ -146,6 +150,8 @@ export function networkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction
 }
 
 export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -156,9 +162,9 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionAct
   }
 
   public get internalValue(): NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._publishMetricAction) {
+    if (this._publishMetricAction?.internalValue) {
       hasAnyValues = true;
       internalValueResult.publishMetricAction = this._publishMetricAction?.internalValue;
     }
@@ -167,9 +173,11 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionAct
 
   public set internalValue(value: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._publishMetricAction.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._publishMetricAction.internalValue = value.publishMetricAction;
     }
   }
@@ -277,6 +285,8 @@ export function networkfirewallFirewallPolicyFirewallPolicyToTerraform(struct?: 
 }
 
 export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -287,7 +297,7 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
   }
 
   public get internalValue(): NetworkfirewallFirewallPolicyFirewallPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._statelessDefaultActions) {
       hasAnyValues = true;
@@ -314,6 +324,7 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
 
   public set internalValue(value: NetworkfirewallFirewallPolicyFirewallPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._statelessDefaultActions = undefined;
       this._statelessFragmentDefaultActions = undefined;
       this._statefulRuleGroupReference = undefined;
@@ -321,6 +332,7 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
       this._statelessRuleGroupReference = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._statelessDefaultActions = value.statelessDefaultActions;
       this._statelessFragmentDefaultActions = value.statelessFragmentDefaultActions;
       this._statefulRuleGroupReference = value.statefulRuleGroupReference;

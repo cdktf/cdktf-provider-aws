@@ -88,6 +88,8 @@ export function signerSigningJobDestinationS3ToTerraform(struct?: SignerSigningJ
 }
 
 export class SignerSigningJobDestinationS3OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -98,7 +100,7 @@ export class SignerSigningJobDestinationS3OutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): SignerSigningJobDestinationS3 | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucket) {
       hasAnyValues = true;
@@ -113,10 +115,12 @@ export class SignerSigningJobDestinationS3OutputReference extends cdktf.ComplexO
 
   public set internalValue(value: SignerSigningJobDestinationS3 | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucket = undefined;
       this._prefix = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucket = value.bucket;
       this._prefix = value.prefix;
     }
@@ -171,6 +175,8 @@ export function signerSigningJobDestinationToTerraform(struct?: SignerSigningJob
 }
 
 export class SignerSigningJobDestinationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -181,9 +187,9 @@ export class SignerSigningJobDestinationOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): SignerSigningJobDestination | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._s3) {
+    if (this._s3?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3 = this._s3?.internalValue;
     }
@@ -192,9 +198,11 @@ export class SignerSigningJobDestinationOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: SignerSigningJobDestination | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._s3.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._s3.internalValue = value.s3;
     }
   }
@@ -240,6 +248,8 @@ export function signerSigningJobSourceS3ToTerraform(struct?: SignerSigningJobSou
 }
 
 export class SignerSigningJobSourceS3OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -250,7 +260,7 @@ export class SignerSigningJobSourceS3OutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): SignerSigningJobSourceS3 | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucket) {
       hasAnyValues = true;
@@ -269,11 +279,13 @@ export class SignerSigningJobSourceS3OutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: SignerSigningJobSourceS3 | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucket = undefined;
       this._key = undefined;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucket = value.bucket;
       this._key = value.key;
       this._version = value.version;
@@ -339,6 +351,8 @@ export function signerSigningJobSourceToTerraform(struct?: SignerSigningJobSourc
 }
 
 export class SignerSigningJobSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -349,9 +363,9 @@ export class SignerSigningJobSourceOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): SignerSigningJobSource | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._s3) {
+    if (this._s3?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3 = this._s3?.internalValue;
     }
@@ -360,9 +374,11 @@ export class SignerSigningJobSourceOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: SignerSigningJobSource | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._s3.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._s3.internalValue = value.s3;
     }
   }

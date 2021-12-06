@@ -75,6 +75,8 @@ export function configRemediationConfigurationExecutionControlsSsmControlsToTerr
 }
 
 export class ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -85,7 +87,7 @@ export class ConfigRemediationConfigurationExecutionControlsSsmControlsOutputRef
   }
 
   public get internalValue(): ConfigRemediationConfigurationExecutionControlsSsmControls | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._concurrentExecutionRatePercentage) {
       hasAnyValues = true;
@@ -100,10 +102,12 @@ export class ConfigRemediationConfigurationExecutionControlsSsmControlsOutputRef
 
   public set internalValue(value: ConfigRemediationConfigurationExecutionControlsSsmControls | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._concurrentExecutionRatePercentage = undefined;
       this._errorPercentage = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._concurrentExecutionRatePercentage = value.concurrentExecutionRatePercentage;
       this._errorPercentage = value.errorPercentage;
     }
@@ -161,6 +165,8 @@ export function configRemediationConfigurationExecutionControlsToTerraform(struc
 }
 
 export class ConfigRemediationConfigurationExecutionControlsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -171,9 +177,9 @@ export class ConfigRemediationConfigurationExecutionControlsOutputReference exte
   }
 
   public get internalValue(): ConfigRemediationConfigurationExecutionControls | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._ssmControls) {
+    if (this._ssmControls?.internalValue) {
       hasAnyValues = true;
       internalValueResult.ssmControls = this._ssmControls?.internalValue;
     }
@@ -182,9 +188,11 @@ export class ConfigRemediationConfigurationExecutionControlsOutputReference exte
 
   public set internalValue(value: ConfigRemediationConfigurationExecutionControls | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._ssmControls.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._ssmControls.internalValue = value.ssmControls;
     }
   }

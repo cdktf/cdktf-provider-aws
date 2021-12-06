@@ -68,6 +68,8 @@ export function sagemakerWorkteamMemberDefinitionCognitoMemberDefinitionToTerraf
 }
 
 export class SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -78,7 +80,7 @@ export class SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputRefer
   }
 
   public get internalValue(): SagemakerWorkteamMemberDefinitionCognitoMemberDefinition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._clientId) {
       hasAnyValues = true;
@@ -97,11 +99,13 @@ export class SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputRefer
 
   public set internalValue(value: SagemakerWorkteamMemberDefinitionCognitoMemberDefinition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clientId = undefined;
       this._userGroup = undefined;
       this._userPool = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clientId = value.clientId;
       this._userGroup = value.userGroup;
       this._userPool = value.userPool;
@@ -165,6 +169,8 @@ export function sagemakerWorkteamMemberDefinitionOidcMemberDefinitionToTerraform
 }
 
 export class SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -175,7 +181,7 @@ export class SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReferenc
   }
 
   public get internalValue(): SagemakerWorkteamMemberDefinitionOidcMemberDefinition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._groups) {
       hasAnyValues = true;
@@ -186,9 +192,11 @@ export class SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReferenc
 
   public set internalValue(value: SagemakerWorkteamMemberDefinitionOidcMemberDefinition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._groups = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._groups = value.groups;
     }
   }
@@ -250,6 +258,8 @@ export function sagemakerWorkteamNotificationConfigurationToTerraform(struct?: S
 }
 
 export class SagemakerWorkteamNotificationConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -260,7 +270,7 @@ export class SagemakerWorkteamNotificationConfigurationOutputReference extends c
   }
 
   public get internalValue(): SagemakerWorkteamNotificationConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._notificationTopicArn) {
       hasAnyValues = true;
@@ -271,9 +281,11 @@ export class SagemakerWorkteamNotificationConfigurationOutputReference extends c
 
   public set internalValue(value: SagemakerWorkteamNotificationConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._notificationTopicArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._notificationTopicArn = value.notificationTopicArn;
     }
   }

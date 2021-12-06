@@ -71,6 +71,8 @@ export function autoscalingplansScalingPlanApplicationSourceToTerraform(struct?:
 }
 
 export class AutoscalingplansScalingPlanApplicationSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -81,7 +83,7 @@ export class AutoscalingplansScalingPlanApplicationSourceOutputReference extends
   }
 
   public get internalValue(): AutoscalingplansScalingPlanApplicationSource | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cloudformationStackArn) {
       hasAnyValues = true;
@@ -96,10 +98,12 @@ export class AutoscalingplansScalingPlanApplicationSourceOutputReference extends
 
   public set internalValue(value: AutoscalingplansScalingPlanApplicationSource | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cloudformationStackArn = undefined;
       this._tagFilter = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cloudformationStackArn = value.cloudformationStackArn;
       this._tagFilter = value.tagFilter;
     }
@@ -176,6 +180,8 @@ export function autoscalingplansScalingPlanScalingInstructionCustomizedLoadMetri
 }
 
 export class AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -186,7 +192,7 @@ export class AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSp
   }
 
   public get internalValue(): AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dimensions) {
       hasAnyValues = true;
@@ -213,6 +219,7 @@ export class AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSp
 
   public set internalValue(value: AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dimensions = undefined;
       this._metricName = undefined;
       this._namespace = undefined;
@@ -220,6 +227,7 @@ export class AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSp
       this._unit = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dimensions = value.dimensions;
       this._metricName = value.metricName;
       this._namespace = value.namespace;
@@ -323,6 +331,8 @@ export function autoscalingplansScalingPlanScalingInstructionPredefinedLoadMetri
 }
 
 export class AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -333,7 +343,7 @@ export class AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSp
   }
 
   public get internalValue(): AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._predefinedLoadMetricType) {
       hasAnyValues = true;
@@ -348,10 +358,12 @@ export class AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSp
 
   public set internalValue(value: AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._predefinedLoadMetricType = undefined;
       this._resourceLabel = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._predefinedLoadMetricType = value.predefinedLoadMetricType;
       this._resourceLabel = value.resourceLabel;
     }
@@ -424,6 +436,8 @@ export function autoscalingplansScalingPlanScalingInstructionTargetTrackingConfi
 }
 
 export class AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -434,7 +448,7 @@ export class AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigur
   }
 
   public get internalValue(): AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dimensions) {
       hasAnyValues = true;
@@ -461,6 +475,7 @@ export class AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigur
 
   public set internalValue(value: AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dimensions = undefined;
       this._metricName = undefined;
       this._namespace = undefined;
@@ -468,6 +483,7 @@ export class AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigur
       this._unit = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dimensions = value.dimensions;
       this._metricName = value.metricName;
       this._namespace = value.namespace;
@@ -571,6 +587,8 @@ export function autoscalingplansScalingPlanScalingInstructionTargetTrackingConfi
 }
 
 export class AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -581,7 +599,7 @@ export class AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigur
   }
 
   public get internalValue(): AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._predefinedScalingMetricType) {
       hasAnyValues = true;
@@ -596,10 +614,12 @@ export class AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigur
 
   public set internalValue(value: AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._predefinedScalingMetricType = undefined;
       this._resourceLabel = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._predefinedScalingMetricType = value.predefinedScalingMetricType;
       this._resourceLabel = value.resourceLabel;
     }

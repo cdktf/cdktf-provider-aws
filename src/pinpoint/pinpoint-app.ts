@@ -70,6 +70,8 @@ export function pinpointAppCampaignHookToTerraform(struct?: PinpointAppCampaignH
 }
 
 export class PinpointAppCampaignHookOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -80,7 +82,7 @@ export class PinpointAppCampaignHookOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): PinpointAppCampaignHook | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._lambdaFunctionName) {
       hasAnyValues = true;
@@ -99,11 +101,13 @@ export class PinpointAppCampaignHookOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: PinpointAppCampaignHook | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._lambdaFunctionName = undefined;
       this._mode = undefined;
       this._webUrl = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._lambdaFunctionName = value.lambdaFunctionName;
       this._mode = value.mode;
       this._webUrl = value.webUrl;
@@ -191,6 +195,8 @@ export function pinpointAppLimitsToTerraform(struct?: PinpointAppLimitsOutputRef
 }
 
 export class PinpointAppLimitsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -201,7 +207,7 @@ export class PinpointAppLimitsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): PinpointAppLimits | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._daily) {
       hasAnyValues = true;
@@ -224,12 +230,14 @@ export class PinpointAppLimitsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: PinpointAppLimits | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._daily = undefined;
       this._maximumDuration = undefined;
       this._messagesPerSecond = undefined;
       this._total = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._daily = value.daily;
       this._maximumDuration = value.maximumDuration;
       this._messagesPerSecond = value.messagesPerSecond;
@@ -324,6 +332,8 @@ export function pinpointAppQuietTimeToTerraform(struct?: PinpointAppQuietTimeOut
 }
 
 export class PinpointAppQuietTimeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -334,7 +344,7 @@ export class PinpointAppQuietTimeOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): PinpointAppQuietTime | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._end) {
       hasAnyValues = true;
@@ -349,10 +359,12 @@ export class PinpointAppQuietTimeOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: PinpointAppQuietTime | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._end = undefined;
       this._start = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._end = value.end;
       this._start = value.start;
     }

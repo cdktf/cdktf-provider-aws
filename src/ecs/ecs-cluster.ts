@@ -80,6 +80,8 @@ export function ecsClusterConfigurationExecuteCommandConfigurationLogConfigurati
 }
 
 export class EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -90,7 +92,7 @@ export class EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationO
   }
 
   public get internalValue(): EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cloudWatchEncryptionEnabled) {
       hasAnyValues = true;
@@ -117,6 +119,7 @@ export class EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationO
 
   public set internalValue(value: EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cloudWatchEncryptionEnabled = undefined;
       this._cloudWatchLogGroupName = undefined;
       this._s3BucketEncryptionEnabled = undefined;
@@ -124,6 +127,7 @@ export class EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationO
       this._s3KeyPrefix = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cloudWatchEncryptionEnabled = value.cloudWatchEncryptionEnabled;
       this._cloudWatchLogGroupName = value.cloudWatchLogGroupName;
       this._s3BucketEncryptionEnabled = value.s3BucketEncryptionEnabled;
@@ -242,6 +246,8 @@ export function ecsClusterConfigurationExecuteCommandConfigurationToTerraform(st
 }
 
 export class EcsClusterConfigurationExecuteCommandConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -252,7 +258,7 @@ export class EcsClusterConfigurationExecuteCommandConfigurationOutputReference e
   }
 
   public get internalValue(): EcsClusterConfigurationExecuteCommandConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._kmsKeyId) {
       hasAnyValues = true;
@@ -262,7 +268,7 @@ export class EcsClusterConfigurationExecuteCommandConfigurationOutputReference e
       hasAnyValues = true;
       internalValueResult.logging = this._logging;
     }
-    if (this._logConfiguration) {
+    if (this._logConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.logConfiguration = this._logConfiguration?.internalValue;
     }
@@ -271,11 +277,13 @@ export class EcsClusterConfigurationExecuteCommandConfigurationOutputReference e
 
   public set internalValue(value: EcsClusterConfigurationExecuteCommandConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._kmsKeyId = undefined;
       this._logging = undefined;
       this._logConfiguration.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._kmsKeyId = value.kmsKeyId;
       this._logging = value.logging;
       this._logConfiguration.internalValue = value.logConfiguration;
@@ -350,6 +358,8 @@ export function ecsClusterConfigurationToTerraform(struct?: EcsClusterConfigurat
 }
 
 export class EcsClusterConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -360,9 +370,9 @@ export class EcsClusterConfigurationOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): EcsClusterConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._executeCommandConfiguration) {
+    if (this._executeCommandConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.executeCommandConfiguration = this._executeCommandConfiguration?.internalValue;
     }
@@ -371,9 +381,11 @@ export class EcsClusterConfigurationOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: EcsClusterConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._executeCommandConfiguration.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._executeCommandConfiguration.internalValue = value.executeCommandConfiguration;
     }
   }

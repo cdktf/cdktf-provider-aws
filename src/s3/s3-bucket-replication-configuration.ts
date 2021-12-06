@@ -40,6 +40,8 @@ export function s3BucketReplicationConfigurationRuleDeleteMarkerReplicationToTer
 }
 
 export class S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -50,7 +52,7 @@ export class S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputRe
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDeleteMarkerReplication | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._status) {
       hasAnyValues = true;
@@ -61,9 +63,11 @@ export class S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputRe
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleDeleteMarkerReplication | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._status = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._status = value.status;
     }
   }
@@ -99,6 +103,8 @@ export function s3BucketReplicationConfigurationRuleDestinationAccessControlTran
 }
 
 export class S3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -109,7 +115,7 @@ export class S3BucketReplicationConfigurationRuleDestinationAccessControlTransla
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._owner) {
       hasAnyValues = true;
@@ -120,9 +126,11 @@ export class S3BucketReplicationConfigurationRuleDestinationAccessControlTransla
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._owner = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._owner = value.owner;
     }
   }
@@ -158,6 +166,8 @@ export function s3BucketReplicationConfigurationRuleDestinationEncryptionConfigu
 }
 
 export class S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -168,7 +178,7 @@ export class S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurat
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._replicaKmsKeyId) {
       hasAnyValues = true;
@@ -179,9 +189,11 @@ export class S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurat
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._replicaKmsKeyId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._replicaKmsKeyId = value.replicaKmsKeyId;
     }
   }
@@ -217,6 +229,8 @@ export function s3BucketReplicationConfigurationRuleDestinationMetricsEventThres
 }
 
 export class S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -227,7 +241,7 @@ export class S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshol
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._minutes) {
       hasAnyValues = true;
@@ -238,9 +252,11 @@ export class S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshol
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._minutes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._minutes = value.minutes;
     }
   }
@@ -268,7 +284,7 @@ export interface S3BucketReplicationConfigurationRuleDestinationMetrics {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#event_threshold S3BucketReplicationConfigurationA#event_threshold}
   */
-  readonly eventThreshold: S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold;
+  readonly eventThreshold?: S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold;
 }
 
 export function s3BucketReplicationConfigurationRuleDestinationMetricsToTerraform(struct?: S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference | S3BucketReplicationConfigurationRuleDestinationMetrics): any {
@@ -283,6 +299,8 @@ export function s3BucketReplicationConfigurationRuleDestinationMetricsToTerrafor
 }
 
 export class S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -293,13 +311,13 @@ export class S3BucketReplicationConfigurationRuleDestinationMetricsOutputReferen
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationMetrics | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._status) {
       hasAnyValues = true;
       internalValueResult.status = this._status;
     }
-    if (this._eventThreshold) {
+    if (this._eventThreshold?.internalValue) {
       hasAnyValues = true;
       internalValueResult.eventThreshold = this._eventThreshold?.internalValue;
     }
@@ -308,10 +326,12 @@ export class S3BucketReplicationConfigurationRuleDestinationMetricsOutputReferen
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleDestinationMetrics | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._status = undefined;
       this._eventThreshold.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._status = value.status;
       this._eventThreshold.internalValue = value.eventThreshold;
     }
@@ -330,13 +350,16 @@ export class S3BucketReplicationConfigurationRuleDestinationMetricsOutputReferen
     return this._status;
   }
 
-  // event_threshold - computed: false, optional: false, required: true
+  // event_threshold - computed: false, optional: true, required: false
   private _eventThreshold = new S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference(this as any, "event_threshold", true);
   public get eventThreshold() {
     return this._eventThreshold;
   }
   public putEventThreshold(value: S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold) {
     this._eventThreshold.internalValue = value;
+  }
+  public resetEventThreshold() {
+    this._eventThreshold.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get eventThresholdInput() {
@@ -361,6 +384,8 @@ export function s3BucketReplicationConfigurationRuleDestinationReplicationTimeTi
 }
 
 export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -371,7 +396,7 @@ export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeO
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._minutes) {
       hasAnyValues = true;
@@ -382,9 +407,11 @@ export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeO
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._minutes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._minutes = value.minutes;
     }
   }
@@ -427,6 +454,8 @@ export function s3BucketReplicationConfigurationRuleDestinationReplicationTimeTo
 }
 
 export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -437,13 +466,13 @@ export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutpu
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationReplicationTime | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._status) {
       hasAnyValues = true;
       internalValueResult.status = this._status;
     }
-    if (this._time) {
+    if (this._time?.internalValue) {
       hasAnyValues = true;
       internalValueResult.time = this._time?.internalValue;
     }
@@ -452,10 +481,12 @@ export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutpu
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleDestinationReplicationTime | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._status = undefined;
       this._time.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._status = value.status;
       this._time.internalValue = value.time;
     }
@@ -543,6 +574,8 @@ export function s3BucketReplicationConfigurationRuleDestinationToTerraform(struc
 }
 
 export class S3BucketReplicationConfigurationRuleDestinationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -553,7 +586,7 @@ export class S3BucketReplicationConfigurationRuleDestinationOutputReference exte
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDestination | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._account) {
       hasAnyValues = true;
@@ -567,19 +600,19 @@ export class S3BucketReplicationConfigurationRuleDestinationOutputReference exte
       hasAnyValues = true;
       internalValueResult.storageClass = this._storageClass;
     }
-    if (this._accessControlTranslation) {
+    if (this._accessControlTranslation?.internalValue) {
       hasAnyValues = true;
       internalValueResult.accessControlTranslation = this._accessControlTranslation?.internalValue;
     }
-    if (this._encryptionConfiguration) {
+    if (this._encryptionConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.encryptionConfiguration = this._encryptionConfiguration?.internalValue;
     }
-    if (this._metrics) {
+    if (this._metrics?.internalValue) {
       hasAnyValues = true;
       internalValueResult.metrics = this._metrics?.internalValue;
     }
-    if (this._replicationTime) {
+    if (this._replicationTime?.internalValue) {
       hasAnyValues = true;
       internalValueResult.replicationTime = this._replicationTime?.internalValue;
     }
@@ -588,6 +621,7 @@ export class S3BucketReplicationConfigurationRuleDestinationOutputReference exte
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleDestination | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._account = undefined;
       this._bucket = undefined;
       this._storageClass = undefined;
@@ -597,6 +631,7 @@ export class S3BucketReplicationConfigurationRuleDestinationOutputReference exte
       this._replicationTime.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._account = value.account;
       this._bucket = value.bucket;
       this._storageClass = value.storageClass;
@@ -734,6 +769,8 @@ export function s3BucketReplicationConfigurationRuleExistingObjectReplicationToT
 }
 
 export class S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -744,7 +781,7 @@ export class S3BucketReplicationConfigurationRuleExistingObjectReplicationOutput
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleExistingObjectReplication | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._status) {
       hasAnyValues = true;
@@ -755,9 +792,11 @@ export class S3BucketReplicationConfigurationRuleExistingObjectReplicationOutput
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleExistingObjectReplication | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._status = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._status = value.status;
     }
   }
@@ -798,6 +837,8 @@ export function s3BucketReplicationConfigurationRuleFilterAndToTerraform(struct?
 }
 
 export class S3BucketReplicationConfigurationRuleFilterAndOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -808,7 +849,7 @@ export class S3BucketReplicationConfigurationRuleFilterAndOutputReference extend
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleFilterAnd | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._prefix) {
       hasAnyValues = true;
@@ -823,10 +864,12 @@ export class S3BucketReplicationConfigurationRuleFilterAndOutputReference extend
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleFilterAnd | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._prefix = undefined;
       this._tags = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._prefix = value.prefix;
       this._tags = value.tags;
     }
@@ -888,6 +931,8 @@ export function s3BucketReplicationConfigurationRuleFilterTagToTerraform(struct?
 }
 
 export class S3BucketReplicationConfigurationRuleFilterTagOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -898,7 +943,7 @@ export class S3BucketReplicationConfigurationRuleFilterTagOutputReference extend
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleFilterTag | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key) {
       hasAnyValues = true;
@@ -913,10 +958,12 @@ export class S3BucketReplicationConfigurationRuleFilterTagOutputReference extend
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleFilterTag | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._key = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._key = value.key;
       this._value = value.value;
     }
@@ -980,6 +1027,8 @@ export function s3BucketReplicationConfigurationRuleFilterToTerraform(struct?: S
 }
 
 export class S3BucketReplicationConfigurationRuleFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -990,17 +1039,17 @@ export class S3BucketReplicationConfigurationRuleFilterOutputReference extends c
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleFilter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._prefix) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._and) {
+    if (this._and?.internalValue) {
       hasAnyValues = true;
       internalValueResult.and = this._and?.internalValue;
     }
-    if (this._tag) {
+    if (this._tag?.internalValue) {
       hasAnyValues = true;
       internalValueResult.tag = this._tag?.internalValue;
     }
@@ -1009,11 +1058,13 @@ export class S3BucketReplicationConfigurationRuleFilterOutputReference extends c
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleFilter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._prefix = undefined;
       this._and.internalValue = undefined;
       this._tag.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._prefix = value.prefix;
       this._and.internalValue = value.and;
       this._tag.internalValue = value.tag;
@@ -1086,6 +1137,8 @@ export function s3BucketReplicationConfigurationRuleSourceSelectionCriteriaRepli
 }
 
 export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1096,7 +1149,7 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaM
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._status) {
       hasAnyValues = true;
@@ -1107,9 +1160,11 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaM
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._status = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._status = value.status;
     }
   }
@@ -1145,6 +1200,8 @@ export function s3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKm
 }
 
 export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1155,7 +1212,7 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEn
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._status) {
       hasAnyValues = true;
@@ -1166,9 +1223,11 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEn
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._status = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._status = value.status;
     }
   }
@@ -1213,6 +1272,8 @@ export function s3BucketReplicationConfigurationRuleSourceSelectionCriteriaToTer
 }
 
 export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1223,13 +1284,13 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputRe
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleSourceSelectionCriteria | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._replicaModifications) {
+    if (this._replicaModifications?.internalValue) {
       hasAnyValues = true;
       internalValueResult.replicaModifications = this._replicaModifications?.internalValue;
     }
-    if (this._sseKmsEncryptedObjects) {
+    if (this._sseKmsEncryptedObjects?.internalValue) {
       hasAnyValues = true;
       internalValueResult.sseKmsEncryptedObjects = this._sseKmsEncryptedObjects?.internalValue;
     }
@@ -1238,10 +1299,12 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputRe
 
   public set internalValue(value: S3BucketReplicationConfigurationRuleSourceSelectionCriteria | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._replicaModifications.internalValue = undefined;
       this._sseKmsEncryptedObjects.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._replicaModifications.internalValue = value.replicaModifications;
       this._sseKmsEncryptedObjects.internalValue = value.sseKmsEncryptedObjects;
     }

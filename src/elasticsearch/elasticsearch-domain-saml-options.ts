@@ -41,6 +41,8 @@ export function elasticsearchDomainSamlOptionsSamlOptionsIdpToTerraform(struct?:
 }
 
 export class ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -51,7 +53,7 @@ export class ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference extends
   }
 
   public get internalValue(): ElasticsearchDomainSamlOptionsSamlOptionsIdp | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._entityId) {
       hasAnyValues = true;
@@ -66,10 +68,12 @@ export class ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference extends
 
   public set internalValue(value: ElasticsearchDomainSamlOptionsSamlOptionsIdp | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._entityId = undefined;
       this._metadataContent = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._entityId = value.entityId;
       this._metadataContent = value.metadataContent;
     }
@@ -151,6 +155,8 @@ export function elasticsearchDomainSamlOptionsSamlOptionsToTerraform(struct?: El
 }
 
 export class ElasticsearchDomainSamlOptionsSamlOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -161,7 +167,7 @@ export class ElasticsearchDomainSamlOptionsSamlOptionsOutputReference extends cd
   }
 
   public get internalValue(): ElasticsearchDomainSamlOptionsSamlOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -187,7 +193,7 @@ export class ElasticsearchDomainSamlOptionsSamlOptionsOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.subjectKey = this._subjectKey;
     }
-    if (this._idp) {
+    if (this._idp?.internalValue) {
       hasAnyValues = true;
       internalValueResult.idp = this._idp?.internalValue;
     }
@@ -196,6 +202,7 @@ export class ElasticsearchDomainSamlOptionsSamlOptionsOutputReference extends cd
 
   public set internalValue(value: ElasticsearchDomainSamlOptionsSamlOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._masterBackendRole = undefined;
       this._masterUserName = undefined;
@@ -205,6 +212,7 @@ export class ElasticsearchDomainSamlOptionsSamlOptionsOutputReference extends cd
       this._idp.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._masterBackendRole = value.masterBackendRole;
       this._masterUserName = value.masterUserName;

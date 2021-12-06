@@ -87,6 +87,8 @@ export function cloudformationStackSetAutoDeploymentToTerraform(struct?: Cloudfo
 }
 
 export class CloudformationStackSetAutoDeploymentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -97,7 +99,7 @@ export class CloudformationStackSetAutoDeploymentOutputReference extends cdktf.C
   }
 
   public get internalValue(): CloudformationStackSetAutoDeployment | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -112,10 +114,12 @@ export class CloudformationStackSetAutoDeploymentOutputReference extends cdktf.C
 
   public set internalValue(value: CloudformationStackSetAutoDeployment | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._retainStacksOnAccountRemoval = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._retainStacksOnAccountRemoval = value.retainStacksOnAccountRemoval;
     }
@@ -171,6 +175,8 @@ export function cloudformationStackSetTimeoutsToTerraform(struct?: Cloudformatio
 }
 
 export class CloudformationStackSetTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -181,7 +187,7 @@ export class CloudformationStackSetTimeoutsOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): CloudformationStackSetTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._update) {
       hasAnyValues = true;
@@ -192,9 +198,11 @@ export class CloudformationStackSetTimeoutsOutputReference extends cdktf.Complex
 
   public set internalValue(value: CloudformationStackSetTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._update = value.update;
     }
   }

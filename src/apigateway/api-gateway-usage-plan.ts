@@ -130,6 +130,8 @@ export function apiGatewayUsagePlanQuotaSettingsToTerraform(struct?: ApiGatewayU
 }
 
 export class ApiGatewayUsagePlanQuotaSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -140,7 +142,7 @@ export class ApiGatewayUsagePlanQuotaSettingsOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): ApiGatewayUsagePlanQuotaSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._limit) {
       hasAnyValues = true;
@@ -159,11 +161,13 @@ export class ApiGatewayUsagePlanQuotaSettingsOutputReference extends cdktf.Compl
 
   public set internalValue(value: ApiGatewayUsagePlanQuotaSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._limit = undefined;
       this._offset = undefined;
       this._period = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._limit = value.limit;
       this._offset = value.offset;
       this._period = value.period;
@@ -235,6 +239,8 @@ export function apiGatewayUsagePlanThrottleSettingsToTerraform(struct?: ApiGatew
 }
 
 export class ApiGatewayUsagePlanThrottleSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -245,7 +251,7 @@ export class ApiGatewayUsagePlanThrottleSettingsOutputReference extends cdktf.Co
   }
 
   public get internalValue(): ApiGatewayUsagePlanThrottleSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._burstLimit) {
       hasAnyValues = true;
@@ -260,10 +266,12 @@ export class ApiGatewayUsagePlanThrottleSettingsOutputReference extends cdktf.Co
 
   public set internalValue(value: ApiGatewayUsagePlanThrottleSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._burstLimit = undefined;
       this._rateLimit = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._burstLimit = value.burstLimit;
       this._rateLimit = value.rateLimit;
     }

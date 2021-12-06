@@ -384,6 +384,8 @@ export function spotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationT
 }
 
 export class SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -394,7 +396,7 @@ export class SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutp
   }
 
   public get internalValue(): SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._id) {
       hasAnyValues = true;
@@ -413,11 +415,13 @@ export class SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutp
 
   public set internalValue(value: SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._id = undefined;
       this._name = undefined;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._id = value.id;
       this._name = value.name;
       this._version = value.version;
@@ -558,6 +562,8 @@ export function spotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceToTerr
 }
 
 export class SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -568,7 +574,7 @@ export class SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputRef
   }
 
   public get internalValue(): SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalance | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._replacementStrategy) {
       hasAnyValues = true;
@@ -579,9 +585,11 @@ export class SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputRef
 
   public set internalValue(value: SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalance | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._replacementStrategy = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._replacementStrategy = value.replacementStrategy;
     }
   }
@@ -622,6 +630,8 @@ export function spotFleetRequestSpotMaintenanceStrategiesToTerraform(struct?: Sp
 }
 
 export class SpotFleetRequestSpotMaintenanceStrategiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -632,9 +642,9 @@ export class SpotFleetRequestSpotMaintenanceStrategiesOutputReference extends cd
   }
 
   public get internalValue(): SpotFleetRequestSpotMaintenanceStrategies | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._capacityRebalance) {
+    if (this._capacityRebalance?.internalValue) {
       hasAnyValues = true;
       internalValueResult.capacityRebalance = this._capacityRebalance?.internalValue;
     }
@@ -643,9 +653,11 @@ export class SpotFleetRequestSpotMaintenanceStrategiesOutputReference extends cd
 
   public set internalValue(value: SpotFleetRequestSpotMaintenanceStrategies | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._capacityRebalance.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._capacityRebalance.internalValue = value.capacityRebalance;
     }
   }
@@ -689,6 +701,8 @@ export function spotFleetRequestTimeoutsToTerraform(struct?: SpotFleetRequestTim
 }
 
 export class SpotFleetRequestTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -699,7 +713,7 @@ export class SpotFleetRequestTimeoutsOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): SpotFleetRequestTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -714,10 +728,12 @@ export class SpotFleetRequestTimeoutsOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: SpotFleetRequestTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
     }

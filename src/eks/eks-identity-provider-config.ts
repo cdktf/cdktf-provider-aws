@@ -85,6 +85,8 @@ export function eksIdentityProviderConfigOidcToTerraform(struct?: EksIdentityPro
 }
 
 export class EksIdentityProviderConfigOidcOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -95,7 +97,7 @@ export class EksIdentityProviderConfigOidcOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): EksIdentityProviderConfigOidc | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._clientId) {
       hasAnyValues = true;
@@ -134,6 +136,7 @@ export class EksIdentityProviderConfigOidcOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: EksIdentityProviderConfigOidc | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clientId = undefined;
       this._groupsClaim = undefined;
       this._groupsPrefix = undefined;
@@ -144,6 +147,7 @@ export class EksIdentityProviderConfigOidcOutputReference extends cdktf.ComplexO
       this._usernamePrefix = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clientId = value.clientId;
       this._groupsClaim = value.groupsClaim;
       this._groupsPrefix = value.groupsPrefix;
@@ -298,6 +302,8 @@ export function eksIdentityProviderConfigTimeoutsToTerraform(struct?: EksIdentit
 }
 
 export class EksIdentityProviderConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -308,7 +314,7 @@ export class EksIdentityProviderConfigTimeoutsOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): EksIdentityProviderConfigTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -323,10 +329,12 @@ export class EksIdentityProviderConfigTimeoutsOutputReference extends cdktf.Comp
 
   public set internalValue(value: EksIdentityProviderConfigTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
     }

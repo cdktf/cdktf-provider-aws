@@ -59,6 +59,8 @@ export function codepipelineArtifactStoreEncryptionKeyToTerraform(struct?: Codep
 }
 
 export class CodepipelineArtifactStoreEncryptionKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -69,7 +71,7 @@ export class CodepipelineArtifactStoreEncryptionKeyOutputReference extends cdktf
   }
 
   public get internalValue(): CodepipelineArtifactStoreEncryptionKey | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._id) {
       hasAnyValues = true;
@@ -84,10 +86,12 @@ export class CodepipelineArtifactStoreEncryptionKeyOutputReference extends cdktf
 
   public set internalValue(value: CodepipelineArtifactStoreEncryptionKey | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._id = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._id = value.id;
       this._type = value.type;
     }

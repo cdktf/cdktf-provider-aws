@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface LbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group.html#connection_termination LbTargetGroup#connection_termination}
+  */
+  readonly connectionTermination?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group.html#deregistration_delay LbTargetGroup#deregistration_delay}
   */
   readonly deregistrationDelay?: string;
@@ -138,6 +142,8 @@ export function lbTargetGroupHealthCheckToTerraform(struct?: LbTargetGroupHealth
 }
 
 export class LbTargetGroupHealthCheckOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -148,7 +154,7 @@ export class LbTargetGroupHealthCheckOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): LbTargetGroupHealthCheck | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -191,6 +197,7 @@ export class LbTargetGroupHealthCheckOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: LbTargetGroupHealthCheck | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._healthyThreshold = undefined;
       this._interval = undefined;
@@ -202,6 +209,7 @@ export class LbTargetGroupHealthCheckOutputReference extends cdktf.ComplexObject
       this._unhealthyThreshold = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._healthyThreshold = value.healthyThreshold;
       this._interval = value.interval;
@@ -391,6 +399,8 @@ export function lbTargetGroupStickinessToTerraform(struct?: LbTargetGroupStickin
 }
 
 export class LbTargetGroupStickinessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -401,7 +411,7 @@ export class LbTargetGroupStickinessOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): LbTargetGroupStickiness | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cookieDuration) {
       hasAnyValues = true;
@@ -424,12 +434,14 @@ export class LbTargetGroupStickinessOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: LbTargetGroupStickiness | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cookieDuration = undefined;
       this._cookieName = undefined;
       this._enabled = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cookieDuration = value.cookieDuration;
       this._cookieName = value.cookieName;
       this._enabled = value.enabled;
@@ -531,6 +543,7 @@ export class LbTargetGroup extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._connectionTermination = config.connectionTermination;
     this._deregistrationDelay = config.deregistrationDelay;
     this._lambdaMultiValueHeadersEnabled = config.lambdaMultiValueHeadersEnabled;
     this._loadBalancingAlgorithmType = config.loadBalancingAlgorithmType;
@@ -562,6 +575,22 @@ export class LbTargetGroup extends cdktf.TerraformResource {
   // arn_suffix - computed: true, optional: false, required: false
   public get arnSuffix() {
     return this.getStringAttribute('arn_suffix');
+  }
+
+  // connection_termination - computed: false, optional: true, required: false
+  private _connectionTermination?: boolean | cdktf.IResolvable; 
+  public get connectionTermination() {
+    return this.getBooleanAttribute('connection_termination') as any;
+  }
+  public set connectionTermination(value: boolean | cdktf.IResolvable) {
+    this._connectionTermination = value;
+  }
+  public resetConnectionTermination() {
+    this._connectionTermination = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionTerminationInput() {
+    return this._connectionTermination;
   }
 
   // deregistration_delay - computed: false, optional: true, required: false
@@ -849,6 +878,7 @@ export class LbTargetGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      connection_termination: cdktf.booleanToTerraform(this._connectionTermination),
       deregistration_delay: cdktf.stringToTerraform(this._deregistrationDelay),
       lambda_multi_value_headers_enabled: cdktf.booleanToTerraform(this._lambdaMultiValueHeadersEnabled),
       load_balancing_algorithm_type: cdktf.stringToTerraform(this._loadBalancingAlgorithmType),

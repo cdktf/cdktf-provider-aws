@@ -54,6 +54,8 @@ export function sagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigT
 }
 
 export class SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -64,7 +66,7 @@ export class SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutp
   }
 
   public get internalValue(): SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._defaultGid) {
       hasAnyValues = true;
@@ -83,11 +85,13 @@ export class SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutp
 
   public set internalValue(value: SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._defaultGid = undefined;
       this._defaultUid = undefined;
       this._mountPath = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._defaultGid = value.defaultGid;
       this._defaultUid = value.defaultUid;
       this._mountPath = value.mountPath;
@@ -165,6 +169,8 @@ export function sagemakerAppImageConfigKernelGatewayImageConfigKernelSpecToTerra
 }
 
 export class SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -175,7 +181,7 @@ export class SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputRefe
   }
 
   public get internalValue(): SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._displayName) {
       hasAnyValues = true;
@@ -190,10 +196,12 @@ export class SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputRefe
 
   public set internalValue(value: SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._displayName = undefined;
       this._name = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._displayName = value.displayName;
       this._name = value.name;
     }
@@ -255,6 +263,8 @@ export function sagemakerAppImageConfigKernelGatewayImageConfigToTerraform(struc
 }
 
 export class SagemakerAppImageConfigKernelGatewayImageConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -265,13 +275,13 @@ export class SagemakerAppImageConfigKernelGatewayImageConfigOutputReference exte
   }
 
   public get internalValue(): SagemakerAppImageConfigKernelGatewayImageConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fileSystemConfig) {
+    if (this._fileSystemConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.fileSystemConfig = this._fileSystemConfig?.internalValue;
     }
-    if (this._kernelSpec) {
+    if (this._kernelSpec?.internalValue) {
       hasAnyValues = true;
       internalValueResult.kernelSpec = this._kernelSpec?.internalValue;
     }
@@ -280,10 +290,12 @@ export class SagemakerAppImageConfigKernelGatewayImageConfigOutputReference exte
 
   public set internalValue(value: SagemakerAppImageConfigKernelGatewayImageConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fileSystemConfig.internalValue = undefined;
       this._kernelSpec.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fileSystemConfig.internalValue = value.fileSystemConfig;
       this._kernelSpec.internalValue = value.kernelSpec;
     }

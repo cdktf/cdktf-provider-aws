@@ -73,6 +73,8 @@ export function budgetsBudgetActionActionThresholdToTerraform(struct?: BudgetsBu
 }
 
 export class BudgetsBudgetActionActionThresholdOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -83,7 +85,7 @@ export class BudgetsBudgetActionActionThresholdOutputReference extends cdktf.Com
   }
 
   public get internalValue(): BudgetsBudgetActionActionThreshold | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._actionThresholdType) {
       hasAnyValues = true;
@@ -98,10 +100,12 @@ export class BudgetsBudgetActionActionThresholdOutputReference extends cdktf.Com
 
   public set internalValue(value: BudgetsBudgetActionActionThreshold | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._actionThresholdType = undefined;
       this._actionThresholdValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._actionThresholdType = value.actionThresholdType;
       this._actionThresholdValue = value.actionThresholdValue;
     }
@@ -166,6 +170,8 @@ export function budgetsBudgetActionDefinitionIamActionDefinitionToTerraform(stru
 }
 
 export class BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -176,7 +182,7 @@ export class BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference ext
   }
 
   public get internalValue(): BudgetsBudgetActionDefinitionIamActionDefinition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._groups) {
       hasAnyValues = true;
@@ -199,12 +205,14 @@ export class BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference ext
 
   public set internalValue(value: BudgetsBudgetActionDefinitionIamActionDefinition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._groups = undefined;
       this._policyArn = undefined;
       this._roles = undefined;
       this._users = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._groups = value.groups;
       this._policyArn = value.policyArn;
       this._roles = value.roles;
@@ -296,6 +304,8 @@ export function budgetsBudgetActionDefinitionScpActionDefinitionToTerraform(stru
 }
 
 export class BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -306,7 +316,7 @@ export class BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference ext
   }
 
   public get internalValue(): BudgetsBudgetActionDefinitionScpActionDefinition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._policyId) {
       hasAnyValues = true;
@@ -321,10 +331,12 @@ export class BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference ext
 
   public set internalValue(value: BudgetsBudgetActionDefinitionScpActionDefinition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._policyId = undefined;
       this._targetIds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._policyId = value.policyId;
       this._targetIds = value.targetIds;
     }
@@ -384,6 +396,8 @@ export function budgetsBudgetActionDefinitionSsmActionDefinitionToTerraform(stru
 }
 
 export class BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -394,7 +408,7 @@ export class BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference ext
   }
 
   public get internalValue(): BudgetsBudgetActionDefinitionSsmActionDefinition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._actionSubType) {
       hasAnyValues = true;
@@ -413,11 +427,13 @@ export class BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference ext
 
   public set internalValue(value: BudgetsBudgetActionDefinitionSsmActionDefinition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._actionSubType = undefined;
       this._instanceIds = undefined;
       this._region = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._actionSubType = value.actionSubType;
       this._instanceIds = value.instanceIds;
       this._region = value.region;
@@ -497,6 +513,8 @@ export function budgetsBudgetActionDefinitionToTerraform(struct?: BudgetsBudgetA
 }
 
 export class BudgetsBudgetActionDefinitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -507,17 +525,17 @@ export class BudgetsBudgetActionDefinitionOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): BudgetsBudgetActionDefinition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._iamActionDefinition) {
+    if (this._iamActionDefinition?.internalValue) {
       hasAnyValues = true;
       internalValueResult.iamActionDefinition = this._iamActionDefinition?.internalValue;
     }
-    if (this._scpActionDefinition) {
+    if (this._scpActionDefinition?.internalValue) {
       hasAnyValues = true;
       internalValueResult.scpActionDefinition = this._scpActionDefinition?.internalValue;
     }
-    if (this._ssmActionDefinition) {
+    if (this._ssmActionDefinition?.internalValue) {
       hasAnyValues = true;
       internalValueResult.ssmActionDefinition = this._ssmActionDefinition?.internalValue;
     }
@@ -526,11 +544,13 @@ export class BudgetsBudgetActionDefinitionOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: BudgetsBudgetActionDefinition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._iamActionDefinition.internalValue = undefined;
       this._scpActionDefinition.internalValue = undefined;
       this._ssmActionDefinition.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._iamActionDefinition.internalValue = value.iamActionDefinition;
       this._scpActionDefinition.internalValue = value.scpActionDefinition;
       this._ssmActionDefinition.internalValue = value.ssmActionDefinition;

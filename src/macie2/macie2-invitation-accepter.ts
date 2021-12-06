@@ -36,6 +36,8 @@ export function macie2InvitationAccepterTimeoutsToTerraform(struct?: Macie2Invit
 }
 
 export class Macie2InvitationAccepterTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -46,7 +48,7 @@ export class Macie2InvitationAccepterTimeoutsOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): Macie2InvitationAccepterTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -57,9 +59,11 @@ export class Macie2InvitationAccepterTimeoutsOutputReference extends cdktf.Compl
 
   public set internalValue(value: Macie2InvitationAccepterTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
     }
   }

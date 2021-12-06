@@ -40,6 +40,8 @@ export function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFiel
 }
 
 export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -50,7 +52,7 @@ export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPa
   }
 
   public get internalValue(): CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatterns | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -61,9 +63,11 @@ export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPa
 
   public set internalValue(value: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatterns | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }
@@ -133,6 +137,8 @@ export function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesToTerrafo
 }
 
 export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -143,7 +149,7 @@ export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputRefere
   }
 
   public get internalValue(): CloudfrontFieldLevelEncryptionProfileEncryptionEntities | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -154,9 +160,11 @@ export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputRefere
 
   public set internalValue(value: CloudfrontFieldLevelEncryptionProfileEncryptionEntities | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }

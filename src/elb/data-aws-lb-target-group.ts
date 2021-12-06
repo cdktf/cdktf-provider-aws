@@ -136,6 +136,11 @@ export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
     return this.getStringAttribute('arn_suffix');
   }
 
+  // connection_termination - computed: true, optional: false, required: false
+  public get connectionTermination() {
+    return this.getBooleanAttribute('connection_termination') as any;
+  }
+
   // deregistration_delay - computed: true, optional: false, required: false
   public get deregistrationDelay() {
     return this.getNumberAttribute('deregistration_delay');

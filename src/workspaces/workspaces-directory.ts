@@ -84,6 +84,8 @@ export function workspacesDirectorySelfServicePermissionsToTerraform(struct?: Wo
 }
 
 export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -94,7 +96,7 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
   }
 
   public get internalValue(): WorkspacesDirectorySelfServicePermissions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._changeComputeType) {
       hasAnyValues = true;
@@ -121,6 +123,7 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
 
   public set internalValue(value: WorkspacesDirectorySelfServicePermissions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._changeComputeType = undefined;
       this._increaseVolumeSize = undefined;
       this._rebuildWorkspace = undefined;
@@ -128,6 +131,7 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
       this._switchRunningMode = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._changeComputeType = value.changeComputeType;
       this._increaseVolumeSize = value.increaseVolumeSize;
       this._rebuildWorkspace = value.rebuildWorkspace;
@@ -269,6 +273,8 @@ export function workspacesDirectoryWorkspaceAccessPropertiesToTerraform(struct?:
 }
 
 export class WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -279,7 +285,7 @@ export class WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference extends
   }
 
   public get internalValue(): WorkspacesDirectoryWorkspaceAccessProperties | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._deviceTypeAndroid) {
       hasAnyValues = true;
@@ -318,6 +324,7 @@ export class WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference extends
 
   public set internalValue(value: WorkspacesDirectoryWorkspaceAccessProperties | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._deviceTypeAndroid = undefined;
       this._deviceTypeChromeos = undefined;
       this._deviceTypeIos = undefined;
@@ -328,6 +335,7 @@ export class WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference extends
       this._deviceTypeZeroclient = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._deviceTypeAndroid = value.deviceTypeAndroid;
       this._deviceTypeChromeos = value.deviceTypeChromeos;
       this._deviceTypeIos = value.deviceTypeIos;
@@ -505,6 +513,8 @@ export function workspacesDirectoryWorkspaceCreationPropertiesToTerraform(struct
 }
 
 export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -515,7 +525,7 @@ export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference exten
   }
 
   public get internalValue(): WorkspacesDirectoryWorkspaceCreationProperties | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._customSecurityGroupId) {
       hasAnyValues = true;
@@ -542,6 +552,7 @@ export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference exten
 
   public set internalValue(value: WorkspacesDirectoryWorkspaceCreationProperties | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._customSecurityGroupId = undefined;
       this._defaultOu = undefined;
       this._enableInternetAccess = undefined;
@@ -549,6 +560,7 @@ export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference exten
       this._userEnabledAsLocalAdministrator = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._customSecurityGroupId = value.customSecurityGroupId;
       this._defaultOu = value.defaultOu;
       this._enableInternetAccess = value.enableInternetAccess;

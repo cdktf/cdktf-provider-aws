@@ -63,6 +63,8 @@ export function elasticBeanstalkApplicationAppversionLifecycleToTerraform(struct
 }
 
 export class ElasticBeanstalkApplicationAppversionLifecycleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -73,7 +75,7 @@ export class ElasticBeanstalkApplicationAppversionLifecycleOutputReference exten
   }
 
   public get internalValue(): ElasticBeanstalkApplicationAppversionLifecycle | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._deleteSourceFromS3) {
       hasAnyValues = true;
@@ -96,12 +98,14 @@ export class ElasticBeanstalkApplicationAppversionLifecycleOutputReference exten
 
   public set internalValue(value: ElasticBeanstalkApplicationAppversionLifecycle | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._deleteSourceFromS3 = undefined;
       this._maxAgeInDays = undefined;
       this._maxCount = undefined;
       this._serviceRole = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._deleteSourceFromS3 = value.deleteSourceFromS3;
       this._maxAgeInDays = value.maxAgeInDays;
       this._maxCount = value.maxCount;

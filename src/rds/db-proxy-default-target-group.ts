@@ -62,6 +62,8 @@ export function dbProxyDefaultTargetGroupConnectionPoolConfigToTerraform(struct?
 }
 
 export class DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -72,7 +74,7 @@ export class DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference extend
   }
 
   public get internalValue(): DbProxyDefaultTargetGroupConnectionPoolConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._connectionBorrowTimeout) {
       hasAnyValues = true;
@@ -99,6 +101,7 @@ export class DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference extend
 
   public set internalValue(value: DbProxyDefaultTargetGroupConnectionPoolConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._connectionBorrowTimeout = undefined;
       this._initQuery = undefined;
       this._maxConnectionsPercent = undefined;
@@ -106,6 +109,7 @@ export class DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference extend
       this._sessionPinningFilters = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._connectionBorrowTimeout = value.connectionBorrowTimeout;
       this._initQuery = value.initQuery;
       this._maxConnectionsPercent = value.maxConnectionsPercent;
@@ -217,6 +221,8 @@ export function dbProxyDefaultTargetGroupTimeoutsToTerraform(struct?: DbProxyDef
 }
 
 export class DbProxyDefaultTargetGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -227,7 +233,7 @@ export class DbProxyDefaultTargetGroupTimeoutsOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): DbProxyDefaultTargetGroupTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -242,10 +248,12 @@ export class DbProxyDefaultTargetGroupTimeoutsOutputReference extends cdktf.Comp
 
   public set internalValue(value: DbProxyDefaultTargetGroupTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._update = value.update;
     }

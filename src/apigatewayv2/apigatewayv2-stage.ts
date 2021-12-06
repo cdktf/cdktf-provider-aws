@@ -85,6 +85,8 @@ export function apigatewayv2StageAccessLogSettingsToTerraform(struct?: Apigatewa
 }
 
 export class Apigatewayv2StageAccessLogSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -95,7 +97,7 @@ export class Apigatewayv2StageAccessLogSettingsOutputReference extends cdktf.Com
   }
 
   public get internalValue(): Apigatewayv2StageAccessLogSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._destinationArn) {
       hasAnyValues = true;
@@ -110,10 +112,12 @@ export class Apigatewayv2StageAccessLogSettingsOutputReference extends cdktf.Com
 
   public set internalValue(value: Apigatewayv2StageAccessLogSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._destinationArn = undefined;
       this._format = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._destinationArn = value.destinationArn;
       this._format = value.format;
     }
@@ -183,6 +187,8 @@ export function apigatewayv2StageDefaultRouteSettingsToTerraform(struct?: Apigat
 }
 
 export class Apigatewayv2StageDefaultRouteSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -193,7 +199,7 @@ export class Apigatewayv2StageDefaultRouteSettingsOutputReference extends cdktf.
   }
 
   public get internalValue(): Apigatewayv2StageDefaultRouteSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dataTraceEnabled) {
       hasAnyValues = true;
@@ -220,6 +226,7 @@ export class Apigatewayv2StageDefaultRouteSettingsOutputReference extends cdktf.
 
   public set internalValue(value: Apigatewayv2StageDefaultRouteSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dataTraceEnabled = undefined;
       this._detailedMetricsEnabled = undefined;
       this._loggingLevel = undefined;
@@ -227,6 +234,7 @@ export class Apigatewayv2StageDefaultRouteSettingsOutputReference extends cdktf.
       this._throttlingRateLimit = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dataTraceEnabled = value.dataTraceEnabled;
       this._detailedMetricsEnabled = value.detailedMetricsEnabled;
       this._loggingLevel = value.loggingLevel;

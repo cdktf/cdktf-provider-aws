@@ -212,6 +212,8 @@ export function emrInstanceFleetLaunchSpecificationsToTerraform(struct?: EmrInst
 }
 
 export class EmrInstanceFleetLaunchSpecificationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -222,7 +224,7 @@ export class EmrInstanceFleetLaunchSpecificationsOutputReference extends cdktf.C
   }
 
   public get internalValue(): EmrInstanceFleetLaunchSpecifications | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._onDemandSpecification) {
       hasAnyValues = true;
@@ -237,10 +239,12 @@ export class EmrInstanceFleetLaunchSpecificationsOutputReference extends cdktf.C
 
   public set internalValue(value: EmrInstanceFleetLaunchSpecifications | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._onDemandSpecification = undefined;
       this._spotSpecification = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._onDemandSpecification = value.onDemandSpecification;
       this._spotSpecification = value.spotSpecification;
     }

@@ -58,6 +58,8 @@ export function gameliftAliasRoutingStrategyToTerraform(struct?: GameliftAliasRo
 }
 
 export class GameliftAliasRoutingStrategyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -68,7 +70,7 @@ export class GameliftAliasRoutingStrategyOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): GameliftAliasRoutingStrategy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fleetId) {
       hasAnyValues = true;
@@ -87,11 +89,13 @@ export class GameliftAliasRoutingStrategyOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: GameliftAliasRoutingStrategy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fleetId = undefined;
       this._message = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fleetId = value.fleetId;
       this._message = value.message;
       this._type = value.type;

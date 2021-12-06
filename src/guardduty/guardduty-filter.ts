@@ -109,6 +109,8 @@ export function guarddutyFilterFindingCriteriaToTerraform(struct?: GuarddutyFilt
 }
 
 export class GuarddutyFilterFindingCriteriaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -119,7 +121,7 @@ export class GuarddutyFilterFindingCriteriaOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): GuarddutyFilterFindingCriteria | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._criterion) {
       hasAnyValues = true;
@@ -130,9 +132,11 @@ export class GuarddutyFilterFindingCriteriaOutputReference extends cdktf.Complex
 
   public set internalValue(value: GuarddutyFilterFindingCriteria | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._criterion = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._criterion = value.criterion;
     }
   }

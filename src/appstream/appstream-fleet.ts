@@ -104,6 +104,8 @@ export function appstreamFleetComputeCapacityToTerraform(struct?: AppstreamFleet
 }
 
 export class AppstreamFleetComputeCapacityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -114,7 +116,7 @@ export class AppstreamFleetComputeCapacityOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): AppstreamFleetComputeCapacity | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._desiredInstances) {
       hasAnyValues = true;
@@ -125,9 +127,11 @@ export class AppstreamFleetComputeCapacityOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: AppstreamFleetComputeCapacity | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._desiredInstances = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._desiredInstances = value.desiredInstances;
     }
   }
@@ -168,6 +172,8 @@ export function appstreamFleetDomainJoinInfoToTerraform(struct?: AppstreamFleetD
 }
 
 export class AppstreamFleetDomainJoinInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -178,7 +184,7 @@ export class AppstreamFleetDomainJoinInfoOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): AppstreamFleetDomainJoinInfo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._directoryName) {
       hasAnyValues = true;
@@ -193,10 +199,12 @@ export class AppstreamFleetDomainJoinInfoOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: AppstreamFleetDomainJoinInfo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._directoryName = undefined;
       this._organizationalUnitDistinguishedName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._directoryName = value.directoryName;
       this._organizationalUnitDistinguishedName = value.organizationalUnitDistinguishedName;
     }
@@ -257,6 +265,8 @@ export function appstreamFleetVpcConfigToTerraform(struct?: AppstreamFleetVpcCon
 }
 
 export class AppstreamFleetVpcConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -267,7 +277,7 @@ export class AppstreamFleetVpcConfigOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): AppstreamFleetVpcConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._securityGroupIds) {
       hasAnyValues = true;
@@ -282,10 +292,12 @@ export class AppstreamFleetVpcConfigOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: AppstreamFleetVpcConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._securityGroupIds = undefined;
       this._subnetIds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._securityGroupIds = value.securityGroupIds;
       this._subnetIds = value.subnetIds;
     }

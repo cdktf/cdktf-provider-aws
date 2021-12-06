@@ -62,6 +62,8 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleToTerraform(str
 }
 
 export class DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -72,7 +74,7 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference ex
   }
 
   public get internalValue(): DlmLifecyclePolicyPolicyDetailsScheduleCreateRule | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._interval) {
       hasAnyValues = true;
@@ -91,11 +93,13 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference ex
 
   public set internalValue(value: DlmLifecyclePolicyPolicyDetailsScheduleCreateRule | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._interval = undefined;
       this._intervalUnit = undefined;
       this._times = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._interval = value.interval;
       this._intervalUnit = value.intervalUnit;
       this._times = value.times;
@@ -170,6 +174,8 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprec
 }
 
 export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -180,7 +186,7 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecate
   }
 
   public get internalValue(): DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._interval) {
       hasAnyValues = true;
@@ -195,10 +201,12 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecate
 
   public set internalValue(value: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._interval = undefined;
       this._intervalUnit = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._interval = value.interval;
       this._intervalUnit = value.intervalUnit;
     }
@@ -253,6 +261,8 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetain
 }
 
 export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -263,7 +273,7 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRul
   }
 
   public get internalValue(): DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._interval) {
       hasAnyValues = true;
@@ -278,10 +288,12 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRul
 
   public set internalValue(value: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._interval = undefined;
       this._intervalUnit = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._interval = value.interval;
       this._intervalUnit = value.intervalUnit;
     }
@@ -377,6 +389,8 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleRetainRuleToTerraform(str
 }
 
 export class DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -387,7 +401,7 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference ex
   }
 
   public get internalValue(): DlmLifecyclePolicyPolicyDetailsScheduleRetainRule | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._count) {
       hasAnyValues = true;
@@ -398,9 +412,11 @@ export class DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference ex
 
   public set internalValue(value: DlmLifecyclePolicyPolicyDetailsScheduleRetainRule | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._count = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._count = value.count;
     }
   }
@@ -496,6 +512,8 @@ export function dlmLifecyclePolicyPolicyDetailsToTerraform(struct?: DlmLifecycle
 }
 
 export class DlmLifecyclePolicyPolicyDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -506,7 +524,7 @@ export class DlmLifecyclePolicyPolicyDetailsOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): DlmLifecyclePolicyPolicyDetails | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._resourceTypes) {
       hasAnyValues = true;
@@ -525,11 +543,13 @@ export class DlmLifecyclePolicyPolicyDetailsOutputReference extends cdktf.Comple
 
   public set internalValue(value: DlmLifecyclePolicyPolicyDetails | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._resourceTypes = undefined;
       this._targetTags = undefined;
       this._schedule = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._resourceTypes = value.resourceTypes;
       this._targetTags = value.targetTags;
       this._schedule = value.schedule;

@@ -36,6 +36,8 @@ export function cloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMe
 }
 
 export class CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -46,7 +48,7 @@ export class CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetri
   }
 
   public get internalValue(): CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._realtimeMetricsSubscriptionStatus) {
       hasAnyValues = true;
@@ -57,9 +59,11 @@ export class CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetri
 
   public set internalValue(value: CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._realtimeMetricsSubscriptionStatus = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._realtimeMetricsSubscriptionStatus = value.realtimeMetricsSubscriptionStatus;
     }
   }
@@ -97,6 +101,8 @@ export function cloudfrontMonitoringSubscriptionMonitoringSubscriptionToTerrafor
 }
 
 export class CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -107,9 +113,9 @@ export class CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReferen
   }
 
   public get internalValue(): CloudfrontMonitoringSubscriptionMonitoringSubscription | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._realtimeMetricsSubscriptionConfig) {
+    if (this._realtimeMetricsSubscriptionConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.realtimeMetricsSubscriptionConfig = this._realtimeMetricsSubscriptionConfig?.internalValue;
     }
@@ -118,9 +124,11 @@ export class CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReferen
 
   public set internalValue(value: CloudfrontMonitoringSubscriptionMonitoringSubscription | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._realtimeMetricsSubscriptionConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._realtimeMetricsSubscriptionConfig.internalValue = value.realtimeMetricsSubscriptionConfig;
     }
   }

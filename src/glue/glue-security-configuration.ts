@@ -41,6 +41,8 @@ export function glueSecurityConfigurationEncryptionConfigurationCloudwatchEncryp
 }
 
 export class GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -51,7 +53,7 @@ export class GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptio
   }
 
   public get internalValue(): GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cloudwatchEncryptionMode) {
       hasAnyValues = true;
@@ -66,10 +68,12 @@ export class GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptio
 
   public set internalValue(value: GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cloudwatchEncryptionMode = undefined;
       this._kmsKeyArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cloudwatchEncryptionMode = value.cloudwatchEncryptionMode;
       this._kmsKeyArn = value.kmsKeyArn;
     }
@@ -130,6 +134,8 @@ export function glueSecurityConfigurationEncryptionConfigurationJobBookmarksEncr
 }
 
 export class GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -140,7 +146,7 @@ export class GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncrypt
   }
 
   public get internalValue(): GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._jobBookmarksEncryptionMode) {
       hasAnyValues = true;
@@ -155,10 +161,12 @@ export class GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncrypt
 
   public set internalValue(value: GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._jobBookmarksEncryptionMode = undefined;
       this._kmsKeyArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._jobBookmarksEncryptionMode = value.jobBookmarksEncryptionMode;
       this._kmsKeyArn = value.kmsKeyArn;
     }
@@ -219,6 +227,8 @@ export function glueSecurityConfigurationEncryptionConfigurationS3EncryptionToTe
 }
 
 export class GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -229,7 +239,7 @@ export class GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputR
   }
 
   public get internalValue(): GlueSecurityConfigurationEncryptionConfigurationS3Encryption | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._kmsKeyArn) {
       hasAnyValues = true;
@@ -244,10 +254,12 @@ export class GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputR
 
   public set internalValue(value: GlueSecurityConfigurationEncryptionConfigurationS3Encryption | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._kmsKeyArn = undefined;
       this._s3EncryptionMode = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._kmsKeyArn = value.kmsKeyArn;
       this._s3EncryptionMode = value.s3EncryptionMode;
     }
@@ -319,6 +331,8 @@ export function glueSecurityConfigurationEncryptionConfigurationToTerraform(stru
 }
 
 export class GlueSecurityConfigurationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -329,17 +343,17 @@ export class GlueSecurityConfigurationEncryptionConfigurationOutputReference ext
   }
 
   public get internalValue(): GlueSecurityConfigurationEncryptionConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cloudwatchEncryption) {
+    if (this._cloudwatchEncryption?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cloudwatchEncryption = this._cloudwatchEncryption?.internalValue;
     }
-    if (this._jobBookmarksEncryption) {
+    if (this._jobBookmarksEncryption?.internalValue) {
       hasAnyValues = true;
       internalValueResult.jobBookmarksEncryption = this._jobBookmarksEncryption?.internalValue;
     }
-    if (this._s3Encryption) {
+    if (this._s3Encryption?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3Encryption = this._s3Encryption?.internalValue;
     }
@@ -348,11 +362,13 @@ export class GlueSecurityConfigurationEncryptionConfigurationOutputReference ext
 
   public set internalValue(value: GlueSecurityConfigurationEncryptionConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cloudwatchEncryption.internalValue = undefined;
       this._jobBookmarksEncryption.internalValue = undefined;
       this._s3Encryption.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cloudwatchEncryption.internalValue = value.cloudwatchEncryption;
       this._jobBookmarksEncryption.internalValue = value.jobBookmarksEncryption;
       this._s3Encryption.internalValue = value.s3Encryption;

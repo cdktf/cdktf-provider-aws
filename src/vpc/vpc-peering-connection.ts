@@ -82,6 +82,8 @@ export function vpcPeeringConnectionAccepterToTerraform(struct?: VpcPeeringConne
 }
 
 export class VpcPeeringConnectionAccepterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -92,7 +94,7 @@ export class VpcPeeringConnectionAccepterOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): VpcPeeringConnectionAccepter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allowClassicLinkToRemoteVpc) {
       hasAnyValues = true;
@@ -111,11 +113,13 @@ export class VpcPeeringConnectionAccepterOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: VpcPeeringConnectionAccepter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allowClassicLinkToRemoteVpc = undefined;
       this._allowRemoteVpcDnsResolution = undefined;
       this._allowVpcToRemoteClassicLink = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allowClassicLinkToRemoteVpc = value.allowClassicLinkToRemoteVpc;
       this._allowRemoteVpcDnsResolution = value.allowRemoteVpcDnsResolution;
       this._allowVpcToRemoteClassicLink = value.allowVpcToRemoteClassicLink;
@@ -198,6 +202,8 @@ export function vpcPeeringConnectionRequesterToTerraform(struct?: VpcPeeringConn
 }
 
 export class VpcPeeringConnectionRequesterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -208,7 +214,7 @@ export class VpcPeeringConnectionRequesterOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): VpcPeeringConnectionRequester | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allowClassicLinkToRemoteVpc) {
       hasAnyValues = true;
@@ -227,11 +233,13 @@ export class VpcPeeringConnectionRequesterOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: VpcPeeringConnectionRequester | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allowClassicLinkToRemoteVpc = undefined;
       this._allowRemoteVpcDnsResolution = undefined;
       this._allowVpcToRemoteClassicLink = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allowClassicLinkToRemoteVpc = value.allowClassicLinkToRemoteVpc;
       this._allowRemoteVpcDnsResolution = value.allowRemoteVpcDnsResolution;
       this._allowVpcToRemoteClassicLink = value.allowVpcToRemoteClassicLink;
@@ -314,6 +322,8 @@ export function vpcPeeringConnectionTimeoutsToTerraform(struct?: VpcPeeringConne
 }
 
 export class VpcPeeringConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -324,7 +334,7 @@ export class VpcPeeringConnectionTimeoutsOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): VpcPeeringConnectionTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -343,11 +353,13 @@ export class VpcPeeringConnectionTimeoutsOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: VpcPeeringConnectionTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;

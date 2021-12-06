@@ -64,6 +64,8 @@ export function servicecatalogServiceActionDefinitionToTerraform(struct?: Servic
 }
 
 export class ServicecatalogServiceActionDefinitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -74,7 +76,7 @@ export class ServicecatalogServiceActionDefinitionOutputReference extends cdktf.
   }
 
   public get internalValue(): ServicecatalogServiceActionDefinition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._assumeRole) {
       hasAnyValues = true;
@@ -101,6 +103,7 @@ export class ServicecatalogServiceActionDefinitionOutputReference extends cdktf.
 
   public set internalValue(value: ServicecatalogServiceActionDefinition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._assumeRole = undefined;
       this._name = undefined;
       this._parameters = undefined;
@@ -108,6 +111,7 @@ export class ServicecatalogServiceActionDefinitionOutputReference extends cdktf.
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._assumeRole = value.assumeRole;
       this._name = value.name;
       this._parameters = value.parameters;

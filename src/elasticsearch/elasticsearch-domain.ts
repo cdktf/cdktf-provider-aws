@@ -126,6 +126,8 @@ export function elasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsToTer
 }
 
 export class ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -136,7 +138,7 @@ export class ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputRe
   }
 
   public get internalValue(): ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._masterUserArn) {
       hasAnyValues = true;
@@ -155,11 +157,13 @@ export class ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputRe
 
   public set internalValue(value: ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._masterUserArn = undefined;
       this._masterUserName = undefined;
       this._masterUserPassword = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._masterUserArn = value.masterUserArn;
       this._masterUserName = value.masterUserName;
       this._masterUserPassword = value.masterUserPassword;
@@ -244,6 +248,8 @@ export function elasticsearchDomainAdvancedSecurityOptionsToTerraform(struct?: E
 }
 
 export class ElasticsearchDomainAdvancedSecurityOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -254,7 +260,7 @@ export class ElasticsearchDomainAdvancedSecurityOptionsOutputReference extends c
   }
 
   public get internalValue(): ElasticsearchDomainAdvancedSecurityOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -264,7 +270,7 @@ export class ElasticsearchDomainAdvancedSecurityOptionsOutputReference extends c
       hasAnyValues = true;
       internalValueResult.internalUserDatabaseEnabled = this._internalUserDatabaseEnabled;
     }
-    if (this._masterUserOptions) {
+    if (this._masterUserOptions?.internalValue) {
       hasAnyValues = true;
       internalValueResult.masterUserOptions = this._masterUserOptions?.internalValue;
     }
@@ -273,11 +279,13 @@ export class ElasticsearchDomainAdvancedSecurityOptionsOutputReference extends c
 
   public set internalValue(value: ElasticsearchDomainAdvancedSecurityOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._internalUserDatabaseEnabled = undefined;
       this._masterUserOptions.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._internalUserDatabaseEnabled = value.internalUserDatabaseEnabled;
       this._masterUserOptions.internalValue = value.masterUserOptions;
@@ -347,6 +355,8 @@ export function elasticsearchDomainClusterConfigZoneAwarenessConfigToTerraform(s
 }
 
 export class ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -357,7 +367,7 @@ export class ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference 
   }
 
   public get internalValue(): ElasticsearchDomainClusterConfigZoneAwarenessConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._availabilityZoneCount) {
       hasAnyValues = true;
@@ -368,9 +378,11 @@ export class ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference 
 
   public set internalValue(value: ElasticsearchDomainClusterConfigZoneAwarenessConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._availabilityZoneCount = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._availabilityZoneCount = value.availabilityZoneCount;
     }
   }
@@ -456,6 +468,8 @@ export function elasticsearchDomainClusterConfigToTerraform(struct?: Elasticsear
 }
 
 export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -466,7 +480,7 @@ export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): ElasticsearchDomainClusterConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dedicatedMasterCount) {
       hasAnyValues = true;
@@ -504,7 +518,7 @@ export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.zoneAwarenessEnabled = this._zoneAwarenessEnabled;
     }
-    if (this._zoneAwarenessConfig) {
+    if (this._zoneAwarenessConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.zoneAwarenessConfig = this._zoneAwarenessConfig?.internalValue;
     }
@@ -513,6 +527,7 @@ export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.Compl
 
   public set internalValue(value: ElasticsearchDomainClusterConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dedicatedMasterCount = undefined;
       this._dedicatedMasterEnabled = undefined;
       this._dedicatedMasterType = undefined;
@@ -525,6 +540,7 @@ export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.Compl
       this._zoneAwarenessConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dedicatedMasterCount = value.dedicatedMasterCount;
       this._dedicatedMasterEnabled = value.dedicatedMasterEnabled;
       this._dedicatedMasterType = value.dedicatedMasterType;
@@ -731,6 +747,8 @@ export function elasticsearchDomainCognitoOptionsToTerraform(struct?: Elasticsea
 }
 
 export class ElasticsearchDomainCognitoOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -741,7 +759,7 @@ export class ElasticsearchDomainCognitoOptionsOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): ElasticsearchDomainCognitoOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -764,12 +782,14 @@ export class ElasticsearchDomainCognitoOptionsOutputReference extends cdktf.Comp
 
   public set internalValue(value: ElasticsearchDomainCognitoOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._identityPoolId = undefined;
       this._roleArn = undefined;
       this._userPoolId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._identityPoolId = value.identityPoolId;
       this._roleArn = value.roleArn;
@@ -870,6 +890,8 @@ export function elasticsearchDomainDomainEndpointOptionsToTerraform(struct?: Ela
 }
 
 export class ElasticsearchDomainDomainEndpointOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -880,7 +902,7 @@ export class ElasticsearchDomainDomainEndpointOptionsOutputReference extends cdk
   }
 
   public get internalValue(): ElasticsearchDomainDomainEndpointOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._customEndpoint) {
       hasAnyValues = true;
@@ -907,6 +929,7 @@ export class ElasticsearchDomainDomainEndpointOptionsOutputReference extends cdk
 
   public set internalValue(value: ElasticsearchDomainDomainEndpointOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._customEndpoint = undefined;
       this._customEndpointCertificateArn = undefined;
       this._customEndpointEnabled = undefined;
@@ -914,6 +937,7 @@ export class ElasticsearchDomainDomainEndpointOptionsOutputReference extends cdk
       this._tlsSecurityPolicy = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._customEndpoint = value.customEndpoint;
       this._customEndpointCertificateArn = value.customEndpointCertificateArn;
       this._customEndpointEnabled = value.customEndpointEnabled;
@@ -1035,6 +1059,8 @@ export function elasticsearchDomainEbsOptionsToTerraform(struct?: ElasticsearchD
 }
 
 export class ElasticsearchDomainEbsOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1045,7 +1071,7 @@ export class ElasticsearchDomainEbsOptionsOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): ElasticsearchDomainEbsOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._ebsEnabled) {
       hasAnyValues = true;
@@ -1068,12 +1094,14 @@ export class ElasticsearchDomainEbsOptionsOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: ElasticsearchDomainEbsOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._ebsEnabled = undefined;
       this._iops = undefined;
       this._volumeSize = undefined;
       this._volumeType = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._ebsEnabled = value.ebsEnabled;
       this._iops = value.iops;
       this._volumeSize = value.volumeSize;
@@ -1165,6 +1193,8 @@ export function elasticsearchDomainEncryptAtRestToTerraform(struct?: Elasticsear
 }
 
 export class ElasticsearchDomainEncryptAtRestOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1175,7 +1205,7 @@ export class ElasticsearchDomainEncryptAtRestOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): ElasticsearchDomainEncryptAtRest | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -1190,10 +1220,12 @@ export class ElasticsearchDomainEncryptAtRestOutputReference extends cdktf.Compl
 
   public set internalValue(value: ElasticsearchDomainEncryptAtRest | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._kmsKeyId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._kmsKeyId = value.kmsKeyId;
     }
@@ -1273,6 +1305,8 @@ export function elasticsearchDomainNodeToNodeEncryptionToTerraform(struct?: Elas
 }
 
 export class ElasticsearchDomainNodeToNodeEncryptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1283,7 +1317,7 @@ export class ElasticsearchDomainNodeToNodeEncryptionOutputReference extends cdkt
   }
 
   public get internalValue(): ElasticsearchDomainNodeToNodeEncryption | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -1294,9 +1328,11 @@ export class ElasticsearchDomainNodeToNodeEncryptionOutputReference extends cdkt
 
   public set internalValue(value: ElasticsearchDomainNodeToNodeEncryption | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
     }
   }
@@ -1332,6 +1368,8 @@ export function elasticsearchDomainSnapshotOptionsToTerraform(struct?: Elasticse
 }
 
 export class ElasticsearchDomainSnapshotOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1342,7 +1380,7 @@ export class ElasticsearchDomainSnapshotOptionsOutputReference extends cdktf.Com
   }
 
   public get internalValue(): ElasticsearchDomainSnapshotOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._automatedSnapshotStartHour) {
       hasAnyValues = true;
@@ -1353,9 +1391,11 @@ export class ElasticsearchDomainSnapshotOptionsOutputReference extends cdktf.Com
 
   public set internalValue(value: ElasticsearchDomainSnapshotOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._automatedSnapshotStartHour = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._automatedSnapshotStartHour = value.automatedSnapshotStartHour;
     }
   }
@@ -1391,6 +1431,8 @@ export function elasticsearchDomainTimeoutsToTerraform(struct?: ElasticsearchDom
 }
 
 export class ElasticsearchDomainTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1401,7 +1443,7 @@ export class ElasticsearchDomainTimeoutsOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): ElasticsearchDomainTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._update) {
       hasAnyValues = true;
@@ -1412,9 +1454,11 @@ export class ElasticsearchDomainTimeoutsOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: ElasticsearchDomainTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._update = value.update;
     }
   }
@@ -1458,6 +1502,8 @@ export function elasticsearchDomainVpcOptionsToTerraform(struct?: ElasticsearchD
 }
 
 export class ElasticsearchDomainVpcOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1468,7 +1514,7 @@ export class ElasticsearchDomainVpcOptionsOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): ElasticsearchDomainVpcOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._securityGroupIds) {
       hasAnyValues = true;
@@ -1483,10 +1529,12 @@ export class ElasticsearchDomainVpcOptionsOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: ElasticsearchDomainVpcOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._securityGroupIds = undefined;
       this._subnetIds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._securityGroupIds = value.securityGroupIds;
       this._subnetIds = value.subnetIds;
     }

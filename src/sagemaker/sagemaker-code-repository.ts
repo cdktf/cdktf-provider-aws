@@ -54,6 +54,8 @@ export function sagemakerCodeRepositoryGitConfigToTerraform(struct?: SagemakerCo
 }
 
 export class SagemakerCodeRepositoryGitConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -64,7 +66,7 @@ export class SagemakerCodeRepositoryGitConfigOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): SagemakerCodeRepositoryGitConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._branch) {
       hasAnyValues = true;
@@ -83,11 +85,13 @@ export class SagemakerCodeRepositoryGitConfigOutputReference extends cdktf.Compl
 
   public set internalValue(value: SagemakerCodeRepositoryGitConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._branch = undefined;
       this._repositoryUrl = undefined;
       this._secretArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._branch = value.branch;
       this._repositoryUrl = value.repositoryUrl;
       this._secretArn = value.secretArn;

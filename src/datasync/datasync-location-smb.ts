@@ -64,6 +64,8 @@ export function datasyncLocationSmbMountOptionsToTerraform(struct?: DatasyncLoca
 }
 
 export class DatasyncLocationSmbMountOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -74,7 +76,7 @@ export class DatasyncLocationSmbMountOptionsOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): DatasyncLocationSmbMountOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._version) {
       hasAnyValues = true;
@@ -85,9 +87,11 @@ export class DatasyncLocationSmbMountOptionsOutputReference extends cdktf.Comple
 
   public set internalValue(value: DatasyncLocationSmbMountOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._version = value.version;
     }
   }

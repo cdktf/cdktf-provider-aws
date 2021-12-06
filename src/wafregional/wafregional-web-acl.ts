@@ -60,6 +60,8 @@ export function wafregionalWebAclDefaultActionToTerraform(struct?: WafregionalWe
 }
 
 export class WafregionalWebAclDefaultActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -70,7 +72,7 @@ export class WafregionalWebAclDefaultActionOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): WafregionalWebAclDefaultAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -81,9 +83,11 @@ export class WafregionalWebAclDefaultActionOutputReference extends cdktf.Complex
 
   public set internalValue(value: WafregionalWebAclDefaultAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
     }
   }
@@ -143,6 +147,8 @@ export function wafregionalWebAclLoggingConfigurationRedactedFieldsToTerraform(s
 }
 
 export class WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -153,7 +159,7 @@ export class WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference 
   }
 
   public get internalValue(): WafregionalWebAclLoggingConfigurationRedactedFields | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fieldToMatch) {
       hasAnyValues = true;
@@ -164,9 +170,11 @@ export class WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference 
 
   public set internalValue(value: WafregionalWebAclLoggingConfigurationRedactedFields | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fieldToMatch = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fieldToMatch = value.fieldToMatch;
     }
   }
@@ -210,6 +218,8 @@ export function wafregionalWebAclLoggingConfigurationToTerraform(struct?: Wafreg
 }
 
 export class WafregionalWebAclLoggingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -220,13 +230,13 @@ export class WafregionalWebAclLoggingConfigurationOutputReference extends cdktf.
   }
 
   public get internalValue(): WafregionalWebAclLoggingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._logDestination) {
       hasAnyValues = true;
       internalValueResult.logDestination = this._logDestination;
     }
-    if (this._redactedFields) {
+    if (this._redactedFields?.internalValue) {
       hasAnyValues = true;
       internalValueResult.redactedFields = this._redactedFields?.internalValue;
     }
@@ -235,10 +245,12 @@ export class WafregionalWebAclLoggingConfigurationOutputReference extends cdktf.
 
   public set internalValue(value: WafregionalWebAclLoggingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._logDestination = undefined;
       this._redactedFields.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._logDestination = value.logDestination;
       this._redactedFields.internalValue = value.redactedFields;
     }
@@ -291,6 +303,8 @@ export function wafregionalWebAclRuleActionToTerraform(struct?: WafregionalWebAc
 }
 
 export class WafregionalWebAclRuleActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -301,7 +315,7 @@ export class WafregionalWebAclRuleActionOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): WafregionalWebAclRuleAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -312,9 +326,11 @@ export class WafregionalWebAclRuleActionOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: WafregionalWebAclRuleAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
     }
   }
@@ -350,6 +366,8 @@ export function wafregionalWebAclRuleOverrideActionToTerraform(struct?: Wafregio
 }
 
 export class WafregionalWebAclRuleOverrideActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -360,7 +378,7 @@ export class WafregionalWebAclRuleOverrideActionOutputReference extends cdktf.Co
   }
 
   public get internalValue(): WafregionalWebAclRuleOverrideAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -371,9 +389,11 @@ export class WafregionalWebAclRuleOverrideActionOutputReference extends cdktf.Co
 
   public set internalValue(value: WafregionalWebAclRuleOverrideAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
     }
   }

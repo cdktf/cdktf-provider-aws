@@ -65,6 +65,8 @@ export function networkfirewallLoggingConfigurationLoggingConfigurationToTerrafo
 }
 
 export class NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -75,7 +77,7 @@ export class NetworkfirewallLoggingConfigurationLoggingConfigurationOutputRefere
   }
 
   public get internalValue(): NetworkfirewallLoggingConfigurationLoggingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._logDestinationConfig) {
       hasAnyValues = true;
@@ -86,9 +88,11 @@ export class NetworkfirewallLoggingConfigurationLoggingConfigurationOutputRefere
 
   public set internalValue(value: NetworkfirewallLoggingConfigurationLoggingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._logDestinationConfig = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._logDestinationConfig = value.logDestinationConfig;
     }
   }

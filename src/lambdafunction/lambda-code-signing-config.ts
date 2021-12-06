@@ -42,6 +42,8 @@ export function lambdaCodeSigningConfigAllowedPublishersToTerraform(struct?: Lam
 }
 
 export class LambdaCodeSigningConfigAllowedPublishersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -52,7 +54,7 @@ export class LambdaCodeSigningConfigAllowedPublishersOutputReference extends cdk
   }
 
   public get internalValue(): LambdaCodeSigningConfigAllowedPublishers | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._signingProfileVersionArns) {
       hasAnyValues = true;
@@ -63,9 +65,11 @@ export class LambdaCodeSigningConfigAllowedPublishersOutputReference extends cdk
 
   public set internalValue(value: LambdaCodeSigningConfigAllowedPublishers | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._signingProfileVersionArns = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._signingProfileVersionArns = value.signingProfileVersionArns;
     }
   }
@@ -101,6 +105,8 @@ export function lambdaCodeSigningConfigPoliciesToTerraform(struct?: LambdaCodeSi
 }
 
 export class LambdaCodeSigningConfigPoliciesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -111,7 +117,7 @@ export class LambdaCodeSigningConfigPoliciesOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): LambdaCodeSigningConfigPolicies | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._untrustedArtifactOnDeployment) {
       hasAnyValues = true;
@@ -122,9 +128,11 @@ export class LambdaCodeSigningConfigPoliciesOutputReference extends cdktf.Comple
 
   public set internalValue(value: LambdaCodeSigningConfigPolicies | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._untrustedArtifactOnDeployment = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._untrustedArtifactOnDeployment = value.untrustedArtifactOnDeployment;
     }
   }

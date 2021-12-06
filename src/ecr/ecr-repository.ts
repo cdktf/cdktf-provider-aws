@@ -82,6 +82,8 @@ export function ecrRepositoryImageScanningConfigurationToTerraform(struct?: EcrR
 }
 
 export class EcrRepositoryImageScanningConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -92,7 +94,7 @@ export class EcrRepositoryImageScanningConfigurationOutputReference extends cdkt
   }
 
   public get internalValue(): EcrRepositoryImageScanningConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._scanOnPush) {
       hasAnyValues = true;
@@ -103,9 +105,11 @@ export class EcrRepositoryImageScanningConfigurationOutputReference extends cdkt
 
   public set internalValue(value: EcrRepositoryImageScanningConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._scanOnPush = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._scanOnPush = value.scanOnPush;
     }
   }
@@ -141,6 +145,8 @@ export function ecrRepositoryTimeoutsToTerraform(struct?: EcrRepositoryTimeoutsO
 }
 
 export class EcrRepositoryTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -151,7 +157,7 @@ export class EcrRepositoryTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): EcrRepositoryTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete) {
       hasAnyValues = true;
@@ -162,9 +168,11 @@ export class EcrRepositoryTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: EcrRepositoryTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._delete = value.delete;
     }
   }

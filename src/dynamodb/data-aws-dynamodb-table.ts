@@ -137,6 +137,8 @@ export function dataAwsDynamodbTableServerSideEncryptionToTerraform(struct?: Dat
 }
 
 export class DataAwsDynamodbTableServerSideEncryptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -147,15 +149,17 @@ export class DataAwsDynamodbTableServerSideEncryptionOutputReference extends cdk
   }
 
   public get internalValue(): DataAwsDynamodbTableServerSideEncryption | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: DataAwsDynamodbTableServerSideEncryption | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
 }

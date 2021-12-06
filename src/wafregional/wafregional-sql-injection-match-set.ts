@@ -41,6 +41,8 @@ export function wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatc
 }
 
 export class WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -51,7 +53,7 @@ export class WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOu
   }
 
   public get internalValue(): WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._data) {
       hasAnyValues = true;
@@ -66,10 +68,12 @@ export class WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOu
 
   public set internalValue(value: WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._data = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._data = value.data;
       this._type = value.type;
     }

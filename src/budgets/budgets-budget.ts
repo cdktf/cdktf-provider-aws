@@ -156,6 +156,8 @@ export function budgetsBudgetCostTypesToTerraform(struct?: BudgetsBudgetCostType
 }
 
 export class BudgetsBudgetCostTypesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -166,7 +168,7 @@ export class BudgetsBudgetCostTypesOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): BudgetsBudgetCostTypes | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._includeCredit) {
       hasAnyValues = true;
@@ -217,6 +219,7 @@ export class BudgetsBudgetCostTypesOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: BudgetsBudgetCostTypes | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._includeCredit = undefined;
       this._includeDiscount = undefined;
       this._includeOtherSubscription = undefined;
@@ -230,6 +233,7 @@ export class BudgetsBudgetCostTypesOutputReference extends cdktf.ComplexObject {
       this._useBlended = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._includeCredit = value.includeCredit;
       this._includeDiscount = value.includeDiscount;
       this._includeOtherSubscription = value.includeOtherSubscription;

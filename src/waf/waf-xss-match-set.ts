@@ -41,6 +41,8 @@ export function wafXssMatchSetXssMatchTuplesFieldToMatchToTerraform(struct?: Waf
 }
 
 export class WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -51,7 +53,7 @@ export class WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference extends cdk
   }
 
   public get internalValue(): WafXssMatchSetXssMatchTuplesFieldToMatch | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._data) {
       hasAnyValues = true;
@@ -66,10 +68,12 @@ export class WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference extends cdk
 
   public set internalValue(value: WafXssMatchSetXssMatchTuplesFieldToMatch | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._data = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._data = value.data;
       this._type = value.type;
     }

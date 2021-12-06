@@ -56,6 +56,8 @@ export function ssmResourceDataSyncS3DestinationToTerraform(struct?: SsmResource
 }
 
 export class SsmResourceDataSyncS3DestinationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -66,7 +68,7 @@ export class SsmResourceDataSyncS3DestinationOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): SsmResourceDataSyncS3Destination | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketName) {
       hasAnyValues = true;
@@ -93,6 +95,7 @@ export class SsmResourceDataSyncS3DestinationOutputReference extends cdktf.Compl
 
   public set internalValue(value: SsmResourceDataSyncS3Destination | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketName = undefined;
       this._kmsKeyArn = undefined;
       this._prefix = undefined;
@@ -100,6 +103,7 @@ export class SsmResourceDataSyncS3DestinationOutputReference extends cdktf.Compl
       this._syncFormat = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketName = value.bucketName;
       this._kmsKeyArn = value.kmsKeyArn;
       this._prefix = value.prefix;

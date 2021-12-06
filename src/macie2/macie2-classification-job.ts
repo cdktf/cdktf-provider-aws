@@ -127,6 +127,8 @@ export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleSc
 }
 
 export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -137,7 +139,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScope
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comparator) {
       hasAnyValues = true;
@@ -156,11 +158,13 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScope
 
   public set internalValue(value: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._comparator = undefined;
       this._key = undefined;
       this._values = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._comparator = value.comparator;
       this._key = value.key;
       this._values = value.values;
@@ -272,6 +276,8 @@ export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScope
 }
 
 export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -282,7 +288,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTer
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comparator) {
       hasAnyValues = true;
@@ -305,12 +311,14 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTer
 
   public set internalValue(value: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._comparator = undefined;
       this._key = undefined;
       this._target = undefined;
       this._tagValues = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._comparator = value.comparator;
       this._key = value.key;
       this._target = value.target;
@@ -429,6 +437,8 @@ export function macie2ClassificationJobS3JobDefinitionScopingExcludesToTerraform
 }
 
 export class Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -439,7 +449,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReferenc
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingExcludes | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._and) {
       hasAnyValues = true;
@@ -450,9 +460,11 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReferenc
 
   public set internalValue(value: Macie2ClassificationJobS3JobDefinitionScopingExcludes | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._and = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._and = value.and;
     }
   }
@@ -502,6 +514,8 @@ export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleSc
 }
 
 export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -512,7 +526,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScope
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comparator) {
       hasAnyValues = true;
@@ -531,11 +545,13 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScope
 
   public set internalValue(value: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._comparator = undefined;
       this._key = undefined;
       this._values = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._comparator = value.comparator;
       this._key = value.key;
       this._values = value.values;
@@ -647,6 +663,8 @@ export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScope
 }
 
 export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -657,7 +675,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTer
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comparator) {
       hasAnyValues = true;
@@ -680,12 +698,14 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTer
 
   public set internalValue(value: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._comparator = undefined;
       this._key = undefined;
       this._target = undefined;
       this._tagValues = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._comparator = value.comparator;
       this._key = value.key;
       this._target = value.target;
@@ -804,6 +824,8 @@ export function macie2ClassificationJobS3JobDefinitionScopingIncludesToTerraform
 }
 
 export class Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -814,7 +836,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReferenc
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingIncludes | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._and) {
       hasAnyValues = true;
@@ -825,9 +847,11 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReferenc
 
   public set internalValue(value: Macie2ClassificationJobS3JobDefinitionScopingIncludes | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._and = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._and = value.and;
     }
   }
@@ -876,6 +900,8 @@ export function macie2ClassificationJobS3JobDefinitionScopingToTerraform(struct?
 }
 
 export class Macie2ClassificationJobS3JobDefinitionScopingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -886,13 +912,13 @@ export class Macie2ClassificationJobS3JobDefinitionScopingOutputReference extend
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScoping | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._excludes) {
+    if (this._excludes?.internalValue) {
       hasAnyValues = true;
       internalValueResult.excludes = this._excludes?.internalValue;
     }
-    if (this._includes) {
+    if (this._includes?.internalValue) {
       hasAnyValues = true;
       internalValueResult.includes = this._includes?.internalValue;
     }
@@ -901,10 +927,12 @@ export class Macie2ClassificationJobS3JobDefinitionScopingOutputReference extend
 
   public set internalValue(value: Macie2ClassificationJobS3JobDefinitionScoping | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._excludes.internalValue = undefined;
       this._includes.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._excludes.internalValue = value.excludes;
       this._includes.internalValue = value.includes;
     }
@@ -969,6 +997,8 @@ export function macie2ClassificationJobS3JobDefinitionToTerraform(struct?: Macie
 }
 
 export class Macie2ClassificationJobS3JobDefinitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -979,13 +1009,13 @@ export class Macie2ClassificationJobS3JobDefinitionOutputReference extends cdktf
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketDefinitions) {
       hasAnyValues = true;
       internalValueResult.bucketDefinitions = this._bucketDefinitions;
     }
-    if (this._scoping) {
+    if (this._scoping?.internalValue) {
       hasAnyValues = true;
       internalValueResult.scoping = this._scoping?.internalValue;
     }
@@ -994,10 +1024,12 @@ export class Macie2ClassificationJobS3JobDefinitionOutputReference extends cdktf
 
   public set internalValue(value: Macie2ClassificationJobS3JobDefinition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketDefinitions = undefined;
       this._scoping.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketDefinitions = value.bucketDefinitions;
       this._scoping.internalValue = value.scoping;
     }
@@ -1064,6 +1096,8 @@ export function macie2ClassificationJobScheduleFrequencyToTerraform(struct?: Mac
 }
 
 export class Macie2ClassificationJobScheduleFrequencyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1074,7 +1108,7 @@ export class Macie2ClassificationJobScheduleFrequencyOutputReference extends cdk
   }
 
   public get internalValue(): Macie2ClassificationJobScheduleFrequency | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dailySchedule) {
       hasAnyValues = true;
@@ -1093,11 +1127,13 @@ export class Macie2ClassificationJobScheduleFrequencyOutputReference extends cdk
 
   public set internalValue(value: Macie2ClassificationJobScheduleFrequency | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dailySchedule = undefined;
       this._monthlySchedule = undefined;
       this._weeklySchedule = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dailySchedule = value.dailySchedule;
       this._monthlySchedule = value.monthlySchedule;
       this._weeklySchedule = value.weeklySchedule;

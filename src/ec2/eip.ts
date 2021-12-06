@@ -82,6 +82,8 @@ export function eipTimeoutsToTerraform(struct?: EipTimeoutsOutputReference | Eip
 }
 
 export class EipTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -92,7 +94,7 @@ export class EipTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): EipTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete) {
       hasAnyValues = true;
@@ -111,11 +113,13 @@ export class EipTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: EipTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._delete = value.delete;
       this._read = value.read;
       this._update = value.update;

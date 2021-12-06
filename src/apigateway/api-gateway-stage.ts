@@ -85,6 +85,8 @@ export function apiGatewayStageAccessLogSettingsToTerraform(struct?: ApiGatewayS
 }
 
 export class ApiGatewayStageAccessLogSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -95,7 +97,7 @@ export class ApiGatewayStageAccessLogSettingsOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): ApiGatewayStageAccessLogSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._destinationArn) {
       hasAnyValues = true;
@@ -110,10 +112,12 @@ export class ApiGatewayStageAccessLogSettingsOutputReference extends cdktf.Compl
 
   public set internalValue(value: ApiGatewayStageAccessLogSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._destinationArn = undefined;
       this._format = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._destinationArn = value.destinationArn;
       this._format = value.format;
     }

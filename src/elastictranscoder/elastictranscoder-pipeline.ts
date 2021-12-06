@@ -81,6 +81,8 @@ export function elastictranscoderPipelineContentConfigToTerraform(struct?: Elast
 }
 
 export class ElastictranscoderPipelineContentConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -91,7 +93,7 @@ export class ElastictranscoderPipelineContentConfigOutputReference extends cdktf
   }
 
   public get internalValue(): ElastictranscoderPipelineContentConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucket) {
       hasAnyValues = true;
@@ -106,10 +108,12 @@ export class ElastictranscoderPipelineContentConfigOutputReference extends cdktf
 
   public set internalValue(value: ElastictranscoderPipelineContentConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucket = undefined;
       this._storageClass = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucket = value.bucket;
       this._storageClass = value.storageClass;
     }
@@ -207,6 +211,8 @@ export function elastictranscoderPipelineNotificationsToTerraform(struct?: Elast
 }
 
 export class ElastictranscoderPipelineNotificationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -217,7 +223,7 @@ export class ElastictranscoderPipelineNotificationsOutputReference extends cdktf
   }
 
   public get internalValue(): ElastictranscoderPipelineNotifications | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._completed) {
       hasAnyValues = true;
@@ -240,12 +246,14 @@ export class ElastictranscoderPipelineNotificationsOutputReference extends cdktf
 
   public set internalValue(value: ElastictranscoderPipelineNotifications | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._completed = undefined;
       this._error = undefined;
       this._progressing = undefined;
       this._warning = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._completed = value.completed;
       this._error = value.error;
       this._progressing = value.progressing;
@@ -340,6 +348,8 @@ export function elastictranscoderPipelineThumbnailConfigToTerraform(struct?: Ela
 }
 
 export class ElastictranscoderPipelineThumbnailConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -350,7 +360,7 @@ export class ElastictranscoderPipelineThumbnailConfigOutputReference extends cdk
   }
 
   public get internalValue(): ElastictranscoderPipelineThumbnailConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucket) {
       hasAnyValues = true;
@@ -365,10 +375,12 @@ export class ElastictranscoderPipelineThumbnailConfigOutputReference extends cdk
 
   public set internalValue(value: ElastictranscoderPipelineThumbnailConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucket = undefined;
       this._storageClass = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucket = value.bucket;
       this._storageClass = value.storageClass;
     }

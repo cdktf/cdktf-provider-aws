@@ -79,6 +79,8 @@ export function kinesisAnalyticsApplicationCloudwatchLoggingOptionsToTerraform(s
 }
 
 export class KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -89,7 +91,7 @@ export class KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference 
   }
 
   public get internalValue(): KinesisAnalyticsApplicationCloudwatchLoggingOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._logStreamArn) {
       hasAnyValues = true;
@@ -104,10 +106,12 @@ export class KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference 
 
   public set internalValue(value: KinesisAnalyticsApplicationCloudwatchLoggingOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._logStreamArn = undefined;
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._logStreamArn = value.logStreamArn;
       this._roleArn = value.roleArn;
     }
@@ -162,6 +166,8 @@ export function kinesisAnalyticsApplicationInputsKinesisFirehoseToTerraform(stru
 }
 
 export class KinesisAnalyticsApplicationInputsKinesisFirehoseOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -172,7 +178,7 @@ export class KinesisAnalyticsApplicationInputsKinesisFirehoseOutputReference ext
   }
 
   public get internalValue(): KinesisAnalyticsApplicationInputsKinesisFirehose | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._resourceArn) {
       hasAnyValues = true;
@@ -187,10 +193,12 @@ export class KinesisAnalyticsApplicationInputsKinesisFirehoseOutputReference ext
 
   public set internalValue(value: KinesisAnalyticsApplicationInputsKinesisFirehose | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._resourceArn = undefined;
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._resourceArn = value.resourceArn;
       this._roleArn = value.roleArn;
     }
@@ -245,6 +253,8 @@ export function kinesisAnalyticsApplicationInputsKinesisStreamToTerraform(struct
 }
 
 export class KinesisAnalyticsApplicationInputsKinesisStreamOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -255,7 +265,7 @@ export class KinesisAnalyticsApplicationInputsKinesisStreamOutputReference exten
   }
 
   public get internalValue(): KinesisAnalyticsApplicationInputsKinesisStream | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._resourceArn) {
       hasAnyValues = true;
@@ -270,10 +280,12 @@ export class KinesisAnalyticsApplicationInputsKinesisStreamOutputReference exten
 
   public set internalValue(value: KinesisAnalyticsApplicationInputsKinesisStream | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._resourceArn = undefined;
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._resourceArn = value.resourceArn;
       this._roleArn = value.roleArn;
     }
@@ -323,6 +335,8 @@ export function kinesisAnalyticsApplicationInputsParallelismToTerraform(struct?:
 }
 
 export class KinesisAnalyticsApplicationInputsParallelismOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -333,7 +347,7 @@ export class KinesisAnalyticsApplicationInputsParallelismOutputReference extends
   }
 
   public get internalValue(): KinesisAnalyticsApplicationInputsParallelism | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._count) {
       hasAnyValues = true;
@@ -344,9 +358,11 @@ export class KinesisAnalyticsApplicationInputsParallelismOutputReference extends
 
   public set internalValue(value: KinesisAnalyticsApplicationInputsParallelism | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._count = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._count = value.count;
     }
   }
@@ -390,6 +406,8 @@ export function kinesisAnalyticsApplicationInputsProcessingConfigurationLambdaTo
 }
 
 export class KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -400,7 +418,7 @@ export class KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutpu
   }
 
   public get internalValue(): KinesisAnalyticsApplicationInputsProcessingConfigurationLambda | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._resourceArn) {
       hasAnyValues = true;
@@ -415,10 +433,12 @@ export class KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutpu
 
   public set internalValue(value: KinesisAnalyticsApplicationInputsProcessingConfigurationLambda | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._resourceArn = undefined;
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._resourceArn = value.resourceArn;
       this._roleArn = value.roleArn;
     }
@@ -470,6 +490,8 @@ export function kinesisAnalyticsApplicationInputsProcessingConfigurationToTerraf
 }
 
 export class KinesisAnalyticsApplicationInputsProcessingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -480,9 +502,9 @@ export class KinesisAnalyticsApplicationInputsProcessingConfigurationOutputRefer
   }
 
   public get internalValue(): KinesisAnalyticsApplicationInputsProcessingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._lambda) {
+    if (this._lambda?.internalValue) {
       hasAnyValues = true;
       internalValueResult.lambda = this._lambda?.internalValue;
     }
@@ -491,9 +513,11 @@ export class KinesisAnalyticsApplicationInputsProcessingConfigurationOutputRefer
 
   public set internalValue(value: KinesisAnalyticsApplicationInputsProcessingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._lambda.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._lambda.internalValue = value.lambda;
     }
   }
@@ -561,6 +585,8 @@ export function kinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParame
 }
 
 export class KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -571,7 +597,7 @@ export class KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameter
   }
 
   public get internalValue(): KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._recordColumnDelimiter) {
       hasAnyValues = true;
@@ -586,10 +612,12 @@ export class KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameter
 
   public set internalValue(value: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._recordColumnDelimiter = undefined;
       this._recordRowDelimiter = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._recordColumnDelimiter = value.recordColumnDelimiter;
       this._recordRowDelimiter = value.recordRowDelimiter;
     }
@@ -639,6 +667,8 @@ export function kinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParame
 }
 
 export class KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJsonOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -649,7 +679,7 @@ export class KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameter
   }
 
   public get internalValue(): KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._recordRowPath) {
       hasAnyValues = true;
@@ -660,9 +690,11 @@ export class KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameter
 
   public set internalValue(value: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._recordRowPath = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._recordRowPath = value.recordRowPath;
     }
   }
@@ -707,6 +739,8 @@ export function kinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParame
 }
 
 export class KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -717,13 +751,13 @@ export class KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameter
   }
 
   public get internalValue(): KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._csv) {
+    if (this._csv?.internalValue) {
       hasAnyValues = true;
       internalValueResult.csv = this._csv?.internalValue;
     }
-    if (this._json) {
+    if (this._json?.internalValue) {
       hasAnyValues = true;
       internalValueResult.json = this._json?.internalValue;
     }
@@ -732,10 +766,12 @@ export class KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameter
 
   public set internalValue(value: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._csv.internalValue = undefined;
       this._json.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._csv.internalValue = value.csv;
       this._json.internalValue = value.json;
     }
@@ -793,6 +829,8 @@ export function kinesisAnalyticsApplicationInputsSchemaRecordFormatToTerraform(s
 }
 
 export class KinesisAnalyticsApplicationInputsSchemaRecordFormatOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -803,9 +841,9 @@ export class KinesisAnalyticsApplicationInputsSchemaRecordFormatOutputReference 
   }
 
   public get internalValue(): KinesisAnalyticsApplicationInputsSchemaRecordFormat | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._mappingParameters) {
+    if (this._mappingParameters?.internalValue) {
       hasAnyValues = true;
       internalValueResult.mappingParameters = this._mappingParameters?.internalValue;
     }
@@ -814,9 +852,11 @@ export class KinesisAnalyticsApplicationInputsSchemaRecordFormatOutputReference 
 
   public set internalValue(value: KinesisAnalyticsApplicationInputsSchemaRecordFormat | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._mappingParameters.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._mappingParameters.internalValue = value.mappingParameters;
     }
   }
@@ -869,6 +909,8 @@ export function kinesisAnalyticsApplicationInputsSchemaToTerraform(struct?: Kine
 }
 
 export class KinesisAnalyticsApplicationInputsSchemaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -879,7 +921,7 @@ export class KinesisAnalyticsApplicationInputsSchemaOutputReference extends cdkt
   }
 
   public get internalValue(): KinesisAnalyticsApplicationInputsSchema | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._recordEncoding) {
       hasAnyValues = true;
@@ -889,7 +931,7 @@ export class KinesisAnalyticsApplicationInputsSchemaOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.recordColumns = this._recordColumns;
     }
-    if (this._recordFormat) {
+    if (this._recordFormat?.internalValue) {
       hasAnyValues = true;
       internalValueResult.recordFormat = this._recordFormat?.internalValue;
     }
@@ -898,11 +940,13 @@ export class KinesisAnalyticsApplicationInputsSchemaOutputReference extends cdkt
 
   public set internalValue(value: KinesisAnalyticsApplicationInputsSchema | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._recordEncoding = undefined;
       this._recordColumns = undefined;
       this._recordFormat.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._recordEncoding = value.recordEncoding;
       this._recordColumns = value.recordColumns;
       this._recordFormat.internalValue = value.recordFormat;
@@ -1029,6 +1073,8 @@ export function kinesisAnalyticsApplicationInputsToTerraform(struct?: KinesisAna
 }
 
 export class KinesisAnalyticsApplicationInputsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1039,29 +1085,29 @@ export class KinesisAnalyticsApplicationInputsOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): KinesisAnalyticsApplicationInputs | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._namePrefix) {
       hasAnyValues = true;
       internalValueResult.namePrefix = this._namePrefix;
     }
-    if (this._kinesisFirehose) {
+    if (this._kinesisFirehose?.internalValue) {
       hasAnyValues = true;
       internalValueResult.kinesisFirehose = this._kinesisFirehose?.internalValue;
     }
-    if (this._kinesisStream) {
+    if (this._kinesisStream?.internalValue) {
       hasAnyValues = true;
       internalValueResult.kinesisStream = this._kinesisStream?.internalValue;
     }
-    if (this._parallelism) {
+    if (this._parallelism?.internalValue) {
       hasAnyValues = true;
       internalValueResult.parallelism = this._parallelism?.internalValue;
     }
-    if (this._processingConfiguration) {
+    if (this._processingConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.processingConfiguration = this._processingConfiguration?.internalValue;
     }
-    if (this._schema) {
+    if (this._schema?.internalValue) {
       hasAnyValues = true;
       internalValueResult.schema = this._schema?.internalValue;
     }
@@ -1074,6 +1120,7 @@ export class KinesisAnalyticsApplicationInputsOutputReference extends cdktf.Comp
 
   public set internalValue(value: KinesisAnalyticsApplicationInputs | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._namePrefix = undefined;
       this._kinesisFirehose.internalValue = undefined;
       this._kinesisStream.internalValue = undefined;
@@ -1083,6 +1130,7 @@ export class KinesisAnalyticsApplicationInputsOutputReference extends cdktf.Comp
       this._startingPositionConfiguration = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._namePrefix = value.namePrefix;
       this._kinesisFirehose.internalValue = value.kinesisFirehose;
       this._kinesisStream.internalValue = value.kinesisStream;
@@ -1223,6 +1271,8 @@ export function kinesisAnalyticsApplicationOutputsKinesisFirehoseToTerraform(str
 }
 
 export class KinesisAnalyticsApplicationOutputsKinesisFirehoseOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1233,7 +1283,7 @@ export class KinesisAnalyticsApplicationOutputsKinesisFirehoseOutputReference ex
   }
 
   public get internalValue(): KinesisAnalyticsApplicationOutputsKinesisFirehose | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._resourceArn) {
       hasAnyValues = true;
@@ -1248,10 +1298,12 @@ export class KinesisAnalyticsApplicationOutputsKinesisFirehoseOutputReference ex
 
   public set internalValue(value: KinesisAnalyticsApplicationOutputsKinesisFirehose | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._resourceArn = undefined;
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._resourceArn = value.resourceArn;
       this._roleArn = value.roleArn;
     }
@@ -1306,6 +1358,8 @@ export function kinesisAnalyticsApplicationOutputsKinesisStreamToTerraform(struc
 }
 
 export class KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1316,7 +1370,7 @@ export class KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference exte
   }
 
   public get internalValue(): KinesisAnalyticsApplicationOutputsKinesisStream | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._resourceArn) {
       hasAnyValues = true;
@@ -1331,10 +1385,12 @@ export class KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference exte
 
   public set internalValue(value: KinesisAnalyticsApplicationOutputsKinesisStream | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._resourceArn = undefined;
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._resourceArn = value.resourceArn;
       this._roleArn = value.roleArn;
     }
@@ -1389,6 +1445,8 @@ export function kinesisAnalyticsApplicationOutputsLambdaToTerraform(struct?: Kin
 }
 
 export class KinesisAnalyticsApplicationOutputsLambdaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1399,7 +1457,7 @@ export class KinesisAnalyticsApplicationOutputsLambdaOutputReference extends cdk
   }
 
   public get internalValue(): KinesisAnalyticsApplicationOutputsLambda | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._resourceArn) {
       hasAnyValues = true;
@@ -1414,10 +1472,12 @@ export class KinesisAnalyticsApplicationOutputsLambdaOutputReference extends cdk
 
   public set internalValue(value: KinesisAnalyticsApplicationOutputsLambda | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._resourceArn = undefined;
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._resourceArn = value.resourceArn;
       this._roleArn = value.roleArn;
     }
@@ -1467,6 +1527,8 @@ export function kinesisAnalyticsApplicationOutputsSchemaToTerraform(struct?: Kin
 }
 
 export class KinesisAnalyticsApplicationOutputsSchemaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1477,7 +1539,7 @@ export class KinesisAnalyticsApplicationOutputsSchemaOutputReference extends cdk
   }
 
   public get internalValue(): KinesisAnalyticsApplicationOutputsSchema | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._recordFormatType) {
       hasAnyValues = true;
@@ -1488,9 +1550,11 @@ export class KinesisAnalyticsApplicationOutputsSchemaOutputReference extends cdk
 
   public set internalValue(value: KinesisAnalyticsApplicationOutputsSchema | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._recordFormatType = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._recordFormatType = value.recordFormatType;
     }
   }
@@ -1581,6 +1645,8 @@ export function kinesisAnalyticsApplicationReferenceDataSourcesS3ToTerraform(str
 }
 
 export class KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1591,7 +1657,7 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference ex
   }
 
   public get internalValue(): KinesisAnalyticsApplicationReferenceDataSourcesS3 | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucketArn) {
       hasAnyValues = true;
@@ -1610,11 +1676,13 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference ex
 
   public set internalValue(value: KinesisAnalyticsApplicationReferenceDataSourcesS3 | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucketArn = undefined;
       this._fileKey = undefined;
       this._roleArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucketArn = value.bucketArn;
       this._fileKey = value.fileKey;
       this._roleArn = value.roleArn;
@@ -1710,6 +1778,8 @@ export function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordForma
 }
 
 export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsvOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1720,7 +1790,7 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMa
   }
 
   public get internalValue(): KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._recordColumnDelimiter) {
       hasAnyValues = true;
@@ -1735,10 +1805,12 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMa
 
   public set internalValue(value: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._recordColumnDelimiter = undefined;
       this._recordRowDelimiter = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._recordColumnDelimiter = value.recordColumnDelimiter;
       this._recordRowDelimiter = value.recordRowDelimiter;
     }
@@ -1788,6 +1860,8 @@ export function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordForma
 }
 
 export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJsonOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1798,7 +1872,7 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMa
   }
 
   public get internalValue(): KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._recordRowPath) {
       hasAnyValues = true;
@@ -1809,9 +1883,11 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMa
 
   public set internalValue(value: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._recordRowPath = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._recordRowPath = value.recordRowPath;
     }
   }
@@ -1856,6 +1932,8 @@ export function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordForma
 }
 
 export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1866,13 +1944,13 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMa
   }
 
   public get internalValue(): KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._csv) {
+    if (this._csv?.internalValue) {
       hasAnyValues = true;
       internalValueResult.csv = this._csv?.internalValue;
     }
-    if (this._json) {
+    if (this._json?.internalValue) {
       hasAnyValues = true;
       internalValueResult.json = this._json?.internalValue;
     }
@@ -1881,10 +1959,12 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMa
 
   public set internalValue(value: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._csv.internalValue = undefined;
       this._json.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._csv.internalValue = value.csv;
       this._json.internalValue = value.json;
     }
@@ -1942,6 +2022,8 @@ export function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordForma
 }
 
 export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1952,9 +2034,9 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOu
   }
 
   public get internalValue(): KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormat | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._mappingParameters) {
+    if (this._mappingParameters?.internalValue) {
       hasAnyValues = true;
       internalValueResult.mappingParameters = this._mappingParameters?.internalValue;
     }
@@ -1963,9 +2045,11 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOu
 
   public set internalValue(value: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormat | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._mappingParameters.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._mappingParameters.internalValue = value.mappingParameters;
     }
   }
@@ -2018,6 +2102,8 @@ export function kinesisAnalyticsApplicationReferenceDataSourcesSchemaToTerraform
 }
 
 export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2028,7 +2114,7 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputReferenc
   }
 
   public get internalValue(): KinesisAnalyticsApplicationReferenceDataSourcesSchema | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._recordEncoding) {
       hasAnyValues = true;
@@ -2038,7 +2124,7 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputReferenc
       hasAnyValues = true;
       internalValueResult.recordColumns = this._recordColumns;
     }
-    if (this._recordFormat) {
+    if (this._recordFormat?.internalValue) {
       hasAnyValues = true;
       internalValueResult.recordFormat = this._recordFormat?.internalValue;
     }
@@ -2047,11 +2133,13 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputReferenc
 
   public set internalValue(value: KinesisAnalyticsApplicationReferenceDataSourcesSchema | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._recordEncoding = undefined;
       this._recordColumns = undefined;
       this._recordFormat.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._recordEncoding = value.recordEncoding;
       this._recordColumns = value.recordColumns;
       this._recordFormat.internalValue = value.recordFormat;
@@ -2133,6 +2221,8 @@ export function kinesisAnalyticsApplicationReferenceDataSourcesToTerraform(struc
 }
 
 export class KinesisAnalyticsApplicationReferenceDataSourcesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2143,17 +2233,17 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesOutputReference exte
   }
 
   public get internalValue(): KinesisAnalyticsApplicationReferenceDataSources | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._tableName) {
       hasAnyValues = true;
       internalValueResult.tableName = this._tableName;
     }
-    if (this._s3) {
+    if (this._s3?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3 = this._s3?.internalValue;
     }
-    if (this._schema) {
+    if (this._schema?.internalValue) {
       hasAnyValues = true;
       internalValueResult.schema = this._schema?.internalValue;
     }
@@ -2162,11 +2252,13 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesOutputReference exte
 
   public set internalValue(value: KinesisAnalyticsApplicationReferenceDataSources | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._tableName = undefined;
       this._s3.internalValue = undefined;
       this._schema.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._tableName = value.tableName;
       this._s3.internalValue = value.s3;
       this._schema.internalValue = value.schema;

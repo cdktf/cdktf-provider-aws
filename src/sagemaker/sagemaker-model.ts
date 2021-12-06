@@ -70,6 +70,8 @@ export function sagemakerModelContainerImageConfigToTerraform(struct?: Sagemaker
 }
 
 export class SagemakerModelContainerImageConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -80,7 +82,7 @@ export class SagemakerModelContainerImageConfigOutputReference extends cdktf.Com
   }
 
   public get internalValue(): SagemakerModelContainerImageConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._repositoryAccessMode) {
       hasAnyValues = true;
@@ -91,9 +93,11 @@ export class SagemakerModelContainerImageConfigOutputReference extends cdktf.Com
 
   public set internalValue(value: SagemakerModelContainerImageConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._repositoryAccessMode = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._repositoryAccessMode = value.repositoryAccessMode;
     }
   }
@@ -173,6 +177,8 @@ export function sagemakerModelInferenceExecutionConfigToTerraform(struct?: Sagem
 }
 
 export class SagemakerModelInferenceExecutionConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -183,7 +189,7 @@ export class SagemakerModelInferenceExecutionConfigOutputReference extends cdktf
   }
 
   public get internalValue(): SagemakerModelInferenceExecutionConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._mode) {
       hasAnyValues = true;
@@ -194,9 +200,11 @@ export class SagemakerModelInferenceExecutionConfigOutputReference extends cdktf
 
   public set internalValue(value: SagemakerModelInferenceExecutionConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._mode = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._mode = value.mode;
     }
   }
@@ -232,6 +240,8 @@ export function sagemakerModelPrimaryContainerImageConfigToTerraform(struct?: Sa
 }
 
 export class SagemakerModelPrimaryContainerImageConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -242,7 +252,7 @@ export class SagemakerModelPrimaryContainerImageConfigOutputReference extends cd
   }
 
   public get internalValue(): SagemakerModelPrimaryContainerImageConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._repositoryAccessMode) {
       hasAnyValues = true;
@@ -253,9 +263,11 @@ export class SagemakerModelPrimaryContainerImageConfigOutputReference extends cd
 
   public set internalValue(value: SagemakerModelPrimaryContainerImageConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._repositoryAccessMode = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._repositoryAccessMode = value.repositoryAccessMode;
     }
   }
@@ -318,6 +330,8 @@ export function sagemakerModelPrimaryContainerToTerraform(struct?: SagemakerMode
 }
 
 export class SagemakerModelPrimaryContainerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -328,7 +342,7 @@ export class SagemakerModelPrimaryContainerOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): SagemakerModelPrimaryContainer | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._containerHostname) {
       hasAnyValues = true;
@@ -350,7 +364,7 @@ export class SagemakerModelPrimaryContainerOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.modelDataUrl = this._modelDataUrl;
     }
-    if (this._imageConfig) {
+    if (this._imageConfig?.internalValue) {
       hasAnyValues = true;
       internalValueResult.imageConfig = this._imageConfig?.internalValue;
     }
@@ -359,6 +373,7 @@ export class SagemakerModelPrimaryContainerOutputReference extends cdktf.Complex
 
   public set internalValue(value: SagemakerModelPrimaryContainer | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._containerHostname = undefined;
       this._environment = undefined;
       this._image = undefined;
@@ -367,6 +382,7 @@ export class SagemakerModelPrimaryContainerOutputReference extends cdktf.Complex
       this._imageConfig.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._containerHostname = value.containerHostname;
       this._environment = value.environment;
       this._image = value.image;
@@ -493,6 +509,8 @@ export function sagemakerModelVpcConfigToTerraform(struct?: SagemakerModelVpcCon
 }
 
 export class SagemakerModelVpcConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -503,7 +521,7 @@ export class SagemakerModelVpcConfigOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): SagemakerModelVpcConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._securityGroupIds) {
       hasAnyValues = true;
@@ -518,10 +536,12 @@ export class SagemakerModelVpcConfigOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: SagemakerModelVpcConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._securityGroupIds = undefined;
       this._subnets = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._securityGroupIds = value.securityGroupIds;
       this._subnets = value.subnets;
     }

@@ -173,6 +173,8 @@ export function amplifyAppAutoBranchCreationConfigToTerraform(struct?: AmplifyAp
 }
 
 export class AmplifyAppAutoBranchCreationConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -183,7 +185,7 @@ export class AmplifyAppAutoBranchCreationConfigOutputReference extends cdktf.Com
   }
 
   public get internalValue(): AmplifyAppAutoBranchCreationConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._basicAuthCredentials) {
       hasAnyValues = true;
@@ -230,6 +232,7 @@ export class AmplifyAppAutoBranchCreationConfigOutputReference extends cdktf.Com
 
   public set internalValue(value: AmplifyAppAutoBranchCreationConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._basicAuthCredentials = undefined;
       this._buildSpec = undefined;
       this._enableAutoBuild = undefined;
@@ -242,6 +245,7 @@ export class AmplifyAppAutoBranchCreationConfigOutputReference extends cdktf.Com
       this._stage = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._basicAuthCredentials = value.basicAuthCredentials;
       this._buildSpec = value.buildSpec;
       this._enableAutoBuild = value.enableAutoBuild;

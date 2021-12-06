@@ -82,6 +82,8 @@ export function apiGatewayDomainNameEndpointConfigurationToTerraform(struct?: Ap
 }
 
 export class ApiGatewayDomainNameEndpointConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -92,7 +94,7 @@ export class ApiGatewayDomainNameEndpointConfigurationOutputReference extends cd
   }
 
   public get internalValue(): ApiGatewayDomainNameEndpointConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._types) {
       hasAnyValues = true;
@@ -103,9 +105,11 @@ export class ApiGatewayDomainNameEndpointConfigurationOutputReference extends cd
 
   public set internalValue(value: ApiGatewayDomainNameEndpointConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._types = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._types = value.types;
     }
   }
@@ -146,6 +150,8 @@ export function apiGatewayDomainNameMutualTlsAuthenticationToTerraform(struct?: 
 }
 
 export class ApiGatewayDomainNameMutualTlsAuthenticationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -156,7 +162,7 @@ export class ApiGatewayDomainNameMutualTlsAuthenticationOutputReference extends 
   }
 
   public get internalValue(): ApiGatewayDomainNameMutualTlsAuthentication | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._truststoreUri) {
       hasAnyValues = true;
@@ -171,10 +177,12 @@ export class ApiGatewayDomainNameMutualTlsAuthenticationOutputReference extends 
 
   public set internalValue(value: ApiGatewayDomainNameMutualTlsAuthentication | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._truststoreUri = undefined;
       this._truststoreVersion = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._truststoreUri = value.truststoreUri;
       this._truststoreVersion = value.truststoreVersion;
     }

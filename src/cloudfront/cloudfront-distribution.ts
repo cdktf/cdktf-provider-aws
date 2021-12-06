@@ -209,6 +209,8 @@ export function cloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookies
 }
 
 export class CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -219,7 +221,7 @@ export class CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOut
   }
 
   public get internalValue(): CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookies | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._forward) {
       hasAnyValues = true;
@@ -234,10 +236,12 @@ export class CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOut
 
   public set internalValue(value: CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookies | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._forward = undefined;
       this._whitelistedNames = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._forward = value.forward;
       this._whitelistedNames = value.whitelistedNames;
     }
@@ -307,6 +311,8 @@ export function cloudfrontDistributionDefaultCacheBehaviorForwardedValuesToTerra
 }
 
 export class CloudfrontDistributionDefaultCacheBehaviorForwardedValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -317,7 +323,7 @@ export class CloudfrontDistributionDefaultCacheBehaviorForwardedValuesOutputRefe
   }
 
   public get internalValue(): CloudfrontDistributionDefaultCacheBehaviorForwardedValues | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._headers) {
       hasAnyValues = true;
@@ -331,7 +337,7 @@ export class CloudfrontDistributionDefaultCacheBehaviorForwardedValuesOutputRefe
       hasAnyValues = true;
       internalValueResult.queryStringCacheKeys = this._queryStringCacheKeys;
     }
-    if (this._cookies) {
+    if (this._cookies?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cookies = this._cookies?.internalValue;
     }
@@ -340,12 +346,14 @@ export class CloudfrontDistributionDefaultCacheBehaviorForwardedValuesOutputRefe
 
   public set internalValue(value: CloudfrontDistributionDefaultCacheBehaviorForwardedValues | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._headers = undefined;
       this._queryString = undefined;
       this._queryStringCacheKeys = undefined;
       this._cookies.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._headers = value.headers;
       this._queryString = value.queryString;
       this._queryStringCacheKeys = value.queryStringCacheKeys;
@@ -574,6 +582,8 @@ export function cloudfrontDistributionDefaultCacheBehaviorToTerraform(struct?: C
 }
 
 export class CloudfrontDistributionDefaultCacheBehaviorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -584,7 +594,7 @@ export class CloudfrontDistributionDefaultCacheBehaviorOutputReference extends c
   }
 
   public get internalValue(): CloudfrontDistributionDefaultCacheBehavior | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allowedMethods) {
       hasAnyValues = true;
@@ -650,7 +660,7 @@ export class CloudfrontDistributionDefaultCacheBehaviorOutputReference extends c
       hasAnyValues = true;
       internalValueResult.viewerProtocolPolicy = this._viewerProtocolPolicy;
     }
-    if (this._forwardedValues) {
+    if (this._forwardedValues?.internalValue) {
       hasAnyValues = true;
       internalValueResult.forwardedValues = this._forwardedValues?.internalValue;
     }
@@ -667,6 +677,7 @@ export class CloudfrontDistributionDefaultCacheBehaviorOutputReference extends c
 
   public set internalValue(value: CloudfrontDistributionDefaultCacheBehavior | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allowedMethods = undefined;
       this._cachePolicyId = undefined;
       this._cachedMethods = undefined;
@@ -688,6 +699,7 @@ export class CloudfrontDistributionDefaultCacheBehaviorOutputReference extends c
       this._lambdaFunctionAssociation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allowedMethods = value.allowedMethods;
       this._cachePolicyId = value.cachePolicyId;
       this._cachedMethods = value.cachedMethods;
@@ -1032,6 +1044,8 @@ export function cloudfrontDistributionLoggingConfigToTerraform(struct?: Cloudfro
 }
 
 export class CloudfrontDistributionLoggingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1042,7 +1056,7 @@ export class CloudfrontDistributionLoggingConfigOutputReference extends cdktf.Co
   }
 
   public get internalValue(): CloudfrontDistributionLoggingConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucket) {
       hasAnyValues = true;
@@ -1061,11 +1075,13 @@ export class CloudfrontDistributionLoggingConfigOutputReference extends cdktf.Co
 
   public set internalValue(value: CloudfrontDistributionLoggingConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucket = undefined;
       this._includeCookies = undefined;
       this._prefix = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucket = value.bucket;
       this._includeCookies = value.includeCookies;
       this._prefix = value.prefix;
@@ -1140,6 +1156,8 @@ export function cloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookies
 }
 
 export class CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1150,7 +1168,7 @@ export class CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookiesOut
   }
 
   public get internalValue(): CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookies | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._forward) {
       hasAnyValues = true;
@@ -1165,10 +1183,12 @@ export class CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookiesOut
 
   public set internalValue(value: CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookies | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._forward = undefined;
       this._whitelistedNames = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._forward = value.forward;
       this._whitelistedNames = value.whitelistedNames;
     }
@@ -1238,6 +1258,8 @@ export function cloudfrontDistributionOrderedCacheBehaviorForwardedValuesToTerra
 }
 
 export class CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1248,7 +1270,7 @@ export class CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputRefe
   }
 
   public get internalValue(): CloudfrontDistributionOrderedCacheBehaviorForwardedValues | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._headers) {
       hasAnyValues = true;
@@ -1262,7 +1284,7 @@ export class CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputRefe
       hasAnyValues = true;
       internalValueResult.queryStringCacheKeys = this._queryStringCacheKeys;
     }
-    if (this._cookies) {
+    if (this._cookies?.internalValue) {
       hasAnyValues = true;
       internalValueResult.cookies = this._cookies?.internalValue;
     }
@@ -1271,12 +1293,14 @@ export class CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputRefe
 
   public set internalValue(value: CloudfrontDistributionOrderedCacheBehaviorForwardedValues | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._headers = undefined;
       this._queryString = undefined;
       this._queryStringCacheKeys = undefined;
       this._cookies.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._headers = value.headers;
       this._queryString = value.queryString;
       this._queryStringCacheKeys = value.queryStringCacheKeys;
@@ -1574,6 +1598,8 @@ export function cloudfrontDistributionOriginCustomOriginConfigToTerraform(struct
 }
 
 export class CloudfrontDistributionOriginCustomOriginConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1584,7 +1610,7 @@ export class CloudfrontDistributionOriginCustomOriginConfigOutputReference exten
   }
 
   public get internalValue(): CloudfrontDistributionOriginCustomOriginConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._httpPort) {
       hasAnyValues = true;
@@ -1615,6 +1641,7 @@ export class CloudfrontDistributionOriginCustomOriginConfigOutputReference exten
 
   public set internalValue(value: CloudfrontDistributionOriginCustomOriginConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._httpPort = undefined;
       this._httpsPort = undefined;
       this._originKeepaliveTimeout = undefined;
@@ -1623,6 +1650,7 @@ export class CloudfrontDistributionOriginCustomOriginConfigOutputReference exten
       this._originSslProtocols = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._httpPort = value.httpPort;
       this._httpsPort = value.httpsPort;
       this._originKeepaliveTimeout = value.originKeepaliveTimeout;
@@ -1739,6 +1767,8 @@ export function cloudfrontDistributionOriginOriginShieldToTerraform(struct?: Clo
 }
 
 export class CloudfrontDistributionOriginOriginShieldOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1749,7 +1779,7 @@ export class CloudfrontDistributionOriginOriginShieldOutputReference extends cdk
   }
 
   public get internalValue(): CloudfrontDistributionOriginOriginShield | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -1764,10 +1794,12 @@ export class CloudfrontDistributionOriginOriginShieldOutputReference extends cdk
 
   public set internalValue(value: CloudfrontDistributionOriginOriginShield | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._originShieldRegion = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._originShieldRegion = value.originShieldRegion;
     }
@@ -1817,6 +1849,8 @@ export function cloudfrontDistributionOriginS3OriginConfigToTerraform(struct?: C
 }
 
 export class CloudfrontDistributionOriginS3OriginConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1827,7 +1861,7 @@ export class CloudfrontDistributionOriginS3OriginConfigOutputReference extends c
   }
 
   public get internalValue(): CloudfrontDistributionOriginS3OriginConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._originAccessIdentity) {
       hasAnyValues = true;
@@ -1838,9 +1872,11 @@ export class CloudfrontDistributionOriginS3OriginConfigOutputReference extends c
 
   public set internalValue(value: CloudfrontDistributionOriginS3OriginConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._originAccessIdentity = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._originAccessIdentity = value.originAccessIdentity;
     }
   }
@@ -1941,6 +1977,8 @@ export function cloudfrontDistributionOriginGroupFailoverCriteriaToTerraform(str
 }
 
 export class CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1951,7 +1989,7 @@ export class CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference ex
   }
 
   public get internalValue(): CloudfrontDistributionOriginGroupFailoverCriteria | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._statusCodes) {
       hasAnyValues = true;
@@ -1962,9 +2000,11 @@ export class CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference ex
 
   public set internalValue(value: CloudfrontDistributionOriginGroupFailoverCriteria | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._statusCodes = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._statusCodes = value.statusCodes;
     }
   }
@@ -2054,6 +2094,8 @@ export function cloudfrontDistributionRestrictionsGeoRestrictionToTerraform(stru
 }
 
 export class CloudfrontDistributionRestrictionsGeoRestrictionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2064,7 +2106,7 @@ export class CloudfrontDistributionRestrictionsGeoRestrictionOutputReference ext
   }
 
   public get internalValue(): CloudfrontDistributionRestrictionsGeoRestriction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._locations) {
       hasAnyValues = true;
@@ -2079,10 +2121,12 @@ export class CloudfrontDistributionRestrictionsGeoRestrictionOutputReference ext
 
   public set internalValue(value: CloudfrontDistributionRestrictionsGeoRestriction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._locations = undefined;
       this._restrictionType = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._locations = value.locations;
       this._restrictionType = value.restrictionType;
     }
@@ -2137,6 +2181,8 @@ export function cloudfrontDistributionRestrictionsToTerraform(struct?: Cloudfron
 }
 
 export class CloudfrontDistributionRestrictionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2147,9 +2193,9 @@ export class CloudfrontDistributionRestrictionsOutputReference extends cdktf.Com
   }
 
   public get internalValue(): CloudfrontDistributionRestrictions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._geoRestriction) {
+    if (this._geoRestriction?.internalValue) {
       hasAnyValues = true;
       internalValueResult.geoRestriction = this._geoRestriction?.internalValue;
     }
@@ -2158,9 +2204,11 @@ export class CloudfrontDistributionRestrictionsOutputReference extends cdktf.Com
 
   public set internalValue(value: CloudfrontDistributionRestrictions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._geoRestriction.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._geoRestriction.internalValue = value.geoRestriction;
     }
   }
@@ -2216,6 +2264,8 @@ export function cloudfrontDistributionViewerCertificateToTerraform(struct?: Clou
 }
 
 export class CloudfrontDistributionViewerCertificateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2226,7 +2276,7 @@ export class CloudfrontDistributionViewerCertificateOutputReference extends cdkt
   }
 
   public get internalValue(): CloudfrontDistributionViewerCertificate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._acmCertificateArn) {
       hasAnyValues = true;
@@ -2253,6 +2303,7 @@ export class CloudfrontDistributionViewerCertificateOutputReference extends cdkt
 
   public set internalValue(value: CloudfrontDistributionViewerCertificate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._acmCertificateArn = undefined;
       this._cloudfrontDefaultCertificate = undefined;
       this._iamCertificateId = undefined;
@@ -2260,6 +2311,7 @@ export class CloudfrontDistributionViewerCertificateOutputReference extends cdkt
       this._sslSupportMethod = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._acmCertificateArn = value.acmCertificateArn;
       this._cloudfrontDefaultCertificate = value.cloudfrontDefaultCertificate;
       this._iamCertificateId = value.iamCertificateId;

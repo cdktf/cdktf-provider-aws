@@ -138,6 +138,8 @@ export function storagegatewaySmbFileShareCacheAttributesToTerraform(struct?: St
 }
 
 export class StoragegatewaySmbFileShareCacheAttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -148,7 +150,7 @@ export class StoragegatewaySmbFileShareCacheAttributesOutputReference extends cd
   }
 
   public get internalValue(): StoragegatewaySmbFileShareCacheAttributes | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cacheStaleTimeoutInSeconds) {
       hasAnyValues = true;
@@ -159,9 +161,11 @@ export class StoragegatewaySmbFileShareCacheAttributesOutputReference extends cd
 
   public set internalValue(value: StoragegatewaySmbFileShareCacheAttributes | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cacheStaleTimeoutInSeconds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cacheStaleTimeoutInSeconds = value.cacheStaleTimeoutInSeconds;
     }
   }
@@ -210,6 +214,8 @@ export function storagegatewaySmbFileShareTimeoutsToTerraform(struct?: Storagega
 }
 
 export class StoragegatewaySmbFileShareTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -220,7 +226,7 @@ export class StoragegatewaySmbFileShareTimeoutsOutputReference extends cdktf.Com
   }
 
   public get internalValue(): StoragegatewaySmbFileShareTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -239,11 +245,13 @@ export class StoragegatewaySmbFileShareTimeoutsOutputReference extends cdktf.Com
 
   public set internalValue(value: StoragegatewaySmbFileShareTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;

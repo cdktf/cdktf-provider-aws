@@ -54,16 +54,16 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@cdktf/hcl2cdk@0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@cdktf/hcl2cdk/-/hcl2cdk-0.8.0.tgz#fdebf2714fa66931b550a779f0fb754179391978"
-  integrity sha512-cjwSNnJ80i300r/53T4ZVxW/8TJO6d1uQPCZ390ZsWiE+bt7E32A8Ol8C1cbRmambslpzgw6zAUuQmcURrmhfg==
+"@cdktf/hcl2cdk@0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@cdktf/hcl2cdk/-/hcl2cdk-0.8.1.tgz#b7a2590feba0e59430f5fa266aa33d2019989cb6"
+  integrity sha512-HI7LJ5ENAxL/K25c0rdNd6IKzKKlicImasYneXLRPZwnwobue2x7kRwpwAl/Lqk0MxYJPbPFdZmtuFOF0cISgA==
   dependencies:
     "@babel/generator" "^7.14.5"
     "@babel/template" "^7.14.5"
     "@babel/types" "^7.14.5"
-    "@cdktf/hcl2json" "0.8.0"
-    "@cdktf/provider-generator" "0.8.0"
+    "@cdktf/hcl2json" "0.8.1"
+    "@cdktf/provider-generator" "0.8.1"
     camelcase "^6.2.0"
     glob "7.1.7"
     graphology "^0.20.0"
@@ -73,20 +73,20 @@
     reserved-words "^0.1.2"
     zod "^1.11.7"
 
-"@cdktf/hcl2json@0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@cdktf/hcl2json/-/hcl2json-0.8.0.tgz#752c85d8ef7123eaa67b967fd5fc95f2ad6eb00d"
-  integrity sha512-P8WT3wArFQL7ZTB4gO8/A2Ks6AVYmUaJT2Yzr7dKfIJqOEJyf7uXXrHa8zhAjEFANoHQp9w8CPt3Y0qvETmL2g==
+"@cdktf/hcl2json@0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@cdktf/hcl2json/-/hcl2json-0.8.1.tgz#5f2600d814078d79c9a899deb1d55167ff1210ec"
+  integrity sha512-cCXobcITma0CVa8aqCmAKnmLpTC/7T62tJpIUe82LXB+b8XZQb54yFgrgHF1pJiOLqO9CkEOSRztzbUvtzDqPw==
   dependencies:
     "@types/node-fetch" "^2.5.8"
     node-fetch "^2.6.1"
 
-"@cdktf/provider-generator@0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-generator/-/provider-generator-0.8.0.tgz#90f95e27e1a7813482d385f2fbc07cf43d635998"
-  integrity sha512-u5uQbOzZERzz3oDmPL/Lt1a18jeOXvpFc/nMj0ji5jia1vd4HA8pQ9M8Bj/AsXMK1CV3ciJh4tEcx9af/XoXXQ==
+"@cdktf/provider-generator@0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-generator/-/provider-generator-0.8.1.tgz#5dd16eba86519d6ad355007922a6c1b3b133dc6d"
+  integrity sha512-50PhWgIDs5m/OjXqy3UrnYPnrjhk7nhSSCDKBUIhuA0oFNfKDLRJDqnKAkNrcD1Kspea7N0/ckPHW7D84lNAIw==
   dependencies:
-    "@cdktf/hcl2json" "0.8.0"
+    "@cdktf/hcl2json" "0.8.1"
     codemaker "^0.22.0"
     fs-extra "^8.1.0"
     is-valid-domain "^0.1.2"
@@ -693,22 +693,22 @@ caseless@~0.12.0:
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
 cdktf-cli@^0.8:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.8.0.tgz#7f062466053242d6045dc545dcae11fc7c017dac"
-  integrity sha512-M3XfblNzfpszgvD3ZdyWTzBDqWKAoN3YdwBkvuoHjefmx6EZ9weIJ/XEAYEU3k9KQeur2VRrbDs1Az9//X6cbQ==
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.8.1.tgz#65474f5c59da0d0e88913e6ce57fe5def6676de9"
+  integrity sha512-pc+zelNhkYIiGY/9rWeKpUD6zh66gbXSS66u+VnA8r7PfXhLuL+uLXJ6YHQUV1zOyrF1KamMk3GoGY/9/PuQWw==
   dependencies:
-    "@cdktf/hcl2cdk" "0.8.0"
-    "@cdktf/hcl2json" "0.8.0"
-    cdktf "0.8.0"
+    "@cdktf/hcl2cdk" "0.8.1"
+    "@cdktf/hcl2json" "0.8.1"
+    cdktf "0.8.1"
     constructs "^10.0.0"
     jsii "^1.46.0"
     jsii-pacmak "^1.46.0"
     yargs "^17.0"
 
-cdktf@0.8.0, cdktf@^0.8:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.8.0.tgz#6aacd42decefeb9393a87ae3a92f5298f2b74466"
-  integrity sha512-4db97UhbynK648zoJeG66jdLdk9PAwyKZ3PYgkzRfNf9W1ioQzuE3GZMKhmYUSzfl9alfT4QvixNA/zR5SNPAw==
+cdktf@0.8.1, cdktf@^0.8:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.8.1.tgz#6b014f3c9ef6baae65801b9307174d05cf8ce276"
+  integrity sha512-12SZiQvl8r6/Y77dDVlIeYym8ny4Mh3M8WNwWNXV0Gy9S4xJyODKYuKYCleaiJxwtHOkkN7Hn0S3RxAZyx3eRg==
   dependencies:
     archiver "5.3.0"
 

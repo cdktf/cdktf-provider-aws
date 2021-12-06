@@ -92,6 +92,8 @@ export function ssmAssociationOutputLocationToTerraform(struct?: SsmAssociationO
 }
 
 export class SsmAssociationOutputLocationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -102,7 +104,7 @@ export class SsmAssociationOutputLocationOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): SsmAssociationOutputLocation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._s3BucketName) {
       hasAnyValues = true;
@@ -121,11 +123,13 @@ export class SsmAssociationOutputLocationOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: SsmAssociationOutputLocation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._s3BucketName = undefined;
       this._s3KeyPrefix = undefined;
       this._s3Region = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._s3BucketName = value.s3BucketName;
       this._s3KeyPrefix = value.s3KeyPrefix;
       this._s3Region = value.s3Region;

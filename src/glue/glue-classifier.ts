@@ -79,6 +79,8 @@ export function glueClassifierCsvClassifierToTerraform(struct?: GlueClassifierCs
 }
 
 export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -89,7 +91,7 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): GlueClassifierCsvClassifier | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allowSingleColumn) {
       hasAnyValues = true;
@@ -120,6 +122,7 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: GlueClassifierCsvClassifier | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allowSingleColumn = undefined;
       this._containsHeader = undefined;
       this._delimiter = undefined;
@@ -128,6 +131,7 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
       this._quoteSymbol = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allowSingleColumn = value.allowSingleColumn;
       this._containsHeader = value.containsHeader;
       this._delimiter = value.delimiter;
@@ -261,6 +265,8 @@ export function glueClassifierGrokClassifierToTerraform(struct?: GlueClassifierG
 }
 
 export class GlueClassifierGrokClassifierOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -271,7 +277,7 @@ export class GlueClassifierGrokClassifierOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): GlueClassifierGrokClassifier | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._classification) {
       hasAnyValues = true;
@@ -290,11 +296,13 @@ export class GlueClassifierGrokClassifierOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: GlueClassifierGrokClassifier | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._classification = undefined;
       this._customPatterns = undefined;
       this._grokPattern = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._classification = value.classification;
       this._customPatterns = value.customPatterns;
       this._grokPattern = value.grokPattern;
@@ -361,6 +369,8 @@ export function glueClassifierJsonClassifierToTerraform(struct?: GlueClassifierJ
 }
 
 export class GlueClassifierJsonClassifierOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -371,7 +381,7 @@ export class GlueClassifierJsonClassifierOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): GlueClassifierJsonClassifier | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._jsonPath) {
       hasAnyValues = true;
@@ -382,9 +392,11 @@ export class GlueClassifierJsonClassifierOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: GlueClassifierJsonClassifier | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._jsonPath = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._jsonPath = value.jsonPath;
     }
   }
@@ -425,6 +437,8 @@ export function glueClassifierXmlClassifierToTerraform(struct?: GlueClassifierXm
 }
 
 export class GlueClassifierXmlClassifierOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -435,7 +449,7 @@ export class GlueClassifierXmlClassifierOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): GlueClassifierXmlClassifier | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._classification) {
       hasAnyValues = true;
@@ -450,10 +464,12 @@ export class GlueClassifierXmlClassifierOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: GlueClassifierXmlClassifier | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._classification = undefined;
       this._rowTag = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._classification = value.classification;
       this._rowTag = value.rowTag;
     }

@@ -71,6 +71,8 @@ export function cloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigCont
 }
 
 export class CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -81,7 +83,7 @@ export class CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContent
   }
 
   public get internalValue(): CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfiles | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -92,9 +94,11 @@ export class CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContent
 
   public set internalValue(value: CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfiles | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }
@@ -138,6 +142,8 @@ export function cloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigToTe
 }
 
 export class CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -148,13 +154,13 @@ export class CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputR
   }
 
   public get internalValue(): CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._forwardWhenContentTypeIsUnknown) {
       hasAnyValues = true;
       internalValueResult.forwardWhenContentTypeIsUnknown = this._forwardWhenContentTypeIsUnknown;
     }
-    if (this._contentTypeProfiles) {
+    if (this._contentTypeProfiles?.internalValue) {
       hasAnyValues = true;
       internalValueResult.contentTypeProfiles = this._contentTypeProfiles?.internalValue;
     }
@@ -163,10 +169,12 @@ export class CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputR
 
   public set internalValue(value: CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._forwardWhenContentTypeIsUnknown = undefined;
       this._contentTypeProfiles.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._forwardWhenContentTypeIsUnknown = value.forwardWhenContentTypeIsUnknown;
       this._contentTypeProfiles.internalValue = value.contentTypeProfiles;
     }
@@ -240,6 +248,8 @@ export function cloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryAr
 }
 
 export class CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -250,7 +260,7 @@ export class CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgPr
   }
 
   public get internalValue(): CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfiles | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._items) {
       hasAnyValues = true;
@@ -261,9 +271,11 @@ export class CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgPr
 
   public set internalValue(value: CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfiles | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._items = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._items = value.items;
     }
   }
@@ -310,6 +322,8 @@ export function cloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigToTerra
 }
 
 export class CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -320,13 +334,13 @@ export class CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputRefe
   }
 
   public get internalValue(): CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._forwardWhenQueryArgProfileIsUnknown) {
       hasAnyValues = true;
       internalValueResult.forwardWhenQueryArgProfileIsUnknown = this._forwardWhenQueryArgProfileIsUnknown;
     }
-    if (this._queryArgProfiles) {
+    if (this._queryArgProfiles?.internalValue) {
       hasAnyValues = true;
       internalValueResult.queryArgProfiles = this._queryArgProfiles?.internalValue;
     }
@@ -335,10 +349,12 @@ export class CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputRefe
 
   public set internalValue(value: CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._forwardWhenQueryArgProfileIsUnknown = undefined;
       this._queryArgProfiles.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._forwardWhenQueryArgProfileIsUnknown = value.forwardWhenQueryArgProfileIsUnknown;
       this._queryArgProfiles.internalValue = value.queryArgProfiles;
     }

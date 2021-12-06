@@ -109,6 +109,8 @@ export function appstreamStackApplicationSettingsToTerraform(struct?: AppstreamS
 }
 
 export class AppstreamStackApplicationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -119,7 +121,7 @@ export class AppstreamStackApplicationSettingsOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): AppstreamStackApplicationSettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -134,10 +136,12 @@ export class AppstreamStackApplicationSettingsOutputReference extends cdktf.Comp
 
   public set internalValue(value: AppstreamStackApplicationSettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._settingsGroup = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._settingsGroup = value.settingsGroup;
     }

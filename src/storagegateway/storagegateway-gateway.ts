@@ -134,6 +134,8 @@ export function storagegatewayGatewaySmbActiveDirectorySettingsToTerraform(struc
 }
 
 export class StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -144,7 +146,7 @@ export class StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference exte
   }
 
   public get internalValue(): StoragegatewayGatewaySmbActiveDirectorySettings | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._domainControllers) {
       hasAnyValues = true;
@@ -175,6 +177,7 @@ export class StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference exte
 
   public set internalValue(value: StoragegatewayGatewaySmbActiveDirectorySettings | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._domainControllers = undefined;
       this._domainName = undefined;
       this._organizationalUnit = undefined;
@@ -183,6 +186,7 @@ export class StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference exte
       this._username = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._domainControllers = value.domainControllers;
       this._domainName = value.domainName;
       this._organizationalUnit = value.organizationalUnit;
@@ -297,6 +301,8 @@ export function storagegatewayGatewayTimeoutsToTerraform(struct?: Storagegateway
 }
 
 export class StoragegatewayGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -307,7 +313,7 @@ export class StoragegatewayGatewayTimeoutsOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): StoragegatewayGatewayTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -318,9 +324,11 @@ export class StoragegatewayGatewayTimeoutsOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: StoragegatewayGatewayTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
     }
   }

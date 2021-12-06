@@ -124,6 +124,8 @@ export function acmpcaCertificateAuthorityCertificateAuthorityConfigurationSubje
 }
 
 export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -134,7 +136,7 @@ export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectO
   }
 
   public get internalValue(): AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._commonName) {
       hasAnyValues = true;
@@ -193,6 +195,7 @@ export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectO
 
   public set internalValue(value: AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._commonName = undefined;
       this._country = undefined;
       this._distinguishedNameQualifier = undefined;
@@ -208,6 +211,7 @@ export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectO
       this._title = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._commonName = value.commonName;
       this._country = value.country;
       this._distinguishedNameQualifier = value.distinguishedNameQualifier;
@@ -462,6 +466,8 @@ export function acmpcaCertificateAuthorityCertificateAuthorityConfigurationToTer
 }
 
 export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -472,7 +478,7 @@ export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputRe
   }
 
   public get internalValue(): AcmpcaCertificateAuthorityCertificateAuthorityConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._keyAlgorithm) {
       hasAnyValues = true;
@@ -482,7 +488,7 @@ export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputRe
       hasAnyValues = true;
       internalValueResult.signingAlgorithm = this._signingAlgorithm;
     }
-    if (this._subject) {
+    if (this._subject?.internalValue) {
       hasAnyValues = true;
       internalValueResult.subject = this._subject?.internalValue;
     }
@@ -491,11 +497,13 @@ export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputRe
 
   public set internalValue(value: AcmpcaCertificateAuthorityCertificateAuthorityConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._keyAlgorithm = undefined;
       this._signingAlgorithm = undefined;
       this._subject.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._keyAlgorithm = value.keyAlgorithm;
       this._signingAlgorithm = value.signingAlgorithm;
       this._subject.internalValue = value.subject;
@@ -579,6 +587,8 @@ export function acmpcaCertificateAuthorityRevocationConfigurationCrlConfiguratio
 }
 
 export class AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -589,7 +599,7 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOu
   }
 
   public get internalValue(): AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._customCname) {
       hasAnyValues = true;
@@ -616,6 +626,7 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOu
 
   public set internalValue(value: AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._customCname = undefined;
       this._enabled = undefined;
       this._expirationInDays = undefined;
@@ -623,6 +634,7 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOu
       this._s3ObjectAcl = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._customCname = value.customCname;
       this._enabled = value.enabled;
       this._expirationInDays = value.expirationInDays;
@@ -728,6 +740,8 @@ export function acmpcaCertificateAuthorityRevocationConfigurationToTerraform(str
 }
 
 export class AcmpcaCertificateAuthorityRevocationConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -738,9 +752,9 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationOutputReference ex
   }
 
   public get internalValue(): AcmpcaCertificateAuthorityRevocationConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._crlConfiguration) {
+    if (this._crlConfiguration?.internalValue) {
       hasAnyValues = true;
       internalValueResult.crlConfiguration = this._crlConfiguration?.internalValue;
     }
@@ -749,9 +763,11 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationOutputReference ex
 
   public set internalValue(value: AcmpcaCertificateAuthorityRevocationConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._crlConfiguration.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._crlConfiguration.internalValue = value.crlConfiguration;
     }
   }
@@ -790,6 +806,8 @@ export function acmpcaCertificateAuthorityTimeoutsToTerraform(struct?: AcmpcaCer
 }
 
 export class AcmpcaCertificateAuthorityTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -800,7 +818,7 @@ export class AcmpcaCertificateAuthorityTimeoutsOutputReference extends cdktf.Com
   }
 
   public get internalValue(): AcmpcaCertificateAuthorityTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -811,9 +829,11 @@ export class AcmpcaCertificateAuthorityTimeoutsOutputReference extends cdktf.Com
 
   public set internalValue(value: AcmpcaCertificateAuthorityTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
     }
   }

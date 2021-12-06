@@ -76,6 +76,8 @@ export function glueTriggerActionsNotificationPropertyToTerraform(struct?: GlueT
 }
 
 export class GlueTriggerActionsNotificationPropertyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -86,7 +88,7 @@ export class GlueTriggerActionsNotificationPropertyOutputReference extends cdktf
   }
 
   public get internalValue(): GlueTriggerActionsNotificationProperty | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._notifyDelayAfter) {
       hasAnyValues = true;
@@ -97,9 +99,11 @@ export class GlueTriggerActionsNotificationPropertyOutputReference extends cdktf
 
   public set internalValue(value: GlueTriggerActionsNotificationProperty | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._notifyDelayAfter = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._notifyDelayAfter = value.notifyDelayAfter;
     }
   }
@@ -226,6 +230,8 @@ export function glueTriggerPredicateToTerraform(struct?: GlueTriggerPredicateOut
 }
 
 export class GlueTriggerPredicateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -236,7 +242,7 @@ export class GlueTriggerPredicateOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): GlueTriggerPredicate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._logical) {
       hasAnyValues = true;
@@ -251,10 +257,12 @@ export class GlueTriggerPredicateOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: GlueTriggerPredicate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._logical = undefined;
       this._conditions = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._logical = value.logical;
       this._conditions = value.conditions;
     }
@@ -313,6 +321,8 @@ export function glueTriggerTimeoutsToTerraform(struct?: GlueTriggerTimeoutsOutpu
 }
 
 export class GlueTriggerTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -323,7 +333,7 @@ export class GlueTriggerTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): GlueTriggerTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -338,10 +348,12 @@ export class GlueTriggerTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: GlueTriggerTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
     }

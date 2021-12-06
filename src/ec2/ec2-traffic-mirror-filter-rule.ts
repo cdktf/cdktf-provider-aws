@@ -75,6 +75,8 @@ export function ec2TrafficMirrorFilterRuleDestinationPortRangeToTerraform(struct
 }
 
 export class Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -85,7 +87,7 @@ export class Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference exten
   }
 
   public get internalValue(): Ec2TrafficMirrorFilterRuleDestinationPortRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fromPort) {
       hasAnyValues = true;
@@ -100,10 +102,12 @@ export class Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference exten
 
   public set internalValue(value: Ec2TrafficMirrorFilterRuleDestinationPortRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fromPort = undefined;
       this._toPort = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fromPort = value.fromPort;
       this._toPort = value.toPort;
     }
@@ -164,6 +168,8 @@ export function ec2TrafficMirrorFilterRuleSourcePortRangeToTerraform(struct?: Ec
 }
 
 export class Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -174,7 +180,7 @@ export class Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference extends cd
   }
 
   public get internalValue(): Ec2TrafficMirrorFilterRuleSourcePortRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fromPort) {
       hasAnyValues = true;
@@ -189,10 +195,12 @@ export class Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference extends cd
 
   public set internalValue(value: Ec2TrafficMirrorFilterRuleSourcePortRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fromPort = undefined;
       this._toPort = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fromPort = value.fromPort;
       this._toPort = value.toPort;
     }

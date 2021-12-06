@@ -72,6 +72,8 @@ export function codebuildReportGroupExportConfigS3DestinationToTerraform(struct?
 }
 
 export class CodebuildReportGroupExportConfigS3DestinationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -82,7 +84,7 @@ export class CodebuildReportGroupExportConfigS3DestinationOutputReference extend
   }
 
   public get internalValue(): CodebuildReportGroupExportConfigS3Destination | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bucket) {
       hasAnyValues = true;
@@ -109,6 +111,7 @@ export class CodebuildReportGroupExportConfigS3DestinationOutputReference extend
 
   public set internalValue(value: CodebuildReportGroupExportConfigS3Destination | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bucket = undefined;
       this._encryptionDisabled = undefined;
       this._encryptionKey = undefined;
@@ -116,6 +119,7 @@ export class CodebuildReportGroupExportConfigS3DestinationOutputReference extend
       this._path = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bucket = value.bucket;
       this._encryptionDisabled = value.encryptionDisabled;
       this._encryptionKey = value.encryptionKey;
@@ -223,6 +227,8 @@ export function codebuildReportGroupExportConfigToTerraform(struct?: CodebuildRe
 }
 
 export class CodebuildReportGroupExportConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -233,13 +239,13 @@ export class CodebuildReportGroupExportConfigOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): CodebuildReportGroupExportConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._s3Destination) {
+    if (this._s3Destination?.internalValue) {
       hasAnyValues = true;
       internalValueResult.s3Destination = this._s3Destination?.internalValue;
     }
@@ -248,10 +254,12 @@ export class CodebuildReportGroupExportConfigOutputReference extends cdktf.Compl
 
   public set internalValue(value: CodebuildReportGroupExportConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._s3Destination.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._s3Destination.internalValue = value.s3Destination;
     }

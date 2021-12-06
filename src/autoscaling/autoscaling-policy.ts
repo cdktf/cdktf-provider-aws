@@ -85,6 +85,8 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
 }
 
 export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -95,7 +97,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
   }
 
   public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._predefinedMetricType) {
       hasAnyValues = true;
@@ -110,10 +112,12 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
 
   public set internalValue(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._predefinedMetricType = undefined;
       this._resourceLabel = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._predefinedMetricType = value.predefinedMetricType;
       this._resourceLabel = value.resourceLabel;
     }
@@ -168,6 +172,8 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
 }
 
 export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -178,7 +184,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
   }
 
   public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._predefinedMetricType) {
       hasAnyValues = true;
@@ -193,10 +199,12 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
 
   public set internalValue(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._predefinedMetricType = undefined;
       this._resourceLabel = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._predefinedMetricType = value.predefinedMetricType;
       this._resourceLabel = value.resourceLabel;
     }
@@ -251,6 +259,8 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
 }
 
 export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -261,7 +271,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
   }
 
   public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._predefinedMetricType) {
       hasAnyValues = true;
@@ -276,10 +286,12 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
 
   public set internalValue(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._predefinedMetricType = undefined;
       this._resourceLabel = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._predefinedMetricType = value.predefinedMetricType;
       this._resourceLabel = value.resourceLabel;
     }
@@ -350,6 +362,8 @@ export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificati
 }
 
 export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -360,21 +374,21 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationO
   }
 
   public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._targetValue) {
       hasAnyValues = true;
       internalValueResult.targetValue = this._targetValue;
     }
-    if (this._predefinedLoadMetricSpecification) {
+    if (this._predefinedLoadMetricSpecification?.internalValue) {
       hasAnyValues = true;
       internalValueResult.predefinedLoadMetricSpecification = this._predefinedLoadMetricSpecification?.internalValue;
     }
-    if (this._predefinedMetricPairSpecification) {
+    if (this._predefinedMetricPairSpecification?.internalValue) {
       hasAnyValues = true;
       internalValueResult.predefinedMetricPairSpecification = this._predefinedMetricPairSpecification?.internalValue;
     }
-    if (this._predefinedScalingMetricSpecification) {
+    if (this._predefinedScalingMetricSpecification?.internalValue) {
       hasAnyValues = true;
       internalValueResult.predefinedScalingMetricSpecification = this._predefinedScalingMetricSpecification?.internalValue;
     }
@@ -383,12 +397,14 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationO
 
   public set internalValue(value: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._targetValue = undefined;
       this._predefinedLoadMetricSpecification.internalValue = undefined;
       this._predefinedMetricPairSpecification.internalValue = undefined;
       this._predefinedScalingMetricSpecification.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._targetValue = value.targetValue;
       this._predefinedLoadMetricSpecification.internalValue = value.predefinedLoadMetricSpecification;
       this._predefinedMetricPairSpecification.internalValue = value.predefinedMetricPairSpecification;
@@ -497,6 +513,8 @@ export function autoscalingPolicyPredictiveScalingConfigurationToTerraform(struc
 }
 
 export class AutoscalingPolicyPredictiveScalingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -507,7 +525,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationOutputReference exte
   }
 
   public get internalValue(): AutoscalingPolicyPredictiveScalingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._maxCapacityBreachBehavior) {
       hasAnyValues = true;
@@ -525,7 +543,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationOutputReference exte
       hasAnyValues = true;
       internalValueResult.schedulingBufferTime = this._schedulingBufferTime;
     }
-    if (this._metricSpecification) {
+    if (this._metricSpecification?.internalValue) {
       hasAnyValues = true;
       internalValueResult.metricSpecification = this._metricSpecification?.internalValue;
     }
@@ -534,6 +552,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationOutputReference exte
 
   public set internalValue(value: AutoscalingPolicyPredictiveScalingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._maxCapacityBreachBehavior = undefined;
       this._maxCapacityBuffer = undefined;
       this._mode = undefined;
@@ -541,6 +560,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationOutputReference exte
       this._metricSpecification.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._maxCapacityBreachBehavior = value.maxCapacityBreachBehavior;
       this._maxCapacityBuffer = value.maxCapacityBuffer;
       this._mode = value.mode;
@@ -715,6 +735,8 @@ export function autoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpec
 }
 
 export class AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -725,7 +747,7 @@ export class AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecifi
   }
 
   public get internalValue(): AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._metricName) {
       hasAnyValues = true;
@@ -752,6 +774,7 @@ export class AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecifi
 
   public set internalValue(value: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._metricName = undefined;
       this._namespace = undefined;
       this._statistic = undefined;
@@ -759,6 +782,7 @@ export class AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecifi
       this._metricDimension = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._metricName = value.metricName;
       this._namespace = value.namespace;
       this._statistic = value.statistic;
@@ -862,6 +886,8 @@ export function autoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpec
 }
 
 export class AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -872,7 +898,7 @@ export class AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecifi
   }
 
   public get internalValue(): AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._predefinedMetricType) {
       hasAnyValues = true;
@@ -887,10 +913,12 @@ export class AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecifi
 
   public set internalValue(value: AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._predefinedMetricType = undefined;
       this._resourceLabel = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._predefinedMetricType = value.predefinedMetricType;
       this._resourceLabel = value.resourceLabel;
     }
@@ -962,6 +990,8 @@ export function autoscalingPolicyTargetTrackingConfigurationToTerraform(struct?:
 }
 
 export class AutoscalingPolicyTargetTrackingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -972,7 +1002,7 @@ export class AutoscalingPolicyTargetTrackingConfigurationOutputReference extends
   }
 
   public get internalValue(): AutoscalingPolicyTargetTrackingConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._disableScaleIn) {
       hasAnyValues = true;
@@ -982,11 +1012,11 @@ export class AutoscalingPolicyTargetTrackingConfigurationOutputReference extends
       hasAnyValues = true;
       internalValueResult.targetValue = this._targetValue;
     }
-    if (this._customizedMetricSpecification) {
+    if (this._customizedMetricSpecification?.internalValue) {
       hasAnyValues = true;
       internalValueResult.customizedMetricSpecification = this._customizedMetricSpecification?.internalValue;
     }
-    if (this._predefinedMetricSpecification) {
+    if (this._predefinedMetricSpecification?.internalValue) {
       hasAnyValues = true;
       internalValueResult.predefinedMetricSpecification = this._predefinedMetricSpecification?.internalValue;
     }
@@ -995,12 +1025,14 @@ export class AutoscalingPolicyTargetTrackingConfigurationOutputReference extends
 
   public set internalValue(value: AutoscalingPolicyTargetTrackingConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._disableScaleIn = undefined;
       this._targetValue = undefined;
       this._customizedMetricSpecification.internalValue = undefined;
       this._predefinedMetricSpecification.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._disableScaleIn = value.disableScaleIn;
       this._targetValue = value.targetValue;
       this._customizedMetricSpecification.internalValue = value.customizedMetricSpecification;

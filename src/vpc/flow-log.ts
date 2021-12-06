@@ -90,6 +90,8 @@ export function flowLogDestinationOptionsToTerraform(struct?: FlowLogDestination
 }
 
 export class FlowLogDestinationOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -100,7 +102,7 @@ export class FlowLogDestinationOptionsOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): FlowLogDestinationOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._fileFormat) {
       hasAnyValues = true;
@@ -119,11 +121,13 @@ export class FlowLogDestinationOptionsOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: FlowLogDestinationOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._fileFormat = undefined;
       this._hiveCompatiblePartitions = undefined;
       this._perHourPartition = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._fileFormat = value.fileFormat;
       this._hiveCompatiblePartitions = value.hiveCompatiblePartitions;
       this._perHourPartition = value.perHourPartition;

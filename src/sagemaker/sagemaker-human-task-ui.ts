@@ -44,6 +44,8 @@ export function sagemakerHumanTaskUiUiTemplateToTerraform(struct?: SagemakerHuma
 }
 
 export class SagemakerHumanTaskUiUiTemplateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -54,7 +56,7 @@ export class SagemakerHumanTaskUiUiTemplateOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): SagemakerHumanTaskUiUiTemplate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._content) {
       hasAnyValues = true;
@@ -65,9 +67,11 @@ export class SagemakerHumanTaskUiUiTemplateOutputReference extends cdktf.Complex
 
   public set internalValue(value: SagemakerHumanTaskUiUiTemplate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._content = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._content = value.content;
     }
   }

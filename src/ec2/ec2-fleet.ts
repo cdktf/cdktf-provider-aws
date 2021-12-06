@@ -94,6 +94,8 @@ export function ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationToTerrafo
 }
 
 export class Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -104,7 +106,7 @@ export class Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputRefere
   }
 
   public get internalValue(): Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._launchTemplateId) {
       hasAnyValues = true;
@@ -123,11 +125,13 @@ export class Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputRefere
 
   public set internalValue(value: Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._launchTemplateId = undefined;
       this._launchTemplateName = undefined;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._launchTemplateId = value.launchTemplateId;
       this._launchTemplateName = value.launchTemplateName;
       this._version = value.version;
@@ -248,6 +252,8 @@ export function ec2FleetLaunchTemplateConfigToTerraform(struct?: Ec2FleetLaunchT
 }
 
 export class Ec2FleetLaunchTemplateConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -258,9 +264,9 @@ export class Ec2FleetLaunchTemplateConfigOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): Ec2FleetLaunchTemplateConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._launchTemplateSpecification) {
+    if (this._launchTemplateSpecification?.internalValue) {
       hasAnyValues = true;
       internalValueResult.launchTemplateSpecification = this._launchTemplateSpecification?.internalValue;
     }
@@ -273,10 +279,12 @@ export class Ec2FleetLaunchTemplateConfigOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: Ec2FleetLaunchTemplateConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._launchTemplateSpecification.internalValue = undefined;
       this._override = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._launchTemplateSpecification.internalValue = value.launchTemplateSpecification;
       this._override = value.override;
     }
@@ -330,6 +338,8 @@ export function ec2FleetOnDemandOptionsToTerraform(struct?: Ec2FleetOnDemandOpti
 }
 
 export class Ec2FleetOnDemandOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -340,7 +350,7 @@ export class Ec2FleetOnDemandOptionsOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): Ec2FleetOnDemandOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allocationStrategy) {
       hasAnyValues = true;
@@ -351,9 +361,11 @@ export class Ec2FleetOnDemandOptionsOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: Ec2FleetOnDemandOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allocationStrategy = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allocationStrategy = value.allocationStrategy;
     }
   }
@@ -392,6 +404,8 @@ export function ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceToTerra
 }
 
 export class Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -402,7 +416,7 @@ export class Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputRefe
   }
 
   public get internalValue(): Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._replacementStrategy) {
       hasAnyValues = true;
@@ -413,9 +427,11 @@ export class Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputRefe
 
   public set internalValue(value: Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._replacementStrategy = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._replacementStrategy = value.replacementStrategy;
     }
   }
@@ -456,6 +472,8 @@ export function ec2FleetSpotOptionsMaintenanceStrategiesToTerraform(struct?: Ec2
 }
 
 export class Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -466,9 +484,9 @@ export class Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference extends cdk
   }
 
   public get internalValue(): Ec2FleetSpotOptionsMaintenanceStrategies | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._capacityRebalance) {
+    if (this._capacityRebalance?.internalValue) {
       hasAnyValues = true;
       internalValueResult.capacityRebalance = this._capacityRebalance?.internalValue;
     }
@@ -477,9 +495,11 @@ export class Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference extends cdk
 
   public set internalValue(value: Ec2FleetSpotOptionsMaintenanceStrategies | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._capacityRebalance.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._capacityRebalance.internalValue = value.capacityRebalance;
     }
   }
@@ -535,6 +555,8 @@ export function ec2FleetSpotOptionsToTerraform(struct?: Ec2FleetSpotOptionsOutpu
 }
 
 export class Ec2FleetSpotOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -545,7 +567,7 @@ export class Ec2FleetSpotOptionsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): Ec2FleetSpotOptions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._allocationStrategy) {
       hasAnyValues = true;
@@ -559,7 +581,7 @@ export class Ec2FleetSpotOptionsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.instancePoolsToUseCount = this._instancePoolsToUseCount;
     }
-    if (this._maintenanceStrategies) {
+    if (this._maintenanceStrategies?.internalValue) {
       hasAnyValues = true;
       internalValueResult.maintenanceStrategies = this._maintenanceStrategies?.internalValue;
     }
@@ -568,12 +590,14 @@ export class Ec2FleetSpotOptionsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: Ec2FleetSpotOptions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._allocationStrategy = undefined;
       this._instanceInterruptionBehavior = undefined;
       this._instancePoolsToUseCount = undefined;
       this._maintenanceStrategies.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._allocationStrategy = value.allocationStrategy;
       this._instanceInterruptionBehavior = value.instanceInterruptionBehavior;
       this._instancePoolsToUseCount = value.instancePoolsToUseCount;
@@ -678,6 +702,8 @@ export function ec2FleetTargetCapacitySpecificationToTerraform(struct?: Ec2Fleet
 }
 
 export class Ec2FleetTargetCapacitySpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -688,7 +714,7 @@ export class Ec2FleetTargetCapacitySpecificationOutputReference extends cdktf.Co
   }
 
   public get internalValue(): Ec2FleetTargetCapacitySpecification | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._defaultTargetCapacityType) {
       hasAnyValues = true;
@@ -711,12 +737,14 @@ export class Ec2FleetTargetCapacitySpecificationOutputReference extends cdktf.Co
 
   public set internalValue(value: Ec2FleetTargetCapacitySpecification | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._defaultTargetCapacityType = undefined;
       this._onDemandTargetCapacity = undefined;
       this._spotTargetCapacity = undefined;
       this._totalTargetCapacity = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._defaultTargetCapacityType = value.defaultTargetCapacityType;
       this._onDemandTargetCapacity = value.onDemandTargetCapacity;
       this._spotTargetCapacity = value.spotTargetCapacity;
@@ -810,6 +838,8 @@ export function ec2FleetTimeoutsToTerraform(struct?: Ec2FleetTimeoutsOutputRefer
 }
 
 export class Ec2FleetTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -820,7 +850,7 @@ export class Ec2FleetTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): Ec2FleetTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -839,11 +869,13 @@ export class Ec2FleetTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: Ec2FleetTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;

@@ -58,6 +58,8 @@ export function cloudwatchEventPermissionConditionToTerraform(struct?: Cloudwatc
 }
 
 export class CloudwatchEventPermissionConditionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -68,7 +70,7 @@ export class CloudwatchEventPermissionConditionOutputReference extends cdktf.Com
   }
 
   public get internalValue(): CloudwatchEventPermissionCondition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key) {
       hasAnyValues = true;
@@ -87,11 +89,13 @@ export class CloudwatchEventPermissionConditionOutputReference extends cdktf.Com
 
   public set internalValue(value: CloudwatchEventPermissionCondition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._key = undefined;
       this._type = undefined;
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._key = value.key;
       this._type = value.type;
       this._value = value.value;

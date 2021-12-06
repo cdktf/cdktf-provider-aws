@@ -52,6 +52,8 @@ export function appmeshVirtualServiceSpecProviderVirtualNodeToTerraform(struct?:
 }
 
 export class AppmeshVirtualServiceSpecProviderVirtualNodeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -62,7 +64,7 @@ export class AppmeshVirtualServiceSpecProviderVirtualNodeOutputReference extends
   }
 
   public get internalValue(): AppmeshVirtualServiceSpecProviderVirtualNode | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._virtualNodeName) {
       hasAnyValues = true;
@@ -73,9 +75,11 @@ export class AppmeshVirtualServiceSpecProviderVirtualNodeOutputReference extends
 
   public set internalValue(value: AppmeshVirtualServiceSpecProviderVirtualNode | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._virtualNodeName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._virtualNodeName = value.virtualNodeName;
     }
   }
@@ -111,6 +115,8 @@ export function appmeshVirtualServiceSpecProviderVirtualRouterToTerraform(struct
 }
 
 export class AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -121,7 +127,7 @@ export class AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference exten
   }
 
   public get internalValue(): AppmeshVirtualServiceSpecProviderVirtualRouter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._virtualRouterName) {
       hasAnyValues = true;
@@ -132,9 +138,11 @@ export class AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference exten
 
   public set internalValue(value: AppmeshVirtualServiceSpecProviderVirtualRouter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._virtualRouterName = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._virtualRouterName = value.virtualRouterName;
     }
   }
@@ -179,6 +187,8 @@ export function appmeshVirtualServiceSpecProviderToTerraform(struct?: AppmeshVir
 }
 
 export class AppmeshVirtualServiceSpecProviderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -189,13 +199,13 @@ export class AppmeshVirtualServiceSpecProviderOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): AppmeshVirtualServiceSpecProvider | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._virtualNode) {
+    if (this._virtualNode?.internalValue) {
       hasAnyValues = true;
       internalValueResult.virtualNode = this._virtualNode?.internalValue;
     }
-    if (this._virtualRouter) {
+    if (this._virtualRouter?.internalValue) {
       hasAnyValues = true;
       internalValueResult.virtualRouter = this._virtualRouter?.internalValue;
     }
@@ -204,10 +214,12 @@ export class AppmeshVirtualServiceSpecProviderOutputReference extends cdktf.Comp
 
   public set internalValue(value: AppmeshVirtualServiceSpecProvider | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._virtualNode.internalValue = undefined;
       this._virtualRouter.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._virtualNode.internalValue = value.virtualNode;
       this._virtualRouter.internalValue = value.virtualRouter;
     }
@@ -265,6 +277,8 @@ export function appmeshVirtualServiceSpecToTerraform(struct?: AppmeshVirtualServ
 }
 
 export class AppmeshVirtualServiceSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -275,9 +289,9 @@ export class AppmeshVirtualServiceSpecOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): AppmeshVirtualServiceSpec | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._provider) {
+    if (this._provider?.internalValue) {
       hasAnyValues = true;
       internalValueResult.provider = this._provider?.internalValue;
     }
@@ -286,9 +300,11 @@ export class AppmeshVirtualServiceSpecOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: AppmeshVirtualServiceSpec | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._provider.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._provider.internalValue = value.provider;
     }
   }

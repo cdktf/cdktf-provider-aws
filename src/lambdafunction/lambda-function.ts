@@ -156,6 +156,8 @@ export function lambdaFunctionDeadLetterConfigToTerraform(struct?: LambdaFunctio
 }
 
 export class LambdaFunctionDeadLetterConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -166,7 +168,7 @@ export class LambdaFunctionDeadLetterConfigOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): LambdaFunctionDeadLetterConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._targetArn) {
       hasAnyValues = true;
@@ -177,9 +179,11 @@ export class LambdaFunctionDeadLetterConfigOutputReference extends cdktf.Complex
 
   public set internalValue(value: LambdaFunctionDeadLetterConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._targetArn = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._targetArn = value.targetArn;
     }
   }
@@ -215,6 +219,8 @@ export function lambdaFunctionEnvironmentToTerraform(struct?: LambdaFunctionEnvi
 }
 
 export class LambdaFunctionEnvironmentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -225,7 +231,7 @@ export class LambdaFunctionEnvironmentOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): LambdaFunctionEnvironment | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._variables) {
       hasAnyValues = true;
@@ -236,9 +242,11 @@ export class LambdaFunctionEnvironmentOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: LambdaFunctionEnvironment | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._variables = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._variables = value.variables;
     }
   }
@@ -283,6 +291,8 @@ export function lambdaFunctionFileSystemConfigToTerraform(struct?: LambdaFunctio
 }
 
 export class LambdaFunctionFileSystemConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -293,7 +303,7 @@ export class LambdaFunctionFileSystemConfigOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): LambdaFunctionFileSystemConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._arn) {
       hasAnyValues = true;
@@ -308,10 +318,12 @@ export class LambdaFunctionFileSystemConfigOutputReference extends cdktf.Complex
 
   public set internalValue(value: LambdaFunctionFileSystemConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._arn = undefined;
       this._localMountPath = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._arn = value.arn;
       this._localMountPath = value.localMountPath;
     }
@@ -371,6 +383,8 @@ export function lambdaFunctionImageConfigToTerraform(struct?: LambdaFunctionImag
 }
 
 export class LambdaFunctionImageConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -381,7 +395,7 @@ export class LambdaFunctionImageConfigOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): LambdaFunctionImageConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._command) {
       hasAnyValues = true;
@@ -400,11 +414,13 @@ export class LambdaFunctionImageConfigOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: LambdaFunctionImageConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._command = undefined;
       this._entryPoint = undefined;
       this._workingDirectory = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._command = value.command;
       this._entryPoint = value.entryPoint;
       this._workingDirectory = value.workingDirectory;
@@ -477,6 +493,8 @@ export function lambdaFunctionTimeoutsToTerraform(struct?: LambdaFunctionTimeout
 }
 
 export class LambdaFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -487,7 +505,7 @@ export class LambdaFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): LambdaFunctionTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -498,9 +516,11 @@ export class LambdaFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: LambdaFunctionTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
     }
   }
@@ -539,6 +559,8 @@ export function lambdaFunctionTracingConfigToTerraform(struct?: LambdaFunctionTr
 }
 
 export class LambdaFunctionTracingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -549,7 +571,7 @@ export class LambdaFunctionTracingConfigOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): LambdaFunctionTracingConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._mode) {
       hasAnyValues = true;
@@ -560,9 +582,11 @@ export class LambdaFunctionTracingConfigOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: LambdaFunctionTracingConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._mode = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._mode = value.mode;
     }
   }
@@ -603,6 +627,8 @@ export function lambdaFunctionVpcConfigToTerraform(struct?: LambdaFunctionVpcCon
 }
 
 export class LambdaFunctionVpcConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -613,7 +639,7 @@ export class LambdaFunctionVpcConfigOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): LambdaFunctionVpcConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._securityGroupIds) {
       hasAnyValues = true;
@@ -628,10 +654,12 @@ export class LambdaFunctionVpcConfigOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: LambdaFunctionVpcConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._securityGroupIds = undefined;
       this._subnetIds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._securityGroupIds = value.securityGroupIds;
       this._subnetIds = value.subnetIds;
     }

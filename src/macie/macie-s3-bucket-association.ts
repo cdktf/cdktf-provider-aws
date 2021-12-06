@@ -49,6 +49,8 @@ export function macieS3BucketAssociationClassificationTypeToTerraform(struct?: M
 }
 
 export class MacieS3BucketAssociationClassificationTypeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -59,7 +61,7 @@ export class MacieS3BucketAssociationClassificationTypeOutputReference extends c
   }
 
   public get internalValue(): MacieS3BucketAssociationClassificationType | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._continuous) {
       hasAnyValues = true;
@@ -74,10 +76,12 @@ export class MacieS3BucketAssociationClassificationTypeOutputReference extends c
 
   public set internalValue(value: MacieS3BucketAssociationClassificationType | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._continuous = undefined;
       this._oneTime = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._continuous = value.continuous;
       this._oneTime = value.oneTime;
     }
