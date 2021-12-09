@@ -93,9 +93,9 @@
     jsii-srcmak "^0.1.406"
 
 "@cdktf/provider-project@^0.2.8":
-  version "0.2.23"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.23.tgz#5610eccc0288edf1a9000a7cbbdaca681cd6914e"
-  integrity sha512-g7fGvqm0NPSTDL3I2+B5pa7byMvV5dgTJzycX/hGLQFTLzUplSo7bZpUR7C/jIA7uRQIYANjgKqB6f7R1apgAA==
+  version "0.2.24"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.24.tgz#1c784c08f9f6aa8df46a44d8c9b88c1b2b0b12ee"
+  integrity sha512-Wj8oiV3XF1y5K0ErGz+WiHz3yHUwvr5YU14vr9TO0la+dqae1WHdBNxdS2YclRjuvFCe9/PhEjq8M2TgM8uECQ==
   dependencies:
     change-case "^4.1.2"
 
@@ -974,7 +974,7 @@ conventional-changelog-codemirror@^2.0.8:
   dependencies:
     q "^1.5.1"
 
-conventional-changelog-config-spec@2.1.0:
+conventional-changelog-config-spec@2.1.0, conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/conventional-changelog-config-spec/-/conventional-changelog-config-spec-2.1.0.tgz#874a635287ef8b581fd8558532bf655d4fb59f2d"
   integrity sha512-IpVePh16EbbB02V+UA+HQnnPIohgXvJRxHcS5+Uwk4AT5LjzCZJm5sp/yqs5C6KZJ1jMsV4paEV13BN1pvDuxQ==
@@ -1197,11 +1197,6 @@ decamelize@^1.1.0, decamelize@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
-
-decamelize@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-4.0.0.tgz#aa472d7bf660eb15f3494efd531cab7f2a709837"
-  integrity sha512-9iE1PgSik9HeIIw2JO94IidnE3eBoQrFJ3w7sFuzSX4DpmZ3v5sZpUiV5Swcf6mQEF+Y0ru8Neo+p+nyh2J+hQ==
 
 decamelize@^5.0.1:
   version "5.0.1"
@@ -3372,14 +3367,15 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.31.0:
-  version "0.31.0"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.31.0.tgz#483d390c9d60e576641dcfc1c1c7de08fec175ba"
-  integrity sha512-27mgy8Bq2rHxLSAHUavnUSHUSTcxD9tpBCPj/EvjyjWQzHwnQV8Z0K31bFdDuAS2EvxSpzrI1M0vBtSM9dWyDQ==
+projen@^0.39.4:
+  version "0.39.4"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.39.4.tgz#acbd6da3568aa195061fb357364c30bb752ed434"
+  integrity sha512-qlyRLu3eHWC4ORz54Z3kInJl8VlSiGUhewt6vzFugfA+wVFeRu9QFQ18yHIt77+3W9TfzzeuC6NerIU30SrZyg==
   dependencies:
     "@iarna/toml" "^2.2.5"
+    case "^1.6.3"
     chalk "^4.1.2"
-    decamelize "^4.0.0"
+    conventional-changelog-config-spec "^2.1.0"
     fs-extra "^9.1.0"
     glob "^7"
     ini "^2.0.0"
