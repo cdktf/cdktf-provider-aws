@@ -21,8 +21,8 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
       - name: Set git identity
         run: |-
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "team-tf-cdk"
+          git config user.email "github-team-tf-cdk@hashicorp.com"
       - name: Setup Node.js
         uses: actions/setup-node@v2.2.0
         with:
