@@ -22,6 +22,7 @@ export * from './ec2-local-gateway-route';
 export * from './ec2-local-gateway-route-table-vpc-association';
 export * from './ec2-managed-prefix-list';
 export * from './ec2-managed-prefix-list-entry';
+export * from './ec2-subnet-cidr-reservation';
 export * from './ec2-tag';
 export * from './ec2-traffic-mirror-filter';
 export * from './ec2-traffic-mirror-filter-rule';
