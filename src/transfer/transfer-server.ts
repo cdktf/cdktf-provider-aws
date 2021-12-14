@@ -28,6 +28,10 @@ export interface TransferServerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server.html#function TransferServer#function}
+  */
+  readonly function?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server.html#host_key TransferServer#host_key}
   */
   readonly hostKey?: string;
@@ -282,6 +286,7 @@ export class TransferServer extends cdktf.TerraformResource {
     this._domain = config.domain;
     this._endpointType = config.endpointType;
     this._forceDestroy = config.forceDestroy;
+    this._function = config.function;
     this._hostKey = config.hostKey;
     this._identityProviderType = config.identityProviderType;
     this._invocationRole = config.invocationRole;
@@ -386,6 +391,22 @@ export class TransferServer extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get forceDestroyInput() {
     return this._forceDestroy;
+  }
+
+  // function - computed: false, optional: true, required: false
+  private _function?: string; 
+  public get function() {
+    return this.getStringAttribute('function');
+  }
+  public set function(value: string) {
+    this._function = value;
+  }
+  public resetFunction() {
+    this._function = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get functionInput() {
+    return this._function;
   }
 
   // host_key - computed: false, optional: true, required: false
@@ -571,6 +592,7 @@ export class TransferServer extends cdktf.TerraformResource {
       domain: cdktf.stringToTerraform(this._domain),
       endpoint_type: cdktf.stringToTerraform(this._endpointType),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      function: cdktf.stringToTerraform(this._function),
       host_key: cdktf.stringToTerraform(this._hostKey),
       identity_provider_type: cdktf.stringToTerraform(this._identityProviderType),
       invocation_role: cdktf.stringToTerraform(this._invocationRole),

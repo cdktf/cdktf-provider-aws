@@ -5,6 +5,7 @@ export * from './ecs-cluster';
 export * from './ecs-service';
 export * from './ecs-tag';
 export * from './ecs-task-definition';
+export * from './ecs-task-set';
 export * from './data-aws-ecs-cluster';
 export * from './data-aws-ecs-container-definition';
 export * from './data-aws-ecs-service';
