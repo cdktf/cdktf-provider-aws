@@ -36,6 +36,10 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   */
   readonly streamViewType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#table_class DynamodbTable#table_class}
+  */
+  readonly tableClass?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#tags DynamodbTable#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
@@ -649,6 +653,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
     this._readCapacity = config.readCapacity;
     this._streamEnabled = config.streamEnabled;
     this._streamViewType = config.streamViewType;
+    this._tableClass = config.tableClass;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._writeCapacity = config.writeCapacity;
@@ -790,6 +795,22 @@ export class DynamodbTable extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get streamViewTypeInput() {
     return this._streamViewType;
+  }
+
+  // table_class - computed: false, optional: true, required: false
+  private _tableClass?: string; 
+  public get tableClass() {
+    return this.getStringAttribute('table_class');
+  }
+  public set tableClass(value: string) {
+    this._tableClass = value;
+  }
+  public resetTableClass() {
+    this._tableClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableClassInput() {
+    return this._tableClass;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -984,6 +1005,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
       read_capacity: cdktf.numberToTerraform(this._readCapacity),
       stream_enabled: cdktf.booleanToTerraform(this._streamEnabled),
       stream_view_type: cdktf.stringToTerraform(this._streamViewType),
+      table_class: cdktf.stringToTerraform(this._tableClass),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       write_capacity: cdktf.numberToTerraform(this._writeCapacity),

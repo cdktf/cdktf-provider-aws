@@ -28,6 +28,54 @@ export class DataAwsElasticsearchDomainAdvancedSecurityOptions extends cdktf.Com
     return this.getBooleanAttribute('internal_user_database_enabled') as any;
   }
 }
+export class DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration extends cdktf.ComplexComputedList {
+
+  // unit - computed: true, optional: false, required: false
+  public get unit() {
+    return this.getStringAttribute('unit');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+}
+export class DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceSchedule extends cdktf.ComplexComputedList {
+
+  // cron_expression_for_recurrence - computed: true, optional: false, required: false
+  public get cronExpressionForRecurrence() {
+    return this.getStringAttribute('cron_expression_for_recurrence');
+  }
+
+  // duration - computed: true, optional: false, required: false
+  public get duration() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('duration') as any;
+  }
+
+  // start_at - computed: true, optional: false, required: false
+  public get startAt() {
+    return this.getStringAttribute('start_at');
+  }
+}
+export class DataAwsElasticsearchDomainAutoTuneOptions extends cdktf.ComplexComputedList {
+
+  // desired_state - computed: true, optional: false, required: false
+  public get desiredState() {
+    return this.getStringAttribute('desired_state');
+  }
+
+  // maintenance_schedule - computed: true, optional: false, required: false
+  public get maintenanceSchedule() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('maintenance_schedule') as any;
+  }
+
+  // rollback_on_disable - computed: true, optional: false, required: false
+  public get rollbackOnDisable() {
+    return this.getStringAttribute('rollback_on_disable');
+  }
+}
 export class DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfig extends cdktf.ComplexComputedList {
 
   // availability_zone_count - computed: true, optional: false, required: false
@@ -256,6 +304,11 @@ export class DataAwsElasticsearchDomain extends cdktf.TerraformDataSource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // auto_tune_options - computed: true, optional: false, required: false
+  public autoTuneOptions(index: string) {
+    return new DataAwsElasticsearchDomainAutoTuneOptions(this, 'auto_tune_options', index);
   }
 
   // cluster_config - computed: true, optional: false, required: false
