@@ -16,6 +16,13 @@ export interface DataAwsKinesisStreamConfig extends cdktf.TerraformMetaArguments
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
+export class DataAwsKinesisStreamStreamModeDetails extends cdktf.ComplexComputedList {
+
+  // stream_mode - computed: true, optional: false, required: false
+  public get streamMode() {
+    return this.getStringAttribute('stream_mode');
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/kinesis_stream.html aws_kinesis_stream}
@@ -108,6 +115,11 @@ export class DataAwsKinesisStream extends cdktf.TerraformDataSource {
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
+  }
+
+  // stream_mode_details - computed: true, optional: false, required: false
+  public streamModeDetails(index: string) {
+    return new DataAwsKinesisStreamStreamModeDetails(this, 'stream_mode_details', index);
   }
 
   // tags - computed: true, optional: true, required: false

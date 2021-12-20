@@ -80,6 +80,12 @@ export interface EcsTaskDefinitionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly proxyConfiguration?: EcsTaskDefinitionProxyConfiguration;
   /**
+  * runtime_platform block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#runtime_platform EcsTaskDefinition#runtime_platform}
+  */
+  readonly runtimePlatform?: EcsTaskDefinitionRuntimePlatform;
+  /**
   * volume block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#volume EcsTaskDefinition#volume}
@@ -309,6 +315,99 @@ export class EcsTaskDefinitionProxyConfigurationOutputReference extends cdktf.Co
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
     return this._type;
+  }
+}
+export interface EcsTaskDefinitionRuntimePlatform {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#cpu_architecture EcsTaskDefinition#cpu_architecture}
+  */
+  readonly cpuArchitecture?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#operating_system_family EcsTaskDefinition#operating_system_family}
+  */
+  readonly operatingSystemFamily?: string;
+}
+
+export function ecsTaskDefinitionRuntimePlatformToTerraform(struct?: EcsTaskDefinitionRuntimePlatformOutputReference | EcsTaskDefinitionRuntimePlatform): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cpu_architecture: cdktf.stringToTerraform(struct!.cpuArchitecture),
+    operating_system_family: cdktf.stringToTerraform(struct!.operatingSystemFamily),
+  }
+}
+
+export class EcsTaskDefinitionRuntimePlatformOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): EcsTaskDefinitionRuntimePlatform | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cpuArchitecture) {
+      hasAnyValues = true;
+      internalValueResult.cpuArchitecture = this._cpuArchitecture;
+    }
+    if (this._operatingSystemFamily) {
+      hasAnyValues = true;
+      internalValueResult.operatingSystemFamily = this._operatingSystemFamily;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsTaskDefinitionRuntimePlatform | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cpuArchitecture = undefined;
+      this._operatingSystemFamily = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cpuArchitecture = value.cpuArchitecture;
+      this._operatingSystemFamily = value.operatingSystemFamily;
+    }
+  }
+
+  // cpu_architecture - computed: false, optional: true, required: false
+  private _cpuArchitecture?: string; 
+  public get cpuArchitecture() {
+    return this.getStringAttribute('cpu_architecture');
+  }
+  public set cpuArchitecture(value: string) {
+    this._cpuArchitecture = value;
+  }
+  public resetCpuArchitecture() {
+    this._cpuArchitecture = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cpuArchitectureInput() {
+    return this._cpuArchitecture;
+  }
+
+  // operating_system_family - computed: false, optional: true, required: false
+  private _operatingSystemFamily?: string; 
+  public get operatingSystemFamily() {
+    return this.getStringAttribute('operating_system_family');
+  }
+  public set operatingSystemFamily(value: string) {
+    this._operatingSystemFamily = value;
+  }
+  public resetOperatingSystemFamily() {
+    this._operatingSystemFamily = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatingSystemFamilyInput() {
+    return this._operatingSystemFamily;
   }
 }
 export interface EcsTaskDefinitionVolumeDockerVolumeConfiguration {
@@ -1045,6 +1144,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
     this._inferenceAccelerator = config.inferenceAccelerator;
     this._placementConstraints = config.placementConstraints;
     this._proxyConfiguration.internalValue = config.proxyConfiguration;
+    this._runtimePlatform.internalValue = config.runtimePlatform;
     this._volume = config.volume;
   }
 
@@ -1321,6 +1421,22 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
     return this._proxyConfiguration.internalValue;
   }
 
+  // runtime_platform - computed: false, optional: true, required: false
+  private _runtimePlatform = new EcsTaskDefinitionRuntimePlatformOutputReference(this as any, "runtime_platform", true);
+  public get runtimePlatform() {
+    return this._runtimePlatform;
+  }
+  public putRuntimePlatform(value: EcsTaskDefinitionRuntimePlatform) {
+    this._runtimePlatform.internalValue = value;
+  }
+  public resetRuntimePlatform() {
+    this._runtimePlatform.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimePlatformInput() {
+    return this._runtimePlatform.internalValue;
+  }
+
   // volume - computed: false, optional: true, required: false
   private _volume?: EcsTaskDefinitionVolume[]; 
   public get volume() {
@@ -1360,6 +1476,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
       inference_accelerator: cdktf.listMapper(ecsTaskDefinitionInferenceAcceleratorToTerraform)(this._inferenceAccelerator),
       placement_constraints: cdktf.listMapper(ecsTaskDefinitionPlacementConstraintsToTerraform)(this._placementConstraints),
       proxy_configuration: ecsTaskDefinitionProxyConfigurationToTerraform(this._proxyConfiguration.internalValue),
+      runtime_platform: ecsTaskDefinitionRuntimePlatformToTerraform(this._runtimePlatform.internalValue),
       volume: cdktf.listMapper(ecsTaskDefinitionVolumeToTerraform)(this._volume),
     };
   }

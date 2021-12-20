@@ -38,6 +38,12 @@ export interface ElasticsearchDomainConfig extends cdktf.TerraformMetaArguments 
   */
   readonly advancedSecurityOptions?: ElasticsearchDomainAdvancedSecurityOptions;
   /**
+  * auto_tune_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#auto_tune_options ElasticsearchDomain#auto_tune_options}
+  */
+  readonly autoTuneOptions?: ElasticsearchDomainAutoTuneOptions;
+  /**
   * cluster_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#cluster_config ElasticsearchDomain#cluster_config}
@@ -335,6 +341,242 @@ export class ElasticsearchDomainAdvancedSecurityOptionsOutputReference extends c
   // Temporarily expose input value. Use with caution.
   public get masterUserOptionsInput() {
     return this._masterUserOptions.internalValue;
+  }
+}
+export interface ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#unit ElasticsearchDomain#unit}
+  */
+  readonly unit: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#value ElasticsearchDomain#value}
+  */
+  readonly value: number;
+}
+
+export function elasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationToTerraform(struct?: ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference | ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    unit: cdktf.stringToTerraform(struct!.unit),
+    value: cdktf.numberToTerraform(struct!.value),
+  }
+}
+
+export class ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._unit) {
+      hasAnyValues = true;
+      internalValueResult.unit = this._unit;
+    }
+    if (this._value) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._unit = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._unit = value.unit;
+      this._value = value.value;
+    }
+  }
+
+  // unit - computed: false, optional: false, required: true
+  private _unit?: string; 
+  public get unit() {
+    return this.getStringAttribute('unit');
+  }
+  public set unit(value: string) {
+    this._unit = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unitInput() {
+    return this._unit;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: number; 
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+  public set value(value: number) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#cron_expression_for_recurrence ElasticsearchDomain#cron_expression_for_recurrence}
+  */
+  readonly cronExpressionForRecurrence: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#start_at ElasticsearchDomain#start_at}
+  */
+  readonly startAt: string;
+  /**
+  * duration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#duration ElasticsearchDomain#duration}
+  */
+  readonly duration: ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration;
+}
+
+export function elasticsearchDomainAutoTuneOptionsMaintenanceScheduleToTerraform(struct?: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cron_expression_for_recurrence: cdktf.stringToTerraform(struct!.cronExpressionForRecurrence),
+    start_at: cdktf.stringToTerraform(struct!.startAt),
+    duration: elasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationToTerraform(struct!.duration),
+  }
+}
+
+export interface ElasticsearchDomainAutoTuneOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#desired_state ElasticsearchDomain#desired_state}
+  */
+  readonly desiredState: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#rollback_on_disable ElasticsearchDomain#rollback_on_disable}
+  */
+  readonly rollbackOnDisable?: string;
+  /**
+  * maintenance_schedule block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#maintenance_schedule ElasticsearchDomain#maintenance_schedule}
+  */
+  readonly maintenanceSchedule?: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule[];
+}
+
+export function elasticsearchDomainAutoTuneOptionsToTerraform(struct?: ElasticsearchDomainAutoTuneOptionsOutputReference | ElasticsearchDomainAutoTuneOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    desired_state: cdktf.stringToTerraform(struct!.desiredState),
+    rollback_on_disable: cdktf.stringToTerraform(struct!.rollbackOnDisable),
+    maintenance_schedule: cdktf.listMapper(elasticsearchDomainAutoTuneOptionsMaintenanceScheduleToTerraform)(struct!.maintenanceSchedule),
+  }
+}
+
+export class ElasticsearchDomainAutoTuneOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): ElasticsearchDomainAutoTuneOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._desiredState) {
+      hasAnyValues = true;
+      internalValueResult.desiredState = this._desiredState;
+    }
+    if (this._rollbackOnDisable) {
+      hasAnyValues = true;
+      internalValueResult.rollbackOnDisable = this._rollbackOnDisable;
+    }
+    if (this._maintenanceSchedule) {
+      hasAnyValues = true;
+      internalValueResult.maintenanceSchedule = this._maintenanceSchedule;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ElasticsearchDomainAutoTuneOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._desiredState = undefined;
+      this._rollbackOnDisable = undefined;
+      this._maintenanceSchedule = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._desiredState = value.desiredState;
+      this._rollbackOnDisable = value.rollbackOnDisable;
+      this._maintenanceSchedule = value.maintenanceSchedule;
+    }
+  }
+
+  // desired_state - computed: false, optional: false, required: true
+  private _desiredState?: string; 
+  public get desiredState() {
+    return this.getStringAttribute('desired_state');
+  }
+  public set desiredState(value: string) {
+    this._desiredState = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get desiredStateInput() {
+    return this._desiredState;
+  }
+
+  // rollback_on_disable - computed: true, optional: true, required: false
+  private _rollbackOnDisable?: string; 
+  public get rollbackOnDisable() {
+    return this.getStringAttribute('rollback_on_disable');
+  }
+  public set rollbackOnDisable(value: string) {
+    this._rollbackOnDisable = value;
+  }
+  public resetRollbackOnDisable() {
+    this._rollbackOnDisable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rollbackOnDisableInput() {
+    return this._rollbackOnDisable;
+  }
+
+  // maintenance_schedule - computed: false, optional: true, required: false
+  private _maintenanceSchedule?: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule[]; 
+  public get maintenanceSchedule() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('maintenance_schedule') as any;
+  }
+  public set maintenanceSchedule(value: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule[]) {
+    this._maintenanceSchedule = value;
+  }
+  public resetMaintenanceSchedule() {
+    this._maintenanceSchedule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceScheduleInput() {
+    return this._maintenanceSchedule;
   }
 }
 export interface ElasticsearchDomainClusterConfigZoneAwarenessConfig {
@@ -1612,6 +1854,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._advancedSecurityOptions.internalValue = config.advancedSecurityOptions;
+    this._autoTuneOptions.internalValue = config.autoTuneOptions;
     this._clusterConfig.internalValue = config.clusterConfig;
     this._cognitoOptions.internalValue = config.cognitoOptions;
     this._domainEndpointOptions.internalValue = config.domainEndpointOptions;
@@ -1763,6 +2006,22 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get advancedSecurityOptionsInput() {
     return this._advancedSecurityOptions.internalValue;
+  }
+
+  // auto_tune_options - computed: false, optional: true, required: false
+  private _autoTuneOptions = new ElasticsearchDomainAutoTuneOptionsOutputReference(this as any, "auto_tune_options", true);
+  public get autoTuneOptions() {
+    return this._autoTuneOptions;
+  }
+  public putAutoTuneOptions(value: ElasticsearchDomainAutoTuneOptions) {
+    this._autoTuneOptions.internalValue = value;
+  }
+  public resetAutoTuneOptions() {
+    this._autoTuneOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoTuneOptionsInput() {
+    return this._autoTuneOptions.internalValue;
   }
 
   // cluster_config - computed: false, optional: true, required: false
@@ -1939,6 +2198,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       advanced_security_options: elasticsearchDomainAdvancedSecurityOptionsToTerraform(this._advancedSecurityOptions.internalValue),
+      auto_tune_options: elasticsearchDomainAutoTuneOptionsToTerraform(this._autoTuneOptions.internalValue),
       cluster_config: elasticsearchDomainClusterConfigToTerraform(this._clusterConfig.internalValue),
       cognito_options: elasticsearchDomainCognitoOptionsToTerraform(this._cognitoOptions.internalValue),
       domain_endpoint_options: elasticsearchDomainDomainEndpointOptionsToTerraform(this._domainEndpointOptions.internalValue),
