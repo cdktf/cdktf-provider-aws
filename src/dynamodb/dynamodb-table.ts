@@ -14,7 +14,7 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#hash_key DynamodbTable#hash_key}
   */
-  readonly hashKey: string;
+  readonly hashKey?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#name DynamodbTable#name}
   */
@@ -28,6 +28,18 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   */
   readonly readCapacity?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#restore_date_time DynamodbTable#restore_date_time}
+  */
+  readonly restoreDateTime?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#restore_source_name DynamodbTable#restore_source_name}
+  */
+  readonly restoreSourceName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#restore_to_latest_time DynamodbTable#restore_to_latest_time}
+  */
+  readonly restoreToLatestTime?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#stream_enabled DynamodbTable#stream_enabled}
   */
   readonly streamEnabled?: boolean | cdktf.IResolvable;
@@ -35,6 +47,10 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#stream_view_type DynamodbTable#stream_view_type}
   */
   readonly streamViewType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#table_class DynamodbTable#table_class}
+  */
+  readonly tableClass?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#tags DynamodbTable#tags}
   */
@@ -52,7 +68,7 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#attribute DynamodbTable#attribute}
   */
-  readonly attribute: DynamodbTableAttribute[];
+  readonly attribute?: DynamodbTableAttribute[];
   /**
   * global_secondary_index block
   * 
@@ -647,8 +663,12 @@ export class DynamodbTable extends cdktf.TerraformResource {
     this._name = config.name;
     this._rangeKey = config.rangeKey;
     this._readCapacity = config.readCapacity;
+    this._restoreDateTime = config.restoreDateTime;
+    this._restoreSourceName = config.restoreSourceName;
+    this._restoreToLatestTime = config.restoreToLatestTime;
     this._streamEnabled = config.streamEnabled;
     this._streamViewType = config.streamViewType;
+    this._tableClass = config.tableClass;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._writeCapacity = config.writeCapacity;
@@ -687,13 +707,16 @@ export class DynamodbTable extends cdktf.TerraformResource {
     return this._billingMode;
   }
 
-  // hash_key - computed: false, optional: false, required: true
+  // hash_key - computed: true, optional: true, required: false
   private _hashKey?: string; 
   public get hashKey() {
     return this.getStringAttribute('hash_key');
   }
   public set hashKey(value: string) {
     this._hashKey = value;
+  }
+  public resetHashKey() {
+    this._hashKey = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get hashKeyInput() {
@@ -734,7 +757,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
     return this._rangeKey;
   }
 
-  // read_capacity - computed: false, optional: true, required: false
+  // read_capacity - computed: true, optional: true, required: false
   private _readCapacity?: number; 
   public get readCapacity() {
     return this.getNumberAttribute('read_capacity');
@@ -748,6 +771,54 @@ export class DynamodbTable extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get readCapacityInput() {
     return this._readCapacity;
+  }
+
+  // restore_date_time - computed: false, optional: true, required: false
+  private _restoreDateTime?: string; 
+  public get restoreDateTime() {
+    return this.getStringAttribute('restore_date_time');
+  }
+  public set restoreDateTime(value: string) {
+    this._restoreDateTime = value;
+  }
+  public resetRestoreDateTime() {
+    this._restoreDateTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restoreDateTimeInput() {
+    return this._restoreDateTime;
+  }
+
+  // restore_source_name - computed: false, optional: true, required: false
+  private _restoreSourceName?: string; 
+  public get restoreSourceName() {
+    return this.getStringAttribute('restore_source_name');
+  }
+  public set restoreSourceName(value: string) {
+    this._restoreSourceName = value;
+  }
+  public resetRestoreSourceName() {
+    this._restoreSourceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restoreSourceNameInput() {
+    return this._restoreSourceName;
+  }
+
+  // restore_to_latest_time - computed: false, optional: true, required: false
+  private _restoreToLatestTime?: boolean | cdktf.IResolvable; 
+  public get restoreToLatestTime() {
+    return this.getBooleanAttribute('restore_to_latest_time') as any;
+  }
+  public set restoreToLatestTime(value: boolean | cdktf.IResolvable) {
+    this._restoreToLatestTime = value;
+  }
+  public resetRestoreToLatestTime() {
+    this._restoreToLatestTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restoreToLatestTimeInput() {
+    return this._restoreToLatestTime;
   }
 
   // stream_arn - computed: true, optional: false, required: false
@@ -792,6 +863,22 @@ export class DynamodbTable extends cdktf.TerraformResource {
     return this._streamViewType;
   }
 
+  // table_class - computed: false, optional: true, required: false
+  private _tableClass?: string; 
+  public get tableClass() {
+    return this.getStringAttribute('table_class');
+  }
+  public set tableClass(value: string) {
+    this._tableClass = value;
+  }
+  public resetTableClass() {
+    this._tableClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableClassInput() {
+    return this._tableClass;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
@@ -826,7 +913,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
-  // write_capacity - computed: false, optional: true, required: false
+  // write_capacity - computed: true, optional: true, required: false
   private _writeCapacity?: number; 
   public get writeCapacity() {
     return this.getNumberAttribute('write_capacity');
@@ -842,7 +929,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
     return this._writeCapacity;
   }
 
-  // attribute - computed: false, optional: false, required: true
+  // attribute - computed: false, optional: true, required: false
   private _attribute?: DynamodbTableAttribute[]; 
   public get attribute() {
     // Getting the computed value is not yet implemented
@@ -850,6 +937,9 @@ export class DynamodbTable extends cdktf.TerraformResource {
   }
   public set attribute(value: DynamodbTableAttribute[]) {
     this._attribute = value;
+  }
+  public resetAttribute() {
+    this._attribute = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get attributeInput() {
@@ -982,8 +1072,12 @@ export class DynamodbTable extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       range_key: cdktf.stringToTerraform(this._rangeKey),
       read_capacity: cdktf.numberToTerraform(this._readCapacity),
+      restore_date_time: cdktf.stringToTerraform(this._restoreDateTime),
+      restore_source_name: cdktf.stringToTerraform(this._restoreSourceName),
+      restore_to_latest_time: cdktf.booleanToTerraform(this._restoreToLatestTime),
       stream_enabled: cdktf.booleanToTerraform(this._streamEnabled),
       stream_view_type: cdktf.stringToTerraform(this._streamViewType),
+      table_class: cdktf.stringToTerraform(this._tableClass),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       write_capacity: cdktf.numberToTerraform(this._writeCapacity),

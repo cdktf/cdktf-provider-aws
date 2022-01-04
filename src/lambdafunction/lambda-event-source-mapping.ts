@@ -74,6 +74,12 @@ export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArgum
   */
   readonly destinationConfig?: LambdaEventSourceMappingDestinationConfig;
   /**
+  * filter_criteria block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#filter_criteria LambdaEventSourceMapping#filter_criteria}
+  */
+  readonly filterCriteria?: LambdaEventSourceMappingFilterCriteria;
+  /**
   * self_managed_event_source block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#self_managed_event_source LambdaEventSourceMapping#self_managed_event_source}
@@ -217,6 +223,92 @@ export class LambdaEventSourceMappingDestinationConfigOutputReference extends cd
     return this._onFailure.internalValue;
   }
 }
+export interface LambdaEventSourceMappingFilterCriteriaFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#pattern LambdaEventSourceMapping#pattern}
+  */
+  readonly pattern?: string;
+}
+
+export function lambdaEventSourceMappingFilterCriteriaFilterToTerraform(struct?: LambdaEventSourceMappingFilterCriteriaFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    pattern: cdktf.stringToTerraform(struct!.pattern),
+  }
+}
+
+export interface LambdaEventSourceMappingFilterCriteria {
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#filter LambdaEventSourceMapping#filter}
+  */
+  readonly filter?: LambdaEventSourceMappingFilterCriteriaFilter[];
+}
+
+export function lambdaEventSourceMappingFilterCriteriaToTerraform(struct?: LambdaEventSourceMappingFilterCriteriaOutputReference | LambdaEventSourceMappingFilterCriteria): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    filter: cdktf.listMapper(lambdaEventSourceMappingFilterCriteriaFilterToTerraform)(struct!.filter),
+  }
+}
+
+export class LambdaEventSourceMappingFilterCriteriaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LambdaEventSourceMappingFilterCriteria | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._filter) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LambdaEventSourceMappingFilterCriteria | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._filter = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._filter = value.filter;
+    }
+  }
+
+  // filter - computed: false, optional: true, required: false
+  private _filter?: LambdaEventSourceMappingFilterCriteriaFilter[]; 
+  public get filter() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('filter') as any;
+  }
+  public set filter(value: LambdaEventSourceMappingFilterCriteriaFilter[]) {
+    this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter;
+  }
+}
 export interface LambdaEventSourceMappingSelfManagedEventSource {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#endpoints LambdaEventSourceMapping#endpoints}
@@ -352,6 +444,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
     this._topics = config.topics;
     this._tumblingWindowInSeconds = config.tumblingWindowInSeconds;
     this._destinationConfig.internalValue = config.destinationConfig;
+    this._filterCriteria.internalValue = config.filterCriteria;
     this._selfManagedEventSource.internalValue = config.selfManagedEventSource;
     this._sourceAccessConfiguration = config.sourceAccessConfiguration;
   }
@@ -648,6 +741,22 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
     return this._destinationConfig.internalValue;
   }
 
+  // filter_criteria - computed: false, optional: true, required: false
+  private _filterCriteria = new LambdaEventSourceMappingFilterCriteriaOutputReference(this as any, "filter_criteria", true);
+  public get filterCriteria() {
+    return this._filterCriteria;
+  }
+  public putFilterCriteria(value: LambdaEventSourceMappingFilterCriteria) {
+    this._filterCriteria.internalValue = value;
+  }
+  public resetFilterCriteria() {
+    this._filterCriteria.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterCriteriaInput() {
+    return this._filterCriteria.internalValue;
+  }
+
   // self_managed_event_source - computed: false, optional: true, required: false
   private _selfManagedEventSource = new LambdaEventSourceMappingSelfManagedEventSourceOutputReference(this as any, "self_managed_event_source", true);
   public get selfManagedEventSource() {
@@ -703,6 +812,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
       topics: cdktf.listMapper(cdktf.stringToTerraform)(this._topics),
       tumbling_window_in_seconds: cdktf.numberToTerraform(this._tumblingWindowInSeconds),
       destination_config: lambdaEventSourceMappingDestinationConfigToTerraform(this._destinationConfig.internalValue),
+      filter_criteria: lambdaEventSourceMappingFilterCriteriaToTerraform(this._filterCriteria.internalValue),
       self_managed_event_source: lambdaEventSourceMappingSelfManagedEventSourceToTerraform(this._selfManagedEventSource.internalValue),
       source_access_configuration: cdktf.listMapper(lambdaEventSourceMappingSourceAccessConfigurationToTerraform)(this._sourceAccessConfiguration),
     };

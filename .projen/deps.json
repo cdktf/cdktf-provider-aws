@@ -7,7 +7,7 @@
     },
     {
       "name": "@types/node",
-      "version": "^12.19.0",
+      "version": "^14",
       "type": "build"
     },
     {
@@ -39,17 +39,13 @@
       "type": "build"
     },
     {
-      "name": "jsii-pacmak",
-      "type": "build"
-    },
-    {
       "name": "jsii",
       "version": "^1.46.0",
       "type": "build"
     },
     {
       "name": "npm-check-updates",
-      "version": "^11",
+      "version": "^12",
       "type": "build"
     },
     {

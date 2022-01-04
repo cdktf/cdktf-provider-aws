@@ -10,7 +10,7 @@ export interface FsxBackupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_backup.html#file_system_id FsxBackup#file_system_id}
   */
-  readonly fileSystemId: string;
+  readonly fileSystemId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_backup.html#tags FsxBackup#tags}
   */
@@ -19,6 +19,10 @@ export interface FsxBackupConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_backup.html#tags_all FsxBackup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_backup.html#volume_id FsxBackup#volume_id}
+  */
+  readonly volumeId?: string;
   /**
   * timeouts block
   * 
@@ -139,9 +143,9 @@ export class FsxBackup extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options FsxBackupConfig
+  * @param options FsxBackupConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: FsxBackupConfig) {
+  public constructor(scope: Construct, id: string, config: FsxBackupConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_fsx_backup',
       terraformGeneratorMetadata: {
@@ -155,6 +159,7 @@ export class FsxBackup extends cdktf.TerraformResource {
     this._fileSystemId = config.fileSystemId;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._volumeId = config.volumeId;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -167,13 +172,16 @@ export class FsxBackup extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
-  // file_system_id - computed: false, optional: false, required: true
+  // file_system_id - computed: false, optional: true, required: false
   private _fileSystemId?: string; 
   public get fileSystemId() {
     return this.getStringAttribute('file_system_id');
   }
   public set fileSystemId(value: string) {
     this._fileSystemId = value;
+  }
+  public resetFileSystemId() {
+    this._fileSystemId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get fileSystemIdInput() {
@@ -234,6 +242,22 @@ export class FsxBackup extends cdktf.TerraformResource {
     return this.getStringAttribute('type');
   }
 
+  // volume_id - computed: false, optional: true, required: false
+  private _volumeId?: string; 
+  public get volumeId() {
+    return this.getStringAttribute('volume_id');
+  }
+  public set volumeId(value: string) {
+    this._volumeId = value;
+  }
+  public resetVolumeId() {
+    this._volumeId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeIdInput() {
+    return this._volumeId;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new FsxBackupTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
@@ -259,6 +283,7 @@ export class FsxBackup extends cdktf.TerraformResource {
       file_system_id: cdktf.stringToTerraform(this._fileSystemId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      volume_id: cdktf.stringToTerraform(this._volumeId),
       timeouts: fsxBackupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

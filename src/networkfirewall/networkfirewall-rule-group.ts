@@ -1514,6 +1514,69 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference extends
     return this._statelessRulesAndCustomActions.internalValue;
   }
 }
+export interface NetworkfirewallRuleGroupRuleGroupStatefulRuleOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#rule_order NetworkfirewallRuleGroup#rule_order}
+  */
+  readonly ruleOrder: string;
+}
+
+export function networkfirewallRuleGroupRuleGroupStatefulRuleOptionsToTerraform(struct?: NetworkfirewallRuleGroupRuleGroupStatefulRuleOptionsOutputReference | NetworkfirewallRuleGroupRuleGroupStatefulRuleOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    rule_order: cdktf.stringToTerraform(struct!.ruleOrder),
+  }
+}
+
+export class NetworkfirewallRuleGroupRuleGroupStatefulRuleOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): NetworkfirewallRuleGroupRuleGroupStatefulRuleOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ruleOrder) {
+      hasAnyValues = true;
+      internalValueResult.ruleOrder = this._ruleOrder;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkfirewallRuleGroupRuleGroupStatefulRuleOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._ruleOrder = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._ruleOrder = value.ruleOrder;
+    }
+  }
+
+  // rule_order - computed: false, optional: false, required: true
+  private _ruleOrder?: string; 
+  public get ruleOrder() {
+    return this.getStringAttribute('rule_order');
+  }
+  public set ruleOrder(value: string) {
+    this._ruleOrder = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleOrderInput() {
+    return this._ruleOrder;
+  }
+}
 export interface NetworkfirewallRuleGroupRuleGroup {
   /**
   * rule_variables block
@@ -1527,6 +1590,12 @@ export interface NetworkfirewallRuleGroupRuleGroup {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#rules_source NetworkfirewallRuleGroup#rules_source}
   */
   readonly rulesSource: NetworkfirewallRuleGroupRuleGroupRulesSource;
+  /**
+  * stateful_rule_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#stateful_rule_options NetworkfirewallRuleGroup#stateful_rule_options}
+  */
+  readonly statefulRuleOptions?: NetworkfirewallRuleGroupRuleGroupStatefulRuleOptions;
 }
 
 export function networkfirewallRuleGroupRuleGroupToTerraform(struct?: NetworkfirewallRuleGroupRuleGroupOutputReference | NetworkfirewallRuleGroupRuleGroup): any {
@@ -1537,6 +1606,7 @@ export function networkfirewallRuleGroupRuleGroupToTerraform(struct?: Networkfir
   return {
     rule_variables: networkfirewallRuleGroupRuleGroupRuleVariablesToTerraform(struct!.ruleVariables),
     rules_source: networkfirewallRuleGroupRuleGroupRulesSourceToTerraform(struct!.rulesSource),
+    stateful_rule_options: networkfirewallRuleGroupRuleGroupStatefulRuleOptionsToTerraform(struct!.statefulRuleOptions),
   }
 }
 
@@ -1563,6 +1633,10 @@ export class NetworkfirewallRuleGroupRuleGroupOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.rulesSource = this._rulesSource?.internalValue;
     }
+    if (this._statefulRuleOptions?.internalValue) {
+      hasAnyValues = true;
+      internalValueResult.statefulRuleOptions = this._statefulRuleOptions?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1571,11 +1645,13 @@ export class NetworkfirewallRuleGroupRuleGroupOutputReference extends cdktf.Comp
       this.isEmptyObject = false;
       this._ruleVariables.internalValue = undefined;
       this._rulesSource.internalValue = undefined;
+      this._statefulRuleOptions.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._ruleVariables.internalValue = value.ruleVariables;
       this._rulesSource.internalValue = value.rulesSource;
+      this._statefulRuleOptions.internalValue = value.statefulRuleOptions;
     }
   }
 
@@ -1606,6 +1682,22 @@ export class NetworkfirewallRuleGroupRuleGroupOutputReference extends cdktf.Comp
   // Temporarily expose input value. Use with caution.
   public get rulesSourceInput() {
     return this._rulesSource.internalValue;
+  }
+
+  // stateful_rule_options - computed: false, optional: true, required: false
+  private _statefulRuleOptions = new NetworkfirewallRuleGroupRuleGroupStatefulRuleOptionsOutputReference(this as any, "stateful_rule_options", true);
+  public get statefulRuleOptions() {
+    return this._statefulRuleOptions;
+  }
+  public putStatefulRuleOptions(value: NetworkfirewallRuleGroupRuleGroupStatefulRuleOptions) {
+    this._statefulRuleOptions.internalValue = value;
+  }
+  public resetStatefulRuleOptions() {
+    this._statefulRuleOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statefulRuleOptionsInput() {
+    return this._statefulRuleOptions.internalValue;
   }
 }
 

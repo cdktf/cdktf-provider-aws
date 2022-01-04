@@ -64,6 +64,10 @@ export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
   */
   readonly redrivePolicy?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue.html#sqs_managed_sse_enabled SqsQueue#sqs_managed_sse_enabled}
+  */
+  readonly sqsManagedSseEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue.html#tags SqsQueue#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
@@ -123,6 +127,7 @@ export class SqsQueue extends cdktf.TerraformResource {
     this._policy = config.policy;
     this._receiveWaitTimeSeconds = config.receiveWaitTimeSeconds;
     this._redrivePolicy = config.redrivePolicy;
+    this._sqsManagedSseEnabled = config.sqsManagedSseEnabled;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._visibilityTimeoutSeconds = config.visibilityTimeoutSeconds;
@@ -366,6 +371,22 @@ export class SqsQueue extends cdktf.TerraformResource {
     return this._redrivePolicy;
   }
 
+  // sqs_managed_sse_enabled - computed: false, optional: true, required: false
+  private _sqsManagedSseEnabled?: boolean | cdktf.IResolvable; 
+  public get sqsManagedSseEnabled() {
+    return this.getBooleanAttribute('sqs_managed_sse_enabled') as any;
+  }
+  public set sqsManagedSseEnabled(value: boolean | cdktf.IResolvable) {
+    this._sqsManagedSseEnabled = value;
+  }
+  public resetSqsManagedSseEnabled() {
+    this._sqsManagedSseEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sqsManagedSseEnabledInput() {
+    return this._sqsManagedSseEnabled;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
@@ -441,6 +462,7 @@ export class SqsQueue extends cdktf.TerraformResource {
       policy: cdktf.stringToTerraform(this._policy),
       receive_wait_time_seconds: cdktf.numberToTerraform(this._receiveWaitTimeSeconds),
       redrive_policy: cdktf.stringToTerraform(this._redrivePolicy),
+      sqs_managed_sse_enabled: cdktf.booleanToTerraform(this._sqsManagedSseEnabled),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       visibility_timeout_seconds: cdktf.numberToTerraform(this._visibilityTimeoutSeconds),

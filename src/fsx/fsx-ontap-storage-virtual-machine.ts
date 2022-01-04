@@ -136,6 +136,10 @@ export interface FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfMa
   */
   readonly organizationalUnitDistinguidshedName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#organizational_unit_distinguished_name FsxOntapStorageVirtualMachine#organizational_unit_distinguished_name}
+  */
+  readonly organizationalUnitDistinguishedName?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#password FsxOntapStorageVirtualMachine#password}
   */
   readonly password: string;
@@ -155,6 +159,7 @@ export function fsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfMan
     domain_name: cdktf.stringToTerraform(struct!.domainName),
     file_system_administrators_group: cdktf.stringToTerraform(struct!.fileSystemAdministratorsGroup),
     organizational_unit_distinguidshed_name: cdktf.stringToTerraform(struct!.organizationalUnitDistinguidshedName),
+    organizational_unit_distinguished_name: cdktf.stringToTerraform(struct!.organizationalUnitDistinguishedName),
     password: cdktf.stringToTerraform(struct!.password),
     username: cdktf.stringToTerraform(struct!.username),
   }
@@ -191,6 +196,10 @@ export class FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManage
       hasAnyValues = true;
       internalValueResult.organizationalUnitDistinguidshedName = this._organizationalUnitDistinguidshedName;
     }
+    if (this._organizationalUnitDistinguishedName) {
+      hasAnyValues = true;
+      internalValueResult.organizationalUnitDistinguishedName = this._organizationalUnitDistinguishedName;
+    }
     if (this._password) {
       hasAnyValues = true;
       internalValueResult.password = this._password;
@@ -209,6 +218,7 @@ export class FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManage
       this._domainName = undefined;
       this._fileSystemAdministratorsGroup = undefined;
       this._organizationalUnitDistinguidshedName = undefined;
+      this._organizationalUnitDistinguishedName = undefined;
       this._password = undefined;
       this._username = undefined;
     }
@@ -218,6 +228,7 @@ export class FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManage
       this._domainName = value.domainName;
       this._fileSystemAdministratorsGroup = value.fileSystemAdministratorsGroup;
       this._organizationalUnitDistinguidshedName = value.organizationalUnitDistinguidshedName;
+      this._organizationalUnitDistinguishedName = value.organizationalUnitDistinguishedName;
       this._password = value.password;
       this._username = value.username;
     }
@@ -279,6 +290,22 @@ export class FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManage
   // Temporarily expose input value. Use with caution.
   public get organizationalUnitDistinguidshedNameInput() {
     return this._organizationalUnitDistinguidshedName;
+  }
+
+  // organizational_unit_distinguished_name - computed: false, optional: true, required: false
+  private _organizationalUnitDistinguishedName?: string; 
+  public get organizationalUnitDistinguishedName() {
+    return this.getStringAttribute('organizational_unit_distinguished_name');
+  }
+  public set organizationalUnitDistinguishedName(value: string) {
+    this._organizationalUnitDistinguishedName = value;
+  }
+  public resetOrganizationalUnitDistinguishedName() {
+    this._organizationalUnitDistinguishedName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationalUnitDistinguishedNameInput() {
+    return this._organizationalUnitDistinguishedName;
   }
 
   // password - computed: false, optional: false, required: true
