@@ -38,6 +38,12 @@ export interface AppsyncGraphqlApiConfig extends cdktf.TerraformMetaArguments {
   */
   readonly additionalAuthenticationProvider?: AppsyncGraphqlApiAdditionalAuthenticationProvider[];
   /**
+  * lambda_authorizer_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api.html#lambda_authorizer_config AppsyncGraphqlApi#lambda_authorizer_config}
+  */
+  readonly lambdaAuthorizerConfig?: AppsyncGraphqlApiLambdaAuthorizerConfig;
+  /**
   * log_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api.html#log_config AppsyncGraphqlApi#log_config}
@@ -55,6 +61,123 @@ export interface AppsyncGraphqlApiConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api.html#user_pool_config AppsyncGraphqlApi#user_pool_config}
   */
   readonly userPoolConfig?: AppsyncGraphqlApiUserPoolConfig;
+}
+export interface AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api.html#authorizer_result_ttl_in_seconds AppsyncGraphqlApi#authorizer_result_ttl_in_seconds}
+  */
+  readonly authorizerResultTtlInSeconds?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api.html#authorizer_uri AppsyncGraphqlApi#authorizer_uri}
+  */
+  readonly authorizerUri: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api.html#identity_validation_expression AppsyncGraphqlApi#identity_validation_expression}
+  */
+  readonly identityValidationExpression?: string;
+}
+
+export function appsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigToTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference | AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    authorizer_result_ttl_in_seconds: cdktf.numberToTerraform(struct!.authorizerResultTtlInSeconds),
+    authorizer_uri: cdktf.stringToTerraform(struct!.authorizerUri),
+    identity_validation_expression: cdktf.stringToTerraform(struct!.identityValidationExpression),
+  }
+}
+
+export class AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._authorizerResultTtlInSeconds) {
+      hasAnyValues = true;
+      internalValueResult.authorizerResultTtlInSeconds = this._authorizerResultTtlInSeconds;
+    }
+    if (this._authorizerUri) {
+      hasAnyValues = true;
+      internalValueResult.authorizerUri = this._authorizerUri;
+    }
+    if (this._identityValidationExpression) {
+      hasAnyValues = true;
+      internalValueResult.identityValidationExpression = this._identityValidationExpression;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._authorizerResultTtlInSeconds = undefined;
+      this._authorizerUri = undefined;
+      this._identityValidationExpression = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._authorizerResultTtlInSeconds = value.authorizerResultTtlInSeconds;
+      this._authorizerUri = value.authorizerUri;
+      this._identityValidationExpression = value.identityValidationExpression;
+    }
+  }
+
+  // authorizer_result_ttl_in_seconds - computed: false, optional: true, required: false
+  private _authorizerResultTtlInSeconds?: number; 
+  public get authorizerResultTtlInSeconds() {
+    return this.getNumberAttribute('authorizer_result_ttl_in_seconds');
+  }
+  public set authorizerResultTtlInSeconds(value: number) {
+    this._authorizerResultTtlInSeconds = value;
+  }
+  public resetAuthorizerResultTtlInSeconds() {
+    this._authorizerResultTtlInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizerResultTtlInSecondsInput() {
+    return this._authorizerResultTtlInSeconds;
+  }
+
+  // authorizer_uri - computed: false, optional: false, required: true
+  private _authorizerUri?: string; 
+  public get authorizerUri() {
+    return this.getStringAttribute('authorizer_uri');
+  }
+  public set authorizerUri(value: string) {
+    this._authorizerUri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizerUriInput() {
+    return this._authorizerUri;
+  }
+
+  // identity_validation_expression - computed: false, optional: true, required: false
+  private _identityValidationExpression?: string; 
+  public get identityValidationExpression() {
+    return this.getStringAttribute('identity_validation_expression');
+  }
+  public set identityValidationExpression(value: string) {
+    this._identityValidationExpression = value;
+  }
+  public resetIdentityValidationExpression() {
+    this._identityValidationExpression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityValidationExpressionInput() {
+    return this._identityValidationExpression;
+  }
 }
 export interface AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig {
   /**
@@ -323,6 +446,12 @@ export interface AppsyncGraphqlApiAdditionalAuthenticationProvider {
   */
   readonly authenticationType: string;
   /**
+  * lambda_authorizer_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api.html#lambda_authorizer_config AppsyncGraphqlApi#lambda_authorizer_config}
+  */
+  readonly lambdaAuthorizerConfig?: AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig;
+  /**
   * openid_connect_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api.html#openid_connect_config AppsyncGraphqlApi#openid_connect_config}
@@ -343,11 +472,129 @@ export function appsyncGraphqlApiAdditionalAuthenticationProviderToTerraform(str
   }
   return {
     authentication_type: cdktf.stringToTerraform(struct!.authenticationType),
+    lambda_authorizer_config: appsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigToTerraform(struct!.lambdaAuthorizerConfig),
     openid_connect_config: appsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigToTerraform(struct!.openidConnectConfig),
     user_pool_config: appsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigToTerraform(struct!.userPoolConfig),
   }
 }
 
+export interface AppsyncGraphqlApiLambdaAuthorizerConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api.html#authorizer_result_ttl_in_seconds AppsyncGraphqlApi#authorizer_result_ttl_in_seconds}
+  */
+  readonly authorizerResultTtlInSeconds?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api.html#authorizer_uri AppsyncGraphqlApi#authorizer_uri}
+  */
+  readonly authorizerUri: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api.html#identity_validation_expression AppsyncGraphqlApi#identity_validation_expression}
+  */
+  readonly identityValidationExpression?: string;
+}
+
+export function appsyncGraphqlApiLambdaAuthorizerConfigToTerraform(struct?: AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference | AppsyncGraphqlApiLambdaAuthorizerConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    authorizer_result_ttl_in_seconds: cdktf.numberToTerraform(struct!.authorizerResultTtlInSeconds),
+    authorizer_uri: cdktf.stringToTerraform(struct!.authorizerUri),
+    identity_validation_expression: cdktf.stringToTerraform(struct!.identityValidationExpression),
+  }
+}
+
+export class AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): AppsyncGraphqlApiLambdaAuthorizerConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._authorizerResultTtlInSeconds) {
+      hasAnyValues = true;
+      internalValueResult.authorizerResultTtlInSeconds = this._authorizerResultTtlInSeconds;
+    }
+    if (this._authorizerUri) {
+      hasAnyValues = true;
+      internalValueResult.authorizerUri = this._authorizerUri;
+    }
+    if (this._identityValidationExpression) {
+      hasAnyValues = true;
+      internalValueResult.identityValidationExpression = this._identityValidationExpression;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppsyncGraphqlApiLambdaAuthorizerConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._authorizerResultTtlInSeconds = undefined;
+      this._authorizerUri = undefined;
+      this._identityValidationExpression = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._authorizerResultTtlInSeconds = value.authorizerResultTtlInSeconds;
+      this._authorizerUri = value.authorizerUri;
+      this._identityValidationExpression = value.identityValidationExpression;
+    }
+  }
+
+  // authorizer_result_ttl_in_seconds - computed: false, optional: true, required: false
+  private _authorizerResultTtlInSeconds?: number; 
+  public get authorizerResultTtlInSeconds() {
+    return this.getNumberAttribute('authorizer_result_ttl_in_seconds');
+  }
+  public set authorizerResultTtlInSeconds(value: number) {
+    this._authorizerResultTtlInSeconds = value;
+  }
+  public resetAuthorizerResultTtlInSeconds() {
+    this._authorizerResultTtlInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizerResultTtlInSecondsInput() {
+    return this._authorizerResultTtlInSeconds;
+  }
+
+  // authorizer_uri - computed: false, optional: false, required: true
+  private _authorizerUri?: string; 
+  public get authorizerUri() {
+    return this.getStringAttribute('authorizer_uri');
+  }
+  public set authorizerUri(value: string) {
+    this._authorizerUri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizerUriInput() {
+    return this._authorizerUri;
+  }
+
+  // identity_validation_expression - computed: false, optional: true, required: false
+  private _identityValidationExpression?: string; 
+  public get identityValidationExpression() {
+    return this.getStringAttribute('identity_validation_expression');
+  }
+  public set identityValidationExpression(value: string) {
+    this._identityValidationExpression = value;
+  }
+  public resetIdentityValidationExpression() {
+    this._identityValidationExpression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityValidationExpressionInput() {
+    return this._identityValidationExpression;
+  }
+}
 export interface AppsyncGraphqlApiLogConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api.html#cloudwatch_logs_role_arn AppsyncGraphqlApi#cloudwatch_logs_role_arn}
@@ -787,6 +1034,7 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._xrayEnabled = config.xrayEnabled;
     this._additionalAuthenticationProvider = config.additionalAuthenticationProvider;
+    this._lambdaAuthorizerConfig.internalValue = config.lambdaAuthorizerConfig;
     this._logConfig.internalValue = config.logConfig;
     this._openidConnectConfig.internalValue = config.openidConnectConfig;
     this._userPoolConfig.internalValue = config.userPoolConfig;
@@ -920,6 +1168,22 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
     return this._additionalAuthenticationProvider;
   }
 
+  // lambda_authorizer_config - computed: false, optional: true, required: false
+  private _lambdaAuthorizerConfig = new AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference(this as any, "lambda_authorizer_config", true);
+  public get lambdaAuthorizerConfig() {
+    return this._lambdaAuthorizerConfig;
+  }
+  public putLambdaAuthorizerConfig(value: AppsyncGraphqlApiLambdaAuthorizerConfig) {
+    this._lambdaAuthorizerConfig.internalValue = value;
+  }
+  public resetLambdaAuthorizerConfig() {
+    this._lambdaAuthorizerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lambdaAuthorizerConfigInput() {
+    return this._lambdaAuthorizerConfig.internalValue;
+  }
+
   // log_config - computed: false, optional: true, required: false
   private _logConfig = new AppsyncGraphqlApiLogConfigOutputReference(this as any, "log_config", true);
   public get logConfig() {
@@ -981,6 +1245,7 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       xray_enabled: cdktf.booleanToTerraform(this._xrayEnabled),
       additional_authentication_provider: cdktf.listMapper(appsyncGraphqlApiAdditionalAuthenticationProviderToTerraform)(this._additionalAuthenticationProvider),
+      lambda_authorizer_config: appsyncGraphqlApiLambdaAuthorizerConfigToTerraform(this._lambdaAuthorizerConfig.internalValue),
       log_config: appsyncGraphqlApiLogConfigToTerraform(this._logConfig.internalValue),
       openid_connect_config: appsyncGraphqlApiOpenidConnectConfigToTerraform(this._openidConnectConfig.internalValue),
       user_pool_config: appsyncGraphqlApiUserPoolConfigToTerraform(this._userPoolConfig.internalValue),

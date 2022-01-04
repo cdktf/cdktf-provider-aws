@@ -293,6 +293,11 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
     return this.getStringAttribute('stream_view_type');
   }
 
+  // table_class - computed: true, optional: false, required: false
+  public get tableClass() {
+    return this.getStringAttribute('table_class');
+  }
+
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {

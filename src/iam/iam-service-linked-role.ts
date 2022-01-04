@@ -19,6 +19,14 @@ export interface IamServiceLinkedRoleConfig extends cdktf.TerraformMetaArguments
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_service_linked_role.html#description IamServiceLinkedRole#description}
   */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_service_linked_role.html#tags IamServiceLinkedRole#tags}
+  */
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_service_linked_role.html#tags_all IamServiceLinkedRole#tags_all}
+  */
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
@@ -56,6 +64,8 @@ export class IamServiceLinkedRole extends cdktf.TerraformResource {
     this._awsServiceName = config.awsServiceName;
     this._customSuffix = config.customSuffix;
     this._description = config.description;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -132,6 +142,40 @@ export class IamServiceLinkedRole extends cdktf.TerraformResource {
     return this.getStringAttribute('path');
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  public get tags() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  public get tagsAll() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('tags_all') as any;
+  }
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll;
+  }
+
   // unique_id - computed: true, optional: false, required: false
   public get uniqueId() {
     return this.getStringAttribute('unique_id');
@@ -146,6 +190,8 @@ export class IamServiceLinkedRole extends cdktf.TerraformResource {
       aws_service_name: cdktf.stringToTerraform(this._awsServiceName),
       custom_suffix: cdktf.stringToTerraform(this._customSuffix),
       description: cdktf.stringToTerraform(this._description),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

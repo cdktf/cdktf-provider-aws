@@ -32,6 +32,10 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   */
   readonly availabilityZones?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group.html#data_tiering_enabled ElasticacheReplicationGroup#data_tiering_enabled}
+  */
+  readonly dataTieringEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group.html#engine ElasticacheReplicationGroup#engine}
   */
   readonly engine?: string;
@@ -389,6 +393,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     this._autoMinorVersionUpgrade = config.autoMinorVersionUpgrade;
     this._automaticFailoverEnabled = config.automaticFailoverEnabled;
     this._availabilityZones = config.availabilityZones;
+    this._dataTieringEnabled = config.dataTieringEnabled;
     this._engine = config.engine;
     this._engineVersion = config.engineVersion;
     this._finalSnapshotIdentifier = config.finalSnapshotIdentifier;
@@ -530,6 +535,22 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   // configuration_endpoint_address - computed: true, optional: false, required: false
   public get configurationEndpointAddress() {
     return this.getStringAttribute('configuration_endpoint_address');
+  }
+
+  // data_tiering_enabled - computed: true, optional: true, required: false
+  private _dataTieringEnabled?: boolean | cdktf.IResolvable; 
+  public get dataTieringEnabled() {
+    return this.getBooleanAttribute('data_tiering_enabled') as any;
+  }
+  public set dataTieringEnabled(value: boolean | cdktf.IResolvable) {
+    this._dataTieringEnabled = value;
+  }
+  public resetDataTieringEnabled() {
+    this._dataTieringEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataTieringEnabledInput() {
+    return this._dataTieringEnabled;
   }
 
   // engine - computed: false, optional: true, required: false
@@ -981,6 +1002,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
       auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
       automatic_failover_enabled: cdktf.booleanToTerraform(this._automaticFailoverEnabled),
       availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      data_tiering_enabled: cdktf.booleanToTerraform(this._dataTieringEnabled),
       engine: cdktf.stringToTerraform(this._engine),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
       final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),

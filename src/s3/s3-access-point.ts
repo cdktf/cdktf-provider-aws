@@ -368,7 +368,7 @@ export class S3AccessPoint extends cdktf.TerraformResource {
     return this.getStringAttribute('network_origin');
   }
 
-  // policy - computed: false, optional: true, required: false
+  // policy - computed: true, optional: true, required: false
   private _policy?: string; 
   public get policy() {
     return this.getStringAttribute('policy');

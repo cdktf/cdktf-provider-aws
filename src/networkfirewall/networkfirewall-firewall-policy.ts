@@ -30,7 +30,74 @@ export interface NetworkfirewallFirewallPolicyConfig extends cdktf.TerraformMeta
   */
   readonly firewallPolicy: NetworkfirewallFirewallPolicyFirewallPolicy;
 }
+export interface NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy.html#rule_order NetworkfirewallFirewallPolicy#rule_order}
+  */
+  readonly ruleOrder: string;
+}
+
+export function networkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsToTerraform(struct?: NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference | NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    rule_order: cdktf.stringToTerraform(struct!.ruleOrder),
+  }
+}
+
+export class NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ruleOrder) {
+      hasAnyValues = true;
+      internalValueResult.ruleOrder = this._ruleOrder;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._ruleOrder = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._ruleOrder = value.ruleOrder;
+    }
+  }
+
+  // rule_order - computed: false, optional: false, required: true
+  private _ruleOrder?: string; 
+  public get ruleOrder() {
+    return this.getStringAttribute('rule_order');
+  }
+  public set ruleOrder(value: string) {
+    this._ruleOrder = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleOrderInput() {
+    return this._ruleOrder;
+  }
+}
 export interface NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy.html#priority NetworkfirewallFirewallPolicy#priority}
+  */
+  readonly priority?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy.html#resource_arn NetworkfirewallFirewallPolicy#resource_arn}
   */
@@ -43,6 +110,7 @@ export function networkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupRefe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    priority: cdktf.numberToTerraform(struct!.priority),
     resource_arn: cdktf.stringToTerraform(struct!.resourceArn),
   }
 }
@@ -243,6 +311,10 @@ export function networkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupRef
 
 export interface NetworkfirewallFirewallPolicyFirewallPolicy {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy.html#stateful_default_actions NetworkfirewallFirewallPolicy#stateful_default_actions}
+  */
+  readonly statefulDefaultActions?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy.html#stateless_default_actions NetworkfirewallFirewallPolicy#stateless_default_actions}
   */
   readonly statelessDefaultActions: string[];
@@ -250,6 +322,12 @@ export interface NetworkfirewallFirewallPolicyFirewallPolicy {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy.html#stateless_fragment_default_actions NetworkfirewallFirewallPolicy#stateless_fragment_default_actions}
   */
   readonly statelessFragmentDefaultActions: string[];
+  /**
+  * stateful_engine_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall_policy.html#stateful_engine_options NetworkfirewallFirewallPolicy#stateful_engine_options}
+  */
+  readonly statefulEngineOptions?: NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions;
   /**
   * stateful_rule_group_reference block
   * 
@@ -276,8 +354,10 @@ export function networkfirewallFirewallPolicyFirewallPolicyToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    stateful_default_actions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.statefulDefaultActions),
     stateless_default_actions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.statelessDefaultActions),
     stateless_fragment_default_actions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.statelessFragmentDefaultActions),
+    stateful_engine_options: networkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsToTerraform(struct!.statefulEngineOptions),
     stateful_rule_group_reference: cdktf.listMapper(networkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceToTerraform)(struct!.statefulRuleGroupReference),
     stateless_custom_action: cdktf.listMapper(networkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionToTerraform)(struct!.statelessCustomAction),
     stateless_rule_group_reference: cdktf.listMapper(networkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceToTerraform)(struct!.statelessRuleGroupReference),
@@ -299,6 +379,10 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
   public get internalValue(): NetworkfirewallFirewallPolicyFirewallPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._statefulDefaultActions) {
+      hasAnyValues = true;
+      internalValueResult.statefulDefaultActions = this._statefulDefaultActions;
+    }
     if (this._statelessDefaultActions) {
       hasAnyValues = true;
       internalValueResult.statelessDefaultActions = this._statelessDefaultActions;
@@ -306,6 +390,10 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
     if (this._statelessFragmentDefaultActions) {
       hasAnyValues = true;
       internalValueResult.statelessFragmentDefaultActions = this._statelessFragmentDefaultActions;
+    }
+    if (this._statefulEngineOptions?.internalValue) {
+      hasAnyValues = true;
+      internalValueResult.statefulEngineOptions = this._statefulEngineOptions?.internalValue;
     }
     if (this._statefulRuleGroupReference) {
       hasAnyValues = true;
@@ -325,20 +413,40 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
   public set internalValue(value: NetworkfirewallFirewallPolicyFirewallPolicy | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._statefulDefaultActions = undefined;
       this._statelessDefaultActions = undefined;
       this._statelessFragmentDefaultActions = undefined;
+      this._statefulEngineOptions.internalValue = undefined;
       this._statefulRuleGroupReference = undefined;
       this._statelessCustomAction = undefined;
       this._statelessRuleGroupReference = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._statefulDefaultActions = value.statefulDefaultActions;
       this._statelessDefaultActions = value.statelessDefaultActions;
       this._statelessFragmentDefaultActions = value.statelessFragmentDefaultActions;
+      this._statefulEngineOptions.internalValue = value.statefulEngineOptions;
       this._statefulRuleGroupReference = value.statefulRuleGroupReference;
       this._statelessCustomAction = value.statelessCustomAction;
       this._statelessRuleGroupReference = value.statelessRuleGroupReference;
     }
+  }
+
+  // stateful_default_actions - computed: false, optional: true, required: false
+  private _statefulDefaultActions?: string[]; 
+  public get statefulDefaultActions() {
+    return this.getListAttribute('stateful_default_actions');
+  }
+  public set statefulDefaultActions(value: string[]) {
+    this._statefulDefaultActions = value;
+  }
+  public resetStatefulDefaultActions() {
+    this._statefulDefaultActions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statefulDefaultActionsInput() {
+    return this._statefulDefaultActions;
   }
 
   // stateless_default_actions - computed: false, optional: false, required: true
@@ -365,6 +473,22 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
   // Temporarily expose input value. Use with caution.
   public get statelessFragmentDefaultActionsInput() {
     return this._statelessFragmentDefaultActions;
+  }
+
+  // stateful_engine_options - computed: false, optional: true, required: false
+  private _statefulEngineOptions = new NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference(this as any, "stateful_engine_options", true);
+  public get statefulEngineOptions() {
+    return this._statefulEngineOptions;
+  }
+  public putStatefulEngineOptions(value: NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions) {
+    this._statefulEngineOptions.internalValue = value;
+  }
+  public resetStatefulEngineOptions() {
+    this._statefulEngineOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statefulEngineOptionsInput() {
+    return this._statefulEngineOptions.internalValue;
   }
 
   // stateful_rule_group_reference - computed: false, optional: true, required: false

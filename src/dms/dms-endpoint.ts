@@ -44,6 +44,14 @@ export interface DmsEndpointConfig extends cdktf.TerraformMetaArguments {
   */
   readonly port?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#secrets_manager_access_role_arn DmsEndpoint#secrets_manager_access_role_arn}
+  */
+  readonly secretsManagerAccessRoleArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#secrets_manager_arn DmsEndpoint#secrets_manager_arn}
+  */
+  readonly secretsManagerArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#server_name DmsEndpoint#server_name}
   */
   readonly serverName?: string;
@@ -1676,6 +1684,8 @@ export class DmsEndpoint extends cdktf.TerraformResource {
     this._kmsKeyArn = config.kmsKeyArn;
     this._password = config.password;
     this._port = config.port;
+    this._secretsManagerAccessRoleArn = config.secretsManagerAccessRoleArn;
+    this._secretsManagerArn = config.secretsManagerArn;
     this._serverName = config.serverName;
     this._serviceAccessRole = config.serviceAccessRole;
     this._sslMode = config.sslMode;
@@ -1836,6 +1846,38 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get portInput() {
     return this._port;
+  }
+
+  // secrets_manager_access_role_arn - computed: false, optional: true, required: false
+  private _secretsManagerAccessRoleArn?: string; 
+  public get secretsManagerAccessRoleArn() {
+    return this.getStringAttribute('secrets_manager_access_role_arn');
+  }
+  public set secretsManagerAccessRoleArn(value: string) {
+    this._secretsManagerAccessRoleArn = value;
+  }
+  public resetSecretsManagerAccessRoleArn() {
+    this._secretsManagerAccessRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretsManagerAccessRoleArnInput() {
+    return this._secretsManagerAccessRoleArn;
+  }
+
+  // secrets_manager_arn - computed: false, optional: true, required: false
+  private _secretsManagerArn?: string; 
+  public get secretsManagerArn() {
+    return this.getStringAttribute('secrets_manager_arn');
+  }
+  public set secretsManagerArn(value: string) {
+    this._secretsManagerArn = value;
+  }
+  public resetSecretsManagerArn() {
+    this._secretsManagerArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretsManagerArnInput() {
+    return this._secretsManagerArn;
   }
 
   // server_name - computed: false, optional: true, required: false
@@ -2031,6 +2073,8 @@ export class DmsEndpoint extends cdktf.TerraformResource {
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
       password: cdktf.stringToTerraform(this._password),
       port: cdktf.numberToTerraform(this._port),
+      secrets_manager_access_role_arn: cdktf.stringToTerraform(this._secretsManagerAccessRoleArn),
+      secrets_manager_arn: cdktf.stringToTerraform(this._secretsManagerArn),
       server_name: cdktf.stringToTerraform(this._serverName),
       service_access_role: cdktf.stringToTerraform(this._serviceAccessRole),
       ssl_mode: cdktf.stringToTerraform(this._sslMode),
