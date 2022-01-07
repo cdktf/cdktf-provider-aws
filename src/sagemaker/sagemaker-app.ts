@@ -44,9 +44,17 @@ export interface SagemakerAppResourceSpec {
   */
   readonly instanceType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app.html#lifecycle_config_arn SagemakerApp#lifecycle_config_arn}
+  */
+  readonly lifecycleConfigArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app.html#sagemaker_image_arn SagemakerApp#sagemaker_image_arn}
   */
   readonly sagemakerImageArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app.html#sagemaker_image_version_arn SagemakerApp#sagemaker_image_version_arn}
+  */
+  readonly sagemakerImageVersionArn?: string;
 }
 
 export function sagemakerAppResourceSpecToTerraform(struct?: SagemakerAppResourceSpecOutputReference | SagemakerAppResourceSpec): any {
@@ -56,7 +64,9 @@ export function sagemakerAppResourceSpecToTerraform(struct?: SagemakerAppResourc
   }
   return {
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    lifecycle_config_arn: cdktf.stringToTerraform(struct!.lifecycleConfigArn),
     sagemaker_image_arn: cdktf.stringToTerraform(struct!.sagemakerImageArn),
+    sagemaker_image_version_arn: cdktf.stringToTerraform(struct!.sagemakerImageVersionArn),
   }
 }
 
@@ -79,9 +89,17 @@ export class SagemakerAppResourceSpecOutputReference extends cdktf.ComplexObject
       hasAnyValues = true;
       internalValueResult.instanceType = this._instanceType;
     }
+    if (this._lifecycleConfigArn) {
+      hasAnyValues = true;
+      internalValueResult.lifecycleConfigArn = this._lifecycleConfigArn;
+    }
     if (this._sagemakerImageArn) {
       hasAnyValues = true;
       internalValueResult.sagemakerImageArn = this._sagemakerImageArn;
+    }
+    if (this._sagemakerImageVersionArn) {
+      hasAnyValues = true;
+      internalValueResult.sagemakerImageVersionArn = this._sagemakerImageVersionArn;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -90,12 +108,16 @@ export class SagemakerAppResourceSpecOutputReference extends cdktf.ComplexObject
     if (value === undefined) {
       this.isEmptyObject = false;
       this._instanceType = undefined;
+      this._lifecycleConfigArn = undefined;
       this._sagemakerImageArn = undefined;
+      this._sagemakerImageVersionArn = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._instanceType = value.instanceType;
+      this._lifecycleConfigArn = value.lifecycleConfigArn;
       this._sagemakerImageArn = value.sagemakerImageArn;
+      this._sagemakerImageVersionArn = value.sagemakerImageVersionArn;
     }
   }
 
@@ -115,6 +137,22 @@ export class SagemakerAppResourceSpecOutputReference extends cdktf.ComplexObject
     return this._instanceType;
   }
 
+  // lifecycle_config_arn - computed: false, optional: true, required: false
+  private _lifecycleConfigArn?: string; 
+  public get lifecycleConfigArn() {
+    return this.getStringAttribute('lifecycle_config_arn');
+  }
+  public set lifecycleConfigArn(value: string) {
+    this._lifecycleConfigArn = value;
+  }
+  public resetLifecycleConfigArn() {
+    this._lifecycleConfigArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lifecycleConfigArnInput() {
+    return this._lifecycleConfigArn;
+  }
+
   // sagemaker_image_arn - computed: true, optional: true, required: false
   private _sagemakerImageArn?: string; 
   public get sagemakerImageArn() {
@@ -129,6 +167,22 @@ export class SagemakerAppResourceSpecOutputReference extends cdktf.ComplexObject
   // Temporarily expose input value. Use with caution.
   public get sagemakerImageArnInput() {
     return this._sagemakerImageArn;
+  }
+
+  // sagemaker_image_version_arn - computed: false, optional: true, required: false
+  private _sagemakerImageVersionArn?: string; 
+  public get sagemakerImageVersionArn() {
+    return this.getStringAttribute('sagemaker_image_version_arn');
+  }
+  public set sagemakerImageVersionArn(value: string) {
+    this._sagemakerImageVersionArn = value;
+  }
+  public resetSagemakerImageVersionArn() {
+    this._sagemakerImageVersionArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sagemakerImageVersionArnInput() {
+    return this._sagemakerImageVersionArn;
   }
 }
 

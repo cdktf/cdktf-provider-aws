@@ -13,4 +13,7 @@ export * from './ses-receipt-filter';
 export * from './ses-receipt-rule';
 export * from './ses-receipt-rule-set';
 export * from './ses-template';
+export * from './data-aws-ses-active-receipt-rule-set';
+export * from './data-aws-ses-domain-identity';
+export * from './data-aws-ses-email-identity';
 

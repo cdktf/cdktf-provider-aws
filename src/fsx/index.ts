@@ -4,5 +4,8 @@ export * from './fsx-lustre-file-system';
 export * from './fsx-ontap-file-system';
 export * from './fsx-ontap-storage-virtual-machine';
 export * from './fsx-ontap-volume';
+export * from './fsx-openzfs-file-system';
+export * from './fsx-openzfs-snapshot';
+export * from './fsx-openzfs-volume';
 export * from './fsx-windows-file-system';
 

@@ -8,5 +8,7 @@ export * from './cognito-user-pool';
 export * from './cognito-user-pool-client';
 export * from './cognito-user-pool-domain';
 export * from './cognito-user-pool-ui-customization';
+export * from './data-aws-cognito-user-pool-clients';
+export * from './data-aws-cognito-user-pool-signing-certificate';
 export * from './data-aws-cognito-user-pools';
 

@@ -52,6 +52,11 @@ export class DataAwsEcsTaskDefinition extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // family - computed: true, optional: false, required: false
   public get family() {
     return this.getStringAttribute('family');

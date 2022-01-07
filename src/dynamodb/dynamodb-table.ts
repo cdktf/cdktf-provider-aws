@@ -517,10 +517,6 @@ export interface DynamodbTableTtl {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#enabled DynamodbTable#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#kms_key_arn DynamodbTable#kms_key_arn}
-  */
-  readonly kmsKeyArn?: string;
 }
 
 export function dynamodbTableTtlToTerraform(struct?: DynamodbTableTtlOutputReference | DynamodbTableTtl): any {
@@ -531,7 +527,6 @@ export function dynamodbTableTtlToTerraform(struct?: DynamodbTableTtlOutputRefer
   return {
     attribute_name: cdktf.stringToTerraform(struct!.attributeName),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
-    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
   }
 }
 
@@ -558,10 +553,6 @@ export class DynamodbTableTtlOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._kmsKeyArn) {
-      hasAnyValues = true;
-      internalValueResult.kmsKeyArn = this._kmsKeyArn;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -570,13 +561,11 @@ export class DynamodbTableTtlOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this._attributeName = undefined;
       this._enabled = undefined;
-      this._kmsKeyArn = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._attributeName = value.attributeName;
       this._enabled = value.enabled;
-      this._kmsKeyArn = value.kmsKeyArn;
     }
   }
 
@@ -607,22 +596,6 @@ export class DynamodbTableTtlOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
     return this._enabled;
-  }
-
-  // kms_key_arn - computed: true, optional: true, required: false
-  private _kmsKeyArn?: string; 
-  public get kmsKeyArn() {
-    return this.getStringAttribute('kms_key_arn');
-  }
-  public set kmsKeyArn(value: string) {
-    this._kmsKeyArn = value;
-  }
-  public resetKmsKeyArn() {
-    this._kmsKeyArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kmsKeyArnInput() {
-    return this._kmsKeyArn;
   }
 }
 

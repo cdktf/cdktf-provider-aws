@@ -67,7 +67,7 @@ export class Route53ResolverFirewallRuleGroup extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
-  // id - computed: true, optional: false, required: false
+  // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
   }

@@ -200,6 +200,21 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
     return this._defaultForAz;
   }
 
+  // enable_dns64 - computed: true, optional: false, required: false
+  public get enableDns64() {
+    return this.getBooleanAttribute('enable_dns64') as any;
+  }
+
+  // enable_resource_name_dns_a_record_on_launch - computed: true, optional: false, required: false
+  public get enableResourceNameDnsARecordOnLaunch() {
+    return this.getBooleanAttribute('enable_resource_name_dns_a_record_on_launch') as any;
+  }
+
+  // enable_resource_name_dns_aaaa_record_on_launch - computed: true, optional: false, required: false
+  public get enableResourceNameDnsAaaaRecordOnLaunch() {
+    return this.getBooleanAttribute('enable_resource_name_dns_aaaa_record_on_launch') as any;
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -226,6 +241,11 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
     return this.getStringAttribute('ipv6_cidr_block_association_id');
   }
 
+  // ipv6_native - computed: true, optional: false, required: false
+  public get ipv6Native() {
+    return this.getBooleanAttribute('ipv6_native') as any;
+  }
+
   // map_customer_owned_ip_on_launch - computed: true, optional: false, required: false
   public get mapCustomerOwnedIpOnLaunch() {
     return this.getBooleanAttribute('map_customer_owned_ip_on_launch') as any;
@@ -244,6 +264,11 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
   // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
+  }
+
+  // private_dns_hostname_type_on_launch - computed: true, optional: false, required: false
+  public get privateDnsHostnameTypeOnLaunch() {
+    return this.getStringAttribute('private_dns_hostname_type_on_launch');
   }
 
   // state - computed: true, optional: true, required: false

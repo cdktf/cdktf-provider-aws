@@ -24,6 +24,10 @@ export interface GlueTriggerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly schedule?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger.html#start_on_creation GlueTrigger#start_on_creation}
+  */
+  readonly startOnCreation?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger.html#tags GlueTrigger#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
@@ -428,6 +432,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
     this._enabled = config.enabled;
     this._name = config.name;
     this._schedule = config.schedule;
+    this._startOnCreation = config.startOnCreation;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._type = config.type;
@@ -510,6 +515,22 @@ export class GlueTrigger extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get scheduleInput() {
     return this._schedule;
+  }
+
+  // start_on_creation - computed: false, optional: true, required: false
+  private _startOnCreation?: boolean | cdktf.IResolvable; 
+  public get startOnCreation() {
+    return this.getBooleanAttribute('start_on_creation') as any;
+  }
+  public set startOnCreation(value: boolean | cdktf.IResolvable) {
+    this._startOnCreation = value;
+  }
+  public resetStartOnCreation() {
+    this._startOnCreation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startOnCreationInput() {
+    return this._startOnCreation;
   }
 
   // state - computed: true, optional: false, required: false
@@ -636,6 +657,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
       enabled: cdktf.booleanToTerraform(this._enabled),
       name: cdktf.stringToTerraform(this._name),
       schedule: cdktf.stringToTerraform(this._schedule),
+      start_on_creation: cdktf.booleanToTerraform(this._startOnCreation),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),

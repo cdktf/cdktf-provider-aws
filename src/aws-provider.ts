@@ -147,13 +147,13 @@ using temporary security credentials.
 }
 export interface AwsProviderAssumeRole {
   /**
-  * Seconds to restrict the assume role session duration.
+  * The duration, in seconds, of the role session.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#duration_seconds AwsProvider#duration_seconds}
   */
   readonly durationSeconds?: number;
   /**
-  * Unique identifier that might be required for assuming a role in another account.
+  * A unique identifier that might be required when you assume a role in another account.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#external_id AwsProvider#external_id}
   */
@@ -177,7 +177,7 @@ export interface AwsProviderAssumeRole {
   */
   readonly roleArn?: string;
   /**
-  * Identifier for the assumed role session.
+  * An identifier for the assumed role session.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#session_name AwsProvider#session_name}
   */
@@ -1145,6 +1145,12 @@ export interface AwsProviderEndpoints {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#kafka AwsProvider#kafka}
   */
   readonly kafka?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#kafkaconnect AwsProvider#kafkaconnect}
+  */
+  readonly kafkaconnect?: string;
   /**
   * Use this to override the default service endpoint URL
   * 
@@ -2193,6 +2199,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): 
     iotthingsgraph: cdktf.stringToTerraform(struct!.iotthingsgraph),
     iotwireless: cdktf.stringToTerraform(struct!.iotwireless),
     kafka: cdktf.stringToTerraform(struct!.kafka),
+    kafkaconnect: cdktf.stringToTerraform(struct!.kafkaconnect),
     kendra: cdktf.stringToTerraform(struct!.kendra),
     kinesis: cdktf.stringToTerraform(struct!.kinesis),
     kinesisanalytics: cdktf.stringToTerraform(struct!.kinesisanalytics),

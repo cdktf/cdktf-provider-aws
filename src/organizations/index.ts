@@ -9,4 +9,5 @@ export * from './data-aws-organizations-delegated-administrators';
 export * from './data-aws-organizations-delegated-services';
 export * from './data-aws-organizations-organization';
 export * from './data-aws-organizations-organizational-units';
+export * from './data-aws-organizations-resource-tags';
 

@@ -1,0 +1,184 @@
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+/**
+* AWS DataSync
+*/
+export interface DatasyncLocationFsxLustreFileSystemConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_fsx_lustre_file_system.html#fsx_filesystem_arn DatasyncLocationFsxLustreFileSystem#fsx_filesystem_arn}
+  */
+  readonly fsxFilesystemArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_fsx_lustre_file_system.html#security_group_arns DatasyncLocationFsxLustreFileSystem#security_group_arns}
+  */
+  readonly securityGroupArns: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_fsx_lustre_file_system.html#subdirectory DatasyncLocationFsxLustreFileSystem#subdirectory}
+  */
+  readonly subdirectory?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_fsx_lustre_file_system.html#tags DatasyncLocationFsxLustreFileSystem#tags}
+  */
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_fsx_lustre_file_system.html#tags_all DatasyncLocationFsxLustreFileSystem#tags_all}
+  */
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_fsx_lustre_file_system.html aws_datasync_location_fsx_lustre_file_system}
+*/
+export class DatasyncLocationFsxLustreFileSystem extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_datasync_location_fsx_lustre_file_system";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_fsx_lustre_file_system.html aws_datasync_location_fsx_lustre_file_system} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DatasyncLocationFsxLustreFileSystemConfig
+  */
+  public constructor(scope: Construct, id: string, config: DatasyncLocationFsxLustreFileSystemConfig) {
+    super(scope, id, {
+      terraformResourceType: 'aws_datasync_location_fsx_lustre_file_system',
+      terraformGeneratorMetadata: {
+        providerName: 'aws'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._fsxFilesystemArn = config.fsxFilesystemArn;
+    this._securityGroupArns = config.securityGroupArns;
+    this._subdirectory = config.subdirectory;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
+  // creation_time - computed: true, optional: false, required: false
+  public get creationTime() {
+    return this.getStringAttribute('creation_time');
+  }
+
+  // fsx_filesystem_arn - computed: false, optional: false, required: true
+  private _fsxFilesystemArn?: string; 
+  public get fsxFilesystemArn() {
+    return this.getStringAttribute('fsx_filesystem_arn');
+  }
+  public set fsxFilesystemArn(value: string) {
+    this._fsxFilesystemArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fsxFilesystemArnInput() {
+    return this._fsxFilesystemArn;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // security_group_arns - computed: false, optional: false, required: true
+  private _securityGroupArns?: string[]; 
+  public get securityGroupArns() {
+    return this.getListAttribute('security_group_arns');
+  }
+  public set securityGroupArns(value: string[]) {
+    this._securityGroupArns = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupArnsInput() {
+    return this._securityGroupArns;
+  }
+
+  // subdirectory - computed: true, optional: true, required: false
+  private _subdirectory?: string; 
+  public get subdirectory() {
+    return this.getStringAttribute('subdirectory');
+  }
+  public set subdirectory(value: string) {
+    this._subdirectory = value;
+  }
+  public resetSubdirectory() {
+    this._subdirectory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subdirectoryInput() {
+    return this._subdirectory;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  public get tags() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  public get tagsAll() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('tags_all') as any;
+  }
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll;
+  }
+
+  // uri - computed: true, optional: false, required: false
+  public get uri() {
+    return this.getStringAttribute('uri');
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      fsx_filesystem_arn: cdktf.stringToTerraform(this._fsxFilesystemArn),
+      security_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupArns),
+      subdirectory: cdktf.stringToTerraform(this._subdirectory),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+    };
+  }
+}
