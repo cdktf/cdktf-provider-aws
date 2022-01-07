@@ -206,6 +206,11 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // authentication - computed: false, optional: false, required: true
   private _authentication?: string; 
   public get authentication() {

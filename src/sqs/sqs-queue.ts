@@ -60,6 +60,10 @@ export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
   */
   readonly receiveWaitTimeSeconds?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue.html#redrive_allow_policy SqsQueue#redrive_allow_policy}
+  */
+  readonly redriveAllowPolicy?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue.html#redrive_policy SqsQueue#redrive_policy}
   */
   readonly redrivePolicy?: string;
@@ -126,6 +130,7 @@ export class SqsQueue extends cdktf.TerraformResource {
     this._namePrefix = config.namePrefix;
     this._policy = config.policy;
     this._receiveWaitTimeSeconds = config.receiveWaitTimeSeconds;
+    this._redriveAllowPolicy = config.redriveAllowPolicy;
     this._redrivePolicy = config.redrivePolicy;
     this._sqsManagedSseEnabled = config.sqsManagedSseEnabled;
     this._tags = config.tags;
@@ -355,6 +360,22 @@ export class SqsQueue extends cdktf.TerraformResource {
     return this._receiveWaitTimeSeconds;
   }
 
+  // redrive_allow_policy - computed: false, optional: true, required: false
+  private _redriveAllowPolicy?: string; 
+  public get redriveAllowPolicy() {
+    return this.getStringAttribute('redrive_allow_policy');
+  }
+  public set redriveAllowPolicy(value: string) {
+    this._redriveAllowPolicy = value;
+  }
+  public resetRedriveAllowPolicy() {
+    this._redriveAllowPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redriveAllowPolicyInput() {
+    return this._redriveAllowPolicy;
+  }
+
   // redrive_policy - computed: false, optional: true, required: false
   private _redrivePolicy?: string; 
   public get redrivePolicy() {
@@ -461,6 +482,7 @@ export class SqsQueue extends cdktf.TerraformResource {
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       policy: cdktf.stringToTerraform(this._policy),
       receive_wait_time_seconds: cdktf.numberToTerraform(this._receiveWaitTimeSeconds),
+      redrive_allow_policy: cdktf.stringToTerraform(this._redriveAllowPolicy),
       redrive_policy: cdktf.stringToTerraform(this._redrivePolicy),
       sqs_managed_sse_enabled: cdktf.booleanToTerraform(this._sqsManagedSseEnabled),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),

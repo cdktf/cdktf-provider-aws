@@ -12,6 +12,10 @@ export interface DataAwsSsmParametersByPathConfig extends cdktf.TerraformMetaArg
   */
   readonly path: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ssm_parameters_by_path.html#recursive DataAwsSsmParametersByPath#recursive}
+  */
+  readonly recursive?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ssm_parameters_by_path.html#with_decryption DataAwsSsmParametersByPath#with_decryption}
   */
   readonly withDecryption?: boolean | cdktf.IResolvable;
@@ -50,6 +54,7 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._path = config.path;
+    this._recursive = config.recursive;
     this._withDecryption = config.withDecryption;
   }
 
@@ -85,6 +90,22 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
     return this._path;
   }
 
+  // recursive - computed: false, optional: true, required: false
+  private _recursive?: boolean | cdktf.IResolvable; 
+  public get recursive() {
+    return this.getBooleanAttribute('recursive') as any;
+  }
+  public set recursive(value: boolean | cdktf.IResolvable) {
+    this._recursive = value;
+  }
+  public resetRecursive() {
+    this._recursive = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recursiveInput() {
+    return this._recursive;
+  }
+
   // types - computed: true, optional: false, required: false
   public get types() {
     return this.getListAttribute('types');
@@ -118,6 +139,7 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       path: cdktf.stringToTerraform(this._path),
+      recursive: cdktf.booleanToTerraform(this._recursive),
       with_decryption: cdktf.booleanToTerraform(this._withDecryption),
     };
   }

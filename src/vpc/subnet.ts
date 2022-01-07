@@ -22,15 +22,31 @@ export interface SubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#cidr_block Subnet#cidr_block}
   */
-  readonly cidrBlock: string;
+  readonly cidrBlock?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}
   */
   readonly customerOwnedIpv4Pool?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#enable_dns64 Subnet#enable_dns64}
+  */
+  readonly enableDns64?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}
+  */
+  readonly enableResourceNameDnsARecordOnLaunch?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}
+  */
+  readonly enableResourceNameDnsAaaaRecordOnLaunch?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#ipv6_cidr_block Subnet#ipv6_cidr_block}
   */
   readonly ipv6CidrBlock?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#ipv6_native Subnet#ipv6_native}
+  */
+  readonly ipv6Native?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}
   */
@@ -43,6 +59,10 @@ export interface SubnetConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#outpost_arn Subnet#outpost_arn}
   */
   readonly outpostArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}
+  */
+  readonly privateDnsHostnameTypeOnLaunch?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#tags Subnet#tags}
   */
@@ -193,10 +213,15 @@ export class Subnet extends cdktf.TerraformResource {
     this._availabilityZoneId = config.availabilityZoneId;
     this._cidrBlock = config.cidrBlock;
     this._customerOwnedIpv4Pool = config.customerOwnedIpv4Pool;
+    this._enableDns64 = config.enableDns64;
+    this._enableResourceNameDnsARecordOnLaunch = config.enableResourceNameDnsARecordOnLaunch;
+    this._enableResourceNameDnsAaaaRecordOnLaunch = config.enableResourceNameDnsAaaaRecordOnLaunch;
     this._ipv6CidrBlock = config.ipv6CidrBlock;
+    this._ipv6Native = config.ipv6Native;
     this._mapCustomerOwnedIpOnLaunch = config.mapCustomerOwnedIpOnLaunch;
     this._mapPublicIpOnLaunch = config.mapPublicIpOnLaunch;
     this._outpostArn = config.outpostArn;
+    this._privateDnsHostnameTypeOnLaunch = config.privateDnsHostnameTypeOnLaunch;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._vpcId = config.vpcId;
@@ -260,13 +285,16 @@ export class Subnet extends cdktf.TerraformResource {
     return this._availabilityZoneId;
   }
 
-  // cidr_block - computed: false, optional: false, required: true
+  // cidr_block - computed: false, optional: true, required: false
   private _cidrBlock?: string; 
   public get cidrBlock() {
     return this.getStringAttribute('cidr_block');
   }
   public set cidrBlock(value: string) {
     this._cidrBlock = value;
+  }
+  public resetCidrBlock() {
+    this._cidrBlock = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get cidrBlockInput() {
@@ -287,6 +315,54 @@ export class Subnet extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get customerOwnedIpv4PoolInput() {
     return this._customerOwnedIpv4Pool;
+  }
+
+  // enable_dns64 - computed: false, optional: true, required: false
+  private _enableDns64?: boolean | cdktf.IResolvable; 
+  public get enableDns64() {
+    return this.getBooleanAttribute('enable_dns64') as any;
+  }
+  public set enableDns64(value: boolean | cdktf.IResolvable) {
+    this._enableDns64 = value;
+  }
+  public resetEnableDns64() {
+    this._enableDns64 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableDns64Input() {
+    return this._enableDns64;
+  }
+
+  // enable_resource_name_dns_a_record_on_launch - computed: false, optional: true, required: false
+  private _enableResourceNameDnsARecordOnLaunch?: boolean | cdktf.IResolvable; 
+  public get enableResourceNameDnsARecordOnLaunch() {
+    return this.getBooleanAttribute('enable_resource_name_dns_a_record_on_launch') as any;
+  }
+  public set enableResourceNameDnsARecordOnLaunch(value: boolean | cdktf.IResolvable) {
+    this._enableResourceNameDnsARecordOnLaunch = value;
+  }
+  public resetEnableResourceNameDnsARecordOnLaunch() {
+    this._enableResourceNameDnsARecordOnLaunch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableResourceNameDnsARecordOnLaunchInput() {
+    return this._enableResourceNameDnsARecordOnLaunch;
+  }
+
+  // enable_resource_name_dns_aaaa_record_on_launch - computed: false, optional: true, required: false
+  private _enableResourceNameDnsAaaaRecordOnLaunch?: boolean | cdktf.IResolvable; 
+  public get enableResourceNameDnsAaaaRecordOnLaunch() {
+    return this.getBooleanAttribute('enable_resource_name_dns_aaaa_record_on_launch') as any;
+  }
+  public set enableResourceNameDnsAaaaRecordOnLaunch(value: boolean | cdktf.IResolvable) {
+    this._enableResourceNameDnsAaaaRecordOnLaunch = value;
+  }
+  public resetEnableResourceNameDnsAaaaRecordOnLaunch() {
+    this._enableResourceNameDnsAaaaRecordOnLaunch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableResourceNameDnsAaaaRecordOnLaunchInput() {
+    return this._enableResourceNameDnsAaaaRecordOnLaunch;
   }
 
   // id - computed: true, optional: true, required: false
@@ -313,6 +389,22 @@ export class Subnet extends cdktf.TerraformResource {
   // ipv6_cidr_block_association_id - computed: true, optional: false, required: false
   public get ipv6CidrBlockAssociationId() {
     return this.getStringAttribute('ipv6_cidr_block_association_id');
+  }
+
+  // ipv6_native - computed: false, optional: true, required: false
+  private _ipv6Native?: boolean | cdktf.IResolvable; 
+  public get ipv6Native() {
+    return this.getBooleanAttribute('ipv6_native') as any;
+  }
+  public set ipv6Native(value: boolean | cdktf.IResolvable) {
+    this._ipv6Native = value;
+  }
+  public resetIpv6Native() {
+    this._ipv6Native = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6NativeInput() {
+    return this._ipv6Native;
   }
 
   // map_customer_owned_ip_on_launch - computed: false, optional: true, required: false
@@ -366,6 +458,22 @@ export class Subnet extends cdktf.TerraformResource {
   // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
+  }
+
+  // private_dns_hostname_type_on_launch - computed: true, optional: true, required: false
+  private _privateDnsHostnameTypeOnLaunch?: string; 
+  public get privateDnsHostnameTypeOnLaunch() {
+    return this.getStringAttribute('private_dns_hostname_type_on_launch');
+  }
+  public set privateDnsHostnameTypeOnLaunch(value: string) {
+    this._privateDnsHostnameTypeOnLaunch = value;
+  }
+  public resetPrivateDnsHostnameTypeOnLaunch() {
+    this._privateDnsHostnameTypeOnLaunch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateDnsHostnameTypeOnLaunchInput() {
+    return this._privateDnsHostnameTypeOnLaunch;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -442,10 +550,15 @@ export class Subnet extends cdktf.TerraformResource {
       availability_zone_id: cdktf.stringToTerraform(this._availabilityZoneId),
       cidr_block: cdktf.stringToTerraform(this._cidrBlock),
       customer_owned_ipv4_pool: cdktf.stringToTerraform(this._customerOwnedIpv4Pool),
+      enable_dns64: cdktf.booleanToTerraform(this._enableDns64),
+      enable_resource_name_dns_a_record_on_launch: cdktf.booleanToTerraform(this._enableResourceNameDnsARecordOnLaunch),
+      enable_resource_name_dns_aaaa_record_on_launch: cdktf.booleanToTerraform(this._enableResourceNameDnsAaaaRecordOnLaunch),
       ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
+      ipv6_native: cdktf.booleanToTerraform(this._ipv6Native),
       map_customer_owned_ip_on_launch: cdktf.booleanToTerraform(this._mapCustomerOwnedIpOnLaunch),
       map_public_ip_on_launch: cdktf.booleanToTerraform(this._mapPublicIpOnLaunch),
       outpost_arn: cdktf.stringToTerraform(this._outpostArn),
+      private_dns_hostname_type_on_launch: cdktf.stringToTerraform(this._privateDnsHostnameTypeOnLaunch),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       vpc_id: cdktf.stringToTerraform(this._vpcId),

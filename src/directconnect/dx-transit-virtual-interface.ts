@@ -44,6 +44,10 @@ export interface DxTransitVirtualInterfaceConfig extends cdktf.TerraformMetaArgu
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_transit_virtual_interface.html#sitelink_enabled DxTransitVirtualInterface#sitelink_enabled}
+  */
+  readonly sitelinkEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_transit_virtual_interface.html#tags DxTransitVirtualInterface#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
@@ -224,6 +228,7 @@ export class DxTransitVirtualInterface extends cdktf.TerraformResource {
     this._dxGatewayId = config.dxGatewayId;
     this._mtu = config.mtu;
     this._name = config.name;
+    this._sitelinkEnabled = config.sitelinkEnabled;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._vlan = config.vlan;
@@ -388,6 +393,22 @@ export class DxTransitVirtualInterface extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // sitelink_enabled - computed: false, optional: true, required: false
+  private _sitelinkEnabled?: boolean | cdktf.IResolvable; 
+  public get sitelinkEnabled() {
+    return this.getBooleanAttribute('sitelink_enabled') as any;
+  }
+  public set sitelinkEnabled(value: boolean | cdktf.IResolvable) {
+    this._sitelinkEnabled = value;
+  }
+  public resetSitelinkEnabled() {
+    this._sitelinkEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sitelinkEnabledInput() {
+    return this._sitelinkEnabled;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
@@ -466,6 +487,7 @@ export class DxTransitVirtualInterface extends cdktf.TerraformResource {
       dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
       mtu: cdktf.numberToTerraform(this._mtu),
       name: cdktf.stringToTerraform(this._name),
+      sitelink_enabled: cdktf.booleanToTerraform(this._sitelinkEnabled),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       vlan: cdktf.numberToTerraform(this._vlan),

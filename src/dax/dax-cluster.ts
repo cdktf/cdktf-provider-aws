@@ -12,6 +12,10 @@ export interface DaxClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly availabilityZones?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#cluster_endpoint_encryption_type DaxCluster#cluster_endpoint_encryption_type}
+  */
+  readonly clusterEndpointEncryptionType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#cluster_name DaxCluster#cluster_name}
   */
   readonly clusterName: string;
@@ -314,6 +318,7 @@ export class DaxCluster extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._availabilityZones = config.availabilityZones;
+    this._clusterEndpointEncryptionType = config.clusterEndpointEncryptionType;
     this._clusterName = config.clusterName;
     this._description = config.description;
     this._iamRoleArn = config.iamRoleArn;
@@ -358,6 +363,22 @@ export class DaxCluster extends cdktf.TerraformResource {
   // cluster_address - computed: true, optional: false, required: false
   public get clusterAddress() {
     return this.getStringAttribute('cluster_address');
+  }
+
+  // cluster_endpoint_encryption_type - computed: false, optional: true, required: false
+  private _clusterEndpointEncryptionType?: string; 
+  public get clusterEndpointEncryptionType() {
+    return this.getStringAttribute('cluster_endpoint_encryption_type');
+  }
+  public set clusterEndpointEncryptionType(value: string) {
+    this._clusterEndpointEncryptionType = value;
+  }
+  public resetClusterEndpointEncryptionType() {
+    this._clusterEndpointEncryptionType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterEndpointEncryptionTypeInput() {
+    return this._clusterEndpointEncryptionType;
   }
 
   // cluster_name - computed: false, optional: false, required: true
@@ -601,6 +622,7 @@ export class DaxCluster extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      cluster_endpoint_encryption_type: cdktf.stringToTerraform(this._clusterEndpointEncryptionType),
       cluster_name: cdktf.stringToTerraform(this._clusterName),
       description: cdktf.stringToTerraform(this._description),
       iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),

@@ -20,6 +20,10 @@ export interface BatchJobQueueConfig extends cdktf.TerraformMetaArguments {
   */
   readonly priority: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_job_queue.html#scheduling_policy_arn BatchJobQueue#scheduling_policy_arn}
+  */
+  readonly schedulingPolicyArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_job_queue.html#state BatchJobQueue#state}
   */
   readonly state: string;
@@ -68,6 +72,7 @@ export class BatchJobQueue extends cdktf.TerraformResource {
     this._computeEnvironments = config.computeEnvironments;
     this._name = config.name;
     this._priority = config.priority;
+    this._schedulingPolicyArn = config.schedulingPolicyArn;
     this._state = config.state;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -126,6 +131,22 @@ export class BatchJobQueue extends cdktf.TerraformResource {
     return this._priority;
   }
 
+  // scheduling_policy_arn - computed: false, optional: true, required: false
+  private _schedulingPolicyArn?: string; 
+  public get schedulingPolicyArn() {
+    return this.getStringAttribute('scheduling_policy_arn');
+  }
+  public set schedulingPolicyArn(value: string) {
+    this._schedulingPolicyArn = value;
+  }
+  public resetSchedulingPolicyArn() {
+    this._schedulingPolicyArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schedulingPolicyArnInput() {
+    return this._schedulingPolicyArn;
+  }
+
   // state - computed: false, optional: false, required: true
   private _state?: string; 
   public get state() {
@@ -182,6 +203,7 @@ export class BatchJobQueue extends cdktf.TerraformResource {
       compute_environments: cdktf.listMapper(cdktf.stringToTerraform)(this._computeEnvironments),
       name: cdktf.stringToTerraform(this._name),
       priority: cdktf.numberToTerraform(this._priority),
+      scheduling_policy_arn: cdktf.stringToTerraform(this._schedulingPolicyArn),
       state: cdktf.stringToTerraform(this._state),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),

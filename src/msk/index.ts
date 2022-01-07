@@ -2,8 +2,12 @@
 export * from './msk-cluster';
 export * from './msk-configuration';
 export * from './msk-scram-secret-association';
+export * from './mskconnect-custom-plugin';
+export * from './mskconnect-worker-configuration';
 export * from './data-aws-msk-broker-nodes';
 export * from './data-aws-msk-cluster';
 export * from './data-aws-msk-configuration';
 export * from './data-aws-msk-kafka-version';
+export * from './data-aws-mskconnect-custom-plugin';
+export * from './data-aws-mskconnect-worker-configuration';
 

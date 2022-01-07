@@ -102,6 +102,11 @@ export class DataAwsBatchJobQueue extends cdktf.TerraformDataSource {
     return this.getNumberAttribute('priority');
   }
 
+  // scheduling_policy_arn - computed: true, optional: false, required: false
+  public get schedulingPolicyArn() {
+    return this.getStringAttribute('scheduling_policy_arn');
+  }
+
   // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');

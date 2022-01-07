@@ -2,6 +2,7 @@
 export * from './sagemaker-app';
 export * from './sagemaker-app-image-config';
 export * from './sagemaker-code-repository';
+export * from './sagemaker-device';
 export * from './sagemaker-device-fleet';
 export * from './sagemaker-domain';
 export * from './sagemaker-endpoint';
