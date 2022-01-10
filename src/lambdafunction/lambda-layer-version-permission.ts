@@ -8,33 +8,33 @@ import * as cdktf from 'cdktf';
 */
 export interface LambdaLayerVersionPermissionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html#action LambdaLayerVersionPermission#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission#action LambdaLayerVersionPermission#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html#layer_name LambdaLayerVersionPermission#layer_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission#layer_name LambdaLayerVersionPermission#layer_name}
   */
   readonly layerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html#organization_id LambdaLayerVersionPermission#organization_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission#organization_id LambdaLayerVersionPermission#organization_id}
   */
   readonly organizationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html#principal LambdaLayerVersionPermission#principal}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission#principal LambdaLayerVersionPermission#principal}
   */
   readonly principal: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html#statement_id LambdaLayerVersionPermission#statement_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission#statement_id LambdaLayerVersionPermission#statement_id}
   */
   readonly statementId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html#version_number LambdaLayerVersionPermission#version_number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission#version_number LambdaLayerVersionPermission#version_number}
   */
   readonly versionNumber: number;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html aws_lambda_layer_version_permission}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission aws_lambda_layer_version_permission}
 */
 export class LambdaLayerVersionPermission extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class LambdaLayerVersionPermission extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html aws_lambda_layer_version_permission} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission aws_lambda_layer_version_permission} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

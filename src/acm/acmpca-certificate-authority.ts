@@ -8,95 +8,95 @@ import * as cdktf from 'cdktf';
 */
 export interface AcmpcaCertificateAuthorityConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#enabled AcmpcaCertificateAuthority#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#enabled AcmpcaCertificateAuthority#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#permanent_deletion_time_in_days AcmpcaCertificateAuthority#permanent_deletion_time_in_days}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#permanent_deletion_time_in_days AcmpcaCertificateAuthority#permanent_deletion_time_in_days}
   */
   readonly permanentDeletionTimeInDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#tags AcmpcaCertificateAuthority#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#tags AcmpcaCertificateAuthority#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#tags_all AcmpcaCertificateAuthority#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#tags_all AcmpcaCertificateAuthority#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#type AcmpcaCertificateAuthority#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#type AcmpcaCertificateAuthority#type}
   */
   readonly type?: string;
   /**
   * certificate_authority_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#certificate_authority_configuration AcmpcaCertificateAuthority#certificate_authority_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#certificate_authority_configuration AcmpcaCertificateAuthority#certificate_authority_configuration}
   */
   readonly certificateAuthorityConfiguration: AcmpcaCertificateAuthorityCertificateAuthorityConfiguration;
   /**
   * revocation_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#revocation_configuration AcmpcaCertificateAuthority#revocation_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#revocation_configuration AcmpcaCertificateAuthority#revocation_configuration}
   */
   readonly revocationConfiguration?: AcmpcaCertificateAuthorityRevocationConfiguration;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#timeouts AcmpcaCertificateAuthority#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#timeouts AcmpcaCertificateAuthority#timeouts}
   */
   readonly timeouts?: AcmpcaCertificateAuthorityTimeouts;
 }
 export interface AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#common_name AcmpcaCertificateAuthority#common_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#common_name AcmpcaCertificateAuthority#common_name}
   */
   readonly commonName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#country AcmpcaCertificateAuthority#country}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#country AcmpcaCertificateAuthority#country}
   */
   readonly country?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#distinguished_name_qualifier AcmpcaCertificateAuthority#distinguished_name_qualifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#distinguished_name_qualifier AcmpcaCertificateAuthority#distinguished_name_qualifier}
   */
   readonly distinguishedNameQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#generation_qualifier AcmpcaCertificateAuthority#generation_qualifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#generation_qualifier AcmpcaCertificateAuthority#generation_qualifier}
   */
   readonly generationQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#given_name AcmpcaCertificateAuthority#given_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#given_name AcmpcaCertificateAuthority#given_name}
   */
   readonly givenName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#initials AcmpcaCertificateAuthority#initials}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#initials AcmpcaCertificateAuthority#initials}
   */
   readonly initials?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#locality AcmpcaCertificateAuthority#locality}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#locality AcmpcaCertificateAuthority#locality}
   */
   readonly locality?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#organization AcmpcaCertificateAuthority#organization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#organization AcmpcaCertificateAuthority#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#organizational_unit AcmpcaCertificateAuthority#organizational_unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#organizational_unit AcmpcaCertificateAuthority#organizational_unit}
   */
   readonly organizationalUnit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#pseudonym AcmpcaCertificateAuthority#pseudonym}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#pseudonym AcmpcaCertificateAuthority#pseudonym}
   */
   readonly pseudonym?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#state AcmpcaCertificateAuthority#state}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#state AcmpcaCertificateAuthority#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#surname AcmpcaCertificateAuthority#surname}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#surname AcmpcaCertificateAuthority#surname}
   */
   readonly surname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#title AcmpcaCertificateAuthority#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#title AcmpcaCertificateAuthority#title}
   */
   readonly title?: string;
 }
@@ -138,55 +138,55 @@ export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectO
   public get internalValue(): AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._commonName) {
+    if (this._commonName !== undefined) {
       hasAnyValues = true;
       internalValueResult.commonName = this._commonName;
     }
-    if (this._country) {
+    if (this._country !== undefined) {
       hasAnyValues = true;
       internalValueResult.country = this._country;
     }
-    if (this._distinguishedNameQualifier) {
+    if (this._distinguishedNameQualifier !== undefined) {
       hasAnyValues = true;
       internalValueResult.distinguishedNameQualifier = this._distinguishedNameQualifier;
     }
-    if (this._generationQualifier) {
+    if (this._generationQualifier !== undefined) {
       hasAnyValues = true;
       internalValueResult.generationQualifier = this._generationQualifier;
     }
-    if (this._givenName) {
+    if (this._givenName !== undefined) {
       hasAnyValues = true;
       internalValueResult.givenName = this._givenName;
     }
-    if (this._initials) {
+    if (this._initials !== undefined) {
       hasAnyValues = true;
       internalValueResult.initials = this._initials;
     }
-    if (this._locality) {
+    if (this._locality !== undefined) {
       hasAnyValues = true;
       internalValueResult.locality = this._locality;
     }
-    if (this._organization) {
+    if (this._organization !== undefined) {
       hasAnyValues = true;
       internalValueResult.organization = this._organization;
     }
-    if (this._organizationalUnit) {
+    if (this._organizationalUnit !== undefined) {
       hasAnyValues = true;
       internalValueResult.organizationalUnit = this._organizationalUnit;
     }
-    if (this._pseudonym) {
+    if (this._pseudonym !== undefined) {
       hasAnyValues = true;
       internalValueResult.pseudonym = this._pseudonym;
     }
-    if (this._state) {
+    if (this._state !== undefined) {
       hasAnyValues = true;
       internalValueResult.state = this._state;
     }
-    if (this._surname) {
+    if (this._surname !== undefined) {
       hasAnyValues = true;
       internalValueResult.surname = this._surname;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
@@ -438,17 +438,17 @@ export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectO
 }
 export interface AcmpcaCertificateAuthorityCertificateAuthorityConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#key_algorithm AcmpcaCertificateAuthority#key_algorithm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#key_algorithm AcmpcaCertificateAuthority#key_algorithm}
   */
   readonly keyAlgorithm: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#signing_algorithm AcmpcaCertificateAuthority#signing_algorithm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#signing_algorithm AcmpcaCertificateAuthority#signing_algorithm}
   */
   readonly signingAlgorithm: string;
   /**
   * subject block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#subject AcmpcaCertificateAuthority#subject}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#subject AcmpcaCertificateAuthority#subject}
   */
   readonly subject: AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject;
 }
@@ -480,15 +480,15 @@ export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputRe
   public get internalValue(): AcmpcaCertificateAuthorityCertificateAuthorityConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._keyAlgorithm) {
+    if (this._keyAlgorithm !== undefined) {
       hasAnyValues = true;
       internalValueResult.keyAlgorithm = this._keyAlgorithm;
     }
-    if (this._signingAlgorithm) {
+    if (this._signingAlgorithm !== undefined) {
       hasAnyValues = true;
       internalValueResult.signingAlgorithm = this._signingAlgorithm;
     }
-    if (this._subject?.internalValue) {
+    if (this._subject?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.subject = this._subject?.internalValue;
     }
@@ -551,23 +551,23 @@ export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputRe
 }
 export interface AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#custom_cname AcmpcaCertificateAuthority#custom_cname}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#custom_cname AcmpcaCertificateAuthority#custom_cname}
   */
   readonly customCname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#enabled AcmpcaCertificateAuthority#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#enabled AcmpcaCertificateAuthority#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#expiration_in_days AcmpcaCertificateAuthority#expiration_in_days}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#expiration_in_days AcmpcaCertificateAuthority#expiration_in_days}
   */
   readonly expirationInDays: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#s3_bucket_name AcmpcaCertificateAuthority#s3_bucket_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#s3_bucket_name AcmpcaCertificateAuthority#s3_bucket_name}
   */
   readonly s3BucketName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#s3_object_acl AcmpcaCertificateAuthority#s3_object_acl}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#s3_object_acl AcmpcaCertificateAuthority#s3_object_acl}
   */
   readonly s3ObjectAcl?: string;
 }
@@ -601,23 +601,23 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOu
   public get internalValue(): AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._customCname) {
+    if (this._customCname !== undefined) {
       hasAnyValues = true;
       internalValueResult.customCname = this._customCname;
     }
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._expirationInDays) {
+    if (this._expirationInDays !== undefined) {
       hasAnyValues = true;
       internalValueResult.expirationInDays = this._expirationInDays;
     }
-    if (this._s3BucketName) {
+    if (this._s3BucketName !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3BucketName = this._s3BucketName;
     }
-    if (this._s3ObjectAcl) {
+    if (this._s3ObjectAcl !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3ObjectAcl = this._s3ObjectAcl;
     }
@@ -724,7 +724,7 @@ export interface AcmpcaCertificateAuthorityRevocationConfiguration {
   /**
   * crl_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#crl_configuration AcmpcaCertificateAuthority#crl_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#crl_configuration AcmpcaCertificateAuthority#crl_configuration}
   */
   readonly crlConfiguration?: AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration;
 }
@@ -754,7 +754,7 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationOutputReference ex
   public get internalValue(): AcmpcaCertificateAuthorityRevocationConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._crlConfiguration?.internalValue) {
+    if (this._crlConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.crlConfiguration = this._crlConfiguration?.internalValue;
     }
@@ -790,7 +790,7 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationOutputReference ex
 }
 export interface AcmpcaCertificateAuthorityTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#create AcmpcaCertificateAuthority#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#create AcmpcaCertificateAuthority#create}
   */
   readonly create?: string;
 }
@@ -820,7 +820,7 @@ export class AcmpcaCertificateAuthorityTimeoutsOutputReference extends cdktf.Com
   public get internalValue(): AcmpcaCertificateAuthorityTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
@@ -856,7 +856,7 @@ export class AcmpcaCertificateAuthorityTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html aws_acmpca_certificate_authority}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority aws_acmpca_certificate_authority}
 */
 export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
 
@@ -870,7 +870,7 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html aws_acmpca_certificate_authority} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority aws_acmpca_certificate_authority} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

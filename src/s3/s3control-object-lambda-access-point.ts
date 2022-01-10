@@ -8,27 +8,27 @@ import * as cdktf from 'cdktf';
 */
 export interface S3ControlObjectLambdaAccessPointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point.html#account_id S3ControlObjectLambdaAccessPoint#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#account_id S3ControlObjectLambdaAccessPoint#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point.html#name S3ControlObjectLambdaAccessPoint#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#name S3ControlObjectLambdaAccessPoint#name}
   */
   readonly name: string;
   /**
   * configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point.html#configuration S3ControlObjectLambdaAccessPoint#configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#configuration S3ControlObjectLambdaAccessPoint#configuration}
   */
   readonly configuration: S3ControlObjectLambdaAccessPointConfiguration;
 }
 export interface S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambda {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point.html#function_arn S3ControlObjectLambdaAccessPoint#function_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#function_arn S3ControlObjectLambdaAccessPoint#function_arn}
   */
   readonly functionArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point.html#function_payload S3ControlObjectLambdaAccessPoint#function_payload}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#function_payload S3ControlObjectLambdaAccessPoint#function_payload}
   */
   readonly functionPayload?: string;
 }
@@ -59,11 +59,11 @@ export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigur
   public get internalValue(): S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambda | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._functionArn) {
+    if (this._functionArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.functionArn = this._functionArn;
     }
-    if (this._functionPayload) {
+    if (this._functionPayload !== undefined) {
       hasAnyValues = true;
       internalValueResult.functionPayload = this._functionPayload;
     }
@@ -116,7 +116,7 @@ export interface S3ControlObjectLambdaAccessPointConfigurationTransformationConf
   /**
   * aws_lambda block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point.html#aws_lambda S3ControlObjectLambdaAccessPoint#aws_lambda}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#aws_lambda S3ControlObjectLambdaAccessPoint#aws_lambda}
   */
   readonly awsLambda: S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambda;
 }
@@ -146,7 +146,7 @@ export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigur
   public get internalValue(): S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformation | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._awsLambda?.internalValue) {
+    if (this._awsLambda?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.awsLambda = this._awsLambda?.internalValue;
     }
@@ -179,13 +179,13 @@ export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigur
 }
 export interface S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point.html#actions S3ControlObjectLambdaAccessPoint#actions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#actions S3ControlObjectLambdaAccessPoint#actions}
   */
   readonly actions: string[];
   /**
   * content_transformation block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point.html#content_transformation S3ControlObjectLambdaAccessPoint#content_transformation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#content_transformation S3ControlObjectLambdaAccessPoint#content_transformation}
   */
   readonly contentTransformation: S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformation;
 }
@@ -203,21 +203,21 @@ export function s3ControlObjectLambdaAccessPointConfigurationTransformationConfi
 
 export interface S3ControlObjectLambdaAccessPointConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point.html#allowed_features S3ControlObjectLambdaAccessPoint#allowed_features}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#allowed_features S3ControlObjectLambdaAccessPoint#allowed_features}
   */
   readonly allowedFeatures?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point.html#cloud_watch_metrics_enabled S3ControlObjectLambdaAccessPoint#cloud_watch_metrics_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#cloud_watch_metrics_enabled S3ControlObjectLambdaAccessPoint#cloud_watch_metrics_enabled}
   */
   readonly cloudWatchMetricsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point.html#supporting_access_point S3ControlObjectLambdaAccessPoint#supporting_access_point}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#supporting_access_point S3ControlObjectLambdaAccessPoint#supporting_access_point}
   */
   readonly supportingAccessPoint: string;
   /**
   * transformation_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point.html#transformation_configuration S3ControlObjectLambdaAccessPoint#transformation_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#transformation_configuration S3ControlObjectLambdaAccessPoint#transformation_configuration}
   */
   readonly transformationConfiguration: S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration[];
 }
@@ -250,19 +250,19 @@ export class S3ControlObjectLambdaAccessPointConfigurationOutputReference extend
   public get internalValue(): S3ControlObjectLambdaAccessPointConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allowedFeatures) {
+    if (this._allowedFeatures !== undefined) {
       hasAnyValues = true;
       internalValueResult.allowedFeatures = this._allowedFeatures;
     }
-    if (this._cloudWatchMetricsEnabled) {
+    if (this._cloudWatchMetricsEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudWatchMetricsEnabled = this._cloudWatchMetricsEnabled;
     }
-    if (this._supportingAccessPoint) {
+    if (this._supportingAccessPoint !== undefined) {
       hasAnyValues = true;
       internalValueResult.supportingAccessPoint = this._supportingAccessPoint;
     }
-    if (this._transformationConfiguration) {
+    if (this._transformationConfiguration !== undefined) {
       hasAnyValues = true;
       internalValueResult.transformationConfiguration = this._transformationConfiguration;
     }
@@ -347,7 +347,7 @@ export class S3ControlObjectLambdaAccessPointConfigurationOutputReference extend
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point.html aws_s3control_object_lambda_access_point}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point}
 */
 export class S3ControlObjectLambdaAccessPoint extends cdktf.TerraformResource {
 
@@ -361,7 +361,7 @@ export class S3ControlObjectLambdaAccessPoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point.html aws_s3control_object_lambda_access_point} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,27 +8,27 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsVpcDhcpOptionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options.html#dhcp_options_id DataAwsVpcDhcpOptions#dhcp_options_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options#dhcp_options_id DataAwsVpcDhcpOptions#dhcp_options_id}
   */
   readonly dhcpOptionsId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options.html#tags DataAwsVpcDhcpOptions#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options#tags DataAwsVpcDhcpOptions#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options.html#filter DataAwsVpcDhcpOptions#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options#filter DataAwsVpcDhcpOptions#filter}
   */
   readonly filter?: DataAwsVpcDhcpOptionsFilter[];
 }
 export interface DataAwsVpcDhcpOptionsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options.html#name DataAwsVpcDhcpOptions#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options#name DataAwsVpcDhcpOptions#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options.html#values DataAwsVpcDhcpOptions#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options#values DataAwsVpcDhcpOptions#values}
   */
   readonly values: string[];
 }
@@ -46,7 +46,7 @@ export function dataAwsVpcDhcpOptionsFilterToTerraform(struct?: DataAwsVpcDhcpOp
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options.html aws_vpc_dhcp_options}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options aws_vpc_dhcp_options}
 */
 export class DataAwsVpcDhcpOptions extends cdktf.TerraformDataSource {
 
@@ -60,7 +60,7 @@ export class DataAwsVpcDhcpOptions extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options.html aws_vpc_dhcp_options} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options aws_vpc_dhcp_options} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

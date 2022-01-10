@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsLexBotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lex_bot.html#name DataAwsLexBot#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lex_bot#name DataAwsLexBot#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lex_bot.html#version DataAwsLexBot#version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lex_bot#version DataAwsLexBot#version}
   */
   readonly version?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/lex_bot.html aws_lex_bot}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/lex_bot aws_lex_bot}
 */
 export class DataAwsLexBot extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsLexBot extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/lex_bot.html aws_lex_bot} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/lex_bot aws_lex_bot} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,59 +8,59 @@ import * as cdktf from 'cdktf';
 */
 export interface EcsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#capacity_providers EcsCluster#capacity_providers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#capacity_providers EcsCluster#capacity_providers}
   */
   readonly capacityProviders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#name EcsCluster#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#name EcsCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#tags EcsCluster#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#tags EcsCluster#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#tags_all EcsCluster#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#tags_all EcsCluster#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#configuration EcsCluster#configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#configuration EcsCluster#configuration}
   */
   readonly configuration?: EcsClusterConfiguration;
   /**
   * default_capacity_provider_strategy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#default_capacity_provider_strategy EcsCluster#default_capacity_provider_strategy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#default_capacity_provider_strategy EcsCluster#default_capacity_provider_strategy}
   */
   readonly defaultCapacityProviderStrategy?: EcsClusterDefaultCapacityProviderStrategy[];
   /**
   * setting block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#setting EcsCluster#setting}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#setting EcsCluster#setting}
   */
   readonly setting?: EcsClusterSetting[];
 }
 export interface EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#cloud_watch_encryption_enabled EcsCluster#cloud_watch_encryption_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#cloud_watch_encryption_enabled EcsCluster#cloud_watch_encryption_enabled}
   */
   readonly cloudWatchEncryptionEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#cloud_watch_log_group_name EcsCluster#cloud_watch_log_group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#cloud_watch_log_group_name EcsCluster#cloud_watch_log_group_name}
   */
   readonly cloudWatchLogGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#s3_bucket_encryption_enabled EcsCluster#s3_bucket_encryption_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#s3_bucket_encryption_enabled EcsCluster#s3_bucket_encryption_enabled}
   */
   readonly s3BucketEncryptionEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#s3_bucket_name EcsCluster#s3_bucket_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#s3_bucket_name EcsCluster#s3_bucket_name}
   */
   readonly s3BucketName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#s3_key_prefix EcsCluster#s3_key_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#s3_key_prefix EcsCluster#s3_key_prefix}
   */
   readonly s3KeyPrefix?: string;
 }
@@ -94,23 +94,23 @@ export class EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationO
   public get internalValue(): EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cloudWatchEncryptionEnabled) {
+    if (this._cloudWatchEncryptionEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudWatchEncryptionEnabled = this._cloudWatchEncryptionEnabled;
     }
-    if (this._cloudWatchLogGroupName) {
+    if (this._cloudWatchLogGroupName !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudWatchLogGroupName = this._cloudWatchLogGroupName;
     }
-    if (this._s3BucketEncryptionEnabled) {
+    if (this._s3BucketEncryptionEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3BucketEncryptionEnabled = this._s3BucketEncryptionEnabled;
     }
-    if (this._s3BucketName) {
+    if (this._s3BucketName !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3BucketName = this._s3BucketName;
     }
-    if (this._s3KeyPrefix) {
+    if (this._s3KeyPrefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3KeyPrefix = this._s3KeyPrefix;
     }
@@ -218,17 +218,17 @@ export class EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationO
 }
 export interface EcsClusterConfigurationExecuteCommandConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#kms_key_id EcsCluster#kms_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#kms_key_id EcsCluster#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#logging EcsCluster#logging}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#logging EcsCluster#logging}
   */
   readonly logging?: string;
   /**
   * log_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#log_configuration EcsCluster#log_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#log_configuration EcsCluster#log_configuration}
   */
   readonly logConfiguration?: EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration;
 }
@@ -260,15 +260,15 @@ export class EcsClusterConfigurationExecuteCommandConfigurationOutputReference e
   public get internalValue(): EcsClusterConfigurationExecuteCommandConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._kmsKeyId) {
+    if (this._kmsKeyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyId = this._kmsKeyId;
     }
-    if (this._logging) {
+    if (this._logging !== undefined) {
       hasAnyValues = true;
       internalValueResult.logging = this._logging;
     }
-    if (this._logConfiguration?.internalValue) {
+    if (this._logConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.logConfiguration = this._logConfiguration?.internalValue;
     }
@@ -342,7 +342,7 @@ export interface EcsClusterConfiguration {
   /**
   * execute_command_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#execute_command_configuration EcsCluster#execute_command_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#execute_command_configuration EcsCluster#execute_command_configuration}
   */
   readonly executeCommandConfiguration?: EcsClusterConfigurationExecuteCommandConfiguration;
 }
@@ -372,7 +372,7 @@ export class EcsClusterConfigurationOutputReference extends cdktf.ComplexObject 
   public get internalValue(): EcsClusterConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._executeCommandConfiguration?.internalValue) {
+    if (this._executeCommandConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.executeCommandConfiguration = this._executeCommandConfiguration?.internalValue;
     }
@@ -408,15 +408,15 @@ export class EcsClusterConfigurationOutputReference extends cdktf.ComplexObject 
 }
 export interface EcsClusterDefaultCapacityProviderStrategy {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#base EcsCluster#base}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#base EcsCluster#base}
   */
   readonly base?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#capacity_provider EcsCluster#capacity_provider}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#capacity_provider EcsCluster#capacity_provider}
   */
   readonly capacityProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#weight EcsCluster#weight}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#weight EcsCluster#weight}
   */
   readonly weight?: number;
 }
@@ -435,11 +435,11 @@ export function ecsClusterDefaultCapacityProviderStrategyToTerraform(struct?: Ec
 
 export interface EcsClusterSetting {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#name EcsCluster#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#name EcsCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#value EcsCluster#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster#value EcsCluster#value}
   */
   readonly value: string;
 }
@@ -457,7 +457,7 @@ export function ecsClusterSettingToTerraform(struct?: EcsClusterSetting): any {
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html aws_ecs_cluster}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster aws_ecs_cluster}
 */
 export class EcsCluster extends cdktf.TerraformResource {
 
@@ -471,7 +471,7 @@ export class EcsCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html aws_ecs_cluster} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster aws_ecs_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

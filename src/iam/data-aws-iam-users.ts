@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsIamUsersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_users.html#name_regex DataAwsIamUsers#name_regex}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_users#name_regex DataAwsIamUsers#name_regex}
   */
   readonly nameRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_users.html#path_prefix DataAwsIamUsers#path_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_users#path_prefix DataAwsIamUsers#path_prefix}
   */
   readonly pathPrefix?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_users.html aws_iam_users}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_users aws_iam_users}
 */
 export class DataAwsIamUsers extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsIamUsers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_users.html aws_iam_users} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_users aws_iam_users} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

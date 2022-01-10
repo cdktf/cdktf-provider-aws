@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsBatchSchedulingPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/batch_scheduling_policy.html#arn DataAwsBatchSchedulingPolicy#arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/batch_scheduling_policy#arn DataAwsBatchSchedulingPolicy#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/batch_scheduling_policy.html#tags DataAwsBatchSchedulingPolicy#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/batch_scheduling_policy#tags DataAwsBatchSchedulingPolicy#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
@@ -48,7 +48,7 @@ export class DataAwsBatchSchedulingPolicyFairSharePolicy extends cdktf.ComplexCo
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/batch_scheduling_policy.html aws_batch_scheduling_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/batch_scheduling_policy aws_batch_scheduling_policy}
 */
 export class DataAwsBatchSchedulingPolicy extends cdktf.TerraformDataSource {
 
@@ -62,7 +62,7 @@ export class DataAwsBatchSchedulingPolicy extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/batch_scheduling_policy.html aws_batch_scheduling_policy} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/batch_scheduling_policy aws_batch_scheduling_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

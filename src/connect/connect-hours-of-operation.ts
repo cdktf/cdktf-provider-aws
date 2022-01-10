@@ -8,49 +8,49 @@ import * as cdktf from 'cdktf';
 */
 export interface ConnectHoursOfOperationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#description ConnectHoursOfOperation#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#description ConnectHoursOfOperation#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#instance_id ConnectHoursOfOperation#instance_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#instance_id ConnectHoursOfOperation#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#name ConnectHoursOfOperation#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#name ConnectHoursOfOperation#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#tags ConnectHoursOfOperation#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#tags ConnectHoursOfOperation#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#tags_all ConnectHoursOfOperation#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#tags_all ConnectHoursOfOperation#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#time_zone ConnectHoursOfOperation#time_zone}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#time_zone ConnectHoursOfOperation#time_zone}
   */
   readonly timeZone: string;
   /**
   * config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#config ConnectHoursOfOperation#config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#config ConnectHoursOfOperation#config}
   */
   readonly config: ConnectHoursOfOperationConfigA[];
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#timeouts ConnectHoursOfOperation#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#timeouts ConnectHoursOfOperation#timeouts}
   */
   readonly timeouts?: ConnectHoursOfOperationTimeouts;
 }
 export interface ConnectHoursOfOperationConfigEndTime {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#hours ConnectHoursOfOperation#hours}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#hours ConnectHoursOfOperation#hours}
   */
   readonly hours: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#minutes ConnectHoursOfOperation#minutes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#minutes ConnectHoursOfOperation#minutes}
   */
   readonly minutes: number;
 }
@@ -81,11 +81,11 @@ export class ConnectHoursOfOperationConfigEndTimeOutputReference extends cdktf.C
   public get internalValue(): ConnectHoursOfOperationConfigEndTime | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._hours) {
+    if (this._hours !== undefined) {
       hasAnyValues = true;
       internalValueResult.hours = this._hours;
     }
-    if (this._minutes) {
+    if (this._minutes !== undefined) {
       hasAnyValues = true;
       internalValueResult.minutes = this._minutes;
     }
@@ -133,11 +133,11 @@ export class ConnectHoursOfOperationConfigEndTimeOutputReference extends cdktf.C
 }
 export interface ConnectHoursOfOperationConfigStartTime {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#hours ConnectHoursOfOperation#hours}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#hours ConnectHoursOfOperation#hours}
   */
   readonly hours: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#minutes ConnectHoursOfOperation#minutes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#minutes ConnectHoursOfOperation#minutes}
   */
   readonly minutes: number;
 }
@@ -168,11 +168,11 @@ export class ConnectHoursOfOperationConfigStartTimeOutputReference extends cdktf
   public get internalValue(): ConnectHoursOfOperationConfigStartTime | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._hours) {
+    if (this._hours !== undefined) {
       hasAnyValues = true;
       internalValueResult.hours = this._hours;
     }
-    if (this._minutes) {
+    if (this._minutes !== undefined) {
       hasAnyValues = true;
       internalValueResult.minutes = this._minutes;
     }
@@ -220,19 +220,19 @@ export class ConnectHoursOfOperationConfigStartTimeOutputReference extends cdktf
 }
 export interface ConnectHoursOfOperationConfigA {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#day ConnectHoursOfOperation#day}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#day ConnectHoursOfOperation#day}
   */
   readonly day: string;
   /**
   * end_time block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#end_time ConnectHoursOfOperation#end_time}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#end_time ConnectHoursOfOperation#end_time}
   */
   readonly endTime: ConnectHoursOfOperationConfigEndTime;
   /**
   * start_time block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#start_time ConnectHoursOfOperation#start_time}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#start_time ConnectHoursOfOperation#start_time}
   */
   readonly startTime: ConnectHoursOfOperationConfigStartTime;
 }
@@ -251,11 +251,11 @@ export function connectHoursOfOperationConfigAToTerraform(struct?: ConnectHoursO
 
 export interface ConnectHoursOfOperationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#create ConnectHoursOfOperation#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#create ConnectHoursOfOperation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html#delete ConnectHoursOfOperation#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation#delete ConnectHoursOfOperation#delete}
   */
   readonly delete?: string;
 }
@@ -286,11 +286,11 @@ export class ConnectHoursOfOperationTimeoutsOutputReference extends cdktf.Comple
   public get internalValue(): ConnectHoursOfOperationTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
@@ -344,7 +344,7 @@ export class ConnectHoursOfOperationTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html aws_connect_hours_of_operation}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation aws_connect_hours_of_operation}
 */
 export class ConnectHoursOfOperation extends cdktf.TerraformResource {
 
@@ -358,7 +358,7 @@ export class ConnectHoursOfOperation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation.html aws_connect_hours_of_operation} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation aws_connect_hours_of_operation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

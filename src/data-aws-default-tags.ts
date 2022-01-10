@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/d/default_tags.html
+// https://www.terraform.io/docs/providers/aws/d/default_tags
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsDefaultTagsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/default_tags.html#tags DataAwsDefaultTags#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/default_tags#tags DataAwsDefaultTags#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/default_tags.html aws_default_tags}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/default_tags aws_default_tags}
 */
 export class DataAwsDefaultTags extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsDefaultTags extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/default_tags.html aws_default_tags} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/default_tags aws_default_tags} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

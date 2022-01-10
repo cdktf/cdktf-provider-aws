@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface AppstreamFleetStackAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet_stack_association.html#fleet_name AppstreamFleetStackAssociation#fleet_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet_stack_association#fleet_name AppstreamFleetStackAssociation#fleet_name}
   */
   readonly fleetName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet_stack_association.html#stack_name AppstreamFleetStackAssociation#stack_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet_stack_association#stack_name AppstreamFleetStackAssociation#stack_name}
   */
   readonly stackName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet_stack_association.html aws_appstream_fleet_stack_association}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet_stack_association aws_appstream_fleet_stack_association}
 */
 export class AppstreamFleetStackAssociation extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class AppstreamFleetStackAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet_stack_association.html aws_appstream_fleet_stack_association} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet_stack_association aws_appstream_fleet_stack_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

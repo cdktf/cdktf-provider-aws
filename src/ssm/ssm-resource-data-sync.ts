@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 */
 export interface SsmResourceDataSyncConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync.html#name SsmResourceDataSync#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync#name SsmResourceDataSync#name}
   */
   readonly name: string;
   /**
   * s3_destination block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync.html#s3_destination SsmResourceDataSync#s3_destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync#s3_destination SsmResourceDataSync#s3_destination}
   */
   readonly s3Destination: SsmResourceDataSyncS3Destination;
 }
 export interface SsmResourceDataSyncS3Destination {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync.html#bucket_name SsmResourceDataSync#bucket_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync#bucket_name SsmResourceDataSync#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync.html#kms_key_arn SsmResourceDataSync#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync#kms_key_arn SsmResourceDataSync#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync.html#prefix SsmResourceDataSync#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync#prefix SsmResourceDataSync#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync.html#region SsmResourceDataSync#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync#region SsmResourceDataSync#region}
   */
   readonly region: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync.html#sync_format SsmResourceDataSync#sync_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync#sync_format SsmResourceDataSync#sync_format}
   */
   readonly syncFormat?: string;
 }
@@ -70,23 +70,23 @@ export class SsmResourceDataSyncS3DestinationOutputReference extends cdktf.Compl
   public get internalValue(): SsmResourceDataSyncS3Destination | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucketName) {
+    if (this._bucketName !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketName = this._bucketName;
     }
-    if (this._kmsKeyArn) {
+    if (this._kmsKeyArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyArn = this._kmsKeyArn;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._region) {
+    if (this._region !== undefined) {
       hasAnyValues = true;
       internalValueResult.region = this._region;
     }
-    if (this._syncFormat) {
+    if (this._syncFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.syncFormat = this._syncFormat;
     }
@@ -188,7 +188,7 @@ export class SsmResourceDataSyncS3DestinationOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync.html aws_ssm_resource_data_sync}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync aws_ssm_resource_data_sync}
 */
 export class SsmResourceDataSync extends cdktf.TerraformResource {
 
@@ -202,7 +202,7 @@ export class SsmResourceDataSync extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync.html aws_ssm_resource_data_sync} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync aws_ssm_resource_data_sync} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

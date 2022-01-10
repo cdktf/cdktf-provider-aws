@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsKmsKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_key.html#grant_tokens DataAwsKmsKey#grant_tokens}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_key#grant_tokens DataAwsKmsKey#grant_tokens}
   */
   readonly grantTokens?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_key.html#key_id DataAwsKmsKey#key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_key#key_id DataAwsKmsKey#key_id}
   */
   readonly keyId: string;
 }
@@ -61,7 +61,7 @@ export class DataAwsKmsKeyMultiRegionConfiguration extends cdktf.ComplexComputed
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/kms_key.html aws_kms_key}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/kms_key aws_kms_key}
 */
 export class DataAwsKmsKey extends cdktf.TerraformDataSource {
 
@@ -75,7 +75,7 @@ export class DataAwsKmsKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/kms_key.html aws_kms_key} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/kms_key aws_kms_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

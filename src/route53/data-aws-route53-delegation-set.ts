@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsRoute53DelegationSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route53_delegation_set.html#id DataAwsRoute53DelegationSet#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route53_delegation_set#id DataAwsRoute53DelegationSet#id}
   */
   readonly id: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/route53_delegation_set.html aws_route53_delegation_set}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/route53_delegation_set aws_route53_delegation_set}
 */
 export class DataAwsRoute53DelegationSet extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsRoute53DelegationSet extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/route53_delegation_set.html aws_route53_delegation_set} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/route53_delegation_set aws_route53_delegation_set} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

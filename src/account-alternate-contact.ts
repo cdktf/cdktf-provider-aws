@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/account_alternate_contact.html
+// https://www.terraform.io/docs/providers/aws/r/account_alternate_contact
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,33 +8,33 @@ import * as cdktf from 'cdktf';
 
 export interface AccountAlternateContactConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact.html#account_id AccountAlternateContact#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact#account_id AccountAlternateContact#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact.html#alternate_contact_type AccountAlternateContact#alternate_contact_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact#alternate_contact_type AccountAlternateContact#alternate_contact_type}
   */
   readonly alternateContactType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact.html#email_address AccountAlternateContact#email_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact#email_address AccountAlternateContact#email_address}
   */
   readonly emailAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact.html#name AccountAlternateContact#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact#name AccountAlternateContact#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact.html#phone_number AccountAlternateContact#phone_number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact#phone_number AccountAlternateContact#phone_number}
   */
   readonly phoneNumber: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact.html#title AccountAlternateContact#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact#title AccountAlternateContact#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact.html aws_account_alternate_contact}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact aws_account_alternate_contact}
 */
 export class AccountAlternateContact extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class AccountAlternateContact extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact.html aws_account_alternate_contact} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/account_alternate_contact aws_account_alternate_contact} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

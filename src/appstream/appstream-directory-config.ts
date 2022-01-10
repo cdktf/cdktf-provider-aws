@@ -8,27 +8,27 @@ import * as cdktf from 'cdktf';
 */
 export interface AppstreamDirectoryConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config.html#directory_name AppstreamDirectoryConfig#directory_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config#directory_name AppstreamDirectoryConfig#directory_name}
   */
   readonly directoryName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config.html#organizational_unit_distinguished_names AppstreamDirectoryConfig#organizational_unit_distinguished_names}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config#organizational_unit_distinguished_names AppstreamDirectoryConfig#organizational_unit_distinguished_names}
   */
   readonly organizationalUnitDistinguishedNames: string[];
   /**
   * service_account_credentials block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config.html#service_account_credentials AppstreamDirectoryConfig#service_account_credentials}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config#service_account_credentials AppstreamDirectoryConfig#service_account_credentials}
   */
   readonly serviceAccountCredentials: AppstreamDirectoryConfigServiceAccountCredentials;
 }
 export interface AppstreamDirectoryConfigServiceAccountCredentials {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config.html#account_name AppstreamDirectoryConfig#account_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config#account_name AppstreamDirectoryConfig#account_name}
   */
   readonly accountName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config.html#account_password AppstreamDirectoryConfig#account_password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config#account_password AppstreamDirectoryConfig#account_password}
   */
   readonly accountPassword: string;
 }
@@ -59,11 +59,11 @@ export class AppstreamDirectoryConfigServiceAccountCredentialsOutputReference ex
   public get internalValue(): AppstreamDirectoryConfigServiceAccountCredentials | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accountName) {
+    if (this._accountName !== undefined) {
       hasAnyValues = true;
       internalValueResult.accountName = this._accountName;
     }
-    if (this._accountPassword) {
+    if (this._accountPassword !== undefined) {
       hasAnyValues = true;
       internalValueResult.accountPassword = this._accountPassword;
     }
@@ -111,7 +111,7 @@ export class AppstreamDirectoryConfigServiceAccountCredentialsOutputReference ex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config.html aws_appstream_directory_config}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config aws_appstream_directory_config}
 */
 export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
 
@@ -125,7 +125,7 @@ export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config.html aws_appstream_directory_config} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config aws_appstream_directory_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

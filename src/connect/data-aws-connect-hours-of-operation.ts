@@ -8,19 +8,19 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsConnectHoursOfOperationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_hours_of_operation.html#hours_of_operation_id DataAwsConnectHoursOfOperation#hours_of_operation_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_hours_of_operation#hours_of_operation_id DataAwsConnectHoursOfOperation#hours_of_operation_id}
   */
   readonly hoursOfOperationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_hours_of_operation.html#instance_id DataAwsConnectHoursOfOperation#instance_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_hours_of_operation#instance_id DataAwsConnectHoursOfOperation#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_hours_of_operation.html#name DataAwsConnectHoursOfOperation#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_hours_of_operation#name DataAwsConnectHoursOfOperation#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_hours_of_operation.html#tags DataAwsConnectHoursOfOperation#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_hours_of_operation#tags DataAwsConnectHoursOfOperation#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
@@ -69,7 +69,7 @@ export class DataAwsConnectHoursOfOperationConfigA extends cdktf.ComplexComputed
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/connect_hours_of_operation.html aws_connect_hours_of_operation}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/connect_hours_of_operation aws_connect_hours_of_operation}
 */
 export class DataAwsConnectHoursOfOperation extends cdktf.TerraformDataSource {
 
@@ -83,7 +83,7 @@ export class DataAwsConnectHoursOfOperation extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/connect_hours_of_operation.html aws_connect_hours_of_operation} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/connect_hours_of_operation aws_connect_hours_of_operation} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

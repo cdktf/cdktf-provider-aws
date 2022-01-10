@@ -10,7 +10,7 @@ export interface DataAwsSsoadminInstancesConfig extends cdktf.TerraformMetaArgum
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ssoadmin_instances.html aws_ssoadmin_instances}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ssoadmin_instances aws_ssoadmin_instances}
 */
 export class DataAwsSsoadminInstances extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataAwsSsoadminInstances extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ssoadmin_instances.html aws_ssoadmin_instances} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ssoadmin_instances aws_ssoadmin_instances} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

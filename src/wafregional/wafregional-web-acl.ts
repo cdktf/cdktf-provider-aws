@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 */
 export interface WafregionalWebAclConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#metric_name WafregionalWebAcl#metric_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#metric_name WafregionalWebAcl#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#name WafregionalWebAcl#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#name WafregionalWebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#tags WafregionalWebAcl#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#tags WafregionalWebAcl#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#tags_all WafregionalWebAcl#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#tags_all WafregionalWebAcl#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * default_action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#default_action WafregionalWebAcl#default_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#default_action WafregionalWebAcl#default_action}
   */
   readonly defaultAction: WafregionalWebAclDefaultAction;
   /**
   * logging_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#logging_configuration WafregionalWebAcl#logging_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#logging_configuration WafregionalWebAcl#logging_configuration}
   */
   readonly loggingConfiguration?: WafregionalWebAclLoggingConfiguration;
   /**
   * rule block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#rule WafregionalWebAcl#rule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#rule WafregionalWebAcl#rule}
   */
   readonly rule?: WafregionalWebAclRule[];
 }
 export interface WafregionalWebAclDefaultAction {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#type WafregionalWebAcl#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#type WafregionalWebAcl#type}
   */
   readonly type: string;
 }
@@ -74,7 +74,7 @@ export class WafregionalWebAclDefaultActionOutputReference extends cdktf.Complex
   public get internalValue(): WafregionalWebAclDefaultAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
@@ -107,11 +107,11 @@ export class WafregionalWebAclDefaultActionOutputReference extends cdktf.Complex
 }
 export interface WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#data WafregionalWebAcl#data}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#data WafregionalWebAcl#data}
   */
   readonly data?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#type WafregionalWebAcl#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#type WafregionalWebAcl#type}
   */
   readonly type: string;
 }
@@ -131,7 +131,7 @@ export interface WafregionalWebAclLoggingConfigurationRedactedFields {
   /**
   * field_to_match block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#field_to_match WafregionalWebAcl#field_to_match}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#field_to_match WafregionalWebAcl#field_to_match}
   */
   readonly fieldToMatch: WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch[];
 }
@@ -161,7 +161,7 @@ export class WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference 
   public get internalValue(): WafregionalWebAclLoggingConfigurationRedactedFields | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fieldToMatch) {
+    if (this._fieldToMatch !== undefined) {
       hasAnyValues = true;
       internalValueResult.fieldToMatch = this._fieldToMatch;
     }
@@ -195,13 +195,13 @@ export class WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference 
 }
 export interface WafregionalWebAclLoggingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#log_destination WafregionalWebAcl#log_destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#log_destination WafregionalWebAcl#log_destination}
   */
   readonly logDestination: string;
   /**
   * redacted_fields block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#redacted_fields WafregionalWebAcl#redacted_fields}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#redacted_fields WafregionalWebAcl#redacted_fields}
   */
   readonly redactedFields?: WafregionalWebAclLoggingConfigurationRedactedFields;
 }
@@ -232,11 +232,11 @@ export class WafregionalWebAclLoggingConfigurationOutputReference extends cdktf.
   public get internalValue(): WafregionalWebAclLoggingConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._logDestination) {
+    if (this._logDestination !== undefined) {
       hasAnyValues = true;
       internalValueResult.logDestination = this._logDestination;
     }
-    if (this._redactedFields?.internalValue) {
+    if (this._redactedFields?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.redactedFields = this._redactedFields?.internalValue;
     }
@@ -287,7 +287,7 @@ export class WafregionalWebAclLoggingConfigurationOutputReference extends cdktf.
 }
 export interface WafregionalWebAclRuleAction {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#type WafregionalWebAcl#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#type WafregionalWebAcl#type}
   */
   readonly type: string;
 }
@@ -317,7 +317,7 @@ export class WafregionalWebAclRuleActionOutputReference extends cdktf.ComplexObj
   public get internalValue(): WafregionalWebAclRuleAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
@@ -350,7 +350,7 @@ export class WafregionalWebAclRuleActionOutputReference extends cdktf.ComplexObj
 }
 export interface WafregionalWebAclRuleOverrideAction {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#type WafregionalWebAcl#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#type WafregionalWebAcl#type}
   */
   readonly type: string;
 }
@@ -380,7 +380,7 @@ export class WafregionalWebAclRuleOverrideActionOutputReference extends cdktf.Co
   public get internalValue(): WafregionalWebAclRuleOverrideAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
@@ -413,27 +413,27 @@ export class WafregionalWebAclRuleOverrideActionOutputReference extends cdktf.Co
 }
 export interface WafregionalWebAclRule {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#priority WafregionalWebAcl#priority}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#priority WafregionalWebAcl#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#rule_id WafregionalWebAcl#rule_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#rule_id WafregionalWebAcl#rule_id}
   */
   readonly ruleId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#type WafregionalWebAcl#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#type WafregionalWebAcl#type}
   */
   readonly type?: string;
   /**
   * action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#action WafregionalWebAcl#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#action WafregionalWebAcl#action}
   */
   readonly action?: WafregionalWebAclRuleAction;
   /**
   * override_action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#override_action WafregionalWebAcl#override_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#override_action WafregionalWebAcl#override_action}
   */
   readonly overrideAction?: WafregionalWebAclRuleOverrideAction;
 }
@@ -454,7 +454,7 @@ export function wafregionalWebAclRuleToTerraform(struct?: WafregionalWebAclRule)
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html aws_wafregional_web_acl}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl aws_wafregional_web_acl}
 */
 export class WafregionalWebAcl extends cdktf.TerraformResource {
 
@@ -468,7 +468,7 @@ export class WafregionalWebAcl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html aws_wafregional_web_acl} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl aws_wafregional_web_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface Route53ResolverDnssecConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_dnssec_config.html#resource_id Route53ResolverDnssecConfig#resource_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_dnssec_config#resource_id Route53ResolverDnssecConfig#resource_id}
   */
   readonly resourceId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_dnssec_config.html aws_route53_resolver_dnssec_config}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_dnssec_config aws_route53_resolver_dnssec_config}
 */
 export class Route53ResolverDnssecConfig extends cdktf.TerraformResource {
 
@@ -28,7 +28,7 @@ export class Route53ResolverDnssecConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_dnssec_config.html aws_route53_resolver_dnssec_config} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_dnssec_config aws_route53_resolver_dnssec_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

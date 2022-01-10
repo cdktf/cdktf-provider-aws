@@ -8,93 +8,93 @@ import * as cdktf from 'cdktf';
 */
 export interface EcsTaskDefinitionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#container_definitions EcsTaskDefinition#container_definitions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#container_definitions EcsTaskDefinition#container_definitions}
   */
   readonly containerDefinitions: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#cpu EcsTaskDefinition#cpu}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#cpu EcsTaskDefinition#cpu}
   */
   readonly cpu?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#execution_role_arn EcsTaskDefinition#execution_role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#execution_role_arn EcsTaskDefinition#execution_role_arn}
   */
   readonly executionRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#family EcsTaskDefinition#family}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#family EcsTaskDefinition#family}
   */
   readonly family: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#ipc_mode EcsTaskDefinition#ipc_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#ipc_mode EcsTaskDefinition#ipc_mode}
   */
   readonly ipcMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#memory EcsTaskDefinition#memory}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#memory EcsTaskDefinition#memory}
   */
   readonly memory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#network_mode EcsTaskDefinition#network_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#network_mode EcsTaskDefinition#network_mode}
   */
   readonly networkMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#pid_mode EcsTaskDefinition#pid_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#pid_mode EcsTaskDefinition#pid_mode}
   */
   readonly pidMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#requires_compatibilities EcsTaskDefinition#requires_compatibilities}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#requires_compatibilities EcsTaskDefinition#requires_compatibilities}
   */
   readonly requiresCompatibilities?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#tags EcsTaskDefinition#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#tags EcsTaskDefinition#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#tags_all EcsTaskDefinition#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#tags_all EcsTaskDefinition#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#task_role_arn EcsTaskDefinition#task_role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#task_role_arn EcsTaskDefinition#task_role_arn}
   */
   readonly taskRoleArn?: string;
   /**
   * ephemeral_storage block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#ephemeral_storage EcsTaskDefinition#ephemeral_storage}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#ephemeral_storage EcsTaskDefinition#ephemeral_storage}
   */
   readonly ephemeralStorage?: EcsTaskDefinitionEphemeralStorage;
   /**
   * inference_accelerator block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#inference_accelerator EcsTaskDefinition#inference_accelerator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#inference_accelerator EcsTaskDefinition#inference_accelerator}
   */
   readonly inferenceAccelerator?: EcsTaskDefinitionInferenceAccelerator[];
   /**
   * placement_constraints block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#placement_constraints EcsTaskDefinition#placement_constraints}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#placement_constraints EcsTaskDefinition#placement_constraints}
   */
   readonly placementConstraints?: EcsTaskDefinitionPlacementConstraints[];
   /**
   * proxy_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#proxy_configuration EcsTaskDefinition#proxy_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#proxy_configuration EcsTaskDefinition#proxy_configuration}
   */
   readonly proxyConfiguration?: EcsTaskDefinitionProxyConfiguration;
   /**
   * runtime_platform block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#runtime_platform EcsTaskDefinition#runtime_platform}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#runtime_platform EcsTaskDefinition#runtime_platform}
   */
   readonly runtimePlatform?: EcsTaskDefinitionRuntimePlatform;
   /**
   * volume block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#volume EcsTaskDefinition#volume}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#volume EcsTaskDefinition#volume}
   */
   readonly volume?: EcsTaskDefinitionVolume[];
 }
 export interface EcsTaskDefinitionEphemeralStorage {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#size_in_gib EcsTaskDefinition#size_in_gib}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#size_in_gib EcsTaskDefinition#size_in_gib}
   */
   readonly sizeInGib: number;
 }
@@ -124,7 +124,7 @@ export class EcsTaskDefinitionEphemeralStorageOutputReference extends cdktf.Comp
   public get internalValue(): EcsTaskDefinitionEphemeralStorage | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._sizeInGib) {
+    if (this._sizeInGib !== undefined) {
       hasAnyValues = true;
       internalValueResult.sizeInGib = this._sizeInGib;
     }
@@ -157,11 +157,11 @@ export class EcsTaskDefinitionEphemeralStorageOutputReference extends cdktf.Comp
 }
 export interface EcsTaskDefinitionInferenceAccelerator {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#device_name EcsTaskDefinition#device_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#device_name EcsTaskDefinition#device_name}
   */
   readonly deviceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#device_type EcsTaskDefinition#device_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#device_type EcsTaskDefinition#device_type}
   */
   readonly deviceType: string;
 }
@@ -179,11 +179,11 @@ export function ecsTaskDefinitionInferenceAcceleratorToTerraform(struct?: EcsTas
 
 export interface EcsTaskDefinitionPlacementConstraints {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#expression EcsTaskDefinition#expression}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#expression EcsTaskDefinition#expression}
   */
   readonly expression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#type EcsTaskDefinition#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#type EcsTaskDefinition#type}
   */
   readonly type: string;
 }
@@ -201,15 +201,15 @@ export function ecsTaskDefinitionPlacementConstraintsToTerraform(struct?: EcsTas
 
 export interface EcsTaskDefinitionProxyConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#container_name EcsTaskDefinition#container_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#container_name EcsTaskDefinition#container_name}
   */
   readonly containerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#properties EcsTaskDefinition#properties}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#properties EcsTaskDefinition#properties}
   */
   readonly properties?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#type EcsTaskDefinition#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#type EcsTaskDefinition#type}
   */
   readonly type?: string;
 }
@@ -241,15 +241,15 @@ export class EcsTaskDefinitionProxyConfigurationOutputReference extends cdktf.Co
   public get internalValue(): EcsTaskDefinitionProxyConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._containerName) {
+    if (this._containerName !== undefined) {
       hasAnyValues = true;
       internalValueResult.containerName = this._containerName;
     }
-    if (this._properties) {
+    if (this._properties !== undefined) {
       hasAnyValues = true;
       internalValueResult.properties = this._properties;
     }
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
@@ -319,11 +319,11 @@ export class EcsTaskDefinitionProxyConfigurationOutputReference extends cdktf.Co
 }
 export interface EcsTaskDefinitionRuntimePlatform {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#cpu_architecture EcsTaskDefinition#cpu_architecture}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#cpu_architecture EcsTaskDefinition#cpu_architecture}
   */
   readonly cpuArchitecture?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#operating_system_family EcsTaskDefinition#operating_system_family}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#operating_system_family EcsTaskDefinition#operating_system_family}
   */
   readonly operatingSystemFamily?: string;
 }
@@ -354,11 +354,11 @@ export class EcsTaskDefinitionRuntimePlatformOutputReference extends cdktf.Compl
   public get internalValue(): EcsTaskDefinitionRuntimePlatform | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cpuArchitecture) {
+    if (this._cpuArchitecture !== undefined) {
       hasAnyValues = true;
       internalValueResult.cpuArchitecture = this._cpuArchitecture;
     }
-    if (this._operatingSystemFamily) {
+    if (this._operatingSystemFamily !== undefined) {
       hasAnyValues = true;
       internalValueResult.operatingSystemFamily = this._operatingSystemFamily;
     }
@@ -412,23 +412,23 @@ export class EcsTaskDefinitionRuntimePlatformOutputReference extends cdktf.Compl
 }
 export interface EcsTaskDefinitionVolumeDockerVolumeConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#autoprovision EcsTaskDefinition#autoprovision}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#autoprovision EcsTaskDefinition#autoprovision}
   */
   readonly autoprovision?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#driver EcsTaskDefinition#driver}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#driver EcsTaskDefinition#driver}
   */
   readonly driver?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#driver_opts EcsTaskDefinition#driver_opts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#driver_opts EcsTaskDefinition#driver_opts}
   */
   readonly driverOpts?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#labels EcsTaskDefinition#labels}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#labels EcsTaskDefinition#labels}
   */
   readonly labels?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#scope EcsTaskDefinition#scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#scope EcsTaskDefinition#scope}
   */
   readonly scope?: string;
 }
@@ -462,23 +462,23 @@ export class EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference ext
   public get internalValue(): EcsTaskDefinitionVolumeDockerVolumeConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._autoprovision) {
+    if (this._autoprovision !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoprovision = this._autoprovision;
     }
-    if (this._driver) {
+    if (this._driver !== undefined) {
       hasAnyValues = true;
       internalValueResult.driver = this._driver;
     }
-    if (this._driverOpts) {
+    if (this._driverOpts !== undefined) {
       hasAnyValues = true;
       internalValueResult.driverOpts = this._driverOpts;
     }
-    if (this._labels) {
+    if (this._labels !== undefined) {
       hasAnyValues = true;
       internalValueResult.labels = this._labels;
     }
-    if (this._scope) {
+    if (this._scope !== undefined) {
       hasAnyValues = true;
       internalValueResult.scope = this._scope;
     }
@@ -588,11 +588,11 @@ export class EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference ext
 }
 export interface EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#access_point_id EcsTaskDefinition#access_point_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#access_point_id EcsTaskDefinition#access_point_id}
   */
   readonly accessPointId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#iam EcsTaskDefinition#iam}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#iam EcsTaskDefinition#iam}
   */
   readonly iam?: string;
 }
@@ -623,11 +623,11 @@ export class EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOut
   public get internalValue(): EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accessPointId) {
+    if (this._accessPointId !== undefined) {
       hasAnyValues = true;
       internalValueResult.accessPointId = this._accessPointId;
     }
-    if (this._iam) {
+    if (this._iam !== undefined) {
       hasAnyValues = true;
       internalValueResult.iam = this._iam;
     }
@@ -681,25 +681,25 @@ export class EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOut
 }
 export interface EcsTaskDefinitionVolumeEfsVolumeConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#file_system_id EcsTaskDefinition#file_system_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#file_system_id EcsTaskDefinition#file_system_id}
   */
   readonly fileSystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#root_directory EcsTaskDefinition#root_directory}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#root_directory EcsTaskDefinition#root_directory}
   */
   readonly rootDirectory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#transit_encryption EcsTaskDefinition#transit_encryption}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#transit_encryption EcsTaskDefinition#transit_encryption}
   */
   readonly transitEncryption?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#transit_encryption_port EcsTaskDefinition#transit_encryption_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#transit_encryption_port EcsTaskDefinition#transit_encryption_port}
   */
   readonly transitEncryptionPort?: number;
   /**
   * authorization_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#authorization_config EcsTaskDefinition#authorization_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#authorization_config EcsTaskDefinition#authorization_config}
   */
   readonly authorizationConfig?: EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig;
 }
@@ -733,23 +733,23 @@ export class EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference extend
   public get internalValue(): EcsTaskDefinitionVolumeEfsVolumeConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fileSystemId) {
+    if (this._fileSystemId !== undefined) {
       hasAnyValues = true;
       internalValueResult.fileSystemId = this._fileSystemId;
     }
-    if (this._rootDirectory) {
+    if (this._rootDirectory !== undefined) {
       hasAnyValues = true;
       internalValueResult.rootDirectory = this._rootDirectory;
     }
-    if (this._transitEncryption) {
+    if (this._transitEncryption !== undefined) {
       hasAnyValues = true;
       internalValueResult.transitEncryption = this._transitEncryption;
     }
-    if (this._transitEncryptionPort) {
+    if (this._transitEncryptionPort !== undefined) {
       hasAnyValues = true;
       internalValueResult.transitEncryptionPort = this._transitEncryptionPort;
     }
-    if (this._authorizationConfig?.internalValue) {
+    if (this._authorizationConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.authorizationConfig = this._authorizationConfig?.internalValue;
     }
@@ -854,11 +854,11 @@ export class EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference extend
 }
 export interface EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#credentials_parameter EcsTaskDefinition#credentials_parameter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#credentials_parameter EcsTaskDefinition#credentials_parameter}
   */
   readonly credentialsParameter: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#domain EcsTaskDefinition#domain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#domain EcsTaskDefinition#domain}
   */
   readonly domain: string;
 }
@@ -889,11 +889,11 @@ export class EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAutho
   public get internalValue(): EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._credentialsParameter) {
+    if (this._credentialsParameter !== undefined) {
       hasAnyValues = true;
       internalValueResult.credentialsParameter = this._credentialsParameter;
     }
-    if (this._domain) {
+    if (this._domain !== undefined) {
       hasAnyValues = true;
       internalValueResult.domain = this._domain;
     }
@@ -941,17 +941,17 @@ export class EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAutho
 }
 export interface EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#file_system_id EcsTaskDefinition#file_system_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#file_system_id EcsTaskDefinition#file_system_id}
   */
   readonly fileSystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#root_directory EcsTaskDefinition#root_directory}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#root_directory EcsTaskDefinition#root_directory}
   */
   readonly rootDirectory: string;
   /**
   * authorization_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#authorization_config EcsTaskDefinition#authorization_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#authorization_config EcsTaskDefinition#authorization_config}
   */
   readonly authorizationConfig: EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig;
 }
@@ -983,15 +983,15 @@ export class EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutpu
   public get internalValue(): EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fileSystemId) {
+    if (this._fileSystemId !== undefined) {
       hasAnyValues = true;
       internalValueResult.fileSystemId = this._fileSystemId;
     }
-    if (this._rootDirectory) {
+    if (this._rootDirectory !== undefined) {
       hasAnyValues = true;
       internalValueResult.rootDirectory = this._rootDirectory;
     }
-    if (this._authorizationConfig?.internalValue) {
+    if (this._authorizationConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.authorizationConfig = this._authorizationConfig?.internalValue;
     }
@@ -1054,29 +1054,29 @@ export class EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutpu
 }
 export interface EcsTaskDefinitionVolume {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#host_path EcsTaskDefinition#host_path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#host_path EcsTaskDefinition#host_path}
   */
   readonly hostPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#name EcsTaskDefinition#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#name EcsTaskDefinition#name}
   */
   readonly name: string;
   /**
   * docker_volume_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#docker_volume_configuration EcsTaskDefinition#docker_volume_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#docker_volume_configuration EcsTaskDefinition#docker_volume_configuration}
   */
   readonly dockerVolumeConfiguration?: EcsTaskDefinitionVolumeDockerVolumeConfiguration;
   /**
   * efs_volume_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#efs_volume_configuration EcsTaskDefinition#efs_volume_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#efs_volume_configuration EcsTaskDefinition#efs_volume_configuration}
   */
   readonly efsVolumeConfiguration?: EcsTaskDefinitionVolumeEfsVolumeConfiguration;
   /**
   * fsx_windows_file_server_volume_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#fsx_windows_file_server_volume_configuration EcsTaskDefinition#fsx_windows_file_server_volume_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#fsx_windows_file_server_volume_configuration EcsTaskDefinition#fsx_windows_file_server_volume_configuration}
   */
   readonly fsxWindowsFileServerVolumeConfiguration?: EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration;
 }
@@ -1097,7 +1097,7 @@ export function ecsTaskDefinitionVolumeToTerraform(struct?: EcsTaskDefinitionVol
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html aws_ecs_task_definition}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition aws_ecs_task_definition}
 */
 export class EcsTaskDefinition extends cdktf.TerraformResource {
 
@@ -1111,7 +1111,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html aws_ecs_task_definition} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition aws_ecs_task_definition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,41 +8,41 @@ import * as cdktf from 'cdktf';
 */
 export interface MskconnectCustomPluginConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin.html#content_type MskconnectCustomPlugin#content_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin#content_type MskconnectCustomPlugin#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin.html#description MskconnectCustomPlugin#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin#description MskconnectCustomPlugin#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin.html#name MskconnectCustomPlugin#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin#name MskconnectCustomPlugin#name}
   */
   readonly name: string;
   /**
   * location block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin.html#location MskconnectCustomPlugin#location}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin#location MskconnectCustomPlugin#location}
   */
   readonly location: MskconnectCustomPluginLocation;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin.html#timeouts MskconnectCustomPlugin#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin#timeouts MskconnectCustomPlugin#timeouts}
   */
   readonly timeouts?: MskconnectCustomPluginTimeouts;
 }
 export interface MskconnectCustomPluginLocationS3 {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin.html#bucket_arn MskconnectCustomPlugin#bucket_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin#bucket_arn MskconnectCustomPlugin#bucket_arn}
   */
   readonly bucketArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin.html#file_key MskconnectCustomPlugin#file_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin#file_key MskconnectCustomPlugin#file_key}
   */
   readonly fileKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin.html#object_version MskconnectCustomPlugin#object_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin#object_version MskconnectCustomPlugin#object_version}
   */
   readonly objectVersion?: string;
 }
@@ -74,15 +74,15 @@ export class MskconnectCustomPluginLocationS3OutputReference extends cdktf.Compl
   public get internalValue(): MskconnectCustomPluginLocationS3 | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucketArn) {
+    if (this._bucketArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketArn = this._bucketArn;
     }
-    if (this._fileKey) {
+    if (this._fileKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.fileKey = this._fileKey;
     }
-    if (this._objectVersion) {
+    if (this._objectVersion !== undefined) {
       hasAnyValues = true;
       internalValueResult.objectVersion = this._objectVersion;
     }
@@ -150,7 +150,7 @@ export interface MskconnectCustomPluginLocation {
   /**
   * s3 block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin.html#s3 MskconnectCustomPlugin#s3}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin#s3 MskconnectCustomPlugin#s3}
   */
   readonly s3: MskconnectCustomPluginLocationS3;
 }
@@ -180,7 +180,7 @@ export class MskconnectCustomPluginLocationOutputReference extends cdktf.Complex
   public get internalValue(): MskconnectCustomPluginLocation | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._s3?.internalValue) {
+    if (this._s3?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3 = this._s3?.internalValue;
     }
@@ -213,7 +213,7 @@ export class MskconnectCustomPluginLocationOutputReference extends cdktf.Complex
 }
 export interface MskconnectCustomPluginTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin.html#create MskconnectCustomPlugin#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin#create MskconnectCustomPlugin#create}
   */
   readonly create?: string;
 }
@@ -243,7 +243,7 @@ export class MskconnectCustomPluginTimeoutsOutputReference extends cdktf.Complex
   public get internalValue(): MskconnectCustomPluginTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
@@ -279,7 +279,7 @@ export class MskconnectCustomPluginTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin.html aws_mskconnect_custom_plugin}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin aws_mskconnect_custom_plugin}
 */
 export class MskconnectCustomPlugin extends cdktf.TerraformResource {
 
@@ -293,7 +293,7 @@ export class MskconnectCustomPlugin extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin.html aws_mskconnect_custom_plugin} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsPricingProductConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/pricing_product.html#service_code DataAwsPricingProduct#service_code}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/pricing_product#service_code DataAwsPricingProduct#service_code}
   */
   readonly serviceCode: string;
   /**
   * filters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/pricing_product.html#filters DataAwsPricingProduct#filters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/pricing_product#filters DataAwsPricingProduct#filters}
   */
   readonly filters: DataAwsPricingProductFilters[];
 }
 export interface DataAwsPricingProductFilters {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/pricing_product.html#field DataAwsPricingProduct#field}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/pricing_product#field DataAwsPricingProduct#field}
   */
   readonly field: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/pricing_product.html#value DataAwsPricingProduct#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/pricing_product#value DataAwsPricingProduct#value}
   */
   readonly value: string;
 }
@@ -42,7 +42,7 @@ export function dataAwsPricingProductFiltersToTerraform(struct?: DataAwsPricingP
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/pricing_product.html aws_pricing_product}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/pricing_product aws_pricing_product}
 */
 export class DataAwsPricingProduct extends cdktf.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataAwsPricingProduct extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/pricing_product.html aws_pricing_product} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/pricing_product aws_pricing_product} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

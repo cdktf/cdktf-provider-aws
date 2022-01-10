@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface SimpledbDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/simpledb_domain.html#name SimpledbDomain#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/simpledb_domain#name SimpledbDomain#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/simpledb_domain.html aws_simpledb_domain}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/simpledb_domain aws_simpledb_domain}
 */
 export class SimpledbDomain extends cdktf.TerraformResource {
 
@@ -28,7 +28,7 @@ export class SimpledbDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/simpledb_domain.html aws_simpledb_domain} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/simpledb_domain aws_simpledb_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

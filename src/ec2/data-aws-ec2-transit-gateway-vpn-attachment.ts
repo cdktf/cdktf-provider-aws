@@ -8,31 +8,31 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsEc2TransitGatewayVpnAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment.html#tags DataAwsEc2TransitGatewayVpnAttachment#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment#tags DataAwsEc2TransitGatewayVpnAttachment#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment.html#transit_gateway_id DataAwsEc2TransitGatewayVpnAttachment#transit_gateway_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment#transit_gateway_id DataAwsEc2TransitGatewayVpnAttachment#transit_gateway_id}
   */
   readonly transitGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment.html#vpn_connection_id DataAwsEc2TransitGatewayVpnAttachment#vpn_connection_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment#vpn_connection_id DataAwsEc2TransitGatewayVpnAttachment#vpn_connection_id}
   */
   readonly vpnConnectionId?: string;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment.html#filter DataAwsEc2TransitGatewayVpnAttachment#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment#filter DataAwsEc2TransitGatewayVpnAttachment#filter}
   */
   readonly filter?: DataAwsEc2TransitGatewayVpnAttachmentFilter[];
 }
 export interface DataAwsEc2TransitGatewayVpnAttachmentFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment.html#name DataAwsEc2TransitGatewayVpnAttachment#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment#name DataAwsEc2TransitGatewayVpnAttachment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment.html#values DataAwsEc2TransitGatewayVpnAttachment#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment#values DataAwsEc2TransitGatewayVpnAttachment#values}
   */
   readonly values: string[];
 }
@@ -50,7 +50,7 @@ export function dataAwsEc2TransitGatewayVpnAttachmentFilterToTerraform(struct?: 
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment.html aws_ec2_transit_gateway_vpn_attachment}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment aws_ec2_transit_gateway_vpn_attachment}
 */
 export class DataAwsEc2TransitGatewayVpnAttachment extends cdktf.TerraformDataSource {
 
@@ -64,7 +64,7 @@ export class DataAwsEc2TransitGatewayVpnAttachment extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment.html aws_ec2_transit_gateway_vpn_attachment} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment aws_ec2_transit_gateway_vpn_attachment} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

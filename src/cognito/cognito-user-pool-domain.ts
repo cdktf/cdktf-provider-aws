@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface CognitoUserPoolDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_domain.html#certificate_arn CognitoUserPoolDomain#certificate_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_domain#certificate_arn CognitoUserPoolDomain#certificate_arn}
   */
   readonly certificateArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_domain.html#domain CognitoUserPoolDomain#domain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_domain#domain CognitoUserPoolDomain#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_domain.html#user_pool_id CognitoUserPoolDomain#user_pool_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_domain#user_pool_id CognitoUserPoolDomain#user_pool_id}
   */
   readonly userPoolId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_domain.html aws_cognito_user_pool_domain}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_domain aws_cognito_user_pool_domain}
 */
 export class CognitoUserPoolDomain extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_domain.html aws_cognito_user_pool_domain} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_domain aws_cognito_user_pool_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsBackupSelectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_selection.html#plan_id DataAwsBackupSelection#plan_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_selection#plan_id DataAwsBackupSelection#plan_id}
   */
   readonly planId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_selection.html#selection_id DataAwsBackupSelection#selection_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_selection#selection_id DataAwsBackupSelection#selection_id}
   */
   readonly selectionId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/backup_selection.html aws_backup_selection}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/backup_selection aws_backup_selection}
 */
 export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/backup_selection.html aws_backup_selection} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/backup_selection aws_backup_selection} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

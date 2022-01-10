@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 */
 export interface S3ControlBucketConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket.html#bucket S3ControlBucket#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket#bucket S3ControlBucket#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket.html#outpost_id S3ControlBucket#outpost_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket#outpost_id S3ControlBucket#outpost_id}
   */
   readonly outpostId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket.html#tags S3ControlBucket#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket#tags S3ControlBucket#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket.html#tags_all S3ControlBucket#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket#tags_all S3ControlBucket#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket.html aws_s3control_bucket}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket aws_s3control_bucket}
 */
 export class S3ControlBucket extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class S3ControlBucket extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket.html aws_s3control_bucket} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket aws_s3control_bucket} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

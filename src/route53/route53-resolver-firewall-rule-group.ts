@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface Route53ResolverFirewallRuleGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule_group.html#name Route53ResolverFirewallRuleGroup#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule_group#name Route53ResolverFirewallRuleGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule_group.html#tags Route53ResolverFirewallRuleGroup#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule_group#tags Route53ResolverFirewallRuleGroup#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule_group.html#tags_all Route53ResolverFirewallRuleGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule_group#tags_all Route53ResolverFirewallRuleGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule_group.html aws_route53_resolver_firewall_rule_group}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule_group aws_route53_resolver_firewall_rule_group}
 */
 export class Route53ResolverFirewallRuleGroup extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class Route53ResolverFirewallRuleGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule_group.html aws_route53_resolver_firewall_rule_group} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule_group aws_route53_resolver_firewall_rule_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsVpcsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpcs.html#tags DataAwsVpcs#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpcs#tags DataAwsVpcs#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpcs.html#filter DataAwsVpcs#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpcs#filter DataAwsVpcs#filter}
   */
   readonly filter?: DataAwsVpcsFilter[];
 }
 export interface DataAwsVpcsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpcs.html#name DataAwsVpcs#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpcs#name DataAwsVpcs#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpcs.html#values DataAwsVpcs#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpcs#values DataAwsVpcs#values}
   */
   readonly values: string[];
 }
@@ -42,7 +42,7 @@ export function dataAwsVpcsFilterToTerraform(struct?: DataAwsVpcsFilter): any {
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpcs.html aws_vpcs}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpcs aws_vpcs}
 */
 export class DataAwsVpcs extends cdktf.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataAwsVpcs extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpcs.html aws_vpcs} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpcs aws_vpcs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

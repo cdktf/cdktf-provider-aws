@@ -8,205 +8,205 @@ import * as cdktf from 'cdktf';
 */
 export interface LaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#default_version LaunchTemplate#default_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#default_version LaunchTemplate#default_version}
   */
   readonly defaultVersion?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#description LaunchTemplate#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#description LaunchTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#disable_api_termination LaunchTemplate#disable_api_termination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#disable_api_termination LaunchTemplate#disable_api_termination}
   */
   readonly disableApiTermination?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#ebs_optimized LaunchTemplate#ebs_optimized}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#ebs_optimized LaunchTemplate#ebs_optimized}
   */
   readonly ebsOptimized?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#image_id LaunchTemplate#image_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#image_id LaunchTemplate#image_id}
   */
   readonly imageId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#instance_initiated_shutdown_behavior LaunchTemplate#instance_initiated_shutdown_behavior}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#instance_initiated_shutdown_behavior LaunchTemplate#instance_initiated_shutdown_behavior}
   */
   readonly instanceInitiatedShutdownBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#instance_type LaunchTemplate#instance_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#instance_type LaunchTemplate#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#kernel_id LaunchTemplate#kernel_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#kernel_id LaunchTemplate#kernel_id}
   */
   readonly kernelId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#key_name LaunchTemplate#key_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#key_name LaunchTemplate#key_name}
   */
   readonly keyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#name LaunchTemplate#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#name LaunchTemplate#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#name_prefix LaunchTemplate#name_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#name_prefix LaunchTemplate#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#ram_disk_id LaunchTemplate#ram_disk_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#ram_disk_id LaunchTemplate#ram_disk_id}
   */
   readonly ramDiskId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#security_group_names LaunchTemplate#security_group_names}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#security_group_names LaunchTemplate#security_group_names}
   */
   readonly securityGroupNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#tags LaunchTemplate#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#tags LaunchTemplate#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#tags_all LaunchTemplate#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#tags_all LaunchTemplate#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#update_default_version LaunchTemplate#update_default_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#update_default_version LaunchTemplate#update_default_version}
   */
   readonly updateDefaultVersion?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#user_data LaunchTemplate#user_data}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#user_data LaunchTemplate#user_data}
   */
   readonly userData?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#vpc_security_group_ids LaunchTemplate#vpc_security_group_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#vpc_security_group_ids LaunchTemplate#vpc_security_group_ids}
   */
   readonly vpcSecurityGroupIds?: string[];
   /**
   * block_device_mappings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#block_device_mappings LaunchTemplate#block_device_mappings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#block_device_mappings LaunchTemplate#block_device_mappings}
   */
   readonly blockDeviceMappings?: LaunchTemplateBlockDeviceMappings[];
   /**
   * capacity_reservation_specification block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#capacity_reservation_specification LaunchTemplate#capacity_reservation_specification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#capacity_reservation_specification LaunchTemplate#capacity_reservation_specification}
   */
   readonly capacityReservationSpecification?: LaunchTemplateCapacityReservationSpecification;
   /**
   * cpu_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#cpu_options LaunchTemplate#cpu_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#cpu_options LaunchTemplate#cpu_options}
   */
   readonly cpuOptions?: LaunchTemplateCpuOptions;
   /**
   * credit_specification block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#credit_specification LaunchTemplate#credit_specification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#credit_specification LaunchTemplate#credit_specification}
   */
   readonly creditSpecification?: LaunchTemplateCreditSpecification;
   /**
   * elastic_gpu_specifications block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#elastic_gpu_specifications LaunchTemplate#elastic_gpu_specifications}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#elastic_gpu_specifications LaunchTemplate#elastic_gpu_specifications}
   */
   readonly elasticGpuSpecifications?: LaunchTemplateElasticGpuSpecifications[];
   /**
   * elastic_inference_accelerator block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#elastic_inference_accelerator LaunchTemplate#elastic_inference_accelerator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#elastic_inference_accelerator LaunchTemplate#elastic_inference_accelerator}
   */
   readonly elasticInferenceAccelerator?: LaunchTemplateElasticInferenceAccelerator;
   /**
   * enclave_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#enclave_options LaunchTemplate#enclave_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#enclave_options LaunchTemplate#enclave_options}
   */
   readonly enclaveOptions?: LaunchTemplateEnclaveOptions;
   /**
   * hibernation_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#hibernation_options LaunchTemplate#hibernation_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#hibernation_options LaunchTemplate#hibernation_options}
   */
   readonly hibernationOptions?: LaunchTemplateHibernationOptions;
   /**
   * iam_instance_profile block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#iam_instance_profile LaunchTemplate#iam_instance_profile}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#iam_instance_profile LaunchTemplate#iam_instance_profile}
   */
   readonly iamInstanceProfile?: LaunchTemplateIamInstanceProfile;
   /**
   * instance_market_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#instance_market_options LaunchTemplate#instance_market_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#instance_market_options LaunchTemplate#instance_market_options}
   */
   readonly instanceMarketOptions?: LaunchTemplateInstanceMarketOptions;
   /**
   * license_specification block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#license_specification LaunchTemplate#license_specification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#license_specification LaunchTemplate#license_specification}
   */
   readonly licenseSpecification?: LaunchTemplateLicenseSpecification[];
   /**
   * metadata_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#metadata_options LaunchTemplate#metadata_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#metadata_options LaunchTemplate#metadata_options}
   */
   readonly metadataOptions?: LaunchTemplateMetadataOptions;
   /**
   * monitoring block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#monitoring LaunchTemplate#monitoring}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#monitoring LaunchTemplate#monitoring}
   */
   readonly monitoring?: LaunchTemplateMonitoring;
   /**
   * network_interfaces block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#network_interfaces LaunchTemplate#network_interfaces}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#network_interfaces LaunchTemplate#network_interfaces}
   */
   readonly networkInterfaces?: LaunchTemplateNetworkInterfaces[];
   /**
   * placement block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#placement LaunchTemplate#placement}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#placement LaunchTemplate#placement}
   */
   readonly placement?: LaunchTemplatePlacement;
   /**
   * tag_specifications block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#tag_specifications LaunchTemplate#tag_specifications}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#tag_specifications LaunchTemplate#tag_specifications}
   */
   readonly tagSpecifications?: LaunchTemplateTagSpecifications[];
 }
 export interface LaunchTemplateBlockDeviceMappingsEbs {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#delete_on_termination LaunchTemplate#delete_on_termination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#delete_on_termination LaunchTemplate#delete_on_termination}
   */
   readonly deleteOnTermination?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#encrypted LaunchTemplate#encrypted}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#encrypted LaunchTemplate#encrypted}
   */
   readonly encrypted?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#iops LaunchTemplate#iops}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#iops LaunchTemplate#iops}
   */
   readonly iops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#kms_key_id LaunchTemplate#kms_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#kms_key_id LaunchTemplate#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#snapshot_id LaunchTemplate#snapshot_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#snapshot_id LaunchTemplate#snapshot_id}
   */
   readonly snapshotId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#throughput LaunchTemplate#throughput}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#throughput LaunchTemplate#throughput}
   */
   readonly throughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#volume_size LaunchTemplate#volume_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#volume_size LaunchTemplate#volume_size}
   */
   readonly volumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#volume_type LaunchTemplate#volume_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#volume_type LaunchTemplate#volume_type}
   */
   readonly volumeType?: string;
 }
@@ -243,35 +243,35 @@ export class LaunchTemplateBlockDeviceMappingsEbsOutputReference extends cdktf.C
   public get internalValue(): LaunchTemplateBlockDeviceMappingsEbs | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._deleteOnTermination) {
+    if (this._deleteOnTermination !== undefined) {
       hasAnyValues = true;
       internalValueResult.deleteOnTermination = this._deleteOnTermination;
     }
-    if (this._encrypted) {
+    if (this._encrypted !== undefined) {
       hasAnyValues = true;
       internalValueResult.encrypted = this._encrypted;
     }
-    if (this._iops) {
+    if (this._iops !== undefined) {
       hasAnyValues = true;
       internalValueResult.iops = this._iops;
     }
-    if (this._kmsKeyId) {
+    if (this._kmsKeyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyId = this._kmsKeyId;
     }
-    if (this._snapshotId) {
+    if (this._snapshotId !== undefined) {
       hasAnyValues = true;
       internalValueResult.snapshotId = this._snapshotId;
     }
-    if (this._throughput) {
+    if (this._throughput !== undefined) {
       hasAnyValues = true;
       internalValueResult.throughput = this._throughput;
     }
-    if (this._volumeSize) {
+    if (this._volumeSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.volumeSize = this._volumeSize;
     }
-    if (this._volumeType) {
+    if (this._volumeType !== undefined) {
       hasAnyValues = true;
       internalValueResult.volumeType = this._volumeType;
     }
@@ -433,21 +433,21 @@ export class LaunchTemplateBlockDeviceMappingsEbsOutputReference extends cdktf.C
 }
 export interface LaunchTemplateBlockDeviceMappings {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#device_name LaunchTemplate#device_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#device_name LaunchTemplate#device_name}
   */
   readonly deviceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#no_device LaunchTemplate#no_device}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#no_device LaunchTemplate#no_device}
   */
   readonly noDevice?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#virtual_name LaunchTemplate#virtual_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#virtual_name LaunchTemplate#virtual_name}
   */
   readonly virtualName?: string;
   /**
   * ebs block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#ebs LaunchTemplate#ebs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#ebs LaunchTemplate#ebs}
   */
   readonly ebs?: LaunchTemplateBlockDeviceMappingsEbs;
 }
@@ -467,7 +467,7 @@ export function launchTemplateBlockDeviceMappingsToTerraform(struct?: LaunchTemp
 
 export interface LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#capacity_reservation_id LaunchTemplate#capacity_reservation_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#capacity_reservation_id LaunchTemplate#capacity_reservation_id}
   */
   readonly capacityReservationId?: string;
 }
@@ -497,7 +497,7 @@ export class LaunchTemplateCapacityReservationSpecificationCapacityReservationTa
   public get internalValue(): LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._capacityReservationId) {
+    if (this._capacityReservationId !== undefined) {
       hasAnyValues = true;
       internalValueResult.capacityReservationId = this._capacityReservationId;
     }
@@ -533,13 +533,13 @@ export class LaunchTemplateCapacityReservationSpecificationCapacityReservationTa
 }
 export interface LaunchTemplateCapacityReservationSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#capacity_reservation_preference LaunchTemplate#capacity_reservation_preference}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#capacity_reservation_preference LaunchTemplate#capacity_reservation_preference}
   */
   readonly capacityReservationPreference?: string;
   /**
   * capacity_reservation_target block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#capacity_reservation_target LaunchTemplate#capacity_reservation_target}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#capacity_reservation_target LaunchTemplate#capacity_reservation_target}
   */
   readonly capacityReservationTarget?: LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget;
 }
@@ -570,11 +570,11 @@ export class LaunchTemplateCapacityReservationSpecificationOutputReference exten
   public get internalValue(): LaunchTemplateCapacityReservationSpecification | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._capacityReservationPreference) {
+    if (this._capacityReservationPreference !== undefined) {
       hasAnyValues = true;
       internalValueResult.capacityReservationPreference = this._capacityReservationPreference;
     }
-    if (this._capacityReservationTarget?.internalValue) {
+    if (this._capacityReservationTarget?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.capacityReservationTarget = this._capacityReservationTarget?.internalValue;
     }
@@ -628,11 +628,11 @@ export class LaunchTemplateCapacityReservationSpecificationOutputReference exten
 }
 export interface LaunchTemplateCpuOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#core_count LaunchTemplate#core_count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#core_count LaunchTemplate#core_count}
   */
   readonly coreCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#threads_per_core LaunchTemplate#threads_per_core}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#threads_per_core LaunchTemplate#threads_per_core}
   */
   readonly threadsPerCore?: number;
 }
@@ -663,11 +663,11 @@ export class LaunchTemplateCpuOptionsOutputReference extends cdktf.ComplexObject
   public get internalValue(): LaunchTemplateCpuOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._coreCount) {
+    if (this._coreCount !== undefined) {
       hasAnyValues = true;
       internalValueResult.coreCount = this._coreCount;
     }
-    if (this._threadsPerCore) {
+    if (this._threadsPerCore !== undefined) {
       hasAnyValues = true;
       internalValueResult.threadsPerCore = this._threadsPerCore;
     }
@@ -721,7 +721,7 @@ export class LaunchTemplateCpuOptionsOutputReference extends cdktf.ComplexObject
 }
 export interface LaunchTemplateCreditSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#cpu_credits LaunchTemplate#cpu_credits}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#cpu_credits LaunchTemplate#cpu_credits}
   */
   readonly cpuCredits?: string;
 }
@@ -751,7 +751,7 @@ export class LaunchTemplateCreditSpecificationOutputReference extends cdktf.Comp
   public get internalValue(): LaunchTemplateCreditSpecification | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cpuCredits) {
+    if (this._cpuCredits !== undefined) {
       hasAnyValues = true;
       internalValueResult.cpuCredits = this._cpuCredits;
     }
@@ -787,7 +787,7 @@ export class LaunchTemplateCreditSpecificationOutputReference extends cdktf.Comp
 }
 export interface LaunchTemplateElasticGpuSpecifications {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#type LaunchTemplate#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#type LaunchTemplate#type}
   */
   readonly type: string;
 }
@@ -804,7 +804,7 @@ export function launchTemplateElasticGpuSpecificationsToTerraform(struct?: Launc
 
 export interface LaunchTemplateElasticInferenceAccelerator {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#type LaunchTemplate#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#type LaunchTemplate#type}
   */
   readonly type: string;
 }
@@ -834,7 +834,7 @@ export class LaunchTemplateElasticInferenceAcceleratorOutputReference extends cd
   public get internalValue(): LaunchTemplateElasticInferenceAccelerator | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
@@ -867,7 +867,7 @@ export class LaunchTemplateElasticInferenceAcceleratorOutputReference extends cd
 }
 export interface LaunchTemplateEnclaveOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#enabled LaunchTemplate#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#enabled LaunchTemplate#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -897,7 +897,7 @@ export class LaunchTemplateEnclaveOptionsOutputReference extends cdktf.ComplexOb
   public get internalValue(): LaunchTemplateEnclaveOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
@@ -933,7 +933,7 @@ export class LaunchTemplateEnclaveOptionsOutputReference extends cdktf.ComplexOb
 }
 export interface LaunchTemplateHibernationOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#configured LaunchTemplate#configured}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#configured LaunchTemplate#configured}
   */
   readonly configured: boolean | cdktf.IResolvable;
 }
@@ -963,7 +963,7 @@ export class LaunchTemplateHibernationOptionsOutputReference extends cdktf.Compl
   public get internalValue(): LaunchTemplateHibernationOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._configured) {
+    if (this._configured !== undefined) {
       hasAnyValues = true;
       internalValueResult.configured = this._configured;
     }
@@ -996,11 +996,11 @@ export class LaunchTemplateHibernationOptionsOutputReference extends cdktf.Compl
 }
 export interface LaunchTemplateIamInstanceProfile {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#arn LaunchTemplate#arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#arn LaunchTemplate#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#name LaunchTemplate#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#name LaunchTemplate#name}
   */
   readonly name?: string;
 }
@@ -1031,11 +1031,11 @@ export class LaunchTemplateIamInstanceProfileOutputReference extends cdktf.Compl
   public get internalValue(): LaunchTemplateIamInstanceProfile | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._arn) {
+    if (this._arn !== undefined) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
@@ -1089,23 +1089,23 @@ export class LaunchTemplateIamInstanceProfileOutputReference extends cdktf.Compl
 }
 export interface LaunchTemplateInstanceMarketOptionsSpotOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#block_duration_minutes LaunchTemplate#block_duration_minutes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#block_duration_minutes LaunchTemplate#block_duration_minutes}
   */
   readonly blockDurationMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#instance_interruption_behavior LaunchTemplate#instance_interruption_behavior}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#instance_interruption_behavior LaunchTemplate#instance_interruption_behavior}
   */
   readonly instanceInterruptionBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#max_price LaunchTemplate#max_price}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#max_price LaunchTemplate#max_price}
   */
   readonly maxPrice?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#spot_instance_type LaunchTemplate#spot_instance_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#spot_instance_type LaunchTemplate#spot_instance_type}
   */
   readonly spotInstanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#valid_until LaunchTemplate#valid_until}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#valid_until LaunchTemplate#valid_until}
   */
   readonly validUntil?: string;
 }
@@ -1139,23 +1139,23 @@ export class LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference exten
   public get internalValue(): LaunchTemplateInstanceMarketOptionsSpotOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._blockDurationMinutes) {
+    if (this._blockDurationMinutes !== undefined) {
       hasAnyValues = true;
       internalValueResult.blockDurationMinutes = this._blockDurationMinutes;
     }
-    if (this._instanceInterruptionBehavior) {
+    if (this._instanceInterruptionBehavior !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceInterruptionBehavior = this._instanceInterruptionBehavior;
     }
-    if (this._maxPrice) {
+    if (this._maxPrice !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxPrice = this._maxPrice;
     }
-    if (this._spotInstanceType) {
+    if (this._spotInstanceType !== undefined) {
       hasAnyValues = true;
       internalValueResult.spotInstanceType = this._spotInstanceType;
     }
-    if (this._validUntil) {
+    if (this._validUntil !== undefined) {
       hasAnyValues = true;
       internalValueResult.validUntil = this._validUntil;
     }
@@ -1263,13 +1263,13 @@ export class LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference exten
 }
 export interface LaunchTemplateInstanceMarketOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#market_type LaunchTemplate#market_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#market_type LaunchTemplate#market_type}
   */
   readonly marketType?: string;
   /**
   * spot_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#spot_options LaunchTemplate#spot_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#spot_options LaunchTemplate#spot_options}
   */
   readonly spotOptions?: LaunchTemplateInstanceMarketOptionsSpotOptions;
 }
@@ -1300,11 +1300,11 @@ export class LaunchTemplateInstanceMarketOptionsOutputReference extends cdktf.Co
   public get internalValue(): LaunchTemplateInstanceMarketOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._marketType) {
+    if (this._marketType !== undefined) {
       hasAnyValues = true;
       internalValueResult.marketType = this._marketType;
     }
-    if (this._spotOptions?.internalValue) {
+    if (this._spotOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.spotOptions = this._spotOptions?.internalValue;
     }
@@ -1358,7 +1358,7 @@ export class LaunchTemplateInstanceMarketOptionsOutputReference extends cdktf.Co
 }
 export interface LaunchTemplateLicenseSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#license_configuration_arn LaunchTemplate#license_configuration_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#license_configuration_arn LaunchTemplate#license_configuration_arn}
   */
   readonly licenseConfigurationArn: string;
 }
@@ -1375,19 +1375,19 @@ export function launchTemplateLicenseSpecificationToTerraform(struct?: LaunchTem
 
 export interface LaunchTemplateMetadataOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#http_endpoint LaunchTemplate#http_endpoint}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#http_endpoint LaunchTemplate#http_endpoint}
   */
   readonly httpEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#http_protocol_ipv6 LaunchTemplate#http_protocol_ipv6}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#http_protocol_ipv6 LaunchTemplate#http_protocol_ipv6}
   */
   readonly httpProtocolIpv6?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#http_put_response_hop_limit LaunchTemplate#http_put_response_hop_limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#http_put_response_hop_limit LaunchTemplate#http_put_response_hop_limit}
   */
   readonly httpPutResponseHopLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#http_tokens LaunchTemplate#http_tokens}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#http_tokens LaunchTemplate#http_tokens}
   */
   readonly httpTokens?: string;
 }
@@ -1420,19 +1420,19 @@ export class LaunchTemplateMetadataOptionsOutputReference extends cdktf.ComplexO
   public get internalValue(): LaunchTemplateMetadataOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._httpEndpoint) {
+    if (this._httpEndpoint !== undefined) {
       hasAnyValues = true;
       internalValueResult.httpEndpoint = this._httpEndpoint;
     }
-    if (this._httpProtocolIpv6) {
+    if (this._httpProtocolIpv6 !== undefined) {
       hasAnyValues = true;
       internalValueResult.httpProtocolIpv6 = this._httpProtocolIpv6;
     }
-    if (this._httpPutResponseHopLimit) {
+    if (this._httpPutResponseHopLimit !== undefined) {
       hasAnyValues = true;
       internalValueResult.httpPutResponseHopLimit = this._httpPutResponseHopLimit;
     }
-    if (this._httpTokens) {
+    if (this._httpTokens !== undefined) {
       hasAnyValues = true;
       internalValueResult.httpTokens = this._httpTokens;
     }
@@ -1522,7 +1522,7 @@ export class LaunchTemplateMetadataOptionsOutputReference extends cdktf.ComplexO
 }
 export interface LaunchTemplateMonitoring {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#enabled LaunchTemplate#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#enabled LaunchTemplate#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -1552,7 +1552,7 @@ export class LaunchTemplateMonitoringOutputReference extends cdktf.ComplexObject
   public get internalValue(): LaunchTemplateMonitoring | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
@@ -1588,63 +1588,63 @@ export class LaunchTemplateMonitoringOutputReference extends cdktf.ComplexObject
 }
 export interface LaunchTemplateNetworkInterfaces {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#associate_carrier_ip_address LaunchTemplate#associate_carrier_ip_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#associate_carrier_ip_address LaunchTemplate#associate_carrier_ip_address}
   */
   readonly associateCarrierIpAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#associate_public_ip_address LaunchTemplate#associate_public_ip_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#associate_public_ip_address LaunchTemplate#associate_public_ip_address}
   */
   readonly associatePublicIpAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#delete_on_termination LaunchTemplate#delete_on_termination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#delete_on_termination LaunchTemplate#delete_on_termination}
   */
   readonly deleteOnTermination?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#description LaunchTemplate#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#description LaunchTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#device_index LaunchTemplate#device_index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#device_index LaunchTemplate#device_index}
   */
   readonly deviceIndex?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#interface_type LaunchTemplate#interface_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#interface_type LaunchTemplate#interface_type}
   */
   readonly interfaceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#ipv4_address_count LaunchTemplate#ipv4_address_count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#ipv4_address_count LaunchTemplate#ipv4_address_count}
   */
   readonly ipv4AddressCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#ipv4_addresses LaunchTemplate#ipv4_addresses}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#ipv4_addresses LaunchTemplate#ipv4_addresses}
   */
   readonly ipv4Addresses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#ipv6_address_count LaunchTemplate#ipv6_address_count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#ipv6_address_count LaunchTemplate#ipv6_address_count}
   */
   readonly ipv6AddressCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#ipv6_addresses LaunchTemplate#ipv6_addresses}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#ipv6_addresses LaunchTemplate#ipv6_addresses}
   */
   readonly ipv6Addresses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#network_card_index LaunchTemplate#network_card_index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#network_card_index LaunchTemplate#network_card_index}
   */
   readonly networkCardIndex?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#network_interface_id LaunchTemplate#network_interface_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#network_interface_id LaunchTemplate#network_interface_id}
   */
   readonly networkInterfaceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#private_ip_address LaunchTemplate#private_ip_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#private_ip_address LaunchTemplate#private_ip_address}
   */
   readonly privateIpAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#security_groups LaunchTemplate#security_groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#security_groups LaunchTemplate#security_groups}
   */
   readonly securityGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#subnet_id LaunchTemplate#subnet_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#subnet_id LaunchTemplate#subnet_id}
   */
   readonly subnetId?: string;
 }
@@ -1675,35 +1675,35 @@ export function launchTemplateNetworkInterfacesToTerraform(struct?: LaunchTempla
 
 export interface LaunchTemplatePlacement {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#affinity LaunchTemplate#affinity}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#affinity LaunchTemplate#affinity}
   */
   readonly affinity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#availability_zone LaunchTemplate#availability_zone}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#availability_zone LaunchTemplate#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#group_name LaunchTemplate#group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#group_name LaunchTemplate#group_name}
   */
   readonly groupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#host_id LaunchTemplate#host_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#host_id LaunchTemplate#host_id}
   */
   readonly hostId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#host_resource_group_arn LaunchTemplate#host_resource_group_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#host_resource_group_arn LaunchTemplate#host_resource_group_arn}
   */
   readonly hostResourceGroupArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#partition_number LaunchTemplate#partition_number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#partition_number LaunchTemplate#partition_number}
   */
   readonly partitionNumber?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#spread_domain LaunchTemplate#spread_domain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#spread_domain LaunchTemplate#spread_domain}
   */
   readonly spreadDomain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#tenancy LaunchTemplate#tenancy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#tenancy LaunchTemplate#tenancy}
   */
   readonly tenancy?: string;
 }
@@ -1740,35 +1740,35 @@ export class LaunchTemplatePlacementOutputReference extends cdktf.ComplexObject 
   public get internalValue(): LaunchTemplatePlacement | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._affinity) {
+    if (this._affinity !== undefined) {
       hasAnyValues = true;
       internalValueResult.affinity = this._affinity;
     }
-    if (this._availabilityZone) {
+    if (this._availabilityZone !== undefined) {
       hasAnyValues = true;
       internalValueResult.availabilityZone = this._availabilityZone;
     }
-    if (this._groupName) {
+    if (this._groupName !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupName = this._groupName;
     }
-    if (this._hostId) {
+    if (this._hostId !== undefined) {
       hasAnyValues = true;
       internalValueResult.hostId = this._hostId;
     }
-    if (this._hostResourceGroupArn) {
+    if (this._hostResourceGroupArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.hostResourceGroupArn = this._hostResourceGroupArn;
     }
-    if (this._partitionNumber) {
+    if (this._partitionNumber !== undefined) {
       hasAnyValues = true;
       internalValueResult.partitionNumber = this._partitionNumber;
     }
-    if (this._spreadDomain) {
+    if (this._spreadDomain !== undefined) {
       hasAnyValues = true;
       internalValueResult.spreadDomain = this._spreadDomain;
     }
-    if (this._tenancy) {
+    if (this._tenancy !== undefined) {
       hasAnyValues = true;
       internalValueResult.tenancy = this._tenancy;
     }
@@ -1930,11 +1930,11 @@ export class LaunchTemplatePlacementOutputReference extends cdktf.ComplexObject 
 }
 export interface LaunchTemplateTagSpecifications {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#resource_type LaunchTemplate#resource_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#resource_type LaunchTemplate#resource_type}
   */
   readonly resourceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#tags LaunchTemplate#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#tags LaunchTemplate#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
@@ -1952,7 +1952,7 @@ export function launchTemplateTagSpecificationsToTerraform(struct?: LaunchTempla
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html aws_launch_template}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/launch_template aws_launch_template}
 */
 export class LaunchTemplate extends cdktf.TerraformResource {
 
@@ -1966,7 +1966,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html aws_launch_template} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/launch_template aws_launch_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

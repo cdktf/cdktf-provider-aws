@@ -8,63 +8,63 @@ import * as cdktf from 'cdktf';
 */
 export interface ApiGatewayMethodSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#method_path ApiGatewayMethodSettings#method_path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings#method_path ApiGatewayMethodSettings#method_path}
   */
   readonly methodPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#rest_api_id ApiGatewayMethodSettings#rest_api_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings#rest_api_id ApiGatewayMethodSettings#rest_api_id}
   */
   readonly restApiId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#stage_name ApiGatewayMethodSettings#stage_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings#stage_name ApiGatewayMethodSettings#stage_name}
   */
   readonly stageName: string;
   /**
   * settings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#settings ApiGatewayMethodSettings#settings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings#settings ApiGatewayMethodSettings#settings}
   */
   readonly settings: ApiGatewayMethodSettingsSettings;
 }
 export interface ApiGatewayMethodSettingsSettings {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#cache_data_encrypted ApiGatewayMethodSettings#cache_data_encrypted}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings#cache_data_encrypted ApiGatewayMethodSettings#cache_data_encrypted}
   */
   readonly cacheDataEncrypted?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#cache_ttl_in_seconds ApiGatewayMethodSettings#cache_ttl_in_seconds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings#cache_ttl_in_seconds ApiGatewayMethodSettings#cache_ttl_in_seconds}
   */
   readonly cacheTtlInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#caching_enabled ApiGatewayMethodSettings#caching_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings#caching_enabled ApiGatewayMethodSettings#caching_enabled}
   */
   readonly cachingEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#data_trace_enabled ApiGatewayMethodSettings#data_trace_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings#data_trace_enabled ApiGatewayMethodSettings#data_trace_enabled}
   */
   readonly dataTraceEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#logging_level ApiGatewayMethodSettings#logging_level}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings#logging_level ApiGatewayMethodSettings#logging_level}
   */
   readonly loggingLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#metrics_enabled ApiGatewayMethodSettings#metrics_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings#metrics_enabled ApiGatewayMethodSettings#metrics_enabled}
   */
   readonly metricsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#require_authorization_for_cache_control ApiGatewayMethodSettings#require_authorization_for_cache_control}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings#require_authorization_for_cache_control ApiGatewayMethodSettings#require_authorization_for_cache_control}
   */
   readonly requireAuthorizationForCacheControl?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#throttling_burst_limit ApiGatewayMethodSettings#throttling_burst_limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings#throttling_burst_limit ApiGatewayMethodSettings#throttling_burst_limit}
   */
   readonly throttlingBurstLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#throttling_rate_limit ApiGatewayMethodSettings#throttling_rate_limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings#throttling_rate_limit ApiGatewayMethodSettings#throttling_rate_limit}
   */
   readonly throttlingRateLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#unauthorized_cache_control_header_strategy ApiGatewayMethodSettings#unauthorized_cache_control_header_strategy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings#unauthorized_cache_control_header_strategy ApiGatewayMethodSettings#unauthorized_cache_control_header_strategy}
   */
   readonly unauthorizedCacheControlHeaderStrategy?: string;
 }
@@ -103,43 +103,43 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
   public get internalValue(): ApiGatewayMethodSettingsSettings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cacheDataEncrypted) {
+    if (this._cacheDataEncrypted !== undefined) {
       hasAnyValues = true;
       internalValueResult.cacheDataEncrypted = this._cacheDataEncrypted;
     }
-    if (this._cacheTtlInSeconds) {
+    if (this._cacheTtlInSeconds !== undefined) {
       hasAnyValues = true;
       internalValueResult.cacheTtlInSeconds = this._cacheTtlInSeconds;
     }
-    if (this._cachingEnabled) {
+    if (this._cachingEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.cachingEnabled = this._cachingEnabled;
     }
-    if (this._dataTraceEnabled) {
+    if (this._dataTraceEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataTraceEnabled = this._dataTraceEnabled;
     }
-    if (this._loggingLevel) {
+    if (this._loggingLevel !== undefined) {
       hasAnyValues = true;
       internalValueResult.loggingLevel = this._loggingLevel;
     }
-    if (this._metricsEnabled) {
+    if (this._metricsEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.metricsEnabled = this._metricsEnabled;
     }
-    if (this._requireAuthorizationForCacheControl) {
+    if (this._requireAuthorizationForCacheControl !== undefined) {
       hasAnyValues = true;
       internalValueResult.requireAuthorizationForCacheControl = this._requireAuthorizationForCacheControl;
     }
-    if (this._throttlingBurstLimit) {
+    if (this._throttlingBurstLimit !== undefined) {
       hasAnyValues = true;
       internalValueResult.throttlingBurstLimit = this._throttlingBurstLimit;
     }
-    if (this._throttlingRateLimit) {
+    if (this._throttlingRateLimit !== undefined) {
       hasAnyValues = true;
       internalValueResult.throttlingRateLimit = this._throttlingRateLimit;
     }
-    if (this._unauthorizedCacheControlHeaderStrategy) {
+    if (this._unauthorizedCacheControlHeaderStrategy !== undefined) {
       hasAnyValues = true;
       internalValueResult.unauthorizedCacheControlHeaderStrategy = this._unauthorizedCacheControlHeaderStrategy;
     }
@@ -337,7 +337,7 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html aws_api_gateway_method_settings}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings aws_api_gateway_method_settings}
 */
 export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
 
@@ -351,7 +351,7 @@ export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html aws_api_gateway_method_settings} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings aws_api_gateway_method_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

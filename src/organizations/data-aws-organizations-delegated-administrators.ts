@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsOrganizationsDelegatedAdministratorsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_administrators.html#service_principal DataAwsOrganizationsDelegatedAdministrators#service_principal}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_administrators#service_principal DataAwsOrganizationsDelegatedAdministrators#service_principal}
   */
   readonly servicePrincipal?: string;
 }
@@ -56,7 +56,7 @@ export class DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministrators 
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_administrators.html aws_organizations_delegated_administrators}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_administrators aws_organizations_delegated_administrators}
 */
 export class DataAwsOrganizationsDelegatedAdministrators extends cdktf.TerraformDataSource {
 
@@ -70,7 +70,7 @@ export class DataAwsOrganizationsDelegatedAdministrators extends cdktf.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_administrators.html aws_organizations_delegated_administrators} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_administrators aws_organizations_delegated_administrators} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,69 +8,69 @@ import * as cdktf from 'cdktf';
 */
 export interface DefaultNetworkAclConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#default_network_acl_id DefaultNetworkAcl#default_network_acl_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#default_network_acl_id DefaultNetworkAcl#default_network_acl_id}
   */
   readonly defaultNetworkAclId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#subnet_ids DefaultNetworkAcl#subnet_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#subnet_ids DefaultNetworkAcl#subnet_ids}
   */
   readonly subnetIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#tags DefaultNetworkAcl#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#tags DefaultNetworkAcl#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#tags_all DefaultNetworkAcl#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#tags_all DefaultNetworkAcl#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * egress block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#egress DefaultNetworkAcl#egress}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#egress DefaultNetworkAcl#egress}
   */
   readonly egress?: DefaultNetworkAclEgress[];
   /**
   * ingress block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#ingress DefaultNetworkAcl#ingress}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#ingress DefaultNetworkAcl#ingress}
   */
   readonly ingress?: DefaultNetworkAclIngress[];
 }
 export interface DefaultNetworkAclEgress {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#action DefaultNetworkAcl#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#action DefaultNetworkAcl#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#cidr_block DefaultNetworkAcl#cidr_block}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#cidr_block DefaultNetworkAcl#cidr_block}
   */
   readonly cidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#from_port DefaultNetworkAcl#from_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#from_port DefaultNetworkAcl#from_port}
   */
   readonly fromPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#icmp_code DefaultNetworkAcl#icmp_code}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#icmp_code DefaultNetworkAcl#icmp_code}
   */
   readonly icmpCode?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#icmp_type DefaultNetworkAcl#icmp_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#icmp_type DefaultNetworkAcl#icmp_type}
   */
   readonly icmpType?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#ipv6_cidr_block DefaultNetworkAcl#ipv6_cidr_block}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#ipv6_cidr_block DefaultNetworkAcl#ipv6_cidr_block}
   */
   readonly ipv6CidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#protocol DefaultNetworkAcl#protocol}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#protocol DefaultNetworkAcl#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#rule_no DefaultNetworkAcl#rule_no}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#rule_no DefaultNetworkAcl#rule_no}
   */
   readonly ruleNo: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#to_port DefaultNetworkAcl#to_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#to_port DefaultNetworkAcl#to_port}
   */
   readonly toPort: number;
 }
@@ -95,39 +95,39 @@ export function defaultNetworkAclEgressToTerraform(struct?: DefaultNetworkAclEgr
 
 export interface DefaultNetworkAclIngress {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#action DefaultNetworkAcl#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#action DefaultNetworkAcl#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#cidr_block DefaultNetworkAcl#cidr_block}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#cidr_block DefaultNetworkAcl#cidr_block}
   */
   readonly cidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#from_port DefaultNetworkAcl#from_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#from_port DefaultNetworkAcl#from_port}
   */
   readonly fromPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#icmp_code DefaultNetworkAcl#icmp_code}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#icmp_code DefaultNetworkAcl#icmp_code}
   */
   readonly icmpCode?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#icmp_type DefaultNetworkAcl#icmp_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#icmp_type DefaultNetworkAcl#icmp_type}
   */
   readonly icmpType?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#ipv6_cidr_block DefaultNetworkAcl#ipv6_cidr_block}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#ipv6_cidr_block DefaultNetworkAcl#ipv6_cidr_block}
   */
   readonly ipv6CidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#protocol DefaultNetworkAcl#protocol}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#protocol DefaultNetworkAcl#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#rule_no DefaultNetworkAcl#rule_no}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#rule_no DefaultNetworkAcl#rule_no}
   */
   readonly ruleNo: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html#to_port DefaultNetworkAcl#to_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#to_port DefaultNetworkAcl#to_port}
   */
   readonly toPort: number;
 }
@@ -152,7 +152,7 @@ export function defaultNetworkAclIngressToTerraform(struct?: DefaultNetworkAclIn
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html aws_default_network_acl}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl aws_default_network_acl}
 */
 export class DefaultNetworkAcl extends cdktf.TerraformResource {
 
@@ -166,7 +166,7 @@ export class DefaultNetworkAcl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl.html aws_default_network_acl} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl aws_default_network_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

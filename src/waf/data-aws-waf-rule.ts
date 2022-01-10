@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsWafRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/waf_rule.html#name DataAwsWafRule#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/waf_rule#name DataAwsWafRule#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/waf_rule.html aws_waf_rule}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/waf_rule aws_waf_rule}
 */
 export class DataAwsWafRule extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsWafRule extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/waf_rule.html aws_waf_rule} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/waf_rule aws_waf_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

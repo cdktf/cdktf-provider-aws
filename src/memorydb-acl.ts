@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/memorydb_acl.html
+// https://www.terraform.io/docs/providers/aws/r/memorydb_acl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,29 +8,29 @@ import * as cdktf from 'cdktf';
 
 export interface MemorydbAclConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_acl.html#name MemorydbAcl#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_acl#name MemorydbAcl#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_acl.html#name_prefix MemorydbAcl#name_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_acl#name_prefix MemorydbAcl#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_acl.html#tags MemorydbAcl#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_acl#tags MemorydbAcl#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_acl.html#tags_all MemorydbAcl#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_acl#tags_all MemorydbAcl#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_acl.html#user_names MemorydbAcl#user_names}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_acl#user_names MemorydbAcl#user_names}
   */
   readonly userNames?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/memorydb_acl.html aws_memorydb_acl}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/memorydb_acl aws_memorydb_acl}
 */
 export class MemorydbAcl extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class MemorydbAcl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/memorydb_acl.html aws_memorydb_acl} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/memorydb_acl aws_memorydb_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

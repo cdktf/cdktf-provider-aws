@@ -8,49 +8,49 @@ import * as cdktf from 'cdktf';
 */
 export interface ApprunnerServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#auto_scaling_configuration_arn ApprunnerService#auto_scaling_configuration_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#auto_scaling_configuration_arn ApprunnerService#auto_scaling_configuration_arn}
   */
   readonly autoScalingConfigurationArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#service_name ApprunnerService#service_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#service_name ApprunnerService#service_name}
   */
   readonly serviceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#tags ApprunnerService#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#tags ApprunnerService#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#tags_all ApprunnerService#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#tags_all ApprunnerService#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * encryption_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#encryption_configuration ApprunnerService#encryption_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#encryption_configuration ApprunnerService#encryption_configuration}
   */
   readonly encryptionConfiguration?: ApprunnerServiceEncryptionConfiguration;
   /**
   * health_check_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#health_check_configuration ApprunnerService#health_check_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#health_check_configuration ApprunnerService#health_check_configuration}
   */
   readonly healthCheckConfiguration?: ApprunnerServiceHealthCheckConfiguration;
   /**
   * instance_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#instance_configuration ApprunnerService#instance_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#instance_configuration ApprunnerService#instance_configuration}
   */
   readonly instanceConfiguration?: ApprunnerServiceInstanceConfiguration;
   /**
   * source_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#source_configuration ApprunnerService#source_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#source_configuration ApprunnerService#source_configuration}
   */
   readonly sourceConfiguration: ApprunnerServiceSourceConfiguration;
 }
 export interface ApprunnerServiceEncryptionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#kms_key ApprunnerService#kms_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#kms_key ApprunnerService#kms_key}
   */
   readonly kmsKey: string;
 }
@@ -80,7 +80,7 @@ export class ApprunnerServiceEncryptionConfigurationOutputReference extends cdkt
   public get internalValue(): ApprunnerServiceEncryptionConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._kmsKey) {
+    if (this._kmsKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKey = this._kmsKey;
     }
@@ -113,27 +113,27 @@ export class ApprunnerServiceEncryptionConfigurationOutputReference extends cdkt
 }
 export interface ApprunnerServiceHealthCheckConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#healthy_threshold ApprunnerService#healthy_threshold}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#healthy_threshold ApprunnerService#healthy_threshold}
   */
   readonly healthyThreshold?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#interval ApprunnerService#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#interval ApprunnerService#interval}
   */
   readonly interval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#path ApprunnerService#path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#path ApprunnerService#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#protocol ApprunnerService#protocol}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#protocol ApprunnerService#protocol}
   */
   readonly protocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#timeout ApprunnerService#timeout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#timeout ApprunnerService#timeout}
   */
   readonly timeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#unhealthy_threshold ApprunnerService#unhealthy_threshold}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#unhealthy_threshold ApprunnerService#unhealthy_threshold}
   */
   readonly unhealthyThreshold?: number;
 }
@@ -168,27 +168,27 @@ export class ApprunnerServiceHealthCheckConfigurationOutputReference extends cdk
   public get internalValue(): ApprunnerServiceHealthCheckConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._healthyThreshold) {
+    if (this._healthyThreshold !== undefined) {
       hasAnyValues = true;
       internalValueResult.healthyThreshold = this._healthyThreshold;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
-    if (this._path) {
+    if (this._path !== undefined) {
       hasAnyValues = true;
       internalValueResult.path = this._path;
     }
-    if (this._protocol) {
+    if (this._protocol !== undefined) {
       hasAnyValues = true;
       internalValueResult.protocol = this._protocol;
     }
-    if (this._timeout) {
+    if (this._timeout !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout;
     }
-    if (this._unhealthyThreshold) {
+    if (this._unhealthyThreshold !== undefined) {
       hasAnyValues = true;
       internalValueResult.unhealthyThreshold = this._unhealthyThreshold;
     }
@@ -314,15 +314,15 @@ export class ApprunnerServiceHealthCheckConfigurationOutputReference extends cdk
 }
 export interface ApprunnerServiceInstanceConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#cpu ApprunnerService#cpu}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#cpu ApprunnerService#cpu}
   */
   readonly cpu?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#instance_role_arn ApprunnerService#instance_role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#instance_role_arn ApprunnerService#instance_role_arn}
   */
   readonly instanceRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#memory ApprunnerService#memory}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#memory ApprunnerService#memory}
   */
   readonly memory?: string;
 }
@@ -354,15 +354,15 @@ export class ApprunnerServiceInstanceConfigurationOutputReference extends cdktf.
   public get internalValue(): ApprunnerServiceInstanceConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cpu) {
+    if (this._cpu !== undefined) {
       hasAnyValues = true;
       internalValueResult.cpu = this._cpu;
     }
-    if (this._instanceRoleArn) {
+    if (this._instanceRoleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceRoleArn = this._instanceRoleArn;
     }
-    if (this._memory) {
+    if (this._memory !== undefined) {
       hasAnyValues = true;
       internalValueResult.memory = this._memory;
     }
@@ -434,11 +434,11 @@ export class ApprunnerServiceInstanceConfigurationOutputReference extends cdktf.
 }
 export interface ApprunnerServiceSourceConfigurationAuthenticationConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#access_role_arn ApprunnerService#access_role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#access_role_arn ApprunnerService#access_role_arn}
   */
   readonly accessRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#connection_arn ApprunnerService#connection_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#connection_arn ApprunnerService#connection_arn}
   */
   readonly connectionArn?: string;
 }
@@ -469,11 +469,11 @@ export class ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutpu
   public get internalValue(): ApprunnerServiceSourceConfigurationAuthenticationConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accessRoleArn) {
+    if (this._accessRoleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.accessRoleArn = this._accessRoleArn;
     }
-    if (this._connectionArn) {
+    if (this._connectionArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.connectionArn = this._connectionArn;
     }
@@ -527,23 +527,23 @@ export class ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutpu
 }
 export interface ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#build_command ApprunnerService#build_command}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#build_command ApprunnerService#build_command}
   */
   readonly buildCommand?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#port ApprunnerService#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#port ApprunnerService#port}
   */
   readonly port?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#runtime ApprunnerService#runtime}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#runtime ApprunnerService#runtime}
   */
   readonly runtime: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#runtime_environment_variables ApprunnerService#runtime_environment_variables}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#runtime_environment_variables ApprunnerService#runtime_environment_variables}
   */
   readonly runtimeEnvironmentVariables?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#start_command ApprunnerService#start_command}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#start_command ApprunnerService#start_command}
   */
   readonly startCommand?: string;
 }
@@ -577,23 +577,23 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationC
   public get internalValue(): ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._buildCommand) {
+    if (this._buildCommand !== undefined) {
       hasAnyValues = true;
       internalValueResult.buildCommand = this._buildCommand;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
-    if (this._runtime) {
+    if (this._runtime !== undefined) {
       hasAnyValues = true;
       internalValueResult.runtime = this._runtime;
     }
-    if (this._runtimeEnvironmentVariables) {
+    if (this._runtimeEnvironmentVariables !== undefined) {
       hasAnyValues = true;
       internalValueResult.runtimeEnvironmentVariables = this._runtimeEnvironmentVariables;
     }
-    if (this._startCommand) {
+    if (this._startCommand !== undefined) {
       hasAnyValues = true;
       internalValueResult.startCommand = this._startCommand;
     }
@@ -699,13 +699,13 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationC
 }
 export interface ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#configuration_source ApprunnerService#configuration_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#configuration_source ApprunnerService#configuration_source}
   */
   readonly configurationSource: string;
   /**
   * code_configuration_values block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#code_configuration_values ApprunnerService#code_configuration_values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#code_configuration_values ApprunnerService#code_configuration_values}
   */
   readonly codeConfigurationValues?: ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues;
 }
@@ -736,11 +736,11 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationO
   public get internalValue(): ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._configurationSource) {
+    if (this._configurationSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.configurationSource = this._configurationSource;
     }
-    if (this._codeConfigurationValues?.internalValue) {
+    if (this._codeConfigurationValues?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.codeConfigurationValues = this._codeConfigurationValues?.internalValue;
     }
@@ -791,11 +791,11 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationO
 }
 export interface ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#type ApprunnerService#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#type ApprunnerService#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#value ApprunnerService#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#value ApprunnerService#value}
   */
   readonly value: string;
 }
@@ -826,11 +826,11 @@ export class ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionO
   public get internalValue(): ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -878,19 +878,19 @@ export class ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionO
 }
 export interface ApprunnerServiceSourceConfigurationCodeRepository {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#repository_url ApprunnerService#repository_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#repository_url ApprunnerService#repository_url}
   */
   readonly repositoryUrl: string;
   /**
   * code_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#code_configuration ApprunnerService#code_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#code_configuration ApprunnerService#code_configuration}
   */
   readonly codeConfiguration?: ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration;
   /**
   * source_code_version block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#source_code_version ApprunnerService#source_code_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#source_code_version ApprunnerService#source_code_version}
   */
   readonly sourceCodeVersion: ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion;
 }
@@ -922,15 +922,15 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference ex
   public get internalValue(): ApprunnerServiceSourceConfigurationCodeRepository | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._repositoryUrl) {
+    if (this._repositoryUrl !== undefined) {
       hasAnyValues = true;
       internalValueResult.repositoryUrl = this._repositoryUrl;
     }
-    if (this._codeConfiguration?.internalValue) {
+    if (this._codeConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.codeConfiguration = this._codeConfiguration?.internalValue;
     }
-    if (this._sourceCodeVersion?.internalValue) {
+    if (this._sourceCodeVersion?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sourceCodeVersion = this._sourceCodeVersion?.internalValue;
     }
@@ -996,15 +996,15 @@ export class ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference ex
 }
 export interface ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#port ApprunnerService#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#port ApprunnerService#port}
   */
   readonly port?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#runtime_environment_variables ApprunnerService#runtime_environment_variables}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#runtime_environment_variables ApprunnerService#runtime_environment_variables}
   */
   readonly runtimeEnvironmentVariables?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#start_command ApprunnerService#start_command}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#start_command ApprunnerService#start_command}
   */
   readonly startCommand?: string;
 }
@@ -1036,15 +1036,15 @@ export class ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguratio
   public get internalValue(): ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
-    if (this._runtimeEnvironmentVariables) {
+    if (this._runtimeEnvironmentVariables !== undefined) {
       hasAnyValues = true;
       internalValueResult.runtimeEnvironmentVariables = this._runtimeEnvironmentVariables;
     }
-    if (this._startCommand) {
+    if (this._startCommand !== undefined) {
       hasAnyValues = true;
       internalValueResult.startCommand = this._startCommand;
     }
@@ -1117,17 +1117,17 @@ export class ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguratio
 }
 export interface ApprunnerServiceSourceConfigurationImageRepository {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#image_identifier ApprunnerService#image_identifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#image_identifier ApprunnerService#image_identifier}
   */
   readonly imageIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#image_repository_type ApprunnerService#image_repository_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#image_repository_type ApprunnerService#image_repository_type}
   */
   readonly imageRepositoryType: string;
   /**
   * image_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#image_configuration ApprunnerService#image_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#image_configuration ApprunnerService#image_configuration}
   */
   readonly imageConfiguration?: ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration;
 }
@@ -1159,15 +1159,15 @@ export class ApprunnerServiceSourceConfigurationImageRepositoryOutputReference e
   public get internalValue(): ApprunnerServiceSourceConfigurationImageRepository | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._imageIdentifier) {
+    if (this._imageIdentifier !== undefined) {
       hasAnyValues = true;
       internalValueResult.imageIdentifier = this._imageIdentifier;
     }
-    if (this._imageRepositoryType) {
+    if (this._imageRepositoryType !== undefined) {
       hasAnyValues = true;
       internalValueResult.imageRepositoryType = this._imageRepositoryType;
     }
-    if (this._imageConfiguration?.internalValue) {
+    if (this._imageConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.imageConfiguration = this._imageConfiguration?.internalValue;
     }
@@ -1233,25 +1233,25 @@ export class ApprunnerServiceSourceConfigurationImageRepositoryOutputReference e
 }
 export interface ApprunnerServiceSourceConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#auto_deployments_enabled ApprunnerService#auto_deployments_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#auto_deployments_enabled ApprunnerService#auto_deployments_enabled}
   */
   readonly autoDeploymentsEnabled?: boolean | cdktf.IResolvable;
   /**
   * authentication_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#authentication_configuration ApprunnerService#authentication_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#authentication_configuration ApprunnerService#authentication_configuration}
   */
   readonly authenticationConfiguration?: ApprunnerServiceSourceConfigurationAuthenticationConfiguration;
   /**
   * code_repository block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#code_repository ApprunnerService#code_repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#code_repository ApprunnerService#code_repository}
   */
   readonly codeRepository?: ApprunnerServiceSourceConfigurationCodeRepository;
   /**
   * image_repository block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html#image_repository ApprunnerService#image_repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#image_repository ApprunnerService#image_repository}
   */
   readonly imageRepository?: ApprunnerServiceSourceConfigurationImageRepository;
 }
@@ -1284,19 +1284,19 @@ export class ApprunnerServiceSourceConfigurationOutputReference extends cdktf.Co
   public get internalValue(): ApprunnerServiceSourceConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._autoDeploymentsEnabled) {
+    if (this._autoDeploymentsEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoDeploymentsEnabled = this._autoDeploymentsEnabled;
     }
-    if (this._authenticationConfiguration?.internalValue) {
+    if (this._authenticationConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.authenticationConfiguration = this._authenticationConfiguration?.internalValue;
     }
-    if (this._codeRepository?.internalValue) {
+    if (this._codeRepository?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.codeRepository = this._codeRepository?.internalValue;
     }
-    if (this._imageRepository?.internalValue) {
+    if (this._imageRepository?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.imageRepository = this._imageRepository?.internalValue;
     }
@@ -1386,7 +1386,7 @@ export class ApprunnerServiceSourceConfigurationOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html aws_apprunner_service}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service aws_apprunner_service}
 */
 export class ApprunnerService extends cdktf.TerraformResource {
 
@@ -1400,7 +1400,7 @@ export class ApprunnerService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service.html aws_apprunner_service} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service aws_apprunner_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

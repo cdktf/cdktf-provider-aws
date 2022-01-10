@@ -8,29 +8,29 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#get_password_data DataAwsInstance#get_password_data}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance#get_password_data DataAwsInstance#get_password_data}
   */
   readonly fetchPasswordData?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#get_user_data DataAwsInstance#get_user_data}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance#get_user_data DataAwsInstance#get_user_data}
   */
   readonly fetchUserData?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#instance_id DataAwsInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance#instance_id DataAwsInstance#instance_id}
   */
   readonly instanceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#instance_tags DataAwsInstance#instance_tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance#instance_tags DataAwsInstance#instance_tags}
   */
   readonly instanceTags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#tags DataAwsInstance#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance#tags DataAwsInstance#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#filter DataAwsInstance#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance#filter DataAwsInstance#filter}
   */
   readonly filter?: DataAwsInstanceFilter[];
 }
@@ -195,11 +195,11 @@ export class DataAwsInstanceRootBlockDevice extends cdktf.ComplexComputedList {
 }
 export interface DataAwsInstanceFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#name DataAwsInstance#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance#name DataAwsInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#values DataAwsInstance#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance#values DataAwsInstance#values}
   */
   readonly values: string[];
 }
@@ -217,7 +217,7 @@ export function dataAwsInstanceFilterToTerraform(struct?: DataAwsInstanceFilter)
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/instance.html aws_instance}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/instance aws_instance}
 */
 export class DataAwsInstance extends cdktf.TerraformDataSource {
 
@@ -231,7 +231,7 @@ export class DataAwsInstance extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/instance.html aws_instance} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/instance aws_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

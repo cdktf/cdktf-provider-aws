@@ -8,85 +8,85 @@ import * as cdktf from 'cdktf';
 */
 export interface LexIntentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#create_version LexIntent#create_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#create_version LexIntent#create_version}
   */
   readonly createVersion?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#description LexIntent#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#description LexIntent#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#name LexIntent#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#name LexIntent#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#parent_intent_signature LexIntent#parent_intent_signature}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#parent_intent_signature LexIntent#parent_intent_signature}
   */
   readonly parentIntentSignature?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#sample_utterances LexIntent#sample_utterances}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#sample_utterances LexIntent#sample_utterances}
   */
   readonly sampleUtterances?: string[];
   /**
   * conclusion_statement block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#conclusion_statement LexIntent#conclusion_statement}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#conclusion_statement LexIntent#conclusion_statement}
   */
   readonly conclusionStatement?: LexIntentConclusionStatement;
   /**
   * confirmation_prompt block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#confirmation_prompt LexIntent#confirmation_prompt}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#confirmation_prompt LexIntent#confirmation_prompt}
   */
   readonly confirmationPrompt?: LexIntentConfirmationPrompt;
   /**
   * dialog_code_hook block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#dialog_code_hook LexIntent#dialog_code_hook}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#dialog_code_hook LexIntent#dialog_code_hook}
   */
   readonly dialogCodeHook?: LexIntentDialogCodeHook;
   /**
   * follow_up_prompt block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#follow_up_prompt LexIntent#follow_up_prompt}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#follow_up_prompt LexIntent#follow_up_prompt}
   */
   readonly followUpPrompt?: LexIntentFollowUpPrompt;
   /**
   * fulfillment_activity block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#fulfillment_activity LexIntent#fulfillment_activity}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#fulfillment_activity LexIntent#fulfillment_activity}
   */
   readonly fulfillmentActivity: LexIntentFulfillmentActivity;
   /**
   * rejection_statement block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#rejection_statement LexIntent#rejection_statement}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#rejection_statement LexIntent#rejection_statement}
   */
   readonly rejectionStatement?: LexIntentRejectionStatement;
   /**
   * slot block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#slot LexIntent#slot}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#slot LexIntent#slot}
   */
   readonly slot?: LexIntentSlot[];
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#timeouts LexIntent#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#timeouts LexIntent#timeouts}
   */
   readonly timeouts?: LexIntentTimeouts;
 }
 export interface LexIntentConclusionStatementMessage {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content LexIntent#content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#content LexIntent#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content_type LexIntent#content_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#content_type LexIntent#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#group_number LexIntent#group_number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#group_number LexIntent#group_number}
   */
   readonly groupNumber?: number;
 }
@@ -105,13 +105,13 @@ export function lexIntentConclusionStatementMessageToTerraform(struct?: LexInten
 
 export interface LexIntentConclusionStatement {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#response_card LexIntent#response_card}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#response_card LexIntent#response_card}
   */
   readonly responseCard?: string;
   /**
   * message block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message LexIntent#message}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentConclusionStatementMessage[];
 }
@@ -142,11 +142,11 @@ export class LexIntentConclusionStatementOutputReference extends cdktf.ComplexOb
   public get internalValue(): LexIntentConclusionStatement | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._responseCard) {
+    if (this._responseCard !== undefined) {
       hasAnyValues = true;
       internalValueResult.responseCard = this._responseCard;
     }
-    if (this._message) {
+    if (this._message !== undefined) {
       hasAnyValues = true;
       internalValueResult.message = this._message;
     }
@@ -198,15 +198,15 @@ export class LexIntentConclusionStatementOutputReference extends cdktf.ComplexOb
 }
 export interface LexIntentConfirmationPromptMessage {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content LexIntent#content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#content LexIntent#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content_type LexIntent#content_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#content_type LexIntent#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#group_number LexIntent#group_number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#group_number LexIntent#group_number}
   */
   readonly groupNumber?: number;
 }
@@ -225,17 +225,17 @@ export function lexIntentConfirmationPromptMessageToTerraform(struct?: LexIntent
 
 export interface LexIntentConfirmationPrompt {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#max_attempts LexIntent#max_attempts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#max_attempts LexIntent#max_attempts}
   */
   readonly maxAttempts: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#response_card LexIntent#response_card}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#response_card LexIntent#response_card}
   */
   readonly responseCard?: string;
   /**
   * message block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message LexIntent#message}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentConfirmationPromptMessage[];
 }
@@ -267,15 +267,15 @@ export class LexIntentConfirmationPromptOutputReference extends cdktf.ComplexObj
   public get internalValue(): LexIntentConfirmationPrompt | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._maxAttempts) {
+    if (this._maxAttempts !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxAttempts = this._maxAttempts;
     }
-    if (this._responseCard) {
+    if (this._responseCard !== undefined) {
       hasAnyValues = true;
       internalValueResult.responseCard = this._responseCard;
     }
-    if (this._message) {
+    if (this._message !== undefined) {
       hasAnyValues = true;
       internalValueResult.message = this._message;
     }
@@ -342,11 +342,11 @@ export class LexIntentConfirmationPromptOutputReference extends cdktf.ComplexObj
 }
 export interface LexIntentDialogCodeHook {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message_version LexIntent#message_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#message_version LexIntent#message_version}
   */
   readonly messageVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#uri LexIntent#uri}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#uri LexIntent#uri}
   */
   readonly uri: string;
 }
@@ -377,11 +377,11 @@ export class LexIntentDialogCodeHookOutputReference extends cdktf.ComplexObject 
   public get internalValue(): LexIntentDialogCodeHook | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._messageVersion) {
+    if (this._messageVersion !== undefined) {
       hasAnyValues = true;
       internalValueResult.messageVersion = this._messageVersion;
     }
-    if (this._uri) {
+    if (this._uri !== undefined) {
       hasAnyValues = true;
       internalValueResult.uri = this._uri;
     }
@@ -429,15 +429,15 @@ export class LexIntentDialogCodeHookOutputReference extends cdktf.ComplexObject 
 }
 export interface LexIntentFollowUpPromptPromptMessage {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content LexIntent#content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#content LexIntent#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content_type LexIntent#content_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#content_type LexIntent#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#group_number LexIntent#group_number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#group_number LexIntent#group_number}
   */
   readonly groupNumber?: number;
 }
@@ -456,17 +456,17 @@ export function lexIntentFollowUpPromptPromptMessageToTerraform(struct?: LexInte
 
 export interface LexIntentFollowUpPromptPrompt {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#max_attempts LexIntent#max_attempts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#max_attempts LexIntent#max_attempts}
   */
   readonly maxAttempts: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#response_card LexIntent#response_card}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#response_card LexIntent#response_card}
   */
   readonly responseCard?: string;
   /**
   * message block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message LexIntent#message}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentFollowUpPromptPromptMessage[];
 }
@@ -498,15 +498,15 @@ export class LexIntentFollowUpPromptPromptOutputReference extends cdktf.ComplexO
   public get internalValue(): LexIntentFollowUpPromptPrompt | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._maxAttempts) {
+    if (this._maxAttempts !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxAttempts = this._maxAttempts;
     }
-    if (this._responseCard) {
+    if (this._responseCard !== undefined) {
       hasAnyValues = true;
       internalValueResult.responseCard = this._responseCard;
     }
-    if (this._message) {
+    if (this._message !== undefined) {
       hasAnyValues = true;
       internalValueResult.message = this._message;
     }
@@ -573,15 +573,15 @@ export class LexIntentFollowUpPromptPromptOutputReference extends cdktf.ComplexO
 }
 export interface LexIntentFollowUpPromptRejectionStatementMessage {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content LexIntent#content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#content LexIntent#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content_type LexIntent#content_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#content_type LexIntent#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#group_number LexIntent#group_number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#group_number LexIntent#group_number}
   */
   readonly groupNumber?: number;
 }
@@ -600,13 +600,13 @@ export function lexIntentFollowUpPromptRejectionStatementMessageToTerraform(stru
 
 export interface LexIntentFollowUpPromptRejectionStatement {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#response_card LexIntent#response_card}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#response_card LexIntent#response_card}
   */
   readonly responseCard?: string;
   /**
   * message block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message LexIntent#message}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentFollowUpPromptRejectionStatementMessage[];
 }
@@ -637,11 +637,11 @@ export class LexIntentFollowUpPromptRejectionStatementOutputReference extends cd
   public get internalValue(): LexIntentFollowUpPromptRejectionStatement | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._responseCard) {
+    if (this._responseCard !== undefined) {
       hasAnyValues = true;
       internalValueResult.responseCard = this._responseCard;
     }
-    if (this._message) {
+    if (this._message !== undefined) {
       hasAnyValues = true;
       internalValueResult.message = this._message;
     }
@@ -695,13 +695,13 @@ export interface LexIntentFollowUpPrompt {
   /**
   * prompt block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#prompt LexIntent#prompt}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#prompt LexIntent#prompt}
   */
   readonly prompt: LexIntentFollowUpPromptPrompt;
   /**
   * rejection_statement block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#rejection_statement LexIntent#rejection_statement}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#rejection_statement LexIntent#rejection_statement}
   */
   readonly rejectionStatement: LexIntentFollowUpPromptRejectionStatement;
 }
@@ -732,11 +732,11 @@ export class LexIntentFollowUpPromptOutputReference extends cdktf.ComplexObject 
   public get internalValue(): LexIntentFollowUpPrompt | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._prompt?.internalValue) {
+    if (this._prompt?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.prompt = this._prompt?.internalValue;
     }
-    if (this._rejectionStatement?.internalValue) {
+    if (this._rejectionStatement?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.rejectionStatement = this._rejectionStatement?.internalValue;
     }
@@ -784,11 +784,11 @@ export class LexIntentFollowUpPromptOutputReference extends cdktf.ComplexObject 
 }
 export interface LexIntentFulfillmentActivityCodeHook {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message_version LexIntent#message_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#message_version LexIntent#message_version}
   */
   readonly messageVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#uri LexIntent#uri}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#uri LexIntent#uri}
   */
   readonly uri: string;
 }
@@ -819,11 +819,11 @@ export class LexIntentFulfillmentActivityCodeHookOutputReference extends cdktf.C
   public get internalValue(): LexIntentFulfillmentActivityCodeHook | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._messageVersion) {
+    if (this._messageVersion !== undefined) {
       hasAnyValues = true;
       internalValueResult.messageVersion = this._messageVersion;
     }
-    if (this._uri) {
+    if (this._uri !== undefined) {
       hasAnyValues = true;
       internalValueResult.uri = this._uri;
     }
@@ -871,13 +871,13 @@ export class LexIntentFulfillmentActivityCodeHookOutputReference extends cdktf.C
 }
 export interface LexIntentFulfillmentActivity {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#type LexIntent#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#type LexIntent#type}
   */
   readonly type: string;
   /**
   * code_hook block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#code_hook LexIntent#code_hook}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#code_hook LexIntent#code_hook}
   */
   readonly codeHook?: LexIntentFulfillmentActivityCodeHook;
 }
@@ -908,11 +908,11 @@ export class LexIntentFulfillmentActivityOutputReference extends cdktf.ComplexOb
   public get internalValue(): LexIntentFulfillmentActivity | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._codeHook?.internalValue) {
+    if (this._codeHook?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.codeHook = this._codeHook?.internalValue;
     }
@@ -963,15 +963,15 @@ export class LexIntentFulfillmentActivityOutputReference extends cdktf.ComplexOb
 }
 export interface LexIntentRejectionStatementMessage {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content LexIntent#content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#content LexIntent#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content_type LexIntent#content_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#content_type LexIntent#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#group_number LexIntent#group_number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#group_number LexIntent#group_number}
   */
   readonly groupNumber?: number;
 }
@@ -990,13 +990,13 @@ export function lexIntentRejectionStatementMessageToTerraform(struct?: LexIntent
 
 export interface LexIntentRejectionStatement {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#response_card LexIntent#response_card}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#response_card LexIntent#response_card}
   */
   readonly responseCard?: string;
   /**
   * message block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message LexIntent#message}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentRejectionStatementMessage[];
 }
@@ -1027,11 +1027,11 @@ export class LexIntentRejectionStatementOutputReference extends cdktf.ComplexObj
   public get internalValue(): LexIntentRejectionStatement | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._responseCard) {
+    if (this._responseCard !== undefined) {
       hasAnyValues = true;
       internalValueResult.responseCard = this._responseCard;
     }
-    if (this._message) {
+    if (this._message !== undefined) {
       hasAnyValues = true;
       internalValueResult.message = this._message;
     }
@@ -1083,15 +1083,15 @@ export class LexIntentRejectionStatementOutputReference extends cdktf.ComplexObj
 }
 export interface LexIntentSlotValueElicitationPromptMessage {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content LexIntent#content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#content LexIntent#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content_type LexIntent#content_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#content_type LexIntent#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#group_number LexIntent#group_number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#group_number LexIntent#group_number}
   */
   readonly groupNumber?: number;
 }
@@ -1110,17 +1110,17 @@ export function lexIntentSlotValueElicitationPromptMessageToTerraform(struct?: L
 
 export interface LexIntentSlotValueElicitationPrompt {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#max_attempts LexIntent#max_attempts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#max_attempts LexIntent#max_attempts}
   */
   readonly maxAttempts: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#response_card LexIntent#response_card}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#response_card LexIntent#response_card}
   */
   readonly responseCard?: string;
   /**
   * message block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message LexIntent#message}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentSlotValueElicitationPromptMessage[];
 }
@@ -1152,15 +1152,15 @@ export class LexIntentSlotValueElicitationPromptOutputReference extends cdktf.Co
   public get internalValue(): LexIntentSlotValueElicitationPrompt | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._maxAttempts) {
+    if (this._maxAttempts !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxAttempts = this._maxAttempts;
     }
-    if (this._responseCard) {
+    if (this._responseCard !== undefined) {
       hasAnyValues = true;
       internalValueResult.responseCard = this._responseCard;
     }
-    if (this._message) {
+    if (this._message !== undefined) {
       hasAnyValues = true;
       internalValueResult.message = this._message;
     }
@@ -1227,41 +1227,41 @@ export class LexIntentSlotValueElicitationPromptOutputReference extends cdktf.Co
 }
 export interface LexIntentSlot {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#description LexIntent#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#description LexIntent#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#name LexIntent#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#name LexIntent#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#priority LexIntent#priority}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#priority LexIntent#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#response_card LexIntent#response_card}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#response_card LexIntent#response_card}
   */
   readonly responseCard?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#sample_utterances LexIntent#sample_utterances}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#sample_utterances LexIntent#sample_utterances}
   */
   readonly sampleUtterances?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#slot_constraint LexIntent#slot_constraint}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#slot_constraint LexIntent#slot_constraint}
   */
   readonly slotConstraint: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#slot_type LexIntent#slot_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#slot_type LexIntent#slot_type}
   */
   readonly slotType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#slot_type_version LexIntent#slot_type_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#slot_type_version LexIntent#slot_type_version}
   */
   readonly slotTypeVersion?: string;
   /**
   * value_elicitation_prompt block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#value_elicitation_prompt LexIntent#value_elicitation_prompt}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#value_elicitation_prompt LexIntent#value_elicitation_prompt}
   */
   readonly valueElicitationPrompt?: LexIntentSlotValueElicitationPrompt;
 }
@@ -1286,15 +1286,15 @@ export function lexIntentSlotToTerraform(struct?: LexIntentSlot): any {
 
 export interface LexIntentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#create LexIntent#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#create LexIntent#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#delete LexIntent#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#delete LexIntent#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#update LexIntent#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#update LexIntent#update}
   */
   readonly update?: string;
 }
@@ -1326,15 +1326,15 @@ export class LexIntentTimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): LexIntentTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
@@ -1406,7 +1406,7 @@ export class LexIntentTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html aws_lex_intent}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lex_intent aws_lex_intent}
 */
 export class LexIntent extends cdktf.TerraformResource {
 
@@ -1420,7 +1420,7 @@ export class LexIntent extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html aws_lex_intent} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lex_intent aws_lex_intent} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

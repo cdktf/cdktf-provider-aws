@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsLexIntentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lex_intent.html#name DataAwsLexIntent#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lex_intent#name DataAwsLexIntent#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lex_intent.html#version DataAwsLexIntent#version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lex_intent#version DataAwsLexIntent#version}
   */
   readonly version?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/lex_intent.html aws_lex_intent}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/lex_intent aws_lex_intent}
 */
 export class DataAwsLexIntent extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsLexIntent extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/lex_intent.html aws_lex_intent} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/lex_intent aws_lex_intent} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

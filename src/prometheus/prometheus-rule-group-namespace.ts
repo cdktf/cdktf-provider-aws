@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface PrometheusRuleGroupNamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/prometheus_rule_group_namespace.html#data PrometheusRuleGroupNamespace#data}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/prometheus_rule_group_namespace#data PrometheusRuleGroupNamespace#data}
   */
   readonly data: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/prometheus_rule_group_namespace.html#name PrometheusRuleGroupNamespace#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/prometheus_rule_group_namespace#name PrometheusRuleGroupNamespace#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/prometheus_rule_group_namespace.html#workspace_id PrometheusRuleGroupNamespace#workspace_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/prometheus_rule_group_namespace#workspace_id PrometheusRuleGroupNamespace#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/prometheus_rule_group_namespace.html aws_prometheus_rule_group_namespace}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace}
 */
 export class PrometheusRuleGroupNamespace extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class PrometheusRuleGroupNamespace extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/prometheus_rule_group_namespace.html aws_prometheus_rule_group_namespace} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

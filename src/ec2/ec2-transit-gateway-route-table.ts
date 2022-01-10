@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface Ec2TransitGatewayRouteTableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table.html#tags Ec2TransitGatewayRouteTable#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table#tags Ec2TransitGatewayRouteTable#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table.html#tags_all Ec2TransitGatewayRouteTable#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table#tags_all Ec2TransitGatewayRouteTable#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table.html#transit_gateway_id Ec2TransitGatewayRouteTable#transit_gateway_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table#transit_gateway_id Ec2TransitGatewayRouteTable#transit_gateway_id}
   */
   readonly transitGatewayId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table.html aws_ec2_transit_gateway_route_table}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table}
 */
 export class Ec2TransitGatewayRouteTable extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class Ec2TransitGatewayRouteTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table.html aws_ec2_transit_gateway_route_table} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

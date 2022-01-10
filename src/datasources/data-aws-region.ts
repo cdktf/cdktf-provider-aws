@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsRegionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/region.html#endpoint DataAwsRegion#endpoint}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/region#endpoint DataAwsRegion#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/region.html#name DataAwsRegion#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/region#name DataAwsRegion#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/region.html aws_region}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/region aws_region}
 */
 export class DataAwsRegion extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsRegion extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/region.html aws_region} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/region aws_region} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface ConnectLambdaFunctionAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_lambda_function_association.html#function_arn ConnectLambdaFunctionAssociation#function_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_lambda_function_association#function_arn ConnectLambdaFunctionAssociation#function_arn}
   */
   readonly functionArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_lambda_function_association.html#instance_id ConnectLambdaFunctionAssociation#instance_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_lambda_function_association#instance_id ConnectLambdaFunctionAssociation#instance_id}
   */
   readonly instanceId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_lambda_function_association.html aws_connect_lambda_function_association}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_lambda_function_association aws_connect_lambda_function_association}
 */
 export class ConnectLambdaFunctionAssociation extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class ConnectLambdaFunctionAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_lambda_function_association.html aws_connect_lambda_function_association} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_lambda_function_association aws_connect_lambda_function_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

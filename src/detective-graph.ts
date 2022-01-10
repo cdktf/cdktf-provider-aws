@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/detective_graph.html
+// https://www.terraform.io/docs/providers/aws/r/detective_graph
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DetectiveGraphConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/detective_graph.html#tags DetectiveGraph#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/detective_graph#tags DetectiveGraph#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/detective_graph.html#tags_all DetectiveGraph#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/detective_graph#tags_all DetectiveGraph#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/detective_graph.html aws_detective_graph}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/detective_graph aws_detective_graph}
 */
 export class DetectiveGraph extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class DetectiveGraph extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/detective_graph.html aws_detective_graph} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/detective_graph aws_detective_graph} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

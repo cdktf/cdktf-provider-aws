@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsSecurityGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups.html#tags DataAwsSecurityGroups#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups#tags DataAwsSecurityGroups#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups.html#filter DataAwsSecurityGroups#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups#filter DataAwsSecurityGroups#filter}
   */
   readonly filter?: DataAwsSecurityGroupsFilter[];
 }
 export interface DataAwsSecurityGroupsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups.html#name DataAwsSecurityGroups#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups#name DataAwsSecurityGroups#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups.html#values DataAwsSecurityGroups#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups#values DataAwsSecurityGroups#values}
   */
   readonly values: string[];
 }
@@ -42,7 +42,7 @@ export function dataAwsSecurityGroupsFilterToTerraform(struct?: DataAwsSecurityG
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/security_groups.html aws_security_groups}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/security_groups aws_security_groups}
 */
 export class DataAwsSecurityGroups extends cdktf.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataAwsSecurityGroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/security_groups.html aws_security_groups} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/security_groups aws_security_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

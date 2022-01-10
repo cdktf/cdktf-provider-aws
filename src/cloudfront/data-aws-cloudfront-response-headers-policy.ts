@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsCloudfrontResponseHeadersPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_response_headers_policy.html#name DataAwsCloudfrontResponseHeadersPolicy#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_response_headers_policy#name DataAwsCloudfrontResponseHeadersPolicy#name}
   */
   readonly name?: string;
 }
@@ -233,7 +233,7 @@ export class DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfig extends
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_response_headers_policy.html aws_cloudfront_response_headers_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy}
 */
 export class DataAwsCloudfrontResponseHeadersPolicy extends cdktf.TerraformDataSource {
 
@@ -247,7 +247,7 @@ export class DataAwsCloudfrontResponseHeadersPolicy extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_response_headers_policy.html aws_cloudfront_response_headers_policy} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

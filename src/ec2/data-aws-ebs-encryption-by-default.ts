@@ -10,7 +10,7 @@ export interface DataAwsEbsEncryptionByDefaultConfig extends cdktf.TerraformMeta
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ebs_encryption_by_default.html aws_ebs_encryption_by_default}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ebs_encryption_by_default aws_ebs_encryption_by_default}
 */
 export class DataAwsEbsEncryptionByDefault extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataAwsEbsEncryptionByDefault extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ebs_encryption_by_default.html aws_ebs_encryption_by_default} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ebs_encryption_by_default aws_ebs_encryption_by_default} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

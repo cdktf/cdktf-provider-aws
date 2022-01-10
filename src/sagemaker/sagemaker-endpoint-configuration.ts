@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 */
 export interface SagemakerEndpointConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#kms_key_arn SagemakerEndpointConfiguration#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#kms_key_arn SagemakerEndpointConfiguration#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#name SagemakerEndpointConfiguration#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#name SagemakerEndpointConfiguration#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#tags SagemakerEndpointConfiguration#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#tags SagemakerEndpointConfiguration#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#tags_all SagemakerEndpointConfiguration#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#tags_all SagemakerEndpointConfiguration#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * async_inference_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#async_inference_config SagemakerEndpointConfiguration#async_inference_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#async_inference_config SagemakerEndpointConfiguration#async_inference_config}
   */
   readonly asyncInferenceConfig?: SagemakerEndpointConfigurationAsyncInferenceConfig;
   /**
   * data_capture_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#data_capture_config SagemakerEndpointConfiguration#data_capture_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#data_capture_config SagemakerEndpointConfiguration#data_capture_config}
   */
   readonly dataCaptureConfig?: SagemakerEndpointConfigurationDataCaptureConfig;
   /**
   * production_variants block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#production_variants SagemakerEndpointConfiguration#production_variants}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#production_variants SagemakerEndpointConfiguration#production_variants}
   */
   readonly productionVariants: SagemakerEndpointConfigurationProductionVariants[];
 }
 export interface SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#max_concurrent_invocations_per_instance SagemakerEndpointConfiguration#max_concurrent_invocations_per_instance}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#max_concurrent_invocations_per_instance SagemakerEndpointConfiguration#max_concurrent_invocations_per_instance}
   */
   readonly maxConcurrentInvocationsPerInstance?: number;
 }
@@ -74,7 +74,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutpu
   public get internalValue(): SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._maxConcurrentInvocationsPerInstance) {
+    if (this._maxConcurrentInvocationsPerInstance !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxConcurrentInvocationsPerInstance = this._maxConcurrentInvocationsPerInstance;
     }
@@ -110,11 +110,11 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutpu
 }
 export interface SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#error_topic SagemakerEndpointConfiguration#error_topic}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#error_topic SagemakerEndpointConfiguration#error_topic}
   */
   readonly errorTopic?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#success_topic SagemakerEndpointConfiguration#success_topic}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#success_topic SagemakerEndpointConfiguration#success_topic}
   */
   readonly successTopic?: string;
 }
@@ -145,11 +145,11 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotif
   public get internalValue(): SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._errorTopic) {
+    if (this._errorTopic !== undefined) {
       hasAnyValues = true;
       internalValueResult.errorTopic = this._errorTopic;
     }
-    if (this._successTopic) {
+    if (this._successTopic !== undefined) {
       hasAnyValues = true;
       internalValueResult.successTopic = this._successTopic;
     }
@@ -203,17 +203,17 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotif
 }
 export interface SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#kms_key_id SagemakerEndpointConfiguration#kms_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#kms_key_id SagemakerEndpointConfiguration#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#s3_output_path SagemakerEndpointConfiguration#s3_output_path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#s3_output_path SagemakerEndpointConfiguration#s3_output_path}
   */
   readonly s3OutputPath: string;
   /**
   * notification_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#notification_config SagemakerEndpointConfiguration#notification_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#notification_config SagemakerEndpointConfiguration#notification_config}
   */
   readonly notificationConfig?: SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig;
 }
@@ -245,15 +245,15 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutpu
   public get internalValue(): SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._kmsKeyId) {
+    if (this._kmsKeyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyId = this._kmsKeyId;
     }
-    if (this._s3OutputPath) {
+    if (this._s3OutputPath !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3OutputPath = this._s3OutputPath;
     }
-    if (this._notificationConfig?.internalValue) {
+    if (this._notificationConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.notificationConfig = this._notificationConfig?.internalValue;
     }
@@ -324,13 +324,13 @@ export interface SagemakerEndpointConfigurationAsyncInferenceConfig {
   /**
   * client_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#client_config SagemakerEndpointConfiguration#client_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#client_config SagemakerEndpointConfiguration#client_config}
   */
   readonly clientConfig?: SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig;
   /**
   * output_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#output_config SagemakerEndpointConfiguration#output_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#output_config SagemakerEndpointConfiguration#output_config}
   */
   readonly outputConfig: SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig;
 }
@@ -361,11 +361,11 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference e
   public get internalValue(): SagemakerEndpointConfigurationAsyncInferenceConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clientConfig?.internalValue) {
+    if (this._clientConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.clientConfig = this._clientConfig?.internalValue;
     }
-    if (this._outputConfig?.internalValue) {
+    if (this._outputConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.outputConfig = this._outputConfig?.internalValue;
     }
@@ -416,11 +416,11 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference e
 }
 export interface SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeader {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#csv_content_types SagemakerEndpointConfiguration#csv_content_types}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#csv_content_types SagemakerEndpointConfiguration#csv_content_types}
   */
   readonly csvContentTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#json_content_types SagemakerEndpointConfiguration#json_content_types}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#json_content_types SagemakerEndpointConfiguration#json_content_types}
   */
   readonly jsonContentTypes?: string[];
 }
@@ -451,11 +451,11 @@ export class SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHe
   public get internalValue(): SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeader | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._csvContentTypes) {
+    if (this._csvContentTypes !== undefined) {
       hasAnyValues = true;
       internalValueResult.csvContentTypes = this._csvContentTypes;
     }
-    if (this._jsonContentTypes) {
+    if (this._jsonContentTypes !== undefined) {
       hasAnyValues = true;
       internalValueResult.jsonContentTypes = this._jsonContentTypes;
     }
@@ -509,7 +509,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHe
 }
 export interface SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#capture_mode SagemakerEndpointConfiguration#capture_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#capture_mode SagemakerEndpointConfiguration#capture_mode}
   */
   readonly captureMode: string;
 }
@@ -526,31 +526,31 @@ export function sagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsToT
 
 export interface SagemakerEndpointConfigurationDataCaptureConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#destination_s3_uri SagemakerEndpointConfiguration#destination_s3_uri}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#destination_s3_uri SagemakerEndpointConfiguration#destination_s3_uri}
   */
   readonly destinationS3Uri: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#enable_capture SagemakerEndpointConfiguration#enable_capture}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#enable_capture SagemakerEndpointConfiguration#enable_capture}
   */
   readonly enableCapture?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#initial_sampling_percentage SagemakerEndpointConfiguration#initial_sampling_percentage}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#initial_sampling_percentage SagemakerEndpointConfiguration#initial_sampling_percentage}
   */
   readonly initialSamplingPercentage: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#kms_key_id SagemakerEndpointConfiguration#kms_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#kms_key_id SagemakerEndpointConfiguration#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
   * capture_content_type_header block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#capture_content_type_header SagemakerEndpointConfiguration#capture_content_type_header}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#capture_content_type_header SagemakerEndpointConfiguration#capture_content_type_header}
   */
   readonly captureContentTypeHeader?: SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeader;
   /**
   * capture_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#capture_options SagemakerEndpointConfiguration#capture_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#capture_options SagemakerEndpointConfiguration#capture_options}
   */
   readonly captureOptions: SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions[];
 }
@@ -585,27 +585,27 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
   public get internalValue(): SagemakerEndpointConfigurationDataCaptureConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._destinationS3Uri) {
+    if (this._destinationS3Uri !== undefined) {
       hasAnyValues = true;
       internalValueResult.destinationS3Uri = this._destinationS3Uri;
     }
-    if (this._enableCapture) {
+    if (this._enableCapture !== undefined) {
       hasAnyValues = true;
       internalValueResult.enableCapture = this._enableCapture;
     }
-    if (this._initialSamplingPercentage) {
+    if (this._initialSamplingPercentage !== undefined) {
       hasAnyValues = true;
       internalValueResult.initialSamplingPercentage = this._initialSamplingPercentage;
     }
-    if (this._kmsKeyId) {
+    if (this._kmsKeyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyId = this._kmsKeyId;
     }
-    if (this._captureContentTypeHeader?.internalValue) {
+    if (this._captureContentTypeHeader?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.captureContentTypeHeader = this._captureContentTypeHeader?.internalValue;
     }
-    if (this._captureOptions) {
+    if (this._captureOptions !== undefined) {
       hasAnyValues = true;
       internalValueResult.captureOptions = this._captureOptions;
     }
@@ -723,27 +723,27 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
 }
 export interface SagemakerEndpointConfigurationProductionVariants {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#accelerator_type SagemakerEndpointConfiguration#accelerator_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#accelerator_type SagemakerEndpointConfiguration#accelerator_type}
   */
   readonly acceleratorType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#initial_instance_count SagemakerEndpointConfiguration#initial_instance_count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#initial_instance_count SagemakerEndpointConfiguration#initial_instance_count}
   */
   readonly initialInstanceCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#initial_variant_weight SagemakerEndpointConfiguration#initial_variant_weight}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#initial_variant_weight SagemakerEndpointConfiguration#initial_variant_weight}
   */
   readonly initialVariantWeight?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#instance_type SagemakerEndpointConfiguration#instance_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#instance_type SagemakerEndpointConfiguration#instance_type}
   */
   readonly instanceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#model_name SagemakerEndpointConfiguration#model_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#model_name SagemakerEndpointConfiguration#model_name}
   */
   readonly modelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#variant_name SagemakerEndpointConfiguration#variant_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#variant_name SagemakerEndpointConfiguration#variant_name}
   */
   readonly variantName?: string;
 }
@@ -765,7 +765,7 @@ export function sagemakerEndpointConfigurationProductionVariantsToTerraform(stru
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html aws_sagemaker_endpoint_configuration}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration aws_sagemaker_endpoint_configuration}
 */
 export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
 
@@ -779,7 +779,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html aws_sagemaker_endpoint_configuration} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration aws_sagemaker_endpoint_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

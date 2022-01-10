@@ -8,29 +8,29 @@ import * as cdktf from 'cdktf';
 */
 export interface EmrStudioSessionMappingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping.html#identity_id EmrStudioSessionMapping#identity_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping#identity_id EmrStudioSessionMapping#identity_id}
   */
   readonly identityId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping.html#identity_name EmrStudioSessionMapping#identity_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping#identity_name EmrStudioSessionMapping#identity_name}
   */
   readonly identityName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping.html#identity_type EmrStudioSessionMapping#identity_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping#identity_type EmrStudioSessionMapping#identity_type}
   */
   readonly identityType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping.html#session_policy_arn EmrStudioSessionMapping#session_policy_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping#session_policy_arn EmrStudioSessionMapping#session_policy_arn}
   */
   readonly sessionPolicyArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping.html#studio_id EmrStudioSessionMapping#studio_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping#studio_id EmrStudioSessionMapping#studio_id}
   */
   readonly studioId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping.html aws_emr_studio_session_mapping}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping aws_emr_studio_session_mapping}
 */
 export class EmrStudioSessionMapping extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class EmrStudioSessionMapping extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping.html aws_emr_studio_session_mapping} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping aws_emr_studio_session_mapping} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

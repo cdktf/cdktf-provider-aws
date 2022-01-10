@@ -10,7 +10,7 @@ export interface DataAwsPartitionConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/partition.html aws_partition}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/partition aws_partition}
 */
 export class DataAwsPartition extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataAwsPartition extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/partition.html aws_partition} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/partition aws_partition} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

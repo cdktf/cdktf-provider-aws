@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsEc2TransitGatewayRouteTableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table.html#tags DataAwsEc2TransitGatewayRouteTable#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table#tags DataAwsEc2TransitGatewayRouteTable#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table.html#filter DataAwsEc2TransitGatewayRouteTable#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table#filter DataAwsEc2TransitGatewayRouteTable#filter}
   */
   readonly filter?: DataAwsEc2TransitGatewayRouteTableFilter[];
 }
 export interface DataAwsEc2TransitGatewayRouteTableFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table.html#name DataAwsEc2TransitGatewayRouteTable#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table#name DataAwsEc2TransitGatewayRouteTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table.html#values DataAwsEc2TransitGatewayRouteTable#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table#values DataAwsEc2TransitGatewayRouteTable#values}
   */
   readonly values: string[];
 }
@@ -42,7 +42,7 @@ export function dataAwsEc2TransitGatewayRouteTableFilterToTerraform(struct?: Dat
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table.html aws_ec2_transit_gateway_route_table}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table}
 */
 export class DataAwsEc2TransitGatewayRouteTable extends cdktf.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataAwsEc2TransitGatewayRouteTable extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table.html aws_ec2_transit_gateway_route_table} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

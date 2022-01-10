@@ -8,31 +8,31 @@ import * as cdktf from 'cdktf';
 */
 export interface SagemakerEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#endpoint_config_name SagemakerEndpoint#endpoint_config_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#endpoint_config_name SagemakerEndpoint#endpoint_config_name}
   */
   readonly endpointConfigName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#name SagemakerEndpoint#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#name SagemakerEndpoint#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#tags SagemakerEndpoint#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#tags SagemakerEndpoint#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#tags_all SagemakerEndpoint#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#tags_all SagemakerEndpoint#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * deployment_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#deployment_config SagemakerEndpoint#deployment_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#deployment_config SagemakerEndpoint#deployment_config}
   */
   readonly deploymentConfig?: SagemakerEndpointDeploymentConfig;
 }
 export interface SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#alarm_name SagemakerEndpoint#alarm_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#alarm_name SagemakerEndpoint#alarm_name}
   */
   readonly alarmName: string;
 }
@@ -51,7 +51,7 @@ export interface SagemakerEndpointDeploymentConfigAutoRollbackConfiguration {
   /**
   * alarms block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#alarms SagemakerEndpoint#alarms}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#alarms SagemakerEndpoint#alarms}
   */
   readonly alarms?: SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms[];
 }
@@ -81,7 +81,7 @@ export class SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputRef
   public get internalValue(): SagemakerEndpointDeploymentConfigAutoRollbackConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._alarms) {
+    if (this._alarms !== undefined) {
       hasAnyValues = true;
       internalValueResult.alarms = this._alarms;
     }
@@ -118,11 +118,11 @@ export class SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputRef
 }
 export interface SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#type SagemakerEndpoint#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#type SagemakerEndpoint#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#value SagemakerEndpoint#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#value SagemakerEndpoint#value}
   */
   readonly value: number;
 }
@@ -153,11 +153,11 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
   public get internalValue(): SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -205,11 +205,11 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
 }
 export interface SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#type SagemakerEndpoint#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#type SagemakerEndpoint#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#value SagemakerEndpoint#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#value SagemakerEndpoint#value}
   */
   readonly value: number;
 }
@@ -240,11 +240,11 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
   public get internalValue(): SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -292,23 +292,23 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
 }
 export interface SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#type SagemakerEndpoint#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#type SagemakerEndpoint#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#wait_interval_in_seconds SagemakerEndpoint#wait_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#wait_interval_in_seconds SagemakerEndpoint#wait_interval_in_seconds}
   */
   readonly waitIntervalInSeconds: number;
   /**
   * canary_size block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#canary_size SagemakerEndpoint#canary_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#canary_size SagemakerEndpoint#canary_size}
   */
   readonly canarySize?: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize;
   /**
   * linear_step_size block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#linear_step_size SagemakerEndpoint#linear_step_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#linear_step_size SagemakerEndpoint#linear_step_size}
   */
   readonly linearStepSize?: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize;
 }
@@ -341,19 +341,19 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
   public get internalValue(): SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._waitIntervalInSeconds) {
+    if (this._waitIntervalInSeconds !== undefined) {
       hasAnyValues = true;
       internalValueResult.waitIntervalInSeconds = this._waitIntervalInSeconds;
     }
-    if (this._canarySize?.internalValue) {
+    if (this._canarySize?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.canarySize = this._canarySize?.internalValue;
     }
-    if (this._linearStepSize?.internalValue) {
+    if (this._linearStepSize?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.linearStepSize = this._linearStepSize?.internalValue;
     }
@@ -437,17 +437,17 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
 }
 export interface SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#maximum_execution_timeout_in_seconds SagemakerEndpoint#maximum_execution_timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#maximum_execution_timeout_in_seconds SagemakerEndpoint#maximum_execution_timeout_in_seconds}
   */
   readonly maximumExecutionTimeoutInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#termination_wait_in_seconds SagemakerEndpoint#termination_wait_in_seconds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#termination_wait_in_seconds SagemakerEndpoint#termination_wait_in_seconds}
   */
   readonly terminationWaitInSeconds?: number;
   /**
   * traffic_routing_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#traffic_routing_configuration SagemakerEndpoint#traffic_routing_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#traffic_routing_configuration SagemakerEndpoint#traffic_routing_configuration}
   */
   readonly trafficRoutingConfiguration: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration;
 }
@@ -479,15 +479,15 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReferen
   public get internalValue(): SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._maximumExecutionTimeoutInSeconds) {
+    if (this._maximumExecutionTimeoutInSeconds !== undefined) {
       hasAnyValues = true;
       internalValueResult.maximumExecutionTimeoutInSeconds = this._maximumExecutionTimeoutInSeconds;
     }
-    if (this._terminationWaitInSeconds) {
+    if (this._terminationWaitInSeconds !== undefined) {
       hasAnyValues = true;
       internalValueResult.terminationWaitInSeconds = this._terminationWaitInSeconds;
     }
-    if (this._trafficRoutingConfiguration?.internalValue) {
+    if (this._trafficRoutingConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.trafficRoutingConfiguration = this._trafficRoutingConfiguration?.internalValue;
     }
@@ -558,13 +558,13 @@ export interface SagemakerEndpointDeploymentConfig {
   /**
   * auto_rollback_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#auto_rollback_configuration SagemakerEndpoint#auto_rollback_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#auto_rollback_configuration SagemakerEndpoint#auto_rollback_configuration}
   */
   readonly autoRollbackConfiguration?: SagemakerEndpointDeploymentConfigAutoRollbackConfiguration;
   /**
   * blue_green_update_policy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html#blue_green_update_policy SagemakerEndpoint#blue_green_update_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#blue_green_update_policy SagemakerEndpoint#blue_green_update_policy}
   */
   readonly blueGreenUpdatePolicy: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy;
 }
@@ -595,11 +595,11 @@ export class SagemakerEndpointDeploymentConfigOutputReference extends cdktf.Comp
   public get internalValue(): SagemakerEndpointDeploymentConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._autoRollbackConfiguration?.internalValue) {
+    if (this._autoRollbackConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoRollbackConfiguration = this._autoRollbackConfiguration?.internalValue;
     }
-    if (this._blueGreenUpdatePolicy?.internalValue) {
+    if (this._blueGreenUpdatePolicy?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.blueGreenUpdatePolicy = this._blueGreenUpdatePolicy?.internalValue;
     }
@@ -650,7 +650,7 @@ export class SagemakerEndpointDeploymentConfigOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html aws_sagemaker_endpoint}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint aws_sagemaker_endpoint}
 */
 export class SagemakerEndpoint extends cdktf.TerraformResource {
 
@@ -664,7 +664,7 @@ export class SagemakerEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint.html aws_sagemaker_endpoint} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint aws_sagemaker_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

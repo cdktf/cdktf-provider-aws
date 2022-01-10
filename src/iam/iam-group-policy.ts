@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 */
 export interface IamGroupPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy.html#group IamGroupPolicy#group}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy#group IamGroupPolicy#group}
   */
   readonly group: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy.html#name IamGroupPolicy#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy#name IamGroupPolicy#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy.html#name_prefix IamGroupPolicy#name_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy#name_prefix IamGroupPolicy#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy.html#policy IamGroupPolicy#policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy#policy IamGroupPolicy#policy}
   */
   readonly policy: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy.html aws_iam_group_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy aws_iam_group_policy}
 */
 export class IamGroupPolicy extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class IamGroupPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy.html aws_iam_group_policy} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy aws_iam_group_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

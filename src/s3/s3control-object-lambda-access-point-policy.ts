@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface S3ControlObjectLambdaAccessPointPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point_policy.html#account_id S3ControlObjectLambdaAccessPointPolicy#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point_policy#account_id S3ControlObjectLambdaAccessPointPolicy#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point_policy.html#name S3ControlObjectLambdaAccessPointPolicy#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point_policy#name S3ControlObjectLambdaAccessPointPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point_policy.html#policy S3ControlObjectLambdaAccessPointPolicy#policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point_policy#policy S3ControlObjectLambdaAccessPointPolicy#policy}
   */
   readonly policy: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point_policy.html aws_s3control_object_lambda_access_point_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point_policy aws_s3control_object_lambda_access_point_policy}
 */
 export class S3ControlObjectLambdaAccessPointPolicy extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class S3ControlObjectLambdaAccessPointPolicy extends cdktf.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point_policy.html aws_s3control_object_lambda_access_point_policy} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point_policy aws_s3control_object_lambda_access_point_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

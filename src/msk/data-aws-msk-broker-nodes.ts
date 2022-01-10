@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsMskBrokerNodesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/msk_broker_nodes.html#cluster_arn DataAwsMskBrokerNodes#cluster_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/msk_broker_nodes#cluster_arn DataAwsMskBrokerNodes#cluster_arn}
   */
   readonly clusterArn: string;
 }
@@ -46,7 +46,7 @@ export class DataAwsMskBrokerNodesNodeInfoList extends cdktf.ComplexComputedList
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/msk_broker_nodes.html aws_msk_broker_nodes}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/msk_broker_nodes aws_msk_broker_nodes}
 */
 export class DataAwsMskBrokerNodes extends cdktf.TerraformDataSource {
 
@@ -60,7 +60,7 @@ export class DataAwsMskBrokerNodes extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/msk_broker_nodes.html aws_msk_broker_nodes} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/msk_broker_nodes aws_msk_broker_nodes} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

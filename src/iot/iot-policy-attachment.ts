@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface IotPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_policy_attachment.html#policy IotPolicyAttachment#policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_policy_attachment#policy IotPolicyAttachment#policy}
   */
   readonly policy: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_policy_attachment.html#target IotPolicyAttachment#target}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_policy_attachment#target IotPolicyAttachment#target}
   */
   readonly target: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_policy_attachment.html aws_iot_policy_attachment}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_policy_attachment aws_iot_policy_attachment}
 */
 export class IotPolicyAttachment extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class IotPolicyAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_policy_attachment.html aws_iot_policy_attachment} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_policy_attachment aws_iot_policy_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

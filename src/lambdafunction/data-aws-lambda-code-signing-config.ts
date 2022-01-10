@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsLambdaCodeSigningConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_code_signing_config.html#arn DataAwsLambdaCodeSigningConfig#arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_code_signing_config#arn DataAwsLambdaCodeSigningConfig#arn}
   */
   readonly arn: string;
 }
@@ -28,7 +28,7 @@ export class DataAwsLambdaCodeSigningConfigPolicies extends cdktf.ComplexCompute
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/lambda_code_signing_config.html aws_lambda_code_signing_config}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/lambda_code_signing_config aws_lambda_code_signing_config}
 */
 export class DataAwsLambdaCodeSigningConfig extends cdktf.TerraformDataSource {
 
@@ -42,7 +42,7 @@ export class DataAwsLambdaCodeSigningConfig extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/lambda_code_signing_config.html aws_lambda_code_signing_config} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/lambda_code_signing_config aws_lambda_code_signing_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

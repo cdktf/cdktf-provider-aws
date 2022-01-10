@@ -8,29 +8,29 @@ import * as cdktf from 'cdktf';
 */
 export interface KeyPairConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/key_pair.html#key_name KeyPair#key_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/key_pair#key_name KeyPair#key_name}
   */
   readonly keyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/key_pair.html#key_name_prefix KeyPair#key_name_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/key_pair#key_name_prefix KeyPair#key_name_prefix}
   */
   readonly keyNamePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/key_pair.html#public_key KeyPair#public_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/key_pair#public_key KeyPair#public_key}
   */
   readonly publicKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/key_pair.html#tags KeyPair#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/key_pair#tags KeyPair#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/key_pair.html#tags_all KeyPair#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/key_pair#tags_all KeyPair#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/key_pair.html aws_key_pair}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/key_pair aws_key_pair}
 */
 export class KeyPair extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class KeyPair extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/key_pair.html aws_key_pair} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/key_pair aws_key_pair} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

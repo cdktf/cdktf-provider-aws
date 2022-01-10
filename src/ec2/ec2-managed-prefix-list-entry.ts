@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface Ec2ManagedPrefixListEntryAConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_managed_prefix_list_entry.html#cidr Ec2ManagedPrefixListEntryA#cidr}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_managed_prefix_list_entry#cidr Ec2ManagedPrefixListEntryA#cidr}
   */
   readonly cidr: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_managed_prefix_list_entry.html#description Ec2ManagedPrefixListEntryA#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_managed_prefix_list_entry#description Ec2ManagedPrefixListEntryA#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_managed_prefix_list_entry.html#prefix_list_id Ec2ManagedPrefixListEntryA#prefix_list_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_managed_prefix_list_entry#prefix_list_id Ec2ManagedPrefixListEntryA#prefix_list_id}
   */
   readonly prefixListId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_managed_prefix_list_entry.html aws_ec2_managed_prefix_list_entry}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_managed_prefix_list_entry aws_ec2_managed_prefix_list_entry}
 */
 export class Ec2ManagedPrefixListEntryA extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class Ec2ManagedPrefixListEntryA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_managed_prefix_list_entry.html aws_ec2_managed_prefix_list_entry} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_managed_prefix_list_entry aws_ec2_managed_prefix_list_entry} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,15 +8,15 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsLambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_function.html#function_name DataAwsLambdaFunction#function_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_function#function_name DataAwsLambdaFunction#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_function.html#qualifier DataAwsLambdaFunction#qualifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_function#qualifier DataAwsLambdaFunction#qualifier}
   */
   readonly qualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_function.html#tags DataAwsLambdaFunction#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_function#tags DataAwsLambdaFunction#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
@@ -73,7 +73,7 @@ export class DataAwsLambdaFunctionVpcConfig extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/lambda_function.html aws_lambda_function}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/lambda_function aws_lambda_function}
 */
 export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
 
@@ -87,7 +87,7 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/lambda_function.html aws_lambda_function} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/lambda_function aws_lambda_function} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

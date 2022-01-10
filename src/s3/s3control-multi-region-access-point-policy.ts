@@ -8,29 +8,29 @@ import * as cdktf from 'cdktf';
 */
 export interface S3ControlMultiRegionAccessPointPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy.html#account_id S3ControlMultiRegionAccessPointPolicy#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy#account_id S3ControlMultiRegionAccessPointPolicy#account_id}
   */
   readonly accountId?: string;
   /**
   * details block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy.html#details S3ControlMultiRegionAccessPointPolicy#details}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy#details S3ControlMultiRegionAccessPointPolicy#details}
   */
   readonly details: S3ControlMultiRegionAccessPointPolicyDetails;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy.html#timeouts S3ControlMultiRegionAccessPointPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy#timeouts S3ControlMultiRegionAccessPointPolicy#timeouts}
   */
   readonly timeouts?: S3ControlMultiRegionAccessPointPolicyTimeouts;
 }
 export interface S3ControlMultiRegionAccessPointPolicyDetails {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy.html#name S3ControlMultiRegionAccessPointPolicy#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy#name S3ControlMultiRegionAccessPointPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy.html#policy S3ControlMultiRegionAccessPointPolicy#policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy#policy S3ControlMultiRegionAccessPointPolicy#policy}
   */
   readonly policy: string;
 }
@@ -61,11 +61,11 @@ export class S3ControlMultiRegionAccessPointPolicyDetailsOutputReference extends
   public get internalValue(): S3ControlMultiRegionAccessPointPolicyDetails | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._policy) {
+    if (this._policy !== undefined) {
       hasAnyValues = true;
       internalValueResult.policy = this._policy;
     }
@@ -113,11 +113,11 @@ export class S3ControlMultiRegionAccessPointPolicyDetailsOutputReference extends
 }
 export interface S3ControlMultiRegionAccessPointPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy.html#create S3ControlMultiRegionAccessPointPolicy#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy#create S3ControlMultiRegionAccessPointPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy.html#update S3ControlMultiRegionAccessPointPolicy#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy#update S3ControlMultiRegionAccessPointPolicy#update}
   */
   readonly update?: string;
 }
@@ -148,11 +148,11 @@ export class S3ControlMultiRegionAccessPointPolicyTimeoutsOutputReference extend
   public get internalValue(): S3ControlMultiRegionAccessPointPolicyTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
@@ -206,7 +206,7 @@ export class S3ControlMultiRegionAccessPointPolicyTimeoutsOutputReference extend
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy.html aws_s3control_multi_region_access_point_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy aws_s3control_multi_region_access_point_policy}
 */
 export class S3ControlMultiRegionAccessPointPolicy extends cdktf.TerraformResource {
 
@@ -220,7 +220,7 @@ export class S3ControlMultiRegionAccessPointPolicy extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy.html aws_s3control_multi_region_access_point_policy} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point_policy aws_s3control_multi_region_access_point_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,57 +8,57 @@ import * as cdktf from 'cdktf';
 */
 export interface ConfigRemediationConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#automatic ConfigRemediationConfiguration#automatic}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#automatic ConfigRemediationConfiguration#automatic}
   */
   readonly automatic?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#config_rule_name ConfigRemediationConfiguration#config_rule_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#config_rule_name ConfigRemediationConfiguration#config_rule_name}
   */
   readonly configRuleName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#maximum_automatic_attempts ConfigRemediationConfiguration#maximum_automatic_attempts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#maximum_automatic_attempts ConfigRemediationConfiguration#maximum_automatic_attempts}
   */
   readonly maximumAutomaticAttempts?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#resource_type ConfigRemediationConfiguration#resource_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#resource_type ConfigRemediationConfiguration#resource_type}
   */
   readonly resourceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#retry_attempt_seconds ConfigRemediationConfiguration#retry_attempt_seconds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#retry_attempt_seconds ConfigRemediationConfiguration#retry_attempt_seconds}
   */
   readonly retryAttemptSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#target_id ConfigRemediationConfiguration#target_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#target_id ConfigRemediationConfiguration#target_id}
   */
   readonly targetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#target_type ConfigRemediationConfiguration#target_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#target_type ConfigRemediationConfiguration#target_type}
   */
   readonly targetType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#target_version ConfigRemediationConfiguration#target_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#target_version ConfigRemediationConfiguration#target_version}
   */
   readonly targetVersion?: string;
   /**
   * execution_controls block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#execution_controls ConfigRemediationConfiguration#execution_controls}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#execution_controls ConfigRemediationConfiguration#execution_controls}
   */
   readonly executionControls?: ConfigRemediationConfigurationExecutionControls;
   /**
   * parameter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#parameter ConfigRemediationConfiguration#parameter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#parameter ConfigRemediationConfiguration#parameter}
   */
   readonly parameter?: ConfigRemediationConfigurationParameter[];
 }
 export interface ConfigRemediationConfigurationExecutionControlsSsmControls {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#concurrent_execution_rate_percentage ConfigRemediationConfiguration#concurrent_execution_rate_percentage}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#concurrent_execution_rate_percentage ConfigRemediationConfiguration#concurrent_execution_rate_percentage}
   */
   readonly concurrentExecutionRatePercentage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#error_percentage ConfigRemediationConfiguration#error_percentage}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#error_percentage ConfigRemediationConfiguration#error_percentage}
   */
   readonly errorPercentage?: number;
 }
@@ -89,11 +89,11 @@ export class ConfigRemediationConfigurationExecutionControlsSsmControlsOutputRef
   public get internalValue(): ConfigRemediationConfigurationExecutionControlsSsmControls | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._concurrentExecutionRatePercentage) {
+    if (this._concurrentExecutionRatePercentage !== undefined) {
       hasAnyValues = true;
       internalValueResult.concurrentExecutionRatePercentage = this._concurrentExecutionRatePercentage;
     }
-    if (this._errorPercentage) {
+    if (this._errorPercentage !== undefined) {
       hasAnyValues = true;
       internalValueResult.errorPercentage = this._errorPercentage;
     }
@@ -149,7 +149,7 @@ export interface ConfigRemediationConfigurationExecutionControls {
   /**
   * ssm_controls block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#ssm_controls ConfigRemediationConfiguration#ssm_controls}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#ssm_controls ConfigRemediationConfiguration#ssm_controls}
   */
   readonly ssmControls?: ConfigRemediationConfigurationExecutionControlsSsmControls;
 }
@@ -179,7 +179,7 @@ export class ConfigRemediationConfigurationExecutionControlsOutputReference exte
   public get internalValue(): ConfigRemediationConfigurationExecutionControls | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._ssmControls?.internalValue) {
+    if (this._ssmControls?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.ssmControls = this._ssmControls?.internalValue;
     }
@@ -215,15 +215,15 @@ export class ConfigRemediationConfigurationExecutionControlsOutputReference exte
 }
 export interface ConfigRemediationConfigurationParameter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#name ConfigRemediationConfiguration#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#name ConfigRemediationConfiguration#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#resource_value ConfigRemediationConfiguration#resource_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#resource_value ConfigRemediationConfiguration#resource_value}
   */
   readonly resourceValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#static_value ConfigRemediationConfiguration#static_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#static_value ConfigRemediationConfiguration#static_value}
   */
   readonly staticValue?: string;
 }
@@ -242,7 +242,7 @@ export function configRemediationConfigurationParameterToTerraform(struct?: Conf
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html aws_config_remediation_configuration}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration aws_config_remediation_configuration}
 */
 export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
 
@@ -256,7 +256,7 @@ export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html aws_config_remediation_configuration} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration aws_config_remediation_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

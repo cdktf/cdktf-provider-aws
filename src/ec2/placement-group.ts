@@ -8,29 +8,29 @@ import * as cdktf from 'cdktf';
 */
 export interface PlacementGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/placement_group.html#name PlacementGroup#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/placement_group#name PlacementGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/placement_group.html#partition_count PlacementGroup#partition_count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/placement_group#partition_count PlacementGroup#partition_count}
   */
   readonly partitionCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/placement_group.html#strategy PlacementGroup#strategy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/placement_group#strategy PlacementGroup#strategy}
   */
   readonly strategy: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/placement_group.html#tags PlacementGroup#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/placement_group#tags PlacementGroup#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/placement_group.html#tags_all PlacementGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/placement_group#tags_all PlacementGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/placement_group.html aws_placement_group}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/placement_group aws_placement_group}
 */
 export class PlacementGroup extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class PlacementGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/placement_group.html aws_placement_group} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/placement_group aws_placement_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

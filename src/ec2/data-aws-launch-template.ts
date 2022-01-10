@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsLaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_template.html#name DataAwsLaunchTemplate#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_template#name DataAwsLaunchTemplate#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_template.html#tags DataAwsLaunchTemplate#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_template#tags DataAwsLaunchTemplate#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_template.html#filter DataAwsLaunchTemplate#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_template#filter DataAwsLaunchTemplate#filter}
   */
   readonly filter?: DataAwsLaunchTemplateFilter[];
 }
@@ -330,11 +330,11 @@ export class DataAwsLaunchTemplateTagSpecifications extends cdktf.ComplexCompute
 }
 export interface DataAwsLaunchTemplateFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_template.html#name DataAwsLaunchTemplate#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_template#name DataAwsLaunchTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_template.html#values DataAwsLaunchTemplate#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_template#values DataAwsLaunchTemplate#values}
   */
   readonly values: string[];
 }
@@ -352,7 +352,7 @@ export function dataAwsLaunchTemplateFilterToTerraform(struct?: DataAwsLaunchTem
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/launch_template.html aws_launch_template}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/launch_template aws_launch_template}
 */
 export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
 
@@ -366,7 +366,7 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/launch_template.html aws_launch_template} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/launch_template aws_launch_template} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

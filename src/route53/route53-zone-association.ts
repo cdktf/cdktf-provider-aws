@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface Route53ZoneAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html#vpc_id Route53ZoneAssociation#vpc_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_zone_association#vpc_id Route53ZoneAssociation#vpc_id}
   */
   readonly vpcId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html#vpc_region Route53ZoneAssociation#vpc_region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_zone_association#vpc_region Route53ZoneAssociation#vpc_region}
   */
   readonly vpcRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html#zone_id Route53ZoneAssociation#zone_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_zone_association#zone_id Route53ZoneAssociation#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html aws_route53_zone_association}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_zone_association aws_route53_zone_association}
 */
 export class Route53ZoneAssociation extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class Route53ZoneAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html aws_route53_zone_association} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_zone_association aws_route53_zone_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

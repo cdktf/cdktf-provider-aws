@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsBackupPlanConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_plan.html#plan_id DataAwsBackupPlan#plan_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_plan#plan_id DataAwsBackupPlan#plan_id}
   */
   readonly planId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_plan.html#tags DataAwsBackupPlan#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_plan#tags DataAwsBackupPlan#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/backup_plan.html aws_backup_plan}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/backup_plan aws_backup_plan}
 */
 export class DataAwsBackupPlan extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsBackupPlan extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/backup_plan.html aws_backup_plan} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/backup_plan aws_backup_plan} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

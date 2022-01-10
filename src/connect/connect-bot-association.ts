@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface ConnectBotAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_bot_association.html#instance_id ConnectBotAssociation#instance_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_bot_association#instance_id ConnectBotAssociation#instance_id}
   */
   readonly instanceId: string;
   /**
   * lex_bot block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_bot_association.html#lex_bot ConnectBotAssociation#lex_bot}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_bot_association#lex_bot ConnectBotAssociation#lex_bot}
   */
   readonly lexBot: ConnectBotAssociationLexBot;
 }
 export interface ConnectBotAssociationLexBot {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_bot_association.html#lex_region ConnectBotAssociation#lex_region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_bot_association#lex_region ConnectBotAssociation#lex_region}
   */
   readonly lexRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_bot_association.html#name ConnectBotAssociation#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_bot_association#name ConnectBotAssociation#name}
   */
   readonly name: string;
 }
@@ -55,11 +55,11 @@ export class ConnectBotAssociationLexBotOutputReference extends cdktf.ComplexObj
   public get internalValue(): ConnectBotAssociationLexBot | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._lexRegion) {
+    if (this._lexRegion !== undefined) {
       hasAnyValues = true;
       internalValueResult.lexRegion = this._lexRegion;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
@@ -110,7 +110,7 @@ export class ConnectBotAssociationLexBotOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_bot_association.html aws_connect_bot_association}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_bot_association aws_connect_bot_association}
 */
 export class ConnectBotAssociation extends cdktf.TerraformResource {
 
@@ -124,7 +124,7 @@ export class ConnectBotAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_bot_association.html aws_connect_bot_association} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_bot_association aws_connect_bot_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

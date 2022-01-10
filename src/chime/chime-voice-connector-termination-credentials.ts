@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface ChimeVoiceConnectorTerminationCredentialsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials.html#voice_connector_id ChimeVoiceConnectorTerminationCredentials#voice_connector_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials#voice_connector_id ChimeVoiceConnectorTerminationCredentials#voice_connector_id}
   */
   readonly voiceConnectorId: string;
   /**
   * credentials block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials.html#credentials ChimeVoiceConnectorTerminationCredentials#credentials}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials#credentials ChimeVoiceConnectorTerminationCredentials#credentials}
   */
   readonly credentials: ChimeVoiceConnectorTerminationCredentialsCredentials[];
 }
 export interface ChimeVoiceConnectorTerminationCredentialsCredentials {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials.html#password ChimeVoiceConnectorTerminationCredentials#password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials#password ChimeVoiceConnectorTerminationCredentials#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials.html#username ChimeVoiceConnectorTerminationCredentials#username}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials#username ChimeVoiceConnectorTerminationCredentials#username}
   */
   readonly username: string;
 }
@@ -42,7 +42,7 @@ export function chimeVoiceConnectorTerminationCredentialsCredentialsToTerraform(
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials.html aws_chime_voice_connector_termination_credentials}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials}
 */
 export class ChimeVoiceConnectorTerminationCredentials extends cdktf.TerraformResource {
 
@@ -56,7 +56,7 @@ export class ChimeVoiceConnectorTerminationCredentials extends cdktf.TerraformRe
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials.html aws_chime_voice_connector_termination_credentials} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

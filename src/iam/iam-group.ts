@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface IamGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group.html#name IamGroup#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group#name IamGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group.html#path IamGroup#path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group#path IamGroup#path}
   */
   readonly path?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_group.html aws_iam_group}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_group aws_iam_group}
 */
 export class IamGroup extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class IamGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_group.html aws_iam_group} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_group aws_iam_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface IotThingGroupMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_group_membership.html#override_dynamic_group IotThingGroupMembership#override_dynamic_group}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_group_membership#override_dynamic_group IotThingGroupMembership#override_dynamic_group}
   */
   readonly overrideDynamicGroup?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_group_membership.html#thing_group_name IotThingGroupMembership#thing_group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_group_membership#thing_group_name IotThingGroupMembership#thing_group_name}
   */
   readonly thingGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_group_membership.html#thing_name IotThingGroupMembership#thing_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_group_membership#thing_name IotThingGroupMembership#thing_name}
   */
   readonly thingName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_group_membership.html aws_iot_thing_group_membership}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_group_membership aws_iot_thing_group_membership}
 */
 export class IotThingGroupMembership extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class IotThingGroupMembership extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_group_membership.html aws_iot_thing_group_membership} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_group_membership aws_iot_thing_group_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

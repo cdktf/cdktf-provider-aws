@@ -8,49 +8,49 @@ import * as cdktf from 'cdktf';
 */
 export interface SagemakerWorkteamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html#description SagemakerWorkteam#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam#description SagemakerWorkteam#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html#tags SagemakerWorkteam#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam#tags SagemakerWorkteam#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html#tags_all SagemakerWorkteam#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam#tags_all SagemakerWorkteam#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html#workforce_name SagemakerWorkteam#workforce_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam#workforce_name SagemakerWorkteam#workforce_name}
   */
   readonly workforceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html#workteam_name SagemakerWorkteam#workteam_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam#workteam_name SagemakerWorkteam#workteam_name}
   */
   readonly workteamName: string;
   /**
   * member_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html#member_definition SagemakerWorkteam#member_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam#member_definition SagemakerWorkteam#member_definition}
   */
   readonly memberDefinition: SagemakerWorkteamMemberDefinition[];
   /**
   * notification_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html#notification_configuration SagemakerWorkteam#notification_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam#notification_configuration SagemakerWorkteam#notification_configuration}
   */
   readonly notificationConfiguration?: SagemakerWorkteamNotificationConfiguration;
 }
 export interface SagemakerWorkteamMemberDefinitionCognitoMemberDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html#client_id SagemakerWorkteam#client_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam#client_id SagemakerWorkteam#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html#user_group SagemakerWorkteam#user_group}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam#user_group SagemakerWorkteam#user_group}
   */
   readonly userGroup: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html#user_pool SagemakerWorkteam#user_pool}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam#user_pool SagemakerWorkteam#user_pool}
   */
   readonly userPool: string;
 }
@@ -82,15 +82,15 @@ export class SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputRefer
   public get internalValue(): SagemakerWorkteamMemberDefinitionCognitoMemberDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clientId) {
+    if (this._clientId !== undefined) {
       hasAnyValues = true;
       internalValueResult.clientId = this._clientId;
     }
-    if (this._userGroup) {
+    if (this._userGroup !== undefined) {
       hasAnyValues = true;
       internalValueResult.userGroup = this._userGroup;
     }
-    if (this._userPool) {
+    if (this._userPool !== undefined) {
       hasAnyValues = true;
       internalValueResult.userPool = this._userPool;
     }
@@ -153,7 +153,7 @@ export class SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputRefer
 }
 export interface SagemakerWorkteamMemberDefinitionOidcMemberDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html#groups SagemakerWorkteam#groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam#groups SagemakerWorkteam#groups}
   */
   readonly groups: string[];
 }
@@ -183,7 +183,7 @@ export class SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReferenc
   public get internalValue(): SagemakerWorkteamMemberDefinitionOidcMemberDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._groups) {
+    if (this._groups !== undefined) {
       hasAnyValues = true;
       internalValueResult.groups = this._groups;
     }
@@ -218,13 +218,13 @@ export interface SagemakerWorkteamMemberDefinition {
   /**
   * cognito_member_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html#cognito_member_definition SagemakerWorkteam#cognito_member_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam#cognito_member_definition SagemakerWorkteam#cognito_member_definition}
   */
   readonly cognitoMemberDefinition?: SagemakerWorkteamMemberDefinitionCognitoMemberDefinition;
   /**
   * oidc_member_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html#oidc_member_definition SagemakerWorkteam#oidc_member_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam#oidc_member_definition SagemakerWorkteam#oidc_member_definition}
   */
   readonly oidcMemberDefinition?: SagemakerWorkteamMemberDefinitionOidcMemberDefinition;
 }
@@ -242,7 +242,7 @@ export function sagemakerWorkteamMemberDefinitionToTerraform(struct?: SagemakerW
 
 export interface SagemakerWorkteamNotificationConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html#notification_topic_arn SagemakerWorkteam#notification_topic_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam#notification_topic_arn SagemakerWorkteam#notification_topic_arn}
   */
   readonly notificationTopicArn?: string;
 }
@@ -272,7 +272,7 @@ export class SagemakerWorkteamNotificationConfigurationOutputReference extends c
   public get internalValue(): SagemakerWorkteamNotificationConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._notificationTopicArn) {
+    if (this._notificationTopicArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.notificationTopicArn = this._notificationTopicArn;
     }
@@ -308,7 +308,7 @@ export class SagemakerWorkteamNotificationConfigurationOutputReference extends c
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html aws_sagemaker_workteam}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam aws_sagemaker_workteam}
 */
 export class SagemakerWorkteam extends cdktf.TerraformResource {
 
@@ -322,7 +322,7 @@ export class SagemakerWorkteam extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam.html aws_sagemaker_workteam} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workteam aws_sagemaker_workteam} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

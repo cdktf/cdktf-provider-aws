@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsDxLocationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/dx_location.html#location_code DataAwsDxLocation#location_code}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/dx_location#location_code DataAwsDxLocation#location_code}
   */
   readonly locationCode: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/dx_location.html aws_dx_location}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/dx_location aws_dx_location}
 */
 export class DataAwsDxLocation extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsDxLocation extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/dx_location.html aws_dx_location} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/dx_location aws_dx_location} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

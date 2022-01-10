@@ -8,49 +8,49 @@ import * as cdktf from 'cdktf';
 */
 export interface S3AccessPointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#account_id S3AccessPoint#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point#account_id S3AccessPoint#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#bucket S3AccessPoint#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point#bucket S3AccessPoint#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#name S3AccessPoint#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point#name S3AccessPoint#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#policy S3AccessPoint#policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point#policy S3AccessPoint#policy}
   */
   readonly policy?: string;
   /**
   * public_access_block_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#public_access_block_configuration S3AccessPoint#public_access_block_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point#public_access_block_configuration S3AccessPoint#public_access_block_configuration}
   */
   readonly publicAccessBlockConfiguration?: S3AccessPointPublicAccessBlockConfiguration;
   /**
   * vpc_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#vpc_configuration S3AccessPoint#vpc_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point#vpc_configuration S3AccessPoint#vpc_configuration}
   */
   readonly vpcConfiguration?: S3AccessPointVpcConfiguration;
 }
 export interface S3AccessPointPublicAccessBlockConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#block_public_acls S3AccessPoint#block_public_acls}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point#block_public_acls S3AccessPoint#block_public_acls}
   */
   readonly blockPublicAcls?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#block_public_policy S3AccessPoint#block_public_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point#block_public_policy S3AccessPoint#block_public_policy}
   */
   readonly blockPublicPolicy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#ignore_public_acls S3AccessPoint#ignore_public_acls}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point#ignore_public_acls S3AccessPoint#ignore_public_acls}
   */
   readonly ignorePublicAcls?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#restrict_public_buckets S3AccessPoint#restrict_public_buckets}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point#restrict_public_buckets S3AccessPoint#restrict_public_buckets}
   */
   readonly restrictPublicBuckets?: boolean | cdktf.IResolvable;
 }
@@ -83,19 +83,19 @@ export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends 
   public get internalValue(): S3AccessPointPublicAccessBlockConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._blockPublicAcls) {
+    if (this._blockPublicAcls !== undefined) {
       hasAnyValues = true;
       internalValueResult.blockPublicAcls = this._blockPublicAcls;
     }
-    if (this._blockPublicPolicy) {
+    if (this._blockPublicPolicy !== undefined) {
       hasAnyValues = true;
       internalValueResult.blockPublicPolicy = this._blockPublicPolicy;
     }
-    if (this._ignorePublicAcls) {
+    if (this._ignorePublicAcls !== undefined) {
       hasAnyValues = true;
       internalValueResult.ignorePublicAcls = this._ignorePublicAcls;
     }
-    if (this._restrictPublicBuckets) {
+    if (this._restrictPublicBuckets !== undefined) {
       hasAnyValues = true;
       internalValueResult.restrictPublicBuckets = this._restrictPublicBuckets;
     }
@@ -185,7 +185,7 @@ export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends 
 }
 export interface S3AccessPointVpcConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#vpc_id S3AccessPoint#vpc_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point#vpc_id S3AccessPoint#vpc_id}
   */
   readonly vpcId: string;
 }
@@ -215,7 +215,7 @@ export class S3AccessPointVpcConfigurationOutputReference extends cdktf.ComplexO
   public get internalValue(): S3AccessPointVpcConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._vpcId) {
+    if (this._vpcId !== undefined) {
       hasAnyValues = true;
       internalValueResult.vpcId = this._vpcId;
     }
@@ -248,7 +248,7 @@ export class S3AccessPointVpcConfigurationOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html aws_s3_access_point}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point aws_s3_access_point}
 */
 export class S3AccessPoint extends cdktf.TerraformResource {
 
@@ -262,7 +262,7 @@ export class S3AccessPoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html aws_s3_access_point} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point aws_s3_access_point} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

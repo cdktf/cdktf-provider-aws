@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface InspectorAssessmentTargetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector_assessment_target.html#name InspectorAssessmentTarget#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector_assessment_target#name InspectorAssessmentTarget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector_assessment_target.html#resource_group_arn InspectorAssessmentTarget#resource_group_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector_assessment_target#resource_group_arn InspectorAssessmentTarget#resource_group_arn}
   */
   readonly resourceGroupArn?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/inspector_assessment_target.html aws_inspector_assessment_target}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/inspector_assessment_target aws_inspector_assessment_target}
 */
 export class InspectorAssessmentTarget extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class InspectorAssessmentTarget extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/inspector_assessment_target.html aws_inspector_assessment_target} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/inspector_assessment_target aws_inspector_assessment_target} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

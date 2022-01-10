@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DxConnectionConfirmationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_connection_confirmation.html#connection_id DxConnectionConfirmation#connection_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_connection_confirmation#connection_id DxConnectionConfirmation#connection_id}
   */
   readonly connectionId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/dx_connection_confirmation.html aws_dx_connection_confirmation}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/dx_connection_confirmation aws_dx_connection_confirmation}
 */
 export class DxConnectionConfirmation extends cdktf.TerraformResource {
 
@@ -28,7 +28,7 @@ export class DxConnectionConfirmation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/dx_connection_confirmation.html aws_dx_connection_confirmation} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/dx_connection_confirmation aws_dx_connection_confirmation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

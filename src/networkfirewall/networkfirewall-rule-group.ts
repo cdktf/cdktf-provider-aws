@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 */
 export interface NetworkfirewallRuleGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#capacity NetworkfirewallRuleGroup#capacity}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#capacity NetworkfirewallRuleGroup#capacity}
   */
   readonly capacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#description NetworkfirewallRuleGroup#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#description NetworkfirewallRuleGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#name NetworkfirewallRuleGroup#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#name NetworkfirewallRuleGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#rules NetworkfirewallRuleGroup#rules}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#rules NetworkfirewallRuleGroup#rules}
   */
   readonly rules?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#tags NetworkfirewallRuleGroup#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#tags NetworkfirewallRuleGroup#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#tags_all NetworkfirewallRuleGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#tags_all NetworkfirewallRuleGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#type NetworkfirewallRuleGroup#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#type NetworkfirewallRuleGroup#type}
   */
   readonly type: string;
   /**
   * rule_group block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#rule_group NetworkfirewallRuleGroup#rule_group}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#rule_group NetworkfirewallRuleGroup#rule_group}
   */
   readonly ruleGroup?: NetworkfirewallRuleGroupRuleGroup;
 }
 export interface NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSet {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#definition NetworkfirewallRuleGroup#definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#definition NetworkfirewallRuleGroup#definition}
   */
   readonly definition: string[];
 }
@@ -74,7 +74,7 @@ export class NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSetOutputRefe
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSet | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._definition) {
+    if (this._definition !== undefined) {
       hasAnyValues = true;
       internalValueResult.definition = this._definition;
     }
@@ -107,13 +107,13 @@ export class NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSetOutputRefe
 }
 export interface NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSets {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#key NetworkfirewallRuleGroup#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#key NetworkfirewallRuleGroup#key}
   */
   readonly key: string;
   /**
   * ip_set block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#ip_set NetworkfirewallRuleGroup#ip_set}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#ip_set NetworkfirewallRuleGroup#ip_set}
   */
   readonly ipSet: NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSet;
 }
@@ -131,7 +131,7 @@ export function networkfirewallRuleGroupRuleGroupRuleVariablesIpSetsToTerraform(
 
 export interface NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSet {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#definition NetworkfirewallRuleGroup#definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#definition NetworkfirewallRuleGroup#definition}
   */
   readonly definition: string[];
 }
@@ -161,7 +161,7 @@ export class NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutput
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSet | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._definition) {
+    if (this._definition !== undefined) {
       hasAnyValues = true;
       internalValueResult.definition = this._definition;
     }
@@ -194,13 +194,13 @@ export class NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutput
 }
 export interface NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSets {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#key NetworkfirewallRuleGroup#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#key NetworkfirewallRuleGroup#key}
   */
   readonly key: string;
   /**
   * port_set block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#port_set NetworkfirewallRuleGroup#port_set}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#port_set NetworkfirewallRuleGroup#port_set}
   */
   readonly portSet: NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSet;
 }
@@ -220,13 +220,13 @@ export interface NetworkfirewallRuleGroupRuleGroupRuleVariables {
   /**
   * ip_sets block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#ip_sets NetworkfirewallRuleGroup#ip_sets}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#ip_sets NetworkfirewallRuleGroup#ip_sets}
   */
   readonly ipSets?: NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSets[];
   /**
   * port_sets block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#port_sets NetworkfirewallRuleGroup#port_sets}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#port_sets NetworkfirewallRuleGroup#port_sets}
   */
   readonly portSets?: NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSets[];
 }
@@ -257,11 +257,11 @@ export class NetworkfirewallRuleGroupRuleGroupRuleVariablesOutputReference exten
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRuleVariables | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._ipSets) {
+    if (this._ipSets !== undefined) {
       hasAnyValues = true;
       internalValueResult.ipSets = this._ipSets;
     }
-    if (this._portSets) {
+    if (this._portSets !== undefined) {
       hasAnyValues = true;
       internalValueResult.portSets = this._portSets;
     }
@@ -317,15 +317,15 @@ export class NetworkfirewallRuleGroupRuleGroupRuleVariablesOutputReference exten
 }
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#generated_rules_type NetworkfirewallRuleGroup#generated_rules_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#generated_rules_type NetworkfirewallRuleGroup#generated_rules_type}
   */
   readonly generatedRulesType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#target_types NetworkfirewallRuleGroup#target_types}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#target_types NetworkfirewallRuleGroup#target_types}
   */
   readonly targetTypes: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#targets NetworkfirewallRuleGroup#targets}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#targets NetworkfirewallRuleGroup#targets}
   */
   readonly targets: string[];
 }
@@ -357,15 +357,15 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListOutputRe
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._generatedRulesType) {
+    if (this._generatedRulesType !== undefined) {
       hasAnyValues = true;
       internalValueResult.generatedRulesType = this._generatedRulesType;
     }
-    if (this._targetTypes) {
+    if (this._targetTypes !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetTypes = this._targetTypes;
     }
-    if (this._targets) {
+    if (this._targets !== undefined) {
       hasAnyValues = true;
       internalValueResult.targets = this._targets;
     }
@@ -428,27 +428,27 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListOutputRe
 }
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeader {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#destination NetworkfirewallRuleGroup#destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#destination NetworkfirewallRuleGroup#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#destination_port NetworkfirewallRuleGroup#destination_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#destination_port NetworkfirewallRuleGroup#destination_port}
   */
   readonly destinationPort: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#direction NetworkfirewallRuleGroup#direction}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#direction NetworkfirewallRuleGroup#direction}
   */
   readonly direction: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#protocol NetworkfirewallRuleGroup#protocol}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#protocol NetworkfirewallRuleGroup#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#source NetworkfirewallRuleGroup#source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#source NetworkfirewallRuleGroup#source}
   */
   readonly source: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#source_port NetworkfirewallRuleGroup#source_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#source_port NetworkfirewallRuleGroup#source_port}
   */
   readonly sourcePort: string;
 }
@@ -483,27 +483,27 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderOutpu
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeader | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._destination) {
+    if (this._destination !== undefined) {
       hasAnyValues = true;
       internalValueResult.destination = this._destination;
     }
-    if (this._destinationPort) {
+    if (this._destinationPort !== undefined) {
       hasAnyValues = true;
       internalValueResult.destinationPort = this._destinationPort;
     }
-    if (this._direction) {
+    if (this._direction !== undefined) {
       hasAnyValues = true;
       internalValueResult.direction = this._direction;
     }
-    if (this._protocol) {
+    if (this._protocol !== undefined) {
       hasAnyValues = true;
       internalValueResult.protocol = this._protocol;
     }
-    if (this._source) {
+    if (this._source !== undefined) {
       hasAnyValues = true;
       internalValueResult.source = this._source;
     }
-    if (this._sourcePort) {
+    if (this._sourcePort !== undefined) {
       hasAnyValues = true;
       internalValueResult.sourcePort = this._sourcePort;
     }
@@ -611,11 +611,11 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderOutpu
 }
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOption {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#keyword NetworkfirewallRuleGroup#keyword}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#keyword NetworkfirewallRuleGroup#keyword}
   */
   readonly keyword: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#settings NetworkfirewallRuleGroup#settings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#settings NetworkfirewallRuleGroup#settings}
   */
   readonly settings?: string[];
 }
@@ -633,19 +633,19 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOpti
 
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRule {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#action NetworkfirewallRuleGroup#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#action NetworkfirewallRuleGroup#action}
   */
   readonly action: string;
   /**
   * header block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#header NetworkfirewallRuleGroup#header}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#header NetworkfirewallRuleGroup#header}
   */
   readonly header: NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeader;
   /**
   * rule_option block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#rule_option NetworkfirewallRuleGroup#rule_option}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#rule_option NetworkfirewallRuleGroup#rule_option}
   */
   readonly ruleOption: NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOption[];
 }
@@ -664,7 +664,7 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleToTerraf
 
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionDimension {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#value NetworkfirewallRuleGroup#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#value NetworkfirewallRuleGroup#value}
   */
   readonly value: string;
 }
@@ -683,7 +683,7 @@ export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCu
   /**
   * dimension block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#dimension NetworkfirewallRuleGroup#dimension}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#dimension NetworkfirewallRuleGroup#dimension}
   */
   readonly dimension: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionDimension[];
 }
@@ -713,7 +713,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dimension) {
+    if (this._dimension !== undefined) {
       hasAnyValues = true;
       internalValueResult.dimension = this._dimension;
     }
@@ -749,7 +749,7 @@ export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCu
   /**
   * publish_metric_action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#publish_metric_action NetworkfirewallRuleGroup#publish_metric_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#publish_metric_action NetworkfirewallRuleGroup#publish_metric_action}
   */
   readonly publishMetricAction: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricAction;
 }
@@ -779,7 +779,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._publishMetricAction?.internalValue) {
+    if (this._publishMetricAction?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.publishMetricAction = this._publishMetricAction?.internalValue;
     }
@@ -812,13 +812,13 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
 }
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#action_name NetworkfirewallRuleGroup#action_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#action_name NetworkfirewallRuleGroup#action_name}
   */
   readonly actionName: string;
   /**
   * action_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#action_definition NetworkfirewallRuleGroup#action_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#action_definition NetworkfirewallRuleGroup#action_definition}
   */
   readonly actionDefinition: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition;
 }
@@ -836,7 +836,7 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
 
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestination {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#address_definition NetworkfirewallRuleGroup#address_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#address_definition NetworkfirewallRuleGroup#address_definition}
   */
   readonly addressDefinition: string;
 }
@@ -853,11 +853,11 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
 
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#from_port NetworkfirewallRuleGroup#from_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#from_port NetworkfirewallRuleGroup#from_port}
   */
   readonly fromPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#to_port NetworkfirewallRuleGroup#to_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#to_port NetworkfirewallRuleGroup#to_port}
   */
   readonly toPort?: number;
 }
@@ -875,7 +875,7 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
 
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSource {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#address_definition NetworkfirewallRuleGroup#address_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#address_definition NetworkfirewallRuleGroup#address_definition}
   */
   readonly addressDefinition: string;
 }
@@ -892,11 +892,11 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
 
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#from_port NetworkfirewallRuleGroup#from_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#from_port NetworkfirewallRuleGroup#from_port}
   */
   readonly fromPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#to_port NetworkfirewallRuleGroup#to_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#to_port NetworkfirewallRuleGroup#to_port}
   */
   readonly toPort?: number;
 }
@@ -914,11 +914,11 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
 
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#flags NetworkfirewallRuleGroup#flags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#flags NetworkfirewallRuleGroup#flags}
   */
   readonly flags: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#masks NetworkfirewallRuleGroup#masks}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#masks NetworkfirewallRuleGroup#masks}
   */
   readonly masks?: string[];
 }
@@ -936,37 +936,37 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
 
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#protocols NetworkfirewallRuleGroup#protocols}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#protocols NetworkfirewallRuleGroup#protocols}
   */
   readonly protocols?: number[];
   /**
   * destination block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#destination NetworkfirewallRuleGroup#destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#destination NetworkfirewallRuleGroup#destination}
   */
   readonly destination?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestination[];
   /**
   * destination_port block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#destination_port NetworkfirewallRuleGroup#destination_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#destination_port NetworkfirewallRuleGroup#destination_port}
   */
   readonly destinationPort?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort[];
   /**
   * source block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#source NetworkfirewallRuleGroup#source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#source NetworkfirewallRuleGroup#source}
   */
   readonly source?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSource[];
   /**
   * source_port block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#source_port NetworkfirewallRuleGroup#source_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#source_port NetworkfirewallRuleGroup#source_port}
   */
   readonly sourcePort?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort[];
   /**
   * tcp_flag block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#tcp_flag NetworkfirewallRuleGroup#tcp_flag}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#tcp_flag NetworkfirewallRuleGroup#tcp_flag}
   */
   readonly tcpFlag?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag[];
 }
@@ -1001,27 +1001,27 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._protocols) {
+    if (this._protocols !== undefined) {
       hasAnyValues = true;
       internalValueResult.protocols = this._protocols;
     }
-    if (this._destination) {
+    if (this._destination !== undefined) {
       hasAnyValues = true;
       internalValueResult.destination = this._destination;
     }
-    if (this._destinationPort) {
+    if (this._destinationPort !== undefined) {
       hasAnyValues = true;
       internalValueResult.destinationPort = this._destinationPort;
     }
-    if (this._source) {
+    if (this._source !== undefined) {
       hasAnyValues = true;
       internalValueResult.source = this._source;
     }
-    if (this._sourcePort) {
+    if (this._sourcePort !== undefined) {
       hasAnyValues = true;
       internalValueResult.sourcePort = this._sourcePort;
     }
-    if (this._tcpFlag) {
+    if (this._tcpFlag !== undefined) {
       hasAnyValues = true;
       internalValueResult.tcpFlag = this._tcpFlag;
     }
@@ -1153,13 +1153,13 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
 }
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#actions NetworkfirewallRuleGroup#actions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#actions NetworkfirewallRuleGroup#actions}
   */
   readonly actions: string[];
   /**
   * match_attributes block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#match_attributes NetworkfirewallRuleGroup#match_attributes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#match_attributes NetworkfirewallRuleGroup#match_attributes}
   */
   readonly matchAttributes: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes;
 }
@@ -1190,11 +1190,11 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._actions) {
+    if (this._actions !== undefined) {
       hasAnyValues = true;
       internalValueResult.actions = this._actions;
     }
-    if (this._matchAttributes?.internalValue) {
+    if (this._matchAttributes?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.matchAttributes = this._matchAttributes?.internalValue;
     }
@@ -1242,13 +1242,13 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
 }
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#priority NetworkfirewallRuleGroup#priority}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#priority NetworkfirewallRuleGroup#priority}
   */
   readonly priority: number;
   /**
   * rule_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#rule_definition NetworkfirewallRuleGroup#rule_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#rule_definition NetworkfirewallRuleGroup#rule_definition}
   */
   readonly ruleDefinition: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinition;
 }
@@ -1268,13 +1268,13 @@ export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCu
   /**
   * custom_action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#custom_action NetworkfirewallRuleGroup#custom_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#custom_action NetworkfirewallRuleGroup#custom_action}
   */
   readonly customAction?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction[];
   /**
   * stateless_rule block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#stateless_rule NetworkfirewallRuleGroup#stateless_rule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#stateless_rule NetworkfirewallRuleGroup#stateless_rule}
   */
   readonly statelessRule: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule[];
 }
@@ -1305,11 +1305,11 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._customAction) {
+    if (this._customAction !== undefined) {
       hasAnyValues = true;
       internalValueResult.customAction = this._customAction;
     }
-    if (this._statelessRule) {
+    if (this._statelessRule !== undefined) {
       hasAnyValues = true;
       internalValueResult.statelessRule = this._statelessRule;
     }
@@ -1362,25 +1362,25 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
 }
 export interface NetworkfirewallRuleGroupRuleGroupRulesSource {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#rules_string NetworkfirewallRuleGroup#rules_string}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#rules_string NetworkfirewallRuleGroup#rules_string}
   */
   readonly rulesString?: string;
   /**
   * rules_source_list block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#rules_source_list NetworkfirewallRuleGroup#rules_source_list}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#rules_source_list NetworkfirewallRuleGroup#rules_source_list}
   */
   readonly rulesSourceList?: NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList;
   /**
   * stateful_rule block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#stateful_rule NetworkfirewallRuleGroup#stateful_rule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#stateful_rule NetworkfirewallRuleGroup#stateful_rule}
   */
   readonly statefulRule?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRule[];
   /**
   * stateless_rules_and_custom_actions block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#stateless_rules_and_custom_actions NetworkfirewallRuleGroup#stateless_rules_and_custom_actions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#stateless_rules_and_custom_actions NetworkfirewallRuleGroup#stateless_rules_and_custom_actions}
   */
   readonly statelessRulesAndCustomActions?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions;
 }
@@ -1413,19 +1413,19 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference extends
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupRulesSource | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._rulesString) {
+    if (this._rulesString !== undefined) {
       hasAnyValues = true;
       internalValueResult.rulesString = this._rulesString;
     }
-    if (this._rulesSourceList?.internalValue) {
+    if (this._rulesSourceList?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.rulesSourceList = this._rulesSourceList?.internalValue;
     }
-    if (this._statefulRule) {
+    if (this._statefulRule !== undefined) {
       hasAnyValues = true;
       internalValueResult.statefulRule = this._statefulRule;
     }
-    if (this._statelessRulesAndCustomActions?.internalValue) {
+    if (this._statelessRulesAndCustomActions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.statelessRulesAndCustomActions = this._statelessRulesAndCustomActions?.internalValue;
     }
@@ -1516,7 +1516,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference extends
 }
 export interface NetworkfirewallRuleGroupRuleGroupStatefulRuleOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#rule_order NetworkfirewallRuleGroup#rule_order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#rule_order NetworkfirewallRuleGroup#rule_order}
   */
   readonly ruleOrder: string;
 }
@@ -1546,7 +1546,7 @@ export class NetworkfirewallRuleGroupRuleGroupStatefulRuleOptionsOutputReference
   public get internalValue(): NetworkfirewallRuleGroupRuleGroupStatefulRuleOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._ruleOrder) {
+    if (this._ruleOrder !== undefined) {
       hasAnyValues = true;
       internalValueResult.ruleOrder = this._ruleOrder;
     }
@@ -1581,19 +1581,19 @@ export interface NetworkfirewallRuleGroupRuleGroup {
   /**
   * rule_variables block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#rule_variables NetworkfirewallRuleGroup#rule_variables}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#rule_variables NetworkfirewallRuleGroup#rule_variables}
   */
   readonly ruleVariables?: NetworkfirewallRuleGroupRuleGroupRuleVariables;
   /**
   * rules_source block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#rules_source NetworkfirewallRuleGroup#rules_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#rules_source NetworkfirewallRuleGroup#rules_source}
   */
   readonly rulesSource: NetworkfirewallRuleGroupRuleGroupRulesSource;
   /**
   * stateful_rule_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html#stateful_rule_options NetworkfirewallRuleGroup#stateful_rule_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#stateful_rule_options NetworkfirewallRuleGroup#stateful_rule_options}
   */
   readonly statefulRuleOptions?: NetworkfirewallRuleGroupRuleGroupStatefulRuleOptions;
 }
@@ -1625,15 +1625,15 @@ export class NetworkfirewallRuleGroupRuleGroupOutputReference extends cdktf.Comp
   public get internalValue(): NetworkfirewallRuleGroupRuleGroup | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._ruleVariables?.internalValue) {
+    if (this._ruleVariables?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.ruleVariables = this._ruleVariables?.internalValue;
     }
-    if (this._rulesSource?.internalValue) {
+    if (this._rulesSource?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.rulesSource = this._rulesSource?.internalValue;
     }
-    if (this._statefulRuleOptions?.internalValue) {
+    if (this._statefulRuleOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.statefulRuleOptions = this._statefulRuleOptions?.internalValue;
     }
@@ -1702,7 +1702,7 @@ export class NetworkfirewallRuleGroupRuleGroupOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html aws_networkfirewall_rule_group}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group aws_networkfirewall_rule_group}
 */
 export class NetworkfirewallRuleGroup extends cdktf.TerraformResource {
 
@@ -1716,7 +1716,7 @@ export class NetworkfirewallRuleGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group.html aws_networkfirewall_rule_group} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group aws_networkfirewall_rule_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

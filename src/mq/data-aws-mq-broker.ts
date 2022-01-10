@@ -8,15 +8,15 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsMqBrokerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mq_broker.html#broker_id DataAwsMqBroker#broker_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mq_broker#broker_id DataAwsMqBroker#broker_id}
   */
   readonly brokerId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mq_broker.html#broker_name DataAwsMqBroker#broker_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mq_broker#broker_name DataAwsMqBroker#broker_name}
   */
   readonly brokerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mq_broker.html#tags DataAwsMqBroker#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mq_broker#tags DataAwsMqBroker#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
@@ -166,7 +166,7 @@ export class DataAwsMqBrokerUser extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/mq_broker.html aws_mq_broker}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/mq_broker aws_mq_broker}
 */
 export class DataAwsMqBroker extends cdktf.TerraformDataSource {
 
@@ -180,7 +180,7 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/mq_broker.html aws_mq_broker} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/mq_broker aws_mq_broker} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

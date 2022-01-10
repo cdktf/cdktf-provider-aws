@@ -8,19 +8,19 @@ import * as cdktf from 'cdktf';
 */
 export interface EfsBackupPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_backup_policy.html#file_system_id EfsBackupPolicy#file_system_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_backup_policy#file_system_id EfsBackupPolicy#file_system_id}
   */
   readonly fileSystemId: string;
   /**
   * backup_policy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_backup_policy.html#backup_policy EfsBackupPolicy#backup_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_backup_policy#backup_policy EfsBackupPolicy#backup_policy}
   */
   readonly backupPolicy: EfsBackupPolicyBackupPolicy;
 }
 export interface EfsBackupPolicyBackupPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_backup_policy.html#status EfsBackupPolicy#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_backup_policy#status EfsBackupPolicy#status}
   */
   readonly status: string;
 }
@@ -50,7 +50,7 @@ export class EfsBackupPolicyBackupPolicyOutputReference extends cdktf.ComplexObj
   public get internalValue(): EfsBackupPolicyBackupPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._status) {
+    if (this._status !== undefined) {
       hasAnyValues = true;
       internalValueResult.status = this._status;
     }
@@ -83,7 +83,7 @@ export class EfsBackupPolicyBackupPolicyOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/efs_backup_policy.html aws_efs_backup_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/efs_backup_policy aws_efs_backup_policy}
 */
 export class EfsBackupPolicy extends cdktf.TerraformResource {
 
@@ -97,7 +97,7 @@ export class EfsBackupPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/efs_backup_policy.html aws_efs_backup_policy} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/efs_backup_policy aws_efs_backup_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

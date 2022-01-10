@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface ApiGatewayDocumentationVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_version.html#description ApiGatewayDocumentationVersion#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_version#description ApiGatewayDocumentationVersion#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_version.html#rest_api_id ApiGatewayDocumentationVersion#rest_api_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_version#rest_api_id ApiGatewayDocumentationVersion#rest_api_id}
   */
   readonly restApiId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_version.html#version ApiGatewayDocumentationVersion#version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_version#version ApiGatewayDocumentationVersion#version}
   */
   readonly version: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_version.html aws_api_gateway_documentation_version}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_version aws_api_gateway_documentation_version}
 */
 export class ApiGatewayDocumentationVersion extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class ApiGatewayDocumentationVersion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_version.html aws_api_gateway_documentation_version} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_version aws_api_gateway_documentation_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

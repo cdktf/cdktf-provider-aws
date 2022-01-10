@@ -8,75 +8,75 @@ import * as cdktf from 'cdktf';
 */
 export interface Ec2FleetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#excess_capacity_termination_policy Ec2Fleet#excess_capacity_termination_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#excess_capacity_termination_policy Ec2Fleet#excess_capacity_termination_policy}
   */
   readonly excessCapacityTerminationPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#replace_unhealthy_instances Ec2Fleet#replace_unhealthy_instances}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#replace_unhealthy_instances Ec2Fleet#replace_unhealthy_instances}
   */
   readonly replaceUnhealthyInstances?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#tags Ec2Fleet#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#tags Ec2Fleet#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#tags_all Ec2Fleet#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#tags_all Ec2Fleet#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#terminate_instances Ec2Fleet#terminate_instances}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#terminate_instances Ec2Fleet#terminate_instances}
   */
   readonly terminateInstances?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#terminate_instances_with_expiration Ec2Fleet#terminate_instances_with_expiration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#terminate_instances_with_expiration Ec2Fleet#terminate_instances_with_expiration}
   */
   readonly terminateInstancesWithExpiration?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#type Ec2Fleet#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#type Ec2Fleet#type}
   */
   readonly type?: string;
   /**
   * launch_template_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#launch_template_config Ec2Fleet#launch_template_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#launch_template_config Ec2Fleet#launch_template_config}
   */
   readonly launchTemplateConfig: Ec2FleetLaunchTemplateConfig;
   /**
   * on_demand_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#on_demand_options Ec2Fleet#on_demand_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#on_demand_options Ec2Fleet#on_demand_options}
   */
   readonly onDemandOptions?: Ec2FleetOnDemandOptions;
   /**
   * spot_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#spot_options Ec2Fleet#spot_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#spot_options Ec2Fleet#spot_options}
   */
   readonly spotOptions?: Ec2FleetSpotOptions;
   /**
   * target_capacity_specification block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#target_capacity_specification Ec2Fleet#target_capacity_specification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#target_capacity_specification Ec2Fleet#target_capacity_specification}
   */
   readonly targetCapacitySpecification: Ec2FleetTargetCapacitySpecification;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#timeouts Ec2Fleet#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#timeouts Ec2Fleet#timeouts}
   */
   readonly timeouts?: Ec2FleetTimeouts;
 }
 export interface Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#launch_template_id Ec2Fleet#launch_template_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#launch_template_id Ec2Fleet#launch_template_id}
   */
   readonly launchTemplateId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#launch_template_name Ec2Fleet#launch_template_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#launch_template_name Ec2Fleet#launch_template_name}
   */
   readonly launchTemplateName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#version Ec2Fleet#version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#version Ec2Fleet#version}
   */
   readonly version: string;
 }
@@ -108,15 +108,15 @@ export class Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputRefere
   public get internalValue(): Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._launchTemplateId) {
+    if (this._launchTemplateId !== undefined) {
       hasAnyValues = true;
       internalValueResult.launchTemplateId = this._launchTemplateId;
     }
-    if (this._launchTemplateName) {
+    if (this._launchTemplateName !== undefined) {
       hasAnyValues = true;
       internalValueResult.launchTemplateName = this._launchTemplateName;
     }
-    if (this._version) {
+    if (this._version !== undefined) {
       hasAnyValues = true;
       internalValueResult.version = this._version;
     }
@@ -185,27 +185,27 @@ export class Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputRefere
 }
 export interface Ec2FleetLaunchTemplateConfigOverride {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#availability_zone Ec2Fleet#availability_zone}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#availability_zone Ec2Fleet#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#instance_type Ec2Fleet#instance_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#instance_type Ec2Fleet#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#max_price Ec2Fleet#max_price}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#max_price Ec2Fleet#max_price}
   */
   readonly maxPrice?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#priority Ec2Fleet#priority}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#priority Ec2Fleet#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#subnet_id Ec2Fleet#subnet_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#subnet_id Ec2Fleet#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#weighted_capacity Ec2Fleet#weighted_capacity}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#weighted_capacity Ec2Fleet#weighted_capacity}
   */
   readonly weightedCapacity?: number;
 }
@@ -229,13 +229,13 @@ export interface Ec2FleetLaunchTemplateConfig {
   /**
   * launch_template_specification block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#launch_template_specification Ec2Fleet#launch_template_specification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#launch_template_specification Ec2Fleet#launch_template_specification}
   */
   readonly launchTemplateSpecification: Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification;
   /**
   * override block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#override Ec2Fleet#override}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#override Ec2Fleet#override}
   */
   readonly override?: Ec2FleetLaunchTemplateConfigOverride[];
 }
@@ -266,11 +266,11 @@ export class Ec2FleetLaunchTemplateConfigOutputReference extends cdktf.ComplexOb
   public get internalValue(): Ec2FleetLaunchTemplateConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._launchTemplateSpecification?.internalValue) {
+    if (this._launchTemplateSpecification?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.launchTemplateSpecification = this._launchTemplateSpecification?.internalValue;
     }
-    if (this._override) {
+    if (this._override !== undefined) {
       hasAnyValues = true;
       internalValueResult.override = this._override;
     }
@@ -322,7 +322,7 @@ export class Ec2FleetLaunchTemplateConfigOutputReference extends cdktf.ComplexOb
 }
 export interface Ec2FleetOnDemandOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#allocation_strategy Ec2Fleet#allocation_strategy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#allocation_strategy Ec2Fleet#allocation_strategy}
   */
   readonly allocationStrategy?: string;
 }
@@ -352,7 +352,7 @@ export class Ec2FleetOnDemandOptionsOutputReference extends cdktf.ComplexObject 
   public get internalValue(): Ec2FleetOnDemandOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allocationStrategy) {
+    if (this._allocationStrategy !== undefined) {
       hasAnyValues = true;
       internalValueResult.allocationStrategy = this._allocationStrategy;
     }
@@ -388,7 +388,7 @@ export class Ec2FleetOnDemandOptionsOutputReference extends cdktf.ComplexObject 
 }
 export interface Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#replacement_strategy Ec2Fleet#replacement_strategy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#replacement_strategy Ec2Fleet#replacement_strategy}
   */
   readonly replacementStrategy?: string;
 }
@@ -418,7 +418,7 @@ export class Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputRefe
   public get internalValue(): Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._replacementStrategy) {
+    if (this._replacementStrategy !== undefined) {
       hasAnyValues = true;
       internalValueResult.replacementStrategy = this._replacementStrategy;
     }
@@ -456,7 +456,7 @@ export interface Ec2FleetSpotOptionsMaintenanceStrategies {
   /**
   * capacity_rebalance block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#capacity_rebalance Ec2Fleet#capacity_rebalance}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#capacity_rebalance Ec2Fleet#capacity_rebalance}
   */
   readonly capacityRebalance?: Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance;
 }
@@ -486,7 +486,7 @@ export class Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference extends cdk
   public get internalValue(): Ec2FleetSpotOptionsMaintenanceStrategies | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._capacityRebalance?.internalValue) {
+    if (this._capacityRebalance?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.capacityRebalance = this._capacityRebalance?.internalValue;
     }
@@ -522,21 +522,21 @@ export class Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference extends cdk
 }
 export interface Ec2FleetSpotOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#allocation_strategy Ec2Fleet#allocation_strategy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#allocation_strategy Ec2Fleet#allocation_strategy}
   */
   readonly allocationStrategy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#instance_interruption_behavior Ec2Fleet#instance_interruption_behavior}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#instance_interruption_behavior Ec2Fleet#instance_interruption_behavior}
   */
   readonly instanceInterruptionBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#instance_pools_to_use_count Ec2Fleet#instance_pools_to_use_count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#instance_pools_to_use_count Ec2Fleet#instance_pools_to_use_count}
   */
   readonly instancePoolsToUseCount?: number;
   /**
   * maintenance_strategies block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#maintenance_strategies Ec2Fleet#maintenance_strategies}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#maintenance_strategies Ec2Fleet#maintenance_strategies}
   */
   readonly maintenanceStrategies?: Ec2FleetSpotOptionsMaintenanceStrategies;
 }
@@ -569,19 +569,19 @@ export class Ec2FleetSpotOptionsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): Ec2FleetSpotOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allocationStrategy) {
+    if (this._allocationStrategy !== undefined) {
       hasAnyValues = true;
       internalValueResult.allocationStrategy = this._allocationStrategy;
     }
-    if (this._instanceInterruptionBehavior) {
+    if (this._instanceInterruptionBehavior !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceInterruptionBehavior = this._instanceInterruptionBehavior;
     }
-    if (this._instancePoolsToUseCount) {
+    if (this._instancePoolsToUseCount !== undefined) {
       hasAnyValues = true;
       internalValueResult.instancePoolsToUseCount = this._instancePoolsToUseCount;
     }
-    if (this._maintenanceStrategies?.internalValue) {
+    if (this._maintenanceStrategies?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.maintenanceStrategies = this._maintenanceStrategies?.internalValue;
     }
@@ -671,19 +671,19 @@ export class Ec2FleetSpotOptionsOutputReference extends cdktf.ComplexObject {
 }
 export interface Ec2FleetTargetCapacitySpecification {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#default_target_capacity_type Ec2Fleet#default_target_capacity_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#default_target_capacity_type Ec2Fleet#default_target_capacity_type}
   */
   readonly defaultTargetCapacityType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#on_demand_target_capacity Ec2Fleet#on_demand_target_capacity}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#on_demand_target_capacity Ec2Fleet#on_demand_target_capacity}
   */
   readonly onDemandTargetCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#spot_target_capacity Ec2Fleet#spot_target_capacity}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#spot_target_capacity Ec2Fleet#spot_target_capacity}
   */
   readonly spotTargetCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#total_target_capacity Ec2Fleet#total_target_capacity}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#total_target_capacity Ec2Fleet#total_target_capacity}
   */
   readonly totalTargetCapacity: number;
 }
@@ -716,19 +716,19 @@ export class Ec2FleetTargetCapacitySpecificationOutputReference extends cdktf.Co
   public get internalValue(): Ec2FleetTargetCapacitySpecification | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._defaultTargetCapacityType) {
+    if (this._defaultTargetCapacityType !== undefined) {
       hasAnyValues = true;
       internalValueResult.defaultTargetCapacityType = this._defaultTargetCapacityType;
     }
-    if (this._onDemandTargetCapacity) {
+    if (this._onDemandTargetCapacity !== undefined) {
       hasAnyValues = true;
       internalValueResult.onDemandTargetCapacity = this._onDemandTargetCapacity;
     }
-    if (this._spotTargetCapacity) {
+    if (this._spotTargetCapacity !== undefined) {
       hasAnyValues = true;
       internalValueResult.spotTargetCapacity = this._spotTargetCapacity;
     }
-    if (this._totalTargetCapacity) {
+    if (this._totalTargetCapacity !== undefined) {
       hasAnyValues = true;
       internalValueResult.totalTargetCapacity = this._totalTargetCapacity;
     }
@@ -812,15 +812,15 @@ export class Ec2FleetTargetCapacitySpecificationOutputReference extends cdktf.Co
 }
 export interface Ec2FleetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#create Ec2Fleet#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#create Ec2Fleet#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#delete Ec2Fleet#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#delete Ec2Fleet#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#update Ec2Fleet#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#update Ec2Fleet#update}
   */
   readonly update?: string;
 }
@@ -852,15 +852,15 @@ export class Ec2FleetTimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): Ec2FleetTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
@@ -932,7 +932,7 @@ export class Ec2FleetTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html aws_ec2_fleet}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet aws_ec2_fleet}
 */
 export class Ec2Fleet extends cdktf.TerraformResource {
 
@@ -946,7 +946,7 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html aws_ec2_fleet} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet aws_ec2_fleet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

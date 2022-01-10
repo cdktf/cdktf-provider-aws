@@ -8,77 +8,77 @@ import * as cdktf from 'cdktf';
 */
 export interface FsxOpenzfsVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#copy_tags_to_snapshots FsxOpenzfsVolume#copy_tags_to_snapshots}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#copy_tags_to_snapshots FsxOpenzfsVolume#copy_tags_to_snapshots}
   */
   readonly copyTagsToSnapshots?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#data_compression_type FsxOpenzfsVolume#data_compression_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#data_compression_type FsxOpenzfsVolume#data_compression_type}
   */
   readonly dataCompressionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#name FsxOpenzfsVolume#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#name FsxOpenzfsVolume#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#parent_volume_id FsxOpenzfsVolume#parent_volume_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#parent_volume_id FsxOpenzfsVolume#parent_volume_id}
   */
   readonly parentVolumeId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#read_only FsxOpenzfsVolume#read_only}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#read_only FsxOpenzfsVolume#read_only}
   */
   readonly readOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#storage_capacity_quota_gib FsxOpenzfsVolume#storage_capacity_quota_gib}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#storage_capacity_quota_gib FsxOpenzfsVolume#storage_capacity_quota_gib}
   */
   readonly storageCapacityQuotaGib?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#storage_capacity_reservation_gib FsxOpenzfsVolume#storage_capacity_reservation_gib}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#storage_capacity_reservation_gib FsxOpenzfsVolume#storage_capacity_reservation_gib}
   */
   readonly storageCapacityReservationGib?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#tags FsxOpenzfsVolume#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#tags FsxOpenzfsVolume#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#tags_all FsxOpenzfsVolume#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#tags_all FsxOpenzfsVolume#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#volume_type FsxOpenzfsVolume#volume_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#volume_type FsxOpenzfsVolume#volume_type}
   */
   readonly volumeType?: string;
   /**
   * nfs_exports block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#nfs_exports FsxOpenzfsVolume#nfs_exports}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#nfs_exports FsxOpenzfsVolume#nfs_exports}
   */
   readonly nfsExports?: FsxOpenzfsVolumeNfsExports;
   /**
   * origin_snapshot block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#origin_snapshot FsxOpenzfsVolume#origin_snapshot}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#origin_snapshot FsxOpenzfsVolume#origin_snapshot}
   */
   readonly originSnapshot?: FsxOpenzfsVolumeOriginSnapshot;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#timeouts FsxOpenzfsVolume#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#timeouts FsxOpenzfsVolume#timeouts}
   */
   readonly timeouts?: FsxOpenzfsVolumeTimeouts;
   /**
   * user_and_group_quotas block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#user_and_group_quotas FsxOpenzfsVolume#user_and_group_quotas}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#user_and_group_quotas FsxOpenzfsVolume#user_and_group_quotas}
   */
   readonly userAndGroupQuotas?: FsxOpenzfsVolumeUserAndGroupQuotas[];
 }
 export interface FsxOpenzfsVolumeNfsExportsClientConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#clients FsxOpenzfsVolume#clients}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#clients FsxOpenzfsVolume#clients}
   */
   readonly clients: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#options FsxOpenzfsVolume#options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#options FsxOpenzfsVolume#options}
   */
   readonly options: string[];
 }
@@ -98,7 +98,7 @@ export interface FsxOpenzfsVolumeNfsExports {
   /**
   * client_configurations block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#client_configurations FsxOpenzfsVolume#client_configurations}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#client_configurations FsxOpenzfsVolume#client_configurations}
   */
   readonly clientConfigurations: FsxOpenzfsVolumeNfsExportsClientConfigurations[];
 }
@@ -128,7 +128,7 @@ export class FsxOpenzfsVolumeNfsExportsOutputReference extends cdktf.ComplexObje
   public get internalValue(): FsxOpenzfsVolumeNfsExports | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clientConfigurations) {
+    if (this._clientConfigurations !== undefined) {
       hasAnyValues = true;
       internalValueResult.clientConfigurations = this._clientConfigurations;
     }
@@ -162,11 +162,11 @@ export class FsxOpenzfsVolumeNfsExportsOutputReference extends cdktf.ComplexObje
 }
 export interface FsxOpenzfsVolumeOriginSnapshot {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#copy_strategy FsxOpenzfsVolume#copy_strategy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#copy_strategy FsxOpenzfsVolume#copy_strategy}
   */
   readonly copyStrategy: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#snapshot_arn FsxOpenzfsVolume#snapshot_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#snapshot_arn FsxOpenzfsVolume#snapshot_arn}
   */
   readonly snapshotArn: string;
 }
@@ -197,11 +197,11 @@ export class FsxOpenzfsVolumeOriginSnapshotOutputReference extends cdktf.Complex
   public get internalValue(): FsxOpenzfsVolumeOriginSnapshot | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._copyStrategy) {
+    if (this._copyStrategy !== undefined) {
       hasAnyValues = true;
       internalValueResult.copyStrategy = this._copyStrategy;
     }
-    if (this._snapshotArn) {
+    if (this._snapshotArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.snapshotArn = this._snapshotArn;
     }
@@ -249,15 +249,15 @@ export class FsxOpenzfsVolumeOriginSnapshotOutputReference extends cdktf.Complex
 }
 export interface FsxOpenzfsVolumeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#create FsxOpenzfsVolume#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#create FsxOpenzfsVolume#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#delete FsxOpenzfsVolume#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#delete FsxOpenzfsVolume#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#update FsxOpenzfsVolume#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#update FsxOpenzfsVolume#update}
   */
   readonly update?: string;
 }
@@ -289,15 +289,15 @@ export class FsxOpenzfsVolumeTimeoutsOutputReference extends cdktf.ComplexObject
   public get internalValue(): FsxOpenzfsVolumeTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
@@ -369,15 +369,15 @@ export class FsxOpenzfsVolumeTimeoutsOutputReference extends cdktf.ComplexObject
 }
 export interface FsxOpenzfsVolumeUserAndGroupQuotas {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#id FsxOpenzfsVolume#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#id FsxOpenzfsVolume#id}
   */
   readonly id: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#storage_capacity_quota_gib FsxOpenzfsVolume#storage_capacity_quota_gib}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#storage_capacity_quota_gib FsxOpenzfsVolume#storage_capacity_quota_gib}
   */
   readonly storageCapacityQuotaGib: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html#type FsxOpenzfsVolume#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#type FsxOpenzfsVolume#type}
   */
   readonly type: string;
 }
@@ -396,7 +396,7 @@ export function fsxOpenzfsVolumeUserAndGroupQuotasToTerraform(struct?: FsxOpenzf
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html aws_fsx_openzfs_volume}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume aws_fsx_openzfs_volume}
 */
 export class FsxOpenzfsVolume extends cdktf.TerraformResource {
 
@@ -410,7 +410,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume.html aws_fsx_openzfs_volume} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume aws_fsx_openzfs_volume} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

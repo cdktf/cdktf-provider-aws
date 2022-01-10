@@ -99,7 +99,7 @@ export class DataAwsOrganizationsOrganizationRoots extends cdktf.ComplexComputed
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/organizations_organization.html aws_organizations_organization}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/organizations_organization aws_organizations_organization}
 */
 export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource {
 
@@ -113,7 +113,7 @@ export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/organizations_organization.html aws_organizations_organization} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/organizations_organization aws_organizations_organization} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

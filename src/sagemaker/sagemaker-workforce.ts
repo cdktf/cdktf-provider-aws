@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 */
 export interface SagemakerWorkforceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#workforce_name SagemakerWorkforce#workforce_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#workforce_name SagemakerWorkforce#workforce_name}
   */
   readonly workforceName: string;
   /**
   * cognito_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#cognito_config SagemakerWorkforce#cognito_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#cognito_config SagemakerWorkforce#cognito_config}
   */
   readonly cognitoConfig?: SagemakerWorkforceCognitoConfig;
   /**
   * oidc_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#oidc_config SagemakerWorkforce#oidc_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#oidc_config SagemakerWorkforce#oidc_config}
   */
   readonly oidcConfig?: SagemakerWorkforceOidcConfig;
   /**
   * source_ip_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#source_ip_config SagemakerWorkforce#source_ip_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#source_ip_config SagemakerWorkforce#source_ip_config}
   */
   readonly sourceIpConfig?: SagemakerWorkforceSourceIpConfig;
 }
 export interface SagemakerWorkforceCognitoConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#client_id SagemakerWorkforce#client_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#client_id SagemakerWorkforce#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#user_pool SagemakerWorkforce#user_pool}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#user_pool SagemakerWorkforce#user_pool}
   */
   readonly userPool: string;
 }
@@ -67,11 +67,11 @@ export class SagemakerWorkforceCognitoConfigOutputReference extends cdktf.Comple
   public get internalValue(): SagemakerWorkforceCognitoConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clientId) {
+    if (this._clientId !== undefined) {
       hasAnyValues = true;
       internalValueResult.clientId = this._clientId;
     }
-    if (this._userPool) {
+    if (this._userPool !== undefined) {
       hasAnyValues = true;
       internalValueResult.userPool = this._userPool;
     }
@@ -119,35 +119,35 @@ export class SagemakerWorkforceCognitoConfigOutputReference extends cdktf.Comple
 }
 export interface SagemakerWorkforceOidcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#authorization_endpoint SagemakerWorkforce#authorization_endpoint}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#authorization_endpoint SagemakerWorkforce#authorization_endpoint}
   */
   readonly authorizationEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#client_id SagemakerWorkforce#client_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#client_id SagemakerWorkforce#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#client_secret SagemakerWorkforce#client_secret}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#client_secret SagemakerWorkforce#client_secret}
   */
   readonly clientSecret: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#issuer SagemakerWorkforce#issuer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#issuer SagemakerWorkforce#issuer}
   */
   readonly issuer: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#jwks_uri SagemakerWorkforce#jwks_uri}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#jwks_uri SagemakerWorkforce#jwks_uri}
   */
   readonly jwksUri: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#logout_endpoint SagemakerWorkforce#logout_endpoint}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#logout_endpoint SagemakerWorkforce#logout_endpoint}
   */
   readonly logoutEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#token_endpoint SagemakerWorkforce#token_endpoint}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#token_endpoint SagemakerWorkforce#token_endpoint}
   */
   readonly tokenEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#user_info_endpoint SagemakerWorkforce#user_info_endpoint}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#user_info_endpoint SagemakerWorkforce#user_info_endpoint}
   */
   readonly userInfoEndpoint: string;
 }
@@ -184,35 +184,35 @@ export class SagemakerWorkforceOidcConfigOutputReference extends cdktf.ComplexOb
   public get internalValue(): SagemakerWorkforceOidcConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._authorizationEndpoint) {
+    if (this._authorizationEndpoint !== undefined) {
       hasAnyValues = true;
       internalValueResult.authorizationEndpoint = this._authorizationEndpoint;
     }
-    if (this._clientId) {
+    if (this._clientId !== undefined) {
       hasAnyValues = true;
       internalValueResult.clientId = this._clientId;
     }
-    if (this._clientSecret) {
+    if (this._clientSecret !== undefined) {
       hasAnyValues = true;
       internalValueResult.clientSecret = this._clientSecret;
     }
-    if (this._issuer) {
+    if (this._issuer !== undefined) {
       hasAnyValues = true;
       internalValueResult.issuer = this._issuer;
     }
-    if (this._jwksUri) {
+    if (this._jwksUri !== undefined) {
       hasAnyValues = true;
       internalValueResult.jwksUri = this._jwksUri;
     }
-    if (this._logoutEndpoint) {
+    if (this._logoutEndpoint !== undefined) {
       hasAnyValues = true;
       internalValueResult.logoutEndpoint = this._logoutEndpoint;
     }
-    if (this._tokenEndpoint) {
+    if (this._tokenEndpoint !== undefined) {
       hasAnyValues = true;
       internalValueResult.tokenEndpoint = this._tokenEndpoint;
     }
-    if (this._userInfoEndpoint) {
+    if (this._userInfoEndpoint !== undefined) {
       hasAnyValues = true;
       internalValueResult.userInfoEndpoint = this._userInfoEndpoint;
     }
@@ -350,7 +350,7 @@ export class SagemakerWorkforceOidcConfigOutputReference extends cdktf.ComplexOb
 }
 export interface SagemakerWorkforceSourceIpConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html#cidrs SagemakerWorkforce#cidrs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#cidrs SagemakerWorkforce#cidrs}
   */
   readonly cidrs: string[];
 }
@@ -380,7 +380,7 @@ export class SagemakerWorkforceSourceIpConfigOutputReference extends cdktf.Compl
   public get internalValue(): SagemakerWorkforceSourceIpConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cidrs) {
+    if (this._cidrs !== undefined) {
       hasAnyValues = true;
       internalValueResult.cidrs = this._cidrs;
     }
@@ -413,7 +413,7 @@ export class SagemakerWorkforceSourceIpConfigOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html aws_sagemaker_workforce}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce aws_sagemaker_workforce}
 */
 export class SagemakerWorkforce extends cdktf.TerraformResource {
 
@@ -427,7 +427,7 @@ export class SagemakerWorkforce extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce.html aws_sagemaker_workforce} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce aws_sagemaker_workforce} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

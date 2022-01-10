@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface CodebuildResourcePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_resource_policy.html#policy CodebuildResourcePolicy#policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_resource_policy#policy CodebuildResourcePolicy#policy}
   */
   readonly policy: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_resource_policy.html#resource_arn CodebuildResourcePolicy#resource_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_resource_policy#resource_arn CodebuildResourcePolicy#resource_arn}
   */
   readonly resourceArn: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/codebuild_resource_policy.html aws_codebuild_resource_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/codebuild_resource_policy aws_codebuild_resource_policy}
 */
 export class CodebuildResourcePolicy extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class CodebuildResourcePolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/codebuild_resource_policy.html aws_codebuild_resource_policy} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/codebuild_resource_policy aws_codebuild_resource_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

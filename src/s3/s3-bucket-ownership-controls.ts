@@ -8,19 +8,19 @@ import * as cdktf from 'cdktf';
 */
 export interface S3BucketOwnershipControlsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls.html#bucket S3BucketOwnershipControls#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls#bucket S3BucketOwnershipControls#bucket}
   */
   readonly bucket: string;
   /**
   * rule block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls.html#rule S3BucketOwnershipControls#rule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls#rule S3BucketOwnershipControls#rule}
   */
   readonly rule: S3BucketOwnershipControlsRule;
 }
 export interface S3BucketOwnershipControlsRule {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls.html#object_ownership S3BucketOwnershipControls#object_ownership}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls#object_ownership S3BucketOwnershipControls#object_ownership}
   */
   readonly objectOwnership: string;
 }
@@ -50,7 +50,7 @@ export class S3BucketOwnershipControlsRuleOutputReference extends cdktf.ComplexO
   public get internalValue(): S3BucketOwnershipControlsRule | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._objectOwnership) {
+    if (this._objectOwnership !== undefined) {
       hasAnyValues = true;
       internalValueResult.objectOwnership = this._objectOwnership;
     }
@@ -83,7 +83,7 @@ export class S3BucketOwnershipControlsRuleOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls.html aws_s3_bucket_ownership_controls}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls}
 */
 export class S3BucketOwnershipControls extends cdktf.TerraformResource {
 
@@ -97,7 +97,7 @@ export class S3BucketOwnershipControls extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls.html aws_s3_bucket_ownership_controls} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

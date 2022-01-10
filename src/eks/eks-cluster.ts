@@ -8,51 +8,51 @@ import * as cdktf from 'cdktf';
 */
 export interface EksClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}
   */
   readonly enabledClusterLogTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#name EksCluster#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#name EksCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#role_arn EksCluster#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#role_arn EksCluster#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#tags EksCluster#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#tags EksCluster#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#tags_all EksCluster#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#tags_all EksCluster#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#version EksCluster#version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#version EksCluster#version}
   */
   readonly version?: string;
   /**
   * encryption_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#encryption_config EksCluster#encryption_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#encryption_config EksCluster#encryption_config}
   */
   readonly encryptionConfig?: EksClusterEncryptionConfig;
   /**
   * kubernetes_network_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#kubernetes_network_config EksCluster#kubernetes_network_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#kubernetes_network_config EksCluster#kubernetes_network_config}
   */
   readonly kubernetesNetworkConfig?: EksClusterKubernetesNetworkConfig;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#timeouts EksCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#timeouts EksCluster#timeouts}
   */
   readonly timeouts?: EksClusterTimeouts;
   /**
   * vpc_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#vpc_config EksCluster#vpc_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#vpc_config EksCluster#vpc_config}
   */
   readonly vpcConfig: EksClusterVpcConfig;
 }
@@ -80,7 +80,7 @@ export class EksClusterIdentity extends cdktf.ComplexComputedList {
 }
 export interface EksClusterEncryptionConfigProvider {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#key_arn EksCluster#key_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#key_arn EksCluster#key_arn}
   */
   readonly keyArn: string;
 }
@@ -110,7 +110,7 @@ export class EksClusterEncryptionConfigProviderOutputReference extends cdktf.Com
   public get internalValue(): EksClusterEncryptionConfigProvider | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._keyArn) {
+    if (this._keyArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.keyArn = this._keyArn;
     }
@@ -143,13 +143,13 @@ export class EksClusterEncryptionConfigProviderOutputReference extends cdktf.Com
 }
 export interface EksClusterEncryptionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#resources EksCluster#resources}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#resources EksCluster#resources}
   */
   readonly resources: string[];
   /**
   * provider block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#provider EksCluster#provider}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#provider EksCluster#provider}
   */
   readonly provider: EksClusterEncryptionConfigProvider;
 }
@@ -180,11 +180,11 @@ export class EksClusterEncryptionConfigOutputReference extends cdktf.ComplexObje
   public get internalValue(): EksClusterEncryptionConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._resources) {
+    if (this._resources !== undefined) {
       hasAnyValues = true;
       internalValueResult.resources = this._resources;
     }
-    if (this._provider?.internalValue) {
+    if (this._provider?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.provider = this._provider?.internalValue;
     }
@@ -232,7 +232,7 @@ export class EksClusterEncryptionConfigOutputReference extends cdktf.ComplexObje
 }
 export interface EksClusterKubernetesNetworkConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#service_ipv4_cidr EksCluster#service_ipv4_cidr}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}
   */
   readonly serviceIpv4Cidr?: string;
 }
@@ -262,7 +262,7 @@ export class EksClusterKubernetesNetworkConfigOutputReference extends cdktf.Comp
   public get internalValue(): EksClusterKubernetesNetworkConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._serviceIpv4Cidr) {
+    if (this._serviceIpv4Cidr !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceIpv4Cidr = this._serviceIpv4Cidr;
     }
@@ -298,15 +298,15 @@ export class EksClusterKubernetesNetworkConfigOutputReference extends cdktf.Comp
 }
 export interface EksClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#create EksCluster#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#create EksCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#delete EksCluster#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#delete EksCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#update EksCluster#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#update EksCluster#update}
   */
   readonly update?: string;
 }
@@ -338,15 +338,15 @@ export class EksClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): EksClusterTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
@@ -418,23 +418,23 @@ export class EksClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface EksClusterVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#endpoint_private_access EksCluster#endpoint_private_access}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}
   */
   readonly endpointPrivateAccess?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#endpoint_public_access EksCluster#endpoint_public_access}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}
   */
   readonly endpointPublicAccess?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#public_access_cidrs EksCluster#public_access_cidrs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}
   */
   readonly publicAccessCidrs?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#security_group_ids EksCluster#security_group_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#security_group_ids EksCluster#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html#subnet_ids EksCluster#subnet_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#subnet_ids EksCluster#subnet_ids}
   */
   readonly subnetIds: string[];
 }
@@ -468,23 +468,23 @@ export class EksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
   public get internalValue(): EksClusterVpcConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._endpointPrivateAccess) {
+    if (this._endpointPrivateAccess !== undefined) {
       hasAnyValues = true;
       internalValueResult.endpointPrivateAccess = this._endpointPrivateAccess;
     }
-    if (this._endpointPublicAccess) {
+    if (this._endpointPublicAccess !== undefined) {
       hasAnyValues = true;
       internalValueResult.endpointPublicAccess = this._endpointPublicAccess;
     }
-    if (this._publicAccessCidrs) {
+    if (this._publicAccessCidrs !== undefined) {
       hasAnyValues = true;
       internalValueResult.publicAccessCidrs = this._publicAccessCidrs;
     }
-    if (this._securityGroupIds) {
+    if (this._securityGroupIds !== undefined) {
       hasAnyValues = true;
       internalValueResult.securityGroupIds = this._securityGroupIds;
     }
-    if (this._subnetIds) {
+    if (this._subnetIds !== undefined) {
       hasAnyValues = true;
       internalValueResult.subnetIds = this._subnetIds;
     }
@@ -589,7 +589,7 @@ export class EksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html aws_eks_cluster}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster aws_eks_cluster}
 */
 export class EksCluster extends cdktf.TerraformResource {
 
@@ -603,7 +603,7 @@ export class EksCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster.html aws_eks_cluster} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster aws_eks_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

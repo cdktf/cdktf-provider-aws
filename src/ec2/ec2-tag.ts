@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface Ec2TagConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_tag.html#key Ec2Tag#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_tag#key Ec2Tag#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_tag.html#resource_id Ec2Tag#resource_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_tag#resource_id Ec2Tag#resource_id}
   */
   readonly resourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_tag.html#value Ec2Tag#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_tag#value Ec2Tag#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_tag.html aws_ec2_tag}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_tag aws_ec2_tag}
 */
 export class Ec2Tag extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class Ec2Tag extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_tag.html aws_ec2_tag} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_tag aws_ec2_tag} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

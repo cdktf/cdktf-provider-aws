@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 */
 export interface SchemasRegistryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry.html#description SchemasRegistry#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry#description SchemasRegistry#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry.html#name SchemasRegistry#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry#name SchemasRegistry#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry.html#tags SchemasRegistry#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry#tags SchemasRegistry#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry.html#tags_all SchemasRegistry#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry#tags_all SchemasRegistry#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry.html aws_schemas_registry}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry aws_schemas_registry}
 */
 export class SchemasRegistry extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class SchemasRegistry extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry.html aws_schemas_registry} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry aws_schemas_registry} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

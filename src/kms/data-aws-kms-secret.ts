@@ -10,25 +10,25 @@ export interface DataAwsKmsSecretConfig extends cdktf.TerraformMetaArguments {
   /**
   * secret block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret.html#secret DataAwsKmsSecret#secret}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret#secret DataAwsKmsSecret#secret}
   */
   readonly secret: DataAwsKmsSecretSecret[];
 }
 export interface DataAwsKmsSecretSecret {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret.html#context DataAwsKmsSecret#context}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret#context DataAwsKmsSecret#context}
   */
   readonly context?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret.html#grant_tokens DataAwsKmsSecret#grant_tokens}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret#grant_tokens DataAwsKmsSecret#grant_tokens}
   */
   readonly grantTokens?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret.html#name DataAwsKmsSecret#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret#name DataAwsKmsSecret#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret.html#payload DataAwsKmsSecret#payload}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret#payload DataAwsKmsSecret#payload}
   */
   readonly payload: string;
 }
@@ -48,7 +48,7 @@ export function dataAwsKmsSecretSecretToTerraform(struct?: DataAwsKmsSecretSecre
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/kms_secret.html aws_kms_secret}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/kms_secret aws_kms_secret}
 */
 export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
 
@@ -62,7 +62,7 @@ export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/kms_secret.html aws_kms_secret} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/kms_secret aws_kms_secret} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

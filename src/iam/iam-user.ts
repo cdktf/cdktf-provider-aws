@@ -10,33 +10,33 @@ export interface IamUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Delete user even if it has non-Terraform-managed IAM access keys, login profile or MFA devices
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_user.html#force_destroy IamUser#force_destroy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_user#force_destroy IamUser#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_user.html#name IamUser#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_user#name IamUser#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_user.html#path IamUser#path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_user#path IamUser#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_user.html#permissions_boundary IamUser#permissions_boundary}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_user#permissions_boundary IamUser#permissions_boundary}
   */
   readonly permissionsBoundary?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_user.html#tags IamUser#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_user#tags IamUser#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_user.html#tags_all IamUser#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_user#tags_all IamUser#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_user.html aws_iam_user}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_user aws_iam_user}
 */
 export class IamUser extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class IamUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_user.html aws_iam_user} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_user aws_iam_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

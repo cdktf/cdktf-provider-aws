@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface XrayEncryptionConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_encryption_config.html#key_id XrayEncryptionConfig#key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_encryption_config#key_id XrayEncryptionConfig#key_id}
   */
   readonly keyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_encryption_config.html#type XrayEncryptionConfig#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_encryption_config#type XrayEncryptionConfig#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/xray_encryption_config.html aws_xray_encryption_config}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/xray_encryption_config aws_xray_encryption_config}
 */
 export class XrayEncryptionConfig extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class XrayEncryptionConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/xray_encryption_config.html aws_xray_encryption_config} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/xray_encryption_config aws_xray_encryption_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

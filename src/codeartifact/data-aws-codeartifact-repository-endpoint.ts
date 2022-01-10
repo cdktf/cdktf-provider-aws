@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsCodeartifactRepositoryEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint.html#domain DataAwsCodeartifactRepositoryEndpoint#domain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint#domain DataAwsCodeartifactRepositoryEndpoint#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint.html#domain_owner DataAwsCodeartifactRepositoryEndpoint#domain_owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint#domain_owner DataAwsCodeartifactRepositoryEndpoint#domain_owner}
   */
   readonly domainOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint.html#format DataAwsCodeartifactRepositoryEndpoint#format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint#format DataAwsCodeartifactRepositoryEndpoint#format}
   */
   readonly format: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint.html#repository DataAwsCodeartifactRepositoryEndpoint#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint#repository DataAwsCodeartifactRepositoryEndpoint#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint.html aws_codeartifact_repository_endpoint}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint aws_codeartifact_repository_endpoint}
 */
 export class DataAwsCodeartifactRepositoryEndpoint extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataAwsCodeartifactRepositoryEndpoint extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint.html aws_codeartifact_repository_endpoint} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint aws_codeartifact_repository_endpoint} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsElbServiceAccountConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elb_service_account.html#region DataAwsElbServiceAccount#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elb_service_account#region DataAwsElbServiceAccount#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/elb_service_account.html aws_elb_service_account}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/elb_service_account aws_elb_service_account}
 */
 export class DataAwsElbServiceAccount extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsElbServiceAccount extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/elb_service_account.html aws_elb_service_account} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/elb_service_account aws_elb_service_account} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

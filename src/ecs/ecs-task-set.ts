@@ -8,91 +8,91 @@ import * as cdktf from 'cdktf';
 */
 export interface EcsTaskSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#cluster EcsTaskSet#cluster}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#cluster EcsTaskSet#cluster}
   */
   readonly cluster: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#external_id EcsTaskSet#external_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#external_id EcsTaskSet#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#force_delete EcsTaskSet#force_delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#force_delete EcsTaskSet#force_delete}
   */
   readonly forceDelete?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#launch_type EcsTaskSet#launch_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#launch_type EcsTaskSet#launch_type}
   */
   readonly launchType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#platform_version EcsTaskSet#platform_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#platform_version EcsTaskSet#platform_version}
   */
   readonly platformVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#service EcsTaskSet#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#service EcsTaskSet#service}
   */
   readonly service: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#tags EcsTaskSet#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#tags EcsTaskSet#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#tags_all EcsTaskSet#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#tags_all EcsTaskSet#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#task_definition EcsTaskSet#task_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#task_definition EcsTaskSet#task_definition}
   */
   readonly taskDefinition: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#wait_until_stable EcsTaskSet#wait_until_stable}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#wait_until_stable EcsTaskSet#wait_until_stable}
   */
   readonly waitUntilStable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#wait_until_stable_timeout EcsTaskSet#wait_until_stable_timeout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#wait_until_stable_timeout EcsTaskSet#wait_until_stable_timeout}
   */
   readonly waitUntilStableTimeout?: string;
   /**
   * capacity_provider_strategy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#capacity_provider_strategy EcsTaskSet#capacity_provider_strategy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#capacity_provider_strategy EcsTaskSet#capacity_provider_strategy}
   */
   readonly capacityProviderStrategy?: EcsTaskSetCapacityProviderStrategy[];
   /**
   * load_balancer block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#load_balancer EcsTaskSet#load_balancer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#load_balancer EcsTaskSet#load_balancer}
   */
   readonly loadBalancer?: EcsTaskSetLoadBalancer[];
   /**
   * network_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#network_configuration EcsTaskSet#network_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#network_configuration EcsTaskSet#network_configuration}
   */
   readonly networkConfiguration?: EcsTaskSetNetworkConfiguration;
   /**
   * scale block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#scale EcsTaskSet#scale}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#scale EcsTaskSet#scale}
   */
   readonly scale?: EcsTaskSetScale;
   /**
   * service_registries block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#service_registries EcsTaskSet#service_registries}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#service_registries EcsTaskSet#service_registries}
   */
   readonly serviceRegistries?: EcsTaskSetServiceRegistries;
 }
 export interface EcsTaskSetCapacityProviderStrategy {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#base EcsTaskSet#base}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#base EcsTaskSet#base}
   */
   readonly base?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#capacity_provider EcsTaskSet#capacity_provider}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#capacity_provider EcsTaskSet#capacity_provider}
   */
   readonly capacityProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#weight EcsTaskSet#weight}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#weight EcsTaskSet#weight}
   */
   readonly weight: number;
 }
@@ -111,19 +111,19 @@ export function ecsTaskSetCapacityProviderStrategyToTerraform(struct?: EcsTaskSe
 
 export interface EcsTaskSetLoadBalancer {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#container_name EcsTaskSet#container_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#container_name EcsTaskSet#container_name}
   */
   readonly containerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#container_port EcsTaskSet#container_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#container_port EcsTaskSet#container_port}
   */
   readonly containerPort?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#load_balancer_name EcsTaskSet#load_balancer_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#load_balancer_name EcsTaskSet#load_balancer_name}
   */
   readonly loadBalancerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#target_group_arn EcsTaskSet#target_group_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#target_group_arn EcsTaskSet#target_group_arn}
   */
   readonly targetGroupArn?: string;
 }
@@ -143,15 +143,15 @@ export function ecsTaskSetLoadBalancerToTerraform(struct?: EcsTaskSetLoadBalance
 
 export interface EcsTaskSetNetworkConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#assign_public_ip EcsTaskSet#assign_public_ip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#assign_public_ip EcsTaskSet#assign_public_ip}
   */
   readonly assignPublicIp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#security_groups EcsTaskSet#security_groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#security_groups EcsTaskSet#security_groups}
   */
   readonly securityGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#subnets EcsTaskSet#subnets}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#subnets EcsTaskSet#subnets}
   */
   readonly subnets: string[];
 }
@@ -183,15 +183,15 @@ export class EcsTaskSetNetworkConfigurationOutputReference extends cdktf.Complex
   public get internalValue(): EcsTaskSetNetworkConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._assignPublicIp) {
+    if (this._assignPublicIp !== undefined) {
       hasAnyValues = true;
       internalValueResult.assignPublicIp = this._assignPublicIp;
     }
-    if (this._securityGroups) {
+    if (this._securityGroups !== undefined) {
       hasAnyValues = true;
       internalValueResult.securityGroups = this._securityGroups;
     }
-    if (this._subnets) {
+    if (this._subnets !== undefined) {
       hasAnyValues = true;
       internalValueResult.subnets = this._subnets;
     }
@@ -260,11 +260,11 @@ export class EcsTaskSetNetworkConfigurationOutputReference extends cdktf.Complex
 }
 export interface EcsTaskSetScale {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#unit EcsTaskSet#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#unit EcsTaskSet#unit}
   */
   readonly unit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#value EcsTaskSet#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#value EcsTaskSet#value}
   */
   readonly value?: number;
 }
@@ -295,11 +295,11 @@ export class EcsTaskSetScaleOutputReference extends cdktf.ComplexObject {
   public get internalValue(): EcsTaskSetScale | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -353,19 +353,19 @@ export class EcsTaskSetScaleOutputReference extends cdktf.ComplexObject {
 }
 export interface EcsTaskSetServiceRegistries {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#container_name EcsTaskSet#container_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#container_name EcsTaskSet#container_name}
   */
   readonly containerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#container_port EcsTaskSet#container_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#container_port EcsTaskSet#container_port}
   */
   readonly containerPort?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#port EcsTaskSet#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#port EcsTaskSet#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html#registry_arn EcsTaskSet#registry_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#registry_arn EcsTaskSet#registry_arn}
   */
   readonly registryArn: string;
 }
@@ -398,19 +398,19 @@ export class EcsTaskSetServiceRegistriesOutputReference extends cdktf.ComplexObj
   public get internalValue(): EcsTaskSetServiceRegistries | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._containerName) {
+    if (this._containerName !== undefined) {
       hasAnyValues = true;
       internalValueResult.containerName = this._containerName;
     }
-    if (this._containerPort) {
+    if (this._containerPort !== undefined) {
       hasAnyValues = true;
       internalValueResult.containerPort = this._containerPort;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
-    if (this._registryArn) {
+    if (this._registryArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.registryArn = this._registryArn;
     }
@@ -497,7 +497,7 @@ export class EcsTaskSetServiceRegistriesOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html aws_ecs_task_set}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set aws_ecs_task_set}
 */
 export class EcsTaskSet extends cdktf.TerraformResource {
 
@@ -511,7 +511,7 @@ export class EcsTaskSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set.html aws_ecs_task_set} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set aws_ecs_task_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

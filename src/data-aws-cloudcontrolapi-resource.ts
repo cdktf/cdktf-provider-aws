@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/d/cloudcontrolapi_resource.html
+// https://www.terraform.io/docs/providers/aws/d/cloudcontrolapi_resource
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsCloudcontrolapiResourceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudcontrolapi_resource.html#identifier DataAwsCloudcontrolapiResource#identifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudcontrolapi_resource#identifier DataAwsCloudcontrolapiResource#identifier}
   */
   readonly identifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudcontrolapi_resource.html#role_arn DataAwsCloudcontrolapiResource#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudcontrolapi_resource#role_arn DataAwsCloudcontrolapiResource#role_arn}
   */
   readonly roleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudcontrolapi_resource.html#type_name DataAwsCloudcontrolapiResource#type_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudcontrolapi_resource#type_name DataAwsCloudcontrolapiResource#type_name}
   */
   readonly typeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudcontrolapi_resource.html#type_version_id DataAwsCloudcontrolapiResource#type_version_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudcontrolapi_resource#type_version_id DataAwsCloudcontrolapiResource#type_version_id}
   */
   readonly typeVersionId?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudcontrolapi_resource.html aws_cloudcontrolapi_resource}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudcontrolapi_resource aws_cloudcontrolapi_resource}
 */
 export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudcontrolapi_resource.html aws_cloudcontrolapi_resource} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudcontrolapi_resource aws_cloudcontrolapi_resource} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

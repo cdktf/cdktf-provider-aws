@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsWafregionalRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafregional_rule.html#name DataAwsWafregionalRule#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafregional_rule#name DataAwsWafregionalRule#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/wafregional_rule.html aws_wafregional_rule}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/wafregional_rule aws_wafregional_rule}
 */
 export class DataAwsWafregionalRule extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsWafregionalRule extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/wafregional_rule.html aws_wafregional_rule} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/wafregional_rule aws_wafregional_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,53 +8,53 @@ import * as cdktf from 'cdktf';
 */
 export interface SagemakerModelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#enable_network_isolation SagemakerModel#enable_network_isolation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#enable_network_isolation SagemakerModel#enable_network_isolation}
   */
   readonly enableNetworkIsolation?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#execution_role_arn SagemakerModel#execution_role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#execution_role_arn SagemakerModel#execution_role_arn}
   */
   readonly executionRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#name SagemakerModel#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#name SagemakerModel#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#tags SagemakerModel#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#tags SagemakerModel#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#tags_all SagemakerModel#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#tags_all SagemakerModel#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * container block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#container SagemakerModel#container}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#container SagemakerModel#container}
   */
   readonly container?: SagemakerModelContainer[];
   /**
   * inference_execution_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#inference_execution_config SagemakerModel#inference_execution_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#inference_execution_config SagemakerModel#inference_execution_config}
   */
   readonly inferenceExecutionConfig?: SagemakerModelInferenceExecutionConfig;
   /**
   * primary_container block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#primary_container SagemakerModel#primary_container}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#primary_container SagemakerModel#primary_container}
   */
   readonly primaryContainer?: SagemakerModelPrimaryContainer;
   /**
   * vpc_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#vpc_config SagemakerModel#vpc_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#vpc_config SagemakerModel#vpc_config}
   */
   readonly vpcConfig?: SagemakerModelVpcConfig;
 }
 export interface SagemakerModelContainerImageConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#repository_access_mode SagemakerModel#repository_access_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}
   */
   readonly repositoryAccessMode: string;
 }
@@ -84,7 +84,7 @@ export class SagemakerModelContainerImageConfigOutputReference extends cdktf.Com
   public get internalValue(): SagemakerModelContainerImageConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._repositoryAccessMode) {
+    if (this._repositoryAccessMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.repositoryAccessMode = this._repositoryAccessMode;
     }
@@ -117,29 +117,29 @@ export class SagemakerModelContainerImageConfigOutputReference extends cdktf.Com
 }
 export interface SagemakerModelContainer {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#container_hostname SagemakerModel#container_hostname}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#container_hostname SagemakerModel#container_hostname}
   */
   readonly containerHostname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#environment SagemakerModel#environment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#environment SagemakerModel#environment}
   */
   readonly environment?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#image SagemakerModel#image}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#image SagemakerModel#image}
   */
   readonly image: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#mode SagemakerModel#mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#mode SagemakerModel#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#model_data_url SagemakerModel#model_data_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#model_data_url SagemakerModel#model_data_url}
   */
   readonly modelDataUrl?: string;
   /**
   * image_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#image_config SagemakerModel#image_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#image_config SagemakerModel#image_config}
   */
   readonly imageConfig?: SagemakerModelContainerImageConfig;
 }
@@ -161,7 +161,7 @@ export function sagemakerModelContainerToTerraform(struct?: SagemakerModelContai
 
 export interface SagemakerModelInferenceExecutionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#mode SagemakerModel#mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#mode SagemakerModel#mode}
   */
   readonly mode: string;
 }
@@ -191,7 +191,7 @@ export class SagemakerModelInferenceExecutionConfigOutputReference extends cdktf
   public get internalValue(): SagemakerModelInferenceExecutionConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._mode) {
+    if (this._mode !== undefined) {
       hasAnyValues = true;
       internalValueResult.mode = this._mode;
     }
@@ -224,7 +224,7 @@ export class SagemakerModelInferenceExecutionConfigOutputReference extends cdktf
 }
 export interface SagemakerModelPrimaryContainerImageConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#repository_access_mode SagemakerModel#repository_access_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#repository_access_mode SagemakerModel#repository_access_mode}
   */
   readonly repositoryAccessMode: string;
 }
@@ -254,7 +254,7 @@ export class SagemakerModelPrimaryContainerImageConfigOutputReference extends cd
   public get internalValue(): SagemakerModelPrimaryContainerImageConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._repositoryAccessMode) {
+    if (this._repositoryAccessMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.repositoryAccessMode = this._repositoryAccessMode;
     }
@@ -287,29 +287,29 @@ export class SagemakerModelPrimaryContainerImageConfigOutputReference extends cd
 }
 export interface SagemakerModelPrimaryContainer {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#container_hostname SagemakerModel#container_hostname}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#container_hostname SagemakerModel#container_hostname}
   */
   readonly containerHostname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#environment SagemakerModel#environment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#environment SagemakerModel#environment}
   */
   readonly environment?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#image SagemakerModel#image}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#image SagemakerModel#image}
   */
   readonly image: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#mode SagemakerModel#mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#mode SagemakerModel#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#model_data_url SagemakerModel#model_data_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#model_data_url SagemakerModel#model_data_url}
   */
   readonly modelDataUrl?: string;
   /**
   * image_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#image_config SagemakerModel#image_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#image_config SagemakerModel#image_config}
   */
   readonly imageConfig?: SagemakerModelPrimaryContainerImageConfig;
 }
@@ -344,27 +344,27 @@ export class SagemakerModelPrimaryContainerOutputReference extends cdktf.Complex
   public get internalValue(): SagemakerModelPrimaryContainer | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._containerHostname) {
+    if (this._containerHostname !== undefined) {
       hasAnyValues = true;
       internalValueResult.containerHostname = this._containerHostname;
     }
-    if (this._environment) {
+    if (this._environment !== undefined) {
       hasAnyValues = true;
       internalValueResult.environment = this._environment;
     }
-    if (this._image) {
+    if (this._image !== undefined) {
       hasAnyValues = true;
       internalValueResult.image = this._image;
     }
-    if (this._mode) {
+    if (this._mode !== undefined) {
       hasAnyValues = true;
       internalValueResult.mode = this._mode;
     }
-    if (this._modelDataUrl) {
+    if (this._modelDataUrl !== undefined) {
       hasAnyValues = true;
       internalValueResult.modelDataUrl = this._modelDataUrl;
     }
-    if (this._imageConfig?.internalValue) {
+    if (this._imageConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.imageConfig = this._imageConfig?.internalValue;
     }
@@ -488,11 +488,11 @@ export class SagemakerModelPrimaryContainerOutputReference extends cdktf.Complex
 }
 export interface SagemakerModelVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#security_group_ids SagemakerModel#security_group_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#security_group_ids SagemakerModel#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#subnets SagemakerModel#subnets}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model#subnets SagemakerModel#subnets}
   */
   readonly subnets: string[];
 }
@@ -523,11 +523,11 @@ export class SagemakerModelVpcConfigOutputReference extends cdktf.ComplexObject 
   public get internalValue(): SagemakerModelVpcConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._securityGroupIds) {
+    if (this._securityGroupIds !== undefined) {
       hasAnyValues = true;
       internalValueResult.securityGroupIds = this._securityGroupIds;
     }
-    if (this._subnets) {
+    if (this._subnets !== undefined) {
       hasAnyValues = true;
       internalValueResult.subnets = this._subnets;
     }
@@ -575,7 +575,7 @@ export class SagemakerModelVpcConfigOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html aws_sagemaker_model}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model aws_sagemaker_model}
 */
 export class SagemakerModel extends cdktf.TerraformResource {
 
@@ -589,7 +589,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html aws_sagemaker_model} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model aws_sagemaker_model} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

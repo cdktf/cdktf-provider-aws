@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsCognitoUserPoolSigningCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_pool_signing_certificate.html#user_pool_id DataAwsCognitoUserPoolSigningCertificate#user_pool_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_pool_signing_certificate#user_pool_id DataAwsCognitoUserPoolSigningCertificate#user_pool_id}
   */
   readonly userPoolId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_pool_signing_certificate.html aws_cognito_user_pool_signing_certificate}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_pool_signing_certificate aws_cognito_user_pool_signing_certificate}
 */
 export class DataAwsCognitoUserPoolSigningCertificate extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsCognitoUserPoolSigningCertificate extends cdktf.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_pool_signing_certificate.html aws_cognito_user_pool_signing_certificate} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_pool_signing_certificate aws_cognito_user_pool_signing_certificate} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

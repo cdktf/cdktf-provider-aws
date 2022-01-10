@@ -8,47 +8,47 @@ import * as cdktf from 'cdktf';
 */
 export interface S3BucketInventoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#bucket S3BucketInventory#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#bucket S3BucketInventory#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#enabled S3BucketInventory#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#enabled S3BucketInventory#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#included_object_versions S3BucketInventory#included_object_versions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#included_object_versions S3BucketInventory#included_object_versions}
   */
   readonly includedObjectVersions: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#name S3BucketInventory#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#name S3BucketInventory#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#optional_fields S3BucketInventory#optional_fields}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#optional_fields S3BucketInventory#optional_fields}
   */
   readonly optionalFields?: string[];
   /**
   * destination block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#destination S3BucketInventory#destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#destination S3BucketInventory#destination}
   */
   readonly destination: S3BucketInventoryDestination;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#filter S3BucketInventory#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#filter S3BucketInventory#filter}
   */
   readonly filter?: S3BucketInventoryFilter;
   /**
   * schedule block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#schedule S3BucketInventory#schedule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#schedule S3BucketInventory#schedule}
   */
   readonly schedule: S3BucketInventorySchedule;
 }
 export interface S3BucketInventoryDestinationBucketEncryptionSseKms {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#key_id S3BucketInventory#key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#key_id S3BucketInventory#key_id}
   */
   readonly keyId: string;
 }
@@ -78,7 +78,7 @@ export class S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference e
   public get internalValue(): S3BucketInventoryDestinationBucketEncryptionSseKms | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._keyId) {
+    if (this._keyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.keyId = this._keyId;
     }
@@ -152,13 +152,13 @@ export interface S3BucketInventoryDestinationBucketEncryption {
   /**
   * sse_kms block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#sse_kms S3BucketInventory#sse_kms}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#sse_kms S3BucketInventory#sse_kms}
   */
   readonly sseKms?: S3BucketInventoryDestinationBucketEncryptionSseKms;
   /**
   * sse_s3 block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#sse_s3 S3BucketInventory#sse_s3}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#sse_s3 S3BucketInventory#sse_s3}
   */
   readonly sseS3?: S3BucketInventoryDestinationBucketEncryptionSseS3;
 }
@@ -189,11 +189,11 @@ export class S3BucketInventoryDestinationBucketEncryptionOutputReference extends
   public get internalValue(): S3BucketInventoryDestinationBucketEncryption | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._sseKms?.internalValue) {
+    if (this._sseKms?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sseKms = this._sseKms?.internalValue;
     }
-    if (this._sseS3?.internalValue) {
+    if (this._sseS3?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sseS3 = this._sseS3?.internalValue;
     }
@@ -247,25 +247,25 @@ export class S3BucketInventoryDestinationBucketEncryptionOutputReference extends
 }
 export interface S3BucketInventoryDestinationBucket {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#account_id S3BucketInventory#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#account_id S3BucketInventory#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#bucket_arn S3BucketInventory#bucket_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#bucket_arn S3BucketInventory#bucket_arn}
   */
   readonly bucketArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#format S3BucketInventory#format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#format S3BucketInventory#format}
   */
   readonly format: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#prefix S3BucketInventory#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#prefix S3BucketInventory#prefix}
   */
   readonly prefix?: string;
   /**
   * encryption block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#encryption S3BucketInventory#encryption}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#encryption S3BucketInventory#encryption}
   */
   readonly encryption?: S3BucketInventoryDestinationBucketEncryption;
 }
@@ -299,23 +299,23 @@ export class S3BucketInventoryDestinationBucketOutputReference extends cdktf.Com
   public get internalValue(): S3BucketInventoryDestinationBucket | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accountId) {
+    if (this._accountId !== undefined) {
       hasAnyValues = true;
       internalValueResult.accountId = this._accountId;
     }
-    if (this._bucketArn) {
+    if (this._bucketArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketArn = this._bucketArn;
     }
-    if (this._format) {
+    if (this._format !== undefined) {
       hasAnyValues = true;
       internalValueResult.format = this._format;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._encryption?.internalValue) {
+    if (this._encryption?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.encryption = this._encryption?.internalValue;
     }
@@ -419,7 +419,7 @@ export interface S3BucketInventoryDestination {
   /**
   * bucket block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#bucket S3BucketInventory#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#bucket S3BucketInventory#bucket}
   */
   readonly bucket: S3BucketInventoryDestinationBucket;
 }
@@ -449,7 +449,7 @@ export class S3BucketInventoryDestinationOutputReference extends cdktf.ComplexOb
   public get internalValue(): S3BucketInventoryDestination | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucket?.internalValue) {
+    if (this._bucket?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucket = this._bucket?.internalValue;
     }
@@ -482,7 +482,7 @@ export class S3BucketInventoryDestinationOutputReference extends cdktf.ComplexOb
 }
 export interface S3BucketInventoryFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#prefix S3BucketInventory#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#prefix S3BucketInventory#prefix}
   */
   readonly prefix?: string;
 }
@@ -512,7 +512,7 @@ export class S3BucketInventoryFilterOutputReference extends cdktf.ComplexObject 
   public get internalValue(): S3BucketInventoryFilter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
@@ -548,7 +548,7 @@ export class S3BucketInventoryFilterOutputReference extends cdktf.ComplexObject 
 }
 export interface S3BucketInventorySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#frequency S3BucketInventory#frequency}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory#frequency S3BucketInventory#frequency}
   */
   readonly frequency: string;
 }
@@ -578,7 +578,7 @@ export class S3BucketInventoryScheduleOutputReference extends cdktf.ComplexObjec
   public get internalValue(): S3BucketInventorySchedule | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._frequency) {
+    if (this._frequency !== undefined) {
       hasAnyValues = true;
       internalValueResult.frequency = this._frequency;
     }
@@ -611,7 +611,7 @@ export class S3BucketInventoryScheduleOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html aws_s3_bucket_inventory}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory aws_s3_bucket_inventory}
 */
 export class S3BucketInventory extends cdktf.TerraformResource {
 
@@ -625,7 +625,7 @@ export class S3BucketInventory extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html aws_s3_bucket_inventory} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory aws_s3_bucket_inventory} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

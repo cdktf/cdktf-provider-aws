@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsOutpostsOutpostInstanceTypeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost_instance_type.html#arn DataAwsOutpostsOutpostInstanceType#arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost_instance_type#arn DataAwsOutpostsOutpostInstanceType#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost_instance_type.html#instance_type DataAwsOutpostsOutpostInstanceType#instance_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost_instance_type#instance_type DataAwsOutpostsOutpostInstanceType#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost_instance_type.html#preferred_instance_types DataAwsOutpostsOutpostInstanceType#preferred_instance_types}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost_instance_type#preferred_instance_types DataAwsOutpostsOutpostInstanceType#preferred_instance_types}
   */
   readonly preferredInstanceTypes?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost_instance_type.html aws_outposts_outpost_instance_type}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost_instance_type aws_outposts_outpost_instance_type}
 */
 export class DataAwsOutpostsOutpostInstanceType extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataAwsOutpostsOutpostInstanceType extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost_instance_type.html aws_outposts_outpost_instance_type} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost_instance_type aws_outposts_outpost_instance_type} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsBackupVaultConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_vault.html#name DataAwsBackupVault#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_vault#name DataAwsBackupVault#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_vault.html#tags DataAwsBackupVault#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/backup_vault#tags DataAwsBackupVault#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/backup_vault.html aws_backup_vault}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/backup_vault aws_backup_vault}
 */
 export class DataAwsBackupVault extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsBackupVault extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/backup_vault.html aws_backup_vault} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/backup_vault aws_backup_vault} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

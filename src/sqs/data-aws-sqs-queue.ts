@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsSqsQueueConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/sqs_queue.html#name DataAwsSqsQueue#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/sqs_queue#name DataAwsSqsQueue#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/sqs_queue.html#tags DataAwsSqsQueue#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/sqs_queue#tags DataAwsSqsQueue#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/sqs_queue.html aws_sqs_queue}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/sqs_queue aws_sqs_queue}
 */
 export class DataAwsSqsQueue extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsSqsQueue extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/sqs_queue.html aws_sqs_queue} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/sqs_queue aws_sqs_queue} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

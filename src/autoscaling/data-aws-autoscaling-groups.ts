@@ -10,17 +10,17 @@ export interface DataAwsAutoscalingGroupsConfig extends cdktf.TerraformMetaArgum
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/autoscaling_groups.html#filter DataAwsAutoscalingGroups#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/autoscaling_groups#filter DataAwsAutoscalingGroups#filter}
   */
   readonly filter?: DataAwsAutoscalingGroupsFilter[];
 }
 export interface DataAwsAutoscalingGroupsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/autoscaling_groups.html#name DataAwsAutoscalingGroups#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/autoscaling_groups#name DataAwsAutoscalingGroups#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/autoscaling_groups.html#values DataAwsAutoscalingGroups#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/autoscaling_groups#values DataAwsAutoscalingGroups#values}
   */
   readonly values: string[];
 }
@@ -38,7 +38,7 @@ export function dataAwsAutoscalingGroupsFilterToTerraform(struct?: DataAwsAutosc
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/autoscaling_groups.html aws_autoscaling_groups}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/autoscaling_groups aws_autoscaling_groups}
 */
 export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
 
@@ -52,7 +52,7 @@ export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/autoscaling_groups.html aws_autoscaling_groups} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/autoscaling_groups aws_autoscaling_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

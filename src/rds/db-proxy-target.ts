@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 */
 export interface DbProxyTargetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_target.html#db_cluster_identifier DbProxyTarget#db_cluster_identifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_target#db_cluster_identifier DbProxyTarget#db_cluster_identifier}
   */
   readonly dbClusterIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_target.html#db_instance_identifier DbProxyTarget#db_instance_identifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_target#db_instance_identifier DbProxyTarget#db_instance_identifier}
   */
   readonly dbInstanceIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_target.html#db_proxy_name DbProxyTarget#db_proxy_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_target#db_proxy_name DbProxyTarget#db_proxy_name}
   */
   readonly dbProxyName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_target.html#target_group_name DbProxyTarget#target_group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_target#target_group_name DbProxyTarget#target_group_name}
   */
   readonly targetGroupName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_target.html aws_db_proxy_target}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_target aws_db_proxy_target}
 */
 export class DbProxyTarget extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class DbProxyTarget extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_target.html aws_db_proxy_target} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_target aws_db_proxy_target} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

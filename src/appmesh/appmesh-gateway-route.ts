@@ -8,39 +8,39 @@ import * as cdktf from 'cdktf';
 */
 export interface AppmeshGatewayRouteConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#mesh_name AppmeshGatewayRoute#mesh_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#mesh_name AppmeshGatewayRoute#mesh_name}
   */
   readonly meshName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#mesh_owner AppmeshGatewayRoute#mesh_owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#mesh_owner AppmeshGatewayRoute#mesh_owner}
   */
   readonly meshOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#name AppmeshGatewayRoute#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#name AppmeshGatewayRoute#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#tags AppmeshGatewayRoute#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#tags AppmeshGatewayRoute#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#tags_all AppmeshGatewayRoute#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#tags_all AppmeshGatewayRoute#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#virtual_gateway_name AppmeshGatewayRoute#virtual_gateway_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#virtual_gateway_name AppmeshGatewayRoute#virtual_gateway_name}
   */
   readonly virtualGatewayName: string;
   /**
   * spec block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#spec AppmeshGatewayRoute#spec}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#spec AppmeshGatewayRoute#spec}
   */
   readonly spec: AppmeshGatewayRouteSpec;
 }
 export interface AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#virtual_service_name AppmeshGatewayRoute#virtual_service_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#virtual_service_name AppmeshGatewayRoute#virtual_service_name}
   */
   readonly virtualServiceName: string;
 }
@@ -70,7 +70,7 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputRef
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._virtualServiceName) {
+    if (this._virtualServiceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualServiceName = this._virtualServiceName;
     }
@@ -105,7 +105,7 @@ export interface AppmeshGatewayRouteSpecGrpcRouteActionTarget {
   /**
   * virtual_service block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#virtual_service AppmeshGatewayRoute#virtual_service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#virtual_service AppmeshGatewayRoute#virtual_service}
   */
   readonly virtualService: AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService;
 }
@@ -135,7 +135,7 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference extends
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRouteActionTarget | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._virtualService?.internalValue) {
+    if (this._virtualService?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualService = this._virtualService?.internalValue;
     }
@@ -170,7 +170,7 @@ export interface AppmeshGatewayRouteSpecGrpcRouteAction {
   /**
   * target block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#target AppmeshGatewayRoute#target}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#target AppmeshGatewayRoute#target}
   */
   readonly target: AppmeshGatewayRouteSpecGrpcRouteActionTarget;
 }
@@ -200,7 +200,7 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionOutputReference extends cdktf
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRouteAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._target?.internalValue) {
+    if (this._target?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target?.internalValue;
     }
@@ -233,7 +233,7 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionOutputReference extends cdktf
 }
 export interface AppmeshGatewayRouteSpecGrpcRouteMatch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#service_name AppmeshGatewayRoute#service_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#service_name AppmeshGatewayRoute#service_name}
   */
   readonly serviceName: string;
 }
@@ -263,7 +263,7 @@ export class AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference extends cdktf.
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRouteMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._serviceName) {
+    if (this._serviceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceName = this._serviceName;
     }
@@ -298,13 +298,13 @@ export interface AppmeshGatewayRouteSpecGrpcRoute {
   /**
   * action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#action AppmeshGatewayRoute#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#action AppmeshGatewayRoute#action}
   */
   readonly action: AppmeshGatewayRouteSpecGrpcRouteAction;
   /**
   * match block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#match AppmeshGatewayRoute#match}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#match AppmeshGatewayRoute#match}
   */
   readonly match: AppmeshGatewayRouteSpecGrpcRouteMatch;
 }
@@ -335,11 +335,11 @@ export class AppmeshGatewayRouteSpecGrpcRouteOutputReference extends cdktf.Compl
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRoute | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action?.internalValue) {
+    if (this._action?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
-    if (this._match?.internalValue) {
+    if (this._match?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
@@ -387,7 +387,7 @@ export class AppmeshGatewayRouteSpecGrpcRouteOutputReference extends cdktf.Compl
 }
 export interface AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#virtual_service_name AppmeshGatewayRoute#virtual_service_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#virtual_service_name AppmeshGatewayRoute#virtual_service_name}
   */
   readonly virtualServiceName: string;
 }
@@ -417,7 +417,7 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputRe
   public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._virtualServiceName) {
+    if (this._virtualServiceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualServiceName = this._virtualServiceName;
     }
@@ -452,7 +452,7 @@ export interface AppmeshGatewayRouteSpecHttp2RouteActionTarget {
   /**
   * virtual_service block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#virtual_service AppmeshGatewayRoute#virtual_service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#virtual_service AppmeshGatewayRoute#virtual_service}
   */
   readonly virtualService: AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService;
 }
@@ -482,7 +482,7 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference extend
   public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteActionTarget | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._virtualService?.internalValue) {
+    if (this._virtualService?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualService = this._virtualService?.internalValue;
     }
@@ -517,7 +517,7 @@ export interface AppmeshGatewayRouteSpecHttp2RouteAction {
   /**
   * target block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#target AppmeshGatewayRoute#target}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#target AppmeshGatewayRoute#target}
   */
   readonly target: AppmeshGatewayRouteSpecHttp2RouteActionTarget;
 }
@@ -547,7 +547,7 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionOutputReference extends cdkt
   public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._target?.internalValue) {
+    if (this._target?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target?.internalValue;
     }
@@ -580,7 +580,7 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionOutputReference extends cdkt
 }
 export interface AppmeshGatewayRouteSpecHttp2RouteMatch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#prefix AppmeshGatewayRoute#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#prefix AppmeshGatewayRoute#prefix}
   */
   readonly prefix: string;
 }
@@ -610,7 +610,7 @@ export class AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference extends cdktf
   public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
@@ -645,13 +645,13 @@ export interface AppmeshGatewayRouteSpecHttp2Route {
   /**
   * action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#action AppmeshGatewayRoute#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#action AppmeshGatewayRoute#action}
   */
   readonly action: AppmeshGatewayRouteSpecHttp2RouteAction;
   /**
   * match block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#match AppmeshGatewayRoute#match}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#match AppmeshGatewayRoute#match}
   */
   readonly match: AppmeshGatewayRouteSpecHttp2RouteMatch;
 }
@@ -682,11 +682,11 @@ export class AppmeshGatewayRouteSpecHttp2RouteOutputReference extends cdktf.Comp
   public get internalValue(): AppmeshGatewayRouteSpecHttp2Route | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action?.internalValue) {
+    if (this._action?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
-    if (this._match?.internalValue) {
+    if (this._match?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
@@ -734,7 +734,7 @@ export class AppmeshGatewayRouteSpecHttp2RouteOutputReference extends cdktf.Comp
 }
 export interface AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#virtual_service_name AppmeshGatewayRoute#virtual_service_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#virtual_service_name AppmeshGatewayRoute#virtual_service_name}
   */
   readonly virtualServiceName: string;
 }
@@ -764,7 +764,7 @@ export class AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputRef
   public get internalValue(): AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._virtualServiceName) {
+    if (this._virtualServiceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualServiceName = this._virtualServiceName;
     }
@@ -799,7 +799,7 @@ export interface AppmeshGatewayRouteSpecHttpRouteActionTarget {
   /**
   * virtual_service block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#virtual_service AppmeshGatewayRoute#virtual_service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#virtual_service AppmeshGatewayRoute#virtual_service}
   */
   readonly virtualService: AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService;
 }
@@ -829,7 +829,7 @@ export class AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference extends
   public get internalValue(): AppmeshGatewayRouteSpecHttpRouteActionTarget | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._virtualService?.internalValue) {
+    if (this._virtualService?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualService = this._virtualService?.internalValue;
     }
@@ -864,7 +864,7 @@ export interface AppmeshGatewayRouteSpecHttpRouteAction {
   /**
   * target block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#target AppmeshGatewayRoute#target}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#target AppmeshGatewayRoute#target}
   */
   readonly target: AppmeshGatewayRouteSpecHttpRouteActionTarget;
 }
@@ -894,7 +894,7 @@ export class AppmeshGatewayRouteSpecHttpRouteActionOutputReference extends cdktf
   public get internalValue(): AppmeshGatewayRouteSpecHttpRouteAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._target?.internalValue) {
+    if (this._target?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target?.internalValue;
     }
@@ -927,7 +927,7 @@ export class AppmeshGatewayRouteSpecHttpRouteActionOutputReference extends cdktf
 }
 export interface AppmeshGatewayRouteSpecHttpRouteMatch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#prefix AppmeshGatewayRoute#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#prefix AppmeshGatewayRoute#prefix}
   */
   readonly prefix: string;
 }
@@ -957,7 +957,7 @@ export class AppmeshGatewayRouteSpecHttpRouteMatchOutputReference extends cdktf.
   public get internalValue(): AppmeshGatewayRouteSpecHttpRouteMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
@@ -992,13 +992,13 @@ export interface AppmeshGatewayRouteSpecHttpRoute {
   /**
   * action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#action AppmeshGatewayRoute#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#action AppmeshGatewayRoute#action}
   */
   readonly action: AppmeshGatewayRouteSpecHttpRouteAction;
   /**
   * match block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#match AppmeshGatewayRoute#match}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#match AppmeshGatewayRoute#match}
   */
   readonly match: AppmeshGatewayRouteSpecHttpRouteMatch;
 }
@@ -1029,11 +1029,11 @@ export class AppmeshGatewayRouteSpecHttpRouteOutputReference extends cdktf.Compl
   public get internalValue(): AppmeshGatewayRouteSpecHttpRoute | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action?.internalValue) {
+    if (this._action?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
-    if (this._match?.internalValue) {
+    if (this._match?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
@@ -1083,19 +1083,19 @@ export interface AppmeshGatewayRouteSpec {
   /**
   * grpc_route block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#grpc_route AppmeshGatewayRoute#grpc_route}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#grpc_route AppmeshGatewayRoute#grpc_route}
   */
   readonly grpcRoute?: AppmeshGatewayRouteSpecGrpcRoute;
   /**
   * http2_route block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#http2_route AppmeshGatewayRoute#http2_route}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#http2_route AppmeshGatewayRoute#http2_route}
   */
   readonly http2Route?: AppmeshGatewayRouteSpecHttp2Route;
   /**
   * http_route block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html#http_route AppmeshGatewayRoute#http_route}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#http_route AppmeshGatewayRoute#http_route}
   */
   readonly httpRoute?: AppmeshGatewayRouteSpecHttpRoute;
 }
@@ -1127,15 +1127,15 @@ export class AppmeshGatewayRouteSpecOutputReference extends cdktf.ComplexObject 
   public get internalValue(): AppmeshGatewayRouteSpec | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._grpcRoute?.internalValue) {
+    if (this._grpcRoute?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.grpcRoute = this._grpcRoute?.internalValue;
     }
-    if (this._http2Route?.internalValue) {
+    if (this._http2Route?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.http2Route = this._http2Route?.internalValue;
     }
-    if (this._httpRoute?.internalValue) {
+    if (this._httpRoute?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.httpRoute = this._httpRoute?.internalValue;
     }
@@ -1207,7 +1207,7 @@ export class AppmeshGatewayRouteSpecOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html aws_appmesh_gateway_route}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route aws_appmesh_gateway_route}
 */
 export class AppmeshGatewayRoute extends cdktf.TerraformResource {
 
@@ -1221,7 +1221,7 @@ export class AppmeshGatewayRoute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route.html aws_appmesh_gateway_route} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route aws_appmesh_gateway_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

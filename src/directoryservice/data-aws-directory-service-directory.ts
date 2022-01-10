@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsDirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/directory_service_directory.html#directory_id DataAwsDirectoryServiceDirectory#directory_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/directory_service_directory#directory_id DataAwsDirectoryServiceDirectory#directory_id}
   */
   readonly directoryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/directory_service_directory.html#tags DataAwsDirectoryServiceDirectory#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/directory_service_directory#tags DataAwsDirectoryServiceDirectory#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
@@ -67,7 +67,7 @@ export class DataAwsDirectoryServiceDirectoryVpcSettings extends cdktf.ComplexCo
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/directory_service_directory.html aws_directory_service_directory}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/directory_service_directory aws_directory_service_directory}
 */
 export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource {
 
@@ -81,7 +81,7 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/directory_service_directory.html aws_directory_service_directory} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/directory_service_directory aws_directory_service_directory} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

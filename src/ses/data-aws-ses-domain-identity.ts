@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsSesDomainIdentityConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ses_domain_identity.html#domain DataAwsSesDomainIdentity#domain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ses_domain_identity#domain DataAwsSesDomainIdentity#domain}
   */
   readonly domain: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ses_domain_identity.html aws_ses_domain_identity}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ses_domain_identity aws_ses_domain_identity}
 */
 export class DataAwsSesDomainIdentity extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsSesDomainIdentity extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ses_domain_identity.html aws_ses_domain_identity} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ses_domain_identity aws_ses_domain_identity} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

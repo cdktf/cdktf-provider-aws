@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsGlueDataCatalogEncryptionSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/glue_data_catalog_encryption_settings.html#catalog_id DataAwsGlueDataCatalogEncryptionSettings#catalog_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/glue_data_catalog_encryption_settings#catalog_id DataAwsGlueDataCatalogEncryptionSettings#catalog_id}
   */
   readonly catalogId: string;
 }
@@ -52,7 +52,7 @@ export class DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettin
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/glue_data_catalog_encryption_settings.html aws_glue_data_catalog_encryption_settings}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings}
 */
 export class DataAwsGlueDataCatalogEncryptionSettings extends cdktf.TerraformDataSource {
 
@@ -66,7 +66,7 @@ export class DataAwsGlueDataCatalogEncryptionSettings extends cdktf.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/glue_data_catalog_encryption_settings.html aws_glue_data_catalog_encryption_settings} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

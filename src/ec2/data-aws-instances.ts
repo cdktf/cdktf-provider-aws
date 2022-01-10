@@ -8,27 +8,27 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsInstancesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instances.html#instance_state_names DataAwsInstances#instance_state_names}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instances#instance_state_names DataAwsInstances#instance_state_names}
   */
   readonly instanceStateNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instances.html#instance_tags DataAwsInstances#instance_tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instances#instance_tags DataAwsInstances#instance_tags}
   */
   readonly instanceTags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instances.html#filter DataAwsInstances#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instances#filter DataAwsInstances#filter}
   */
   readonly filter?: DataAwsInstancesFilter[];
 }
 export interface DataAwsInstancesFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instances.html#name DataAwsInstances#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instances#name DataAwsInstances#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instances.html#values DataAwsInstances#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instances#values DataAwsInstances#values}
   */
   readonly values: string[];
 }
@@ -46,7 +46,7 @@ export function dataAwsInstancesFilterToTerraform(struct?: DataAwsInstancesFilte
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/instances.html aws_instances}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/instances aws_instances}
 */
 export class DataAwsInstances extends cdktf.TerraformDataSource {
 
@@ -60,7 +60,7 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/instances.html aws_instances} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/instances aws_instances} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

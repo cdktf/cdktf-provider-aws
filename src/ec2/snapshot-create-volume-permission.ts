@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface SnapshotCreateVolumePermissionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/snapshot_create_volume_permission.html#account_id SnapshotCreateVolumePermission#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/snapshot_create_volume_permission#account_id SnapshotCreateVolumePermission#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/snapshot_create_volume_permission.html#snapshot_id SnapshotCreateVolumePermission#snapshot_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/snapshot_create_volume_permission#snapshot_id SnapshotCreateVolumePermission#snapshot_id}
   */
   readonly snapshotId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/snapshot_create_volume_permission.html aws_snapshot_create_volume_permission}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/snapshot_create_volume_permission aws_snapshot_create_volume_permission}
 */
 export class SnapshotCreateVolumePermission extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class SnapshotCreateVolumePermission extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/snapshot_create_volume_permission.html aws_snapshot_create_volume_permission} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/snapshot_create_volume_permission aws_snapshot_create_volume_permission} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

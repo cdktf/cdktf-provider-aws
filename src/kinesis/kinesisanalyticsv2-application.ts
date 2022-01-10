@@ -8,67 +8,67 @@ import * as cdktf from 'cdktf';
 */
 export interface Kinesisanalyticsv2ApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#description Kinesisanalyticsv2Application#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#description Kinesisanalyticsv2Application#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#force_stop Kinesisanalyticsv2Application#force_stop}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#force_stop Kinesisanalyticsv2Application#force_stop}
   */
   readonly forceStop?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#name Kinesisanalyticsv2Application#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#name Kinesisanalyticsv2Application#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#runtime_environment Kinesisanalyticsv2Application#runtime_environment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#runtime_environment Kinesisanalyticsv2Application#runtime_environment}
   */
   readonly runtimeEnvironment: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#service_execution_role Kinesisanalyticsv2Application#service_execution_role}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#service_execution_role Kinesisanalyticsv2Application#service_execution_role}
   */
   readonly serviceExecutionRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#start_application Kinesisanalyticsv2Application#start_application}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#start_application Kinesisanalyticsv2Application#start_application}
   */
   readonly startApplication?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#tags Kinesisanalyticsv2Application#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#tags Kinesisanalyticsv2Application#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#tags_all Kinesisanalyticsv2Application#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#tags_all Kinesisanalyticsv2Application#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * application_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#application_configuration Kinesisanalyticsv2Application#application_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#application_configuration Kinesisanalyticsv2Application#application_configuration}
   */
   readonly applicationConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfiguration;
   /**
   * cloudwatch_logging_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#cloudwatch_logging_options Kinesisanalyticsv2Application#cloudwatch_logging_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#cloudwatch_logging_options Kinesisanalyticsv2Application#cloudwatch_logging_options}
   */
   readonly cloudwatchLoggingOptions?: Kinesisanalyticsv2ApplicationCloudwatchLoggingOptions;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#timeouts Kinesisanalyticsv2Application#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#timeouts Kinesisanalyticsv2Application#timeouts}
   */
   readonly timeouts?: Kinesisanalyticsv2ApplicationTimeouts;
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#bucket_arn Kinesisanalyticsv2Application#bucket_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#bucket_arn Kinesisanalyticsv2Application#bucket_arn}
   */
   readonly bucketArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#file_key Kinesisanalyticsv2Application#file_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#file_key Kinesisanalyticsv2Application#file_key}
   */
   readonly fileKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#object_version Kinesisanalyticsv2Application#object_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#object_version Kinesisanalyticsv2Application#object_version}
   */
   readonly objectVersion?: string;
 }
@@ -100,15 +100,15 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucketArn) {
+    if (this._bucketArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketArn = this._bucketArn;
     }
-    if (this._fileKey) {
+    if (this._fileKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.fileKey = this._fileKey;
     }
-    if (this._objectVersion) {
+    if (this._objectVersion !== undefined) {
       hasAnyValues = true;
       internalValueResult.objectVersion = this._objectVersion;
     }
@@ -174,13 +174,13 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#text_content Kinesisanalyticsv2Application#text_content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#text_content Kinesisanalyticsv2Application#text_content}
   */
   readonly textContent?: string;
   /**
   * s3_content_location block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#s3_content_location Kinesisanalyticsv2Application#s3_content_location}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#s3_content_location Kinesisanalyticsv2Application#s3_content_location}
   */
   readonly s3ContentLocation?: Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation;
 }
@@ -211,11 +211,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._textContent) {
+    if (this._textContent !== undefined) {
       hasAnyValues = true;
       internalValueResult.textContent = this._textContent;
     }
-    if (this._s3ContentLocation?.internalValue) {
+    if (this._s3ContentLocation?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3ContentLocation = this._s3ContentLocation?.internalValue;
     }
@@ -269,13 +269,13 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#code_content_type Kinesisanalyticsv2Application#code_content_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#code_content_type Kinesisanalyticsv2Application#code_content_type}
   */
   readonly codeContentType: string;
   /**
   * code_content block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#code_content Kinesisanalyticsv2Application#code_content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#code_content Kinesisanalyticsv2Application#code_content}
   */
   readonly codeContent?: Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent;
 }
@@ -306,11 +306,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._codeContentType) {
+    if (this._codeContentType !== undefined) {
       hasAnyValues = true;
       internalValueResult.codeContentType = this._codeContentType;
     }
-    if (this._codeContent?.internalValue) {
+    if (this._codeContent?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.codeContent = this._codeContent?.internalValue;
     }
@@ -361,7 +361,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSnapshotConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#snapshots_enabled Kinesisanalyticsv2Application#snapshots_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#snapshots_enabled Kinesisanalyticsv2Application#snapshots_enabled}
   */
   readonly snapshotsEnabled: boolean | cdktf.IResolvable;
 }
@@ -391,7 +391,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSna
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSnapshotConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._snapshotsEnabled) {
+    if (this._snapshotsEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.snapshotsEnabled = this._snapshotsEnabled;
     }
@@ -424,11 +424,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSna
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#property_group_id Kinesisanalyticsv2Application#property_group_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#property_group_id Kinesisanalyticsv2Application#property_group_id}
   */
   readonly propertyGroupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#property_map Kinesisanalyticsv2Application#property_map}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#property_map Kinesisanalyticsv2Application#property_map}
   */
   readonly propertyMap: { [key: string]: string } | cdktf.IResolvable;
 }
@@ -448,7 +448,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmen
   /**
   * property_group block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#property_group Kinesisanalyticsv2Application#property_group}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#property_group Kinesisanalyticsv2Application#property_group}
   */
   readonly propertyGroup: Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup[];
 }
@@ -478,7 +478,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPro
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentProperties | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._propertyGroup) {
+    if (this._propertyGroup !== undefined) {
       hasAnyValues = true;
       internalValueResult.propertyGroup = this._propertyGroup;
     }
@@ -512,19 +512,19 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPro
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#checkpoint_interval Kinesisanalyticsv2Application#checkpoint_interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#checkpoint_interval Kinesisanalyticsv2Application#checkpoint_interval}
   */
   readonly checkpointInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#checkpointing_enabled Kinesisanalyticsv2Application#checkpointing_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#checkpointing_enabled Kinesisanalyticsv2Application#checkpointing_enabled}
   */
   readonly checkpointingEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#configuration_type Kinesisanalyticsv2Application#configuration_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#configuration_type Kinesisanalyticsv2Application#configuration_type}
   */
   readonly configurationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#min_pause_between_checkpoints Kinesisanalyticsv2Application#min_pause_between_checkpoints}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#min_pause_between_checkpoints Kinesisanalyticsv2Application#min_pause_between_checkpoints}
   */
   readonly minPauseBetweenCheckpoints?: number;
 }
@@ -557,19 +557,19 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._checkpointInterval) {
+    if (this._checkpointInterval !== undefined) {
       hasAnyValues = true;
       internalValueResult.checkpointInterval = this._checkpointInterval;
     }
-    if (this._checkpointingEnabled) {
+    if (this._checkpointingEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.checkpointingEnabled = this._checkpointingEnabled;
     }
-    if (this._configurationType) {
+    if (this._configurationType !== undefined) {
       hasAnyValues = true;
       internalValueResult.configurationType = this._configurationType;
     }
-    if (this._minPauseBetweenCheckpoints) {
+    if (this._minPauseBetweenCheckpoints !== undefined) {
       hasAnyValues = true;
       internalValueResult.minPauseBetweenCheckpoints = this._minPauseBetweenCheckpoints;
     }
@@ -656,15 +656,15 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#configuration_type Kinesisanalyticsv2Application#configuration_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#configuration_type Kinesisanalyticsv2Application#configuration_type}
   */
   readonly configurationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#log_level Kinesisanalyticsv2Application#log_level}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#log_level Kinesisanalyticsv2Application#log_level}
   */
   readonly logLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#metrics_level Kinesisanalyticsv2Application#metrics_level}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#metrics_level Kinesisanalyticsv2Application#metrics_level}
   */
   readonly metricsLevel?: string;
 }
@@ -696,15 +696,15 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._configurationType) {
+    if (this._configurationType !== undefined) {
       hasAnyValues = true;
       internalValueResult.configurationType = this._configurationType;
     }
-    if (this._logLevel) {
+    if (this._logLevel !== undefined) {
       hasAnyValues = true;
       internalValueResult.logLevel = this._logLevel;
     }
-    if (this._metricsLevel) {
+    if (this._metricsLevel !== undefined) {
       hasAnyValues = true;
       internalValueResult.metricsLevel = this._metricsLevel;
     }
@@ -773,19 +773,19 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#auto_scaling_enabled Kinesisanalyticsv2Application#auto_scaling_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#auto_scaling_enabled Kinesisanalyticsv2Application#auto_scaling_enabled}
   */
   readonly autoScalingEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#configuration_type Kinesisanalyticsv2Application#configuration_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#configuration_type Kinesisanalyticsv2Application#configuration_type}
   */
   readonly configurationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#parallelism Kinesisanalyticsv2Application#parallelism}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#parallelism Kinesisanalyticsv2Application#parallelism}
   */
   readonly parallelism?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#parallelism_per_kpu Kinesisanalyticsv2Application#parallelism_per_kpu}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#parallelism_per_kpu Kinesisanalyticsv2Application#parallelism_per_kpu}
   */
   readonly parallelismPerKpu?: number;
 }
@@ -818,19 +818,19 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._autoScalingEnabled) {
+    if (this._autoScalingEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoScalingEnabled = this._autoScalingEnabled;
     }
-    if (this._configurationType) {
+    if (this._configurationType !== undefined) {
       hasAnyValues = true;
       internalValueResult.configurationType = this._configurationType;
     }
-    if (this._parallelism) {
+    if (this._parallelism !== undefined) {
       hasAnyValues = true;
       internalValueResult.parallelism = this._parallelism;
     }
-    if (this._parallelismPerKpu) {
+    if (this._parallelismPerKpu !== undefined) {
       hasAnyValues = true;
       internalValueResult.parallelismPerKpu = this._parallelismPerKpu;
     }
@@ -919,19 +919,19 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkAppli
   /**
   * checkpoint_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#checkpoint_configuration Kinesisanalyticsv2Application#checkpoint_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#checkpoint_configuration Kinesisanalyticsv2Application#checkpoint_configuration}
   */
   readonly checkpointConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration;
   /**
   * monitoring_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#monitoring_configuration Kinesisanalyticsv2Application#monitoring_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#monitoring_configuration Kinesisanalyticsv2Application#monitoring_configuration}
   */
   readonly monitoringConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration;
   /**
   * parallelism_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#parallelism_configuration Kinesisanalyticsv2Application#parallelism_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#parallelism_configuration Kinesisanalyticsv2Application#parallelism_configuration}
   */
   readonly parallelismConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration;
 }
@@ -963,15 +963,15 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._checkpointConfiguration?.internalValue) {
+    if (this._checkpointConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.checkpointConfiguration = this._checkpointConfiguration?.internalValue;
     }
-    if (this._monitoringConfiguration?.internalValue) {
+    if (this._monitoringConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.monitoringConfiguration = this._monitoringConfiguration?.internalValue;
     }
-    if (this._parallelismConfiguration?.internalValue) {
+    if (this._parallelismConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.parallelismConfiguration = this._parallelismConfiguration?.internalValue;
     }
@@ -1043,11 +1043,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#application_restore_type Kinesisanalyticsv2Application#application_restore_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#application_restore_type Kinesisanalyticsv2Application#application_restore_type}
   */
   readonly applicationRestoreType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#snapshot_name Kinesisanalyticsv2Application#snapshot_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#snapshot_name Kinesisanalyticsv2Application#snapshot_name}
   */
   readonly snapshotName?: string;
 }
@@ -1078,11 +1078,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._applicationRestoreType) {
+    if (this._applicationRestoreType !== undefined) {
       hasAnyValues = true;
       internalValueResult.applicationRestoreType = this._applicationRestoreType;
     }
-    if (this._snapshotName) {
+    if (this._snapshotName !== undefined) {
       hasAnyValues = true;
       internalValueResult.snapshotName = this._snapshotName;
     }
@@ -1136,7 +1136,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#allow_non_restored_state Kinesisanalyticsv2Application#allow_non_restored_state}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#allow_non_restored_state Kinesisanalyticsv2Application#allow_non_restored_state}
   */
   readonly allowNonRestoredState?: boolean | cdktf.IResolvable;
 }
@@ -1166,7 +1166,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allowNonRestoredState) {
+    if (this._allowNonRestoredState !== undefined) {
       hasAnyValues = true;
       internalValueResult.allowNonRestoredState = this._allowNonRestoredState;
     }
@@ -1204,13 +1204,13 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigu
   /**
   * application_restore_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#application_restore_configuration Kinesisanalyticsv2Application#application_restore_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#application_restore_configuration Kinesisanalyticsv2Application#application_restore_configuration}
   */
   readonly applicationRestoreConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfiguration;
   /**
   * flink_run_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#flink_run_configuration Kinesisanalyticsv2Application#flink_run_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#flink_run_configuration Kinesisanalyticsv2Application#flink_run_configuration}
   */
   readonly flinkRunConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfiguration;
 }
@@ -1241,11 +1241,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._applicationRestoreConfiguration?.internalValue) {
+    if (this._applicationRestoreConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.applicationRestoreConfiguration = this._applicationRestoreConfiguration?.internalValue;
     }
-    if (this._flinkRunConfiguration?.internalValue) {
+    if (this._flinkRunConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.flinkRunConfiguration = this._flinkRunConfiguration?.internalValue;
     }
@@ -1299,7 +1299,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#count Kinesisanalyticsv2Application#count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#count Kinesisanalyticsv2Application#count}
   */
   readonly count?: number;
 }
@@ -1329,7 +1329,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._count) {
+    if (this._count !== undefined) {
       hasAnyValues = true;
       internalValueResult.count = this._count;
     }
@@ -1365,7 +1365,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#resource_arn Kinesisanalyticsv2Application#resource_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#resource_arn Kinesisanalyticsv2Application#resource_arn}
   */
   readonly resourceArn: string;
 }
@@ -1395,7 +1395,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._resourceArn) {
+    if (this._resourceArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceArn = this._resourceArn;
     }
@@ -1430,7 +1430,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
   /**
   * input_lambda_processor block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#input_lambda_processor Kinesisanalyticsv2Application#input_lambda_processor}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#input_lambda_processor Kinesisanalyticsv2Application#input_lambda_processor}
   */
   readonly inputLambdaProcessor: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor;
 }
@@ -1460,7 +1460,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._inputLambdaProcessor?.internalValue) {
+    if (this._inputLambdaProcessor?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.inputLambdaProcessor = this._inputLambdaProcessor?.internalValue;
     }
@@ -1493,15 +1493,15 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#mapping Kinesisanalyticsv2Application#mapping}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#mapping Kinesisanalyticsv2Application#mapping}
   */
   readonly mapping?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#name Kinesisanalyticsv2Application#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#name Kinesisanalyticsv2Application#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#sql_type Kinesisanalyticsv2Application#sql_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#sql_type Kinesisanalyticsv2Application#sql_type}
   */
   readonly sqlType: string;
 }
@@ -1520,11 +1520,11 @@ export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicat
 
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_column_delimiter Kinesisanalyticsv2Application#record_column_delimiter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_column_delimiter Kinesisanalyticsv2Application#record_column_delimiter}
   */
   readonly recordColumnDelimiter: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_row_delimiter Kinesisanalyticsv2Application#record_row_delimiter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_row_delimiter Kinesisanalyticsv2Application#record_row_delimiter}
   */
   readonly recordRowDelimiter: string;
 }
@@ -1555,11 +1555,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._recordColumnDelimiter) {
+    if (this._recordColumnDelimiter !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordColumnDelimiter = this._recordColumnDelimiter;
     }
-    if (this._recordRowDelimiter) {
+    if (this._recordRowDelimiter !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordRowDelimiter = this._recordRowDelimiter;
     }
@@ -1607,7 +1607,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_row_path Kinesisanalyticsv2Application#record_row_path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_row_path Kinesisanalyticsv2Application#record_row_path}
   */
   readonly recordRowPath: string;
 }
@@ -1637,7 +1637,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._recordRowPath) {
+    if (this._recordRowPath !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordRowPath = this._recordRowPath;
     }
@@ -1672,13 +1672,13 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
   /**
   * csv_mapping_parameters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#csv_mapping_parameters Kinesisanalyticsv2Application#csv_mapping_parameters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#csv_mapping_parameters Kinesisanalyticsv2Application#csv_mapping_parameters}
   */
   readonly csvMappingParameters?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters;
   /**
   * json_mapping_parameters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#json_mapping_parameters Kinesisanalyticsv2Application#json_mapping_parameters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#json_mapping_parameters Kinesisanalyticsv2Application#json_mapping_parameters}
   */
   readonly jsonMappingParameters?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters;
 }
@@ -1709,11 +1709,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._csvMappingParameters?.internalValue) {
+    if (this._csvMappingParameters?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.csvMappingParameters = this._csvMappingParameters?.internalValue;
     }
-    if (this._jsonMappingParameters?.internalValue) {
+    if (this._jsonMappingParameters?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.jsonMappingParameters = this._jsonMappingParameters?.internalValue;
     }
@@ -1767,13 +1767,13 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_format_type Kinesisanalyticsv2Application#record_format_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_format_type Kinesisanalyticsv2Application#record_format_type}
   */
   readonly recordFormatType: string;
   /**
   * mapping_parameters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#mapping_parameters Kinesisanalyticsv2Application#mapping_parameters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#mapping_parameters Kinesisanalyticsv2Application#mapping_parameters}
   */
   readonly mappingParameters: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters;
 }
@@ -1804,11 +1804,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._recordFormatType) {
+    if (this._recordFormatType !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordFormatType = this._recordFormatType;
     }
-    if (this._mappingParameters?.internalValue) {
+    if (this._mappingParameters?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.mappingParameters = this._mappingParameters?.internalValue;
     }
@@ -1856,19 +1856,19 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_encoding Kinesisanalyticsv2Application#record_encoding}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_encoding Kinesisanalyticsv2Application#record_encoding}
   */
   readonly recordEncoding?: string;
   /**
   * record_column block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_column Kinesisanalyticsv2Application#record_column}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_column Kinesisanalyticsv2Application#record_column}
   */
   readonly recordColumn: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn[];
   /**
   * record_format block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_format Kinesisanalyticsv2Application#record_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_format Kinesisanalyticsv2Application#record_format}
   */
   readonly recordFormat: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat;
 }
@@ -1900,15 +1900,15 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._recordEncoding) {
+    if (this._recordEncoding !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordEncoding = this._recordEncoding;
     }
-    if (this._recordColumn) {
+    if (this._recordColumn !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordColumn = this._recordColumn;
     }
-    if (this._recordFormat?.internalValue) {
+    if (this._recordFormat?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordFormat = this._recordFormat?.internalValue;
     }
@@ -1975,7 +1975,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#input_starting_position Kinesisanalyticsv2Application#input_starting_position}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#input_starting_position Kinesisanalyticsv2Application#input_starting_position}
   */
   readonly inputStartingPosition?: string;
 }
@@ -1992,7 +1992,7 @@ export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicat
 
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#resource_arn Kinesisanalyticsv2Application#resource_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#resource_arn Kinesisanalyticsv2Application#resource_arn}
   */
   readonly resourceArn: string;
 }
@@ -2022,7 +2022,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._resourceArn) {
+    if (this._resourceArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceArn = this._resourceArn;
     }
@@ -2055,7 +2055,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#resource_arn Kinesisanalyticsv2Application#resource_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#resource_arn Kinesisanalyticsv2Application#resource_arn}
   */
   readonly resourceArn: string;
 }
@@ -2085,7 +2085,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._resourceArn) {
+    if (this._resourceArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceArn = this._resourceArn;
     }
@@ -2118,43 +2118,43 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInput {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#name_prefix Kinesisanalyticsv2Application#name_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#name_prefix Kinesisanalyticsv2Application#name_prefix}
   */
   readonly namePrefix: string;
   /**
   * input_parallelism block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#input_parallelism Kinesisanalyticsv2Application#input_parallelism}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#input_parallelism Kinesisanalyticsv2Application#input_parallelism}
   */
   readonly inputParallelism?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism;
   /**
   * input_processing_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#input_processing_configuration Kinesisanalyticsv2Application#input_processing_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#input_processing_configuration Kinesisanalyticsv2Application#input_processing_configuration}
   */
   readonly inputProcessingConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration;
   /**
   * input_schema block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#input_schema Kinesisanalyticsv2Application#input_schema}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#input_schema Kinesisanalyticsv2Application#input_schema}
   */
   readonly inputSchema: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema;
   /**
   * input_starting_position_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#input_starting_position_configuration Kinesisanalyticsv2Application#input_starting_position_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#input_starting_position_configuration Kinesisanalyticsv2Application#input_starting_position_configuration}
   */
   readonly inputStartingPositionConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration[];
   /**
   * kinesis_firehose_input block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#kinesis_firehose_input Kinesisanalyticsv2Application#kinesis_firehose_input}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#kinesis_firehose_input Kinesisanalyticsv2Application#kinesis_firehose_input}
   */
   readonly kinesisFirehoseInput?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput;
   /**
   * kinesis_streams_input block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#kinesis_streams_input Kinesisanalyticsv2Application#kinesis_streams_input}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#kinesis_streams_input Kinesisanalyticsv2Application#kinesis_streams_input}
   */
   readonly kinesisStreamsInput?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput;
 }
@@ -2190,31 +2190,31 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInput | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._namePrefix) {
+    if (this._namePrefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.namePrefix = this._namePrefix;
     }
-    if (this._inputParallelism?.internalValue) {
+    if (this._inputParallelism?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.inputParallelism = this._inputParallelism?.internalValue;
     }
-    if (this._inputProcessingConfiguration?.internalValue) {
+    if (this._inputProcessingConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.inputProcessingConfiguration = this._inputProcessingConfiguration?.internalValue;
     }
-    if (this._inputSchema?.internalValue) {
+    if (this._inputSchema?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.inputSchema = this._inputSchema?.internalValue;
     }
-    if (this._inputStartingPositionConfiguration) {
+    if (this._inputStartingPositionConfiguration !== undefined) {
       hasAnyValues = true;
       internalValueResult.inputStartingPositionConfiguration = this._inputStartingPositionConfiguration;
     }
-    if (this._kinesisFirehoseInput?.internalValue) {
+    if (this._kinesisFirehoseInput?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.kinesisFirehoseInput = this._kinesisFirehoseInput?.internalValue;
     }
-    if (this._kinesisStreamsInput?.internalValue) {
+    if (this._kinesisStreamsInput?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.kinesisStreamsInput = this._kinesisStreamsInput?.internalValue;
     }
@@ -2353,7 +2353,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_format_type Kinesisanalyticsv2Application#record_format_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_format_type Kinesisanalyticsv2Application#record_format_type}
   */
   readonly recordFormatType: string;
 }
@@ -2383,7 +2383,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._recordFormatType) {
+    if (this._recordFormatType !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordFormatType = this._recordFormatType;
     }
@@ -2416,7 +2416,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#resource_arn Kinesisanalyticsv2Application#resource_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#resource_arn Kinesisanalyticsv2Application#resource_arn}
   */
   readonly resourceArn: string;
 }
@@ -2446,7 +2446,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._resourceArn) {
+    if (this._resourceArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceArn = this._resourceArn;
     }
@@ -2479,7 +2479,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#resource_arn Kinesisanalyticsv2Application#resource_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#resource_arn Kinesisanalyticsv2Application#resource_arn}
   */
   readonly resourceArn: string;
 }
@@ -2509,7 +2509,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._resourceArn) {
+    if (this._resourceArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceArn = this._resourceArn;
     }
@@ -2542,7 +2542,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#resource_arn Kinesisanalyticsv2Application#resource_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#resource_arn Kinesisanalyticsv2Application#resource_arn}
   */
   readonly resourceArn: string;
 }
@@ -2572,7 +2572,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._resourceArn) {
+    if (this._resourceArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceArn = this._resourceArn;
     }
@@ -2605,31 +2605,31 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutput {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#name Kinesisanalyticsv2Application#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#name Kinesisanalyticsv2Application#name}
   */
   readonly name: string;
   /**
   * destination_schema block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#destination_schema Kinesisanalyticsv2Application#destination_schema}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#destination_schema Kinesisanalyticsv2Application#destination_schema}
   */
   readonly destinationSchema: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema;
   /**
   * kinesis_firehose_output block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#kinesis_firehose_output Kinesisanalyticsv2Application#kinesis_firehose_output}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#kinesis_firehose_output Kinesisanalyticsv2Application#kinesis_firehose_output}
   */
   readonly kinesisFirehoseOutput?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput;
   /**
   * kinesis_streams_output block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#kinesis_streams_output Kinesisanalyticsv2Application#kinesis_streams_output}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#kinesis_streams_output Kinesisanalyticsv2Application#kinesis_streams_output}
   */
   readonly kinesisStreamsOutput?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput;
   /**
   * lambda_output block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#lambda_output Kinesisanalyticsv2Application#lambda_output}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#lambda_output Kinesisanalyticsv2Application#lambda_output}
   */
   readonly lambdaOutput?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput;
 }
@@ -2650,15 +2650,15 @@ export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicat
 
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#mapping Kinesisanalyticsv2Application#mapping}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#mapping Kinesisanalyticsv2Application#mapping}
   */
   readonly mapping?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#name Kinesisanalyticsv2Application#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#name Kinesisanalyticsv2Application#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#sql_type Kinesisanalyticsv2Application#sql_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#sql_type Kinesisanalyticsv2Application#sql_type}
   */
   readonly sqlType: string;
 }
@@ -2677,11 +2677,11 @@ export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicat
 
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_column_delimiter Kinesisanalyticsv2Application#record_column_delimiter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_column_delimiter Kinesisanalyticsv2Application#record_column_delimiter}
   */
   readonly recordColumnDelimiter: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_row_delimiter Kinesisanalyticsv2Application#record_row_delimiter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_row_delimiter Kinesisanalyticsv2Application#record_row_delimiter}
   */
   readonly recordRowDelimiter: string;
 }
@@ -2712,11 +2712,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._recordColumnDelimiter) {
+    if (this._recordColumnDelimiter !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordColumnDelimiter = this._recordColumnDelimiter;
     }
-    if (this._recordRowDelimiter) {
+    if (this._recordRowDelimiter !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordRowDelimiter = this._recordRowDelimiter;
     }
@@ -2764,7 +2764,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParameters {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_row_path Kinesisanalyticsv2Application#record_row_path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_row_path Kinesisanalyticsv2Application#record_row_path}
   */
   readonly recordRowPath: string;
 }
@@ -2794,7 +2794,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParameters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._recordRowPath) {
+    if (this._recordRowPath !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordRowPath = this._recordRowPath;
     }
@@ -2829,13 +2829,13 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
   /**
   * csv_mapping_parameters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#csv_mapping_parameters Kinesisanalyticsv2Application#csv_mapping_parameters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#csv_mapping_parameters Kinesisanalyticsv2Application#csv_mapping_parameters}
   */
   readonly csvMappingParameters?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters;
   /**
   * json_mapping_parameters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#json_mapping_parameters Kinesisanalyticsv2Application#json_mapping_parameters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#json_mapping_parameters Kinesisanalyticsv2Application#json_mapping_parameters}
   */
   readonly jsonMappingParameters?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParameters;
 }
@@ -2866,11 +2866,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParameters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._csvMappingParameters?.internalValue) {
+    if (this._csvMappingParameters?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.csvMappingParameters = this._csvMappingParameters?.internalValue;
     }
-    if (this._jsonMappingParameters?.internalValue) {
+    if (this._jsonMappingParameters?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.jsonMappingParameters = this._jsonMappingParameters?.internalValue;
     }
@@ -2924,13 +2924,13 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_format_type Kinesisanalyticsv2Application#record_format_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_format_type Kinesisanalyticsv2Application#record_format_type}
   */
   readonly recordFormatType: string;
   /**
   * mapping_parameters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#mapping_parameters Kinesisanalyticsv2Application#mapping_parameters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#mapping_parameters Kinesisanalyticsv2Application#mapping_parameters}
   */
   readonly mappingParameters: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParameters;
 }
@@ -2961,11 +2961,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._recordFormatType) {
+    if (this._recordFormatType !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordFormatType = this._recordFormatType;
     }
-    if (this._mappingParameters?.internalValue) {
+    if (this._mappingParameters?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.mappingParameters = this._mappingParameters?.internalValue;
     }
@@ -3013,19 +3013,19 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_encoding Kinesisanalyticsv2Application#record_encoding}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_encoding Kinesisanalyticsv2Application#record_encoding}
   */
   readonly recordEncoding?: string;
   /**
   * record_column block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_column Kinesisanalyticsv2Application#record_column}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_column Kinesisanalyticsv2Application#record_column}
   */
   readonly recordColumn: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn[];
   /**
   * record_format block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#record_format Kinesisanalyticsv2Application#record_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_format Kinesisanalyticsv2Application#record_format}
   */
   readonly recordFormat: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat;
 }
@@ -3057,15 +3057,15 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._recordEncoding) {
+    if (this._recordEncoding !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordEncoding = this._recordEncoding;
     }
-    if (this._recordColumn) {
+    if (this._recordColumn !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordColumn = this._recordColumn;
     }
-    if (this._recordFormat?.internalValue) {
+    if (this._recordFormat?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.recordFormat = this._recordFormat?.internalValue;
     }
@@ -3132,11 +3132,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#bucket_arn Kinesisanalyticsv2Application#bucket_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#bucket_arn Kinesisanalyticsv2Application#bucket_arn}
   */
   readonly bucketArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#file_key Kinesisanalyticsv2Application#file_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#file_key Kinesisanalyticsv2Application#file_key}
   */
   readonly fileKey: string;
 }
@@ -3167,11 +3167,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucketArn) {
+    if (this._bucketArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketArn = this._bucketArn;
     }
-    if (this._fileKey) {
+    if (this._fileKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.fileKey = this._fileKey;
     }
@@ -3219,19 +3219,19 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#table_name Kinesisanalyticsv2Application#table_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#table_name Kinesisanalyticsv2Application#table_name}
   */
   readonly tableName: string;
   /**
   * reference_schema block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#reference_schema Kinesisanalyticsv2Application#reference_schema}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#reference_schema Kinesisanalyticsv2Application#reference_schema}
   */
   readonly referenceSchema: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema;
   /**
   * s3_reference_data_source block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#s3_reference_data_source Kinesisanalyticsv2Application#s3_reference_data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#s3_reference_data_source Kinesisanalyticsv2Application#s3_reference_data_source}
   */
   readonly s3ReferenceDataSource: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource;
 }
@@ -3263,15 +3263,15 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._tableName) {
+    if (this._tableName !== undefined) {
       hasAnyValues = true;
       internalValueResult.tableName = this._tableName;
     }
-    if (this._referenceSchema?.internalValue) {
+    if (this._referenceSchema?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.referenceSchema = this._referenceSchema?.internalValue;
     }
-    if (this._s3ReferenceDataSource?.internalValue) {
+    if (this._s3ReferenceDataSource?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3ReferenceDataSource = this._s3ReferenceDataSource?.internalValue;
     }
@@ -3336,19 +3336,19 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
   /**
   * input block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#input Kinesisanalyticsv2Application#input}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#input Kinesisanalyticsv2Application#input}
   */
   readonly input?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInput;
   /**
   * output block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#output Kinesisanalyticsv2Application#output}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#output Kinesisanalyticsv2Application#output}
   */
   readonly output?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutput[];
   /**
   * reference_data_source block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#reference_data_source Kinesisanalyticsv2Application#reference_data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#reference_data_source Kinesisanalyticsv2Application#reference_data_source}
   */
   readonly referenceDataSource?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource;
 }
@@ -3380,15 +3380,15 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._input?.internalValue) {
+    if (this._input?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.input = this._input?.internalValue;
     }
-    if (this._output) {
+    if (this._output !== undefined) {
       hasAnyValues = true;
       internalValueResult.output = this._output;
     }
-    if (this._referenceDataSource?.internalValue) {
+    if (this._referenceDataSource?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.referenceDataSource = this._referenceDataSource?.internalValue;
     }
@@ -3461,11 +3461,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#security_group_ids Kinesisanalyticsv2Application#security_group_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#security_group_ids Kinesisanalyticsv2Application#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#subnet_ids Kinesisanalyticsv2Application#subnet_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#subnet_ids Kinesisanalyticsv2Application#subnet_ids}
   */
   readonly subnetIds: string[];
 }
@@ -3496,11 +3496,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurati
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._securityGroupIds) {
+    if (this._securityGroupIds !== undefined) {
       hasAnyValues = true;
       internalValueResult.securityGroupIds = this._securityGroupIds;
     }
-    if (this._subnetIds) {
+    if (this._subnetIds !== undefined) {
       hasAnyValues = true;
       internalValueResult.subnetIds = this._subnetIds;
     }
@@ -3550,43 +3550,43 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfiguration {
   /**
   * application_code_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#application_code_configuration Kinesisanalyticsv2Application#application_code_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#application_code_configuration Kinesisanalyticsv2Application#application_code_configuration}
   */
   readonly applicationCodeConfiguration: Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfiguration;
   /**
   * application_snapshot_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#application_snapshot_configuration Kinesisanalyticsv2Application#application_snapshot_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#application_snapshot_configuration Kinesisanalyticsv2Application#application_snapshot_configuration}
   */
   readonly applicationSnapshotConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSnapshotConfiguration;
   /**
   * environment_properties block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#environment_properties Kinesisanalyticsv2Application#environment_properties}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#environment_properties Kinesisanalyticsv2Application#environment_properties}
   */
   readonly environmentProperties?: Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentProperties;
   /**
   * flink_application_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#flink_application_configuration Kinesisanalyticsv2Application#flink_application_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#flink_application_configuration Kinesisanalyticsv2Application#flink_application_configuration}
   */
   readonly flinkApplicationConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfiguration;
   /**
   * run_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#run_configuration Kinesisanalyticsv2Application#run_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#run_configuration Kinesisanalyticsv2Application#run_configuration}
   */
   readonly runConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfiguration;
   /**
   * sql_application_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#sql_application_configuration Kinesisanalyticsv2Application#sql_application_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#sql_application_configuration Kinesisanalyticsv2Application#sql_application_configuration}
   */
   readonly sqlApplicationConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfiguration;
   /**
   * vpc_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#vpc_configuration Kinesisanalyticsv2Application#vpc_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#vpc_configuration Kinesisanalyticsv2Application#vpc_configuration}
   */
   readonly vpcConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfiguration;
 }
@@ -3622,31 +3622,31 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._applicationCodeConfiguration?.internalValue) {
+    if (this._applicationCodeConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.applicationCodeConfiguration = this._applicationCodeConfiguration?.internalValue;
     }
-    if (this._applicationSnapshotConfiguration?.internalValue) {
+    if (this._applicationSnapshotConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.applicationSnapshotConfiguration = this._applicationSnapshotConfiguration?.internalValue;
     }
-    if (this._environmentProperties?.internalValue) {
+    if (this._environmentProperties?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.environmentProperties = this._environmentProperties?.internalValue;
     }
-    if (this._flinkApplicationConfiguration?.internalValue) {
+    if (this._flinkApplicationConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.flinkApplicationConfiguration = this._flinkApplicationConfiguration?.internalValue;
     }
-    if (this._runConfiguration?.internalValue) {
+    if (this._runConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.runConfiguration = this._runConfiguration?.internalValue;
     }
-    if (this._sqlApplicationConfiguration?.internalValue) {
+    if (this._sqlApplicationConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sqlApplicationConfiguration = this._sqlApplicationConfiguration?.internalValue;
     }
-    if (this._vpcConfiguration?.internalValue) {
+    if (this._vpcConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.vpcConfiguration = this._vpcConfiguration?.internalValue;
     }
@@ -3787,7 +3787,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
 }
 export interface Kinesisanalyticsv2ApplicationCloudwatchLoggingOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#log_stream_arn Kinesisanalyticsv2Application#log_stream_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#log_stream_arn Kinesisanalyticsv2Application#log_stream_arn}
   */
   readonly logStreamArn: string;
 }
@@ -3817,7 +3817,7 @@ export class Kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsOutputReferenc
   public get internalValue(): Kinesisanalyticsv2ApplicationCloudwatchLoggingOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._logStreamArn) {
+    if (this._logStreamArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.logStreamArn = this._logStreamArn;
     }
@@ -3850,15 +3850,15 @@ export class Kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsOutputReferenc
 }
 export interface Kinesisanalyticsv2ApplicationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#create Kinesisanalyticsv2Application#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#create Kinesisanalyticsv2Application#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#delete Kinesisanalyticsv2Application#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#delete Kinesisanalyticsv2Application#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#update Kinesisanalyticsv2Application#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#update Kinesisanalyticsv2Application#update}
   */
   readonly update?: string;
 }
@@ -3890,15 +3890,15 @@ export class Kinesisanalyticsv2ApplicationTimeoutsOutputReference extends cdktf.
   public get internalValue(): Kinesisanalyticsv2ApplicationTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
@@ -3970,7 +3970,7 @@ export class Kinesisanalyticsv2ApplicationTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html aws_kinesisanalyticsv2_application}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application aws_kinesisanalyticsv2_application}
 */
 export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
 
@@ -3984,7 +3984,7 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html aws_kinesisanalyticsv2_application} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application aws_kinesisanalyticsv2_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

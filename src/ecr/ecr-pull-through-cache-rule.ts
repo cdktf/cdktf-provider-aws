@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface EcrPullThroughCacheRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_pull_through_cache_rule.html#ecr_repository_prefix EcrPullThroughCacheRule#ecr_repository_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_pull_through_cache_rule#ecr_repository_prefix EcrPullThroughCacheRule#ecr_repository_prefix}
   */
   readonly ecrRepositoryPrefix: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_pull_through_cache_rule.html#upstream_registry_url EcrPullThroughCacheRule#upstream_registry_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_pull_through_cache_rule#upstream_registry_url EcrPullThroughCacheRule#upstream_registry_url}
   */
   readonly upstreamRegistryUrl: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecr_pull_through_cache_rule.html aws_ecr_pull_through_cache_rule}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule}
 */
 export class EcrPullThroughCacheRule extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class EcrPullThroughCacheRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecr_pull_through_cache_rule.html aws_ecr_pull_through_cache_rule} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

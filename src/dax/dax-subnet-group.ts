@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface DaxSubnetGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_subnet_group.html#description DaxSubnetGroup#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_subnet_group#description DaxSubnetGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_subnet_group.html#name DaxSubnetGroup#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_subnet_group#name DaxSubnetGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_subnet_group.html#subnet_ids DaxSubnetGroup#subnet_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_subnet_group#subnet_ids DaxSubnetGroup#subnet_ids}
   */
   readonly subnetIds: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/dax_subnet_group.html aws_dax_subnet_group}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/dax_subnet_group aws_dax_subnet_group}
 */
 export class DaxSubnetGroup extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class DaxSubnetGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/dax_subnet_group.html aws_dax_subnet_group} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/dax_subnet_group aws_dax_subnet_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

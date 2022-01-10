@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 */
 export interface RedshiftScheduledActionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#description RedshiftScheduledAction#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#description RedshiftScheduledAction#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#enable RedshiftScheduledAction#enable}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#enable RedshiftScheduledAction#enable}
   */
   readonly enable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#end_time RedshiftScheduledAction#end_time}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#end_time RedshiftScheduledAction#end_time}
   */
   readonly endTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#iam_role RedshiftScheduledAction#iam_role}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#iam_role RedshiftScheduledAction#iam_role}
   */
   readonly iamRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#name RedshiftScheduledAction#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#name RedshiftScheduledAction#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#schedule RedshiftScheduledAction#schedule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#schedule RedshiftScheduledAction#schedule}
   */
   readonly schedule: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#start_time RedshiftScheduledAction#start_time}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#start_time RedshiftScheduledAction#start_time}
   */
   readonly startTime?: string;
   /**
   * target_action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#target_action RedshiftScheduledAction#target_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#target_action RedshiftScheduledAction#target_action}
   */
   readonly targetAction: RedshiftScheduledActionTargetAction;
 }
 export interface RedshiftScheduledActionTargetActionPauseCluster {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#cluster_identifier RedshiftScheduledAction#cluster_identifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}
   */
   readonly clusterIdentifier: string;
 }
@@ -74,7 +74,7 @@ export class RedshiftScheduledActionTargetActionPauseClusterOutputReference exte
   public get internalValue(): RedshiftScheduledActionTargetActionPauseCluster | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clusterIdentifier) {
+    if (this._clusterIdentifier !== undefined) {
       hasAnyValues = true;
       internalValueResult.clusterIdentifier = this._clusterIdentifier;
     }
@@ -107,23 +107,23 @@ export class RedshiftScheduledActionTargetActionPauseClusterOutputReference exte
 }
 export interface RedshiftScheduledActionTargetActionResizeCluster {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#classic RedshiftScheduledAction#classic}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#classic RedshiftScheduledAction#classic}
   */
   readonly classic?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#cluster_identifier RedshiftScheduledAction#cluster_identifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}
   */
   readonly clusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#cluster_type RedshiftScheduledAction#cluster_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#cluster_type RedshiftScheduledAction#cluster_type}
   */
   readonly clusterType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#node_type RedshiftScheduledAction#node_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#node_type RedshiftScheduledAction#node_type}
   */
   readonly nodeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#number_of_nodes RedshiftScheduledAction#number_of_nodes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#number_of_nodes RedshiftScheduledAction#number_of_nodes}
   */
   readonly numberOfNodes?: number;
 }
@@ -157,23 +157,23 @@ export class RedshiftScheduledActionTargetActionResizeClusterOutputReference ext
   public get internalValue(): RedshiftScheduledActionTargetActionResizeCluster | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._classic) {
+    if (this._classic !== undefined) {
       hasAnyValues = true;
       internalValueResult.classic = this._classic;
     }
-    if (this._clusterIdentifier) {
+    if (this._clusterIdentifier !== undefined) {
       hasAnyValues = true;
       internalValueResult.clusterIdentifier = this._clusterIdentifier;
     }
-    if (this._clusterType) {
+    if (this._clusterType !== undefined) {
       hasAnyValues = true;
       internalValueResult.clusterType = this._clusterType;
     }
-    if (this._nodeType) {
+    if (this._nodeType !== undefined) {
       hasAnyValues = true;
       internalValueResult.nodeType = this._nodeType;
     }
-    if (this._numberOfNodes) {
+    if (this._numberOfNodes !== undefined) {
       hasAnyValues = true;
       internalValueResult.numberOfNodes = this._numberOfNodes;
     }
@@ -278,7 +278,7 @@ export class RedshiftScheduledActionTargetActionResizeClusterOutputReference ext
 }
 export interface RedshiftScheduledActionTargetActionResumeCluster {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#cluster_identifier RedshiftScheduledAction#cluster_identifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}
   */
   readonly clusterIdentifier: string;
 }
@@ -308,7 +308,7 @@ export class RedshiftScheduledActionTargetActionResumeClusterOutputReference ext
   public get internalValue(): RedshiftScheduledActionTargetActionResumeCluster | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clusterIdentifier) {
+    if (this._clusterIdentifier !== undefined) {
       hasAnyValues = true;
       internalValueResult.clusterIdentifier = this._clusterIdentifier;
     }
@@ -343,19 +343,19 @@ export interface RedshiftScheduledActionTargetAction {
   /**
   * pause_cluster block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#pause_cluster RedshiftScheduledAction#pause_cluster}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#pause_cluster RedshiftScheduledAction#pause_cluster}
   */
   readonly pauseCluster?: RedshiftScheduledActionTargetActionPauseCluster;
   /**
   * resize_cluster block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#resize_cluster RedshiftScheduledAction#resize_cluster}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#resize_cluster RedshiftScheduledAction#resize_cluster}
   */
   readonly resizeCluster?: RedshiftScheduledActionTargetActionResizeCluster;
   /**
   * resume_cluster block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html#resume_cluster RedshiftScheduledAction#resume_cluster}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action#resume_cluster RedshiftScheduledAction#resume_cluster}
   */
   readonly resumeCluster?: RedshiftScheduledActionTargetActionResumeCluster;
 }
@@ -387,15 +387,15 @@ export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.Co
   public get internalValue(): RedshiftScheduledActionTargetAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._pauseCluster?.internalValue) {
+    if (this._pauseCluster?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.pauseCluster = this._pauseCluster?.internalValue;
     }
-    if (this._resizeCluster?.internalValue) {
+    if (this._resizeCluster?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.resizeCluster = this._resizeCluster?.internalValue;
     }
-    if (this._resumeCluster?.internalValue) {
+    if (this._resumeCluster?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.resumeCluster = this._resumeCluster?.internalValue;
     }
@@ -467,7 +467,7 @@ export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html aws_redshift_scheduled_action}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action aws_redshift_scheduled_action}
 */
 export class RedshiftScheduledAction extends cdktf.TerraformResource {
 
@@ -481,7 +481,7 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action.html aws_redshift_scheduled_action} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/redshift_scheduled_action aws_redshift_scheduled_action} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

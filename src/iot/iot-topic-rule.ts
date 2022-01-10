@@ -8,145 +8,145 @@ import * as cdktf from 'cdktf';
 */
 export interface IotTopicRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#description IotTopicRule#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#description IotTopicRule#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#enabled IotTopicRule#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#enabled IotTopicRule#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#name IotTopicRule#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#name IotTopicRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#sql IotTopicRule#sql}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#sql IotTopicRule#sql}
   */
   readonly sql: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#sql_version IotTopicRule#sql_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#sql_version IotTopicRule#sql_version}
   */
   readonly sqlVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#tags IotTopicRule#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#tags IotTopicRule#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#tags_all IotTopicRule#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#tags_all IotTopicRule#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * cloudwatch_alarm block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
   */
   readonly cloudwatchAlarm?: IotTopicRuleCloudwatchAlarm[];
   /**
   * cloudwatch_metric block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#cloudwatch_metric IotTopicRule#cloudwatch_metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
   */
   readonly cloudwatchMetric?: IotTopicRuleCloudwatchMetric[];
   /**
   * dynamodb block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#dynamodb IotTopicRule#dynamodb}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
   */
   readonly dynamodb?: IotTopicRuleDynamodb[];
   /**
   * dynamodbv2 block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#dynamodbv2 IotTopicRule#dynamodbv2}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
   */
   readonly dynamodbv2?: IotTopicRuleDynamodbv2[];
   /**
   * elasticsearch block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#elasticsearch IotTopicRule#elasticsearch}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
   */
   readonly elasticsearch?: IotTopicRuleElasticsearch[];
   /**
   * error_action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#error_action IotTopicRule#error_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#error_action IotTopicRule#error_action}
   */
   readonly errorAction?: IotTopicRuleErrorAction;
   /**
   * firehose block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#firehose IotTopicRule#firehose}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#firehose IotTopicRule#firehose}
   */
   readonly firehose?: IotTopicRuleFirehose[];
   /**
   * iot_analytics block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#iot_analytics IotTopicRule#iot_analytics}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
   */
   readonly iotAnalytics?: IotTopicRuleIotAnalytics[];
   /**
   * iot_events block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#iot_events IotTopicRule#iot_events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#iot_events IotTopicRule#iot_events}
   */
   readonly iotEvents?: IotTopicRuleIotEvents[];
   /**
   * kinesis block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#kinesis IotTopicRule#kinesis}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#kinesis IotTopicRule#kinesis}
   */
   readonly kinesis?: IotTopicRuleKinesis[];
   /**
   * lambda block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#lambda IotTopicRule#lambda}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#lambda IotTopicRule#lambda}
   */
   readonly lambda?: IotTopicRuleLambda[];
   /**
   * republish block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#republish IotTopicRule#republish}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#republish IotTopicRule#republish}
   */
   readonly republish?: IotTopicRuleRepublish[];
   /**
   * s3 block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#s3 IotTopicRule#s3}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#s3 IotTopicRule#s3}
   */
   readonly s3?: IotTopicRuleS3[];
   /**
   * sns block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#sns IotTopicRule#sns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#sns IotTopicRule#sns}
   */
   readonly sns?: IotTopicRuleSns[];
   /**
   * sqs block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#sqs IotTopicRule#sqs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#sqs IotTopicRule#sqs}
   */
   readonly sqs?: IotTopicRuleSqs[];
   /**
   * step_functions block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#step_functions IotTopicRule#step_functions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#step_functions IotTopicRule#step_functions}
   */
   readonly stepFunctions?: IotTopicRuleStepFunctions[];
 }
 export interface IotTopicRuleCloudwatchAlarm {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#alarm_name IotTopicRule#alarm_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#alarm_name IotTopicRule#alarm_name}
   */
   readonly alarmName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#state_reason IotTopicRule#state_reason}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#state_reason IotTopicRule#state_reason}
   */
   readonly stateReason: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#state_value IotTopicRule#state_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#state_value IotTopicRule#state_value}
   */
   readonly stateValue: string;
 }
@@ -166,27 +166,27 @@ export function iotTopicRuleCloudwatchAlarmToTerraform(struct?: IotTopicRuleClou
 
 export interface IotTopicRuleCloudwatchMetric {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#metric_name IotTopicRule#metric_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#metric_name IotTopicRule#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#metric_namespace IotTopicRule#metric_namespace}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}
   */
   readonly metricNamespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#metric_timestamp IotTopicRule#metric_timestamp}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}
   */
   readonly metricTimestamp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#metric_unit IotTopicRule#metric_unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#metric_unit IotTopicRule#metric_unit}
   */
   readonly metricUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#metric_value IotTopicRule#metric_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#metric_value IotTopicRule#metric_value}
   */
   readonly metricValue: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -208,43 +208,43 @@ export function iotTopicRuleCloudwatchMetricToTerraform(struct?: IotTopicRuleClo
 
 export interface IotTopicRuleDynamodb {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#hash_key_field IotTopicRule#hash_key_field}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}
   */
   readonly hashKeyField: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#hash_key_type IotTopicRule#hash_key_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}
   */
   readonly hashKeyType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#hash_key_value IotTopicRule#hash_key_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}
   */
   readonly hashKeyValue: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#operation IotTopicRule#operation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#operation IotTopicRule#operation}
   */
   readonly operation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#payload_field IotTopicRule#payload_field}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#payload_field IotTopicRule#payload_field}
   */
   readonly payloadField?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#range_key_field IotTopicRule#range_key_field}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#range_key_field IotTopicRule#range_key_field}
   */
   readonly rangeKeyField?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#range_key_type IotTopicRule#range_key_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#range_key_type IotTopicRule#range_key_type}
   */
   readonly rangeKeyType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#range_key_value IotTopicRule#range_key_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#range_key_value IotTopicRule#range_key_value}
   */
   readonly rangeKeyValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#table_name IotTopicRule#table_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#table_name IotTopicRule#table_name}
   */
   readonly tableName: string;
 }
@@ -270,7 +270,7 @@ export function iotTopicRuleDynamodbToTerraform(struct?: IotTopicRuleDynamodb): 
 
 export interface IotTopicRuleDynamodbv2PutItem {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#table_name IotTopicRule#table_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#table_name IotTopicRule#table_name}
   */
   readonly tableName: string;
 }
@@ -300,7 +300,7 @@ export class IotTopicRuleDynamodbv2PutItemOutputReference extends cdktf.ComplexO
   public get internalValue(): IotTopicRuleDynamodbv2PutItem | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._tableName) {
+    if (this._tableName !== undefined) {
       hasAnyValues = true;
       internalValueResult.tableName = this._tableName;
     }
@@ -333,13 +333,13 @@ export class IotTopicRuleDynamodbv2PutItemOutputReference extends cdktf.ComplexO
 }
 export interface IotTopicRuleDynamodbv2 {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
   * put_item block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#put_item IotTopicRule#put_item}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#put_item IotTopicRule#put_item}
   */
   readonly putItem?: IotTopicRuleDynamodbv2PutItem;
 }
@@ -357,23 +357,23 @@ export function iotTopicRuleDynamodbv2ToTerraform(struct?: IotTopicRuleDynamodbv
 
 export interface IotTopicRuleElasticsearch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#endpoint IotTopicRule#endpoint}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#endpoint IotTopicRule#endpoint}
   */
   readonly endpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#id IotTopicRule#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#id IotTopicRule#id}
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#index IotTopicRule#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#index IotTopicRule#index}
   */
   readonly index: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#type IotTopicRule#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#type IotTopicRule#type}
   */
   readonly type: string;
 }
@@ -394,19 +394,19 @@ export function iotTopicRuleElasticsearchToTerraform(struct?: IotTopicRuleElasti
 
 export interface IotTopicRuleErrorActionCloudwatchAlarm {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#alarm_name IotTopicRule#alarm_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#alarm_name IotTopicRule#alarm_name}
   */
   readonly alarmName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#state_reason IotTopicRule#state_reason}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#state_reason IotTopicRule#state_reason}
   */
   readonly stateReason: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#state_value IotTopicRule#state_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#state_value IotTopicRule#state_value}
   */
   readonly stateValue: string;
 }
@@ -439,19 +439,19 @@ export class IotTopicRuleErrorActionCloudwatchAlarmOutputReference extends cdktf
   public get internalValue(): IotTopicRuleErrorActionCloudwatchAlarm | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._alarmName) {
+    if (this._alarmName !== undefined) {
       hasAnyValues = true;
       internalValueResult.alarmName = this._alarmName;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._stateReason) {
+    if (this._stateReason !== undefined) {
       hasAnyValues = true;
       internalValueResult.stateReason = this._stateReason;
     }
-    if (this._stateValue) {
+    if (this._stateValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.stateValue = this._stateValue;
     }
@@ -529,27 +529,27 @@ export class IotTopicRuleErrorActionCloudwatchAlarmOutputReference extends cdktf
 }
 export interface IotTopicRuleErrorActionCloudwatchMetric {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#metric_name IotTopicRule#metric_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#metric_name IotTopicRule#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#metric_namespace IotTopicRule#metric_namespace}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}
   */
   readonly metricNamespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#metric_timestamp IotTopicRule#metric_timestamp}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}
   */
   readonly metricTimestamp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#metric_unit IotTopicRule#metric_unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#metric_unit IotTopicRule#metric_unit}
   */
   readonly metricUnit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#metric_value IotTopicRule#metric_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#metric_value IotTopicRule#metric_value}
   */
   readonly metricValue: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -584,27 +584,27 @@ export class IotTopicRuleErrorActionCloudwatchMetricOutputReference extends cdkt
   public get internalValue(): IotTopicRuleErrorActionCloudwatchMetric | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._metricName) {
+    if (this._metricName !== undefined) {
       hasAnyValues = true;
       internalValueResult.metricName = this._metricName;
     }
-    if (this._metricNamespace) {
+    if (this._metricNamespace !== undefined) {
       hasAnyValues = true;
       internalValueResult.metricNamespace = this._metricNamespace;
     }
-    if (this._metricTimestamp) {
+    if (this._metricTimestamp !== undefined) {
       hasAnyValues = true;
       internalValueResult.metricTimestamp = this._metricTimestamp;
     }
-    if (this._metricUnit) {
+    if (this._metricUnit !== undefined) {
       hasAnyValues = true;
       internalValueResult.metricUnit = this._metricUnit;
     }
-    if (this._metricValue) {
+    if (this._metricValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.metricValue = this._metricValue;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
@@ -715,43 +715,43 @@ export class IotTopicRuleErrorActionCloudwatchMetricOutputReference extends cdkt
 }
 export interface IotTopicRuleErrorActionDynamodb {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#hash_key_field IotTopicRule#hash_key_field}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}
   */
   readonly hashKeyField: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#hash_key_type IotTopicRule#hash_key_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}
   */
   readonly hashKeyType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#hash_key_value IotTopicRule#hash_key_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}
   */
   readonly hashKeyValue: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#operation IotTopicRule#operation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#operation IotTopicRule#operation}
   */
   readonly operation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#payload_field IotTopicRule#payload_field}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#payload_field IotTopicRule#payload_field}
   */
   readonly payloadField?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#range_key_field IotTopicRule#range_key_field}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#range_key_field IotTopicRule#range_key_field}
   */
   readonly rangeKeyField?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#range_key_type IotTopicRule#range_key_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#range_key_type IotTopicRule#range_key_type}
   */
   readonly rangeKeyType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#range_key_value IotTopicRule#range_key_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#range_key_value IotTopicRule#range_key_value}
   */
   readonly rangeKeyValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#table_name IotTopicRule#table_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#table_name IotTopicRule#table_name}
   */
   readonly tableName: string;
 }
@@ -790,43 +790,43 @@ export class IotTopicRuleErrorActionDynamodbOutputReference extends cdktf.Comple
   public get internalValue(): IotTopicRuleErrorActionDynamodb | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._hashKeyField) {
+    if (this._hashKeyField !== undefined) {
       hasAnyValues = true;
       internalValueResult.hashKeyField = this._hashKeyField;
     }
-    if (this._hashKeyType) {
+    if (this._hashKeyType !== undefined) {
       hasAnyValues = true;
       internalValueResult.hashKeyType = this._hashKeyType;
     }
-    if (this._hashKeyValue) {
+    if (this._hashKeyValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.hashKeyValue = this._hashKeyValue;
     }
-    if (this._operation) {
+    if (this._operation !== undefined) {
       hasAnyValues = true;
       internalValueResult.operation = this._operation;
     }
-    if (this._payloadField) {
+    if (this._payloadField !== undefined) {
       hasAnyValues = true;
       internalValueResult.payloadField = this._payloadField;
     }
-    if (this._rangeKeyField) {
+    if (this._rangeKeyField !== undefined) {
       hasAnyValues = true;
       internalValueResult.rangeKeyField = this._rangeKeyField;
     }
-    if (this._rangeKeyType) {
+    if (this._rangeKeyType !== undefined) {
       hasAnyValues = true;
       internalValueResult.rangeKeyType = this._rangeKeyType;
     }
-    if (this._rangeKeyValue) {
+    if (this._rangeKeyValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.rangeKeyValue = this._rangeKeyValue;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._tableName) {
+    if (this._tableName !== undefined) {
       hasAnyValues = true;
       internalValueResult.tableName = this._tableName;
     }
@@ -1012,7 +1012,7 @@ export class IotTopicRuleErrorActionDynamodbOutputReference extends cdktf.Comple
 }
 export interface IotTopicRuleErrorActionDynamodbv2PutItem {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#table_name IotTopicRule#table_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#table_name IotTopicRule#table_name}
   */
   readonly tableName: string;
 }
@@ -1042,7 +1042,7 @@ export class IotTopicRuleErrorActionDynamodbv2PutItemOutputReference extends cdk
   public get internalValue(): IotTopicRuleErrorActionDynamodbv2PutItem | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._tableName) {
+    if (this._tableName !== undefined) {
       hasAnyValues = true;
       internalValueResult.tableName = this._tableName;
     }
@@ -1075,13 +1075,13 @@ export class IotTopicRuleErrorActionDynamodbv2PutItemOutputReference extends cdk
 }
 export interface IotTopicRuleErrorActionDynamodbv2 {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
   * put_item block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#put_item IotTopicRule#put_item}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#put_item IotTopicRule#put_item}
   */
   readonly putItem?: IotTopicRuleErrorActionDynamodbv2PutItem;
 }
@@ -1112,11 +1112,11 @@ export class IotTopicRuleErrorActionDynamodbv2OutputReference extends cdktf.Comp
   public get internalValue(): IotTopicRuleErrorActionDynamodbv2 | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._putItem?.internalValue) {
+    if (this._putItem?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.putItem = this._putItem?.internalValue;
     }
@@ -1167,23 +1167,23 @@ export class IotTopicRuleErrorActionDynamodbv2OutputReference extends cdktf.Comp
 }
 export interface IotTopicRuleErrorActionElasticsearch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#endpoint IotTopicRule#endpoint}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#endpoint IotTopicRule#endpoint}
   */
   readonly endpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#id IotTopicRule#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#id IotTopicRule#id}
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#index IotTopicRule#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#index IotTopicRule#index}
   */
   readonly index: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#type IotTopicRule#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#type IotTopicRule#type}
   */
   readonly type: string;
 }
@@ -1217,23 +1217,23 @@ export class IotTopicRuleErrorActionElasticsearchOutputReference extends cdktf.C
   public get internalValue(): IotTopicRuleErrorActionElasticsearch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._endpoint) {
+    if (this._endpoint !== undefined) {
       hasAnyValues = true;
       internalValueResult.endpoint = this._endpoint;
     }
-    if (this._id) {
+    if (this._id !== undefined) {
       hasAnyValues = true;
       internalValueResult.id = this._id;
     }
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
@@ -1326,15 +1326,15 @@ export class IotTopicRuleErrorActionElasticsearchOutputReference extends cdktf.C
 }
 export interface IotTopicRuleErrorActionFirehose {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#delivery_stream_name IotTopicRule#delivery_stream_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}
   */
   readonly deliveryStreamName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#separator IotTopicRule#separator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#separator IotTopicRule#separator}
   */
   readonly separator?: string;
 }
@@ -1366,15 +1366,15 @@ export class IotTopicRuleErrorActionFirehoseOutputReference extends cdktf.Comple
   public get internalValue(): IotTopicRuleErrorActionFirehose | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._deliveryStreamName) {
+    if (this._deliveryStreamName !== undefined) {
       hasAnyValues = true;
       internalValueResult.deliveryStreamName = this._deliveryStreamName;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._separator) {
+    if (this._separator !== undefined) {
       hasAnyValues = true;
       internalValueResult.separator = this._separator;
     }
@@ -1440,11 +1440,11 @@ export class IotTopicRuleErrorActionFirehoseOutputReference extends cdktf.Comple
 }
 export interface IotTopicRuleErrorActionIotAnalytics {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#channel_name IotTopicRule#channel_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#channel_name IotTopicRule#channel_name}
   */
   readonly channelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -1475,11 +1475,11 @@ export class IotTopicRuleErrorActionIotAnalyticsOutputReference extends cdktf.Co
   public get internalValue(): IotTopicRuleErrorActionIotAnalytics | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._channelName) {
+    if (this._channelName !== undefined) {
       hasAnyValues = true;
       internalValueResult.channelName = this._channelName;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
@@ -1527,15 +1527,15 @@ export class IotTopicRuleErrorActionIotAnalyticsOutputReference extends cdktf.Co
 }
 export interface IotTopicRuleErrorActionIotEvents {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#input_name IotTopicRule#input_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#input_name IotTopicRule#input_name}
   */
   readonly inputName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#message_id IotTopicRule#message_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#message_id IotTopicRule#message_id}
   */
   readonly messageId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -1567,15 +1567,15 @@ export class IotTopicRuleErrorActionIotEventsOutputReference extends cdktf.Compl
   public get internalValue(): IotTopicRuleErrorActionIotEvents | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._inputName) {
+    if (this._inputName !== undefined) {
       hasAnyValues = true;
       internalValueResult.inputName = this._inputName;
     }
-    if (this._messageId) {
+    if (this._messageId !== undefined) {
       hasAnyValues = true;
       internalValueResult.messageId = this._messageId;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
@@ -1641,15 +1641,15 @@ export class IotTopicRuleErrorActionIotEventsOutputReference extends cdktf.Compl
 }
 export interface IotTopicRuleErrorActionKinesis {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#partition_key IotTopicRule#partition_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#partition_key IotTopicRule#partition_key}
   */
   readonly partitionKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#stream_name IotTopicRule#stream_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#stream_name IotTopicRule#stream_name}
   */
   readonly streamName: string;
 }
@@ -1681,15 +1681,15 @@ export class IotTopicRuleErrorActionKinesisOutputReference extends cdktf.Complex
   public get internalValue(): IotTopicRuleErrorActionKinesis | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._partitionKey) {
+    if (this._partitionKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.partitionKey = this._partitionKey;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._streamName) {
+    if (this._streamName !== undefined) {
       hasAnyValues = true;
       internalValueResult.streamName = this._streamName;
     }
@@ -1755,7 +1755,7 @@ export class IotTopicRuleErrorActionKinesisOutputReference extends cdktf.Complex
 }
 export interface IotTopicRuleErrorActionLambda {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#function_arn IotTopicRule#function_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#function_arn IotTopicRule#function_arn}
   */
   readonly functionArn: string;
 }
@@ -1785,7 +1785,7 @@ export class IotTopicRuleErrorActionLambdaOutputReference extends cdktf.ComplexO
   public get internalValue(): IotTopicRuleErrorActionLambda | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._functionArn) {
+    if (this._functionArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.functionArn = this._functionArn;
     }
@@ -1818,15 +1818,15 @@ export class IotTopicRuleErrorActionLambdaOutputReference extends cdktf.ComplexO
 }
 export interface IotTopicRuleErrorActionRepublish {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#qos IotTopicRule#qos}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#qos IotTopicRule#qos}
   */
   readonly qos?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#topic IotTopicRule#topic}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#topic IotTopicRule#topic}
   */
   readonly topic: string;
 }
@@ -1858,15 +1858,15 @@ export class IotTopicRuleErrorActionRepublishOutputReference extends cdktf.Compl
   public get internalValue(): IotTopicRuleErrorActionRepublish | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._qos) {
+    if (this._qos !== undefined) {
       hasAnyValues = true;
       internalValueResult.qos = this._qos;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._topic) {
+    if (this._topic !== undefined) {
       hasAnyValues = true;
       internalValueResult.topic = this._topic;
     }
@@ -1932,15 +1932,15 @@ export class IotTopicRuleErrorActionRepublishOutputReference extends cdktf.Compl
 }
 export interface IotTopicRuleErrorActionS3 {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#bucket_name IotTopicRule#bucket_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#bucket_name IotTopicRule#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#key IotTopicRule#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#key IotTopicRule#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -1972,15 +1972,15 @@ export class IotTopicRuleErrorActionS3OutputReference extends cdktf.ComplexObjec
   public get internalValue(): IotTopicRuleErrorActionS3 | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucketName) {
+    if (this._bucketName !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketName = this._bucketName;
     }
-    if (this._key) {
+    if (this._key !== undefined) {
       hasAnyValues = true;
       internalValueResult.key = this._key;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
@@ -2043,15 +2043,15 @@ export class IotTopicRuleErrorActionS3OutputReference extends cdktf.ComplexObjec
 }
 export interface IotTopicRuleErrorActionSns {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#message_format IotTopicRule#message_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#message_format IotTopicRule#message_format}
   */
   readonly messageFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#target_arn IotTopicRule#target_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#target_arn IotTopicRule#target_arn}
   */
   readonly targetArn: string;
 }
@@ -2083,15 +2083,15 @@ export class IotTopicRuleErrorActionSnsOutputReference extends cdktf.ComplexObje
   public get internalValue(): IotTopicRuleErrorActionSns | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._messageFormat) {
+    if (this._messageFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.messageFormat = this._messageFormat;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._targetArn) {
+    if (this._targetArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetArn = this._targetArn;
     }
@@ -2157,15 +2157,15 @@ export class IotTopicRuleErrorActionSnsOutputReference extends cdktf.ComplexObje
 }
 export interface IotTopicRuleErrorActionSqs {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#queue_url IotTopicRule#queue_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#queue_url IotTopicRule#queue_url}
   */
   readonly queueUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#use_base64 IotTopicRule#use_base64}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#use_base64 IotTopicRule#use_base64}
   */
   readonly useBase64: boolean | cdktf.IResolvable;
 }
@@ -2197,15 +2197,15 @@ export class IotTopicRuleErrorActionSqsOutputReference extends cdktf.ComplexObje
   public get internalValue(): IotTopicRuleErrorActionSqs | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._queueUrl) {
+    if (this._queueUrl !== undefined) {
       hasAnyValues = true;
       internalValueResult.queueUrl = this._queueUrl;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._useBase64) {
+    if (this._useBase64 !== undefined) {
       hasAnyValues = true;
       internalValueResult.useBase64 = this._useBase64;
     }
@@ -2268,15 +2268,15 @@ export class IotTopicRuleErrorActionSqsOutputReference extends cdktf.ComplexObje
 }
 export interface IotTopicRuleErrorActionStepFunctions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#execution_name_prefix IotTopicRule#execution_name_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}
   */
   readonly executionNamePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#state_machine_name IotTopicRule#state_machine_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}
   */
   readonly stateMachineName: string;
 }
@@ -2308,15 +2308,15 @@ export class IotTopicRuleErrorActionStepFunctionsOutputReference extends cdktf.C
   public get internalValue(): IotTopicRuleErrorActionStepFunctions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._executionNamePrefix) {
+    if (this._executionNamePrefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.executionNamePrefix = this._executionNamePrefix;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._stateMachineName) {
+    if (this._stateMachineName !== undefined) {
       hasAnyValues = true;
       internalValueResult.stateMachineName = this._stateMachineName;
     }
@@ -2384,91 +2384,91 @@ export interface IotTopicRuleErrorAction {
   /**
   * cloudwatch_alarm block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
   */
   readonly cloudwatchAlarm?: IotTopicRuleErrorActionCloudwatchAlarm;
   /**
   * cloudwatch_metric block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#cloudwatch_metric IotTopicRule#cloudwatch_metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
   */
   readonly cloudwatchMetric?: IotTopicRuleErrorActionCloudwatchMetric;
   /**
   * dynamodb block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#dynamodb IotTopicRule#dynamodb}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
   */
   readonly dynamodb?: IotTopicRuleErrorActionDynamodb;
   /**
   * dynamodbv2 block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#dynamodbv2 IotTopicRule#dynamodbv2}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
   */
   readonly dynamodbv2?: IotTopicRuleErrorActionDynamodbv2;
   /**
   * elasticsearch block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#elasticsearch IotTopicRule#elasticsearch}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
   */
   readonly elasticsearch?: IotTopicRuleErrorActionElasticsearch;
   /**
   * firehose block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#firehose IotTopicRule#firehose}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#firehose IotTopicRule#firehose}
   */
   readonly firehose?: IotTopicRuleErrorActionFirehose;
   /**
   * iot_analytics block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#iot_analytics IotTopicRule#iot_analytics}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
   */
   readonly iotAnalytics?: IotTopicRuleErrorActionIotAnalytics;
   /**
   * iot_events block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#iot_events IotTopicRule#iot_events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#iot_events IotTopicRule#iot_events}
   */
   readonly iotEvents?: IotTopicRuleErrorActionIotEvents;
   /**
   * kinesis block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#kinesis IotTopicRule#kinesis}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#kinesis IotTopicRule#kinesis}
   */
   readonly kinesis?: IotTopicRuleErrorActionKinesis;
   /**
   * lambda block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#lambda IotTopicRule#lambda}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#lambda IotTopicRule#lambda}
   */
   readonly lambda?: IotTopicRuleErrorActionLambda;
   /**
   * republish block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#republish IotTopicRule#republish}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#republish IotTopicRule#republish}
   */
   readonly republish?: IotTopicRuleErrorActionRepublish;
   /**
   * s3 block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#s3 IotTopicRule#s3}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#s3 IotTopicRule#s3}
   */
   readonly s3?: IotTopicRuleErrorActionS3;
   /**
   * sns block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#sns IotTopicRule#sns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#sns IotTopicRule#sns}
   */
   readonly sns?: IotTopicRuleErrorActionSns;
   /**
   * sqs block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#sqs IotTopicRule#sqs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#sqs IotTopicRule#sqs}
   */
   readonly sqs?: IotTopicRuleErrorActionSqs;
   /**
   * step_functions block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#step_functions IotTopicRule#step_functions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#step_functions IotTopicRule#step_functions}
   */
   readonly stepFunctions?: IotTopicRuleErrorActionStepFunctions;
 }
@@ -2512,63 +2512,63 @@ export class IotTopicRuleErrorActionOutputReference extends cdktf.ComplexObject 
   public get internalValue(): IotTopicRuleErrorAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cloudwatchAlarm?.internalValue) {
+    if (this._cloudwatchAlarm?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchAlarm = this._cloudwatchAlarm?.internalValue;
     }
-    if (this._cloudwatchMetric?.internalValue) {
+    if (this._cloudwatchMetric?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchMetric = this._cloudwatchMetric?.internalValue;
     }
-    if (this._dynamodb?.internalValue) {
+    if (this._dynamodb?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.dynamodb = this._dynamodb?.internalValue;
     }
-    if (this._dynamodbv2?.internalValue) {
+    if (this._dynamodbv2?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.dynamodbv2 = this._dynamodbv2?.internalValue;
     }
-    if (this._elasticsearch?.internalValue) {
+    if (this._elasticsearch?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.elasticsearch = this._elasticsearch?.internalValue;
     }
-    if (this._firehose?.internalValue) {
+    if (this._firehose?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.firehose = this._firehose?.internalValue;
     }
-    if (this._iotAnalytics?.internalValue) {
+    if (this._iotAnalytics?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.iotAnalytics = this._iotAnalytics?.internalValue;
     }
-    if (this._iotEvents?.internalValue) {
+    if (this._iotEvents?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.iotEvents = this._iotEvents?.internalValue;
     }
-    if (this._kinesis?.internalValue) {
+    if (this._kinesis?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.kinesis = this._kinesis?.internalValue;
     }
-    if (this._lambda?.internalValue) {
+    if (this._lambda?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.lambda = this._lambda?.internalValue;
     }
-    if (this._republish?.internalValue) {
+    if (this._republish?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.republish = this._republish?.internalValue;
     }
-    if (this._s3?.internalValue) {
+    if (this._s3?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3 = this._s3?.internalValue;
     }
-    if (this._sns?.internalValue) {
+    if (this._sns?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sns = this._sns?.internalValue;
     }
-    if (this._sqs?.internalValue) {
+    if (this._sqs?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sqs = this._sqs?.internalValue;
     }
-    if (this._stepFunctions?.internalValue) {
+    if (this._stepFunctions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.stepFunctions = this._stepFunctions?.internalValue;
     }
@@ -2856,15 +2856,15 @@ export class IotTopicRuleErrorActionOutputReference extends cdktf.ComplexObject 
 }
 export interface IotTopicRuleFirehose {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#delivery_stream_name IotTopicRule#delivery_stream_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}
   */
   readonly deliveryStreamName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#separator IotTopicRule#separator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#separator IotTopicRule#separator}
   */
   readonly separator?: string;
 }
@@ -2883,11 +2883,11 @@ export function iotTopicRuleFirehoseToTerraform(struct?: IotTopicRuleFirehose): 
 
 export interface IotTopicRuleIotAnalytics {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#channel_name IotTopicRule#channel_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#channel_name IotTopicRule#channel_name}
   */
   readonly channelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -2905,15 +2905,15 @@ export function iotTopicRuleIotAnalyticsToTerraform(struct?: IotTopicRuleIotAnal
 
 export interface IotTopicRuleIotEvents {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#input_name IotTopicRule#input_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#input_name IotTopicRule#input_name}
   */
   readonly inputName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#message_id IotTopicRule#message_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#message_id IotTopicRule#message_id}
   */
   readonly messageId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -2932,15 +2932,15 @@ export function iotTopicRuleIotEventsToTerraform(struct?: IotTopicRuleIotEvents)
 
 export interface IotTopicRuleKinesis {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#partition_key IotTopicRule#partition_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#partition_key IotTopicRule#partition_key}
   */
   readonly partitionKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#stream_name IotTopicRule#stream_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#stream_name IotTopicRule#stream_name}
   */
   readonly streamName: string;
 }
@@ -2959,7 +2959,7 @@ export function iotTopicRuleKinesisToTerraform(struct?: IotTopicRuleKinesis): an
 
 export interface IotTopicRuleLambda {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#function_arn IotTopicRule#function_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#function_arn IotTopicRule#function_arn}
   */
   readonly functionArn: string;
 }
@@ -2976,15 +2976,15 @@ export function iotTopicRuleLambdaToTerraform(struct?: IotTopicRuleLambda): any 
 
 export interface IotTopicRuleRepublish {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#qos IotTopicRule#qos}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#qos IotTopicRule#qos}
   */
   readonly qos?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#topic IotTopicRule#topic}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#topic IotTopicRule#topic}
   */
   readonly topic: string;
 }
@@ -3003,15 +3003,15 @@ export function iotTopicRuleRepublishToTerraform(struct?: IotTopicRuleRepublish)
 
 export interface IotTopicRuleS3 {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#bucket_name IotTopicRule#bucket_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#bucket_name IotTopicRule#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#key IotTopicRule#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#key IotTopicRule#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
 }
@@ -3030,15 +3030,15 @@ export function iotTopicRuleS3ToTerraform(struct?: IotTopicRuleS3): any {
 
 export interface IotTopicRuleSns {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#message_format IotTopicRule#message_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#message_format IotTopicRule#message_format}
   */
   readonly messageFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#target_arn IotTopicRule#target_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#target_arn IotTopicRule#target_arn}
   */
   readonly targetArn: string;
 }
@@ -3057,15 +3057,15 @@ export function iotTopicRuleSnsToTerraform(struct?: IotTopicRuleSns): any {
 
 export interface IotTopicRuleSqs {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#queue_url IotTopicRule#queue_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#queue_url IotTopicRule#queue_url}
   */
   readonly queueUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#use_base64 IotTopicRule#use_base64}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#use_base64 IotTopicRule#use_base64}
   */
   readonly useBase64: boolean | cdktf.IResolvable;
 }
@@ -3084,15 +3084,15 @@ export function iotTopicRuleSqsToTerraform(struct?: IotTopicRuleSqs): any {
 
 export interface IotTopicRuleStepFunctions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#execution_name_prefix IotTopicRule#execution_name_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}
   */
   readonly executionNamePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#role_arn IotTopicRule#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html#state_machine_name IotTopicRule#state_machine_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}
   */
   readonly stateMachineName: string;
 }
@@ -3111,7 +3111,7 @@ export function iotTopicRuleStepFunctionsToTerraform(struct?: IotTopicRuleStepFu
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html aws_iot_topic_rule}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule aws_iot_topic_rule}
 */
 export class IotTopicRule extends cdktf.TerraformResource {
 
@@ -3125,7 +3125,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule.html aws_iot_topic_rule} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule aws_iot_topic_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

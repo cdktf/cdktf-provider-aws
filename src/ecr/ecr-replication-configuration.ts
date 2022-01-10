@@ -10,17 +10,17 @@ export interface EcrReplicationConfigurationConfig extends cdktf.TerraformMetaAr
   /**
   * replication_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html#replication_configuration EcrReplicationConfiguration#replication_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration#replication_configuration EcrReplicationConfiguration#replication_configuration}
   */
   readonly replicationConfiguration?: EcrReplicationConfigurationReplicationConfiguration;
 }
 export interface EcrReplicationConfigurationReplicationConfigurationRuleDestination {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html#region EcrReplicationConfiguration#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration#region EcrReplicationConfiguration#region}
   */
   readonly region: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html#registry_id EcrReplicationConfiguration#registry_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration#registry_id EcrReplicationConfiguration#registry_id}
   */
   readonly registryId: string;
 }
@@ -38,11 +38,11 @@ export function ecrReplicationConfigurationReplicationConfigurationRuleDestinati
 
 export interface EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html#filter EcrReplicationConfiguration#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration#filter EcrReplicationConfiguration#filter}
   */
   readonly filter: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html#filter_type EcrReplicationConfiguration#filter_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration#filter_type EcrReplicationConfiguration#filter_type}
   */
   readonly filterType: string;
 }
@@ -62,13 +62,13 @@ export interface EcrReplicationConfigurationReplicationConfigurationRule {
   /**
   * destination block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html#destination EcrReplicationConfiguration#destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration#destination EcrReplicationConfiguration#destination}
   */
   readonly destination: EcrReplicationConfigurationReplicationConfigurationRuleDestination[];
   /**
   * repository_filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html#repository_filter EcrReplicationConfiguration#repository_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration#repository_filter EcrReplicationConfiguration#repository_filter}
   */
   readonly repositoryFilter?: EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter[];
 }
@@ -88,7 +88,7 @@ export interface EcrReplicationConfigurationReplicationConfiguration {
   /**
   * rule block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html#rule EcrReplicationConfiguration#rule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration#rule EcrReplicationConfiguration#rule}
   */
   readonly rule: EcrReplicationConfigurationReplicationConfigurationRule[];
 }
@@ -118,7 +118,7 @@ export class EcrReplicationConfigurationReplicationConfigurationOutputReference 
   public get internalValue(): EcrReplicationConfigurationReplicationConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._rule) {
+    if (this._rule !== undefined) {
       hasAnyValues = true;
       internalValueResult.rule = this._rule;
     }
@@ -152,7 +152,7 @@ export class EcrReplicationConfigurationReplicationConfigurationOutputReference 
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html aws_ecr_replication_configuration}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration aws_ecr_replication_configuration}
 */
 export class EcrReplicationConfiguration extends cdktf.TerraformResource {
 
@@ -166,7 +166,7 @@ export class EcrReplicationConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html aws_ecr_replication_configuration} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration aws_ecr_replication_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

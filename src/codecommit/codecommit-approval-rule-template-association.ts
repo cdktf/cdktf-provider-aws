@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface CodecommitApprovalRuleTemplateAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codecommit_approval_rule_template_association.html#approval_rule_template_name CodecommitApprovalRuleTemplateAssociation#approval_rule_template_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codecommit_approval_rule_template_association#approval_rule_template_name CodecommitApprovalRuleTemplateAssociation#approval_rule_template_name}
   */
   readonly approvalRuleTemplateName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codecommit_approval_rule_template_association.html#repository_name CodecommitApprovalRuleTemplateAssociation#repository_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codecommit_approval_rule_template_association#repository_name CodecommitApprovalRuleTemplateAssociation#repository_name}
   */
   readonly repositoryName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/codecommit_approval_rule_template_association.html aws_codecommit_approval_rule_template_association}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association}
 */
 export class CodecommitApprovalRuleTemplateAssociation extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class CodecommitApprovalRuleTemplateAssociation extends cdktf.TerraformRe
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/codecommit_approval_rule_template_association.html aws_codecommit_approval_rule_template_association} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

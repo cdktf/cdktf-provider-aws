@@ -8,33 +8,33 @@ import * as cdktf from 'cdktf';
 */
 export interface OrganizationsPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy.html#content OrganizationsPolicy#content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy#content OrganizationsPolicy#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy.html#description OrganizationsPolicy#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy#description OrganizationsPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy.html#name OrganizationsPolicy#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy#name OrganizationsPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy.html#tags OrganizationsPolicy#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy#tags OrganizationsPolicy#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy.html#tags_all OrganizationsPolicy#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy#tags_all OrganizationsPolicy#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy.html#type OrganizationsPolicy#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy#type OrganizationsPolicy#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy.html aws_organizations_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy aws_organizations_policy}
 */
 export class OrganizationsPolicy extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class OrganizationsPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy.html aws_organizations_policy} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/organizations_policy aws_organizations_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

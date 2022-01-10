@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsDbInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_instance.html#db_instance_identifier DataAwsDbInstance#db_instance_identifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_instance#db_instance_identifier DataAwsDbInstance#db_instance_identifier}
   */
   readonly dbInstanceIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_instance.html#tags DataAwsDbInstance#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_instance#tags DataAwsDbInstance#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/db_instance.html aws_db_instance}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/db_instance aws_db_instance}
 */
 export class DataAwsDbInstance extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsDbInstance extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/db_instance.html aws_db_instance} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/db_instance aws_db_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

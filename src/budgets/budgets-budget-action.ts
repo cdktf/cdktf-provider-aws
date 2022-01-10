@@ -8,55 +8,55 @@ import * as cdktf from 'cdktf';
 */
 export interface BudgetsBudgetActionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#account_id BudgetsBudgetAction#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#account_id BudgetsBudgetAction#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#action_type BudgetsBudgetAction#action_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#action_type BudgetsBudgetAction#action_type}
   */
   readonly actionType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#approval_model BudgetsBudgetAction#approval_model}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#approval_model BudgetsBudgetAction#approval_model}
   */
   readonly approvalModel: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#budget_name BudgetsBudgetAction#budget_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#budget_name BudgetsBudgetAction#budget_name}
   */
   readonly budgetName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#execution_role_arn BudgetsBudgetAction#execution_role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#execution_role_arn BudgetsBudgetAction#execution_role_arn}
   */
   readonly executionRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#notification_type BudgetsBudgetAction#notification_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#notification_type BudgetsBudgetAction#notification_type}
   */
   readonly notificationType: string;
   /**
   * action_threshold block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#action_threshold BudgetsBudgetAction#action_threshold}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#action_threshold BudgetsBudgetAction#action_threshold}
   */
   readonly actionThreshold: BudgetsBudgetActionActionThreshold;
   /**
   * definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#definition BudgetsBudgetAction#definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#definition BudgetsBudgetAction#definition}
   */
   readonly definition: BudgetsBudgetActionDefinition;
   /**
   * subscriber block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#subscriber BudgetsBudgetAction#subscriber}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#subscriber BudgetsBudgetAction#subscriber}
   */
   readonly subscriber: BudgetsBudgetActionSubscriber[];
 }
 export interface BudgetsBudgetActionActionThreshold {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#action_threshold_type BudgetsBudgetAction#action_threshold_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#action_threshold_type BudgetsBudgetAction#action_threshold_type}
   */
   readonly actionThresholdType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#action_threshold_value BudgetsBudgetAction#action_threshold_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#action_threshold_value BudgetsBudgetAction#action_threshold_value}
   */
   readonly actionThresholdValue: number;
 }
@@ -87,11 +87,11 @@ export class BudgetsBudgetActionActionThresholdOutputReference extends cdktf.Com
   public get internalValue(): BudgetsBudgetActionActionThreshold | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._actionThresholdType) {
+    if (this._actionThresholdType !== undefined) {
       hasAnyValues = true;
       internalValueResult.actionThresholdType = this._actionThresholdType;
     }
-    if (this._actionThresholdValue) {
+    if (this._actionThresholdValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.actionThresholdValue = this._actionThresholdValue;
     }
@@ -139,19 +139,19 @@ export class BudgetsBudgetActionActionThresholdOutputReference extends cdktf.Com
 }
 export interface BudgetsBudgetActionDefinitionIamActionDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#groups BudgetsBudgetAction#groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#groups BudgetsBudgetAction#groups}
   */
   readonly groups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#policy_arn BudgetsBudgetAction#policy_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#policy_arn BudgetsBudgetAction#policy_arn}
   */
   readonly policyArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#roles BudgetsBudgetAction#roles}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#roles BudgetsBudgetAction#roles}
   */
   readonly roles?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#users BudgetsBudgetAction#users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#users BudgetsBudgetAction#users}
   */
   readonly users?: string[];
 }
@@ -184,19 +184,19 @@ export class BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference ext
   public get internalValue(): BudgetsBudgetActionDefinitionIamActionDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._groups) {
+    if (this._groups !== undefined) {
       hasAnyValues = true;
       internalValueResult.groups = this._groups;
     }
-    if (this._policyArn) {
+    if (this._policyArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.policyArn = this._policyArn;
     }
-    if (this._roles) {
+    if (this._roles !== undefined) {
       hasAnyValues = true;
       internalValueResult.roles = this._roles;
     }
-    if (this._users) {
+    if (this._users !== undefined) {
       hasAnyValues = true;
       internalValueResult.users = this._users;
     }
@@ -283,11 +283,11 @@ export class BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference ext
 }
 export interface BudgetsBudgetActionDefinitionScpActionDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#policy_id BudgetsBudgetAction#policy_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#policy_id BudgetsBudgetAction#policy_id}
   */
   readonly policyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#target_ids BudgetsBudgetAction#target_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#target_ids BudgetsBudgetAction#target_ids}
   */
   readonly targetIds: string[];
 }
@@ -318,11 +318,11 @@ export class BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference ext
   public get internalValue(): BudgetsBudgetActionDefinitionScpActionDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._policyId) {
+    if (this._policyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.policyId = this._policyId;
     }
-    if (this._targetIds) {
+    if (this._targetIds !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetIds = this._targetIds;
     }
@@ -370,15 +370,15 @@ export class BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference ext
 }
 export interface BudgetsBudgetActionDefinitionSsmActionDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#action_sub_type BudgetsBudgetAction#action_sub_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#action_sub_type BudgetsBudgetAction#action_sub_type}
   */
   readonly actionSubType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#instance_ids BudgetsBudgetAction#instance_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#instance_ids BudgetsBudgetAction#instance_ids}
   */
   readonly instanceIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#region BudgetsBudgetAction#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#region BudgetsBudgetAction#region}
   */
   readonly region: string;
 }
@@ -410,15 +410,15 @@ export class BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference ext
   public get internalValue(): BudgetsBudgetActionDefinitionSsmActionDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._actionSubType) {
+    if (this._actionSubType !== undefined) {
       hasAnyValues = true;
       internalValueResult.actionSubType = this._actionSubType;
     }
-    if (this._instanceIds) {
+    if (this._instanceIds !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceIds = this._instanceIds;
     }
-    if (this._region) {
+    if (this._region !== undefined) {
       hasAnyValues = true;
       internalValueResult.region = this._region;
     }
@@ -483,19 +483,19 @@ export interface BudgetsBudgetActionDefinition {
   /**
   * iam_action_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#iam_action_definition BudgetsBudgetAction#iam_action_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#iam_action_definition BudgetsBudgetAction#iam_action_definition}
   */
   readonly iamActionDefinition?: BudgetsBudgetActionDefinitionIamActionDefinition;
   /**
   * scp_action_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#scp_action_definition BudgetsBudgetAction#scp_action_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#scp_action_definition BudgetsBudgetAction#scp_action_definition}
   */
   readonly scpActionDefinition?: BudgetsBudgetActionDefinitionScpActionDefinition;
   /**
   * ssm_action_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#ssm_action_definition BudgetsBudgetAction#ssm_action_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#ssm_action_definition BudgetsBudgetAction#ssm_action_definition}
   */
   readonly ssmActionDefinition?: BudgetsBudgetActionDefinitionSsmActionDefinition;
 }
@@ -527,15 +527,15 @@ export class BudgetsBudgetActionDefinitionOutputReference extends cdktf.ComplexO
   public get internalValue(): BudgetsBudgetActionDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._iamActionDefinition?.internalValue) {
+    if (this._iamActionDefinition?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.iamActionDefinition = this._iamActionDefinition?.internalValue;
     }
-    if (this._scpActionDefinition?.internalValue) {
+    if (this._scpActionDefinition?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.scpActionDefinition = this._scpActionDefinition?.internalValue;
     }
-    if (this._ssmActionDefinition?.internalValue) {
+    if (this._ssmActionDefinition?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.ssmActionDefinition = this._ssmActionDefinition?.internalValue;
     }
@@ -607,11 +607,11 @@ export class BudgetsBudgetActionDefinitionOutputReference extends cdktf.ComplexO
 }
 export interface BudgetsBudgetActionSubscriber {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#address BudgetsBudgetAction#address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#address BudgetsBudgetAction#address}
   */
   readonly address: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html#subscription_type BudgetsBudgetAction#subscription_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#subscription_type BudgetsBudgetAction#subscription_type}
   */
   readonly subscriptionType: string;
 }
@@ -629,7 +629,7 @@ export function budgetsBudgetActionSubscriberToTerraform(struct?: BudgetsBudgetA
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html aws_budgets_budget_action}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action aws_budgets_budget_action}
 */
 export class BudgetsBudgetAction extends cdktf.TerraformResource {
 
@@ -643,7 +643,7 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action.html aws_budgets_budget_action} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action aws_budgets_budget_action} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

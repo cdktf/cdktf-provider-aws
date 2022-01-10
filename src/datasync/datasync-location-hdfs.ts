@@ -8,73 +8,73 @@ import * as cdktf from 'cdktf';
 */
 export interface DatasyncLocationHdfsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#agent_arns DatasyncLocationHdfs#agent_arns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#agent_arns DatasyncLocationHdfs#agent_arns}
   */
   readonly agentArns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#authentication_type DatasyncLocationHdfs#authentication_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#authentication_type DatasyncLocationHdfs#authentication_type}
   */
   readonly authenticationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#block_size DatasyncLocationHdfs#block_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#block_size DatasyncLocationHdfs#block_size}
   */
   readonly blockSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#kerberos_keytab DatasyncLocationHdfs#kerberos_keytab}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#kerberos_keytab DatasyncLocationHdfs#kerberos_keytab}
   */
   readonly kerberosKeytab?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#kerberos_krb5_conf DatasyncLocationHdfs#kerberos_krb5_conf}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#kerberos_krb5_conf DatasyncLocationHdfs#kerberos_krb5_conf}
   */
   readonly kerberosKrb5Conf?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#kerberos_principal DatasyncLocationHdfs#kerberos_principal}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#kerberos_principal DatasyncLocationHdfs#kerberos_principal}
   */
   readonly kerberosPrincipal?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#kms_key_provider_uri DatasyncLocationHdfs#kms_key_provider_uri}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#kms_key_provider_uri DatasyncLocationHdfs#kms_key_provider_uri}
   */
   readonly kmsKeyProviderUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#replication_factor DatasyncLocationHdfs#replication_factor}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#replication_factor DatasyncLocationHdfs#replication_factor}
   */
   readonly replicationFactor?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#simple_user DatasyncLocationHdfs#simple_user}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#simple_user DatasyncLocationHdfs#simple_user}
   */
   readonly simpleUser?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#subdirectory DatasyncLocationHdfs#subdirectory}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#subdirectory DatasyncLocationHdfs#subdirectory}
   */
   readonly subdirectory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#tags DatasyncLocationHdfs#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#tags DatasyncLocationHdfs#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#tags_all DatasyncLocationHdfs#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#tags_all DatasyncLocationHdfs#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * name_node block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#name_node DatasyncLocationHdfs#name_node}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#name_node DatasyncLocationHdfs#name_node}
   */
   readonly nameNode: DatasyncLocationHdfsNameNode[];
   /**
   * qop_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#qop_configuration DatasyncLocationHdfs#qop_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#qop_configuration DatasyncLocationHdfs#qop_configuration}
   */
   readonly qopConfiguration?: DatasyncLocationHdfsQopConfiguration;
 }
 export interface DatasyncLocationHdfsNameNode {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#hostname DatasyncLocationHdfs#hostname}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#hostname DatasyncLocationHdfs#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#port DatasyncLocationHdfs#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#port DatasyncLocationHdfs#port}
   */
   readonly port: number;
 }
@@ -92,11 +92,11 @@ export function datasyncLocationHdfsNameNodeToTerraform(struct?: DatasyncLocatio
 
 export interface DatasyncLocationHdfsQopConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#data_transfer_protection DatasyncLocationHdfs#data_transfer_protection}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#data_transfer_protection DatasyncLocationHdfs#data_transfer_protection}
   */
   readonly dataTransferProtection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html#rpc_protection DatasyncLocationHdfs#rpc_protection}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#rpc_protection DatasyncLocationHdfs#rpc_protection}
   */
   readonly rpcProtection?: string;
 }
@@ -127,11 +127,11 @@ export class DatasyncLocationHdfsQopConfigurationOutputReference extends cdktf.C
   public get internalValue(): DatasyncLocationHdfsQopConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataTransferProtection) {
+    if (this._dataTransferProtection !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataTransferProtection = this._dataTransferProtection;
     }
-    if (this._rpcProtection) {
+    if (this._rpcProtection !== undefined) {
       hasAnyValues = true;
       internalValueResult.rpcProtection = this._rpcProtection;
     }
@@ -185,7 +185,7 @@ export class DatasyncLocationHdfsQopConfigurationOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html aws_datasync_location_hdfs}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs aws_datasync_location_hdfs}
 */
 export class DatasyncLocationHdfs extends cdktf.TerraformResource {
 
@@ -199,7 +199,7 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs.html aws_datasync_location_hdfs} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs aws_datasync_location_hdfs} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

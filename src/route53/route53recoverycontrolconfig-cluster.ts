@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 */
 export interface Route53RecoverycontrolconfigClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53recoverycontrolconfig_cluster.html#name Route53RecoverycontrolconfigCluster#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53recoverycontrolconfig_cluster#name Route53RecoverycontrolconfigCluster#name}
   */
   readonly name: string;
 }
@@ -26,7 +26,7 @@ export class Route53RecoverycontrolconfigClusterClusterEndpoints extends cdktf.C
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53recoverycontrolconfig_cluster.html aws_route53recoverycontrolconfig_cluster}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster}
 */
 export class Route53RecoverycontrolconfigCluster extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class Route53RecoverycontrolconfigCluster extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53recoverycontrolconfig_cluster.html aws_route53recoverycontrolconfig_cluster} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

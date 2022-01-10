@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface NetworkInterfaceSgAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface_sg_attachment.html#network_interface_id NetworkInterfaceSgAttachment#network_interface_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface_sg_attachment#network_interface_id NetworkInterfaceSgAttachment#network_interface_id}
   */
   readonly networkInterfaceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface_sg_attachment.html#security_group_id NetworkInterfaceSgAttachment#security_group_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface_sg_attachment#security_group_id NetworkInterfaceSgAttachment#security_group_id}
   */
   readonly securityGroupId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/network_interface_sg_attachment.html aws_network_interface_sg_attachment}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/network_interface_sg_attachment aws_network_interface_sg_attachment}
 */
 export class NetworkInterfaceSgAttachment extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class NetworkInterfaceSgAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/network_interface_sg_attachment.html aws_network_interface_sg_attachment} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

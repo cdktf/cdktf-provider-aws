@@ -8,39 +8,39 @@ import * as cdktf from 'cdktf';
 */
 export interface FsxOntapStorageVirtualMachineConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#file_system_id FsxOntapStorageVirtualMachine#file_system_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#file_system_id FsxOntapStorageVirtualMachine#file_system_id}
   */
   readonly fileSystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#name FsxOntapStorageVirtualMachine#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#name FsxOntapStorageVirtualMachine#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#root_volume_security_style FsxOntapStorageVirtualMachine#root_volume_security_style}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#root_volume_security_style FsxOntapStorageVirtualMachine#root_volume_security_style}
   */
   readonly rootVolumeSecurityStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#svm_admin_password FsxOntapStorageVirtualMachine#svm_admin_password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#svm_admin_password FsxOntapStorageVirtualMachine#svm_admin_password}
   */
   readonly svmAdminPassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#tags FsxOntapStorageVirtualMachine#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#tags FsxOntapStorageVirtualMachine#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#tags_all FsxOntapStorageVirtualMachine#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#tags_all FsxOntapStorageVirtualMachine#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * active_directory_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#active_directory_configuration FsxOntapStorageVirtualMachine#active_directory_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#active_directory_configuration FsxOntapStorageVirtualMachine#active_directory_configuration}
   */
   readonly activeDirectoryConfiguration?: FsxOntapStorageVirtualMachineActiveDirectoryConfiguration;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#timeouts FsxOntapStorageVirtualMachine#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#timeouts FsxOntapStorageVirtualMachine#timeouts}
   */
   readonly timeouts?: FsxOntapStorageVirtualMachineTimeouts;
 }
@@ -120,31 +120,31 @@ export class FsxOntapStorageVirtualMachineEndpoints extends cdktf.ComplexCompute
 }
 export interface FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#dns_ips FsxOntapStorageVirtualMachine#dns_ips}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#dns_ips FsxOntapStorageVirtualMachine#dns_ips}
   */
   readonly dnsIps: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#domain_name FsxOntapStorageVirtualMachine#domain_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#domain_name FsxOntapStorageVirtualMachine#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#file_system_administrators_group FsxOntapStorageVirtualMachine#file_system_administrators_group}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#file_system_administrators_group FsxOntapStorageVirtualMachine#file_system_administrators_group}
   */
   readonly fileSystemAdministratorsGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#organizational_unit_distinguidshed_name FsxOntapStorageVirtualMachine#organizational_unit_distinguidshed_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#organizational_unit_distinguidshed_name FsxOntapStorageVirtualMachine#organizational_unit_distinguidshed_name}
   */
   readonly organizationalUnitDistinguidshedName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#organizational_unit_distinguished_name FsxOntapStorageVirtualMachine#organizational_unit_distinguished_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#organizational_unit_distinguished_name FsxOntapStorageVirtualMachine#organizational_unit_distinguished_name}
   */
   readonly organizationalUnitDistinguishedName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#password FsxOntapStorageVirtualMachine#password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#password FsxOntapStorageVirtualMachine#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#username FsxOntapStorageVirtualMachine#username}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#username FsxOntapStorageVirtualMachine#username}
   */
   readonly username: string;
 }
@@ -180,31 +180,31 @@ export class FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManage
   public get internalValue(): FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dnsIps) {
+    if (this._dnsIps !== undefined) {
       hasAnyValues = true;
       internalValueResult.dnsIps = this._dnsIps;
     }
-    if (this._domainName) {
+    if (this._domainName !== undefined) {
       hasAnyValues = true;
       internalValueResult.domainName = this._domainName;
     }
-    if (this._fileSystemAdministratorsGroup) {
+    if (this._fileSystemAdministratorsGroup !== undefined) {
       hasAnyValues = true;
       internalValueResult.fileSystemAdministratorsGroup = this._fileSystemAdministratorsGroup;
     }
-    if (this._organizationalUnitDistinguidshedName) {
+    if (this._organizationalUnitDistinguidshedName !== undefined) {
       hasAnyValues = true;
       internalValueResult.organizationalUnitDistinguidshedName = this._organizationalUnitDistinguidshedName;
     }
-    if (this._organizationalUnitDistinguishedName) {
+    if (this._organizationalUnitDistinguishedName !== undefined) {
       hasAnyValues = true;
       internalValueResult.organizationalUnitDistinguishedName = this._organizationalUnitDistinguishedName;
     }
-    if (this._password) {
+    if (this._password !== undefined) {
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
-    if (this._username) {
+    if (this._username !== undefined) {
       hasAnyValues = true;
       internalValueResult.username = this._username;
     }
@@ -336,13 +336,13 @@ export class FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManage
 }
 export interface FsxOntapStorageVirtualMachineActiveDirectoryConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#netbios_name FsxOntapStorageVirtualMachine#netbios_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#netbios_name FsxOntapStorageVirtualMachine#netbios_name}
   */
   readonly netbiosName?: string;
   /**
   * self_managed_active_directory_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#self_managed_active_directory_configuration FsxOntapStorageVirtualMachine#self_managed_active_directory_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#self_managed_active_directory_configuration FsxOntapStorageVirtualMachine#self_managed_active_directory_configuration}
   */
   readonly selfManagedActiveDirectoryConfiguration?: FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration;
 }
@@ -373,11 +373,11 @@ export class FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputRefe
   public get internalValue(): FsxOntapStorageVirtualMachineActiveDirectoryConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._netbiosName) {
+    if (this._netbiosName !== undefined) {
       hasAnyValues = true;
       internalValueResult.netbiosName = this._netbiosName;
     }
-    if (this._selfManagedActiveDirectoryConfiguration?.internalValue) {
+    if (this._selfManagedActiveDirectoryConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.selfManagedActiveDirectoryConfiguration = this._selfManagedActiveDirectoryConfiguration?.internalValue;
     }
@@ -431,15 +431,15 @@ export class FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputRefe
 }
 export interface FsxOntapStorageVirtualMachineTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#create FsxOntapStorageVirtualMachine#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#create FsxOntapStorageVirtualMachine#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#delete FsxOntapStorageVirtualMachine#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#delete FsxOntapStorageVirtualMachine#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html#update FsxOntapStorageVirtualMachine#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine#update FsxOntapStorageVirtualMachine#update}
   */
   readonly update?: string;
 }
@@ -471,15 +471,15 @@ export class FsxOntapStorageVirtualMachineTimeoutsOutputReference extends cdktf.
   public get internalValue(): FsxOntapStorageVirtualMachineTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
@@ -551,7 +551,7 @@ export class FsxOntapStorageVirtualMachineTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html aws_fsx_ontap_storage_virtual_machine}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine aws_fsx_ontap_storage_virtual_machine}
 */
 export class FsxOntapStorageVirtualMachine extends cdktf.TerraformResource {
 
@@ -565,7 +565,7 @@ export class FsxOntapStorageVirtualMachine extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine.html aws_fsx_ontap_storage_virtual_machine} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_storage_virtual_machine aws_fsx_ontap_storage_virtual_machine} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

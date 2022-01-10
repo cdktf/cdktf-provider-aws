@@ -8,53 +8,53 @@ import * as cdktf from 'cdktf';
 */
 export interface DefaultVpcConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#enable_classiclink DefaultVpc#enable_classiclink}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc#enable_classiclink DefaultVpc#enable_classiclink}
   */
   readonly enableClassiclink?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#enable_classiclink_dns_support DefaultVpc#enable_classiclink_dns_support}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc#enable_classiclink_dns_support DefaultVpc#enable_classiclink_dns_support}
   */
   readonly enableClassiclinkDnsSupport?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#enable_dns_hostnames DefaultVpc#enable_dns_hostnames}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc#enable_dns_hostnames DefaultVpc#enable_dns_hostnames}
   */
   readonly enableDnsHostnames?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#enable_dns_support DefaultVpc#enable_dns_support}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc#enable_dns_support DefaultVpc#enable_dns_support}
   */
   readonly enableDnsSupport?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#ipv4_ipam_pool_id DefaultVpc#ipv4_ipam_pool_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc#ipv4_ipam_pool_id DefaultVpc#ipv4_ipam_pool_id}
   */
   readonly ipv4IpamPoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#ipv4_netmask_length DefaultVpc#ipv4_netmask_length}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc#ipv4_netmask_length DefaultVpc#ipv4_netmask_length}
   */
   readonly ipv4NetmaskLength?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#ipv6_cidr_block DefaultVpc#ipv6_cidr_block}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc#ipv6_cidr_block DefaultVpc#ipv6_cidr_block}
   */
   readonly ipv6CidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#ipv6_ipam_pool_id DefaultVpc#ipv6_ipam_pool_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc#ipv6_ipam_pool_id DefaultVpc#ipv6_ipam_pool_id}
   */
   readonly ipv6IpamPoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#ipv6_netmask_length DefaultVpc#ipv6_netmask_length}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc#ipv6_netmask_length DefaultVpc#ipv6_netmask_length}
   */
   readonly ipv6NetmaskLength?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#tags DefaultVpc#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc#tags DefaultVpc#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#tags_all DefaultVpc#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc#tags_all DefaultVpc#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html aws_default_vpc}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/default_vpc aws_default_vpc}
 */
 export class DefaultVpc extends cdktf.TerraformResource {
 
@@ -68,7 +68,7 @@ export class DefaultVpc extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html aws_default_vpc} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/default_vpc aws_default_vpc} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,29 +8,29 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsAmiConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami.html#executable_users DataAwsAmi#executable_users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami#executable_users DataAwsAmi#executable_users}
   */
   readonly executableUsers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami.html#most_recent DataAwsAmi#most_recent}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami#most_recent DataAwsAmi#most_recent}
   */
   readonly mostRecent?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami.html#name_regex DataAwsAmi#name_regex}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami#name_regex DataAwsAmi#name_regex}
   */
   readonly nameRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami.html#owners DataAwsAmi#owners}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami#owners DataAwsAmi#owners}
   */
   readonly owners: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami.html#tags DataAwsAmi#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami#tags DataAwsAmi#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami.html#filter DataAwsAmi#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami#filter DataAwsAmi#filter}
   */
   readonly filter?: DataAwsAmiFilter[];
 }
@@ -71,11 +71,11 @@ export class DataAwsAmiProductCodes extends cdktf.ComplexComputedList {
 }
 export interface DataAwsAmiFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami.html#name DataAwsAmi#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami#name DataAwsAmi#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami.html#values DataAwsAmi#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami#values DataAwsAmi#values}
   */
   readonly values: string[];
 }
@@ -93,7 +93,7 @@ export function dataAwsAmiFilterToTerraform(struct?: DataAwsAmiFilter): any {
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ami.html aws_ami}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ami aws_ami}
 */
 export class DataAwsAmi extends cdktf.TerraformDataSource {
 
@@ -107,7 +107,7 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ami.html aws_ami} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ami aws_ami} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

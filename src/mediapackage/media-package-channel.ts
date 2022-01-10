@@ -8,19 +8,19 @@ import * as cdktf from 'cdktf';
 */
 export interface MediaPackageChannelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/media_package_channel.html#channel_id MediaPackageChannel#channel_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/media_package_channel#channel_id MediaPackageChannel#channel_id}
   */
   readonly channelId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/media_package_channel.html#description MediaPackageChannel#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/media_package_channel#description MediaPackageChannel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/media_package_channel.html#tags MediaPackageChannel#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/media_package_channel#tags MediaPackageChannel#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/media_package_channel.html#tags_all MediaPackageChannel#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/media_package_channel#tags_all MediaPackageChannel#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
@@ -51,7 +51,7 @@ export class MediaPackageChannelHlsIngest extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/media_package_channel.html aws_media_package_channel}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/media_package_channel aws_media_package_channel}
 */
 export class MediaPackageChannel extends cdktf.TerraformResource {
 
@@ -65,7 +65,7 @@ export class MediaPackageChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/media_package_channel.html aws_media_package_channel} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/media_package_channel aws_media_package_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

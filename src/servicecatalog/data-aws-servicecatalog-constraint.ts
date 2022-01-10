@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsServicecatalogConstraintConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_constraint.html#accept_language DataAwsServicecatalogConstraint#accept_language}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_constraint#accept_language DataAwsServicecatalogConstraint#accept_language}
   */
   readonly acceptLanguage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_constraint.html#description DataAwsServicecatalogConstraint#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_constraint#description DataAwsServicecatalogConstraint#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_constraint.html#id DataAwsServicecatalogConstraint#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_constraint#id DataAwsServicecatalogConstraint#id}
   */
   readonly id: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_constraint.html aws_servicecatalog_constraint}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_constraint aws_servicecatalog_constraint}
 */
 export class DataAwsServicecatalogConstraint extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataAwsServicecatalogConstraint extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_constraint.html aws_servicecatalog_constraint} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_constraint aws_servicecatalog_constraint} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

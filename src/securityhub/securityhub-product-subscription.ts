@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface SecurityhubProductSubscriptionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_product_subscription.html#product_arn SecurityhubProductSubscription#product_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_product_subscription#product_arn SecurityhubProductSubscription#product_arn}
   */
   readonly productArn: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/securityhub_product_subscription.html aws_securityhub_product_subscription}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/securityhub_product_subscription aws_securityhub_product_subscription}
 */
 export class SecurityhubProductSubscription extends cdktf.TerraformResource {
 
@@ -28,7 +28,7 @@ export class SecurityhubProductSubscription extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/securityhub_product_subscription.html aws_securityhub_product_subscription} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/securityhub_product_subscription aws_securityhub_product_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

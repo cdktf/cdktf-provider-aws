@@ -8,89 +8,89 @@ import * as cdktf from 'cdktf';
 */
 export interface KinesisFirehoseDeliveryStreamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#destination KinesisFirehoseDeliveryStream#destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#destination KinesisFirehoseDeliveryStream#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#destination_id KinesisFirehoseDeliveryStream#destination_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#destination_id KinesisFirehoseDeliveryStream#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#name KinesisFirehoseDeliveryStream#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#name KinesisFirehoseDeliveryStream#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#tags KinesisFirehoseDeliveryStream#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#tags KinesisFirehoseDeliveryStream#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#tags_all KinesisFirehoseDeliveryStream#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#tags_all KinesisFirehoseDeliveryStream#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#version_id KinesisFirehoseDeliveryStream#version_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#version_id KinesisFirehoseDeliveryStream#version_id}
   */
   readonly versionId?: string;
   /**
   * elasticsearch_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#elasticsearch_configuration KinesisFirehoseDeliveryStream#elasticsearch_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#elasticsearch_configuration KinesisFirehoseDeliveryStream#elasticsearch_configuration}
   */
   readonly elasticsearchConfiguration?: KinesisFirehoseDeliveryStreamElasticsearchConfiguration;
   /**
   * extended_s3_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#extended_s3_configuration KinesisFirehoseDeliveryStream#extended_s3_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#extended_s3_configuration KinesisFirehoseDeliveryStream#extended_s3_configuration}
   */
   readonly extendedS3Configuration?: KinesisFirehoseDeliveryStreamExtendedS3Configuration;
   /**
   * http_endpoint_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#http_endpoint_configuration KinesisFirehoseDeliveryStream#http_endpoint_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#http_endpoint_configuration KinesisFirehoseDeliveryStream#http_endpoint_configuration}
   */
   readonly httpEndpointConfiguration?: KinesisFirehoseDeliveryStreamHttpEndpointConfiguration;
   /**
   * kinesis_source_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#kinesis_source_configuration KinesisFirehoseDeliveryStream#kinesis_source_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#kinesis_source_configuration KinesisFirehoseDeliveryStream#kinesis_source_configuration}
   */
   readonly kinesisSourceConfiguration?: KinesisFirehoseDeliveryStreamKinesisSourceConfiguration;
   /**
   * redshift_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#redshift_configuration KinesisFirehoseDeliveryStream#redshift_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#redshift_configuration KinesisFirehoseDeliveryStream#redshift_configuration}
   */
   readonly redshiftConfiguration?: KinesisFirehoseDeliveryStreamRedshiftConfiguration;
   /**
   * s3_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#s3_configuration KinesisFirehoseDeliveryStream#s3_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#s3_configuration KinesisFirehoseDeliveryStream#s3_configuration}
   */
   readonly s3Configuration?: KinesisFirehoseDeliveryStreamS3Configuration;
   /**
   * server_side_encryption block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#server_side_encryption KinesisFirehoseDeliveryStream#server_side_encryption}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#server_side_encryption KinesisFirehoseDeliveryStream#server_side_encryption}
   */
   readonly serverSideEncryption?: KinesisFirehoseDeliveryStreamServerSideEncryption;
   /**
   * splunk_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#splunk_configuration KinesisFirehoseDeliveryStream#splunk_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#splunk_configuration KinesisFirehoseDeliveryStream#splunk_configuration}
   */
   readonly splunkConfiguration?: KinesisFirehoseDeliveryStreamSplunkConfiguration;
 }
 export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
   readonly logGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
   */
   readonly logStreamName?: string;
 }
@@ -122,15 +122,15 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLo
   public get internalValue(): KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._logGroupName) {
+    if (this._logGroupName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logGroupName = this._logGroupName;
     }
-    if (this._logStreamName) {
+    if (this._logStreamName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logStreamName = this._logStreamName;
     }
@@ -202,11 +202,11 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLo
 }
 export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameter_name KinesisFirehoseDeliveryStream#parameter_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameter_name KinesisFirehoseDeliveryStream#parameter_name}
   */
   readonly parameterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameter_value KinesisFirehoseDeliveryStream#parameter_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameter_value KinesisFirehoseDeliveryStream#parameter_value}
   */
   readonly parameterValue: string;
 }
@@ -224,13 +224,13 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessin
 
 export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#type KinesisFirehoseDeliveryStream#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#type KinesisFirehoseDeliveryStream#type}
   */
   readonly type: string;
   /**
   * parameters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameters KinesisFirehoseDeliveryStream#parameters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameters KinesisFirehoseDeliveryStream#parameters}
   */
   readonly parameters?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters[];
 }
@@ -248,13 +248,13 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessin
 
 export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * processors block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#processors KinesisFirehoseDeliveryStream#processors}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
   */
   readonly processors?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors[];
 }
@@ -285,11 +285,11 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
   public get internalValue(): KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._processors) {
+    if (this._processors !== undefined) {
       hasAnyValues = true;
       internalValueResult.processors = this._processors;
     }
@@ -344,15 +344,15 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
 }
 export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#role_arn KinesisFirehoseDeliveryStream#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#role_arn KinesisFirehoseDeliveryStream#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#security_group_ids KinesisFirehoseDeliveryStream#security_group_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#security_group_ids KinesisFirehoseDeliveryStream#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#subnet_ids KinesisFirehoseDeliveryStream#subnet_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#subnet_ids KinesisFirehoseDeliveryStream#subnet_ids}
   */
   readonly subnetIds: string[];
 }
@@ -384,15 +384,15 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOut
   public get internalValue(): KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._securityGroupIds) {
+    if (this._securityGroupIds !== undefined) {
       hasAnyValues = true;
       internalValueResult.securityGroupIds = this._securityGroupIds;
     }
-    if (this._subnetIds) {
+    if (this._subnetIds !== undefined) {
       hasAnyValues = true;
       internalValueResult.subnetIds = this._subnetIds;
     }
@@ -455,61 +455,61 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOut
 }
 export interface KinesisFirehoseDeliveryStreamElasticsearchConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#buffering_interval KinesisFirehoseDeliveryStream#buffering_interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#buffering_interval KinesisFirehoseDeliveryStream#buffering_interval}
   */
   readonly bufferingInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#buffering_size KinesisFirehoseDeliveryStream#buffering_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#buffering_size KinesisFirehoseDeliveryStream#buffering_size}
   */
   readonly bufferingSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#cluster_endpoint KinesisFirehoseDeliveryStream#cluster_endpoint}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#cluster_endpoint KinesisFirehoseDeliveryStream#cluster_endpoint}
   */
   readonly clusterEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#domain_arn KinesisFirehoseDeliveryStream#domain_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#domain_arn KinesisFirehoseDeliveryStream#domain_arn}
   */
   readonly domainArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#index_name KinesisFirehoseDeliveryStream#index_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#index_name KinesisFirehoseDeliveryStream#index_name}
   */
   readonly indexName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#index_rotation_period KinesisFirehoseDeliveryStream#index_rotation_period}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#index_rotation_period KinesisFirehoseDeliveryStream#index_rotation_period}
   */
   readonly indexRotationPeriod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#retry_duration KinesisFirehoseDeliveryStream#retry_duration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#retry_duration KinesisFirehoseDeliveryStream#retry_duration}
   */
   readonly retryDuration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#role_arn KinesisFirehoseDeliveryStream#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#role_arn KinesisFirehoseDeliveryStream#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#s3_backup_mode KinesisFirehoseDeliveryStream#s3_backup_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#s3_backup_mode KinesisFirehoseDeliveryStream#s3_backup_mode}
   */
   readonly s3BackupMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#type_name KinesisFirehoseDeliveryStream#type_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#type_name KinesisFirehoseDeliveryStream#type_name}
   */
   readonly typeName?: string;
   /**
   * cloudwatch_logging_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
   */
   readonly cloudwatchLoggingOptions?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions;
   /**
   * processing_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#processing_configuration KinesisFirehoseDeliveryStream#processing_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#processing_configuration KinesisFirehoseDeliveryStream#processing_configuration}
   */
   readonly processingConfiguration?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration;
   /**
   * vpc_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#vpc_config KinesisFirehoseDeliveryStream#vpc_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#vpc_config KinesisFirehoseDeliveryStream#vpc_config}
   */
   readonly vpcConfig?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig;
 }
@@ -551,55 +551,55 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputRefere
   public get internalValue(): KinesisFirehoseDeliveryStreamElasticsearchConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bufferingInterval) {
+    if (this._bufferingInterval !== undefined) {
       hasAnyValues = true;
       internalValueResult.bufferingInterval = this._bufferingInterval;
     }
-    if (this._bufferingSize) {
+    if (this._bufferingSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.bufferingSize = this._bufferingSize;
     }
-    if (this._clusterEndpoint) {
+    if (this._clusterEndpoint !== undefined) {
       hasAnyValues = true;
       internalValueResult.clusterEndpoint = this._clusterEndpoint;
     }
-    if (this._domainArn) {
+    if (this._domainArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.domainArn = this._domainArn;
     }
-    if (this._indexName) {
+    if (this._indexName !== undefined) {
       hasAnyValues = true;
       internalValueResult.indexName = this._indexName;
     }
-    if (this._indexRotationPeriod) {
+    if (this._indexRotationPeriod !== undefined) {
       hasAnyValues = true;
       internalValueResult.indexRotationPeriod = this._indexRotationPeriod;
     }
-    if (this._retryDuration) {
+    if (this._retryDuration !== undefined) {
       hasAnyValues = true;
       internalValueResult.retryDuration = this._retryDuration;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._s3BackupMode) {
+    if (this._s3BackupMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3BackupMode = this._s3BackupMode;
     }
-    if (this._typeName) {
+    if (this._typeName !== undefined) {
       hasAnyValues = true;
       internalValueResult.typeName = this._typeName;
     }
-    if (this._cloudwatchLoggingOptions?.internalValue) {
+    if (this._cloudwatchLoggingOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
-    if (this._processingConfiguration?.internalValue) {
+    if (this._processingConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.processingConfiguration = this._processingConfiguration?.internalValue;
     }
-    if (this._vpcConfig?.internalValue) {
+    if (this._vpcConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.vpcConfig = this._vpcConfig?.internalValue;
     }
@@ -845,15 +845,15 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputRefere
 }
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
   readonly logGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
   */
   readonly logStreamName?: string;
 }
@@ -885,15 +885,15 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggi
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._logGroupName) {
+    if (this._logGroupName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logGroupName = this._logGroupName;
     }
-    if (this._logStreamName) {
+    if (this._logStreamName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logStreamName = this._logStreamName;
     }
@@ -965,7 +965,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggi
 }
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#timestamp_formats KinesisFirehoseDeliveryStream#timestamp_formats}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#timestamp_formats KinesisFirehoseDeliveryStream#timestamp_formats}
   */
   readonly timestampFormats?: string[];
 }
@@ -995,7 +995,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._timestampFormats) {
+    if (this._timestampFormats !== undefined) {
       hasAnyValues = true;
       internalValueResult.timestampFormats = this._timestampFormats;
     }
@@ -1031,15 +1031,15 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 }
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#case_insensitive KinesisFirehoseDeliveryStream#case_insensitive}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#case_insensitive KinesisFirehoseDeliveryStream#case_insensitive}
   */
   readonly caseInsensitive?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#column_to_json_key_mappings KinesisFirehoseDeliveryStream#column_to_json_key_mappings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#column_to_json_key_mappings KinesisFirehoseDeliveryStream#column_to_json_key_mappings}
   */
   readonly columnToJsonKeyMappings?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#convert_dots_in_json_keys_to_underscores KinesisFirehoseDeliveryStream#convert_dots_in_json_keys_to_underscores}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#convert_dots_in_json_keys_to_underscores KinesisFirehoseDeliveryStream#convert_dots_in_json_keys_to_underscores}
   */
   readonly convertDotsInJsonKeysToUnderscores?: boolean | cdktf.IResolvable;
 }
@@ -1071,15 +1071,15 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._caseInsensitive) {
+    if (this._caseInsensitive !== undefined) {
       hasAnyValues = true;
       internalValueResult.caseInsensitive = this._caseInsensitive;
     }
-    if (this._columnToJsonKeyMappings) {
+    if (this._columnToJsonKeyMappings !== undefined) {
       hasAnyValues = true;
       internalValueResult.columnToJsonKeyMappings = this._columnToJsonKeyMappings;
     }
-    if (this._convertDotsInJsonKeysToUnderscores) {
+    if (this._convertDotsInJsonKeysToUnderscores !== undefined) {
       hasAnyValues = true;
       internalValueResult.convertDotsInJsonKeysToUnderscores = this._convertDotsInJsonKeysToUnderscores;
     }
@@ -1154,13 +1154,13 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
   /**
   * hive_json_ser_de block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#hive_json_ser_de KinesisFirehoseDeliveryStream#hive_json_ser_de}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#hive_json_ser_de KinesisFirehoseDeliveryStream#hive_json_ser_de}
   */
   readonly hiveJsonSerDe?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe;
   /**
   * open_x_json_ser_de block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#open_x_json_ser_de KinesisFirehoseDeliveryStream#open_x_json_ser_de}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#open_x_json_ser_de KinesisFirehoseDeliveryStream#open_x_json_ser_de}
   */
   readonly openXJsonSerDe?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe;
 }
@@ -1191,11 +1191,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._hiveJsonSerDe?.internalValue) {
+    if (this._hiveJsonSerDe?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.hiveJsonSerDe = this._hiveJsonSerDe?.internalValue;
     }
-    if (this._openXJsonSerDe?.internalValue) {
+    if (this._openXJsonSerDe?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.openXJsonSerDe = this._openXJsonSerDe?.internalValue;
     }
@@ -1251,7 +1251,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
   /**
   * deserializer block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#deserializer KinesisFirehoseDeliveryStream#deserializer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#deserializer KinesisFirehoseDeliveryStream#deserializer}
   */
   readonly deserializer: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer;
 }
@@ -1281,7 +1281,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._deserializer?.internalValue) {
+    if (this._deserializer?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.deserializer = this._deserializer?.internalValue;
     }
@@ -1314,43 +1314,43 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 }
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#block_size_bytes KinesisFirehoseDeliveryStream#block_size_bytes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#block_size_bytes KinesisFirehoseDeliveryStream#block_size_bytes}
   */
   readonly blockSizeBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#bloom_filter_columns KinesisFirehoseDeliveryStream#bloom_filter_columns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#bloom_filter_columns KinesisFirehoseDeliveryStream#bloom_filter_columns}
   */
   readonly bloomFilterColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#bloom_filter_false_positive_probability KinesisFirehoseDeliveryStream#bloom_filter_false_positive_probability}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#bloom_filter_false_positive_probability KinesisFirehoseDeliveryStream#bloom_filter_false_positive_probability}
   */
   readonly bloomFilterFalsePositiveProbability?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#compression KinesisFirehoseDeliveryStream#compression}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#compression KinesisFirehoseDeliveryStream#compression}
   */
   readonly compression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#dictionary_key_threshold KinesisFirehoseDeliveryStream#dictionary_key_threshold}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#dictionary_key_threshold KinesisFirehoseDeliveryStream#dictionary_key_threshold}
   */
   readonly dictionaryKeyThreshold?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enable_padding KinesisFirehoseDeliveryStream#enable_padding}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enable_padding KinesisFirehoseDeliveryStream#enable_padding}
   */
   readonly enablePadding?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#format_version KinesisFirehoseDeliveryStream#format_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#format_version KinesisFirehoseDeliveryStream#format_version}
   */
   readonly formatVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#padding_tolerance KinesisFirehoseDeliveryStream#padding_tolerance}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#padding_tolerance KinesisFirehoseDeliveryStream#padding_tolerance}
   */
   readonly paddingTolerance?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#row_index_stride KinesisFirehoseDeliveryStream#row_index_stride}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#row_index_stride KinesisFirehoseDeliveryStream#row_index_stride}
   */
   readonly rowIndexStride?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#stripe_size_bytes KinesisFirehoseDeliveryStream#stripe_size_bytes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#stripe_size_bytes KinesisFirehoseDeliveryStream#stripe_size_bytes}
   */
   readonly stripeSizeBytes?: number;
 }
@@ -1389,43 +1389,43 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._blockSizeBytes) {
+    if (this._blockSizeBytes !== undefined) {
       hasAnyValues = true;
       internalValueResult.blockSizeBytes = this._blockSizeBytes;
     }
-    if (this._bloomFilterColumns) {
+    if (this._bloomFilterColumns !== undefined) {
       hasAnyValues = true;
       internalValueResult.bloomFilterColumns = this._bloomFilterColumns;
     }
-    if (this._bloomFilterFalsePositiveProbability) {
+    if (this._bloomFilterFalsePositiveProbability !== undefined) {
       hasAnyValues = true;
       internalValueResult.bloomFilterFalsePositiveProbability = this._bloomFilterFalsePositiveProbability;
     }
-    if (this._compression) {
+    if (this._compression !== undefined) {
       hasAnyValues = true;
       internalValueResult.compression = this._compression;
     }
-    if (this._dictionaryKeyThreshold) {
+    if (this._dictionaryKeyThreshold !== undefined) {
       hasAnyValues = true;
       internalValueResult.dictionaryKeyThreshold = this._dictionaryKeyThreshold;
     }
-    if (this._enablePadding) {
+    if (this._enablePadding !== undefined) {
       hasAnyValues = true;
       internalValueResult.enablePadding = this._enablePadding;
     }
-    if (this._formatVersion) {
+    if (this._formatVersion !== undefined) {
       hasAnyValues = true;
       internalValueResult.formatVersion = this._formatVersion;
     }
-    if (this._paddingTolerance) {
+    if (this._paddingTolerance !== undefined) {
       hasAnyValues = true;
       internalValueResult.paddingTolerance = this._paddingTolerance;
     }
-    if (this._rowIndexStride) {
+    if (this._rowIndexStride !== undefined) {
       hasAnyValues = true;
       internalValueResult.rowIndexStride = this._rowIndexStride;
     }
-    if (this._stripeSizeBytes) {
+    if (this._stripeSizeBytes !== undefined) {
       hasAnyValues = true;
       internalValueResult.stripeSizeBytes = this._stripeSizeBytes;
     }
@@ -1623,27 +1623,27 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 }
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#block_size_bytes KinesisFirehoseDeliveryStream#block_size_bytes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#block_size_bytes KinesisFirehoseDeliveryStream#block_size_bytes}
   */
   readonly blockSizeBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#compression KinesisFirehoseDeliveryStream#compression}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#compression KinesisFirehoseDeliveryStream#compression}
   */
   readonly compression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enable_dictionary_compression KinesisFirehoseDeliveryStream#enable_dictionary_compression}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enable_dictionary_compression KinesisFirehoseDeliveryStream#enable_dictionary_compression}
   */
   readonly enableDictionaryCompression?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#max_padding_bytes KinesisFirehoseDeliveryStream#max_padding_bytes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#max_padding_bytes KinesisFirehoseDeliveryStream#max_padding_bytes}
   */
   readonly maxPaddingBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#page_size_bytes KinesisFirehoseDeliveryStream#page_size_bytes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#page_size_bytes KinesisFirehoseDeliveryStream#page_size_bytes}
   */
   readonly pageSizeBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#writer_version KinesisFirehoseDeliveryStream#writer_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#writer_version KinesisFirehoseDeliveryStream#writer_version}
   */
   readonly writerVersion?: string;
 }
@@ -1678,27 +1678,27 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._blockSizeBytes) {
+    if (this._blockSizeBytes !== undefined) {
       hasAnyValues = true;
       internalValueResult.blockSizeBytes = this._blockSizeBytes;
     }
-    if (this._compression) {
+    if (this._compression !== undefined) {
       hasAnyValues = true;
       internalValueResult.compression = this._compression;
     }
-    if (this._enableDictionaryCompression) {
+    if (this._enableDictionaryCompression !== undefined) {
       hasAnyValues = true;
       internalValueResult.enableDictionaryCompression = this._enableDictionaryCompression;
     }
-    if (this._maxPaddingBytes) {
+    if (this._maxPaddingBytes !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxPaddingBytes = this._maxPaddingBytes;
     }
-    if (this._pageSizeBytes) {
+    if (this._pageSizeBytes !== undefined) {
       hasAnyValues = true;
       internalValueResult.pageSizeBytes = this._pageSizeBytes;
     }
-    if (this._writerVersion) {
+    if (this._writerVersion !== undefined) {
       hasAnyValues = true;
       internalValueResult.writerVersion = this._writerVersion;
     }
@@ -1826,13 +1826,13 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
   /**
   * orc_ser_de block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#orc_ser_de KinesisFirehoseDeliveryStream#orc_ser_de}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#orc_ser_de KinesisFirehoseDeliveryStream#orc_ser_de}
   */
   readonly orcSerDe?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe;
   /**
   * parquet_ser_de block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parquet_ser_de KinesisFirehoseDeliveryStream#parquet_ser_de}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parquet_ser_de KinesisFirehoseDeliveryStream#parquet_ser_de}
   */
   readonly parquetSerDe?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe;
 }
@@ -1863,11 +1863,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._orcSerDe?.internalValue) {
+    if (this._orcSerDe?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.orcSerDe = this._orcSerDe?.internalValue;
     }
-    if (this._parquetSerDe?.internalValue) {
+    if (this._parquetSerDe?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.parquetSerDe = this._parquetSerDe?.internalValue;
     }
@@ -1923,7 +1923,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
   /**
   * serializer block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#serializer KinesisFirehoseDeliveryStream#serializer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#serializer KinesisFirehoseDeliveryStream#serializer}
   */
   readonly serializer: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer;
 }
@@ -1953,7 +1953,7 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._serializer?.internalValue) {
+    if (this._serializer?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.serializer = this._serializer?.internalValue;
     }
@@ -1986,27 +1986,27 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 }
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#catalog_id KinesisFirehoseDeliveryStream#catalog_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#catalog_id KinesisFirehoseDeliveryStream#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#database_name KinesisFirehoseDeliveryStream#database_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#database_name KinesisFirehoseDeliveryStream#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#region KinesisFirehoseDeliveryStream#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#region KinesisFirehoseDeliveryStream#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#role_arn KinesisFirehoseDeliveryStream#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#role_arn KinesisFirehoseDeliveryStream#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#table_name KinesisFirehoseDeliveryStream#table_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#table_name KinesisFirehoseDeliveryStream#table_name}
   */
   readonly tableName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#version_id KinesisFirehoseDeliveryStream#version_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#version_id KinesisFirehoseDeliveryStream#version_id}
   */
   readonly versionId?: string;
 }
@@ -2041,27 +2041,27 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._catalogId) {
+    if (this._catalogId !== undefined) {
       hasAnyValues = true;
       internalValueResult.catalogId = this._catalogId;
     }
-    if (this._databaseName) {
+    if (this._databaseName !== undefined) {
       hasAnyValues = true;
       internalValueResult.databaseName = this._databaseName;
     }
-    if (this._region) {
+    if (this._region !== undefined) {
       hasAnyValues = true;
       internalValueResult.region = this._region;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._tableName) {
+    if (this._tableName !== undefined) {
       hasAnyValues = true;
       internalValueResult.tableName = this._tableName;
     }
-    if (this._versionId) {
+    if (this._versionId !== undefined) {
       hasAnyValues = true;
       internalValueResult.versionId = this._versionId;
     }
@@ -2178,25 +2178,25 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 }
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * input_format_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#input_format_configuration KinesisFirehoseDeliveryStream#input_format_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#input_format_configuration KinesisFirehoseDeliveryStream#input_format_configuration}
   */
   readonly inputFormatConfiguration: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration;
   /**
   * output_format_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#output_format_configuration KinesisFirehoseDeliveryStream#output_format_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#output_format_configuration KinesisFirehoseDeliveryStream#output_format_configuration}
   */
   readonly outputFormatConfiguration: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration;
   /**
   * schema_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#schema_configuration KinesisFirehoseDeliveryStream#schema_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#schema_configuration KinesisFirehoseDeliveryStream#schema_configuration}
   */
   readonly schemaConfiguration: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration;
 }
@@ -2229,19 +2229,19 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._inputFormatConfiguration?.internalValue) {
+    if (this._inputFormatConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.inputFormatConfiguration = this._inputFormatConfiguration?.internalValue;
     }
-    if (this._outputFormatConfiguration?.internalValue) {
+    if (this._outputFormatConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.outputFormatConfiguration = this._outputFormatConfiguration?.internalValue;
     }
-    if (this._schemaConfiguration?.internalValue) {
+    if (this._schemaConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.schemaConfiguration = this._schemaConfiguration?.internalValue;
     }
@@ -2322,11 +2322,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConve
 }
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#retry_duration KinesisFirehoseDeliveryStream#retry_duration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#retry_duration KinesisFirehoseDeliveryStream#retry_duration}
   */
   readonly retryDuration?: number;
 }
@@ -2357,11 +2357,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitio
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._retryDuration) {
+    if (this._retryDuration !== undefined) {
       hasAnyValues = true;
       internalValueResult.retryDuration = this._retryDuration;
     }
@@ -2415,11 +2415,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitio
 }
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameter_name KinesisFirehoseDeliveryStream#parameter_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameter_name KinesisFirehoseDeliveryStream#parameter_name}
   */
   readonly parameterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameter_value KinesisFirehoseDeliveryStream#parameter_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameter_value KinesisFirehoseDeliveryStream#parameter_value}
   */
   readonly parameterValue: string;
 }
@@ -2437,13 +2437,13 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingCo
 
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#type KinesisFirehoseDeliveryStream#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#type KinesisFirehoseDeliveryStream#type}
   */
   readonly type: string;
   /**
   * parameters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameters KinesisFirehoseDeliveryStream#parameters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameters KinesisFirehoseDeliveryStream#parameters}
   */
   readonly parameters?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters[];
 }
@@ -2461,13 +2461,13 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingCo
 
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * processors block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#processors KinesisFirehoseDeliveryStream#processors}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
   */
   readonly processors?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors[];
 }
@@ -2498,11 +2498,11 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._processors) {
+    if (this._processors !== undefined) {
       hasAnyValues = true;
       internalValueResult.processors = this._processors;
     }
@@ -2557,15 +2557,15 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
 }
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
   readonly logGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
   */
   readonly logStreamName?: string;
 }
@@ -2597,15 +2597,15 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigu
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._logGroupName) {
+    if (this._logGroupName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logGroupName = this._logGroupName;
     }
-    if (this._logStreamName) {
+    if (this._logStreamName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logStreamName = this._logStreamName;
     }
@@ -2677,41 +2677,41 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigu
 }
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#bucket_arn KinesisFirehoseDeliveryStream#bucket_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#bucket_arn KinesisFirehoseDeliveryStream#bucket_arn}
   */
   readonly bucketArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#buffer_interval KinesisFirehoseDeliveryStream#buffer_interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#buffer_interval KinesisFirehoseDeliveryStream#buffer_interval}
   */
   readonly bufferInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#buffer_size KinesisFirehoseDeliveryStream#buffer_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#buffer_size KinesisFirehoseDeliveryStream#buffer_size}
   */
   readonly bufferSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#compression_format KinesisFirehoseDeliveryStream#compression_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#compression_format KinesisFirehoseDeliveryStream#compression_format}
   */
   readonly compressionFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#error_output_prefix KinesisFirehoseDeliveryStream#error_output_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#error_output_prefix KinesisFirehoseDeliveryStream#error_output_prefix}
   */
   readonly errorOutputPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#kms_key_arn KinesisFirehoseDeliveryStream#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#kms_key_arn KinesisFirehoseDeliveryStream#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#prefix KinesisFirehoseDeliveryStream#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#prefix KinesisFirehoseDeliveryStream#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#role_arn KinesisFirehoseDeliveryStream#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#role_arn KinesisFirehoseDeliveryStream#role_arn}
   */
   readonly roleArn: string;
   /**
   * cloudwatch_logging_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
   */
   readonly cloudwatchLoggingOptions?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions;
 }
@@ -2749,39 +2749,39 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigu
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucketArn) {
+    if (this._bucketArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketArn = this._bucketArn;
     }
-    if (this._bufferInterval) {
+    if (this._bufferInterval !== undefined) {
       hasAnyValues = true;
       internalValueResult.bufferInterval = this._bufferInterval;
     }
-    if (this._bufferSize) {
+    if (this._bufferSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.bufferSize = this._bufferSize;
     }
-    if (this._compressionFormat) {
+    if (this._compressionFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.compressionFormat = this._compressionFormat;
     }
-    if (this._errorOutputPrefix) {
+    if (this._errorOutputPrefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.errorOutputPrefix = this._errorOutputPrefix;
     }
-    if (this._kmsKeyArn) {
+    if (this._kmsKeyArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyArn = this._kmsKeyArn;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._cloudwatchLoggingOptions?.internalValue) {
+    if (this._cloudwatchLoggingOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
@@ -2955,69 +2955,69 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigu
 }
 export interface KinesisFirehoseDeliveryStreamExtendedS3Configuration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#bucket_arn KinesisFirehoseDeliveryStream#bucket_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#bucket_arn KinesisFirehoseDeliveryStream#bucket_arn}
   */
   readonly bucketArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#buffer_interval KinesisFirehoseDeliveryStream#buffer_interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#buffer_interval KinesisFirehoseDeliveryStream#buffer_interval}
   */
   readonly bufferInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#buffer_size KinesisFirehoseDeliveryStream#buffer_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#buffer_size KinesisFirehoseDeliveryStream#buffer_size}
   */
   readonly bufferSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#compression_format KinesisFirehoseDeliveryStream#compression_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#compression_format KinesisFirehoseDeliveryStream#compression_format}
   */
   readonly compressionFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#error_output_prefix KinesisFirehoseDeliveryStream#error_output_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#error_output_prefix KinesisFirehoseDeliveryStream#error_output_prefix}
   */
   readonly errorOutputPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#kms_key_arn KinesisFirehoseDeliveryStream#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#kms_key_arn KinesisFirehoseDeliveryStream#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#prefix KinesisFirehoseDeliveryStream#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#prefix KinesisFirehoseDeliveryStream#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#role_arn KinesisFirehoseDeliveryStream#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#role_arn KinesisFirehoseDeliveryStream#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#s3_backup_mode KinesisFirehoseDeliveryStream#s3_backup_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#s3_backup_mode KinesisFirehoseDeliveryStream#s3_backup_mode}
   */
   readonly s3BackupMode?: string;
   /**
   * cloudwatch_logging_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
   */
   readonly cloudwatchLoggingOptions?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions;
   /**
   * data_format_conversion_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#data_format_conversion_configuration KinesisFirehoseDeliveryStream#data_format_conversion_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#data_format_conversion_configuration KinesisFirehoseDeliveryStream#data_format_conversion_configuration}
   */
   readonly dataFormatConversionConfiguration?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration;
   /**
   * dynamic_partitioning_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#dynamic_partitioning_configuration KinesisFirehoseDeliveryStream#dynamic_partitioning_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#dynamic_partitioning_configuration KinesisFirehoseDeliveryStream#dynamic_partitioning_configuration}
   */
   readonly dynamicPartitioningConfiguration?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration;
   /**
   * processing_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#processing_configuration KinesisFirehoseDeliveryStream#processing_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#processing_configuration KinesisFirehoseDeliveryStream#processing_configuration}
   */
   readonly processingConfiguration?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration;
   /**
   * s3_backup_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#s3_backup_configuration KinesisFirehoseDeliveryStream#s3_backup_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#s3_backup_configuration KinesisFirehoseDeliveryStream#s3_backup_configuration}
   */
   readonly s3BackupConfiguration?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration;
 }
@@ -3060,59 +3060,59 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference
   public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3Configuration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucketArn) {
+    if (this._bucketArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketArn = this._bucketArn;
     }
-    if (this._bufferInterval) {
+    if (this._bufferInterval !== undefined) {
       hasAnyValues = true;
       internalValueResult.bufferInterval = this._bufferInterval;
     }
-    if (this._bufferSize) {
+    if (this._bufferSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.bufferSize = this._bufferSize;
     }
-    if (this._compressionFormat) {
+    if (this._compressionFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.compressionFormat = this._compressionFormat;
     }
-    if (this._errorOutputPrefix) {
+    if (this._errorOutputPrefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.errorOutputPrefix = this._errorOutputPrefix;
     }
-    if (this._kmsKeyArn) {
+    if (this._kmsKeyArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyArn = this._kmsKeyArn;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._s3BackupMode) {
+    if (this._s3BackupMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3BackupMode = this._s3BackupMode;
     }
-    if (this._cloudwatchLoggingOptions?.internalValue) {
+    if (this._cloudwatchLoggingOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
-    if (this._dataFormatConversionConfiguration?.internalValue) {
+    if (this._dataFormatConversionConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataFormatConversionConfiguration = this._dataFormatConversionConfiguration?.internalValue;
     }
-    if (this._dynamicPartitioningConfiguration?.internalValue) {
+    if (this._dynamicPartitioningConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.dynamicPartitioningConfiguration = this._dynamicPartitioningConfiguration?.internalValue;
     }
-    if (this._processingConfiguration?.internalValue) {
+    if (this._processingConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.processingConfiguration = this._processingConfiguration?.internalValue;
     }
-    if (this._s3BackupConfiguration?.internalValue) {
+    if (this._s3BackupConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3BackupConfiguration = this._s3BackupConfiguration?.internalValue;
     }
@@ -3376,15 +3376,15 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference
 }
 export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
   readonly logGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
   */
   readonly logStreamName?: string;
 }
@@ -3416,15 +3416,15 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLog
   public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._logGroupName) {
+    if (this._logGroupName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logGroupName = this._logGroupName;
     }
-    if (this._logStreamName) {
+    if (this._logStreamName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logStreamName = this._logStreamName;
     }
@@ -3496,11 +3496,11 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLog
 }
 export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameter_name KinesisFirehoseDeliveryStream#parameter_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameter_name KinesisFirehoseDeliveryStream#parameter_name}
   */
   readonly parameterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameter_value KinesisFirehoseDeliveryStream#parameter_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameter_value KinesisFirehoseDeliveryStream#parameter_value}
   */
   readonly parameterValue: string;
 }
@@ -3518,13 +3518,13 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessing
 
 export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#type KinesisFirehoseDeliveryStream#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#type KinesisFirehoseDeliveryStream#type}
   */
   readonly type: string;
   /**
   * parameters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameters KinesisFirehoseDeliveryStream#parameters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameters KinesisFirehoseDeliveryStream#parameters}
   */
   readonly parameters?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters[];
 }
@@ -3542,13 +3542,13 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessing
 
 export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * processors block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#processors KinesisFirehoseDeliveryStream#processors}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
   */
   readonly processors?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors[];
 }
@@ -3579,11 +3579,11 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
   public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._processors) {
+    if (this._processors !== undefined) {
       hasAnyValues = true;
       internalValueResult.processors = this._processors;
     }
@@ -3638,11 +3638,11 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
 }
 export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#name KinesisFirehoseDeliveryStream#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#name KinesisFirehoseDeliveryStream#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#value KinesisFirehoseDeliveryStream#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#value KinesisFirehoseDeliveryStream#value}
   */
   readonly value: string;
 }
@@ -3660,13 +3660,13 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestCon
 
 export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#content_encoding KinesisFirehoseDeliveryStream#content_encoding}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#content_encoding KinesisFirehoseDeliveryStream#content_encoding}
   */
   readonly contentEncoding?: string;
   /**
   * common_attributes block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#common_attributes KinesisFirehoseDeliveryStream#common_attributes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#common_attributes KinesisFirehoseDeliveryStream#common_attributes}
   */
   readonly commonAttributes?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes[];
 }
@@ -3697,11 +3697,11 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfig
   public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._contentEncoding) {
+    if (this._contentEncoding !== undefined) {
       hasAnyValues = true;
       internalValueResult.contentEncoding = this._contentEncoding;
     }
-    if (this._commonAttributes) {
+    if (this._commonAttributes !== undefined) {
       hasAnyValues = true;
       internalValueResult.commonAttributes = this._commonAttributes;
     }
@@ -3756,53 +3756,53 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfig
 }
 export interface KinesisFirehoseDeliveryStreamHttpEndpointConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#access_key KinesisFirehoseDeliveryStream#access_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#access_key KinesisFirehoseDeliveryStream#access_key}
   */
   readonly accessKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#buffering_interval KinesisFirehoseDeliveryStream#buffering_interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#buffering_interval KinesisFirehoseDeliveryStream#buffering_interval}
   */
   readonly bufferingInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#buffering_size KinesisFirehoseDeliveryStream#buffering_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#buffering_size KinesisFirehoseDeliveryStream#buffering_size}
   */
   readonly bufferingSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#name KinesisFirehoseDeliveryStream#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#name KinesisFirehoseDeliveryStream#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#retry_duration KinesisFirehoseDeliveryStream#retry_duration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#retry_duration KinesisFirehoseDeliveryStream#retry_duration}
   */
   readonly retryDuration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#role_arn KinesisFirehoseDeliveryStream#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#role_arn KinesisFirehoseDeliveryStream#role_arn}
   */
   readonly roleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#s3_backup_mode KinesisFirehoseDeliveryStream#s3_backup_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#s3_backup_mode KinesisFirehoseDeliveryStream#s3_backup_mode}
   */
   readonly s3BackupMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#url KinesisFirehoseDeliveryStream#url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#url KinesisFirehoseDeliveryStream#url}
   */
   readonly url: string;
   /**
   * cloudwatch_logging_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
   */
   readonly cloudwatchLoggingOptions?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions;
   /**
   * processing_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#processing_configuration KinesisFirehoseDeliveryStream#processing_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#processing_configuration KinesisFirehoseDeliveryStream#processing_configuration}
   */
   readonly processingConfiguration?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration;
   /**
   * request_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#request_configuration KinesisFirehoseDeliveryStream#request_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#request_configuration KinesisFirehoseDeliveryStream#request_configuration}
   */
   readonly requestConfiguration?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration;
 }
@@ -3842,47 +3842,47 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReferen
   public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accessKey) {
+    if (this._accessKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.accessKey = this._accessKey;
     }
-    if (this._bufferingInterval) {
+    if (this._bufferingInterval !== undefined) {
       hasAnyValues = true;
       internalValueResult.bufferingInterval = this._bufferingInterval;
     }
-    if (this._bufferingSize) {
+    if (this._bufferingSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.bufferingSize = this._bufferingSize;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._retryDuration) {
+    if (this._retryDuration !== undefined) {
       hasAnyValues = true;
       internalValueResult.retryDuration = this._retryDuration;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._s3BackupMode) {
+    if (this._s3BackupMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3BackupMode = this._s3BackupMode;
     }
-    if (this._url) {
+    if (this._url !== undefined) {
       hasAnyValues = true;
       internalValueResult.url = this._url;
     }
-    if (this._cloudwatchLoggingOptions?.internalValue) {
+    if (this._cloudwatchLoggingOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
-    if (this._processingConfiguration?.internalValue) {
+    if (this._processingConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.processingConfiguration = this._processingConfiguration?.internalValue;
     }
-    if (this._requestConfiguration?.internalValue) {
+    if (this._requestConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.requestConfiguration = this._requestConfiguration?.internalValue;
     }
@@ -4095,11 +4095,11 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReferen
 }
 export interface KinesisFirehoseDeliveryStreamKinesisSourceConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#kinesis_stream_arn KinesisFirehoseDeliveryStream#kinesis_stream_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#kinesis_stream_arn KinesisFirehoseDeliveryStream#kinesis_stream_arn}
   */
   readonly kinesisStreamArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#role_arn KinesisFirehoseDeliveryStream#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#role_arn KinesisFirehoseDeliveryStream#role_arn}
   */
   readonly roleArn: string;
 }
@@ -4130,11 +4130,11 @@ export class KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputRefere
   public get internalValue(): KinesisFirehoseDeliveryStreamKinesisSourceConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._kinesisStreamArn) {
+    if (this._kinesisStreamArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.kinesisStreamArn = this._kinesisStreamArn;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
@@ -4182,15 +4182,15 @@ export class KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputRefere
 }
 export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
   readonly logGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
   */
   readonly logStreamName?: string;
 }
@@ -4222,15 +4222,15 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLogging
   public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._logGroupName) {
+    if (this._logGroupName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logGroupName = this._logGroupName;
     }
-    if (this._logStreamName) {
+    if (this._logStreamName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logStreamName = this._logStreamName;
     }
@@ -4302,11 +4302,11 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLogging
 }
 export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameter_name KinesisFirehoseDeliveryStream#parameter_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameter_name KinesisFirehoseDeliveryStream#parameter_name}
   */
   readonly parameterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameter_value KinesisFirehoseDeliveryStream#parameter_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameter_value KinesisFirehoseDeliveryStream#parameter_value}
   */
   readonly parameterValue: string;
 }
@@ -4324,13 +4324,13 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConf
 
 export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#type KinesisFirehoseDeliveryStream#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#type KinesisFirehoseDeliveryStream#type}
   */
   readonly type: string;
   /**
   * parameters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameters KinesisFirehoseDeliveryStream#parameters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameters KinesisFirehoseDeliveryStream#parameters}
   */
   readonly parameters?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters[];
 }
@@ -4348,13 +4348,13 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConf
 
 export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * processors block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#processors KinesisFirehoseDeliveryStream#processors}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
   */
   readonly processors?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors[];
 }
@@ -4385,11 +4385,11 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
   public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._processors) {
+    if (this._processors !== undefined) {
       hasAnyValues = true;
       internalValueResult.processors = this._processors;
     }
@@ -4444,15 +4444,15 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
 }
 export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
   readonly logGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
   */
   readonly logStreamName?: string;
 }
@@ -4484,15 +4484,15 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigura
   public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._logGroupName) {
+    if (this._logGroupName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logGroupName = this._logGroupName;
     }
-    if (this._logStreamName) {
+    if (this._logStreamName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logStreamName = this._logStreamName;
     }
@@ -4564,41 +4564,41 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigura
 }
 export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#bucket_arn KinesisFirehoseDeliveryStream#bucket_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#bucket_arn KinesisFirehoseDeliveryStream#bucket_arn}
   */
   readonly bucketArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#buffer_interval KinesisFirehoseDeliveryStream#buffer_interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#buffer_interval KinesisFirehoseDeliveryStream#buffer_interval}
   */
   readonly bufferInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#buffer_size KinesisFirehoseDeliveryStream#buffer_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#buffer_size KinesisFirehoseDeliveryStream#buffer_size}
   */
   readonly bufferSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#compression_format KinesisFirehoseDeliveryStream#compression_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#compression_format KinesisFirehoseDeliveryStream#compression_format}
   */
   readonly compressionFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#error_output_prefix KinesisFirehoseDeliveryStream#error_output_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#error_output_prefix KinesisFirehoseDeliveryStream#error_output_prefix}
   */
   readonly errorOutputPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#kms_key_arn KinesisFirehoseDeliveryStream#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#kms_key_arn KinesisFirehoseDeliveryStream#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#prefix KinesisFirehoseDeliveryStream#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#prefix KinesisFirehoseDeliveryStream#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#role_arn KinesisFirehoseDeliveryStream#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#role_arn KinesisFirehoseDeliveryStream#role_arn}
   */
   readonly roleArn: string;
   /**
   * cloudwatch_logging_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
   */
   readonly cloudwatchLoggingOptions?: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions;
 }
@@ -4636,39 +4636,39 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigura
   public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucketArn) {
+    if (this._bucketArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketArn = this._bucketArn;
     }
-    if (this._bufferInterval) {
+    if (this._bufferInterval !== undefined) {
       hasAnyValues = true;
       internalValueResult.bufferInterval = this._bufferInterval;
     }
-    if (this._bufferSize) {
+    if (this._bufferSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.bufferSize = this._bufferSize;
     }
-    if (this._compressionFormat) {
+    if (this._compressionFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.compressionFormat = this._compressionFormat;
     }
-    if (this._errorOutputPrefix) {
+    if (this._errorOutputPrefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.errorOutputPrefix = this._errorOutputPrefix;
     }
-    if (this._kmsKeyArn) {
+    if (this._kmsKeyArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyArn = this._kmsKeyArn;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._cloudwatchLoggingOptions?.internalValue) {
+    if (this._cloudwatchLoggingOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
@@ -4842,57 +4842,57 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigura
 }
 export interface KinesisFirehoseDeliveryStreamRedshiftConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#cluster_jdbcurl KinesisFirehoseDeliveryStream#cluster_jdbcurl}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#cluster_jdbcurl KinesisFirehoseDeliveryStream#cluster_jdbcurl}
   */
   readonly clusterJdbcurl: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#copy_options KinesisFirehoseDeliveryStream#copy_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#copy_options KinesisFirehoseDeliveryStream#copy_options}
   */
   readonly copyOptions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#data_table_columns KinesisFirehoseDeliveryStream#data_table_columns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#data_table_columns KinesisFirehoseDeliveryStream#data_table_columns}
   */
   readonly dataTableColumns?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#data_table_name KinesisFirehoseDeliveryStream#data_table_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#data_table_name KinesisFirehoseDeliveryStream#data_table_name}
   */
   readonly dataTableName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#password KinesisFirehoseDeliveryStream#password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#password KinesisFirehoseDeliveryStream#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#retry_duration KinesisFirehoseDeliveryStream#retry_duration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#retry_duration KinesisFirehoseDeliveryStream#retry_duration}
   */
   readonly retryDuration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#role_arn KinesisFirehoseDeliveryStream#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#role_arn KinesisFirehoseDeliveryStream#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#s3_backup_mode KinesisFirehoseDeliveryStream#s3_backup_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#s3_backup_mode KinesisFirehoseDeliveryStream#s3_backup_mode}
   */
   readonly s3BackupMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#username KinesisFirehoseDeliveryStream#username}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#username KinesisFirehoseDeliveryStream#username}
   */
   readonly username: string;
   /**
   * cloudwatch_logging_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
   */
   readonly cloudwatchLoggingOptions?: KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions;
   /**
   * processing_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#processing_configuration KinesisFirehoseDeliveryStream#processing_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#processing_configuration KinesisFirehoseDeliveryStream#processing_configuration}
   */
   readonly processingConfiguration?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration;
   /**
   * s3_backup_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#s3_backup_configuration KinesisFirehoseDeliveryStream#s3_backup_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#s3_backup_configuration KinesisFirehoseDeliveryStream#s3_backup_configuration}
   */
   readonly s3BackupConfiguration?: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration;
 }
@@ -4933,51 +4933,51 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference e
   public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clusterJdbcurl) {
+    if (this._clusterJdbcurl !== undefined) {
       hasAnyValues = true;
       internalValueResult.clusterJdbcurl = this._clusterJdbcurl;
     }
-    if (this._copyOptions) {
+    if (this._copyOptions !== undefined) {
       hasAnyValues = true;
       internalValueResult.copyOptions = this._copyOptions;
     }
-    if (this._dataTableColumns) {
+    if (this._dataTableColumns !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataTableColumns = this._dataTableColumns;
     }
-    if (this._dataTableName) {
+    if (this._dataTableName !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataTableName = this._dataTableName;
     }
-    if (this._password) {
+    if (this._password !== undefined) {
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
-    if (this._retryDuration) {
+    if (this._retryDuration !== undefined) {
       hasAnyValues = true;
       internalValueResult.retryDuration = this._retryDuration;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._s3BackupMode) {
+    if (this._s3BackupMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3BackupMode = this._s3BackupMode;
     }
-    if (this._username) {
+    if (this._username !== undefined) {
       hasAnyValues = true;
       internalValueResult.username = this._username;
     }
-    if (this._cloudwatchLoggingOptions?.internalValue) {
+    if (this._cloudwatchLoggingOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
-    if (this._processingConfiguration?.internalValue) {
+    if (this._processingConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.processingConfiguration = this._processingConfiguration?.internalValue;
     }
-    if (this._s3BackupConfiguration?.internalValue) {
+    if (this._s3BackupConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3BackupConfiguration = this._s3BackupConfiguration?.internalValue;
     }
@@ -5196,15 +5196,15 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference e
 }
 export interface KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
   readonly logGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
   */
   readonly logStreamName?: string;
 }
@@ -5236,15 +5236,15 @@ export class KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOption
   public get internalValue(): KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._logGroupName) {
+    if (this._logGroupName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logGroupName = this._logGroupName;
     }
-    if (this._logStreamName) {
+    if (this._logStreamName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logStreamName = this._logStreamName;
     }
@@ -5316,41 +5316,41 @@ export class KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOption
 }
 export interface KinesisFirehoseDeliveryStreamS3Configuration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#bucket_arn KinesisFirehoseDeliveryStream#bucket_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#bucket_arn KinesisFirehoseDeliveryStream#bucket_arn}
   */
   readonly bucketArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#buffer_interval KinesisFirehoseDeliveryStream#buffer_interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#buffer_interval KinesisFirehoseDeliveryStream#buffer_interval}
   */
   readonly bufferInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#buffer_size KinesisFirehoseDeliveryStream#buffer_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#buffer_size KinesisFirehoseDeliveryStream#buffer_size}
   */
   readonly bufferSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#compression_format KinesisFirehoseDeliveryStream#compression_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#compression_format KinesisFirehoseDeliveryStream#compression_format}
   */
   readonly compressionFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#error_output_prefix KinesisFirehoseDeliveryStream#error_output_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#error_output_prefix KinesisFirehoseDeliveryStream#error_output_prefix}
   */
   readonly errorOutputPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#kms_key_arn KinesisFirehoseDeliveryStream#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#kms_key_arn KinesisFirehoseDeliveryStream#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#prefix KinesisFirehoseDeliveryStream#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#prefix KinesisFirehoseDeliveryStream#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#role_arn KinesisFirehoseDeliveryStream#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#role_arn KinesisFirehoseDeliveryStream#role_arn}
   */
   readonly roleArn: string;
   /**
   * cloudwatch_logging_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
   */
   readonly cloudwatchLoggingOptions?: KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptions;
 }
@@ -5388,39 +5388,39 @@ export class KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference extends
   public get internalValue(): KinesisFirehoseDeliveryStreamS3Configuration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucketArn) {
+    if (this._bucketArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketArn = this._bucketArn;
     }
-    if (this._bufferInterval) {
+    if (this._bufferInterval !== undefined) {
       hasAnyValues = true;
       internalValueResult.bufferInterval = this._bufferInterval;
     }
-    if (this._bufferSize) {
+    if (this._bufferSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.bufferSize = this._bufferSize;
     }
-    if (this._compressionFormat) {
+    if (this._compressionFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.compressionFormat = this._compressionFormat;
     }
-    if (this._errorOutputPrefix) {
+    if (this._errorOutputPrefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.errorOutputPrefix = this._errorOutputPrefix;
     }
-    if (this._kmsKeyArn) {
+    if (this._kmsKeyArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyArn = this._kmsKeyArn;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._cloudwatchLoggingOptions?.internalValue) {
+    if (this._cloudwatchLoggingOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
@@ -5594,15 +5594,15 @@ export class KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference extends
 }
 export interface KinesisFirehoseDeliveryStreamServerSideEncryption {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#key_arn KinesisFirehoseDeliveryStream#key_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#key_arn KinesisFirehoseDeliveryStream#key_arn}
   */
   readonly keyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#key_type KinesisFirehoseDeliveryStream#key_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#key_type KinesisFirehoseDeliveryStream#key_type}
   */
   readonly keyType?: string;
 }
@@ -5634,15 +5634,15 @@ export class KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference ex
   public get internalValue(): KinesisFirehoseDeliveryStreamServerSideEncryption | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._keyArn) {
+    if (this._keyArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.keyArn = this._keyArn;
     }
-    if (this._keyType) {
+    if (this._keyType !== undefined) {
       hasAnyValues = true;
       internalValueResult.keyType = this._keyType;
     }
@@ -5714,15 +5714,15 @@ export class KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference ex
 }
 export interface KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
   readonly logGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#log_stream_name KinesisFirehoseDeliveryStream#log_stream_name}
   */
   readonly logStreamName?: string;
 }
@@ -5754,15 +5754,15 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOp
   public get internalValue(): KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._logGroupName) {
+    if (this._logGroupName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logGroupName = this._logGroupName;
     }
-    if (this._logStreamName) {
+    if (this._logStreamName !== undefined) {
       hasAnyValues = true;
       internalValueResult.logStreamName = this._logStreamName;
     }
@@ -5834,11 +5834,11 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOp
 }
 export interface KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameter_name KinesisFirehoseDeliveryStream#parameter_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameter_name KinesisFirehoseDeliveryStream#parameter_name}
   */
   readonly parameterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameter_value KinesisFirehoseDeliveryStream#parameter_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameter_value KinesisFirehoseDeliveryStream#parameter_value}
   */
   readonly parameterValue: string;
 }
@@ -5856,13 +5856,13 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfig
 
 export interface KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#type KinesisFirehoseDeliveryStream#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#type KinesisFirehoseDeliveryStream#type}
   */
   readonly type: string;
   /**
   * parameters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameters KinesisFirehoseDeliveryStream#parameters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#parameters KinesisFirehoseDeliveryStream#parameters}
   */
   readonly parameters?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters[];
 }
@@ -5880,13 +5880,13 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfig
 
 export interface KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * processors block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#processors KinesisFirehoseDeliveryStream#processors}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#processors KinesisFirehoseDeliveryStream#processors}
   */
   readonly processors?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors[];
 }
@@ -5917,11 +5917,11 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
   public get internalValue(): KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._processors) {
+    if (this._processors !== undefined) {
       hasAnyValues = true;
       internalValueResult.processors = this._processors;
     }
@@ -5976,39 +5976,39 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
 }
 export interface KinesisFirehoseDeliveryStreamSplunkConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#hec_acknowledgment_timeout KinesisFirehoseDeliveryStream#hec_acknowledgment_timeout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#hec_acknowledgment_timeout KinesisFirehoseDeliveryStream#hec_acknowledgment_timeout}
   */
   readonly hecAcknowledgmentTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#hec_endpoint KinesisFirehoseDeliveryStream#hec_endpoint}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#hec_endpoint KinesisFirehoseDeliveryStream#hec_endpoint}
   */
   readonly hecEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#hec_endpoint_type KinesisFirehoseDeliveryStream#hec_endpoint_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#hec_endpoint_type KinesisFirehoseDeliveryStream#hec_endpoint_type}
   */
   readonly hecEndpointType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#hec_token KinesisFirehoseDeliveryStream#hec_token}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#hec_token KinesisFirehoseDeliveryStream#hec_token}
   */
   readonly hecToken: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#retry_duration KinesisFirehoseDeliveryStream#retry_duration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#retry_duration KinesisFirehoseDeliveryStream#retry_duration}
   */
   readonly retryDuration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#s3_backup_mode KinesisFirehoseDeliveryStream#s3_backup_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#s3_backup_mode KinesisFirehoseDeliveryStream#s3_backup_mode}
   */
   readonly s3BackupMode?: string;
   /**
   * cloudwatch_logging_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#cloudwatch_logging_options KinesisFirehoseDeliveryStream#cloudwatch_logging_options}
   */
   readonly cloudwatchLoggingOptions?: KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions;
   /**
   * processing_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#processing_configuration KinesisFirehoseDeliveryStream#processing_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#processing_configuration KinesisFirehoseDeliveryStream#processing_configuration}
   */
   readonly processingConfiguration?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration;
 }
@@ -6045,35 +6045,35 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference ext
   public get internalValue(): KinesisFirehoseDeliveryStreamSplunkConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._hecAcknowledgmentTimeout) {
+    if (this._hecAcknowledgmentTimeout !== undefined) {
       hasAnyValues = true;
       internalValueResult.hecAcknowledgmentTimeout = this._hecAcknowledgmentTimeout;
     }
-    if (this._hecEndpoint) {
+    if (this._hecEndpoint !== undefined) {
       hasAnyValues = true;
       internalValueResult.hecEndpoint = this._hecEndpoint;
     }
-    if (this._hecEndpointType) {
+    if (this._hecEndpointType !== undefined) {
       hasAnyValues = true;
       internalValueResult.hecEndpointType = this._hecEndpointType;
     }
-    if (this._hecToken) {
+    if (this._hecToken !== undefined) {
       hasAnyValues = true;
       internalValueResult.hecToken = this._hecToken;
     }
-    if (this._retryDuration) {
+    if (this._retryDuration !== undefined) {
       hasAnyValues = true;
       internalValueResult.retryDuration = this._retryDuration;
     }
-    if (this._s3BackupMode) {
+    if (this._s3BackupMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3BackupMode = this._s3BackupMode;
     }
-    if (this._cloudwatchLoggingOptions?.internalValue) {
+    if (this._cloudwatchLoggingOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLoggingOptions = this._cloudwatchLoggingOptions?.internalValue;
     }
-    if (this._processingConfiguration?.internalValue) {
+    if (this._processingConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.processingConfiguration = this._processingConfiguration?.internalValue;
     }
@@ -6229,7 +6229,7 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference ext
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html aws_kinesis_firehose_delivery_stream}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}
 */
 export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
 
@@ -6243,7 +6243,7 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html aws_kinesis_firehose_delivery_stream} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

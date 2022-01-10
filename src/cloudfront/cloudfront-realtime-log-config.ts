@@ -8,31 +8,31 @@ import * as cdktf from 'cdktf';
 */
 export interface CloudfrontRealtimeLogConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#fields CloudfrontRealtimeLogConfig#fields}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config#fields CloudfrontRealtimeLogConfig#fields}
   */
   readonly fields: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#name CloudfrontRealtimeLogConfig#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config#name CloudfrontRealtimeLogConfig#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#sampling_rate CloudfrontRealtimeLogConfig#sampling_rate}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config#sampling_rate CloudfrontRealtimeLogConfig#sampling_rate}
   */
   readonly samplingRate: number;
   /**
   * endpoint block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#endpoint CloudfrontRealtimeLogConfig#endpoint}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config#endpoint CloudfrontRealtimeLogConfig#endpoint}
   */
   readonly endpoint: CloudfrontRealtimeLogConfigEndpoint;
 }
 export interface CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#role_arn CloudfrontRealtimeLogConfig#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config#role_arn CloudfrontRealtimeLogConfig#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#stream_arn CloudfrontRealtimeLogConfig#stream_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config#stream_arn CloudfrontRealtimeLogConfig#stream_arn}
   */
   readonly streamArn: string;
 }
@@ -63,11 +63,11 @@ export class CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReferen
   public get internalValue(): CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._streamArn) {
+    if (this._streamArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.streamArn = this._streamArn;
     }
@@ -115,13 +115,13 @@ export class CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReferen
 }
 export interface CloudfrontRealtimeLogConfigEndpoint {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#stream_type CloudfrontRealtimeLogConfig#stream_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config#stream_type CloudfrontRealtimeLogConfig#stream_type}
   */
   readonly streamType: string;
   /**
   * kinesis_stream_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#kinesis_stream_config CloudfrontRealtimeLogConfig#kinesis_stream_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config#kinesis_stream_config CloudfrontRealtimeLogConfig#kinesis_stream_config}
   */
   readonly kinesisStreamConfig: CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig;
 }
@@ -152,11 +152,11 @@ export class CloudfrontRealtimeLogConfigEndpointOutputReference extends cdktf.Co
   public get internalValue(): CloudfrontRealtimeLogConfigEndpoint | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._streamType) {
+    if (this._streamType !== undefined) {
       hasAnyValues = true;
       internalValueResult.streamType = this._streamType;
     }
-    if (this._kinesisStreamConfig?.internalValue) {
+    if (this._kinesisStreamConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.kinesisStreamConfig = this._kinesisStreamConfig?.internalValue;
     }
@@ -204,7 +204,7 @@ export class CloudfrontRealtimeLogConfigEndpointOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html aws_cloudfront_realtime_log_config}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config}
 */
 export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
 
@@ -218,7 +218,7 @@ export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html aws_cloudfront_realtime_log_config} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

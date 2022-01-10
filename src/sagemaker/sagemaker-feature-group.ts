@@ -8,59 +8,59 @@ import * as cdktf from 'cdktf';
 */
 export interface SagemakerFeatureGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#description SagemakerFeatureGroup#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#description SagemakerFeatureGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#event_time_feature_name SagemakerFeatureGroup#event_time_feature_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#event_time_feature_name SagemakerFeatureGroup#event_time_feature_name}
   */
   readonly eventTimeFeatureName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#feature_group_name SagemakerFeatureGroup#feature_group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#feature_group_name SagemakerFeatureGroup#feature_group_name}
   */
   readonly featureGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#record_identifier_feature_name SagemakerFeatureGroup#record_identifier_feature_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#record_identifier_feature_name SagemakerFeatureGroup#record_identifier_feature_name}
   */
   readonly recordIdentifierFeatureName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#role_arn SagemakerFeatureGroup#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#role_arn SagemakerFeatureGroup#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#tags SagemakerFeatureGroup#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#tags SagemakerFeatureGroup#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#tags_all SagemakerFeatureGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#tags_all SagemakerFeatureGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * feature_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#feature_definition SagemakerFeatureGroup#feature_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#feature_definition SagemakerFeatureGroup#feature_definition}
   */
   readonly featureDefinition: SagemakerFeatureGroupFeatureDefinition[];
   /**
   * offline_store_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#offline_store_config SagemakerFeatureGroup#offline_store_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#offline_store_config SagemakerFeatureGroup#offline_store_config}
   */
   readonly offlineStoreConfig?: SagemakerFeatureGroupOfflineStoreConfig;
   /**
   * online_store_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#online_store_config SagemakerFeatureGroup#online_store_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#online_store_config SagemakerFeatureGroup#online_store_config}
   */
   readonly onlineStoreConfig?: SagemakerFeatureGroupOnlineStoreConfig;
 }
 export interface SagemakerFeatureGroupFeatureDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#feature_name SagemakerFeatureGroup#feature_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#feature_name SagemakerFeatureGroup#feature_name}
   */
   readonly featureName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#feature_type SagemakerFeatureGroup#feature_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#feature_type SagemakerFeatureGroup#feature_type}
   */
   readonly featureType?: string;
 }
@@ -78,15 +78,15 @@ export function sagemakerFeatureGroupFeatureDefinitionToTerraform(struct?: Sagem
 
 export interface SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#catalog SagemakerFeatureGroup#catalog}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#catalog SagemakerFeatureGroup#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#database SagemakerFeatureGroup#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#database SagemakerFeatureGroup#database}
   */
   readonly database?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#table_name SagemakerFeatureGroup#table_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#table_name SagemakerFeatureGroup#table_name}
   */
   readonly tableName?: string;
 }
@@ -118,15 +118,15 @@ export class SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputRefer
   public get internalValue(): SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._catalog) {
+    if (this._catalog !== undefined) {
       hasAnyValues = true;
       internalValueResult.catalog = this._catalog;
     }
-    if (this._database) {
+    if (this._database !== undefined) {
       hasAnyValues = true;
       internalValueResult.database = this._database;
     }
-    if (this._tableName) {
+    if (this._tableName !== undefined) {
       hasAnyValues = true;
       internalValueResult.tableName = this._tableName;
     }
@@ -198,11 +198,11 @@ export class SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputRefer
 }
 export interface SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#kms_key_id SagemakerFeatureGroup#kms_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#kms_key_id SagemakerFeatureGroup#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#s3_uri SagemakerFeatureGroup#s3_uri}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#s3_uri SagemakerFeatureGroup#s3_uri}
   */
   readonly s3Uri: string;
 }
@@ -233,11 +233,11 @@ export class SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReferen
   public get internalValue(): SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._kmsKeyId) {
+    if (this._kmsKeyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyId = this._kmsKeyId;
     }
-    if (this._s3Uri) {
+    if (this._s3Uri !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3Uri = this._s3Uri;
     }
@@ -288,19 +288,19 @@ export class SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReferen
 }
 export interface SagemakerFeatureGroupOfflineStoreConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#disable_glue_table_creation SagemakerFeatureGroup#disable_glue_table_creation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#disable_glue_table_creation SagemakerFeatureGroup#disable_glue_table_creation}
   */
   readonly disableGlueTableCreation?: boolean | cdktf.IResolvable;
   /**
   * data_catalog_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#data_catalog_config SagemakerFeatureGroup#data_catalog_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#data_catalog_config SagemakerFeatureGroup#data_catalog_config}
   */
   readonly dataCatalogConfig?: SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig;
   /**
   * s3_storage_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#s3_storage_config SagemakerFeatureGroup#s3_storage_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#s3_storage_config SagemakerFeatureGroup#s3_storage_config}
   */
   readonly s3StorageConfig: SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig;
 }
@@ -332,15 +332,15 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
   public get internalValue(): SagemakerFeatureGroupOfflineStoreConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._disableGlueTableCreation) {
+    if (this._disableGlueTableCreation !== undefined) {
       hasAnyValues = true;
       internalValueResult.disableGlueTableCreation = this._disableGlueTableCreation;
     }
-    if (this._dataCatalogConfig?.internalValue) {
+    if (this._dataCatalogConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataCatalogConfig = this._dataCatalogConfig?.internalValue;
     }
-    if (this._s3StorageConfig?.internalValue) {
+    if (this._s3StorageConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3StorageConfig = this._s3StorageConfig?.internalValue;
     }
@@ -409,7 +409,7 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
 }
 export interface SagemakerFeatureGroupOnlineStoreConfigSecurityConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#kms_key_id SagemakerFeatureGroup#kms_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#kms_key_id SagemakerFeatureGroup#kms_key_id}
   */
   readonly kmsKeyId?: string;
 }
@@ -439,7 +439,7 @@ export class SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference
   public get internalValue(): SagemakerFeatureGroupOnlineStoreConfigSecurityConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._kmsKeyId) {
+    if (this._kmsKeyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyId = this._kmsKeyId;
     }
@@ -475,13 +475,13 @@ export class SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference
 }
 export interface SagemakerFeatureGroupOnlineStoreConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#enable_online_store SagemakerFeatureGroup#enable_online_store}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#enable_online_store SagemakerFeatureGroup#enable_online_store}
   */
   readonly enableOnlineStore?: boolean | cdktf.IResolvable;
   /**
   * security_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html#security_config SagemakerFeatureGroup#security_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#security_config SagemakerFeatureGroup#security_config}
   */
   readonly securityConfig?: SagemakerFeatureGroupOnlineStoreConfigSecurityConfig;
 }
@@ -512,11 +512,11 @@ export class SagemakerFeatureGroupOnlineStoreConfigOutputReference extends cdktf
   public get internalValue(): SagemakerFeatureGroupOnlineStoreConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enableOnlineStore) {
+    if (this._enableOnlineStore !== undefined) {
       hasAnyValues = true;
       internalValueResult.enableOnlineStore = this._enableOnlineStore;
     }
-    if (this._securityConfig?.internalValue) {
+    if (this._securityConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.securityConfig = this._securityConfig?.internalValue;
     }
@@ -570,7 +570,7 @@ export class SagemakerFeatureGroupOnlineStoreConfigOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html aws_sagemaker_feature_group}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group aws_sagemaker_feature_group}
 */
 export class SagemakerFeatureGroup extends cdktf.TerraformResource {
 
@@ -584,7 +584,7 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group.html aws_sagemaker_feature_group} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group aws_sagemaker_feature_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

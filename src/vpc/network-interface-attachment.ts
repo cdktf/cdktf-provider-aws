@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface NetworkInterfaceAttachmentAConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface_attachment.html#device_index NetworkInterfaceAttachmentA#device_index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface_attachment#device_index NetworkInterfaceAttachmentA#device_index}
   */
   readonly deviceIndex: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface_attachment.html#instance_id NetworkInterfaceAttachmentA#instance_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface_attachment#instance_id NetworkInterfaceAttachmentA#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface_attachment.html#network_interface_id NetworkInterfaceAttachmentA#network_interface_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface_attachment#network_interface_id NetworkInterfaceAttachmentA#network_interface_id}
   */
   readonly networkInterfaceId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/network_interface_attachment.html aws_network_interface_attachment}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/network_interface_attachment aws_network_interface_attachment}
 */
 export class NetworkInterfaceAttachmentA extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class NetworkInterfaceAttachmentA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/network_interface_attachment.html aws_network_interface_attachment} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/network_interface_attachment aws_network_interface_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

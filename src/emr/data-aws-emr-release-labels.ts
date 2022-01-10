@@ -10,17 +10,17 @@ export interface DataAwsEmrReleaseLabelsConfig extends cdktf.TerraformMetaArgume
   /**
   * filters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels.html#filters DataAwsEmrReleaseLabels#filters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels#filters DataAwsEmrReleaseLabels#filters}
   */
   readonly filters?: DataAwsEmrReleaseLabelsFilters;
 }
 export interface DataAwsEmrReleaseLabelsFilters {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels.html#application DataAwsEmrReleaseLabels#application}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels#application DataAwsEmrReleaseLabels#application}
   */
   readonly application?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels.html#prefix DataAwsEmrReleaseLabels#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels#prefix DataAwsEmrReleaseLabels#prefix}
   */
   readonly prefix?: string;
 }
@@ -51,11 +51,11 @@ export class DataAwsEmrReleaseLabelsFiltersOutputReference extends cdktf.Complex
   public get internalValue(): DataAwsEmrReleaseLabelsFilters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._application) {
+    if (this._application !== undefined) {
       hasAnyValues = true;
       internalValueResult.application = this._application;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
@@ -109,7 +109,7 @@ export class DataAwsEmrReleaseLabelsFiltersOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels.html aws_emr_release_labels}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels aws_emr_release_labels}
 */
 export class DataAwsEmrReleaseLabels extends cdktf.TerraformDataSource {
 
@@ -123,7 +123,7 @@ export class DataAwsEmrReleaseLabels extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels.html aws_emr_release_labels} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels aws_emr_release_labels} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

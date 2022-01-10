@@ -8,27 +8,27 @@ import * as cdktf from 'cdktf';
 */
 export interface SagemakerDeviceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device.html#device_fleet_name SagemakerDevice#device_fleet_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device#device_fleet_name SagemakerDevice#device_fleet_name}
   */
   readonly deviceFleetName: string;
   /**
   * device block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device.html#device SagemakerDevice#device}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device#device SagemakerDevice#device}
   */
   readonly device: SagemakerDeviceDevice;
 }
 export interface SagemakerDeviceDevice {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device.html#description SagemakerDevice#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device#description SagemakerDevice#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device.html#device_name SagemakerDevice#device_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device#device_name SagemakerDevice#device_name}
   */
   readonly deviceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device.html#iot_thing_name SagemakerDevice#iot_thing_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device#iot_thing_name SagemakerDevice#iot_thing_name}
   */
   readonly iotThingName?: string;
 }
@@ -60,15 +60,15 @@ export class SagemakerDeviceDeviceOutputReference extends cdktf.ComplexObject {
   public get internalValue(): SagemakerDeviceDevice | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._description) {
+    if (this._description !== undefined) {
       hasAnyValues = true;
       internalValueResult.description = this._description;
     }
-    if (this._deviceName) {
+    if (this._deviceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.deviceName = this._deviceName;
     }
-    if (this._iotThingName) {
+    if (this._iotThingName !== undefined) {
       hasAnyValues = true;
       internalValueResult.iotThingName = this._iotThingName;
     }
@@ -137,7 +137,7 @@ export class SagemakerDeviceDeviceOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device.html aws_sagemaker_device}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device aws_sagemaker_device}
 */
 export class SagemakerDevice extends cdktf.TerraformResource {
 
@@ -151,7 +151,7 @@ export class SagemakerDevice extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device.html aws_sagemaker_device} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device aws_sagemaker_device} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

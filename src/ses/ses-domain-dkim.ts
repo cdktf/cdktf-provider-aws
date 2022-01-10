@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface SesDomainDkimConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_dkim.html#domain SesDomainDkim#domain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_dkim#domain SesDomainDkim#domain}
   */
   readonly domain: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_dkim.html aws_ses_domain_dkim}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_dkim aws_ses_domain_dkim}
 */
 export class SesDomainDkim extends cdktf.TerraformResource {
 
@@ -28,7 +28,7 @@ export class SesDomainDkim extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_dkim.html aws_ses_domain_dkim} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_dkim aws_ses_domain_dkim} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsAlbConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/alb.html#name DataAwsAlb#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/alb#name DataAwsAlb#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/alb.html#tags DataAwsAlb#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/alb#tags DataAwsAlb#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
@@ -62,7 +62,7 @@ export class DataAwsAlbSubnetMapping extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/alb.html aws_alb}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/alb aws_alb}
 */
 export class DataAwsAlb extends cdktf.TerraformDataSource {
 
@@ -76,7 +76,7 @@ export class DataAwsAlb extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/alb.html aws_alb} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/alb aws_alb} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

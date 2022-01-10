@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsVpcIpamPoolConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html#allocation_resource_tags DataAwsVpcIpamPool#allocation_resource_tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool#allocation_resource_tags DataAwsVpcIpamPool#allocation_resource_tags}
   */
   readonly allocationResourceTags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html#id DataAwsVpcIpamPool#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool#id DataAwsVpcIpamPool#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html#ipam_pool_id DataAwsVpcIpamPool#ipam_pool_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool#ipam_pool_id DataAwsVpcIpamPool#ipam_pool_id}
   */
   readonly ipamPoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html#tags DataAwsVpcIpamPool#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool#tags DataAwsVpcIpamPool#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html#filter DataAwsVpcIpamPool#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool#filter DataAwsVpcIpamPool#filter}
   */
   readonly filter?: DataAwsVpcIpamPoolFilter[];
 }
 export interface DataAwsVpcIpamPoolFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html#name DataAwsVpcIpamPool#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool#name DataAwsVpcIpamPool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html#values DataAwsVpcIpamPool#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool#values DataAwsVpcIpamPool#values}
   */
   readonly values: string[];
 }
@@ -54,7 +54,7 @@ export function dataAwsVpcIpamPoolFilterToTerraform(struct?: DataAwsVpcIpamPoolF
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html aws_vpc_ipam_pool}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool aws_vpc_ipam_pool}
 */
 export class DataAwsVpcIpamPool extends cdktf.TerraformDataSource {
 
@@ -68,7 +68,7 @@ export class DataAwsVpcIpamPool extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html aws_vpc_ipam_pool} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool aws_vpc_ipam_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 */
 export interface CloudfrontCachePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#comment CloudfrontCachePolicy#comment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#comment CloudfrontCachePolicy#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#default_ttl CloudfrontCachePolicy#default_ttl}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#default_ttl CloudfrontCachePolicy#default_ttl}
   */
   readonly defaultTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#max_ttl CloudfrontCachePolicy#max_ttl}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#max_ttl CloudfrontCachePolicy#max_ttl}
   */
   readonly maxTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#min_ttl CloudfrontCachePolicy#min_ttl}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#min_ttl CloudfrontCachePolicy#min_ttl}
   */
   readonly minTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#name CloudfrontCachePolicy#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#name CloudfrontCachePolicy#name}
   */
   readonly name: string;
   /**
   * parameters_in_cache_key_and_forwarded_to_origin block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#parameters_in_cache_key_and_forwarded_to_origin CloudfrontCachePolicy#parameters_in_cache_key_and_forwarded_to_origin}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#parameters_in_cache_key_and_forwarded_to_origin CloudfrontCachePolicy#parameters_in_cache_key_and_forwarded_to_origin}
   */
   readonly parametersInCacheKeyAndForwardedToOrigin: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin;
 }
 export interface CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookies {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#items CloudfrontCachePolicy#items}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#items CloudfrontCachePolicy#items}
   */
   readonly items?: string[];
 }
@@ -66,7 +66,7 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookie
   public get internalValue(): CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookies | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._items) {
+    if (this._items !== undefined) {
       hasAnyValues = true;
       internalValueResult.items = this._items;
     }
@@ -102,13 +102,13 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookie
 }
 export interface CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#cookie_behavior CloudfrontCachePolicy#cookie_behavior}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#cookie_behavior CloudfrontCachePolicy#cookie_behavior}
   */
   readonly cookieBehavior: string;
   /**
   * cookies block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#cookies CloudfrontCachePolicy#cookies}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#cookies CloudfrontCachePolicy#cookies}
   */
   readonly cookies?: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookies;
 }
@@ -139,11 +139,11 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookie
   public get internalValue(): CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cookieBehavior) {
+    if (this._cookieBehavior !== undefined) {
       hasAnyValues = true;
       internalValueResult.cookieBehavior = this._cookieBehavior;
     }
-    if (this._cookies?.internalValue) {
+    if (this._cookies?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cookies = this._cookies?.internalValue;
     }
@@ -194,7 +194,7 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookie
 }
 export interface CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#items CloudfrontCachePolicy#items}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#items CloudfrontCachePolicy#items}
   */
   readonly items?: string[];
 }
@@ -224,7 +224,7 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeader
   public get internalValue(): CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeaders | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._items) {
+    if (this._items !== undefined) {
       hasAnyValues = true;
       internalValueResult.items = this._items;
     }
@@ -260,13 +260,13 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeader
 }
 export interface CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#header_behavior CloudfrontCachePolicy#header_behavior}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#header_behavior CloudfrontCachePolicy#header_behavior}
   */
   readonly headerBehavior?: string;
   /**
   * headers block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#headers CloudfrontCachePolicy#headers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#headers CloudfrontCachePolicy#headers}
   */
   readonly headers?: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeaders;
 }
@@ -297,11 +297,11 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeader
   public get internalValue(): CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._headerBehavior) {
+    if (this._headerBehavior !== undefined) {
       hasAnyValues = true;
       internalValueResult.headerBehavior = this._headerBehavior;
     }
-    if (this._headers?.internalValue) {
+    if (this._headers?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.headers = this._headers?.internalValue;
     }
@@ -355,7 +355,7 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeader
 }
 export interface CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#items CloudfrontCachePolicy#items}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#items CloudfrontCachePolicy#items}
   */
   readonly items?: string[];
 }
@@ -385,7 +385,7 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryS
   public get internalValue(): CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._items) {
+    if (this._items !== undefined) {
       hasAnyValues = true;
       internalValueResult.items = this._items;
     }
@@ -421,13 +421,13 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryS
 }
 export interface CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#query_string_behavior CloudfrontCachePolicy#query_string_behavior}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#query_string_behavior CloudfrontCachePolicy#query_string_behavior}
   */
   readonly queryStringBehavior: string;
   /**
   * query_strings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#query_strings CloudfrontCachePolicy#query_strings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#query_strings CloudfrontCachePolicy#query_strings}
   */
   readonly queryStrings?: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings;
 }
@@ -458,11 +458,11 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryS
   public get internalValue(): CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._queryStringBehavior) {
+    if (this._queryStringBehavior !== undefined) {
       hasAnyValues = true;
       internalValueResult.queryStringBehavior = this._queryStringBehavior;
     }
-    if (this._queryStrings?.internalValue) {
+    if (this._queryStrings?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.queryStrings = this._queryStrings?.internalValue;
     }
@@ -513,29 +513,29 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryS
 }
 export interface CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#enable_accept_encoding_brotli CloudfrontCachePolicy#enable_accept_encoding_brotli}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#enable_accept_encoding_brotli CloudfrontCachePolicy#enable_accept_encoding_brotli}
   */
   readonly enableAcceptEncodingBrotli?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#enable_accept_encoding_gzip CloudfrontCachePolicy#enable_accept_encoding_gzip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#enable_accept_encoding_gzip CloudfrontCachePolicy#enable_accept_encoding_gzip}
   */
   readonly enableAcceptEncodingGzip?: boolean | cdktf.IResolvable;
   /**
   * cookies_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#cookies_config CloudfrontCachePolicy#cookies_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#cookies_config CloudfrontCachePolicy#cookies_config}
   */
   readonly cookiesConfig: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfig;
   /**
   * headers_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#headers_config CloudfrontCachePolicy#headers_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#headers_config CloudfrontCachePolicy#headers_config}
   */
   readonly headersConfig: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfig;
   /**
   * query_strings_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#query_strings_config CloudfrontCachePolicy#query_strings_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#query_strings_config CloudfrontCachePolicy#query_strings_config}
   */
   readonly queryStringsConfig: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfig;
 }
@@ -569,23 +569,23 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginOutput
   public get internalValue(): CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enableAcceptEncodingBrotli) {
+    if (this._enableAcceptEncodingBrotli !== undefined) {
       hasAnyValues = true;
       internalValueResult.enableAcceptEncodingBrotli = this._enableAcceptEncodingBrotli;
     }
-    if (this._enableAcceptEncodingGzip) {
+    if (this._enableAcceptEncodingGzip !== undefined) {
       hasAnyValues = true;
       internalValueResult.enableAcceptEncodingGzip = this._enableAcceptEncodingGzip;
     }
-    if (this._cookiesConfig?.internalValue) {
+    if (this._cookiesConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cookiesConfig = this._cookiesConfig?.internalValue;
     }
-    if (this._headersConfig?.internalValue) {
+    if (this._headersConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.headersConfig = this._headersConfig?.internalValue;
     }
-    if (this._queryStringsConfig?.internalValue) {
+    if (this._queryStringsConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.queryStringsConfig = this._queryStringsConfig?.internalValue;
     }
@@ -684,7 +684,7 @@ export class CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginOutput
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html aws_cloudfront_cache_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy aws_cloudfront_cache_policy}
 */
 export class CloudfrontCachePolicy extends cdktf.TerraformResource {
 
@@ -698,7 +698,7 @@ export class CloudfrontCachePolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html aws_cloudfront_cache_policy} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy aws_cloudfront_cache_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

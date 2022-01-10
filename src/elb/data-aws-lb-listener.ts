@@ -8,15 +8,15 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsLbListenerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lb_listener.html#load_balancer_arn DataAwsLbListener#load_balancer_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}
   */
   readonly loadBalancerArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lb_listener.html#port DataAwsLbListener#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lb_listener#port DataAwsLbListener#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lb_listener.html#tags DataAwsLbListener#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lb_listener#tags DataAwsLbListener#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
@@ -257,7 +257,7 @@ export class DataAwsLbListenerDefaultAction extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/lb_listener.html aws_lb_listener}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/lb_listener aws_lb_listener}
 */
 export class DataAwsLbListener extends cdktf.TerraformDataSource {
 
@@ -271,7 +271,7 @@ export class DataAwsLbListener extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/lb_listener.html aws_lb_listener} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/lb_listener aws_lb_listener} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

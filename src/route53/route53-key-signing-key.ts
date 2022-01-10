@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 */
 export interface Route53KeySigningKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key.html#hosted_zone_id Route53KeySigningKey#hosted_zone_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key#hosted_zone_id Route53KeySigningKey#hosted_zone_id}
   */
   readonly hostedZoneId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key.html#key_management_service_arn Route53KeySigningKey#key_management_service_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key#key_management_service_arn Route53KeySigningKey#key_management_service_arn}
   */
   readonly keyManagementServiceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key.html#name Route53KeySigningKey#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key#name Route53KeySigningKey#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key.html#status Route53KeySigningKey#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key#status Route53KeySigningKey#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key.html aws_route53_key_signing_key}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key aws_route53_key_signing_key}
 */
 export class Route53KeySigningKey extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class Route53KeySigningKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key.html aws_route53_key_signing_key} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key aws_route53_key_signing_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

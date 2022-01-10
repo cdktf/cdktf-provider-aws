@@ -8,65 +8,65 @@ import * as cdktf from 'cdktf';
 */
 export interface SagemakerDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#app_network_access_type SagemakerDomain#app_network_access_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#app_network_access_type SagemakerDomain#app_network_access_type}
   */
   readonly appNetworkAccessType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#auth_mode SagemakerDomain#auth_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#auth_mode SagemakerDomain#auth_mode}
   */
   readonly authMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#domain_name SagemakerDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#domain_name SagemakerDomain#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#kms_key_id SagemakerDomain#kms_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#kms_key_id SagemakerDomain#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#subnet_ids SagemakerDomain#subnet_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#subnet_ids SagemakerDomain#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#tags SagemakerDomain#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#tags SagemakerDomain#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#tags_all SagemakerDomain#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#tags_all SagemakerDomain#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#vpc_id SagemakerDomain#vpc_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#vpc_id SagemakerDomain#vpc_id}
   */
   readonly vpcId: string;
   /**
   * default_user_settings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#default_user_settings SagemakerDomain#default_user_settings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#default_user_settings SagemakerDomain#default_user_settings}
   */
   readonly defaultUserSettings: SagemakerDomainDefaultUserSettings;
   /**
   * retention_policy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#retention_policy SagemakerDomain#retention_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#retention_policy SagemakerDomain#retention_policy}
   */
   readonly retentionPolicy?: SagemakerDomainRetentionPolicy;
 }
 export interface SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#instance_type SagemakerDomain#instance_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#instance_type SagemakerDomain#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
   */
   readonly lifecycleConfigArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
   */
   readonly sagemakerImageArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
   */
   readonly sagemakerImageVersionArn?: string;
 }
@@ -99,19 +99,19 @@ export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultRe
   public get internalValue(): SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._instanceType) {
+    if (this._instanceType !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceType = this._instanceType;
     }
-    if (this._lifecycleConfigArn) {
+    if (this._lifecycleConfigArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.lifecycleConfigArn = this._lifecycleConfigArn;
     }
-    if (this._sagemakerImageArn) {
+    if (this._sagemakerImageArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.sagemakerImageArn = this._sagemakerImageArn;
     }
-    if (this._sagemakerImageVersionArn) {
+    if (this._sagemakerImageVersionArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.sagemakerImageVersionArn = this._sagemakerImageVersionArn;
     }
@@ -201,13 +201,13 @@ export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultRe
 }
 export interface SagemakerDomainDefaultUserSettingsJupyterServerAppSettings {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
   */
   readonly lifecycleConfigArns?: string[];
   /**
   * default_resource_spec block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#default_resource_spec SagemakerDomain#default_resource_spec}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec;
 }
@@ -238,11 +238,11 @@ export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputRef
   public get internalValue(): SagemakerDomainDefaultUserSettingsJupyterServerAppSettings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._lifecycleConfigArns) {
+    if (this._lifecycleConfigArns !== undefined) {
       hasAnyValues = true;
       internalValueResult.lifecycleConfigArns = this._lifecycleConfigArns;
     }
-    if (this._defaultResourceSpec?.internalValue) {
+    if (this._defaultResourceSpec?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.defaultResourceSpec = this._defaultResourceSpec?.internalValue;
     }
@@ -296,15 +296,15 @@ export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputRef
 }
 export interface SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImage {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#app_image_config_name SagemakerDomain#app_image_config_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#app_image_config_name SagemakerDomain#app_image_config_name}
   */
   readonly appImageConfigName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#image_name SagemakerDomain#image_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#image_name SagemakerDomain#image_name}
   */
   readonly imageName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#image_version_number SagemakerDomain#image_version_number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#image_version_number SagemakerDomain#image_version_number}
   */
   readonly imageVersionNumber?: number;
 }
@@ -323,19 +323,19 @@ export function sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustom
 
 export interface SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#instance_type SagemakerDomain#instance_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#instance_type SagemakerDomain#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
   */
   readonly lifecycleConfigArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
   */
   readonly sagemakerImageArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
   */
   readonly sagemakerImageVersionArn?: string;
 }
@@ -368,19 +368,19 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultRe
   public get internalValue(): SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._instanceType) {
+    if (this._instanceType !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceType = this._instanceType;
     }
-    if (this._lifecycleConfigArn) {
+    if (this._lifecycleConfigArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.lifecycleConfigArn = this._lifecycleConfigArn;
     }
-    if (this._sagemakerImageArn) {
+    if (this._sagemakerImageArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.sagemakerImageArn = this._sagemakerImageArn;
     }
-    if (this._sagemakerImageVersionArn) {
+    if (this._sagemakerImageVersionArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.sagemakerImageVersionArn = this._sagemakerImageVersionArn;
     }
@@ -470,19 +470,19 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultRe
 }
 export interface SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
   */
   readonly lifecycleConfigArns?: string[];
   /**
   * custom_image block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#custom_image SagemakerDomain#custom_image}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#custom_image SagemakerDomain#custom_image}
   */
   readonly customImage?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImage[];
   /**
   * default_resource_spec block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#default_resource_spec SagemakerDomain#default_resource_spec}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec;
 }
@@ -514,15 +514,15 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputRef
   public get internalValue(): SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._lifecycleConfigArns) {
+    if (this._lifecycleConfigArns !== undefined) {
       hasAnyValues = true;
       internalValueResult.lifecycleConfigArns = this._lifecycleConfigArns;
     }
-    if (this._customImage) {
+    if (this._customImage !== undefined) {
       hasAnyValues = true;
       internalValueResult.customImage = this._customImage;
     }
-    if (this._defaultResourceSpec?.internalValue) {
+    if (this._defaultResourceSpec?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.defaultResourceSpec = this._defaultResourceSpec?.internalValue;
     }
@@ -595,15 +595,15 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputRef
 }
 export interface SagemakerDomainDefaultUserSettingsSharingSettings {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#notebook_output_option SagemakerDomain#notebook_output_option}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#notebook_output_option SagemakerDomain#notebook_output_option}
   */
   readonly notebookOutputOption?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#s3_kms_key_id SagemakerDomain#s3_kms_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#s3_kms_key_id SagemakerDomain#s3_kms_key_id}
   */
   readonly s3KmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#s3_output_path SagemakerDomain#s3_output_path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#s3_output_path SagemakerDomain#s3_output_path}
   */
   readonly s3OutputPath?: string;
 }
@@ -635,15 +635,15 @@ export class SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference ex
   public get internalValue(): SagemakerDomainDefaultUserSettingsSharingSettings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._notebookOutputOption) {
+    if (this._notebookOutputOption !== undefined) {
       hasAnyValues = true;
       internalValueResult.notebookOutputOption = this._notebookOutputOption;
     }
-    if (this._s3KmsKeyId) {
+    if (this._s3KmsKeyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3KmsKeyId = this._s3KmsKeyId;
     }
-    if (this._s3OutputPath) {
+    if (this._s3OutputPath !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3OutputPath = this._s3OutputPath;
     }
@@ -715,19 +715,19 @@ export class SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference ex
 }
 export interface SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#instance_type SagemakerDomain#instance_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#instance_type SagemakerDomain#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
   */
   readonly lifecycleConfigArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
   */
   readonly sagemakerImageArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
   */
   readonly sagemakerImageVersionArn?: string;
 }
@@ -760,19 +760,19 @@ export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultReso
   public get internalValue(): SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._instanceType) {
+    if (this._instanceType !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceType = this._instanceType;
     }
-    if (this._lifecycleConfigArn) {
+    if (this._lifecycleConfigArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.lifecycleConfigArn = this._lifecycleConfigArn;
     }
-    if (this._sagemakerImageArn) {
+    if (this._sagemakerImageArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.sagemakerImageArn = this._sagemakerImageArn;
     }
-    if (this._sagemakerImageVersionArn) {
+    if (this._sagemakerImageVersionArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.sagemakerImageVersionArn = this._sagemakerImageVersionArn;
     }
@@ -864,7 +864,7 @@ export interface SagemakerDomainDefaultUserSettingsTensorBoardAppSettings {
   /**
   * default_resource_spec block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#default_resource_spec SagemakerDomain#default_resource_spec}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec;
 }
@@ -894,7 +894,7 @@ export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputRefer
   public get internalValue(): SagemakerDomainDefaultUserSettingsTensorBoardAppSettings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._defaultResourceSpec?.internalValue) {
+    if (this._defaultResourceSpec?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.defaultResourceSpec = this._defaultResourceSpec?.internalValue;
     }
@@ -930,35 +930,35 @@ export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputRefer
 }
 export interface SagemakerDomainDefaultUserSettings {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#execution_role SagemakerDomain#execution_role}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#execution_role SagemakerDomain#execution_role}
   */
   readonly executionRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#security_groups SagemakerDomain#security_groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#security_groups SagemakerDomain#security_groups}
   */
   readonly securityGroups?: string[];
   /**
   * jupyter_server_app_settings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#jupyter_server_app_settings SagemakerDomain#jupyter_server_app_settings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#jupyter_server_app_settings SagemakerDomain#jupyter_server_app_settings}
   */
   readonly jupyterServerAppSettings?: SagemakerDomainDefaultUserSettingsJupyterServerAppSettings;
   /**
   * kernel_gateway_app_settings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#kernel_gateway_app_settings SagemakerDomain#kernel_gateway_app_settings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#kernel_gateway_app_settings SagemakerDomain#kernel_gateway_app_settings}
   */
   readonly kernelGatewayAppSettings?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings;
   /**
   * sharing_settings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#sharing_settings SagemakerDomain#sharing_settings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#sharing_settings SagemakerDomain#sharing_settings}
   */
   readonly sharingSettings?: SagemakerDomainDefaultUserSettingsSharingSettings;
   /**
   * tensor_board_app_settings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#tensor_board_app_settings SagemakerDomain#tensor_board_app_settings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#tensor_board_app_settings SagemakerDomain#tensor_board_app_settings}
   */
   readonly tensorBoardAppSettings?: SagemakerDomainDefaultUserSettingsTensorBoardAppSettings;
 }
@@ -993,27 +993,27 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
   public get internalValue(): SagemakerDomainDefaultUserSettings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._executionRole) {
+    if (this._executionRole !== undefined) {
       hasAnyValues = true;
       internalValueResult.executionRole = this._executionRole;
     }
-    if (this._securityGroups) {
+    if (this._securityGroups !== undefined) {
       hasAnyValues = true;
       internalValueResult.securityGroups = this._securityGroups;
     }
-    if (this._jupyterServerAppSettings?.internalValue) {
+    if (this._jupyterServerAppSettings?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.jupyterServerAppSettings = this._jupyterServerAppSettings?.internalValue;
     }
-    if (this._kernelGatewayAppSettings?.internalValue) {
+    if (this._kernelGatewayAppSettings?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.kernelGatewayAppSettings = this._kernelGatewayAppSettings?.internalValue;
     }
-    if (this._sharingSettings?.internalValue) {
+    if (this._sharingSettings?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sharingSettings = this._sharingSettings?.internalValue;
     }
-    if (this._tensorBoardAppSettings?.internalValue) {
+    if (this._tensorBoardAppSettings?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tensorBoardAppSettings = this._tensorBoardAppSettings?.internalValue;
     }
@@ -1136,7 +1136,7 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
 }
 export interface SagemakerDomainRetentionPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html#home_efs_file_system SagemakerDomain#home_efs_file_system}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#home_efs_file_system SagemakerDomain#home_efs_file_system}
   */
   readonly homeEfsFileSystem?: string;
 }
@@ -1166,7 +1166,7 @@ export class SagemakerDomainRetentionPolicyOutputReference extends cdktf.Complex
   public get internalValue(): SagemakerDomainRetentionPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._homeEfsFileSystem) {
+    if (this._homeEfsFileSystem !== undefined) {
       hasAnyValues = true;
       internalValueResult.homeEfsFileSystem = this._homeEfsFileSystem;
     }
@@ -1202,7 +1202,7 @@ export class SagemakerDomainRetentionPolicyOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html aws_sagemaker_domain}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain aws_sagemaker_domain}
 */
 export class SagemakerDomain extends cdktf.TerraformResource {
 
@@ -1216,7 +1216,7 @@ export class SagemakerDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain.html aws_sagemaker_domain} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain aws_sagemaker_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

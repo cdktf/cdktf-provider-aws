@@ -8,91 +8,91 @@ import * as cdktf from 'cdktf';
 */
 export interface MskClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#cluster_name MskCluster#cluster_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#cluster_name MskCluster#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enhanced_monitoring MskCluster#enhanced_monitoring}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#enhanced_monitoring MskCluster#enhanced_monitoring}
   */
   readonly enhancedMonitoring?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#kafka_version MskCluster#kafka_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#kafka_version MskCluster#kafka_version}
   */
   readonly kafkaVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#number_of_broker_nodes MskCluster#number_of_broker_nodes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#number_of_broker_nodes MskCluster#number_of_broker_nodes}
   */
   readonly numberOfBrokerNodes: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#tags MskCluster#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#tags MskCluster#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#tags_all MskCluster#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#tags_all MskCluster#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * broker_node_group_info block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#broker_node_group_info MskCluster#broker_node_group_info}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#broker_node_group_info MskCluster#broker_node_group_info}
   */
   readonly brokerNodeGroupInfo: MskClusterBrokerNodeGroupInfo;
   /**
   * client_authentication block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#client_authentication MskCluster#client_authentication}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#client_authentication MskCluster#client_authentication}
   */
   readonly clientAuthentication?: MskClusterClientAuthentication;
   /**
   * configuration_info block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#configuration_info MskCluster#configuration_info}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#configuration_info MskCluster#configuration_info}
   */
   readonly configurationInfo?: MskClusterConfigurationInfo;
   /**
   * encryption_info block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#encryption_info MskCluster#encryption_info}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#encryption_info MskCluster#encryption_info}
   */
   readonly encryptionInfo?: MskClusterEncryptionInfo;
   /**
   * logging_info block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#logging_info MskCluster#logging_info}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#logging_info MskCluster#logging_info}
   */
   readonly loggingInfo?: MskClusterLoggingInfo;
   /**
   * open_monitoring block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#open_monitoring MskCluster#open_monitoring}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#open_monitoring MskCluster#open_monitoring}
   */
   readonly openMonitoring?: MskClusterOpenMonitoring;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#timeouts MskCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#timeouts MskCluster#timeouts}
   */
   readonly timeouts?: MskClusterTimeouts;
 }
 export interface MskClusterBrokerNodeGroupInfo {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#az_distribution MskCluster#az_distribution}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#az_distribution MskCluster#az_distribution}
   */
   readonly azDistribution?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#client_subnets MskCluster#client_subnets}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#client_subnets MskCluster#client_subnets}
   */
   readonly clientSubnets: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#ebs_volume_size MskCluster#ebs_volume_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#ebs_volume_size MskCluster#ebs_volume_size}
   */
   readonly ebsVolumeSize: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#instance_type MskCluster#instance_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#instance_type MskCluster#instance_type}
   */
   readonly instanceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#security_groups MskCluster#security_groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#security_groups MskCluster#security_groups}
   */
   readonly securityGroups: string[];
 }
@@ -126,23 +126,23 @@ export class MskClusterBrokerNodeGroupInfoOutputReference extends cdktf.ComplexO
   public get internalValue(): MskClusterBrokerNodeGroupInfo | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._azDistribution) {
+    if (this._azDistribution !== undefined) {
       hasAnyValues = true;
       internalValueResult.azDistribution = this._azDistribution;
     }
-    if (this._clientSubnets) {
+    if (this._clientSubnets !== undefined) {
       hasAnyValues = true;
       internalValueResult.clientSubnets = this._clientSubnets;
     }
-    if (this._ebsVolumeSize) {
+    if (this._ebsVolumeSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.ebsVolumeSize = this._ebsVolumeSize;
     }
-    if (this._instanceType) {
+    if (this._instanceType !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceType = this._instanceType;
     }
-    if (this._securityGroups) {
+    if (this._securityGroups !== undefined) {
       hasAnyValues = true;
       internalValueResult.securityGroups = this._securityGroups;
     }
@@ -238,11 +238,11 @@ export class MskClusterBrokerNodeGroupInfoOutputReference extends cdktf.ComplexO
 }
 export interface MskClusterClientAuthenticationSasl {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#iam MskCluster#iam}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#iam MskCluster#iam}
   */
   readonly iam?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#scram MskCluster#scram}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#scram MskCluster#scram}
   */
   readonly scram?: boolean | cdktf.IResolvable;
 }
@@ -273,11 +273,11 @@ export class MskClusterClientAuthenticationSaslOutputReference extends cdktf.Com
   public get internalValue(): MskClusterClientAuthenticationSasl | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._iam) {
+    if (this._iam !== undefined) {
       hasAnyValues = true;
       internalValueResult.iam = this._iam;
     }
-    if (this._scram) {
+    if (this._scram !== undefined) {
       hasAnyValues = true;
       internalValueResult.scram = this._scram;
     }
@@ -331,7 +331,7 @@ export class MskClusterClientAuthenticationSaslOutputReference extends cdktf.Com
 }
 export interface MskClusterClientAuthenticationTls {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#certificate_authority_arns MskCluster#certificate_authority_arns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#certificate_authority_arns MskCluster#certificate_authority_arns}
   */
   readonly certificateAuthorityArns?: string[];
 }
@@ -361,7 +361,7 @@ export class MskClusterClientAuthenticationTlsOutputReference extends cdktf.Comp
   public get internalValue(): MskClusterClientAuthenticationTls | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._certificateAuthorityArns) {
+    if (this._certificateAuthorityArns !== undefined) {
       hasAnyValues = true;
       internalValueResult.certificateAuthorityArns = this._certificateAuthorityArns;
     }
@@ -399,13 +399,13 @@ export interface MskClusterClientAuthentication {
   /**
   * sasl block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#sasl MskCluster#sasl}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#sasl MskCluster#sasl}
   */
   readonly sasl?: MskClusterClientAuthenticationSasl;
   /**
   * tls block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#tls MskCluster#tls}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#tls MskCluster#tls}
   */
   readonly tls?: MskClusterClientAuthenticationTls;
 }
@@ -436,11 +436,11 @@ export class MskClusterClientAuthenticationOutputReference extends cdktf.Complex
   public get internalValue(): MskClusterClientAuthentication | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._sasl?.internalValue) {
+    if (this._sasl?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sasl = this._sasl?.internalValue;
     }
-    if (this._tls?.internalValue) {
+    if (this._tls?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tls = this._tls?.internalValue;
     }
@@ -494,11 +494,11 @@ export class MskClusterClientAuthenticationOutputReference extends cdktf.Complex
 }
 export interface MskClusterConfigurationInfo {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#arn MskCluster#arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#arn MskCluster#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#revision MskCluster#revision}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#revision MskCluster#revision}
   */
   readonly revision: number;
 }
@@ -529,11 +529,11 @@ export class MskClusterConfigurationInfoOutputReference extends cdktf.ComplexObj
   public get internalValue(): MskClusterConfigurationInfo | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._arn) {
+    if (this._arn !== undefined) {
       hasAnyValues = true;
       internalValueResult.arn = this._arn;
     }
-    if (this._revision) {
+    if (this._revision !== undefined) {
       hasAnyValues = true;
       internalValueResult.revision = this._revision;
     }
@@ -581,11 +581,11 @@ export class MskClusterConfigurationInfoOutputReference extends cdktf.ComplexObj
 }
 export interface MskClusterEncryptionInfoEncryptionInTransit {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#client_broker MskCluster#client_broker}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#client_broker MskCluster#client_broker}
   */
   readonly clientBroker?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#in_cluster MskCluster#in_cluster}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#in_cluster MskCluster#in_cluster}
   */
   readonly inCluster?: boolean | cdktf.IResolvable;
 }
@@ -616,11 +616,11 @@ export class MskClusterEncryptionInfoEncryptionInTransitOutputReference extends 
   public get internalValue(): MskClusterEncryptionInfoEncryptionInTransit | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clientBroker) {
+    if (this._clientBroker !== undefined) {
       hasAnyValues = true;
       internalValueResult.clientBroker = this._clientBroker;
     }
-    if (this._inCluster) {
+    if (this._inCluster !== undefined) {
       hasAnyValues = true;
       internalValueResult.inCluster = this._inCluster;
     }
@@ -674,13 +674,13 @@ export class MskClusterEncryptionInfoEncryptionInTransitOutputReference extends 
 }
 export interface MskClusterEncryptionInfo {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#encryption_at_rest_kms_key_arn MskCluster#encryption_at_rest_kms_key_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#encryption_at_rest_kms_key_arn MskCluster#encryption_at_rest_kms_key_arn}
   */
   readonly encryptionAtRestKmsKeyArn?: string;
   /**
   * encryption_in_transit block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#encryption_in_transit MskCluster#encryption_in_transit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#encryption_in_transit MskCluster#encryption_in_transit}
   */
   readonly encryptionInTransit?: MskClusterEncryptionInfoEncryptionInTransit;
 }
@@ -711,11 +711,11 @@ export class MskClusterEncryptionInfoOutputReference extends cdktf.ComplexObject
   public get internalValue(): MskClusterEncryptionInfo | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._encryptionAtRestKmsKeyArn) {
+    if (this._encryptionAtRestKmsKeyArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.encryptionAtRestKmsKeyArn = this._encryptionAtRestKmsKeyArn;
     }
-    if (this._encryptionInTransit?.internalValue) {
+    if (this._encryptionInTransit?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.encryptionInTransit = this._encryptionInTransit?.internalValue;
     }
@@ -769,11 +769,11 @@ export class MskClusterEncryptionInfoOutputReference extends cdktf.ComplexObject
 }
 export interface MskClusterLoggingInfoBrokerLogsCloudwatchLogs {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled MskCluster#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#enabled MskCluster#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#log_group MskCluster#log_group}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#log_group MskCluster#log_group}
   */
   readonly logGroup?: string;
 }
@@ -804,11 +804,11 @@ export class MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference extend
   public get internalValue(): MskClusterLoggingInfoBrokerLogsCloudwatchLogs | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._logGroup) {
+    if (this._logGroup !== undefined) {
       hasAnyValues = true;
       internalValueResult.logGroup = this._logGroup;
     }
@@ -859,11 +859,11 @@ export class MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference extend
 }
 export interface MskClusterLoggingInfoBrokerLogsFirehose {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#delivery_stream MskCluster#delivery_stream}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#delivery_stream MskCluster#delivery_stream}
   */
   readonly deliveryStream?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled MskCluster#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#enabled MskCluster#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -894,11 +894,11 @@ export class MskClusterLoggingInfoBrokerLogsFirehoseOutputReference extends cdkt
   public get internalValue(): MskClusterLoggingInfoBrokerLogsFirehose | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._deliveryStream) {
+    if (this._deliveryStream !== undefined) {
       hasAnyValues = true;
       internalValueResult.deliveryStream = this._deliveryStream;
     }
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
@@ -949,15 +949,15 @@ export class MskClusterLoggingInfoBrokerLogsFirehoseOutputReference extends cdkt
 }
 export interface MskClusterLoggingInfoBrokerLogsS3 {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#bucket MskCluster#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#bucket MskCluster#bucket}
   */
   readonly bucket?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled MskCluster#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#enabled MskCluster#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#prefix MskCluster#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#prefix MskCluster#prefix}
   */
   readonly prefix?: string;
 }
@@ -989,15 +989,15 @@ export class MskClusterLoggingInfoBrokerLogsS3OutputReference extends cdktf.Comp
   public get internalValue(): MskClusterLoggingInfoBrokerLogsS3 | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucket) {
+    if (this._bucket !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucket = this._bucket;
     }
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
@@ -1068,19 +1068,19 @@ export interface MskClusterLoggingInfoBrokerLogs {
   /**
   * cloudwatch_logs block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#cloudwatch_logs MskCluster#cloudwatch_logs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#cloudwatch_logs MskCluster#cloudwatch_logs}
   */
   readonly cloudwatchLogs?: MskClusterLoggingInfoBrokerLogsCloudwatchLogs;
   /**
   * firehose block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#firehose MskCluster#firehose}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#firehose MskCluster#firehose}
   */
   readonly firehose?: MskClusterLoggingInfoBrokerLogsFirehose;
   /**
   * s3 block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#s3 MskCluster#s3}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#s3 MskCluster#s3}
   */
   readonly s3?: MskClusterLoggingInfoBrokerLogsS3;
 }
@@ -1112,15 +1112,15 @@ export class MskClusterLoggingInfoBrokerLogsOutputReference extends cdktf.Comple
   public get internalValue(): MskClusterLoggingInfoBrokerLogs | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cloudwatchLogs?.internalValue) {
+    if (this._cloudwatchLogs?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchLogs = this._cloudwatchLogs?.internalValue;
     }
-    if (this._firehose?.internalValue) {
+    if (this._firehose?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.firehose = this._firehose?.internalValue;
     }
-    if (this._s3?.internalValue) {
+    if (this._s3?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3 = this._s3?.internalValue;
     }
@@ -1194,7 +1194,7 @@ export interface MskClusterLoggingInfo {
   /**
   * broker_logs block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#broker_logs MskCluster#broker_logs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#broker_logs MskCluster#broker_logs}
   */
   readonly brokerLogs: MskClusterLoggingInfoBrokerLogs;
 }
@@ -1224,7 +1224,7 @@ export class MskClusterLoggingInfoOutputReference extends cdktf.ComplexObject {
   public get internalValue(): MskClusterLoggingInfo | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._brokerLogs?.internalValue) {
+    if (this._brokerLogs?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.brokerLogs = this._brokerLogs?.internalValue;
     }
@@ -1257,7 +1257,7 @@ export class MskClusterLoggingInfoOutputReference extends cdktf.ComplexObject {
 }
 export interface MskClusterOpenMonitoringPrometheusJmxExporter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled_in_broker MskCluster#enabled_in_broker}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#enabled_in_broker MskCluster#enabled_in_broker}
   */
   readonly enabledInBroker: boolean | cdktf.IResolvable;
 }
@@ -1287,7 +1287,7 @@ export class MskClusterOpenMonitoringPrometheusJmxExporterOutputReference extend
   public get internalValue(): MskClusterOpenMonitoringPrometheusJmxExporter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabledInBroker) {
+    if (this._enabledInBroker !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabledInBroker = this._enabledInBroker;
     }
@@ -1320,7 +1320,7 @@ export class MskClusterOpenMonitoringPrometheusJmxExporterOutputReference extend
 }
 export interface MskClusterOpenMonitoringPrometheusNodeExporter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled_in_broker MskCluster#enabled_in_broker}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#enabled_in_broker MskCluster#enabled_in_broker}
   */
   readonly enabledInBroker: boolean | cdktf.IResolvable;
 }
@@ -1350,7 +1350,7 @@ export class MskClusterOpenMonitoringPrometheusNodeExporterOutputReference exten
   public get internalValue(): MskClusterOpenMonitoringPrometheusNodeExporter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabledInBroker) {
+    if (this._enabledInBroker !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabledInBroker = this._enabledInBroker;
     }
@@ -1385,13 +1385,13 @@ export interface MskClusterOpenMonitoringPrometheus {
   /**
   * jmx_exporter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#jmx_exporter MskCluster#jmx_exporter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#jmx_exporter MskCluster#jmx_exporter}
   */
   readonly jmxExporter?: MskClusterOpenMonitoringPrometheusJmxExporter;
   /**
   * node_exporter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#node_exporter MskCluster#node_exporter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#node_exporter MskCluster#node_exporter}
   */
   readonly nodeExporter?: MskClusterOpenMonitoringPrometheusNodeExporter;
 }
@@ -1422,11 +1422,11 @@ export class MskClusterOpenMonitoringPrometheusOutputReference extends cdktf.Com
   public get internalValue(): MskClusterOpenMonitoringPrometheus | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._jmxExporter?.internalValue) {
+    if (this._jmxExporter?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.jmxExporter = this._jmxExporter?.internalValue;
     }
-    if (this._nodeExporter?.internalValue) {
+    if (this._nodeExporter?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.nodeExporter = this._nodeExporter?.internalValue;
     }
@@ -1482,7 +1482,7 @@ export interface MskClusterOpenMonitoring {
   /**
   * prometheus block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#prometheus MskCluster#prometheus}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#prometheus MskCluster#prometheus}
   */
   readonly prometheus: MskClusterOpenMonitoringPrometheus;
 }
@@ -1512,7 +1512,7 @@ export class MskClusterOpenMonitoringOutputReference extends cdktf.ComplexObject
   public get internalValue(): MskClusterOpenMonitoring | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._prometheus?.internalValue) {
+    if (this._prometheus?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.prometheus = this._prometheus?.internalValue;
     }
@@ -1545,15 +1545,15 @@ export class MskClusterOpenMonitoringOutputReference extends cdktf.ComplexObject
 }
 export interface MskClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#create MskCluster#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#create MskCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#delete MskCluster#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#delete MskCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#update MskCluster#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#update MskCluster#update}
   */
   readonly update?: string;
 }
@@ -1585,15 +1585,15 @@ export class MskClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): MskClusterTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
@@ -1665,7 +1665,7 @@ export class MskClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html aws_msk_cluster}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster aws_msk_cluster}
 */
 export class MskCluster extends cdktf.TerraformResource {
 
@@ -1679,7 +1679,7 @@ export class MskCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html aws_msk_cluster} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster aws_msk_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
