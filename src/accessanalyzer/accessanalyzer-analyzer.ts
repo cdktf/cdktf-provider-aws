@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 */
 export interface AccessanalyzerAnalyzerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer.html#analyzer_name AccessanalyzerAnalyzer#analyzer_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer#analyzer_name AccessanalyzerAnalyzer#analyzer_name}
   */
   readonly analyzerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer.html#tags AccessanalyzerAnalyzer#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer#tags AccessanalyzerAnalyzer#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer.html#tags_all AccessanalyzerAnalyzer#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer#tags_all AccessanalyzerAnalyzer#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer.html#type AccessanalyzerAnalyzer#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer#type AccessanalyzerAnalyzer#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer.html aws_accessanalyzer_analyzer}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer aws_accessanalyzer_analyzer}
 */
 export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer.html aws_accessanalyzer_analyzer} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

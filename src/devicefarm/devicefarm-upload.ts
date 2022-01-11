@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 */
 export interface DevicefarmUploadConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_upload.html#content_type DevicefarmUpload#content_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_upload#content_type DevicefarmUpload#content_type}
   */
   readonly contentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_upload.html#name DevicefarmUpload#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_upload#name DevicefarmUpload#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_upload.html#project_arn DevicefarmUpload#project_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_upload#project_arn DevicefarmUpload#project_arn}
   */
   readonly projectArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_upload.html#type DevicefarmUpload#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_upload#type DevicefarmUpload#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_upload.html aws_devicefarm_upload}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_upload aws_devicefarm_upload}
 */
 export class DevicefarmUpload extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class DevicefarmUpload extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_upload.html aws_devicefarm_upload} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_upload aws_devicefarm_upload} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,49 +8,49 @@ import * as cdktf from 'cdktf';
 */
 export interface SagemakerFlowDefinitionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#flow_definition_name SagemakerFlowDefinition#flow_definition_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#flow_definition_name SagemakerFlowDefinition#flow_definition_name}
   */
   readonly flowDefinitionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#role_arn SagemakerFlowDefinition#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#role_arn SagemakerFlowDefinition#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#tags SagemakerFlowDefinition#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#tags SagemakerFlowDefinition#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#tags_all SagemakerFlowDefinition#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#tags_all SagemakerFlowDefinition#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * human_loop_activation_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#human_loop_activation_config SagemakerFlowDefinition#human_loop_activation_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#human_loop_activation_config SagemakerFlowDefinition#human_loop_activation_config}
   */
   readonly humanLoopActivationConfig?: SagemakerFlowDefinitionHumanLoopActivationConfig;
   /**
   * human_loop_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#human_loop_config SagemakerFlowDefinition#human_loop_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#human_loop_config SagemakerFlowDefinition#human_loop_config}
   */
   readonly humanLoopConfig: SagemakerFlowDefinitionHumanLoopConfig;
   /**
   * human_loop_request_source block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#human_loop_request_source SagemakerFlowDefinition#human_loop_request_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#human_loop_request_source SagemakerFlowDefinition#human_loop_request_source}
   */
   readonly humanLoopRequestSource?: SagemakerFlowDefinitionHumanLoopRequestSource;
   /**
   * output_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#output_config SagemakerFlowDefinition#output_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#output_config SagemakerFlowDefinition#output_config}
   */
   readonly outputConfig: SagemakerFlowDefinitionOutputConfig;
 }
 export interface SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#human_loop_activation_conditions SagemakerFlowDefinition#human_loop_activation_conditions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#human_loop_activation_conditions SagemakerFlowDefinition#human_loop_activation_conditions}
   */
   readonly humanLoopActivationConditions: string;
 }
@@ -80,7 +80,7 @@ export class SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivation
   public get internalValue(): SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._humanLoopActivationConditions) {
+    if (this._humanLoopActivationConditions !== undefined) {
       hasAnyValues = true;
       internalValueResult.humanLoopActivationConditions = this._humanLoopActivationConditions;
     }
@@ -115,7 +115,7 @@ export interface SagemakerFlowDefinitionHumanLoopActivationConfig {
   /**
   * human_loop_activation_conditions_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#human_loop_activation_conditions_config SagemakerFlowDefinition#human_loop_activation_conditions_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#human_loop_activation_conditions_config SagemakerFlowDefinition#human_loop_activation_conditions_config}
   */
   readonly humanLoopActivationConditionsConfig?: SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig;
 }
@@ -145,7 +145,7 @@ export class SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference ext
   public get internalValue(): SagemakerFlowDefinitionHumanLoopActivationConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._humanLoopActivationConditionsConfig?.internalValue) {
+    if (this._humanLoopActivationConditionsConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.humanLoopActivationConditionsConfig = this._humanLoopActivationConditionsConfig?.internalValue;
     }
@@ -181,15 +181,15 @@ export class SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference ext
 }
 export interface SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#cents SagemakerFlowDefinition#cents}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#cents SagemakerFlowDefinition#cents}
   */
   readonly cents?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#dollars SagemakerFlowDefinition#dollars}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#dollars SagemakerFlowDefinition#dollars}
   */
   readonly dollars?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#tenth_fractions_of_a_cent SagemakerFlowDefinition#tenth_fractions_of_a_cent}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#tenth_fractions_of_a_cent SagemakerFlowDefinition#tenth_fractions_of_a_cent}
   */
   readonly tenthFractionsOfACent?: number;
 }
@@ -221,15 +221,15 @@ export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmoun
   public get internalValue(): SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cents) {
+    if (this._cents !== undefined) {
       hasAnyValues = true;
       internalValueResult.cents = this._cents;
     }
-    if (this._dollars) {
+    if (this._dollars !== undefined) {
       hasAnyValues = true;
       internalValueResult.dollars = this._dollars;
     }
-    if (this._tenthFractionsOfACent) {
+    if (this._tenthFractionsOfACent !== undefined) {
       hasAnyValues = true;
       internalValueResult.tenthFractionsOfACent = this._tenthFractionsOfACent;
     }
@@ -303,7 +303,7 @@ export interface SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice 
   /**
   * amount_in_usd block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#amount_in_usd SagemakerFlowDefinition#amount_in_usd}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#amount_in_usd SagemakerFlowDefinition#amount_in_usd}
   */
   readonly amountInUsd?: SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd;
 }
@@ -333,7 +333,7 @@ export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutpu
   public get internalValue(): SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._amountInUsd?.internalValue) {
+    if (this._amountInUsd?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.amountInUsd = this._amountInUsd?.internalValue;
     }
@@ -369,41 +369,41 @@ export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutpu
 }
 export interface SagemakerFlowDefinitionHumanLoopConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#human_task_ui_arn SagemakerFlowDefinition#human_task_ui_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#human_task_ui_arn SagemakerFlowDefinition#human_task_ui_arn}
   */
   readonly humanTaskUiArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#task_availability_lifetime_in_seconds SagemakerFlowDefinition#task_availability_lifetime_in_seconds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#task_availability_lifetime_in_seconds SagemakerFlowDefinition#task_availability_lifetime_in_seconds}
   */
   readonly taskAvailabilityLifetimeInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#task_count SagemakerFlowDefinition#task_count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#task_count SagemakerFlowDefinition#task_count}
   */
   readonly taskCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#task_description SagemakerFlowDefinition#task_description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#task_description SagemakerFlowDefinition#task_description}
   */
   readonly taskDescription: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#task_keywords SagemakerFlowDefinition#task_keywords}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#task_keywords SagemakerFlowDefinition#task_keywords}
   */
   readonly taskKeywords?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#task_time_limit_in_seconds SagemakerFlowDefinition#task_time_limit_in_seconds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#task_time_limit_in_seconds SagemakerFlowDefinition#task_time_limit_in_seconds}
   */
   readonly taskTimeLimitInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#task_title SagemakerFlowDefinition#task_title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#task_title SagemakerFlowDefinition#task_title}
   */
   readonly taskTitle: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#workteam_arn SagemakerFlowDefinition#workteam_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#workteam_arn SagemakerFlowDefinition#workteam_arn}
   */
   readonly workteamArn: string;
   /**
   * public_workforce_task_price block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#public_workforce_task_price SagemakerFlowDefinition#public_workforce_task_price}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#public_workforce_task_price SagemakerFlowDefinition#public_workforce_task_price}
   */
   readonly publicWorkforceTaskPrice?: SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice;
 }
@@ -441,39 +441,39 @@ export class SagemakerFlowDefinitionHumanLoopConfigOutputReference extends cdktf
   public get internalValue(): SagemakerFlowDefinitionHumanLoopConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._humanTaskUiArn) {
+    if (this._humanTaskUiArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.humanTaskUiArn = this._humanTaskUiArn;
     }
-    if (this._taskAvailabilityLifetimeInSeconds) {
+    if (this._taskAvailabilityLifetimeInSeconds !== undefined) {
       hasAnyValues = true;
       internalValueResult.taskAvailabilityLifetimeInSeconds = this._taskAvailabilityLifetimeInSeconds;
     }
-    if (this._taskCount) {
+    if (this._taskCount !== undefined) {
       hasAnyValues = true;
       internalValueResult.taskCount = this._taskCount;
     }
-    if (this._taskDescription) {
+    if (this._taskDescription !== undefined) {
       hasAnyValues = true;
       internalValueResult.taskDescription = this._taskDescription;
     }
-    if (this._taskKeywords) {
+    if (this._taskKeywords !== undefined) {
       hasAnyValues = true;
       internalValueResult.taskKeywords = this._taskKeywords;
     }
-    if (this._taskTimeLimitInSeconds) {
+    if (this._taskTimeLimitInSeconds !== undefined) {
       hasAnyValues = true;
       internalValueResult.taskTimeLimitInSeconds = this._taskTimeLimitInSeconds;
     }
-    if (this._taskTitle) {
+    if (this._taskTitle !== undefined) {
       hasAnyValues = true;
       internalValueResult.taskTitle = this._taskTitle;
     }
-    if (this._workteamArn) {
+    if (this._workteamArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.workteamArn = this._workteamArn;
     }
-    if (this._publicWorkforceTaskPrice?.internalValue) {
+    if (this._publicWorkforceTaskPrice?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.publicWorkforceTaskPrice = this._publicWorkforceTaskPrice?.internalValue;
     }
@@ -638,7 +638,7 @@ export class SagemakerFlowDefinitionHumanLoopConfigOutputReference extends cdktf
 }
 export interface SagemakerFlowDefinitionHumanLoopRequestSource {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#aws_managed_human_loop_request_source SagemakerFlowDefinition#aws_managed_human_loop_request_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#aws_managed_human_loop_request_source SagemakerFlowDefinition#aws_managed_human_loop_request_source}
   */
   readonly awsManagedHumanLoopRequestSource: string;
 }
@@ -668,7 +668,7 @@ export class SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference extend
   public get internalValue(): SagemakerFlowDefinitionHumanLoopRequestSource | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._awsManagedHumanLoopRequestSource) {
+    if (this._awsManagedHumanLoopRequestSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.awsManagedHumanLoopRequestSource = this._awsManagedHumanLoopRequestSource;
     }
@@ -701,11 +701,11 @@ export class SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference extend
 }
 export interface SagemakerFlowDefinitionOutputConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#kms_key_id SagemakerFlowDefinition#kms_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#kms_key_id SagemakerFlowDefinition#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html#s3_output_path SagemakerFlowDefinition#s3_output_path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#s3_output_path SagemakerFlowDefinition#s3_output_path}
   */
   readonly s3OutputPath: string;
 }
@@ -736,11 +736,11 @@ export class SagemakerFlowDefinitionOutputConfigOutputReference extends cdktf.Co
   public get internalValue(): SagemakerFlowDefinitionOutputConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._kmsKeyId) {
+    if (this._kmsKeyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyId = this._kmsKeyId;
     }
-    if (this._s3OutputPath) {
+    if (this._s3OutputPath !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3OutputPath = this._s3OutputPath;
     }
@@ -791,7 +791,7 @@ export class SagemakerFlowDefinitionOutputConfigOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html aws_sagemaker_flow_definition}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition aws_sagemaker_flow_definition}
 */
 export class SagemakerFlowDefinition extends cdktf.TerraformResource {
 
@@ -805,7 +805,7 @@ export class SagemakerFlowDefinition extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition.html aws_sagemaker_flow_definition} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition aws_sagemaker_flow_definition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

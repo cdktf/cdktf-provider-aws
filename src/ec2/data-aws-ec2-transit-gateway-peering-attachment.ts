@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsEc2TransitGatewayPeeringAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment.html#tags DataAwsEc2TransitGatewayPeeringAttachment#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment#tags DataAwsEc2TransitGatewayPeeringAttachment#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment.html#filter DataAwsEc2TransitGatewayPeeringAttachment#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment#filter DataAwsEc2TransitGatewayPeeringAttachment#filter}
   */
   readonly filter?: DataAwsEc2TransitGatewayPeeringAttachmentFilter[];
 }
 export interface DataAwsEc2TransitGatewayPeeringAttachmentFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment.html#name DataAwsEc2TransitGatewayPeeringAttachment#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment#name DataAwsEc2TransitGatewayPeeringAttachment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment.html#values DataAwsEc2TransitGatewayPeeringAttachment#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment#values DataAwsEc2TransitGatewayPeeringAttachment#values}
   */
   readonly values: string[];
 }
@@ -42,7 +42,7 @@ export function dataAwsEc2TransitGatewayPeeringAttachmentFilterToTerraform(struc
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment.html aws_ec2_transit_gateway_peering_attachment}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment}
 */
 export class DataAwsEc2TransitGatewayPeeringAttachment extends cdktf.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataAwsEc2TransitGatewayPeeringAttachment extends cdktf.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment.html aws_ec2_transit_gateway_peering_attachment} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

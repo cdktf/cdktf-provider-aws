@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsIamUserSshKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_user_ssh_key.html#encoding DataAwsIamUserSshKey#encoding}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_user_ssh_key#encoding DataAwsIamUserSshKey#encoding}
   */
   readonly encoding: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_user_ssh_key.html#ssh_public_key_id DataAwsIamUserSshKey#ssh_public_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_user_ssh_key#ssh_public_key_id DataAwsIamUserSshKey#ssh_public_key_id}
   */
   readonly sshPublicKeyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_user_ssh_key.html#username DataAwsIamUserSshKey#username}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_user_ssh_key#username DataAwsIamUserSshKey#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_user_ssh_key.html aws_iam_user_ssh_key}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_user_ssh_key aws_iam_user_ssh_key}
 */
 export class DataAwsIamUserSshKey extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataAwsIamUserSshKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_user_ssh_key.html aws_iam_user_ssh_key} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_user_ssh_key aws_iam_user_ssh_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

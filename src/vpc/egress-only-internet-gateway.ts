@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface EgressOnlyInternetGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/egress_only_internet_gateway.html#tags EgressOnlyInternetGateway#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/egress_only_internet_gateway#tags EgressOnlyInternetGateway#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/egress_only_internet_gateway.html#tags_all EgressOnlyInternetGateway#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/egress_only_internet_gateway#tags_all EgressOnlyInternetGateway#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/egress_only_internet_gateway.html#vpc_id EgressOnlyInternetGateway#vpc_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/egress_only_internet_gateway#vpc_id EgressOnlyInternetGateway#vpc_id}
   */
   readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/egress_only_internet_gateway.html aws_egress_only_internet_gateway}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/egress_only_internet_gateway aws_egress_only_internet_gateway}
 */
 export class EgressOnlyInternetGateway extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class EgressOnlyInternetGateway extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/egress_only_internet_gateway.html aws_egress_only_internet_gateway} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/egress_only_internet_gateway aws_egress_only_internet_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

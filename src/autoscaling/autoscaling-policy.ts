@@ -8,67 +8,67 @@ import * as cdktf from 'cdktf';
 */
 export interface AutoscalingPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#adjustment_type AutoscalingPolicy#adjustment_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#adjustment_type AutoscalingPolicy#adjustment_type}
   */
   readonly adjustmentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#autoscaling_group_name AutoscalingPolicy#autoscaling_group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#autoscaling_group_name AutoscalingPolicy#autoscaling_group_name}
   */
   readonly autoscalingGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#cooldown AutoscalingPolicy#cooldown}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#cooldown AutoscalingPolicy#cooldown}
   */
   readonly cooldown?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#estimated_instance_warmup AutoscalingPolicy#estimated_instance_warmup}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#estimated_instance_warmup AutoscalingPolicy#estimated_instance_warmup}
   */
   readonly estimatedInstanceWarmup?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#metric_aggregation_type AutoscalingPolicy#metric_aggregation_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#metric_aggregation_type AutoscalingPolicy#metric_aggregation_type}
   */
   readonly metricAggregationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#min_adjustment_magnitude AutoscalingPolicy#min_adjustment_magnitude}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#min_adjustment_magnitude AutoscalingPolicy#min_adjustment_magnitude}
   */
   readonly minAdjustmentMagnitude?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#name AutoscalingPolicy#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#name AutoscalingPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#policy_type AutoscalingPolicy#policy_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#policy_type AutoscalingPolicy#policy_type}
   */
   readonly policyType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#scaling_adjustment AutoscalingPolicy#scaling_adjustment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#scaling_adjustment AutoscalingPolicy#scaling_adjustment}
   */
   readonly scalingAdjustment?: number;
   /**
   * predictive_scaling_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#predictive_scaling_configuration AutoscalingPolicy#predictive_scaling_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#predictive_scaling_configuration AutoscalingPolicy#predictive_scaling_configuration}
   */
   readonly predictiveScalingConfiguration?: AutoscalingPolicyPredictiveScalingConfiguration;
   /**
   * step_adjustment block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#step_adjustment AutoscalingPolicy#step_adjustment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#step_adjustment AutoscalingPolicy#step_adjustment}
   */
   readonly stepAdjustment?: AutoscalingPolicyStepAdjustment[];
   /**
   * target_tracking_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#target_tracking_configuration AutoscalingPolicy#target_tracking_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#target_tracking_configuration AutoscalingPolicy#target_tracking_configuration}
   */
   readonly targetTrackingConfiguration?: AutoscalingPolicyTargetTrackingConfiguration;
 }
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#predefined_metric_type AutoscalingPolicy#predefined_metric_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#predefined_metric_type AutoscalingPolicy#predefined_metric_type}
   */
   readonly predefinedMetricType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#resource_label AutoscalingPolicy#resource_label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#resource_label AutoscalingPolicy#resource_label}
   */
   readonly resourceLabel: string;
 }
@@ -99,11 +99,11 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
   public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._predefinedMetricType) {
+    if (this._predefinedMetricType !== undefined) {
       hasAnyValues = true;
       internalValueResult.predefinedMetricType = this._predefinedMetricType;
     }
-    if (this._resourceLabel) {
+    if (this._resourceLabel !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceLabel = this._resourceLabel;
     }
@@ -151,11 +151,11 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
 }
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#predefined_metric_type AutoscalingPolicy#predefined_metric_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#predefined_metric_type AutoscalingPolicy#predefined_metric_type}
   */
   readonly predefinedMetricType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#resource_label AutoscalingPolicy#resource_label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#resource_label AutoscalingPolicy#resource_label}
   */
   readonly resourceLabel: string;
 }
@@ -186,11 +186,11 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
   public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._predefinedMetricType) {
+    if (this._predefinedMetricType !== undefined) {
       hasAnyValues = true;
       internalValueResult.predefinedMetricType = this._predefinedMetricType;
     }
-    if (this._resourceLabel) {
+    if (this._resourceLabel !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceLabel = this._resourceLabel;
     }
@@ -238,11 +238,11 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
 }
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#predefined_metric_type AutoscalingPolicy#predefined_metric_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#predefined_metric_type AutoscalingPolicy#predefined_metric_type}
   */
   readonly predefinedMetricType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#resource_label AutoscalingPolicy#resource_label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#resource_label AutoscalingPolicy#resource_label}
   */
   readonly resourceLabel: string;
 }
@@ -273,11 +273,11 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
   public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._predefinedMetricType) {
+    if (this._predefinedMetricType !== undefined) {
       hasAnyValues = true;
       internalValueResult.predefinedMetricType = this._predefinedMetricType;
     }
-    if (this._resourceLabel) {
+    if (this._resourceLabel !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceLabel = this._resourceLabel;
     }
@@ -325,25 +325,25 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
 }
 export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#target_value AutoscalingPolicy#target_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#target_value AutoscalingPolicy#target_value}
   */
   readonly targetValue: number;
   /**
   * predefined_load_metric_specification block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#predefined_load_metric_specification AutoscalingPolicy#predefined_load_metric_specification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#predefined_load_metric_specification AutoscalingPolicy#predefined_load_metric_specification}
   */
   readonly predefinedLoadMetricSpecification?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification;
   /**
   * predefined_metric_pair_specification block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#predefined_metric_pair_specification AutoscalingPolicy#predefined_metric_pair_specification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#predefined_metric_pair_specification AutoscalingPolicy#predefined_metric_pair_specification}
   */
   readonly predefinedMetricPairSpecification?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification;
   /**
   * predefined_scaling_metric_specification block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#predefined_scaling_metric_specification AutoscalingPolicy#predefined_scaling_metric_specification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#predefined_scaling_metric_specification AutoscalingPolicy#predefined_scaling_metric_specification}
   */
   readonly predefinedScalingMetricSpecification?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification;
 }
@@ -376,19 +376,19 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationO
   public get internalValue(): AutoscalingPolicyPredictiveScalingConfigurationMetricSpecification | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._targetValue) {
+    if (this._targetValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetValue = this._targetValue;
     }
-    if (this._predefinedLoadMetricSpecification?.internalValue) {
+    if (this._predefinedLoadMetricSpecification?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.predefinedLoadMetricSpecification = this._predefinedLoadMetricSpecification?.internalValue;
     }
-    if (this._predefinedMetricPairSpecification?.internalValue) {
+    if (this._predefinedMetricPairSpecification?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.predefinedMetricPairSpecification = this._predefinedMetricPairSpecification?.internalValue;
     }
-    if (this._predefinedScalingMetricSpecification?.internalValue) {
+    if (this._predefinedScalingMetricSpecification?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.predefinedScalingMetricSpecification = this._predefinedScalingMetricSpecification?.internalValue;
     }
@@ -475,25 +475,25 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationO
 }
 export interface AutoscalingPolicyPredictiveScalingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#max_capacity_breach_behavior AutoscalingPolicy#max_capacity_breach_behavior}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#max_capacity_breach_behavior AutoscalingPolicy#max_capacity_breach_behavior}
   */
   readonly maxCapacityBreachBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#max_capacity_buffer AutoscalingPolicy#max_capacity_buffer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#max_capacity_buffer AutoscalingPolicy#max_capacity_buffer}
   */
   readonly maxCapacityBuffer?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#mode AutoscalingPolicy#mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#mode AutoscalingPolicy#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#scheduling_buffer_time AutoscalingPolicy#scheduling_buffer_time}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#scheduling_buffer_time AutoscalingPolicy#scheduling_buffer_time}
   */
   readonly schedulingBufferTime?: string;
   /**
   * metric_specification block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#metric_specification AutoscalingPolicy#metric_specification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#metric_specification AutoscalingPolicy#metric_specification}
   */
   readonly metricSpecification: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecification;
 }
@@ -527,23 +527,23 @@ export class AutoscalingPolicyPredictiveScalingConfigurationOutputReference exte
   public get internalValue(): AutoscalingPolicyPredictiveScalingConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._maxCapacityBreachBehavior) {
+    if (this._maxCapacityBreachBehavior !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxCapacityBreachBehavior = this._maxCapacityBreachBehavior;
     }
-    if (this._maxCapacityBuffer) {
+    if (this._maxCapacityBuffer !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxCapacityBuffer = this._maxCapacityBuffer;
     }
-    if (this._mode) {
+    if (this._mode !== undefined) {
       hasAnyValues = true;
       internalValueResult.mode = this._mode;
     }
-    if (this._schedulingBufferTime) {
+    if (this._schedulingBufferTime !== undefined) {
       hasAnyValues = true;
       internalValueResult.schedulingBufferTime = this._schedulingBufferTime;
     }
-    if (this._metricSpecification?.internalValue) {
+    if (this._metricSpecification?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.metricSpecification = this._metricSpecification?.internalValue;
     }
@@ -648,15 +648,15 @@ export class AutoscalingPolicyPredictiveScalingConfigurationOutputReference exte
 }
 export interface AutoscalingPolicyStepAdjustment {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#metric_interval_lower_bound AutoscalingPolicy#metric_interval_lower_bound}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#metric_interval_lower_bound AutoscalingPolicy#metric_interval_lower_bound}
   */
   readonly metricIntervalLowerBound?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#metric_interval_upper_bound AutoscalingPolicy#metric_interval_upper_bound}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#metric_interval_upper_bound AutoscalingPolicy#metric_interval_upper_bound}
   */
   readonly metricIntervalUpperBound?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#scaling_adjustment AutoscalingPolicy#scaling_adjustment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#scaling_adjustment AutoscalingPolicy#scaling_adjustment}
   */
   readonly scalingAdjustment: number;
 }
@@ -675,11 +675,11 @@ export function autoscalingPolicyStepAdjustmentToTerraform(struct?: AutoscalingP
 
 export interface AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#name AutoscalingPolicy#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#name AutoscalingPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#value AutoscalingPolicy#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#value AutoscalingPolicy#value}
   */
   readonly value: string;
 }
@@ -697,25 +697,25 @@ export function autoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpec
 
 export interface AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#metric_name AutoscalingPolicy#metric_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#metric_name AutoscalingPolicy#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#namespace AutoscalingPolicy#namespace}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#namespace AutoscalingPolicy#namespace}
   */
   readonly namespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#statistic AutoscalingPolicy#statistic}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#statistic AutoscalingPolicy#statistic}
   */
   readonly statistic: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#unit AutoscalingPolicy#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#unit AutoscalingPolicy#unit}
   */
   readonly unit?: string;
   /**
   * metric_dimension block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#metric_dimension AutoscalingPolicy#metric_dimension}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#metric_dimension AutoscalingPolicy#metric_dimension}
   */
   readonly metricDimension?: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension[];
 }
@@ -749,23 +749,23 @@ export class AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecifi
   public get internalValue(): AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecification | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._metricName) {
+    if (this._metricName !== undefined) {
       hasAnyValues = true;
       internalValueResult.metricName = this._metricName;
     }
-    if (this._namespace) {
+    if (this._namespace !== undefined) {
       hasAnyValues = true;
       internalValueResult.namespace = this._namespace;
     }
-    if (this._statistic) {
+    if (this._statistic !== undefined) {
       hasAnyValues = true;
       internalValueResult.statistic = this._statistic;
     }
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._metricDimension) {
+    if (this._metricDimension !== undefined) {
       hasAnyValues = true;
       internalValueResult.metricDimension = this._metricDimension;
     }
@@ -865,11 +865,11 @@ export class AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecifi
 }
 export interface AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#predefined_metric_type AutoscalingPolicy#predefined_metric_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#predefined_metric_type AutoscalingPolicy#predefined_metric_type}
   */
   readonly predefinedMetricType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#resource_label AutoscalingPolicy#resource_label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#resource_label AutoscalingPolicy#resource_label}
   */
   readonly resourceLabel?: string;
 }
@@ -900,11 +900,11 @@ export class AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecifi
   public get internalValue(): AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecification | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._predefinedMetricType) {
+    if (this._predefinedMetricType !== undefined) {
       hasAnyValues = true;
       internalValueResult.predefinedMetricType = this._predefinedMetricType;
     }
-    if (this._resourceLabel) {
+    if (this._resourceLabel !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceLabel = this._resourceLabel;
     }
@@ -955,23 +955,23 @@ export class AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecifi
 }
 export interface AutoscalingPolicyTargetTrackingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#disable_scale_in AutoscalingPolicy#disable_scale_in}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#disable_scale_in AutoscalingPolicy#disable_scale_in}
   */
   readonly disableScaleIn?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#target_value AutoscalingPolicy#target_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#target_value AutoscalingPolicy#target_value}
   */
   readonly targetValue: number;
   /**
   * customized_metric_specification block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#customized_metric_specification AutoscalingPolicy#customized_metric_specification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#customized_metric_specification AutoscalingPolicy#customized_metric_specification}
   */
   readonly customizedMetricSpecification?: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecification;
   /**
   * predefined_metric_specification block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#predefined_metric_specification AutoscalingPolicy#predefined_metric_specification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#predefined_metric_specification AutoscalingPolicy#predefined_metric_specification}
   */
   readonly predefinedMetricSpecification?: AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecification;
 }
@@ -1004,19 +1004,19 @@ export class AutoscalingPolicyTargetTrackingConfigurationOutputReference extends
   public get internalValue(): AutoscalingPolicyTargetTrackingConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._disableScaleIn) {
+    if (this._disableScaleIn !== undefined) {
       hasAnyValues = true;
       internalValueResult.disableScaleIn = this._disableScaleIn;
     }
-    if (this._targetValue) {
+    if (this._targetValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetValue = this._targetValue;
     }
-    if (this._customizedMetricSpecification?.internalValue) {
+    if (this._customizedMetricSpecification?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.customizedMetricSpecification = this._customizedMetricSpecification?.internalValue;
     }
-    if (this._predefinedMetricSpecification?.internalValue) {
+    if (this._predefinedMetricSpecification?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.predefinedMetricSpecification = this._predefinedMetricSpecification?.internalValue;
     }
@@ -1103,7 +1103,7 @@ export class AutoscalingPolicyTargetTrackingConfigurationOutputReference extends
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html aws_autoscaling_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy aws_autoscaling_policy}
 */
 export class AutoscalingPolicy extends cdktf.TerraformResource {
 
@@ -1117,7 +1117,7 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html aws_autoscaling_policy} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy aws_autoscaling_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

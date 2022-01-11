@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface LightsailDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_domain.html#domain_name LightsailDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_domain#domain_name LightsailDomain#domain_name}
   */
   readonly domainName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lightsail_domain.html aws_lightsail_domain}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lightsail_domain aws_lightsail_domain}
 */
 export class LightsailDomain extends cdktf.TerraformResource {
 
@@ -28,7 +28,7 @@ export class LightsailDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lightsail_domain.html aws_lightsail_domain} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lightsail_domain aws_lightsail_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

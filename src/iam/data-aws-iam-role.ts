@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsIamRoleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_role.html#name DataAwsIamRole#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_role#name DataAwsIamRole#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_role.html#tags DataAwsIamRole#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_role#tags DataAwsIamRole#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_role.html aws_iam_role}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_role aws_iam_role}
 */
 export class DataAwsIamRole extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsIamRole extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_role.html aws_iam_role} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_role aws_iam_role} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

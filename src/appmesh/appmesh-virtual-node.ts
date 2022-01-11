@@ -8,39 +8,39 @@ import * as cdktf from 'cdktf';
 */
 export interface AppmeshVirtualNodeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#mesh_name AppmeshVirtualNode#mesh_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#mesh_name AppmeshVirtualNode#mesh_name}
   */
   readonly meshName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#mesh_owner AppmeshVirtualNode#mesh_owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#mesh_owner AppmeshVirtualNode#mesh_owner}
   */
   readonly meshOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#name AppmeshVirtualNode#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#name AppmeshVirtualNode#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#tags AppmeshVirtualNode#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#tags AppmeshVirtualNode#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#tags_all AppmeshVirtualNode#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#tags_all AppmeshVirtualNode#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * spec block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#spec AppmeshVirtualNode#spec}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#spec AppmeshVirtualNode#spec}
   */
   readonly spec: AppmeshVirtualNodeSpec;
 }
 export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#certificate_chain AppmeshVirtualNode#certificate_chain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}
   */
   readonly certificateChain: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#private_key AppmeshVirtualNode#private_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}
   */
   readonly privateKey: string;
 }
@@ -71,11 +71,11 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._certificateChain) {
+    if (this._certificateChain !== undefined) {
       hasAnyValues = true;
       internalValueResult.certificateChain = this._certificateChain;
     }
-    if (this._privateKey) {
+    if (this._privateKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.privateKey = this._privateKey;
     }
@@ -123,7 +123,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
 }
 export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#secret_name AppmeshVirtualNode#secret_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}
   */
   readonly secretName: string;
 }
@@ -153,7 +153,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._secretName) {
+    if (this._secretName !== undefined) {
       hasAnyValues = true;
       internalValueResult.secretName = this._secretName;
     }
@@ -188,13 +188,13 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCerti
   /**
   * file block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#file AppmeshVirtualNode#file}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#file AppmeshVirtualNode#file}
   */
   readonly file?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile;
   /**
   * sds block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#sds AppmeshVirtualNode#sds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
   */
   readonly sds?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds;
 }
@@ -225,11 +225,11 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._file?.internalValue) {
+    if (this._file?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds?.internalValue) {
+    if (this._sds?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -283,7 +283,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
 }
 export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#exact AppmeshVirtualNode#exact}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#exact AppmeshVirtualNode#exact}
   */
   readonly exact: string[];
 }
@@ -313,7 +313,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._exact) {
+    if (this._exact !== undefined) {
       hasAnyValues = true;
       internalValueResult.exact = this._exact;
     }
@@ -348,7 +348,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValid
   /**
   * match block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#match AppmeshVirtualNode#match}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#match AppmeshVirtualNode#match}
   */
   readonly match: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch;
 }
@@ -378,7 +378,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._match?.internalValue) {
+    if (this._match?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
@@ -411,7 +411,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
 }
 export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#certificate_authority_arns AppmeshVirtualNode#certificate_authority_arns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#certificate_authority_arns AppmeshVirtualNode#certificate_authority_arns}
   */
   readonly certificateAuthorityArns: string[];
 }
@@ -441,7 +441,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._certificateAuthorityArns) {
+    if (this._certificateAuthorityArns !== undefined) {
       hasAnyValues = true;
       internalValueResult.certificateAuthorityArns = this._certificateAuthorityArns;
     }
@@ -474,7 +474,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
 }
 export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#certificate_chain AppmeshVirtualNode#certificate_chain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}
   */
   readonly certificateChain: string;
 }
@@ -504,7 +504,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._certificateChain) {
+    if (this._certificateChain !== undefined) {
       hasAnyValues = true;
       internalValueResult.certificateChain = this._certificateChain;
     }
@@ -537,7 +537,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
 }
 export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#secret_name AppmeshVirtualNode#secret_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}
   */
   readonly secretName: string;
 }
@@ -567,7 +567,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._secretName) {
+    if (this._secretName !== undefined) {
       hasAnyValues = true;
       internalValueResult.secretName = this._secretName;
     }
@@ -602,19 +602,19 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValid
   /**
   * acm block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#acm AppmeshVirtualNode#acm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#acm AppmeshVirtualNode#acm}
   */
   readonly acm?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm;
   /**
   * file block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#file AppmeshVirtualNode#file}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#file AppmeshVirtualNode#file}
   */
   readonly file?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile;
   /**
   * sds block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#sds AppmeshVirtualNode#sds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
   */
   readonly sds?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds;
 }
@@ -646,15 +646,15 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._acm?.internalValue) {
+    if (this._acm?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.acm = this._acm?.internalValue;
     }
-    if (this._file?.internalValue) {
+    if (this._file?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds?.internalValue) {
+    if (this._sds?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -728,13 +728,13 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValid
   /**
   * subject_alternative_names block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#subject_alternative_names AppmeshVirtualNode#subject_alternative_names}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#subject_alternative_names AppmeshVirtualNode#subject_alternative_names}
   */
   readonly subjectAlternativeNames?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames;
   /**
   * trust block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#trust AppmeshVirtualNode#trust}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#trust AppmeshVirtualNode#trust}
   */
   readonly trust: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust;
 }
@@ -765,11 +765,11 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._subjectAlternativeNames?.internalValue) {
+    if (this._subjectAlternativeNames?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.subjectAlternativeNames = this._subjectAlternativeNames?.internalValue;
     }
-    if (this._trust?.internalValue) {
+    if (this._trust?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.trust = this._trust?.internalValue;
     }
@@ -820,23 +820,23 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
 }
 export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#enforce AppmeshVirtualNode#enforce}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}
   */
   readonly enforce?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#ports AppmeshVirtualNode#ports}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#ports AppmeshVirtualNode#ports}
   */
   readonly ports?: number[];
   /**
   * certificate block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#certificate AppmeshVirtualNode#certificate}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#certificate AppmeshVirtualNode#certificate}
   */
   readonly certificate?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate;
   /**
   * validation block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#validation AppmeshVirtualNode#validation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#validation AppmeshVirtualNode#validation}
   */
   readonly validation: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation;
 }
@@ -869,19 +869,19 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputRef
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enforce) {
+    if (this._enforce !== undefined) {
       hasAnyValues = true;
       internalValueResult.enforce = this._enforce;
     }
-    if (this._ports) {
+    if (this._ports !== undefined) {
       hasAnyValues = true;
       internalValueResult.ports = this._ports;
     }
-    if (this._certificate?.internalValue) {
+    if (this._certificate?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.certificate = this._certificate?.internalValue;
     }
-    if (this._validation?.internalValue) {
+    if (this._validation?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.validation = this._validation?.internalValue;
     }
@@ -971,7 +971,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy {
   /**
   * tls block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#tls AppmeshVirtualNode#tls}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#tls AppmeshVirtualNode#tls}
   */
   readonly tls?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls;
 }
@@ -1001,7 +1001,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputRefere
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._tls?.internalValue) {
+    if (this._tls?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tls = this._tls?.internalValue;
     }
@@ -1037,13 +1037,13 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputRefere
 }
 export interface AppmeshVirtualNodeSpecBackendVirtualService {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#virtual_service_name AppmeshVirtualNode#virtual_service_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#virtual_service_name AppmeshVirtualNode#virtual_service_name}
   */
   readonly virtualServiceName: string;
   /**
   * client_policy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#client_policy AppmeshVirtualNode#client_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#client_policy AppmeshVirtualNode#client_policy}
   */
   readonly clientPolicy?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy;
 }
@@ -1074,11 +1074,11 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference extends 
   public get internalValue(): AppmeshVirtualNodeSpecBackendVirtualService | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._virtualServiceName) {
+    if (this._virtualServiceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualServiceName = this._virtualServiceName;
     }
-    if (this._clientPolicy?.internalValue) {
+    if (this._clientPolicy?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.clientPolicy = this._clientPolicy?.internalValue;
     }
@@ -1131,7 +1131,7 @@ export interface AppmeshVirtualNodeSpecBackend {
   /**
   * virtual_service block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#virtual_service AppmeshVirtualNode#virtual_service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#virtual_service AppmeshVirtualNode#virtual_service}
   */
   readonly virtualService: AppmeshVirtualNodeSpecBackendVirtualService;
 }
@@ -1148,11 +1148,11 @@ export function appmeshVirtualNodeSpecBackendToTerraform(struct?: AppmeshVirtual
 
 export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#certificate_chain AppmeshVirtualNode#certificate_chain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}
   */
   readonly certificateChain: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#private_key AppmeshVirtualNode#private_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}
   */
   readonly privateKey: string;
 }
@@ -1183,11 +1183,11 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._certificateChain) {
+    if (this._certificateChain !== undefined) {
       hasAnyValues = true;
       internalValueResult.certificateChain = this._certificateChain;
     }
-    if (this._privateKey) {
+    if (this._privateKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.privateKey = this._privateKey;
     }
@@ -1235,7 +1235,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile
 }
 export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#secret_name AppmeshVirtualNode#secret_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}
   */
   readonly secretName: string;
 }
@@ -1265,7 +1265,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsO
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._secretName) {
+    if (this._secretName !== undefined) {
       hasAnyValues = true;
       internalValueResult.secretName = this._secretName;
     }
@@ -1300,13 +1300,13 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate
   /**
   * file block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#file AppmeshVirtualNode#file}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#file AppmeshVirtualNode#file}
   */
   readonly file?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile;
   /**
   * sds block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#sds AppmeshVirtualNode#sds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
   */
   readonly sds?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds;
 }
@@ -1337,11 +1337,11 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutp
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._file?.internalValue) {
+    if (this._file?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds?.internalValue) {
+    if (this._sds?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -1395,7 +1395,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutp
 }
 export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#exact AppmeshVirtualNode#exact}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#exact AppmeshVirtualNode#exact}
   */
   readonly exact: string[];
 }
@@ -1425,7 +1425,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubje
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._exact) {
+    if (this._exact !== undefined) {
       hasAnyValues = true;
       internalValueResult.exact = this._exact;
     }
@@ -1460,7 +1460,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationS
   /**
   * match block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#match AppmeshVirtualNode#match}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#match AppmeshVirtualNode#match}
   */
   readonly match: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch;
 }
@@ -1490,7 +1490,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubje
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._match?.internalValue) {
+    if (this._match?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
@@ -1523,7 +1523,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubje
 }
 export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#certificate_authority_arns AppmeshVirtualNode#certificate_authority_arns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#certificate_authority_arns AppmeshVirtualNode#certificate_authority_arns}
   */
   readonly certificateAuthorityArns: string[];
 }
@@ -1553,7 +1553,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._certificateAuthorityArns) {
+    if (this._certificateAuthorityArns !== undefined) {
       hasAnyValues = true;
       internalValueResult.certificateAuthorityArns = this._certificateAuthorityArns;
     }
@@ -1586,7 +1586,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
 }
 export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#certificate_chain AppmeshVirtualNode#certificate_chain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}
   */
   readonly certificateChain: string;
 }
@@ -1616,7 +1616,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._certificateChain) {
+    if (this._certificateChain !== undefined) {
       hasAnyValues = true;
       internalValueResult.certificateChain = this._certificateChain;
     }
@@ -1649,7 +1649,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
 }
 export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#secret_name AppmeshVirtualNode#secret_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}
   */
   readonly secretName: string;
 }
@@ -1679,7 +1679,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._secretName) {
+    if (this._secretName !== undefined) {
       hasAnyValues = true;
       internalValueResult.secretName = this._secretName;
     }
@@ -1714,19 +1714,19 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationT
   /**
   * acm block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#acm AppmeshVirtualNode#acm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#acm AppmeshVirtualNode#acm}
   */
   readonly acm?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm;
   /**
   * file block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#file AppmeshVirtualNode#file}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#file AppmeshVirtualNode#file}
   */
   readonly file?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile;
   /**
   * sds block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#sds AppmeshVirtualNode#sds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
   */
   readonly sds?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds;
 }
@@ -1758,15 +1758,15 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._acm?.internalValue) {
+    if (this._acm?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.acm = this._acm?.internalValue;
     }
-    if (this._file?.internalValue) {
+    if (this._file?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds?.internalValue) {
+    if (this._sds?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -1840,13 +1840,13 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation 
   /**
   * subject_alternative_names block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#subject_alternative_names AppmeshVirtualNode#subject_alternative_names}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#subject_alternative_names AppmeshVirtualNode#subject_alternative_names}
   */
   readonly subjectAlternativeNames?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames;
   /**
   * trust block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#trust AppmeshVirtualNode#trust}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#trust AppmeshVirtualNode#trust}
   */
   readonly trust: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust;
 }
@@ -1877,11 +1877,11 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutpu
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._subjectAlternativeNames?.internalValue) {
+    if (this._subjectAlternativeNames?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.subjectAlternativeNames = this._subjectAlternativeNames?.internalValue;
     }
-    if (this._trust?.internalValue) {
+    if (this._trust?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.trust = this._trust?.internalValue;
     }
@@ -1932,23 +1932,23 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutpu
 }
 export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#enforce AppmeshVirtualNode#enforce}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}
   */
   readonly enforce?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#ports AppmeshVirtualNode#ports}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#ports AppmeshVirtualNode#ports}
   */
   readonly ports?: number[];
   /**
   * certificate block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#certificate AppmeshVirtualNode#certificate}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#certificate AppmeshVirtualNode#certificate}
   */
   readonly certificate?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate;
   /**
   * validation block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#validation AppmeshVirtualNode#validation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#validation AppmeshVirtualNode#validation}
   */
   readonly validation: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation;
 }
@@ -1981,19 +1981,19 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enforce) {
+    if (this._enforce !== undefined) {
       hasAnyValues = true;
       internalValueResult.enforce = this._enforce;
     }
-    if (this._ports) {
+    if (this._ports !== undefined) {
       hasAnyValues = true;
       internalValueResult.ports = this._ports;
     }
-    if (this._certificate?.internalValue) {
+    if (this._certificate?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.certificate = this._certificate?.internalValue;
     }
-    if (this._validation?.internalValue) {
+    if (this._validation?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.validation = this._validation?.internalValue;
     }
@@ -2083,7 +2083,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicy {
   /**
   * tls block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#tls AppmeshVirtualNode#tls}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#tls AppmeshVirtualNode#tls}
   */
   readonly tls?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls;
 }
@@ -2113,7 +2113,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference ex
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaultsClientPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._tls?.internalValue) {
+    if (this._tls?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tls = this._tls?.internalValue;
     }
@@ -2151,7 +2151,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaults {
   /**
   * client_policy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#client_policy AppmeshVirtualNode#client_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#client_policy AppmeshVirtualNode#client_policy}
   */
   readonly clientPolicy?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicy;
 }
@@ -2181,7 +2181,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsOutputReference extends cdktf.
   public get internalValue(): AppmeshVirtualNodeSpecBackendDefaults | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clientPolicy?.internalValue) {
+    if (this._clientPolicy?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.clientPolicy = this._clientPolicy?.internalValue;
     }
@@ -2217,7 +2217,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsOutputReference extends cdktf.
 }
 export interface AppmeshVirtualNodeSpecListenerConnectionPoolGrpc {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#max_requests AppmeshVirtualNode#max_requests}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#max_requests AppmeshVirtualNode#max_requests}
   */
   readonly maxRequests: number;
 }
@@ -2247,7 +2247,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference ext
   public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPoolGrpc | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._maxRequests) {
+    if (this._maxRequests !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxRequests = this._maxRequests;
     }
@@ -2280,11 +2280,11 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference ext
 }
 export interface AppmeshVirtualNodeSpecListenerConnectionPoolHttp {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#max_connections AppmeshVirtualNode#max_connections}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#max_connections AppmeshVirtualNode#max_connections}
   */
   readonly maxConnections: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#max_pending_requests AppmeshVirtualNode#max_pending_requests}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#max_pending_requests AppmeshVirtualNode#max_pending_requests}
   */
   readonly maxPendingRequests?: number;
 }
@@ -2315,11 +2315,11 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference ext
   public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPoolHttp | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._maxConnections) {
+    if (this._maxConnections !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxConnections = this._maxConnections;
     }
-    if (this._maxPendingRequests) {
+    if (this._maxPendingRequests !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxPendingRequests = this._maxPendingRequests;
     }
@@ -2370,7 +2370,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference ext
 }
 export interface AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#max_requests AppmeshVirtualNode#max_requests}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#max_requests AppmeshVirtualNode#max_requests}
   */
   readonly maxRequests: number;
 }
@@ -2400,7 +2400,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference ex
   public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._maxRequests) {
+    if (this._maxRequests !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxRequests = this._maxRequests;
     }
@@ -2433,7 +2433,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference ex
 }
 export interface AppmeshVirtualNodeSpecListenerConnectionPoolTcp {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#max_connections AppmeshVirtualNode#max_connections}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#max_connections AppmeshVirtualNode#max_connections}
   */
   readonly maxConnections: number;
 }
@@ -2463,7 +2463,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference exte
   public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPoolTcp | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._maxConnections) {
+    if (this._maxConnections !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxConnections = this._maxConnections;
     }
@@ -2498,25 +2498,25 @@ export interface AppmeshVirtualNodeSpecListenerConnectionPool {
   /**
   * grpc block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#grpc AppmeshVirtualNode#grpc}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#grpc AppmeshVirtualNode#grpc}
   */
   readonly grpc?: AppmeshVirtualNodeSpecListenerConnectionPoolGrpc;
   /**
   * http block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#http AppmeshVirtualNode#http}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#http AppmeshVirtualNode#http}
   */
   readonly http?: AppmeshVirtualNodeSpecListenerConnectionPoolHttp;
   /**
   * http2 block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#http2 AppmeshVirtualNode#http2}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#http2 AppmeshVirtualNode#http2}
   */
   readonly http2?: AppmeshVirtualNodeSpecListenerConnectionPoolHttp2;
   /**
   * tcp block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#tcp AppmeshVirtualNode#tcp}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#tcp AppmeshVirtualNode#tcp}
   */
   readonly tcp?: AppmeshVirtualNodeSpecListenerConnectionPoolTcp;
 }
@@ -2549,19 +2549,19 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference extends
   public get internalValue(): AppmeshVirtualNodeSpecListenerConnectionPool | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._grpc?.internalValue) {
+    if (this._grpc?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.grpc = this._grpc?.internalValue;
     }
-    if (this._http?.internalValue) {
+    if (this._http?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.http = this._http?.internalValue;
     }
-    if (this._http2?.internalValue) {
+    if (this._http2?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.http2 = this._http2?.internalValue;
     }
-    if (this._tcp?.internalValue) {
+    if (this._tcp?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tcp = this._tcp?.internalValue;
     }
@@ -2651,31 +2651,31 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference extends
 }
 export interface AppmeshVirtualNodeSpecListenerHealthCheck {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#healthy_threshold AppmeshVirtualNode#healthy_threshold}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#healthy_threshold AppmeshVirtualNode#healthy_threshold}
   */
   readonly healthyThreshold: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#interval_millis AppmeshVirtualNode#interval_millis}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#interval_millis AppmeshVirtualNode#interval_millis}
   */
   readonly intervalMillis: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#path AppmeshVirtualNode#path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#path AppmeshVirtualNode#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#port AppmeshVirtualNode#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#port AppmeshVirtualNode#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#protocol AppmeshVirtualNode#protocol}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#protocol AppmeshVirtualNode#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#timeout_millis AppmeshVirtualNode#timeout_millis}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#timeout_millis AppmeshVirtualNode#timeout_millis}
   */
   readonly timeoutMillis: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#unhealthy_threshold AppmeshVirtualNode#unhealthy_threshold}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#unhealthy_threshold AppmeshVirtualNode#unhealthy_threshold}
   */
   readonly unhealthyThreshold: number;
 }
@@ -2711,31 +2711,31 @@ export class AppmeshVirtualNodeSpecListenerHealthCheckOutputReference extends cd
   public get internalValue(): AppmeshVirtualNodeSpecListenerHealthCheck | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._healthyThreshold) {
+    if (this._healthyThreshold !== undefined) {
       hasAnyValues = true;
       internalValueResult.healthyThreshold = this._healthyThreshold;
     }
-    if (this._intervalMillis) {
+    if (this._intervalMillis !== undefined) {
       hasAnyValues = true;
       internalValueResult.intervalMillis = this._intervalMillis;
     }
-    if (this._path) {
+    if (this._path !== undefined) {
       hasAnyValues = true;
       internalValueResult.path = this._path;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
-    if (this._protocol) {
+    if (this._protocol !== undefined) {
       hasAnyValues = true;
       internalValueResult.protocol = this._protocol;
     }
-    if (this._timeoutMillis) {
+    if (this._timeoutMillis !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeoutMillis = this._timeoutMillis;
     }
-    if (this._unhealthyThreshold) {
+    if (this._unhealthyThreshold !== undefined) {
       hasAnyValues = true;
       internalValueResult.unhealthyThreshold = this._unhealthyThreshold;
     }
@@ -2864,11 +2864,11 @@ export class AppmeshVirtualNodeSpecListenerHealthCheckOutputReference extends cd
 }
 export interface AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#unit AppmeshVirtualNode#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#unit AppmeshVirtualNode#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#value AppmeshVirtualNode#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#value AppmeshVirtualNode#value}
   */
   readonly value: number;
 }
@@ -2899,11 +2899,11 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationO
   public get internalValue(): AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -2951,11 +2951,11 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationO
 }
 export interface AppmeshVirtualNodeSpecListenerOutlierDetectionInterval {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#unit AppmeshVirtualNode#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#unit AppmeshVirtualNode#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#value AppmeshVirtualNode#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#value AppmeshVirtualNode#value}
   */
   readonly value: number;
 }
@@ -2986,11 +2986,11 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReferen
   public get internalValue(): AppmeshVirtualNodeSpecListenerOutlierDetectionInterval | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -3038,23 +3038,23 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReferen
 }
 export interface AppmeshVirtualNodeSpecListenerOutlierDetection {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#max_ejection_percent AppmeshVirtualNode#max_ejection_percent}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#max_ejection_percent AppmeshVirtualNode#max_ejection_percent}
   */
   readonly maxEjectionPercent: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#max_server_errors AppmeshVirtualNode#max_server_errors}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#max_server_errors AppmeshVirtualNode#max_server_errors}
   */
   readonly maxServerErrors: number;
   /**
   * base_ejection_duration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#base_ejection_duration AppmeshVirtualNode#base_ejection_duration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#base_ejection_duration AppmeshVirtualNode#base_ejection_duration}
   */
   readonly baseEjectionDuration: AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration;
   /**
   * interval block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#interval AppmeshVirtualNode#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#interval AppmeshVirtualNode#interval}
   */
   readonly interval: AppmeshVirtualNodeSpecListenerOutlierDetectionInterval;
 }
@@ -3087,19 +3087,19 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference exten
   public get internalValue(): AppmeshVirtualNodeSpecListenerOutlierDetection | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._maxEjectionPercent) {
+    if (this._maxEjectionPercent !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxEjectionPercent = this._maxEjectionPercent;
     }
-    if (this._maxServerErrors) {
+    if (this._maxServerErrors !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxServerErrors = this._maxServerErrors;
     }
-    if (this._baseEjectionDuration?.internalValue) {
+    if (this._baseEjectionDuration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.baseEjectionDuration = this._baseEjectionDuration?.internalValue;
     }
-    if (this._interval?.internalValue) {
+    if (this._interval?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval?.internalValue;
     }
@@ -3177,11 +3177,11 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference exten
 }
 export interface AppmeshVirtualNodeSpecListenerPortMapping {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#port AppmeshVirtualNode#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#port AppmeshVirtualNode#port}
   */
   readonly port: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#protocol AppmeshVirtualNode#protocol}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#protocol AppmeshVirtualNode#protocol}
   */
   readonly protocol: string;
 }
@@ -3212,11 +3212,11 @@ export class AppmeshVirtualNodeSpecListenerPortMappingOutputReference extends cd
   public get internalValue(): AppmeshVirtualNodeSpecListenerPortMapping | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
-    if (this._protocol) {
+    if (this._protocol !== undefined) {
       hasAnyValues = true;
       internalValueResult.protocol = this._protocol;
     }
@@ -3264,11 +3264,11 @@ export class AppmeshVirtualNodeSpecListenerPortMappingOutputReference extends cd
 }
 export interface AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#unit AppmeshVirtualNode#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#unit AppmeshVirtualNode#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#value AppmeshVirtualNode#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#value AppmeshVirtualNode#value}
   */
   readonly value: number;
 }
@@ -3299,11 +3299,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference extend
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -3351,11 +3351,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference extend
 }
 export interface AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#unit AppmeshVirtualNode#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#unit AppmeshVirtualNode#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#value AppmeshVirtualNode#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#value AppmeshVirtualNode#value}
   */
   readonly value: number;
 }
@@ -3386,11 +3386,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -3440,13 +3440,13 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutGrpc {
   /**
   * idle block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#idle AppmeshVirtualNode#idle}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#idle AppmeshVirtualNode#idle}
   */
   readonly idle?: AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle;
   /**
   * per_request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#per_request AppmeshVirtualNode#per_request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#per_request AppmeshVirtualNode#per_request}
   */
   readonly perRequest?: AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest;
 }
@@ -3477,11 +3477,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference extends cd
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutGrpc | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle?.internalValue) {
+    if (this._idle?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
-    if (this._perRequest?.internalValue) {
+    if (this._perRequest?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.perRequest = this._perRequest?.internalValue;
     }
@@ -3535,11 +3535,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference extends cd
 }
 export interface AppmeshVirtualNodeSpecListenerTimeoutHttpIdle {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#unit AppmeshVirtualNode#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#unit AppmeshVirtualNode#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#value AppmeshVirtualNode#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#value AppmeshVirtualNode#value}
   */
   readonly value: number;
 }
@@ -3570,11 +3570,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference extend
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutHttpIdle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -3622,11 +3622,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference extend
 }
 export interface AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#unit AppmeshVirtualNode#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#unit AppmeshVirtualNode#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#value AppmeshVirtualNode#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#value AppmeshVirtualNode#value}
   */
   readonly value: number;
 }
@@ -3657,11 +3657,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -3711,13 +3711,13 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutHttp {
   /**
   * idle block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#idle AppmeshVirtualNode#idle}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#idle AppmeshVirtualNode#idle}
   */
   readonly idle?: AppmeshVirtualNodeSpecListenerTimeoutHttpIdle;
   /**
   * per_request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#per_request AppmeshVirtualNode#per_request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#per_request AppmeshVirtualNode#per_request}
   */
   readonly perRequest?: AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest;
 }
@@ -3748,11 +3748,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference extends cd
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutHttp | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle?.internalValue) {
+    if (this._idle?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
-    if (this._perRequest?.internalValue) {
+    if (this._perRequest?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.perRequest = this._perRequest?.internalValue;
     }
@@ -3806,11 +3806,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference extends cd
 }
 export interface AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#unit AppmeshVirtualNode#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#unit AppmeshVirtualNode#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#value AppmeshVirtualNode#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#value AppmeshVirtualNode#value}
   */
   readonly value: number;
 }
@@ -3841,11 +3841,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference exten
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -3893,11 +3893,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference exten
 }
 export interface AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#unit AppmeshVirtualNode#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#unit AppmeshVirtualNode#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#value AppmeshVirtualNode#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#value AppmeshVirtualNode#value}
   */
   readonly value: number;
 }
@@ -3928,11 +3928,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -3982,13 +3982,13 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutHttp2 {
   /**
   * idle block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#idle AppmeshVirtualNode#idle}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#idle AppmeshVirtualNode#idle}
   */
   readonly idle?: AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle;
   /**
   * per_request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#per_request AppmeshVirtualNode#per_request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#per_request AppmeshVirtualNode#per_request}
   */
   readonly perRequest?: AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest;
 }
@@ -4019,11 +4019,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference extends c
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutHttp2 | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle?.internalValue) {
+    if (this._idle?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
-    if (this._perRequest?.internalValue) {
+    if (this._perRequest?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.perRequest = this._perRequest?.internalValue;
     }
@@ -4077,11 +4077,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference extends c
 }
 export interface AppmeshVirtualNodeSpecListenerTimeoutTcpIdle {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#unit AppmeshVirtualNode#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#unit AppmeshVirtualNode#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#value AppmeshVirtualNode#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#value AppmeshVirtualNode#value}
   */
   readonly value: number;
 }
@@ -4112,11 +4112,11 @@ export class AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference extends
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutTcpIdle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -4166,7 +4166,7 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutTcp {
   /**
   * idle block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#idle AppmeshVirtualNode#idle}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#idle AppmeshVirtualNode#idle}
   */
   readonly idle?: AppmeshVirtualNodeSpecListenerTimeoutTcpIdle;
 }
@@ -4196,7 +4196,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference extends cdk
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeoutTcp | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle?.internalValue) {
+    if (this._idle?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
@@ -4234,25 +4234,25 @@ export interface AppmeshVirtualNodeSpecListenerTimeout {
   /**
   * grpc block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#grpc AppmeshVirtualNode#grpc}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#grpc AppmeshVirtualNode#grpc}
   */
   readonly grpc?: AppmeshVirtualNodeSpecListenerTimeoutGrpc;
   /**
   * http block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#http AppmeshVirtualNode#http}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#http AppmeshVirtualNode#http}
   */
   readonly http?: AppmeshVirtualNodeSpecListenerTimeoutHttp;
   /**
   * http2 block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#http2 AppmeshVirtualNode#http2}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#http2 AppmeshVirtualNode#http2}
   */
   readonly http2?: AppmeshVirtualNodeSpecListenerTimeoutHttp2;
   /**
   * tcp block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#tcp AppmeshVirtualNode#tcp}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#tcp AppmeshVirtualNode#tcp}
   */
   readonly tcp?: AppmeshVirtualNodeSpecListenerTimeoutTcp;
 }
@@ -4285,19 +4285,19 @@ export class AppmeshVirtualNodeSpecListenerTimeoutOutputReference extends cdktf.
   public get internalValue(): AppmeshVirtualNodeSpecListenerTimeout | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._grpc?.internalValue) {
+    if (this._grpc?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.grpc = this._grpc?.internalValue;
     }
-    if (this._http?.internalValue) {
+    if (this._http?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.http = this._http?.internalValue;
     }
-    if (this._http2?.internalValue) {
+    if (this._http2?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.http2 = this._http2?.internalValue;
     }
-    if (this._tcp?.internalValue) {
+    if (this._tcp?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tcp = this._tcp?.internalValue;
     }
@@ -4387,7 +4387,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutOutputReference extends cdktf.
 }
 export interface AppmeshVirtualNodeSpecListenerTlsCertificateAcm {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#certificate_arn AppmeshVirtualNode#certificate_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#certificate_arn AppmeshVirtualNode#certificate_arn}
   */
   readonly certificateArn: string;
 }
@@ -4417,7 +4417,7 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference exte
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsCertificateAcm | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._certificateArn) {
+    if (this._certificateArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.certificateArn = this._certificateArn;
     }
@@ -4450,11 +4450,11 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference exte
 }
 export interface AppmeshVirtualNodeSpecListenerTlsCertificateFile {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#certificate_chain AppmeshVirtualNode#certificate_chain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}
   */
   readonly certificateChain: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#private_key AppmeshVirtualNode#private_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#private_key AppmeshVirtualNode#private_key}
   */
   readonly privateKey: string;
 }
@@ -4485,11 +4485,11 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference ext
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsCertificateFile | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._certificateChain) {
+    if (this._certificateChain !== undefined) {
       hasAnyValues = true;
       internalValueResult.certificateChain = this._certificateChain;
     }
-    if (this._privateKey) {
+    if (this._privateKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.privateKey = this._privateKey;
     }
@@ -4537,7 +4537,7 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference ext
 }
 export interface AppmeshVirtualNodeSpecListenerTlsCertificateSds {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#secret_name AppmeshVirtualNode#secret_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}
   */
   readonly secretName: string;
 }
@@ -4567,7 +4567,7 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference exte
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsCertificateSds | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._secretName) {
+    if (this._secretName !== undefined) {
       hasAnyValues = true;
       internalValueResult.secretName = this._secretName;
     }
@@ -4602,19 +4602,19 @@ export interface AppmeshVirtualNodeSpecListenerTlsCertificate {
   /**
   * acm block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#acm AppmeshVirtualNode#acm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#acm AppmeshVirtualNode#acm}
   */
   readonly acm?: AppmeshVirtualNodeSpecListenerTlsCertificateAcm;
   /**
   * file block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#file AppmeshVirtualNode#file}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#file AppmeshVirtualNode#file}
   */
   readonly file?: AppmeshVirtualNodeSpecListenerTlsCertificateFile;
   /**
   * sds block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#sds AppmeshVirtualNode#sds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
   */
   readonly sds?: AppmeshVirtualNodeSpecListenerTlsCertificateSds;
 }
@@ -4646,15 +4646,15 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference extends
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsCertificate | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._acm?.internalValue) {
+    if (this._acm?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.acm = this._acm?.internalValue;
     }
-    if (this._file?.internalValue) {
+    if (this._file?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds?.internalValue) {
+    if (this._sds?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -4726,7 +4726,7 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference extends
 }
 export interface AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#exact AppmeshVirtualNode#exact}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#exact AppmeshVirtualNode#exact}
   */
   readonly exact: string[];
 }
@@ -4756,7 +4756,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesM
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._exact) {
+    if (this._exact !== undefined) {
       hasAnyValues = true;
       internalValueResult.exact = this._exact;
     }
@@ -4791,7 +4791,7 @@ export interface AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNa
   /**
   * match block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#match AppmeshVirtualNode#match}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#match AppmeshVirtualNode#match}
   */
   readonly match: AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch;
 }
@@ -4821,7 +4821,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesO
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._match?.internalValue) {
+    if (this._match?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
@@ -4854,7 +4854,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesO
 }
 export interface AppmeshVirtualNodeSpecListenerTlsValidationTrustFile {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#certificate_chain AppmeshVirtualNode#certificate_chain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}
   */
   readonly certificateChain: string;
 }
@@ -4884,7 +4884,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsValidationTrustFile | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._certificateChain) {
+    if (this._certificateChain !== undefined) {
       hasAnyValues = true;
       internalValueResult.certificateChain = this._certificateChain;
     }
@@ -4917,7 +4917,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference
 }
 export interface AppmeshVirtualNodeSpecListenerTlsValidationTrustSds {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#secret_name AppmeshVirtualNode#secret_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#secret_name AppmeshVirtualNode#secret_name}
   */
   readonly secretName: string;
 }
@@ -4947,7 +4947,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsValidationTrustSds | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._secretName) {
+    if (this._secretName !== undefined) {
       hasAnyValues = true;
       internalValueResult.secretName = this._secretName;
     }
@@ -4982,13 +4982,13 @@ export interface AppmeshVirtualNodeSpecListenerTlsValidationTrust {
   /**
   * file block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#file AppmeshVirtualNode#file}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#file AppmeshVirtualNode#file}
   */
   readonly file?: AppmeshVirtualNodeSpecListenerTlsValidationTrustFile;
   /**
   * sds block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#sds AppmeshVirtualNode#sds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#sds AppmeshVirtualNode#sds}
   */
   readonly sds?: AppmeshVirtualNodeSpecListenerTlsValidationTrustSds;
 }
@@ -5019,11 +5019,11 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference ext
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsValidationTrust | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._file?.internalValue) {
+    if (this._file?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
-    if (this._sds?.internalValue) {
+    if (this._sds?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sds = this._sds?.internalValue;
     }
@@ -5079,13 +5079,13 @@ export interface AppmeshVirtualNodeSpecListenerTlsValidation {
   /**
   * subject_alternative_names block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#subject_alternative_names AppmeshVirtualNode#subject_alternative_names}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#subject_alternative_names AppmeshVirtualNode#subject_alternative_names}
   */
   readonly subjectAlternativeNames?: AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames;
   /**
   * trust block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#trust AppmeshVirtualNode#trust}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#trust AppmeshVirtualNode#trust}
   */
   readonly trust: AppmeshVirtualNodeSpecListenerTlsValidationTrust;
 }
@@ -5116,11 +5116,11 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationOutputReference extends 
   public get internalValue(): AppmeshVirtualNodeSpecListenerTlsValidation | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._subjectAlternativeNames?.internalValue) {
+    if (this._subjectAlternativeNames?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.subjectAlternativeNames = this._subjectAlternativeNames?.internalValue;
     }
-    if (this._trust?.internalValue) {
+    if (this._trust?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.trust = this._trust?.internalValue;
     }
@@ -5171,19 +5171,19 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationOutputReference extends 
 }
 export interface AppmeshVirtualNodeSpecListenerTls {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#mode AppmeshVirtualNode#mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#mode AppmeshVirtualNode#mode}
   */
   readonly mode: string;
   /**
   * certificate block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#certificate AppmeshVirtualNode#certificate}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#certificate AppmeshVirtualNode#certificate}
   */
   readonly certificate: AppmeshVirtualNodeSpecListenerTlsCertificate;
   /**
   * validation block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#validation AppmeshVirtualNode#validation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#validation AppmeshVirtualNode#validation}
   */
   readonly validation?: AppmeshVirtualNodeSpecListenerTlsValidation;
 }
@@ -5215,15 +5215,15 @@ export class AppmeshVirtualNodeSpecListenerTlsOutputReference extends cdktf.Comp
   public get internalValue(): AppmeshVirtualNodeSpecListenerTls | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._mode) {
+    if (this._mode !== undefined) {
       hasAnyValues = true;
       internalValueResult.mode = this._mode;
     }
-    if (this._certificate?.internalValue) {
+    if (this._certificate?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.certificate = this._certificate?.internalValue;
     }
-    if (this._validation?.internalValue) {
+    if (this._validation?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.validation = this._validation?.internalValue;
     }
@@ -5291,37 +5291,37 @@ export interface AppmeshVirtualNodeSpecListener {
   /**
   * connection_pool block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#connection_pool AppmeshVirtualNode#connection_pool}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#connection_pool AppmeshVirtualNode#connection_pool}
   */
   readonly connectionPool?: AppmeshVirtualNodeSpecListenerConnectionPool;
   /**
   * health_check block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#health_check AppmeshVirtualNode#health_check}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#health_check AppmeshVirtualNode#health_check}
   */
   readonly healthCheck?: AppmeshVirtualNodeSpecListenerHealthCheck;
   /**
   * outlier_detection block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#outlier_detection AppmeshVirtualNode#outlier_detection}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#outlier_detection AppmeshVirtualNode#outlier_detection}
   */
   readonly outlierDetection?: AppmeshVirtualNodeSpecListenerOutlierDetection;
   /**
   * port_mapping block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#port_mapping AppmeshVirtualNode#port_mapping}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#port_mapping AppmeshVirtualNode#port_mapping}
   */
   readonly portMapping: AppmeshVirtualNodeSpecListenerPortMapping;
   /**
   * timeout block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#timeout AppmeshVirtualNode#timeout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#timeout AppmeshVirtualNode#timeout}
   */
   readonly timeout?: AppmeshVirtualNodeSpecListenerTimeout;
   /**
   * tls block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#tls AppmeshVirtualNode#tls}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#tls AppmeshVirtualNode#tls}
   */
   readonly tls?: AppmeshVirtualNodeSpecListenerTls;
 }
@@ -5356,27 +5356,27 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
   public get internalValue(): AppmeshVirtualNodeSpecListener | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._connectionPool?.internalValue) {
+    if (this._connectionPool?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.connectionPool = this._connectionPool?.internalValue;
     }
-    if (this._healthCheck?.internalValue) {
+    if (this._healthCheck?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.healthCheck = this._healthCheck?.internalValue;
     }
-    if (this._outlierDetection?.internalValue) {
+    if (this._outlierDetection?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.outlierDetection = this._outlierDetection?.internalValue;
     }
-    if (this._portMapping?.internalValue) {
+    if (this._portMapping?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.portMapping = this._portMapping?.internalValue;
     }
-    if (this._timeout?.internalValue) {
+    if (this._timeout?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout?.internalValue;
     }
-    if (this._tls?.internalValue) {
+    if (this._tls?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tls = this._tls?.internalValue;
     }
@@ -5499,7 +5499,7 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
 }
 export interface AppmeshVirtualNodeSpecLoggingAccessLogFile {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#path AppmeshVirtualNode#path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#path AppmeshVirtualNode#path}
   */
   readonly path: string;
 }
@@ -5529,7 +5529,7 @@ export class AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference extends c
   public get internalValue(): AppmeshVirtualNodeSpecLoggingAccessLogFile | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._path) {
+    if (this._path !== undefined) {
       hasAnyValues = true;
       internalValueResult.path = this._path;
     }
@@ -5564,7 +5564,7 @@ export interface AppmeshVirtualNodeSpecLoggingAccessLog {
   /**
   * file block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#file AppmeshVirtualNode#file}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#file AppmeshVirtualNode#file}
   */
   readonly file?: AppmeshVirtualNodeSpecLoggingAccessLogFile;
 }
@@ -5594,7 +5594,7 @@ export class AppmeshVirtualNodeSpecLoggingAccessLogOutputReference extends cdktf
   public get internalValue(): AppmeshVirtualNodeSpecLoggingAccessLog | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._file?.internalValue) {
+    if (this._file?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.file = this._file?.internalValue;
     }
@@ -5632,7 +5632,7 @@ export interface AppmeshVirtualNodeSpecLogging {
   /**
   * access_log block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#access_log AppmeshVirtualNode#access_log}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#access_log AppmeshVirtualNode#access_log}
   */
   readonly accessLog?: AppmeshVirtualNodeSpecLoggingAccessLog;
 }
@@ -5662,7 +5662,7 @@ export class AppmeshVirtualNodeSpecLoggingOutputReference extends cdktf.ComplexO
   public get internalValue(): AppmeshVirtualNodeSpecLogging | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accessLog?.internalValue) {
+    if (this._accessLog?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.accessLog = this._accessLog?.internalValue;
     }
@@ -5698,15 +5698,15 @@ export class AppmeshVirtualNodeSpecLoggingOutputReference extends cdktf.ComplexO
 }
 export interface AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#attributes AppmeshVirtualNode#attributes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#attributes AppmeshVirtualNode#attributes}
   */
   readonly attributes?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#namespace_name AppmeshVirtualNode#namespace_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#namespace_name AppmeshVirtualNode#namespace_name}
   */
   readonly namespaceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#service_name AppmeshVirtualNode#service_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#service_name AppmeshVirtualNode#service_name}
   */
   readonly serviceName: string;
 }
@@ -5738,15 +5738,15 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference ex
   public get internalValue(): AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._attributes) {
+    if (this._attributes !== undefined) {
       hasAnyValues = true;
       internalValueResult.attributes = this._attributes;
     }
-    if (this._namespaceName) {
+    if (this._namespaceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.namespaceName = this._namespaceName;
     }
-    if (this._serviceName) {
+    if (this._serviceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceName = this._serviceName;
     }
@@ -5813,7 +5813,7 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference ex
 }
 export interface AppmeshVirtualNodeSpecServiceDiscoveryDns {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#hostname AppmeshVirtualNode#hostname}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#hostname AppmeshVirtualNode#hostname}
   */
   readonly hostname: string;
 }
@@ -5843,7 +5843,7 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference extends cd
   public get internalValue(): AppmeshVirtualNodeSpecServiceDiscoveryDns | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._hostname) {
+    if (this._hostname !== undefined) {
       hasAnyValues = true;
       internalValueResult.hostname = this._hostname;
     }
@@ -5878,13 +5878,13 @@ export interface AppmeshVirtualNodeSpecServiceDiscovery {
   /**
   * aws_cloud_map block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#aws_cloud_map AppmeshVirtualNode#aws_cloud_map}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#aws_cloud_map AppmeshVirtualNode#aws_cloud_map}
   */
   readonly awsCloudMap?: AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap;
   /**
   * dns block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#dns AppmeshVirtualNode#dns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#dns AppmeshVirtualNode#dns}
   */
   readonly dns?: AppmeshVirtualNodeSpecServiceDiscoveryDns;
 }
@@ -5915,11 +5915,11 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryOutputReference extends cdktf
   public get internalValue(): AppmeshVirtualNodeSpecServiceDiscovery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._awsCloudMap?.internalValue) {
+    if (this._awsCloudMap?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.awsCloudMap = this._awsCloudMap?.internalValue;
     }
-    if (this._dns?.internalValue) {
+    if (this._dns?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.dns = this._dns?.internalValue;
     }
@@ -5975,31 +5975,31 @@ export interface AppmeshVirtualNodeSpec {
   /**
   * backend block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#backend AppmeshVirtualNode#backend}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#backend AppmeshVirtualNode#backend}
   */
   readonly backend?: AppmeshVirtualNodeSpecBackend[];
   /**
   * backend_defaults block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#backend_defaults AppmeshVirtualNode#backend_defaults}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#backend_defaults AppmeshVirtualNode#backend_defaults}
   */
   readonly backendDefaults?: AppmeshVirtualNodeSpecBackendDefaults;
   /**
   * listener block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#listener AppmeshVirtualNode#listener}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#listener AppmeshVirtualNode#listener}
   */
   readonly listener?: AppmeshVirtualNodeSpecListener;
   /**
   * logging block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#logging AppmeshVirtualNode#logging}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#logging AppmeshVirtualNode#logging}
   */
   readonly logging?: AppmeshVirtualNodeSpecLogging;
   /**
   * service_discovery block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html#service_discovery AppmeshVirtualNode#service_discovery}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#service_discovery AppmeshVirtualNode#service_discovery}
   */
   readonly serviceDiscovery?: AppmeshVirtualNodeSpecServiceDiscovery;
 }
@@ -6033,23 +6033,23 @@ export class AppmeshVirtualNodeSpecOutputReference extends cdktf.ComplexObject {
   public get internalValue(): AppmeshVirtualNodeSpec | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._backend) {
+    if (this._backend !== undefined) {
       hasAnyValues = true;
       internalValueResult.backend = this._backend;
     }
-    if (this._backendDefaults?.internalValue) {
+    if (this._backendDefaults?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.backendDefaults = this._backendDefaults?.internalValue;
     }
-    if (this._listener?.internalValue) {
+    if (this._listener?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.listener = this._listener?.internalValue;
     }
-    if (this._logging?.internalValue) {
+    if (this._logging?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.logging = this._logging?.internalValue;
     }
-    if (this._serviceDiscovery?.internalValue) {
+    if (this._serviceDiscovery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceDiscovery = this._serviceDiscovery?.internalValue;
     }
@@ -6158,7 +6158,7 @@ export class AppmeshVirtualNodeSpecOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html aws_appmesh_virtual_node}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node aws_appmesh_virtual_node}
 */
 export class AppmeshVirtualNode extends cdktf.TerraformResource {
 
@@ -6172,7 +6172,7 @@ export class AppmeshVirtualNode extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html aws_appmesh_virtual_node} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node aws_appmesh_virtual_node} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

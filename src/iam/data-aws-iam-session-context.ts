@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsIamSessionContextConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_session_context.html#arn DataAwsIamSessionContext#arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_session_context#arn DataAwsIamSessionContext#arn}
   */
   readonly arn: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_session_context.html aws_iam_session_context}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_session_context aws_iam_session_context}
 */
 export class DataAwsIamSessionContext extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsIamSessionContext extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_session_context.html aws_iam_session_context} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_session_context aws_iam_session_context} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

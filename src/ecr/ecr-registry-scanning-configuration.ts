@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface EcrRegistryScanningConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration.html#scan_type EcrRegistryScanningConfiguration#scan_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration#scan_type EcrRegistryScanningConfiguration#scan_type}
   */
   readonly scanType: string;
   /**
   * rule block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration.html#rule EcrRegistryScanningConfiguration#rule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration#rule EcrRegistryScanningConfiguration#rule}
   */
   readonly rule?: EcrRegistryScanningConfigurationRule[];
 }
 export interface EcrRegistryScanningConfigurationRuleRepositoryFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration.html#filter EcrRegistryScanningConfiguration#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration#filter EcrRegistryScanningConfiguration#filter}
   */
   readonly filter: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration.html#filter_type EcrRegistryScanningConfiguration#filter_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration#filter_type EcrRegistryScanningConfiguration#filter_type}
   */
   readonly filterType: string;
 }
@@ -42,13 +42,13 @@ export function ecrRegistryScanningConfigurationRuleRepositoryFilterToTerraform(
 
 export interface EcrRegistryScanningConfigurationRule {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration.html#scan_frequency EcrRegistryScanningConfiguration#scan_frequency}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration#scan_frequency EcrRegistryScanningConfiguration#scan_frequency}
   */
   readonly scanFrequency: string;
   /**
   * repository_filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration.html#repository_filter EcrRegistryScanningConfiguration#repository_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration#repository_filter EcrRegistryScanningConfiguration#repository_filter}
   */
   readonly repositoryFilter: EcrRegistryScanningConfigurationRuleRepositoryFilter[];
 }
@@ -66,7 +66,7 @@ export function ecrRegistryScanningConfigurationRuleToTerraform(struct?: EcrRegi
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration.html aws_ecr_registry_scanning_configuration}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration}
 */
 export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
 
@@ -80,7 +80,7 @@ export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration.html aws_ecr_registry_scanning_configuration} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

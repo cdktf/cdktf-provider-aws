@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsSesEmailIdentityConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ses_email_identity.html#email DataAwsSesEmailIdentity#email}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ses_email_identity#email DataAwsSesEmailIdentity#email}
   */
   readonly email: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ses_email_identity.html aws_ses_email_identity}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ses_email_identity aws_ses_email_identity}
 */
 export class DataAwsSesEmailIdentity extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsSesEmailIdentity extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ses_email_identity.html aws_ses_email_identity} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ses_email_identity aws_ses_email_identity} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

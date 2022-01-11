@@ -10,7 +10,7 @@ export interface DataAwsCanonicalUserIdConfig extends cdktf.TerraformMetaArgumen
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/canonical_user_id.html aws_canonical_user_id}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/canonical_user_id aws_canonical_user_id}
 */
 export class DataAwsCanonicalUserId extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataAwsCanonicalUserId extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/canonical_user_id.html aws_canonical_user_id} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/canonical_user_id aws_canonical_user_id} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

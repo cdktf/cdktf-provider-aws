@@ -8,105 +8,105 @@ import * as cdktf from 'cdktf';
 */
 export interface CodedeployDeploymentGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#app_name CodedeployDeploymentGroup#app_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#app_name CodedeployDeploymentGroup#app_name}
   */
   readonly appName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#autoscaling_groups CodedeployDeploymentGroup#autoscaling_groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#autoscaling_groups CodedeployDeploymentGroup#autoscaling_groups}
   */
   readonly autoscalingGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#deployment_config_name CodedeployDeploymentGroup#deployment_config_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#deployment_config_name CodedeployDeploymentGroup#deployment_config_name}
   */
   readonly deploymentConfigName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#deployment_group_name CodedeployDeploymentGroup#deployment_group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#deployment_group_name CodedeployDeploymentGroup#deployment_group_name}
   */
   readonly deploymentGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#service_role_arn CodedeployDeploymentGroup#service_role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#service_role_arn CodedeployDeploymentGroup#service_role_arn}
   */
   readonly serviceRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#tags CodedeployDeploymentGroup#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#tags CodedeployDeploymentGroup#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#tags_all CodedeployDeploymentGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#tags_all CodedeployDeploymentGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * alarm_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#alarm_configuration CodedeployDeploymentGroup#alarm_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#alarm_configuration CodedeployDeploymentGroup#alarm_configuration}
   */
   readonly alarmConfiguration?: CodedeployDeploymentGroupAlarmConfiguration;
   /**
   * auto_rollback_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#auto_rollback_configuration CodedeployDeploymentGroup#auto_rollback_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#auto_rollback_configuration CodedeployDeploymentGroup#auto_rollback_configuration}
   */
   readonly autoRollbackConfiguration?: CodedeployDeploymentGroupAutoRollbackConfiguration;
   /**
   * blue_green_deployment_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#blue_green_deployment_config CodedeployDeploymentGroup#blue_green_deployment_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#blue_green_deployment_config CodedeployDeploymentGroup#blue_green_deployment_config}
   */
   readonly blueGreenDeploymentConfig?: CodedeployDeploymentGroupBlueGreenDeploymentConfig;
   /**
   * deployment_style block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#deployment_style CodedeployDeploymentGroup#deployment_style}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#deployment_style CodedeployDeploymentGroup#deployment_style}
   */
   readonly deploymentStyle?: CodedeployDeploymentGroupDeploymentStyle;
   /**
   * ec2_tag_filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#ec2_tag_filter CodedeployDeploymentGroup#ec2_tag_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#ec2_tag_filter CodedeployDeploymentGroup#ec2_tag_filter}
   */
   readonly ec2TagFilter?: CodedeployDeploymentGroupEc2TagFilter[];
   /**
   * ec2_tag_set block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#ec2_tag_set CodedeployDeploymentGroup#ec2_tag_set}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#ec2_tag_set CodedeployDeploymentGroup#ec2_tag_set}
   */
   readonly ec2TagSet?: CodedeployDeploymentGroupEc2TagSet[];
   /**
   * ecs_service block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#ecs_service CodedeployDeploymentGroup#ecs_service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#ecs_service CodedeployDeploymentGroup#ecs_service}
   */
   readonly ecsService?: CodedeployDeploymentGroupEcsService;
   /**
   * load_balancer_info block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#load_balancer_info CodedeployDeploymentGroup#load_balancer_info}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#load_balancer_info CodedeployDeploymentGroup#load_balancer_info}
   */
   readonly loadBalancerInfo?: CodedeployDeploymentGroupLoadBalancerInfo;
   /**
   * on_premises_instance_tag_filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#on_premises_instance_tag_filter CodedeployDeploymentGroup#on_premises_instance_tag_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#on_premises_instance_tag_filter CodedeployDeploymentGroup#on_premises_instance_tag_filter}
   */
   readonly onPremisesInstanceTagFilter?: CodedeployDeploymentGroupOnPremisesInstanceTagFilter[];
   /**
   * trigger_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#trigger_configuration CodedeployDeploymentGroup#trigger_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#trigger_configuration CodedeployDeploymentGroup#trigger_configuration}
   */
   readonly triggerConfiguration?: CodedeployDeploymentGroupTriggerConfiguration[];
 }
 export interface CodedeployDeploymentGroupAlarmConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#alarms CodedeployDeploymentGroup#alarms}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#alarms CodedeployDeploymentGroup#alarms}
   */
   readonly alarms?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#enabled CodedeployDeploymentGroup#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#enabled CodedeployDeploymentGroup#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#ignore_poll_alarm_failure CodedeployDeploymentGroup#ignore_poll_alarm_failure}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#ignore_poll_alarm_failure CodedeployDeploymentGroup#ignore_poll_alarm_failure}
   */
   readonly ignorePollAlarmFailure?: boolean | cdktf.IResolvable;
 }
@@ -138,15 +138,15 @@ export class CodedeployDeploymentGroupAlarmConfigurationOutputReference extends 
   public get internalValue(): CodedeployDeploymentGroupAlarmConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._alarms) {
+    if (this._alarms !== undefined) {
       hasAnyValues = true;
       internalValueResult.alarms = this._alarms;
     }
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._ignorePollAlarmFailure) {
+    if (this._ignorePollAlarmFailure !== undefined) {
       hasAnyValues = true;
       internalValueResult.ignorePollAlarmFailure = this._ignorePollAlarmFailure;
     }
@@ -218,11 +218,11 @@ export class CodedeployDeploymentGroupAlarmConfigurationOutputReference extends 
 }
 export interface CodedeployDeploymentGroupAutoRollbackConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#enabled CodedeployDeploymentGroup#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#enabled CodedeployDeploymentGroup#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#events CodedeployDeploymentGroup#events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#events CodedeployDeploymentGroup#events}
   */
   readonly events?: string[];
 }
@@ -253,11 +253,11 @@ export class CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference e
   public get internalValue(): CodedeployDeploymentGroupAutoRollbackConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._events) {
+    if (this._events !== undefined) {
       hasAnyValues = true;
       internalValueResult.events = this._events;
     }
@@ -311,11 +311,11 @@ export class CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference e
 }
 export interface CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#action_on_timeout CodedeployDeploymentGroup#action_on_timeout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#action_on_timeout CodedeployDeploymentGroup#action_on_timeout}
   */
   readonly actionOnTimeout?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#wait_time_in_minutes CodedeployDeploymentGroup#wait_time_in_minutes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#wait_time_in_minutes CodedeployDeploymentGroup#wait_time_in_minutes}
   */
   readonly waitTimeInMinutes?: number;
 }
@@ -346,11 +346,11 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOp
   public get internalValue(): CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._actionOnTimeout) {
+    if (this._actionOnTimeout !== undefined) {
       hasAnyValues = true;
       internalValueResult.actionOnTimeout = this._actionOnTimeout;
     }
-    if (this._waitTimeInMinutes) {
+    if (this._waitTimeInMinutes !== undefined) {
       hasAnyValues = true;
       internalValueResult.waitTimeInMinutes = this._waitTimeInMinutes;
     }
@@ -404,7 +404,7 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOp
 }
 export interface CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#action CodedeployDeploymentGroup#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#action CodedeployDeploymentGroup#action}
   */
   readonly action?: string;
 }
@@ -434,7 +434,7 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisi
   public get internalValue(): CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action) {
+    if (this._action !== undefined) {
       hasAnyValues = true;
       internalValueResult.action = this._action;
     }
@@ -470,11 +470,11 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisi
 }
 export interface CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#action CodedeployDeploymentGroup#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#action CodedeployDeploymentGroup#action}
   */
   readonly action?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#termination_wait_time_in_minutes CodedeployDeploymentGroup#termination_wait_time_in_minutes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#termination_wait_time_in_minutes CodedeployDeploymentGroup#termination_wait_time_in_minutes}
   */
   readonly terminationWaitTimeInMinutes?: number;
 }
@@ -505,11 +505,11 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInst
   public get internalValue(): CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action) {
+    if (this._action !== undefined) {
       hasAnyValues = true;
       internalValueResult.action = this._action;
     }
-    if (this._terminationWaitTimeInMinutes) {
+    if (this._terminationWaitTimeInMinutes !== undefined) {
       hasAnyValues = true;
       internalValueResult.terminationWaitTimeInMinutes = this._terminationWaitTimeInMinutes;
     }
@@ -565,19 +565,19 @@ export interface CodedeployDeploymentGroupBlueGreenDeploymentConfig {
   /**
   * deployment_ready_option block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#deployment_ready_option CodedeployDeploymentGroup#deployment_ready_option}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#deployment_ready_option CodedeployDeploymentGroup#deployment_ready_option}
   */
   readonly deploymentReadyOption?: CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption;
   /**
   * green_fleet_provisioning_option block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#green_fleet_provisioning_option CodedeployDeploymentGroup#green_fleet_provisioning_option}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#green_fleet_provisioning_option CodedeployDeploymentGroup#green_fleet_provisioning_option}
   */
   readonly greenFleetProvisioningOption?: CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption;
   /**
   * terminate_blue_instances_on_deployment_success block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#terminate_blue_instances_on_deployment_success CodedeployDeploymentGroup#terminate_blue_instances_on_deployment_success}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#terminate_blue_instances_on_deployment_success CodedeployDeploymentGroup#terminate_blue_instances_on_deployment_success}
   */
   readonly terminateBlueInstancesOnDeploymentSuccess?: CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess;
 }
@@ -609,15 +609,15 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference e
   public get internalValue(): CodedeployDeploymentGroupBlueGreenDeploymentConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._deploymentReadyOption?.internalValue) {
+    if (this._deploymentReadyOption?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.deploymentReadyOption = this._deploymentReadyOption?.internalValue;
     }
-    if (this._greenFleetProvisioningOption?.internalValue) {
+    if (this._greenFleetProvisioningOption?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.greenFleetProvisioningOption = this._greenFleetProvisioningOption?.internalValue;
     }
-    if (this._terminateBlueInstancesOnDeploymentSuccess?.internalValue) {
+    if (this._terminateBlueInstancesOnDeploymentSuccess?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.terminateBlueInstancesOnDeploymentSuccess = this._terminateBlueInstancesOnDeploymentSuccess?.internalValue;
     }
@@ -689,11 +689,11 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference e
 }
 export interface CodedeployDeploymentGroupDeploymentStyle {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#deployment_option CodedeployDeploymentGroup#deployment_option}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#deployment_option CodedeployDeploymentGroup#deployment_option}
   */
   readonly deploymentOption?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#deployment_type CodedeployDeploymentGroup#deployment_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#deployment_type CodedeployDeploymentGroup#deployment_type}
   */
   readonly deploymentType?: string;
 }
@@ -724,11 +724,11 @@ export class CodedeployDeploymentGroupDeploymentStyleOutputReference extends cdk
   public get internalValue(): CodedeployDeploymentGroupDeploymentStyle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._deploymentOption) {
+    if (this._deploymentOption !== undefined) {
       hasAnyValues = true;
       internalValueResult.deploymentOption = this._deploymentOption;
     }
-    if (this._deploymentType) {
+    if (this._deploymentType !== undefined) {
       hasAnyValues = true;
       internalValueResult.deploymentType = this._deploymentType;
     }
@@ -782,15 +782,15 @@ export class CodedeployDeploymentGroupDeploymentStyleOutputReference extends cdk
 }
 export interface CodedeployDeploymentGroupEc2TagFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#key CodedeployDeploymentGroup#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#key CodedeployDeploymentGroup#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#type CodedeployDeploymentGroup#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#type CodedeployDeploymentGroup#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#value CodedeployDeploymentGroup#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#value CodedeployDeploymentGroup#value}
   */
   readonly value?: string;
 }
@@ -809,15 +809,15 @@ export function codedeployDeploymentGroupEc2TagFilterToTerraform(struct?: Codede
 
 export interface CodedeployDeploymentGroupEc2TagSetEc2TagFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#key CodedeployDeploymentGroup#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#key CodedeployDeploymentGroup#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#type CodedeployDeploymentGroup#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#type CodedeployDeploymentGroup#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#value CodedeployDeploymentGroup#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#value CodedeployDeploymentGroup#value}
   */
   readonly value?: string;
 }
@@ -838,7 +838,7 @@ export interface CodedeployDeploymentGroupEc2TagSet {
   /**
   * ec2_tag_filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#ec2_tag_filter CodedeployDeploymentGroup#ec2_tag_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#ec2_tag_filter CodedeployDeploymentGroup#ec2_tag_filter}
   */
   readonly ec2TagFilter?: CodedeployDeploymentGroupEc2TagSetEc2TagFilter[];
 }
@@ -855,11 +855,11 @@ export function codedeployDeploymentGroupEc2TagSetToTerraform(struct?: Codedeplo
 
 export interface CodedeployDeploymentGroupEcsService {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#cluster_name CodedeployDeploymentGroup#cluster_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#cluster_name CodedeployDeploymentGroup#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#service_name CodedeployDeploymentGroup#service_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#service_name CodedeployDeploymentGroup#service_name}
   */
   readonly serviceName: string;
 }
@@ -890,11 +890,11 @@ export class CodedeployDeploymentGroupEcsServiceOutputReference extends cdktf.Co
   public get internalValue(): CodedeployDeploymentGroupEcsService | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clusterName) {
+    if (this._clusterName !== undefined) {
       hasAnyValues = true;
       internalValueResult.clusterName = this._clusterName;
     }
-    if (this._serviceName) {
+    if (this._serviceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceName = this._serviceName;
     }
@@ -942,7 +942,7 @@ export class CodedeployDeploymentGroupEcsServiceOutputReference extends cdktf.Co
 }
 export interface CodedeployDeploymentGroupLoadBalancerInfoElbInfo {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#name CodedeployDeploymentGroup#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#name CodedeployDeploymentGroup#name}
   */
   readonly name?: string;
 }
@@ -959,7 +959,7 @@ export function codedeployDeploymentGroupLoadBalancerInfoElbInfoToTerraform(stru
 
 export interface CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfo {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#name CodedeployDeploymentGroup#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#name CodedeployDeploymentGroup#name}
   */
   readonly name?: string;
 }
@@ -976,7 +976,7 @@ export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoToTerraf
 
 export interface CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#listener_arns CodedeployDeploymentGroup#listener_arns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#listener_arns CodedeployDeploymentGroup#listener_arns}
   */
   readonly listenerArns: string[];
 }
@@ -1006,7 +1006,7 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTra
   public get internalValue(): CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._listenerArns) {
+    if (this._listenerArns !== undefined) {
       hasAnyValues = true;
       internalValueResult.listenerArns = this._listenerArns;
     }
@@ -1039,7 +1039,7 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTra
 }
 export interface CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#name CodedeployDeploymentGroup#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#name CodedeployDeploymentGroup#name}
   */
   readonly name: string;
 }
@@ -1056,7 +1056,7 @@ export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTarg
 
 export interface CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#listener_arns CodedeployDeploymentGroup#listener_arns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#listener_arns CodedeployDeploymentGroup#listener_arns}
   */
   readonly listenerArns: string[];
 }
@@ -1086,7 +1086,7 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTra
   public get internalValue(): CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._listenerArns) {
+    if (this._listenerArns !== undefined) {
       hasAnyValues = true;
       internalValueResult.listenerArns = this._listenerArns;
     }
@@ -1121,19 +1121,19 @@ export interface CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo {
   /**
   * prod_traffic_route block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#prod_traffic_route CodedeployDeploymentGroup#prod_traffic_route}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#prod_traffic_route CodedeployDeploymentGroup#prod_traffic_route}
   */
   readonly prodTrafficRoute: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute;
   /**
   * target_group block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#target_group CodedeployDeploymentGroup#target_group}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#target_group CodedeployDeploymentGroup#target_group}
   */
   readonly targetGroup: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup[];
   /**
   * test_traffic_route block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#test_traffic_route CodedeployDeploymentGroup#test_traffic_route}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#test_traffic_route CodedeployDeploymentGroup#test_traffic_route}
   */
   readonly testTrafficRoute?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute;
 }
@@ -1165,15 +1165,15 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputR
   public get internalValue(): CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._prodTrafficRoute?.internalValue) {
+    if (this._prodTrafficRoute?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.prodTrafficRoute = this._prodTrafficRoute?.internalValue;
     }
-    if (this._targetGroup) {
+    if (this._targetGroup !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetGroup = this._targetGroup;
     }
-    if (this._testTrafficRoute?.internalValue) {
+    if (this._testTrafficRoute?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.testTrafficRoute = this._testTrafficRoute?.internalValue;
     }
@@ -1242,19 +1242,19 @@ export interface CodedeployDeploymentGroupLoadBalancerInfo {
   /**
   * elb_info block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#elb_info CodedeployDeploymentGroup#elb_info}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#elb_info CodedeployDeploymentGroup#elb_info}
   */
   readonly elbInfo?: CodedeployDeploymentGroupLoadBalancerInfoElbInfo[];
   /**
   * target_group_info block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#target_group_info CodedeployDeploymentGroup#target_group_info}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#target_group_info CodedeployDeploymentGroup#target_group_info}
   */
   readonly targetGroupInfo?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfo[];
   /**
   * target_group_pair_info block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#target_group_pair_info CodedeployDeploymentGroup#target_group_pair_info}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#target_group_pair_info CodedeployDeploymentGroup#target_group_pair_info}
   */
   readonly targetGroupPairInfo?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo;
 }
@@ -1286,15 +1286,15 @@ export class CodedeployDeploymentGroupLoadBalancerInfoOutputReference extends cd
   public get internalValue(): CodedeployDeploymentGroupLoadBalancerInfo | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._elbInfo) {
+    if (this._elbInfo !== undefined) {
       hasAnyValues = true;
       internalValueResult.elbInfo = this._elbInfo;
     }
-    if (this._targetGroupInfo) {
+    if (this._targetGroupInfo !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetGroupInfo = this._targetGroupInfo;
     }
-    if (this._targetGroupPairInfo?.internalValue) {
+    if (this._targetGroupPairInfo?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetGroupPairInfo = this._targetGroupPairInfo?.internalValue;
     }
@@ -1368,15 +1368,15 @@ export class CodedeployDeploymentGroupLoadBalancerInfoOutputReference extends cd
 }
 export interface CodedeployDeploymentGroupOnPremisesInstanceTagFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#key CodedeployDeploymentGroup#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#key CodedeployDeploymentGroup#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#type CodedeployDeploymentGroup#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#type CodedeployDeploymentGroup#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#value CodedeployDeploymentGroup#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#value CodedeployDeploymentGroup#value}
   */
   readonly value?: string;
 }
@@ -1395,15 +1395,15 @@ export function codedeployDeploymentGroupOnPremisesInstanceTagFilterToTerraform(
 
 export interface CodedeployDeploymentGroupTriggerConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#trigger_events CodedeployDeploymentGroup#trigger_events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#trigger_events CodedeployDeploymentGroup#trigger_events}
   */
   readonly triggerEvents: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#trigger_name CodedeployDeploymentGroup#trigger_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#trigger_name CodedeployDeploymentGroup#trigger_name}
   */
   readonly triggerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html#trigger_target_arn CodedeployDeploymentGroup#trigger_target_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group#trigger_target_arn CodedeployDeploymentGroup#trigger_target_arn}
   */
   readonly triggerTargetArn: string;
 }
@@ -1422,7 +1422,7 @@ export function codedeployDeploymentGroupTriggerConfigurationToTerraform(struct?
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html aws_codedeploy_deployment_group}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group aws_codedeploy_deployment_group}
 */
 export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
 
@@ -1436,7 +1436,7 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html aws_codedeploy_deployment_group} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group aws_codedeploy_deployment_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

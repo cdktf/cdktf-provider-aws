@@ -8,27 +8,27 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsEc2LocalGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway.html#state DataAwsEc2LocalGateway#state}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway#state DataAwsEc2LocalGateway#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway.html#tags DataAwsEc2LocalGateway#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway#tags DataAwsEc2LocalGateway#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway.html#filter DataAwsEc2LocalGateway#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway#filter DataAwsEc2LocalGateway#filter}
   */
   readonly filter?: DataAwsEc2LocalGatewayFilter[];
 }
 export interface DataAwsEc2LocalGatewayFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway.html#name DataAwsEc2LocalGateway#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway#name DataAwsEc2LocalGateway#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway.html#values DataAwsEc2LocalGateway#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway#values DataAwsEc2LocalGateway#values}
   */
   readonly values: string[];
 }
@@ -46,7 +46,7 @@ export function dataAwsEc2LocalGatewayFilterToTerraform(struct?: DataAwsEc2Local
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway.html aws_ec2_local_gateway}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway aws_ec2_local_gateway}
 */
 export class DataAwsEc2LocalGateway extends cdktf.TerraformDataSource {
 
@@ -60,7 +60,7 @@ export class DataAwsEc2LocalGateway extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway.html aws_ec2_local_gateway} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway aws_ec2_local_gateway} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,113 +8,113 @@ import * as cdktf from 'cdktf';
 */
 export interface ElasticsearchDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#access_policies ElasticsearchDomain#access_policies}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#access_policies ElasticsearchDomain#access_policies}
   */
   readonly accessPolicies?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#advanced_options ElasticsearchDomain#advanced_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#advanced_options ElasticsearchDomain#advanced_options}
   */
   readonly advancedOptions?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#domain_name ElasticsearchDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#domain_name ElasticsearchDomain#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#elasticsearch_version ElasticsearchDomain#elasticsearch_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#elasticsearch_version ElasticsearchDomain#elasticsearch_version}
   */
   readonly elasticsearchVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#tags ElasticsearchDomain#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#tags ElasticsearchDomain#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#tags_all ElasticsearchDomain#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#tags_all ElasticsearchDomain#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * advanced_security_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#advanced_security_options ElasticsearchDomain#advanced_security_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#advanced_security_options ElasticsearchDomain#advanced_security_options}
   */
   readonly advancedSecurityOptions?: ElasticsearchDomainAdvancedSecurityOptions;
   /**
   * auto_tune_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#auto_tune_options ElasticsearchDomain#auto_tune_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#auto_tune_options ElasticsearchDomain#auto_tune_options}
   */
   readonly autoTuneOptions?: ElasticsearchDomainAutoTuneOptions;
   /**
   * cluster_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#cluster_config ElasticsearchDomain#cluster_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#cluster_config ElasticsearchDomain#cluster_config}
   */
   readonly clusterConfig?: ElasticsearchDomainClusterConfig;
   /**
   * cognito_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#cognito_options ElasticsearchDomain#cognito_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#cognito_options ElasticsearchDomain#cognito_options}
   */
   readonly cognitoOptions?: ElasticsearchDomainCognitoOptions;
   /**
   * domain_endpoint_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#domain_endpoint_options ElasticsearchDomain#domain_endpoint_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#domain_endpoint_options ElasticsearchDomain#domain_endpoint_options}
   */
   readonly domainEndpointOptions?: ElasticsearchDomainDomainEndpointOptions;
   /**
   * ebs_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#ebs_options ElasticsearchDomain#ebs_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#ebs_options ElasticsearchDomain#ebs_options}
   */
   readonly ebsOptions?: ElasticsearchDomainEbsOptions;
   /**
   * encrypt_at_rest block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#encrypt_at_rest ElasticsearchDomain#encrypt_at_rest}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#encrypt_at_rest ElasticsearchDomain#encrypt_at_rest}
   */
   readonly encryptAtRest?: ElasticsearchDomainEncryptAtRest;
   /**
   * log_publishing_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#log_publishing_options ElasticsearchDomain#log_publishing_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#log_publishing_options ElasticsearchDomain#log_publishing_options}
   */
   readonly logPublishingOptions?: ElasticsearchDomainLogPublishingOptions[];
   /**
   * node_to_node_encryption block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#node_to_node_encryption ElasticsearchDomain#node_to_node_encryption}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#node_to_node_encryption ElasticsearchDomain#node_to_node_encryption}
   */
   readonly nodeToNodeEncryption?: ElasticsearchDomainNodeToNodeEncryption;
   /**
   * snapshot_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#snapshot_options ElasticsearchDomain#snapshot_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#snapshot_options ElasticsearchDomain#snapshot_options}
   */
   readonly snapshotOptions?: ElasticsearchDomainSnapshotOptions;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#timeouts ElasticsearchDomain#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#timeouts ElasticsearchDomain#timeouts}
   */
   readonly timeouts?: ElasticsearchDomainTimeouts;
   /**
   * vpc_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#vpc_options ElasticsearchDomain#vpc_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#vpc_options ElasticsearchDomain#vpc_options}
   */
   readonly vpcOptions?: ElasticsearchDomainVpcOptions;
 }
 export interface ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#master_user_arn ElasticsearchDomain#master_user_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#master_user_arn ElasticsearchDomain#master_user_arn}
   */
   readonly masterUserArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#master_user_name ElasticsearchDomain#master_user_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#master_user_name ElasticsearchDomain#master_user_name}
   */
   readonly masterUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#master_user_password ElasticsearchDomain#master_user_password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#master_user_password ElasticsearchDomain#master_user_password}
   */
   readonly masterUserPassword?: string;
 }
@@ -146,15 +146,15 @@ export class ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputRe
   public get internalValue(): ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._masterUserArn) {
+    if (this._masterUserArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.masterUserArn = this._masterUserArn;
     }
-    if (this._masterUserName) {
+    if (this._masterUserName !== undefined) {
       hasAnyValues = true;
       internalValueResult.masterUserName = this._masterUserName;
     }
-    if (this._masterUserPassword) {
+    if (this._masterUserPassword !== undefined) {
       hasAnyValues = true;
       internalValueResult.masterUserPassword = this._masterUserPassword;
     }
@@ -226,17 +226,17 @@ export class ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputRe
 }
 export interface ElasticsearchDomainAdvancedSecurityOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#enabled ElasticsearchDomain#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#internal_user_database_enabled ElasticsearchDomain#internal_user_database_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#internal_user_database_enabled ElasticsearchDomain#internal_user_database_enabled}
   */
   readonly internalUserDatabaseEnabled?: boolean | cdktf.IResolvable;
   /**
   * master_user_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#master_user_options ElasticsearchDomain#master_user_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#master_user_options ElasticsearchDomain#master_user_options}
   */
   readonly masterUserOptions?: ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions;
 }
@@ -268,15 +268,15 @@ export class ElasticsearchDomainAdvancedSecurityOptionsOutputReference extends c
   public get internalValue(): ElasticsearchDomainAdvancedSecurityOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._internalUserDatabaseEnabled) {
+    if (this._internalUserDatabaseEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.internalUserDatabaseEnabled = this._internalUserDatabaseEnabled;
     }
-    if (this._masterUserOptions?.internalValue) {
+    if (this._masterUserOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.masterUserOptions = this._masterUserOptions?.internalValue;
     }
@@ -345,11 +345,11 @@ export class ElasticsearchDomainAdvancedSecurityOptionsOutputReference extends c
 }
 export interface ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#unit ElasticsearchDomain#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#unit ElasticsearchDomain#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#value ElasticsearchDomain#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#value ElasticsearchDomain#value}
   */
   readonly value: number;
 }
@@ -380,11 +380,11 @@ export class ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutput
   public get internalValue(): ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -432,17 +432,17 @@ export class ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutput
 }
 export interface ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#cron_expression_for_recurrence ElasticsearchDomain#cron_expression_for_recurrence}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#cron_expression_for_recurrence ElasticsearchDomain#cron_expression_for_recurrence}
   */
   readonly cronExpressionForRecurrence: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#start_at ElasticsearchDomain#start_at}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#start_at ElasticsearchDomain#start_at}
   */
   readonly startAt: string;
   /**
   * duration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#duration ElasticsearchDomain#duration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#duration ElasticsearchDomain#duration}
   */
   readonly duration: ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration;
 }
@@ -461,17 +461,17 @@ export function elasticsearchDomainAutoTuneOptionsMaintenanceScheduleToTerraform
 
 export interface ElasticsearchDomainAutoTuneOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#desired_state ElasticsearchDomain#desired_state}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#desired_state ElasticsearchDomain#desired_state}
   */
   readonly desiredState: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#rollback_on_disable ElasticsearchDomain#rollback_on_disable}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#rollback_on_disable ElasticsearchDomain#rollback_on_disable}
   */
   readonly rollbackOnDisable?: string;
   /**
   * maintenance_schedule block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#maintenance_schedule ElasticsearchDomain#maintenance_schedule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#maintenance_schedule ElasticsearchDomain#maintenance_schedule}
   */
   readonly maintenanceSchedule?: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule[];
 }
@@ -503,15 +503,15 @@ export class ElasticsearchDomainAutoTuneOptionsOutputReference extends cdktf.Com
   public get internalValue(): ElasticsearchDomainAutoTuneOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._desiredState) {
+    if (this._desiredState !== undefined) {
       hasAnyValues = true;
       internalValueResult.desiredState = this._desiredState;
     }
-    if (this._rollbackOnDisable) {
+    if (this._rollbackOnDisable !== undefined) {
       hasAnyValues = true;
       internalValueResult.rollbackOnDisable = this._rollbackOnDisable;
     }
-    if (this._maintenanceSchedule) {
+    if (this._maintenanceSchedule !== undefined) {
       hasAnyValues = true;
       internalValueResult.maintenanceSchedule = this._maintenanceSchedule;
     }
@@ -581,7 +581,7 @@ export class ElasticsearchDomainAutoTuneOptionsOutputReference extends cdktf.Com
 }
 export interface ElasticsearchDomainClusterConfigZoneAwarenessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#availability_zone_count ElasticsearchDomain#availability_zone_count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#availability_zone_count ElasticsearchDomain#availability_zone_count}
   */
   readonly availabilityZoneCount?: number;
 }
@@ -611,7 +611,7 @@ export class ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference 
   public get internalValue(): ElasticsearchDomainClusterConfigZoneAwarenessConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._availabilityZoneCount) {
+    if (this._availabilityZoneCount !== undefined) {
       hasAnyValues = true;
       internalValueResult.availabilityZoneCount = this._availabilityZoneCount;
     }
@@ -647,45 +647,45 @@ export class ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference 
 }
 export interface ElasticsearchDomainClusterConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#dedicated_master_count ElasticsearchDomain#dedicated_master_count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#dedicated_master_count ElasticsearchDomain#dedicated_master_count}
   */
   readonly dedicatedMasterCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#dedicated_master_enabled ElasticsearchDomain#dedicated_master_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#dedicated_master_enabled ElasticsearchDomain#dedicated_master_enabled}
   */
   readonly dedicatedMasterEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#dedicated_master_type ElasticsearchDomain#dedicated_master_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#dedicated_master_type ElasticsearchDomain#dedicated_master_type}
   */
   readonly dedicatedMasterType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#instance_count ElasticsearchDomain#instance_count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#instance_count ElasticsearchDomain#instance_count}
   */
   readonly instanceCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#instance_type ElasticsearchDomain#instance_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#instance_type ElasticsearchDomain#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#warm_count ElasticsearchDomain#warm_count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#warm_count ElasticsearchDomain#warm_count}
   */
   readonly warmCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#warm_enabled ElasticsearchDomain#warm_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#warm_enabled ElasticsearchDomain#warm_enabled}
   */
   readonly warmEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#warm_type ElasticsearchDomain#warm_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#warm_type ElasticsearchDomain#warm_type}
   */
   readonly warmType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#zone_awareness_enabled ElasticsearchDomain#zone_awareness_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#zone_awareness_enabled ElasticsearchDomain#zone_awareness_enabled}
   */
   readonly zoneAwarenessEnabled?: boolean | cdktf.IResolvable;
   /**
   * zone_awareness_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#zone_awareness_config ElasticsearchDomain#zone_awareness_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#zone_awareness_config ElasticsearchDomain#zone_awareness_config}
   */
   readonly zoneAwarenessConfig?: ElasticsearchDomainClusterConfigZoneAwarenessConfig;
 }
@@ -724,43 +724,43 @@ export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.Compl
   public get internalValue(): ElasticsearchDomainClusterConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dedicatedMasterCount) {
+    if (this._dedicatedMasterCount !== undefined) {
       hasAnyValues = true;
       internalValueResult.dedicatedMasterCount = this._dedicatedMasterCount;
     }
-    if (this._dedicatedMasterEnabled) {
+    if (this._dedicatedMasterEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.dedicatedMasterEnabled = this._dedicatedMasterEnabled;
     }
-    if (this._dedicatedMasterType) {
+    if (this._dedicatedMasterType !== undefined) {
       hasAnyValues = true;
       internalValueResult.dedicatedMasterType = this._dedicatedMasterType;
     }
-    if (this._instanceCount) {
+    if (this._instanceCount !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceCount = this._instanceCount;
     }
-    if (this._instanceType) {
+    if (this._instanceType !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceType = this._instanceType;
     }
-    if (this._warmCount) {
+    if (this._warmCount !== undefined) {
       hasAnyValues = true;
       internalValueResult.warmCount = this._warmCount;
     }
-    if (this._warmEnabled) {
+    if (this._warmEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.warmEnabled = this._warmEnabled;
     }
-    if (this._warmType) {
+    if (this._warmType !== undefined) {
       hasAnyValues = true;
       internalValueResult.warmType = this._warmType;
     }
-    if (this._zoneAwarenessEnabled) {
+    if (this._zoneAwarenessEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.zoneAwarenessEnabled = this._zoneAwarenessEnabled;
     }
-    if (this._zoneAwarenessConfig?.internalValue) {
+    if (this._zoneAwarenessConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.zoneAwarenessConfig = this._zoneAwarenessConfig?.internalValue;
     }
@@ -958,19 +958,19 @@ export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.Compl
 }
 export interface ElasticsearchDomainCognitoOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#enabled ElasticsearchDomain#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#identity_pool_id ElasticsearchDomain#identity_pool_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#identity_pool_id ElasticsearchDomain#identity_pool_id}
   */
   readonly identityPoolId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#role_arn ElasticsearchDomain#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#role_arn ElasticsearchDomain#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#user_pool_id ElasticsearchDomain#user_pool_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#user_pool_id ElasticsearchDomain#user_pool_id}
   */
   readonly userPoolId: string;
 }
@@ -1003,19 +1003,19 @@ export class ElasticsearchDomainCognitoOptionsOutputReference extends cdktf.Comp
   public get internalValue(): ElasticsearchDomainCognitoOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._identityPoolId) {
+    if (this._identityPoolId !== undefined) {
       hasAnyValues = true;
       internalValueResult.identityPoolId = this._identityPoolId;
     }
-    if (this._roleArn) {
+    if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
     }
-    if (this._userPoolId) {
+    if (this._userPoolId !== undefined) {
       hasAnyValues = true;
       internalValueResult.userPoolId = this._userPoolId;
     }
@@ -1096,23 +1096,23 @@ export class ElasticsearchDomainCognitoOptionsOutputReference extends cdktf.Comp
 }
 export interface ElasticsearchDomainDomainEndpointOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#custom_endpoint ElasticsearchDomain#custom_endpoint}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#custom_endpoint ElasticsearchDomain#custom_endpoint}
   */
   readonly customEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#custom_endpoint_certificate_arn ElasticsearchDomain#custom_endpoint_certificate_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#custom_endpoint_certificate_arn ElasticsearchDomain#custom_endpoint_certificate_arn}
   */
   readonly customEndpointCertificateArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#custom_endpoint_enabled ElasticsearchDomain#custom_endpoint_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#custom_endpoint_enabled ElasticsearchDomain#custom_endpoint_enabled}
   */
   readonly customEndpointEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enforce_https ElasticsearchDomain#enforce_https}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#enforce_https ElasticsearchDomain#enforce_https}
   */
   readonly enforceHttps?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#tls_security_policy ElasticsearchDomain#tls_security_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#tls_security_policy ElasticsearchDomain#tls_security_policy}
   */
   readonly tlsSecurityPolicy?: string;
 }
@@ -1146,23 +1146,23 @@ export class ElasticsearchDomainDomainEndpointOptionsOutputReference extends cdk
   public get internalValue(): ElasticsearchDomainDomainEndpointOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._customEndpoint) {
+    if (this._customEndpoint !== undefined) {
       hasAnyValues = true;
       internalValueResult.customEndpoint = this._customEndpoint;
     }
-    if (this._customEndpointCertificateArn) {
+    if (this._customEndpointCertificateArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.customEndpointCertificateArn = this._customEndpointCertificateArn;
     }
-    if (this._customEndpointEnabled) {
+    if (this._customEndpointEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.customEndpointEnabled = this._customEndpointEnabled;
     }
-    if (this._enforceHttps) {
+    if (this._enforceHttps !== undefined) {
       hasAnyValues = true;
       internalValueResult.enforceHttps = this._enforceHttps;
     }
-    if (this._tlsSecurityPolicy) {
+    if (this._tlsSecurityPolicy !== undefined) {
       hasAnyValues = true;
       internalValueResult.tlsSecurityPolicy = this._tlsSecurityPolicy;
     }
@@ -1270,19 +1270,19 @@ export class ElasticsearchDomainDomainEndpointOptionsOutputReference extends cdk
 }
 export interface ElasticsearchDomainEbsOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#ebs_enabled ElasticsearchDomain#ebs_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#ebs_enabled ElasticsearchDomain#ebs_enabled}
   */
   readonly ebsEnabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#iops ElasticsearchDomain#iops}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#iops ElasticsearchDomain#iops}
   */
   readonly iops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#volume_size ElasticsearchDomain#volume_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#volume_size ElasticsearchDomain#volume_size}
   */
   readonly volumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#volume_type ElasticsearchDomain#volume_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#volume_type ElasticsearchDomain#volume_type}
   */
   readonly volumeType?: string;
 }
@@ -1315,19 +1315,19 @@ export class ElasticsearchDomainEbsOptionsOutputReference extends cdktf.ComplexO
   public get internalValue(): ElasticsearchDomainEbsOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._ebsEnabled) {
+    if (this._ebsEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.ebsEnabled = this._ebsEnabled;
     }
-    if (this._iops) {
+    if (this._iops !== undefined) {
       hasAnyValues = true;
       internalValueResult.iops = this._iops;
     }
-    if (this._volumeSize) {
+    if (this._volumeSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.volumeSize = this._volumeSize;
     }
-    if (this._volumeType) {
+    if (this._volumeType !== undefined) {
       hasAnyValues = true;
       internalValueResult.volumeType = this._volumeType;
     }
@@ -1414,11 +1414,11 @@ export class ElasticsearchDomainEbsOptionsOutputReference extends cdktf.ComplexO
 }
 export interface ElasticsearchDomainEncryptAtRest {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#enabled ElasticsearchDomain#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#kms_key_id ElasticsearchDomain#kms_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#kms_key_id ElasticsearchDomain#kms_key_id}
   */
   readonly kmsKeyId?: string;
 }
@@ -1449,11 +1449,11 @@ export class ElasticsearchDomainEncryptAtRestOutputReference extends cdktf.Compl
   public get internalValue(): ElasticsearchDomainEncryptAtRest | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._kmsKeyId) {
+    if (this._kmsKeyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyId = this._kmsKeyId;
     }
@@ -1504,15 +1504,15 @@ export class ElasticsearchDomainEncryptAtRestOutputReference extends cdktf.Compl
 }
 export interface ElasticsearchDomainLogPublishingOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#cloudwatch_log_group_arn ElasticsearchDomain#cloudwatch_log_group_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#cloudwatch_log_group_arn ElasticsearchDomain#cloudwatch_log_group_arn}
   */
   readonly cloudwatchLogGroupArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#enabled ElasticsearchDomain#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#log_type ElasticsearchDomain#log_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#log_type ElasticsearchDomain#log_type}
   */
   readonly logType: string;
 }
@@ -1531,7 +1531,7 @@ export function elasticsearchDomainLogPublishingOptionsToTerraform(struct?: Elas
 
 export interface ElasticsearchDomainNodeToNodeEncryption {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#enabled ElasticsearchDomain#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -1561,7 +1561,7 @@ export class ElasticsearchDomainNodeToNodeEncryptionOutputReference extends cdkt
   public get internalValue(): ElasticsearchDomainNodeToNodeEncryption | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
@@ -1594,7 +1594,7 @@ export class ElasticsearchDomainNodeToNodeEncryptionOutputReference extends cdkt
 }
 export interface ElasticsearchDomainSnapshotOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#automated_snapshot_start_hour ElasticsearchDomain#automated_snapshot_start_hour}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#automated_snapshot_start_hour ElasticsearchDomain#automated_snapshot_start_hour}
   */
   readonly automatedSnapshotStartHour: number;
 }
@@ -1624,7 +1624,7 @@ export class ElasticsearchDomainSnapshotOptionsOutputReference extends cdktf.Com
   public get internalValue(): ElasticsearchDomainSnapshotOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._automatedSnapshotStartHour) {
+    if (this._automatedSnapshotStartHour !== undefined) {
       hasAnyValues = true;
       internalValueResult.automatedSnapshotStartHour = this._automatedSnapshotStartHour;
     }
@@ -1657,7 +1657,7 @@ export class ElasticsearchDomainSnapshotOptionsOutputReference extends cdktf.Com
 }
 export interface ElasticsearchDomainTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#update ElasticsearchDomain#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#update ElasticsearchDomain#update}
   */
   readonly update?: string;
 }
@@ -1687,7 +1687,7 @@ export class ElasticsearchDomainTimeoutsOutputReference extends cdktf.ComplexObj
   public get internalValue(): ElasticsearchDomainTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
@@ -1723,11 +1723,11 @@ export class ElasticsearchDomainTimeoutsOutputReference extends cdktf.ComplexObj
 }
 export interface ElasticsearchDomainVpcOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#security_group_ids ElasticsearchDomain#security_group_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#security_group_ids ElasticsearchDomain#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#subnet_ids ElasticsearchDomain#subnet_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#subnet_ids ElasticsearchDomain#subnet_ids}
   */
   readonly subnetIds?: string[];
 }
@@ -1758,11 +1758,11 @@ export class ElasticsearchDomainVpcOptionsOutputReference extends cdktf.ComplexO
   public get internalValue(): ElasticsearchDomainVpcOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._securityGroupIds) {
+    if (this._securityGroupIds !== undefined) {
       hasAnyValues = true;
       internalValueResult.securityGroupIds = this._securityGroupIds;
     }
-    if (this._subnetIds) {
+    if (this._subnetIds !== undefined) {
       hasAnyValues = true;
       internalValueResult.subnetIds = this._subnetIds;
     }
@@ -1816,7 +1816,7 @@ export class ElasticsearchDomainVpcOptionsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html aws_elasticsearch_domain}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain aws_elasticsearch_domain}
 */
 export class ElasticsearchDomain extends cdktf.TerraformResource {
 
@@ -1830,7 +1830,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html aws_elasticsearch_domain} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain aws_elasticsearch_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

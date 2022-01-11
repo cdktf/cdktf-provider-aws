@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsIpRangesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ip_ranges.html#regions DataAwsIpRanges#regions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ip_ranges#regions DataAwsIpRanges#regions}
   */
   readonly regions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ip_ranges.html#services DataAwsIpRanges#services}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ip_ranges#services DataAwsIpRanges#services}
   */
   readonly services: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ip_ranges.html#url DataAwsIpRanges#url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ip_ranges#url DataAwsIpRanges#url}
   */
   readonly url?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ip_ranges.html aws_ip_ranges}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ip_ranges aws_ip_ranges}
 */
 export class DataAwsIpRanges extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataAwsIpRanges extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ip_ranges.html aws_ip_ranges} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ip_ranges aws_ip_ranges} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

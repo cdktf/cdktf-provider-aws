@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsImagebuilderImageRecipesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipes.html#owner DataAwsImagebuilderImageRecipes#owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipes#owner DataAwsImagebuilderImageRecipes#owner}
   */
   readonly owner?: string;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipes.html#filter DataAwsImagebuilderImageRecipes#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipes#filter DataAwsImagebuilderImageRecipes#filter}
   */
   readonly filter?: DataAwsImagebuilderImageRecipesFilter[];
 }
 export interface DataAwsImagebuilderImageRecipesFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipes.html#name DataAwsImagebuilderImageRecipes#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipes#name DataAwsImagebuilderImageRecipes#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipes.html#values DataAwsImagebuilderImageRecipes#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipes#values DataAwsImagebuilderImageRecipes#values}
   */
   readonly values: string[];
 }
@@ -42,7 +42,7 @@ export function dataAwsImagebuilderImageRecipesFilterToTerraform(struct?: DataAw
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipes.html aws_imagebuilder_image_recipes}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipes aws_imagebuilder_image_recipes}
 */
 export class DataAwsImagebuilderImageRecipes extends cdktf.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataAwsImagebuilderImageRecipes extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipes.html aws_imagebuilder_image_recipes} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipes aws_imagebuilder_image_recipes} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

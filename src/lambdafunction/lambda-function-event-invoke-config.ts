@@ -8,31 +8,31 @@ import * as cdktf from 'cdktf';
 */
 export interface LambdaFunctionEventInvokeConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#function_name LambdaFunctionEventInvokeConfig#function_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config#function_name LambdaFunctionEventInvokeConfig#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#maximum_event_age_in_seconds LambdaFunctionEventInvokeConfig#maximum_event_age_in_seconds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config#maximum_event_age_in_seconds LambdaFunctionEventInvokeConfig#maximum_event_age_in_seconds}
   */
   readonly maximumEventAgeInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#maximum_retry_attempts LambdaFunctionEventInvokeConfig#maximum_retry_attempts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config#maximum_retry_attempts LambdaFunctionEventInvokeConfig#maximum_retry_attempts}
   */
   readonly maximumRetryAttempts?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#qualifier LambdaFunctionEventInvokeConfig#qualifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config#qualifier LambdaFunctionEventInvokeConfig#qualifier}
   */
   readonly qualifier?: string;
   /**
   * destination_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#destination_config LambdaFunctionEventInvokeConfig#destination_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config#destination_config LambdaFunctionEventInvokeConfig#destination_config}
   */
   readonly destinationConfig?: LambdaFunctionEventInvokeConfigDestinationConfig;
 }
 export interface LambdaFunctionEventInvokeConfigDestinationConfigOnFailure {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#destination LambdaFunctionEventInvokeConfig#destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config#destination LambdaFunctionEventInvokeConfig#destination}
   */
   readonly destination: string;
 }
@@ -62,7 +62,7 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputRefe
   public get internalValue(): LambdaFunctionEventInvokeConfigDestinationConfigOnFailure | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._destination) {
+    if (this._destination !== undefined) {
       hasAnyValues = true;
       internalValueResult.destination = this._destination;
     }
@@ -95,7 +95,7 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputRefe
 }
 export interface LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#destination LambdaFunctionEventInvokeConfig#destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config#destination LambdaFunctionEventInvokeConfig#destination}
   */
   readonly destination: string;
 }
@@ -125,7 +125,7 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputRefe
   public get internalValue(): LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._destination) {
+    if (this._destination !== undefined) {
       hasAnyValues = true;
       internalValueResult.destination = this._destination;
     }
@@ -160,13 +160,13 @@ export interface LambdaFunctionEventInvokeConfigDestinationConfig {
   /**
   * on_failure block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#on_failure LambdaFunctionEventInvokeConfig#on_failure}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config#on_failure LambdaFunctionEventInvokeConfig#on_failure}
   */
   readonly onFailure?: LambdaFunctionEventInvokeConfigDestinationConfigOnFailure;
   /**
   * on_success block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#on_success LambdaFunctionEventInvokeConfig#on_success}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config#on_success LambdaFunctionEventInvokeConfig#on_success}
   */
   readonly onSuccess?: LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess;
 }
@@ -197,11 +197,11 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOutputReference ext
   public get internalValue(): LambdaFunctionEventInvokeConfigDestinationConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._onFailure?.internalValue) {
+    if (this._onFailure?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.onFailure = this._onFailure?.internalValue;
     }
-    if (this._onSuccess?.internalValue) {
+    if (this._onSuccess?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.onSuccess = this._onSuccess?.internalValue;
     }
@@ -255,7 +255,7 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOutputReference ext
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html aws_lambda_function_event_invoke_config}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config aws_lambda_function_event_invoke_config}
 */
 export class LambdaFunctionEventInvokeConfig extends cdktf.TerraformResource {
 
@@ -269,7 +269,7 @@ export class LambdaFunctionEventInvokeConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html aws_lambda_function_event_invoke_config} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config aws_lambda_function_event_invoke_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

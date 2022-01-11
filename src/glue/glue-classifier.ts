@@ -8,57 +8,57 @@ import * as cdktf from 'cdktf';
 */
 export interface GlueClassifierConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#name GlueClassifier#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#name GlueClassifier#name}
   */
   readonly name: string;
   /**
   * csv_classifier block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#csv_classifier GlueClassifier#csv_classifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#csv_classifier GlueClassifier#csv_classifier}
   */
   readonly csvClassifier?: GlueClassifierCsvClassifier;
   /**
   * grok_classifier block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#grok_classifier GlueClassifier#grok_classifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#grok_classifier GlueClassifier#grok_classifier}
   */
   readonly grokClassifier?: GlueClassifierGrokClassifier;
   /**
   * json_classifier block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#json_classifier GlueClassifier#json_classifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#json_classifier GlueClassifier#json_classifier}
   */
   readonly jsonClassifier?: GlueClassifierJsonClassifier;
   /**
   * xml_classifier block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#xml_classifier GlueClassifier#xml_classifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#xml_classifier GlueClassifier#xml_classifier}
   */
   readonly xmlClassifier?: GlueClassifierXmlClassifier;
 }
 export interface GlueClassifierCsvClassifier {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#allow_single_column GlueClassifier#allow_single_column}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#allow_single_column GlueClassifier#allow_single_column}
   */
   readonly allowSingleColumn?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#contains_header GlueClassifier#contains_header}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#contains_header GlueClassifier#contains_header}
   */
   readonly containsHeader?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#delimiter GlueClassifier#delimiter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#delimiter GlueClassifier#delimiter}
   */
   readonly delimiter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#disable_value_trimming GlueClassifier#disable_value_trimming}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#disable_value_trimming GlueClassifier#disable_value_trimming}
   */
   readonly disableValueTrimming?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#header GlueClassifier#header}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#header GlueClassifier#header}
   */
   readonly header?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#quote_symbol GlueClassifier#quote_symbol}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#quote_symbol GlueClassifier#quote_symbol}
   */
   readonly quoteSymbol?: string;
 }
@@ -93,27 +93,27 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
   public get internalValue(): GlueClassifierCsvClassifier | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allowSingleColumn) {
+    if (this._allowSingleColumn !== undefined) {
       hasAnyValues = true;
       internalValueResult.allowSingleColumn = this._allowSingleColumn;
     }
-    if (this._containsHeader) {
+    if (this._containsHeader !== undefined) {
       hasAnyValues = true;
       internalValueResult.containsHeader = this._containsHeader;
     }
-    if (this._delimiter) {
+    if (this._delimiter !== undefined) {
       hasAnyValues = true;
       internalValueResult.delimiter = this._delimiter;
     }
-    if (this._disableValueTrimming) {
+    if (this._disableValueTrimming !== undefined) {
       hasAnyValues = true;
       internalValueResult.disableValueTrimming = this._disableValueTrimming;
     }
-    if (this._header) {
+    if (this._header !== undefined) {
       hasAnyValues = true;
       internalValueResult.header = this._header;
     }
-    if (this._quoteSymbol) {
+    if (this._quoteSymbol !== undefined) {
       hasAnyValues = true;
       internalValueResult.quoteSymbol = this._quoteSymbol;
     }
@@ -239,15 +239,15 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
 }
 export interface GlueClassifierGrokClassifier {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#classification GlueClassifier#classification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#classification GlueClassifier#classification}
   */
   readonly classification: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#custom_patterns GlueClassifier#custom_patterns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#custom_patterns GlueClassifier#custom_patterns}
   */
   readonly customPatterns?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#grok_pattern GlueClassifier#grok_pattern}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#grok_pattern GlueClassifier#grok_pattern}
   */
   readonly grokPattern: string;
 }
@@ -279,15 +279,15 @@ export class GlueClassifierGrokClassifierOutputReference extends cdktf.ComplexOb
   public get internalValue(): GlueClassifierGrokClassifier | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._classification) {
+    if (this._classification !== undefined) {
       hasAnyValues = true;
       internalValueResult.classification = this._classification;
     }
-    if (this._customPatterns) {
+    if (this._customPatterns !== undefined) {
       hasAnyValues = true;
       internalValueResult.customPatterns = this._customPatterns;
     }
-    if (this._grokPattern) {
+    if (this._grokPattern !== undefined) {
       hasAnyValues = true;
       internalValueResult.grokPattern = this._grokPattern;
     }
@@ -353,7 +353,7 @@ export class GlueClassifierGrokClassifierOutputReference extends cdktf.ComplexOb
 }
 export interface GlueClassifierJsonClassifier {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#json_path GlueClassifier#json_path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#json_path GlueClassifier#json_path}
   */
   readonly jsonPath: string;
 }
@@ -383,7 +383,7 @@ export class GlueClassifierJsonClassifierOutputReference extends cdktf.ComplexOb
   public get internalValue(): GlueClassifierJsonClassifier | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._jsonPath) {
+    if (this._jsonPath !== undefined) {
       hasAnyValues = true;
       internalValueResult.jsonPath = this._jsonPath;
     }
@@ -416,11 +416,11 @@ export class GlueClassifierJsonClassifierOutputReference extends cdktf.ComplexOb
 }
 export interface GlueClassifierXmlClassifier {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#classification GlueClassifier#classification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#classification GlueClassifier#classification}
   */
   readonly classification: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#row_tag GlueClassifier#row_tag}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier#row_tag GlueClassifier#row_tag}
   */
   readonly rowTag: string;
 }
@@ -451,11 +451,11 @@ export class GlueClassifierXmlClassifierOutputReference extends cdktf.ComplexObj
   public get internalValue(): GlueClassifierXmlClassifier | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._classification) {
+    if (this._classification !== undefined) {
       hasAnyValues = true;
       internalValueResult.classification = this._classification;
     }
-    if (this._rowTag) {
+    if (this._rowTag !== undefined) {
       hasAnyValues = true;
       internalValueResult.rowTag = this._rowTag;
     }
@@ -503,7 +503,7 @@ export class GlueClassifierXmlClassifierOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html aws_glue_classifier}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier aws_glue_classifier}
 */
 export class GlueClassifier extends cdktf.TerraformResource {
 
@@ -517,7 +517,7 @@ export class GlueClassifier extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html aws_glue_classifier} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier aws_glue_classifier} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

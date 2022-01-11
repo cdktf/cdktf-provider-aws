@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsLaunchConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_configuration.html#name DataAwsLaunchConfiguration#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_configuration#name DataAwsLaunchConfiguration#name}
   */
   readonly name: string;
 }
@@ -122,7 +122,7 @@ export class DataAwsLaunchConfigurationRootBlockDevice extends cdktf.ComplexComp
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/launch_configuration.html aws_launch_configuration}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/launch_configuration aws_launch_configuration}
 */
 export class DataAwsLaunchConfiguration extends cdktf.TerraformDataSource {
 
@@ -136,7 +136,7 @@ export class DataAwsLaunchConfiguration extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/launch_configuration.html aws_launch_configuration} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/launch_configuration aws_launch_configuration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

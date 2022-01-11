@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface EcsAccountSettingDefaultConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_account_setting_default.html#name EcsAccountSettingDefault#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_account_setting_default#name EcsAccountSettingDefault#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_account_setting_default.html#value EcsAccountSettingDefault#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_account_setting_default#value EcsAccountSettingDefault#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_account_setting_default.html aws_ecs_account_setting_default}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_account_setting_default aws_ecs_account_setting_default}
 */
 export class EcsAccountSettingDefault extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class EcsAccountSettingDefault extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_account_setting_default.html aws_ecs_account_setting_default} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_account_setting_default aws_ecs_account_setting_default} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

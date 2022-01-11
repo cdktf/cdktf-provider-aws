@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsIamGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_group.html#group_name DataAwsIamGroup#group_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_group#group_name DataAwsIamGroup#group_name}
   */
   readonly groupName: string;
 }
@@ -36,7 +36,7 @@ export class DataAwsIamGroupUsers extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_group.html aws_iam_group}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_group aws_iam_group}
 */
 export class DataAwsIamGroup extends cdktf.TerraformDataSource {
 
@@ -50,7 +50,7 @@ export class DataAwsIamGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_group.html aws_iam_group} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_group aws_iam_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

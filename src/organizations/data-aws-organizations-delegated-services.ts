@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsOrganizationsDelegatedServicesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_services.html#account_id DataAwsOrganizationsDelegatedServices#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_services#account_id DataAwsOrganizationsDelegatedServices#account_id}
   */
   readonly accountId: string;
 }
@@ -26,7 +26,7 @@ export class DataAwsOrganizationsDelegatedServicesDelegatedServices extends cdkt
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_services.html aws_organizations_delegated_services}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_services aws_organizations_delegated_services}
 */
 export class DataAwsOrganizationsDelegatedServices extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataAwsOrganizationsDelegatedServices extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_services.html aws_organizations_delegated_services} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_services aws_organizations_delegated_services} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

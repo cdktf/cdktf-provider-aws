@@ -10,7 +10,7 @@ export interface DataAwsGuarddutyDetectorConfig extends cdktf.TerraformMetaArgum
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/guardduty_detector.html aws_guardduty_detector}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/guardduty_detector aws_guardduty_detector}
 */
 export class DataAwsGuarddutyDetector extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataAwsGuarddutyDetector extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/guardduty_detector.html aws_guardduty_detector} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/guardduty_detector aws_guardduty_detector} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

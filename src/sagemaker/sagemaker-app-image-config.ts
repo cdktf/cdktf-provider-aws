@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 */
 export interface SagemakerAppImageConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config.html#app_image_config_name SagemakerAppImageConfig#app_image_config_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config#app_image_config_name SagemakerAppImageConfig#app_image_config_name}
   */
   readonly appImageConfigName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config.html#tags SagemakerAppImageConfig#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config#tags SagemakerAppImageConfig#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config.html#tags_all SagemakerAppImageConfig#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config#tags_all SagemakerAppImageConfig#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * kernel_gateway_image_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config.html#kernel_gateway_image_config SagemakerAppImageConfig#kernel_gateway_image_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config#kernel_gateway_image_config SagemakerAppImageConfig#kernel_gateway_image_config}
   */
   readonly kernelGatewayImageConfig?: SagemakerAppImageConfigKernelGatewayImageConfig;
 }
 export interface SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config.html#default_gid SagemakerAppImageConfig#default_gid}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config#default_gid SagemakerAppImageConfig#default_gid}
   */
   readonly defaultGid?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config.html#default_uid SagemakerAppImageConfig#default_uid}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config#default_uid SagemakerAppImageConfig#default_uid}
   */
   readonly defaultUid?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config.html#mount_path SagemakerAppImageConfig#mount_path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config#mount_path SagemakerAppImageConfig#mount_path}
   */
   readonly mountPath?: string;
 }
@@ -68,15 +68,15 @@ export class SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutp
   public get internalValue(): SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._defaultGid) {
+    if (this._defaultGid !== undefined) {
       hasAnyValues = true;
       internalValueResult.defaultGid = this._defaultGid;
     }
-    if (this._defaultUid) {
+    if (this._defaultUid !== undefined) {
       hasAnyValues = true;
       internalValueResult.defaultUid = this._defaultUid;
     }
-    if (this._mountPath) {
+    if (this._mountPath !== undefined) {
       hasAnyValues = true;
       internalValueResult.mountPath = this._mountPath;
     }
@@ -148,11 +148,11 @@ export class SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutp
 }
 export interface SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config.html#display_name SagemakerAppImageConfig#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config#display_name SagemakerAppImageConfig#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config.html#name SagemakerAppImageConfig#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config#name SagemakerAppImageConfig#name}
   */
   readonly name: string;
 }
@@ -183,11 +183,11 @@ export class SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputRefe
   public get internalValue(): SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._displayName) {
+    if (this._displayName !== undefined) {
       hasAnyValues = true;
       internalValueResult.displayName = this._displayName;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
@@ -240,13 +240,13 @@ export interface SagemakerAppImageConfigKernelGatewayImageConfig {
   /**
   * file_system_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config.html#file_system_config SagemakerAppImageConfig#file_system_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config#file_system_config SagemakerAppImageConfig#file_system_config}
   */
   readonly fileSystemConfig?: SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig;
   /**
   * kernel_spec block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config.html#kernel_spec SagemakerAppImageConfig#kernel_spec}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config#kernel_spec SagemakerAppImageConfig#kernel_spec}
   */
   readonly kernelSpec: SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec;
 }
@@ -277,11 +277,11 @@ export class SagemakerAppImageConfigKernelGatewayImageConfigOutputReference exte
   public get internalValue(): SagemakerAppImageConfigKernelGatewayImageConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fileSystemConfig?.internalValue) {
+    if (this._fileSystemConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.fileSystemConfig = this._fileSystemConfig?.internalValue;
     }
-    if (this._kernelSpec?.internalValue) {
+    if (this._kernelSpec?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.kernelSpec = this._kernelSpec?.internalValue;
     }
@@ -332,7 +332,7 @@ export class SagemakerAppImageConfigKernelGatewayImageConfigOutputReference exte
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config.html aws_sagemaker_app_image_config}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config aws_sagemaker_app_image_config}
 */
 export class SagemakerAppImageConfig extends cdktf.TerraformResource {
 
@@ -346,7 +346,7 @@ export class SagemakerAppImageConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config.html aws_sagemaker_app_image_config} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_app_image_config aws_sagemaker_app_image_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

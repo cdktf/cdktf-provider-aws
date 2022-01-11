@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsRegionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/regions.html#all_regions DataAwsRegions#all_regions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/regions#all_regions DataAwsRegions#all_regions}
   */
   readonly allRegions?: boolean | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/regions.html#filter DataAwsRegions#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/regions#filter DataAwsRegions#filter}
   */
   readonly filter?: DataAwsRegionsFilter[];
 }
 export interface DataAwsRegionsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/regions.html#name DataAwsRegions#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/regions#name DataAwsRegions#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/regions.html#values DataAwsRegions#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/regions#values DataAwsRegions#values}
   */
   readonly values: string[];
 }
@@ -42,7 +42,7 @@ export function dataAwsRegionsFilterToTerraform(struct?: DataAwsRegionsFilter): 
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/regions.html aws_regions}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/regions aws_regions}
 */
 export class DataAwsRegions extends cdktf.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataAwsRegions extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/regions.html aws_regions} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/regions aws_regions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

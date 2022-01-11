@@ -10,7 +10,7 @@ export interface DataAwsEbsDefaultKmsKeyConfig extends cdktf.TerraformMetaArgume
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ebs_default_kms_key.html aws_ebs_default_kms_key}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ebs_default_kms_key aws_ebs_default_kms_key}
 */
 export class DataAwsEbsDefaultKmsKey extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataAwsEbsDefaultKmsKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ebs_default_kms_key.html aws_ebs_default_kms_key} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ebs_default_kms_key aws_ebs_default_kms_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

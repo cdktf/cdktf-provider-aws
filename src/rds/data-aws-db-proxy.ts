@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsDbProxyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_proxy.html#name DataAwsDbProxy#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_proxy#name DataAwsDbProxy#name}
   */
   readonly name: string;
 }
@@ -36,7 +36,7 @@ export class DataAwsDbProxyAuth extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/db_proxy.html aws_db_proxy}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/db_proxy aws_db_proxy}
 */
 export class DataAwsDbProxy extends cdktf.TerraformDataSource {
 
@@ -50,7 +50,7 @@ export class DataAwsDbProxy extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/db_proxy.html aws_db_proxy} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/db_proxy aws_db_proxy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

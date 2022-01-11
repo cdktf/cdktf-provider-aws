@@ -8,27 +8,27 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsRouteTablesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_tables.html#tags DataAwsRouteTables#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_tables#tags DataAwsRouteTables#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_tables.html#vpc_id DataAwsRouteTables#vpc_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_tables#vpc_id DataAwsRouteTables#vpc_id}
   */
   readonly vpcId?: string;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_tables.html#filter DataAwsRouteTables#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_tables#filter DataAwsRouteTables#filter}
   */
   readonly filter?: DataAwsRouteTablesFilter[];
 }
 export interface DataAwsRouteTablesFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_tables.html#name DataAwsRouteTables#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_tables#name DataAwsRouteTables#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_tables.html#values DataAwsRouteTables#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_tables#values DataAwsRouteTables#values}
   */
   readonly values: string[];
 }
@@ -46,7 +46,7 @@ export function dataAwsRouteTablesFilterToTerraform(struct?: DataAwsRouteTablesF
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/route_tables.html aws_route_tables}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/route_tables aws_route_tables}
 */
 export class DataAwsRouteTables extends cdktf.TerraformDataSource {
 
@@ -60,7 +60,7 @@ export class DataAwsRouteTables extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/route_tables.html aws_route_tables} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/route_tables aws_route_tables} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsSubnetsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnets.html#tags DataAwsSubnets#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnets#tags DataAwsSubnets#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnets.html#filter DataAwsSubnets#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnets#filter DataAwsSubnets#filter}
   */
   readonly filter?: DataAwsSubnetsFilter[];
 }
 export interface DataAwsSubnetsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnets.html#name DataAwsSubnets#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnets#name DataAwsSubnets#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnets.html#values DataAwsSubnets#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnets#values DataAwsSubnets#values}
   */
   readonly values: string[];
 }
@@ -42,7 +42,7 @@ export function dataAwsSubnetsFilterToTerraform(struct?: DataAwsSubnetsFilter): 
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/subnets.html aws_subnets}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/subnets aws_subnets}
 */
 export class DataAwsSubnets extends cdktf.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataAwsSubnets extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/subnets.html aws_subnets} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/subnets aws_subnets} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

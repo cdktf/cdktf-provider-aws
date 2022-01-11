@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface GlueDataCatalogEncryptionSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings.html#catalog_id GlueDataCatalogEncryptionSettings#catalog_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings#catalog_id GlueDataCatalogEncryptionSettings#catalog_id}
   */
   readonly catalogId?: string;
   /**
   * data_catalog_encryption_settings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings.html#data_catalog_encryption_settings GlueDataCatalogEncryptionSettings#data_catalog_encryption_settings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings#data_catalog_encryption_settings GlueDataCatalogEncryptionSettings#data_catalog_encryption_settings}
   */
   readonly dataCatalogEncryptionSettings: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings;
 }
 export interface GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings.html#aws_kms_key_id GlueDataCatalogEncryptionSettings#aws_kms_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings#aws_kms_key_id GlueDataCatalogEncryptionSettings#aws_kms_key_id}
   */
   readonly awsKmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings.html#return_connection_password_encrypted GlueDataCatalogEncryptionSettings#return_connection_password_encrypted}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings#return_connection_password_encrypted GlueDataCatalogEncryptionSettings#return_connection_password_encrypted}
   */
   readonly returnConnectionPasswordEncrypted: boolean | cdktf.IResolvable;
 }
@@ -55,11 +55,11 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConne
   public get internalValue(): GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._awsKmsKeyId) {
+    if (this._awsKmsKeyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.awsKmsKeyId = this._awsKmsKeyId;
     }
-    if (this._returnConnectionPasswordEncrypted) {
+    if (this._returnConnectionPasswordEncrypted !== undefined) {
       hasAnyValues = true;
       internalValueResult.returnConnectionPasswordEncrypted = this._returnConnectionPasswordEncrypted;
     }
@@ -110,11 +110,11 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConne
 }
 export interface GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings.html#catalog_encryption_mode GlueDataCatalogEncryptionSettings#catalog_encryption_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings#catalog_encryption_mode GlueDataCatalogEncryptionSettings#catalog_encryption_mode}
   */
   readonly catalogEncryptionMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings.html#sse_aws_kms_key_id GlueDataCatalogEncryptionSettings#sse_aws_kms_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings#sse_aws_kms_key_id GlueDataCatalogEncryptionSettings#sse_aws_kms_key_id}
   */
   readonly sseAwsKmsKeyId?: string;
 }
@@ -145,11 +145,11 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncry
   public get internalValue(): GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._catalogEncryptionMode) {
+    if (this._catalogEncryptionMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.catalogEncryptionMode = this._catalogEncryptionMode;
     }
-    if (this._sseAwsKmsKeyId) {
+    if (this._sseAwsKmsKeyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.sseAwsKmsKeyId = this._sseAwsKmsKeyId;
     }
@@ -202,13 +202,13 @@ export interface GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings 
   /**
   * connection_password_encryption block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings.html#connection_password_encryption GlueDataCatalogEncryptionSettings#connection_password_encryption}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings#connection_password_encryption GlueDataCatalogEncryptionSettings#connection_password_encryption}
   */
   readonly connectionPasswordEncryption: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption;
   /**
   * encryption_at_rest block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings.html#encryption_at_rest GlueDataCatalogEncryptionSettings#encryption_at_rest}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings#encryption_at_rest GlueDataCatalogEncryptionSettings#encryption_at_rest}
   */
   readonly encryptionAtRest: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest;
 }
@@ -239,11 +239,11 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutpu
   public get internalValue(): GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._connectionPasswordEncryption?.internalValue) {
+    if (this._connectionPasswordEncryption?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.connectionPasswordEncryption = this._connectionPasswordEncryption?.internalValue;
     }
-    if (this._encryptionAtRest?.internalValue) {
+    if (this._encryptionAtRest?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.encryptionAtRest = this._encryptionAtRest?.internalValue;
     }
@@ -291,7 +291,7 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutpu
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings.html aws_glue_data_catalog_encryption_settings}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings}
 */
 export class GlueDataCatalogEncryptionSettings extends cdktf.TerraformResource {
 
@@ -305,7 +305,7 @@ export class GlueDataCatalogEncryptionSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings.html aws_glue_data_catalog_encryption_settings} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

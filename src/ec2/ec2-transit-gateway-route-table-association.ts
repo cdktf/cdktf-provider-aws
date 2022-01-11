@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface Ec2TransitGatewayRouteTableAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table_association.html#transit_gateway_attachment_id Ec2TransitGatewayRouteTableAssociation#transit_gateway_attachment_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table_association#transit_gateway_attachment_id Ec2TransitGatewayRouteTableAssociation#transit_gateway_attachment_id}
   */
   readonly transitGatewayAttachmentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table_association.html#transit_gateway_route_table_id Ec2TransitGatewayRouteTableAssociation#transit_gateway_route_table_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table_association#transit_gateway_route_table_id Ec2TransitGatewayRouteTableAssociation#transit_gateway_route_table_id}
   */
   readonly transitGatewayRouteTableId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table_association.html aws_ec2_transit_gateway_route_table_association}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table_association aws_ec2_transit_gateway_route_table_association}
 */
 export class Ec2TransitGatewayRouteTableAssociation extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class Ec2TransitGatewayRouteTableAssociation extends cdktf.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table_association.html aws_ec2_transit_gateway_route_table_association} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table_association aws_ec2_transit_gateway_route_table_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

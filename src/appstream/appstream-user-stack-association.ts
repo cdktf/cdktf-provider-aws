@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 */
 export interface AppstreamUserStackAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association.html#authentication_type AppstreamUserStackAssociation#authentication_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association#authentication_type AppstreamUserStackAssociation#authentication_type}
   */
   readonly authenticationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association.html#send_email_notification AppstreamUserStackAssociation#send_email_notification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association#send_email_notification AppstreamUserStackAssociation#send_email_notification}
   */
   readonly sendEmailNotification?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association.html#stack_name AppstreamUserStackAssociation#stack_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association#stack_name AppstreamUserStackAssociation#stack_name}
   */
   readonly stackName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association.html#user_name AppstreamUserStackAssociation#user_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association#user_name AppstreamUserStackAssociation#user_name}
   */
   readonly userName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association.html aws_appstream_user_stack_association}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association aws_appstream_user_stack_association}
 */
 export class AppstreamUserStackAssociation extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class AppstreamUserStackAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association.html aws_appstream_user_stack_association} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association aws_appstream_user_stack_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

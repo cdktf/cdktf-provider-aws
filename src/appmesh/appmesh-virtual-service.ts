@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 */
 export interface AppmeshVirtualServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#mesh_name AppmeshVirtualService#mesh_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service#mesh_name AppmeshVirtualService#mesh_name}
   */
   readonly meshName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#mesh_owner AppmeshVirtualService#mesh_owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service#mesh_owner AppmeshVirtualService#mesh_owner}
   */
   readonly meshOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#name AppmeshVirtualService#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service#name AppmeshVirtualService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#tags AppmeshVirtualService#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service#tags AppmeshVirtualService#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#tags_all AppmeshVirtualService#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service#tags_all AppmeshVirtualService#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * spec block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#spec AppmeshVirtualService#spec}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service#spec AppmeshVirtualService#spec}
   */
   readonly spec: AppmeshVirtualServiceSpec;
 }
 export interface AppmeshVirtualServiceSpecProviderVirtualNode {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#virtual_node_name AppmeshVirtualService#virtual_node_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service#virtual_node_name AppmeshVirtualService#virtual_node_name}
   */
   readonly virtualNodeName: string;
 }
@@ -66,7 +66,7 @@ export class AppmeshVirtualServiceSpecProviderVirtualNodeOutputReference extends
   public get internalValue(): AppmeshVirtualServiceSpecProviderVirtualNode | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._virtualNodeName) {
+    if (this._virtualNodeName !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualNodeName = this._virtualNodeName;
     }
@@ -99,7 +99,7 @@ export class AppmeshVirtualServiceSpecProviderVirtualNodeOutputReference extends
 }
 export interface AppmeshVirtualServiceSpecProviderVirtualRouter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#virtual_router_name AppmeshVirtualService#virtual_router_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service#virtual_router_name AppmeshVirtualService#virtual_router_name}
   */
   readonly virtualRouterName: string;
 }
@@ -129,7 +129,7 @@ export class AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference exten
   public get internalValue(): AppmeshVirtualServiceSpecProviderVirtualRouter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._virtualRouterName) {
+    if (this._virtualRouterName !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualRouterName = this._virtualRouterName;
     }
@@ -164,13 +164,13 @@ export interface AppmeshVirtualServiceSpecProvider {
   /**
   * virtual_node block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#virtual_node AppmeshVirtualService#virtual_node}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service#virtual_node AppmeshVirtualService#virtual_node}
   */
   readonly virtualNode?: AppmeshVirtualServiceSpecProviderVirtualNode;
   /**
   * virtual_router block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#virtual_router AppmeshVirtualService#virtual_router}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service#virtual_router AppmeshVirtualService#virtual_router}
   */
   readonly virtualRouter?: AppmeshVirtualServiceSpecProviderVirtualRouter;
 }
@@ -201,11 +201,11 @@ export class AppmeshVirtualServiceSpecProviderOutputReference extends cdktf.Comp
   public get internalValue(): AppmeshVirtualServiceSpecProvider | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._virtualNode?.internalValue) {
+    if (this._virtualNode?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualNode = this._virtualNode?.internalValue;
     }
-    if (this._virtualRouter?.internalValue) {
+    if (this._virtualRouter?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.virtualRouter = this._virtualRouter?.internalValue;
     }
@@ -261,7 +261,7 @@ export interface AppmeshVirtualServiceSpec {
   /**
   * provider block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#provider AppmeshVirtualService#provider}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service#provider AppmeshVirtualService#provider}
   */
   readonly provider?: AppmeshVirtualServiceSpecProvider;
 }
@@ -291,7 +291,7 @@ export class AppmeshVirtualServiceSpecOutputReference extends cdktf.ComplexObjec
   public get internalValue(): AppmeshVirtualServiceSpec | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._provider?.internalValue) {
+    if (this._provider?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.provider = this._provider?.internalValue;
     }
@@ -327,7 +327,7 @@ export class AppmeshVirtualServiceSpecOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html aws_appmesh_virtual_service}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service aws_appmesh_virtual_service}
 */
 export class AppmeshVirtualService extends cdktf.TerraformResource {
 
@@ -341,7 +341,7 @@ export class AppmeshVirtualService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html aws_appmesh_virtual_service} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service aws_appmesh_virtual_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

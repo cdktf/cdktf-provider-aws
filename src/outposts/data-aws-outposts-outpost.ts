@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsOutpostsOutpostConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost.html#name DataAwsOutpostsOutpost#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost#name DataAwsOutpostsOutpost#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost.html#owner_id DataAwsOutpostsOutpost#owner_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost#owner_id DataAwsOutpostsOutpost#owner_id}
   */
   readonly ownerId?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost.html aws_outposts_outpost}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost aws_outposts_outpost}
 */
 export class DataAwsOutpostsOutpost extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsOutpostsOutpost extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost.html aws_outposts_outpost} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost aws_outposts_outpost} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

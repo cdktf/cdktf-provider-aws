@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 */
 export interface LambdaCodeSigningConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config.html#description LambdaCodeSigningConfig#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config#description LambdaCodeSigningConfig#description}
   */
   readonly description?: string;
   /**
   * allowed_publishers block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config.html#allowed_publishers LambdaCodeSigningConfig#allowed_publishers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config#allowed_publishers LambdaCodeSigningConfig#allowed_publishers}
   */
   readonly allowedPublishers: LambdaCodeSigningConfigAllowedPublishers;
   /**
   * policies block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config.html#policies LambdaCodeSigningConfig#policies}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config#policies LambdaCodeSigningConfig#policies}
   */
   readonly policies?: LambdaCodeSigningConfigPolicies;
 }
 export interface LambdaCodeSigningConfigAllowedPublishers {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config.html#signing_profile_version_arns LambdaCodeSigningConfig#signing_profile_version_arns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config#signing_profile_version_arns LambdaCodeSigningConfig#signing_profile_version_arns}
   */
   readonly signingProfileVersionArns: string[];
 }
@@ -56,7 +56,7 @@ export class LambdaCodeSigningConfigAllowedPublishersOutputReference extends cdk
   public get internalValue(): LambdaCodeSigningConfigAllowedPublishers | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._signingProfileVersionArns) {
+    if (this._signingProfileVersionArns !== undefined) {
       hasAnyValues = true;
       internalValueResult.signingProfileVersionArns = this._signingProfileVersionArns;
     }
@@ -89,7 +89,7 @@ export class LambdaCodeSigningConfigAllowedPublishersOutputReference extends cdk
 }
 export interface LambdaCodeSigningConfigPolicies {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config.html#untrusted_artifact_on_deployment LambdaCodeSigningConfig#untrusted_artifact_on_deployment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config#untrusted_artifact_on_deployment LambdaCodeSigningConfig#untrusted_artifact_on_deployment}
   */
   readonly untrustedArtifactOnDeployment: string;
 }
@@ -119,7 +119,7 @@ export class LambdaCodeSigningConfigPoliciesOutputReference extends cdktf.Comple
   public get internalValue(): LambdaCodeSigningConfigPolicies | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._untrustedArtifactOnDeployment) {
+    if (this._untrustedArtifactOnDeployment !== undefined) {
       hasAnyValues = true;
       internalValueResult.untrustedArtifactOnDeployment = this._untrustedArtifactOnDeployment;
     }
@@ -152,7 +152,7 @@ export class LambdaCodeSigningConfigPoliciesOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config.html aws_lambda_code_signing_config}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config aws_lambda_code_signing_config}
 */
 export class LambdaCodeSigningConfig extends cdktf.TerraformResource {
 
@@ -166,7 +166,7 @@ export class LambdaCodeSigningConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config.html aws_lambda_code_signing_config} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_code_signing_config aws_lambda_code_signing_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

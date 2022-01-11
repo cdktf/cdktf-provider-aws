@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface ElasticsearchDomainSamlOptionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html#domain_name ElasticsearchDomainSamlOptions#domain_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options#domain_name ElasticsearchDomainSamlOptions#domain_name}
   */
   readonly domainName: string;
   /**
   * saml_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html#saml_options ElasticsearchDomainSamlOptions#saml_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options#saml_options ElasticsearchDomainSamlOptions#saml_options}
   */
   readonly samlOptions?: ElasticsearchDomainSamlOptionsSamlOptions;
 }
 export interface ElasticsearchDomainSamlOptionsSamlOptionsIdp {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html#entity_id ElasticsearchDomainSamlOptions#entity_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options#entity_id ElasticsearchDomainSamlOptions#entity_id}
   */
   readonly entityId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html#metadata_content ElasticsearchDomainSamlOptions#metadata_content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options#metadata_content ElasticsearchDomainSamlOptions#metadata_content}
   */
   readonly metadataContent: string;
 }
@@ -55,11 +55,11 @@ export class ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference extends
   public get internalValue(): ElasticsearchDomainSamlOptionsSamlOptionsIdp | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._entityId) {
+    if (this._entityId !== undefined) {
       hasAnyValues = true;
       internalValueResult.entityId = this._entityId;
     }
-    if (this._metadataContent) {
+    if (this._metadataContent !== undefined) {
       hasAnyValues = true;
       internalValueResult.metadataContent = this._metadataContent;
     }
@@ -107,33 +107,33 @@ export class ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference extends
 }
 export interface ElasticsearchDomainSamlOptionsSamlOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html#enabled ElasticsearchDomainSamlOptions#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options#enabled ElasticsearchDomainSamlOptions#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html#master_backend_role ElasticsearchDomainSamlOptions#master_backend_role}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options#master_backend_role ElasticsearchDomainSamlOptions#master_backend_role}
   */
   readonly masterBackendRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html#master_user_name ElasticsearchDomainSamlOptions#master_user_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options#master_user_name ElasticsearchDomainSamlOptions#master_user_name}
   */
   readonly masterUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html#roles_key ElasticsearchDomainSamlOptions#roles_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options#roles_key ElasticsearchDomainSamlOptions#roles_key}
   */
   readonly rolesKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html#session_timeout_minutes ElasticsearchDomainSamlOptions#session_timeout_minutes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options#session_timeout_minutes ElasticsearchDomainSamlOptions#session_timeout_minutes}
   */
   readonly sessionTimeoutMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html#subject_key ElasticsearchDomainSamlOptions#subject_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options#subject_key ElasticsearchDomainSamlOptions#subject_key}
   */
   readonly subjectKey?: string;
   /**
   * idp block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html#idp ElasticsearchDomainSamlOptions#idp}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options#idp ElasticsearchDomainSamlOptions#idp}
   */
   readonly idp?: ElasticsearchDomainSamlOptionsSamlOptionsIdp;
 }
@@ -169,31 +169,31 @@ export class ElasticsearchDomainSamlOptionsSamlOptionsOutputReference extends cd
   public get internalValue(): ElasticsearchDomainSamlOptionsSamlOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._masterBackendRole) {
+    if (this._masterBackendRole !== undefined) {
       hasAnyValues = true;
       internalValueResult.masterBackendRole = this._masterBackendRole;
     }
-    if (this._masterUserName) {
+    if (this._masterUserName !== undefined) {
       hasAnyValues = true;
       internalValueResult.masterUserName = this._masterUserName;
     }
-    if (this._rolesKey) {
+    if (this._rolesKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.rolesKey = this._rolesKey;
     }
-    if (this._sessionTimeoutMinutes) {
+    if (this._sessionTimeoutMinutes !== undefined) {
       hasAnyValues = true;
       internalValueResult.sessionTimeoutMinutes = this._sessionTimeoutMinutes;
     }
-    if (this._subjectKey) {
+    if (this._subjectKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.subjectKey = this._subjectKey;
     }
-    if (this._idp?.internalValue) {
+    if (this._idp?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.idp = this._idp?.internalValue;
     }
@@ -337,7 +337,7 @@ export class ElasticsearchDomainSamlOptionsSamlOptionsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html aws_elasticsearch_domain_saml_options}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options}
 */
 export class ElasticsearchDomainSamlOptions extends cdktf.TerraformResource {
 
@@ -351,7 +351,7 @@ export class ElasticsearchDomainSamlOptions extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html aws_elasticsearch_domain_saml_options} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

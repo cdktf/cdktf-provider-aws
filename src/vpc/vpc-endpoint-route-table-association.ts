@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface VpcEndpointRouteTableAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_route_table_association.html#route_table_id VpcEndpointRouteTableAssociation#route_table_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_route_table_association#route_table_id VpcEndpointRouteTableAssociation#route_table_id}
   */
   readonly routeTableId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_route_table_association.html#vpc_endpoint_id VpcEndpointRouteTableAssociation#vpc_endpoint_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_route_table_association#vpc_endpoint_id VpcEndpointRouteTableAssociation#vpc_endpoint_id}
   */
   readonly vpcEndpointId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_route_table_association.html aws_vpc_endpoint_route_table_association}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_route_table_association aws_vpc_endpoint_route_table_association}
 */
 export class VpcEndpointRouteTableAssociation extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class VpcEndpointRouteTableAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_route_table_association.html aws_vpc_endpoint_route_table_association} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_route_table_association aws_vpc_endpoint_route_table_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

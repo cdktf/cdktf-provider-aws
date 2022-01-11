@@ -8,19 +8,19 @@ import * as cdktf from 'cdktf';
 */
 export interface CloudfrontMonitoringSubscriptionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_monitoring_subscription.html#distribution_id CloudfrontMonitoringSubscription#distribution_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_monitoring_subscription#distribution_id CloudfrontMonitoringSubscription#distribution_id}
   */
   readonly distributionId: string;
   /**
   * monitoring_subscription block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_monitoring_subscription.html#monitoring_subscription CloudfrontMonitoringSubscription#monitoring_subscription}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_monitoring_subscription#monitoring_subscription CloudfrontMonitoringSubscription#monitoring_subscription}
   */
   readonly monitoringSubscription: CloudfrontMonitoringSubscriptionMonitoringSubscription;
 }
 export interface CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_monitoring_subscription.html#realtime_metrics_subscription_status CloudfrontMonitoringSubscription#realtime_metrics_subscription_status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_monitoring_subscription#realtime_metrics_subscription_status CloudfrontMonitoringSubscription#realtime_metrics_subscription_status}
   */
   readonly realtimeMetricsSubscriptionStatus: string;
 }
@@ -50,7 +50,7 @@ export class CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetri
   public get internalValue(): CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._realtimeMetricsSubscriptionStatus) {
+    if (this._realtimeMetricsSubscriptionStatus !== undefined) {
       hasAnyValues = true;
       internalValueResult.realtimeMetricsSubscriptionStatus = this._realtimeMetricsSubscriptionStatus;
     }
@@ -85,7 +85,7 @@ export interface CloudfrontMonitoringSubscriptionMonitoringSubscription {
   /**
   * realtime_metrics_subscription_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_monitoring_subscription.html#realtime_metrics_subscription_config CloudfrontMonitoringSubscription#realtime_metrics_subscription_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_monitoring_subscription#realtime_metrics_subscription_config CloudfrontMonitoringSubscription#realtime_metrics_subscription_config}
   */
   readonly realtimeMetricsSubscriptionConfig: CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfig;
 }
@@ -115,7 +115,7 @@ export class CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReferen
   public get internalValue(): CloudfrontMonitoringSubscriptionMonitoringSubscription | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._realtimeMetricsSubscriptionConfig?.internalValue) {
+    if (this._realtimeMetricsSubscriptionConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.realtimeMetricsSubscriptionConfig = this._realtimeMetricsSubscriptionConfig?.internalValue;
     }
@@ -148,7 +148,7 @@ export class CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReferen
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_monitoring_subscription.html aws_cloudfront_monitoring_subscription}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_monitoring_subscription aws_cloudfront_monitoring_subscription}
 */
 export class CloudfrontMonitoringSubscription extends cdktf.TerraformResource {
 
@@ -162,7 +162,7 @@ export class CloudfrontMonitoringSubscription extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_monitoring_subscription.html aws_cloudfront_monitoring_subscription} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_monitoring_subscription aws_cloudfront_monitoring_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

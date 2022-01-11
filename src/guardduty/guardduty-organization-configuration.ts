@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface GuarddutyOrganizationConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration.html#auto_enable GuarddutyOrganizationConfiguration#auto_enable}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration#auto_enable GuarddutyOrganizationConfiguration#auto_enable}
   */
   readonly autoEnable: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration.html#detector_id GuarddutyOrganizationConfiguration#detector_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration#detector_id GuarddutyOrganizationConfiguration#detector_id}
   */
   readonly detectorId: string;
   /**
   * datasources block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration.html#datasources GuarddutyOrganizationConfiguration#datasources}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration#datasources GuarddutyOrganizationConfiguration#datasources}
   */
   readonly datasources?: GuarddutyOrganizationConfigurationDatasources;
 }
 export interface GuarddutyOrganizationConfigurationDatasourcesS3Logs {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration.html#auto_enable GuarddutyOrganizationConfiguration#auto_enable}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration#auto_enable GuarddutyOrganizationConfiguration#auto_enable}
   */
   readonly autoEnable: boolean | cdktf.IResolvable;
 }
@@ -54,7 +54,7 @@ export class GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference 
   public get internalValue(): GuarddutyOrganizationConfigurationDatasourcesS3Logs | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._autoEnable) {
+    if (this._autoEnable !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoEnable = this._autoEnable;
     }
@@ -89,7 +89,7 @@ export interface GuarddutyOrganizationConfigurationDatasources {
   /**
   * s3_logs block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration.html#s3_logs GuarddutyOrganizationConfiguration#s3_logs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration#s3_logs GuarddutyOrganizationConfiguration#s3_logs}
   */
   readonly s3Logs?: GuarddutyOrganizationConfigurationDatasourcesS3Logs;
 }
@@ -119,7 +119,7 @@ export class GuarddutyOrganizationConfigurationDatasourcesOutputReference extend
   public get internalValue(): GuarddutyOrganizationConfigurationDatasources | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._s3Logs?.internalValue) {
+    if (this._s3Logs?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3Logs = this._s3Logs?.internalValue;
     }
@@ -155,7 +155,7 @@ export class GuarddutyOrganizationConfigurationDatasourcesOutputReference extend
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration.html aws_guardduty_organization_configuration}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration aws_guardduty_organization_configuration}
 */
 export class GuarddutyOrganizationConfiguration extends cdktf.TerraformResource {
 
@@ -169,7 +169,7 @@ export class GuarddutyOrganizationConfiguration extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration.html aws_guardduty_organization_configuration} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration aws_guardduty_organization_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

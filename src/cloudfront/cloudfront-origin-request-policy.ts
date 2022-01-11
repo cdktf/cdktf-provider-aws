@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 */
 export interface CloudfrontOriginRequestPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#comment CloudfrontOriginRequestPolicy#comment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy#comment CloudfrontOriginRequestPolicy#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#name CloudfrontOriginRequestPolicy#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy#name CloudfrontOriginRequestPolicy#name}
   */
   readonly name: string;
   /**
   * cookies_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#cookies_config CloudfrontOriginRequestPolicy#cookies_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy#cookies_config CloudfrontOriginRequestPolicy#cookies_config}
   */
   readonly cookiesConfig: CloudfrontOriginRequestPolicyCookiesConfig;
   /**
   * headers_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#headers_config CloudfrontOriginRequestPolicy#headers_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy#headers_config CloudfrontOriginRequestPolicy#headers_config}
   */
   readonly headersConfig: CloudfrontOriginRequestPolicyHeadersConfig;
   /**
   * query_strings_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#query_strings_config CloudfrontOriginRequestPolicy#query_strings_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy#query_strings_config CloudfrontOriginRequestPolicy#query_strings_config}
   */
   readonly queryStringsConfig: CloudfrontOriginRequestPolicyQueryStringsConfig;
 }
 export interface CloudfrontOriginRequestPolicyCookiesConfigCookies {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#items CloudfrontOriginRequestPolicy#items}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy#items CloudfrontOriginRequestPolicy#items}
   */
   readonly items?: string[];
 }
@@ -66,7 +66,7 @@ export class CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference ex
   public get internalValue(): CloudfrontOriginRequestPolicyCookiesConfigCookies | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._items) {
+    if (this._items !== undefined) {
       hasAnyValues = true;
       internalValueResult.items = this._items;
     }
@@ -102,13 +102,13 @@ export class CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference ex
 }
 export interface CloudfrontOriginRequestPolicyCookiesConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#cookie_behavior CloudfrontOriginRequestPolicy#cookie_behavior}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy#cookie_behavior CloudfrontOriginRequestPolicy#cookie_behavior}
   */
   readonly cookieBehavior: string;
   /**
   * cookies block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#cookies CloudfrontOriginRequestPolicy#cookies}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy#cookies CloudfrontOriginRequestPolicy#cookies}
   */
   readonly cookies?: CloudfrontOriginRequestPolicyCookiesConfigCookies;
 }
@@ -139,11 +139,11 @@ export class CloudfrontOriginRequestPolicyCookiesConfigOutputReference extends c
   public get internalValue(): CloudfrontOriginRequestPolicyCookiesConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cookieBehavior) {
+    if (this._cookieBehavior !== undefined) {
       hasAnyValues = true;
       internalValueResult.cookieBehavior = this._cookieBehavior;
     }
-    if (this._cookies?.internalValue) {
+    if (this._cookies?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cookies = this._cookies?.internalValue;
     }
@@ -194,7 +194,7 @@ export class CloudfrontOriginRequestPolicyCookiesConfigOutputReference extends c
 }
 export interface CloudfrontOriginRequestPolicyHeadersConfigHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#items CloudfrontOriginRequestPolicy#items}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy#items CloudfrontOriginRequestPolicy#items}
   */
   readonly items?: string[];
 }
@@ -224,7 +224,7 @@ export class CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference ex
   public get internalValue(): CloudfrontOriginRequestPolicyHeadersConfigHeaders | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._items) {
+    if (this._items !== undefined) {
       hasAnyValues = true;
       internalValueResult.items = this._items;
     }
@@ -260,13 +260,13 @@ export class CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference ex
 }
 export interface CloudfrontOriginRequestPolicyHeadersConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#header_behavior CloudfrontOriginRequestPolicy#header_behavior}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy#header_behavior CloudfrontOriginRequestPolicy#header_behavior}
   */
   readonly headerBehavior?: string;
   /**
   * headers block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#headers CloudfrontOriginRequestPolicy#headers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy#headers CloudfrontOriginRequestPolicy#headers}
   */
   readonly headers?: CloudfrontOriginRequestPolicyHeadersConfigHeaders;
 }
@@ -297,11 +297,11 @@ export class CloudfrontOriginRequestPolicyHeadersConfigOutputReference extends c
   public get internalValue(): CloudfrontOriginRequestPolicyHeadersConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._headerBehavior) {
+    if (this._headerBehavior !== undefined) {
       hasAnyValues = true;
       internalValueResult.headerBehavior = this._headerBehavior;
     }
-    if (this._headers?.internalValue) {
+    if (this._headers?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.headers = this._headers?.internalValue;
     }
@@ -355,7 +355,7 @@ export class CloudfrontOriginRequestPolicyHeadersConfigOutputReference extends c
 }
 export interface CloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#items CloudfrontOriginRequestPolicy#items}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy#items CloudfrontOriginRequestPolicy#items}
   */
   readonly items?: string[];
 }
@@ -385,7 +385,7 @@ export class CloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsOutputRe
   public get internalValue(): CloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._items) {
+    if (this._items !== undefined) {
       hasAnyValues = true;
       internalValueResult.items = this._items;
     }
@@ -421,13 +421,13 @@ export class CloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsOutputRe
 }
 export interface CloudfrontOriginRequestPolicyQueryStringsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#query_string_behavior CloudfrontOriginRequestPolicy#query_string_behavior}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy#query_string_behavior CloudfrontOriginRequestPolicy#query_string_behavior}
   */
   readonly queryStringBehavior: string;
   /**
   * query_strings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#query_strings CloudfrontOriginRequestPolicy#query_strings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy#query_strings CloudfrontOriginRequestPolicy#query_strings}
   */
   readonly queryStrings?: CloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings;
 }
@@ -458,11 +458,11 @@ export class CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference exte
   public get internalValue(): CloudfrontOriginRequestPolicyQueryStringsConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._queryStringBehavior) {
+    if (this._queryStringBehavior !== undefined) {
       hasAnyValues = true;
       internalValueResult.queryStringBehavior = this._queryStringBehavior;
     }
-    if (this._queryStrings?.internalValue) {
+    if (this._queryStrings?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.queryStrings = this._queryStrings?.internalValue;
     }
@@ -513,7 +513,7 @@ export class CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference exte
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html aws_cloudfront_origin_request_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy aws_cloudfront_origin_request_policy}
 */
 export class CloudfrontOriginRequestPolicy extends cdktf.TerraformResource {
 
@@ -527,7 +527,7 @@ export class CloudfrontOriginRequestPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html aws_cloudfront_origin_request_policy} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy aws_cloudfront_origin_request_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

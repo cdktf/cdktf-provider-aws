@@ -8,39 +8,39 @@ import * as cdktf from 'cdktf';
 */
 export interface AthenaWorkgroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#description AthenaWorkgroup#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#description AthenaWorkgroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#force_destroy AthenaWorkgroup#force_destroy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#force_destroy AthenaWorkgroup#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#name AthenaWorkgroup#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#name AthenaWorkgroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#state AthenaWorkgroup#state}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#state AthenaWorkgroup#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#tags AthenaWorkgroup#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#tags AthenaWorkgroup#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#tags_all AthenaWorkgroup#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#tags_all AthenaWorkgroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#configuration AthenaWorkgroup#configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#configuration AthenaWorkgroup#configuration}
   */
   readonly configuration?: AthenaWorkgroupConfiguration;
 }
 export interface AthenaWorkgroupConfigurationEngineVersion {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#selected_engine_version AthenaWorkgroup#selected_engine_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#selected_engine_version AthenaWorkgroup#selected_engine_version}
   */
   readonly selectedEngineVersion?: string;
 }
@@ -70,7 +70,7 @@ export class AthenaWorkgroupConfigurationEngineVersionOutputReference extends cd
   public get internalValue(): AthenaWorkgroupConfigurationEngineVersion | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._selectedEngineVersion) {
+    if (this._selectedEngineVersion !== undefined) {
       hasAnyValues = true;
       internalValueResult.selectedEngineVersion = this._selectedEngineVersion;
     }
@@ -106,11 +106,11 @@ export class AthenaWorkgroupConfigurationEngineVersionOutputReference extends cd
 }
 export interface AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#encryption_option AthenaWorkgroup#encryption_option}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#encryption_option AthenaWorkgroup#encryption_option}
   */
   readonly encryptionOption?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#kms_key_arn AthenaWorkgroup#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#kms_key_arn AthenaWorkgroup#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
 }
@@ -141,11 +141,11 @@ export class AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurat
   public get internalValue(): AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._encryptionOption) {
+    if (this._encryptionOption !== undefined) {
       hasAnyValues = true;
       internalValueResult.encryptionOption = this._encryptionOption;
     }
-    if (this._kmsKeyArn) {
+    if (this._kmsKeyArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyArn = this._kmsKeyArn;
     }
@@ -199,13 +199,13 @@ export class AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurat
 }
 export interface AthenaWorkgroupConfigurationResultConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#output_location AthenaWorkgroup#output_location}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#output_location AthenaWorkgroup#output_location}
   */
   readonly outputLocation?: string;
   /**
   * encryption_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#encryption_configuration AthenaWorkgroup#encryption_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#encryption_configuration AthenaWorkgroup#encryption_configuration}
   */
   readonly encryptionConfiguration?: AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration;
 }
@@ -236,11 +236,11 @@ export class AthenaWorkgroupConfigurationResultConfigurationOutputReference exte
   public get internalValue(): AthenaWorkgroupConfigurationResultConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._outputLocation) {
+    if (this._outputLocation !== undefined) {
       hasAnyValues = true;
       internalValueResult.outputLocation = this._outputLocation;
     }
-    if (this._encryptionConfiguration?.internalValue) {
+    if (this._encryptionConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.encryptionConfiguration = this._encryptionConfiguration?.internalValue;
     }
@@ -294,31 +294,31 @@ export class AthenaWorkgroupConfigurationResultConfigurationOutputReference exte
 }
 export interface AthenaWorkgroupConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#bytes_scanned_cutoff_per_query AthenaWorkgroup#bytes_scanned_cutoff_per_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#bytes_scanned_cutoff_per_query AthenaWorkgroup#bytes_scanned_cutoff_per_query}
   */
   readonly bytesScannedCutoffPerQuery?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#enforce_workgroup_configuration AthenaWorkgroup#enforce_workgroup_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#enforce_workgroup_configuration AthenaWorkgroup#enforce_workgroup_configuration}
   */
   readonly enforceWorkgroupConfiguration?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#publish_cloudwatch_metrics_enabled AthenaWorkgroup#publish_cloudwatch_metrics_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#publish_cloudwatch_metrics_enabled AthenaWorkgroup#publish_cloudwatch_metrics_enabled}
   */
   readonly publishCloudwatchMetricsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#requester_pays_enabled AthenaWorkgroup#requester_pays_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#requester_pays_enabled AthenaWorkgroup#requester_pays_enabled}
   */
   readonly requesterPaysEnabled?: boolean | cdktf.IResolvable;
   /**
   * engine_version block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#engine_version AthenaWorkgroup#engine_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#engine_version AthenaWorkgroup#engine_version}
   */
   readonly engineVersion?: AthenaWorkgroupConfigurationEngineVersion;
   /**
   * result_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#result_configuration AthenaWorkgroup#result_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#result_configuration AthenaWorkgroup#result_configuration}
   */
   readonly resultConfiguration?: AthenaWorkgroupConfigurationResultConfiguration;
 }
@@ -353,27 +353,27 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   public get internalValue(): AthenaWorkgroupConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bytesScannedCutoffPerQuery) {
+    if (this._bytesScannedCutoffPerQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.bytesScannedCutoffPerQuery = this._bytesScannedCutoffPerQuery;
     }
-    if (this._enforceWorkgroupConfiguration) {
+    if (this._enforceWorkgroupConfiguration !== undefined) {
       hasAnyValues = true;
       internalValueResult.enforceWorkgroupConfiguration = this._enforceWorkgroupConfiguration;
     }
-    if (this._publishCloudwatchMetricsEnabled) {
+    if (this._publishCloudwatchMetricsEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.publishCloudwatchMetricsEnabled = this._publishCloudwatchMetricsEnabled;
     }
-    if (this._requesterPaysEnabled) {
+    if (this._requesterPaysEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.requesterPaysEnabled = this._requesterPaysEnabled;
     }
-    if (this._engineVersion?.internalValue) {
+    if (this._engineVersion?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.engineVersion = this._engineVersion?.internalValue;
     }
-    if (this._resultConfiguration?.internalValue) {
+    if (this._resultConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.resultConfiguration = this._resultConfiguration?.internalValue;
     }
@@ -499,7 +499,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html aws_athena_workgroup}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup aws_athena_workgroup}
 */
 export class AthenaWorkgroup extends cdktf.TerraformResource {
 
@@ -513,7 +513,7 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html aws_athena_workgroup} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup aws_athena_workgroup} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

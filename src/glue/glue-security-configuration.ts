@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface GlueSecurityConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration.html#name GlueSecurityConfiguration#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration#name GlueSecurityConfiguration#name}
   */
   readonly name: string;
   /**
   * encryption_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration.html#encryption_configuration GlueSecurityConfiguration#encryption_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration#encryption_configuration GlueSecurityConfiguration#encryption_configuration}
   */
   readonly encryptionConfiguration: GlueSecurityConfigurationEncryptionConfiguration;
 }
 export interface GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration.html#cloudwatch_encryption_mode GlueSecurityConfiguration#cloudwatch_encryption_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration#cloudwatch_encryption_mode GlueSecurityConfiguration#cloudwatch_encryption_mode}
   */
   readonly cloudwatchEncryptionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration.html#kms_key_arn GlueSecurityConfiguration#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
 }
@@ -55,11 +55,11 @@ export class GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptio
   public get internalValue(): GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cloudwatchEncryptionMode) {
+    if (this._cloudwatchEncryptionMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchEncryptionMode = this._cloudwatchEncryptionMode;
     }
-    if (this._kmsKeyArn) {
+    if (this._kmsKeyArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyArn = this._kmsKeyArn;
     }
@@ -113,11 +113,11 @@ export class GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptio
 }
 export interface GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration.html#job_bookmarks_encryption_mode GlueSecurityConfiguration#job_bookmarks_encryption_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration#job_bookmarks_encryption_mode GlueSecurityConfiguration#job_bookmarks_encryption_mode}
   */
   readonly jobBookmarksEncryptionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration.html#kms_key_arn GlueSecurityConfiguration#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
 }
@@ -148,11 +148,11 @@ export class GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncrypt
   public get internalValue(): GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._jobBookmarksEncryptionMode) {
+    if (this._jobBookmarksEncryptionMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.jobBookmarksEncryptionMode = this._jobBookmarksEncryptionMode;
     }
-    if (this._kmsKeyArn) {
+    if (this._kmsKeyArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyArn = this._kmsKeyArn;
     }
@@ -206,11 +206,11 @@ export class GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncrypt
 }
 export interface GlueSecurityConfigurationEncryptionConfigurationS3Encryption {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration.html#kms_key_arn GlueSecurityConfiguration#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration.html#s3_encryption_mode GlueSecurityConfiguration#s3_encryption_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration#s3_encryption_mode GlueSecurityConfiguration#s3_encryption_mode}
   */
   readonly s3EncryptionMode?: string;
 }
@@ -241,11 +241,11 @@ export class GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputR
   public get internalValue(): GlueSecurityConfigurationEncryptionConfigurationS3Encryption | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._kmsKeyArn) {
+    if (this._kmsKeyArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyArn = this._kmsKeyArn;
     }
-    if (this._s3EncryptionMode) {
+    if (this._s3EncryptionMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3EncryptionMode = this._s3EncryptionMode;
     }
@@ -301,19 +301,19 @@ export interface GlueSecurityConfigurationEncryptionConfiguration {
   /**
   * cloudwatch_encryption block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration.html#cloudwatch_encryption GlueSecurityConfiguration#cloudwatch_encryption}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration#cloudwatch_encryption GlueSecurityConfiguration#cloudwatch_encryption}
   */
   readonly cloudwatchEncryption: GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption;
   /**
   * job_bookmarks_encryption block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration.html#job_bookmarks_encryption GlueSecurityConfiguration#job_bookmarks_encryption}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration#job_bookmarks_encryption GlueSecurityConfiguration#job_bookmarks_encryption}
   */
   readonly jobBookmarksEncryption: GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption;
   /**
   * s3_encryption block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration.html#s3_encryption GlueSecurityConfiguration#s3_encryption}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration#s3_encryption GlueSecurityConfiguration#s3_encryption}
   */
   readonly s3Encryption: GlueSecurityConfigurationEncryptionConfigurationS3Encryption;
 }
@@ -345,15 +345,15 @@ export class GlueSecurityConfigurationEncryptionConfigurationOutputReference ext
   public get internalValue(): GlueSecurityConfigurationEncryptionConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cloudwatchEncryption?.internalValue) {
+    if (this._cloudwatchEncryption?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchEncryption = this._cloudwatchEncryption?.internalValue;
     }
-    if (this._jobBookmarksEncryption?.internalValue) {
+    if (this._jobBookmarksEncryption?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.jobBookmarksEncryption = this._jobBookmarksEncryption?.internalValue;
     }
-    if (this._s3Encryption?.internalValue) {
+    if (this._s3Encryption?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3Encryption = this._s3Encryption?.internalValue;
     }
@@ -416,7 +416,7 @@ export class GlueSecurityConfigurationEncryptionConfigurationOutputReference ext
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration.html aws_glue_security_configuration}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration aws_glue_security_configuration}
 */
 export class GlueSecurityConfiguration extends cdktf.TerraformResource {
 
@@ -430,7 +430,7 @@ export class GlueSecurityConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration.html aws_glue_security_configuration} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_security_configuration aws_glue_security_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

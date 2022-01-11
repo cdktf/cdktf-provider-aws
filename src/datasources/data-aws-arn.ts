@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsArnConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/arn.html#arn DataAwsArn#arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/arn#arn DataAwsArn#arn}
   */
   readonly arn: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/arn.html aws_arn}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/arn aws_arn}
 */
 export class DataAwsArn extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsArn extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/arn.html aws_arn} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/arn aws_arn} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

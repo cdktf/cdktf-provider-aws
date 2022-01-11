@@ -8,31 +8,31 @@ import * as cdktf from 'cdktf';
 */
 export interface BatchSchedulingPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy.html#name BatchSchedulingPolicy#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy#name BatchSchedulingPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy.html#tags BatchSchedulingPolicy#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy#tags BatchSchedulingPolicy#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy.html#tags_all BatchSchedulingPolicy#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy#tags_all BatchSchedulingPolicy#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * fair_share_policy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy.html#fair_share_policy BatchSchedulingPolicy#fair_share_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy#fair_share_policy BatchSchedulingPolicy#fair_share_policy}
   */
   readonly fairSharePolicy?: BatchSchedulingPolicyFairSharePolicy;
 }
 export interface BatchSchedulingPolicyFairSharePolicyShareDistribution {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy.html#share_identifier BatchSchedulingPolicy#share_identifier}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy#share_identifier BatchSchedulingPolicy#share_identifier}
   */
   readonly shareIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy.html#weight_factor BatchSchedulingPolicy#weight_factor}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy#weight_factor BatchSchedulingPolicy#weight_factor}
   */
   readonly weightFactor?: number;
 }
@@ -50,17 +50,17 @@ export function batchSchedulingPolicyFairSharePolicyShareDistributionToTerraform
 
 export interface BatchSchedulingPolicyFairSharePolicy {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy.html#compute_reservation BatchSchedulingPolicy#compute_reservation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy#compute_reservation BatchSchedulingPolicy#compute_reservation}
   */
   readonly computeReservation?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy.html#share_decay_seconds BatchSchedulingPolicy#share_decay_seconds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy#share_decay_seconds BatchSchedulingPolicy#share_decay_seconds}
   */
   readonly shareDecaySeconds?: number;
   /**
   * share_distribution block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy.html#share_distribution BatchSchedulingPolicy#share_distribution}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy#share_distribution BatchSchedulingPolicy#share_distribution}
   */
   readonly shareDistribution?: BatchSchedulingPolicyFairSharePolicyShareDistribution[];
 }
@@ -92,15 +92,15 @@ export class BatchSchedulingPolicyFairSharePolicyOutputReference extends cdktf.C
   public get internalValue(): BatchSchedulingPolicyFairSharePolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._computeReservation) {
+    if (this._computeReservation !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeReservation = this._computeReservation;
     }
-    if (this._shareDecaySeconds) {
+    if (this._shareDecaySeconds !== undefined) {
       hasAnyValues = true;
       internalValueResult.shareDecaySeconds = this._shareDecaySeconds;
     }
-    if (this._shareDistribution) {
+    if (this._shareDistribution !== undefined) {
       hasAnyValues = true;
       internalValueResult.shareDistribution = this._shareDistribution;
     }
@@ -173,7 +173,7 @@ export class BatchSchedulingPolicyFairSharePolicyOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy.html aws_batch_scheduling_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy aws_batch_scheduling_policy}
 */
 export class BatchSchedulingPolicy extends cdktf.TerraformResource {
 
@@ -187,7 +187,7 @@ export class BatchSchedulingPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy.html aws_batch_scheduling_policy} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy aws_batch_scheduling_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

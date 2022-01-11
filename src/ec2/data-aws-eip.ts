@@ -8,27 +8,27 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsEipConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eip.html#public_ip DataAwsEip#public_ip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eip#public_ip DataAwsEip#public_ip}
   */
   readonly publicIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eip.html#tags DataAwsEip#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eip#tags DataAwsEip#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eip.html#filter DataAwsEip#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eip#filter DataAwsEip#filter}
   */
   readonly filter?: DataAwsEipFilter[];
 }
 export interface DataAwsEipFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eip.html#name DataAwsEip#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eip#name DataAwsEip#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eip.html#values DataAwsEip#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eip#values DataAwsEip#values}
   */
   readonly values: string[];
 }
@@ -46,7 +46,7 @@ export function dataAwsEipFilterToTerraform(struct?: DataAwsEipFilter): any {
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/eip.html aws_eip}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/eip aws_eip}
 */
 export class DataAwsEip extends cdktf.TerraformDataSource {
 
@@ -60,7 +60,7 @@ export class DataAwsEip extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/eip.html aws_eip} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/eip aws_eip} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

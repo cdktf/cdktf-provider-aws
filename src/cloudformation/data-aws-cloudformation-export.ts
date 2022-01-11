@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsCloudformationExportConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudformation_export.html#name DataAwsCloudformationExport#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudformation_export#name DataAwsCloudformationExport#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudformation_export.html aws_cloudformation_export}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudformation_export aws_cloudformation_export}
 */
 export class DataAwsCloudformationExport extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsCloudformationExport extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudformation_export.html aws_cloudformation_export} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudformation_export aws_cloudformation_export} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,37 +8,37 @@ import * as cdktf from 'cdktf';
 */
 export interface SchemasSchemaConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema.html#content SchemasSchema#content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema#content SchemasSchema#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema.html#description SchemasSchema#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema#description SchemasSchema#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema.html#name SchemasSchema#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema#name SchemasSchema#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema.html#registry_name SchemasSchema#registry_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema#registry_name SchemasSchema#registry_name}
   */
   readonly registryName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema.html#tags SchemasSchema#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema#tags SchemasSchema#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema.html#tags_all SchemasSchema#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema#tags_all SchemasSchema#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema.html#type SchemasSchema#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema#type SchemasSchema#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema.html aws_schemas_schema}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema aws_schemas_schema}
 */
 export class SchemasSchema extends cdktf.TerraformResource {
 
@@ -52,7 +52,7 @@ export class SchemasSchema extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema.html aws_schemas_schema} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/schemas_schema aws_schemas_schema} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

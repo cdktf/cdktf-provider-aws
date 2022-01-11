@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsEcsServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecs_service.html#cluster_arn DataAwsEcsService#cluster_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecs_service#cluster_arn DataAwsEcsService#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecs_service.html#service_name DataAwsEcsService#service_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecs_service#service_name DataAwsEcsService#service_name}
   */
   readonly serviceName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ecs_service.html aws_ecs_service}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ecs_service aws_ecs_service}
 */
 export class DataAwsEcsService extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsEcsService extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ecs_service.html aws_ecs_service} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ecs_service aws_ecs_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

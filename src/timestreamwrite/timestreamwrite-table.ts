@@ -8,49 +8,49 @@ import * as cdktf from 'cdktf';
 */
 export interface TimestreamwriteTableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#database_name TimestreamwriteTable#database_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#database_name TimestreamwriteTable#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#table_name TimestreamwriteTable#table_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#table_name TimestreamwriteTable#table_name}
   */
   readonly tableName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#tags TimestreamwriteTable#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#tags TimestreamwriteTable#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#tags_all TimestreamwriteTable#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#tags_all TimestreamwriteTable#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * magnetic_store_write_properties block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#magnetic_store_write_properties TimestreamwriteTable#magnetic_store_write_properties}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#magnetic_store_write_properties TimestreamwriteTable#magnetic_store_write_properties}
   */
   readonly magneticStoreWriteProperties?: TimestreamwriteTableMagneticStoreWriteProperties;
   /**
   * retention_properties block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#retention_properties TimestreamwriteTable#retention_properties}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#retention_properties TimestreamwriteTable#retention_properties}
   */
   readonly retentionProperties?: TimestreamwriteTableRetentionProperties;
 }
 export interface TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#bucket_name TimestreamwriteTable#bucket_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#bucket_name TimestreamwriteTable#bucket_name}
   */
   readonly bucketName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#encryption_option TimestreamwriteTable#encryption_option}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#encryption_option TimestreamwriteTable#encryption_option}
   */
   readonly encryptionOption?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#kms_key_id TimestreamwriteTable#kms_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#kms_key_id TimestreamwriteTable#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#object_key_prefix TimestreamwriteTable#object_key_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#object_key_prefix TimestreamwriteTable#object_key_prefix}
   */
   readonly objectKeyPrefix?: string;
 }
@@ -83,19 +83,19 @@ export class TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreReject
   public get internalValue(): TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucketName) {
+    if (this._bucketName !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketName = this._bucketName;
     }
-    if (this._encryptionOption) {
+    if (this._encryptionOption !== undefined) {
       hasAnyValues = true;
       internalValueResult.encryptionOption = this._encryptionOption;
     }
-    if (this._kmsKeyId) {
+    if (this._kmsKeyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyId = this._kmsKeyId;
     }
-    if (this._objectKeyPrefix) {
+    if (this._objectKeyPrefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.objectKeyPrefix = this._objectKeyPrefix;
     }
@@ -187,7 +187,7 @@ export interface TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRe
   /**
   * s3_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#s3_configuration TimestreamwriteTable#s3_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#s3_configuration TimestreamwriteTable#s3_configuration}
   */
   readonly s3Configuration?: TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration;
 }
@@ -217,7 +217,7 @@ export class TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreReject
   public get internalValue(): TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._s3Configuration?.internalValue) {
+    if (this._s3Configuration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3Configuration = this._s3Configuration?.internalValue;
     }
@@ -253,13 +253,13 @@ export class TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreReject
 }
 export interface TimestreamwriteTableMagneticStoreWriteProperties {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#enable_magnetic_store_writes TimestreamwriteTable#enable_magnetic_store_writes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#enable_magnetic_store_writes TimestreamwriteTable#enable_magnetic_store_writes}
   */
   readonly enableMagneticStoreWrites?: boolean | cdktf.IResolvable;
   /**
   * magnetic_store_rejected_data_location block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#magnetic_store_rejected_data_location TimestreamwriteTable#magnetic_store_rejected_data_location}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#magnetic_store_rejected_data_location TimestreamwriteTable#magnetic_store_rejected_data_location}
   */
   readonly magneticStoreRejectedDataLocation?: TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation;
 }
@@ -290,11 +290,11 @@ export class TimestreamwriteTableMagneticStoreWritePropertiesOutputReference ext
   public get internalValue(): TimestreamwriteTableMagneticStoreWriteProperties | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enableMagneticStoreWrites) {
+    if (this._enableMagneticStoreWrites !== undefined) {
       hasAnyValues = true;
       internalValueResult.enableMagneticStoreWrites = this._enableMagneticStoreWrites;
     }
-    if (this._magneticStoreRejectedDataLocation?.internalValue) {
+    if (this._magneticStoreRejectedDataLocation?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.magneticStoreRejectedDataLocation = this._magneticStoreRejectedDataLocation?.internalValue;
     }
@@ -348,11 +348,11 @@ export class TimestreamwriteTableMagneticStoreWritePropertiesOutputReference ext
 }
 export interface TimestreamwriteTableRetentionProperties {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#magnetic_store_retention_period_in_days TimestreamwriteTable#magnetic_store_retention_period_in_days}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#magnetic_store_retention_period_in_days TimestreamwriteTable#magnetic_store_retention_period_in_days}
   */
   readonly magneticStoreRetentionPeriodInDays: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html#memory_store_retention_period_in_hours TimestreamwriteTable#memory_store_retention_period_in_hours}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table#memory_store_retention_period_in_hours TimestreamwriteTable#memory_store_retention_period_in_hours}
   */
   readonly memoryStoreRetentionPeriodInHours: number;
 }
@@ -383,11 +383,11 @@ export class TimestreamwriteTableRetentionPropertiesOutputReference extends cdkt
   public get internalValue(): TimestreamwriteTableRetentionProperties | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._magneticStoreRetentionPeriodInDays) {
+    if (this._magneticStoreRetentionPeriodInDays !== undefined) {
       hasAnyValues = true;
       internalValueResult.magneticStoreRetentionPeriodInDays = this._magneticStoreRetentionPeriodInDays;
     }
-    if (this._memoryStoreRetentionPeriodInHours) {
+    if (this._memoryStoreRetentionPeriodInHours !== undefined) {
       hasAnyValues = true;
       internalValueResult.memoryStoreRetentionPeriodInHours = this._memoryStoreRetentionPeriodInHours;
     }
@@ -435,7 +435,7 @@ export class TimestreamwriteTableRetentionPropertiesOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html aws_timestreamwrite_table}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table aws_timestreamwrite_table}
 */
 export class TimestreamwriteTable extends cdktf.TerraformResource {
 
@@ -449,7 +449,7 @@ export class TimestreamwriteTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table.html aws_timestreamwrite_table} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/timestreamwrite_table aws_timestreamwrite_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

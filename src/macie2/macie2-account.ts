@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface Macie2AccountConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_account.html#finding_publishing_frequency Macie2Account#finding_publishing_frequency}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_account#finding_publishing_frequency Macie2Account#finding_publishing_frequency}
   */
   readonly findingPublishingFrequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_account.html#status Macie2Account#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_account#status Macie2Account#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/macie2_account.html aws_macie2_account}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/macie2_account aws_macie2_account}
 */
 export class Macie2Account extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class Macie2Account extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/macie2_account.html aws_macie2_account} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/macie2_account aws_macie2_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

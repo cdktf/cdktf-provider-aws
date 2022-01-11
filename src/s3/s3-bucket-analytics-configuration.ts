@@ -8,33 +8,33 @@ import * as cdktf from 'cdktf';
 */
 export interface S3BucketAnalyticsConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#bucket S3BucketAnalyticsConfiguration#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#bucket S3BucketAnalyticsConfiguration#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#name S3BucketAnalyticsConfiguration#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#name S3BucketAnalyticsConfiguration#name}
   */
   readonly name: string;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#filter S3BucketAnalyticsConfiguration#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#filter S3BucketAnalyticsConfiguration#filter}
   */
   readonly filter?: S3BucketAnalyticsConfigurationFilter;
   /**
   * storage_class_analysis block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#storage_class_analysis S3BucketAnalyticsConfiguration#storage_class_analysis}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#storage_class_analysis S3BucketAnalyticsConfiguration#storage_class_analysis}
   */
   readonly storageClassAnalysis?: S3BucketAnalyticsConfigurationStorageClassAnalysis;
 }
 export interface S3BucketAnalyticsConfigurationFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#prefix S3BucketAnalyticsConfiguration#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#prefix S3BucketAnalyticsConfiguration#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#tags S3BucketAnalyticsConfiguration#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#tags S3BucketAnalyticsConfiguration#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
@@ -65,11 +65,11 @@ export class S3BucketAnalyticsConfigurationFilterOutputReference extends cdktf.C
   public get internalValue(): S3BucketAnalyticsConfigurationFilter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._tags) {
+    if (this._tags !== undefined) {
       hasAnyValues = true;
       internalValueResult.tags = this._tags;
     }
@@ -124,19 +124,19 @@ export class S3BucketAnalyticsConfigurationFilterOutputReference extends cdktf.C
 }
 export interface S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#bucket_account_id S3BucketAnalyticsConfiguration#bucket_account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#bucket_account_id S3BucketAnalyticsConfiguration#bucket_account_id}
   */
   readonly bucketAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#bucket_arn S3BucketAnalyticsConfiguration#bucket_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#bucket_arn S3BucketAnalyticsConfiguration#bucket_arn}
   */
   readonly bucketArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#format S3BucketAnalyticsConfiguration#format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#format S3BucketAnalyticsConfiguration#format}
   */
   readonly format?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#prefix S3BucketAnalyticsConfiguration#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#prefix S3BucketAnalyticsConfiguration#prefix}
   */
   readonly prefix?: string;
 }
@@ -169,19 +169,19 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestina
   public get internalValue(): S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucketAccountId) {
+    if (this._bucketAccountId !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketAccountId = this._bucketAccountId;
     }
-    if (this._bucketArn) {
+    if (this._bucketArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketArn = this._bucketArn;
     }
-    if (this._format) {
+    if (this._format !== undefined) {
       hasAnyValues = true;
       internalValueResult.format = this._format;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
@@ -270,7 +270,7 @@ export interface S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDes
   /**
   * s3_bucket_destination block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#s3_bucket_destination S3BucketAnalyticsConfiguration#s3_bucket_destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#s3_bucket_destination S3BucketAnalyticsConfiguration#s3_bucket_destination}
   */
   readonly s3BucketDestination: S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination;
 }
@@ -300,7 +300,7 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestina
   public get internalValue(): S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestination | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._s3BucketDestination?.internalValue) {
+    if (this._s3BucketDestination?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3BucketDestination = this._s3BucketDestination?.internalValue;
     }
@@ -333,13 +333,13 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestina
 }
 export interface S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#output_schema_version S3BucketAnalyticsConfiguration#output_schema_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#output_schema_version S3BucketAnalyticsConfiguration#output_schema_version}
   */
   readonly outputSchemaVersion?: string;
   /**
   * destination block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#destination S3BucketAnalyticsConfiguration#destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#destination S3BucketAnalyticsConfiguration#destination}
   */
   readonly destination: S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestination;
 }
@@ -370,11 +370,11 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputR
   public get internalValue(): S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._outputSchemaVersion) {
+    if (this._outputSchemaVersion !== undefined) {
       hasAnyValues = true;
       internalValueResult.outputSchemaVersion = this._outputSchemaVersion;
     }
-    if (this._destination?.internalValue) {
+    if (this._destination?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.destination = this._destination?.internalValue;
     }
@@ -427,7 +427,7 @@ export interface S3BucketAnalyticsConfigurationStorageClassAnalysis {
   /**
   * data_export block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#data_export S3BucketAnalyticsConfiguration#data_export}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#data_export S3BucketAnalyticsConfiguration#data_export}
   */
   readonly dataExport: S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport;
 }
@@ -457,7 +457,7 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference e
   public get internalValue(): S3BucketAnalyticsConfigurationStorageClassAnalysis | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataExport?.internalValue) {
+    if (this._dataExport?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataExport = this._dataExport?.internalValue;
     }
@@ -490,7 +490,7 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference e
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html aws_s3_bucket_analytics_configuration}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration aws_s3_bucket_analytics_configuration}
 */
 export class S3BucketAnalyticsConfiguration extends cdktf.TerraformResource {
 
@@ -504,7 +504,7 @@ export class S3BucketAnalyticsConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html aws_s3_bucket_analytics_configuration} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration aws_s3_bucket_analytics_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

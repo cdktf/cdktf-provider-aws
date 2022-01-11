@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsDbEventCategoriesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_event_categories.html#source_type DataAwsDbEventCategories#source_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_event_categories#source_type DataAwsDbEventCategories#source_type}
   */
   readonly sourceType?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/db_event_categories.html aws_db_event_categories}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/db_event_categories aws_db_event_categories}
 */
 export class DataAwsDbEventCategories extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsDbEventCategories extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/db_event_categories.html aws_db_event_categories} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/db_event_categories aws_db_event_categories} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

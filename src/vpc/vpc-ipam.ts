@@ -8,27 +8,27 @@ import * as cdktf from 'cdktf';
 */
 export interface VpcIpamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam.html#description VpcIpam#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam#description VpcIpam#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam.html#tags VpcIpam#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam#tags VpcIpam#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam.html#tags_all VpcIpam#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam#tags_all VpcIpam#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * operating_regions block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam.html#operating_regions VpcIpam#operating_regions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam#operating_regions VpcIpam#operating_regions}
   */
   readonly operatingRegions: VpcIpamOperatingRegions[];
 }
 export interface VpcIpamOperatingRegions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam.html#region_name VpcIpam#region_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam#region_name VpcIpam#region_name}
   */
   readonly regionName: string;
 }
@@ -45,7 +45,7 @@ export function vpcIpamOperatingRegionsToTerraform(struct?: VpcIpamOperatingRegi
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam.html aws_vpc_ipam}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam aws_vpc_ipam}
 */
 export class VpcIpam extends cdktf.TerraformResource {
 
@@ -59,7 +59,7 @@ export class VpcIpam extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam.html aws_vpc_ipam} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam aws_vpc_ipam} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

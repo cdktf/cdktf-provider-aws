@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface MskconnectWorkerConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_worker_configuration.html#description MskconnectWorkerConfiguration#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_worker_configuration#description MskconnectWorkerConfiguration#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_worker_configuration.html#name MskconnectWorkerConfiguration#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_worker_configuration#name MskconnectWorkerConfiguration#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_worker_configuration.html#properties_file_content MskconnectWorkerConfiguration#properties_file_content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_worker_configuration#properties_file_content MskconnectWorkerConfiguration#properties_file_content}
   */
   readonly propertiesFileContent: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_worker_configuration.html aws_mskconnect_worker_configuration}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_worker_configuration aws_mskconnect_worker_configuration}
 */
 export class MskconnectWorkerConfiguration extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class MskconnectWorkerConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_worker_configuration.html aws_mskconnect_worker_configuration} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_worker_configuration aws_mskconnect_worker_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

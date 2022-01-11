@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface SfnActivityConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sfn_activity.html#name SfnActivity#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sfn_activity#name SfnActivity#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sfn_activity.html#tags SfnActivity#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sfn_activity#tags SfnActivity#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sfn_activity.html#tags_all SfnActivity#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sfn_activity#tags_all SfnActivity#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sfn_activity.html aws_sfn_activity}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sfn_activity aws_sfn_activity}
 */
 export class SfnActivity extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class SfnActivity extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sfn_activity.html aws_sfn_activity} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sfn_activity aws_sfn_activity} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

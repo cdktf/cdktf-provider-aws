@@ -10,7 +10,7 @@ export interface DataAwsCallerIdentityConfig extends cdktf.TerraformMetaArgument
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/caller_identity.html aws_caller_identity}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/caller_identity aws_caller_identity}
 */
 export class DataAwsCallerIdentity extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataAwsCallerIdentity extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/caller_identity.html aws_caller_identity} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/caller_identity aws_caller_identity} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

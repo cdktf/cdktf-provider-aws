@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface SpotDatafeedSubscriptionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_datafeed_subscription.html#bucket SpotDatafeedSubscription#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_datafeed_subscription#bucket SpotDatafeedSubscription#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_datafeed_subscription.html#prefix SpotDatafeedSubscription#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_datafeed_subscription#prefix SpotDatafeedSubscription#prefix}
   */
   readonly prefix?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/spot_datafeed_subscription.html aws_spot_datafeed_subscription}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/spot_datafeed_subscription aws_spot_datafeed_subscription}
 */
 export class SpotDatafeedSubscription extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class SpotDatafeedSubscription extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/spot_datafeed_subscription.html aws_spot_datafeed_subscription} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/spot_datafeed_subscription aws_spot_datafeed_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

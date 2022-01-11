@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsKmsAliasConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_alias.html#name DataAwsKmsAlias#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_alias#name DataAwsKmsAlias#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/kms_alias.html aws_kms_alias}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/kms_alias aws_kms_alias}
 */
 export class DataAwsKmsAlias extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsKmsAlias extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/kms_alias.html aws_kms_alias} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/kms_alias aws_kms_alias} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,33 +8,33 @@ import * as cdktf from 'cdktf';
 */
 export interface CodedeployDeploymentConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html#compute_platform CodedeployDeploymentConfig#compute_platform}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config#compute_platform CodedeployDeploymentConfig#compute_platform}
   */
   readonly computePlatform?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html#deployment_config_name CodedeployDeploymentConfig#deployment_config_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config#deployment_config_name CodedeployDeploymentConfig#deployment_config_name}
   */
   readonly deploymentConfigName: string;
   /**
   * minimum_healthy_hosts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html#minimum_healthy_hosts CodedeployDeploymentConfig#minimum_healthy_hosts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config#minimum_healthy_hosts CodedeployDeploymentConfig#minimum_healthy_hosts}
   */
   readonly minimumHealthyHosts?: CodedeployDeploymentConfigMinimumHealthyHosts;
   /**
   * traffic_routing_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html#traffic_routing_config CodedeployDeploymentConfig#traffic_routing_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config#traffic_routing_config CodedeployDeploymentConfig#traffic_routing_config}
   */
   readonly trafficRoutingConfig?: CodedeployDeploymentConfigTrafficRoutingConfig;
 }
 export interface CodedeployDeploymentConfigMinimumHealthyHosts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html#type CodedeployDeploymentConfig#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config#type CodedeployDeploymentConfig#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html#value CodedeployDeploymentConfig#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config#value CodedeployDeploymentConfig#value}
   */
   readonly value?: number;
 }
@@ -65,11 +65,11 @@ export class CodedeployDeploymentConfigMinimumHealthyHostsOutputReference extend
   public get internalValue(): CodedeployDeploymentConfigMinimumHealthyHosts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -123,11 +123,11 @@ export class CodedeployDeploymentConfigMinimumHealthyHostsOutputReference extend
 }
 export interface CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html#interval CodedeployDeploymentConfig#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config#interval CodedeployDeploymentConfig#interval}
   */
   readonly interval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html#percentage CodedeployDeploymentConfig#percentage}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config#percentage CodedeployDeploymentConfig#percentage}
   */
   readonly percentage?: number;
 }
@@ -158,11 +158,11 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutput
   public get internalValue(): CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
-    if (this._percentage) {
+    if (this._percentage !== undefined) {
       hasAnyValues = true;
       internalValueResult.percentage = this._percentage;
     }
@@ -216,11 +216,11 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutput
 }
 export interface CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html#interval CodedeployDeploymentConfig#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config#interval CodedeployDeploymentConfig#interval}
   */
   readonly interval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html#percentage CodedeployDeploymentConfig#percentage}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config#percentage CodedeployDeploymentConfig#percentage}
   */
   readonly percentage?: number;
 }
@@ -251,11 +251,11 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutput
   public get internalValue(): CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
-    if (this._percentage) {
+    if (this._percentage !== undefined) {
       hasAnyValues = true;
       internalValueResult.percentage = this._percentage;
     }
@@ -309,19 +309,19 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutput
 }
 export interface CodedeployDeploymentConfigTrafficRoutingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html#type CodedeployDeploymentConfig#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config#type CodedeployDeploymentConfig#type}
   */
   readonly type?: string;
   /**
   * time_based_canary block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html#time_based_canary CodedeployDeploymentConfig#time_based_canary}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config#time_based_canary CodedeployDeploymentConfig#time_based_canary}
   */
   readonly timeBasedCanary?: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary;
   /**
   * time_based_linear block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html#time_based_linear CodedeployDeploymentConfig#time_based_linear}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config#time_based_linear CodedeployDeploymentConfig#time_based_linear}
   */
   readonly timeBasedLinear?: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear;
 }
@@ -353,15 +353,15 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigOutputReference exten
   public get internalValue(): CodedeployDeploymentConfigTrafficRoutingConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._timeBasedCanary?.internalValue) {
+    if (this._timeBasedCanary?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeBasedCanary = this._timeBasedCanary?.internalValue;
     }
-    if (this._timeBasedLinear?.internalValue) {
+    if (this._timeBasedLinear?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeBasedLinear = this._timeBasedLinear?.internalValue;
     }
@@ -433,7 +433,7 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigOutputReference exten
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html aws_codedeploy_deployment_config}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config aws_codedeploy_deployment_config}
 */
 export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
 
@@ -447,7 +447,7 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html aws_codedeploy_deployment_config} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config aws_codedeploy_deployment_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

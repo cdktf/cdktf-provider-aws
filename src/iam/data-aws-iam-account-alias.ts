@@ -10,7 +10,7 @@ export interface DataAwsIamAccountAliasConfig extends cdktf.TerraformMetaArgumen
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_account_alias.html aws_iam_account_alias}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_account_alias aws_iam_account_alias}
 */
 export class DataAwsIamAccountAlias extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataAwsIamAccountAlias extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_account_alias.html aws_iam_account_alias} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_account_alias aws_iam_account_alias} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

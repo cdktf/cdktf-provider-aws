@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsOrganizationsOrganizationalUnitsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/organizations_organizational_units.html#parent_id DataAwsOrganizationsOrganizationalUnits#parent_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/organizations_organizational_units#parent_id DataAwsOrganizationsOrganizationalUnits#parent_id}
   */
   readonly parentId: string;
 }
@@ -31,7 +31,7 @@ export class DataAwsOrganizationsOrganizationalUnitsChildren extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/organizations_organizational_units.html aws_organizations_organizational_units}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/organizations_organizational_units aws_organizations_organizational_units}
 */
 export class DataAwsOrganizationsOrganizationalUnits extends cdktf.TerraformDataSource {
 
@@ -45,7 +45,7 @@ export class DataAwsOrganizationsOrganizationalUnits extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/organizations_organizational_units.html aws_organizations_organizational_units} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/organizations_organizational_units aws_organizations_organizational_units} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

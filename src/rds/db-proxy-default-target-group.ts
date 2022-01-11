@@ -8,41 +8,41 @@ import * as cdktf from 'cdktf';
 */
 export interface DbProxyDefaultTargetGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group.html#db_proxy_name DbProxyDefaultTargetGroup#db_proxy_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group#db_proxy_name DbProxyDefaultTargetGroup#db_proxy_name}
   */
   readonly dbProxyName: string;
   /**
   * connection_pool_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group.html#connection_pool_config DbProxyDefaultTargetGroup#connection_pool_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group#connection_pool_config DbProxyDefaultTargetGroup#connection_pool_config}
   */
   readonly connectionPoolConfig?: DbProxyDefaultTargetGroupConnectionPoolConfig;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group.html#timeouts DbProxyDefaultTargetGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group#timeouts DbProxyDefaultTargetGroup#timeouts}
   */
   readonly timeouts?: DbProxyDefaultTargetGroupTimeouts;
 }
 export interface DbProxyDefaultTargetGroupConnectionPoolConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group.html#connection_borrow_timeout DbProxyDefaultTargetGroup#connection_borrow_timeout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group#connection_borrow_timeout DbProxyDefaultTargetGroup#connection_borrow_timeout}
   */
   readonly connectionBorrowTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group.html#init_query DbProxyDefaultTargetGroup#init_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group#init_query DbProxyDefaultTargetGroup#init_query}
   */
   readonly initQuery?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group.html#max_connections_percent DbProxyDefaultTargetGroup#max_connections_percent}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group#max_connections_percent DbProxyDefaultTargetGroup#max_connections_percent}
   */
   readonly maxConnectionsPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group.html#max_idle_connections_percent DbProxyDefaultTargetGroup#max_idle_connections_percent}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group#max_idle_connections_percent DbProxyDefaultTargetGroup#max_idle_connections_percent}
   */
   readonly maxIdleConnectionsPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group.html#session_pinning_filters DbProxyDefaultTargetGroup#session_pinning_filters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group#session_pinning_filters DbProxyDefaultTargetGroup#session_pinning_filters}
   */
   readonly sessionPinningFilters?: string[];
 }
@@ -76,23 +76,23 @@ export class DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference extend
   public get internalValue(): DbProxyDefaultTargetGroupConnectionPoolConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._connectionBorrowTimeout) {
+    if (this._connectionBorrowTimeout !== undefined) {
       hasAnyValues = true;
       internalValueResult.connectionBorrowTimeout = this._connectionBorrowTimeout;
     }
-    if (this._initQuery) {
+    if (this._initQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.initQuery = this._initQuery;
     }
-    if (this._maxConnectionsPercent) {
+    if (this._maxConnectionsPercent !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxConnectionsPercent = this._maxConnectionsPercent;
     }
-    if (this._maxIdleConnectionsPercent) {
+    if (this._maxIdleConnectionsPercent !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxIdleConnectionsPercent = this._maxIdleConnectionsPercent;
     }
-    if (this._sessionPinningFilters) {
+    if (this._sessionPinningFilters !== undefined) {
       hasAnyValues = true;
       internalValueResult.sessionPinningFilters = this._sessionPinningFilters;
     }
@@ -200,11 +200,11 @@ export class DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference extend
 }
 export interface DbProxyDefaultTargetGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group.html#create DbProxyDefaultTargetGroup#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group#create DbProxyDefaultTargetGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group.html#update DbProxyDefaultTargetGroup#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group#update DbProxyDefaultTargetGroup#update}
   */
   readonly update?: string;
 }
@@ -235,11 +235,11 @@ export class DbProxyDefaultTargetGroupTimeoutsOutputReference extends cdktf.Comp
   public get internalValue(): DbProxyDefaultTargetGroupTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
@@ -293,7 +293,7 @@ export class DbProxyDefaultTargetGroupTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group.html aws_db_proxy_default_target_group}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group aws_db_proxy_default_target_group}
 */
 export class DbProxyDefaultTargetGroup extends cdktf.TerraformResource {
 
@@ -307,7 +307,7 @@ export class DbProxyDefaultTargetGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group.html aws_db_proxy_default_target_group} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group aws_db_proxy_default_target_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,31 +8,31 @@ import * as cdktf from 'cdktf';
 */
 export interface ConfigConfigurationRecorderConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder.html#name ConfigConfigurationRecorder#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder#name ConfigConfigurationRecorder#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder.html#role_arn ConfigConfigurationRecorder#role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder#role_arn ConfigConfigurationRecorder#role_arn}
   */
   readonly roleArn: string;
   /**
   * recording_group block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder.html#recording_group ConfigConfigurationRecorder#recording_group}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder#recording_group ConfigConfigurationRecorder#recording_group}
   */
   readonly recordingGroup?: ConfigConfigurationRecorderRecordingGroup;
 }
 export interface ConfigConfigurationRecorderRecordingGroup {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder.html#all_supported ConfigConfigurationRecorder#all_supported}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder#all_supported ConfigConfigurationRecorder#all_supported}
   */
   readonly allSupported?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder.html#include_global_resource_types ConfigConfigurationRecorder#include_global_resource_types}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder#include_global_resource_types ConfigConfigurationRecorder#include_global_resource_types}
   */
   readonly includeGlobalResourceTypes?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder.html#resource_types ConfigConfigurationRecorder#resource_types}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}
   */
   readonly resourceTypes?: string[];
 }
@@ -64,15 +64,15 @@ export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cd
   public get internalValue(): ConfigConfigurationRecorderRecordingGroup | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allSupported) {
+    if (this._allSupported !== undefined) {
       hasAnyValues = true;
       internalValueResult.allSupported = this._allSupported;
     }
-    if (this._includeGlobalResourceTypes) {
+    if (this._includeGlobalResourceTypes !== undefined) {
       hasAnyValues = true;
       internalValueResult.includeGlobalResourceTypes = this._includeGlobalResourceTypes;
     }
-    if (this._resourceTypes) {
+    if (this._resourceTypes !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceTypes = this._resourceTypes;
     }
@@ -144,7 +144,7 @@ export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder.html aws_config_configuration_recorder}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder aws_config_configuration_recorder}
 */
 export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
 
@@ -158,7 +158,7 @@ export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder.html aws_config_configuration_recorder} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder aws_config_configuration_recorder} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

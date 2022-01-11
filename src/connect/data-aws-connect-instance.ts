@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsConnectInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_instance.html#instance_alias DataAwsConnectInstance#instance_alias}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_instance#instance_alias DataAwsConnectInstance#instance_alias}
   */
   readonly instanceAlias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_instance.html#instance_id DataAwsConnectInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_instance#instance_id DataAwsConnectInstance#instance_id}
   */
   readonly instanceId?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/connect_instance.html aws_connect_instance}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/connect_instance aws_connect_instance}
 */
 export class DataAwsConnectInstance extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsConnectInstance extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/connect_instance.html aws_connect_instance} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/connect_instance aws_connect_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

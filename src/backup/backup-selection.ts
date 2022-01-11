@@ -8,39 +8,39 @@ import * as cdktf from 'cdktf';
 */
 export interface BackupSelectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection.html#iam_role_arn BackupSelection#iam_role_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection#iam_role_arn BackupSelection#iam_role_arn}
   */
   readonly iamRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection.html#name BackupSelection#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection#name BackupSelection#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection.html#plan_id BackupSelection#plan_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection#plan_id BackupSelection#plan_id}
   */
   readonly planId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection.html#resources BackupSelection#resources}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection#resources BackupSelection#resources}
   */
   readonly resources?: string[];
   /**
   * selection_tag block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection.html#selection_tag BackupSelection#selection_tag}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection#selection_tag BackupSelection#selection_tag}
   */
   readonly selectionTag?: BackupSelectionSelectionTag[];
 }
 export interface BackupSelectionSelectionTag {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection.html#key BackupSelection#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection#key BackupSelection#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection.html#type BackupSelection#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection#type BackupSelection#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection.html#value BackupSelection#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection#value BackupSelection#value}
   */
   readonly value: string;
 }
@@ -59,7 +59,7 @@ export function backupSelectionSelectionTagToTerraform(struct?: BackupSelectionS
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/backup_selection.html aws_backup_selection}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/backup_selection aws_backup_selection}
 */
 export class BackupSelection extends cdktf.TerraformResource {
 
@@ -73,7 +73,7 @@ export class BackupSelection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/backup_selection.html aws_backup_selection} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/backup_selection aws_backup_selection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

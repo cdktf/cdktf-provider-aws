@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface EmrSecurityConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_security_configuration.html#configuration EmrSecurityConfiguration#configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_security_configuration#configuration EmrSecurityConfiguration#configuration}
   */
   readonly configuration: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_security_configuration.html#name EmrSecurityConfiguration#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_security_configuration#name EmrSecurityConfiguration#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_security_configuration.html#name_prefix EmrSecurityConfiguration#name_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_security_configuration#name_prefix EmrSecurityConfiguration#name_prefix}
   */
   readonly namePrefix?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_security_configuration.html aws_emr_security_configuration}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_security_configuration aws_emr_security_configuration}
 */
 export class EmrSecurityConfiguration extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class EmrSecurityConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_security_configuration.html aws_emr_security_configuration} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_security_configuration aws_emr_security_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

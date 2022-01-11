@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 */
 export interface ShieldProtectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/shield_protection.html#name ShieldProtection#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/shield_protection#name ShieldProtection#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/shield_protection.html#resource_arn ShieldProtection#resource_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/shield_protection#resource_arn ShieldProtection#resource_arn}
   */
   readonly resourceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/shield_protection.html#tags ShieldProtection#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/shield_protection#tags ShieldProtection#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/shield_protection.html#tags_all ShieldProtection#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/shield_protection#tags_all ShieldProtection#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/shield_protection.html aws_shield_protection}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/shield_protection aws_shield_protection}
 */
 export class ShieldProtection extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class ShieldProtection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/shield_protection.html aws_shield_protection} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/shield_protection aws_shield_protection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

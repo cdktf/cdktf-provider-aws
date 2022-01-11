@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsApiGatewayApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_api_key.html#id DataAwsApiGatewayApiKey#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_api_key#id DataAwsApiGatewayApiKey#id}
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_api_key.html#tags DataAwsApiGatewayApiKey#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_api_key#tags DataAwsApiGatewayApiKey#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_api_key.html aws_api_gateway_api_key}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_api_key aws_api_gateway_api_key}
 */
 export class DataAwsApiGatewayApiKey extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsApiGatewayApiKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_api_key.html aws_api_gateway_api_key} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_api_key aws_api_gateway_api_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,27 +8,27 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsEc2HostConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_host.html#host_id DataAwsEc2Host#host_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_host#host_id DataAwsEc2Host#host_id}
   */
   readonly hostId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_host.html#tags DataAwsEc2Host#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_host#tags DataAwsEc2Host#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_host.html#filter DataAwsEc2Host#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_host#filter DataAwsEc2Host#filter}
   */
   readonly filter?: DataAwsEc2HostFilter[];
 }
 export interface DataAwsEc2HostFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_host.html#name DataAwsEc2Host#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_host#name DataAwsEc2Host#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_host.html#values DataAwsEc2Host#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_host#values DataAwsEc2Host#values}
   */
   readonly values: string[];
 }
@@ -46,7 +46,7 @@ export function dataAwsEc2HostFilterToTerraform(struct?: DataAwsEc2HostFilter): 
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_host.html aws_ec2_host}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_host aws_ec2_host}
 */
 export class DataAwsEc2Host extends cdktf.TerraformDataSource {
 
@@ -60,7 +60,7 @@ export class DataAwsEc2Host extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_host.html aws_ec2_host} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_host aws_ec2_host} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

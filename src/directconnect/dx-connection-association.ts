@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DxConnectionAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_connection_association.html#connection_id DxConnectionAssociation#connection_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_connection_association#connection_id DxConnectionAssociation#connection_id}
   */
   readonly connectionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_connection_association.html#lag_id DxConnectionAssociation#lag_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_connection_association#lag_id DxConnectionAssociation#lag_id}
   */
   readonly lagId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/dx_connection_association.html aws_dx_connection_association}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/dx_connection_association aws_dx_connection_association}
 */
 export class DxConnectionAssociation extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class DxConnectionAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/dx_connection_association.html aws_dx_connection_association} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/dx_connection_association aws_dx_connection_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface KmsCiphertextConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_ciphertext.html#context KmsCiphertext#context}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_ciphertext#context KmsCiphertext#context}
   */
   readonly context?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_ciphertext.html#key_id KmsCiphertext#key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_ciphertext#key_id KmsCiphertext#key_id}
   */
   readonly keyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_ciphertext.html#plaintext KmsCiphertext#plaintext}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_ciphertext#plaintext KmsCiphertext#plaintext}
   */
   readonly plaintext: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/kms_ciphertext.html aws_kms_ciphertext}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/kms_ciphertext aws_kms_ciphertext}
 */
 export class KmsCiphertext extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class KmsCiphertext extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/kms_ciphertext.html aws_kms_ciphertext} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/kms_ciphertext aws_kms_ciphertext} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

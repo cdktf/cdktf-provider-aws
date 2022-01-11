@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 */
 export interface SesTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_template.html#html SesTemplate#html}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_template#html SesTemplate#html}
   */
   readonly html?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_template.html#name SesTemplate#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_template#name SesTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_template.html#subject SesTemplate#subject}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_template#subject SesTemplate#subject}
   */
   readonly subject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_template.html#text SesTemplate#text}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_template#text SesTemplate#text}
   */
   readonly text?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ses_template.html aws_ses_template}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ses_template aws_ses_template}
 */
 export class SesTemplate extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class SesTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_template.html aws_ses_template} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_template aws_ses_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

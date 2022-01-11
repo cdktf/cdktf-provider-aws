@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface ElbAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb_attachment.html#elb ElbAttachment#elb}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb_attachment#elb ElbAttachment#elb}
   */
   readonly elb: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb_attachment.html#instance ElbAttachment#instance}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb_attachment#instance ElbAttachment#instance}
   */
   readonly instance: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/elb_attachment.html aws_elb_attachment}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/elb_attachment aws_elb_attachment}
 */
 export class ElbAttachment extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class ElbAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/elb_attachment.html aws_elb_attachment} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/elb_attachment aws_elb_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

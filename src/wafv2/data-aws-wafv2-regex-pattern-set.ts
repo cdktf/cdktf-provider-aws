@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsWafv2RegexPatternSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafv2_regex_pattern_set.html#name DataAwsWafv2RegexPatternSet#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafv2_regex_pattern_set#name DataAwsWafv2RegexPatternSet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafv2_regex_pattern_set.html#scope DataAwsWafv2RegexPatternSet#scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafv2_regex_pattern_set#scope DataAwsWafv2RegexPatternSet#scope}
   */
   readonly scope: string;
 }
@@ -25,7 +25,7 @@ export class DataAwsWafv2RegexPatternSetRegularExpression extends cdktf.ComplexC
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/wafv2_regex_pattern_set.html aws_wafv2_regex_pattern_set}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set}
 */
 export class DataAwsWafv2RegexPatternSet extends cdktf.TerraformDataSource {
 
@@ -39,7 +39,7 @@ export class DataAwsWafv2RegexPatternSet extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/wafv2_regex_pattern_set.html aws_wafv2_regex_pattern_set} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

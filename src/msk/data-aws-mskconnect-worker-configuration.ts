@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsMskconnectWorkerConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mskconnect_worker_configuration.html#name DataAwsMskconnectWorkerConfiguration#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mskconnect_worker_configuration#name DataAwsMskconnectWorkerConfiguration#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/mskconnect_worker_configuration.html aws_mskconnect_worker_configuration}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/mskconnect_worker_configuration aws_mskconnect_worker_configuration}
 */
 export class DataAwsMskconnectWorkerConfiguration extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataAwsMskconnectWorkerConfiguration extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/mskconnect_worker_configuration.html aws_mskconnect_worker_configuration} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/mskconnect_worker_configuration aws_mskconnect_worker_configuration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

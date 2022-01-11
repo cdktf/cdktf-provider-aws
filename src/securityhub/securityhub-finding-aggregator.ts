@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface SecurityhubFindingAggregatorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_finding_aggregator.html#linking_mode SecurityhubFindingAggregator#linking_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_finding_aggregator#linking_mode SecurityhubFindingAggregator#linking_mode}
   */
   readonly linkingMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_finding_aggregator.html#specified_regions SecurityhubFindingAggregator#specified_regions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_finding_aggregator#specified_regions SecurityhubFindingAggregator#specified_regions}
   */
   readonly specifiedRegions?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/securityhub_finding_aggregator.html aws_securityhub_finding_aggregator}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/securityhub_finding_aggregator aws_securityhub_finding_aggregator}
 */
 export class SecurityhubFindingAggregator extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class SecurityhubFindingAggregator extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/securityhub_finding_aggregator.html aws_securityhub_finding_aggregator} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/securityhub_finding_aggregator aws_securityhub_finding_aggregator} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

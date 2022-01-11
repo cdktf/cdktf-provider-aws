@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 */
 export interface EcsCapacityProviderConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html#name EcsCapacityProvider#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider#name EcsCapacityProvider#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html#tags EcsCapacityProvider#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider#tags EcsCapacityProvider#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html#tags_all EcsCapacityProvider#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider#tags_all EcsCapacityProvider#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * auto_scaling_group_provider block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html#auto_scaling_group_provider EcsCapacityProvider#auto_scaling_group_provider}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider#auto_scaling_group_provider EcsCapacityProvider#auto_scaling_group_provider}
   */
   readonly autoScalingGroupProvider: EcsCapacityProviderAutoScalingGroupProvider;
 }
 export interface EcsCapacityProviderAutoScalingGroupProviderManagedScaling {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html#instance_warmup_period EcsCapacityProvider#instance_warmup_period}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider#instance_warmup_period EcsCapacityProvider#instance_warmup_period}
   */
   readonly instanceWarmupPeriod?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html#maximum_scaling_step_size EcsCapacityProvider#maximum_scaling_step_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider#maximum_scaling_step_size EcsCapacityProvider#maximum_scaling_step_size}
   */
   readonly maximumScalingStepSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html#minimum_scaling_step_size EcsCapacityProvider#minimum_scaling_step_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider#minimum_scaling_step_size EcsCapacityProvider#minimum_scaling_step_size}
   */
   readonly minimumScalingStepSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html#status EcsCapacityProvider#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider#status EcsCapacityProvider#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html#target_capacity EcsCapacityProvider#target_capacity}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider#target_capacity EcsCapacityProvider#target_capacity}
   */
   readonly targetCapacity?: number;
 }
@@ -78,23 +78,23 @@ export class EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputRefe
   public get internalValue(): EcsCapacityProviderAutoScalingGroupProviderManagedScaling | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._instanceWarmupPeriod) {
+    if (this._instanceWarmupPeriod !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceWarmupPeriod = this._instanceWarmupPeriod;
     }
-    if (this._maximumScalingStepSize) {
+    if (this._maximumScalingStepSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.maximumScalingStepSize = this._maximumScalingStepSize;
     }
-    if (this._minimumScalingStepSize) {
+    if (this._minimumScalingStepSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.minimumScalingStepSize = this._minimumScalingStepSize;
     }
-    if (this._status) {
+    if (this._status !== undefined) {
       hasAnyValues = true;
       internalValueResult.status = this._status;
     }
-    if (this._targetCapacity) {
+    if (this._targetCapacity !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetCapacity = this._targetCapacity;
     }
@@ -202,17 +202,17 @@ export class EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputRefe
 }
 export interface EcsCapacityProviderAutoScalingGroupProvider {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html#auto_scaling_group_arn EcsCapacityProvider#auto_scaling_group_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider#auto_scaling_group_arn EcsCapacityProvider#auto_scaling_group_arn}
   */
   readonly autoScalingGroupArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html#managed_termination_protection EcsCapacityProvider#managed_termination_protection}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider#managed_termination_protection EcsCapacityProvider#managed_termination_protection}
   */
   readonly managedTerminationProtection?: string;
   /**
   * managed_scaling block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html#managed_scaling EcsCapacityProvider#managed_scaling}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider#managed_scaling EcsCapacityProvider#managed_scaling}
   */
   readonly managedScaling?: EcsCapacityProviderAutoScalingGroupProviderManagedScaling;
 }
@@ -244,15 +244,15 @@ export class EcsCapacityProviderAutoScalingGroupProviderOutputReference extends 
   public get internalValue(): EcsCapacityProviderAutoScalingGroupProvider | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._autoScalingGroupArn) {
+    if (this._autoScalingGroupArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoScalingGroupArn = this._autoScalingGroupArn;
     }
-    if (this._managedTerminationProtection) {
+    if (this._managedTerminationProtection !== undefined) {
       hasAnyValues = true;
       internalValueResult.managedTerminationProtection = this._managedTerminationProtection;
     }
-    if (this._managedScaling?.internalValue) {
+    if (this._managedScaling?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.managedScaling = this._managedScaling?.internalValue;
     }
@@ -321,7 +321,7 @@ export class EcsCapacityProviderAutoScalingGroupProviderOutputReference extends 
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html aws_ecs_capacity_provider}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider aws_ecs_capacity_provider}
 */
 export class EcsCapacityProvider extends cdktf.TerraformResource {
 
@@ -335,7 +335,7 @@ export class EcsCapacityProvider extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html aws_ecs_capacity_provider} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider aws_ecs_capacity_provider} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface VpcEndpointConnectionAccepterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_accepter.html#vpc_endpoint_id VpcEndpointConnectionAccepter#vpc_endpoint_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_accepter#vpc_endpoint_id VpcEndpointConnectionAccepter#vpc_endpoint_id}
   */
   readonly vpcEndpointId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_accepter.html#vpc_endpoint_service_id VpcEndpointConnectionAccepter#vpc_endpoint_service_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_accepter#vpc_endpoint_service_id VpcEndpointConnectionAccepter#vpc_endpoint_service_id}
   */
   readonly vpcEndpointServiceId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_accepter.html aws_vpc_endpoint_connection_accepter}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_accepter aws_vpc_endpoint_connection_accepter}
 */
 export class VpcEndpointConnectionAccepter extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class VpcEndpointConnectionAccepter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_accepter.html aws_vpc_endpoint_connection_accepter} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_accepter aws_vpc_endpoint_connection_accepter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

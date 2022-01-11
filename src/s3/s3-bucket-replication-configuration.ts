@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 */
 export interface S3BucketReplicationConfigurationAConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#bucket S3BucketReplicationConfigurationA#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#bucket S3BucketReplicationConfigurationA#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#role S3BucketReplicationConfigurationA#role}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#role S3BucketReplicationConfigurationA#role}
   */
   readonly role: string;
   /**
   * rule block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#rule S3BucketReplicationConfigurationA#rule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#rule S3BucketReplicationConfigurationA#rule}
   */
   readonly rule: S3BucketReplicationConfigurationRule[];
 }
 export interface S3BucketReplicationConfigurationRuleDeleteMarkerReplication {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#status S3BucketReplicationConfigurationA#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}
   */
   readonly status: string;
 }
@@ -54,7 +54,7 @@ export class S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputRe
   public get internalValue(): S3BucketReplicationConfigurationRuleDeleteMarkerReplication | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._status) {
+    if (this._status !== undefined) {
       hasAnyValues = true;
       internalValueResult.status = this._status;
     }
@@ -87,7 +87,7 @@ export class S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputRe
 }
 export interface S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#owner S3BucketReplicationConfigurationA#owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#owner S3BucketReplicationConfigurationA#owner}
   */
   readonly owner: string;
 }
@@ -117,7 +117,7 @@ export class S3BucketReplicationConfigurationRuleDestinationAccessControlTransla
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._owner) {
+    if (this._owner !== undefined) {
       hasAnyValues = true;
       internalValueResult.owner = this._owner;
     }
@@ -150,7 +150,7 @@ export class S3BucketReplicationConfigurationRuleDestinationAccessControlTransla
 }
 export interface S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#replica_kms_key_id S3BucketReplicationConfigurationA#replica_kms_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#replica_kms_key_id S3BucketReplicationConfigurationA#replica_kms_key_id}
   */
   readonly replicaKmsKeyId: string;
 }
@@ -180,7 +180,7 @@ export class S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurat
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._replicaKmsKeyId) {
+    if (this._replicaKmsKeyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.replicaKmsKeyId = this._replicaKmsKeyId;
     }
@@ -213,7 +213,7 @@ export class S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurat
 }
 export interface S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#minutes S3BucketReplicationConfigurationA#minutes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#minutes S3BucketReplicationConfigurationA#minutes}
   */
   readonly minutes: number;
 }
@@ -243,7 +243,7 @@ export class S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshol
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._minutes) {
+    if (this._minutes !== undefined) {
       hasAnyValues = true;
       internalValueResult.minutes = this._minutes;
     }
@@ -276,13 +276,13 @@ export class S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshol
 }
 export interface S3BucketReplicationConfigurationRuleDestinationMetrics {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#status S3BucketReplicationConfigurationA#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}
   */
   readonly status: string;
   /**
   * event_threshold block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#event_threshold S3BucketReplicationConfigurationA#event_threshold}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#event_threshold S3BucketReplicationConfigurationA#event_threshold}
   */
   readonly eventThreshold?: S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold;
 }
@@ -313,11 +313,11 @@ export class S3BucketReplicationConfigurationRuleDestinationMetricsOutputReferen
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationMetrics | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._status) {
+    if (this._status !== undefined) {
       hasAnyValues = true;
       internalValueResult.status = this._status;
     }
-    if (this._eventThreshold?.internalValue) {
+    if (this._eventThreshold?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.eventThreshold = this._eventThreshold?.internalValue;
     }
@@ -368,7 +368,7 @@ export class S3BucketReplicationConfigurationRuleDestinationMetricsOutputReferen
 }
 export interface S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#minutes S3BucketReplicationConfigurationA#minutes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#minutes S3BucketReplicationConfigurationA#minutes}
   */
   readonly minutes: number;
 }
@@ -398,7 +398,7 @@ export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeO
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._minutes) {
+    if (this._minutes !== undefined) {
       hasAnyValues = true;
       internalValueResult.minutes = this._minutes;
     }
@@ -431,13 +431,13 @@ export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeO
 }
 export interface S3BucketReplicationConfigurationRuleDestinationReplicationTime {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#status S3BucketReplicationConfigurationA#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}
   */
   readonly status: string;
   /**
   * time block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#time S3BucketReplicationConfigurationA#time}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#time S3BucketReplicationConfigurationA#time}
   */
   readonly time: S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime;
 }
@@ -468,11 +468,11 @@ export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutpu
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationReplicationTime | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._status) {
+    if (this._status !== undefined) {
       hasAnyValues = true;
       internalValueResult.status = this._status;
     }
-    if (this._time?.internalValue) {
+    if (this._time?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.time = this._time?.internalValue;
     }
@@ -520,39 +520,39 @@ export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutpu
 }
 export interface S3BucketReplicationConfigurationRuleDestination {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#account S3BucketReplicationConfigurationA#account}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#account S3BucketReplicationConfigurationA#account}
   */
   readonly account?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#bucket S3BucketReplicationConfigurationA#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#bucket S3BucketReplicationConfigurationA#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#storage_class S3BucketReplicationConfigurationA#storage_class}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#storage_class S3BucketReplicationConfigurationA#storage_class}
   */
   readonly storageClass?: string;
   /**
   * access_control_translation block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#access_control_translation S3BucketReplicationConfigurationA#access_control_translation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#access_control_translation S3BucketReplicationConfigurationA#access_control_translation}
   */
   readonly accessControlTranslation?: S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation;
   /**
   * encryption_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#encryption_configuration S3BucketReplicationConfigurationA#encryption_configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#encryption_configuration S3BucketReplicationConfigurationA#encryption_configuration}
   */
   readonly encryptionConfiguration?: S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration;
   /**
   * metrics block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#metrics S3BucketReplicationConfigurationA#metrics}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#metrics S3BucketReplicationConfigurationA#metrics}
   */
   readonly metrics?: S3BucketReplicationConfigurationRuleDestinationMetrics;
   /**
   * replication_time block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#replication_time S3BucketReplicationConfigurationA#replication_time}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#replication_time S3BucketReplicationConfigurationA#replication_time}
   */
   readonly replicationTime?: S3BucketReplicationConfigurationRuleDestinationReplicationTime;
 }
@@ -588,31 +588,31 @@ export class S3BucketReplicationConfigurationRuleDestinationOutputReference exte
   public get internalValue(): S3BucketReplicationConfigurationRuleDestination | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._account) {
+    if (this._account !== undefined) {
       hasAnyValues = true;
       internalValueResult.account = this._account;
     }
-    if (this._bucket) {
+    if (this._bucket !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucket = this._bucket;
     }
-    if (this._storageClass) {
+    if (this._storageClass !== undefined) {
       hasAnyValues = true;
       internalValueResult.storageClass = this._storageClass;
     }
-    if (this._accessControlTranslation?.internalValue) {
+    if (this._accessControlTranslation?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.accessControlTranslation = this._accessControlTranslation?.internalValue;
     }
-    if (this._encryptionConfiguration?.internalValue) {
+    if (this._encryptionConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.encryptionConfiguration = this._encryptionConfiguration?.internalValue;
     }
-    if (this._metrics?.internalValue) {
+    if (this._metrics?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.metrics = this._metrics?.internalValue;
     }
-    if (this._replicationTime?.internalValue) {
+    if (this._replicationTime?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.replicationTime = this._replicationTime?.internalValue;
     }
@@ -753,7 +753,7 @@ export class S3BucketReplicationConfigurationRuleDestinationOutputReference exte
 }
 export interface S3BucketReplicationConfigurationRuleExistingObjectReplication {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#status S3BucketReplicationConfigurationA#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}
   */
   readonly status: string;
 }
@@ -783,7 +783,7 @@ export class S3BucketReplicationConfigurationRuleExistingObjectReplicationOutput
   public get internalValue(): S3BucketReplicationConfigurationRuleExistingObjectReplication | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._status) {
+    if (this._status !== undefined) {
       hasAnyValues = true;
       internalValueResult.status = this._status;
     }
@@ -816,11 +816,11 @@ export class S3BucketReplicationConfigurationRuleExistingObjectReplicationOutput
 }
 export interface S3BucketReplicationConfigurationRuleFilterAnd {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#prefix S3BucketReplicationConfigurationA#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#tags S3BucketReplicationConfigurationA#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#tags S3BucketReplicationConfigurationA#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
@@ -851,11 +851,11 @@ export class S3BucketReplicationConfigurationRuleFilterAndOutputReference extend
   public get internalValue(): S3BucketReplicationConfigurationRuleFilterAnd | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._tags) {
+    if (this._tags !== undefined) {
       hasAnyValues = true;
       internalValueResult.tags = this._tags;
     }
@@ -910,11 +910,11 @@ export class S3BucketReplicationConfigurationRuleFilterAndOutputReference extend
 }
 export interface S3BucketReplicationConfigurationRuleFilterTag {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#key S3BucketReplicationConfigurationA#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#key S3BucketReplicationConfigurationA#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#value S3BucketReplicationConfigurationA#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#value S3BucketReplicationConfigurationA#value}
   */
   readonly value: string;
 }
@@ -945,11 +945,11 @@ export class S3BucketReplicationConfigurationRuleFilterTagOutputReference extend
   public get internalValue(): S3BucketReplicationConfigurationRuleFilterTag | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._key) {
+    if (this._key !== undefined) {
       hasAnyValues = true;
       internalValueResult.key = this._key;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -997,19 +997,19 @@ export class S3BucketReplicationConfigurationRuleFilterTagOutputReference extend
 }
 export interface S3BucketReplicationConfigurationRuleFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#prefix S3BucketReplicationConfigurationA#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}
   */
   readonly prefix?: string;
   /**
   * and block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#and S3BucketReplicationConfigurationA#and}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#and S3BucketReplicationConfigurationA#and}
   */
   readonly and?: S3BucketReplicationConfigurationRuleFilterAnd;
   /**
   * tag block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#tag S3BucketReplicationConfigurationA#tag}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#tag S3BucketReplicationConfigurationA#tag}
   */
   readonly tag?: S3BucketReplicationConfigurationRuleFilterTag;
 }
@@ -1041,15 +1041,15 @@ export class S3BucketReplicationConfigurationRuleFilterOutputReference extends c
   public get internalValue(): S3BucketReplicationConfigurationRuleFilter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._and?.internalValue) {
+    if (this._and?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.and = this._and?.internalValue;
     }
-    if (this._tag?.internalValue) {
+    if (this._tag?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tag = this._tag?.internalValue;
     }
@@ -1121,7 +1121,7 @@ export class S3BucketReplicationConfigurationRuleFilterOutputReference extends c
 }
 export interface S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#status S3BucketReplicationConfigurationA#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}
   */
   readonly status: string;
 }
@@ -1151,7 +1151,7 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaM
   public get internalValue(): S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._status) {
+    if (this._status !== undefined) {
       hasAnyValues = true;
       internalValueResult.status = this._status;
     }
@@ -1184,7 +1184,7 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaM
 }
 export interface S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#status S3BucketReplicationConfigurationA#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}
   */
   readonly status: string;
 }
@@ -1214,7 +1214,7 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEn
   public get internalValue(): S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._status) {
+    if (this._status !== undefined) {
       hasAnyValues = true;
       internalValueResult.status = this._status;
     }
@@ -1249,13 +1249,13 @@ export interface S3BucketReplicationConfigurationRuleSourceSelectionCriteria {
   /**
   * replica_modifications block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#replica_modifications S3BucketReplicationConfigurationA#replica_modifications}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#replica_modifications S3BucketReplicationConfigurationA#replica_modifications}
   */
   readonly replicaModifications?: S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications;
   /**
   * sse_kms_encrypted_objects block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#sse_kms_encrypted_objects S3BucketReplicationConfigurationA#sse_kms_encrypted_objects}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#sse_kms_encrypted_objects S3BucketReplicationConfigurationA#sse_kms_encrypted_objects}
   */
   readonly sseKmsEncryptedObjects?: S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects;
 }
@@ -1286,11 +1286,11 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputRe
   public get internalValue(): S3BucketReplicationConfigurationRuleSourceSelectionCriteria | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._replicaModifications?.internalValue) {
+    if (this._replicaModifications?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.replicaModifications = this._replicaModifications?.internalValue;
     }
-    if (this._sseKmsEncryptedObjects?.internalValue) {
+    if (this._sseKmsEncryptedObjects?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sseKmsEncryptedObjects = this._sseKmsEncryptedObjects?.internalValue;
     }
@@ -1344,49 +1344,49 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputRe
 }
 export interface S3BucketReplicationConfigurationRule {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#id S3BucketReplicationConfigurationA#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#id S3BucketReplicationConfigurationA#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#prefix S3BucketReplicationConfigurationA#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#priority S3BucketReplicationConfigurationA#priority}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#priority S3BucketReplicationConfigurationA#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#status S3BucketReplicationConfigurationA#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}
   */
   readonly status: string;
   /**
   * delete_marker_replication block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#delete_marker_replication S3BucketReplicationConfigurationA#delete_marker_replication}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#delete_marker_replication S3BucketReplicationConfigurationA#delete_marker_replication}
   */
   readonly deleteMarkerReplication?: S3BucketReplicationConfigurationRuleDeleteMarkerReplication;
   /**
   * destination block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#destination S3BucketReplicationConfigurationA#destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#destination S3BucketReplicationConfigurationA#destination}
   */
   readonly destination: S3BucketReplicationConfigurationRuleDestination;
   /**
   * existing_object_replication block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#existing_object_replication S3BucketReplicationConfigurationA#existing_object_replication}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#existing_object_replication S3BucketReplicationConfigurationA#existing_object_replication}
   */
   readonly existingObjectReplication?: S3BucketReplicationConfigurationRuleExistingObjectReplication;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#filter S3BucketReplicationConfigurationA#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#filter S3BucketReplicationConfigurationA#filter}
   */
   readonly filter?: S3BucketReplicationConfigurationRuleFilter;
   /**
   * source_selection_criteria block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html#source_selection_criteria S3BucketReplicationConfigurationA#source_selection_criteria}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#source_selection_criteria S3BucketReplicationConfigurationA#source_selection_criteria}
   */
   readonly sourceSelectionCriteria?: S3BucketReplicationConfigurationRuleSourceSelectionCriteria;
 }
@@ -1411,7 +1411,7 @@ export function s3BucketReplicationConfigurationRuleToTerraform(struct?: S3Bucke
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html aws_s3_bucket_replication_configuration}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration aws_s3_bucket_replication_configuration}
 */
 export class S3BucketReplicationConfigurationA extends cdktf.TerraformResource {
 
@@ -1425,7 +1425,7 @@ export class S3BucketReplicationConfigurationA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration.html aws_s3_bucket_replication_configuration} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration aws_s3_bucket_replication_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

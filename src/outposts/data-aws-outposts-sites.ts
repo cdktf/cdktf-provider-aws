@@ -10,7 +10,7 @@ export interface DataAwsOutpostsSitesConfig extends cdktf.TerraformMetaArguments
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/outposts_sites.html aws_outposts_sites}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/outposts_sites aws_outposts_sites}
 */
 export class DataAwsOutpostsSites extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataAwsOutpostsSites extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/outposts_sites.html aws_outposts_sites} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/outposts_sites aws_outposts_sites} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

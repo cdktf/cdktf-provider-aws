@@ -8,15 +8,15 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsAppmeshMeshConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/appmesh_mesh.html#mesh_owner DataAwsAppmeshMesh#mesh_owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/appmesh_mesh#mesh_owner DataAwsAppmeshMesh#mesh_owner}
   */
   readonly meshOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/appmesh_mesh.html#name DataAwsAppmeshMesh#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/appmesh_mesh#name DataAwsAppmeshMesh#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/appmesh_mesh.html#tags DataAwsAppmeshMesh#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/appmesh_mesh#tags DataAwsAppmeshMesh#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
@@ -37,7 +37,7 @@ export class DataAwsAppmeshMeshSpec extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/appmesh_mesh.html aws_appmesh_mesh}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/appmesh_mesh aws_appmesh_mesh}
 */
 export class DataAwsAppmeshMesh extends cdktf.TerraformDataSource {
 
@@ -51,7 +51,7 @@ export class DataAwsAppmeshMesh extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/appmesh_mesh.html aws_appmesh_mesh} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/appmesh_mesh aws_appmesh_mesh} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,67 +8,67 @@ import * as cdktf from 'cdktf';
 */
 export interface QuicksightDataSourceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#aws_account_id QuicksightDataSource#aws_account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#aws_account_id QuicksightDataSource#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#data_source_id QuicksightDataSource#data_source_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#data_source_id QuicksightDataSource#data_source_id}
   */
   readonly dataSourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#name QuicksightDataSource#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#name QuicksightDataSource#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#tags QuicksightDataSource#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#tags QuicksightDataSource#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#tags_all QuicksightDataSource#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#tags_all QuicksightDataSource#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#type QuicksightDataSource#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#type QuicksightDataSource#type}
   */
   readonly type: string;
   /**
   * credentials block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#credentials QuicksightDataSource#credentials}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#credentials QuicksightDataSource#credentials}
   */
   readonly credentials?: QuicksightDataSourceCredentials;
   /**
   * parameters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#parameters QuicksightDataSource#parameters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#parameters QuicksightDataSource#parameters}
   */
   readonly parameters: QuicksightDataSourceParameters;
   /**
   * permission block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#permission QuicksightDataSource#permission}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#permission QuicksightDataSource#permission}
   */
   readonly permission?: QuicksightDataSourcePermission[];
   /**
   * ssl_properties block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#ssl_properties QuicksightDataSource#ssl_properties}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#ssl_properties QuicksightDataSource#ssl_properties}
   */
   readonly sslProperties?: QuicksightDataSourceSslProperties;
   /**
   * vpc_connection_properties block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#vpc_connection_properties QuicksightDataSource#vpc_connection_properties}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#vpc_connection_properties QuicksightDataSource#vpc_connection_properties}
   */
   readonly vpcConnectionProperties?: QuicksightDataSourceVpcConnectionProperties;
 }
 export interface QuicksightDataSourceCredentialsCredentialPair {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#password QuicksightDataSource#password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#password QuicksightDataSource#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#username QuicksightDataSource#username}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#username QuicksightDataSource#username}
   */
   readonly username: string;
 }
@@ -99,11 +99,11 @@ export class QuicksightDataSourceCredentialsCredentialPairOutputReference extend
   public get internalValue(): QuicksightDataSourceCredentialsCredentialPair | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._password) {
+    if (this._password !== undefined) {
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
-    if (this._username) {
+    if (this._username !== undefined) {
       hasAnyValues = true;
       internalValueResult.username = this._username;
     }
@@ -151,13 +151,13 @@ export class QuicksightDataSourceCredentialsCredentialPairOutputReference extend
 }
 export interface QuicksightDataSourceCredentials {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#copy_source_arn QuicksightDataSource#copy_source_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#copy_source_arn QuicksightDataSource#copy_source_arn}
   */
   readonly copySourceArn?: string;
   /**
   * credential_pair block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#credential_pair QuicksightDataSource#credential_pair}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#credential_pair QuicksightDataSource#credential_pair}
   */
   readonly credentialPair?: QuicksightDataSourceCredentialsCredentialPair;
 }
@@ -188,11 +188,11 @@ export class QuicksightDataSourceCredentialsOutputReference extends cdktf.Comple
   public get internalValue(): QuicksightDataSourceCredentials | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._copySourceArn) {
+    if (this._copySourceArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.copySourceArn = this._copySourceArn;
     }
-    if (this._credentialPair?.internalValue) {
+    if (this._credentialPair?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.credentialPair = this._credentialPair?.internalValue;
     }
@@ -246,7 +246,7 @@ export class QuicksightDataSourceCredentialsOutputReference extends cdktf.Comple
 }
 export interface QuicksightDataSourceParametersAmazonElasticsearch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#domain QuicksightDataSource#domain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#domain QuicksightDataSource#domain}
   */
   readonly domain: string;
 }
@@ -276,7 +276,7 @@ export class QuicksightDataSourceParametersAmazonElasticsearchOutputReference ex
   public get internalValue(): QuicksightDataSourceParametersAmazonElasticsearch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._domain) {
+    if (this._domain !== undefined) {
       hasAnyValues = true;
       internalValueResult.domain = this._domain;
     }
@@ -309,7 +309,7 @@ export class QuicksightDataSourceParametersAmazonElasticsearchOutputReference ex
 }
 export interface QuicksightDataSourceParametersAthena {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#work_group QuicksightDataSource#work_group}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#work_group QuicksightDataSource#work_group}
   */
   readonly workGroup?: string;
 }
@@ -339,7 +339,7 @@ export class QuicksightDataSourceParametersAthenaOutputReference extends cdktf.C
   public get internalValue(): QuicksightDataSourceParametersAthena | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._workGroup) {
+    if (this._workGroup !== undefined) {
       hasAnyValues = true;
       internalValueResult.workGroup = this._workGroup;
     }
@@ -375,15 +375,15 @@ export class QuicksightDataSourceParametersAthenaOutputReference extends cdktf.C
 }
 export interface QuicksightDataSourceParametersAurora {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#database QuicksightDataSource#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#database QuicksightDataSource#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#host QuicksightDataSource#host}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#host QuicksightDataSource#host}
   */
   readonly host: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#port QuicksightDataSource#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#port QuicksightDataSource#port}
   */
   readonly port: number;
 }
@@ -415,15 +415,15 @@ export class QuicksightDataSourceParametersAuroraOutputReference extends cdktf.C
   public get internalValue(): QuicksightDataSourceParametersAurora | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._database) {
+    if (this._database !== undefined) {
       hasAnyValues = true;
       internalValueResult.database = this._database;
     }
-    if (this._host) {
+    if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
@@ -486,15 +486,15 @@ export class QuicksightDataSourceParametersAuroraOutputReference extends cdktf.C
 }
 export interface QuicksightDataSourceParametersAuroraPostgresql {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#database QuicksightDataSource#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#database QuicksightDataSource#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#host QuicksightDataSource#host}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#host QuicksightDataSource#host}
   */
   readonly host: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#port QuicksightDataSource#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#port QuicksightDataSource#port}
   */
   readonly port: number;
 }
@@ -526,15 +526,15 @@ export class QuicksightDataSourceParametersAuroraPostgresqlOutputReference exten
   public get internalValue(): QuicksightDataSourceParametersAuroraPostgresql | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._database) {
+    if (this._database !== undefined) {
       hasAnyValues = true;
       internalValueResult.database = this._database;
     }
-    if (this._host) {
+    if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
@@ -597,7 +597,7 @@ export class QuicksightDataSourceParametersAuroraPostgresqlOutputReference exten
 }
 export interface QuicksightDataSourceParametersAwsIotAnalytics {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#data_set_name QuicksightDataSource#data_set_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#data_set_name QuicksightDataSource#data_set_name}
   */
   readonly dataSetName: string;
 }
@@ -627,7 +627,7 @@ export class QuicksightDataSourceParametersAwsIotAnalyticsOutputReference extend
   public get internalValue(): QuicksightDataSourceParametersAwsIotAnalytics | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSetName) {
+    if (this._dataSetName !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSetName = this._dataSetName;
     }
@@ -660,7 +660,7 @@ export class QuicksightDataSourceParametersAwsIotAnalyticsOutputReference extend
 }
 export interface QuicksightDataSourceParametersJira {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#site_base_url QuicksightDataSource#site_base_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#site_base_url QuicksightDataSource#site_base_url}
   */
   readonly siteBaseUrl: string;
 }
@@ -690,7 +690,7 @@ export class QuicksightDataSourceParametersJiraOutputReference extends cdktf.Com
   public get internalValue(): QuicksightDataSourceParametersJira | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._siteBaseUrl) {
+    if (this._siteBaseUrl !== undefined) {
       hasAnyValues = true;
       internalValueResult.siteBaseUrl = this._siteBaseUrl;
     }
@@ -723,15 +723,15 @@ export class QuicksightDataSourceParametersJiraOutputReference extends cdktf.Com
 }
 export interface QuicksightDataSourceParametersMariaDb {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#database QuicksightDataSource#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#database QuicksightDataSource#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#host QuicksightDataSource#host}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#host QuicksightDataSource#host}
   */
   readonly host: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#port QuicksightDataSource#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#port QuicksightDataSource#port}
   */
   readonly port: number;
 }
@@ -763,15 +763,15 @@ export class QuicksightDataSourceParametersMariaDbOutputReference extends cdktf.
   public get internalValue(): QuicksightDataSourceParametersMariaDb | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._database) {
+    if (this._database !== undefined) {
       hasAnyValues = true;
       internalValueResult.database = this._database;
     }
-    if (this._host) {
+    if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
@@ -834,15 +834,15 @@ export class QuicksightDataSourceParametersMariaDbOutputReference extends cdktf.
 }
 export interface QuicksightDataSourceParametersMysql {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#database QuicksightDataSource#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#database QuicksightDataSource#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#host QuicksightDataSource#host}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#host QuicksightDataSource#host}
   */
   readonly host: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#port QuicksightDataSource#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#port QuicksightDataSource#port}
   */
   readonly port: number;
 }
@@ -874,15 +874,15 @@ export class QuicksightDataSourceParametersMysqlOutputReference extends cdktf.Co
   public get internalValue(): QuicksightDataSourceParametersMysql | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._database) {
+    if (this._database !== undefined) {
       hasAnyValues = true;
       internalValueResult.database = this._database;
     }
-    if (this._host) {
+    if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
@@ -945,15 +945,15 @@ export class QuicksightDataSourceParametersMysqlOutputReference extends cdktf.Co
 }
 export interface QuicksightDataSourceParametersOracle {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#database QuicksightDataSource#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#database QuicksightDataSource#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#host QuicksightDataSource#host}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#host QuicksightDataSource#host}
   */
   readonly host: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#port QuicksightDataSource#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#port QuicksightDataSource#port}
   */
   readonly port: number;
 }
@@ -985,15 +985,15 @@ export class QuicksightDataSourceParametersOracleOutputReference extends cdktf.C
   public get internalValue(): QuicksightDataSourceParametersOracle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._database) {
+    if (this._database !== undefined) {
       hasAnyValues = true;
       internalValueResult.database = this._database;
     }
-    if (this._host) {
+    if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
@@ -1056,15 +1056,15 @@ export class QuicksightDataSourceParametersOracleOutputReference extends cdktf.C
 }
 export interface QuicksightDataSourceParametersPostgresql {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#database QuicksightDataSource#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#database QuicksightDataSource#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#host QuicksightDataSource#host}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#host QuicksightDataSource#host}
   */
   readonly host: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#port QuicksightDataSource#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#port QuicksightDataSource#port}
   */
   readonly port: number;
 }
@@ -1096,15 +1096,15 @@ export class QuicksightDataSourceParametersPostgresqlOutputReference extends cdk
   public get internalValue(): QuicksightDataSourceParametersPostgresql | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._database) {
+    if (this._database !== undefined) {
       hasAnyValues = true;
       internalValueResult.database = this._database;
     }
-    if (this._host) {
+    if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
@@ -1167,15 +1167,15 @@ export class QuicksightDataSourceParametersPostgresqlOutputReference extends cdk
 }
 export interface QuicksightDataSourceParametersPresto {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#catalog QuicksightDataSource#catalog}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#catalog QuicksightDataSource#catalog}
   */
   readonly catalog: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#host QuicksightDataSource#host}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#host QuicksightDataSource#host}
   */
   readonly host: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#port QuicksightDataSource#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#port QuicksightDataSource#port}
   */
   readonly port: number;
 }
@@ -1207,15 +1207,15 @@ export class QuicksightDataSourceParametersPrestoOutputReference extends cdktf.C
   public get internalValue(): QuicksightDataSourceParametersPresto | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._catalog) {
+    if (this._catalog !== undefined) {
       hasAnyValues = true;
       internalValueResult.catalog = this._catalog;
     }
-    if (this._host) {
+    if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
@@ -1278,11 +1278,11 @@ export class QuicksightDataSourceParametersPrestoOutputReference extends cdktf.C
 }
 export interface QuicksightDataSourceParametersRds {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#database QuicksightDataSource#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#database QuicksightDataSource#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#instance_id QuicksightDataSource#instance_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#instance_id QuicksightDataSource#instance_id}
   */
   readonly instanceId: string;
 }
@@ -1313,11 +1313,11 @@ export class QuicksightDataSourceParametersRdsOutputReference extends cdktf.Comp
   public get internalValue(): QuicksightDataSourceParametersRds | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._database) {
+    if (this._database !== undefined) {
       hasAnyValues = true;
       internalValueResult.database = this._database;
     }
-    if (this._instanceId) {
+    if (this._instanceId !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceId = this._instanceId;
     }
@@ -1365,19 +1365,19 @@ export class QuicksightDataSourceParametersRdsOutputReference extends cdktf.Comp
 }
 export interface QuicksightDataSourceParametersRedshift {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#cluster_id QuicksightDataSource#cluster_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#cluster_id QuicksightDataSource#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#database QuicksightDataSource#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#database QuicksightDataSource#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#host QuicksightDataSource#host}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#host QuicksightDataSource#host}
   */
   readonly host?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#port QuicksightDataSource#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#port QuicksightDataSource#port}
   */
   readonly port?: number;
 }
@@ -1410,19 +1410,19 @@ export class QuicksightDataSourceParametersRedshiftOutputReference extends cdktf
   public get internalValue(): QuicksightDataSourceParametersRedshift | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clusterId) {
+    if (this._clusterId !== undefined) {
       hasAnyValues = true;
       internalValueResult.clusterId = this._clusterId;
     }
-    if (this._database) {
+    if (this._database !== undefined) {
       hasAnyValues = true;
       internalValueResult.database = this._database;
     }
-    if (this._host) {
+    if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
@@ -1509,11 +1509,11 @@ export class QuicksightDataSourceParametersRedshiftOutputReference extends cdktf
 }
 export interface QuicksightDataSourceParametersS3ManifestFileLocation {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#bucket QuicksightDataSource#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#bucket QuicksightDataSource#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#key QuicksightDataSource#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#key QuicksightDataSource#key}
   */
   readonly key: string;
 }
@@ -1544,11 +1544,11 @@ export class QuicksightDataSourceParametersS3ManifestFileLocationOutputReference
   public get internalValue(): QuicksightDataSourceParametersS3ManifestFileLocation | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucket) {
+    if (this._bucket !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucket = this._bucket;
     }
-    if (this._key) {
+    if (this._key !== undefined) {
       hasAnyValues = true;
       internalValueResult.key = this._key;
     }
@@ -1598,7 +1598,7 @@ export interface QuicksightDataSourceParametersS3 {
   /**
   * manifest_file_location block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#manifest_file_location QuicksightDataSource#manifest_file_location}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#manifest_file_location QuicksightDataSource#manifest_file_location}
   */
   readonly manifestFileLocation: QuicksightDataSourceParametersS3ManifestFileLocation;
 }
@@ -1628,7 +1628,7 @@ export class QuicksightDataSourceParametersS3OutputReference extends cdktf.Compl
   public get internalValue(): QuicksightDataSourceParametersS3 | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._manifestFileLocation?.internalValue) {
+    if (this._manifestFileLocation?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.manifestFileLocation = this._manifestFileLocation?.internalValue;
     }
@@ -1661,7 +1661,7 @@ export class QuicksightDataSourceParametersS3OutputReference extends cdktf.Compl
 }
 export interface QuicksightDataSourceParametersServiceNow {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#site_base_url QuicksightDataSource#site_base_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#site_base_url QuicksightDataSource#site_base_url}
   */
   readonly siteBaseUrl: string;
 }
@@ -1691,7 +1691,7 @@ export class QuicksightDataSourceParametersServiceNowOutputReference extends cdk
   public get internalValue(): QuicksightDataSourceParametersServiceNow | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._siteBaseUrl) {
+    if (this._siteBaseUrl !== undefined) {
       hasAnyValues = true;
       internalValueResult.siteBaseUrl = this._siteBaseUrl;
     }
@@ -1724,15 +1724,15 @@ export class QuicksightDataSourceParametersServiceNowOutputReference extends cdk
 }
 export interface QuicksightDataSourceParametersSnowflake {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#database QuicksightDataSource#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#database QuicksightDataSource#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#host QuicksightDataSource#host}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#host QuicksightDataSource#host}
   */
   readonly host: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#warehouse QuicksightDataSource#warehouse}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#warehouse QuicksightDataSource#warehouse}
   */
   readonly warehouse: string;
 }
@@ -1764,15 +1764,15 @@ export class QuicksightDataSourceParametersSnowflakeOutputReference extends cdkt
   public get internalValue(): QuicksightDataSourceParametersSnowflake | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._database) {
+    if (this._database !== undefined) {
       hasAnyValues = true;
       internalValueResult.database = this._database;
     }
-    if (this._host) {
+    if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
-    if (this._warehouse) {
+    if (this._warehouse !== undefined) {
       hasAnyValues = true;
       internalValueResult.warehouse = this._warehouse;
     }
@@ -1835,11 +1835,11 @@ export class QuicksightDataSourceParametersSnowflakeOutputReference extends cdkt
 }
 export interface QuicksightDataSourceParametersSpark {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#host QuicksightDataSource#host}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#host QuicksightDataSource#host}
   */
   readonly host: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#port QuicksightDataSource#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#port QuicksightDataSource#port}
   */
   readonly port: number;
 }
@@ -1870,11 +1870,11 @@ export class QuicksightDataSourceParametersSparkOutputReference extends cdktf.Co
   public get internalValue(): QuicksightDataSourceParametersSpark | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._host) {
+    if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
@@ -1922,15 +1922,15 @@ export class QuicksightDataSourceParametersSparkOutputReference extends cdktf.Co
 }
 export interface QuicksightDataSourceParametersSqlServer {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#database QuicksightDataSource#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#database QuicksightDataSource#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#host QuicksightDataSource#host}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#host QuicksightDataSource#host}
   */
   readonly host: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#port QuicksightDataSource#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#port QuicksightDataSource#port}
   */
   readonly port: number;
 }
@@ -1962,15 +1962,15 @@ export class QuicksightDataSourceParametersSqlServerOutputReference extends cdkt
   public get internalValue(): QuicksightDataSourceParametersSqlServer | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._database) {
+    if (this._database !== undefined) {
       hasAnyValues = true;
       internalValueResult.database = this._database;
     }
-    if (this._host) {
+    if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
@@ -2033,15 +2033,15 @@ export class QuicksightDataSourceParametersSqlServerOutputReference extends cdkt
 }
 export interface QuicksightDataSourceParametersTeradata {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#database QuicksightDataSource#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#database QuicksightDataSource#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#host QuicksightDataSource#host}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#host QuicksightDataSource#host}
   */
   readonly host: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#port QuicksightDataSource#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#port QuicksightDataSource#port}
   */
   readonly port: number;
 }
@@ -2073,15 +2073,15 @@ export class QuicksightDataSourceParametersTeradataOutputReference extends cdktf
   public get internalValue(): QuicksightDataSourceParametersTeradata | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._database) {
+    if (this._database !== undefined) {
       hasAnyValues = true;
       internalValueResult.database = this._database;
     }
-    if (this._host) {
+    if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
@@ -2144,11 +2144,11 @@ export class QuicksightDataSourceParametersTeradataOutputReference extends cdktf
 }
 export interface QuicksightDataSourceParametersTwitter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#max_rows QuicksightDataSource#max_rows}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#max_rows QuicksightDataSource#max_rows}
   */
   readonly maxRows: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#query QuicksightDataSource#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#query QuicksightDataSource#query}
   */
   readonly query: string;
 }
@@ -2179,11 +2179,11 @@ export class QuicksightDataSourceParametersTwitterOutputReference extends cdktf.
   public get internalValue(): QuicksightDataSourceParametersTwitter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._maxRows) {
+    if (this._maxRows !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxRows = this._maxRows;
     }
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -2233,121 +2233,121 @@ export interface QuicksightDataSourceParameters {
   /**
   * amazon_elasticsearch block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#amazon_elasticsearch QuicksightDataSource#amazon_elasticsearch}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#amazon_elasticsearch QuicksightDataSource#amazon_elasticsearch}
   */
   readonly amazonElasticsearch?: QuicksightDataSourceParametersAmazonElasticsearch;
   /**
   * athena block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#athena QuicksightDataSource#athena}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#athena QuicksightDataSource#athena}
   */
   readonly athena?: QuicksightDataSourceParametersAthena;
   /**
   * aurora block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#aurora QuicksightDataSource#aurora}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#aurora QuicksightDataSource#aurora}
   */
   readonly aurora?: QuicksightDataSourceParametersAurora;
   /**
   * aurora_postgresql block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#aurora_postgresql QuicksightDataSource#aurora_postgresql}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#aurora_postgresql QuicksightDataSource#aurora_postgresql}
   */
   readonly auroraPostgresql?: QuicksightDataSourceParametersAuroraPostgresql;
   /**
   * aws_iot_analytics block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#aws_iot_analytics QuicksightDataSource#aws_iot_analytics}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#aws_iot_analytics QuicksightDataSource#aws_iot_analytics}
   */
   readonly awsIotAnalytics?: QuicksightDataSourceParametersAwsIotAnalytics;
   /**
   * jira block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#jira QuicksightDataSource#jira}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#jira QuicksightDataSource#jira}
   */
   readonly jira?: QuicksightDataSourceParametersJira;
   /**
   * maria_db block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#maria_db QuicksightDataSource#maria_db}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#maria_db QuicksightDataSource#maria_db}
   */
   readonly mariaDb?: QuicksightDataSourceParametersMariaDb;
   /**
   * mysql block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#mysql QuicksightDataSource#mysql}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#mysql QuicksightDataSource#mysql}
   */
   readonly mysql?: QuicksightDataSourceParametersMysql;
   /**
   * oracle block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#oracle QuicksightDataSource#oracle}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#oracle QuicksightDataSource#oracle}
   */
   readonly oracle?: QuicksightDataSourceParametersOracle;
   /**
   * postgresql block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#postgresql QuicksightDataSource#postgresql}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#postgresql QuicksightDataSource#postgresql}
   */
   readonly postgresql?: QuicksightDataSourceParametersPostgresql;
   /**
   * presto block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#presto QuicksightDataSource#presto}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#presto QuicksightDataSource#presto}
   */
   readonly presto?: QuicksightDataSourceParametersPresto;
   /**
   * rds block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#rds QuicksightDataSource#rds}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#rds QuicksightDataSource#rds}
   */
   readonly rds?: QuicksightDataSourceParametersRds;
   /**
   * redshift block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#redshift QuicksightDataSource#redshift}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#redshift QuicksightDataSource#redshift}
   */
   readonly redshift?: QuicksightDataSourceParametersRedshift;
   /**
   * s3 block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#s3 QuicksightDataSource#s3}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#s3 QuicksightDataSource#s3}
   */
   readonly s3?: QuicksightDataSourceParametersS3;
   /**
   * service_now block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#service_now QuicksightDataSource#service_now}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#service_now QuicksightDataSource#service_now}
   */
   readonly serviceNow?: QuicksightDataSourceParametersServiceNow;
   /**
   * snowflake block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#snowflake QuicksightDataSource#snowflake}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#snowflake QuicksightDataSource#snowflake}
   */
   readonly snowflake?: QuicksightDataSourceParametersSnowflake;
   /**
   * spark block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#spark QuicksightDataSource#spark}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#spark QuicksightDataSource#spark}
   */
   readonly spark?: QuicksightDataSourceParametersSpark;
   /**
   * sql_server block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#sql_server QuicksightDataSource#sql_server}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#sql_server QuicksightDataSource#sql_server}
   */
   readonly sqlServer?: QuicksightDataSourceParametersSqlServer;
   /**
   * teradata block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#teradata QuicksightDataSource#teradata}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#teradata QuicksightDataSource#teradata}
   */
   readonly teradata?: QuicksightDataSourceParametersTeradata;
   /**
   * twitter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#twitter QuicksightDataSource#twitter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#twitter QuicksightDataSource#twitter}
   */
   readonly twitter?: QuicksightDataSourceParametersTwitter;
 }
@@ -2396,83 +2396,83 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   public get internalValue(): QuicksightDataSourceParameters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._amazonElasticsearch?.internalValue) {
+    if (this._amazonElasticsearch?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.amazonElasticsearch = this._amazonElasticsearch?.internalValue;
     }
-    if (this._athena?.internalValue) {
+    if (this._athena?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.athena = this._athena?.internalValue;
     }
-    if (this._aurora?.internalValue) {
+    if (this._aurora?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.aurora = this._aurora?.internalValue;
     }
-    if (this._auroraPostgresql?.internalValue) {
+    if (this._auroraPostgresql?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.auroraPostgresql = this._auroraPostgresql?.internalValue;
     }
-    if (this._awsIotAnalytics?.internalValue) {
+    if (this._awsIotAnalytics?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.awsIotAnalytics = this._awsIotAnalytics?.internalValue;
     }
-    if (this._jira?.internalValue) {
+    if (this._jira?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.jira = this._jira?.internalValue;
     }
-    if (this._mariaDb?.internalValue) {
+    if (this._mariaDb?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.mariaDb = this._mariaDb?.internalValue;
     }
-    if (this._mysql?.internalValue) {
+    if (this._mysql?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.mysql = this._mysql?.internalValue;
     }
-    if (this._oracle?.internalValue) {
+    if (this._oracle?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.oracle = this._oracle?.internalValue;
     }
-    if (this._postgresql?.internalValue) {
+    if (this._postgresql?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.postgresql = this._postgresql?.internalValue;
     }
-    if (this._presto?.internalValue) {
+    if (this._presto?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.presto = this._presto?.internalValue;
     }
-    if (this._rds?.internalValue) {
+    if (this._rds?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.rds = this._rds?.internalValue;
     }
-    if (this._redshift?.internalValue) {
+    if (this._redshift?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.redshift = this._redshift?.internalValue;
     }
-    if (this._s3?.internalValue) {
+    if (this._s3?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.s3 = this._s3?.internalValue;
     }
-    if (this._serviceNow?.internalValue) {
+    if (this._serviceNow?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceNow = this._serviceNow?.internalValue;
     }
-    if (this._snowflake?.internalValue) {
+    if (this._snowflake?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.snowflake = this._snowflake?.internalValue;
     }
-    if (this._spark?.internalValue) {
+    if (this._spark?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.spark = this._spark?.internalValue;
     }
-    if (this._sqlServer?.internalValue) {
+    if (this._sqlServer?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sqlServer = this._sqlServer?.internalValue;
     }
-    if (this._teradata?.internalValue) {
+    if (this._teradata?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.teradata = this._teradata?.internalValue;
     }
-    if (this._twitter?.internalValue) {
+    if (this._twitter?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.twitter = this._twitter?.internalValue;
     }
@@ -2850,11 +2850,11 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
 }
 export interface QuicksightDataSourcePermission {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#actions QuicksightDataSource#actions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#actions QuicksightDataSource#actions}
   */
   readonly actions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#principal QuicksightDataSource#principal}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#principal QuicksightDataSource#principal}
   */
   readonly principal: string;
 }
@@ -2872,7 +2872,7 @@ export function quicksightDataSourcePermissionToTerraform(struct?: QuicksightDat
 
 export interface QuicksightDataSourceSslProperties {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#disable_ssl QuicksightDataSource#disable_ssl}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#disable_ssl QuicksightDataSource#disable_ssl}
   */
   readonly disableSsl: boolean | cdktf.IResolvable;
 }
@@ -2902,7 +2902,7 @@ export class QuicksightDataSourceSslPropertiesOutputReference extends cdktf.Comp
   public get internalValue(): QuicksightDataSourceSslProperties | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._disableSsl) {
+    if (this._disableSsl !== undefined) {
       hasAnyValues = true;
       internalValueResult.disableSsl = this._disableSsl;
     }
@@ -2935,7 +2935,7 @@ export class QuicksightDataSourceSslPropertiesOutputReference extends cdktf.Comp
 }
 export interface QuicksightDataSourceVpcConnectionProperties {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html#vpc_connection_arn QuicksightDataSource#vpc_connection_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#vpc_connection_arn QuicksightDataSource#vpc_connection_arn}
   */
   readonly vpcConnectionArn: string;
 }
@@ -2965,7 +2965,7 @@ export class QuicksightDataSourceVpcConnectionPropertiesOutputReference extends 
   public get internalValue(): QuicksightDataSourceVpcConnectionProperties | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._vpcConnectionArn) {
+    if (this._vpcConnectionArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.vpcConnectionArn = this._vpcConnectionArn;
     }
@@ -2998,7 +2998,7 @@ export class QuicksightDataSourceVpcConnectionPropertiesOutputReference extends 
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html aws_quicksight_data_source}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source aws_quicksight_data_source}
 */
 export class QuicksightDataSource extends cdktf.TerraformResource {
 
@@ -3012,7 +3012,7 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source.html aws_quicksight_data_source} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source aws_quicksight_data_source} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

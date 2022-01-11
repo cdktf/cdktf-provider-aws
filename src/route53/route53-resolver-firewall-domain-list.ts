@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 */
 export interface Route53ResolverFirewallDomainListConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_domain_list.html#domains Route53ResolverFirewallDomainList#domains}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}
   */
   readonly domains?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_domain_list.html#name Route53ResolverFirewallDomainList#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_domain_list.html#tags Route53ResolverFirewallDomainList#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_domain_list.html#tags_all Route53ResolverFirewallDomainList#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_domain_list.html aws_route53_resolver_firewall_domain_list}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list}
 */
 export class Route53ResolverFirewallDomainList extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class Route53ResolverFirewallDomainList extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_domain_list.html aws_route53_resolver_firewall_domain_list} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

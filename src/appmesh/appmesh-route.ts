@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 */
 export interface AppmeshRouteConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#mesh_name AppmeshRoute#mesh_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#mesh_name AppmeshRoute#mesh_name}
   */
   readonly meshName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#mesh_owner AppmeshRoute#mesh_owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#mesh_owner AppmeshRoute#mesh_owner}
   */
   readonly meshOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#name AppmeshRoute#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#name AppmeshRoute#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#tags AppmeshRoute#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#tags AppmeshRoute#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#tags_all AppmeshRoute#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#tags_all AppmeshRoute#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#virtual_router_name AppmeshRoute#virtual_router_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#virtual_router_name AppmeshRoute#virtual_router_name}
   */
   readonly virtualRouterName: string;
   /**
   * spec block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#spec AppmeshRoute#spec}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#spec AppmeshRoute#spec}
   */
   readonly spec: AppmeshRouteSpec;
 }
 export interface AppmeshRouteSpecGrpcRouteActionWeightedTarget {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#virtual_node AppmeshRoute#virtual_node}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#virtual_node AppmeshRoute#virtual_node}
   */
   readonly virtualNode: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weight AppmeshRoute#weight}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#weight AppmeshRoute#weight}
   */
   readonly weight: number;
 }
@@ -64,7 +64,7 @@ export interface AppmeshRouteSpecGrpcRouteAction {
   /**
   * weighted_target block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weighted_target AppmeshRoute#weighted_target}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#weighted_target AppmeshRoute#weighted_target}
   */
   readonly weightedTarget: AppmeshRouteSpecGrpcRouteActionWeightedTarget[];
 }
@@ -94,7 +94,7 @@ export class AppmeshRouteSpecGrpcRouteActionOutputReference extends cdktf.Comple
   public get internalValue(): AppmeshRouteSpecGrpcRouteAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._weightedTarget) {
+    if (this._weightedTarget !== undefined) {
       hasAnyValues = true;
       internalValueResult.weightedTarget = this._weightedTarget;
     }
@@ -128,11 +128,11 @@ export class AppmeshRouteSpecGrpcRouteActionOutputReference extends cdktf.Comple
 }
 export interface AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#end AppmeshRoute#end}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#end AppmeshRoute#end}
   */
   readonly end: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#start AppmeshRoute#start}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#start AppmeshRoute#start}
   */
   readonly start: number;
 }
@@ -163,11 +163,11 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference ext
   public get internalValue(): AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._end) {
+    if (this._end !== undefined) {
       hasAnyValues = true;
       internalValueResult.end = this._end;
     }
-    if (this._start) {
+    if (this._start !== undefined) {
       hasAnyValues = true;
       internalValueResult.start = this._start;
     }
@@ -215,25 +215,25 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference ext
 }
 export interface AppmeshRouteSpecGrpcRouteMatchMetadataMatch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#exact AppmeshRoute#exact}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#exact AppmeshRoute#exact}
   */
   readonly exact?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#prefix AppmeshRoute#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#regex AppmeshRoute#regex}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#regex AppmeshRoute#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#suffix AppmeshRoute#suffix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#suffix AppmeshRoute#suffix}
   */
   readonly suffix?: string;
   /**
   * range block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#range AppmeshRoute#range}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#range AppmeshRoute#range}
   */
   readonly range?: AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange;
 }
@@ -267,23 +267,23 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference extends 
   public get internalValue(): AppmeshRouteSpecGrpcRouteMatchMetadataMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._exact) {
+    if (this._exact !== undefined) {
       hasAnyValues = true;
       internalValueResult.exact = this._exact;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._regex) {
+    if (this._regex !== undefined) {
       hasAnyValues = true;
       internalValueResult.regex = this._regex;
     }
-    if (this._suffix) {
+    if (this._suffix !== undefined) {
       hasAnyValues = true;
       internalValueResult.suffix = this._suffix;
     }
-    if (this._range?.internalValue) {
+    if (this._range?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.range = this._range?.internalValue;
     }
@@ -391,17 +391,17 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference extends 
 }
 export interface AppmeshRouteSpecGrpcRouteMatchMetadata {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#invert AppmeshRoute#invert}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#invert AppmeshRoute#invert}
   */
   readonly invert?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#name AppmeshRoute#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#name AppmeshRoute#name}
   */
   readonly name: string;
   /**
   * match block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#match AppmeshRoute#match}
   */
   readonly match?: AppmeshRouteSpecGrpcRouteMatchMetadataMatch;
 }
@@ -420,21 +420,21 @@ export function appmeshRouteSpecGrpcRouteMatchMetadataToTerraform(struct?: Appme
 
 export interface AppmeshRouteSpecGrpcRouteMatch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#method_name AppmeshRoute#method_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#method_name AppmeshRoute#method_name}
   */
   readonly methodName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#prefix AppmeshRoute#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#service_name AppmeshRoute#service_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#service_name AppmeshRoute#service_name}
   */
   readonly serviceName?: string;
   /**
   * metadata block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#metadata AppmeshRoute#metadata}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#metadata AppmeshRoute#metadata}
   */
   readonly metadata?: AppmeshRouteSpecGrpcRouteMatchMetadata[];
 }
@@ -467,19 +467,19 @@ export class AppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.Complex
   public get internalValue(): AppmeshRouteSpecGrpcRouteMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._methodName) {
+    if (this._methodName !== undefined) {
       hasAnyValues = true;
       internalValueResult.methodName = this._methodName;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._serviceName) {
+    if (this._serviceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceName = this._serviceName;
     }
-    if (this._metadata) {
+    if (this._metadata !== undefined) {
       hasAnyValues = true;
       internalValueResult.metadata = this._metadata;
     }
@@ -570,11 +570,11 @@ export class AppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.Complex
 }
 export interface AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -605,11 +605,11 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference 
   public get internalValue(): AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -657,25 +657,25 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference 
 }
 export interface AppmeshRouteSpecGrpcRouteRetryPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#grpc_retry_events AppmeshRoute#grpc_retry_events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#grpc_retry_events AppmeshRoute#grpc_retry_events}
   */
   readonly grpcRetryEvents?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#http_retry_events AppmeshRoute#http_retry_events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}
   */
   readonly httpRetryEvents?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#max_retries AppmeshRoute#max_retries}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#max_retries AppmeshRoute#max_retries}
   */
   readonly maxRetries: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#tcp_retry_events AppmeshRoute#tcp_retry_events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}
   */
   readonly tcpRetryEvents?: string[];
   /**
   * per_retry_timeout block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#per_retry_timeout AppmeshRoute#per_retry_timeout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
   */
   readonly perRetryTimeout: AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout;
 }
@@ -709,23 +709,23 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends cdktf.C
   public get internalValue(): AppmeshRouteSpecGrpcRouteRetryPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._grpcRetryEvents) {
+    if (this._grpcRetryEvents !== undefined) {
       hasAnyValues = true;
       internalValueResult.grpcRetryEvents = this._grpcRetryEvents;
     }
-    if (this._httpRetryEvents) {
+    if (this._httpRetryEvents !== undefined) {
       hasAnyValues = true;
       internalValueResult.httpRetryEvents = this._httpRetryEvents;
     }
-    if (this._maxRetries) {
+    if (this._maxRetries !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxRetries = this._maxRetries;
     }
-    if (this._tcpRetryEvents) {
+    if (this._tcpRetryEvents !== undefined) {
       hasAnyValues = true;
       internalValueResult.tcpRetryEvents = this._tcpRetryEvents;
     }
-    if (this._perRetryTimeout?.internalValue) {
+    if (this._perRetryTimeout?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.perRetryTimeout = this._perRetryTimeout?.internalValue;
     }
@@ -827,11 +827,11 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends cdktf.C
 }
 export interface AppmeshRouteSpecGrpcRouteTimeoutIdle {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -862,11 +862,11 @@ export class AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference extends cdktf.C
   public get internalValue(): AppmeshRouteSpecGrpcRouteTimeoutIdle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -914,11 +914,11 @@ export class AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference extends cdktf.C
 }
 export interface AppmeshRouteSpecGrpcRouteTimeoutPerRequest {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -949,11 +949,11 @@ export class AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference extends c
   public get internalValue(): AppmeshRouteSpecGrpcRouteTimeoutPerRequest | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -1003,13 +1003,13 @@ export interface AppmeshRouteSpecGrpcRouteTimeout {
   /**
   * idle block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#idle AppmeshRoute#idle}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#idle AppmeshRoute#idle}
   */
   readonly idle?: AppmeshRouteSpecGrpcRouteTimeoutIdle;
   /**
   * per_request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#per_request AppmeshRoute#per_request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#per_request AppmeshRoute#per_request}
   */
   readonly perRequest?: AppmeshRouteSpecGrpcRouteTimeoutPerRequest;
 }
@@ -1040,11 +1040,11 @@ export class AppmeshRouteSpecGrpcRouteTimeoutOutputReference extends cdktf.Compl
   public get internalValue(): AppmeshRouteSpecGrpcRouteTimeout | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle?.internalValue) {
+    if (this._idle?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
-    if (this._perRequest?.internalValue) {
+    if (this._perRequest?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.perRequest = this._perRequest?.internalValue;
     }
@@ -1100,25 +1100,25 @@ export interface AppmeshRouteSpecGrpcRoute {
   /**
   * action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#action AppmeshRoute#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#action AppmeshRoute#action}
   */
   readonly action: AppmeshRouteSpecGrpcRouteAction;
   /**
   * match block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#match AppmeshRoute#match}
   */
   readonly match?: AppmeshRouteSpecGrpcRouteMatch;
   /**
   * retry_policy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#retry_policy AppmeshRoute#retry_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#retry_policy AppmeshRoute#retry_policy}
   */
   readonly retryPolicy?: AppmeshRouteSpecGrpcRouteRetryPolicy;
   /**
   * timeout block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#timeout AppmeshRoute#timeout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#timeout AppmeshRoute#timeout}
   */
   readonly timeout?: AppmeshRouteSpecGrpcRouteTimeout;
 }
@@ -1151,19 +1151,19 @@ export class AppmeshRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObjec
   public get internalValue(): AppmeshRouteSpecGrpcRoute | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action?.internalValue) {
+    if (this._action?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
-    if (this._match?.internalValue) {
+    if (this._match?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
-    if (this._retryPolicy?.internalValue) {
+    if (this._retryPolicy?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.retryPolicy = this._retryPolicy?.internalValue;
     }
-    if (this._timeout?.internalValue) {
+    if (this._timeout?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout?.internalValue;
     }
@@ -1250,11 +1250,11 @@ export class AppmeshRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObjec
 }
 export interface AppmeshRouteSpecHttp2RouteActionWeightedTarget {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#virtual_node AppmeshRoute#virtual_node}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#virtual_node AppmeshRoute#virtual_node}
   */
   readonly virtualNode: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weight AppmeshRoute#weight}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#weight AppmeshRoute#weight}
   */
   readonly weight: number;
 }
@@ -1274,7 +1274,7 @@ export interface AppmeshRouteSpecHttp2RouteAction {
   /**
   * weighted_target block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weighted_target AppmeshRoute#weighted_target}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#weighted_target AppmeshRoute#weighted_target}
   */
   readonly weightedTarget: AppmeshRouteSpecHttp2RouteActionWeightedTarget[];
 }
@@ -1304,7 +1304,7 @@ export class AppmeshRouteSpecHttp2RouteActionOutputReference extends cdktf.Compl
   public get internalValue(): AppmeshRouteSpecHttp2RouteAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._weightedTarget) {
+    if (this._weightedTarget !== undefined) {
       hasAnyValues = true;
       internalValueResult.weightedTarget = this._weightedTarget;
     }
@@ -1338,11 +1338,11 @@ export class AppmeshRouteSpecHttp2RouteActionOutputReference extends cdktf.Compl
 }
 export interface AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#end AppmeshRoute#end}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#end AppmeshRoute#end}
   */
   readonly end: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#start AppmeshRoute#start}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#start AppmeshRoute#start}
   */
   readonly start: number;
 }
@@ -1373,11 +1373,11 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference exte
   public get internalValue(): AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._end) {
+    if (this._end !== undefined) {
       hasAnyValues = true;
       internalValueResult.end = this._end;
     }
-    if (this._start) {
+    if (this._start !== undefined) {
       hasAnyValues = true;
       internalValueResult.start = this._start;
     }
@@ -1425,25 +1425,25 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference exte
 }
 export interface AppmeshRouteSpecHttp2RouteMatchHeaderMatch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#exact AppmeshRoute#exact}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#exact AppmeshRoute#exact}
   */
   readonly exact?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#prefix AppmeshRoute#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#regex AppmeshRoute#regex}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#regex AppmeshRoute#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#suffix AppmeshRoute#suffix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#suffix AppmeshRoute#suffix}
   */
   readonly suffix?: string;
   /**
   * range block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#range AppmeshRoute#range}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#range AppmeshRoute#range}
   */
   readonly range?: AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange;
 }
@@ -1477,23 +1477,23 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference extends c
   public get internalValue(): AppmeshRouteSpecHttp2RouteMatchHeaderMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._exact) {
+    if (this._exact !== undefined) {
       hasAnyValues = true;
       internalValueResult.exact = this._exact;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._regex) {
+    if (this._regex !== undefined) {
       hasAnyValues = true;
       internalValueResult.regex = this._regex;
     }
-    if (this._suffix) {
+    if (this._suffix !== undefined) {
       hasAnyValues = true;
       internalValueResult.suffix = this._suffix;
     }
-    if (this._range?.internalValue) {
+    if (this._range?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.range = this._range?.internalValue;
     }
@@ -1601,17 +1601,17 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference extends c
 }
 export interface AppmeshRouteSpecHttp2RouteMatchHeader {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#invert AppmeshRoute#invert}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#invert AppmeshRoute#invert}
   */
   readonly invert?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#name AppmeshRoute#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#name AppmeshRoute#name}
   */
   readonly name: string;
   /**
   * match block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#match AppmeshRoute#match}
   */
   readonly match?: AppmeshRouteSpecHttp2RouteMatchHeaderMatch;
 }
@@ -1630,21 +1630,21 @@ export function appmeshRouteSpecHttp2RouteMatchHeaderToTerraform(struct?: Appmes
 
 export interface AppmeshRouteSpecHttp2RouteMatch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#method AppmeshRoute#method}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#method AppmeshRoute#method}
   */
   readonly method?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#prefix AppmeshRoute#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#scheme AppmeshRoute#scheme}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#scheme AppmeshRoute#scheme}
   */
   readonly scheme?: string;
   /**
   * header block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#header AppmeshRoute#header}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#header AppmeshRoute#header}
   */
   readonly header?: AppmeshRouteSpecHttp2RouteMatchHeader[];
 }
@@ -1677,19 +1677,19 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
   public get internalValue(): AppmeshRouteSpecHttp2RouteMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._method) {
+    if (this._method !== undefined) {
       hasAnyValues = true;
       internalValueResult.method = this._method;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._scheme) {
+    if (this._scheme !== undefined) {
       hasAnyValues = true;
       internalValueResult.scheme = this._scheme;
     }
-    if (this._header) {
+    if (this._header !== undefined) {
       hasAnyValues = true;
       internalValueResult.header = this._header;
     }
@@ -1777,11 +1777,11 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
 }
 export interface AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -1812,11 +1812,11 @@ export class AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference
   public get internalValue(): AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -1864,21 +1864,21 @@ export class AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference
 }
 export interface AppmeshRouteSpecHttp2RouteRetryPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#http_retry_events AppmeshRoute#http_retry_events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}
   */
   readonly httpRetryEvents?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#max_retries AppmeshRoute#max_retries}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#max_retries AppmeshRoute#max_retries}
   */
   readonly maxRetries: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#tcp_retry_events AppmeshRoute#tcp_retry_events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}
   */
   readonly tcpRetryEvents?: string[];
   /**
   * per_retry_timeout block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#per_retry_timeout AppmeshRoute#per_retry_timeout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
   */
   readonly perRetryTimeout: AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout;
 }
@@ -1911,19 +1911,19 @@ export class AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends cdktf.
   public get internalValue(): AppmeshRouteSpecHttp2RouteRetryPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._httpRetryEvents) {
+    if (this._httpRetryEvents !== undefined) {
       hasAnyValues = true;
       internalValueResult.httpRetryEvents = this._httpRetryEvents;
     }
-    if (this._maxRetries) {
+    if (this._maxRetries !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxRetries = this._maxRetries;
     }
-    if (this._tcpRetryEvents) {
+    if (this._tcpRetryEvents !== undefined) {
       hasAnyValues = true;
       internalValueResult.tcpRetryEvents = this._tcpRetryEvents;
     }
-    if (this._perRetryTimeout?.internalValue) {
+    if (this._perRetryTimeout?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.perRetryTimeout = this._perRetryTimeout?.internalValue;
     }
@@ -2007,11 +2007,11 @@ export class AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends cdktf.
 }
 export interface AppmeshRouteSpecHttp2RouteTimeoutIdle {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -2042,11 +2042,11 @@ export class AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference extends cdktf.
   public get internalValue(): AppmeshRouteSpecHttp2RouteTimeoutIdle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -2094,11 +2094,11 @@ export class AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference extends cdktf.
 }
 export interface AppmeshRouteSpecHttp2RouteTimeoutPerRequest {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -2129,11 +2129,11 @@ export class AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference extends 
   public get internalValue(): AppmeshRouteSpecHttp2RouteTimeoutPerRequest | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -2183,13 +2183,13 @@ export interface AppmeshRouteSpecHttp2RouteTimeout {
   /**
   * idle block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#idle AppmeshRoute#idle}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#idle AppmeshRoute#idle}
   */
   readonly idle?: AppmeshRouteSpecHttp2RouteTimeoutIdle;
   /**
   * per_request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#per_request AppmeshRoute#per_request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#per_request AppmeshRoute#per_request}
   */
   readonly perRequest?: AppmeshRouteSpecHttp2RouteTimeoutPerRequest;
 }
@@ -2220,11 +2220,11 @@ export class AppmeshRouteSpecHttp2RouteTimeoutOutputReference extends cdktf.Comp
   public get internalValue(): AppmeshRouteSpecHttp2RouteTimeout | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle?.internalValue) {
+    if (this._idle?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
-    if (this._perRequest?.internalValue) {
+    if (this._perRequest?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.perRequest = this._perRequest?.internalValue;
     }
@@ -2280,25 +2280,25 @@ export interface AppmeshRouteSpecHttp2Route {
   /**
   * action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#action AppmeshRoute#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#action AppmeshRoute#action}
   */
   readonly action: AppmeshRouteSpecHttp2RouteAction;
   /**
   * match block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#match AppmeshRoute#match}
   */
   readonly match: AppmeshRouteSpecHttp2RouteMatch;
   /**
   * retry_policy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#retry_policy AppmeshRoute#retry_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#retry_policy AppmeshRoute#retry_policy}
   */
   readonly retryPolicy?: AppmeshRouteSpecHttp2RouteRetryPolicy;
   /**
   * timeout block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#timeout AppmeshRoute#timeout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#timeout AppmeshRoute#timeout}
   */
   readonly timeout?: AppmeshRouteSpecHttp2RouteTimeout;
 }
@@ -2331,19 +2331,19 @@ export class AppmeshRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObje
   public get internalValue(): AppmeshRouteSpecHttp2Route | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action?.internalValue) {
+    if (this._action?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
-    if (this._match?.internalValue) {
+    if (this._match?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
-    if (this._retryPolicy?.internalValue) {
+    if (this._retryPolicy?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.retryPolicy = this._retryPolicy?.internalValue;
     }
-    if (this._timeout?.internalValue) {
+    if (this._timeout?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout?.internalValue;
     }
@@ -2427,11 +2427,11 @@ export class AppmeshRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObje
 }
 export interface AppmeshRouteSpecHttpRouteActionWeightedTarget {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#virtual_node AppmeshRoute#virtual_node}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#virtual_node AppmeshRoute#virtual_node}
   */
   readonly virtualNode: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weight AppmeshRoute#weight}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#weight AppmeshRoute#weight}
   */
   readonly weight: number;
 }
@@ -2451,7 +2451,7 @@ export interface AppmeshRouteSpecHttpRouteAction {
   /**
   * weighted_target block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weighted_target AppmeshRoute#weighted_target}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#weighted_target AppmeshRoute#weighted_target}
   */
   readonly weightedTarget: AppmeshRouteSpecHttpRouteActionWeightedTarget[];
 }
@@ -2481,7 +2481,7 @@ export class AppmeshRouteSpecHttpRouteActionOutputReference extends cdktf.Comple
   public get internalValue(): AppmeshRouteSpecHttpRouteAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._weightedTarget) {
+    if (this._weightedTarget !== undefined) {
       hasAnyValues = true;
       internalValueResult.weightedTarget = this._weightedTarget;
     }
@@ -2515,11 +2515,11 @@ export class AppmeshRouteSpecHttpRouteActionOutputReference extends cdktf.Comple
 }
 export interface AppmeshRouteSpecHttpRouteMatchHeaderMatchRange {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#end AppmeshRoute#end}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#end AppmeshRoute#end}
   */
   readonly end: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#start AppmeshRoute#start}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#start AppmeshRoute#start}
   */
   readonly start: number;
 }
@@ -2550,11 +2550,11 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference exten
   public get internalValue(): AppmeshRouteSpecHttpRouteMatchHeaderMatchRange | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._end) {
+    if (this._end !== undefined) {
       hasAnyValues = true;
       internalValueResult.end = this._end;
     }
-    if (this._start) {
+    if (this._start !== undefined) {
       hasAnyValues = true;
       internalValueResult.start = this._start;
     }
@@ -2602,25 +2602,25 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference exten
 }
 export interface AppmeshRouteSpecHttpRouteMatchHeaderMatch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#exact AppmeshRoute#exact}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#exact AppmeshRoute#exact}
   */
   readonly exact?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#prefix AppmeshRoute#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#regex AppmeshRoute#regex}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#regex AppmeshRoute#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#suffix AppmeshRoute#suffix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#suffix AppmeshRoute#suffix}
   */
   readonly suffix?: string;
   /**
   * range block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#range AppmeshRoute#range}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#range AppmeshRoute#range}
   */
   readonly range?: AppmeshRouteSpecHttpRouteMatchHeaderMatchRange;
 }
@@ -2654,23 +2654,23 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference extends cd
   public get internalValue(): AppmeshRouteSpecHttpRouteMatchHeaderMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._exact) {
+    if (this._exact !== undefined) {
       hasAnyValues = true;
       internalValueResult.exact = this._exact;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._regex) {
+    if (this._regex !== undefined) {
       hasAnyValues = true;
       internalValueResult.regex = this._regex;
     }
-    if (this._suffix) {
+    if (this._suffix !== undefined) {
       hasAnyValues = true;
       internalValueResult.suffix = this._suffix;
     }
-    if (this._range?.internalValue) {
+    if (this._range?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.range = this._range?.internalValue;
     }
@@ -2778,17 +2778,17 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference extends cd
 }
 export interface AppmeshRouteSpecHttpRouteMatchHeader {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#invert AppmeshRoute#invert}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#invert AppmeshRoute#invert}
   */
   readonly invert?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#name AppmeshRoute#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#name AppmeshRoute#name}
   */
   readonly name: string;
   /**
   * match block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#match AppmeshRoute#match}
   */
   readonly match?: AppmeshRouteSpecHttpRouteMatchHeaderMatch;
 }
@@ -2807,21 +2807,21 @@ export function appmeshRouteSpecHttpRouteMatchHeaderToTerraform(struct?: Appmesh
 
 export interface AppmeshRouteSpecHttpRouteMatch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#method AppmeshRoute#method}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#method AppmeshRoute#method}
   */
   readonly method?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#prefix AppmeshRoute#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#prefix AppmeshRoute#prefix}
   */
   readonly prefix: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#scheme AppmeshRoute#scheme}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#scheme AppmeshRoute#scheme}
   */
   readonly scheme?: string;
   /**
   * header block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#header AppmeshRoute#header}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#header AppmeshRoute#header}
   */
   readonly header?: AppmeshRouteSpecHttpRouteMatchHeader[];
 }
@@ -2854,19 +2854,19 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
   public get internalValue(): AppmeshRouteSpecHttpRouteMatch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._method) {
+    if (this._method !== undefined) {
       hasAnyValues = true;
       internalValueResult.method = this._method;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
-    if (this._scheme) {
+    if (this._scheme !== undefined) {
       hasAnyValues = true;
       internalValueResult.scheme = this._scheme;
     }
-    if (this._header) {
+    if (this._header !== undefined) {
       hasAnyValues = true;
       internalValueResult.header = this._header;
     }
@@ -2954,11 +2954,11 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
 }
 export interface AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -2989,11 +2989,11 @@ export class AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference 
   public get internalValue(): AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -3041,21 +3041,21 @@ export class AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference 
 }
 export interface AppmeshRouteSpecHttpRouteRetryPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#http_retry_events AppmeshRoute#http_retry_events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#http_retry_events AppmeshRoute#http_retry_events}
   */
   readonly httpRetryEvents?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#max_retries AppmeshRoute#max_retries}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#max_retries AppmeshRoute#max_retries}
   */
   readonly maxRetries: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#tcp_retry_events AppmeshRoute#tcp_retry_events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#tcp_retry_events AppmeshRoute#tcp_retry_events}
   */
   readonly tcpRetryEvents?: string[];
   /**
   * per_retry_timeout block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#per_retry_timeout AppmeshRoute#per_retry_timeout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#per_retry_timeout AppmeshRoute#per_retry_timeout}
   */
   readonly perRetryTimeout: AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout;
 }
@@ -3088,19 +3088,19 @@ export class AppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends cdktf.C
   public get internalValue(): AppmeshRouteSpecHttpRouteRetryPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._httpRetryEvents) {
+    if (this._httpRetryEvents !== undefined) {
       hasAnyValues = true;
       internalValueResult.httpRetryEvents = this._httpRetryEvents;
     }
-    if (this._maxRetries) {
+    if (this._maxRetries !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxRetries = this._maxRetries;
     }
-    if (this._tcpRetryEvents) {
+    if (this._tcpRetryEvents !== undefined) {
       hasAnyValues = true;
       internalValueResult.tcpRetryEvents = this._tcpRetryEvents;
     }
-    if (this._perRetryTimeout?.internalValue) {
+    if (this._perRetryTimeout?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.perRetryTimeout = this._perRetryTimeout?.internalValue;
     }
@@ -3184,11 +3184,11 @@ export class AppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends cdktf.C
 }
 export interface AppmeshRouteSpecHttpRouteTimeoutIdle {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -3219,11 +3219,11 @@ export class AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference extends cdktf.C
   public get internalValue(): AppmeshRouteSpecHttpRouteTimeoutIdle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -3271,11 +3271,11 @@ export class AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference extends cdktf.C
 }
 export interface AppmeshRouteSpecHttpRouteTimeoutPerRequest {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -3306,11 +3306,11 @@ export class AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference extends c
   public get internalValue(): AppmeshRouteSpecHttpRouteTimeoutPerRequest | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -3360,13 +3360,13 @@ export interface AppmeshRouteSpecHttpRouteTimeout {
   /**
   * idle block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#idle AppmeshRoute#idle}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#idle AppmeshRoute#idle}
   */
   readonly idle?: AppmeshRouteSpecHttpRouteTimeoutIdle;
   /**
   * per_request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#per_request AppmeshRoute#per_request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#per_request AppmeshRoute#per_request}
   */
   readonly perRequest?: AppmeshRouteSpecHttpRouteTimeoutPerRequest;
 }
@@ -3397,11 +3397,11 @@ export class AppmeshRouteSpecHttpRouteTimeoutOutputReference extends cdktf.Compl
   public get internalValue(): AppmeshRouteSpecHttpRouteTimeout | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle?.internalValue) {
+    if (this._idle?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
-    if (this._perRequest?.internalValue) {
+    if (this._perRequest?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.perRequest = this._perRequest?.internalValue;
     }
@@ -3457,25 +3457,25 @@ export interface AppmeshRouteSpecHttpRoute {
   /**
   * action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#action AppmeshRoute#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#action AppmeshRoute#action}
   */
   readonly action: AppmeshRouteSpecHttpRouteAction;
   /**
   * match block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#match AppmeshRoute#match}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#match AppmeshRoute#match}
   */
   readonly match: AppmeshRouteSpecHttpRouteMatch;
   /**
   * retry_policy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#retry_policy AppmeshRoute#retry_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#retry_policy AppmeshRoute#retry_policy}
   */
   readonly retryPolicy?: AppmeshRouteSpecHttpRouteRetryPolicy;
   /**
   * timeout block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#timeout AppmeshRoute#timeout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#timeout AppmeshRoute#timeout}
   */
   readonly timeout?: AppmeshRouteSpecHttpRouteTimeout;
 }
@@ -3508,19 +3508,19 @@ export class AppmeshRouteSpecHttpRouteOutputReference extends cdktf.ComplexObjec
   public get internalValue(): AppmeshRouteSpecHttpRoute | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action?.internalValue) {
+    if (this._action?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
-    if (this._match?.internalValue) {
+    if (this._match?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
-    if (this._retryPolicy?.internalValue) {
+    if (this._retryPolicy?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.retryPolicy = this._retryPolicy?.internalValue;
     }
-    if (this._timeout?.internalValue) {
+    if (this._timeout?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout?.internalValue;
     }
@@ -3604,11 +3604,11 @@ export class AppmeshRouteSpecHttpRouteOutputReference extends cdktf.ComplexObjec
 }
 export interface AppmeshRouteSpecTcpRouteActionWeightedTarget {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#virtual_node AppmeshRoute#virtual_node}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#virtual_node AppmeshRoute#virtual_node}
   */
   readonly virtualNode: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weight AppmeshRoute#weight}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#weight AppmeshRoute#weight}
   */
   readonly weight: number;
 }
@@ -3628,7 +3628,7 @@ export interface AppmeshRouteSpecTcpRouteAction {
   /**
   * weighted_target block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weighted_target AppmeshRoute#weighted_target}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#weighted_target AppmeshRoute#weighted_target}
   */
   readonly weightedTarget: AppmeshRouteSpecTcpRouteActionWeightedTarget[];
 }
@@ -3658,7 +3658,7 @@ export class AppmeshRouteSpecTcpRouteActionOutputReference extends cdktf.Complex
   public get internalValue(): AppmeshRouteSpecTcpRouteAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._weightedTarget) {
+    if (this._weightedTarget !== undefined) {
       hasAnyValues = true;
       internalValueResult.weightedTarget = this._weightedTarget;
     }
@@ -3692,11 +3692,11 @@ export class AppmeshRouteSpecTcpRouteActionOutputReference extends cdktf.Complex
 }
 export interface AppmeshRouteSpecTcpRouteTimeoutIdle {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#unit AppmeshRoute#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#value AppmeshRoute#value}
   */
   readonly value: number;
 }
@@ -3727,11 +3727,11 @@ export class AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference extends cdktf.Co
   public get internalValue(): AppmeshRouteSpecTcpRouteTimeoutIdle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -3781,7 +3781,7 @@ export interface AppmeshRouteSpecTcpRouteTimeout {
   /**
   * idle block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#idle AppmeshRoute#idle}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#idle AppmeshRoute#idle}
   */
   readonly idle?: AppmeshRouteSpecTcpRouteTimeoutIdle;
 }
@@ -3811,7 +3811,7 @@ export class AppmeshRouteSpecTcpRouteTimeoutOutputReference extends cdktf.Comple
   public get internalValue(): AppmeshRouteSpecTcpRouteTimeout | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._idle?.internalValue) {
+    if (this._idle?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.idle = this._idle?.internalValue;
     }
@@ -3849,13 +3849,13 @@ export interface AppmeshRouteSpecTcpRoute {
   /**
   * action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#action AppmeshRoute#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#action AppmeshRoute#action}
   */
   readonly action: AppmeshRouteSpecTcpRouteAction;
   /**
   * timeout block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#timeout AppmeshRoute#timeout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#timeout AppmeshRoute#timeout}
   */
   readonly timeout?: AppmeshRouteSpecTcpRouteTimeout;
 }
@@ -3886,11 +3886,11 @@ export class AppmeshRouteSpecTcpRouteOutputReference extends cdktf.ComplexObject
   public get internalValue(): AppmeshRouteSpecTcpRoute | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._action?.internalValue) {
+    if (this._action?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
-    if (this._timeout?.internalValue) {
+    if (this._timeout?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout?.internalValue;
     }
@@ -3941,31 +3941,31 @@ export class AppmeshRouteSpecTcpRouteOutputReference extends cdktf.ComplexObject
 }
 export interface AppmeshRouteSpec {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#priority AppmeshRoute#priority}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#priority AppmeshRoute#priority}
   */
   readonly priority?: number;
   /**
   * grpc_route block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#grpc_route AppmeshRoute#grpc_route}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#grpc_route AppmeshRoute#grpc_route}
   */
   readonly grpcRoute?: AppmeshRouteSpecGrpcRoute;
   /**
   * http2_route block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#http2_route AppmeshRoute#http2_route}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#http2_route AppmeshRoute#http2_route}
   */
   readonly http2Route?: AppmeshRouteSpecHttp2Route;
   /**
   * http_route block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#http_route AppmeshRoute#http_route}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#http_route AppmeshRoute#http_route}
   */
   readonly httpRoute?: AppmeshRouteSpecHttpRoute;
   /**
   * tcp_route block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#tcp_route AppmeshRoute#tcp_route}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#tcp_route AppmeshRoute#tcp_route}
   */
   readonly tcpRoute?: AppmeshRouteSpecTcpRoute;
 }
@@ -3999,23 +3999,23 @@ export class AppmeshRouteSpecOutputReference extends cdktf.ComplexObject {
   public get internalValue(): AppmeshRouteSpec | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._priority) {
+    if (this._priority !== undefined) {
       hasAnyValues = true;
       internalValueResult.priority = this._priority;
     }
-    if (this._grpcRoute?.internalValue) {
+    if (this._grpcRoute?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.grpcRoute = this._grpcRoute?.internalValue;
     }
-    if (this._http2Route?.internalValue) {
+    if (this._http2Route?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.http2Route = this._http2Route?.internalValue;
     }
-    if (this._httpRoute?.internalValue) {
+    if (this._httpRoute?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.httpRoute = this._httpRoute?.internalValue;
     }
-    if (this._tcpRoute?.internalValue) {
+    if (this._tcpRoute?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tcpRoute = this._tcpRoute?.internalValue;
     }
@@ -4123,7 +4123,7 @@ export class AppmeshRouteSpecOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html aws_appmesh_route}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route aws_appmesh_route}
 */
 export class AppmeshRoute extends cdktf.TerraformResource {
 
@@ -4137,7 +4137,7 @@ export class AppmeshRoute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html aws_appmesh_route} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route aws_appmesh_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

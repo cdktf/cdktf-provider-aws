@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface Route53ResolverFirewallConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_config.html#firewall_fail_open Route53ResolverFirewallConfig#firewall_fail_open}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_config#firewall_fail_open Route53ResolverFirewallConfig#firewall_fail_open}
   */
   readonly firewallFailOpen?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_config.html#resource_id Route53ResolverFirewallConfig#resource_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_config#resource_id Route53ResolverFirewallConfig#resource_id}
   */
   readonly resourceId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_config.html aws_route53_resolver_firewall_config}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_config aws_route53_resolver_firewall_config}
 */
 export class Route53ResolverFirewallConfig extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class Route53ResolverFirewallConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_config.html aws_route53_resolver_firewall_config} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_config aws_route53_resolver_firewall_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsWafv2IpSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafv2_ip_set.html#name DataAwsWafv2IpSet#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafv2_ip_set#name DataAwsWafv2IpSet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafv2_ip_set.html#scope DataAwsWafv2IpSet#scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafv2_ip_set#scope DataAwsWafv2IpSet#scope}
   */
   readonly scope: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/wafv2_ip_set.html aws_wafv2_ip_set}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/wafv2_ip_set aws_wafv2_ip_set}
 */
 export class DataAwsWafv2IpSet extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataAwsWafv2IpSet extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/wafv2_ip_set.html aws_wafv2_ip_set} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/wafv2_ip_set aws_wafv2_ip_set} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -8,27 +8,27 @@ import * as cdktf from 'cdktf';
 */
 export interface VpcIpamPoolCidrConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr.html#cidr VpcIpamPoolCidr#cidr}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr#cidr VpcIpamPoolCidr#cidr}
   */
   readonly cidr?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr.html#ipam_pool_id VpcIpamPoolCidr#ipam_pool_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr#ipam_pool_id VpcIpamPoolCidr#ipam_pool_id}
   */
   readonly ipamPoolId: string;
   /**
   * cidr_authorization_context block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr.html#cidr_authorization_context VpcIpamPoolCidr#cidr_authorization_context}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr#cidr_authorization_context VpcIpamPoolCidr#cidr_authorization_context}
   */
   readonly cidrAuthorizationContext?: VpcIpamPoolCidrCidrAuthorizationContext;
 }
 export interface VpcIpamPoolCidrCidrAuthorizationContext {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr.html#message VpcIpamPoolCidr#message}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr#message VpcIpamPoolCidr#message}
   */
   readonly message?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr.html#signature VpcIpamPoolCidr#signature}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr#signature VpcIpamPoolCidr#signature}
   */
   readonly signature?: string;
 }
@@ -59,11 +59,11 @@ export class VpcIpamPoolCidrCidrAuthorizationContextOutputReference extends cdkt
   public get internalValue(): VpcIpamPoolCidrCidrAuthorizationContext | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._message) {
+    if (this._message !== undefined) {
       hasAnyValues = true;
       internalValueResult.message = this._message;
     }
-    if (this._signature) {
+    if (this._signature !== undefined) {
       hasAnyValues = true;
       internalValueResult.signature = this._signature;
     }
@@ -117,7 +117,7 @@ export class VpcIpamPoolCidrCidrAuthorizationContextOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr.html aws_vpc_ipam_pool_cidr}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr aws_vpc_ipam_pool_cidr}
 */
 export class VpcIpamPoolCidr extends cdktf.TerraformResource {
 
@@ -131,7 +131,7 @@ export class VpcIpamPoolCidr extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr.html aws_vpc_ipam_pool_cidr} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr aws_vpc_ipam_pool_cidr} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

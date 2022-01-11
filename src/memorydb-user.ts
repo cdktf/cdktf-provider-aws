@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/memorydb_user.html
+// https://www.terraform.io/docs/providers/aws/r/memorydb_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 
 export interface MemorydbUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user.html#access_string MemorydbUser#access_string}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user#access_string MemorydbUser#access_string}
   */
   readonly accessString: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user.html#tags MemorydbUser#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user#tags MemorydbUser#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user.html#tags_all MemorydbUser#tags_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user#tags_all MemorydbUser#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user.html#user_name MemorydbUser#user_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user#user_name MemorydbUser#user_name}
   */
   readonly userName: string;
   /**
   * authentication_mode block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user.html#authentication_mode MemorydbUser#authentication_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user#authentication_mode MemorydbUser#authentication_mode}
   */
   readonly authenticationMode: MemorydbUserAuthenticationMode;
 }
 export interface MemorydbUserAuthenticationMode {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user.html#passwords MemorydbUser#passwords}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user#passwords MemorydbUser#passwords}
   */
   readonly passwords: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user.html#type MemorydbUser#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user#type MemorydbUser#type}
   */
   readonly type: string;
 }
@@ -67,11 +67,11 @@ export class MemorydbUserAuthenticationModeOutputReference extends cdktf.Complex
   public get internalValue(): MemorydbUserAuthenticationMode | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._passwords) {
+    if (this._passwords !== undefined) {
       hasAnyValues = true;
       internalValueResult.passwords = this._passwords;
     }
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
@@ -119,7 +119,7 @@ export class MemorydbUserAuthenticationModeOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user.html aws_memorydb_user}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user aws_memorydb_user}
 */
 export class MemorydbUser extends cdktf.TerraformResource {
 
@@ -133,7 +133,7 @@ export class MemorydbUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user.html aws_memorydb_user} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user aws_memorydb_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

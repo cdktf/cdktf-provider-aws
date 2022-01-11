@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsRdsEngineVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_engine_version.html#engine DataAwsRdsEngineVersion#engine}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_engine_version#engine DataAwsRdsEngineVersion#engine}
   */
   readonly engine: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_engine_version.html#parameter_group_family DataAwsRdsEngineVersion#parameter_group_family}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_engine_version#parameter_group_family DataAwsRdsEngineVersion#parameter_group_family}
   */
   readonly parameterGroupFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_engine_version.html#preferred_versions DataAwsRdsEngineVersion#preferred_versions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_engine_version#preferred_versions DataAwsRdsEngineVersion#preferred_versions}
   */
   readonly preferredVersions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_engine_version.html#version DataAwsRdsEngineVersion#version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_engine_version#version DataAwsRdsEngineVersion#version}
   */
   readonly version?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/rds_engine_version.html aws_rds_engine_version}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/rds_engine_version aws_rds_engine_version}
 */
 export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/rds_engine_version.html aws_rds_engine_version} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/rds_engine_version aws_rds_engine_version} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

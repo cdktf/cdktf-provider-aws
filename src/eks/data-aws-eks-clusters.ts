@@ -10,7 +10,7 @@ export interface DataAwsEksClustersConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/d/eks_clusters.html aws_eks_clusters}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/eks_clusters aws_eks_clusters}
 */
 export class DataAwsEksClusters extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataAwsEksClusters extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/eks_clusters.html aws_eks_clusters} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/eks_clusters aws_eks_clusters} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

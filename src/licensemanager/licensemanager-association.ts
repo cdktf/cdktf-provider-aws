@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 */
 export interface LicensemanagerAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/licensemanager_association.html#license_configuration_arn LicensemanagerAssociation#license_configuration_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/licensemanager_association#license_configuration_arn LicensemanagerAssociation#license_configuration_arn}
   */
   readonly licenseConfigurationArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/licensemanager_association.html#resource_arn LicensemanagerAssociation#resource_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/licensemanager_association#resource_arn LicensemanagerAssociation#resource_arn}
   */
   readonly resourceArn: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/aws/r/licensemanager_association.html aws_licensemanager_association}
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/licensemanager_association aws_licensemanager_association}
 */
 export class LicensemanagerAssociation extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class LicensemanagerAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/licensemanager_association.html aws_licensemanager_association} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/licensemanager_association aws_licensemanager_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
