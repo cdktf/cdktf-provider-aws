@@ -20,6 +20,7 @@
     "package:js": "npx projen package:js",
     "package:python": "npx projen package:python",
     "post-compile": "npx projen post-compile",
+    "post-upgrade": "npx projen post-upgrade",
     "pre-compile": "npx projen pre-compile",
     "release": "npx projen release",
     "test": "jest --passWithNoTests",
@@ -50,7 +51,7 @@
     "jsii-diff": "^1.46.0",
     "jsii-docgen": "^1.8.110",
     "npm-check-updates": "^12",
-    "projen": "^0.50.11",
+    "projen": "^0.50.26",
     "standard-version": "^9",
     "typescript": "^3.9.10"
   },
