@@ -44,6 +44,10 @@ export interface EcsTaskDefinitionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly requiresCompatibilities?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#skip_destroy EcsTaskDefinition#skip_destroy}
+  */
+  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#tags EcsTaskDefinition#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
@@ -1137,6 +1141,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
     this._networkMode = config.networkMode;
     this._pidMode = config.pidMode;
     this._requiresCompatibilities = config.requiresCompatibilities;
+    this._skipDestroy = config.skipDestroy;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._taskRoleArn = config.taskRoleArn;
@@ -1305,6 +1310,22 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
     return this.getNumberAttribute('revision');
   }
 
+  // skip_destroy - computed: false, optional: true, required: false
+  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  public get skipDestroy() {
+    return this.getBooleanAttribute('skip_destroy') as any;
+  }
+  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+    this._skipDestroy = value;
+  }
+  public resetSkipDestroy() {
+    this._skipDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipDestroyInput() {
+    return this._skipDestroy;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
@@ -1469,6 +1490,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
       network_mode: cdktf.stringToTerraform(this._networkMode),
       pid_mode: cdktf.stringToTerraform(this._pidMode),
       requires_compatibilities: cdktf.listMapper(cdktf.stringToTerraform)(this._requiresCompatibilities),
+      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       task_role_arn: cdktf.stringToTerraform(this._taskRoleArn),

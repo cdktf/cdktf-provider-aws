@@ -228,6 +228,11 @@ export class VpnConnectionVgwTelemetry extends cdktf.ComplexComputedList {
     return this.getNumberAttribute('accepted_route_count');
   }
 
+  // certificate_arn - computed: true, optional: false, required: false
+  public get certificateArn() {
+    return this.getStringAttribute('certificate_arn');
+  }
+
   // last_status_change - computed: true, optional: false, required: false
   public get lastStatusChange() {
     return this.getStringAttribute('last_status_change');

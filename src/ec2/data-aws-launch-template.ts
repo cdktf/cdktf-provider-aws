@@ -188,6 +188,11 @@ export class DataAwsLaunchTemplateMetadataOptions extends cdktf.ComplexComputedL
   public get httpTokens() {
     return this.getStringAttribute('http_tokens');
   }
+
+  // instance_metadata_tags - computed: true, optional: false, required: false
+  public get instanceMetadataTags() {
+    return this.getStringAttribute('instance_metadata_tags');
+  }
 }
 export class DataAwsLaunchTemplateMonitoring extends cdktf.ComplexComputedList {
 

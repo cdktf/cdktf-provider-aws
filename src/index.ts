@@ -5,6 +5,7 @@ export * from './detective-graph';
 export * from './memorydb-acl';
 export * from './memorydb-cluster';
 export * from './memorydb-parameter-group';
+export * from './memorydb-snapshot';
 export * from './memorydb-subnet-group';
 export * from './memorydb-user';
 export * from './data-aws-cloudcontrolapi-resource';
