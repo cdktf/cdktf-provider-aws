@@ -15,6 +15,10 @@ export interface CloudwatchLogDestinationPolicyConfig extends cdktf.TerraformMet
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_destination_policy#destination_name CloudwatchLogDestinationPolicy#destination_name}
   */
   readonly destinationName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_destination_policy#force_update CloudwatchLogDestinationPolicy#force_update}
+  */
+  readonly forceUpdate?: boolean | cdktf.IResolvable;
 }
 
 /**
@@ -51,6 +55,7 @@ export class CloudwatchLogDestinationPolicy extends cdktf.TerraformResource {
     });
     this._accessPolicy = config.accessPolicy;
     this._destinationName = config.destinationName;
+    this._forceUpdate = config.forceUpdate;
   }
 
   // ==========
@@ -83,6 +88,22 @@ export class CloudwatchLogDestinationPolicy extends cdktf.TerraformResource {
     return this._destinationName;
   }
 
+  // force_update - computed: false, optional: true, required: false
+  private _forceUpdate?: boolean | cdktf.IResolvable; 
+  public get forceUpdate() {
+    return this.getBooleanAttribute('force_update') as any;
+  }
+  public set forceUpdate(value: boolean | cdktf.IResolvable) {
+    this._forceUpdate = value;
+  }
+  public resetForceUpdate() {
+    this._forceUpdate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceUpdateInput() {
+    return this._forceUpdate;
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -96,6 +117,7 @@ export class CloudwatchLogDestinationPolicy extends cdktf.TerraformResource {
     return {
       access_policy: cdktf.stringToTerraform(this._accessPolicy),
       destination_name: cdktf.stringToTerraform(this._destinationName),
+      force_update: cdktf.booleanToTerraform(this._forceUpdate),
     };
   }
 }

@@ -12,6 +12,10 @@ export interface CustomerGatewayConfig extends cdktf.TerraformMetaArguments {
   */
   readonly bgpAsn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/customer_gateway#certificate_arn CustomerGateway#certificate_arn}
+  */
+  readonly certificateArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/customer_gateway#device_name CustomerGateway#device_name}
   */
   readonly deviceName?: string;
@@ -66,6 +70,7 @@ export class CustomerGateway extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._bgpAsn = config.bgpAsn;
+    this._certificateArn = config.certificateArn;
     this._deviceName = config.deviceName;
     this._ipAddress = config.ipAddress;
     this._tags = config.tags;
@@ -93,6 +98,22 @@ export class CustomerGateway extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get bgpAsnInput() {
     return this._bgpAsn;
+  }
+
+  // certificate_arn - computed: false, optional: true, required: false
+  private _certificateArn?: string; 
+  public get certificateArn() {
+    return this.getStringAttribute('certificate_arn');
+  }
+  public set certificateArn(value: string) {
+    this._certificateArn = value;
+  }
+  public resetCertificateArn() {
+    this._certificateArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateArnInput() {
+    return this._certificateArn;
   }
 
   // device_name - computed: false, optional: true, required: false
@@ -183,6 +204,7 @@ export class CustomerGateway extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bgp_asn: cdktf.stringToTerraform(this._bgpAsn),
+      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
       device_name: cdktf.stringToTerraform(this._deviceName),
       ip_address: cdktf.stringToTerraform(this._ipAddress),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),

@@ -20,9 +20,17 @@ export interface EbsSnapshotImportConfig extends cdktf.TerraformMetaArguments {
   */
   readonly kmsKeyId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot_import#permanent_restore EbsSnapshotImport#permanent_restore}
+  */
+  readonly permanentRestore?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot_import#role_name EbsSnapshotImport#role_name}
   */
   readonly roleName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot_import#storage_tier EbsSnapshotImport#storage_tier}
+  */
+  readonly storageTier?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot_import#tags EbsSnapshotImport#tags}
   */
@@ -31,6 +39,10 @@ export interface EbsSnapshotImportConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot_import#tags_all EbsSnapshotImport#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot_import#temporary_restore_days EbsSnapshotImport#temporary_restore_days}
+  */
+  readonly temporaryRestoreDays?: number;
   /**
   * client_data block
   * 
@@ -559,9 +571,12 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
     this._description = config.description;
     this._encrypted = config.encrypted;
     this._kmsKeyId = config.kmsKeyId;
+    this._permanentRestore = config.permanentRestore;
     this._roleName = config.roleName;
+    this._storageTier = config.storageTier;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._temporaryRestoreDays = config.temporaryRestoreDays;
     this._clientData.internalValue = config.clientData;
     this._diskContainer.internalValue = config.diskContainer;
     this._timeouts.internalValue = config.timeouts;
@@ -634,6 +649,11 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
     return this._kmsKeyId;
   }
 
+  // outpost_arn - computed: true, optional: false, required: false
+  public get outpostArn() {
+    return this.getStringAttribute('outpost_arn');
+  }
+
   // owner_alias - computed: true, optional: false, required: false
   public get ownerAlias() {
     return this.getStringAttribute('owner_alias');
@@ -642,6 +662,22 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
   // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
+  }
+
+  // permanent_restore - computed: false, optional: true, required: false
+  private _permanentRestore?: boolean | cdktf.IResolvable; 
+  public get permanentRestore() {
+    return this.getBooleanAttribute('permanent_restore') as any;
+  }
+  public set permanentRestore(value: boolean | cdktf.IResolvable) {
+    this._permanentRestore = value;
+  }
+  public resetPermanentRestore() {
+    this._permanentRestore = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permanentRestoreInput() {
+    return this._permanentRestore;
   }
 
   // role_name - computed: false, optional: true, required: false
@@ -658,6 +694,22 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get roleNameInput() {
     return this._roleName;
+  }
+
+  // storage_tier - computed: true, optional: true, required: false
+  private _storageTier?: string; 
+  public get storageTier() {
+    return this.getStringAttribute('storage_tier');
+  }
+  public set storageTier(value: string) {
+    this._storageTier = value;
+  }
+  public resetStorageTier() {
+    this._storageTier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageTierInput() {
+    return this._storageTier;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -692,6 +744,27 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsAllInput() {
     return this._tagsAll;
+  }
+
+  // temporary_restore_days - computed: false, optional: true, required: false
+  private _temporaryRestoreDays?: number; 
+  public get temporaryRestoreDays() {
+    return this.getNumberAttribute('temporary_restore_days');
+  }
+  public set temporaryRestoreDays(value: number) {
+    this._temporaryRestoreDays = value;
+  }
+  public resetTemporaryRestoreDays() {
+    this._temporaryRestoreDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get temporaryRestoreDaysInput() {
+    return this._temporaryRestoreDays;
+  }
+
+  // volume_id - computed: true, optional: false, required: false
+  public get volumeId() {
+    return this.getStringAttribute('volume_id');
   }
 
   // volume_size - computed: true, optional: false, required: false
@@ -753,9 +826,12 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       encrypted: cdktf.booleanToTerraform(this._encrypted),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      permanent_restore: cdktf.booleanToTerraform(this._permanentRestore),
       role_name: cdktf.stringToTerraform(this._roleName),
+      storage_tier: cdktf.stringToTerraform(this._storageTier),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      temporary_restore_days: cdktf.numberToTerraform(this._temporaryRestoreDays),
       client_data: ebsSnapshotImportClientDataToTerraform(this._clientData.internalValue),
       disk_container: ebsSnapshotImportDiskContainerToTerraform(this._diskContainer.internalValue),
       timeouts: ebsSnapshotImportTimeoutsToTerraform(this._timeouts.internalValue),

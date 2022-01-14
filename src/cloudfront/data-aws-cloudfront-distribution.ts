@@ -57,6 +57,11 @@ export class DataAwsCloudfrontDistribution extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
+  // aliases - computed: true, optional: false, required: false
+  public get aliases() {
+    return this.getListAttribute('aliases');
+  }
+
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');

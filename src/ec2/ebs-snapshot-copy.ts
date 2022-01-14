@@ -20,6 +20,10 @@ export interface EbsSnapshotCopyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly kmsKeyId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot_copy#permanent_restore EbsSnapshotCopy#permanent_restore}
+  */
+  readonly permanentRestore?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot_copy#source_region EbsSnapshotCopy#source_region}
   */
   readonly sourceRegion: string;
@@ -28,6 +32,10 @@ export interface EbsSnapshotCopyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly sourceSnapshotId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot_copy#storage_tier EbsSnapshotCopy#storage_tier}
+  */
+  readonly storageTier?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot_copy#tags EbsSnapshotCopy#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
@@ -35,6 +43,10 @@ export interface EbsSnapshotCopyConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot_copy#tags_all EbsSnapshotCopy#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot_copy#temporary_restore_days EbsSnapshotCopy#temporary_restore_days}
+  */
+  readonly temporaryRestoreDays?: number;
 }
 
 /**
@@ -72,10 +84,13 @@ export class EbsSnapshotCopy extends cdktf.TerraformResource {
     this._description = config.description;
     this._encrypted = config.encrypted;
     this._kmsKeyId = config.kmsKeyId;
+    this._permanentRestore = config.permanentRestore;
     this._sourceRegion = config.sourceRegion;
     this._sourceSnapshotId = config.sourceSnapshotId;
+    this._storageTier = config.storageTier;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._temporaryRestoreDays = config.temporaryRestoreDays;
   }
 
   // ==========
@@ -145,6 +160,11 @@ export class EbsSnapshotCopy extends cdktf.TerraformResource {
     return this._kmsKeyId;
   }
 
+  // outpost_arn - computed: true, optional: false, required: false
+  public get outpostArn() {
+    return this.getStringAttribute('outpost_arn');
+  }
+
   // owner_alias - computed: true, optional: false, required: false
   public get ownerAlias() {
     return this.getStringAttribute('owner_alias');
@@ -153,6 +173,22 @@ export class EbsSnapshotCopy extends cdktf.TerraformResource {
   // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
+  }
+
+  // permanent_restore - computed: false, optional: true, required: false
+  private _permanentRestore?: boolean | cdktf.IResolvable; 
+  public get permanentRestore() {
+    return this.getBooleanAttribute('permanent_restore') as any;
+  }
+  public set permanentRestore(value: boolean | cdktf.IResolvable) {
+    this._permanentRestore = value;
+  }
+  public resetPermanentRestore() {
+    this._permanentRestore = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permanentRestoreInput() {
+    return this._permanentRestore;
   }
 
   // source_region - computed: false, optional: false, required: true
@@ -179,6 +215,22 @@ export class EbsSnapshotCopy extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get sourceSnapshotIdInput() {
     return this._sourceSnapshotId;
+  }
+
+  // storage_tier - computed: true, optional: true, required: false
+  private _storageTier?: string; 
+  public get storageTier() {
+    return this.getStringAttribute('storage_tier');
+  }
+  public set storageTier(value: string) {
+    this._storageTier = value;
+  }
+  public resetStorageTier() {
+    this._storageTier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageTierInput() {
+    return this._storageTier;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -215,6 +267,22 @@ export class EbsSnapshotCopy extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // temporary_restore_days - computed: false, optional: true, required: false
+  private _temporaryRestoreDays?: number; 
+  public get temporaryRestoreDays() {
+    return this.getNumberAttribute('temporary_restore_days');
+  }
+  public set temporaryRestoreDays(value: number) {
+    this._temporaryRestoreDays = value;
+  }
+  public resetTemporaryRestoreDays() {
+    this._temporaryRestoreDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get temporaryRestoreDaysInput() {
+    return this._temporaryRestoreDays;
+  }
+
   // volume_id - computed: true, optional: false, required: false
   public get volumeId() {
     return this.getStringAttribute('volume_id');
@@ -234,10 +302,13 @@ export class EbsSnapshotCopy extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       encrypted: cdktf.booleanToTerraform(this._encrypted),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      permanent_restore: cdktf.booleanToTerraform(this._permanentRestore),
       source_region: cdktf.stringToTerraform(this._sourceRegion),
       source_snapshot_id: cdktf.stringToTerraform(this._sourceSnapshotId),
+      storage_tier: cdktf.stringToTerraform(this._storageTier),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      temporary_restore_days: cdktf.numberToTerraform(this._temporaryRestoreDays),
     };
   }
 }

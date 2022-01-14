@@ -116,7 +116,7 @@ export class DataAwsVpcIpamPool extends cdktf.TerraformDataSource {
     return this.getNumberAttribute('allocation_min_netmask_length');
   }
 
-  // allocation_resource_tags - computed: false, optional: true, required: false
+  // allocation_resource_tags - computed: true, optional: true, required: false
   private _allocationResourceTags?: { [key: string]: string } | cdktf.IResolvable; 
   public get allocationResourceTags() {
     // Getting the computed value is not yet implemented

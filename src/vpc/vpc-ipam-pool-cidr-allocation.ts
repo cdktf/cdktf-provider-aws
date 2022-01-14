@@ -16,6 +16,10 @@ export interface VpcIpamPoolCidrAllocationConfig extends cdktf.TerraformMetaArgu
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr_allocation#disallowed_cidrs VpcIpamPoolCidrAllocation#disallowed_cidrs}
+  */
+  readonly disallowedCidrs?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr_allocation#ipam_pool_id VpcIpamPoolCidrAllocation#ipam_pool_id}
   */
   readonly ipamPoolId: string;
@@ -59,6 +63,7 @@ export class VpcIpamPoolCidrAllocation extends cdktf.TerraformResource {
     });
     this._cidr = config.cidr;
     this._description = config.description;
+    this._disallowedCidrs = config.disallowedCidrs;
     this._ipamPoolId = config.ipamPoolId;
     this._netmaskLength = config.netmaskLength;
   }
@@ -97,6 +102,22 @@ export class VpcIpamPoolCidrAllocation extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // disallowed_cidrs - computed: false, optional: true, required: false
+  private _disallowedCidrs?: string[]; 
+  public get disallowedCidrs() {
+    return this.getListAttribute('disallowed_cidrs');
+  }
+  public set disallowedCidrs(value: string[]) {
+    this._disallowedCidrs = value;
+  }
+  public resetDisallowedCidrs() {
+    this._disallowedCidrs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disallowedCidrsInput() {
+    return this._disallowedCidrs;
   }
 
   // id - computed: true, optional: true, required: false
@@ -161,6 +182,7 @@ export class VpcIpamPoolCidrAllocation extends cdktf.TerraformResource {
     return {
       cidr: cdktf.stringToTerraform(this._cidr),
       description: cdktf.stringToTerraform(this._description),
+      disallowed_cidrs: cdktf.listMapper(cdktf.stringToTerraform)(this._disallowedCidrs),
       ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
       netmask_length: cdktf.numberToTerraform(this._netmaskLength),
     };

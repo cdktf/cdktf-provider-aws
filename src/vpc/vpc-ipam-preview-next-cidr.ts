@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface VpcIpamPreviewNextCidrConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_preview_next_cidr#disallowed_cidrs VpcIpamPreviewNextCidr#disallowed_cidrs}
+  */
+  readonly disallowedCidrs?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_preview_next_cidr#ipam_pool_id VpcIpamPreviewNextCidr#ipam_pool_id}
   */
   readonly ipamPoolId: string;
@@ -49,6 +53,7 @@ export class VpcIpamPreviewNextCidr extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._disallowedCidrs = config.disallowedCidrs;
     this._ipamPoolId = config.ipamPoolId;
     this._netmaskLength = config.netmaskLength;
   }
@@ -60,6 +65,22 @@ export class VpcIpamPreviewNextCidr extends cdktf.TerraformResource {
   // cidr - computed: true, optional: false, required: false
   public get cidr() {
     return this.getStringAttribute('cidr');
+  }
+
+  // disallowed_cidrs - computed: false, optional: true, required: false
+  private _disallowedCidrs?: string[]; 
+  public get disallowedCidrs() {
+    return this.getListAttribute('disallowed_cidrs');
+  }
+  public set disallowedCidrs(value: string[]) {
+    this._disallowedCidrs = value;
+  }
+  public resetDisallowedCidrs() {
+    this._disallowedCidrs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disallowedCidrsInput() {
+    return this._disallowedCidrs;
   }
 
   // id - computed: true, optional: true, required: false
@@ -102,6 +123,7 @@ export class VpcIpamPreviewNextCidr extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      disallowed_cidrs: cdktf.listMapper(cdktf.stringToTerraform)(this._disallowedCidrs),
       ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
       netmask_length: cdktf.numberToTerraform(this._netmaskLength),
     };

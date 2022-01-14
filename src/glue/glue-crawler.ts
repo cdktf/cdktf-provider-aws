@@ -58,6 +58,12 @@ export interface GlueCrawlerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly catalogTarget?: GlueCrawlerCatalogTarget[];
   /**
+  * delta_target block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#delta_target GlueCrawler#delta_target}
+  */
+  readonly deltaTarget?: GlueCrawlerDeltaTarget[];
+  /**
   * dynamodb_target block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#dynamodb_target GlueCrawler#dynamodb_target}
@@ -119,6 +125,33 @@ export function glueCrawlerCatalogTargetToTerraform(struct?: GlueCrawlerCatalogT
   return {
     database_name: cdktf.stringToTerraform(struct!.databaseName),
     tables: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tables),
+  }
+}
+
+export interface GlueCrawlerDeltaTarget {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#connection_name GlueCrawler#connection_name}
+  */
+  readonly connectionName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#delta_tables GlueCrawler#delta_tables}
+  */
+  readonly deltaTables: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#write_manifest GlueCrawler#write_manifest}
+  */
+  readonly writeManifest: boolean | cdktf.IResolvable;
+}
+
+export function glueCrawlerDeltaTargetToTerraform(struct?: GlueCrawlerDeltaTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    connection_name: cdktf.stringToTerraform(struct!.connectionName),
+    delta_tables: cdktf.listMapper(cdktf.stringToTerraform)(struct!.deltaTables),
+    write_manifest: cdktf.booleanToTerraform(struct!.writeManifest),
   }
 }
 
@@ -515,6 +548,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._catalogTarget = config.catalogTarget;
+    this._deltaTarget = config.deltaTarget;
     this._dynamodbTarget = config.dynamodbTarget;
     this._jdbcTarget = config.jdbcTarget;
     this._lineageConfiguration.internalValue = config.lineageConfiguration;
@@ -724,6 +758,23 @@ export class GlueCrawler extends cdktf.TerraformResource {
     return this._catalogTarget;
   }
 
+  // delta_target - computed: false, optional: true, required: false
+  private _deltaTarget?: GlueCrawlerDeltaTarget[]; 
+  public get deltaTarget() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('delta_target') as any;
+  }
+  public set deltaTarget(value: GlueCrawlerDeltaTarget[]) {
+    this._deltaTarget = value;
+  }
+  public resetDeltaTarget() {
+    this._deltaTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deltaTargetInput() {
+    return this._deltaTarget;
+  }
+
   // dynamodb_target - computed: false, optional: true, required: false
   private _dynamodbTarget?: GlueCrawlerDynamodbTarget[]; 
   public get dynamodbTarget() {
@@ -858,6 +909,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       catalog_target: cdktf.listMapper(glueCrawlerCatalogTargetToTerraform)(this._catalogTarget),
+      delta_target: cdktf.listMapper(glueCrawlerDeltaTargetToTerraform)(this._deltaTarget),
       dynamodb_target: cdktf.listMapper(glueCrawlerDynamodbTargetToTerraform)(this._dynamodbTarget),
       jdbc_target: cdktf.listMapper(glueCrawlerJdbcTargetToTerraform)(this._jdbcTarget),
       lineage_configuration: glueCrawlerLineageConfigurationToTerraform(this._lineageConfiguration.internalValue),
