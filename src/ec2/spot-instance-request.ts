@@ -725,6 +725,10 @@ export interface SpotInstanceRequestMetadataOptions {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#http_tokens SpotInstanceRequest#http_tokens}
   */
   readonly httpTokens?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#instance_metadata_tags SpotInstanceRequest#instance_metadata_tags}
+  */
+  readonly instanceMetadataTags?: string;
 }
 
 export function spotInstanceRequestMetadataOptionsToTerraform(struct?: SpotInstanceRequestMetadataOptionsOutputReference | SpotInstanceRequestMetadataOptions): any {
@@ -736,6 +740,7 @@ export function spotInstanceRequestMetadataOptionsToTerraform(struct?: SpotInsta
     http_endpoint: cdktf.stringToTerraform(struct!.httpEndpoint),
     http_put_response_hop_limit: cdktf.numberToTerraform(struct!.httpPutResponseHopLimit),
     http_tokens: cdktf.stringToTerraform(struct!.httpTokens),
+    instance_metadata_tags: cdktf.stringToTerraform(struct!.instanceMetadataTags),
   }
 }
 
@@ -766,6 +771,10 @@ export class SpotInstanceRequestMetadataOptionsOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.httpTokens = this._httpTokens;
     }
+    if (this._instanceMetadataTags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceMetadataTags = this._instanceMetadataTags;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -775,12 +784,14 @@ export class SpotInstanceRequestMetadataOptionsOutputReference extends cdktf.Com
       this._httpEndpoint = undefined;
       this._httpPutResponseHopLimit = undefined;
       this._httpTokens = undefined;
+      this._instanceMetadataTags = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._httpEndpoint = value.httpEndpoint;
       this._httpPutResponseHopLimit = value.httpPutResponseHopLimit;
       this._httpTokens = value.httpTokens;
+      this._instanceMetadataTags = value.instanceMetadataTags;
     }
   }
 
@@ -830,6 +841,22 @@ export class SpotInstanceRequestMetadataOptionsOutputReference extends cdktf.Com
   // Temporarily expose input value. Use with caution.
   public get httpTokensInput() {
     return this._httpTokens;
+  }
+
+  // instance_metadata_tags - computed: false, optional: true, required: false
+  private _instanceMetadataTags?: string; 
+  public get instanceMetadataTags() {
+    return this.getStringAttribute('instance_metadata_tags');
+  }
+  public set instanceMetadataTags(value: string) {
+    this._instanceMetadataTags = value;
+  }
+  public resetInstanceMetadataTags() {
+    this._instanceMetadataTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceMetadataTagsInput() {
+    return this._instanceMetadataTags;
   }
 }
 export interface SpotInstanceRequestNetworkInterface {

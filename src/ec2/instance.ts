@@ -689,6 +689,10 @@ export interface InstanceMetadataOptions {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#http_tokens Instance#http_tokens}
   */
   readonly httpTokens?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#instance_metadata_tags Instance#instance_metadata_tags}
+  */
+  readonly instanceMetadataTags?: string;
 }
 
 export function instanceMetadataOptionsToTerraform(struct?: InstanceMetadataOptionsOutputReference | InstanceMetadataOptions): any {
@@ -700,6 +704,7 @@ export function instanceMetadataOptionsToTerraform(struct?: InstanceMetadataOpti
     http_endpoint: cdktf.stringToTerraform(struct!.httpEndpoint),
     http_put_response_hop_limit: cdktf.numberToTerraform(struct!.httpPutResponseHopLimit),
     http_tokens: cdktf.stringToTerraform(struct!.httpTokens),
+    instance_metadata_tags: cdktf.stringToTerraform(struct!.instanceMetadataTags),
   }
 }
 
@@ -730,6 +735,10 @@ export class InstanceMetadataOptionsOutputReference extends cdktf.ComplexObject 
       hasAnyValues = true;
       internalValueResult.httpTokens = this._httpTokens;
     }
+    if (this._instanceMetadataTags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceMetadataTags = this._instanceMetadataTags;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -739,12 +748,14 @@ export class InstanceMetadataOptionsOutputReference extends cdktf.ComplexObject 
       this._httpEndpoint = undefined;
       this._httpPutResponseHopLimit = undefined;
       this._httpTokens = undefined;
+      this._instanceMetadataTags = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._httpEndpoint = value.httpEndpoint;
       this._httpPutResponseHopLimit = value.httpPutResponseHopLimit;
       this._httpTokens = value.httpTokens;
+      this._instanceMetadataTags = value.instanceMetadataTags;
     }
   }
 
@@ -794,6 +805,22 @@ export class InstanceMetadataOptionsOutputReference extends cdktf.ComplexObject 
   // Temporarily expose input value. Use with caution.
   public get httpTokensInput() {
     return this._httpTokens;
+  }
+
+  // instance_metadata_tags - computed: false, optional: true, required: false
+  private _instanceMetadataTags?: string; 
+  public get instanceMetadataTags() {
+    return this.getStringAttribute('instance_metadata_tags');
+  }
+  public set instanceMetadataTags(value: string) {
+    this._instanceMetadataTags = value;
+  }
+  public resetInstanceMetadataTags() {
+    this._instanceMetadataTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceMetadataTagsInput() {
+    return this._instanceMetadataTags;
   }
 }
 export interface InstanceNetworkInterface {

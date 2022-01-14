@@ -40,6 +40,11 @@ export class DataAwsEksClusterIdentity extends cdktf.ComplexComputedList {
 }
 export class DataAwsEksClusterKubernetesNetworkConfig extends cdktf.ComplexComputedList {
 
+  // ip_family - computed: true, optional: false, required: false
+  public get ipFamily() {
+    return this.getStringAttribute('ip_family');
+  }
+
   // service_ipv4_cidr - computed: true, optional: false, required: false
   public get serviceIpv4Cidr() {
     return this.getStringAttribute('service_ipv4_cidr');

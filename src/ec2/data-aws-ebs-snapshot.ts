@@ -147,6 +147,11 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
     return this._mostRecent;
   }
 
+  // outpost_arn - computed: true, optional: false, required: false
+  public get outpostArn() {
+    return this.getStringAttribute('outpost_arn');
+  }
+
   // owner_alias - computed: true, optional: false, required: false
   public get ownerAlias() {
     return this.getStringAttribute('owner_alias');
@@ -213,6 +218,11 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
   // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
+  }
+
+  // storage_tier - computed: true, optional: false, required: false
+  public get storageTier() {
+    return this.getStringAttribute('storage_tier');
   }
 
   // tags - computed: true, optional: true, required: false

@@ -12,6 +12,18 @@ export interface EbsSnapshotConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot#outpost_arn EbsSnapshot#outpost_arn}
+  */
+  readonly outpostArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot#permanent_restore EbsSnapshot#permanent_restore}
+  */
+  readonly permanentRestore?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot#storage_tier EbsSnapshot#storage_tier}
+  */
+  readonly storageTier?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot#tags EbsSnapshot#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
@@ -19,6 +31,10 @@ export interface EbsSnapshotConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot#tags_all EbsSnapshot#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot#temporary_restore_days EbsSnapshot#temporary_restore_days}
+  */
+  readonly temporaryRestoreDays?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot#volume_id EbsSnapshot#volume_id}
   */
@@ -157,8 +173,12 @@ export class EbsSnapshot extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._outpostArn = config.outpostArn;
+    this._permanentRestore = config.permanentRestore;
+    this._storageTier = config.storageTier;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._temporaryRestoreDays = config.temporaryRestoreDays;
     this._volumeId = config.volumeId;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -208,6 +228,22 @@ export class EbsSnapshot extends cdktf.TerraformResource {
     return this.getStringAttribute('kms_key_id');
   }
 
+  // outpost_arn - computed: false, optional: true, required: false
+  private _outpostArn?: string; 
+  public get outpostArn() {
+    return this.getStringAttribute('outpost_arn');
+  }
+  public set outpostArn(value: string) {
+    this._outpostArn = value;
+  }
+  public resetOutpostArn() {
+    this._outpostArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outpostArnInput() {
+    return this._outpostArn;
+  }
+
   // owner_alias - computed: true, optional: false, required: false
   public get ownerAlias() {
     return this.getStringAttribute('owner_alias');
@@ -216,6 +252,38 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
+  }
+
+  // permanent_restore - computed: false, optional: true, required: false
+  private _permanentRestore?: boolean | cdktf.IResolvable; 
+  public get permanentRestore() {
+    return this.getBooleanAttribute('permanent_restore') as any;
+  }
+  public set permanentRestore(value: boolean | cdktf.IResolvable) {
+    this._permanentRestore = value;
+  }
+  public resetPermanentRestore() {
+    this._permanentRestore = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permanentRestoreInput() {
+    return this._permanentRestore;
+  }
+
+  // storage_tier - computed: true, optional: true, required: false
+  private _storageTier?: string; 
+  public get storageTier() {
+    return this.getStringAttribute('storage_tier');
+  }
+  public set storageTier(value: string) {
+    this._storageTier = value;
+  }
+  public resetStorageTier() {
+    this._storageTier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageTierInput() {
+    return this._storageTier;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -250,6 +318,22 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsAllInput() {
     return this._tagsAll;
+  }
+
+  // temporary_restore_days - computed: false, optional: true, required: false
+  private _temporaryRestoreDays?: number; 
+  public get temporaryRestoreDays() {
+    return this.getNumberAttribute('temporary_restore_days');
+  }
+  public set temporaryRestoreDays(value: number) {
+    this._temporaryRestoreDays = value;
+  }
+  public resetTemporaryRestoreDays() {
+    this._temporaryRestoreDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get temporaryRestoreDaysInput() {
+    return this._temporaryRestoreDays;
   }
 
   // volume_id - computed: false, optional: false, required: true
@@ -293,8 +377,12 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      outpost_arn: cdktf.stringToTerraform(this._outpostArn),
+      permanent_restore: cdktf.booleanToTerraform(this._permanentRestore),
+      storage_tier: cdktf.stringToTerraform(this._storageTier),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      temporary_restore_days: cdktf.numberToTerraform(this._temporaryRestoreDays),
       volume_id: cdktf.stringToTerraform(this._volumeId),
       timeouts: ebsSnapshotTimeoutsToTerraform(this._timeouts.internalValue),
     };

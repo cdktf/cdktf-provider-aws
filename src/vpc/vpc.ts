@@ -48,6 +48,10 @@ export interface VpcConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ipv6CidrBlock?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc#ipv6_cidr_block_network_border_group Vpc#ipv6_cidr_block_network_border_group}
+  */
+  readonly ipv6CidrBlockNetworkBorderGroup?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc#ipv6_ipam_pool_id Vpc#ipv6_ipam_pool_id}
   */
   readonly ipv6IpamPoolId?: string;
@@ -107,6 +111,7 @@ export class Vpc extends cdktf.TerraformResource {
     this._ipv4IpamPoolId = config.ipv4IpamPoolId;
     this._ipv4NetmaskLength = config.ipv4NetmaskLength;
     this._ipv6CidrBlock = config.ipv6CidrBlock;
+    this._ipv6CidrBlockNetworkBorderGroup = config.ipv6CidrBlockNetworkBorderGroup;
     this._ipv6IpamPoolId = config.ipv6IpamPoolId;
     this._ipv6NetmaskLength = config.ipv6NetmaskLength;
     this._tags = config.tags;
@@ -312,6 +317,22 @@ export class Vpc extends cdktf.TerraformResource {
     return this._ipv6CidrBlock;
   }
 
+  // ipv6_cidr_block_network_border_group - computed: true, optional: true, required: false
+  private _ipv6CidrBlockNetworkBorderGroup?: string; 
+  public get ipv6CidrBlockNetworkBorderGroup() {
+    return this.getStringAttribute('ipv6_cidr_block_network_border_group');
+  }
+  public set ipv6CidrBlockNetworkBorderGroup(value: string) {
+    this._ipv6CidrBlockNetworkBorderGroup = value;
+  }
+  public resetIpv6CidrBlockNetworkBorderGroup() {
+    this._ipv6CidrBlockNetworkBorderGroup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6CidrBlockNetworkBorderGroupInput() {
+    return this._ipv6CidrBlockNetworkBorderGroup;
+  }
+
   // ipv6_ipam_pool_id - computed: false, optional: true, required: false
   private _ipv6IpamPoolId?: string; 
   public get ipv6IpamPoolId() {
@@ -404,6 +425,7 @@ export class Vpc extends cdktf.TerraformResource {
       ipv4_ipam_pool_id: cdktf.stringToTerraform(this._ipv4IpamPoolId),
       ipv4_netmask_length: cdktf.numberToTerraform(this._ipv4NetmaskLength),
       ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
+      ipv6_cidr_block_network_border_group: cdktf.stringToTerraform(this._ipv6CidrBlockNetworkBorderGroup),
       ipv6_ipam_pool_id: cdktf.stringToTerraform(this._ipv6IpamPoolId),
       ipv6_netmask_length: cdktf.numberToTerraform(this._ipv6NetmaskLength),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
