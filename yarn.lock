@@ -859,9 +859,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.0.33"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.33.tgz#59c1868c0cd1b448d5d622750e164e78fa680c2a"
-  integrity sha512-1lyxVYjD2yNSlDMryiktmgv/fzN+ykPqEYD5UJKdGerbwFjUd+LTl+rNiGqxob9POPVt49Ez0FXnm0/di6LQng==
+  version "10.0.34"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.34.tgz#8ecf5f11d7d6751dc5f465accca3f1f4f7c3a038"
+  integrity sha512-Q999412/iOwASje+157vjNUmFpBr5ZMw+6RHrgezAM+4C7ITNecv3ICWayWDdN5te5ixUvUWPMmyLJbrZBZ3ag==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -1347,9 +1347,9 @@ exit-on-epipe@~1.0.1:
   integrity sha512-h2z5mrROTxce56S+pnvAV890uu7ls7f1kEvVGJbw1OlFH3/mlJ5bkXu0KRyW94v37zzHPiUd55iLn3DA7TjWpw==
 
 fast-glob@^3.2.9:
-  version "3.2.10"
-  resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.10.tgz#2734f83baa7f43b7fd41e13bc34438f4ffe284ee"
-  integrity sha512-s9nFhFnvR63wls6/kM88kQqDhMu0AfdjqouE2l5GVQPbqLgyFjjU5ry/r2yKsJxpb9Py1EYNqieFrmMaX4v++A==
+  version "3.2.11"
+  resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.11.tgz#a1172ad95ceb8a16e20caa5c5e56480e5129c1d9"
+  integrity sha512-xrO3+1bxSo3ZVHAnqzyuewYT6aMFHRAd4Kcs92MAonjwQZLsK9d0SF1IyQ3k5PoirxTW0Oe/RqFgMQ6TcNE5Ew==
   dependencies:
     "@nodelib/fs.stat" "^2.0.2"
     "@nodelib/fs.walk" "^1.2.3"
@@ -2200,9 +2200,9 @@ jsii-rosetta@^1.39.0, jsii-rosetta@^1.52.1:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.406:
-  version "0.1.445"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.445.tgz#9769cefcb268da83e97d90616b7b49c5879d69c4"
-  integrity sha512-w5u+Xr2CYnMapyqx5u34dStn2a89JKqdXGQaa16T2OOGQdYjZNq3Hbq7yI35AOkg/vFkTM0Aaeime0ivi5kI3g==
+  version "0.1.446"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.446.tgz#11c06979e6fa2229e80f97152c9d7098605807b7"
+  integrity sha512-CsZRntLo2JRQjyI1khgUvb9jKpMHNclwA5Sr0PXDcyXkB11CcFAlpMZyCw46/Lzs4B+ULarKoALS9h1scz6swg==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.52.1"
