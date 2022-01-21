@@ -96,11 +96,180 @@ export interface OpsworksMemcachedLayerConfig extends cdktf.TerraformMetaArgumen
   */
   readonly useEbsOptimizedInstances?: boolean | cdktf.IResolvable;
   /**
+  * cloudwatch_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#cloudwatch_configuration OpsworksMemcachedLayer#cloudwatch_configuration}
+  */
+  readonly cloudwatchConfiguration?: OpsworksMemcachedLayerCloudwatchConfiguration;
+  /**
   * ebs_volume block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#ebs_volume OpsworksMemcachedLayer#ebs_volume}
   */
   readonly ebsVolume?: OpsworksMemcachedLayerEbsVolume[];
+}
+export interface OpsworksMemcachedLayerCloudwatchConfigurationLogStreams {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#batch_count OpsworksMemcachedLayer#batch_count}
+  */
+  readonly batchCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#batch_size OpsworksMemcachedLayer#batch_size}
+  */
+  readonly batchSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#buffer_duration OpsworksMemcachedLayer#buffer_duration}
+  */
+  readonly bufferDuration?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#datetime_format OpsworksMemcachedLayer#datetime_format}
+  */
+  readonly datetimeFormat?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#encoding OpsworksMemcachedLayer#encoding}
+  */
+  readonly encoding?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#file OpsworksMemcachedLayer#file}
+  */
+  readonly file: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#file_fingerprint_lines OpsworksMemcachedLayer#file_fingerprint_lines}
+  */
+  readonly fileFingerprintLines?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#initial_position OpsworksMemcachedLayer#initial_position}
+  */
+  readonly initialPosition?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#log_group_name OpsworksMemcachedLayer#log_group_name}
+  */
+  readonly logGroupName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#multiline_start_pattern OpsworksMemcachedLayer#multiline_start_pattern}
+  */
+  readonly multilineStartPattern?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#time_zone OpsworksMemcachedLayer#time_zone}
+  */
+  readonly timeZone?: string;
+}
+
+export function opsworksMemcachedLayerCloudwatchConfigurationLogStreamsToTerraform(struct?: OpsworksMemcachedLayerCloudwatchConfigurationLogStreams): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    batch_count: cdktf.numberToTerraform(struct!.batchCount),
+    batch_size: cdktf.numberToTerraform(struct!.batchSize),
+    buffer_duration: cdktf.numberToTerraform(struct!.bufferDuration),
+    datetime_format: cdktf.stringToTerraform(struct!.datetimeFormat),
+    encoding: cdktf.stringToTerraform(struct!.encoding),
+    file: cdktf.stringToTerraform(struct!.file),
+    file_fingerprint_lines: cdktf.stringToTerraform(struct!.fileFingerprintLines),
+    initial_position: cdktf.stringToTerraform(struct!.initialPosition),
+    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
+    multiline_start_pattern: cdktf.stringToTerraform(struct!.multilineStartPattern),
+    time_zone: cdktf.stringToTerraform(struct!.timeZone),
+  }
+}
+
+export interface OpsworksMemcachedLayerCloudwatchConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#enabled OpsworksMemcachedLayer#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * log_streams block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_memcached_layer#log_streams OpsworksMemcachedLayer#log_streams}
+  */
+  readonly logStreams?: OpsworksMemcachedLayerCloudwatchConfigurationLogStreams[];
+}
+
+export function opsworksMemcachedLayerCloudwatchConfigurationToTerraform(struct?: OpsworksMemcachedLayerCloudwatchConfigurationOutputReference | OpsworksMemcachedLayerCloudwatchConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    log_streams: cdktf.listMapper(opsworksMemcachedLayerCloudwatchConfigurationLogStreamsToTerraform)(struct!.logStreams),
+  }
+}
+
+export class OpsworksMemcachedLayerCloudwatchConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): OpsworksMemcachedLayerCloudwatchConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._logStreams !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logStreams = this._logStreams;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OpsworksMemcachedLayerCloudwatchConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._logStreams = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._logStreams = value.logStreams;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled') as any;
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // log_streams - computed: false, optional: true, required: false
+  private _logStreams?: OpsworksMemcachedLayerCloudwatchConfigurationLogStreams[]; 
+  public get logStreams() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('log_streams') as any;
+  }
+  public set logStreams(value: OpsworksMemcachedLayerCloudwatchConfigurationLogStreams[]) {
+    this._logStreams = value;
+  }
+  public resetLogStreams() {
+    this._logStreams = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logStreamsInput() {
+    return this._logStreams;
+  }
 }
 export interface OpsworksMemcachedLayerEbsVolume {
   /**
@@ -204,6 +373,7 @@ export class OpsworksMemcachedLayer extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._useEbsOptimizedInstances = config.useEbsOptimizedInstances;
+    this._cloudwatchConfiguration.internalValue = config.cloudwatchConfiguration;
     this._ebsVolume = config.ebsVolume;
   }
 
@@ -572,6 +742,22 @@ export class OpsworksMemcachedLayer extends cdktf.TerraformResource {
     return this._useEbsOptimizedInstances;
   }
 
+  // cloudwatch_configuration - computed: false, optional: true, required: false
+  private _cloudwatchConfiguration = new OpsworksMemcachedLayerCloudwatchConfigurationOutputReference(this as any, "cloudwatch_configuration", true);
+  public get cloudwatchConfiguration() {
+    return this._cloudwatchConfiguration;
+  }
+  public putCloudwatchConfiguration(value: OpsworksMemcachedLayerCloudwatchConfiguration) {
+    this._cloudwatchConfiguration.internalValue = value;
+  }
+  public resetCloudwatchConfiguration() {
+    this._cloudwatchConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchConfigurationInput() {
+    return this._cloudwatchConfiguration.internalValue;
+  }
+
   // ebs_volume - computed: false, optional: true, required: false
   private _ebsVolume?: OpsworksMemcachedLayerEbsVolume[]; 
   public get ebsVolume() {
@@ -617,6 +803,7 @@ export class OpsworksMemcachedLayer extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       use_ebs_optimized_instances: cdktf.booleanToTerraform(this._useEbsOptimizedInstances),
+      cloudwatch_configuration: opsworksMemcachedLayerCloudwatchConfigurationToTerraform(this._cloudwatchConfiguration.internalValue),
       ebs_volume: cdktf.listMapper(opsworksMemcachedLayerEbsVolumeToTerraform)(this._ebsVolume),
     };
   }

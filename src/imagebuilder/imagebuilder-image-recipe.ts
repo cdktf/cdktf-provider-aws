@@ -28,6 +28,10 @@ export interface ImagebuilderImageRecipeConfig extends cdktf.TerraformMetaArgume
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe#user_data_base64 ImagebuilderImageRecipe#user_data_base64}
+  */
+  readonly userDataBase64?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe#version ImagebuilderImageRecipe#version}
   */
   readonly version: string;
@@ -365,6 +369,7 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
     this._parentImage = config.parentImage;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._userDataBase64 = config.userDataBase64;
     this._version = config.version;
     this._workingDirectory = config.workingDirectory;
     this._blockDeviceMapping = config.blockDeviceMapping;
@@ -476,6 +481,22 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // user_data_base64 - computed: true, optional: true, required: false
+  private _userDataBase64?: string; 
+  public get userDataBase64() {
+    return this.getStringAttribute('user_data_base64');
+  }
+  public set userDataBase64(value: string) {
+    this._userDataBase64 = value;
+  }
+  public resetUserDataBase64() {
+    this._userDataBase64 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userDataBase64Input() {
+    return this._userDataBase64;
+  }
+
   // version - computed: false, optional: false, required: true
   private _version?: string; 
   public get version() {
@@ -547,6 +568,7 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
       parent_image: cdktf.stringToTerraform(this._parentImage),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      user_data_base64: cdktf.stringToTerraform(this._userDataBase64),
       version: cdktf.stringToTerraform(this._version),
       working_directory: cdktf.stringToTerraform(this._workingDirectory),
       block_device_mapping: cdktf.listMapper(imagebuilderImageRecipeBlockDeviceMappingToTerraform)(this._blockDeviceMapping),

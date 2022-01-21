@@ -68,6 +68,7 @@ export * from './data-aws-vpc-dhcp-options';
 export * from './data-aws-vpc-endpoint';
 export * from './data-aws-vpc-endpoint-service';
 export * from './data-aws-vpc-ipam-pool';
+export * from './data-aws-vpc-ipam-preview-next-cidr';
 export * from './data-aws-vpc-peering-connection';
 export * from './data-aws-vpc-peering-connections';
 export * from './data-aws-vpcs';

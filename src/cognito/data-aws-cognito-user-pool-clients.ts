@@ -57,6 +57,11 @@ export class DataAwsCognitoUserPoolClients extends cdktf.TerraformDataSource {
     return this.getListAttribute('client_ids');
   }
 
+  // client_names - computed: true, optional: false, required: false
+  public get clientNames() {
+    return this.getListAttribute('client_names');
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');

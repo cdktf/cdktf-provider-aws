@@ -199,6 +199,11 @@ export class DataAwsImagebuilderImageRecipe extends cdktf.TerraformDataSource {
     return this._tags;
   }
 
+  // user_data_base64 - computed: true, optional: false, required: false
+  public get userDataBase64() {
+    return this.getStringAttribute('user_data_base64');
+  }
+
   // version - computed: true, optional: false, required: false
   public get version() {
     return this.getStringAttribute('version');
