@@ -2204,9 +2204,9 @@ jsii-rosetta@^1.39.0, jsii-rosetta@^1.52.1:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.406:
-  version "0.1.450"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.450.tgz#55828ed1e2dd43c1914831b46fa965a0a73605d6"
-  integrity sha512-U19pmnYVUympcwhvtFDsyawU5Gth3f7EGuCABHBEW52LhxEmaBId/hqhGXmZcPO6oE6q+/IJohQrlwEDQN02PQ==
+  version "0.1.451"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.451.tgz#ea1646d4910469378dd76f46883f96030755cdba"
+  integrity sha512-fu1DUnGSWk42SVTDvaDkNK9p4Db4HxMvHI7RIgmY+JVS9Wu1XOHOQnX/WCq+1epM0ucgI+hWpJO50Xaq2Q5H5Q==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.52.1"
@@ -2743,9 +2743,9 @@ npm-bundled@^1.1.1:
     npm-normalize-package-bin "^1.0.1"
 
 npm-check-updates@^12:
-  version "12.1.0"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-12.1.0.tgz#bf316bc35f90817880df9de175f2d69755eb9ff5"
-  integrity sha512-9GtSetBvcth7MuL+0MpOmWgdfiEgZcWRfnvoYnNZxbZpleHZCT0Z3HnbsL6/EAT2M+ye7FTZ+YjmDmZptt7Rkg==
+  version "12.2.0"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-12.2.0.tgz#f332fff0df44fcc23d84ced192370a4480ad1e7f"
+  integrity sha512-upiHqivxtjtj/iHO7Amnd+Q5Nx5HzTwxMlu9lUzNFQvCAAFhJnPK8Weuoyz3OSwErpHVxJMry7W5d0H7Cokxdg==
   dependencies:
     chalk "^4.1.2"
     cint "^8.2.1"
