@@ -4,6 +4,7 @@ export * from './lambda-code-signing-config';
 export * from './lambda-event-source-mapping';
 export * from './lambda-function';
 export * from './lambda-function-event-invoke-config';
+export * from './lambda-invocation';
 export * from './lambda-layer-version';
 export * from './lambda-layer-version-permission';
 export * from './lambda-permission';

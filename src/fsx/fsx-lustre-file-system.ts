@@ -44,6 +44,10 @@ export interface FsxLustreFileSystemConfig extends cdktf.TerraformMetaArguments 
   */
   readonly exportPath?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system#file_system_type_version FsxLustreFileSystem#file_system_type_version}
+  */
+  readonly fileSystemTypeVersion?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system#import_path FsxLustreFileSystem#import_path}
   */
   readonly importPath?: string;
@@ -256,6 +260,7 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
     this._deploymentType = config.deploymentType;
     this._driveCacheType = config.driveCacheType;
     this._exportPath = config.exportPath;
+    this._fileSystemTypeVersion = config.fileSystemTypeVersion;
     this._importPath = config.importPath;
     this._importedFileChunkSize = config.importedFileChunkSize;
     this._kmsKeyId = config.kmsKeyId;
@@ -426,6 +431,22 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get exportPathInput() {
     return this._exportPath;
+  }
+
+  // file_system_type_version - computed: true, optional: true, required: false
+  private _fileSystemTypeVersion?: string; 
+  public get fileSystemTypeVersion() {
+    return this.getStringAttribute('file_system_type_version');
+  }
+  public set fileSystemTypeVersion(value: string) {
+    this._fileSystemTypeVersion = value;
+  }
+  public resetFileSystemTypeVersion() {
+    this._fileSystemTypeVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileSystemTypeVersionInput() {
+    return this._fileSystemTypeVersion;
   }
 
   // id - computed: true, optional: true, required: false
@@ -659,6 +680,7 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
       deployment_type: cdktf.stringToTerraform(this._deploymentType),
       drive_cache_type: cdktf.stringToTerraform(this._driveCacheType),
       export_path: cdktf.stringToTerraform(this._exportPath),
+      file_system_type_version: cdktf.stringToTerraform(this._fileSystemTypeVersion),
       import_path: cdktf.stringToTerraform(this._importPath),
       imported_file_chunk_size: cdktf.numberToTerraform(this._importedFileChunkSize),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
