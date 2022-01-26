@@ -18,7 +18,7 @@ export interface DataAwsApigatewayv2ApisConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/apigatewayv2_apis#tags DataAwsApigatewayv2Apis#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 
 /**
@@ -69,7 +69,7 @@ export class DataAwsApigatewayv2Apis extends cdktf.TerraformDataSource {
 
   // ids - computed: true, optional: false, required: false
   public get ids() {
-    return this.getListAttribute('ids');
+    return cdktf.Fn.tolist(this.getListAttribute('ids'));
   }
 
   // name - computed: false, optional: true, required: false
@@ -105,12 +105,11 @@ export class DataAwsApigatewayv2Apis extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -129,7 +128,7 @@ export class DataAwsApigatewayv2Apis extends cdktf.TerraformDataSource {
     return {
       name: cdktf.stringToTerraform(this._name),
       protocol_type: cdktf.stringToTerraform(this._protocolType),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

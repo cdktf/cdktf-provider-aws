@@ -16,7 +16,7 @@ export interface WafregionalXssMatchSetConfig extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_xss_match_set#xss_match_tuple WafregionalXssMatchSet#xss_match_tuple}
   */
-  readonly xssMatchTuple?: WafregionalXssMatchSetXssMatchTuple[];
+  readonly xssMatchTuple?: WafregionalXssMatchSetXssMatchTuple[] | cdktf.IResolvable;
 }
 export interface WafregionalXssMatchSetXssMatchTupleFieldToMatch {
   /**
@@ -30,7 +30,7 @@ export interface WafregionalXssMatchSetXssMatchTupleFieldToMatch {
 }
 
 export function wafregionalXssMatchSetXssMatchTupleFieldToMatchToTerraform(struct?: WafregionalXssMatchSetXssMatchTupleFieldToMatchOutputReference | WafregionalXssMatchSetXssMatchTupleFieldToMatch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -48,7 +48,7 @@ export class WafregionalXssMatchSetXssMatchTupleFieldToMatchOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -121,8 +121,8 @@ export interface WafregionalXssMatchSetXssMatchTuple {
   readonly fieldToMatch: WafregionalXssMatchSetXssMatchTupleFieldToMatch;
 }
 
-export function wafregionalXssMatchSetXssMatchTupleToTerraform(struct?: WafregionalXssMatchSetXssMatchTuple): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafregionalXssMatchSetXssMatchTupleToTerraform(struct?: WafregionalXssMatchSetXssMatchTuple | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -192,12 +192,12 @@ export class WafregionalXssMatchSet extends cdktf.TerraformResource {
   }
 
   // xss_match_tuple - computed: false, optional: true, required: false
-  private _xssMatchTuple?: WafregionalXssMatchSetXssMatchTuple[]; 
+  private _xssMatchTuple?: WafregionalXssMatchSetXssMatchTuple[] | cdktf.IResolvable; 
   public get xssMatchTuple() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('xss_match_tuple') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('xss_match_tuple')));
   }
-  public set xssMatchTuple(value: WafregionalXssMatchSetXssMatchTuple[]) {
+  public set xssMatchTuple(value: WafregionalXssMatchSetXssMatchTuple[] | cdktf.IResolvable) {
     this._xssMatchTuple = value;
   }
   public resetXssMatchTuple() {

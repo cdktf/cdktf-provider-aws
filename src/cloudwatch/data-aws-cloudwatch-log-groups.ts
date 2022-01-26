@@ -54,7 +54,7 @@ export class DataAwsCloudwatchLogGroups extends cdktf.TerraformDataSource {
 
   // arns - computed: true, optional: false, required: false
   public get arns() {
-    return this.getListAttribute('arns');
+    return cdktf.Fn.tolist(this.getListAttribute('arns'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -77,7 +77,7 @@ export class DataAwsCloudwatchLogGroups extends cdktf.TerraformDataSource {
 
   // log_group_names - computed: true, optional: false, required: false
   public get logGroupNames() {
-    return this.getListAttribute('log_group_names');
+    return cdktf.Fn.tolist(this.getListAttribute('log_group_names'));
   }
 
   // =========

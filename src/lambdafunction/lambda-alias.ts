@@ -34,16 +34,16 @@ export interface LambdaAliasRoutingConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}
   */
-  readonly additionalVersionWeights?: { [key: string]: number } | cdktf.IResolvable;
+  readonly additionalVersionWeights?: { [key: string]: number };
 }
 
 export function lambdaAliasRoutingConfigToTerraform(struct?: LambdaAliasRoutingConfigOutputReference | LambdaAliasRoutingConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_version_weights: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.additionalVersionWeights),
+    additional_version_weights: cdktf.hashMapper(cdktf.numberToTerraform)(struct!.additionalVersionWeights),
   }
 }
 
@@ -55,7 +55,7 @@ export class LambdaAliasRoutingConfigOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -81,12 +81,11 @@ export class LambdaAliasRoutingConfigOutputReference extends cdktf.ComplexObject
   }
 
   // additional_version_weights - computed: false, optional: true, required: false
-  private _additionalVersionWeights?: { [key: string]: number } | cdktf.IResolvable; 
+  private _additionalVersionWeights?: { [key: string]: number }; 
   public get additionalVersionWeights() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('additional_version_weights') as any;
+    return this.getNumberMapAttribute('additional_version_weights');
   }
-  public set additionalVersionWeights(value: { [key: string]: number } | cdktf.IResolvable) {
+  public set additionalVersionWeights(value: { [key: string]: number }) {
     this._additionalVersionWeights = value;
   }
   public resetAdditionalVersionWeights() {
@@ -212,7 +211,7 @@ export class LambdaAlias extends cdktf.TerraformResource {
   }
 
   // routing_config - computed: false, optional: true, required: false
-  private _routingConfig = new LambdaAliasRoutingConfigOutputReference(this as any, "routing_config", true);
+  private _routingConfig = new LambdaAliasRoutingConfigOutputReference(this, "routing_config", true);
   public get routingConfig() {
     return this._routingConfig;
   }

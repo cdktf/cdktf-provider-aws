@@ -58,11 +58,11 @@ export interface FsxOntapFileSystemConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_file_system#tags FsxOntapFileSystem#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_file_system#tags_all FsxOntapFileSystem#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_file_system#throughput_capacity FsxOntapFileSystem#throughput_capacity}
   */
@@ -93,7 +93,7 @@ export class FsxOntapFileSystemEndpointsIntercluster extends cdktf.ComplexComput
 
   // ip_addresses - computed: true, optional: false, required: false
   public get ipAddresses() {
-    return this.getListAttribute('ip_addresses');
+    return cdktf.Fn.tolist(this.getListAttribute('ip_addresses'));
   }
 }
 export class FsxOntapFileSystemEndpointsManagement extends cdktf.ComplexComputedList {
@@ -105,7 +105,7 @@ export class FsxOntapFileSystemEndpointsManagement extends cdktf.ComplexComputed
 
   // ip_addresses - computed: true, optional: false, required: false
   public get ipAddresses() {
-    return this.getListAttribute('ip_addresses');
+    return cdktf.Fn.tolist(this.getListAttribute('ip_addresses'));
   }
 }
 export class FsxOntapFileSystemEndpoints extends cdktf.ComplexComputedList {
@@ -113,13 +113,13 @@ export class FsxOntapFileSystemEndpoints extends cdktf.ComplexComputedList {
   // intercluster - computed: true, optional: false, required: false
   public get intercluster() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('intercluster') as any;
+    return this.interpolationForAttribute('intercluster');
   }
 
   // management - computed: true, optional: false, required: false
   public get management() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('management') as any;
+    return this.interpolationForAttribute('management');
   }
 }
 export interface FsxOntapFileSystemDiskIopsConfiguration {
@@ -134,7 +134,7 @@ export interface FsxOntapFileSystemDiskIopsConfiguration {
 }
 
 export function fsxOntapFileSystemDiskIopsConfigurationToTerraform(struct?: FsxOntapFileSystemDiskIopsConfigurationOutputReference | FsxOntapFileSystemDiskIopsConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -152,7 +152,7 @@ export class FsxOntapFileSystemDiskIopsConfigurationOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -230,8 +230,8 @@ export interface FsxOntapFileSystemTimeouts {
   readonly update?: string;
 }
 
-export function fsxOntapFileSystemTimeoutsToTerraform(struct?: FsxOntapFileSystemTimeoutsOutputReference | FsxOntapFileSystemTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function fsxOntapFileSystemTimeoutsToTerraform(struct?: FsxOntapFileSystemTimeoutsOutputReference | FsxOntapFileSystemTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -250,7 +250,7 @@ export class FsxOntapFileSystemTimeoutsOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -465,7 +465,7 @@ export class FsxOntapFileSystem extends cdktf.TerraformResource {
 
   // endpoints - computed: true, optional: false, required: false
   public endpoints(index: string) {
-    return new FsxOntapFileSystemEndpoints(this, 'endpoints', index);
+    return new FsxOntapFileSystemEndpoints(this, 'endpoints', index, false);
   }
 
   // fsx_admin_password - computed: false, optional: true, required: false
@@ -531,7 +531,7 @@ export class FsxOntapFileSystem extends cdktf.TerraformResource {
   // route_table_ids - computed: true, optional: true, required: false
   private _routeTableIds?: string[]; 
   public get routeTableIds() {
-    return this.getListAttribute('route_table_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('route_table_ids'));
   }
   public set routeTableIds(value: string[]) {
     this._routeTableIds = value;
@@ -547,7 +547,7 @@ export class FsxOntapFileSystem extends cdktf.TerraformResource {
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -606,12 +606,11 @@ export class FsxOntapFileSystem extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -623,12 +622,11 @@ export class FsxOntapFileSystem extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -674,7 +672,7 @@ export class FsxOntapFileSystem extends cdktf.TerraformResource {
   }
 
   // disk_iops_configuration - computed: false, optional: true, required: false
-  private _diskIopsConfiguration = new FsxOntapFileSystemDiskIopsConfigurationOutputReference(this as any, "disk_iops_configuration", true);
+  private _diskIopsConfiguration = new FsxOntapFileSystemDiskIopsConfigurationOutputReference(this, "disk_iops_configuration", true);
   public get diskIopsConfiguration() {
     return this._diskIopsConfiguration;
   }
@@ -690,7 +688,7 @@ export class FsxOntapFileSystem extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new FsxOntapFileSystemTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new FsxOntapFileSystemTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -723,8 +721,8 @@ export class FsxOntapFileSystem extends cdktf.TerraformResource {
       storage_capacity: cdktf.numberToTerraform(this._storageCapacity),
       storage_type: cdktf.stringToTerraform(this._storageType),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       throughput_capacity: cdktf.numberToTerraform(this._throughputCapacity),
       weekly_maintenance_start_time: cdktf.stringToTerraform(this._weeklyMaintenanceStartTime),
       disk_iops_configuration: fsxOntapFileSystemDiskIopsConfigurationToTerraform(this._diskIopsConfiguration.internalValue),

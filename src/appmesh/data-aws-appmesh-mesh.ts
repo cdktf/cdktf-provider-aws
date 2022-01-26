@@ -18,7 +18,7 @@ export interface DataAwsAppmeshMeshConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/appmesh_mesh#tags DataAwsAppmeshMesh#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsAppmeshMeshSpecEgressFilter extends cdktf.ComplexComputedList {
 
@@ -32,7 +32,7 @@ export class DataAwsAppmeshMeshSpec extends cdktf.ComplexComputedList {
   // egress_filter - computed: true, optional: false, required: false
   public get egressFilter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('egress_filter') as any;
+    return this.interpolationForAttribute('egress_filter');
   }
 }
 
@@ -133,16 +133,15 @@ export class DataAwsAppmeshMesh extends cdktf.TerraformDataSource {
 
   // spec - computed: true, optional: false, required: false
   public spec(index: string) {
-    return new DataAwsAppmeshMeshSpec(this, 'spec', index);
+    return new DataAwsAppmeshMeshSpec(this, 'spec', index, false);
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -161,7 +160,7 @@ export class DataAwsAppmeshMesh extends cdktf.TerraformDataSource {
     return {
       mesh_owner: cdktf.stringToTerraform(this._meshOwner),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

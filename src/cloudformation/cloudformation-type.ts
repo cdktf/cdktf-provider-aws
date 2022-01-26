@@ -42,7 +42,7 @@ export interface CloudformationTypeLoggingConfig {
 }
 
 export function cloudformationTypeLoggingConfigToTerraform(struct?: CloudformationTypeLoggingConfigOutputReference | CloudformationTypeLoggingConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -60,7 +60,7 @@ export class CloudformationTypeLoggingConfigOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -209,7 +209,7 @@ export class CloudformationType extends cdktf.TerraformResource {
 
   // is_default_version - computed: true, optional: false, required: false
   public get isDefaultVersion() {
-    return this.getBooleanAttribute('is_default_version') as any;
+    return this.getBooleanAttribute('is_default_version');
   }
 
   // provisioning_type - computed: true, optional: false, required: false
@@ -285,7 +285,7 @@ export class CloudformationType extends cdktf.TerraformResource {
   }
 
   // logging_config - computed: false, optional: true, required: false
-  private _loggingConfig = new CloudformationTypeLoggingConfigOutputReference(this as any, "logging_config", true);
+  private _loggingConfig = new CloudformationTypeLoggingConfigOutputReference(this, "logging_config", true);
   public get loggingConfig() {
     return this._loggingConfig;
   }

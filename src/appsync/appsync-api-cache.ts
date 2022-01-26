@@ -106,7 +106,7 @@ export class AppsyncApiCache extends cdktf.TerraformResource {
   // at_rest_encryption_enabled - computed: false, optional: true, required: false
   private _atRestEncryptionEnabled?: boolean | cdktf.IResolvable; 
   public get atRestEncryptionEnabled() {
-    return this.getBooleanAttribute('at_rest_encryption_enabled') as any;
+    return this.getBooleanAttribute('at_rest_encryption_enabled');
   }
   public set atRestEncryptionEnabled(value: boolean | cdktf.IResolvable) {
     this._atRestEncryptionEnabled = value;
@@ -127,7 +127,7 @@ export class AppsyncApiCache extends cdktf.TerraformResource {
   // transit_encryption_enabled - computed: false, optional: true, required: false
   private _transitEncryptionEnabled?: boolean | cdktf.IResolvable; 
   public get transitEncryptionEnabled() {
-    return this.getBooleanAttribute('transit_encryption_enabled') as any;
+    return this.getBooleanAttribute('transit_encryption_enabled');
   }
   public set transitEncryptionEnabled(value: boolean | cdktf.IResolvable) {
     this._transitEncryptionEnabled = value;

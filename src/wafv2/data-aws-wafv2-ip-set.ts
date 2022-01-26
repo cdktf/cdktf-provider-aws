@@ -59,7 +59,7 @@ export class DataAwsWafv2IpSet extends cdktf.TerraformDataSource {
 
   // addresses - computed: true, optional: false, required: false
   public get addresses() {
-    return this.getListAttribute('addresses');
+    return cdktf.Fn.tolist(this.getListAttribute('addresses'));
   }
 
   // arn - computed: true, optional: false, required: false

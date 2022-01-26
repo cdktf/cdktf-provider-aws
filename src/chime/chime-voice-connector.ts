@@ -104,7 +104,7 @@ export class ChimeVoiceConnector extends cdktf.TerraformResource {
   // require_encryption - computed: false, optional: false, required: true
   private _requireEncryption?: boolean | cdktf.IResolvable; 
   public get requireEncryption() {
-    return this.getBooleanAttribute('require_encryption') as any;
+    return this.getBooleanAttribute('require_encryption');
   }
   public set requireEncryption(value: boolean | cdktf.IResolvable) {
     this._requireEncryption = value;

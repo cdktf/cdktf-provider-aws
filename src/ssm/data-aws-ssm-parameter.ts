@@ -98,7 +98,7 @@ export class DataAwsSsmParameter extends cdktf.TerraformDataSource {
   // with_decryption - computed: false, optional: true, required: false
   private _withDecryption?: boolean | cdktf.IResolvable; 
   public get withDecryption() {
-    return this.getBooleanAttribute('with_decryption') as any;
+    return this.getBooleanAttribute('with_decryption');
   }
   public set withDecryption(value: boolean | cdktf.IResolvable) {
     this._withDecryption = value;

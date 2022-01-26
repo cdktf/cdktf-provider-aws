@@ -22,7 +22,7 @@ export interface DataAwsRouteTableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_table#tags DataAwsRouteTable#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_table#vpc_id DataAwsRouteTable#vpc_id}
   */
@@ -32,7 +32,7 @@ export interface DataAwsRouteTableConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_table#filter DataAwsRouteTable#filter}
   */
-  readonly filter?: DataAwsRouteTableFilter[];
+  readonly filter?: DataAwsRouteTableFilter[] | cdktf.IResolvable;
 }
 export class DataAwsRouteTableAssociations extends cdktf.ComplexComputedList {
 
@@ -43,7 +43,7 @@ export class DataAwsRouteTableAssociations extends cdktf.ComplexComputedList {
 
   // main - computed: true, optional: false, required: false
   public get main() {
-    return this.getBooleanAttribute('main') as any;
+    return this.getBooleanAttribute('main');
   }
 
   // route_table_association_id - computed: true, optional: false, required: false
@@ -139,8 +139,8 @@ export interface DataAwsRouteTableFilter {
   readonly values: string[];
 }
 
-export function dataAwsRouteTableFilterToTerraform(struct?: DataAwsRouteTableFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsRouteTableFilterToTerraform(struct?: DataAwsRouteTableFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -202,7 +202,7 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
 
   // associations - computed: true, optional: false, required: false
   public associations(index: string) {
-    return new DataAwsRouteTableAssociations(this, 'associations', index);
+    return new DataAwsRouteTableAssociations(this, 'associations', index, false);
   }
 
   // gateway_id - computed: true, optional: true, required: false
@@ -249,7 +249,7 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
 
   // routes - computed: true, optional: false, required: false
   public routes(index: string) {
-    return new DataAwsRouteTableRoutes(this, 'routes', index);
+    return new DataAwsRouteTableRoutes(this, 'routes', index, false);
   }
 
   // subnet_id - computed: true, optional: true, required: false
@@ -269,12 +269,11 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -302,12 +301,12 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsRouteTableFilter[]; 
+  private _filter?: DataAwsRouteTableFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsRouteTableFilter[]) {
+  public set filter(value: DataAwsRouteTableFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -327,7 +326,7 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
       gateway_id: cdktf.stringToTerraform(this._gatewayId),
       route_table_id: cdktf.stringToTerraform(this._routeTableId),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       filter: cdktf.listMapper(dataAwsRouteTableFilterToTerraform)(this._filter),
     };

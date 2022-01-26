@@ -16,7 +16,7 @@ export interface ChimeVoiceConnectorGroupConfig extends cdktf.TerraformMetaArgum
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_group#connector ChimeVoiceConnectorGroup#connector}
   */
-  readonly connector?: ChimeVoiceConnectorGroupConnector[];
+  readonly connector?: ChimeVoiceConnectorGroupConnector[] | cdktf.IResolvable;
 }
 export interface ChimeVoiceConnectorGroupConnector {
   /**
@@ -29,8 +29,8 @@ export interface ChimeVoiceConnectorGroupConnector {
   readonly voiceConnectorId: string;
 }
 
-export function chimeVoiceConnectorGroupConnectorToTerraform(struct?: ChimeVoiceConnectorGroupConnector): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function chimeVoiceConnectorGroupConnectorToTerraform(struct?: ChimeVoiceConnectorGroupConnector | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -100,12 +100,12 @@ export class ChimeVoiceConnectorGroup extends cdktf.TerraformResource {
   }
 
   // connector - computed: false, optional: true, required: false
-  private _connector?: ChimeVoiceConnectorGroupConnector[]; 
+  private _connector?: ChimeVoiceConnectorGroupConnector[] | cdktf.IResolvable; 
   public get connector() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('connector') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('connector')));
   }
-  public set connector(value: ChimeVoiceConnectorGroupConnector[]) {
+  public set connector(value: ChimeVoiceConnectorGroupConnector[] | cdktf.IResolvable) {
     this._connector = value;
   }
   public resetConnector() {

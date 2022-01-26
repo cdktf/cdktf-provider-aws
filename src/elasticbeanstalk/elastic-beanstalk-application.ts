@@ -18,11 +18,11 @@ export interface ElasticBeanstalkApplicationConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_application#tags ElasticBeanstalkApplication#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_application#tags_all ElasticBeanstalkApplication#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * appversion_lifecycle block
   * 
@@ -50,7 +50,7 @@ export interface ElasticBeanstalkApplicationAppversionLifecycle {
 }
 
 export function elasticBeanstalkApplicationAppversionLifecycleToTerraform(struct?: ElasticBeanstalkApplicationAppversionLifecycleOutputReference | ElasticBeanstalkApplicationAppversionLifecycle): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -70,7 +70,7 @@ export class ElasticBeanstalkApplicationAppversionLifecycleOutputReference exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -116,7 +116,7 @@ export class ElasticBeanstalkApplicationAppversionLifecycleOutputReference exten
   // delete_source_from_s3 - computed: false, optional: true, required: false
   private _deleteSourceFromS3?: boolean | cdktf.IResolvable; 
   public get deleteSourceFromS3() {
-    return this.getBooleanAttribute('delete_source_from_s3') as any;
+    return this.getBooleanAttribute('delete_source_from_s3');
   }
   public set deleteSourceFromS3(value: boolean | cdktf.IResolvable) {
     this._deleteSourceFromS3 = value;
@@ -258,12 +258,11 @@ export class ElasticBeanstalkApplication extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -275,12 +274,11 @@ export class ElasticBeanstalkApplication extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -292,7 +290,7 @@ export class ElasticBeanstalkApplication extends cdktf.TerraformResource {
   }
 
   // appversion_lifecycle - computed: false, optional: true, required: false
-  private _appversionLifecycle = new ElasticBeanstalkApplicationAppversionLifecycleOutputReference(this as any, "appversion_lifecycle", true);
+  private _appversionLifecycle = new ElasticBeanstalkApplicationAppversionLifecycleOutputReference(this, "appversion_lifecycle", true);
   public get appversionLifecycle() {
     return this._appversionLifecycle;
   }
@@ -315,8 +313,8 @@ export class ElasticBeanstalkApplication extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       appversion_lifecycle: elasticBeanstalkApplicationAppversionLifecycleToTerraform(this._appversionLifecycle.internalValue),
     };
   }

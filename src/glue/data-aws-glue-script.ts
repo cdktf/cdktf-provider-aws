@@ -16,13 +16,13 @@ export interface DataAwsGlueScriptConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/glue_script#dag_edge DataAwsGlueScript#dag_edge}
   */
-  readonly dagEdge: DataAwsGlueScriptDagEdge[];
+  readonly dagEdge: DataAwsGlueScriptDagEdge[] | cdktf.IResolvable;
   /**
   * dag_node block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/glue_script#dag_node DataAwsGlueScript#dag_node}
   */
-  readonly dagNode: DataAwsGlueScriptDagNode[];
+  readonly dagNode: DataAwsGlueScriptDagNode[] | cdktf.IResolvable;
 }
 export interface DataAwsGlueScriptDagEdge {
   /**
@@ -39,8 +39,8 @@ export interface DataAwsGlueScriptDagEdge {
   readonly targetParameter?: string;
 }
 
-export function dataAwsGlueScriptDagEdgeToTerraform(struct?: DataAwsGlueScriptDagEdge): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsGlueScriptDagEdgeToTerraform(struct?: DataAwsGlueScriptDagEdge | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -66,8 +66,8 @@ export interface DataAwsGlueScriptDagNodeArgs {
   readonly value: string;
 }
 
-export function dataAwsGlueScriptDagNodeArgsToTerraform(struct?: DataAwsGlueScriptDagNodeArgs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsGlueScriptDagNodeArgsToTerraform(struct?: DataAwsGlueScriptDagNodeArgs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -96,11 +96,11 @@ export interface DataAwsGlueScriptDagNode {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/glue_script#args DataAwsGlueScript#args}
   */
-  readonly args: DataAwsGlueScriptDagNodeArgs[];
+  readonly args: DataAwsGlueScriptDagNodeArgs[] | cdktf.IResolvable;
 }
 
-export function dataAwsGlueScriptDagNodeToTerraform(struct?: DataAwsGlueScriptDagNode): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsGlueScriptDagNodeToTerraform(struct?: DataAwsGlueScriptDagNode | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -186,12 +186,12 @@ export class DataAwsGlueScript extends cdktf.TerraformDataSource {
   }
 
   // dag_edge - computed: false, optional: false, required: true
-  private _dagEdge?: DataAwsGlueScriptDagEdge[]; 
+  private _dagEdge?: DataAwsGlueScriptDagEdge[] | cdktf.IResolvable; 
   public get dagEdge() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dag_edge') as any;
+    return this.interpolationForAttribute('dag_edge');
   }
-  public set dagEdge(value: DataAwsGlueScriptDagEdge[]) {
+  public set dagEdge(value: DataAwsGlueScriptDagEdge[] | cdktf.IResolvable) {
     this._dagEdge = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -200,12 +200,12 @@ export class DataAwsGlueScript extends cdktf.TerraformDataSource {
   }
 
   // dag_node - computed: false, optional: false, required: true
-  private _dagNode?: DataAwsGlueScriptDagNode[]; 
+  private _dagNode?: DataAwsGlueScriptDagNode[] | cdktf.IResolvable; 
   public get dagNode() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dag_node') as any;
+    return this.interpolationForAttribute('dag_node');
   }
-  public set dagNode(value: DataAwsGlueScriptDagNode[]) {
+  public set dagNode(value: DataAwsGlueScriptDagNode[] | cdktf.IResolvable) {
     this._dagNode = value;
   }
   // Temporarily expose input value. Use with caution.

@@ -38,11 +38,11 @@ export interface NeptuneEventSubscriptionConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_event_subscription#tags NeptuneEventSubscription#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_event_subscription#tags_all NeptuneEventSubscription#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   * 
@@ -65,8 +65,8 @@ export interface NeptuneEventSubscriptionTimeouts {
   readonly update?: string;
 }
 
-export function neptuneEventSubscriptionTimeoutsToTerraform(struct?: NeptuneEventSubscriptionTimeoutsOutputReference | NeptuneEventSubscriptionTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function neptuneEventSubscriptionTimeoutsToTerraform(struct?: NeptuneEventSubscriptionTimeoutsOutputReference | NeptuneEventSubscriptionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -85,7 +85,7 @@ export class NeptuneEventSubscriptionTimeoutsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -232,7 +232,7 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -248,7 +248,7 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
   // event_categories - computed: false, optional: true, required: false
   private _eventCategories?: string[]; 
   public get eventCategories() {
-    return this.getListAttribute('event_categories');
+    return cdktf.Fn.tolist(this.getListAttribute('event_categories'));
   }
   public set eventCategories(value: string[]) {
     this._eventCategories = value;
@@ -314,7 +314,7 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
   // source_ids - computed: false, optional: true, required: false
   private _sourceIds?: string[]; 
   public get sourceIds() {
-    return this.getListAttribute('source_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('source_ids'));
   }
   public set sourceIds(value: string[]) {
     this._sourceIds = value;
@@ -344,12 +344,11 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -361,12 +360,11 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -378,7 +376,7 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new NeptuneEventSubscriptionTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new NeptuneEventSubscriptionTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -406,8 +404,8 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
       sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
       source_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._sourceIds),
       source_type: cdktf.stringToTerraform(this._sourceType),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: neptuneEventSubscriptionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -54,11 +54,11 @@ export interface CodebuildProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project#tags CodebuildProject#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project#tags_all CodebuildProject#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * artifacts block
   * 
@@ -88,7 +88,7 @@ export interface CodebuildProjectConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project#file_system_locations CodebuildProject#file_system_locations}
   */
-  readonly fileSystemLocations?: CodebuildProjectFileSystemLocations[];
+  readonly fileSystemLocations?: CodebuildProjectFileSystemLocations[] | cdktf.IResolvable;
   /**
   * logs_config block
   * 
@@ -100,19 +100,19 @@ export interface CodebuildProjectConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project#secondary_artifacts CodebuildProject#secondary_artifacts}
   */
-  readonly secondaryArtifacts?: CodebuildProjectSecondaryArtifacts[];
+  readonly secondaryArtifacts?: CodebuildProjectSecondaryArtifacts[] | cdktf.IResolvable;
   /**
   * secondary_source_version block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project#secondary_source_version CodebuildProject#secondary_source_version}
   */
-  readonly secondarySourceVersion?: CodebuildProjectSecondarySourceVersion[];
+  readonly secondarySourceVersion?: CodebuildProjectSecondarySourceVersion[] | cdktf.IResolvable;
   /**
   * secondary_sources block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project#secondary_sources CodebuildProject#secondary_sources}
   */
-  readonly secondarySources?: CodebuildProjectSecondarySources[];
+  readonly secondarySources?: CodebuildProjectSecondarySources[] | cdktf.IResolvable;
   /**
   * source block
   * 
@@ -170,7 +170,7 @@ export interface CodebuildProjectArtifacts {
 }
 
 export function codebuildProjectArtifactsToTerraform(struct?: CodebuildProjectArtifactsOutputReference | CodebuildProjectArtifacts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -196,7 +196,7 @@ export class CodebuildProjectArtifactsOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -310,7 +310,7 @@ export class CodebuildProjectArtifactsOutputReference extends cdktf.ComplexObjec
   // encryption_disabled - computed: false, optional: true, required: false
   private _encryptionDisabled?: boolean | cdktf.IResolvable; 
   public get encryptionDisabled() {
-    return this.getBooleanAttribute('encryption_disabled') as any;
+    return this.getBooleanAttribute('encryption_disabled');
   }
   public set encryptionDisabled(value: boolean | cdktf.IResolvable) {
     this._encryptionDisabled = value;
@@ -374,7 +374,7 @@ export class CodebuildProjectArtifactsOutputReference extends cdktf.ComplexObjec
   // override_artifact_name - computed: false, optional: true, required: false
   private _overrideArtifactName?: boolean | cdktf.IResolvable; 
   public get overrideArtifactName() {
-    return this.getBooleanAttribute('override_artifact_name') as any;
+    return this.getBooleanAttribute('override_artifact_name');
   }
   public set overrideArtifactName(value: boolean | cdktf.IResolvable) {
     this._overrideArtifactName = value;
@@ -444,7 +444,7 @@ export interface CodebuildProjectBuildBatchConfigRestrictions {
 }
 
 export function codebuildProjectBuildBatchConfigRestrictionsToTerraform(struct?: CodebuildProjectBuildBatchConfigRestrictionsOutputReference | CodebuildProjectBuildBatchConfigRestrictions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -462,7 +462,7 @@ export class CodebuildProjectBuildBatchConfigRestrictionsOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -547,7 +547,7 @@ export interface CodebuildProjectBuildBatchConfig {
 }
 
 export function codebuildProjectBuildBatchConfigToTerraform(struct?: CodebuildProjectBuildBatchConfigOutputReference | CodebuildProjectBuildBatchConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -567,7 +567,7 @@ export class CodebuildProjectBuildBatchConfigOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -613,7 +613,7 @@ export class CodebuildProjectBuildBatchConfigOutputReference extends cdktf.Compl
   // combine_artifacts - computed: false, optional: true, required: false
   private _combineArtifacts?: boolean | cdktf.IResolvable; 
   public get combineArtifacts() {
-    return this.getBooleanAttribute('combine_artifacts') as any;
+    return this.getBooleanAttribute('combine_artifacts');
   }
   public set combineArtifacts(value: boolean | cdktf.IResolvable) {
     this._combineArtifacts = value;
@@ -656,7 +656,7 @@ export class CodebuildProjectBuildBatchConfigOutputReference extends cdktf.Compl
   }
 
   // restrictions - computed: false, optional: true, required: false
-  private _restrictions = new CodebuildProjectBuildBatchConfigRestrictionsOutputReference(this as any, "restrictions", true);
+  private _restrictions = new CodebuildProjectBuildBatchConfigRestrictionsOutputReference(this, "restrictions", true);
   public get restrictions() {
     return this._restrictions;
   }
@@ -687,7 +687,7 @@ export interface CodebuildProjectCache {
 }
 
 export function codebuildProjectCacheToTerraform(struct?: CodebuildProjectCacheOutputReference | CodebuildProjectCache): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -706,7 +706,7 @@ export class CodebuildProjectCacheOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -806,8 +806,8 @@ export interface CodebuildProjectEnvironmentEnvironmentVariable {
   readonly value: string;
 }
 
-export function codebuildProjectEnvironmentEnvironmentVariableToTerraform(struct?: CodebuildProjectEnvironmentEnvironmentVariable): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function codebuildProjectEnvironmentEnvironmentVariableToTerraform(struct?: CodebuildProjectEnvironmentEnvironmentVariable | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -830,7 +830,7 @@ export interface CodebuildProjectEnvironmentRegistryCredential {
 }
 
 export function codebuildProjectEnvironmentRegistryCredentialToTerraform(struct?: CodebuildProjectEnvironmentRegistryCredentialOutputReference | CodebuildProjectEnvironmentRegistryCredential): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -848,7 +848,7 @@ export class CodebuildProjectEnvironmentRegistryCredentialOutputReference extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -935,7 +935,7 @@ export interface CodebuildProjectEnvironment {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project#environment_variable CodebuildProject#environment_variable}
   */
-  readonly environmentVariable?: CodebuildProjectEnvironmentEnvironmentVariable[];
+  readonly environmentVariable?: CodebuildProjectEnvironmentEnvironmentVariable[] | cdktf.IResolvable;
   /**
   * registry_credential block
   * 
@@ -945,7 +945,7 @@ export interface CodebuildProjectEnvironment {
 }
 
 export function codebuildProjectEnvironmentToTerraform(struct?: CodebuildProjectEnvironmentOutputReference | CodebuildProjectEnvironment): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -969,7 +969,7 @@ export class CodebuildProjectEnvironmentOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1097,7 +1097,7 @@ export class CodebuildProjectEnvironmentOutputReference extends cdktf.ComplexObj
   // privileged_mode - computed: false, optional: true, required: false
   private _privilegedMode?: boolean | cdktf.IResolvable; 
   public get privilegedMode() {
-    return this.getBooleanAttribute('privileged_mode') as any;
+    return this.getBooleanAttribute('privileged_mode');
   }
   public set privilegedMode(value: boolean | cdktf.IResolvable) {
     this._privilegedMode = value;
@@ -1124,12 +1124,12 @@ export class CodebuildProjectEnvironmentOutputReference extends cdktf.ComplexObj
   }
 
   // environment_variable - computed: false, optional: true, required: false
-  private _environmentVariable?: CodebuildProjectEnvironmentEnvironmentVariable[]; 
+  private _environmentVariable?: CodebuildProjectEnvironmentEnvironmentVariable[] | cdktf.IResolvable; 
   public get environmentVariable() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('environment_variable') as any;
+    return this.interpolationForAttribute('environment_variable');
   }
-  public set environmentVariable(value: CodebuildProjectEnvironmentEnvironmentVariable[]) {
+  public set environmentVariable(value: CodebuildProjectEnvironmentEnvironmentVariable[] | cdktf.IResolvable) {
     this._environmentVariable = value;
   }
   public resetEnvironmentVariable() {
@@ -1141,7 +1141,7 @@ export class CodebuildProjectEnvironmentOutputReference extends cdktf.ComplexObj
   }
 
   // registry_credential - computed: false, optional: true, required: false
-  private _registryCredential = new CodebuildProjectEnvironmentRegistryCredentialOutputReference(this as any, "registry_credential", true);
+  private _registryCredential = new CodebuildProjectEnvironmentRegistryCredentialOutputReference(this, "registry_credential", true);
   public get registryCredential() {
     return this._registryCredential;
   }
@@ -1179,8 +1179,8 @@ export interface CodebuildProjectFileSystemLocations {
   readonly type?: string;
 }
 
-export function codebuildProjectFileSystemLocationsToTerraform(struct?: CodebuildProjectFileSystemLocations): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function codebuildProjectFileSystemLocationsToTerraform(struct?: CodebuildProjectFileSystemLocations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1209,7 +1209,7 @@ export interface CodebuildProjectLogsConfigCloudwatchLogs {
 }
 
 export function codebuildProjectLogsConfigCloudwatchLogsToTerraform(struct?: CodebuildProjectLogsConfigCloudwatchLogsOutputReference | CodebuildProjectLogsConfigCloudwatchLogs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1228,7 +1228,7 @@ export class CodebuildProjectLogsConfigCloudwatchLogsOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1333,7 +1333,7 @@ export interface CodebuildProjectLogsConfigS3Logs {
 }
 
 export function codebuildProjectLogsConfigS3LogsToTerraform(struct?: CodebuildProjectLogsConfigS3LogsOutputReference | CodebuildProjectLogsConfigS3Logs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1353,7 +1353,7 @@ export class CodebuildProjectLogsConfigS3LogsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1415,7 +1415,7 @@ export class CodebuildProjectLogsConfigS3LogsOutputReference extends cdktf.Compl
   // encryption_disabled - computed: false, optional: true, required: false
   private _encryptionDisabled?: boolean | cdktf.IResolvable; 
   public get encryptionDisabled() {
-    return this.getBooleanAttribute('encryption_disabled') as any;
+    return this.getBooleanAttribute('encryption_disabled');
   }
   public set encryptionDisabled(value: boolean | cdktf.IResolvable) {
     this._encryptionDisabled = value;
@@ -1476,7 +1476,7 @@ export interface CodebuildProjectLogsConfig {
 }
 
 export function codebuildProjectLogsConfigToTerraform(struct?: CodebuildProjectLogsConfigOutputReference | CodebuildProjectLogsConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1494,7 +1494,7 @@ export class CodebuildProjectLogsConfigOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1526,7 +1526,7 @@ export class CodebuildProjectLogsConfigOutputReference extends cdktf.ComplexObje
   }
 
   // cloudwatch_logs - computed: false, optional: true, required: false
-  private _cloudwatchLogs = new CodebuildProjectLogsConfigCloudwatchLogsOutputReference(this as any, "cloudwatch_logs", true);
+  private _cloudwatchLogs = new CodebuildProjectLogsConfigCloudwatchLogsOutputReference(this, "cloudwatch_logs", true);
   public get cloudwatchLogs() {
     return this._cloudwatchLogs;
   }
@@ -1542,7 +1542,7 @@ export class CodebuildProjectLogsConfigOutputReference extends cdktf.ComplexObje
   }
 
   // s3_logs - computed: false, optional: true, required: false
-  private _s3Logs = new CodebuildProjectLogsConfigS3LogsOutputReference(this as any, "s3_logs", true);
+  private _s3Logs = new CodebuildProjectLogsConfigS3LogsOutputReference(this, "s3_logs", true);
   public get s3Logs() {
     return this._s3Logs;
   }
@@ -1600,8 +1600,8 @@ export interface CodebuildProjectSecondaryArtifacts {
   readonly type: string;
 }
 
-export function codebuildProjectSecondaryArtifactsToTerraform(struct?: CodebuildProjectSecondaryArtifacts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function codebuildProjectSecondaryArtifactsToTerraform(struct?: CodebuildProjectSecondaryArtifacts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1630,8 +1630,8 @@ export interface CodebuildProjectSecondarySourceVersion {
   readonly sourceVersion: string;
 }
 
-export function codebuildProjectSecondarySourceVersionToTerraform(struct?: CodebuildProjectSecondarySourceVersion): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function codebuildProjectSecondarySourceVersionToTerraform(struct?: CodebuildProjectSecondarySourceVersion | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1653,7 +1653,7 @@ export interface CodebuildProjectSecondarySourcesAuth {
 }
 
 export function codebuildProjectSecondarySourcesAuthToTerraform(struct?: CodebuildProjectSecondarySourcesAuthOutputReference | CodebuildProjectSecondarySourcesAuth): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1671,7 +1671,7 @@ export class CodebuildProjectSecondarySourcesAuthOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1743,7 +1743,7 @@ export interface CodebuildProjectSecondarySourcesBuildStatusConfig {
 }
 
 export function codebuildProjectSecondarySourcesBuildStatusConfigToTerraform(struct?: CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference | CodebuildProjectSecondarySourcesBuildStatusConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1761,7 +1761,7 @@ export class CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference ex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1832,7 +1832,7 @@ export interface CodebuildProjectSecondarySourcesGitSubmodulesConfig {
 }
 
 export function codebuildProjectSecondarySourcesGitSubmodulesConfigToTerraform(struct?: CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference | CodebuildProjectSecondarySourcesGitSubmodulesConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1849,7 +1849,7 @@ export class CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1877,7 +1877,7 @@ export class CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference 
   // fetch_submodules - computed: false, optional: false, required: true
   private _fetchSubmodules?: boolean | cdktf.IResolvable; 
   public get fetchSubmodules() {
-    return this.getBooleanAttribute('fetch_submodules') as any;
+    return this.getBooleanAttribute('fetch_submodules');
   }
   public set fetchSubmodules(value: boolean | cdktf.IResolvable) {
     this._fetchSubmodules = value;
@@ -1936,8 +1936,8 @@ export interface CodebuildProjectSecondarySources {
   readonly gitSubmodulesConfig?: CodebuildProjectSecondarySourcesGitSubmodulesConfig;
 }
 
-export function codebuildProjectSecondarySourcesToTerraform(struct?: CodebuildProjectSecondarySources): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function codebuildProjectSecondarySourcesToTerraform(struct?: CodebuildProjectSecondarySources | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1967,7 +1967,7 @@ export interface CodebuildProjectSourceAuth {
 }
 
 export function codebuildProjectSourceAuthToTerraform(struct?: CodebuildProjectSourceAuthOutputReference | CodebuildProjectSourceAuth): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1985,7 +1985,7 @@ export class CodebuildProjectSourceAuthOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2057,7 +2057,7 @@ export interface CodebuildProjectSourceBuildStatusConfig {
 }
 
 export function codebuildProjectSourceBuildStatusConfigToTerraform(struct?: CodebuildProjectSourceBuildStatusConfigOutputReference | CodebuildProjectSourceBuildStatusConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2075,7 +2075,7 @@ export class CodebuildProjectSourceBuildStatusConfigOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2146,7 +2146,7 @@ export interface CodebuildProjectSourceGitSubmodulesConfig {
 }
 
 export function codebuildProjectSourceGitSubmodulesConfigToTerraform(struct?: CodebuildProjectSourceGitSubmodulesConfigOutputReference | CodebuildProjectSourceGitSubmodulesConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2163,7 +2163,7 @@ export class CodebuildProjectSourceGitSubmodulesConfigOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2191,7 +2191,7 @@ export class CodebuildProjectSourceGitSubmodulesConfigOutputReference extends cd
   // fetch_submodules - computed: false, optional: false, required: true
   private _fetchSubmodules?: boolean | cdktf.IResolvable; 
   public get fetchSubmodules() {
-    return this.getBooleanAttribute('fetch_submodules') as any;
+    return this.getBooleanAttribute('fetch_submodules');
   }
   public set fetchSubmodules(value: boolean | cdktf.IResolvable) {
     this._fetchSubmodules = value;
@@ -2247,7 +2247,7 @@ export interface CodebuildProjectSource {
 }
 
 export function codebuildProjectSourceToTerraform(struct?: CodebuildProjectSourceOutputReference | CodebuildProjectSource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2272,7 +2272,7 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2380,7 +2380,7 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
   // insecure_ssl - computed: false, optional: true, required: false
   private _insecureSsl?: boolean | cdktf.IResolvable; 
   public get insecureSsl() {
-    return this.getBooleanAttribute('insecure_ssl') as any;
+    return this.getBooleanAttribute('insecure_ssl');
   }
   public set insecureSsl(value: boolean | cdktf.IResolvable) {
     this._insecureSsl = value;
@@ -2412,7 +2412,7 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
   // report_build_status - computed: false, optional: true, required: false
   private _reportBuildStatus?: boolean | cdktf.IResolvable; 
   public get reportBuildStatus() {
-    return this.getBooleanAttribute('report_build_status') as any;
+    return this.getBooleanAttribute('report_build_status');
   }
   public set reportBuildStatus(value: boolean | cdktf.IResolvable) {
     this._reportBuildStatus = value;
@@ -2439,7 +2439,7 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
   }
 
   // auth - computed: false, optional: true, required: false
-  private _auth = new CodebuildProjectSourceAuthOutputReference(this as any, "auth", true);
+  private _auth = new CodebuildProjectSourceAuthOutputReference(this, "auth", true);
   public get auth() {
     return this._auth;
   }
@@ -2455,7 +2455,7 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
   }
 
   // build_status_config - computed: false, optional: true, required: false
-  private _buildStatusConfig = new CodebuildProjectSourceBuildStatusConfigOutputReference(this as any, "build_status_config", true);
+  private _buildStatusConfig = new CodebuildProjectSourceBuildStatusConfigOutputReference(this, "build_status_config", true);
   public get buildStatusConfig() {
     return this._buildStatusConfig;
   }
@@ -2471,7 +2471,7 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
   }
 
   // git_submodules_config - computed: false, optional: true, required: false
-  private _gitSubmodulesConfig = new CodebuildProjectSourceGitSubmodulesConfigOutputReference(this as any, "git_submodules_config", true);
+  private _gitSubmodulesConfig = new CodebuildProjectSourceGitSubmodulesConfigOutputReference(this, "git_submodules_config", true);
   public get gitSubmodulesConfig() {
     return this._gitSubmodulesConfig;
   }
@@ -2502,7 +2502,7 @@ export interface CodebuildProjectVpcConfig {
 }
 
 export function codebuildProjectVpcConfigToTerraform(struct?: CodebuildProjectVpcConfigOutputReference | CodebuildProjectVpcConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2521,7 +2521,7 @@ export class CodebuildProjectVpcConfigOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2561,7 +2561,7 @@ export class CodebuildProjectVpcConfigOutputReference extends cdktf.ComplexObjec
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -2574,7 +2574,7 @@ export class CodebuildProjectVpcConfigOutputReference extends cdktf.ComplexObjec
   // subnets - computed: false, optional: false, required: true
   private _subnets?: string[]; 
   public get subnets() {
-    return this.getListAttribute('subnets');
+    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -2668,7 +2668,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   // badge_enabled - computed: false, optional: true, required: false
   private _badgeEnabled?: boolean | cdktf.IResolvable; 
   public get badgeEnabled() {
-    return this.getBooleanAttribute('badge_enabled') as any;
+    return this.getBooleanAttribute('badge_enabled');
   }
   public set badgeEnabled(value: boolean | cdktf.IResolvable) {
     this._badgeEnabled = value;
@@ -2851,12 +2851,11 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -2868,12 +2867,11 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -2885,7 +2883,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // artifacts - computed: false, optional: false, required: true
-  private _artifacts = new CodebuildProjectArtifactsOutputReference(this as any, "artifacts", true);
+  private _artifacts = new CodebuildProjectArtifactsOutputReference(this, "artifacts", true);
   public get artifacts() {
     return this._artifacts;
   }
@@ -2898,7 +2896,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // build_batch_config - computed: false, optional: true, required: false
-  private _buildBatchConfig = new CodebuildProjectBuildBatchConfigOutputReference(this as any, "build_batch_config", true);
+  private _buildBatchConfig = new CodebuildProjectBuildBatchConfigOutputReference(this, "build_batch_config", true);
   public get buildBatchConfig() {
     return this._buildBatchConfig;
   }
@@ -2914,7 +2912,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // cache - computed: false, optional: true, required: false
-  private _cache = new CodebuildProjectCacheOutputReference(this as any, "cache", true);
+  private _cache = new CodebuildProjectCacheOutputReference(this, "cache", true);
   public get cache() {
     return this._cache;
   }
@@ -2930,7 +2928,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // environment - computed: false, optional: false, required: true
-  private _environment = new CodebuildProjectEnvironmentOutputReference(this as any, "environment", true);
+  private _environment = new CodebuildProjectEnvironmentOutputReference(this, "environment", true);
   public get environment() {
     return this._environment;
   }
@@ -2943,12 +2941,12 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // file_system_locations - computed: false, optional: true, required: false
-  private _fileSystemLocations?: CodebuildProjectFileSystemLocations[]; 
+  private _fileSystemLocations?: CodebuildProjectFileSystemLocations[] | cdktf.IResolvable; 
   public get fileSystemLocations() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('file_system_locations') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('file_system_locations')));
   }
-  public set fileSystemLocations(value: CodebuildProjectFileSystemLocations[]) {
+  public set fileSystemLocations(value: CodebuildProjectFileSystemLocations[] | cdktf.IResolvable) {
     this._fileSystemLocations = value;
   }
   public resetFileSystemLocations() {
@@ -2960,7 +2958,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // logs_config - computed: false, optional: true, required: false
-  private _logsConfig = new CodebuildProjectLogsConfigOutputReference(this as any, "logs_config", true);
+  private _logsConfig = new CodebuildProjectLogsConfigOutputReference(this, "logs_config", true);
   public get logsConfig() {
     return this._logsConfig;
   }
@@ -2976,12 +2974,12 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // secondary_artifacts - computed: false, optional: true, required: false
-  private _secondaryArtifacts?: CodebuildProjectSecondaryArtifacts[]; 
+  private _secondaryArtifacts?: CodebuildProjectSecondaryArtifacts[] | cdktf.IResolvable; 
   public get secondaryArtifacts() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('secondary_artifacts') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('secondary_artifacts')));
   }
-  public set secondaryArtifacts(value: CodebuildProjectSecondaryArtifacts[]) {
+  public set secondaryArtifacts(value: CodebuildProjectSecondaryArtifacts[] | cdktf.IResolvable) {
     this._secondaryArtifacts = value;
   }
   public resetSecondaryArtifacts() {
@@ -2993,12 +2991,12 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // secondary_source_version - computed: false, optional: true, required: false
-  private _secondarySourceVersion?: CodebuildProjectSecondarySourceVersion[]; 
+  private _secondarySourceVersion?: CodebuildProjectSecondarySourceVersion[] | cdktf.IResolvable; 
   public get secondarySourceVersion() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('secondary_source_version') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('secondary_source_version')));
   }
-  public set secondarySourceVersion(value: CodebuildProjectSecondarySourceVersion[]) {
+  public set secondarySourceVersion(value: CodebuildProjectSecondarySourceVersion[] | cdktf.IResolvable) {
     this._secondarySourceVersion = value;
   }
   public resetSecondarySourceVersion() {
@@ -3010,12 +3008,12 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // secondary_sources - computed: false, optional: true, required: false
-  private _secondarySources?: CodebuildProjectSecondarySources[]; 
+  private _secondarySources?: CodebuildProjectSecondarySources[] | cdktf.IResolvable; 
   public get secondarySources() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('secondary_sources') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('secondary_sources')));
   }
-  public set secondarySources(value: CodebuildProjectSecondarySources[]) {
+  public set secondarySources(value: CodebuildProjectSecondarySources[] | cdktf.IResolvable) {
     this._secondarySources = value;
   }
   public resetSecondarySources() {
@@ -3027,7 +3025,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // source - computed: false, optional: false, required: true
-  private _source = new CodebuildProjectSourceOutputReference(this as any, "source", true);
+  private _source = new CodebuildProjectSourceOutputReference(this, "source", true);
   public get source() {
     return this._source;
   }
@@ -3040,7 +3038,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // vpc_config - computed: false, optional: true, required: false
-  private _vpcConfig = new CodebuildProjectVpcConfigOutputReference(this as any, "vpc_config", true);
+  private _vpcConfig = new CodebuildProjectVpcConfigOutputReference(this, "vpc_config", true);
   public get vpcConfig() {
     return this._vpcConfig;
   }
@@ -3072,8 +3070,8 @@ export class CodebuildProject extends cdktf.TerraformResource {
       resource_access_role: cdktf.stringToTerraform(this._resourceAccessRole),
       service_role: cdktf.stringToTerraform(this._serviceRole),
       source_version: cdktf.stringToTerraform(this._sourceVersion),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       artifacts: codebuildProjectArtifactsToTerraform(this._artifacts.internalValue),
       build_batch_config: codebuildProjectBuildBatchConfigToTerraform(this._buildBatchConfig.internalValue),
       cache: codebuildProjectCacheToTerraform(this._cache.internalValue),

@@ -46,7 +46,7 @@ export class DataAwsSignerSigningJobSignedObject extends cdktf.ComplexComputedLi
   // s3 - computed: true, optional: false, required: false
   public get s3() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('s3') as any;
+    return this.interpolationForAttribute('s3');
   }
 }
 export class DataAwsSignerSigningJobSourceS3 extends cdktf.ComplexComputedList {
@@ -71,7 +71,7 @@ export class DataAwsSignerSigningJobSource extends cdktf.ComplexComputedList {
   // s3 - computed: true, optional: false, required: false
   public get s3() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('s3') as any;
+    return this.interpolationForAttribute('s3');
   }
 }
 
@@ -179,7 +179,7 @@ export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
 
   // revocation_record - computed: true, optional: false, required: false
   public revocationRecord(index: string) {
-    return new DataAwsSignerSigningJobRevocationRecord(this, 'revocation_record', index);
+    return new DataAwsSignerSigningJobRevocationRecord(this, 'revocation_record', index, false);
   }
 
   // signature_expires_at - computed: true, optional: false, required: false
@@ -189,12 +189,12 @@ export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
 
   // signed_object - computed: true, optional: false, required: false
   public signedObject(index: string) {
-    return new DataAwsSignerSigningJobSignedObject(this, 'signed_object', index);
+    return new DataAwsSignerSigningJobSignedObject(this, 'signed_object', index, false);
   }
 
   // source - computed: true, optional: false, required: false
   public source(index: string) {
-    return new DataAwsSignerSigningJobSource(this, 'source', index);
+    return new DataAwsSignerSigningJobSource(this, 'source', index, false);
   }
 
   // status - computed: true, optional: false, required: false

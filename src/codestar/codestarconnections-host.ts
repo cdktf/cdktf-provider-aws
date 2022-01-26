@@ -46,7 +46,7 @@ export interface CodestarconnectionsHostVpcConfiguration {
 }
 
 export function codestarconnectionsHostVpcConfigurationToTerraform(struct?: CodestarconnectionsHostVpcConfigurationOutputReference | CodestarconnectionsHostVpcConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -66,7 +66,7 @@ export class CodestarconnectionsHostVpcConfigurationOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -112,7 +112,7 @@ export class CodestarconnectionsHostVpcConfigurationOutputReference extends cdkt
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -125,7 +125,7 @@ export class CodestarconnectionsHostVpcConfigurationOutputReference extends cdkt
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -262,7 +262,7 @@ export class CodestarconnectionsHost extends cdktf.TerraformResource {
   }
 
   // vpc_configuration - computed: false, optional: true, required: false
-  private _vpcConfiguration = new CodestarconnectionsHostVpcConfigurationOutputReference(this as any, "vpc_configuration", true);
+  private _vpcConfiguration = new CodestarconnectionsHostVpcConfigurationOutputReference(this, "vpc_configuration", true);
   public get vpcConfiguration() {
     return this._vpcConfiguration;
   }

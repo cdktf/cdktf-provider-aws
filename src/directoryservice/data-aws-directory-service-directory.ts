@@ -14,23 +14,23 @@ export interface DataAwsDirectoryServiceDirectoryConfig extends cdktf.TerraformM
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/directory_service_directory#tags DataAwsDirectoryServiceDirectory#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsDirectoryServiceDirectoryConnectSettings extends cdktf.ComplexComputedList {
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
+    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
   }
 
   // connect_ips - computed: true, optional: false, required: false
   public get connectIps() {
-    return this.getListAttribute('connect_ips');
+    return cdktf.Fn.tolist(this.getListAttribute('connect_ips'));
   }
 
   // customer_dns_ips - computed: true, optional: false, required: false
   public get customerDnsIps() {
-    return this.getListAttribute('customer_dns_ips');
+    return cdktf.Fn.tolist(this.getListAttribute('customer_dns_ips'));
   }
 
   // customer_username - computed: true, optional: false, required: false
@@ -40,7 +40,7 @@ export class DataAwsDirectoryServiceDirectoryConnectSettings extends cdktf.Compl
 
   // subnet_ids - computed: true, optional: false, required: false
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
 
   // vpc_id - computed: true, optional: false, required: false
@@ -52,12 +52,12 @@ export class DataAwsDirectoryServiceDirectoryVpcSettings extends cdktf.ComplexCo
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
+    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
   }
 
   // subnet_ids - computed: true, optional: false, required: false
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
 
   // vpc_id - computed: true, optional: false, required: false
@@ -118,7 +118,7 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
 
   // connect_settings - computed: true, optional: false, required: false
   public connectSettings(index: string) {
-    return new DataAwsDirectoryServiceDirectoryConnectSettings(this, 'connect_settings', index);
+    return new DataAwsDirectoryServiceDirectoryConnectSettings(this, 'connect_settings', index, false);
   }
 
   // description - computed: true, optional: false, required: false
@@ -141,7 +141,7 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
 
   // dns_ip_addresses - computed: true, optional: false, required: false
   public get dnsIpAddresses() {
-    return this.getListAttribute('dns_ip_addresses');
+    return cdktf.Fn.tolist(this.getListAttribute('dns_ip_addresses'));
   }
 
   // edition - computed: true, optional: false, required: false
@@ -151,7 +151,7 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
 
   // enable_sso - computed: true, optional: false, required: false
   public get enableSso() {
-    return this.getBooleanAttribute('enable_sso') as any;
+    return this.getBooleanAttribute('enable_sso');
   }
 
   // id - computed: true, optional: true, required: false
@@ -180,12 +180,11 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -203,7 +202,7 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
 
   // vpc_settings - computed: true, optional: false, required: false
   public vpcSettings(index: string) {
-    return new DataAwsDirectoryServiceDirectoryVpcSettings(this, 'vpc_settings', index);
+    return new DataAwsDirectoryServiceDirectoryVpcSettings(this, 'vpc_settings', index, false);
   }
 
   // =========
@@ -213,7 +212,7 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       directory_id: cdktf.stringToTerraform(this._directoryId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

@@ -55,8 +55,8 @@ export interface LexBotAliasConversationLogsLogSettings {
   readonly resourceArn: string;
 }
 
-export function lexBotAliasConversationLogsLogSettingsToTerraform(struct?: LexBotAliasConversationLogsLogSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lexBotAliasConversationLogsLogSettingsToTerraform(struct?: LexBotAliasConversationLogsLogSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -78,11 +78,11 @@ export interface LexBotAliasConversationLogs {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_bot_alias#log_settings LexBotAlias#log_settings}
   */
-  readonly logSettings?: LexBotAliasConversationLogsLogSettings[];
+  readonly logSettings?: LexBotAliasConversationLogsLogSettings[] | cdktf.IResolvable;
 }
 
 export function lexBotAliasConversationLogsToTerraform(struct?: LexBotAliasConversationLogsOutputReference | LexBotAliasConversationLogs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -100,7 +100,7 @@ export class LexBotAliasConversationLogsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -145,12 +145,12 @@ export class LexBotAliasConversationLogsOutputReference extends cdktf.ComplexObj
   }
 
   // log_settings - computed: false, optional: true, required: false
-  private _logSettings?: LexBotAliasConversationLogsLogSettings[]; 
+  private _logSettings?: LexBotAliasConversationLogsLogSettings[] | cdktf.IResolvable; 
   public get logSettings() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('log_settings') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('log_settings')));
   }
-  public set logSettings(value: LexBotAliasConversationLogsLogSettings[]) {
+  public set logSettings(value: LexBotAliasConversationLogsLogSettings[] | cdktf.IResolvable) {
     this._logSettings = value;
   }
   public resetLogSettings() {
@@ -176,8 +176,8 @@ export interface LexBotAliasTimeouts {
   readonly update?: string;
 }
 
-export function lexBotAliasTimeoutsToTerraform(struct?: LexBotAliasTimeoutsOutputReference | LexBotAliasTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lexBotAliasTimeoutsToTerraform(struct?: LexBotAliasTimeoutsOutputReference | LexBotAliasTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -196,7 +196,7 @@ export class LexBotAliasTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -407,7 +407,7 @@ export class LexBotAlias extends cdktf.TerraformResource {
   }
 
   // conversation_logs - computed: false, optional: true, required: false
-  private _conversationLogs = new LexBotAliasConversationLogsOutputReference(this as any, "conversation_logs", true);
+  private _conversationLogs = new LexBotAliasConversationLogsOutputReference(this, "conversation_logs", true);
   public get conversationLogs() {
     return this._conversationLogs;
   }
@@ -423,7 +423,7 @@ export class LexBotAlias extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new LexBotAliasTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new LexBotAliasTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

@@ -26,11 +26,11 @@ export interface EbsSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot#tags EbsSnapshot#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot#tags_all EbsSnapshot#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_snapshot#temporary_restore_days EbsSnapshot#temporary_restore_days}
   */
@@ -57,8 +57,8 @@ export interface EbsSnapshotTimeouts {
   readonly delete?: string;
 }
 
-export function ebsSnapshotTimeoutsToTerraform(struct?: EbsSnapshotTimeoutsOutputReference | EbsSnapshotTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ebsSnapshotTimeoutsToTerraform(struct?: EbsSnapshotTimeoutsOutputReference | EbsSnapshotTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -76,7 +76,7 @@ export class EbsSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -215,7 +215,7 @@ export class EbsSnapshot extends cdktf.TerraformResource {
 
   // encrypted - computed: true, optional: false, required: false
   public get encrypted() {
-    return this.getBooleanAttribute('encrypted') as any;
+    return this.getBooleanAttribute('encrypted');
   }
 
   // id - computed: true, optional: true, required: false
@@ -257,7 +257,7 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   // permanent_restore - computed: false, optional: true, required: false
   private _permanentRestore?: boolean | cdktf.IResolvable; 
   public get permanentRestore() {
-    return this.getBooleanAttribute('permanent_restore') as any;
+    return this.getBooleanAttribute('permanent_restore');
   }
   public set permanentRestore(value: boolean | cdktf.IResolvable) {
     this._permanentRestore = value;
@@ -287,12 +287,11 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -304,12 +303,11 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -355,7 +353,7 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new EbsSnapshotTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new EbsSnapshotTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -380,8 +378,8 @@ export class EbsSnapshot extends cdktf.TerraformResource {
       outpost_arn: cdktf.stringToTerraform(this._outpostArn),
       permanent_restore: cdktf.booleanToTerraform(this._permanentRestore),
       storage_tier: cdktf.stringToTerraform(this._storageTier),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       temporary_restore_days: cdktf.numberToTerraform(this._temporaryRestoreDays),
       volume_id: cdktf.stringToTerraform(this._volumeId),
       timeouts: ebsSnapshotTimeoutsToTerraform(this._timeouts.internalValue),

@@ -34,7 +34,7 @@ export interface SesConfigurationSetDeliveryOptions {
 }
 
 export function sesConfigurationSetDeliveryOptionsToTerraform(struct?: SesConfigurationSetDeliveryOptionsOutputReference | SesConfigurationSetDeliveryOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -51,7 +51,7 @@ export class SesConfigurationSetDeliveryOptionsOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -166,7 +166,7 @@ export class SesConfigurationSet extends cdktf.TerraformResource {
   // reputation_metrics_enabled - computed: false, optional: true, required: false
   private _reputationMetricsEnabled?: boolean | cdktf.IResolvable; 
   public get reputationMetricsEnabled() {
-    return this.getBooleanAttribute('reputation_metrics_enabled') as any;
+    return this.getBooleanAttribute('reputation_metrics_enabled');
   }
   public set reputationMetricsEnabled(value: boolean | cdktf.IResolvable) {
     this._reputationMetricsEnabled = value;
@@ -182,7 +182,7 @@ export class SesConfigurationSet extends cdktf.TerraformResource {
   // sending_enabled - computed: false, optional: true, required: false
   private _sendingEnabled?: boolean | cdktf.IResolvable; 
   public get sendingEnabled() {
-    return this.getBooleanAttribute('sending_enabled') as any;
+    return this.getBooleanAttribute('sending_enabled');
   }
   public set sendingEnabled(value: boolean | cdktf.IResolvable) {
     this._sendingEnabled = value;
@@ -196,7 +196,7 @@ export class SesConfigurationSet extends cdktf.TerraformResource {
   }
 
   // delivery_options - computed: false, optional: true, required: false
-  private _deliveryOptions = new SesConfigurationSetDeliveryOptionsOutputReference(this as any, "delivery_options", true);
+  private _deliveryOptions = new SesConfigurationSetDeliveryOptionsOutputReference(this, "delivery_options", true);
   public get deliveryOptions() {
     return this._deliveryOptions;
   }

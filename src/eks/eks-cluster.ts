@@ -22,11 +22,11 @@ export interface EksClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#tags EksCluster#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#tags_all EksCluster#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#version EksCluster#version}
   */
@@ -75,7 +75,7 @@ export class EksClusterIdentity extends cdktf.ComplexComputedList {
   // oidc - computed: true, optional: false, required: false
   public get oidc() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('oidc') as any;
+    return this.interpolationForAttribute('oidc');
   }
 }
 export interface EksClusterEncryptionConfigProvider {
@@ -86,7 +86,7 @@ export interface EksClusterEncryptionConfigProvider {
 }
 
 export function eksClusterEncryptionConfigProviderToTerraform(struct?: EksClusterEncryptionConfigProviderOutputReference | EksClusterEncryptionConfigProvider): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -103,7 +103,7 @@ export class EksClusterEncryptionConfigProviderOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -155,7 +155,7 @@ export interface EksClusterEncryptionConfig {
 }
 
 export function eksClusterEncryptionConfigToTerraform(struct?: EksClusterEncryptionConfigOutputReference | EksClusterEncryptionConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -173,7 +173,7 @@ export class EksClusterEncryptionConfigOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -207,7 +207,7 @@ export class EksClusterEncryptionConfigOutputReference extends cdktf.ComplexObje
   // resources - computed: false, optional: false, required: true
   private _resources?: string[]; 
   public get resources() {
-    return this.getListAttribute('resources');
+    return cdktf.Fn.tolist(this.getListAttribute('resources'));
   }
   public set resources(value: string[]) {
     this._resources = value;
@@ -218,7 +218,7 @@ export class EksClusterEncryptionConfigOutputReference extends cdktf.ComplexObje
   }
 
   // provider - computed: false, optional: false, required: true
-  private _provider = new EksClusterEncryptionConfigProviderOutputReference(this as any, "provider", true);
+  private _provider = new EksClusterEncryptionConfigProviderOutputReference(this, "provider", true);
   public get provider() {
     return this._provider;
   }
@@ -242,7 +242,7 @@ export interface EksClusterKubernetesNetworkConfig {
 }
 
 export function eksClusterKubernetesNetworkConfigToTerraform(struct?: EksClusterKubernetesNetworkConfigOutputReference | EksClusterKubernetesNetworkConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -260,7 +260,7 @@ export class EksClusterKubernetesNetworkConfigOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -338,8 +338,8 @@ export interface EksClusterTimeouts {
   readonly update?: string;
 }
 
-export function eksClusterTimeoutsToTerraform(struct?: EksClusterTimeoutsOutputReference | EksClusterTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function eksClusterTimeoutsToTerraform(struct?: EksClusterTimeoutsOutputReference | EksClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -358,7 +358,7 @@ export class EksClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -467,7 +467,7 @@ export interface EksClusterVpcConfig {
 }
 
 export function eksClusterVpcConfigToTerraform(struct?: EksClusterVpcConfigOutputReference | EksClusterVpcConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -488,7 +488,7 @@ export class EksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -537,10 +537,15 @@ export class EksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
     }
   }
 
+  // cluster_security_group_id - computed: true, optional: false, required: false
+  public get clusterSecurityGroupId() {
+    return this.getStringAttribute('cluster_security_group_id');
+  }
+
   // endpoint_private_access - computed: false, optional: true, required: false
   private _endpointPrivateAccess?: boolean | cdktf.IResolvable; 
   public get endpointPrivateAccess() {
-    return this.getBooleanAttribute('endpoint_private_access') as any;
+    return this.getBooleanAttribute('endpoint_private_access');
   }
   public set endpointPrivateAccess(value: boolean | cdktf.IResolvable) {
     this._endpointPrivateAccess = value;
@@ -556,7 +561,7 @@ export class EksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
   // endpoint_public_access - computed: false, optional: true, required: false
   private _endpointPublicAccess?: boolean | cdktf.IResolvable; 
   public get endpointPublicAccess() {
-    return this.getBooleanAttribute('endpoint_public_access') as any;
+    return this.getBooleanAttribute('endpoint_public_access');
   }
   public set endpointPublicAccess(value: boolean | cdktf.IResolvable) {
     this._endpointPublicAccess = value;
@@ -572,7 +577,7 @@ export class EksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
   // public_access_cidrs - computed: true, optional: true, required: false
   private _publicAccessCidrs?: string[]; 
   public get publicAccessCidrs() {
-    return this.getListAttribute('public_access_cidrs');
+    return cdktf.Fn.tolist(this.getListAttribute('public_access_cidrs'));
   }
   public set publicAccessCidrs(value: string[]) {
     this._publicAccessCidrs = value;
@@ -588,7 +593,7 @@ export class EksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -604,7 +609,7 @@ export class EksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -612,6 +617,11 @@ export class EksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get subnetIdsInput() {
     return this._subnetIds;
+  }
+
+  // vpc_id - computed: true, optional: false, required: false
+  public get vpcId() {
+    return this.getStringAttribute('vpc_id');
   }
 }
 
@@ -670,7 +680,7 @@ export class EksCluster extends cdktf.TerraformResource {
 
   // certificate_authority - computed: true, optional: false, required: false
   public certificateAuthority(index: string) {
-    return new EksClusterCertificateAuthority(this, 'certificate_authority', index);
+    return new EksClusterCertificateAuthority(this, 'certificate_authority', index, false);
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -681,7 +691,7 @@ export class EksCluster extends cdktf.TerraformResource {
   // enabled_cluster_log_types - computed: false, optional: true, required: false
   private _enabledClusterLogTypes?: string[]; 
   public get enabledClusterLogTypes() {
-    return this.getListAttribute('enabled_cluster_log_types');
+    return cdktf.Fn.tolist(this.getListAttribute('enabled_cluster_log_types'));
   }
   public set enabledClusterLogTypes(value: string[]) {
     this._enabledClusterLogTypes = value;
@@ -706,7 +716,7 @@ export class EksCluster extends cdktf.TerraformResource {
 
   // identity - computed: true, optional: false, required: false
   public identity(index: string) {
-    return new EksClusterIdentity(this, 'identity', index);
+    return new EksClusterIdentity(this, 'identity', index, false);
   }
 
   // name - computed: false, optional: false, required: true
@@ -746,12 +756,11 @@ export class EksCluster extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -763,12 +772,11 @@ export class EksCluster extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -796,7 +804,7 @@ export class EksCluster extends cdktf.TerraformResource {
   }
 
   // encryption_config - computed: false, optional: true, required: false
-  private _encryptionConfig = new EksClusterEncryptionConfigOutputReference(this as any, "encryption_config", true);
+  private _encryptionConfig = new EksClusterEncryptionConfigOutputReference(this, "encryption_config", true);
   public get encryptionConfig() {
     return this._encryptionConfig;
   }
@@ -812,7 +820,7 @@ export class EksCluster extends cdktf.TerraformResource {
   }
 
   // kubernetes_network_config - computed: false, optional: true, required: false
-  private _kubernetesNetworkConfig = new EksClusterKubernetesNetworkConfigOutputReference(this as any, "kubernetes_network_config", true);
+  private _kubernetesNetworkConfig = new EksClusterKubernetesNetworkConfigOutputReference(this, "kubernetes_network_config", true);
   public get kubernetesNetworkConfig() {
     return this._kubernetesNetworkConfig;
   }
@@ -828,7 +836,7 @@ export class EksCluster extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new EksClusterTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new EksClusterTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -844,7 +852,7 @@ export class EksCluster extends cdktf.TerraformResource {
   }
 
   // vpc_config - computed: false, optional: false, required: true
-  private _vpcConfig = new EksClusterVpcConfigOutputReference(this as any, "vpc_config", true);
+  private _vpcConfig = new EksClusterVpcConfigOutputReference(this, "vpc_config", true);
   public get vpcConfig() {
     return this._vpcConfig;
   }
@@ -865,8 +873,8 @@ export class EksCluster extends cdktf.TerraformResource {
       enabled_cluster_log_types: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledClusterLogTypes),
       name: cdktf.stringToTerraform(this._name),
       role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       version: cdktf.stringToTerraform(this._version),
       encryption_config: eksClusterEncryptionConfigToTerraform(this._encryptionConfig.internalValue),
       kubernetes_network_config: eksClusterKubernetesNetworkConfigToTerraform(this._kubernetesNetworkConfig.internalValue),

@@ -42,15 +42,15 @@ export interface ApiGatewayStageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage#tags ApiGatewayStage#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage#tags_all ApiGatewayStage#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage#variables ApiGatewayStage#variables}
   */
-  readonly variables?: { [key: string]: string } | cdktf.IResolvable;
+  readonly variables?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage#xray_tracing_enabled ApiGatewayStage#xray_tracing_enabled}
   */
@@ -74,7 +74,7 @@ export interface ApiGatewayStageAccessLogSettings {
 }
 
 export function apiGatewayStageAccessLogSettingsToTerraform(struct?: ApiGatewayStageAccessLogSettingsOutputReference | ApiGatewayStageAccessLogSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -92,7 +92,7 @@ export class ApiGatewayStageAccessLogSettingsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -209,7 +209,7 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   // cache_cluster_enabled - computed: false, optional: true, required: false
   private _cacheClusterEnabled?: boolean | cdktf.IResolvable; 
   public get cacheClusterEnabled() {
-    return this.getBooleanAttribute('cache_cluster_enabled') as any;
+    return this.getBooleanAttribute('cache_cluster_enabled');
   }
   public set cacheClusterEnabled(value: boolean | cdktf.IResolvable) {
     this._cacheClusterEnabled = value;
@@ -341,12 +341,11 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -358,12 +357,11 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -375,12 +373,11 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   }
 
   // variables - computed: false, optional: true, required: false
-  private _variables?: { [key: string]: string } | cdktf.IResolvable; 
+  private _variables?: { [key: string]: string }; 
   public get variables() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('variables') as any;
+    return this.getStringMapAttribute('variables');
   }
-  public set variables(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set variables(value: { [key: string]: string }) {
     this._variables = value;
   }
   public resetVariables() {
@@ -394,7 +391,7 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   // xray_tracing_enabled - computed: false, optional: true, required: false
   private _xrayTracingEnabled?: boolean | cdktf.IResolvable; 
   public get xrayTracingEnabled() {
-    return this.getBooleanAttribute('xray_tracing_enabled') as any;
+    return this.getBooleanAttribute('xray_tracing_enabled');
   }
   public set xrayTracingEnabled(value: boolean | cdktf.IResolvable) {
     this._xrayTracingEnabled = value;
@@ -408,7 +405,7 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   }
 
   // access_log_settings - computed: false, optional: true, required: false
-  private _accessLogSettings = new ApiGatewayStageAccessLogSettingsOutputReference(this as any, "access_log_settings", true);
+  private _accessLogSettings = new ApiGatewayStageAccessLogSettingsOutputReference(this, "access_log_settings", true);
   public get accessLogSettings() {
     return this._accessLogSettings;
   }
@@ -437,9 +434,9 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
       documentation_version: cdktf.stringToTerraform(this._documentationVersion),
       rest_api_id: cdktf.stringToTerraform(this._restApiId),
       stage_name: cdktf.stringToTerraform(this._stageName),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
-      variables: cdktf.hashMapper(cdktf.anyToTerraform)(this._variables),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      variables: cdktf.hashMapper(cdktf.stringToTerraform)(this._variables),
       xray_tracing_enabled: cdktf.booleanToTerraform(this._xrayTracingEnabled),
       access_log_settings: apiGatewayStageAccessLogSettingsToTerraform(this._accessLogSettings.internalValue),
     };

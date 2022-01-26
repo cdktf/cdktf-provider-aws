@@ -22,11 +22,11 @@ export interface SagemakerUserProfileConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_user_profile#tags SagemakerUserProfile#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_user_profile#tags_all SagemakerUserProfile#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_user_profile#user_profile_name SagemakerUserProfile#user_profile_name}
   */
@@ -58,7 +58,7 @@ export interface SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefault
 }
 
 export function sagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecToTerraform(struct?: SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference | SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -78,7 +78,7 @@ export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultReso
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -199,7 +199,7 @@ export interface SagemakerUserProfileUserSettingsJupyterServerAppSettings {
 }
 
 export function sagemakerUserProfileUserSettingsJupyterServerAppSettingsToTerraform(struct?: SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference | SagemakerUserProfileUserSettingsJupyterServerAppSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -217,7 +217,7 @@ export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputRefer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -251,7 +251,7 @@ export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputRefer
   // lifecycle_config_arns - computed: false, optional: true, required: false
   private _lifecycleConfigArns?: string[]; 
   public get lifecycleConfigArns() {
-    return this.getListAttribute('lifecycle_config_arns');
+    return cdktf.Fn.tolist(this.getListAttribute('lifecycle_config_arns'));
   }
   public set lifecycleConfigArns(value: string[]) {
     this._lifecycleConfigArns = value;
@@ -265,7 +265,7 @@ export class SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputRefer
   }
 
   // default_resource_spec - computed: false, optional: false, required: true
-  private _defaultResourceSpec = new SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference(this as any, "default_resource_spec", true);
+  private _defaultResourceSpec = new SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference(this, "default_resource_spec", true);
   public get defaultResourceSpec() {
     return this._defaultResourceSpec;
   }
@@ -292,8 +292,8 @@ export interface SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomI
   readonly imageVersionNumber?: number;
 }
 
-export function sagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageToTerraform(struct?: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function sagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageToTerraform(struct?: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -324,7 +324,7 @@ export interface SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefault
 }
 
 export function sagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecToTerraform(struct?: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference | SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -344,7 +344,7 @@ export class SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultReso
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -461,7 +461,7 @@ export interface SagemakerUserProfileUserSettingsKernelGatewayAppSettings {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_user_profile#custom_image SagemakerUserProfile#custom_image}
   */
-  readonly customImage?: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage[];
+  readonly customImage?: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage[] | cdktf.IResolvable;
   /**
   * default_resource_spec block
   * 
@@ -471,7 +471,7 @@ export interface SagemakerUserProfileUserSettingsKernelGatewayAppSettings {
 }
 
 export function sagemakerUserProfileUserSettingsKernelGatewayAppSettingsToTerraform(struct?: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference | SagemakerUserProfileUserSettingsKernelGatewayAppSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -490,7 +490,7 @@ export class SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputRefer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -530,7 +530,7 @@ export class SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputRefer
   // lifecycle_config_arns - computed: false, optional: true, required: false
   private _lifecycleConfigArns?: string[]; 
   public get lifecycleConfigArns() {
-    return this.getListAttribute('lifecycle_config_arns');
+    return cdktf.Fn.tolist(this.getListAttribute('lifecycle_config_arns'));
   }
   public set lifecycleConfigArns(value: string[]) {
     this._lifecycleConfigArns = value;
@@ -544,12 +544,12 @@ export class SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputRefer
   }
 
   // custom_image - computed: false, optional: true, required: false
-  private _customImage?: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage[]; 
+  private _customImage?: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage[] | cdktf.IResolvable; 
   public get customImage() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_image') as any;
+    return this.interpolationForAttribute('custom_image');
   }
-  public set customImage(value: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage[]) {
+  public set customImage(value: SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage[] | cdktf.IResolvable) {
     this._customImage = value;
   }
   public resetCustomImage() {
@@ -561,7 +561,7 @@ export class SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputRefer
   }
 
   // default_resource_spec - computed: false, optional: false, required: true
-  private _defaultResourceSpec = new SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference(this as any, "default_resource_spec", true);
+  private _defaultResourceSpec = new SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference(this, "default_resource_spec", true);
   public get defaultResourceSpec() {
     return this._defaultResourceSpec;
   }
@@ -589,7 +589,7 @@ export interface SagemakerUserProfileUserSettingsSharingSettings {
 }
 
 export function sagemakerUserProfileUserSettingsSharingSettingsToTerraform(struct?: SagemakerUserProfileUserSettingsSharingSettingsOutputReference | SagemakerUserProfileUserSettingsSharingSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -608,7 +608,7 @@ export class SagemakerUserProfileUserSettingsSharingSettingsOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -713,7 +713,7 @@ export interface SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultRe
 }
 
 export function sagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecToTerraform(struct?: SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference | SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -733,7 +733,7 @@ export class SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResour
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -850,7 +850,7 @@ export interface SagemakerUserProfileUserSettingsTensorBoardAppSettings {
 }
 
 export function sagemakerUserProfileUserSettingsTensorBoardAppSettingsToTerraform(struct?: SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference | SagemakerUserProfileUserSettingsTensorBoardAppSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -867,7 +867,7 @@ export class SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReferen
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -893,7 +893,7 @@ export class SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReferen
   }
 
   // default_resource_spec - computed: false, optional: false, required: true
-  private _defaultResourceSpec = new SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference(this as any, "default_resource_spec", true);
+  private _defaultResourceSpec = new SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference(this, "default_resource_spec", true);
   public get defaultResourceSpec() {
     return this._defaultResourceSpec;
   }
@@ -941,7 +941,7 @@ export interface SagemakerUserProfileUserSettings {
 }
 
 export function sagemakerUserProfileUserSettingsToTerraform(struct?: SagemakerUserProfileUserSettingsOutputReference | SagemakerUserProfileUserSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -963,7 +963,7 @@ export class SagemakerUserProfileUserSettingsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1034,7 +1034,7 @@ export class SagemakerUserProfileUserSettingsOutputReference extends cdktf.Compl
   // security_groups - computed: false, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -1048,7 +1048,7 @@ export class SagemakerUserProfileUserSettingsOutputReference extends cdktf.Compl
   }
 
   // jupyter_server_app_settings - computed: false, optional: true, required: false
-  private _jupyterServerAppSettings = new SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference(this as any, "jupyter_server_app_settings", true);
+  private _jupyterServerAppSettings = new SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference(this, "jupyter_server_app_settings", true);
   public get jupyterServerAppSettings() {
     return this._jupyterServerAppSettings;
   }
@@ -1064,7 +1064,7 @@ export class SagemakerUserProfileUserSettingsOutputReference extends cdktf.Compl
   }
 
   // kernel_gateway_app_settings - computed: false, optional: true, required: false
-  private _kernelGatewayAppSettings = new SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference(this as any, "kernel_gateway_app_settings", true);
+  private _kernelGatewayAppSettings = new SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference(this, "kernel_gateway_app_settings", true);
   public get kernelGatewayAppSettings() {
     return this._kernelGatewayAppSettings;
   }
@@ -1080,7 +1080,7 @@ export class SagemakerUserProfileUserSettingsOutputReference extends cdktf.Compl
   }
 
   // sharing_settings - computed: false, optional: true, required: false
-  private _sharingSettings = new SagemakerUserProfileUserSettingsSharingSettingsOutputReference(this as any, "sharing_settings", true);
+  private _sharingSettings = new SagemakerUserProfileUserSettingsSharingSettingsOutputReference(this, "sharing_settings", true);
   public get sharingSettings() {
     return this._sharingSettings;
   }
@@ -1096,7 +1096,7 @@ export class SagemakerUserProfileUserSettingsOutputReference extends cdktf.Compl
   }
 
   // tensor_board_app_settings - computed: false, optional: true, required: false
-  private _tensorBoardAppSettings = new SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference(this as any, "tensor_board_app_settings", true);
+  private _tensorBoardAppSettings = new SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference(this, "tensor_board_app_settings", true);
   public get tensorBoardAppSettings() {
     return this._tensorBoardAppSettings;
   }
@@ -1218,12 +1218,11 @@ export class SagemakerUserProfile extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -1235,12 +1234,11 @@ export class SagemakerUserProfile extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -1265,7 +1263,7 @@ export class SagemakerUserProfile extends cdktf.TerraformResource {
   }
 
   // user_settings - computed: false, optional: true, required: false
-  private _userSettings = new SagemakerUserProfileUserSettingsOutputReference(this as any, "user_settings", true);
+  private _userSettings = new SagemakerUserProfileUserSettingsOutputReference(this, "user_settings", true);
   public get userSettings() {
     return this._userSettings;
   }
@@ -1289,8 +1287,8 @@ export class SagemakerUserProfile extends cdktf.TerraformResource {
       domain_id: cdktf.stringToTerraform(this._domainId),
       single_sign_on_user_identifier: cdktf.stringToTerraform(this._singleSignOnUserIdentifier),
       single_sign_on_user_value: cdktf.stringToTerraform(this._singleSignOnUserValue),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       user_profile_name: cdktf.stringToTerraform(this._userProfileName),
       user_settings: sagemakerUserProfileUserSettingsToTerraform(this._userSettings.internalValue),
     };

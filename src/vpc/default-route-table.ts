@@ -18,15 +18,15 @@ export interface DefaultRouteTableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_route_table#route DefaultRouteTable#route}
   */
-  readonly route?: DefaultRouteTableRoute[];
+  readonly route?: DefaultRouteTableRoute[] | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_route_table#tags DefaultRouteTable#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_route_table#tags_all DefaultRouteTable#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   * 
@@ -81,8 +81,8 @@ export interface DefaultRouteTableRoute {
   readonly vpcPeeringConnectionId?: string;
 }
 
-export function defaultRouteTableRouteToTerraform(struct?: DefaultRouteTableRoute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function defaultRouteTableRouteToTerraform(struct?: DefaultRouteTableRoute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -112,8 +112,8 @@ export interface DefaultRouteTableTimeouts {
   readonly update?: string;
 }
 
-export function defaultRouteTableTimeoutsToTerraform(struct?: DefaultRouteTableTimeoutsOutputReference | DefaultRouteTableTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function defaultRouteTableTimeoutsToTerraform(struct?: DefaultRouteTableTimeoutsOutputReference | DefaultRouteTableTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -131,7 +131,7 @@ export class DefaultRouteTableTimeoutsOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -270,7 +270,7 @@ export class DefaultRouteTable extends cdktf.TerraformResource {
   // propagating_vgws - computed: false, optional: true, required: false
   private _propagatingVgws?: string[]; 
   public get propagatingVgws() {
-    return this.getListAttribute('propagating_vgws');
+    return cdktf.Fn.tolist(this.getListAttribute('propagating_vgws'));
   }
   public set propagatingVgws(value: string[]) {
     this._propagatingVgws = value;
@@ -284,12 +284,12 @@ export class DefaultRouteTable extends cdktf.TerraformResource {
   }
 
   // route - computed: true, optional: true, required: false
-  private _route?: DefaultRouteTableRoute[]; 
+  private _route?: DefaultRouteTableRoute[] | cdktf.IResolvable; 
   public get route() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('route') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('route')));
   }
-  public set route(value: DefaultRouteTableRoute[]) {
+  public set route(value: DefaultRouteTableRoute[] | cdktf.IResolvable) {
     this._route = value;
   }
   public resetRoute() {
@@ -301,12 +301,11 @@ export class DefaultRouteTable extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -318,12 +317,11 @@ export class DefaultRouteTable extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -340,7 +338,7 @@ export class DefaultRouteTable extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DefaultRouteTableTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DefaultRouteTableTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -364,8 +362,8 @@ export class DefaultRouteTable extends cdktf.TerraformResource {
       default_route_table_id: cdktf.stringToTerraform(this._defaultRouteTableId),
       propagating_vgws: cdktf.listMapper(cdktf.stringToTerraform)(this._propagatingVgws),
       route: cdktf.listMapper(defaultRouteTableRouteToTerraform)(this._route),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: defaultRouteTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

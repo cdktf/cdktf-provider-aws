@@ -64,7 +64,7 @@ export class ServicequotasServiceQuota extends cdktf.TerraformResource {
 
   // adjustable - computed: true, optional: false, required: false
   public get adjustable() {
-    return this.getBooleanAttribute('adjustable') as any;
+    return this.getBooleanAttribute('adjustable');
   }
 
   // arn - computed: true, optional: false, required: false

@@ -50,17 +50,17 @@ export interface DatasyncLocationHdfsConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#tags DatasyncLocationHdfs#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#tags_all DatasyncLocationHdfs#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * name_node block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_hdfs#name_node DatasyncLocationHdfs#name_node}
   */
-  readonly nameNode: DatasyncLocationHdfsNameNode[];
+  readonly nameNode: DatasyncLocationHdfsNameNode[] | cdktf.IResolvable;
   /**
   * qop_configuration block
   * 
@@ -79,8 +79,8 @@ export interface DatasyncLocationHdfsNameNode {
   readonly port: number;
 }
 
-export function datasyncLocationHdfsNameNodeToTerraform(struct?: DatasyncLocationHdfsNameNode): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function datasyncLocationHdfsNameNodeToTerraform(struct?: DatasyncLocationHdfsNameNode | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -102,7 +102,7 @@ export interface DatasyncLocationHdfsQopConfiguration {
 }
 
 export function datasyncLocationHdfsQopConfigurationToTerraform(struct?: DatasyncLocationHdfsQopConfigurationOutputReference | DatasyncLocationHdfsQopConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -120,7 +120,7 @@ export class DatasyncLocationHdfsQopConfigurationOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -239,7 +239,7 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
   // agent_arns - computed: false, optional: false, required: true
   private _agentArns?: string[]; 
   public get agentArns() {
-    return this.getListAttribute('agent_arns');
+    return cdktf.Fn.tolist(this.getListAttribute('agent_arns'));
   }
   public set agentArns(value: string[]) {
     this._agentArns = value;
@@ -404,12 +404,11 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -421,12 +420,11 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -443,12 +441,12 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
   }
 
   // name_node - computed: false, optional: false, required: true
-  private _nameNode?: DatasyncLocationHdfsNameNode[]; 
+  private _nameNode?: DatasyncLocationHdfsNameNode[] | cdktf.IResolvable; 
   public get nameNode() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('name_node') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('name_node')));
   }
-  public set nameNode(value: DatasyncLocationHdfsNameNode[]) {
+  public set nameNode(value: DatasyncLocationHdfsNameNode[] | cdktf.IResolvable) {
     this._nameNode = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -457,7 +455,7 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
   }
 
   // qop_configuration - computed: false, optional: true, required: false
-  private _qopConfiguration = new DatasyncLocationHdfsQopConfigurationOutputReference(this as any, "qop_configuration", true);
+  private _qopConfiguration = new DatasyncLocationHdfsQopConfigurationOutputReference(this, "qop_configuration", true);
   public get qopConfiguration() {
     return this._qopConfiguration;
   }
@@ -488,8 +486,8 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
       replication_factor: cdktf.numberToTerraform(this._replicationFactor),
       simple_user: cdktf.stringToTerraform(this._simpleUser),
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       name_node: cdktf.listMapper(datasyncLocationHdfsNameNodeToTerraform)(this._nameNode),
       qop_configuration: datasyncLocationHdfsQopConfigurationToTerraform(this._qopConfiguration.internalValue),
     };

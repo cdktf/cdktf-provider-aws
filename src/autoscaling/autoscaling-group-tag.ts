@@ -34,7 +34,7 @@ export interface AutoscalingGroupTagTag {
 }
 
 export function autoscalingGroupTagTagToTerraform(struct?: AutoscalingGroupTagTagOutputReference | AutoscalingGroupTagTag): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -53,7 +53,7 @@ export class AutoscalingGroupTagTagOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -106,7 +106,7 @@ export class AutoscalingGroupTagTagOutputReference extends cdktf.ComplexObject {
   // propagate_at_launch - computed: false, optional: false, required: true
   private _propagateAtLaunch?: boolean | cdktf.IResolvable; 
   public get propagateAtLaunch() {
-    return this.getBooleanAttribute('propagate_at_launch') as any;
+    return this.getBooleanAttribute('propagate_at_launch');
   }
   public set propagateAtLaunch(value: boolean | cdktf.IResolvable) {
     this._propagateAtLaunch = value;
@@ -189,7 +189,7 @@ export class AutoscalingGroupTagA extends cdktf.TerraformResource {
   }
 
   // tag - computed: false, optional: false, required: true
-  private _tag = new AutoscalingGroupTagTagOutputReference(this as any, "tag", true);
+  private _tag = new AutoscalingGroupTagTagOutputReference(this, "tag", true);
   public get tag() {
     return this._tag;
   }

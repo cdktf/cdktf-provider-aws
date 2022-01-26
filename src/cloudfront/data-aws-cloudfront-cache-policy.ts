@@ -20,7 +20,7 @@ export class DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigi
 
   // items - computed: true, optional: false, required: false
   public get items() {
-    return this.getListAttribute('items');
+    return cdktf.Fn.tolist(this.getListAttribute('items'));
   }
 }
 export class DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfig extends cdktf.ComplexComputedList {
@@ -33,14 +33,14 @@ export class DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigi
   // cookies - computed: true, optional: false, required: false
   public get cookies() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('cookies') as any;
+    return this.interpolationForAttribute('cookies');
   }
 }
 export class DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeaders extends cdktf.ComplexComputedList {
 
   // items - computed: true, optional: false, required: false
   public get items() {
-    return this.getListAttribute('items');
+    return cdktf.Fn.tolist(this.getListAttribute('items'));
   }
 }
 export class DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfig extends cdktf.ComplexComputedList {
@@ -53,14 +53,14 @@ export class DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigi
   // headers - computed: true, optional: false, required: false
   public get headers() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('headers') as any;
+    return this.interpolationForAttribute('headers');
   }
 }
 export class DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings extends cdktf.ComplexComputedList {
 
   // items - computed: true, optional: false, required: false
   public get items() {
-    return this.getListAttribute('items');
+    return cdktf.Fn.tolist(this.getListAttribute('items'));
   }
 }
 export class DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfig extends cdktf.ComplexComputedList {
@@ -73,7 +73,7 @@ export class DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigi
   // query_strings - computed: true, optional: false, required: false
   public get queryStrings() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('query_strings') as any;
+    return this.interpolationForAttribute('query_strings');
   }
 }
 export class DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin extends cdktf.ComplexComputedList {
@@ -81,29 +81,29 @@ export class DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigi
   // cookies_config - computed: true, optional: false, required: false
   public get cookiesConfig() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('cookies_config') as any;
+    return this.interpolationForAttribute('cookies_config');
   }
 
   // enable_accept_encoding_brotli - computed: true, optional: false, required: false
   public get enableAcceptEncodingBrotli() {
-    return this.getBooleanAttribute('enable_accept_encoding_brotli') as any;
+    return this.getBooleanAttribute('enable_accept_encoding_brotli');
   }
 
   // enable_accept_encoding_gzip - computed: true, optional: false, required: false
   public get enableAcceptEncodingGzip() {
-    return this.getBooleanAttribute('enable_accept_encoding_gzip') as any;
+    return this.getBooleanAttribute('enable_accept_encoding_gzip');
   }
 
   // headers_config - computed: true, optional: false, required: false
   public get headersConfig() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('headers_config') as any;
+    return this.interpolationForAttribute('headers_config');
   }
 
   // query_strings_config - computed: true, optional: false, required: false
   public get queryStringsConfig() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('query_strings_config') as any;
+    return this.interpolationForAttribute('query_strings_config');
   }
 }
 
@@ -206,7 +206,7 @@ export class DataAwsCloudfrontCachePolicy extends cdktf.TerraformDataSource {
 
   // parameters_in_cache_key_and_forwarded_to_origin - computed: true, optional: false, required: false
   public parametersInCacheKeyAndForwardedToOrigin(index: string) {
-    return new DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin(this, 'parameters_in_cache_key_and_forwarded_to_origin', index);
+    return new DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin(this, 'parameters_in_cache_key_and_forwarded_to_origin', index, false);
   }
 
   // =========

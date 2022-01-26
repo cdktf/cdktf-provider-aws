@@ -96,7 +96,7 @@ export class IamGroupMembership extends cdktf.TerraformResource {
   // users - computed: false, optional: false, required: true
   private _users?: string[]; 
   public get users() {
-    return this.getListAttribute('users');
+    return cdktf.Fn.tolist(this.getListAttribute('users'));
   }
   public set users(value: string[]) {
     this._users = value;

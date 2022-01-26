@@ -42,11 +42,11 @@ export interface Macie2ClassificationJobConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job#tags Macie2ClassificationJob#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job#tags_all Macie2ClassificationJob#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * s3_job_definition block
   * 
@@ -88,8 +88,8 @@ export interface Macie2ClassificationJobS3JobDefinitionBucketDefinitions {
   readonly buckets: string[];
 }
 
-export function macie2ClassificationJobS3JobDefinitionBucketDefinitionsToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketDefinitions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function macie2ClassificationJobS3JobDefinitionBucketDefinitionsToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionBucketDefinitions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -115,7 +115,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleS
 }
 
 export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference | Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -134,7 +134,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScope
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -230,8 +230,8 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScop
   readonly value?: string;
 }
 
-export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValuesToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -259,11 +259,11 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScop
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job#tag_values Macie2ClassificationJob#tag_values}
   */
-  readonly tagValues?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues[];
+  readonly tagValues?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues[] | cdktf.IResolvable;
 }
 
 export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermOutputReference | Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -283,7 +283,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -375,12 +375,12 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTer
   }
 
   // tag_values - computed: false, optional: true, required: false
-  private _tagValues?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues[]; 
+  private _tagValues?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues[] | cdktf.IResolvable; 
   public get tagValues() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tag_values') as any;
+    return this.interpolationForAttribute('tag_values');
   }
-  public set tagValues(value: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues[]) {
+  public set tagValues(value: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTermTagValues[] | cdktf.IResolvable) {
     this._tagValues = value;
   }
   public resetTagValues() {
@@ -406,8 +406,8 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd {
   readonly tagScopeTerm?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm;
 }
 
-export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function macie2ClassificationJobS3JobDefinitionScopingExcludesAndToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -423,11 +423,11 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingExcludes {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job#and Macie2ClassificationJob#and}
   */
-  readonly and?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd[];
+  readonly and?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd[] | cdktf.IResolvable;
 }
 
 export function macie2ClassificationJobS3JobDefinitionScopingExcludesToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference | Macie2ClassificationJobS3JobDefinitionScopingExcludes): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -444,7 +444,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReferenc
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -470,12 +470,12 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReferenc
   }
 
   // and - computed: false, optional: true, required: false
-  private _and?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd[]; 
+  private _and?: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd[] | cdktf.IResolvable; 
   public get and() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('and') as any;
+    return this.interpolationForAttribute('and');
   }
-  public set and(value: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd[]) {
+  public set and(value: Macie2ClassificationJobS3JobDefinitionScopingExcludesAnd[] | cdktf.IResolvable) {
     this._and = value;
   }
   public resetAnd() {
@@ -502,7 +502,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleS
 }
 
 export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTermOutputReference | Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -521,7 +521,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScope
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -617,8 +617,8 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScop
   readonly value?: string;
 }
 
-export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValuesToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -646,11 +646,11 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScop
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job#tag_values Macie2ClassificationJob#tag_values}
   */
-  readonly tagValues?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues[];
+  readonly tagValues?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues[] | cdktf.IResolvable;
 }
 
 export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermOutputReference | Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -670,7 +670,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -762,12 +762,12 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTer
   }
 
   // tag_values - computed: false, optional: true, required: false
-  private _tagValues?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues[]; 
+  private _tagValues?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues[] | cdktf.IResolvable; 
   public get tagValues() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tag_values') as any;
+    return this.interpolationForAttribute('tag_values');
   }
-  public set tagValues(value: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues[]) {
+  public set tagValues(value: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTermTagValues[] | cdktf.IResolvable) {
     this._tagValues = value;
   }
   public resetTagValues() {
@@ -793,8 +793,8 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd {
   readonly tagScopeTerm?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm;
 }
 
-export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function macie2ClassificationJobS3JobDefinitionScopingIncludesAndToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -810,11 +810,11 @@ export interface Macie2ClassificationJobS3JobDefinitionScopingIncludes {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job#and Macie2ClassificationJob#and}
   */
-  readonly and?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd[];
+  readonly and?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd[] | cdktf.IResolvable;
 }
 
 export function macie2ClassificationJobS3JobDefinitionScopingIncludesToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference | Macie2ClassificationJobS3JobDefinitionScopingIncludes): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -831,7 +831,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReferenc
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -857,12 +857,12 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReferenc
   }
 
   // and - computed: false, optional: true, required: false
-  private _and?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd[]; 
+  private _and?: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd[] | cdktf.IResolvable; 
   public get and() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('and') as any;
+    return this.interpolationForAttribute('and');
   }
-  public set and(value: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd[]) {
+  public set and(value: Macie2ClassificationJobS3JobDefinitionScopingIncludesAnd[] | cdktf.IResolvable) {
     this._and = value;
   }
   public resetAnd() {
@@ -889,7 +889,7 @@ export interface Macie2ClassificationJobS3JobDefinitionScoping {
 }
 
 export function macie2ClassificationJobS3JobDefinitionScopingToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionScopingOutputReference | Macie2ClassificationJobS3JobDefinitionScoping): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -907,7 +907,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingOutputReference extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -939,7 +939,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingOutputReference extend
   }
 
   // excludes - computed: false, optional: true, required: false
-  private _excludes = new Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference(this as any, "excludes", true);
+  private _excludes = new Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference(this, "excludes", true);
   public get excludes() {
     return this._excludes;
   }
@@ -955,7 +955,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingOutputReference extend
   }
 
   // includes - computed: false, optional: true, required: false
-  private _includes = new Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference(this as any, "includes", true);
+  private _includes = new Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference(this, "includes", true);
   public get includes() {
     return this._includes;
   }
@@ -976,7 +976,7 @@ export interface Macie2ClassificationJobS3JobDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job#bucket_definitions Macie2ClassificationJob#bucket_definitions}
   */
-  readonly bucketDefinitions?: Macie2ClassificationJobS3JobDefinitionBucketDefinitions[];
+  readonly bucketDefinitions?: Macie2ClassificationJobS3JobDefinitionBucketDefinitions[] | cdktf.IResolvable;
   /**
   * scoping block
   * 
@@ -986,7 +986,7 @@ export interface Macie2ClassificationJobS3JobDefinition {
 }
 
 export function macie2ClassificationJobS3JobDefinitionToTerraform(struct?: Macie2ClassificationJobS3JobDefinitionOutputReference | Macie2ClassificationJobS3JobDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1004,7 +1004,7 @@ export class Macie2ClassificationJobS3JobDefinitionOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1036,12 +1036,12 @@ export class Macie2ClassificationJobS3JobDefinitionOutputReference extends cdktf
   }
 
   // bucket_definitions - computed: false, optional: true, required: false
-  private _bucketDefinitions?: Macie2ClassificationJobS3JobDefinitionBucketDefinitions[]; 
+  private _bucketDefinitions?: Macie2ClassificationJobS3JobDefinitionBucketDefinitions[] | cdktf.IResolvable; 
   public get bucketDefinitions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('bucket_definitions') as any;
+    return this.interpolationForAttribute('bucket_definitions');
   }
-  public set bucketDefinitions(value: Macie2ClassificationJobS3JobDefinitionBucketDefinitions[]) {
+  public set bucketDefinitions(value: Macie2ClassificationJobS3JobDefinitionBucketDefinitions[] | cdktf.IResolvable) {
     this._bucketDefinitions = value;
   }
   public resetBucketDefinitions() {
@@ -1053,7 +1053,7 @@ export class Macie2ClassificationJobS3JobDefinitionOutputReference extends cdktf
   }
 
   // scoping - computed: false, optional: true, required: false
-  private _scoping = new Macie2ClassificationJobS3JobDefinitionScopingOutputReference(this as any, "scoping", true);
+  private _scoping = new Macie2ClassificationJobS3JobDefinitionScopingOutputReference(this, "scoping", true);
   public get scoping() {
     return this._scoping;
   }
@@ -1084,7 +1084,7 @@ export interface Macie2ClassificationJobScheduleFrequency {
 }
 
 export function macie2ClassificationJobScheduleFrequencyToTerraform(struct?: Macie2ClassificationJobScheduleFrequencyOutputReference | Macie2ClassificationJobScheduleFrequency): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1103,7 +1103,7 @@ export class Macie2ClassificationJobScheduleFrequencyOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1143,7 +1143,7 @@ export class Macie2ClassificationJobScheduleFrequencyOutputReference extends cdk
   // daily_schedule - computed: false, optional: true, required: false
   private _dailySchedule?: boolean | cdktf.IResolvable; 
   public get dailySchedule() {
-    return this.getBooleanAttribute('daily_schedule') as any;
+    return this.getBooleanAttribute('daily_schedule');
   }
   public set dailySchedule(value: boolean | cdktf.IResolvable) {
     this._dailySchedule = value;
@@ -1284,7 +1284,7 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
   // initial_run - computed: false, optional: true, required: false
   private _initialRun?: boolean | cdktf.IResolvable; 
   public get initialRun() {
-    return this.getBooleanAttribute('initial_run') as any;
+    return this.getBooleanAttribute('initial_run');
   }
   public set initialRun(value: boolean | cdktf.IResolvable) {
     this._initialRun = value;
@@ -1385,12 +1385,11 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -1402,12 +1401,11 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -1420,11 +1418,11 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
 
   // user_paused_details - computed: true, optional: false, required: false
   public userPausedDetails(index: string) {
-    return new Macie2ClassificationJobUserPausedDetails(this, 'user_paused_details', index);
+    return new Macie2ClassificationJobUserPausedDetails(this, 'user_paused_details', index, false);
   }
 
   // s3_job_definition - computed: false, optional: false, required: true
-  private _s3JobDefinition = new Macie2ClassificationJobS3JobDefinitionOutputReference(this as any, "s3_job_definition", true);
+  private _s3JobDefinition = new Macie2ClassificationJobS3JobDefinitionOutputReference(this, "s3_job_definition", true);
   public get s3JobDefinition() {
     return this._s3JobDefinition;
   }
@@ -1437,7 +1435,7 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
   }
 
   // schedule_frequency - computed: false, optional: true, required: false
-  private _scheduleFrequency = new Macie2ClassificationJobScheduleFrequencyOutputReference(this as any, "schedule_frequency", true);
+  private _scheduleFrequency = new Macie2ClassificationJobScheduleFrequencyOutputReference(this, "schedule_frequency", true);
   public get scheduleFrequency() {
     return this._scheduleFrequency;
   }
@@ -1466,8 +1464,8 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       sampling_percentage: cdktf.numberToTerraform(this._samplingPercentage),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       s3_job_definition: macie2ClassificationJobS3JobDefinitionToTerraform(this._s3JobDefinition.internalValue),
       schedule_frequency: macie2ClassificationJobScheduleFrequencyToTerraform(this._scheduleFrequency.internalValue),
     };

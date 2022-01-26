@@ -26,11 +26,11 @@ export interface CodeartifactRepositoryConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codeartifact_repository#tags CodeartifactRepository#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codeartifact_repository#tags_all CodeartifactRepository#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * external_connections block
   * 
@@ -42,7 +42,7 @@ export interface CodeartifactRepositoryConfig extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codeartifact_repository#upstream CodeartifactRepository#upstream}
   */
-  readonly upstream?: CodeartifactRepositoryUpstream[];
+  readonly upstream?: CodeartifactRepositoryUpstream[] | cdktf.IResolvable;
 }
 export interface CodeartifactRepositoryExternalConnections {
   /**
@@ -52,7 +52,7 @@ export interface CodeartifactRepositoryExternalConnections {
 }
 
 export function codeartifactRepositoryExternalConnectionsToTerraform(struct?: CodeartifactRepositoryExternalConnectionsOutputReference | CodeartifactRepositoryExternalConnections): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -69,7 +69,7 @@ export class CodeartifactRepositoryExternalConnectionsOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -106,6 +106,16 @@ export class CodeartifactRepositoryExternalConnectionsOutputReference extends cd
   public get externalConnectionNameInput() {
     return this._externalConnectionName;
   }
+
+  // package_format - computed: true, optional: false, required: false
+  public get packageFormat() {
+    return this.getStringAttribute('package_format');
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
 }
 export interface CodeartifactRepositoryUpstream {
   /**
@@ -114,8 +124,8 @@ export interface CodeartifactRepositoryUpstream {
   readonly repositoryName: string;
 }
 
-export function codeartifactRepositoryUpstreamToTerraform(struct?: CodeartifactRepositoryUpstream): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function codeartifactRepositoryUpstreamToTerraform(struct?: CodeartifactRepositoryUpstream | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -245,12 +255,11 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -262,12 +271,11 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -279,7 +287,7 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
   }
 
   // external_connections - computed: false, optional: true, required: false
-  private _externalConnections = new CodeartifactRepositoryExternalConnectionsOutputReference(this as any, "external_connections", true);
+  private _externalConnections = new CodeartifactRepositoryExternalConnectionsOutputReference(this, "external_connections", true);
   public get externalConnections() {
     return this._externalConnections;
   }
@@ -295,12 +303,12 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
   }
 
   // upstream - computed: false, optional: true, required: false
-  private _upstream?: CodeartifactRepositoryUpstream[]; 
+  private _upstream?: CodeartifactRepositoryUpstream[] | cdktf.IResolvable; 
   public get upstream() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('upstream') as any;
+    return this.interpolationForAttribute('upstream');
   }
-  public set upstream(value: CodeartifactRepositoryUpstream[]) {
+  public set upstream(value: CodeartifactRepositoryUpstream[] | cdktf.IResolvable) {
     this._upstream = value;
   }
   public resetUpstream() {
@@ -321,8 +329,8 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
       domain: cdktf.stringToTerraform(this._domain),
       domain_owner: cdktf.stringToTerraform(this._domainOwner),
       repository: cdktf.stringToTerraform(this._repository),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       external_connections: codeartifactRepositoryExternalConnectionsToTerraform(this._externalConnections.internalValue),
       upstream: cdktf.listMapper(codeartifactRepositoryUpstreamToTerraform)(this._upstream),
     };

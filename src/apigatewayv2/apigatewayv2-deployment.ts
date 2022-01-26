@@ -18,7 +18,7 @@ export interface Apigatewayv2DeploymentConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}
   */
-  readonly triggers?: { [key: string]: string } | cdktf.IResolvable;
+  readonly triggers?: { [key: string]: string };
 }
 
 /**
@@ -77,7 +77,7 @@ export class Apigatewayv2Deployment extends cdktf.TerraformResource {
 
   // auto_deployed - computed: true, optional: false, required: false
   public get autoDeployed() {
-    return this.getBooleanAttribute('auto_deployed') as any;
+    return this.getBooleanAttribute('auto_deployed');
   }
 
   // description - computed: false, optional: true, required: false
@@ -102,12 +102,11 @@ export class Apigatewayv2Deployment extends cdktf.TerraformResource {
   }
 
   // triggers - computed: false, optional: true, required: false
-  private _triggers?: { [key: string]: string } | cdktf.IResolvable; 
+  private _triggers?: { [key: string]: string }; 
   public get triggers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('triggers') as any;
+    return this.getStringMapAttribute('triggers');
   }
-  public set triggers(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set triggers(value: { [key: string]: string }) {
     this._triggers = value;
   }
   public resetTriggers() {
@@ -126,7 +125,7 @@ export class Apigatewayv2Deployment extends cdktf.TerraformResource {
     return {
       api_id: cdktf.stringToTerraform(this._apiId),
       description: cdktf.stringToTerraform(this._description),
-      triggers: cdktf.hashMapper(cdktf.anyToTerraform)(this._triggers),
+      triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
     };
   }
 }

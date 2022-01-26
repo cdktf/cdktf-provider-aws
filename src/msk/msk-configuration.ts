@@ -96,7 +96,7 @@ export class MskConfiguration extends cdktf.TerraformResource {
   // kafka_versions - computed: false, optional: true, required: false
   private _kafkaVersions?: string[]; 
   public get kafkaVersions() {
-    return this.getListAttribute('kafka_versions');
+    return cdktf.Fn.tolist(this.getListAttribute('kafka_versions'));
   }
   public set kafkaVersions(value: string[]) {
     this._kafkaVersions = value;

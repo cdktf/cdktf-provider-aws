@@ -130,11 +130,11 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#tags SpotInstanceRequest#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#tags_all SpotInstanceRequest#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#tenancy SpotInstanceRequest#tenancy}
   */
@@ -158,7 +158,7 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#volume_tags SpotInstanceRequest#volume_tags}
   */
-  readonly volumeTags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly volumeTags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#vpc_security_group_ids SpotInstanceRequest#vpc_security_group_ids}
   */
@@ -184,7 +184,7 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#ebs_block_device SpotInstanceRequest#ebs_block_device}
   */
-  readonly ebsBlockDevice?: SpotInstanceRequestEbsBlockDevice[];
+  readonly ebsBlockDevice?: SpotInstanceRequestEbsBlockDevice[] | cdktf.IResolvable;
   /**
   * enclave_options block
   * 
@@ -196,7 +196,7 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#ephemeral_block_device SpotInstanceRequest#ephemeral_block_device}
   */
-  readonly ephemeralBlockDevice?: SpotInstanceRequestEphemeralBlockDevice[];
+  readonly ephemeralBlockDevice?: SpotInstanceRequestEphemeralBlockDevice[] | cdktf.IResolvable;
   /**
   * launch_template block
   * 
@@ -214,7 +214,7 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#network_interface SpotInstanceRequest#network_interface}
   */
-  readonly networkInterface?: SpotInstanceRequestNetworkInterface[];
+  readonly networkInterface?: SpotInstanceRequestNetworkInterface[] | cdktf.IResolvable;
   /**
   * root_block_device block
   * 
@@ -236,7 +236,7 @@ export interface SpotInstanceRequestCapacityReservationSpecificationCapacityRese
 }
 
 export function spotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetToTerraform(struct?: SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference | SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -253,7 +253,7 @@ export class SpotInstanceRequestCapacityReservationSpecificationCapacityReservat
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -308,7 +308,7 @@ export interface SpotInstanceRequestCapacityReservationSpecification {
 }
 
 export function spotInstanceRequestCapacityReservationSpecificationToTerraform(struct?: SpotInstanceRequestCapacityReservationSpecificationOutputReference | SpotInstanceRequestCapacityReservationSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -326,7 +326,7 @@ export class SpotInstanceRequestCapacityReservationSpecificationOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -374,7 +374,7 @@ export class SpotInstanceRequestCapacityReservationSpecificationOutputReference 
   }
 
   // capacity_reservation_target - computed: false, optional: true, required: false
-  private _capacityReservationTarget = new SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference(this as any, "capacity_reservation_target", true);
+  private _capacityReservationTarget = new SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference(this, "capacity_reservation_target", true);
   public get capacityReservationTarget() {
     return this._capacityReservationTarget;
   }
@@ -397,7 +397,7 @@ export interface SpotInstanceRequestCreditSpecification {
 }
 
 export function spotInstanceRequestCreditSpecificationToTerraform(struct?: SpotInstanceRequestCreditSpecificationOutputReference | SpotInstanceRequestCreditSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -414,7 +414,7 @@ export class SpotInstanceRequestCreditSpecificationOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -483,7 +483,7 @@ export interface SpotInstanceRequestEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#tags SpotInstanceRequest#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#throughput SpotInstanceRequest#throughput}
   */
@@ -498,8 +498,8 @@ export interface SpotInstanceRequestEbsBlockDevice {
   readonly volumeType?: string;
 }
 
-export function spotInstanceRequestEbsBlockDeviceToTerraform(struct?: SpotInstanceRequestEbsBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function spotInstanceRequestEbsBlockDeviceToTerraform(struct?: SpotInstanceRequestEbsBlockDevice | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -510,7 +510,7 @@ export function spotInstanceRequestEbsBlockDeviceToTerraform(struct?: SpotInstan
     iops: cdktf.numberToTerraform(struct!.iops),
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
     snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
-    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+    tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
@@ -525,7 +525,7 @@ export interface SpotInstanceRequestEnclaveOptions {
 }
 
 export function spotInstanceRequestEnclaveOptionsToTerraform(struct?: SpotInstanceRequestEnclaveOptionsOutputReference | SpotInstanceRequestEnclaveOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -542,7 +542,7 @@ export class SpotInstanceRequestEnclaveOptionsOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -570,7 +570,7 @@ export class SpotInstanceRequestEnclaveOptionsOutputReference extends cdktf.Comp
   // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -598,8 +598,8 @@ export interface SpotInstanceRequestEphemeralBlockDevice {
   readonly virtualName?: string;
 }
 
-export function spotInstanceRequestEphemeralBlockDeviceToTerraform(struct?: SpotInstanceRequestEphemeralBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function spotInstanceRequestEphemeralBlockDeviceToTerraform(struct?: SpotInstanceRequestEphemeralBlockDevice | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -626,7 +626,7 @@ export interface SpotInstanceRequestLaunchTemplate {
 }
 
 export function spotInstanceRequestLaunchTemplateToTerraform(struct?: SpotInstanceRequestLaunchTemplateOutputReference | SpotInstanceRequestLaunchTemplate): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -644,7 +644,7 @@ export class SpotInstanceRequestLaunchTemplateOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -732,7 +732,7 @@ export interface SpotInstanceRequestMetadataOptions {
 }
 
 export function spotInstanceRequestMetadataOptionsToTerraform(struct?: SpotInstanceRequestMetadataOptionsOutputReference | SpotInstanceRequestMetadataOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -752,7 +752,7 @@ export class SpotInstanceRequestMetadataOptionsOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -874,8 +874,8 @@ export interface SpotInstanceRequestNetworkInterface {
   readonly networkInterfaceId: string;
 }
 
-export function spotInstanceRequestNetworkInterfaceToTerraform(struct?: SpotInstanceRequestNetworkInterface): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function spotInstanceRequestNetworkInterfaceToTerraform(struct?: SpotInstanceRequestNetworkInterface | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -906,7 +906,7 @@ export interface SpotInstanceRequestRootBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#tags SpotInstanceRequest#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#throughput SpotInstanceRequest#throughput}
   */
@@ -922,7 +922,7 @@ export interface SpotInstanceRequestRootBlockDevice {
 }
 
 export function spotInstanceRequestRootBlockDeviceToTerraform(struct?: SpotInstanceRequestRootBlockDeviceOutputReference | SpotInstanceRequestRootBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -931,7 +931,7 @@ export function spotInstanceRequestRootBlockDeviceToTerraform(struct?: SpotInsta
     encrypted: cdktf.booleanToTerraform(struct!.encrypted),
     iops: cdktf.numberToTerraform(struct!.iops),
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
-    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+    tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
@@ -946,7 +946,7 @@ export class SpotInstanceRequestRootBlockDeviceOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1016,7 +1016,7 @@ export class SpotInstanceRequestRootBlockDeviceOutputReference extends cdktf.Com
   // delete_on_termination - computed: false, optional: true, required: false
   private _deleteOnTermination?: boolean | cdktf.IResolvable; 
   public get deleteOnTermination() {
-    return this.getBooleanAttribute('delete_on_termination') as any;
+    return this.getBooleanAttribute('delete_on_termination');
   }
   public set deleteOnTermination(value: boolean | cdktf.IResolvable) {
     this._deleteOnTermination = value;
@@ -1029,10 +1029,15 @@ export class SpotInstanceRequestRootBlockDeviceOutputReference extends cdktf.Com
     return this._deleteOnTermination;
   }
 
+  // device_name - computed: true, optional: false, required: false
+  public get deviceName() {
+    return this.getStringAttribute('device_name');
+  }
+
   // encrypted - computed: true, optional: true, required: false
   private _encrypted?: boolean | cdktf.IResolvable; 
   public get encrypted() {
-    return this.getBooleanAttribute('encrypted') as any;
+    return this.getBooleanAttribute('encrypted');
   }
   public set encrypted(value: boolean | cdktf.IResolvable) {
     this._encrypted = value;
@@ -1078,12 +1083,11 @@ export class SpotInstanceRequestRootBlockDeviceOutputReference extends cdktf.Com
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -1108,6 +1112,11 @@ export class SpotInstanceRequestRootBlockDeviceOutputReference extends cdktf.Com
   // Temporarily expose input value. Use with caution.
   public get throughputInput() {
     return this._throughput;
+  }
+
+  // volume_id - computed: true, optional: false, required: false
+  public get volumeId() {
+    return this.getStringAttribute('volume_id');
   }
 
   // volume_size - computed: true, optional: true, required: false
@@ -1153,8 +1162,8 @@ export interface SpotInstanceRequestTimeouts {
   readonly delete?: string;
 }
 
-export function spotInstanceRequestTimeoutsToTerraform(struct?: SpotInstanceRequestTimeoutsOutputReference | SpotInstanceRequestTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function spotInstanceRequestTimeoutsToTerraform(struct?: SpotInstanceRequestTimeoutsOutputReference | SpotInstanceRequestTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1172,7 +1181,7 @@ export class SpotInstanceRequestTimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1348,7 +1357,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // associate_public_ip_address - computed: true, optional: true, required: false
   private _associatePublicIpAddress?: boolean | cdktf.IResolvable; 
   public get associatePublicIpAddress() {
-    return this.getBooleanAttribute('associate_public_ip_address') as any;
+    return this.getBooleanAttribute('associate_public_ip_address');
   }
   public set associatePublicIpAddress(value: boolean | cdktf.IResolvable) {
     this._associatePublicIpAddress = value;
@@ -1428,7 +1437,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // disable_api_termination - computed: true, optional: true, required: false
   private _disableApiTermination?: boolean | cdktf.IResolvable; 
   public get disableApiTermination() {
-    return this.getBooleanAttribute('disable_api_termination') as any;
+    return this.getBooleanAttribute('disable_api_termination');
   }
   public set disableApiTermination(value: boolean | cdktf.IResolvable) {
     this._disableApiTermination = value;
@@ -1444,7 +1453,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // ebs_optimized - computed: true, optional: true, required: false
   private _ebsOptimized?: boolean | cdktf.IResolvable; 
   public get ebsOptimized() {
-    return this.getBooleanAttribute('ebs_optimized') as any;
+    return this.getBooleanAttribute('ebs_optimized');
   }
   public set ebsOptimized(value: boolean | cdktf.IResolvable) {
     this._ebsOptimized = value;
@@ -1460,7 +1469,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // get_password_data - computed: false, optional: true, required: false
   private _getPasswordData?: boolean | cdktf.IResolvable; 
   public get fetchPasswordData() {
-    return this.getBooleanAttribute('get_password_data') as any;
+    return this.getBooleanAttribute('get_password_data');
   }
   public set fetchPasswordData(value: boolean | cdktf.IResolvable) {
     this._getPasswordData = value;
@@ -1476,7 +1485,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // hibernation - computed: false, optional: true, required: false
   private _hibernation?: boolean | cdktf.IResolvable; 
   public get hibernation() {
-    return this.getBooleanAttribute('hibernation') as any;
+    return this.getBooleanAttribute('hibernation');
   }
   public set hibernation(value: boolean | cdktf.IResolvable) {
     this._hibernation = value;
@@ -1662,7 +1671,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // monitoring - computed: true, optional: true, required: false
   private _monitoring?: boolean | cdktf.IResolvable; 
   public get monitoring() {
-    return this.getBooleanAttribute('monitoring') as any;
+    return this.getBooleanAttribute('monitoring');
   }
   public set monitoring(value: boolean | cdktf.IResolvable) {
     this._monitoring = value;
@@ -1756,7 +1765,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // secondary_private_ips - computed: true, optional: true, required: false
   private _secondaryPrivateIps?: string[]; 
   public get secondaryPrivateIps() {
-    return this.getListAttribute('secondary_private_ips');
+    return cdktf.Fn.tolist(this.getListAttribute('secondary_private_ips'));
   }
   public set secondaryPrivateIps(value: string[]) {
     this._secondaryPrivateIps = value;
@@ -1772,7 +1781,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -1788,7 +1797,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // source_dest_check - computed: false, optional: true, required: false
   private _sourceDestCheck?: boolean | cdktf.IResolvable; 
   public get sourceDestCheck() {
-    return this.getBooleanAttribute('source_dest_check') as any;
+    return this.getBooleanAttribute('source_dest_check');
   }
   public set sourceDestCheck(value: boolean | cdktf.IResolvable) {
     this._sourceDestCheck = value;
@@ -1865,12 +1874,11 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -1882,12 +1890,11 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -1979,12 +1986,11 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // volume_tags - computed: false, optional: true, required: false
-  private _volumeTags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _volumeTags?: { [key: string]: string }; 
   public get volumeTags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('volume_tags') as any;
+    return this.getStringMapAttribute('volume_tags');
   }
-  public set volumeTags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set volumeTags(value: { [key: string]: string }) {
     this._volumeTags = value;
   }
   public resetVolumeTags() {
@@ -1998,7 +2004,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[]; 
   public get vpcSecurityGroupIds() {
-    return this.getListAttribute('vpc_security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
   }
   public set vpcSecurityGroupIds(value: string[]) {
     this._vpcSecurityGroupIds = value;
@@ -2014,7 +2020,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // wait_for_fulfillment - computed: false, optional: true, required: false
   private _waitForFulfillment?: boolean | cdktf.IResolvable; 
   public get waitForFulfillment() {
-    return this.getBooleanAttribute('wait_for_fulfillment') as any;
+    return this.getBooleanAttribute('wait_for_fulfillment');
   }
   public set waitForFulfillment(value: boolean | cdktf.IResolvable) {
     this._waitForFulfillment = value;
@@ -2028,7 +2034,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // capacity_reservation_specification - computed: false, optional: true, required: false
-  private _capacityReservationSpecification = new SpotInstanceRequestCapacityReservationSpecificationOutputReference(this as any, "capacity_reservation_specification", true);
+  private _capacityReservationSpecification = new SpotInstanceRequestCapacityReservationSpecificationOutputReference(this, "capacity_reservation_specification", true);
   public get capacityReservationSpecification() {
     return this._capacityReservationSpecification;
   }
@@ -2044,7 +2050,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // credit_specification - computed: false, optional: true, required: false
-  private _creditSpecification = new SpotInstanceRequestCreditSpecificationOutputReference(this as any, "credit_specification", true);
+  private _creditSpecification = new SpotInstanceRequestCreditSpecificationOutputReference(this, "credit_specification", true);
   public get creditSpecification() {
     return this._creditSpecification;
   }
@@ -2060,12 +2066,12 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // ebs_block_device - computed: false, optional: true, required: false
-  private _ebsBlockDevice?: SpotInstanceRequestEbsBlockDevice[]; 
+  private _ebsBlockDevice?: SpotInstanceRequestEbsBlockDevice[] | cdktf.IResolvable; 
   public get ebsBlockDevice() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ebs_block_device') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ebs_block_device')));
   }
-  public set ebsBlockDevice(value: SpotInstanceRequestEbsBlockDevice[]) {
+  public set ebsBlockDevice(value: SpotInstanceRequestEbsBlockDevice[] | cdktf.IResolvable) {
     this._ebsBlockDevice = value;
   }
   public resetEbsBlockDevice() {
@@ -2077,7 +2083,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // enclave_options - computed: false, optional: true, required: false
-  private _enclaveOptions = new SpotInstanceRequestEnclaveOptionsOutputReference(this as any, "enclave_options", true);
+  private _enclaveOptions = new SpotInstanceRequestEnclaveOptionsOutputReference(this, "enclave_options", true);
   public get enclaveOptions() {
     return this._enclaveOptions;
   }
@@ -2093,12 +2099,12 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // ephemeral_block_device - computed: false, optional: true, required: false
-  private _ephemeralBlockDevice?: SpotInstanceRequestEphemeralBlockDevice[]; 
+  private _ephemeralBlockDevice?: SpotInstanceRequestEphemeralBlockDevice[] | cdktf.IResolvable; 
   public get ephemeralBlockDevice() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ephemeral_block_device') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ephemeral_block_device')));
   }
-  public set ephemeralBlockDevice(value: SpotInstanceRequestEphemeralBlockDevice[]) {
+  public set ephemeralBlockDevice(value: SpotInstanceRequestEphemeralBlockDevice[] | cdktf.IResolvable) {
     this._ephemeralBlockDevice = value;
   }
   public resetEphemeralBlockDevice() {
@@ -2110,7 +2116,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // launch_template - computed: false, optional: true, required: false
-  private _launchTemplate = new SpotInstanceRequestLaunchTemplateOutputReference(this as any, "launch_template", true);
+  private _launchTemplate = new SpotInstanceRequestLaunchTemplateOutputReference(this, "launch_template", true);
   public get launchTemplate() {
     return this._launchTemplate;
   }
@@ -2126,7 +2132,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // metadata_options - computed: false, optional: true, required: false
-  private _metadataOptions = new SpotInstanceRequestMetadataOptionsOutputReference(this as any, "metadata_options", true);
+  private _metadataOptions = new SpotInstanceRequestMetadataOptionsOutputReference(this, "metadata_options", true);
   public get metadataOptions() {
     return this._metadataOptions;
   }
@@ -2142,12 +2148,12 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // network_interface - computed: false, optional: true, required: false
-  private _networkInterface?: SpotInstanceRequestNetworkInterface[]; 
+  private _networkInterface?: SpotInstanceRequestNetworkInterface[] | cdktf.IResolvable; 
   public get networkInterface() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('network_interface') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('network_interface')));
   }
-  public set networkInterface(value: SpotInstanceRequestNetworkInterface[]) {
+  public set networkInterface(value: SpotInstanceRequestNetworkInterface[] | cdktf.IResolvable) {
     this._networkInterface = value;
   }
   public resetNetworkInterface() {
@@ -2159,7 +2165,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // root_block_device - computed: false, optional: true, required: false
-  private _rootBlockDevice = new SpotInstanceRequestRootBlockDeviceOutputReference(this as any, "root_block_device", true);
+  private _rootBlockDevice = new SpotInstanceRequestRootBlockDeviceOutputReference(this, "root_block_device", true);
   public get rootBlockDevice() {
     return this._rootBlockDevice;
   }
@@ -2175,7 +2181,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new SpotInstanceRequestTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new SpotInstanceRequestTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -2226,14 +2232,14 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
       spot_price: cdktf.stringToTerraform(this._spotPrice),
       spot_type: cdktf.stringToTerraform(this._spotType),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       tenancy: cdktf.stringToTerraform(this._tenancy),
       user_data: cdktf.stringToTerraform(this._userData),
       user_data_base64: cdktf.stringToTerraform(this._userDataBase64),
       valid_from: cdktf.stringToTerraform(this._validFrom),
       valid_until: cdktf.stringToTerraform(this._validUntil),
-      volume_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._volumeTags),
+      volume_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._volumeTags),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
       wait_for_fulfillment: cdktf.booleanToTerraform(this._waitForFulfillment),
       capacity_reservation_specification: spotInstanceRequestCapacityReservationSpecificationToTerraform(this._capacityReservationSpecification.internalValue),

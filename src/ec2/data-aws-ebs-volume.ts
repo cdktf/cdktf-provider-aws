@@ -14,13 +14,13 @@ export interface DataAwsEbsVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume#tags DataAwsEbsVolume#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * filter block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume#filter DataAwsEbsVolume#filter}
   */
-  readonly filter?: DataAwsEbsVolumeFilter[];
+  readonly filter?: DataAwsEbsVolumeFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsEbsVolumeFilter {
   /**
@@ -33,8 +33,8 @@ export interface DataAwsEbsVolumeFilter {
   readonly values: string[];
 }
 
-export function dataAwsEbsVolumeFilterToTerraform(struct?: DataAwsEbsVolumeFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsEbsVolumeFilterToTerraform(struct?: DataAwsEbsVolumeFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -98,7 +98,7 @@ export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
 
   // encrypted - computed: true, optional: false, required: false
   public get encrypted() {
-    return this.getBooleanAttribute('encrypted') as any;
+    return this.getBooleanAttribute('encrypted');
   }
 
   // id - computed: true, optional: true, required: false
@@ -119,7 +119,7 @@ export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
   // most_recent - computed: false, optional: true, required: false
   private _mostRecent?: boolean | cdktf.IResolvable; 
   public get mostRecent() {
-    return this.getBooleanAttribute('most_recent') as any;
+    return this.getBooleanAttribute('most_recent');
   }
   public set mostRecent(value: boolean | cdktf.IResolvable) {
     this._mostRecent = value;
@@ -134,7 +134,7 @@ export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
 
   // multi_attach_enabled - computed: true, optional: false, required: false
   public get multiAttachEnabled() {
-    return this.getBooleanAttribute('multi_attach_enabled') as any;
+    return this.getBooleanAttribute('multi_attach_enabled');
   }
 
   // outpost_arn - computed: true, optional: false, required: false
@@ -153,12 +153,11 @@ export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -185,12 +184,12 @@ export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsEbsVolumeFilter[]; 
+  private _filter?: DataAwsEbsVolumeFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsEbsVolumeFilter[]) {
+  public set filter(value: DataAwsEbsVolumeFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -208,7 +207,7 @@ export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       most_recent: cdktf.booleanToTerraform(this._mostRecent),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsEbsVolumeFilterToTerraform)(this._filter),
     };
   }

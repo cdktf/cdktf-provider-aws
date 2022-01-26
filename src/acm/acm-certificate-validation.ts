@@ -29,8 +29,8 @@ export interface AcmCertificateValidationTimeouts {
   readonly create?: string;
 }
 
-export function acmCertificateValidationTimeoutsToTerraform(struct?: AcmCertificateValidationTimeoutsOutputReference | AcmCertificateValidationTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function acmCertificateValidationTimeoutsToTerraform(struct?: AcmCertificateValidationTimeoutsOutputReference | AcmCertificateValidationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -47,7 +47,7 @@ export class AcmCertificateValidationTimeoutsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -151,7 +151,7 @@ export class AcmCertificateValidation extends cdktf.TerraformResource {
   // validation_record_fqdns - computed: false, optional: true, required: false
   private _validationRecordFqdns?: string[]; 
   public get validationRecordFqdns() {
-    return this.getListAttribute('validation_record_fqdns');
+    return cdktf.Fn.tolist(this.getListAttribute('validation_record_fqdns'));
   }
   public set validationRecordFqdns(value: string[]) {
     this._validationRecordFqdns = value;
@@ -165,7 +165,7 @@ export class AcmCertificateValidation extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new AcmCertificateValidationTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new AcmCertificateValidationTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

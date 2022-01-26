@@ -42,7 +42,7 @@ export interface SsmResourceDataSyncS3Destination {
 }
 
 export function ssmResourceDataSyncS3DestinationToTerraform(struct?: SsmResourceDataSyncS3DestinationOutputReference | SsmResourceDataSyncS3Destination): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -63,7 +63,7 @@ export class SsmResourceDataSyncS3DestinationOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -246,7 +246,7 @@ export class SsmResourceDataSync extends cdktf.TerraformResource {
   }
 
   // s3_destination - computed: false, optional: false, required: true
-  private _s3Destination = new SsmResourceDataSyncS3DestinationOutputReference(this as any, "s3_destination", true);
+  private _s3Destination = new SsmResourceDataSyncS3DestinationOutputReference(this, "s3_destination", true);
   public get s3Destination() {
     return this._s3Destination;
   }

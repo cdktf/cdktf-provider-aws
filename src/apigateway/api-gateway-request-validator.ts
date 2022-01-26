@@ -101,7 +101,7 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
   // validate_request_body - computed: false, optional: true, required: false
   private _validateRequestBody?: boolean | cdktf.IResolvable; 
   public get validateRequestBody() {
-    return this.getBooleanAttribute('validate_request_body') as any;
+    return this.getBooleanAttribute('validate_request_body');
   }
   public set validateRequestBody(value: boolean | cdktf.IResolvable) {
     this._validateRequestBody = value;
@@ -117,7 +117,7 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
   // validate_request_parameters - computed: false, optional: true, required: false
   private _validateRequestParameters?: boolean | cdktf.IResolvable; 
   public get validateRequestParameters() {
-    return this.getBooleanAttribute('validate_request_parameters') as any;
+    return this.getBooleanAttribute('validate_request_parameters');
   }
   public set validateRequestParameters(value: boolean | cdktf.IResolvable) {
     this._validateRequestParameters = value;

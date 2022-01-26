@@ -106,7 +106,7 @@ export class DataAwsRoute53ResolverRules extends cdktf.TerraformDataSource {
 
   // resolver_rule_ids - computed: true, optional: false, required: false
   public get resolverRuleIds() {
-    return this.getListAttribute('resolver_rule_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('resolver_rule_ids'));
   }
 
   // rule_type - computed: false, optional: true, required: false

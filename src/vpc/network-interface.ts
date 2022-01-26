@@ -66,17 +66,17 @@ export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface#tags NetworkInterface#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface#tags_all NetworkInterface#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * attachment block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface#attachment NetworkInterface#attachment}
   */
-  readonly attachment?: NetworkInterfaceAttachment[];
+  readonly attachment?: NetworkInterfaceAttachment[] | cdktf.IResolvable;
 }
 export interface NetworkInterfaceAttachment {
   /**
@@ -89,8 +89,8 @@ export interface NetworkInterfaceAttachment {
   readonly instance: string;
 }
 
-export function networkInterfaceAttachmentToTerraform(struct?: NetworkInterfaceAttachment): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function networkInterfaceAttachmentToTerraform(struct?: NetworkInterfaceAttachment | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -217,7 +217,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // ipv4_prefixes - computed: true, optional: true, required: false
   private _ipv4Prefixes?: string[]; 
   public get ipv4Prefixes() {
-    return this.getListAttribute('ipv4_prefixes');
+    return cdktf.Fn.tolist(this.getListAttribute('ipv4_prefixes'));
   }
   public set ipv4Prefixes(value: string[]) {
     this._ipv4Prefixes = value;
@@ -249,7 +249,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // ipv6_addresses - computed: true, optional: true, required: false
   private _ipv6Addresses?: string[]; 
   public get ipv6Addresses() {
-    return this.getListAttribute('ipv6_addresses');
+    return cdktf.Fn.tolist(this.getListAttribute('ipv6_addresses'));
   }
   public set ipv6Addresses(value: string[]) {
     this._ipv6Addresses = value;
@@ -281,7 +281,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // ipv6_prefixes - computed: true, optional: true, required: false
   private _ipv6Prefixes?: string[]; 
   public get ipv6Prefixes() {
-    return this.getListAttribute('ipv6_prefixes');
+    return cdktf.Fn.tolist(this.getListAttribute('ipv6_prefixes'));
   }
   public set ipv6Prefixes(value: string[]) {
     this._ipv6Prefixes = value;
@@ -333,7 +333,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // private_ips - computed: true, optional: true, required: false
   private _privateIps?: string[]; 
   public get privateIps() {
-    return this.getListAttribute('private_ips');
+    return cdktf.Fn.tolist(this.getListAttribute('private_ips'));
   }
   public set privateIps(value: string[]) {
     this._privateIps = value;
@@ -365,7 +365,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -381,7 +381,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // source_dest_check - computed: false, optional: true, required: false
   private _sourceDestCheck?: boolean | cdktf.IResolvable; 
   public get sourceDestCheck() {
-    return this.getBooleanAttribute('source_dest_check') as any;
+    return this.getBooleanAttribute('source_dest_check');
   }
   public set sourceDestCheck(value: boolean | cdktf.IResolvable) {
     this._sourceDestCheck = value;
@@ -408,12 +408,11 @@ export class NetworkInterface extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -425,12 +424,11 @@ export class NetworkInterface extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -442,12 +440,12 @@ export class NetworkInterface extends cdktf.TerraformResource {
   }
 
   // attachment - computed: false, optional: true, required: false
-  private _attachment?: NetworkInterfaceAttachment[]; 
+  private _attachment?: NetworkInterfaceAttachment[] | cdktf.IResolvable; 
   public get attachment() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('attachment') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('attachment')));
   }
-  public set attachment(value: NetworkInterfaceAttachment[]) {
+  public set attachment(value: NetworkInterfaceAttachment[] | cdktf.IResolvable) {
     this._attachment = value;
   }
   public resetAttachment() {
@@ -478,8 +476,8 @@ export class NetworkInterface extends cdktf.TerraformResource {
       security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
       source_dest_check: cdktf.booleanToTerraform(this._sourceDestCheck),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       attachment: cdktf.listMapper(networkInterfaceAttachmentToTerraform)(this._attachment),
     };
   }

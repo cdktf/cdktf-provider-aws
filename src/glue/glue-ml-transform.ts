@@ -38,11 +38,11 @@ export interface GlueMlTransformConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_ml_transform#tags GlueMlTransform#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_ml_transform#tags_all GlueMlTransform#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_ml_transform#timeout GlueMlTransform#timeout}
   */
@@ -56,7 +56,7 @@ export interface GlueMlTransformConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_ml_transform#input_record_tables GlueMlTransform#input_record_tables}
   */
-  readonly inputRecordTables: GlueMlTransformInputRecordTables[];
+  readonly inputRecordTables: GlueMlTransformInputRecordTables[] | cdktf.IResolvable;
   /**
   * parameters block
   * 
@@ -95,8 +95,8 @@ export interface GlueMlTransformInputRecordTables {
   readonly tableName: string;
 }
 
-export function glueMlTransformInputRecordTablesToTerraform(struct?: GlueMlTransformInputRecordTables): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function glueMlTransformInputRecordTablesToTerraform(struct?: GlueMlTransformInputRecordTables | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -128,7 +128,7 @@ export interface GlueMlTransformParametersFindMatchesParameters {
 }
 
 export function glueMlTransformParametersFindMatchesParametersToTerraform(struct?: GlueMlTransformParametersFindMatchesParametersOutputReference | GlueMlTransformParametersFindMatchesParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -148,7 +148,7 @@ export class GlueMlTransformParametersFindMatchesParametersOutputReference exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -210,7 +210,7 @@ export class GlueMlTransformParametersFindMatchesParametersOutputReference exten
   // enforce_provided_labels - computed: false, optional: true, required: false
   private _enforceProvidedLabels?: boolean | cdktf.IResolvable; 
   public get enforceProvidedLabels() {
-    return this.getBooleanAttribute('enforce_provided_labels') as any;
+    return this.getBooleanAttribute('enforce_provided_labels');
   }
   public set enforceProvidedLabels(value: boolean | cdktf.IResolvable) {
     this._enforceProvidedLabels = value;
@@ -269,7 +269,7 @@ export interface GlueMlTransformParameters {
 }
 
 export function glueMlTransformParametersToTerraform(struct?: GlueMlTransformParametersOutputReference | GlueMlTransformParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -287,7 +287,7 @@ export class GlueMlTransformParametersOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -332,7 +332,7 @@ export class GlueMlTransformParametersOutputReference extends cdktf.ComplexObjec
   }
 
   // find_matches_parameters - computed: false, optional: false, required: true
-  private _findMatchesParameters = new GlueMlTransformParametersFindMatchesParametersOutputReference(this as any, "find_matches_parameters", true);
+  private _findMatchesParameters = new GlueMlTransformParametersFindMatchesParametersOutputReference(this, "find_matches_parameters", true);
   public get findMatchesParameters() {
     return this._findMatchesParameters;
   }
@@ -519,16 +519,15 @@ export class GlueMlTransform extends cdktf.TerraformResource {
 
   // schema - computed: true, optional: false, required: false
   public schema(index: string) {
-    return new GlueMlTransformSchema(this, 'schema', index);
+    return new GlueMlTransformSchema(this, 'schema', index, false);
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -540,12 +539,11 @@ export class GlueMlTransform extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -589,12 +587,12 @@ export class GlueMlTransform extends cdktf.TerraformResource {
   }
 
   // input_record_tables - computed: false, optional: false, required: true
-  private _inputRecordTables?: GlueMlTransformInputRecordTables[]; 
+  private _inputRecordTables?: GlueMlTransformInputRecordTables[] | cdktf.IResolvable; 
   public get inputRecordTables() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('input_record_tables') as any;
+    return this.interpolationForAttribute('input_record_tables');
   }
-  public set inputRecordTables(value: GlueMlTransformInputRecordTables[]) {
+  public set inputRecordTables(value: GlueMlTransformInputRecordTables[] | cdktf.IResolvable) {
     this._inputRecordTables = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -603,7 +601,7 @@ export class GlueMlTransform extends cdktf.TerraformResource {
   }
 
   // parameters - computed: false, optional: false, required: true
-  private _parameters = new GlueMlTransformParametersOutputReference(this as any, "parameters", true);
+  private _parameters = new GlueMlTransformParametersOutputReference(this, "parameters", true);
   public get parameters() {
     return this._parameters;
   }
@@ -628,8 +626,8 @@ export class GlueMlTransform extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       number_of_workers: cdktf.numberToTerraform(this._numberOfWorkers),
       role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeout: cdktf.numberToTerraform(this._timeout),
       worker_type: cdktf.stringToTerraform(this._workerType),
       input_record_tables: cdktf.listMapper(glueMlTransformInputRecordTablesToTerraform)(this._inputRecordTables),

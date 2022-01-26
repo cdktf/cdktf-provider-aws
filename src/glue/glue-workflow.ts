@@ -10,7 +10,7 @@ export interface GlueWorkflowConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_workflow#default_run_properties GlueWorkflow#default_run_properties}
   */
-  readonly defaultRunProperties?: { [key: string]: string } | cdktf.IResolvable;
+  readonly defaultRunProperties?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_workflow#description GlueWorkflow#description}
   */
@@ -26,11 +26,11 @@ export interface GlueWorkflowConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_workflow#tags GlueWorkflow#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_workflow#tags_all GlueWorkflow#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
 }
 
 /**
@@ -83,12 +83,11 @@ export class GlueWorkflow extends cdktf.TerraformResource {
   }
 
   // default_run_properties - computed: false, optional: true, required: false
-  private _defaultRunProperties?: { [key: string]: string } | cdktf.IResolvable; 
+  private _defaultRunProperties?: { [key: string]: string }; 
   public get defaultRunProperties() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('default_run_properties') as any;
+    return this.getStringMapAttribute('default_run_properties');
   }
-  public set defaultRunProperties(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set defaultRunProperties(value: { [key: string]: string }) {
     this._defaultRunProperties = value;
   }
   public resetDefaultRunProperties() {
@@ -153,12 +152,11 @@ export class GlueWorkflow extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -170,12 +168,11 @@ export class GlueWorkflow extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -192,12 +189,12 @@ export class GlueWorkflow extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_run_properties: cdktf.hashMapper(cdktf.anyToTerraform)(this._defaultRunProperties),
+      default_run_properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._defaultRunProperties),
       description: cdktf.stringToTerraform(this._description),
       max_concurrent_runs: cdktf.numberToTerraform(this._maxConcurrentRuns),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
   }
 }

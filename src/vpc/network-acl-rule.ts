@@ -121,7 +121,7 @@ export class NetworkAclRule extends cdktf.TerraformResource {
   // egress - computed: false, optional: true, required: false
   private _egress?: boolean | cdktf.IResolvable; 
   public get egress() {
-    return this.getBooleanAttribute('egress') as any;
+    return this.getBooleanAttribute('egress');
   }
   public set egress(value: boolean | cdktf.IResolvable) {
     this._egress = value;

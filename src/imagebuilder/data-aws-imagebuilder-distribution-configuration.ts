@@ -14,26 +14,25 @@ export interface DataAwsImagebuilderDistributionConfigurationConfig extends cdkt
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_distribution_configuration#tags DataAwsImagebuilderDistributionConfiguration#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission extends cdktf.ComplexComputedList {
 
   // user_groups - computed: true, optional: false, required: false
   public get userGroups() {
-    return this.getListAttribute('user_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('user_groups'));
   }
 
   // user_ids - computed: true, optional: false, required: false
   public get userIds() {
-    return this.getListAttribute('user_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('user_ids'));
   }
 }
 export class DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration extends cdktf.ComplexComputedList {
 
   // ami_tags - computed: true, optional: false, required: false
   public get amiTags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ami_tags') as any;
+    return this.getStringMapAttribute('ami_tags');
   }
 
   // description - computed: true, optional: false, required: false
@@ -49,7 +48,7 @@ export class DataAwsImagebuilderDistributionConfigurationDistributionAmiDistribu
   // launch_permission - computed: true, optional: false, required: false
   public get launchPermission() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('launch_permission') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('launch_permission')));
   }
 
   // name - computed: true, optional: false, required: false
@@ -59,7 +58,7 @@ export class DataAwsImagebuilderDistributionConfigurationDistributionAmiDistribu
 
   // target_account_ids - computed: true, optional: false, required: false
   public get targetAccountIds() {
-    return this.getListAttribute('target_account_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('target_account_ids'));
   }
 }
 export class DataAwsImagebuilderDistributionConfigurationDistribution extends cdktf.ComplexComputedList {
@@ -67,12 +66,12 @@ export class DataAwsImagebuilderDistributionConfigurationDistribution extends cd
   // ami_distribution_configuration - computed: true, optional: false, required: false
   public get amiDistributionConfiguration() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ami_distribution_configuration') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ami_distribution_configuration')));
   }
 
   // license_configuration_arns - computed: true, optional: false, required: false
   public get licenseConfigurationArns() {
-    return this.getListAttribute('license_configuration_arns');
+    return cdktf.Fn.tolist(this.getListAttribute('license_configuration_arns'));
   }
 
   // region - computed: true, optional: false, required: false
@@ -151,7 +150,7 @@ export class DataAwsImagebuilderDistributionConfiguration extends cdktf.Terrafor
 
   // distribution - computed: true, optional: false, required: false
   public distribution(index: string) {
-    return new DataAwsImagebuilderDistributionConfigurationDistribution(this, 'distribution', index);
+    return new DataAwsImagebuilderDistributionConfigurationDistribution(this, 'distribution', index, true);
   }
 
   // id - computed: true, optional: true, required: false
@@ -165,12 +164,11 @@ export class DataAwsImagebuilderDistributionConfiguration extends cdktf.Terrafor
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -188,7 +186,7 @@ export class DataAwsImagebuilderDistributionConfiguration extends cdktf.Terrafor
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       arn: cdktf.stringToTerraform(this._arn),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

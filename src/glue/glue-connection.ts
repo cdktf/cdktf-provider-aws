@@ -14,7 +14,7 @@ export interface GlueConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_connection#connection_properties GlueConnection#connection_properties}
   */
-  readonly connectionProperties?: { [key: string]: string } | cdktf.IResolvable;
+  readonly connectionProperties?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_connection#connection_type GlueConnection#connection_type}
   */
@@ -34,11 +34,11 @@ export interface GlueConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_connection#tags GlueConnection#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_connection#tags_all GlueConnection#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * physical_connection_requirements block
   * 
@@ -62,7 +62,7 @@ export interface GlueConnectionPhysicalConnectionRequirements {
 }
 
 export function glueConnectionPhysicalConnectionRequirementsToTerraform(struct?: GlueConnectionPhysicalConnectionRequirementsOutputReference | GlueConnectionPhysicalConnectionRequirements): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -81,7 +81,7 @@ export class GlueConnectionPhysicalConnectionRequirementsOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -137,7 +137,7 @@ export class GlueConnectionPhysicalConnectionRequirementsOutputReference extends
   // security_group_id_list - computed: false, optional: true, required: false
   private _securityGroupIdList?: string[]; 
   public get securityGroupIdList() {
-    return this.getListAttribute('security_group_id_list');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_id_list'));
   }
   public set securityGroupIdList(value: string[]) {
     this._securityGroupIdList = value;
@@ -236,12 +236,11 @@ export class GlueConnection extends cdktf.TerraformResource {
   }
 
   // connection_properties - computed: false, optional: true, required: false
-  private _connectionProperties?: { [key: string]: string } | cdktf.IResolvable; 
+  private _connectionProperties?: { [key: string]: string }; 
   public get connectionProperties() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('connection_properties') as any;
+    return this.getStringMapAttribute('connection_properties');
   }
-  public set connectionProperties(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set connectionProperties(value: { [key: string]: string }) {
     this._connectionProperties = value;
   }
   public resetConnectionProperties() {
@@ -319,12 +318,11 @@ export class GlueConnection extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -336,12 +334,11 @@ export class GlueConnection extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -353,7 +350,7 @@ export class GlueConnection extends cdktf.TerraformResource {
   }
 
   // physical_connection_requirements - computed: false, optional: true, required: false
-  private _physicalConnectionRequirements = new GlueConnectionPhysicalConnectionRequirementsOutputReference(this as any, "physical_connection_requirements", true);
+  private _physicalConnectionRequirements = new GlueConnectionPhysicalConnectionRequirementsOutputReference(this, "physical_connection_requirements", true);
   public get physicalConnectionRequirements() {
     return this._physicalConnectionRequirements;
   }
@@ -375,13 +372,13 @@ export class GlueConnection extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       catalog_id: cdktf.stringToTerraform(this._catalogId),
-      connection_properties: cdktf.hashMapper(cdktf.anyToTerraform)(this._connectionProperties),
+      connection_properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._connectionProperties),
       connection_type: cdktf.stringToTerraform(this._connectionType),
       description: cdktf.stringToTerraform(this._description),
       match_criteria: cdktf.listMapper(cdktf.stringToTerraform)(this._matchCriteria),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       physical_connection_requirements: glueConnectionPhysicalConnectionRequirementsToTerraform(this._physicalConnectionRequirements.internalValue),
     };
   }

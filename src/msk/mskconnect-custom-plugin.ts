@@ -48,7 +48,7 @@ export interface MskconnectCustomPluginLocationS3 {
 }
 
 export function mskconnectCustomPluginLocationS3ToTerraform(struct?: MskconnectCustomPluginLocationS3OutputReference | MskconnectCustomPluginLocationS3): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -67,7 +67,7 @@ export class MskconnectCustomPluginLocationS3OutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -156,7 +156,7 @@ export interface MskconnectCustomPluginLocation {
 }
 
 export function mskconnectCustomPluginLocationToTerraform(struct?: MskconnectCustomPluginLocationOutputReference | MskconnectCustomPluginLocation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -173,7 +173,7 @@ export class MskconnectCustomPluginLocationOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -199,7 +199,7 @@ export class MskconnectCustomPluginLocationOutputReference extends cdktf.Complex
   }
 
   // s3 - computed: false, optional: false, required: true
-  private _s3 = new MskconnectCustomPluginLocationS3OutputReference(this as any, "s3", true);
+  private _s3 = new MskconnectCustomPluginLocationS3OutputReference(this, "s3", true);
   public get s3() {
     return this._s3;
   }
@@ -218,8 +218,8 @@ export interface MskconnectCustomPluginTimeouts {
   readonly create?: string;
 }
 
-export function mskconnectCustomPluginTimeoutsToTerraform(struct?: MskconnectCustomPluginTimeoutsOutputReference | MskconnectCustomPluginTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function mskconnectCustomPluginTimeoutsToTerraform(struct?: MskconnectCustomPluginTimeoutsOutputReference | MskconnectCustomPluginTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -236,7 +236,7 @@ export class MskconnectCustomPluginTimeoutsOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -384,7 +384,7 @@ export class MskconnectCustomPlugin extends cdktf.TerraformResource {
   }
 
   // location - computed: false, optional: false, required: true
-  private _location = new MskconnectCustomPluginLocationOutputReference(this as any, "location", true);
+  private _location = new MskconnectCustomPluginLocationOutputReference(this, "location", true);
   public get location() {
     return this._location;
   }
@@ -397,7 +397,7 @@ export class MskconnectCustomPlugin extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new MskconnectCustomPluginTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new MskconnectCustomPluginTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

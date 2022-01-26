@@ -77,16 +77,16 @@ export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
 
   // disable_networking - computed: true, optional: false, required: false
   public get disableNetworking() {
-    return this.getBooleanAttribute('disable_networking') as any;
+    return this.getBooleanAttribute('disable_networking');
   }
 
   // docker_labels - computed: true, optional: false, required: false
-  public dockerLabels(key: string): string {
+  public dockerLabels(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'docker_labels').lookup(key);
   }
 
   // environment - computed: true, optional: false, required: false
-  public environment(key: string): string {
+  public environment(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'environment').lookup(key);
   }
 

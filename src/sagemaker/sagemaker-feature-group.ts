@@ -30,17 +30,17 @@ export interface SagemakerFeatureGroupConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#tags SagemakerFeatureGroup#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#tags_all SagemakerFeatureGroup#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * feature_definition block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#feature_definition SagemakerFeatureGroup#feature_definition}
   */
-  readonly featureDefinition: SagemakerFeatureGroupFeatureDefinition[];
+  readonly featureDefinition: SagemakerFeatureGroupFeatureDefinition[] | cdktf.IResolvable;
   /**
   * offline_store_config block
   * 
@@ -65,8 +65,8 @@ export interface SagemakerFeatureGroupFeatureDefinition {
   readonly featureType?: string;
 }
 
-export function sagemakerFeatureGroupFeatureDefinitionToTerraform(struct?: SagemakerFeatureGroupFeatureDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function sagemakerFeatureGroupFeatureDefinitionToTerraform(struct?: SagemakerFeatureGroupFeatureDefinition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -92,7 +92,7 @@ export interface SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig {
 }
 
 export function sagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigToTerraform(struct?: SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference | SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -111,7 +111,7 @@ export class SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputRefer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -208,7 +208,7 @@ export interface SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig {
 }
 
 export function sagemakerFeatureGroupOfflineStoreConfigS3StorageConfigToTerraform(struct?: SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference | SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -226,7 +226,7 @@ export class SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReferen
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -306,7 +306,7 @@ export interface SagemakerFeatureGroupOfflineStoreConfig {
 }
 
 export function sagemakerFeatureGroupOfflineStoreConfigToTerraform(struct?: SagemakerFeatureGroupOfflineStoreConfigOutputReference | SagemakerFeatureGroupOfflineStoreConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -325,7 +325,7 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -365,7 +365,7 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
   // disable_glue_table_creation - computed: false, optional: true, required: false
   private _disableGlueTableCreation?: boolean | cdktf.IResolvable; 
   public get disableGlueTableCreation() {
-    return this.getBooleanAttribute('disable_glue_table_creation') as any;
+    return this.getBooleanAttribute('disable_glue_table_creation');
   }
   public set disableGlueTableCreation(value: boolean | cdktf.IResolvable) {
     this._disableGlueTableCreation = value;
@@ -379,7 +379,7 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
   }
 
   // data_catalog_config - computed: false, optional: true, required: false
-  private _dataCatalogConfig = new SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference(this as any, "data_catalog_config", true);
+  private _dataCatalogConfig = new SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference(this, "data_catalog_config", true);
   public get dataCatalogConfig() {
     return this._dataCatalogConfig;
   }
@@ -395,7 +395,7 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
   }
 
   // s3_storage_config - computed: false, optional: false, required: true
-  private _s3StorageConfig = new SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference(this as any, "s3_storage_config", true);
+  private _s3StorageConfig = new SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference(this, "s3_storage_config", true);
   public get s3StorageConfig() {
     return this._s3StorageConfig;
   }
@@ -415,7 +415,7 @@ export interface SagemakerFeatureGroupOnlineStoreConfigSecurityConfig {
 }
 
 export function sagemakerFeatureGroupOnlineStoreConfigSecurityConfigToTerraform(struct?: SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference | SagemakerFeatureGroupOnlineStoreConfigSecurityConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -432,7 +432,7 @@ export class SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -487,7 +487,7 @@ export interface SagemakerFeatureGroupOnlineStoreConfig {
 }
 
 export function sagemakerFeatureGroupOnlineStoreConfigToTerraform(struct?: SagemakerFeatureGroupOnlineStoreConfigOutputReference | SagemakerFeatureGroupOnlineStoreConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -505,7 +505,7 @@ export class SagemakerFeatureGroupOnlineStoreConfigOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -539,7 +539,7 @@ export class SagemakerFeatureGroupOnlineStoreConfigOutputReference extends cdktf
   // enable_online_store - computed: false, optional: true, required: false
   private _enableOnlineStore?: boolean | cdktf.IResolvable; 
   public get enableOnlineStore() {
-    return this.getBooleanAttribute('enable_online_store') as any;
+    return this.getBooleanAttribute('enable_online_store');
   }
   public set enableOnlineStore(value: boolean | cdktf.IResolvable) {
     this._enableOnlineStore = value;
@@ -553,7 +553,7 @@ export class SagemakerFeatureGroupOnlineStoreConfigOutputReference extends cdktf
   }
 
   // security_config - computed: false, optional: true, required: false
-  private _securityConfig = new SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference(this as any, "security_config", true);
+  private _securityConfig = new SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference(this, "security_config", true);
   public get securityConfig() {
     return this._securityConfig;
   }
@@ -696,12 +696,11 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -713,12 +712,11 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -730,12 +728,12 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
   }
 
   // feature_definition - computed: false, optional: false, required: true
-  private _featureDefinition?: SagemakerFeatureGroupFeatureDefinition[]; 
+  private _featureDefinition?: SagemakerFeatureGroupFeatureDefinition[] | cdktf.IResolvable; 
   public get featureDefinition() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('feature_definition') as any;
+    return this.interpolationForAttribute('feature_definition');
   }
-  public set featureDefinition(value: SagemakerFeatureGroupFeatureDefinition[]) {
+  public set featureDefinition(value: SagemakerFeatureGroupFeatureDefinition[] | cdktf.IResolvable) {
     this._featureDefinition = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -744,7 +742,7 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
   }
 
   // offline_store_config - computed: false, optional: true, required: false
-  private _offlineStoreConfig = new SagemakerFeatureGroupOfflineStoreConfigOutputReference(this as any, "offline_store_config", true);
+  private _offlineStoreConfig = new SagemakerFeatureGroupOfflineStoreConfigOutputReference(this, "offline_store_config", true);
   public get offlineStoreConfig() {
     return this._offlineStoreConfig;
   }
@@ -760,7 +758,7 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
   }
 
   // online_store_config - computed: false, optional: true, required: false
-  private _onlineStoreConfig = new SagemakerFeatureGroupOnlineStoreConfigOutputReference(this as any, "online_store_config", true);
+  private _onlineStoreConfig = new SagemakerFeatureGroupOnlineStoreConfigOutputReference(this, "online_store_config", true);
   public get onlineStoreConfig() {
     return this._onlineStoreConfig;
   }
@@ -786,8 +784,8 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
       feature_group_name: cdktf.stringToTerraform(this._featureGroupName),
       record_identifier_feature_name: cdktf.stringToTerraform(this._recordIdentifierFeatureName),
       role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       feature_definition: cdktf.listMapper(sagemakerFeatureGroupFeatureDefinitionToTerraform)(this._featureDefinition),
       offline_store_config: sagemakerFeatureGroupOfflineStoreConfigToTerraform(this._offlineStoreConfig.internalValue),
       online_store_config: sagemakerFeatureGroupOnlineStoreConfigToTerraform(this._onlineStoreConfig.internalValue),

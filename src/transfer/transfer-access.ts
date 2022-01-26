@@ -36,7 +36,7 @@ export interface TransferAccessConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_access#home_directory_mappings TransferAccess#home_directory_mappings}
   */
-  readonly homeDirectoryMappings?: TransferAccessHomeDirectoryMappings[];
+  readonly homeDirectoryMappings?: TransferAccessHomeDirectoryMappings[] | cdktf.IResolvable;
   /**
   * posix_profile block
   * 
@@ -55,8 +55,8 @@ export interface TransferAccessHomeDirectoryMappings {
   readonly target: string;
 }
 
-export function transferAccessHomeDirectoryMappingsToTerraform(struct?: TransferAccessHomeDirectoryMappings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function transferAccessHomeDirectoryMappingsToTerraform(struct?: TransferAccessHomeDirectoryMappings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -82,7 +82,7 @@ export interface TransferAccessPosixProfile {
 }
 
 export function transferAccessPosixProfileToTerraform(struct?: TransferAccessPosixProfileOutputReference | TransferAccessPosixProfile): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -101,7 +101,7 @@ export class TransferAccessPosixProfileOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -154,8 +154,7 @@ export class TransferAccessPosixProfileOutputReference extends cdktf.ComplexObje
   // secondary_gids - computed: false, optional: true, required: false
   private _secondaryGids?: number[]; 
   public get secondaryGids() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('secondary_gids') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('secondary_gids')));
   }
   public set secondaryGids(value: number[]) {
     this._secondaryGids = value;
@@ -324,12 +323,12 @@ export class TransferAccess extends cdktf.TerraformResource {
   }
 
   // home_directory_mappings - computed: false, optional: true, required: false
-  private _homeDirectoryMappings?: TransferAccessHomeDirectoryMappings[]; 
+  private _homeDirectoryMappings?: TransferAccessHomeDirectoryMappings[] | cdktf.IResolvable; 
   public get homeDirectoryMappings() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('home_directory_mappings') as any;
+    return this.interpolationForAttribute('home_directory_mappings');
   }
-  public set homeDirectoryMappings(value: TransferAccessHomeDirectoryMappings[]) {
+  public set homeDirectoryMappings(value: TransferAccessHomeDirectoryMappings[] | cdktf.IResolvable) {
     this._homeDirectoryMappings = value;
   }
   public resetHomeDirectoryMappings() {
@@ -341,7 +340,7 @@ export class TransferAccess extends cdktf.TerraformResource {
   }
 
   // posix_profile - computed: false, optional: true, required: false
-  private _posixProfile = new TransferAccessPosixProfileOutputReference(this as any, "posix_profile", true);
+  private _posixProfile = new TransferAccessPosixProfileOutputReference(this, "posix_profile", true);
   public get posixProfile() {
     return this._posixProfile;
   }

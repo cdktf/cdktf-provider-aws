@@ -18,17 +18,17 @@ export interface DbSecurityGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_security_group#tags DbSecurityGroup#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_security_group#tags_all DbSecurityGroup#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * ingress block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_security_group#ingress DbSecurityGroup#ingress}
   */
-  readonly ingress: DbSecurityGroupIngress[];
+  readonly ingress: DbSecurityGroupIngress[] | cdktf.IResolvable;
 }
 export interface DbSecurityGroupIngress {
   /**
@@ -49,8 +49,8 @@ export interface DbSecurityGroupIngress {
   readonly securityGroupOwnerId?: string;
 }
 
-export function dbSecurityGroupIngressToTerraform(struct?: DbSecurityGroupIngress): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dbSecurityGroupIngressToTerraform(struct?: DbSecurityGroupIngress | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -146,12 +146,11 @@ export class DbSecurityGroup extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -163,12 +162,11 @@ export class DbSecurityGroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -180,12 +178,12 @@ export class DbSecurityGroup extends cdktf.TerraformResource {
   }
 
   // ingress - computed: false, optional: false, required: true
-  private _ingress?: DbSecurityGroupIngress[]; 
+  private _ingress?: DbSecurityGroupIngress[] | cdktf.IResolvable; 
   public get ingress() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ingress') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ingress')));
   }
-  public set ingress(value: DbSecurityGroupIngress[]) {
+  public set ingress(value: DbSecurityGroupIngress[] | cdktf.IResolvable) {
     this._ingress = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -201,8 +199,8 @@ export class DbSecurityGroup extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       ingress: cdktf.listMapper(dbSecurityGroupIngressToTerraform)(this._ingress),
     };
   }

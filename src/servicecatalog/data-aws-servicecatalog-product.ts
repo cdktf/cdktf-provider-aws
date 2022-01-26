@@ -18,7 +18,7 @@ export interface DataAwsServicecatalogProductConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_product#tags DataAwsServicecatalogProduct#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 
 /**
@@ -100,7 +100,7 @@ export class DataAwsServicecatalogProduct extends cdktf.TerraformDataSource {
 
   // has_default_path - computed: true, optional: false, required: false
   public get hasDefaultPath() {
-    return this.getBooleanAttribute('has_default_path') as any;
+    return this.getBooleanAttribute('has_default_path');
   }
 
   // id - computed: false, optional: false, required: true
@@ -147,12 +147,11 @@ export class DataAwsServicecatalogProduct extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -176,7 +175,7 @@ export class DataAwsServicecatalogProduct extends cdktf.TerraformDataSource {
     return {
       accept_language: cdktf.stringToTerraform(this._acceptLanguage),
       id: cdktf.stringToTerraform(this._id),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

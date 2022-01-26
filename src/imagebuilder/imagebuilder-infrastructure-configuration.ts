@@ -30,7 +30,7 @@ export interface ImagebuilderInfrastructureConfigurationConfig extends cdktf.Ter
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration#resource_tags ImagebuilderInfrastructureConfiguration#resource_tags}
   */
-  readonly resourceTags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly resourceTags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration#security_group_ids ImagebuilderInfrastructureConfiguration#security_group_ids}
   */
@@ -46,11 +46,11 @@ export interface ImagebuilderInfrastructureConfigurationConfig extends cdktf.Ter
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration#tags ImagebuilderInfrastructureConfiguration#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration#tags_all ImagebuilderInfrastructureConfiguration#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration#terminate_instance_on_failure ImagebuilderInfrastructureConfiguration#terminate_instance_on_failure}
   */
@@ -74,7 +74,7 @@ export interface ImagebuilderInfrastructureConfigurationLoggingS3Logs {
 }
 
 export function imagebuilderInfrastructureConfigurationLoggingS3LogsToTerraform(struct?: ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference | ImagebuilderInfrastructureConfigurationLoggingS3Logs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -92,7 +92,7 @@ export class ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -162,7 +162,7 @@ export interface ImagebuilderInfrastructureConfigurationLogging {
 }
 
 export function imagebuilderInfrastructureConfigurationLoggingToTerraform(struct?: ImagebuilderInfrastructureConfigurationLoggingOutputReference | ImagebuilderInfrastructureConfigurationLogging): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -179,7 +179,7 @@ export class ImagebuilderInfrastructureConfigurationLoggingOutputReference exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -205,7 +205,7 @@ export class ImagebuilderInfrastructureConfigurationLoggingOutputReference exten
   }
 
   // s3_logs - computed: false, optional: false, required: true
-  private _s3Logs = new ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference(this as any, "s3_logs", true);
+  private _s3Logs = new ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference(this, "s3_logs", true);
   public get s3Logs() {
     return this._s3Logs;
   }
@@ -321,7 +321,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   // instance_types - computed: false, optional: true, required: false
   private _instanceTypes?: string[]; 
   public get instanceTypes() {
-    return this.getListAttribute('instance_types');
+    return cdktf.Fn.tolist(this.getListAttribute('instance_types'));
   }
   public set instanceTypes(value: string[]) {
     this._instanceTypes = value;
@@ -364,12 +364,11 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   }
 
   // resource_tags - computed: false, optional: true, required: false
-  private _resourceTags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _resourceTags?: { [key: string]: string }; 
   public get resourceTags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('resource_tags') as any;
+    return this.getStringMapAttribute('resource_tags');
   }
-  public set resourceTags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set resourceTags(value: { [key: string]: string }) {
     this._resourceTags = value;
   }
   public resetResourceTags() {
@@ -383,7 +382,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -429,12 +428,11 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -446,12 +444,11 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -465,7 +462,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   // terminate_instance_on_failure - computed: false, optional: true, required: false
   private _terminateInstanceOnFailure?: boolean | cdktf.IResolvable; 
   public get terminateInstanceOnFailure() {
-    return this.getBooleanAttribute('terminate_instance_on_failure') as any;
+    return this.getBooleanAttribute('terminate_instance_on_failure');
   }
   public set terminateInstanceOnFailure(value: boolean | cdktf.IResolvable) {
     this._terminateInstanceOnFailure = value;
@@ -479,7 +476,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   }
 
   // logging - computed: false, optional: true, required: false
-  private _logging = new ImagebuilderInfrastructureConfigurationLoggingOutputReference(this as any, "logging", true);
+  private _logging = new ImagebuilderInfrastructureConfigurationLoggingOutputReference(this, "logging", true);
   public get logging() {
     return this._logging;
   }
@@ -505,12 +502,12 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
       instance_types: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceTypes),
       key_pair: cdktf.stringToTerraform(this._keyPair),
       name: cdktf.stringToTerraform(this._name),
-      resource_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._resourceTags),
+      resource_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._resourceTags),
       security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
       sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       terminate_instance_on_failure: cdktf.booleanToTerraform(this._terminateInstanceOnFailure),
       logging: imagebuilderInfrastructureConfigurationLoggingToTerraform(this._logging.internalValue),
     };

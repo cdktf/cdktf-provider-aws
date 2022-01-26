@@ -102,11 +102,11 @@ export interface OpsworksJavaAppLayerConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_java_app_layer#tags OpsworksJavaAppLayer#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_java_app_layer#tags_all OpsworksJavaAppLayer#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_java_app_layer#use_ebs_optimized_instances OpsworksJavaAppLayer#use_ebs_optimized_instances}
   */
@@ -122,7 +122,7 @@ export interface OpsworksJavaAppLayerConfig extends cdktf.TerraformMetaArguments
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_java_app_layer#ebs_volume OpsworksJavaAppLayer#ebs_volume}
   */
-  readonly ebsVolume?: OpsworksJavaAppLayerEbsVolume[];
+  readonly ebsVolume?: OpsworksJavaAppLayerEbsVolume[] | cdktf.IResolvable;
 }
 export interface OpsworksJavaAppLayerCloudwatchConfigurationLogStreams {
   /**
@@ -171,8 +171,8 @@ export interface OpsworksJavaAppLayerCloudwatchConfigurationLogStreams {
   readonly timeZone?: string;
 }
 
-export function opsworksJavaAppLayerCloudwatchConfigurationLogStreamsToTerraform(struct?: OpsworksJavaAppLayerCloudwatchConfigurationLogStreams): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function opsworksJavaAppLayerCloudwatchConfigurationLogStreamsToTerraform(struct?: OpsworksJavaAppLayerCloudwatchConfigurationLogStreams | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -201,11 +201,11 @@ export interface OpsworksJavaAppLayerCloudwatchConfiguration {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_java_app_layer#log_streams OpsworksJavaAppLayer#log_streams}
   */
-  readonly logStreams?: OpsworksJavaAppLayerCloudwatchConfigurationLogStreams[];
+  readonly logStreams?: OpsworksJavaAppLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable;
 }
 
 export function opsworksJavaAppLayerCloudwatchConfigurationToTerraform(struct?: OpsworksJavaAppLayerCloudwatchConfigurationOutputReference | OpsworksJavaAppLayerCloudwatchConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -223,7 +223,7 @@ export class OpsworksJavaAppLayerCloudwatchConfigurationOutputReference extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -257,7 +257,7 @@ export class OpsworksJavaAppLayerCloudwatchConfigurationOutputReference extends 
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -271,12 +271,12 @@ export class OpsworksJavaAppLayerCloudwatchConfigurationOutputReference extends 
   }
 
   // log_streams - computed: false, optional: true, required: false
-  private _logStreams?: OpsworksJavaAppLayerCloudwatchConfigurationLogStreams[]; 
+  private _logStreams?: OpsworksJavaAppLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable; 
   public get logStreams() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('log_streams') as any;
+    return this.interpolationForAttribute('log_streams');
   }
-  public set logStreams(value: OpsworksJavaAppLayerCloudwatchConfigurationLogStreams[]) {
+  public set logStreams(value: OpsworksJavaAppLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable) {
     this._logStreams = value;
   }
   public resetLogStreams() {
@@ -318,8 +318,8 @@ export interface OpsworksJavaAppLayerEbsVolume {
   readonly type?: string;
 }
 
-export function opsworksJavaAppLayerEbsVolumeToTerraform(struct?: OpsworksJavaAppLayerEbsVolume): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function opsworksJavaAppLayerEbsVolumeToTerraform(struct?: OpsworksJavaAppLayerEbsVolume | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -441,7 +441,7 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   // auto_assign_elastic_ips - computed: false, optional: true, required: false
   private _autoAssignElasticIps?: boolean | cdktf.IResolvable; 
   public get autoAssignElasticIps() {
-    return this.getBooleanAttribute('auto_assign_elastic_ips') as any;
+    return this.getBooleanAttribute('auto_assign_elastic_ips');
   }
   public set autoAssignElasticIps(value: boolean | cdktf.IResolvable) {
     this._autoAssignElasticIps = value;
@@ -457,7 +457,7 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   // auto_assign_public_ips - computed: false, optional: true, required: false
   private _autoAssignPublicIps?: boolean | cdktf.IResolvable; 
   public get autoAssignPublicIps() {
-    return this.getBooleanAttribute('auto_assign_public_ips') as any;
+    return this.getBooleanAttribute('auto_assign_public_ips');
   }
   public set autoAssignPublicIps(value: boolean | cdktf.IResolvable) {
     this._autoAssignPublicIps = value;
@@ -473,7 +473,7 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   // auto_healing - computed: false, optional: true, required: false
   private _autoHealing?: boolean | cdktf.IResolvable; 
   public get autoHealing() {
-    return this.getBooleanAttribute('auto_healing') as any;
+    return this.getBooleanAttribute('auto_healing');
   }
   public set autoHealing(value: boolean | cdktf.IResolvable) {
     this._autoHealing = value;
@@ -553,7 +553,7 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   // custom_security_group_ids - computed: false, optional: true, required: false
   private _customSecurityGroupIds?: string[]; 
   public get customSecurityGroupIds() {
-    return this.getListAttribute('custom_security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('custom_security_group_ids'));
   }
   public set customSecurityGroupIds(value: string[]) {
     this._customSecurityGroupIds = value;
@@ -617,7 +617,7 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   // drain_elb_on_shutdown - computed: false, optional: true, required: false
   private _drainElbOnShutdown?: boolean | cdktf.IResolvable; 
   public get drainElbOnShutdown() {
-    return this.getBooleanAttribute('drain_elb_on_shutdown') as any;
+    return this.getBooleanAttribute('drain_elb_on_shutdown');
   }
   public set drainElbOnShutdown(value: boolean | cdktf.IResolvable) {
     this._drainElbOnShutdown = value;
@@ -654,7 +654,7 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   // install_updates_on_boot - computed: false, optional: true, required: false
   private _installUpdatesOnBoot?: boolean | cdktf.IResolvable; 
   public get installUpdatesOnBoot() {
-    return this.getBooleanAttribute('install_updates_on_boot') as any;
+    return this.getBooleanAttribute('install_updates_on_boot');
   }
   public set installUpdatesOnBoot(value: boolean | cdktf.IResolvable) {
     this._installUpdatesOnBoot = value;
@@ -763,7 +763,7 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   // system_packages - computed: false, optional: true, required: false
   private _systemPackages?: string[]; 
   public get systemPackages() {
-    return this.getListAttribute('system_packages');
+    return cdktf.Fn.tolist(this.getListAttribute('system_packages'));
   }
   public set systemPackages(value: string[]) {
     this._systemPackages = value;
@@ -777,12 +777,11 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -794,12 +793,11 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -813,7 +811,7 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   // use_ebs_optimized_instances - computed: false, optional: true, required: false
   private _useEbsOptimizedInstances?: boolean | cdktf.IResolvable; 
   public get useEbsOptimizedInstances() {
-    return this.getBooleanAttribute('use_ebs_optimized_instances') as any;
+    return this.getBooleanAttribute('use_ebs_optimized_instances');
   }
   public set useEbsOptimizedInstances(value: boolean | cdktf.IResolvable) {
     this._useEbsOptimizedInstances = value;
@@ -827,7 +825,7 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   }
 
   // cloudwatch_configuration - computed: false, optional: true, required: false
-  private _cloudwatchConfiguration = new OpsworksJavaAppLayerCloudwatchConfigurationOutputReference(this as any, "cloudwatch_configuration", true);
+  private _cloudwatchConfiguration = new OpsworksJavaAppLayerCloudwatchConfigurationOutputReference(this, "cloudwatch_configuration", true);
   public get cloudwatchConfiguration() {
     return this._cloudwatchConfiguration;
   }
@@ -843,12 +841,12 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   }
 
   // ebs_volume - computed: false, optional: true, required: false
-  private _ebsVolume?: OpsworksJavaAppLayerEbsVolume[]; 
+  private _ebsVolume?: OpsworksJavaAppLayerEbsVolume[] | cdktf.IResolvable; 
   public get ebsVolume() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ebs_volume') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ebs_volume')));
   }
-  public set ebsVolume(value: OpsworksJavaAppLayerEbsVolume[]) {
+  public set ebsVolume(value: OpsworksJavaAppLayerEbsVolume[] | cdktf.IResolvable) {
     this._ebsVolume = value;
   }
   public resetEbsVolume() {
@@ -888,8 +886,8 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       stack_id: cdktf.stringToTerraform(this._stackId),
       system_packages: cdktf.listMapper(cdktf.stringToTerraform)(this._systemPackages),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       use_ebs_optimized_instances: cdktf.booleanToTerraform(this._useEbsOptimizedInstances),
       cloudwatch_configuration: opsworksJavaAppLayerCloudwatchConfigurationToTerraform(this._cloudwatchConfiguration.internalValue),
       ebs_volume: cdktf.listMapper(opsworksJavaAppLayerEbsVolumeToTerraform)(this._ebsVolume),

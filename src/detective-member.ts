@@ -93,7 +93,7 @@ export class DetectiveMember extends cdktf.TerraformResource {
   // disable_email_notification - computed: false, optional: true, required: false
   private _disableEmailNotification?: boolean | cdktf.IResolvable; 
   public get disableEmailNotification() {
-    return this.getBooleanAttribute('disable_email_notification') as any;
+    return this.getBooleanAttribute('disable_email_notification');
   }
   public set disableEmailNotification(value: boolean | cdktf.IResolvable) {
     this._disableEmailNotification = value;

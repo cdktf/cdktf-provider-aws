@@ -38,11 +38,11 @@ export interface CloudwatchCompositeAlarmConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_composite_alarm#tags CloudwatchCompositeAlarm#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_composite_alarm#tags_all CloudwatchCompositeAlarm#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
 }
 
 /**
@@ -95,7 +95,7 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
   // actions_enabled - computed: false, optional: true, required: false
   private _actionsEnabled?: boolean | cdktf.IResolvable; 
   public get actionsEnabled() {
-    return this.getBooleanAttribute('actions_enabled') as any;
+    return this.getBooleanAttribute('actions_enabled');
   }
   public set actionsEnabled(value: boolean | cdktf.IResolvable) {
     this._actionsEnabled = value;
@@ -111,7 +111,7 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
   // alarm_actions - computed: false, optional: true, required: false
   private _alarmActions?: string[]; 
   public get alarmActions() {
-    return this.getListAttribute('alarm_actions');
+    return cdktf.Fn.tolist(this.getListAttribute('alarm_actions'));
   }
   public set alarmActions(value: string[]) {
     this._alarmActions = value;
@@ -179,7 +179,7 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
   // insufficient_data_actions - computed: false, optional: true, required: false
   private _insufficientDataActions?: string[]; 
   public get insufficientDataActions() {
-    return this.getListAttribute('insufficient_data_actions');
+    return cdktf.Fn.tolist(this.getListAttribute('insufficient_data_actions'));
   }
   public set insufficientDataActions(value: string[]) {
     this._insufficientDataActions = value;
@@ -195,7 +195,7 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
   // ok_actions - computed: false, optional: true, required: false
   private _okActions?: string[]; 
   public get okActions() {
-    return this.getListAttribute('ok_actions');
+    return cdktf.Fn.tolist(this.getListAttribute('ok_actions'));
   }
   public set okActions(value: string[]) {
     this._okActions = value;
@@ -209,12 +209,11 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -226,12 +225,11 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -255,8 +253,8 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
       alarm_rule: cdktf.stringToTerraform(this._alarmRule),
       insufficient_data_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._insufficientDataActions),
       ok_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._okActions),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
   }
 }

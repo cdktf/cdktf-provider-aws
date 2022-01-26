@@ -34,11 +34,11 @@ export interface EcsTaskSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#tags EcsTaskSet#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#tags_all EcsTaskSet#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#task_definition EcsTaskSet#task_definition}
   */
@@ -56,13 +56,13 @@ export interface EcsTaskSetConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#capacity_provider_strategy EcsTaskSet#capacity_provider_strategy}
   */
-  readonly capacityProviderStrategy?: EcsTaskSetCapacityProviderStrategy[];
+  readonly capacityProviderStrategy?: EcsTaskSetCapacityProviderStrategy[] | cdktf.IResolvable;
   /**
   * load_balancer block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_set#load_balancer EcsTaskSet#load_balancer}
   */
-  readonly loadBalancer?: EcsTaskSetLoadBalancer[];
+  readonly loadBalancer?: EcsTaskSetLoadBalancer[] | cdktf.IResolvable;
   /**
   * network_configuration block
   * 
@@ -97,8 +97,8 @@ export interface EcsTaskSetCapacityProviderStrategy {
   readonly weight: number;
 }
 
-export function ecsTaskSetCapacityProviderStrategyToTerraform(struct?: EcsTaskSetCapacityProviderStrategy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ecsTaskSetCapacityProviderStrategyToTerraform(struct?: EcsTaskSetCapacityProviderStrategy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -128,8 +128,8 @@ export interface EcsTaskSetLoadBalancer {
   readonly targetGroupArn?: string;
 }
 
-export function ecsTaskSetLoadBalancerToTerraform(struct?: EcsTaskSetLoadBalancer): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ecsTaskSetLoadBalancerToTerraform(struct?: EcsTaskSetLoadBalancer | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -157,7 +157,7 @@ export interface EcsTaskSetNetworkConfiguration {
 }
 
 export function ecsTaskSetNetworkConfigurationToTerraform(struct?: EcsTaskSetNetworkConfigurationOutputReference | EcsTaskSetNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -176,7 +176,7 @@ export class EcsTaskSetNetworkConfigurationOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -216,7 +216,7 @@ export class EcsTaskSetNetworkConfigurationOutputReference extends cdktf.Complex
   // assign_public_ip - computed: false, optional: true, required: false
   private _assignPublicIp?: boolean | cdktf.IResolvable; 
   public get assignPublicIp() {
-    return this.getBooleanAttribute('assign_public_ip') as any;
+    return this.getBooleanAttribute('assign_public_ip');
   }
   public set assignPublicIp(value: boolean | cdktf.IResolvable) {
     this._assignPublicIp = value;
@@ -232,7 +232,7 @@ export class EcsTaskSetNetworkConfigurationOutputReference extends cdktf.Complex
   // security_groups - computed: false, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -248,7 +248,7 @@ export class EcsTaskSetNetworkConfigurationOutputReference extends cdktf.Complex
   // subnets - computed: false, optional: false, required: true
   private _subnets?: string[]; 
   public get subnets() {
-    return this.getListAttribute('subnets');
+    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -270,7 +270,7 @@ export interface EcsTaskSetScale {
 }
 
 export function ecsTaskSetScaleToTerraform(struct?: EcsTaskSetScaleOutputReference | EcsTaskSetScale): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -288,7 +288,7 @@ export class EcsTaskSetScaleOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -371,7 +371,7 @@ export interface EcsTaskSetServiceRegistries {
 }
 
 export function ecsTaskSetServiceRegistriesToTerraform(struct?: EcsTaskSetServiceRegistriesOutputReference | EcsTaskSetServiceRegistries): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -391,7 +391,7 @@ export class EcsTaskSetServiceRegistriesOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -587,7 +587,7 @@ export class EcsTaskSet extends cdktf.TerraformResource {
   // force_delete - computed: false, optional: true, required: false
   private _forceDelete?: boolean | cdktf.IResolvable; 
   public get forceDelete() {
-    return this.getBooleanAttribute('force_delete') as any;
+    return this.getBooleanAttribute('force_delete');
   }
   public set forceDelete(value: boolean | cdktf.IResolvable) {
     this._forceDelete = value;
@@ -661,12 +661,11 @@ export class EcsTaskSet extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -678,12 +677,11 @@ export class EcsTaskSet extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -715,7 +713,7 @@ export class EcsTaskSet extends cdktf.TerraformResource {
   // wait_until_stable - computed: false, optional: true, required: false
   private _waitUntilStable?: boolean | cdktf.IResolvable; 
   public get waitUntilStable() {
-    return this.getBooleanAttribute('wait_until_stable') as any;
+    return this.getBooleanAttribute('wait_until_stable');
   }
   public set waitUntilStable(value: boolean | cdktf.IResolvable) {
     this._waitUntilStable = value;
@@ -745,12 +743,12 @@ export class EcsTaskSet extends cdktf.TerraformResource {
   }
 
   // capacity_provider_strategy - computed: false, optional: true, required: false
-  private _capacityProviderStrategy?: EcsTaskSetCapacityProviderStrategy[]; 
+  private _capacityProviderStrategy?: EcsTaskSetCapacityProviderStrategy[] | cdktf.IResolvable; 
   public get capacityProviderStrategy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('capacity_provider_strategy') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('capacity_provider_strategy')));
   }
-  public set capacityProviderStrategy(value: EcsTaskSetCapacityProviderStrategy[]) {
+  public set capacityProviderStrategy(value: EcsTaskSetCapacityProviderStrategy[] | cdktf.IResolvable) {
     this._capacityProviderStrategy = value;
   }
   public resetCapacityProviderStrategy() {
@@ -762,12 +760,12 @@ export class EcsTaskSet extends cdktf.TerraformResource {
   }
 
   // load_balancer - computed: false, optional: true, required: false
-  private _loadBalancer?: EcsTaskSetLoadBalancer[]; 
+  private _loadBalancer?: EcsTaskSetLoadBalancer[] | cdktf.IResolvable; 
   public get loadBalancer() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('load_balancer') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('load_balancer')));
   }
-  public set loadBalancer(value: EcsTaskSetLoadBalancer[]) {
+  public set loadBalancer(value: EcsTaskSetLoadBalancer[] | cdktf.IResolvable) {
     this._loadBalancer = value;
   }
   public resetLoadBalancer() {
@@ -779,7 +777,7 @@ export class EcsTaskSet extends cdktf.TerraformResource {
   }
 
   // network_configuration - computed: false, optional: true, required: false
-  private _networkConfiguration = new EcsTaskSetNetworkConfigurationOutputReference(this as any, "network_configuration", true);
+  private _networkConfiguration = new EcsTaskSetNetworkConfigurationOutputReference(this, "network_configuration", true);
   public get networkConfiguration() {
     return this._networkConfiguration;
   }
@@ -795,7 +793,7 @@ export class EcsTaskSet extends cdktf.TerraformResource {
   }
 
   // scale - computed: false, optional: true, required: false
-  private _scale = new EcsTaskSetScaleOutputReference(this as any, "scale", true);
+  private _scale = new EcsTaskSetScaleOutputReference(this, "scale", true);
   public get scale() {
     return this._scale;
   }
@@ -811,7 +809,7 @@ export class EcsTaskSet extends cdktf.TerraformResource {
   }
 
   // service_registries - computed: false, optional: true, required: false
-  private _serviceRegistries = new EcsTaskSetServiceRegistriesOutputReference(this as any, "service_registries", true);
+  private _serviceRegistries = new EcsTaskSetServiceRegistriesOutputReference(this, "service_registries", true);
   public get serviceRegistries() {
     return this._serviceRegistries;
   }
@@ -838,8 +836,8 @@ export class EcsTaskSet extends cdktf.TerraformResource {
       launch_type: cdktf.stringToTerraform(this._launchType),
       platform_version: cdktf.stringToTerraform(this._platformVersion),
       service: cdktf.stringToTerraform(this._service),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       task_definition: cdktf.stringToTerraform(this._taskDefinition),
       wait_until_stable: cdktf.booleanToTerraform(this._waitUntilStable),
       wait_until_stable_timeout: cdktf.stringToTerraform(this._waitUntilStableTimeout),

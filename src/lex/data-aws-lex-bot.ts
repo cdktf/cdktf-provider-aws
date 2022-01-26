@@ -69,7 +69,7 @@ export class DataAwsLexBot extends cdktf.TerraformDataSource {
 
   // child_directed - computed: true, optional: false, required: false
   public get childDirected() {
-    return this.getBooleanAttribute('child_directed') as any;
+    return this.getBooleanAttribute('child_directed');
   }
 
   // created_date - computed: true, optional: false, required: false
@@ -84,12 +84,12 @@ export class DataAwsLexBot extends cdktf.TerraformDataSource {
 
   // detect_sentiment - computed: true, optional: false, required: false
   public get detectSentiment() {
-    return this.getBooleanAttribute('detect_sentiment') as any;
+    return this.getBooleanAttribute('detect_sentiment');
   }
 
   // enable_model_improvements - computed: true, optional: false, required: false
   public get enableModelImprovements() {
-    return this.getBooleanAttribute('enable_model_improvements') as any;
+    return this.getBooleanAttribute('enable_model_improvements');
   }
 
   // failure_reason - computed: true, optional: false, required: false

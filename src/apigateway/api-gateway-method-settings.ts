@@ -70,7 +70,7 @@ export interface ApiGatewayMethodSettingsSettings {
 }
 
 export function apiGatewayMethodSettingsSettingsToTerraform(struct?: ApiGatewayMethodSettingsSettingsOutputReference | ApiGatewayMethodSettingsSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -96,7 +96,7 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -178,7 +178,7 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
   // cache_data_encrypted - computed: true, optional: true, required: false
   private _cacheDataEncrypted?: boolean | cdktf.IResolvable; 
   public get cacheDataEncrypted() {
-    return this.getBooleanAttribute('cache_data_encrypted') as any;
+    return this.getBooleanAttribute('cache_data_encrypted');
   }
   public set cacheDataEncrypted(value: boolean | cdktf.IResolvable) {
     this._cacheDataEncrypted = value;
@@ -210,7 +210,7 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
   // caching_enabled - computed: true, optional: true, required: false
   private _cachingEnabled?: boolean | cdktf.IResolvable; 
   public get cachingEnabled() {
-    return this.getBooleanAttribute('caching_enabled') as any;
+    return this.getBooleanAttribute('caching_enabled');
   }
   public set cachingEnabled(value: boolean | cdktf.IResolvable) {
     this._cachingEnabled = value;
@@ -226,7 +226,7 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
   // data_trace_enabled - computed: true, optional: true, required: false
   private _dataTraceEnabled?: boolean | cdktf.IResolvable; 
   public get dataTraceEnabled() {
-    return this.getBooleanAttribute('data_trace_enabled') as any;
+    return this.getBooleanAttribute('data_trace_enabled');
   }
   public set dataTraceEnabled(value: boolean | cdktf.IResolvable) {
     this._dataTraceEnabled = value;
@@ -258,7 +258,7 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
   // metrics_enabled - computed: true, optional: true, required: false
   private _metricsEnabled?: boolean | cdktf.IResolvable; 
   public get metricsEnabled() {
-    return this.getBooleanAttribute('metrics_enabled') as any;
+    return this.getBooleanAttribute('metrics_enabled');
   }
   public set metricsEnabled(value: boolean | cdktf.IResolvable) {
     this._metricsEnabled = value;
@@ -274,7 +274,7 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
   // require_authorization_for_cache_control - computed: true, optional: true, required: false
   private _requireAuthorizationForCacheControl?: boolean | cdktf.IResolvable; 
   public get requireAuthorizationForCacheControl() {
-    return this.getBooleanAttribute('require_authorization_for_cache_control') as any;
+    return this.getBooleanAttribute('require_authorization_for_cache_control');
   }
   public set requireAuthorizationForCacheControl(value: boolean | cdktf.IResolvable) {
     this._requireAuthorizationForCacheControl = value;
@@ -423,7 +423,7 @@ export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
   }
 
   // settings - computed: false, optional: false, required: true
-  private _settings = new ApiGatewayMethodSettingsSettingsOutputReference(this as any, "settings", true);
+  private _settings = new ApiGatewayMethodSettingsSettingsOutputReference(this, "settings", true);
   public get settings() {
     return this._settings;
   }

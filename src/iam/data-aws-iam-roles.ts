@@ -59,7 +59,7 @@ export class DataAwsIamRoles extends cdktf.TerraformDataSource {
 
   // arns - computed: true, optional: false, required: false
   public get arns() {
-    return this.getListAttribute('arns');
+    return cdktf.Fn.tolist(this.getListAttribute('arns'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -85,7 +85,7 @@ export class DataAwsIamRoles extends cdktf.TerraformDataSource {
 
   // names - computed: true, optional: false, required: false
   public get names() {
-    return this.getListAttribute('names');
+    return cdktf.Fn.tolist(this.getListAttribute('names'));
   }
 
   // path_prefix - computed: false, optional: true, required: false

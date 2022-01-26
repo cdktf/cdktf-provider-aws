@@ -26,17 +26,17 @@ export interface Route53ResolverRuleConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_rule#tags Route53ResolverRule#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_rule#tags_all Route53ResolverRule#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * target_ip block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_rule#target_ip Route53ResolverRule#target_ip}
   */
-  readonly targetIp?: Route53ResolverRuleTargetIp[];
+  readonly targetIp?: Route53ResolverRuleTargetIp[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -55,8 +55,8 @@ export interface Route53ResolverRuleTargetIp {
   readonly port?: number;
 }
 
-export function route53ResolverRuleTargetIpToTerraform(struct?: Route53ResolverRuleTargetIp): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function route53ResolverRuleTargetIpToTerraform(struct?: Route53ResolverRuleTargetIp | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -81,8 +81,8 @@ export interface Route53ResolverRuleTimeouts {
   readonly update?: string;
 }
 
-export function route53ResolverRuleTimeoutsToTerraform(struct?: Route53ResolverRuleTimeoutsOutputReference | Route53ResolverRuleTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function route53ResolverRuleTimeoutsToTerraform(struct?: Route53ResolverRuleTimeoutsOutputReference | Route53ResolverRuleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -101,7 +101,7 @@ export class Route53ResolverRuleTimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -312,12 +312,11 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -329,12 +328,11 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -346,12 +344,12 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
   }
 
   // target_ip - computed: false, optional: true, required: false
-  private _targetIp?: Route53ResolverRuleTargetIp[]; 
+  private _targetIp?: Route53ResolverRuleTargetIp[] | cdktf.IResolvable; 
   public get targetIp() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('target_ip') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('target_ip')));
   }
-  public set targetIp(value: Route53ResolverRuleTargetIp[]) {
+  public set targetIp(value: Route53ResolverRuleTargetIp[] | cdktf.IResolvable) {
     this._targetIp = value;
   }
   public resetTargetIp() {
@@ -363,7 +361,7 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new Route53ResolverRuleTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new Route53ResolverRuleTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -388,8 +386,8 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       resolver_endpoint_id: cdktf.stringToTerraform(this._resolverEndpointId),
       rule_type: cdktf.stringToTerraform(this._ruleType),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       target_ip: cdktf.listMapper(route53ResolverRuleTargetIpToTerraform)(this._targetIp),
       timeouts: route53ResolverRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };

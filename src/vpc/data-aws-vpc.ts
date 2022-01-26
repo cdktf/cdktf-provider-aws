@@ -26,13 +26,13 @@ export interface DataAwsVpcConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc#tags DataAwsVpc#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * filter block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc#filter DataAwsVpc#filter}
   */
-  readonly filter?: DataAwsVpcFilter[];
+  readonly filter?: DataAwsVpcFilter[] | cdktf.IResolvable;
 }
 export class DataAwsVpcCidrBlockAssociations extends cdktf.ComplexComputedList {
 
@@ -62,8 +62,8 @@ export interface DataAwsVpcFilter {
   readonly values: string[];
 }
 
-export function dataAwsVpcFilterToTerraform(struct?: DataAwsVpcFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsVpcFilterToTerraform(struct?: DataAwsVpcFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -141,13 +141,13 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
 
   // cidr_block_associations - computed: true, optional: false, required: false
   public cidrBlockAssociations(index: string) {
-    return new DataAwsVpcCidrBlockAssociations(this, 'cidr_block_associations', index);
+    return new DataAwsVpcCidrBlockAssociations(this, 'cidr_block_associations', index, false);
   }
 
   // default - computed: true, optional: true, required: false
   private _default?: boolean | cdktf.IResolvable; 
   public get default() {
-    return this.getBooleanAttribute('default') as any;
+    return this.getBooleanAttribute('default');
   }
   public set default(value: boolean | cdktf.IResolvable) {
     this._default = value;
@@ -178,12 +178,12 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
 
   // enable_dns_hostnames - computed: true, optional: false, required: false
   public get enableDnsHostnames() {
-    return this.getBooleanAttribute('enable_dns_hostnames') as any;
+    return this.getBooleanAttribute('enable_dns_hostnames');
   }
 
   // enable_dns_support - computed: true, optional: false, required: false
   public get enableDnsSupport() {
-    return this.getBooleanAttribute('enable_dns_support') as any;
+    return this.getBooleanAttribute('enable_dns_support');
   }
 
   // id - computed: true, optional: true, required: false
@@ -233,12 +233,11 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -250,12 +249,12 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsVpcFilter[]; 
+  private _filter?: DataAwsVpcFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsVpcFilter[]) {
+  public set filter(value: DataAwsVpcFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -276,7 +275,7 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
       default: cdktf.booleanToTerraform(this._default),
       dhcp_options_id: cdktf.stringToTerraform(this._dhcpOptionsId),
       state: cdktf.stringToTerraform(this._state),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsVpcFilterToTerraform)(this._filter),
     };
   }

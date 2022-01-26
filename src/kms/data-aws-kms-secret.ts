@@ -12,13 +12,13 @@ export interface DataAwsKmsSecretConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret#secret DataAwsKmsSecret#secret}
   */
-  readonly secret: DataAwsKmsSecretSecret[];
+  readonly secret: DataAwsKmsSecretSecret[] | cdktf.IResolvable;
 }
 export interface DataAwsKmsSecretSecret {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret#context DataAwsKmsSecret#context}
   */
-  readonly context?: { [key: string]: string } | cdktf.IResolvable;
+  readonly context?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret#grant_tokens DataAwsKmsSecret#grant_tokens}
   */
@@ -33,13 +33,13 @@ export interface DataAwsKmsSecretSecret {
   readonly payload: string;
 }
 
-export function dataAwsKmsSecretSecretToTerraform(struct?: DataAwsKmsSecretSecret): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsKmsSecretSecretToTerraform(struct?: DataAwsKmsSecretSecret | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    context: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.context),
+    context: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.context),
     grant_tokens: cdktf.listMapper(cdktf.stringToTerraform)(struct!.grantTokens),
     name: cdktf.stringToTerraform(struct!.name),
     payload: cdktf.stringToTerraform(struct!.payload),
@@ -92,12 +92,12 @@ export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
   }
 
   // secret - computed: false, optional: false, required: true
-  private _secret?: DataAwsKmsSecretSecret[]; 
+  private _secret?: DataAwsKmsSecretSecret[] | cdktf.IResolvable; 
   public get secret() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('secret') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('secret')));
   }
-  public set secret(value: DataAwsKmsSecretSecret[]) {
+  public set secret(value: DataAwsKmsSecretSecret[] | cdktf.IResolvable) {
     this._secret = value;
   }
   // Temporarily expose input value. Use with caution.

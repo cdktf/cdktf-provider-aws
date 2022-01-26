@@ -34,11 +34,11 @@ export interface FsxOntapVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_volume#tags FsxOntapVolume#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_volume#tags_all FsxOntapVolume#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_ontap_volume#volume_type FsxOntapVolume#volume_type}
   */
@@ -68,7 +68,7 @@ export interface FsxOntapVolumeTieringPolicy {
 }
 
 export function fsxOntapVolumeTieringPolicyToTerraform(struct?: FsxOntapVolumeTieringPolicyOutputReference | FsxOntapVolumeTieringPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -86,7 +86,7 @@ export class FsxOntapVolumeTieringPolicyOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -164,8 +164,8 @@ export interface FsxOntapVolumeTimeouts {
   readonly update?: string;
 }
 
-export function fsxOntapVolumeTimeoutsToTerraform(struct?: FsxOntapVolumeTimeoutsOutputReference | FsxOntapVolumeTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function fsxOntapVolumeTimeoutsToTerraform(struct?: FsxOntapVolumeTimeoutsOutputReference | FsxOntapVolumeTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -184,7 +184,7 @@ export class FsxOntapVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -402,7 +402,7 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
   // storage_efficiency_enabled - computed: false, optional: false, required: true
   private _storageEfficiencyEnabled?: boolean | cdktf.IResolvable; 
   public get storageEfficiencyEnabled() {
-    return this.getBooleanAttribute('storage_efficiency_enabled') as any;
+    return this.getBooleanAttribute('storage_efficiency_enabled');
   }
   public set storageEfficiencyEnabled(value: boolean | cdktf.IResolvable) {
     this._storageEfficiencyEnabled = value;
@@ -426,12 +426,11 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -443,12 +442,11 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -481,7 +479,7 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
   }
 
   // tiering_policy - computed: false, optional: true, required: false
-  private _tieringPolicy = new FsxOntapVolumeTieringPolicyOutputReference(this as any, "tiering_policy", true);
+  private _tieringPolicy = new FsxOntapVolumeTieringPolicyOutputReference(this, "tiering_policy", true);
   public get tieringPolicy() {
     return this._tieringPolicy;
   }
@@ -497,7 +495,7 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new FsxOntapVolumeTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new FsxOntapVolumeTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -524,8 +522,8 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
       size_in_megabytes: cdktf.numberToTerraform(this._sizeInMegabytes),
       storage_efficiency_enabled: cdktf.booleanToTerraform(this._storageEfficiencyEnabled),
       storage_virtual_machine_id: cdktf.stringToTerraform(this._storageVirtualMachineId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       volume_type: cdktf.stringToTerraform(this._volumeType),
       tiering_policy: fsxOntapVolumeTieringPolicyToTerraform(this._tieringPolicy.internalValue),
       timeouts: fsxOntapVolumeTimeoutsToTerraform(this._timeouts.internalValue),

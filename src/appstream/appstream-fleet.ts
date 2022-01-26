@@ -62,11 +62,11 @@ export interface AppstreamFleetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet#tags AppstreamFleet#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet#tags_all AppstreamFleet#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * compute_capacity block
   * 
@@ -94,7 +94,7 @@ export interface AppstreamFleetComputeCapacity {
 }
 
 export function appstreamFleetComputeCapacityToTerraform(struct?: AppstreamFleetComputeCapacityOutputReference | AppstreamFleetComputeCapacity): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -111,7 +111,7 @@ export class AppstreamFleetComputeCapacityOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -136,6 +136,11 @@ export class AppstreamFleetComputeCapacityOutputReference extends cdktf.ComplexO
     }
   }
 
+  // available - computed: true, optional: false, required: false
+  public get available() {
+    return this.getNumberAttribute('available');
+  }
+
   // desired_instances - computed: false, optional: false, required: true
   private _desiredInstances?: number; 
   public get desiredInstances() {
@@ -147,6 +152,16 @@ export class AppstreamFleetComputeCapacityOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get desiredInstancesInput() {
     return this._desiredInstances;
+  }
+
+  // in_use - computed: true, optional: false, required: false
+  public get inUse() {
+    return this.getNumberAttribute('in_use');
+  }
+
+  // running - computed: true, optional: false, required: false
+  public get running() {
+    return this.getNumberAttribute('running');
   }
 }
 export interface AppstreamFleetDomainJoinInfo {
@@ -161,7 +176,7 @@ export interface AppstreamFleetDomainJoinInfo {
 }
 
 export function appstreamFleetDomainJoinInfoToTerraform(struct?: AppstreamFleetDomainJoinInfoOutputReference | AppstreamFleetDomainJoinInfo): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -179,7 +194,7 @@ export class AppstreamFleetDomainJoinInfoOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -254,7 +269,7 @@ export interface AppstreamFleetVpcConfig {
 }
 
 export function appstreamFleetVpcConfigToTerraform(struct?: AppstreamFleetVpcConfigOutputReference | AppstreamFleetVpcConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -272,7 +287,7 @@ export class AppstreamFleetVpcConfigOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -453,7 +468,7 @@ export class AppstreamFleet extends cdktf.TerraformResource {
   // enable_default_internet_access - computed: true, optional: true, required: false
   private _enableDefaultInternetAccess?: boolean | cdktf.IResolvable; 
   public get enableDefaultInternetAccess() {
-    return this.getBooleanAttribute('enable_default_internet_access') as any;
+    return this.getBooleanAttribute('enable_default_internet_access');
   }
   public set enableDefaultInternetAccess(value: boolean | cdktf.IResolvable) {
     this._enableDefaultInternetAccess = value;
@@ -615,12 +630,11 @@ export class AppstreamFleet extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -632,12 +646,11 @@ export class AppstreamFleet extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -649,7 +662,7 @@ export class AppstreamFleet extends cdktf.TerraformResource {
   }
 
   // compute_capacity - computed: false, optional: false, required: true
-  private _computeCapacity = new AppstreamFleetComputeCapacityOutputReference(this as any, "compute_capacity", true);
+  private _computeCapacity = new AppstreamFleetComputeCapacityOutputReference(this, "compute_capacity", true);
   public get computeCapacity() {
     return this._computeCapacity;
   }
@@ -662,7 +675,7 @@ export class AppstreamFleet extends cdktf.TerraformResource {
   }
 
   // domain_join_info - computed: false, optional: true, required: false
-  private _domainJoinInfo = new AppstreamFleetDomainJoinInfoOutputReference(this as any, "domain_join_info", true);
+  private _domainJoinInfo = new AppstreamFleetDomainJoinInfoOutputReference(this, "domain_join_info", true);
   public get domainJoinInfo() {
     return this._domainJoinInfo;
   }
@@ -678,7 +691,7 @@ export class AppstreamFleet extends cdktf.TerraformResource {
   }
 
   // vpc_config - computed: false, optional: true, required: false
-  private _vpcConfig = new AppstreamFleetVpcConfigOutputReference(this as any, "vpc_config", true);
+  private _vpcConfig = new AppstreamFleetVpcConfigOutputReference(this, "vpc_config", true);
   public get vpcConfig() {
     return this._vpcConfig;
   }
@@ -712,8 +725,8 @@ export class AppstreamFleet extends cdktf.TerraformResource {
       max_user_duration_in_seconds: cdktf.numberToTerraform(this._maxUserDurationInSeconds),
       name: cdktf.stringToTerraform(this._name),
       stream_view: cdktf.stringToTerraform(this._streamView),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       compute_capacity: appstreamFleetComputeCapacityToTerraform(this._computeCapacity.internalValue),
       domain_join_info: appstreamFleetDomainJoinInfoToTerraform(this._domainJoinInfo.internalValue),
       vpc_config: appstreamFleetVpcConfigToTerraform(this._vpcConfig.internalValue),

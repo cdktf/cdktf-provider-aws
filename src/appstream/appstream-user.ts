@@ -103,7 +103,7 @@ export class AppstreamUser extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -156,7 +156,7 @@ export class AppstreamUser extends cdktf.TerraformResource {
   // send_email_notification - computed: false, optional: true, required: false
   private _sendEmailNotification?: boolean | cdktf.IResolvable; 
   public get sendEmailNotification() {
-    return this.getBooleanAttribute('send_email_notification') as any;
+    return this.getBooleanAttribute('send_email_notification');
   }
   public set sendEmailNotification(value: boolean | cdktf.IResolvable) {
     this._sendEmailNotification = value;

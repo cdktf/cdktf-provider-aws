@@ -10,11 +10,11 @@ export interface Ec2TransitGatewayRouteTableConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table#tags Ec2TransitGatewayRouteTable#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table#tags_all Ec2TransitGatewayRouteTable#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table#transit_gateway_id Ec2TransitGatewayRouteTable#transit_gateway_id}
   */
@@ -69,12 +69,12 @@ export class Ec2TransitGatewayRouteTable extends cdktf.TerraformResource {
 
   // default_association_route_table - computed: true, optional: false, required: false
   public get defaultAssociationRouteTable() {
-    return this.getBooleanAttribute('default_association_route_table') as any;
+    return this.getBooleanAttribute('default_association_route_table');
   }
 
   // default_propagation_route_table - computed: true, optional: false, required: false
   public get defaultPropagationRouteTable() {
-    return this.getBooleanAttribute('default_propagation_route_table') as any;
+    return this.getBooleanAttribute('default_propagation_route_table');
   }
 
   // id - computed: true, optional: true, required: false
@@ -83,12 +83,11 @@ export class Ec2TransitGatewayRouteTable extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -100,12 +99,11 @@ export class Ec2TransitGatewayRouteTable extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -135,8 +133,8 @@ export class Ec2TransitGatewayRouteTable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
     };
   }

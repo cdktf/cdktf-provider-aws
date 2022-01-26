@@ -34,11 +34,11 @@ export interface Kinesisanalyticsv2ApplicationConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#tags Kinesisanalyticsv2Application#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#tags_all Kinesisanalyticsv2Application#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * application_configuration block
   * 
@@ -74,7 +74,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationApplicatio
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -93,7 +93,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -186,7 +186,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationApplicatio
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -204,7 +204,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -252,7 +252,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
   }
 
   // s3_content_location - computed: false, optional: true, required: false
-  private _s3ContentLocation = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationOutputReference(this as any, "s3_content_location", true);
+  private _s3ContentLocation = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationOutputReference(this, "s3_content_location", true);
   public get s3ContentLocation() {
     return this._s3ContentLocation;
   }
@@ -281,7 +281,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationApplicatio
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -299,7 +299,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -344,7 +344,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
   }
 
   // code_content - computed: false, optional: true, required: false
-  private _codeContent = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentOutputReference(this as any, "code_content", true);
+  private _codeContent = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentOutputReference(this, "code_content", true);
   public get codeContent() {
     return this._codeContent;
   }
@@ -367,7 +367,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationApplicatio
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSnapshotConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSnapshotConfigurationOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSnapshotConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -384,7 +384,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSna
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -412,7 +412,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSna
   // snapshots_enabled - computed: false, optional: false, required: true
   private _snapshotsEnabled?: boolean | cdktf.IResolvable; 
   public get snapshotsEnabled() {
-    return this.getBooleanAttribute('snapshots_enabled') as any;
+    return this.getBooleanAttribute('snapshots_enabled');
   }
   public set snapshotsEnabled(value: boolean | cdktf.IResolvable) {
     this._snapshotsEnabled = value;
@@ -430,17 +430,17 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#property_map Kinesisanalyticsv2Application#property_map}
   */
-  readonly propertyMap: { [key: string]: string } | cdktf.IResolvable;
+  readonly propertyMap: { [key: string]: string };
 }
 
-export function kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroupToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroupToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     property_group_id: cdktf.stringToTerraform(struct!.propertyGroupId),
-    property_map: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.propertyMap),
+    property_map: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.propertyMap),
   }
 }
 
@@ -450,11 +450,11 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#property_group Kinesisanalyticsv2Application#property_group}
   */
-  readonly propertyGroup: Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup[];
+  readonly propertyGroup: Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup[] | cdktf.IResolvable;
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentProperties): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -471,7 +471,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPro
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -497,12 +497,12 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPro
   }
 
   // property_group - computed: false, optional: false, required: true
-  private _propertyGroup?: Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup[]; 
+  private _propertyGroup?: Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup[] | cdktf.IResolvable; 
   public get propertyGroup() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('property_group') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('property_group')));
   }
-  public set propertyGroup(value: Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup[]) {
+  public set propertyGroup(value: Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup[] | cdktf.IResolvable) {
     this._propertyGroup = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -530,7 +530,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkAppli
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfigurationOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -550,7 +550,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -612,7 +612,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   // checkpointing_enabled - computed: true, optional: true, required: false
   private _checkpointingEnabled?: boolean | cdktf.IResolvable; 
   public get checkpointingEnabled() {
-    return this.getBooleanAttribute('checkpointing_enabled') as any;
+    return this.getBooleanAttribute('checkpointing_enabled');
   }
   public set checkpointingEnabled(value: boolean | cdktf.IResolvable) {
     this._checkpointingEnabled = value;
@@ -670,7 +670,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkAppli
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfigurationOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -689,7 +689,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -791,7 +791,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkAppli
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfigurationOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -811,7 +811,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -857,7 +857,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   // auto_scaling_enabled - computed: true, optional: true, required: false
   private _autoScalingEnabled?: boolean | cdktf.IResolvable; 
   public get autoScalingEnabled() {
-    return this.getBooleanAttribute('auto_scaling_enabled') as any;
+    return this.getBooleanAttribute('auto_scaling_enabled');
   }
   public set autoScalingEnabled(value: boolean | cdktf.IResolvable) {
     this._autoScalingEnabled = value;
@@ -937,7 +937,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkAppli
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -956,7 +956,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -994,7 +994,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   }
 
   // checkpoint_configuration - computed: false, optional: true, required: false
-  private _checkpointConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfigurationOutputReference(this as any, "checkpoint_configuration", true);
+  private _checkpointConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfigurationOutputReference(this, "checkpoint_configuration", true);
   public get checkpointConfiguration() {
     return this._checkpointConfiguration;
   }
@@ -1010,7 +1010,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   }
 
   // monitoring_configuration - computed: false, optional: true, required: false
-  private _monitoringConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfigurationOutputReference(this as any, "monitoring_configuration", true);
+  private _monitoringConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfigurationOutputReference(this, "monitoring_configuration", true);
   public get monitoringConfiguration() {
     return this._monitoringConfiguration;
   }
@@ -1026,7 +1026,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   }
 
   // parallelism_configuration - computed: false, optional: true, required: false
-  private _parallelismConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfigurationOutputReference(this as any, "parallelism_configuration", true);
+  private _parallelismConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfigurationOutputReference(this, "parallelism_configuration", true);
   public get parallelismConfiguration() {
     return this._parallelismConfiguration;
   }
@@ -1053,7 +1053,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigu
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfigurationOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1071,7 +1071,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1142,7 +1142,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigu
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1159,7 +1159,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1187,7 +1187,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
   // allow_non_restored_state - computed: true, optional: true, required: false
   private _allowNonRestoredState?: boolean | cdktf.IResolvable; 
   public get allowNonRestoredState() {
-    return this.getBooleanAttribute('allow_non_restored_state') as any;
+    return this.getBooleanAttribute('allow_non_restored_state');
   }
   public set allowNonRestoredState(value: boolean | cdktf.IResolvable) {
     this._allowNonRestoredState = value;
@@ -1216,7 +1216,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigu
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1234,7 +1234,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1266,7 +1266,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
   }
 
   // application_restore_configuration - computed: false, optional: true, required: false
-  private _applicationRestoreConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfigurationOutputReference(this as any, "application_restore_configuration", true);
+  private _applicationRestoreConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfigurationOutputReference(this, "application_restore_configuration", true);
   public get applicationRestoreConfiguration() {
     return this._applicationRestoreConfiguration;
   }
@@ -1282,7 +1282,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
   }
 
   // flink_run_configuration - computed: false, optional: true, required: false
-  private _flinkRunConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationOutputReference(this as any, "flink_run_configuration", true);
+  private _flinkRunConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationOutputReference(this, "flink_run_configuration", true);
   public get flinkRunConfiguration() {
     return this._flinkRunConfiguration;
   }
@@ -1305,7 +1305,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelismToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelismOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1322,7 +1322,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1371,7 +1371,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessorToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessorOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1388,7 +1388,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1436,7 +1436,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1453,7 +1453,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1479,7 +1479,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // input_lambda_processor - computed: false, optional: false, required: true
-  private _inputLambdaProcessor = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessorOutputReference(this as any, "input_lambda_processor", true);
+  private _inputLambdaProcessor = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessorOutputReference(this, "input_lambda_processor", true);
   public get inputLambdaProcessor() {
     return this._inputLambdaProcessor;
   }
@@ -1506,8 +1506,8 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
   readonly sqlType: string;
 }
 
-export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumnToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumnToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1530,7 +1530,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParametersToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParametersOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1548,7 +1548,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1613,7 +1613,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParametersToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParametersOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1630,7 +1630,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1684,7 +1684,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1702,7 +1702,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1734,7 +1734,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // csv_mapping_parameters - computed: false, optional: true, required: false
-  private _csvMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParametersOutputReference(this as any, "csv_mapping_parameters", true);
+  private _csvMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParametersOutputReference(this, "csv_mapping_parameters", true);
   public get csvMappingParameters() {
     return this._csvMappingParameters;
   }
@@ -1750,7 +1750,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // json_mapping_parameters - computed: false, optional: true, required: false
-  private _jsonMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParametersOutputReference(this as any, "json_mapping_parameters", true);
+  private _jsonMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParametersOutputReference(this, "json_mapping_parameters", true);
   public get jsonMappingParameters() {
     return this._jsonMappingParameters;
   }
@@ -1779,7 +1779,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1797,7 +1797,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1842,7 +1842,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // mapping_parameters - computed: false, optional: false, required: true
-  private _mappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersOutputReference(this as any, "mapping_parameters", true);
+  private _mappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersOutputReference(this, "mapping_parameters", true);
   public get mappingParameters() {
     return this._mappingParameters;
   }
@@ -1864,7 +1864,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_column Kinesisanalyticsv2Application#record_column}
   */
-  readonly recordColumn: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn[];
+  readonly recordColumn: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn[] | cdktf.IResolvable;
   /**
   * record_format block
   * 
@@ -1874,7 +1874,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1893,7 +1893,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1947,12 +1947,12 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // record_column - computed: false, optional: false, required: true
-  private _recordColumn?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn[]; 
+  private _recordColumn?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn[] | cdktf.IResolvable; 
   public get recordColumn() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('record_column') as any;
+    return this.interpolationForAttribute('record_column');
   }
-  public set recordColumn(value: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn[]) {
+  public set recordColumn(value: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn[] | cdktf.IResolvable) {
     this._recordColumn = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1961,7 +1961,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // record_format - computed: false, optional: false, required: true
-  private _recordFormat = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatOutputReference(this as any, "record_format", true);
+  private _recordFormat = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatOutputReference(this, "record_format", true);
   public get recordFormat() {
     return this._recordFormat;
   }
@@ -1980,8 +1980,8 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
   readonly inputStartingPosition?: string;
 }
 
-export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1998,7 +1998,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInputToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInputOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2015,7 +2015,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2061,7 +2061,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2078,7 +2078,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2144,7 +2144,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#input_starting_position_configuration Kinesisanalyticsv2Application#input_starting_position_configuration}
   */
-  readonly inputStartingPositionConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration[];
+  readonly inputStartingPositionConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration[] | cdktf.IResolvable;
   /**
   * kinesis_firehose_input block
   * 
@@ -2160,7 +2160,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInput): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2183,7 +2183,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2244,6 +2244,16 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
     }
   }
 
+  // in_app_stream_names - computed: true, optional: false, required: false
+  public get inAppStreamNames() {
+    return this.getListAttribute('in_app_stream_names');
+  }
+
+  // input_id - computed: true, optional: false, required: false
+  public get inputId() {
+    return this.getStringAttribute('input_id');
+  }
+
   // name_prefix - computed: false, optional: false, required: true
   private _namePrefix?: string; 
   public get namePrefix() {
@@ -2258,7 +2268,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // input_parallelism - computed: false, optional: true, required: false
-  private _inputParallelism = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelismOutputReference(this as any, "input_parallelism", true);
+  private _inputParallelism = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelismOutputReference(this, "input_parallelism", true);
   public get inputParallelism() {
     return this._inputParallelism;
   }
@@ -2274,7 +2284,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // input_processing_configuration - computed: false, optional: true, required: false
-  private _inputProcessingConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationOutputReference(this as any, "input_processing_configuration", true);
+  private _inputProcessingConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationOutputReference(this, "input_processing_configuration", true);
   public get inputProcessingConfiguration() {
     return this._inputProcessingConfiguration;
   }
@@ -2290,7 +2300,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // input_schema - computed: false, optional: false, required: true
-  private _inputSchema = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaOutputReference(this as any, "input_schema", true);
+  private _inputSchema = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaOutputReference(this, "input_schema", true);
   public get inputSchema() {
     return this._inputSchema;
   }
@@ -2303,12 +2313,12 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // input_starting_position_configuration - computed: false, optional: true, required: false
-  private _inputStartingPositionConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration[]; 
+  private _inputStartingPositionConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration[] | cdktf.IResolvable; 
   public get inputStartingPositionConfiguration() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('input_starting_position_configuration') as any;
+    return this.interpolationForAttribute('input_starting_position_configuration');
   }
-  public set inputStartingPositionConfiguration(value: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration[]) {
+  public set inputStartingPositionConfiguration(value: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration[] | cdktf.IResolvable) {
     this._inputStartingPositionConfiguration = value;
   }
   public resetInputStartingPositionConfiguration() {
@@ -2320,7 +2330,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // kinesis_firehose_input - computed: false, optional: true, required: false
-  private _kinesisFirehoseInput = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInputOutputReference(this as any, "kinesis_firehose_input", true);
+  private _kinesisFirehoseInput = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInputOutputReference(this, "kinesis_firehose_input", true);
   public get kinesisFirehoseInput() {
     return this._kinesisFirehoseInput;
   }
@@ -2336,7 +2346,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // kinesis_streams_input - computed: false, optional: true, required: false
-  private _kinesisStreamsInput = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputOutputReference(this as any, "kinesis_streams_input", true);
+  private _kinesisStreamsInput = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputOutputReference(this, "kinesis_streams_input", true);
   public get kinesisStreamsInput() {
     return this._kinesisStreamsInput;
   }
@@ -2359,7 +2369,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchemaToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchemaOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2376,7 +2386,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2422,7 +2432,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutputToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutputOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2439,7 +2449,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2485,7 +2495,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutputToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutputOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2502,7 +2512,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2548,7 +2558,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutputToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutputOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2565,7 +2575,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2634,8 +2644,8 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
   readonly lambdaOutput?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput;
 }
 
-export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutput): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutput | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2663,8 +2673,8 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
   readonly sqlType: string;
 }
 
-export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumnToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumnToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2687,7 +2697,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParametersToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParametersOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2705,7 +2715,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2770,7 +2780,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParametersToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParametersOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2787,7 +2797,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2841,7 +2851,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2859,7 +2869,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2891,7 +2901,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // csv_mapping_parameters - computed: false, optional: true, required: false
-  private _csvMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParametersOutputReference(this as any, "csv_mapping_parameters", true);
+  private _csvMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParametersOutputReference(this, "csv_mapping_parameters", true);
   public get csvMappingParameters() {
     return this._csvMappingParameters;
   }
@@ -2907,7 +2917,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // json_mapping_parameters - computed: false, optional: true, required: false
-  private _jsonMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParametersOutputReference(this as any, "json_mapping_parameters", true);
+  private _jsonMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParametersOutputReference(this, "json_mapping_parameters", true);
   public get jsonMappingParameters() {
     return this._jsonMappingParameters;
   }
@@ -2936,7 +2946,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2954,7 +2964,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2999,7 +3009,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // mapping_parameters - computed: false, optional: false, required: true
-  private _mappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersOutputReference(this as any, "mapping_parameters", true);
+  private _mappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersOutputReference(this, "mapping_parameters", true);
   public get mappingParameters() {
     return this._mappingParameters;
   }
@@ -3021,7 +3031,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_column Kinesisanalyticsv2Application#record_column}
   */
-  readonly recordColumn: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn[];
+  readonly recordColumn: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn[] | cdktf.IResolvable;
   /**
   * record_format block
   * 
@@ -3031,7 +3041,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3050,7 +3060,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3104,12 +3114,12 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // record_column - computed: false, optional: false, required: true
-  private _recordColumn?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn[]; 
+  private _recordColumn?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn[] | cdktf.IResolvable; 
   public get recordColumn() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('record_column') as any;
+    return this.interpolationForAttribute('record_column');
   }
-  public set recordColumn(value: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn[]) {
+  public set recordColumn(value: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn[] | cdktf.IResolvable) {
     this._recordColumn = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3118,7 +3128,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // record_format - computed: false, optional: false, required: true
-  private _recordFormat = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatOutputReference(this as any, "record_format", true);
+  private _recordFormat = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatOutputReference(this, "record_format", true);
   public get recordFormat() {
     return this._recordFormat;
   }
@@ -3142,7 +3152,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3160,7 +3170,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3237,7 +3247,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3256,7 +3266,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3293,6 +3303,11 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
     }
   }
 
+  // reference_id - computed: true, optional: false, required: false
+  public get referenceId() {
+    return this.getStringAttribute('reference_id');
+  }
+
   // table_name - computed: false, optional: false, required: true
   private _tableName?: string; 
   public get tableName() {
@@ -3307,7 +3322,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // reference_schema - computed: false, optional: false, required: true
-  private _referenceSchema = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaOutputReference(this as any, "reference_schema", true);
+  private _referenceSchema = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaOutputReference(this, "reference_schema", true);
   public get referenceSchema() {
     return this._referenceSchema;
   }
@@ -3320,7 +3335,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // s3_reference_data_source - computed: false, optional: false, required: true
-  private _s3ReferenceDataSource = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceOutputReference(this as any, "s3_reference_data_source", true);
+  private _s3ReferenceDataSource = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceOutputReference(this, "s3_reference_data_source", true);
   public get s3ReferenceDataSource() {
     return this._s3ReferenceDataSource;
   }
@@ -3344,7 +3359,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#output Kinesisanalyticsv2Application#output}
   */
-  readonly output?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutput[];
+  readonly output?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutput[] | cdktf.IResolvable;
   /**
   * reference_data_source block
   * 
@@ -3354,7 +3369,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3373,7 +3388,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3411,7 +3426,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // input - computed: false, optional: true, required: false
-  private _input = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputOutputReference(this as any, "input", true);
+  private _input = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputOutputReference(this, "input", true);
   public get input() {
     return this._input;
   }
@@ -3427,12 +3442,12 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // output - computed: false, optional: true, required: false
-  private _output?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutput[]; 
+  private _output?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutput[] | cdktf.IResolvable; 
   public get output() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('output') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('output')));
   }
-  public set output(value: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutput[]) {
+  public set output(value: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutput[] | cdktf.IResolvable) {
     this._output = value;
   }
   public resetOutput() {
@@ -3444,7 +3459,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // reference_data_source - computed: false, optional: true, required: false
-  private _referenceDataSource = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceOutputReference(this as any, "reference_data_source", true);
+  private _referenceDataSource = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceOutputReference(this, "reference_data_source", true);
   public get referenceDataSource() {
     return this._referenceDataSource;
   }
@@ -3471,7 +3486,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigu
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurationOutputReference | Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3489,7 +3504,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3523,7 +3538,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurati
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -3536,7 +3551,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurati
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -3544,6 +3559,16 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurati
   // Temporarily expose input value. Use with caution.
   public get subnetIdsInput() {
     return this._subnetIds;
+  }
+
+  // vpc_configuration_id - computed: true, optional: false, required: false
+  public get vpcConfigurationId() {
+    return this.getStringAttribute('vpc_configuration_id');
+  }
+
+  // vpc_id - computed: true, optional: false, required: false
+  public get vpcId() {
+    return this.getStringAttribute('vpc_id');
   }
 }
 export interface Kinesisanalyticsv2ApplicationApplicationConfiguration {
@@ -3592,7 +3617,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfiguration {
 }
 
 export function kinesisanalyticsv2ApplicationApplicationConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReference | Kinesisanalyticsv2ApplicationApplicationConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3615,7 +3640,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3677,7 +3702,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   }
 
   // application_code_configuration - computed: false, optional: false, required: true
-  private _applicationCodeConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationOutputReference(this as any, "application_code_configuration", true);
+  private _applicationCodeConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationOutputReference(this, "application_code_configuration", true);
   public get applicationCodeConfiguration() {
     return this._applicationCodeConfiguration;
   }
@@ -3690,7 +3715,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   }
 
   // application_snapshot_configuration - computed: false, optional: true, required: false
-  private _applicationSnapshotConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSnapshotConfigurationOutputReference(this as any, "application_snapshot_configuration", true);
+  private _applicationSnapshotConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSnapshotConfigurationOutputReference(this, "application_snapshot_configuration", true);
   public get applicationSnapshotConfiguration() {
     return this._applicationSnapshotConfiguration;
   }
@@ -3706,7 +3731,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   }
 
   // environment_properties - computed: false, optional: true, required: false
-  private _environmentProperties = new Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesOutputReference(this as any, "environment_properties", true);
+  private _environmentProperties = new Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesOutputReference(this, "environment_properties", true);
   public get environmentProperties() {
     return this._environmentProperties;
   }
@@ -3722,7 +3747,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   }
 
   // flink_application_configuration - computed: false, optional: true, required: false
-  private _flinkApplicationConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationOutputReference(this as any, "flink_application_configuration", true);
+  private _flinkApplicationConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationOutputReference(this, "flink_application_configuration", true);
   public get flinkApplicationConfiguration() {
     return this._flinkApplicationConfiguration;
   }
@@ -3738,7 +3763,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   }
 
   // run_configuration - computed: false, optional: true, required: false
-  private _runConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationOutputReference(this as any, "run_configuration", true);
+  private _runConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationOutputReference(this, "run_configuration", true);
   public get runConfiguration() {
     return this._runConfiguration;
   }
@@ -3754,7 +3779,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   }
 
   // sql_application_configuration - computed: false, optional: true, required: false
-  private _sqlApplicationConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputReference(this as any, "sql_application_configuration", true);
+  private _sqlApplicationConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputReference(this, "sql_application_configuration", true);
   public get sqlApplicationConfiguration() {
     return this._sqlApplicationConfiguration;
   }
@@ -3770,7 +3795,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   }
 
   // vpc_configuration - computed: false, optional: true, required: false
-  private _vpcConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurationOutputReference(this as any, "vpc_configuration", true);
+  private _vpcConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurationOutputReference(this, "vpc_configuration", true);
   public get vpcConfiguration() {
     return this._vpcConfiguration;
   }
@@ -3793,7 +3818,7 @@ export interface Kinesisanalyticsv2ApplicationCloudwatchLoggingOptions {
 }
 
 export function kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsToTerraform(struct?: Kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsOutputReference | Kinesisanalyticsv2ApplicationCloudwatchLoggingOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3810,7 +3835,7 @@ export class Kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsOutputReferenc
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3833,6 +3858,11 @@ export class Kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsOutputReferenc
       this.isEmptyObject = Object.keys(value).length === 0;
       this._logStreamArn = value.logStreamArn;
     }
+  }
+
+  // cloudwatch_logging_option_id - computed: true, optional: false, required: false
+  public get cloudwatchLoggingOptionId() {
+    return this.getStringAttribute('cloudwatch_logging_option_id');
   }
 
   // log_stream_arn - computed: false, optional: false, required: true
@@ -3863,8 +3893,8 @@ export interface Kinesisanalyticsv2ApplicationTimeouts {
   readonly update?: string;
 }
 
-export function kinesisanalyticsv2ApplicationTimeoutsToTerraform(struct?: Kinesisanalyticsv2ApplicationTimeoutsOutputReference | Kinesisanalyticsv2ApplicationTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function kinesisanalyticsv2ApplicationTimeoutsToTerraform(struct?: Kinesisanalyticsv2ApplicationTimeoutsOutputReference | Kinesisanalyticsv2ApplicationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3883,7 +3913,7 @@ export class Kinesisanalyticsv2ApplicationTimeoutsOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4047,7 +4077,7 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   // force_stop - computed: false, optional: true, required: false
   private _forceStop?: boolean | cdktf.IResolvable; 
   public get forceStop() {
-    return this.getBooleanAttribute('force_stop') as any;
+    return this.getBooleanAttribute('force_stop');
   }
   public set forceStop(value: boolean | cdktf.IResolvable) {
     this._forceStop = value;
@@ -4112,7 +4142,7 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   // start_application - computed: false, optional: true, required: false
   private _startApplication?: boolean | cdktf.IResolvable; 
   public get startApplication() {
-    return this.getBooleanAttribute('start_application') as any;
+    return this.getBooleanAttribute('start_application');
   }
   public set startApplication(value: boolean | cdktf.IResolvable) {
     this._startApplication = value;
@@ -4131,12 +4161,11 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -4148,12 +4177,11 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -4170,7 +4198,7 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   }
 
   // application_configuration - computed: false, optional: true, required: false
-  private _applicationConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReference(this as any, "application_configuration", true);
+  private _applicationConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReference(this, "application_configuration", true);
   public get applicationConfiguration() {
     return this._applicationConfiguration;
   }
@@ -4186,7 +4214,7 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   }
 
   // cloudwatch_logging_options - computed: false, optional: true, required: false
-  private _cloudwatchLoggingOptions = new Kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsOutputReference(this as any, "cloudwatch_logging_options", true);
+  private _cloudwatchLoggingOptions = new Kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsOutputReference(this, "cloudwatch_logging_options", true);
   public get cloudwatchLoggingOptions() {
     return this._cloudwatchLoggingOptions;
   }
@@ -4202,7 +4230,7 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new Kinesisanalyticsv2ApplicationTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new Kinesisanalyticsv2ApplicationTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -4229,8 +4257,8 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
       runtime_environment: cdktf.stringToTerraform(this._runtimeEnvironment),
       service_execution_role: cdktf.stringToTerraform(this._serviceExecutionRole),
       start_application: cdktf.booleanToTerraform(this._startApplication),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       application_configuration: kinesisanalyticsv2ApplicationApplicationConfigurationToTerraform(this._applicationConfiguration.internalValue),
       cloudwatch_logging_options: kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsToTerraform(this._cloudwatchLoggingOptions.internalValue),
       timeouts: kinesisanalyticsv2ApplicationTimeoutsToTerraform(this._timeouts.internalValue),

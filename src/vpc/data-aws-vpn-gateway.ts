@@ -26,13 +26,13 @@ export interface DataAwsVpnGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpn_gateway#tags DataAwsVpnGateway#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * filter block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpn_gateway#filter DataAwsVpnGateway#filter}
   */
-  readonly filter?: DataAwsVpnGatewayFilter[];
+  readonly filter?: DataAwsVpnGatewayFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsVpnGatewayFilter {
   /**
@@ -45,8 +45,8 @@ export interface DataAwsVpnGatewayFilter {
   readonly values: string[];
 }
 
-export function dataAwsVpnGatewayFilterToTerraform(struct?: DataAwsVpnGatewayFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsVpnGatewayFilterToTerraform(struct?: DataAwsVpnGatewayFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -176,12 +176,11 @@ export class DataAwsVpnGateway extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -193,12 +192,12 @@ export class DataAwsVpnGateway extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsVpnGatewayFilter[]; 
+  private _filter?: DataAwsVpnGatewayFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsVpnGatewayFilter[]) {
+  public set filter(value: DataAwsVpnGatewayFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -219,7 +218,7 @@ export class DataAwsVpnGateway extends cdktf.TerraformDataSource {
       attached_vpc_id: cdktf.stringToTerraform(this._attachedVpcId),
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       state: cdktf.stringToTerraform(this._state),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsVpnGatewayFilterToTerraform)(this._filter),
     };
   }

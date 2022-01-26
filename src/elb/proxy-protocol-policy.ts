@@ -65,7 +65,7 @@ export class ProxyProtocolPolicy extends cdktf.TerraformResource {
   // instance_ports - computed: false, optional: false, required: true
   private _instancePorts?: string[]; 
   public get instancePorts() {
-    return this.getListAttribute('instance_ports');
+    return cdktf.Fn.tolist(this.getListAttribute('instance_ports'));
   }
   public set instancePorts(value: string[]) {
     this._instancePorts = value;

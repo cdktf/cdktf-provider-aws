@@ -80,7 +80,7 @@ export class ChimeVoiceConnectorTermination extends cdktf.TerraformResource {
   // calling_regions - computed: false, optional: false, required: true
   private _callingRegions?: string[]; 
   public get callingRegions() {
-    return this.getListAttribute('calling_regions');
+    return cdktf.Fn.tolist(this.getListAttribute('calling_regions'));
   }
   public set callingRegions(value: string[]) {
     this._callingRegions = value;
@@ -93,7 +93,7 @@ export class ChimeVoiceConnectorTermination extends cdktf.TerraformResource {
   // cidr_allow_list - computed: false, optional: false, required: true
   private _cidrAllowList?: string[]; 
   public get cidrAllowList() {
-    return this.getListAttribute('cidr_allow_list');
+    return cdktf.Fn.tolist(this.getListAttribute('cidr_allow_list'));
   }
   public set cidrAllowList(value: string[]) {
     this._cidrAllowList = value;
@@ -138,7 +138,7 @@ export class ChimeVoiceConnectorTermination extends cdktf.TerraformResource {
   // disabled - computed: false, optional: true, required: false
   private _disabled?: boolean | cdktf.IResolvable; 
   public get disabled() {
-    return this.getBooleanAttribute('disabled') as any;
+    return this.getBooleanAttribute('disabled');
   }
   public set disabled(value: boolean | cdktf.IResolvable) {
     this._disabled = value;

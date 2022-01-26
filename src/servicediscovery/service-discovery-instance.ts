@@ -10,7 +10,7 @@ export interface ServiceDiscoveryInstanceConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_instance#attributes ServiceDiscoveryInstance#attributes}
   */
-  readonly attributes: { [key: string]: string } | cdktf.IResolvable;
+  readonly attributes: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_instance#instance_id ServiceDiscoveryInstance#instance_id}
   */
@@ -63,12 +63,11 @@ export class ServiceDiscoveryInstance extends cdktf.TerraformResource {
   // ==========
 
   // attributes - computed: false, optional: false, required: true
-  private _attributes?: { [key: string]: string } | cdktf.IResolvable; 
+  private _attributes?: { [key: string]: string }; 
   public get attributes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('attributes') as any;
+    return this.getStringMapAttribute('attributes');
   }
-  public set attributes(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set attributes(value: { [key: string]: string }) {
     this._attributes = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -113,7 +112,7 @@ export class ServiceDiscoveryInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      attributes: cdktf.hashMapper(cdktf.anyToTerraform)(this._attributes),
+      attributes: cdktf.hashMapper(cdktf.stringToTerraform)(this._attributes),
       instance_id: cdktf.stringToTerraform(this._instanceId),
       service_id: cdktf.stringToTerraform(this._serviceId),
     };

@@ -38,7 +38,7 @@ export interface GluePartitionIndexPartitionIndex {
 }
 
 export function gluePartitionIndexPartitionIndexToTerraform(struct?: GluePartitionIndexPartitionIndexOutputReference | GluePartitionIndexPartitionIndex): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -56,7 +56,7 @@ export class GluePartitionIndexPartitionIndexOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -101,6 +101,11 @@ export class GluePartitionIndexPartitionIndexOutputReference extends cdktf.Compl
   // Temporarily expose input value. Use with caution.
   public get indexNameInput() {
     return this._indexName;
+  }
+
+  // index_status - computed: true, optional: false, required: false
+  public get indexStatus() {
+    return this.getStringAttribute('index_status');
   }
 
   // keys - computed: false, optional: true, required: false
@@ -210,7 +215,7 @@ export class GluePartitionIndex extends cdktf.TerraformResource {
   }
 
   // partition_index - computed: false, optional: false, required: true
-  private _partitionIndex = new GluePartitionIndexPartitionIndexOutputReference(this as any, "partition_index", true);
+  private _partitionIndex = new GluePartitionIndexPartitionIndexOutputReference(this, "partition_index", true);
   public get partitionIndex() {
     return this._partitionIndex;
   }

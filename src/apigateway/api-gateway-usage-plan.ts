@@ -22,17 +22,17 @@ export interface ApiGatewayUsagePlanConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan#tags ApiGatewayUsagePlan#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan#tags_all ApiGatewayUsagePlan#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * api_stages block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan#api_stages ApiGatewayUsagePlan#api_stages}
   */
-  readonly apiStages?: ApiGatewayUsagePlanApiStages[];
+  readonly apiStages?: ApiGatewayUsagePlanApiStages[] | cdktf.IResolvable;
   /**
   * quota_settings block
   * 
@@ -61,8 +61,8 @@ export interface ApiGatewayUsagePlanApiStagesThrottle {
   readonly rateLimit?: number;
 }
 
-export function apiGatewayUsagePlanApiStagesThrottleToTerraform(struct?: ApiGatewayUsagePlanApiStagesThrottle): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function apiGatewayUsagePlanApiStagesThrottleToTerraform(struct?: ApiGatewayUsagePlanApiStagesThrottle | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -87,11 +87,11 @@ export interface ApiGatewayUsagePlanApiStages {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan#throttle ApiGatewayUsagePlan#throttle}
   */
-  readonly throttle?: ApiGatewayUsagePlanApiStagesThrottle[];
+  readonly throttle?: ApiGatewayUsagePlanApiStagesThrottle[] | cdktf.IResolvable;
 }
 
-export function apiGatewayUsagePlanApiStagesToTerraform(struct?: ApiGatewayUsagePlanApiStages): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function apiGatewayUsagePlanApiStagesToTerraform(struct?: ApiGatewayUsagePlanApiStages | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -118,7 +118,7 @@ export interface ApiGatewayUsagePlanQuotaSettings {
 }
 
 export function apiGatewayUsagePlanQuotaSettingsToTerraform(struct?: ApiGatewayUsagePlanQuotaSettingsOutputReference | ApiGatewayUsagePlanQuotaSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -137,7 +137,7 @@ export class ApiGatewayUsagePlanQuotaSettingsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -228,7 +228,7 @@ export interface ApiGatewayUsagePlanThrottleSettings {
 }
 
 export function apiGatewayUsagePlanThrottleSettingsToTerraform(struct?: ApiGatewayUsagePlanThrottleSettingsOutputReference | ApiGatewayUsagePlanThrottleSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -246,7 +246,7 @@ export class ApiGatewayUsagePlanThrottleSettingsOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -412,12 +412,11 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -429,12 +428,11 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -446,12 +444,12 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
   }
 
   // api_stages - computed: false, optional: true, required: false
-  private _apiStages?: ApiGatewayUsagePlanApiStages[]; 
+  private _apiStages?: ApiGatewayUsagePlanApiStages[] | cdktf.IResolvable; 
   public get apiStages() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('api_stages') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('api_stages')));
   }
-  public set apiStages(value: ApiGatewayUsagePlanApiStages[]) {
+  public set apiStages(value: ApiGatewayUsagePlanApiStages[] | cdktf.IResolvable) {
     this._apiStages = value;
   }
   public resetApiStages() {
@@ -463,7 +461,7 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
   }
 
   // quota_settings - computed: false, optional: true, required: false
-  private _quotaSettings = new ApiGatewayUsagePlanQuotaSettingsOutputReference(this as any, "quota_settings", true);
+  private _quotaSettings = new ApiGatewayUsagePlanQuotaSettingsOutputReference(this, "quota_settings", true);
   public get quotaSettings() {
     return this._quotaSettings;
   }
@@ -479,7 +477,7 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
   }
 
   // throttle_settings - computed: false, optional: true, required: false
-  private _throttleSettings = new ApiGatewayUsagePlanThrottleSettingsOutputReference(this as any, "throttle_settings", true);
+  private _throttleSettings = new ApiGatewayUsagePlanThrottleSettingsOutputReference(this, "throttle_settings", true);
   public get throttleSettings() {
     return this._throttleSettings;
   }
@@ -503,8 +501,8 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       product_code: cdktf.stringToTerraform(this._productCode),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       api_stages: cdktf.listMapper(apiGatewayUsagePlanApiStagesToTerraform)(this._apiStages),
       quota_settings: apiGatewayUsagePlanQuotaSettingsToTerraform(this._quotaSettings.internalValue),
       throttle_settings: apiGatewayUsagePlanThrottleSettingsToTerraform(this._throttleSettings.internalValue),

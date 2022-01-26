@@ -54,7 +54,7 @@ export interface Route53RecoverycontrolconfigSafetyRuleRuleConfig {
 }
 
 export function route53RecoverycontrolconfigSafetyRuleRuleConfigToTerraform(struct?: Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference | Route53RecoverycontrolconfigSafetyRuleRuleConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -73,7 +73,7 @@ export class Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference ext
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -113,7 +113,7 @@ export class Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference ext
   // inverted - computed: false, optional: false, required: true
   private _inverted?: boolean | cdktf.IResolvable; 
   public get inverted() {
-    return this.getBooleanAttribute('inverted') as any;
+    return this.getBooleanAttribute('inverted');
   }
   public set inverted(value: boolean | cdktf.IResolvable) {
     this._inverted = value;
@@ -298,7 +298,7 @@ export class Route53RecoverycontrolconfigSafetyRule extends cdktf.TerraformResou
   }
 
   // rule_config - computed: false, optional: false, required: true
-  private _ruleConfig = new Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference(this as any, "rule_config", true);
+  private _ruleConfig = new Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference(this, "rule_config", true);
   public get ruleConfig() {
     return this._ruleConfig;
   }

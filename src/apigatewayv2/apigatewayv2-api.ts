@@ -50,11 +50,11 @@ export interface Apigatewayv2ApiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api#tags Apigatewayv2Api#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api#tags_all Apigatewayv2Api#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api#target Apigatewayv2Api#target}
   */
@@ -98,7 +98,7 @@ export interface Apigatewayv2ApiCorsConfiguration {
 }
 
 export function apigatewayv2ApiCorsConfigurationToTerraform(struct?: Apigatewayv2ApiCorsConfigurationOutputReference | Apigatewayv2ApiCorsConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -120,7 +120,7 @@ export class Apigatewayv2ApiCorsConfigurationOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -178,7 +178,7 @@ export class Apigatewayv2ApiCorsConfigurationOutputReference extends cdktf.Compl
   // allow_credentials - computed: false, optional: true, required: false
   private _allowCredentials?: boolean | cdktf.IResolvable; 
   public get allowCredentials() {
-    return this.getBooleanAttribute('allow_credentials') as any;
+    return this.getBooleanAttribute('allow_credentials');
   }
   public set allowCredentials(value: boolean | cdktf.IResolvable) {
     this._allowCredentials = value;
@@ -194,7 +194,7 @@ export class Apigatewayv2ApiCorsConfigurationOutputReference extends cdktf.Compl
   // allow_headers - computed: false, optional: true, required: false
   private _allowHeaders?: string[]; 
   public get allowHeaders() {
-    return this.getListAttribute('allow_headers');
+    return cdktf.Fn.tolist(this.getListAttribute('allow_headers'));
   }
   public set allowHeaders(value: string[]) {
     this._allowHeaders = value;
@@ -210,7 +210,7 @@ export class Apigatewayv2ApiCorsConfigurationOutputReference extends cdktf.Compl
   // allow_methods - computed: false, optional: true, required: false
   private _allowMethods?: string[]; 
   public get allowMethods() {
-    return this.getListAttribute('allow_methods');
+    return cdktf.Fn.tolist(this.getListAttribute('allow_methods'));
   }
   public set allowMethods(value: string[]) {
     this._allowMethods = value;
@@ -226,7 +226,7 @@ export class Apigatewayv2ApiCorsConfigurationOutputReference extends cdktf.Compl
   // allow_origins - computed: false, optional: true, required: false
   private _allowOrigins?: string[]; 
   public get allowOrigins() {
-    return this.getListAttribute('allow_origins');
+    return cdktf.Fn.tolist(this.getListAttribute('allow_origins'));
   }
   public set allowOrigins(value: string[]) {
     this._allowOrigins = value;
@@ -242,7 +242,7 @@ export class Apigatewayv2ApiCorsConfigurationOutputReference extends cdktf.Compl
   // expose_headers - computed: false, optional: true, required: false
   private _exposeHeaders?: string[]; 
   public get exposeHeaders() {
-    return this.getListAttribute('expose_headers');
+    return cdktf.Fn.tolist(this.getListAttribute('expose_headers'));
   }
   public set exposeHeaders(value: string[]) {
     this._exposeHeaders = value;
@@ -402,7 +402,7 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   // disable_execute_api_endpoint - computed: false, optional: true, required: false
   private _disableExecuteApiEndpoint?: boolean | cdktf.IResolvable; 
   public get disableExecuteApiEndpoint() {
-    return this.getBooleanAttribute('disable_execute_api_endpoint') as any;
+    return this.getBooleanAttribute('disable_execute_api_endpoint');
   }
   public set disableExecuteApiEndpoint(value: boolean | cdktf.IResolvable) {
     this._disableExecuteApiEndpoint = value;
@@ -423,7 +423,7 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   // fail_on_warnings - computed: false, optional: true, required: false
   private _failOnWarnings?: boolean | cdktf.IResolvable; 
   public get failOnWarnings() {
-    return this.getBooleanAttribute('fail_on_warnings') as any;
+    return this.getBooleanAttribute('fail_on_warnings');
   }
   public set failOnWarnings(value: boolean | cdktf.IResolvable) {
     this._failOnWarnings = value;
@@ -500,12 +500,11 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -517,12 +516,11 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -566,7 +564,7 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   }
 
   // cors_configuration - computed: false, optional: true, required: false
-  private _corsConfiguration = new Apigatewayv2ApiCorsConfigurationOutputReference(this as any, "cors_configuration", true);
+  private _corsConfiguration = new Apigatewayv2ApiCorsConfigurationOutputReference(this, "cors_configuration", true);
   public get corsConfiguration() {
     return this._corsConfiguration;
   }
@@ -597,8 +595,8 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
       protocol_type: cdktf.stringToTerraform(this._protocolType),
       route_key: cdktf.stringToTerraform(this._routeKey),
       route_selection_expression: cdktf.stringToTerraform(this._routeSelectionExpression),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       target: cdktf.stringToTerraform(this._target),
       version: cdktf.stringToTerraform(this._version),
       cors_configuration: apigatewayv2ApiCorsConfigurationToTerraform(this._corsConfiguration.internalValue),

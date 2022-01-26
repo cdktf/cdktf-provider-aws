@@ -215,7 +215,7 @@ export class SecurityGroupRule extends cdktf.TerraformResource {
   // self - computed: false, optional: true, required: false
   private _self?: boolean | cdktf.IResolvable; 
   public get selfAttribute() {
-    return this.getBooleanAttribute('self') as any;
+    return this.getBooleanAttribute('self');
   }
   public set selfAttribute(value: boolean | cdktf.IResolvable) {
     this._self = value;

@@ -22,11 +22,11 @@ export interface AppmeshVirtualNodeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#tags AppmeshVirtualNode#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#tags_all AppmeshVirtualNode#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * spec block
   * 
@@ -46,7 +46,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCerti
 }
 
 export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference | AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -64,7 +64,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -129,7 +129,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCerti
 }
 
 export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference | AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -146,7 +146,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -200,7 +200,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCerti
 }
 
 export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference | AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -218,7 +218,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -250,7 +250,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
   }
 
   // file - computed: false, optional: true, required: false
-  private _file = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference(this as any, "file", true);
+  private _file = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference(this, "file", true);
   public get file() {
     return this._file;
   }
@@ -266,7 +266,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertifica
   }
 
   // sds - computed: false, optional: true, required: false
-  private _sds = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference(this as any, "sds", true);
+  private _sds = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference(this, "sds", true);
   public get sds() {
     return this._sds;
   }
@@ -289,7 +289,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValid
 }
 
 export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference | AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -306,7 +306,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -334,7 +334,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   // exact - computed: false, optional: false, required: true
   private _exact?: string[]; 
   public get exact() {
-    return this.getListAttribute('exact');
+    return cdktf.Fn.tolist(this.getListAttribute('exact'));
   }
   public set exact(value: string[]) {
     this._exact = value;
@@ -354,7 +354,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValid
 }
 
 export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference | AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -371,7 +371,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -397,7 +397,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   }
 
   // match - computed: false, optional: false, required: true
-  private _match = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference(this as any, "match", true);
+  private _match = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference(this, "match", true);
   public get match() {
     return this._match;
   }
@@ -417,7 +417,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValid
 }
 
 export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference | AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -434,7 +434,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -462,7 +462,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   // certificate_authority_arns - computed: false, optional: false, required: true
   private _certificateAuthorityArns?: string[]; 
   public get certificateAuthorityArns() {
-    return this.getListAttribute('certificate_authority_arns');
+    return cdktf.Fn.tolist(this.getListAttribute('certificate_authority_arns'));
   }
   public set certificateAuthorityArns(value: string[]) {
     this._certificateAuthorityArns = value;
@@ -480,7 +480,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValid
 }
 
 export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference | AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -497,7 +497,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -543,7 +543,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValid
 }
 
 export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference | AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -560,7 +560,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -620,7 +620,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValid
 }
 
 export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference | AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -639,7 +639,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -677,7 +677,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   }
 
   // acm - computed: false, optional: true, required: false
-  private _acm = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference(this as any, "acm", true);
+  private _acm = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference(this, "acm", true);
   public get acm() {
     return this._acm;
   }
@@ -693,7 +693,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   }
 
   // file - computed: false, optional: true, required: false
-  private _file = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference(this as any, "file", true);
+  private _file = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference(this, "file", true);
   public get file() {
     return this._file;
   }
@@ -709,7 +709,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   }
 
   // sds - computed: false, optional: true, required: false
-  private _sds = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference(this as any, "sds", true);
+  private _sds = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference(this, "sds", true);
   public get sds() {
     return this._sds;
   }
@@ -740,7 +740,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValid
 }
 
 export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference | AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -758,7 +758,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -790,7 +790,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   }
 
   // subject_alternative_names - computed: false, optional: true, required: false
-  private _subjectAlternativeNames = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference(this as any, "subject_alternative_names", true);
+  private _subjectAlternativeNames = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference(this, "subject_alternative_names", true);
   public get subjectAlternativeNames() {
     return this._subjectAlternativeNames;
   }
@@ -806,7 +806,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidatio
   }
 
   // trust - computed: false, optional: false, required: true
-  private _trust = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference(this as any, "trust", true);
+  private _trust = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference(this, "trust", true);
   public get trust() {
     return this._trust;
   }
@@ -842,7 +842,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls {
 }
 
 export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference | AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -862,7 +862,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputRef
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -908,7 +908,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputRef
   // enforce - computed: false, optional: true, required: false
   private _enforce?: boolean | cdktf.IResolvable; 
   public get enforce() {
-    return this.getBooleanAttribute('enforce') as any;
+    return this.getBooleanAttribute('enforce');
   }
   public set enforce(value: boolean | cdktf.IResolvable) {
     this._enforce = value;
@@ -924,8 +924,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputRef
   // ports - computed: false, optional: true, required: false
   private _ports?: number[]; 
   public get ports() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ports') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('ports')));
   }
   public set ports(value: number[]) {
     this._ports = value;
@@ -939,7 +938,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputRef
   }
 
   // certificate - computed: false, optional: true, required: false
-  private _certificate = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference(this as any, "certificate", true);
+  private _certificate = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference(this, "certificate", true);
   public get certificate() {
     return this._certificate;
   }
@@ -955,7 +954,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputRef
   }
 
   // validation - computed: false, optional: false, required: true
-  private _validation = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference(this as any, "validation", true);
+  private _validation = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference(this, "validation", true);
   public get validation() {
     return this._validation;
   }
@@ -977,7 +976,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy {
 }
 
 export function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference | AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -994,7 +993,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputRefere
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1020,7 +1019,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputRefere
   }
 
   // tls - computed: false, optional: true, required: false
-  private _tls = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference(this as any, "tls", true);
+  private _tls = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference(this, "tls", true);
   public get tls() {
     return this._tls;
   }
@@ -1049,7 +1048,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualService {
 }
 
 export function appmeshVirtualNodeSpecBackendVirtualServiceToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference | AppmeshVirtualNodeSpecBackendVirtualService): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1067,7 +1066,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1112,7 +1111,7 @@ export class AppmeshVirtualNodeSpecBackendVirtualServiceOutputReference extends 
   }
 
   // client_policy - computed: false, optional: true, required: false
-  private _clientPolicy = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference(this as any, "client_policy", true);
+  private _clientPolicy = new AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference(this, "client_policy", true);
   public get clientPolicy() {
     return this._clientPolicy;
   }
@@ -1136,8 +1135,8 @@ export interface AppmeshVirtualNodeSpecBackend {
   readonly virtualService: AppmeshVirtualNodeSpecBackendVirtualService;
 }
 
-export function appmeshVirtualNodeSpecBackendToTerraform(struct?: AppmeshVirtualNodeSpecBackend): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appmeshVirtualNodeSpecBackendToTerraform(struct?: AppmeshVirtualNodeSpecBackend | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1158,7 +1157,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate
 }
 
 export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference | AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1176,7 +1175,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1241,7 +1240,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate
 }
 
 export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference | AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1258,7 +1257,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1312,7 +1311,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate
 }
 
 export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference | AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1330,7 +1329,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1362,7 +1361,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutp
   }
 
   // file - computed: false, optional: true, required: false
-  private _file = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference(this as any, "file", true);
+  private _file = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference(this, "file", true);
   public get file() {
     return this._file;
   }
@@ -1378,7 +1377,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutp
   }
 
   // sds - computed: false, optional: true, required: false
-  private _sds = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference(this as any, "sds", true);
+  private _sds = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference(this, "sds", true);
   public get sds() {
     return this._sds;
   }
@@ -1401,7 +1400,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationS
 }
 
 export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference | AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1418,7 +1417,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1446,7 +1445,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubje
   // exact - computed: false, optional: false, required: true
   private _exact?: string[]; 
   public get exact() {
-    return this.getListAttribute('exact');
+    return cdktf.Fn.tolist(this.getListAttribute('exact'));
   }
   public set exact(value: string[]) {
     this._exact = value;
@@ -1466,7 +1465,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationS
 }
 
 export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference | AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1483,7 +1482,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1509,7 +1508,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubje
   }
 
   // match - computed: false, optional: false, required: true
-  private _match = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference(this as any, "match", true);
+  private _match = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference(this, "match", true);
   public get match() {
     return this._match;
   }
@@ -1529,7 +1528,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationT
 }
 
 export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference | AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1546,7 +1545,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1574,7 +1573,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   // certificate_authority_arns - computed: false, optional: false, required: true
   private _certificateAuthorityArns?: string[]; 
   public get certificateAuthorityArns() {
-    return this.getListAttribute('certificate_authority_arns');
+    return cdktf.Fn.tolist(this.getListAttribute('certificate_authority_arns'));
   }
   public set certificateAuthorityArns(value: string[]) {
     this._certificateAuthorityArns = value;
@@ -1592,7 +1591,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationT
 }
 
 export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference | AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1609,7 +1608,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1655,7 +1654,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationT
 }
 
 export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference | AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1672,7 +1671,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1732,7 +1731,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationT
 }
 
 export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference | AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1751,7 +1750,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1789,7 +1788,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   }
 
   // acm - computed: false, optional: true, required: false
-  private _acm = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference(this as any, "acm", true);
+  private _acm = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference(this, "acm", true);
   public get acm() {
     return this._acm;
   }
@@ -1805,7 +1804,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   }
 
   // file - computed: false, optional: true, required: false
-  private _file = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference(this as any, "file", true);
+  private _file = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference(this, "file", true);
   public get file() {
     return this._file;
   }
@@ -1821,7 +1820,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust
   }
 
   // sds - computed: false, optional: true, required: false
-  private _sds = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference(this as any, "sds", true);
+  private _sds = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference(this, "sds", true);
   public get sds() {
     return this._sds;
   }
@@ -1852,7 +1851,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation 
 }
 
 export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference | AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1870,7 +1869,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutpu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1902,7 +1901,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutpu
   }
 
   // subject_alternative_names - computed: false, optional: true, required: false
-  private _subjectAlternativeNames = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference(this as any, "subject_alternative_names", true);
+  private _subjectAlternativeNames = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference(this, "subject_alternative_names", true);
   public get subjectAlternativeNames() {
     return this._subjectAlternativeNames;
   }
@@ -1918,7 +1917,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutpu
   }
 
   // trust - computed: false, optional: false, required: true
-  private _trust = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference(this as any, "trust", true);
+  private _trust = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference(this, "trust", true);
   public get trust() {
     return this._trust;
   }
@@ -1954,7 +1953,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls {
 }
 
 export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference | AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1974,7 +1973,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2020,7 +2019,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference
   // enforce - computed: false, optional: true, required: false
   private _enforce?: boolean | cdktf.IResolvable; 
   public get enforce() {
-    return this.getBooleanAttribute('enforce') as any;
+    return this.getBooleanAttribute('enforce');
   }
   public set enforce(value: boolean | cdktf.IResolvable) {
     this._enforce = value;
@@ -2036,8 +2035,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference
   // ports - computed: false, optional: true, required: false
   private _ports?: number[]; 
   public get ports() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ports') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('ports')));
   }
   public set ports(value: number[]) {
     this._ports = value;
@@ -2051,7 +2049,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference
   }
 
   // certificate - computed: false, optional: true, required: false
-  private _certificate = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference(this as any, "certificate", true);
+  private _certificate = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference(this, "certificate", true);
   public get certificate() {
     return this._certificate;
   }
@@ -2067,7 +2065,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference
   }
 
   // validation - computed: false, optional: false, required: true
-  private _validation = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference(this as any, "validation", true);
+  private _validation = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference(this, "validation", true);
   public get validation() {
     return this._validation;
   }
@@ -2089,7 +2087,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicy {
 }
 
 export function appmeshVirtualNodeSpecBackendDefaultsClientPolicyToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference | AppmeshVirtualNodeSpecBackendDefaultsClientPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2106,7 +2104,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference ex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2132,7 +2130,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference ex
   }
 
   // tls - computed: false, optional: true, required: false
-  private _tls = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference(this as any, "tls", true);
+  private _tls = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference(this, "tls", true);
   public get tls() {
     return this._tls;
   }
@@ -2157,7 +2155,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaults {
 }
 
 export function appmeshVirtualNodeSpecBackendDefaultsToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsOutputReference | AppmeshVirtualNodeSpecBackendDefaults): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2174,7 +2172,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2200,7 +2198,7 @@ export class AppmeshVirtualNodeSpecBackendDefaultsOutputReference extends cdktf.
   }
 
   // client_policy - computed: false, optional: true, required: false
-  private _clientPolicy = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference(this as any, "client_policy", true);
+  private _clientPolicy = new AppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference(this, "client_policy", true);
   public get clientPolicy() {
     return this._clientPolicy;
   }
@@ -2223,7 +2221,7 @@ export interface AppmeshVirtualNodeSpecListenerConnectionPoolGrpc {
 }
 
 export function appmeshVirtualNodeSpecListenerConnectionPoolGrpcToTerraform(struct?: AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference | AppmeshVirtualNodeSpecListenerConnectionPoolGrpc): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2240,7 +2238,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference ext
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2290,7 +2288,7 @@ export interface AppmeshVirtualNodeSpecListenerConnectionPoolHttp {
 }
 
 export function appmeshVirtualNodeSpecListenerConnectionPoolHttpToTerraform(struct?: AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference | AppmeshVirtualNodeSpecListenerConnectionPoolHttp): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2308,7 +2306,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference ext
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2376,7 +2374,7 @@ export interface AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 {
 }
 
 export function appmeshVirtualNodeSpecListenerConnectionPoolHttp2ToTerraform(struct?: AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference | AppmeshVirtualNodeSpecListenerConnectionPoolHttp2): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2393,7 +2391,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference ex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2439,7 +2437,7 @@ export interface AppmeshVirtualNodeSpecListenerConnectionPoolTcp {
 }
 
 export function appmeshVirtualNodeSpecListenerConnectionPoolTcpToTerraform(struct?: AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference | AppmeshVirtualNodeSpecListenerConnectionPoolTcp): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2456,7 +2454,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2522,7 +2520,7 @@ export interface AppmeshVirtualNodeSpecListenerConnectionPool {
 }
 
 export function appmeshVirtualNodeSpecListenerConnectionPoolToTerraform(struct?: AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference | AppmeshVirtualNodeSpecListenerConnectionPool): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2542,7 +2540,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2586,7 +2584,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference extends
   }
 
   // grpc - computed: false, optional: true, required: false
-  private _grpc = new AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference(this as any, "grpc", true);
+  private _grpc = new AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference(this, "grpc", true);
   public get grpc() {
     return this._grpc;
   }
@@ -2602,7 +2600,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference extends
   }
 
   // http - computed: false, optional: true, required: false
-  private _http = new AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference(this as any, "http", true);
+  private _http = new AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference(this, "http", true);
   public get http() {
     return this._http;
   }
@@ -2618,7 +2616,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference extends
   }
 
   // http2 - computed: false, optional: true, required: false
-  private _http2 = new AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference(this as any, "http2", true);
+  private _http2 = new AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference(this, "http2", true);
   public get http2() {
     return this._http2;
   }
@@ -2634,7 +2632,7 @@ export class AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference extends
   }
 
   // tcp - computed: false, optional: true, required: false
-  private _tcp = new AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference(this as any, "tcp", true);
+  private _tcp = new AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference(this, "tcp", true);
   public get tcp() {
     return this._tcp;
   }
@@ -2681,7 +2679,7 @@ export interface AppmeshVirtualNodeSpecListenerHealthCheck {
 }
 
 export function appmeshVirtualNodeSpecListenerHealthCheckToTerraform(struct?: AppmeshVirtualNodeSpecListenerHealthCheckOutputReference | AppmeshVirtualNodeSpecListenerHealthCheck): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2704,7 +2702,7 @@ export class AppmeshVirtualNodeSpecListenerHealthCheckOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2874,7 +2872,7 @@ export interface AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurat
 }
 
 export function appmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationToTerraform(struct?: AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference | AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2892,7 +2890,7 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2961,7 +2959,7 @@ export interface AppmeshVirtualNodeSpecListenerOutlierDetectionInterval {
 }
 
 export function appmeshVirtualNodeSpecListenerOutlierDetectionIntervalToTerraform(struct?: AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference | AppmeshVirtualNodeSpecListenerOutlierDetectionInterval): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2979,7 +2977,7 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReferen
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3060,7 +3058,7 @@ export interface AppmeshVirtualNodeSpecListenerOutlierDetection {
 }
 
 export function appmeshVirtualNodeSpecListenerOutlierDetectionToTerraform(struct?: AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference | AppmeshVirtualNodeSpecListenerOutlierDetection): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3080,7 +3078,7 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3150,7 +3148,7 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference exten
   }
 
   // base_ejection_duration - computed: false, optional: false, required: true
-  private _baseEjectionDuration = new AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference(this as any, "base_ejection_duration", true);
+  private _baseEjectionDuration = new AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference(this, "base_ejection_duration", true);
   public get baseEjectionDuration() {
     return this._baseEjectionDuration;
   }
@@ -3163,7 +3161,7 @@ export class AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference exten
   }
 
   // interval - computed: false, optional: false, required: true
-  private _interval = new AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference(this as any, "interval", true);
+  private _interval = new AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference(this, "interval", true);
   public get interval() {
     return this._interval;
   }
@@ -3187,7 +3185,7 @@ export interface AppmeshVirtualNodeSpecListenerPortMapping {
 }
 
 export function appmeshVirtualNodeSpecListenerPortMappingToTerraform(struct?: AppmeshVirtualNodeSpecListenerPortMappingOutputReference | AppmeshVirtualNodeSpecListenerPortMapping): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3205,7 +3203,7 @@ export class AppmeshVirtualNodeSpecListenerPortMappingOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3274,7 +3272,7 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle {
 }
 
 export function appmeshVirtualNodeSpecListenerTimeoutGrpcIdleToTerraform(struct?: AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference | AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3292,7 +3290,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3361,7 +3359,7 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest {
 }
 
 export function appmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestToTerraform(struct?: AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference | AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3379,7 +3377,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3452,7 +3450,7 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutGrpc {
 }
 
 export function appmeshVirtualNodeSpecListenerTimeoutGrpcToTerraform(struct?: AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference | AppmeshVirtualNodeSpecListenerTimeoutGrpc): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3470,7 +3468,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3502,7 +3500,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference extends cd
   }
 
   // idle - computed: false, optional: true, required: false
-  private _idle = new AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference(this as any, "idle", true);
+  private _idle = new AppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference(this, "idle", true);
   public get idle() {
     return this._idle;
   }
@@ -3518,7 +3516,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference extends cd
   }
 
   // per_request - computed: false, optional: true, required: false
-  private _perRequest = new AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference(this as any, "per_request", true);
+  private _perRequest = new AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference(this, "per_request", true);
   public get perRequest() {
     return this._perRequest;
   }
@@ -3545,7 +3543,7 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutHttpIdle {
 }
 
 export function appmeshVirtualNodeSpecListenerTimeoutHttpIdleToTerraform(struct?: AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference | AppmeshVirtualNodeSpecListenerTimeoutHttpIdle): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3563,7 +3561,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3632,7 +3630,7 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest {
 }
 
 export function appmeshVirtualNodeSpecListenerTimeoutHttpPerRequestToTerraform(struct?: AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference | AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3650,7 +3648,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3723,7 +3721,7 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutHttp {
 }
 
 export function appmeshVirtualNodeSpecListenerTimeoutHttpToTerraform(struct?: AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference | AppmeshVirtualNodeSpecListenerTimeoutHttp): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3741,7 +3739,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3773,7 +3771,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference extends cd
   }
 
   // idle - computed: false, optional: true, required: false
-  private _idle = new AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference(this as any, "idle", true);
+  private _idle = new AppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference(this, "idle", true);
   public get idle() {
     return this._idle;
   }
@@ -3789,7 +3787,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference extends cd
   }
 
   // per_request - computed: false, optional: true, required: false
-  private _perRequest = new AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference(this as any, "per_request", true);
+  private _perRequest = new AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference(this, "per_request", true);
   public get perRequest() {
     return this._perRequest;
   }
@@ -3816,7 +3814,7 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle {
 }
 
 export function appmeshVirtualNodeSpecListenerTimeoutHttp2IdleToTerraform(struct?: AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference | AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3834,7 +3832,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3903,7 +3901,7 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest {
 }
 
 export function appmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestToTerraform(struct?: AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference | AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3921,7 +3919,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3994,7 +3992,7 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutHttp2 {
 }
 
 export function appmeshVirtualNodeSpecListenerTimeoutHttp2ToTerraform(struct?: AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference | AppmeshVirtualNodeSpecListenerTimeoutHttp2): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4012,7 +4010,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference extends c
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4044,7 +4042,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference extends c
   }
 
   // idle - computed: false, optional: true, required: false
-  private _idle = new AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference(this as any, "idle", true);
+  private _idle = new AppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference(this, "idle", true);
   public get idle() {
     return this._idle;
   }
@@ -4060,7 +4058,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference extends c
   }
 
   // per_request - computed: false, optional: true, required: false
-  private _perRequest = new AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference(this as any, "per_request", true);
+  private _perRequest = new AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference(this, "per_request", true);
   public get perRequest() {
     return this._perRequest;
   }
@@ -4087,7 +4085,7 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutTcpIdle {
 }
 
 export function appmeshVirtualNodeSpecListenerTimeoutTcpIdleToTerraform(struct?: AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference | AppmeshVirtualNodeSpecListenerTimeoutTcpIdle): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4105,7 +4103,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4172,7 +4170,7 @@ export interface AppmeshVirtualNodeSpecListenerTimeoutTcp {
 }
 
 export function appmeshVirtualNodeSpecListenerTimeoutTcpToTerraform(struct?: AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference | AppmeshVirtualNodeSpecListenerTimeoutTcp): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4189,7 +4187,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4215,7 +4213,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference extends cdk
   }
 
   // idle - computed: false, optional: true, required: false
-  private _idle = new AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference(this as any, "idle", true);
+  private _idle = new AppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference(this, "idle", true);
   public get idle() {
     return this._idle;
   }
@@ -4258,7 +4256,7 @@ export interface AppmeshVirtualNodeSpecListenerTimeout {
 }
 
 export function appmeshVirtualNodeSpecListenerTimeoutToTerraform(struct?: AppmeshVirtualNodeSpecListenerTimeoutOutputReference | AppmeshVirtualNodeSpecListenerTimeout): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4278,7 +4276,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4322,7 +4320,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutOutputReference extends cdktf.
   }
 
   // grpc - computed: false, optional: true, required: false
-  private _grpc = new AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference(this as any, "grpc", true);
+  private _grpc = new AppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference(this, "grpc", true);
   public get grpc() {
     return this._grpc;
   }
@@ -4338,7 +4336,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutOutputReference extends cdktf.
   }
 
   // http - computed: false, optional: true, required: false
-  private _http = new AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference(this as any, "http", true);
+  private _http = new AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference(this, "http", true);
   public get http() {
     return this._http;
   }
@@ -4354,7 +4352,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutOutputReference extends cdktf.
   }
 
   // http2 - computed: false, optional: true, required: false
-  private _http2 = new AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference(this as any, "http2", true);
+  private _http2 = new AppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference(this, "http2", true);
   public get http2() {
     return this._http2;
   }
@@ -4370,7 +4368,7 @@ export class AppmeshVirtualNodeSpecListenerTimeoutOutputReference extends cdktf.
   }
 
   // tcp - computed: false, optional: true, required: false
-  private _tcp = new AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference(this as any, "tcp", true);
+  private _tcp = new AppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference(this, "tcp", true);
   public get tcp() {
     return this._tcp;
   }
@@ -4393,7 +4391,7 @@ export interface AppmeshVirtualNodeSpecListenerTlsCertificateAcm {
 }
 
 export function appmeshVirtualNodeSpecListenerTlsCertificateAcmToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference | AppmeshVirtualNodeSpecListenerTlsCertificateAcm): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4410,7 +4408,7 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4460,7 +4458,7 @@ export interface AppmeshVirtualNodeSpecListenerTlsCertificateFile {
 }
 
 export function appmeshVirtualNodeSpecListenerTlsCertificateFileToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference | AppmeshVirtualNodeSpecListenerTlsCertificateFile): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4478,7 +4476,7 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference ext
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4543,7 +4541,7 @@ export interface AppmeshVirtualNodeSpecListenerTlsCertificateSds {
 }
 
 export function appmeshVirtualNodeSpecListenerTlsCertificateSdsToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference | AppmeshVirtualNodeSpecListenerTlsCertificateSds): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4560,7 +4558,7 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4620,7 +4618,7 @@ export interface AppmeshVirtualNodeSpecListenerTlsCertificate {
 }
 
 export function appmeshVirtualNodeSpecListenerTlsCertificateToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference | AppmeshVirtualNodeSpecListenerTlsCertificate): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4639,7 +4637,7 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4677,7 +4675,7 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference extends
   }
 
   // acm - computed: false, optional: true, required: false
-  private _acm = new AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference(this as any, "acm", true);
+  private _acm = new AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference(this, "acm", true);
   public get acm() {
     return this._acm;
   }
@@ -4693,7 +4691,7 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference extends
   }
 
   // file - computed: false, optional: true, required: false
-  private _file = new AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference(this as any, "file", true);
+  private _file = new AppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference(this, "file", true);
   public get file() {
     return this._file;
   }
@@ -4709,7 +4707,7 @@ export class AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference extends
   }
 
   // sds - computed: false, optional: true, required: false
-  private _sds = new AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference(this as any, "sds", true);
+  private _sds = new AppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference(this, "sds", true);
   public get sds() {
     return this._sds;
   }
@@ -4732,7 +4730,7 @@ export interface AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNa
 }
 
 export function appmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference | AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4749,7 +4747,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesM
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4777,7 +4775,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesM
   // exact - computed: false, optional: false, required: true
   private _exact?: string[]; 
   public get exact() {
-    return this.getListAttribute('exact');
+    return cdktf.Fn.tolist(this.getListAttribute('exact'));
   }
   public set exact(value: string[]) {
     this._exact = value;
@@ -4797,7 +4795,7 @@ export interface AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNa
 }
 
 export function appmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference | AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4814,7 +4812,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4840,7 +4838,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesO
   }
 
   // match - computed: false, optional: false, required: true
-  private _match = new AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference(this as any, "match", true);
+  private _match = new AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference(this, "match", true);
   public get match() {
     return this._match;
   }
@@ -4860,7 +4858,7 @@ export interface AppmeshVirtualNodeSpecListenerTlsValidationTrustFile {
 }
 
 export function appmeshVirtualNodeSpecListenerTlsValidationTrustFileToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference | AppmeshVirtualNodeSpecListenerTlsValidationTrustFile): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4877,7 +4875,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4923,7 +4921,7 @@ export interface AppmeshVirtualNodeSpecListenerTlsValidationTrustSds {
 }
 
 export function appmeshVirtualNodeSpecListenerTlsValidationTrustSdsToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference | AppmeshVirtualNodeSpecListenerTlsValidationTrustSds): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4940,7 +4938,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4994,7 +4992,7 @@ export interface AppmeshVirtualNodeSpecListenerTlsValidationTrust {
 }
 
 export function appmeshVirtualNodeSpecListenerTlsValidationTrustToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference | AppmeshVirtualNodeSpecListenerTlsValidationTrust): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5012,7 +5010,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference ext
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -5044,7 +5042,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference ext
   }
 
   // file - computed: false, optional: true, required: false
-  private _file = new AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference(this as any, "file", true);
+  private _file = new AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference(this, "file", true);
   public get file() {
     return this._file;
   }
@@ -5060,7 +5058,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference ext
   }
 
   // sds - computed: false, optional: true, required: false
-  private _sds = new AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference(this as any, "sds", true);
+  private _sds = new AppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference(this, "sds", true);
   public get sds() {
     return this._sds;
   }
@@ -5091,7 +5089,7 @@ export interface AppmeshVirtualNodeSpecListenerTlsValidation {
 }
 
 export function appmeshVirtualNodeSpecListenerTlsValidationToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsValidationOutputReference | AppmeshVirtualNodeSpecListenerTlsValidation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5109,7 +5107,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationOutputReference extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -5141,7 +5139,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationOutputReference extends 
   }
 
   // subject_alternative_names - computed: false, optional: true, required: false
-  private _subjectAlternativeNames = new AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference(this as any, "subject_alternative_names", true);
+  private _subjectAlternativeNames = new AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference(this, "subject_alternative_names", true);
   public get subjectAlternativeNames() {
     return this._subjectAlternativeNames;
   }
@@ -5157,7 +5155,7 @@ export class AppmeshVirtualNodeSpecListenerTlsValidationOutputReference extends 
   }
 
   // trust - computed: false, optional: false, required: true
-  private _trust = new AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference(this as any, "trust", true);
+  private _trust = new AppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference(this, "trust", true);
   public get trust() {
     return this._trust;
   }
@@ -5189,7 +5187,7 @@ export interface AppmeshVirtualNodeSpecListenerTls {
 }
 
 export function appmeshVirtualNodeSpecListenerTlsToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsOutputReference | AppmeshVirtualNodeSpecListenerTls): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5208,7 +5206,7 @@ export class AppmeshVirtualNodeSpecListenerTlsOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -5259,7 +5257,7 @@ export class AppmeshVirtualNodeSpecListenerTlsOutputReference extends cdktf.Comp
   }
 
   // certificate - computed: false, optional: false, required: true
-  private _certificate = new AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference(this as any, "certificate", true);
+  private _certificate = new AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference(this, "certificate", true);
   public get certificate() {
     return this._certificate;
   }
@@ -5272,7 +5270,7 @@ export class AppmeshVirtualNodeSpecListenerTlsOutputReference extends cdktf.Comp
   }
 
   // validation - computed: false, optional: true, required: false
-  private _validation = new AppmeshVirtualNodeSpecListenerTlsValidationOutputReference(this as any, "validation", true);
+  private _validation = new AppmeshVirtualNodeSpecListenerTlsValidationOutputReference(this, "validation", true);
   public get validation() {
     return this._validation;
   }
@@ -5327,7 +5325,7 @@ export interface AppmeshVirtualNodeSpecListener {
 }
 
 export function appmeshVirtualNodeSpecListenerToTerraform(struct?: AppmeshVirtualNodeSpecListenerOutputReference | AppmeshVirtualNodeSpecListener): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5349,7 +5347,7 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -5405,7 +5403,7 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
   }
 
   // connection_pool - computed: false, optional: true, required: false
-  private _connectionPool = new AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference(this as any, "connection_pool", true);
+  private _connectionPool = new AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference(this, "connection_pool", true);
   public get connectionPool() {
     return this._connectionPool;
   }
@@ -5421,7 +5419,7 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
   }
 
   // health_check - computed: false, optional: true, required: false
-  private _healthCheck = new AppmeshVirtualNodeSpecListenerHealthCheckOutputReference(this as any, "health_check", true);
+  private _healthCheck = new AppmeshVirtualNodeSpecListenerHealthCheckOutputReference(this, "health_check", true);
   public get healthCheck() {
     return this._healthCheck;
   }
@@ -5437,7 +5435,7 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
   }
 
   // outlier_detection - computed: false, optional: true, required: false
-  private _outlierDetection = new AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference(this as any, "outlier_detection", true);
+  private _outlierDetection = new AppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference(this, "outlier_detection", true);
   public get outlierDetection() {
     return this._outlierDetection;
   }
@@ -5453,7 +5451,7 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
   }
 
   // port_mapping - computed: false, optional: false, required: true
-  private _portMapping = new AppmeshVirtualNodeSpecListenerPortMappingOutputReference(this as any, "port_mapping", true);
+  private _portMapping = new AppmeshVirtualNodeSpecListenerPortMappingOutputReference(this, "port_mapping", true);
   public get portMapping() {
     return this._portMapping;
   }
@@ -5466,7 +5464,7 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
   }
 
   // timeout - computed: false, optional: true, required: false
-  private _timeout = new AppmeshVirtualNodeSpecListenerTimeoutOutputReference(this as any, "timeout", true);
+  private _timeout = new AppmeshVirtualNodeSpecListenerTimeoutOutputReference(this, "timeout", true);
   public get timeout() {
     return this._timeout;
   }
@@ -5482,7 +5480,7 @@ export class AppmeshVirtualNodeSpecListenerOutputReference extends cdktf.Complex
   }
 
   // tls - computed: false, optional: true, required: false
-  private _tls = new AppmeshVirtualNodeSpecListenerTlsOutputReference(this as any, "tls", true);
+  private _tls = new AppmeshVirtualNodeSpecListenerTlsOutputReference(this, "tls", true);
   public get tls() {
     return this._tls;
   }
@@ -5505,7 +5503,7 @@ export interface AppmeshVirtualNodeSpecLoggingAccessLogFile {
 }
 
 export function appmeshVirtualNodeSpecLoggingAccessLogFileToTerraform(struct?: AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference | AppmeshVirtualNodeSpecLoggingAccessLogFile): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5522,7 +5520,7 @@ export class AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference extends c
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -5570,7 +5568,7 @@ export interface AppmeshVirtualNodeSpecLoggingAccessLog {
 }
 
 export function appmeshVirtualNodeSpecLoggingAccessLogToTerraform(struct?: AppmeshVirtualNodeSpecLoggingAccessLogOutputReference | AppmeshVirtualNodeSpecLoggingAccessLog): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5587,7 +5585,7 @@ export class AppmeshVirtualNodeSpecLoggingAccessLogOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -5613,7 +5611,7 @@ export class AppmeshVirtualNodeSpecLoggingAccessLogOutputReference extends cdktf
   }
 
   // file - computed: false, optional: true, required: false
-  private _file = new AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference(this as any, "file", true);
+  private _file = new AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference(this, "file", true);
   public get file() {
     return this._file;
   }
@@ -5638,7 +5636,7 @@ export interface AppmeshVirtualNodeSpecLogging {
 }
 
 export function appmeshVirtualNodeSpecLoggingToTerraform(struct?: AppmeshVirtualNodeSpecLoggingOutputReference | AppmeshVirtualNodeSpecLogging): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5655,7 +5653,7 @@ export class AppmeshVirtualNodeSpecLoggingOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -5681,7 +5679,7 @@ export class AppmeshVirtualNodeSpecLoggingOutputReference extends cdktf.ComplexO
   }
 
   // access_log - computed: false, optional: true, required: false
-  private _accessLog = new AppmeshVirtualNodeSpecLoggingAccessLogOutputReference(this as any, "access_log", true);
+  private _accessLog = new AppmeshVirtualNodeSpecLoggingAccessLogOutputReference(this, "access_log", true);
   public get accessLog() {
     return this._accessLog;
   }
@@ -5700,7 +5698,7 @@ export interface AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#attributes AppmeshVirtualNode#attributes}
   */
-  readonly attributes?: { [key: string]: string } | cdktf.IResolvable;
+  readonly attributes?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#namespace_name AppmeshVirtualNode#namespace_name}
   */
@@ -5712,12 +5710,12 @@ export interface AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap {
 }
 
 export function appmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapToTerraform(struct?: AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference | AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attributes: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.attributes),
+    attributes: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.attributes),
     namespace_name: cdktf.stringToTerraform(struct!.namespaceName),
     service_name: cdktf.stringToTerraform(struct!.serviceName),
   }
@@ -5731,7 +5729,7 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference ex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -5769,12 +5767,11 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference ex
   }
 
   // attributes - computed: false, optional: true, required: false
-  private _attributes?: { [key: string]: string } | cdktf.IResolvable; 
+  private _attributes?: { [key: string]: string }; 
   public get attributes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('attributes') as any;
+    return this.getStringMapAttribute('attributes');
   }
-  public set attributes(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set attributes(value: { [key: string]: string }) {
     this._attributes = value;
   }
   public resetAttributes() {
@@ -5819,7 +5816,7 @@ export interface AppmeshVirtualNodeSpecServiceDiscoveryDns {
 }
 
 export function appmeshVirtualNodeSpecServiceDiscoveryDnsToTerraform(struct?: AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference | AppmeshVirtualNodeSpecServiceDiscoveryDns): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5836,7 +5833,7 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -5890,7 +5887,7 @@ export interface AppmeshVirtualNodeSpecServiceDiscovery {
 }
 
 export function appmeshVirtualNodeSpecServiceDiscoveryToTerraform(struct?: AppmeshVirtualNodeSpecServiceDiscoveryOutputReference | AppmeshVirtualNodeSpecServiceDiscovery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5908,7 +5905,7 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -5940,7 +5937,7 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryOutputReference extends cdktf
   }
 
   // aws_cloud_map - computed: false, optional: true, required: false
-  private _awsCloudMap = new AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference(this as any, "aws_cloud_map", true);
+  private _awsCloudMap = new AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference(this, "aws_cloud_map", true);
   public get awsCloudMap() {
     return this._awsCloudMap;
   }
@@ -5956,7 +5953,7 @@ export class AppmeshVirtualNodeSpecServiceDiscoveryOutputReference extends cdktf
   }
 
   // dns - computed: false, optional: true, required: false
-  private _dns = new AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference(this as any, "dns", true);
+  private _dns = new AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference(this, "dns", true);
   public get dns() {
     return this._dns;
   }
@@ -5977,7 +5974,7 @@ export interface AppmeshVirtualNodeSpec {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#backend AppmeshVirtualNode#backend}
   */
-  readonly backend?: AppmeshVirtualNodeSpecBackend[];
+  readonly backend?: AppmeshVirtualNodeSpecBackend[] | cdktf.IResolvable;
   /**
   * backend_defaults block
   * 
@@ -6005,7 +6002,7 @@ export interface AppmeshVirtualNodeSpec {
 }
 
 export function appmeshVirtualNodeSpecToTerraform(struct?: AppmeshVirtualNodeSpecOutputReference | AppmeshVirtualNodeSpec): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -6026,7 +6023,7 @@ export class AppmeshVirtualNodeSpecOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -6076,12 +6073,12 @@ export class AppmeshVirtualNodeSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // backend - computed: false, optional: true, required: false
-  private _backend?: AppmeshVirtualNodeSpecBackend[]; 
+  private _backend?: AppmeshVirtualNodeSpecBackend[] | cdktf.IResolvable; 
   public get backend() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('backend') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('backend')));
   }
-  public set backend(value: AppmeshVirtualNodeSpecBackend[]) {
+  public set backend(value: AppmeshVirtualNodeSpecBackend[] | cdktf.IResolvable) {
     this._backend = value;
   }
   public resetBackend() {
@@ -6093,7 +6090,7 @@ export class AppmeshVirtualNodeSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // backend_defaults - computed: false, optional: true, required: false
-  private _backendDefaults = new AppmeshVirtualNodeSpecBackendDefaultsOutputReference(this as any, "backend_defaults", true);
+  private _backendDefaults = new AppmeshVirtualNodeSpecBackendDefaultsOutputReference(this, "backend_defaults", true);
   public get backendDefaults() {
     return this._backendDefaults;
   }
@@ -6109,7 +6106,7 @@ export class AppmeshVirtualNodeSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // listener - computed: false, optional: true, required: false
-  private _listener = new AppmeshVirtualNodeSpecListenerOutputReference(this as any, "listener", true);
+  private _listener = new AppmeshVirtualNodeSpecListenerOutputReference(this, "listener", true);
   public get listener() {
     return this._listener;
   }
@@ -6125,7 +6122,7 @@ export class AppmeshVirtualNodeSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // logging - computed: false, optional: true, required: false
-  private _logging = new AppmeshVirtualNodeSpecLoggingOutputReference(this as any, "logging", true);
+  private _logging = new AppmeshVirtualNodeSpecLoggingOutputReference(this, "logging", true);
   public get logging() {
     return this._logging;
   }
@@ -6141,7 +6138,7 @@ export class AppmeshVirtualNodeSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // service_discovery - computed: false, optional: true, required: false
-  private _serviceDiscovery = new AppmeshVirtualNodeSpecServiceDiscoveryOutputReference(this as any, "service_discovery", true);
+  private _serviceDiscovery = new AppmeshVirtualNodeSpecServiceDiscoveryOutputReference(this, "service_discovery", true);
   public get serviceDiscovery() {
     return this._serviceDiscovery;
   }
@@ -6269,12 +6266,11 @@ export class AppmeshVirtualNode extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -6286,12 +6282,11 @@ export class AppmeshVirtualNode extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -6303,7 +6298,7 @@ export class AppmeshVirtualNode extends cdktf.TerraformResource {
   }
 
   // spec - computed: false, optional: false, required: true
-  private _spec = new AppmeshVirtualNodeSpecOutputReference(this as any, "spec", true);
+  private _spec = new AppmeshVirtualNodeSpecOutputReference(this, "spec", true);
   public get spec() {
     return this._spec;
   }
@@ -6324,8 +6319,8 @@ export class AppmeshVirtualNode extends cdktf.TerraformResource {
       mesh_name: cdktf.stringToTerraform(this._meshName),
       mesh_owner: cdktf.stringToTerraform(this._meshOwner),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       spec: appmeshVirtualNodeSpecToTerraform(this._spec.internalValue),
     };
   }

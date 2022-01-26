@@ -85,7 +85,7 @@ export class DataAwsIpRanges extends cdktf.TerraformDataSource {
   // regions - computed: false, optional: true, required: false
   private _regions?: string[]; 
   public get regions() {
-    return this.getListAttribute('regions');
+    return cdktf.Fn.tolist(this.getListAttribute('regions'));
   }
   public set regions(value: string[]) {
     this._regions = value;
@@ -101,7 +101,7 @@ export class DataAwsIpRanges extends cdktf.TerraformDataSource {
   // services - computed: false, optional: false, required: true
   private _services?: string[]; 
   public get services() {
-    return this.getListAttribute('services');
+    return cdktf.Fn.tolist(this.getListAttribute('services'));
   }
   public set services(value: string[]) {
     this._services = value;

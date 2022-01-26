@@ -115,7 +115,7 @@ export class DxHostedConnection extends cdktf.TerraformResource {
 
   // jumbo_frame_capable - computed: true, optional: false, required: false
   public get jumboFrameCapable() {
-    return this.getBooleanAttribute('jumbo_frame_capable') as any;
+    return this.getBooleanAttribute('jumbo_frame_capable');
   }
 
   // lag_id - computed: true, optional: false, required: false

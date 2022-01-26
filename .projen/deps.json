@@ -12,12 +12,12 @@
     },
     {
       "name": "cdktf-cli",
-      "version": "^0.8",
+      "version": "^0.9",
       "type": "build"
     },
     {
       "name": "cdktf",
-      "version": "^0.8",
+      "version": "^0.9",
       "type": "build"
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       "name": "cdktf",
-      "version": "^0.8",
+      "version": "^0.9",
       "type": "peer"
     },
     {

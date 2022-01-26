@@ -66,11 +66,11 @@ export interface DmsEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#tags DmsEndpoint#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#tags_all DmsEndpoint#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#username DmsEndpoint#username}
   */
@@ -126,7 +126,7 @@ export interface DmsEndpointElasticsearchSettings {
 }
 
 export function dmsEndpointElasticsearchSettingsToTerraform(struct?: DmsEndpointElasticsearchSettingsOutputReference | DmsEndpointElasticsearchSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -146,7 +146,7 @@ export class DmsEndpointElasticsearchSettingsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -323,7 +323,7 @@ export interface DmsEndpointKafkaSettings {
 }
 
 export function dmsEndpointKafkaSettingsToTerraform(struct?: DmsEndpointKafkaSettingsOutputReference | DmsEndpointKafkaSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -357,7 +357,7 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -500,7 +500,7 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   // include_control_details - computed: false, optional: true, required: false
   private _includeControlDetails?: boolean | cdktf.IResolvable; 
   public get includeControlDetails() {
-    return this.getBooleanAttribute('include_control_details') as any;
+    return this.getBooleanAttribute('include_control_details');
   }
   public set includeControlDetails(value: boolean | cdktf.IResolvable) {
     this._includeControlDetails = value;
@@ -516,7 +516,7 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   // include_null_and_empty - computed: false, optional: true, required: false
   private _includeNullAndEmpty?: boolean | cdktf.IResolvable; 
   public get includeNullAndEmpty() {
-    return this.getBooleanAttribute('include_null_and_empty') as any;
+    return this.getBooleanAttribute('include_null_and_empty');
   }
   public set includeNullAndEmpty(value: boolean | cdktf.IResolvable) {
     this._includeNullAndEmpty = value;
@@ -532,7 +532,7 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   // include_partition_value - computed: false, optional: true, required: false
   private _includePartitionValue?: boolean | cdktf.IResolvable; 
   public get includePartitionValue() {
-    return this.getBooleanAttribute('include_partition_value') as any;
+    return this.getBooleanAttribute('include_partition_value');
   }
   public set includePartitionValue(value: boolean | cdktf.IResolvable) {
     this._includePartitionValue = value;
@@ -548,7 +548,7 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   // include_table_alter_operations - computed: false, optional: true, required: false
   private _includeTableAlterOperations?: boolean | cdktf.IResolvable; 
   public get includeTableAlterOperations() {
-    return this.getBooleanAttribute('include_table_alter_operations') as any;
+    return this.getBooleanAttribute('include_table_alter_operations');
   }
   public set includeTableAlterOperations(value: boolean | cdktf.IResolvable) {
     this._includeTableAlterOperations = value;
@@ -564,7 +564,7 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   // include_transaction_details - computed: false, optional: true, required: false
   private _includeTransactionDetails?: boolean | cdktf.IResolvable; 
   public get includeTransactionDetails() {
-    return this.getBooleanAttribute('include_transaction_details') as any;
+    return this.getBooleanAttribute('include_transaction_details');
   }
   public set includeTransactionDetails(value: boolean | cdktf.IResolvable) {
     this._includeTransactionDetails = value;
@@ -612,7 +612,7 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   // no_hex_prefix - computed: false, optional: true, required: false
   private _noHexPrefix?: boolean | cdktf.IResolvable; 
   public get noHexPrefix() {
-    return this.getBooleanAttribute('no_hex_prefix') as any;
+    return this.getBooleanAttribute('no_hex_prefix');
   }
   public set noHexPrefix(value: boolean | cdktf.IResolvable) {
     this._noHexPrefix = value;
@@ -628,7 +628,7 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   // partition_include_schema_table - computed: false, optional: true, required: false
   private _partitionIncludeSchemaTable?: boolean | cdktf.IResolvable; 
   public get partitionIncludeSchemaTable() {
-    return this.getBooleanAttribute('partition_include_schema_table') as any;
+    return this.getBooleanAttribute('partition_include_schema_table');
   }
   public set partitionIncludeSchemaTable(value: boolean | cdktf.IResolvable) {
     this._partitionIncludeSchemaTable = value;
@@ -809,7 +809,7 @@ export interface DmsEndpointKinesisSettings {
 }
 
 export function dmsEndpointKinesisSettingsToTerraform(struct?: DmsEndpointKinesisSettingsOutputReference | DmsEndpointKinesisSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -834,7 +834,7 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -910,7 +910,7 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   // include_control_details - computed: false, optional: true, required: false
   private _includeControlDetails?: boolean | cdktf.IResolvable; 
   public get includeControlDetails() {
-    return this.getBooleanAttribute('include_control_details') as any;
+    return this.getBooleanAttribute('include_control_details');
   }
   public set includeControlDetails(value: boolean | cdktf.IResolvable) {
     this._includeControlDetails = value;
@@ -926,7 +926,7 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   // include_null_and_empty - computed: false, optional: true, required: false
   private _includeNullAndEmpty?: boolean | cdktf.IResolvable; 
   public get includeNullAndEmpty() {
-    return this.getBooleanAttribute('include_null_and_empty') as any;
+    return this.getBooleanAttribute('include_null_and_empty');
   }
   public set includeNullAndEmpty(value: boolean | cdktf.IResolvable) {
     this._includeNullAndEmpty = value;
@@ -942,7 +942,7 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   // include_partition_value - computed: false, optional: true, required: false
   private _includePartitionValue?: boolean | cdktf.IResolvable; 
   public get includePartitionValue() {
-    return this.getBooleanAttribute('include_partition_value') as any;
+    return this.getBooleanAttribute('include_partition_value');
   }
   public set includePartitionValue(value: boolean | cdktf.IResolvable) {
     this._includePartitionValue = value;
@@ -958,7 +958,7 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   // include_table_alter_operations - computed: false, optional: true, required: false
   private _includeTableAlterOperations?: boolean | cdktf.IResolvable; 
   public get includeTableAlterOperations() {
-    return this.getBooleanAttribute('include_table_alter_operations') as any;
+    return this.getBooleanAttribute('include_table_alter_operations');
   }
   public set includeTableAlterOperations(value: boolean | cdktf.IResolvable) {
     this._includeTableAlterOperations = value;
@@ -974,7 +974,7 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   // include_transaction_details - computed: false, optional: true, required: false
   private _includeTransactionDetails?: boolean | cdktf.IResolvable; 
   public get includeTransactionDetails() {
-    return this.getBooleanAttribute('include_transaction_details') as any;
+    return this.getBooleanAttribute('include_transaction_details');
   }
   public set includeTransactionDetails(value: boolean | cdktf.IResolvable) {
     this._includeTransactionDetails = value;
@@ -1006,7 +1006,7 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   // partition_include_schema_table - computed: false, optional: true, required: false
   private _partitionIncludeSchemaTable?: boolean | cdktf.IResolvable; 
   public get partitionIncludeSchemaTable() {
-    return this.getBooleanAttribute('partition_include_schema_table') as any;
+    return this.getBooleanAttribute('partition_include_schema_table');
   }
   public set partitionIncludeSchemaTable(value: boolean | cdktf.IResolvable) {
     this._partitionIncludeSchemaTable = value;
@@ -1079,7 +1079,7 @@ export interface DmsEndpointMongodbSettings {
 }
 
 export function dmsEndpointMongodbSettingsToTerraform(struct?: DmsEndpointMongodbSettingsOutputReference | DmsEndpointMongodbSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1101,7 +1101,7 @@ export class DmsEndpointMongodbSettingsOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1308,7 +1308,7 @@ export interface DmsEndpointS3Settings {
 }
 
 export function dmsEndpointS3SettingsToTerraform(struct?: DmsEndpointS3SettingsOutputReference | DmsEndpointS3Settings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1337,7 +1337,7 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1533,7 +1533,7 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
   // date_partition_enabled - computed: false, optional: true, required: false
   private _datePartitionEnabled?: boolean | cdktf.IResolvable; 
   public get datePartitionEnabled() {
-    return this.getBooleanAttribute('date_partition_enabled') as any;
+    return this.getBooleanAttribute('date_partition_enabled');
   }
   public set datePartitionEnabled(value: boolean | cdktf.IResolvable) {
     this._datePartitionEnabled = value;
@@ -1581,7 +1581,7 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
   // parquet_timestamp_in_millisecond - computed: false, optional: true, required: false
   private _parquetTimestampInMillisecond?: boolean | cdktf.IResolvable; 
   public get parquetTimestampInMillisecond() {
-    return this.getBooleanAttribute('parquet_timestamp_in_millisecond') as any;
+    return this.getBooleanAttribute('parquet_timestamp_in_millisecond');
   }
   public set parquetTimestampInMillisecond(value: boolean | cdktf.IResolvable) {
     this._parquetTimestampInMillisecond = value;
@@ -1929,12 +1929,11 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -1946,12 +1945,11 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -1979,7 +1977,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   }
 
   // elasticsearch_settings - computed: false, optional: true, required: false
-  private _elasticsearchSettings = new DmsEndpointElasticsearchSettingsOutputReference(this as any, "elasticsearch_settings", true);
+  private _elasticsearchSettings = new DmsEndpointElasticsearchSettingsOutputReference(this, "elasticsearch_settings", true);
   public get elasticsearchSettings() {
     return this._elasticsearchSettings;
   }
@@ -1995,7 +1993,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   }
 
   // kafka_settings - computed: false, optional: true, required: false
-  private _kafkaSettings = new DmsEndpointKafkaSettingsOutputReference(this as any, "kafka_settings", true);
+  private _kafkaSettings = new DmsEndpointKafkaSettingsOutputReference(this, "kafka_settings", true);
   public get kafkaSettings() {
     return this._kafkaSettings;
   }
@@ -2011,7 +2009,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   }
 
   // kinesis_settings - computed: false, optional: true, required: false
-  private _kinesisSettings = new DmsEndpointKinesisSettingsOutputReference(this as any, "kinesis_settings", true);
+  private _kinesisSettings = new DmsEndpointKinesisSettingsOutputReference(this, "kinesis_settings", true);
   public get kinesisSettings() {
     return this._kinesisSettings;
   }
@@ -2027,7 +2025,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   }
 
   // mongodb_settings - computed: false, optional: true, required: false
-  private _mongodbSettings = new DmsEndpointMongodbSettingsOutputReference(this as any, "mongodb_settings", true);
+  private _mongodbSettings = new DmsEndpointMongodbSettingsOutputReference(this, "mongodb_settings", true);
   public get mongodbSettings() {
     return this._mongodbSettings;
   }
@@ -2043,7 +2041,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   }
 
   // s3_settings - computed: false, optional: true, required: false
-  private _s3Settings = new DmsEndpointS3SettingsOutputReference(this as any, "s3_settings", true);
+  private _s3Settings = new DmsEndpointS3SettingsOutputReference(this, "s3_settings", true);
   public get s3Settings() {
     return this._s3Settings;
   }
@@ -2078,8 +2076,8 @@ export class DmsEndpoint extends cdktf.TerraformResource {
       server_name: cdktf.stringToTerraform(this._serverName),
       service_access_role: cdktf.stringToTerraform(this._serviceAccessRole),
       ssl_mode: cdktf.stringToTerraform(this._sslMode),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       username: cdktf.stringToTerraform(this._username),
       elasticsearch_settings: dmsEndpointElasticsearchSettingsToTerraform(this._elasticsearchSettings.internalValue),
       kafka_settings: dmsEndpointKafkaSettingsToTerraform(this._kafkaSettings.internalValue),

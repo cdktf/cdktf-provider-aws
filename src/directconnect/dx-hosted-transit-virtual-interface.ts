@@ -65,8 +65,8 @@ export interface DxHostedTransitVirtualInterfaceTimeouts {
   readonly delete?: string;
 }
 
-export function dxHostedTransitVirtualInterfaceTimeoutsToTerraform(struct?: DxHostedTransitVirtualInterfaceTimeoutsOutputReference | DxHostedTransitVirtualInterfaceTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dxHostedTransitVirtualInterfaceTimeoutsToTerraform(struct?: DxHostedTransitVirtualInterfaceTimeoutsOutputReference | DxHostedTransitVirtualInterfaceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -84,7 +84,7 @@ export class DxHostedTransitVirtualInterfaceTimeoutsOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -306,7 +306,7 @@ export class DxHostedTransitVirtualInterface extends cdktf.TerraformResource {
 
   // jumbo_frame_capable - computed: true, optional: false, required: false
   public get jumboFrameCapable() {
-    return this.getBooleanAttribute('jumbo_frame_capable') as any;
+    return this.getBooleanAttribute('jumbo_frame_capable');
   }
 
   // mtu - computed: false, optional: true, required: false
@@ -365,7 +365,7 @@ export class DxHostedTransitVirtualInterface extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DxHostedTransitVirtualInterfaceTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DxHostedTransitVirtualInterfaceTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

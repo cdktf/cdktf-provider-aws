@@ -42,11 +42,11 @@ export interface FlowLogConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#tags FlowLog#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#tags_all FlowLog#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#traffic_type FlowLog#traffic_type}
   */
@@ -78,7 +78,7 @@ export interface FlowLogDestinationOptions {
 }
 
 export function flowLogDestinationOptionsToTerraform(struct?: FlowLogDestinationOptionsOutputReference | FlowLogDestinationOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -97,7 +97,7 @@ export class FlowLogDestinationOptionsOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -153,7 +153,7 @@ export class FlowLogDestinationOptionsOutputReference extends cdktf.ComplexObjec
   // hive_compatible_partitions - computed: false, optional: true, required: false
   private _hiveCompatiblePartitions?: boolean | cdktf.IResolvable; 
   public get hiveCompatiblePartitions() {
-    return this.getBooleanAttribute('hive_compatible_partitions') as any;
+    return this.getBooleanAttribute('hive_compatible_partitions');
   }
   public set hiveCompatiblePartitions(value: boolean | cdktf.IResolvable) {
     this._hiveCompatiblePartitions = value;
@@ -169,7 +169,7 @@ export class FlowLogDestinationOptionsOutputReference extends cdktf.ComplexObjec
   // per_hour_partition - computed: false, optional: true, required: false
   private _perHourPartition?: boolean | cdktf.IResolvable; 
   public get perHourPartition() {
-    return this.getBooleanAttribute('per_hour_partition') as any;
+    return this.getBooleanAttribute('per_hour_partition');
   }
   public set perHourPartition(value: boolean | cdktf.IResolvable) {
     this._perHourPartition = value;
@@ -373,12 +373,11 @@ export class FlowLog extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -390,12 +389,11 @@ export class FlowLog extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -436,7 +434,7 @@ export class FlowLog extends cdktf.TerraformResource {
   }
 
   // destination_options - computed: false, optional: true, required: false
-  private _destinationOptions = new FlowLogDestinationOptionsOutputReference(this as any, "destination_options", true);
+  private _destinationOptions = new FlowLogDestinationOptionsOutputReference(this, "destination_options", true);
   public get destinationOptions() {
     return this._destinationOptions;
   }
@@ -465,8 +463,8 @@ export class FlowLog extends cdktf.TerraformResource {
       log_group_name: cdktf.stringToTerraform(this._logGroupName),
       max_aggregation_interval: cdktf.numberToTerraform(this._maxAggregationInterval),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       traffic_type: cdktf.stringToTerraform(this._trafficType),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       destination_options: flowLogDestinationOptionsToTerraform(this._destinationOptions.internalValue),

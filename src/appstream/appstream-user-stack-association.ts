@@ -88,7 +88,7 @@ export class AppstreamUserStackAssociation extends cdktf.TerraformResource {
   // send_email_notification - computed: false, optional: true, required: false
   private _sendEmailNotification?: boolean | cdktf.IResolvable; 
   public get sendEmailNotification() {
-    return this.getBooleanAttribute('send_email_notification') as any;
+    return this.getBooleanAttribute('send_email_notification');
   }
   public set sendEmailNotification(value: boolean | cdktf.IResolvable) {
     this._sendEmailNotification = value;

@@ -95,7 +95,7 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
   // allow_users_to_change_password - computed: false, optional: true, required: false
   private _allowUsersToChangePassword?: boolean | cdktf.IResolvable; 
   public get allowUsersToChangePassword() {
-    return this.getBooleanAttribute('allow_users_to_change_password') as any;
+    return this.getBooleanAttribute('allow_users_to_change_password');
   }
   public set allowUsersToChangePassword(value: boolean | cdktf.IResolvable) {
     this._allowUsersToChangePassword = value;
@@ -110,13 +110,13 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
 
   // expire_passwords - computed: true, optional: false, required: false
   public get expirePasswords() {
-    return this.getBooleanAttribute('expire_passwords') as any;
+    return this.getBooleanAttribute('expire_passwords');
   }
 
   // hard_expiry - computed: true, optional: true, required: false
   private _hardExpiry?: boolean | cdktf.IResolvable; 
   public get hardExpiry() {
-    return this.getBooleanAttribute('hard_expiry') as any;
+    return this.getBooleanAttribute('hard_expiry');
   }
   public set hardExpiry(value: boolean | cdktf.IResolvable) {
     this._hardExpiry = value;
@@ -185,7 +185,7 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
   // require_lowercase_characters - computed: true, optional: true, required: false
   private _requireLowercaseCharacters?: boolean | cdktf.IResolvable; 
   public get requireLowercaseCharacters() {
-    return this.getBooleanAttribute('require_lowercase_characters') as any;
+    return this.getBooleanAttribute('require_lowercase_characters');
   }
   public set requireLowercaseCharacters(value: boolean | cdktf.IResolvable) {
     this._requireLowercaseCharacters = value;
@@ -201,7 +201,7 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
   // require_numbers - computed: true, optional: true, required: false
   private _requireNumbers?: boolean | cdktf.IResolvable; 
   public get requireNumbers() {
-    return this.getBooleanAttribute('require_numbers') as any;
+    return this.getBooleanAttribute('require_numbers');
   }
   public set requireNumbers(value: boolean | cdktf.IResolvable) {
     this._requireNumbers = value;
@@ -217,7 +217,7 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
   // require_symbols - computed: true, optional: true, required: false
   private _requireSymbols?: boolean | cdktf.IResolvable; 
   public get requireSymbols() {
-    return this.getBooleanAttribute('require_symbols') as any;
+    return this.getBooleanAttribute('require_symbols');
   }
   public set requireSymbols(value: boolean | cdktf.IResolvable) {
     this._requireSymbols = value;
@@ -233,7 +233,7 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
   // require_uppercase_characters - computed: true, optional: true, required: false
   private _requireUppercaseCharacters?: boolean | cdktf.IResolvable; 
   public get requireUppercaseCharacters() {
-    return this.getBooleanAttribute('require_uppercase_characters') as any;
+    return this.getBooleanAttribute('require_uppercase_characters');
   }
   public set requireUppercaseCharacters(value: boolean | cdktf.IResolvable) {
     this._requireUppercaseCharacters = value;

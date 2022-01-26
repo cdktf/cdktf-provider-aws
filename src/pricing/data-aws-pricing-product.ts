@@ -16,7 +16,7 @@ export interface DataAwsPricingProductConfig extends cdktf.TerraformMetaArgument
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/pricing_product#filters DataAwsPricingProduct#filters}
   */
-  readonly filters: DataAwsPricingProductFilters[];
+  readonly filters: DataAwsPricingProductFilters[] | cdktf.IResolvable;
 }
 export interface DataAwsPricingProductFilters {
   /**
@@ -29,8 +29,8 @@ export interface DataAwsPricingProductFilters {
   readonly value: string;
 }
 
-export function dataAwsPricingProductFiltersToTerraform(struct?: DataAwsPricingProductFilters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsPricingProductFiltersToTerraform(struct?: DataAwsPricingProductFilters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -105,12 +105,12 @@ export class DataAwsPricingProduct extends cdktf.TerraformDataSource {
   }
 
   // filters - computed: false, optional: false, required: true
-  private _filters?: DataAwsPricingProductFilters[]; 
+  private _filters?: DataAwsPricingProductFilters[] | cdktf.IResolvable; 
   public get filters() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filters') as any;
+    return this.interpolationForAttribute('filters');
   }
-  public set filters(value: DataAwsPricingProductFilters[]) {
+  public set filters(value: DataAwsPricingProductFilters[] | cdktf.IResolvable) {
     this._filters = value;
   }
   // Temporarily expose input value. Use with caution.

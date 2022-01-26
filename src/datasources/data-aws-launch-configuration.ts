@@ -16,7 +16,7 @@ export class DataAwsLaunchConfigurationEbsBlockDevice extends cdktf.ComplexCompu
 
   // delete_on_termination - computed: true, optional: false, required: false
   public get deleteOnTermination() {
-    return this.getBooleanAttribute('delete_on_termination') as any;
+    return this.getBooleanAttribute('delete_on_termination');
   }
 
   // device_name - computed: true, optional: false, required: false
@@ -26,7 +26,7 @@ export class DataAwsLaunchConfigurationEbsBlockDevice extends cdktf.ComplexCompu
 
   // encrypted - computed: true, optional: false, required: false
   public get encrypted() {
-    return this.getBooleanAttribute('encrypted') as any;
+    return this.getBooleanAttribute('encrypted');
   }
 
   // iops - computed: true, optional: false, required: false
@@ -36,7 +36,7 @@ export class DataAwsLaunchConfigurationEbsBlockDevice extends cdktf.ComplexCompu
 
   // no_device - computed: true, optional: false, required: false
   public get noDevice() {
-    return this.getBooleanAttribute('no_device') as any;
+    return this.getBooleanAttribute('no_device');
   }
 
   // snapshot_id - computed: true, optional: false, required: false
@@ -46,7 +46,7 @@ export class DataAwsLaunchConfigurationEbsBlockDevice extends cdktf.ComplexCompu
 
   // throughput - computed: true, optional: false, required: false
   public get throughput() {
-    return this.getBooleanAttribute('throughput') as any;
+    return this.getBooleanAttribute('throughput');
   }
 
   // volume_size - computed: true, optional: false, required: false
@@ -92,12 +92,12 @@ export class DataAwsLaunchConfigurationRootBlockDevice extends cdktf.ComplexComp
 
   // delete_on_termination - computed: true, optional: false, required: false
   public get deleteOnTermination() {
-    return this.getBooleanAttribute('delete_on_termination') as any;
+    return this.getBooleanAttribute('delete_on_termination');
   }
 
   // encrypted - computed: true, optional: false, required: false
   public get encrypted() {
-    return this.getBooleanAttribute('encrypted') as any;
+    return this.getBooleanAttribute('encrypted');
   }
 
   // iops - computed: true, optional: false, required: false
@@ -107,7 +107,7 @@ export class DataAwsLaunchConfigurationRootBlockDevice extends cdktf.ComplexComp
 
   // throughput - computed: true, optional: false, required: false
   public get throughput() {
-    return this.getBooleanAttribute('throughput') as any;
+    return this.getBooleanAttribute('throughput');
   }
 
   // volume_size - computed: true, optional: false, required: false
@@ -167,27 +167,27 @@ export class DataAwsLaunchConfiguration extends cdktf.TerraformDataSource {
 
   // associate_public_ip_address - computed: true, optional: false, required: false
   public get associatePublicIpAddress() {
-    return this.getBooleanAttribute('associate_public_ip_address') as any;
+    return this.getBooleanAttribute('associate_public_ip_address');
   }
 
   // ebs_block_device - computed: true, optional: false, required: false
   public ebsBlockDevice(index: string) {
-    return new DataAwsLaunchConfigurationEbsBlockDevice(this, 'ebs_block_device', index);
+    return new DataAwsLaunchConfigurationEbsBlockDevice(this, 'ebs_block_device', index, true);
   }
 
   // ebs_optimized - computed: true, optional: false, required: false
   public get ebsOptimized() {
-    return this.getBooleanAttribute('ebs_optimized') as any;
+    return this.getBooleanAttribute('ebs_optimized');
   }
 
   // enable_monitoring - computed: true, optional: false, required: false
   public get enableMonitoring() {
-    return this.getBooleanAttribute('enable_monitoring') as any;
+    return this.getBooleanAttribute('enable_monitoring');
   }
 
   // ephemeral_block_device - computed: true, optional: false, required: false
   public ephemeralBlockDevice(index: string) {
-    return new DataAwsLaunchConfigurationEphemeralBlockDevice(this, 'ephemeral_block_device', index);
+    return new DataAwsLaunchConfigurationEphemeralBlockDevice(this, 'ephemeral_block_device', index, true);
   }
 
   // iam_instance_profile - computed: true, optional: false, required: false
@@ -217,7 +217,7 @@ export class DataAwsLaunchConfiguration extends cdktf.TerraformDataSource {
 
   // metadata_options - computed: true, optional: false, required: false
   public metadataOptions(index: string) {
-    return new DataAwsLaunchConfigurationMetadataOptions(this, 'metadata_options', index);
+    return new DataAwsLaunchConfigurationMetadataOptions(this, 'metadata_options', index, false);
   }
 
   // name - computed: false, optional: false, required: true
@@ -240,12 +240,12 @@ export class DataAwsLaunchConfiguration extends cdktf.TerraformDataSource {
 
   // root_block_device - computed: true, optional: false, required: false
   public rootBlockDevice(index: string) {
-    return new DataAwsLaunchConfigurationRootBlockDevice(this, 'root_block_device', index);
+    return new DataAwsLaunchConfigurationRootBlockDevice(this, 'root_block_device', index, false);
   }
 
   // security_groups - computed: true, optional: false, required: false
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
 
   // spot_price - computed: true, optional: false, required: false
@@ -265,7 +265,7 @@ export class DataAwsLaunchConfiguration extends cdktf.TerraformDataSource {
 
   // vpc_classic_link_security_groups - computed: true, optional: false, required: false
   public get vpcClassicLinkSecurityGroups() {
-    return this.getListAttribute('vpc_classic_link_security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('vpc_classic_link_security_groups'));
   }
 
   // =========

@@ -22,7 +22,7 @@ export interface LambdaInvocationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_invocation#triggers LambdaInvocation#triggers}
   */
-  readonly triggers?: { [key: string]: string } | cdktf.IResolvable;
+  readonly triggers?: { [key: string]: string };
 }
 
 /**
@@ -120,12 +120,11 @@ export class LambdaInvocation extends cdktf.TerraformResource {
   }
 
   // triggers - computed: false, optional: true, required: false
-  private _triggers?: { [key: string]: string } | cdktf.IResolvable; 
+  private _triggers?: { [key: string]: string }; 
   public get triggers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('triggers') as any;
+    return this.getStringMapAttribute('triggers');
   }
-  public set triggers(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set triggers(value: { [key: string]: string }) {
     this._triggers = value;
   }
   public resetTriggers() {
@@ -145,7 +144,7 @@ export class LambdaInvocation extends cdktf.TerraformResource {
       function_name: cdktf.stringToTerraform(this._functionName),
       input: cdktf.stringToTerraform(this._input),
       qualifier: cdktf.stringToTerraform(this._qualifier),
-      triggers: cdktf.hashMapper(cdktf.anyToTerraform)(this._triggers),
+      triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
     };
   }
 }

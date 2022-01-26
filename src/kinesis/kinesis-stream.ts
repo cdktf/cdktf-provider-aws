@@ -38,11 +38,11 @@ export interface KinesisStreamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_stream#tags KinesisStream#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_stream#tags_all KinesisStream#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * stream_mode_details block
   * 
@@ -64,7 +64,7 @@ export interface KinesisStreamStreamModeDetails {
 }
 
 export function kinesisStreamStreamModeDetailsToTerraform(struct?: KinesisStreamStreamModeDetailsOutputReference | KinesisStreamStreamModeDetails): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -81,7 +81,7 @@ export class KinesisStreamStreamModeDetailsOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -134,8 +134,8 @@ export interface KinesisStreamTimeouts {
   readonly update?: string;
 }
 
-export function kinesisStreamTimeoutsToTerraform(struct?: KinesisStreamTimeoutsOutputReference | KinesisStreamTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function kinesisStreamTimeoutsToTerraform(struct?: KinesisStreamTimeoutsOutputReference | KinesisStreamTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -154,7 +154,7 @@ export class KinesisStreamTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -313,7 +313,7 @@ export class KinesisStream extends cdktf.TerraformResource {
   // enforce_consumer_deletion - computed: false, optional: true, required: false
   private _enforceConsumerDeletion?: boolean | cdktf.IResolvable; 
   public get enforceConsumerDeletion() {
-    return this.getBooleanAttribute('enforce_consumer_deletion') as any;
+    return this.getBooleanAttribute('enforce_consumer_deletion');
   }
   public set enforceConsumerDeletion(value: boolean | cdktf.IResolvable) {
     this._enforceConsumerDeletion = value;
@@ -395,7 +395,7 @@ export class KinesisStream extends cdktf.TerraformResource {
   // shard_level_metrics - computed: false, optional: true, required: false
   private _shardLevelMetrics?: string[]; 
   public get shardLevelMetrics() {
-    return this.getListAttribute('shard_level_metrics');
+    return cdktf.Fn.tolist(this.getListAttribute('shard_level_metrics'));
   }
   public set shardLevelMetrics(value: string[]) {
     this._shardLevelMetrics = value;
@@ -409,12 +409,11 @@ export class KinesisStream extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -426,12 +425,11 @@ export class KinesisStream extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -443,7 +441,7 @@ export class KinesisStream extends cdktf.TerraformResource {
   }
 
   // stream_mode_details - computed: false, optional: true, required: false
-  private _streamModeDetails = new KinesisStreamStreamModeDetailsOutputReference(this as any, "stream_mode_details", true);
+  private _streamModeDetails = new KinesisStreamStreamModeDetailsOutputReference(this, "stream_mode_details", true);
   public get streamModeDetails() {
     return this._streamModeDetails;
   }
@@ -459,7 +457,7 @@ export class KinesisStream extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new KinesisStreamTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new KinesisStreamTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -487,8 +485,8 @@ export class KinesisStream extends cdktf.TerraformResource {
       retention_period: cdktf.numberToTerraform(this._retentionPeriod),
       shard_count: cdktf.numberToTerraform(this._shardCount),
       shard_level_metrics: cdktf.listMapper(cdktf.stringToTerraform)(this._shardLevelMetrics),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       stream_mode_details: kinesisStreamStreamModeDetailsToTerraform(this._streamModeDetails.internalValue),
       timeouts: kinesisStreamTimeoutsToTerraform(this._timeouts.internalValue),
     };

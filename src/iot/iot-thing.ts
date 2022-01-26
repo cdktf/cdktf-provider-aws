@@ -10,7 +10,7 @@ export interface IotThingConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing#attributes IotThing#attributes}
   */
-  readonly attributes?: { [key: string]: string } | cdktf.IResolvable;
+  readonly attributes?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing#name IotThing#name}
   */
@@ -68,12 +68,11 @@ export class IotThing extends cdktf.TerraformResource {
   }
 
   // attributes - computed: false, optional: true, required: false
-  private _attributes?: { [key: string]: string } | cdktf.IResolvable; 
+  private _attributes?: { [key: string]: string }; 
   public get attributes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('attributes') as any;
+    return this.getStringMapAttribute('attributes');
   }
-  public set attributes(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set attributes(value: { [key: string]: string }) {
     this._attributes = value;
   }
   public resetAttributes() {
@@ -134,7 +133,7 @@ export class IotThing extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      attributes: cdktf.hashMapper(cdktf.anyToTerraform)(this._attributes),
+      attributes: cdktf.hashMapper(cdktf.stringToTerraform)(this._attributes),
       name: cdktf.stringToTerraform(this._name),
       thing_type_name: cdktf.stringToTerraform(this._thingTypeName),
     };

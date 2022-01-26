@@ -26,17 +26,17 @@ export interface DocdbClusterParameterGroupConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster_parameter_group#tags DocdbClusterParameterGroup#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster_parameter_group#tags_all DocdbClusterParameterGroup#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * parameter block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster_parameter_group#parameter DocdbClusterParameterGroup#parameter}
   */
-  readonly parameter?: DocdbClusterParameterGroupParameter[];
+  readonly parameter?: DocdbClusterParameterGroupParameter[] | cdktf.IResolvable;
 }
 export interface DocdbClusterParameterGroupParameter {
   /**
@@ -53,8 +53,8 @@ export interface DocdbClusterParameterGroupParameter {
   readonly value: string;
 }
 
-export function docdbClusterParameterGroupParameterToTerraform(struct?: DocdbClusterParameterGroupParameter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function docdbClusterParameterGroupParameterToTerraform(struct?: DocdbClusterParameterGroupParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -183,12 +183,11 @@ export class DocdbClusterParameterGroup extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -200,12 +199,11 @@ export class DocdbClusterParameterGroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -217,12 +215,12 @@ export class DocdbClusterParameterGroup extends cdktf.TerraformResource {
   }
 
   // parameter - computed: false, optional: true, required: false
-  private _parameter?: DocdbClusterParameterGroupParameter[]; 
+  private _parameter?: DocdbClusterParameterGroupParameter[] | cdktf.IResolvable; 
   public get parameter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('parameter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('parameter')));
   }
-  public set parameter(value: DocdbClusterParameterGroupParameter[]) {
+  public set parameter(value: DocdbClusterParameterGroupParameter[] | cdktf.IResolvable) {
     this._parameter = value;
   }
   public resetParameter() {
@@ -243,8 +241,8 @@ export class DocdbClusterParameterGroup extends cdktf.TerraformResource {
       family: cdktf.stringToTerraform(this._family),
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       parameter: cdktf.listMapper(docdbClusterParameterGroupParameterToTerraform)(this._parameter),
     };
   }

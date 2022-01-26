@@ -24,7 +24,7 @@ export interface AmplifyDomainAssociationConfig extends cdktf.TerraformMetaArgum
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_domain_association#sub_domain AmplifyDomainAssociation#sub_domain}
   */
-  readonly subDomain: AmplifyDomainAssociationSubDomain[];
+  readonly subDomain: AmplifyDomainAssociationSubDomain[] | cdktf.IResolvable;
 }
 export interface AmplifyDomainAssociationSubDomain {
   /**
@@ -37,8 +37,8 @@ export interface AmplifyDomainAssociationSubDomain {
   readonly prefix: string;
 }
 
-export function amplifyDomainAssociationSubDomainToTerraform(struct?: AmplifyDomainAssociationSubDomain): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function amplifyDomainAssociationSubDomainToTerraform(struct?: AmplifyDomainAssociationSubDomain | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -135,7 +135,7 @@ export class AmplifyDomainAssociation extends cdktf.TerraformResource {
   // wait_for_verification - computed: false, optional: true, required: false
   private _waitForVerification?: boolean | cdktf.IResolvable; 
   public get waitForVerification() {
-    return this.getBooleanAttribute('wait_for_verification') as any;
+    return this.getBooleanAttribute('wait_for_verification');
   }
   public set waitForVerification(value: boolean | cdktf.IResolvable) {
     this._waitForVerification = value;
@@ -149,12 +149,12 @@ export class AmplifyDomainAssociation extends cdktf.TerraformResource {
   }
 
   // sub_domain - computed: false, optional: false, required: true
-  private _subDomain?: AmplifyDomainAssociationSubDomain[]; 
+  private _subDomain?: AmplifyDomainAssociationSubDomain[] | cdktf.IResolvable; 
   public get subDomain() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('sub_domain') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('sub_domain')));
   }
-  public set subDomain(value: AmplifyDomainAssociationSubDomain[]) {
+  public set subDomain(value: AmplifyDomainAssociationSubDomain[] | cdktf.IResolvable) {
     this._subDomain = value;
   }
   // Temporarily expose input value. Use with caution.

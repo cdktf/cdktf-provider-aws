@@ -18,7 +18,7 @@ export interface DataAwsEcrRepositoryConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecr_repository#tags DataAwsEcrRepository#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsEcrRepositoryEncryptionConfiguration extends cdktf.ComplexComputedList {
 
@@ -36,7 +36,7 @@ export class DataAwsEcrRepositoryImageScanningConfiguration extends cdktf.Comple
 
   // scan_on_push - computed: true, optional: false, required: false
   public get scanOnPush() {
-    return this.getBooleanAttribute('scan_on_push') as any;
+    return this.getBooleanAttribute('scan_on_push');
   }
 }
 
@@ -88,7 +88,7 @@ export class DataAwsEcrRepository extends cdktf.TerraformDataSource {
 
   // encryption_configuration - computed: true, optional: false, required: false
   public encryptionConfiguration(index: string) {
-    return new DataAwsEcrRepositoryEncryptionConfiguration(this, 'encryption_configuration', index);
+    return new DataAwsEcrRepositoryEncryptionConfiguration(this, 'encryption_configuration', index, false);
   }
 
   // id - computed: true, optional: true, required: false
@@ -98,7 +98,7 @@ export class DataAwsEcrRepository extends cdktf.TerraformDataSource {
 
   // image_scanning_configuration - computed: true, optional: false, required: false
   public imageScanningConfiguration(index: string) {
-    return new DataAwsEcrRepositoryImageScanningConfiguration(this, 'image_scanning_configuration', index);
+    return new DataAwsEcrRepositoryImageScanningConfiguration(this, 'image_scanning_configuration', index, false);
   }
 
   // image_tag_mutability - computed: true, optional: false, required: false
@@ -141,12 +141,11 @@ export class DataAwsEcrRepository extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -165,7 +164,7 @@ export class DataAwsEcrRepository extends cdktf.TerraformDataSource {
     return {
       name: cdktf.stringToTerraform(this._name),
       registry_id: cdktf.stringToTerraform(this._registryId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

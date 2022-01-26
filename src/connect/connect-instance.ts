@@ -61,8 +61,8 @@ export interface ConnectInstanceTimeouts {
   readonly delete?: string;
 }
 
-export function connectInstanceTimeoutsToTerraform(struct?: ConnectInstanceTimeoutsOutputReference | ConnectInstanceTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function connectInstanceTimeoutsToTerraform(struct?: ConnectInstanceTimeoutsOutputReference | ConnectInstanceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -80,7 +80,7 @@ export class ConnectInstanceTimeoutsOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -200,7 +200,7 @@ export class ConnectInstance extends cdktf.TerraformResource {
   // auto_resolve_best_voices_enabled - computed: false, optional: true, required: false
   private _autoResolveBestVoicesEnabled?: boolean | cdktf.IResolvable; 
   public get autoResolveBestVoicesEnabled() {
-    return this.getBooleanAttribute('auto_resolve_best_voices_enabled') as any;
+    return this.getBooleanAttribute('auto_resolve_best_voices_enabled');
   }
   public set autoResolveBestVoicesEnabled(value: boolean | cdktf.IResolvable) {
     this._autoResolveBestVoicesEnabled = value;
@@ -216,7 +216,7 @@ export class ConnectInstance extends cdktf.TerraformResource {
   // contact_flow_logs_enabled - computed: false, optional: true, required: false
   private _contactFlowLogsEnabled?: boolean | cdktf.IResolvable; 
   public get contactFlowLogsEnabled() {
-    return this.getBooleanAttribute('contact_flow_logs_enabled') as any;
+    return this.getBooleanAttribute('contact_flow_logs_enabled');
   }
   public set contactFlowLogsEnabled(value: boolean | cdktf.IResolvable) {
     this._contactFlowLogsEnabled = value;
@@ -232,7 +232,7 @@ export class ConnectInstance extends cdktf.TerraformResource {
   // contact_lens_enabled - computed: false, optional: true, required: false
   private _contactLensEnabled?: boolean | cdktf.IResolvable; 
   public get contactLensEnabled() {
-    return this.getBooleanAttribute('contact_lens_enabled') as any;
+    return this.getBooleanAttribute('contact_lens_enabled');
   }
   public set contactLensEnabled(value: boolean | cdktf.IResolvable) {
     this._contactLensEnabled = value;
@@ -269,7 +269,7 @@ export class ConnectInstance extends cdktf.TerraformResource {
   // early_media_enabled - computed: false, optional: true, required: false
   private _earlyMediaEnabled?: boolean | cdktf.IResolvable; 
   public get earlyMediaEnabled() {
-    return this.getBooleanAttribute('early_media_enabled') as any;
+    return this.getBooleanAttribute('early_media_enabled');
   }
   public set earlyMediaEnabled(value: boolean | cdktf.IResolvable) {
     this._earlyMediaEnabled = value;
@@ -303,7 +303,7 @@ export class ConnectInstance extends cdktf.TerraformResource {
   // inbound_calls_enabled - computed: false, optional: false, required: true
   private _inboundCallsEnabled?: boolean | cdktf.IResolvable; 
   public get inboundCallsEnabled() {
-    return this.getBooleanAttribute('inbound_calls_enabled') as any;
+    return this.getBooleanAttribute('inbound_calls_enabled');
   }
   public set inboundCallsEnabled(value: boolean | cdktf.IResolvable) {
     this._inboundCallsEnabled = value;
@@ -332,7 +332,7 @@ export class ConnectInstance extends cdktf.TerraformResource {
   // outbound_calls_enabled - computed: false, optional: false, required: true
   private _outboundCallsEnabled?: boolean | cdktf.IResolvable; 
   public get outboundCallsEnabled() {
-    return this.getBooleanAttribute('outbound_calls_enabled') as any;
+    return this.getBooleanAttribute('outbound_calls_enabled');
   }
   public set outboundCallsEnabled(value: boolean | cdktf.IResolvable) {
     this._outboundCallsEnabled = value;
@@ -353,7 +353,7 @@ export class ConnectInstance extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ConnectInstanceTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ConnectInstanceTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

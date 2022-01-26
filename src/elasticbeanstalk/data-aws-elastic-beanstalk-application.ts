@@ -16,7 +16,7 @@ export class DataAwsElasticBeanstalkApplicationAppversionLifecycle extends cdktf
 
   // delete_source_from_s3 - computed: true, optional: false, required: false
   public get deleteSourceFromS3() {
-    return this.getBooleanAttribute('delete_source_from_s3') as any;
+    return this.getBooleanAttribute('delete_source_from_s3');
   }
 
   // max_age_in_days - computed: true, optional: false, required: false
@@ -76,7 +76,7 @@ export class DataAwsElasticBeanstalkApplication extends cdktf.TerraformDataSourc
 
   // appversion_lifecycle - computed: true, optional: false, required: false
   public appversionLifecycle(index: string) {
-    return new DataAwsElasticBeanstalkApplicationAppversionLifecycle(this, 'appversion_lifecycle', index);
+    return new DataAwsElasticBeanstalkApplicationAppversionLifecycle(this, 'appversion_lifecycle', index, false);
   }
 
   // arn - computed: true, optional: false, required: false

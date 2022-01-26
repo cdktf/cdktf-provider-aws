@@ -90,7 +90,7 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
 
   // compatible_architectures - computed: true, optional: false, required: false
   public get compatibleArchitectures() {
-    return this.getListAttribute('compatible_architectures');
+    return cdktf.Fn.tolist(this.getListAttribute('compatible_architectures'));
   }
 
   // compatible_runtime - computed: false, optional: true, required: false
@@ -111,7 +111,7 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
 
   // compatible_runtimes - computed: true, optional: false, required: false
   public get compatibleRuntimes() {
-    return this.getListAttribute('compatible_runtimes');
+    return cdktf.Fn.tolist(this.getListAttribute('compatible_runtimes'));
   }
 
   // created_date - computed: true, optional: false, required: false

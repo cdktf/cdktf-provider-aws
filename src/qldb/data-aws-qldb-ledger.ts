@@ -59,7 +59,7 @@ export class DataAwsQldbLedger extends cdktf.TerraformDataSource {
 
   // deletion_protection - computed: true, optional: false, required: false
   public get deletionProtection() {
-    return this.getBooleanAttribute('deletion_protection') as any;
+    return this.getBooleanAttribute('deletion_protection');
   }
 
   // id - computed: true, optional: true, required: false

@@ -16,7 +16,7 @@ export interface EmrManagedScalingPolicyConfig extends cdktf.TerraformMetaArgume
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_managed_scaling_policy#compute_limits EmrManagedScalingPolicy#compute_limits}
   */
-  readonly computeLimits: EmrManagedScalingPolicyComputeLimits[];
+  readonly computeLimits: EmrManagedScalingPolicyComputeLimits[] | cdktf.IResolvable;
 }
 export interface EmrManagedScalingPolicyComputeLimits {
   /**
@@ -41,8 +41,8 @@ export interface EmrManagedScalingPolicyComputeLimits {
   readonly unitType: string;
 }
 
-export function emrManagedScalingPolicyComputeLimitsToTerraform(struct?: EmrManagedScalingPolicyComputeLimits): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function emrManagedScalingPolicyComputeLimitsToTerraform(struct?: EmrManagedScalingPolicyComputeLimits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -115,12 +115,12 @@ export class EmrManagedScalingPolicy extends cdktf.TerraformResource {
   }
 
   // compute_limits - computed: false, optional: false, required: true
-  private _computeLimits?: EmrManagedScalingPolicyComputeLimits[]; 
+  private _computeLimits?: EmrManagedScalingPolicyComputeLimits[] | cdktf.IResolvable; 
   public get computeLimits() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('compute_limits') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('compute_limits')));
   }
-  public set computeLimits(value: EmrManagedScalingPolicyComputeLimits[]) {
+  public set computeLimits(value: EmrManagedScalingPolicyComputeLimits[] | cdktf.IResolvable) {
     this._computeLimits = value;
   }
   // Temporarily expose input value. Use with caution.

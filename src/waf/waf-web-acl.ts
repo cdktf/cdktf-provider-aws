@@ -18,11 +18,11 @@ export interface WafWebAclConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl#tags WafWebAcl#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl#tags_all WafWebAcl#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * default_action block
   * 
@@ -40,7 +40,7 @@ export interface WafWebAclConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl#rules WafWebAcl#rules}
   */
-  readonly rules?: WafWebAclRules[];
+  readonly rules?: WafWebAclRules[] | cdktf.IResolvable;
 }
 export interface WafWebAclDefaultAction {
   /**
@@ -50,7 +50,7 @@ export interface WafWebAclDefaultAction {
 }
 
 export function wafWebAclDefaultActionToTerraform(struct?: WafWebAclDefaultActionOutputReference | WafWebAclDefaultAction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -67,7 +67,7 @@ export class WafWebAclDefaultActionOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -116,8 +116,8 @@ export interface WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch {
   readonly type: string;
 }
 
-export function wafWebAclLoggingConfigurationRedactedFieldsFieldToMatchToTerraform(struct?: WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafWebAclLoggingConfigurationRedactedFieldsFieldToMatchToTerraform(struct?: WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -133,11 +133,11 @@ export interface WafWebAclLoggingConfigurationRedactedFields {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl#field_to_match WafWebAcl#field_to_match}
   */
-  readonly fieldToMatch: WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch[];
+  readonly fieldToMatch: WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch[] | cdktf.IResolvable;
 }
 
 export function wafWebAclLoggingConfigurationRedactedFieldsToTerraform(struct?: WafWebAclLoggingConfigurationRedactedFieldsOutputReference | WafWebAclLoggingConfigurationRedactedFields): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -154,7 +154,7 @@ export class WafWebAclLoggingConfigurationRedactedFieldsOutputReference extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -180,12 +180,12 @@ export class WafWebAclLoggingConfigurationRedactedFieldsOutputReference extends 
   }
 
   // field_to_match - computed: false, optional: false, required: true
-  private _fieldToMatch?: WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch[]; 
+  private _fieldToMatch?: WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch[] | cdktf.IResolvable; 
   public get fieldToMatch() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('field_to_match') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('field_to_match')));
   }
-  public set fieldToMatch(value: WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch[]) {
+  public set fieldToMatch(value: WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch[] | cdktf.IResolvable) {
     this._fieldToMatch = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -207,7 +207,7 @@ export interface WafWebAclLoggingConfiguration {
 }
 
 export function wafWebAclLoggingConfigurationToTerraform(struct?: WafWebAclLoggingConfigurationOutputReference | WafWebAclLoggingConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -225,7 +225,7 @@ export class WafWebAclLoggingConfigurationOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -270,7 +270,7 @@ export class WafWebAclLoggingConfigurationOutputReference extends cdktf.ComplexO
   }
 
   // redacted_fields - computed: false, optional: true, required: false
-  private _redactedFields = new WafWebAclLoggingConfigurationRedactedFieldsOutputReference(this as any, "redacted_fields", true);
+  private _redactedFields = new WafWebAclLoggingConfigurationRedactedFieldsOutputReference(this, "redacted_fields", true);
   public get redactedFields() {
     return this._redactedFields;
   }
@@ -293,7 +293,7 @@ export interface WafWebAclRulesAction {
 }
 
 export function wafWebAclRulesActionToTerraform(struct?: WafWebAclRulesActionOutputReference | WafWebAclRulesAction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -310,7 +310,7 @@ export class WafWebAclRulesActionOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -356,7 +356,7 @@ export interface WafWebAclRulesOverrideAction {
 }
 
 export function wafWebAclRulesOverrideActionToTerraform(struct?: WafWebAclRulesOverrideActionOutputReference | WafWebAclRulesOverrideAction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -373,7 +373,7 @@ export class WafWebAclRulesOverrideActionOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -438,8 +438,8 @@ export interface WafWebAclRules {
   readonly overrideAction?: WafWebAclRulesOverrideAction;
 }
 
-export function wafWebAclRulesToTerraform(struct?: WafWebAclRules): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafWebAclRulesToTerraform(struct?: WafWebAclRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -535,12 +535,11 @@ export class WafWebAcl extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -552,12 +551,11 @@ export class WafWebAcl extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -569,7 +567,7 @@ export class WafWebAcl extends cdktf.TerraformResource {
   }
 
   // default_action - computed: false, optional: false, required: true
-  private _defaultAction = new WafWebAclDefaultActionOutputReference(this as any, "default_action", true);
+  private _defaultAction = new WafWebAclDefaultActionOutputReference(this, "default_action", true);
   public get defaultAction() {
     return this._defaultAction;
   }
@@ -582,7 +580,7 @@ export class WafWebAcl extends cdktf.TerraformResource {
   }
 
   // logging_configuration - computed: false, optional: true, required: false
-  private _loggingConfiguration = new WafWebAclLoggingConfigurationOutputReference(this as any, "logging_configuration", true);
+  private _loggingConfiguration = new WafWebAclLoggingConfigurationOutputReference(this, "logging_configuration", true);
   public get loggingConfiguration() {
     return this._loggingConfiguration;
   }
@@ -598,12 +596,12 @@ export class WafWebAcl extends cdktf.TerraformResource {
   }
 
   // rules - computed: false, optional: true, required: false
-  private _rules?: WafWebAclRules[]; 
+  private _rules?: WafWebAclRules[] | cdktf.IResolvable; 
   public get rules() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rules') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('rules')));
   }
-  public set rules(value: WafWebAclRules[]) {
+  public set rules(value: WafWebAclRules[] | cdktf.IResolvable) {
     this._rules = value;
   }
   public resetRules() {
@@ -622,8 +620,8 @@ export class WafWebAcl extends cdktf.TerraformResource {
     return {
       metric_name: cdktf.stringToTerraform(this._metricName),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       default_action: wafWebAclDefaultActionToTerraform(this._defaultAction.internalValue),
       logging_configuration: wafWebAclLoggingConfigurationToTerraform(this._loggingConfiguration.internalValue),
       rules: cdktf.listMapper(wafWebAclRulesToTerraform)(this._rules),

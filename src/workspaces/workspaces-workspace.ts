@@ -22,11 +22,11 @@ export interface WorkspacesWorkspaceConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/workspaces_workspace#tags WorkspacesWorkspace#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/workspaces_workspace#tags_all WorkspacesWorkspace#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/workspaces_workspace#user_name WorkspacesWorkspace#user_name}
   */
@@ -67,8 +67,8 @@ export interface WorkspacesWorkspaceTimeouts {
   readonly update?: string;
 }
 
-export function workspacesWorkspaceTimeoutsToTerraform(struct?: WorkspacesWorkspaceTimeoutsOutputReference | WorkspacesWorkspaceTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function workspacesWorkspaceTimeoutsToTerraform(struct?: WorkspacesWorkspaceTimeoutsOutputReference | WorkspacesWorkspaceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -87,7 +87,7 @@ export class WorkspacesWorkspaceTimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -196,7 +196,7 @@ export interface WorkspacesWorkspaceWorkspaceProperties {
 }
 
 export function workspacesWorkspaceWorkspacePropertiesToTerraform(struct?: WorkspacesWorkspaceWorkspacePropertiesOutputReference | WorkspacesWorkspaceWorkspaceProperties): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -217,7 +217,7 @@ export class WorkspacesWorkspaceWorkspacePropertiesOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -439,7 +439,7 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   // root_volume_encryption_enabled - computed: false, optional: true, required: false
   private _rootVolumeEncryptionEnabled?: boolean | cdktf.IResolvable; 
   public get rootVolumeEncryptionEnabled() {
-    return this.getBooleanAttribute('root_volume_encryption_enabled') as any;
+    return this.getBooleanAttribute('root_volume_encryption_enabled');
   }
   public set rootVolumeEncryptionEnabled(value: boolean | cdktf.IResolvable) {
     this._rootVolumeEncryptionEnabled = value;
@@ -458,12 +458,11 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -475,12 +474,11 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -507,7 +505,7 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   // user_volume_encryption_enabled - computed: false, optional: true, required: false
   private _userVolumeEncryptionEnabled?: boolean | cdktf.IResolvable; 
   public get userVolumeEncryptionEnabled() {
-    return this.getBooleanAttribute('user_volume_encryption_enabled') as any;
+    return this.getBooleanAttribute('user_volume_encryption_enabled');
   }
   public set userVolumeEncryptionEnabled(value: boolean | cdktf.IResolvable) {
     this._userVolumeEncryptionEnabled = value;
@@ -537,7 +535,7 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new WorkspacesWorkspaceTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new WorkspacesWorkspaceTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -553,7 +551,7 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   }
 
   // workspace_properties - computed: false, optional: true, required: false
-  private _workspaceProperties = new WorkspacesWorkspaceWorkspacePropertiesOutputReference(this as any, "workspace_properties", true);
+  private _workspaceProperties = new WorkspacesWorkspaceWorkspacePropertiesOutputReference(this, "workspace_properties", true);
   public get workspaceProperties() {
     return this._workspaceProperties;
   }
@@ -577,8 +575,8 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
       bundle_id: cdktf.stringToTerraform(this._bundleId),
       directory_id: cdktf.stringToTerraform(this._directoryId),
       root_volume_encryption_enabled: cdktf.booleanToTerraform(this._rootVolumeEncryptionEnabled),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       user_name: cdktf.stringToTerraform(this._userName),
       user_volume_encryption_enabled: cdktf.booleanToTerraform(this._userVolumeEncryptionEnabled),
       volume_encryption_key: cdktf.stringToTerraform(this._volumeEncryptionKey),

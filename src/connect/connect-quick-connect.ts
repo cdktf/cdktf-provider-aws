@@ -22,11 +22,11 @@ export interface ConnectQuickConnectConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_quick_connect#tags ConnectQuickConnect#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_quick_connect#tags_all ConnectQuickConnect#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * quick_connect_config block
   * 
@@ -41,8 +41,8 @@ export interface ConnectQuickConnectQuickConnectConfigPhoneConfig {
   readonly phoneNumber: string;
 }
 
-export function connectQuickConnectQuickConnectConfigPhoneConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigPhoneConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function connectQuickConnectQuickConnectConfigPhoneConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigPhoneConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -62,8 +62,8 @@ export interface ConnectQuickConnectQuickConnectConfigQueueConfig {
   readonly queueId: string;
 }
 
-export function connectQuickConnectQuickConnectConfigQueueConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigQueueConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function connectQuickConnectQuickConnectConfigQueueConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigQueueConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -84,8 +84,8 @@ export interface ConnectQuickConnectQuickConnectConfigUserConfig {
   readonly userId: string;
 }
 
-export function connectQuickConnectQuickConnectConfigUserConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigUserConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function connectQuickConnectQuickConnectConfigUserConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigUserConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -105,23 +105,23 @@ export interface ConnectQuickConnectQuickConnectConfig {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_quick_connect#phone_config ConnectQuickConnect#phone_config}
   */
-  readonly phoneConfig?: ConnectQuickConnectQuickConnectConfigPhoneConfig[];
+  readonly phoneConfig?: ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktf.IResolvable;
   /**
   * queue_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_quick_connect#queue_config ConnectQuickConnect#queue_config}
   */
-  readonly queueConfig?: ConnectQuickConnectQuickConnectConfigQueueConfig[];
+  readonly queueConfig?: ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktf.IResolvable;
   /**
   * user_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_quick_connect#user_config ConnectQuickConnect#user_config}
   */
-  readonly userConfig?: ConnectQuickConnectQuickConnectConfigUserConfig[];
+  readonly userConfig?: ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktf.IResolvable;
 }
 
 export function connectQuickConnectQuickConnectConfigToTerraform(struct?: ConnectQuickConnectQuickConnectConfigOutputReference | ConnectQuickConnectQuickConnectConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -141,7 +141,7 @@ export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -198,12 +198,12 @@ export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktf.
   }
 
   // phone_config - computed: false, optional: true, required: false
-  private _phoneConfig?: ConnectQuickConnectQuickConnectConfigPhoneConfig[]; 
+  private _phoneConfig?: ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktf.IResolvable; 
   public get phoneConfig() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('phone_config') as any;
+    return this.interpolationForAttribute('phone_config');
   }
-  public set phoneConfig(value: ConnectQuickConnectQuickConnectConfigPhoneConfig[]) {
+  public set phoneConfig(value: ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktf.IResolvable) {
     this._phoneConfig = value;
   }
   public resetPhoneConfig() {
@@ -215,12 +215,12 @@ export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktf.
   }
 
   // queue_config - computed: false, optional: true, required: false
-  private _queueConfig?: ConnectQuickConnectQuickConnectConfigQueueConfig[]; 
+  private _queueConfig?: ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktf.IResolvable; 
   public get queueConfig() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('queue_config') as any;
+    return this.interpolationForAttribute('queue_config');
   }
-  public set queueConfig(value: ConnectQuickConnectQuickConnectConfigQueueConfig[]) {
+  public set queueConfig(value: ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktf.IResolvable) {
     this._queueConfig = value;
   }
   public resetQueueConfig() {
@@ -232,12 +232,12 @@ export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktf.
   }
 
   // user_config - computed: false, optional: true, required: false
-  private _userConfig?: ConnectQuickConnectQuickConnectConfigUserConfig[]; 
+  private _userConfig?: ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktf.IResolvable; 
   public get userConfig() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('user_config') as any;
+    return this.interpolationForAttribute('user_config');
   }
-  public set userConfig(value: ConnectQuickConnectQuickConnectConfigUserConfig[]) {
+  public set userConfig(value: ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktf.IResolvable) {
     this._userConfig = value;
   }
   public resetUserConfig() {
@@ -351,12 +351,11 @@ export class ConnectQuickConnect extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -368,12 +367,11 @@ export class ConnectQuickConnect extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -385,7 +383,7 @@ export class ConnectQuickConnect extends cdktf.TerraformResource {
   }
 
   // quick_connect_config - computed: false, optional: false, required: true
-  private _quickConnectConfig = new ConnectQuickConnectQuickConnectConfigOutputReference(this as any, "quick_connect_config", true);
+  private _quickConnectConfig = new ConnectQuickConnectQuickConnectConfigOutputReference(this, "quick_connect_config", true);
   public get quickConnectConfig() {
     return this._quickConnectConfig;
   }
@@ -406,8 +404,8 @@ export class ConnectQuickConnect extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       instance_id: cdktf.stringToTerraform(this._instanceId),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       quick_connect_config: connectQuickConnectQuickConnectConfigToTerraform(this._quickConnectConfig.internalValue),
     };
   }

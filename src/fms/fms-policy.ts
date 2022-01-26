@@ -26,7 +26,7 @@ export interface FmsPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy#resource_tags FmsPolicy#resource_tags}
   */
-  readonly resourceTags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly resourceTags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy#resource_type FmsPolicy#resource_type}
   */
@@ -66,7 +66,7 @@ export interface FmsPolicyExcludeMap {
 }
 
 export function fmsPolicyExcludeMapToTerraform(struct?: FmsPolicyExcludeMapOutputReference | FmsPolicyExcludeMap): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -84,7 +84,7 @@ export class FmsPolicyExcludeMapOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -118,7 +118,7 @@ export class FmsPolicyExcludeMapOutputReference extends cdktf.ComplexObject {
   // account - computed: false, optional: true, required: false
   private _account?: string[]; 
   public get account() {
-    return this.getListAttribute('account');
+    return cdktf.Fn.tolist(this.getListAttribute('account'));
   }
   public set account(value: string[]) {
     this._account = value;
@@ -134,7 +134,7 @@ export class FmsPolicyExcludeMapOutputReference extends cdktf.ComplexObject {
   // orgunit - computed: false, optional: true, required: false
   private _orgunit?: string[]; 
   public get orgunit() {
-    return this.getListAttribute('orgunit');
+    return cdktf.Fn.tolist(this.getListAttribute('orgunit'));
   }
   public set orgunit(value: string[]) {
     this._orgunit = value;
@@ -159,7 +159,7 @@ export interface FmsPolicyIncludeMap {
 }
 
 export function fmsPolicyIncludeMapToTerraform(struct?: FmsPolicyIncludeMapOutputReference | FmsPolicyIncludeMap): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -177,7 +177,7 @@ export class FmsPolicyIncludeMapOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -211,7 +211,7 @@ export class FmsPolicyIncludeMapOutputReference extends cdktf.ComplexObject {
   // account - computed: false, optional: true, required: false
   private _account?: string[]; 
   public get account() {
-    return this.getListAttribute('account');
+    return cdktf.Fn.tolist(this.getListAttribute('account'));
   }
   public set account(value: string[]) {
     this._account = value;
@@ -227,7 +227,7 @@ export class FmsPolicyIncludeMapOutputReference extends cdktf.ComplexObject {
   // orgunit - computed: false, optional: true, required: false
   private _orgunit?: string[]; 
   public get orgunit() {
-    return this.getListAttribute('orgunit');
+    return cdktf.Fn.tolist(this.getListAttribute('orgunit'));
   }
   public set orgunit(value: string[]) {
     this._orgunit = value;
@@ -252,7 +252,7 @@ export interface FmsPolicySecurityServicePolicyData {
 }
 
 export function fmsPolicySecurityServicePolicyDataToTerraform(struct?: FmsPolicySecurityServicePolicyDataOutputReference | FmsPolicySecurityServicePolicyData): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -270,7 +270,7 @@ export class FmsPolicySecurityServicePolicyDataOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -387,7 +387,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
   // delete_all_policy_resources - computed: false, optional: true, required: false
   private _deleteAllPolicyResources?: boolean | cdktf.IResolvable; 
   public get deleteAllPolicyResources() {
-    return this.getBooleanAttribute('delete_all_policy_resources') as any;
+    return this.getBooleanAttribute('delete_all_policy_resources');
   }
   public set deleteAllPolicyResources(value: boolean | cdktf.IResolvable) {
     this._deleteAllPolicyResources = value;
@@ -403,7 +403,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
   // exclude_resource_tags - computed: false, optional: false, required: true
   private _excludeResourceTags?: boolean | cdktf.IResolvable; 
   public get excludeResourceTags() {
-    return this.getBooleanAttribute('exclude_resource_tags') as any;
+    return this.getBooleanAttribute('exclude_resource_tags');
   }
   public set excludeResourceTags(value: boolean | cdktf.IResolvable) {
     this._excludeResourceTags = value;
@@ -439,7 +439,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
   // remediation_enabled - computed: false, optional: true, required: false
   private _remediationEnabled?: boolean | cdktf.IResolvable; 
   public get remediationEnabled() {
-    return this.getBooleanAttribute('remediation_enabled') as any;
+    return this.getBooleanAttribute('remediation_enabled');
   }
   public set remediationEnabled(value: boolean | cdktf.IResolvable) {
     this._remediationEnabled = value;
@@ -453,12 +453,11 @@ export class FmsPolicy extends cdktf.TerraformResource {
   }
 
   // resource_tags - computed: false, optional: true, required: false
-  private _resourceTags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _resourceTags?: { [key: string]: string }; 
   public get resourceTags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('resource_tags') as any;
+    return this.getStringMapAttribute('resource_tags');
   }
-  public set resourceTags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set resourceTags(value: { [key: string]: string }) {
     this._resourceTags = value;
   }
   public resetResourceTags() {
@@ -488,7 +487,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
   // resource_type_list - computed: true, optional: true, required: false
   private _resourceTypeList?: string[]; 
   public get resourceTypeList() {
-    return this.getListAttribute('resource_type_list');
+    return cdktf.Fn.tolist(this.getListAttribute('resource_type_list'));
   }
   public set resourceTypeList(value: string[]) {
     this._resourceTypeList = value;
@@ -502,7 +501,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
   }
 
   // exclude_map - computed: false, optional: true, required: false
-  private _excludeMap = new FmsPolicyExcludeMapOutputReference(this as any, "exclude_map", true);
+  private _excludeMap = new FmsPolicyExcludeMapOutputReference(this, "exclude_map", true);
   public get excludeMap() {
     return this._excludeMap;
   }
@@ -518,7 +517,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
   }
 
   // include_map - computed: false, optional: true, required: false
-  private _includeMap = new FmsPolicyIncludeMapOutputReference(this as any, "include_map", true);
+  private _includeMap = new FmsPolicyIncludeMapOutputReference(this, "include_map", true);
   public get includeMap() {
     return this._includeMap;
   }
@@ -534,7 +533,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
   }
 
   // security_service_policy_data - computed: false, optional: false, required: true
-  private _securityServicePolicyData = new FmsPolicySecurityServicePolicyDataOutputReference(this as any, "security_service_policy_data", true);
+  private _securityServicePolicyData = new FmsPolicySecurityServicePolicyDataOutputReference(this, "security_service_policy_data", true);
   public get securityServicePolicyData() {
     return this._securityServicePolicyData;
   }
@@ -556,7 +555,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
       exclude_resource_tags: cdktf.booleanToTerraform(this._excludeResourceTags),
       name: cdktf.stringToTerraform(this._name),
       remediation_enabled: cdktf.booleanToTerraform(this._remediationEnabled),
-      resource_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._resourceTags),
+      resource_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._resourceTags),
       resource_type: cdktf.stringToTerraform(this._resourceType),
       resource_type_list: cdktf.listMapper(cdktf.stringToTerraform)(this._resourceTypeList),
       exclude_map: fmsPolicyExcludeMapToTerraform(this._excludeMap.internalValue),

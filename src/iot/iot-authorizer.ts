@@ -30,7 +30,7 @@ export interface IotAuthorizerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_authorizer#token_signing_public_keys IotAuthorizer#token_signing_public_keys}
   */
-  readonly tokenSigningPublicKeys?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tokenSigningPublicKeys?: { [key: string]: string };
 }
 
 /**
@@ -116,7 +116,7 @@ export class IotAuthorizer extends cdktf.TerraformResource {
   // signing_disabled - computed: false, optional: true, required: false
   private _signingDisabled?: boolean | cdktf.IResolvable; 
   public get signingDisabled() {
-    return this.getBooleanAttribute('signing_disabled') as any;
+    return this.getBooleanAttribute('signing_disabled');
   }
   public set signingDisabled(value: boolean | cdktf.IResolvable) {
     this._signingDisabled = value;
@@ -162,12 +162,11 @@ export class IotAuthorizer extends cdktf.TerraformResource {
   }
 
   // token_signing_public_keys - computed: false, optional: true, required: false
-  private _tokenSigningPublicKeys?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tokenSigningPublicKeys?: { [key: string]: string }; 
   public get tokenSigningPublicKeys() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('token_signing_public_keys') as any;
+    return this.getStringMapAttribute('token_signing_public_keys');
   }
-  public set tokenSigningPublicKeys(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tokenSigningPublicKeys(value: { [key: string]: string }) {
     this._tokenSigningPublicKeys = value;
   }
   public resetTokenSigningPublicKeys() {
@@ -189,7 +188,7 @@ export class IotAuthorizer extends cdktf.TerraformResource {
       signing_disabled: cdktf.booleanToTerraform(this._signingDisabled),
       status: cdktf.stringToTerraform(this._status),
       token_key_name: cdktf.stringToTerraform(this._tokenKeyName),
-      token_signing_public_keys: cdktf.hashMapper(cdktf.anyToTerraform)(this._tokenSigningPublicKeys),
+      token_signing_public_keys: cdktf.hashMapper(cdktf.stringToTerraform)(this._tokenSigningPublicKeys),
     };
   }
 }

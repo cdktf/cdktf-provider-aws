@@ -14,18 +14,18 @@ export interface DataAwsImagebuilderImageRecipeConfig extends cdktf.TerraformMet
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipe#tags DataAwsImagebuilderImageRecipe#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsImagebuilderImageRecipeBlockDeviceMappingEbs extends cdktf.ComplexComputedList {
 
   // delete_on_termination - computed: true, optional: false, required: false
   public get deleteOnTermination() {
-    return this.getBooleanAttribute('delete_on_termination') as any;
+    return this.getBooleanAttribute('delete_on_termination');
   }
 
   // encrypted - computed: true, optional: false, required: false
   public get encrypted() {
-    return this.getBooleanAttribute('encrypted') as any;
+    return this.getBooleanAttribute('encrypted');
   }
 
   // iops - computed: true, optional: false, required: false
@@ -63,7 +63,7 @@ export class DataAwsImagebuilderImageRecipeBlockDeviceMapping extends cdktf.Comp
   // ebs - computed: true, optional: false, required: false
   public get ebs() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ebs') as any;
+    return this.interpolationForAttribute('ebs');
   }
 
   // no_device - computed: true, optional: false, required: false
@@ -139,12 +139,12 @@ export class DataAwsImagebuilderImageRecipe extends cdktf.TerraformDataSource {
 
   // block_device_mapping - computed: true, optional: false, required: false
   public blockDeviceMapping(index: string) {
-    return new DataAwsImagebuilderImageRecipeBlockDeviceMapping(this, 'block_device_mapping', index);
+    return new DataAwsImagebuilderImageRecipeBlockDeviceMapping(this, 'block_device_mapping', index, true);
   }
 
   // component - computed: true, optional: false, required: false
   public component(index: string) {
-    return new DataAwsImagebuilderImageRecipeComponent(this, 'component', index);
+    return new DataAwsImagebuilderImageRecipeComponent(this, 'component', index, false);
   }
 
   // date_created - computed: true, optional: false, required: false
@@ -183,12 +183,11 @@ export class DataAwsImagebuilderImageRecipe extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -221,7 +220,7 @@ export class DataAwsImagebuilderImageRecipe extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       arn: cdktf.stringToTerraform(this._arn),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

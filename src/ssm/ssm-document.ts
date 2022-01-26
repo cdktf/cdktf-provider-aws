@@ -26,15 +26,15 @@ export interface SsmDocumentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_document#permissions SsmDocument#permissions}
   */
-  readonly permissions?: { [key: string]: string } | cdktf.IResolvable;
+  readonly permissions?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_document#tags SsmDocument#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_document#tags_all SsmDocument#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_document#target_type SsmDocument#target_type}
   */
@@ -48,7 +48,7 @@ export interface SsmDocumentConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_document#attachments_source SsmDocument#attachments_source}
   */
-  readonly attachmentsSource?: SsmDocumentAttachmentsSource[];
+  readonly attachmentsSource?: SsmDocumentAttachmentsSource[] | cdktf.IResolvable;
 }
 export class SsmDocumentParameter extends cdktf.ComplexComputedList {
 
@@ -87,8 +87,8 @@ export interface SsmDocumentAttachmentsSource {
   readonly values: string[];
 }
 
-export function ssmDocumentAttachmentsSourceToTerraform(struct?: SsmDocumentAttachmentsSource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ssmDocumentAttachmentsSourceToTerraform(struct?: SsmDocumentAttachmentsSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -255,16 +255,15 @@ export class SsmDocument extends cdktf.TerraformResource {
 
   // parameter - computed: true, optional: false, required: false
   public parameter(index: string) {
-    return new SsmDocumentParameter(this, 'parameter', index);
+    return new SsmDocumentParameter(this, 'parameter', index, false);
   }
 
   // permissions - computed: false, optional: true, required: false
-  private _permissions?: { [key: string]: string } | cdktf.IResolvable; 
+  private _permissions?: { [key: string]: string }; 
   public get permissions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('permissions') as any;
+    return this.getStringMapAttribute('permissions');
   }
-  public set permissions(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set permissions(value: { [key: string]: string }) {
     this._permissions = value;
   }
   public resetPermissions() {
@@ -291,12 +290,11 @@ export class SsmDocument extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -308,12 +306,11 @@ export class SsmDocument extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -357,12 +354,12 @@ export class SsmDocument extends cdktf.TerraformResource {
   }
 
   // attachments_source - computed: false, optional: true, required: false
-  private _attachmentsSource?: SsmDocumentAttachmentsSource[]; 
+  private _attachmentsSource?: SsmDocumentAttachmentsSource[] | cdktf.IResolvable; 
   public get attachmentsSource() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('attachments_source') as any;
+    return this.interpolationForAttribute('attachments_source');
   }
-  public set attachmentsSource(value: SsmDocumentAttachmentsSource[]) {
+  public set attachmentsSource(value: SsmDocumentAttachmentsSource[] | cdktf.IResolvable) {
     this._attachmentsSource = value;
   }
   public resetAttachmentsSource() {
@@ -383,9 +380,9 @@ export class SsmDocument extends cdktf.TerraformResource {
       document_format: cdktf.stringToTerraform(this._documentFormat),
       document_type: cdktf.stringToTerraform(this._documentType),
       name: cdktf.stringToTerraform(this._name),
-      permissions: cdktf.hashMapper(cdktf.anyToTerraform)(this._permissions),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      permissions: cdktf.hashMapper(cdktf.stringToTerraform)(this._permissions),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       target_type: cdktf.stringToTerraform(this._targetType),
       version_name: cdktf.stringToTerraform(this._versionName),
       attachments_source: cdktf.listMapper(ssmDocumentAttachmentsSourceToTerraform)(this._attachmentsSource),

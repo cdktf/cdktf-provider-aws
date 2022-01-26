@@ -38,7 +38,7 @@ export interface LambdaFunctionEventInvokeConfigDestinationConfigOnFailure {
 }
 
 export function lambdaFunctionEventInvokeConfigDestinationConfigOnFailureToTerraform(struct?: LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference | LambdaFunctionEventInvokeConfigDestinationConfigOnFailure): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -55,7 +55,7 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputRefe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -101,7 +101,7 @@ export interface LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess {
 }
 
 export function lambdaFunctionEventInvokeConfigDestinationConfigOnSuccessToTerraform(struct?: LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference | LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -118,7 +118,7 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputRefe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -172,7 +172,7 @@ export interface LambdaFunctionEventInvokeConfigDestinationConfig {
 }
 
 export function lambdaFunctionEventInvokeConfigDestinationConfigToTerraform(struct?: LambdaFunctionEventInvokeConfigDestinationConfigOutputReference | LambdaFunctionEventInvokeConfigDestinationConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -190,7 +190,7 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOutputReference ext
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -222,7 +222,7 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOutputReference ext
   }
 
   // on_failure - computed: false, optional: true, required: false
-  private _onFailure = new LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference(this as any, "on_failure", true);
+  private _onFailure = new LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference(this, "on_failure", true);
   public get onFailure() {
     return this._onFailure;
   }
@@ -238,7 +238,7 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOutputReference ext
   }
 
   // on_success - computed: false, optional: true, required: false
-  private _onSuccess = new LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference(this as any, "on_success", true);
+  private _onSuccess = new LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference(this, "on_success", true);
   public get onSuccess() {
     return this._onSuccess;
   }
@@ -364,7 +364,7 @@ export class LambdaFunctionEventInvokeConfig extends cdktf.TerraformResource {
   }
 
   // destination_config - computed: false, optional: true, required: false
-  private _destinationConfig = new LambdaFunctionEventInvokeConfigDestinationConfigOutputReference(this as any, "destination_config", true);
+  private _destinationConfig = new LambdaFunctionEventInvokeConfigDestinationConfigOutputReference(this, "destination_config", true);
   public get destinationConfig() {
     return this._destinationConfig;
   }

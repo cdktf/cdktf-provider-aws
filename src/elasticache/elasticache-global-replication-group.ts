@@ -74,12 +74,12 @@ export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
 
   // at_rest_encryption_enabled - computed: true, optional: false, required: false
   public get atRestEncryptionEnabled() {
-    return this.getBooleanAttribute('at_rest_encryption_enabled') as any;
+    return this.getBooleanAttribute('at_rest_encryption_enabled');
   }
 
   // auth_token_enabled - computed: true, optional: false, required: false
   public get authTokenEnabled() {
-    return this.getBooleanAttribute('auth_token_enabled') as any;
+    return this.getBooleanAttribute('auth_token_enabled');
   }
 
   // cache_node_type - computed: true, optional: false, required: false
@@ -89,7 +89,7 @@ export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
 
   // cluster_enabled - computed: true, optional: false, required: false
   public get clusterEnabled() {
-    return this.getBooleanAttribute('cluster_enabled') as any;
+    return this.getBooleanAttribute('cluster_enabled');
   }
 
   // engine - computed: true, optional: false, required: false
@@ -156,7 +156,7 @@ export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
 
   // transit_encryption_enabled - computed: true, optional: false, required: false
   public get transitEncryptionEnabled() {
-    return this.getBooleanAttribute('transit_encryption_enabled') as any;
+    return this.getBooleanAttribute('transit_encryption_enabled');
   }
 
   // =========

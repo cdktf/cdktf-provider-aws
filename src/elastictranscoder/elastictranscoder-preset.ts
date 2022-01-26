@@ -26,7 +26,7 @@ export interface ElastictranscoderPresetConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastictranscoder_preset#video_codec_options ElastictranscoderPreset#video_codec_options}
   */
-  readonly videoCodecOptions?: { [key: string]: string } | cdktf.IResolvable;
+  readonly videoCodecOptions?: { [key: string]: string };
   /**
   * audio block
   * 
@@ -56,7 +56,7 @@ export interface ElastictranscoderPresetConfig extends cdktf.TerraformMetaArgume
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastictranscoder_preset#video_watermarks ElastictranscoderPreset#video_watermarks}
   */
-  readonly videoWatermarks?: ElastictranscoderPresetVideoWatermarks[];
+  readonly videoWatermarks?: ElastictranscoderPresetVideoWatermarks[] | cdktf.IResolvable;
 }
 export interface ElastictranscoderPresetAudio {
   /**
@@ -82,7 +82,7 @@ export interface ElastictranscoderPresetAudio {
 }
 
 export function elastictranscoderPresetAudioToTerraform(struct?: ElastictranscoderPresetAudioOutputReference | ElastictranscoderPresetAudio): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -103,7 +103,7 @@ export class ElastictranscoderPresetAudioOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -252,7 +252,7 @@ export interface ElastictranscoderPresetAudioCodecOptions {
 }
 
 export function elastictranscoderPresetAudioCodecOptionsToTerraform(struct?: ElastictranscoderPresetAudioCodecOptionsOutputReference | ElastictranscoderPresetAudioCodecOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -272,7 +272,7 @@ export class ElastictranscoderPresetAudioCodecOptionsOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -415,7 +415,7 @@ export interface ElastictranscoderPresetThumbnails {
 }
 
 export function elastictranscoderPresetThumbnailsToTerraform(struct?: ElastictranscoderPresetThumbnailsOutputReference | ElastictranscoderPresetThumbnails): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -439,7 +439,7 @@ export class ElastictranscoderPresetThumbnailsOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -690,7 +690,7 @@ export interface ElastictranscoderPresetVideo {
 }
 
 export function elastictranscoderPresetVideoToTerraform(struct?: ElastictranscoderPresetVideoOutputReference | ElastictranscoderPresetVideo): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -719,7 +719,7 @@ export class ElastictranscoderPresetVideoOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1067,8 +1067,8 @@ export interface ElastictranscoderPresetVideoWatermarks {
   readonly verticalOffset?: string;
 }
 
-export function elastictranscoderPresetVideoWatermarksToTerraform(struct?: ElastictranscoderPresetVideoWatermarks): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function elastictranscoderPresetVideoWatermarksToTerraform(struct?: ElastictranscoderPresetVideoWatermarks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1207,12 +1207,11 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   }
 
   // video_codec_options - computed: false, optional: true, required: false
-  private _videoCodecOptions?: { [key: string]: string } | cdktf.IResolvable; 
+  private _videoCodecOptions?: { [key: string]: string }; 
   public get videoCodecOptions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('video_codec_options') as any;
+    return this.getStringMapAttribute('video_codec_options');
   }
-  public set videoCodecOptions(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set videoCodecOptions(value: { [key: string]: string }) {
     this._videoCodecOptions = value;
   }
   public resetVideoCodecOptions() {
@@ -1224,7 +1223,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   }
 
   // audio - computed: false, optional: true, required: false
-  private _audio = new ElastictranscoderPresetAudioOutputReference(this as any, "audio", true);
+  private _audio = new ElastictranscoderPresetAudioOutputReference(this, "audio", true);
   public get audio() {
     return this._audio;
   }
@@ -1240,7 +1239,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   }
 
   // audio_codec_options - computed: false, optional: true, required: false
-  private _audioCodecOptions = new ElastictranscoderPresetAudioCodecOptionsOutputReference(this as any, "audio_codec_options", true);
+  private _audioCodecOptions = new ElastictranscoderPresetAudioCodecOptionsOutputReference(this, "audio_codec_options", true);
   public get audioCodecOptions() {
     return this._audioCodecOptions;
   }
@@ -1256,7 +1255,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   }
 
   // thumbnails - computed: false, optional: true, required: false
-  private _thumbnails = new ElastictranscoderPresetThumbnailsOutputReference(this as any, "thumbnails", true);
+  private _thumbnails = new ElastictranscoderPresetThumbnailsOutputReference(this, "thumbnails", true);
   public get thumbnails() {
     return this._thumbnails;
   }
@@ -1272,7 +1271,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   }
 
   // video - computed: false, optional: true, required: false
-  private _video = new ElastictranscoderPresetVideoOutputReference(this as any, "video", true);
+  private _video = new ElastictranscoderPresetVideoOutputReference(this, "video", true);
   public get video() {
     return this._video;
   }
@@ -1288,12 +1287,12 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   }
 
   // video_watermarks - computed: false, optional: true, required: false
-  private _videoWatermarks?: ElastictranscoderPresetVideoWatermarks[]; 
+  private _videoWatermarks?: ElastictranscoderPresetVideoWatermarks[] | cdktf.IResolvable; 
   public get videoWatermarks() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('video_watermarks') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('video_watermarks')));
   }
-  public set videoWatermarks(value: ElastictranscoderPresetVideoWatermarks[]) {
+  public set videoWatermarks(value: ElastictranscoderPresetVideoWatermarks[] | cdktf.IResolvable) {
     this._videoWatermarks = value;
   }
   public resetVideoWatermarks() {
@@ -1314,7 +1313,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
-      video_codec_options: cdktf.hashMapper(cdktf.anyToTerraform)(this._videoCodecOptions),
+      video_codec_options: cdktf.hashMapper(cdktf.stringToTerraform)(this._videoCodecOptions),
       audio: elastictranscoderPresetAudioToTerraform(this._audio.internalValue),
       audio_codec_options: elastictranscoderPresetAudioCodecOptionsToTerraform(this._audioCodecOptions.internalValue),
       thumbnails: elastictranscoderPresetThumbnailsToTerraform(this._thumbnails.internalValue),

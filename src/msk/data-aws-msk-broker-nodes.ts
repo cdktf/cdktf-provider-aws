@@ -36,7 +36,7 @@ export class DataAwsMskBrokerNodesNodeInfoList extends cdktf.ComplexComputedList
 
   // endpoints - computed: true, optional: false, required: false
   public get endpoints() {
-    return this.getListAttribute('endpoints');
+    return cdktf.Fn.tolist(this.getListAttribute('endpoints'));
   }
 
   // node_arn - computed: true, optional: false, required: false
@@ -104,7 +104,7 @@ export class DataAwsMskBrokerNodes extends cdktf.TerraformDataSource {
 
   // node_info_list - computed: true, optional: false, required: false
   public nodeInfoList(index: string) {
-    return new DataAwsMskBrokerNodesNodeInfoList(this, 'node_info_list', index);
+    return new DataAwsMskBrokerNodesNodeInfoList(this, 'node_info_list', index, false);
   }
 
   // =========

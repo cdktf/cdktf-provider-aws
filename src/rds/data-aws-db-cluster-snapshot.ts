@@ -34,7 +34,7 @@ export interface DataAwsDbClusterSnapshotConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_cluster_snapshot#tags DataAwsDbClusterSnapshot#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 
 /**
@@ -147,7 +147,7 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
   // include_public - computed: false, optional: true, required: false
   private _includePublic?: boolean | cdktf.IResolvable; 
   public get includePublic() {
-    return this.getBooleanAttribute('include_public') as any;
+    return this.getBooleanAttribute('include_public');
   }
   public set includePublic(value: boolean | cdktf.IResolvable) {
     this._includePublic = value;
@@ -163,7 +163,7 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
   // include_shared - computed: false, optional: true, required: false
   private _includeShared?: boolean | cdktf.IResolvable; 
   public get includeShared() {
-    return this.getBooleanAttribute('include_shared') as any;
+    return this.getBooleanAttribute('include_shared');
   }
   public set includeShared(value: boolean | cdktf.IResolvable) {
     this._includeShared = value;
@@ -189,7 +189,7 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
   // most_recent - computed: false, optional: true, required: false
   private _mostRecent?: boolean | cdktf.IResolvable; 
   public get mostRecent() {
-    return this.getBooleanAttribute('most_recent') as any;
+    return this.getBooleanAttribute('most_recent');
   }
   public set mostRecent(value: boolean | cdktf.IResolvable) {
     this._mostRecent = value;
@@ -240,16 +240,15 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
 
   // storage_encrypted - computed: true, optional: false, required: false
   public get storageEncrypted() {
-    return this.getBooleanAttribute('storage_encrypted') as any;
+    return this.getBooleanAttribute('storage_encrypted');
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -277,7 +276,7 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
       include_shared: cdktf.booleanToTerraform(this._includeShared),
       most_recent: cdktf.booleanToTerraform(this._mostRecent),
       snapshot_type: cdktf.stringToTerraform(this._snapshotType),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

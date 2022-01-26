@@ -58,11 +58,11 @@ export interface TransferServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#tags TransferServer#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#tags_all TransferServer#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#url TransferServer#url}
   */
@@ -98,7 +98,7 @@ export interface TransferServerEndpointDetails {
 }
 
 export function transferServerEndpointDetailsToTerraform(struct?: TransferServerEndpointDetailsOutputReference | TransferServerEndpointDetails): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -119,7 +119,7 @@ export class TransferServerEndpointDetailsOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -171,7 +171,7 @@ export class TransferServerEndpointDetailsOutputReference extends cdktf.ComplexO
   // address_allocation_ids - computed: false, optional: true, required: false
   private _addressAllocationIds?: string[]; 
   public get addressAllocationIds() {
-    return this.getListAttribute('address_allocation_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('address_allocation_ids'));
   }
   public set addressAllocationIds(value: string[]) {
     this._addressAllocationIds = value;
@@ -187,7 +187,7 @@ export class TransferServerEndpointDetailsOutputReference extends cdktf.ComplexO
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -203,7 +203,7 @@ export class TransferServerEndpointDetailsOutputReference extends cdktf.ComplexO
   // subnet_ids - computed: false, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -380,7 +380,7 @@ export class TransferServer extends cdktf.TerraformResource {
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean | cdktf.IResolvable; 
   public get forceDestroy() {
-    return this.getBooleanAttribute('force_destroy') as any;
+    return this.getBooleanAttribute('force_destroy');
   }
   public set forceDestroy(value: boolean | cdktf.IResolvable) {
     this._forceDestroy = value;
@@ -486,7 +486,7 @@ export class TransferServer extends cdktf.TerraformResource {
   // protocols - computed: true, optional: true, required: false
   private _protocols?: string[]; 
   public get protocols() {
-    return this.getListAttribute('protocols');
+    return cdktf.Fn.tolist(this.getListAttribute('protocols'));
   }
   public set protocols(value: string[]) {
     this._protocols = value;
@@ -516,12 +516,11 @@ export class TransferServer extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -533,12 +532,11 @@ export class TransferServer extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -566,7 +564,7 @@ export class TransferServer extends cdktf.TerraformResource {
   }
 
   // endpoint_details - computed: false, optional: true, required: false
-  private _endpointDetails = new TransferServerEndpointDetailsOutputReference(this as any, "endpoint_details", true);
+  private _endpointDetails = new TransferServerEndpointDetailsOutputReference(this, "endpoint_details", true);
   public get endpointDetails() {
     return this._endpointDetails;
   }
@@ -599,8 +597,8 @@ export class TransferServer extends cdktf.TerraformResource {
       logging_role: cdktf.stringToTerraform(this._loggingRole),
       protocols: cdktf.listMapper(cdktf.stringToTerraform)(this._protocols),
       security_policy_name: cdktf.stringToTerraform(this._securityPolicyName),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       url: cdktf.stringToTerraform(this._url),
       endpoint_details: transferServerEndpointDetailsToTerraform(this._endpointDetails.internalValue),
     };

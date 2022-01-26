@@ -30,17 +30,17 @@ export interface CodestarnotificationsNotificationRuleConfig extends cdktf.Terra
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codestarnotifications_notification_rule#tags CodestarnotificationsNotificationRule#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codestarnotifications_notification_rule#tags_all CodestarnotificationsNotificationRule#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * target block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codestarnotifications_notification_rule#target CodestarnotificationsNotificationRule#target}
   */
-  readonly target?: CodestarnotificationsNotificationRuleTarget[];
+  readonly target?: CodestarnotificationsNotificationRuleTarget[] | cdktf.IResolvable;
 }
 export interface CodestarnotificationsNotificationRuleTarget {
   /**
@@ -53,8 +53,8 @@ export interface CodestarnotificationsNotificationRuleTarget {
   readonly type?: string;
 }
 
-export function codestarnotificationsNotificationRuleTargetToTerraform(struct?: CodestarnotificationsNotificationRuleTarget): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function codestarnotificationsNotificationRuleTargetToTerraform(struct?: CodestarnotificationsNotificationRuleTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -132,7 +132,7 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
   // event_type_ids - computed: false, optional: false, required: true
   private _eventTypeIds?: string[]; 
   public get eventTypeIds() {
-    return this.getListAttribute('event_type_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('event_type_ids'));
   }
   public set eventTypeIds(value: string[]) {
     this._eventTypeIds = value;
@@ -190,12 +190,11 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -207,12 +206,11 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -224,12 +222,12 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
   }
 
   // target - computed: false, optional: true, required: false
-  private _target?: CodestarnotificationsNotificationRuleTarget[]; 
+  private _target?: CodestarnotificationsNotificationRuleTarget[] | cdktf.IResolvable; 
   public get target() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('target') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('target')));
   }
-  public set target(value: CodestarnotificationsNotificationRuleTarget[]) {
+  public set target(value: CodestarnotificationsNotificationRuleTarget[] | cdktf.IResolvable) {
     this._target = value;
   }
   public resetTarget() {
@@ -251,8 +249,8 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
       name: cdktf.stringToTerraform(this._name),
       resource: cdktf.stringToTerraform(this._resource),
       status: cdktf.stringToTerraform(this._status),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       target: cdktf.listMapper(codestarnotificationsNotificationRuleTargetToTerraform)(this._target),
     };
   }

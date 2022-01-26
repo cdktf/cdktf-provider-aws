@@ -64,7 +64,7 @@ export class DataAwsRdsCertificate extends cdktf.TerraformDataSource {
 
   // customer_override - computed: true, optional: false, required: false
   public get customerOverride() {
-    return this.getBooleanAttribute('customer_override') as any;
+    return this.getBooleanAttribute('customer_override');
   }
 
   // customer_override_valid_till - computed: true, optional: false, required: false
@@ -80,7 +80,7 @@ export class DataAwsRdsCertificate extends cdktf.TerraformDataSource {
   // latest_valid_till - computed: false, optional: true, required: false
   private _latestValidTill?: boolean | cdktf.IResolvable; 
   public get latestValidTill() {
-    return this.getBooleanAttribute('latest_valid_till') as any;
+    return this.getBooleanAttribute('latest_valid_till');
   }
   public set latestValidTill(value: boolean | cdktf.IResolvable) {
     this._latestValidTill = value;

@@ -104,7 +104,7 @@ export class DataAwsEcsCluster extends cdktf.TerraformDataSource {
 
   // setting - computed: true, optional: false, required: false
   public setting(index: string) {
-    return new DataAwsEcsClusterSetting(this, 'setting', index);
+    return new DataAwsEcsClusterSetting(this, 'setting', index, true);
   }
 
   // status - computed: true, optional: false, required: false

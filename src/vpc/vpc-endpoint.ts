@@ -38,11 +38,11 @@ export interface VpcEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint#tags VpcEndpoint#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint#tags_all VpcEndpoint#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint#vpc_endpoint_type VpcEndpoint#vpc_endpoint_type}
   */
@@ -85,8 +85,8 @@ export interface VpcEndpointTimeouts {
   readonly update?: string;
 }
 
-export function vpcEndpointTimeoutsToTerraform(struct?: VpcEndpointTimeoutsOutputReference | VpcEndpointTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vpcEndpointTimeoutsToTerraform(struct?: VpcEndpointTimeoutsOutputReference | VpcEndpointTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -105,7 +105,7 @@ export class VpcEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -249,7 +249,7 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   // auto_accept - computed: false, optional: true, required: false
   private _autoAccept?: boolean | cdktf.IResolvable; 
   public get autoAccept() {
-    return this.getBooleanAttribute('auto_accept') as any;
+    return this.getBooleanAttribute('auto_accept');
   }
   public set autoAccept(value: boolean | cdktf.IResolvable) {
     this._autoAccept = value;
@@ -269,7 +269,7 @@ export class VpcEndpoint extends cdktf.TerraformResource {
 
   // dns_entry - computed: true, optional: false, required: false
   public dnsEntry(index: string) {
-    return new VpcEndpointDnsEntry(this, 'dns_entry', index);
+    return new VpcEndpointDnsEntry(this, 'dns_entry', index, false);
   }
 
   // id - computed: true, optional: true, required: false
@@ -279,7 +279,7 @@ export class VpcEndpoint extends cdktf.TerraformResource {
 
   // network_interface_ids - computed: true, optional: false, required: false
   public get networkInterfaceIds() {
-    return this.getListAttribute('network_interface_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('network_interface_ids'));
   }
 
   // owner_id - computed: true, optional: false, required: false
@@ -311,7 +311,7 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   // private_dns_enabled - computed: false, optional: true, required: false
   private _privateDnsEnabled?: boolean | cdktf.IResolvable; 
   public get privateDnsEnabled() {
-    return this.getBooleanAttribute('private_dns_enabled') as any;
+    return this.getBooleanAttribute('private_dns_enabled');
   }
   public set privateDnsEnabled(value: boolean | cdktf.IResolvable) {
     this._privateDnsEnabled = value;
@@ -326,13 +326,13 @@ export class VpcEndpoint extends cdktf.TerraformResource {
 
   // requester_managed - computed: true, optional: false, required: false
   public get requesterManaged() {
-    return this.getBooleanAttribute('requester_managed') as any;
+    return this.getBooleanAttribute('requester_managed');
   }
 
   // route_table_ids - computed: true, optional: true, required: false
   private _routeTableIds?: string[]; 
   public get routeTableIds() {
-    return this.getListAttribute('route_table_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('route_table_ids'));
   }
   public set routeTableIds(value: string[]) {
     this._routeTableIds = value;
@@ -348,7 +348,7 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -382,7 +382,7 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   // subnet_ids - computed: true, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -396,12 +396,11 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -413,12 +412,11 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -459,7 +457,7 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VpcEndpointTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpcEndpointTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -487,8 +485,8 @@ export class VpcEndpoint extends cdktf.TerraformResource {
       security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
       service_name: cdktf.stringToTerraform(this._serviceName),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_endpoint_type: cdktf.stringToTerraform(this._vpcEndpointType),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       timeouts: vpcEndpointTimeoutsToTerraform(this._timeouts.internalValue),

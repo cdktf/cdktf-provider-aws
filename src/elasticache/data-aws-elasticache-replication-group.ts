@@ -59,12 +59,12 @@ export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSourc
 
   // auth_token_enabled - computed: true, optional: false, required: false
   public get authTokenEnabled() {
-    return this.getBooleanAttribute('auth_token_enabled') as any;
+    return this.getBooleanAttribute('auth_token_enabled');
   }
 
   // automatic_failover_enabled - computed: true, optional: false, required: false
   public get automaticFailoverEnabled() {
-    return this.getBooleanAttribute('automatic_failover_enabled') as any;
+    return this.getBooleanAttribute('automatic_failover_enabled');
   }
 
   // configuration_endpoint_address - computed: true, optional: false, required: false
@@ -79,12 +79,12 @@ export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSourc
 
   // member_clusters - computed: true, optional: false, required: false
   public get memberClusters() {
-    return this.getListAttribute('member_clusters');
+    return cdktf.Fn.tolist(this.getListAttribute('member_clusters'));
   }
 
   // multi_az_enabled - computed: true, optional: false, required: false
   public get multiAzEnabled() {
-    return this.getBooleanAttribute('multi_az_enabled') as any;
+    return this.getBooleanAttribute('multi_az_enabled');
   }
 
   // node_type - computed: true, optional: false, required: false

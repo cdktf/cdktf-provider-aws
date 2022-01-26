@@ -52,7 +52,7 @@ export interface WorklinkFleetIdentityProvider {
 }
 
 export function worklinkFleetIdentityProviderToTerraform(struct?: WorklinkFleetIdentityProviderOutputReference | WorklinkFleetIdentityProvider): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -70,7 +70,7 @@ export class WorklinkFleetIdentityProviderOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -143,7 +143,7 @@ export interface WorklinkFleetNetwork {
 }
 
 export function worklinkFleetNetworkToTerraform(struct?: WorklinkFleetNetworkOutputReference | WorklinkFleetNetwork): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -162,7 +162,7 @@ export class WorklinkFleetNetworkOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -202,7 +202,7 @@ export class WorklinkFleetNetworkOutputReference extends cdktf.ComplexObject {
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -215,7 +215,7 @@ export class WorklinkFleetNetworkOutputReference extends cdktf.ComplexObject {
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -373,7 +373,7 @@ export class WorklinkFleet extends cdktf.TerraformResource {
   // optimize_for_end_user_location - computed: false, optional: true, required: false
   private _optimizeForEndUserLocation?: boolean | cdktf.IResolvable; 
   public get optimizeForEndUserLocation() {
-    return this.getBooleanAttribute('optimize_for_end_user_location') as any;
+    return this.getBooleanAttribute('optimize_for_end_user_location');
   }
   public set optimizeForEndUserLocation(value: boolean | cdktf.IResolvable) {
     this._optimizeForEndUserLocation = value;
@@ -387,7 +387,7 @@ export class WorklinkFleet extends cdktf.TerraformResource {
   }
 
   // identity_provider - computed: false, optional: true, required: false
-  private _identityProvider = new WorklinkFleetIdentityProviderOutputReference(this as any, "identity_provider", true);
+  private _identityProvider = new WorklinkFleetIdentityProviderOutputReference(this, "identity_provider", true);
   public get identityProvider() {
     return this._identityProvider;
   }
@@ -403,7 +403,7 @@ export class WorklinkFleet extends cdktf.TerraformResource {
   }
 
   // network - computed: false, optional: true, required: false
-  private _network = new WorklinkFleetNetworkOutputReference(this as any, "network", true);
+  private _network = new WorklinkFleetNetworkOutputReference(this, "network", true);
   public get network() {
     return this._network;
   }

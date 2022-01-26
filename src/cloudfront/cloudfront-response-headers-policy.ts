@@ -46,7 +46,7 @@ export interface CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHead
 }
 
 export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersToTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference | CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -63,7 +63,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -91,7 +91,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersO
   // items - computed: false, optional: true, required: false
   private _items?: string[]; 
   public get items() {
-    return this.getListAttribute('items');
+    return cdktf.Fn.tolist(this.getListAttribute('items'));
   }
   public set items(value: string[]) {
     this._items = value;
@@ -112,7 +112,7 @@ export interface CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMeth
 }
 
 export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsToTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference | CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -129,7 +129,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -157,7 +157,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsO
   // items - computed: false, optional: true, required: false
   private _items?: string[]; 
   public get items() {
-    return this.getListAttribute('items');
+    return cdktf.Fn.tolist(this.getListAttribute('items'));
   }
   public set items(value: string[]) {
     this._items = value;
@@ -178,7 +178,7 @@ export interface CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrig
 }
 
 export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsToTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference | CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -195,7 +195,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -223,7 +223,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsO
   // items - computed: false, optional: true, required: false
   private _items?: string[]; 
   public get items() {
-    return this.getListAttribute('items');
+    return cdktf.Fn.tolist(this.getListAttribute('items'));
   }
   public set items(value: string[]) {
     this._items = value;
@@ -244,7 +244,7 @@ export interface CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHea
 }
 
 export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersToTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference | CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -261,7 +261,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -289,7 +289,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders
   // items - computed: false, optional: true, required: false
   private _items?: string[]; 
   public get items() {
-    return this.getListAttribute('items');
+    return cdktf.Fn.tolist(this.getListAttribute('items'));
   }
   public set items(value: string[]) {
     this._items = value;
@@ -342,7 +342,7 @@ export interface CloudfrontResponseHeadersPolicyCorsConfig {
 }
 
 export function cloudfrontResponseHeadersPolicyCorsConfigToTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigOutputReference | CloudfrontResponseHeadersPolicyCorsConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -365,7 +365,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -429,7 +429,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
   // access_control_allow_credentials - computed: false, optional: false, required: true
   private _accessControlAllowCredentials?: boolean | cdktf.IResolvable; 
   public get accessControlAllowCredentials() {
-    return this.getBooleanAttribute('access_control_allow_credentials') as any;
+    return this.getBooleanAttribute('access_control_allow_credentials');
   }
   public set accessControlAllowCredentials(value: boolean | cdktf.IResolvable) {
     this._accessControlAllowCredentials = value;
@@ -458,7 +458,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
   // origin_override - computed: false, optional: false, required: true
   private _originOverride?: boolean | cdktf.IResolvable; 
   public get originOverride() {
-    return this.getBooleanAttribute('origin_override') as any;
+    return this.getBooleanAttribute('origin_override');
   }
   public set originOverride(value: boolean | cdktf.IResolvable) {
     this._originOverride = value;
@@ -469,7 +469,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
   }
 
   // access_control_allow_headers - computed: false, optional: false, required: true
-  private _accessControlAllowHeaders = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference(this as any, "access_control_allow_headers", true);
+  private _accessControlAllowHeaders = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference(this, "access_control_allow_headers", true);
   public get accessControlAllowHeaders() {
     return this._accessControlAllowHeaders;
   }
@@ -482,7 +482,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
   }
 
   // access_control_allow_methods - computed: false, optional: false, required: true
-  private _accessControlAllowMethods = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference(this as any, "access_control_allow_methods", true);
+  private _accessControlAllowMethods = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference(this, "access_control_allow_methods", true);
   public get accessControlAllowMethods() {
     return this._accessControlAllowMethods;
   }
@@ -495,7 +495,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
   }
 
   // access_control_allow_origins - computed: false, optional: false, required: true
-  private _accessControlAllowOrigins = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference(this as any, "access_control_allow_origins", true);
+  private _accessControlAllowOrigins = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference(this, "access_control_allow_origins", true);
   public get accessControlAllowOrigins() {
     return this._accessControlAllowOrigins;
   }
@@ -508,7 +508,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
   }
 
   // access_control_expose_headers - computed: false, optional: true, required: false
-  private _accessControlExposeHeaders = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference(this as any, "access_control_expose_headers", true);
+  private _accessControlExposeHeaders = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference(this, "access_control_expose_headers", true);
   public get accessControlExposeHeaders() {
     return this._accessControlExposeHeaders;
   }
@@ -538,8 +538,8 @@ export interface CloudfrontResponseHeadersPolicyCustomHeadersConfigItems {
   readonly value: string;
 }
 
-export function cloudfrontResponseHeadersPolicyCustomHeadersConfigItemsToTerraform(struct?: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cloudfrontResponseHeadersPolicyCustomHeadersConfigItemsToTerraform(struct?: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -556,11 +556,11 @@ export interface CloudfrontResponseHeadersPolicyCustomHeadersConfig {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy#items CloudfrontResponseHeadersPolicy#items}
   */
-  readonly items?: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems[];
+  readonly items?: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems[] | cdktf.IResolvable;
 }
 
 export function cloudfrontResponseHeadersPolicyCustomHeadersConfigToTerraform(struct?: CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference | CloudfrontResponseHeadersPolicyCustomHeadersConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -577,7 +577,7 @@ export class CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference e
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -603,12 +603,12 @@ export class CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference e
   }
 
   // items - computed: false, optional: true, required: false
-  private _items?: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems[]; 
+  private _items?: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems[] | cdktf.IResolvable; 
   public get items() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('items') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('items')));
   }
-  public set items(value: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems[]) {
+  public set items(value: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems[] | cdktf.IResolvable) {
     this._items = value;
   }
   public resetItems() {
@@ -631,7 +631,7 @@ export interface CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecu
 }
 
 export function cloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyToTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -649,7 +649,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurity
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -696,7 +696,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurity
   // override - computed: false, optional: false, required: true
   private _override?: boolean | cdktf.IResolvable; 
   public get override() {
-    return this.getBooleanAttribute('override') as any;
+    return this.getBooleanAttribute('override');
   }
   public set override(value: boolean | cdktf.IResolvable) {
     this._override = value;
@@ -714,7 +714,7 @@ export interface CloudfrontResponseHeadersPolicySecurityHeadersConfigContentType
 }
 
 export function cloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsToTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -731,7 +731,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOpti
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -759,7 +759,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOpti
   // override - computed: false, optional: false, required: true
   private _override?: boolean | cdktf.IResolvable; 
   public get override() {
-    return this.getBooleanAttribute('override') as any;
+    return this.getBooleanAttribute('override');
   }
   public set override(value: boolean | cdktf.IResolvable) {
     this._override = value;
@@ -781,7 +781,7 @@ export interface CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOption
 }
 
 export function cloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsToTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -799,7 +799,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOut
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -846,7 +846,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOut
   // override - computed: false, optional: false, required: true
   private _override?: boolean | cdktf.IResolvable; 
   public get override() {
-    return this.getBooleanAttribute('override') as any;
+    return this.getBooleanAttribute('override');
   }
   public set override(value: boolean | cdktf.IResolvable) {
     this._override = value;
@@ -868,7 +868,7 @@ export interface CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPol
 }
 
 export function cloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyToTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -886,7 +886,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -920,7 +920,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyO
   // override - computed: false, optional: false, required: true
   private _override?: boolean | cdktf.IResolvable; 
   public get override() {
-    return this.getBooleanAttribute('override') as any;
+    return this.getBooleanAttribute('override');
   }
   public set override(value: boolean | cdktf.IResolvable) {
     this._override = value;
@@ -963,7 +963,7 @@ export interface CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTrans
 }
 
 export function cloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityToTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -983,7 +983,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransport
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1042,7 +1042,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransport
   // include_subdomains - computed: false, optional: true, required: false
   private _includeSubdomains?: boolean | cdktf.IResolvable; 
   public get includeSubdomains() {
-    return this.getBooleanAttribute('include_subdomains') as any;
+    return this.getBooleanAttribute('include_subdomains');
   }
   public set includeSubdomains(value: boolean | cdktf.IResolvable) {
     this._includeSubdomains = value;
@@ -1058,7 +1058,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransport
   // override - computed: false, optional: false, required: true
   private _override?: boolean | cdktf.IResolvable; 
   public get override() {
-    return this.getBooleanAttribute('override') as any;
+    return this.getBooleanAttribute('override');
   }
   public set override(value: boolean | cdktf.IResolvable) {
     this._override = value;
@@ -1071,7 +1071,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransport
   // preload - computed: false, optional: true, required: false
   private _preload?: boolean | cdktf.IResolvable; 
   public get preload() {
-    return this.getBooleanAttribute('preload') as any;
+    return this.getBooleanAttribute('preload');
   }
   public set preload(value: boolean | cdktf.IResolvable) {
     this._preload = value;
@@ -1104,7 +1104,7 @@ export interface CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtecti
 }
 
 export function cloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionToTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1124,7 +1124,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1170,7 +1170,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOu
   // mode_block - computed: false, optional: true, required: false
   private _modeBlock?: boolean | cdktf.IResolvable; 
   public get modeBlock() {
-    return this.getBooleanAttribute('mode_block') as any;
+    return this.getBooleanAttribute('mode_block');
   }
   public set modeBlock(value: boolean | cdktf.IResolvable) {
     this._modeBlock = value;
@@ -1186,7 +1186,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOu
   // override - computed: false, optional: false, required: true
   private _override?: boolean | cdktf.IResolvable; 
   public get override() {
-    return this.getBooleanAttribute('override') as any;
+    return this.getBooleanAttribute('override');
   }
   public set override(value: boolean | cdktf.IResolvable) {
     this._override = value;
@@ -1199,7 +1199,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOu
   // protection - computed: false, optional: false, required: true
   private _protection?: boolean | cdktf.IResolvable; 
   public get protection() {
-    return this.getBooleanAttribute('protection') as any;
+    return this.getBooleanAttribute('protection');
   }
   public set protection(value: boolean | cdktf.IResolvable) {
     this._protection = value;
@@ -1265,7 +1265,7 @@ export interface CloudfrontResponseHeadersPolicySecurityHeadersConfig {
 }
 
 export function cloudfrontResponseHeadersPolicySecurityHeadersConfigToTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1287,7 +1287,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1343,7 +1343,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   }
 
   // content_security_policy - computed: false, optional: true, required: false
-  private _contentSecurityPolicy = new CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference(this as any, "content_security_policy", true);
+  private _contentSecurityPolicy = new CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference(this, "content_security_policy", true);
   public get contentSecurityPolicy() {
     return this._contentSecurityPolicy;
   }
@@ -1359,7 +1359,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   }
 
   // content_type_options - computed: false, optional: true, required: false
-  private _contentTypeOptions = new CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference(this as any, "content_type_options", true);
+  private _contentTypeOptions = new CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference(this, "content_type_options", true);
   public get contentTypeOptions() {
     return this._contentTypeOptions;
   }
@@ -1375,7 +1375,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   }
 
   // frame_options - computed: false, optional: true, required: false
-  private _frameOptions = new CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference(this as any, "frame_options", true);
+  private _frameOptions = new CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference(this, "frame_options", true);
   public get frameOptions() {
     return this._frameOptions;
   }
@@ -1391,7 +1391,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   }
 
   // referrer_policy - computed: false, optional: true, required: false
-  private _referrerPolicy = new CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference(this as any, "referrer_policy", true);
+  private _referrerPolicy = new CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference(this, "referrer_policy", true);
   public get referrerPolicy() {
     return this._referrerPolicy;
   }
@@ -1407,7 +1407,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   }
 
   // strict_transport_security - computed: false, optional: true, required: false
-  private _strictTransportSecurity = new CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference(this as any, "strict_transport_security", true);
+  private _strictTransportSecurity = new CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference(this, "strict_transport_security", true);
   public get strictTransportSecurity() {
     return this._strictTransportSecurity;
   }
@@ -1423,7 +1423,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   }
 
   // xss_protection - computed: false, optional: true, required: false
-  private _xssProtection = new CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference(this as any, "xss_protection", true);
+  private _xssProtection = new CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference(this, "xss_protection", true);
   public get xssProtection() {
     return this._xssProtection;
   }
@@ -1534,7 +1534,7 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
   }
 
   // cors_config - computed: false, optional: true, required: false
-  private _corsConfig = new CloudfrontResponseHeadersPolicyCorsConfigOutputReference(this as any, "cors_config", true);
+  private _corsConfig = new CloudfrontResponseHeadersPolicyCorsConfigOutputReference(this, "cors_config", true);
   public get corsConfig() {
     return this._corsConfig;
   }
@@ -1550,7 +1550,7 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
   }
 
   // custom_headers_config - computed: false, optional: true, required: false
-  private _customHeadersConfig = new CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference(this as any, "custom_headers_config", true);
+  private _customHeadersConfig = new CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference(this, "custom_headers_config", true);
   public get customHeadersConfig() {
     return this._customHeadersConfig;
   }
@@ -1566,7 +1566,7 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
   }
 
   // security_headers_config - computed: false, optional: true, required: false
-  private _securityHeadersConfig = new CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference(this as any, "security_headers_config", true);
+  private _securityHeadersConfig = new CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference(this, "security_headers_config", true);
   public get securityHeadersConfig() {
     return this._securityHeadersConfig;
   }

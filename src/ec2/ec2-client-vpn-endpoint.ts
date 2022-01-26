@@ -34,11 +34,11 @@ export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint#tags Ec2ClientVpnEndpoint#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint#tags_all Ec2ClientVpnEndpoint#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint#transport_protocol Ec2ClientVpnEndpoint#transport_protocol}
   */
@@ -48,7 +48,7 @@ export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint#authentication_options Ec2ClientVpnEndpoint#authentication_options}
   */
-  readonly authenticationOptions: Ec2ClientVpnEndpointAuthenticationOptions[];
+  readonly authenticationOptions: Ec2ClientVpnEndpointAuthenticationOptions[] | cdktf.IResolvable;
   /**
   * connection_log_options block
   * 
@@ -79,8 +79,8 @@ export interface Ec2ClientVpnEndpointAuthenticationOptions {
   readonly type: string;
 }
 
-export function ec2ClientVpnEndpointAuthenticationOptionsToTerraform(struct?: Ec2ClientVpnEndpointAuthenticationOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ec2ClientVpnEndpointAuthenticationOptionsToTerraform(struct?: Ec2ClientVpnEndpointAuthenticationOptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -109,7 +109,7 @@ export interface Ec2ClientVpnEndpointConnectionLogOptions {
 }
 
 export function ec2ClientVpnEndpointConnectionLogOptionsToTerraform(struct?: Ec2ClientVpnEndpointConnectionLogOptionsOutputReference | Ec2ClientVpnEndpointConnectionLogOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -128,7 +128,7 @@ export class Ec2ClientVpnEndpointConnectionLogOptionsOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -200,7 +200,7 @@ export class Ec2ClientVpnEndpointConnectionLogOptionsOutputReference extends cdk
   // enabled - computed: false, optional: false, required: true
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -302,7 +302,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   // dns_servers - computed: false, optional: true, required: false
   private _dnsServers?: string[]; 
   public get dnsServers() {
-    return this.getListAttribute('dns_servers');
+    return cdktf.Fn.tolist(this.getListAttribute('dns_servers'));
   }
   public set dnsServers(value: string[]) {
     this._dnsServers = value;
@@ -352,7 +352,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   // split_tunnel - computed: false, optional: true, required: false
   private _splitTunnel?: boolean | cdktf.IResolvable; 
   public get splitTunnel() {
-    return this.getBooleanAttribute('split_tunnel') as any;
+    return this.getBooleanAttribute('split_tunnel');
   }
   public set splitTunnel(value: boolean | cdktf.IResolvable) {
     this._splitTunnel = value;
@@ -371,12 +371,11 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -388,12 +387,11 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -421,12 +419,12 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   }
 
   // authentication_options - computed: false, optional: false, required: true
-  private _authenticationOptions?: Ec2ClientVpnEndpointAuthenticationOptions[]; 
+  private _authenticationOptions?: Ec2ClientVpnEndpointAuthenticationOptions[] | cdktf.IResolvable; 
   public get authenticationOptions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('authentication_options') as any;
+    return this.interpolationForAttribute('authentication_options');
   }
-  public set authenticationOptions(value: Ec2ClientVpnEndpointAuthenticationOptions[]) {
+  public set authenticationOptions(value: Ec2ClientVpnEndpointAuthenticationOptions[] | cdktf.IResolvable) {
     this._authenticationOptions = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -435,7 +433,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   }
 
   // connection_log_options - computed: false, optional: false, required: true
-  private _connectionLogOptions = new Ec2ClientVpnEndpointConnectionLogOptionsOutputReference(this as any, "connection_log_options", true);
+  private _connectionLogOptions = new Ec2ClientVpnEndpointConnectionLogOptionsOutputReference(this, "connection_log_options", true);
   public get connectionLogOptions() {
     return this._connectionLogOptions;
   }
@@ -459,8 +457,8 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
       self_service_portal: cdktf.stringToTerraform(this._selfServicePortal),
       server_certificate_arn: cdktf.stringToTerraform(this._serverCertificateArn),
       split_tunnel: cdktf.booleanToTerraform(this._splitTunnel),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       transport_protocol: cdktf.stringToTerraform(this._transportProtocol),
       authentication_options: cdktf.listMapper(ec2ClientVpnEndpointAuthenticationOptionsToTerraform)(this._authenticationOptions),
       connection_log_options: ec2ClientVpnEndpointConnectionLogOptionsToTerraform(this._connectionLogOptions.internalValue),

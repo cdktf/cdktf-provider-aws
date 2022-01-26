@@ -14,7 +14,7 @@ export interface DataAwsApiGatewayRestApiConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_rest_api#tags DataAwsApiGatewayRestApi#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsApiGatewayRestApiEndpointConfiguration extends cdktf.ComplexComputedList {
 
@@ -25,7 +25,7 @@ export class DataAwsApiGatewayRestApiEndpointConfiguration extends cdktf.Complex
 
   // vpc_endpoint_ids - computed: true, optional: false, required: false
   public get vpcEndpointIds() {
-    return this.getListAttribute('vpc_endpoint_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('vpc_endpoint_ids'));
   }
 }
 
@@ -91,7 +91,7 @@ export class DataAwsApiGatewayRestApi extends cdktf.TerraformDataSource {
 
   // endpoint_configuration - computed: true, optional: false, required: false
   public endpointConfiguration(index: string) {
-    return new DataAwsApiGatewayRestApiEndpointConfiguration(this, 'endpoint_configuration', index);
+    return new DataAwsApiGatewayRestApiEndpointConfiguration(this, 'endpoint_configuration', index, false);
   }
 
   // execution_arn - computed: true, optional: false, required: false
@@ -133,12 +133,11 @@ export class DataAwsApiGatewayRestApi extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -156,7 +155,7 @@ export class DataAwsApiGatewayRestApi extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

@@ -98,7 +98,7 @@ export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy#metadata S3ObjectCopy#metadata}
   */
-  readonly metadata?: { [key: string]: string } | cdktf.IResolvable;
+  readonly metadata?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy#metadata_directive S3ObjectCopy#metadata_directive}
   */
@@ -150,11 +150,11 @@ export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy#tags S3ObjectCopy#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy#tags_all S3ObjectCopy#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy#website_redirect S3ObjectCopy#website_redirect}
   */
@@ -164,7 +164,7 @@ export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy#grant S3ObjectCopy#grant}
   */
-  readonly grant?: S3ObjectCopyGrant[];
+  readonly grant?: S3ObjectCopyGrant[] | cdktf.IResolvable;
 }
 export interface S3ObjectCopyGrant {
   /**
@@ -189,8 +189,8 @@ export interface S3ObjectCopyGrant {
   readonly uri?: string;
 }
 
-export function s3ObjectCopyGrantToTerraform(struct?: S3ObjectCopyGrant): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function s3ObjectCopyGrantToTerraform(struct?: S3ObjectCopyGrant | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -313,7 +313,7 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   // bucket_key_enabled - computed: true, optional: true, required: false
   private _bucketKeyEnabled?: boolean | cdktf.IResolvable; 
   public get bucketKeyEnabled() {
-    return this.getBooleanAttribute('bucket_key_enabled') as any;
+    return this.getBooleanAttribute('bucket_key_enabled');
   }
   public set bucketKeyEnabled(value: boolean | cdktf.IResolvable) {
     this._bucketKeyEnabled = value;
@@ -579,7 +579,7 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean | cdktf.IResolvable; 
   public get forceDestroy() {
-    return this.getBooleanAttribute('force_destroy') as any;
+    return this.getBooleanAttribute('force_destroy');
   }
   public set forceDestroy(value: boolean | cdktf.IResolvable) {
     this._forceDestroy = value;
@@ -648,12 +648,11 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   }
 
   // metadata - computed: true, optional: true, required: false
-  private _metadata?: { [key: string]: string } | cdktf.IResolvable; 
+  private _metadata?: { [key: string]: string }; 
   public get metadata() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('metadata') as any;
+    return this.getStringMapAttribute('metadata');
   }
-  public set metadata(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set metadata(value: { [key: string]: string }) {
     this._metadata = value;
   }
   public resetMetadata() {
@@ -730,7 +729,7 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
 
   // request_charged - computed: true, optional: false, required: false
   public get requestCharged() {
-    return this.getBooleanAttribute('request_charged') as any;
+    return this.getBooleanAttribute('request_charged');
   }
 
   // request_payer - computed: false, optional: true, required: false
@@ -864,12 +863,11 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -881,12 +879,11 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -919,12 +916,12 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   }
 
   // grant - computed: false, optional: true, required: false
-  private _grant?: S3ObjectCopyGrant[]; 
+  private _grant?: S3ObjectCopyGrant[] | cdktf.IResolvable; 
   public get grant() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('grant') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('grant')));
   }
-  public set grant(value: S3ObjectCopyGrant[]) {
+  public set grant(value: S3ObjectCopyGrant[] | cdktf.IResolvable) {
     this._grant = value;
   }
   public resetGrant() {
@@ -963,7 +960,7 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
       key: cdktf.stringToTerraform(this._key),
       kms_encryption_context: cdktf.stringToTerraform(this._kmsEncryptionContext),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      metadata: cdktf.hashMapper(cdktf.anyToTerraform)(this._metadata),
+      metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
       metadata_directive: cdktf.stringToTerraform(this._metadataDirective),
       object_lock_legal_hold_status: cdktf.stringToTerraform(this._objectLockLegalHoldStatus),
       object_lock_mode: cdktf.stringToTerraform(this._objectLockMode),
@@ -976,8 +973,8 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
       source_customer_key_md5: cdktf.stringToTerraform(this._sourceCustomerKeyMd5),
       storage_class: cdktf.stringToTerraform(this._storageClass),
       tagging_directive: cdktf.stringToTerraform(this._taggingDirective),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       website_redirect: cdktf.stringToTerraform(this._websiteRedirect),
       grant: cdktf.listMapper(s3ObjectCopyGrantToTerraform)(this._grant),
     };

@@ -24,7 +24,7 @@ export interface LoadBalancerPolicyConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/load_balancer_policy#policy_attribute LoadBalancerPolicy#policy_attribute}
   */
-  readonly policyAttribute?: LoadBalancerPolicyPolicyAttribute[];
+  readonly policyAttribute?: LoadBalancerPolicyPolicyAttribute[] | cdktf.IResolvable;
 }
 export interface LoadBalancerPolicyPolicyAttribute {
   /**
@@ -37,8 +37,8 @@ export interface LoadBalancerPolicyPolicyAttribute {
   readonly value?: string;
 }
 
-export function loadBalancerPolicyPolicyAttributeToTerraform(struct?: LoadBalancerPolicyPolicyAttribute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function loadBalancerPolicyPolicyAttributeToTerraform(struct?: LoadBalancerPolicyPolicyAttribute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -136,12 +136,12 @@ export class LoadBalancerPolicy extends cdktf.TerraformResource {
   }
 
   // policy_attribute - computed: false, optional: true, required: false
-  private _policyAttribute?: LoadBalancerPolicyPolicyAttribute[]; 
+  private _policyAttribute?: LoadBalancerPolicyPolicyAttribute[] | cdktf.IResolvable; 
   public get policyAttribute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('policy_attribute') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('policy_attribute')));
   }
-  public set policyAttribute(value: LoadBalancerPolicyPolicyAttribute[]) {
+  public set policyAttribute(value: LoadBalancerPolicyPolicyAttribute[] | cdktf.IResolvable) {
     this._policyAttribute = value;
   }
   public resetPolicyAttribute() {

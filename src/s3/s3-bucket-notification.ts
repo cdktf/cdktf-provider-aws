@@ -16,19 +16,19 @@ export interface S3BucketNotificationConfig extends cdktf.TerraformMetaArguments
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_notification#lambda_function S3BucketNotification#lambda_function}
   */
-  readonly lambdaFunction?: S3BucketNotificationLambdaFunction[];
+  readonly lambdaFunction?: S3BucketNotificationLambdaFunction[] | cdktf.IResolvable;
   /**
   * queue block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_notification#queue S3BucketNotification#queue}
   */
-  readonly queue?: S3BucketNotificationQueue[];
+  readonly queue?: S3BucketNotificationQueue[] | cdktf.IResolvable;
   /**
   * topic block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_notification#topic S3BucketNotification#topic}
   */
-  readonly topic?: S3BucketNotificationTopic[];
+  readonly topic?: S3BucketNotificationTopic[] | cdktf.IResolvable;
 }
 export interface S3BucketNotificationLambdaFunction {
   /**
@@ -53,8 +53,8 @@ export interface S3BucketNotificationLambdaFunction {
   readonly lambdaFunctionArn?: string;
 }
 
-export function s3BucketNotificationLambdaFunctionToTerraform(struct?: S3BucketNotificationLambdaFunction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function s3BucketNotificationLambdaFunctionToTerraform(struct?: S3BucketNotificationLambdaFunction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -89,8 +89,8 @@ export interface S3BucketNotificationQueue {
   readonly queueArn: string;
 }
 
-export function s3BucketNotificationQueueToTerraform(struct?: S3BucketNotificationQueue): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function s3BucketNotificationQueueToTerraform(struct?: S3BucketNotificationQueue | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -125,8 +125,8 @@ export interface S3BucketNotificationTopic {
   readonly topicArn: string;
 }
 
-export function s3BucketNotificationTopicToTerraform(struct?: S3BucketNotificationTopic): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function s3BucketNotificationTopicToTerraform(struct?: S3BucketNotificationTopic | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -200,12 +200,12 @@ export class S3BucketNotification extends cdktf.TerraformResource {
   }
 
   // lambda_function - computed: false, optional: true, required: false
-  private _lambdaFunction?: S3BucketNotificationLambdaFunction[]; 
+  private _lambdaFunction?: S3BucketNotificationLambdaFunction[] | cdktf.IResolvable; 
   public get lambdaFunction() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('lambda_function') as any;
+    return this.interpolationForAttribute('lambda_function');
   }
-  public set lambdaFunction(value: S3BucketNotificationLambdaFunction[]) {
+  public set lambdaFunction(value: S3BucketNotificationLambdaFunction[] | cdktf.IResolvable) {
     this._lambdaFunction = value;
   }
   public resetLambdaFunction() {
@@ -217,12 +217,12 @@ export class S3BucketNotification extends cdktf.TerraformResource {
   }
 
   // queue - computed: false, optional: true, required: false
-  private _queue?: S3BucketNotificationQueue[]; 
+  private _queue?: S3BucketNotificationQueue[] | cdktf.IResolvable; 
   public get queue() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('queue') as any;
+    return this.interpolationForAttribute('queue');
   }
-  public set queue(value: S3BucketNotificationQueue[]) {
+  public set queue(value: S3BucketNotificationQueue[] | cdktf.IResolvable) {
     this._queue = value;
   }
   public resetQueue() {
@@ -234,12 +234,12 @@ export class S3BucketNotification extends cdktf.TerraformResource {
   }
 
   // topic - computed: false, optional: true, required: false
-  private _topic?: S3BucketNotificationTopic[]; 
+  private _topic?: S3BucketNotificationTopic[] | cdktf.IResolvable; 
   public get topic() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('topic') as any;
+    return this.interpolationForAttribute('topic');
   }
-  public set topic(value: S3BucketNotificationTopic[]) {
+  public set topic(value: S3BucketNotificationTopic[] | cdktf.IResolvable) {
     this._topic = value;
   }
   public resetTopic() {

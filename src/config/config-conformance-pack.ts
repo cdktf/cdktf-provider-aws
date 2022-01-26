@@ -32,7 +32,7 @@ export interface ConfigConformancePackConfig extends cdktf.TerraformMetaArgument
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_conformance_pack#input_parameter ConfigConformancePack#input_parameter}
   */
-  readonly inputParameter?: ConfigConformancePackInputParameter[];
+  readonly inputParameter?: ConfigConformancePackInputParameter[] | cdktf.IResolvable;
 }
 export interface ConfigConformancePackInputParameter {
   /**
@@ -45,8 +45,8 @@ export interface ConfigConformancePackInputParameter {
   readonly parameterValue: string;
 }
 
-export function configConformancePackInputParameterToTerraform(struct?: ConfigConformancePackInputParameter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function configConformancePackInputParameterToTerraform(struct?: ConfigConformancePackInputParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -189,12 +189,12 @@ export class ConfigConformancePack extends cdktf.TerraformResource {
   }
 
   // input_parameter - computed: false, optional: true, required: false
-  private _inputParameter?: ConfigConformancePackInputParameter[]; 
+  private _inputParameter?: ConfigConformancePackInputParameter[] | cdktf.IResolvable; 
   public get inputParameter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('input_parameter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('input_parameter')));
   }
-  public set inputParameter(value: ConfigConformancePackInputParameter[]) {
+  public set inputParameter(value: ConfigConformancePackInputParameter[] | cdktf.IResolvable) {
     this._inputParameter = value;
   }
   public resetInputParameter() {

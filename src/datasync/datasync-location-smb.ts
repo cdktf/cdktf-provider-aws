@@ -30,11 +30,11 @@ export interface DatasyncLocationSmbConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_smb#tags DatasyncLocationSmb#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_smb#tags_all DatasyncLocationSmb#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_smb#user DatasyncLocationSmb#user}
   */
@@ -54,7 +54,7 @@ export interface DatasyncLocationSmbMountOptions {
 }
 
 export function datasyncLocationSmbMountOptionsToTerraform(struct?: DatasyncLocationSmbMountOptionsOutputReference | DatasyncLocationSmbMountOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -71,7 +71,7 @@ export class DatasyncLocationSmbMountOptionsOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -163,7 +163,7 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
   // agent_arns - computed: false, optional: false, required: true
   private _agentArns?: string[]; 
   public get agentArns() {
-    return this.getListAttribute('agent_arns');
+    return cdktf.Fn.tolist(this.getListAttribute('agent_arns'));
   }
   public set agentArns(value: string[]) {
     this._agentArns = value;
@@ -239,12 +239,11 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -256,12 +255,11 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -291,7 +289,7 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
   }
 
   // mount_options - computed: false, optional: true, required: false
-  private _mountOptions = new DatasyncLocationSmbMountOptionsOutputReference(this as any, "mount_options", true);
+  private _mountOptions = new DatasyncLocationSmbMountOptionsOutputReference(this, "mount_options", true);
   public get mountOptions() {
     return this._mountOptions;
   }
@@ -317,8 +315,8 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
       password: cdktf.stringToTerraform(this._password),
       server_hostname: cdktf.stringToTerraform(this._serverHostname),
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       user: cdktf.stringToTerraform(this._user),
       mount_options: datasyncLocationSmbMountOptionsToTerraform(this._mountOptions.internalValue),
     };

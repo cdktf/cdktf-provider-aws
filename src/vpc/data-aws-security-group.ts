@@ -14,7 +14,7 @@ export interface DataAwsSecurityGroupConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_group#tags DataAwsSecurityGroup#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_group#vpc_id DataAwsSecurityGroup#vpc_id}
   */
@@ -24,7 +24,7 @@ export interface DataAwsSecurityGroupConfig extends cdktf.TerraformMetaArguments
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_group#filter DataAwsSecurityGroup#filter}
   */
-  readonly filter?: DataAwsSecurityGroupFilter[];
+  readonly filter?: DataAwsSecurityGroupFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsSecurityGroupFilter {
   /**
@@ -37,8 +37,8 @@ export interface DataAwsSecurityGroupFilter {
   readonly values: string[];
 }
 
-export function dataAwsSecurityGroupFilterToTerraform(struct?: DataAwsSecurityGroupFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsSecurityGroupFilterToTerraform(struct?: DataAwsSecurityGroupFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -123,12 +123,11 @@ export class DataAwsSecurityGroup extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -156,12 +155,12 @@ export class DataAwsSecurityGroup extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsSecurityGroupFilter[]; 
+  private _filter?: DataAwsSecurityGroupFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsSecurityGroupFilter[]) {
+  public set filter(value: DataAwsSecurityGroupFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -179,7 +178,7 @@ export class DataAwsSecurityGroup extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       filter: cdktf.listMapper(dataAwsSecurityGroupFilterToTerraform)(this._filter),
     };

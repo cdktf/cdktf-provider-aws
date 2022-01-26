@@ -117,7 +117,7 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
   // no_password_required - computed: false, optional: true, required: false
   private _noPasswordRequired?: boolean | cdktf.IResolvable; 
   public get noPasswordRequired() {
-    return this.getBooleanAttribute('no_password_required') as any;
+    return this.getBooleanAttribute('no_password_required');
   }
   public set noPasswordRequired(value: boolean | cdktf.IResolvable) {
     this._noPasswordRequired = value;
@@ -133,7 +133,7 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
   // passwords - computed: false, optional: true, required: false
   private _passwords?: string[]; 
   public get passwords() {
-    return this.getListAttribute('passwords');
+    return cdktf.Fn.tolist(this.getListAttribute('passwords'));
   }
   public set passwords(value: string[]) {
     this._passwords = value;

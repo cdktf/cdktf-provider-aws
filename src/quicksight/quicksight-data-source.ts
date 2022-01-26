@@ -22,11 +22,11 @@ export interface QuicksightDataSourceConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#tags QuicksightDataSource#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#tags_all QuicksightDataSource#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#type QuicksightDataSource#type}
   */
@@ -48,7 +48,7 @@ export interface QuicksightDataSourceConfig extends cdktf.TerraformMetaArguments
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#permission QuicksightDataSource#permission}
   */
-  readonly permission?: QuicksightDataSourcePermission[];
+  readonly permission?: QuicksightDataSourcePermission[] | cdktf.IResolvable;
   /**
   * ssl_properties block
   * 
@@ -74,7 +74,7 @@ export interface QuicksightDataSourceCredentialsCredentialPair {
 }
 
 export function quicksightDataSourceCredentialsCredentialPairToTerraform(struct?: QuicksightDataSourceCredentialsCredentialPairOutputReference | QuicksightDataSourceCredentialsCredentialPair): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -92,7 +92,7 @@ export class QuicksightDataSourceCredentialsCredentialPairOutputReference extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -163,7 +163,7 @@ export interface QuicksightDataSourceCredentials {
 }
 
 export function quicksightDataSourceCredentialsToTerraform(struct?: QuicksightDataSourceCredentialsOutputReference | QuicksightDataSourceCredentials): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -181,7 +181,7 @@ export class QuicksightDataSourceCredentialsOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -229,7 +229,7 @@ export class QuicksightDataSourceCredentialsOutputReference extends cdktf.Comple
   }
 
   // credential_pair - computed: false, optional: true, required: false
-  private _credentialPair = new QuicksightDataSourceCredentialsCredentialPairOutputReference(this as any, "credential_pair", true);
+  private _credentialPair = new QuicksightDataSourceCredentialsCredentialPairOutputReference(this, "credential_pair", true);
   public get credentialPair() {
     return this._credentialPair;
   }
@@ -252,7 +252,7 @@ export interface QuicksightDataSourceParametersAmazonElasticsearch {
 }
 
 export function quicksightDataSourceParametersAmazonElasticsearchToTerraform(struct?: QuicksightDataSourceParametersAmazonElasticsearchOutputReference | QuicksightDataSourceParametersAmazonElasticsearch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -269,7 +269,7 @@ export class QuicksightDataSourceParametersAmazonElasticsearchOutputReference ex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -315,7 +315,7 @@ export interface QuicksightDataSourceParametersAthena {
 }
 
 export function quicksightDataSourceParametersAthenaToTerraform(struct?: QuicksightDataSourceParametersAthenaOutputReference | QuicksightDataSourceParametersAthena): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -332,7 +332,7 @@ export class QuicksightDataSourceParametersAthenaOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -389,7 +389,7 @@ export interface QuicksightDataSourceParametersAurora {
 }
 
 export function quicksightDataSourceParametersAuroraToTerraform(struct?: QuicksightDataSourceParametersAuroraOutputReference | QuicksightDataSourceParametersAurora): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -408,7 +408,7 @@ export class QuicksightDataSourceParametersAuroraOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -500,7 +500,7 @@ export interface QuicksightDataSourceParametersAuroraPostgresql {
 }
 
 export function quicksightDataSourceParametersAuroraPostgresqlToTerraform(struct?: QuicksightDataSourceParametersAuroraPostgresqlOutputReference | QuicksightDataSourceParametersAuroraPostgresql): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -519,7 +519,7 @@ export class QuicksightDataSourceParametersAuroraPostgresqlOutputReference exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -603,7 +603,7 @@ export interface QuicksightDataSourceParametersAwsIotAnalytics {
 }
 
 export function quicksightDataSourceParametersAwsIotAnalyticsToTerraform(struct?: QuicksightDataSourceParametersAwsIotAnalyticsOutputReference | QuicksightDataSourceParametersAwsIotAnalytics): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -620,7 +620,7 @@ export class QuicksightDataSourceParametersAwsIotAnalyticsOutputReference extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -666,7 +666,7 @@ export interface QuicksightDataSourceParametersJira {
 }
 
 export function quicksightDataSourceParametersJiraToTerraform(struct?: QuicksightDataSourceParametersJiraOutputReference | QuicksightDataSourceParametersJira): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -683,7 +683,7 @@ export class QuicksightDataSourceParametersJiraOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -737,7 +737,7 @@ export interface QuicksightDataSourceParametersMariaDb {
 }
 
 export function quicksightDataSourceParametersMariaDbToTerraform(struct?: QuicksightDataSourceParametersMariaDbOutputReference | QuicksightDataSourceParametersMariaDb): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -756,7 +756,7 @@ export class QuicksightDataSourceParametersMariaDbOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -848,7 +848,7 @@ export interface QuicksightDataSourceParametersMysql {
 }
 
 export function quicksightDataSourceParametersMysqlToTerraform(struct?: QuicksightDataSourceParametersMysqlOutputReference | QuicksightDataSourceParametersMysql): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -867,7 +867,7 @@ export class QuicksightDataSourceParametersMysqlOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -959,7 +959,7 @@ export interface QuicksightDataSourceParametersOracle {
 }
 
 export function quicksightDataSourceParametersOracleToTerraform(struct?: QuicksightDataSourceParametersOracleOutputReference | QuicksightDataSourceParametersOracle): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -978,7 +978,7 @@ export class QuicksightDataSourceParametersOracleOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1070,7 +1070,7 @@ export interface QuicksightDataSourceParametersPostgresql {
 }
 
 export function quicksightDataSourceParametersPostgresqlToTerraform(struct?: QuicksightDataSourceParametersPostgresqlOutputReference | QuicksightDataSourceParametersPostgresql): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1089,7 +1089,7 @@ export class QuicksightDataSourceParametersPostgresqlOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1181,7 +1181,7 @@ export interface QuicksightDataSourceParametersPresto {
 }
 
 export function quicksightDataSourceParametersPrestoToTerraform(struct?: QuicksightDataSourceParametersPrestoOutputReference | QuicksightDataSourceParametersPresto): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1200,7 +1200,7 @@ export class QuicksightDataSourceParametersPrestoOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1288,7 +1288,7 @@ export interface QuicksightDataSourceParametersRds {
 }
 
 export function quicksightDataSourceParametersRdsToTerraform(struct?: QuicksightDataSourceParametersRdsOutputReference | QuicksightDataSourceParametersRds): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1306,7 +1306,7 @@ export class QuicksightDataSourceParametersRdsOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1383,7 +1383,7 @@ export interface QuicksightDataSourceParametersRedshift {
 }
 
 export function quicksightDataSourceParametersRedshiftToTerraform(struct?: QuicksightDataSourceParametersRedshiftOutputReference | QuicksightDataSourceParametersRedshift): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1403,7 +1403,7 @@ export class QuicksightDataSourceParametersRedshiftOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1519,7 +1519,7 @@ export interface QuicksightDataSourceParametersS3ManifestFileLocation {
 }
 
 export function quicksightDataSourceParametersS3ManifestFileLocationToTerraform(struct?: QuicksightDataSourceParametersS3ManifestFileLocationOutputReference | QuicksightDataSourceParametersS3ManifestFileLocation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1537,7 +1537,7 @@ export class QuicksightDataSourceParametersS3ManifestFileLocationOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1604,7 +1604,7 @@ export interface QuicksightDataSourceParametersS3 {
 }
 
 export function quicksightDataSourceParametersS3ToTerraform(struct?: QuicksightDataSourceParametersS3OutputReference | QuicksightDataSourceParametersS3): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1621,7 +1621,7 @@ export class QuicksightDataSourceParametersS3OutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1647,7 +1647,7 @@ export class QuicksightDataSourceParametersS3OutputReference extends cdktf.Compl
   }
 
   // manifest_file_location - computed: false, optional: false, required: true
-  private _manifestFileLocation = new QuicksightDataSourceParametersS3ManifestFileLocationOutputReference(this as any, "manifest_file_location", true);
+  private _manifestFileLocation = new QuicksightDataSourceParametersS3ManifestFileLocationOutputReference(this, "manifest_file_location", true);
   public get manifestFileLocation() {
     return this._manifestFileLocation;
   }
@@ -1667,7 +1667,7 @@ export interface QuicksightDataSourceParametersServiceNow {
 }
 
 export function quicksightDataSourceParametersServiceNowToTerraform(struct?: QuicksightDataSourceParametersServiceNowOutputReference | QuicksightDataSourceParametersServiceNow): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1684,7 +1684,7 @@ export class QuicksightDataSourceParametersServiceNowOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1738,7 +1738,7 @@ export interface QuicksightDataSourceParametersSnowflake {
 }
 
 export function quicksightDataSourceParametersSnowflakeToTerraform(struct?: QuicksightDataSourceParametersSnowflakeOutputReference | QuicksightDataSourceParametersSnowflake): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1757,7 +1757,7 @@ export class QuicksightDataSourceParametersSnowflakeOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1845,7 +1845,7 @@ export interface QuicksightDataSourceParametersSpark {
 }
 
 export function quicksightDataSourceParametersSparkToTerraform(struct?: QuicksightDataSourceParametersSparkOutputReference | QuicksightDataSourceParametersSpark): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1863,7 +1863,7 @@ export class QuicksightDataSourceParametersSparkOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1936,7 +1936,7 @@ export interface QuicksightDataSourceParametersSqlServer {
 }
 
 export function quicksightDataSourceParametersSqlServerToTerraform(struct?: QuicksightDataSourceParametersSqlServerOutputReference | QuicksightDataSourceParametersSqlServer): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1955,7 +1955,7 @@ export class QuicksightDataSourceParametersSqlServerOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2047,7 +2047,7 @@ export interface QuicksightDataSourceParametersTeradata {
 }
 
 export function quicksightDataSourceParametersTeradataToTerraform(struct?: QuicksightDataSourceParametersTeradataOutputReference | QuicksightDataSourceParametersTeradata): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2066,7 +2066,7 @@ export class QuicksightDataSourceParametersTeradataOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2154,7 +2154,7 @@ export interface QuicksightDataSourceParametersTwitter {
 }
 
 export function quicksightDataSourceParametersTwitterToTerraform(struct?: QuicksightDataSourceParametersTwitterOutputReference | QuicksightDataSourceParametersTwitter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2172,7 +2172,7 @@ export class QuicksightDataSourceParametersTwitterOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2353,7 +2353,7 @@ export interface QuicksightDataSourceParameters {
 }
 
 export function quicksightDataSourceParametersToTerraform(struct?: QuicksightDataSourceParametersOutputReference | QuicksightDataSourceParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2389,7 +2389,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2529,7 +2529,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // amazon_elasticsearch - computed: false, optional: true, required: false
-  private _amazonElasticsearch = new QuicksightDataSourceParametersAmazonElasticsearchOutputReference(this as any, "amazon_elasticsearch", true);
+  private _amazonElasticsearch = new QuicksightDataSourceParametersAmazonElasticsearchOutputReference(this, "amazon_elasticsearch", true);
   public get amazonElasticsearch() {
     return this._amazonElasticsearch;
   }
@@ -2545,7 +2545,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // athena - computed: false, optional: true, required: false
-  private _athena = new QuicksightDataSourceParametersAthenaOutputReference(this as any, "athena", true);
+  private _athena = new QuicksightDataSourceParametersAthenaOutputReference(this, "athena", true);
   public get athena() {
     return this._athena;
   }
@@ -2561,7 +2561,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // aurora - computed: false, optional: true, required: false
-  private _aurora = new QuicksightDataSourceParametersAuroraOutputReference(this as any, "aurora", true);
+  private _aurora = new QuicksightDataSourceParametersAuroraOutputReference(this, "aurora", true);
   public get aurora() {
     return this._aurora;
   }
@@ -2577,7 +2577,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // aurora_postgresql - computed: false, optional: true, required: false
-  private _auroraPostgresql = new QuicksightDataSourceParametersAuroraPostgresqlOutputReference(this as any, "aurora_postgresql", true);
+  private _auroraPostgresql = new QuicksightDataSourceParametersAuroraPostgresqlOutputReference(this, "aurora_postgresql", true);
   public get auroraPostgresql() {
     return this._auroraPostgresql;
   }
@@ -2593,7 +2593,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // aws_iot_analytics - computed: false, optional: true, required: false
-  private _awsIotAnalytics = new QuicksightDataSourceParametersAwsIotAnalyticsOutputReference(this as any, "aws_iot_analytics", true);
+  private _awsIotAnalytics = new QuicksightDataSourceParametersAwsIotAnalyticsOutputReference(this, "aws_iot_analytics", true);
   public get awsIotAnalytics() {
     return this._awsIotAnalytics;
   }
@@ -2609,7 +2609,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // jira - computed: false, optional: true, required: false
-  private _jira = new QuicksightDataSourceParametersJiraOutputReference(this as any, "jira", true);
+  private _jira = new QuicksightDataSourceParametersJiraOutputReference(this, "jira", true);
   public get jira() {
     return this._jira;
   }
@@ -2625,7 +2625,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // maria_db - computed: false, optional: true, required: false
-  private _mariaDb = new QuicksightDataSourceParametersMariaDbOutputReference(this as any, "maria_db", true);
+  private _mariaDb = new QuicksightDataSourceParametersMariaDbOutputReference(this, "maria_db", true);
   public get mariaDb() {
     return this._mariaDb;
   }
@@ -2641,7 +2641,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // mysql - computed: false, optional: true, required: false
-  private _mysql = new QuicksightDataSourceParametersMysqlOutputReference(this as any, "mysql", true);
+  private _mysql = new QuicksightDataSourceParametersMysqlOutputReference(this, "mysql", true);
   public get mysql() {
     return this._mysql;
   }
@@ -2657,7 +2657,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // oracle - computed: false, optional: true, required: false
-  private _oracle = new QuicksightDataSourceParametersOracleOutputReference(this as any, "oracle", true);
+  private _oracle = new QuicksightDataSourceParametersOracleOutputReference(this, "oracle", true);
   public get oracle() {
     return this._oracle;
   }
@@ -2673,7 +2673,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // postgresql - computed: false, optional: true, required: false
-  private _postgresql = new QuicksightDataSourceParametersPostgresqlOutputReference(this as any, "postgresql", true);
+  private _postgresql = new QuicksightDataSourceParametersPostgresqlOutputReference(this, "postgresql", true);
   public get postgresql() {
     return this._postgresql;
   }
@@ -2689,7 +2689,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // presto - computed: false, optional: true, required: false
-  private _presto = new QuicksightDataSourceParametersPrestoOutputReference(this as any, "presto", true);
+  private _presto = new QuicksightDataSourceParametersPrestoOutputReference(this, "presto", true);
   public get presto() {
     return this._presto;
   }
@@ -2705,7 +2705,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // rds - computed: false, optional: true, required: false
-  private _rds = new QuicksightDataSourceParametersRdsOutputReference(this as any, "rds", true);
+  private _rds = new QuicksightDataSourceParametersRdsOutputReference(this, "rds", true);
   public get rds() {
     return this._rds;
   }
@@ -2721,7 +2721,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // redshift - computed: false, optional: true, required: false
-  private _redshift = new QuicksightDataSourceParametersRedshiftOutputReference(this as any, "redshift", true);
+  private _redshift = new QuicksightDataSourceParametersRedshiftOutputReference(this, "redshift", true);
   public get redshift() {
     return this._redshift;
   }
@@ -2737,7 +2737,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // s3 - computed: false, optional: true, required: false
-  private _s3 = new QuicksightDataSourceParametersS3OutputReference(this as any, "s3", true);
+  private _s3 = new QuicksightDataSourceParametersS3OutputReference(this, "s3", true);
   public get s3() {
     return this._s3;
   }
@@ -2753,7 +2753,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // service_now - computed: false, optional: true, required: false
-  private _serviceNow = new QuicksightDataSourceParametersServiceNowOutputReference(this as any, "service_now", true);
+  private _serviceNow = new QuicksightDataSourceParametersServiceNowOutputReference(this, "service_now", true);
   public get serviceNow() {
     return this._serviceNow;
   }
@@ -2769,7 +2769,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // snowflake - computed: false, optional: true, required: false
-  private _snowflake = new QuicksightDataSourceParametersSnowflakeOutputReference(this as any, "snowflake", true);
+  private _snowflake = new QuicksightDataSourceParametersSnowflakeOutputReference(this, "snowflake", true);
   public get snowflake() {
     return this._snowflake;
   }
@@ -2785,7 +2785,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // spark - computed: false, optional: true, required: false
-  private _spark = new QuicksightDataSourceParametersSparkOutputReference(this as any, "spark", true);
+  private _spark = new QuicksightDataSourceParametersSparkOutputReference(this, "spark", true);
   public get spark() {
     return this._spark;
   }
@@ -2801,7 +2801,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // sql_server - computed: false, optional: true, required: false
-  private _sqlServer = new QuicksightDataSourceParametersSqlServerOutputReference(this as any, "sql_server", true);
+  private _sqlServer = new QuicksightDataSourceParametersSqlServerOutputReference(this, "sql_server", true);
   public get sqlServer() {
     return this._sqlServer;
   }
@@ -2817,7 +2817,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // teradata - computed: false, optional: true, required: false
-  private _teradata = new QuicksightDataSourceParametersTeradataOutputReference(this as any, "teradata", true);
+  private _teradata = new QuicksightDataSourceParametersTeradataOutputReference(this, "teradata", true);
   public get teradata() {
     return this._teradata;
   }
@@ -2833,7 +2833,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // twitter - computed: false, optional: true, required: false
-  private _twitter = new QuicksightDataSourceParametersTwitterOutputReference(this as any, "twitter", true);
+  private _twitter = new QuicksightDataSourceParametersTwitterOutputReference(this, "twitter", true);
   public get twitter() {
     return this._twitter;
   }
@@ -2859,8 +2859,8 @@ export interface QuicksightDataSourcePermission {
   readonly principal: string;
 }
 
-export function quicksightDataSourcePermissionToTerraform(struct?: QuicksightDataSourcePermission): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function quicksightDataSourcePermissionToTerraform(struct?: QuicksightDataSourcePermission | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2878,7 +2878,7 @@ export interface QuicksightDataSourceSslProperties {
 }
 
 export function quicksightDataSourceSslPropertiesToTerraform(struct?: QuicksightDataSourceSslPropertiesOutputReference | QuicksightDataSourceSslProperties): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2895,7 +2895,7 @@ export class QuicksightDataSourceSslPropertiesOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2923,7 +2923,7 @@ export class QuicksightDataSourceSslPropertiesOutputReference extends cdktf.Comp
   // disable_ssl - computed: false, optional: false, required: true
   private _disableSsl?: boolean | cdktf.IResolvable; 
   public get disableSsl() {
-    return this.getBooleanAttribute('disable_ssl') as any;
+    return this.getBooleanAttribute('disable_ssl');
   }
   public set disableSsl(value: boolean | cdktf.IResolvable) {
     this._disableSsl = value;
@@ -2941,7 +2941,7 @@ export interface QuicksightDataSourceVpcConnectionProperties {
 }
 
 export function quicksightDataSourceVpcConnectionPropertiesToTerraform(struct?: QuicksightDataSourceVpcConnectionPropertiesOutputReference | QuicksightDataSourceVpcConnectionProperties): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2958,7 +2958,7 @@ export class QuicksightDataSourceVpcConnectionPropertiesOutputReference extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3099,12 +3099,11 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -3116,12 +3115,11 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -3146,7 +3144,7 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   }
 
   // credentials - computed: false, optional: true, required: false
-  private _credentials = new QuicksightDataSourceCredentialsOutputReference(this as any, "credentials", true);
+  private _credentials = new QuicksightDataSourceCredentialsOutputReference(this, "credentials", true);
   public get credentials() {
     return this._credentials;
   }
@@ -3162,7 +3160,7 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   }
 
   // parameters - computed: false, optional: false, required: true
-  private _parameters = new QuicksightDataSourceParametersOutputReference(this as any, "parameters", true);
+  private _parameters = new QuicksightDataSourceParametersOutputReference(this, "parameters", true);
   public get parameters() {
     return this._parameters;
   }
@@ -3175,12 +3173,12 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   }
 
   // permission - computed: false, optional: true, required: false
-  private _permission?: QuicksightDataSourcePermission[]; 
+  private _permission?: QuicksightDataSourcePermission[] | cdktf.IResolvable; 
   public get permission() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('permission') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('permission')));
   }
-  public set permission(value: QuicksightDataSourcePermission[]) {
+  public set permission(value: QuicksightDataSourcePermission[] | cdktf.IResolvable) {
     this._permission = value;
   }
   public resetPermission() {
@@ -3192,7 +3190,7 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   }
 
   // ssl_properties - computed: false, optional: true, required: false
-  private _sslProperties = new QuicksightDataSourceSslPropertiesOutputReference(this as any, "ssl_properties", true);
+  private _sslProperties = new QuicksightDataSourceSslPropertiesOutputReference(this, "ssl_properties", true);
   public get sslProperties() {
     return this._sslProperties;
   }
@@ -3208,7 +3206,7 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   }
 
   // vpc_connection_properties - computed: false, optional: true, required: false
-  private _vpcConnectionProperties = new QuicksightDataSourceVpcConnectionPropertiesOutputReference(this as any, "vpc_connection_properties", true);
+  private _vpcConnectionProperties = new QuicksightDataSourceVpcConnectionPropertiesOutputReference(this, "vpc_connection_properties", true);
   public get vpcConnectionProperties() {
     return this._vpcConnectionProperties;
   }
@@ -3232,8 +3230,8 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
       aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
       data_source_id: cdktf.stringToTerraform(this._dataSourceId),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
       credentials: quicksightDataSourceCredentialsToTerraform(this._credentials.internalValue),
       parameters: quicksightDataSourceParametersToTerraform(this._parameters.internalValue),

@@ -14,17 +14,17 @@ export interface VpcIpamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam#tags VpcIpam#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam#tags_all VpcIpam#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * operating_regions block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam#operating_regions VpcIpam#operating_regions}
   */
-  readonly operatingRegions: VpcIpamOperatingRegions[];
+  readonly operatingRegions: VpcIpamOperatingRegions[] | cdktf.IResolvable;
 }
 export interface VpcIpamOperatingRegions {
   /**
@@ -33,8 +33,8 @@ export interface VpcIpamOperatingRegions {
   readonly regionName: string;
 }
 
-export function vpcIpamOperatingRegionsToTerraform(struct?: VpcIpamOperatingRegions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vpcIpamOperatingRegionsToTerraform(struct?: VpcIpamOperatingRegions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -128,12 +128,11 @@ export class VpcIpam extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -145,12 +144,11 @@ export class VpcIpam extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -162,12 +160,12 @@ export class VpcIpam extends cdktf.TerraformResource {
   }
 
   // operating_regions - computed: false, optional: false, required: true
-  private _operatingRegions?: VpcIpamOperatingRegions[]; 
+  private _operatingRegions?: VpcIpamOperatingRegions[] | cdktf.IResolvable; 
   public get operatingRegions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('operating_regions') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('operating_regions')));
   }
-  public set operatingRegions(value: VpcIpamOperatingRegions[]) {
+  public set operatingRegions(value: VpcIpamOperatingRegions[] | cdktf.IResolvable) {
     this._operatingRegions = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -182,8 +180,8 @@ export class VpcIpam extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       operating_regions: cdktf.listMapper(vpcIpamOperatingRegionsToTerraform)(this._operatingRegions),
     };
   }

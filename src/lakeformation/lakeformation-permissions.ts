@@ -64,7 +64,7 @@ export interface LakeformationPermissionsDataLocation {
 }
 
 export function lakeformationPermissionsDataLocationToTerraform(struct?: LakeformationPermissionsDataLocationOutputReference | LakeformationPermissionsDataLocation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -82,7 +82,7 @@ export class LakeformationPermissionsDataLocationOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -154,7 +154,7 @@ export interface LakeformationPermissionsDatabase {
 }
 
 export function lakeformationPermissionsDatabaseToTerraform(struct?: LakeformationPermissionsDatabaseOutputReference | LakeformationPermissionsDatabase): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -172,7 +172,7 @@ export class LakeformationPermissionsDatabaseOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -252,7 +252,7 @@ export interface LakeformationPermissionsTable {
 }
 
 export function lakeformationPermissionsTableToTerraform(struct?: LakeformationPermissionsTableOutputReference | LakeformationPermissionsTable): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -272,7 +272,7 @@ export class LakeformationPermissionsTableOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -363,7 +363,7 @@ export class LakeformationPermissionsTableOutputReference extends cdktf.ComplexO
   // wildcard - computed: false, optional: true, required: false
   private _wildcard?: boolean | cdktf.IResolvable; 
   public get wildcard() {
-    return this.getBooleanAttribute('wildcard') as any;
+    return this.getBooleanAttribute('wildcard');
   }
   public set wildcard(value: boolean | cdktf.IResolvable) {
     this._wildcard = value;
@@ -404,7 +404,7 @@ export interface LakeformationPermissionsTableWithColumns {
 }
 
 export function lakeformationPermissionsTableWithColumnsToTerraform(struct?: LakeformationPermissionsTableWithColumnsOutputReference | LakeformationPermissionsTableWithColumns): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -426,7 +426,7 @@ export class LakeformationPermissionsTableWithColumnsOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -500,7 +500,7 @@ export class LakeformationPermissionsTableWithColumnsOutputReference extends cdk
   // column_names - computed: false, optional: true, required: false
   private _columnNames?: string[]; 
   public get columnNames() {
-    return this.getListAttribute('column_names');
+    return cdktf.Fn.tolist(this.getListAttribute('column_names'));
   }
   public set columnNames(value: string[]) {
     this._columnNames = value;
@@ -529,7 +529,7 @@ export class LakeformationPermissionsTableWithColumnsOutputReference extends cdk
   // excluded_column_names - computed: false, optional: true, required: false
   private _excludedColumnNames?: string[]; 
   public get excludedColumnNames() {
-    return this.getListAttribute('excluded_column_names');
+    return cdktf.Fn.tolist(this.getListAttribute('excluded_column_names'));
   }
   public set excludedColumnNames(value: string[]) {
     this._excludedColumnNames = value;
@@ -558,7 +558,7 @@ export class LakeformationPermissionsTableWithColumnsOutputReference extends cdk
   // wildcard - computed: false, optional: true, required: false
   private _wildcard?: boolean | cdktf.IResolvable; 
   public get wildcard() {
-    return this.getBooleanAttribute('wildcard') as any;
+    return this.getBooleanAttribute('wildcard');
   }
   public set wildcard(value: boolean | cdktf.IResolvable) {
     this._wildcard = value;
@@ -638,7 +638,7 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
   // catalog_resource - computed: false, optional: true, required: false
   private _catalogResource?: boolean | cdktf.IResolvable; 
   public get catalogResource() {
-    return this.getBooleanAttribute('catalog_resource') as any;
+    return this.getBooleanAttribute('catalog_resource');
   }
   public set catalogResource(value: boolean | cdktf.IResolvable) {
     this._catalogResource = value;
@@ -699,7 +699,7 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
   }
 
   // data_location - computed: false, optional: true, required: false
-  private _dataLocation = new LakeformationPermissionsDataLocationOutputReference(this as any, "data_location", true);
+  private _dataLocation = new LakeformationPermissionsDataLocationOutputReference(this, "data_location", true);
   public get dataLocation() {
     return this._dataLocation;
   }
@@ -715,7 +715,7 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
   }
 
   // database - computed: false, optional: true, required: false
-  private _database = new LakeformationPermissionsDatabaseOutputReference(this as any, "database", true);
+  private _database = new LakeformationPermissionsDatabaseOutputReference(this, "database", true);
   public get database() {
     return this._database;
   }
@@ -731,7 +731,7 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
   }
 
   // table - computed: false, optional: true, required: false
-  private _table = new LakeformationPermissionsTableOutputReference(this as any, "table", true);
+  private _table = new LakeformationPermissionsTableOutputReference(this, "table", true);
   public get table() {
     return this._table;
   }
@@ -747,7 +747,7 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
   }
 
   // table_with_columns - computed: false, optional: true, required: false
-  private _tableWithColumns = new LakeformationPermissionsTableWithColumnsOutputReference(this as any, "table_with_columns", true);
+  private _tableWithColumns = new LakeformationPermissionsTableWithColumnsOutputReference(this, "table_with_columns", true);
   public get tableWithColumns() {
     return this._tableWithColumns;
   }

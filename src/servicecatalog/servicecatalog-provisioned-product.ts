@@ -54,17 +54,17 @@ export interface ServicecatalogProvisionedProductConfig extends cdktf.TerraformM
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product#tags ServicecatalogProvisionedProduct#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product#tags_all ServicecatalogProvisionedProduct#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * provisioning_parameters block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product#provisioning_parameters ServicecatalogProvisionedProduct#provisioning_parameters}
   */
-  readonly provisioningParameters?: ServicecatalogProvisionedProductProvisioningParameters[];
+  readonly provisioningParameters?: ServicecatalogProvisionedProductProvisioningParameters[] | cdktf.IResolvable;
   /**
   * stack_set_provisioning_preferences block
   * 
@@ -93,8 +93,8 @@ export interface ServicecatalogProvisionedProductProvisioningParameters {
   readonly value?: string;
 }
 
-export function servicecatalogProvisionedProductProvisioningParametersToTerraform(struct?: ServicecatalogProvisionedProductProvisioningParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function servicecatalogProvisionedProductProvisioningParametersToTerraform(struct?: ServicecatalogProvisionedProductProvisioningParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -133,7 +133,7 @@ export interface ServicecatalogProvisionedProductStackSetProvisioningPreferences
 }
 
 export function servicecatalogProvisionedProductStackSetProvisioningPreferencesToTerraform(struct?: ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference | ServicecatalogProvisionedProductStackSetProvisioningPreferences): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -155,7 +155,7 @@ export class ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -321,8 +321,8 @@ export interface ServicecatalogProvisionedProductTimeouts {
   readonly update?: string;
 }
 
-export function servicecatalogProvisionedProductTimeoutsToTerraform(struct?: ServicecatalogProvisionedProductTimeoutsOutputReference | ServicecatalogProvisionedProductTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function servicecatalogProvisionedProductTimeoutsToTerraform(struct?: ServicecatalogProvisionedProductTimeoutsOutputReference | ServicecatalogProvisionedProductTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -341,7 +341,7 @@ export class ServicecatalogProvisionedProductTimeoutsOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -504,7 +504,7 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
 
   // cloudwatch_dashboard_names - computed: true, optional: false, required: false
   public get cloudwatchDashboardNames() {
-    return this.getListAttribute('cloudwatch_dashboard_names');
+    return cdktf.Fn.tolist(this.getListAttribute('cloudwatch_dashboard_names'));
   }
 
   // created_time - computed: true, optional: false, required: false
@@ -520,7 +520,7 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   // ignore_errors - computed: false, optional: true, required: false
   private _ignoreErrors?: boolean | cdktf.IResolvable; 
   public get ignoreErrors() {
-    return this.getBooleanAttribute('ignore_errors') as any;
+    return this.getBooleanAttribute('ignore_errors');
   }
   public set ignoreErrors(value: boolean | cdktf.IResolvable) {
     this._ignoreErrors = value;
@@ -681,7 +681,7 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   // retain_physical_resources - computed: false, optional: true, required: false
   private _retainPhysicalResources?: boolean | cdktf.IResolvable; 
   public get retainPhysicalResources() {
-    return this.getBooleanAttribute('retain_physical_resources') as any;
+    return this.getBooleanAttribute('retain_physical_resources');
   }
   public set retainPhysicalResources(value: boolean | cdktf.IResolvable) {
     this._retainPhysicalResources = value;
@@ -705,12 +705,11 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -722,12 +721,11 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -744,12 +742,12 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   }
 
   // provisioning_parameters - computed: false, optional: true, required: false
-  private _provisioningParameters?: ServicecatalogProvisionedProductProvisioningParameters[]; 
+  private _provisioningParameters?: ServicecatalogProvisionedProductProvisioningParameters[] | cdktf.IResolvable; 
   public get provisioningParameters() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('provisioning_parameters') as any;
+    return this.interpolationForAttribute('provisioning_parameters');
   }
-  public set provisioningParameters(value: ServicecatalogProvisionedProductProvisioningParameters[]) {
+  public set provisioningParameters(value: ServicecatalogProvisionedProductProvisioningParameters[] | cdktf.IResolvable) {
     this._provisioningParameters = value;
   }
   public resetProvisioningParameters() {
@@ -761,7 +759,7 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   }
 
   // stack_set_provisioning_preferences - computed: false, optional: true, required: false
-  private _stackSetProvisioningPreferences = new ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference(this as any, "stack_set_provisioning_preferences", true);
+  private _stackSetProvisioningPreferences = new ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference(this, "stack_set_provisioning_preferences", true);
   public get stackSetProvisioningPreferences() {
     return this._stackSetProvisioningPreferences;
   }
@@ -777,7 +775,7 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ServicecatalogProvisionedProductTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ServicecatalogProvisionedProductTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -809,8 +807,8 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
       provisioning_artifact_id: cdktf.stringToTerraform(this._provisioningArtifactId),
       provisioning_artifact_name: cdktf.stringToTerraform(this._provisioningArtifactName),
       retain_physical_resources: cdktf.booleanToTerraform(this._retainPhysicalResources),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       provisioning_parameters: cdktf.listMapper(servicecatalogProvisionedProductProvisioningParametersToTerraform)(this._provisioningParameters),
       stack_set_provisioning_preferences: servicecatalogProvisionedProductStackSetProvisioningPreferencesToTerraform(this._stackSetProvisioningPreferences.internalValue),
       timeouts: servicecatalogProvisionedProductTimeoutsToTerraform(this._timeouts.internalValue),

@@ -10,7 +10,7 @@ export interface DataAwsEc2TransitGatewayVpnAttachmentConfig extends cdktf.Terra
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment#tags DataAwsEc2TransitGatewayVpnAttachment#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment#transit_gateway_id DataAwsEc2TransitGatewayVpnAttachment#transit_gateway_id}
   */
@@ -24,7 +24,7 @@ export interface DataAwsEc2TransitGatewayVpnAttachmentConfig extends cdktf.Terra
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpn_attachment#filter DataAwsEc2TransitGatewayVpnAttachment#filter}
   */
-  readonly filter?: DataAwsEc2TransitGatewayVpnAttachmentFilter[];
+  readonly filter?: DataAwsEc2TransitGatewayVpnAttachmentFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsEc2TransitGatewayVpnAttachmentFilter {
   /**
@@ -37,8 +37,8 @@ export interface DataAwsEc2TransitGatewayVpnAttachmentFilter {
   readonly values: string[];
 }
 
-export function dataAwsEc2TransitGatewayVpnAttachmentFilterToTerraform(struct?: DataAwsEc2TransitGatewayVpnAttachmentFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsEc2TransitGatewayVpnAttachmentFilterToTerraform(struct?: DataAwsEc2TransitGatewayVpnAttachmentFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -97,12 +97,11 @@ export class DataAwsEc2TransitGatewayVpnAttachment extends cdktf.TerraformDataSo
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -146,12 +145,12 @@ export class DataAwsEc2TransitGatewayVpnAttachment extends cdktf.TerraformDataSo
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsEc2TransitGatewayVpnAttachmentFilter[]; 
+  private _filter?: DataAwsEc2TransitGatewayVpnAttachmentFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsEc2TransitGatewayVpnAttachmentFilter[]) {
+  public set filter(value: DataAwsEc2TransitGatewayVpnAttachmentFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -168,7 +167,7 @@ export class DataAwsEc2TransitGatewayVpnAttachment extends cdktf.TerraformDataSo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
       vpn_connection_id: cdktf.stringToTerraform(this._vpnConnectionId),
       filter: cdktf.listMapper(dataAwsEc2TransitGatewayVpnAttachmentFilterToTerraform)(this._filter),

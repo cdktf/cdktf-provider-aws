@@ -18,17 +18,17 @@ export interface ImagebuilderDistributionConfigurationConfig extends cdktf.Terra
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#tags ImagebuilderDistributionConfiguration#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#tags_all ImagebuilderDistributionConfiguration#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * distribution block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#distribution ImagebuilderDistributionConfiguration#distribution}
   */
-  readonly distribution: ImagebuilderDistributionConfigurationDistribution[];
+  readonly distribution: ImagebuilderDistributionConfigurationDistribution[] | cdktf.IResolvable;
 }
 export interface ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission {
   /**
@@ -42,7 +42,7 @@ export interface ImagebuilderDistributionConfigurationDistributionAmiDistributio
 }
 
 export function imagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference | ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -60,7 +60,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -94,7 +94,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   // user_groups - computed: false, optional: true, required: false
   private _userGroups?: string[]; 
   public get userGroups() {
-    return this.getListAttribute('user_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('user_groups'));
   }
   public set userGroups(value: string[]) {
     this._userGroups = value;
@@ -110,7 +110,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   // user_ids - computed: false, optional: true, required: false
   private _userIds?: string[]; 
   public get userIds() {
-    return this.getListAttribute('user_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('user_ids'));
   }
   public set userIds(value: string[]) {
     this._userIds = value;
@@ -127,7 +127,7 @@ export interface ImagebuilderDistributionConfigurationDistributionAmiDistributio
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#ami_tags ImagebuilderDistributionConfiguration#ami_tags}
   */
-  readonly amiTags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly amiTags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#description ImagebuilderDistributionConfiguration#description}
   */
@@ -153,12 +153,12 @@ export interface ImagebuilderDistributionConfigurationDistributionAmiDistributio
 }
 
 export function imagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference | ImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ami_tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.amiTags),
+    ami_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.amiTags),
     description: cdktf.stringToTerraform(struct!.description),
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
     name: cdktf.stringToTerraform(struct!.name),
@@ -175,7 +175,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -231,12 +231,11 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   }
 
   // ami_tags - computed: false, optional: true, required: false
-  private _amiTags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _amiTags?: { [key: string]: string }; 
   public get amiTags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ami_tags') as any;
+    return this.getStringMapAttribute('ami_tags');
   }
-  public set amiTags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set amiTags(value: { [key: string]: string }) {
     this._amiTags = value;
   }
   public resetAmiTags() {
@@ -298,7 +297,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   // target_account_ids - computed: false, optional: true, required: false
   private _targetAccountIds?: string[]; 
   public get targetAccountIds() {
-    return this.getListAttribute('target_account_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('target_account_ids'));
   }
   public set targetAccountIds(value: string[]) {
     this._targetAccountIds = value;
@@ -312,7 +311,7 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   }
 
   // launch_permission - computed: false, optional: true, required: false
-  private _launchPermission = new ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference(this as any, "launch_permission", true);
+  private _launchPermission = new ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference(this, "launch_permission", true);
   public get launchPermission() {
     return this._launchPermission;
   }
@@ -344,8 +343,8 @@ export interface ImagebuilderDistributionConfigurationDistribution {
   readonly amiDistributionConfiguration?: ImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration;
 }
 
-export function imagebuilderDistributionConfigurationDistributionToTerraform(struct?: ImagebuilderDistributionConfigurationDistribution): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function imagebuilderDistributionConfigurationDistributionToTerraform(struct?: ImagebuilderDistributionConfigurationDistribution | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -450,12 +449,11 @@ export class ImagebuilderDistributionConfiguration extends cdktf.TerraformResour
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -467,12 +465,11 @@ export class ImagebuilderDistributionConfiguration extends cdktf.TerraformResour
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -484,12 +481,12 @@ export class ImagebuilderDistributionConfiguration extends cdktf.TerraformResour
   }
 
   // distribution - computed: false, optional: false, required: true
-  private _distribution?: ImagebuilderDistributionConfigurationDistribution[]; 
+  private _distribution?: ImagebuilderDistributionConfigurationDistribution[] | cdktf.IResolvable; 
   public get distribution() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('distribution') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('distribution')));
   }
-  public set distribution(value: ImagebuilderDistributionConfigurationDistribution[]) {
+  public set distribution(value: ImagebuilderDistributionConfigurationDistribution[] | cdktf.IResolvable) {
     this._distribution = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -505,8 +502,8 @@ export class ImagebuilderDistributionConfiguration extends cdktf.TerraformResour
     return {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       distribution: cdktf.listMapper(imagebuilderDistributionConfigurationDistributionToTerraform)(this._distribution),
     };
   }

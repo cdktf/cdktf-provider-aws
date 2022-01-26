@@ -14,13 +14,13 @@ export interface DataAwsInstancesConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instances#instance_tags DataAwsInstances#instance_tags}
   */
-  readonly instanceTags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly instanceTags?: { [key: string]: string };
   /**
   * filter block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instances#filter DataAwsInstances#filter}
   */
-  readonly filter?: DataAwsInstancesFilter[];
+  readonly filter?: DataAwsInstancesFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsInstancesFilter {
   /**
@@ -33,8 +33,8 @@ export interface DataAwsInstancesFilter {
   readonly values: string[];
 }
 
-export function dataAwsInstancesFilterToTerraform(struct?: DataAwsInstancesFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsInstancesFilterToTerraform(struct?: DataAwsInstancesFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -99,7 +99,7 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   // instance_state_names - computed: false, optional: true, required: false
   private _instanceStateNames?: string[]; 
   public get instanceStateNames() {
-    return this.getListAttribute('instance_state_names');
+    return cdktf.Fn.tolist(this.getListAttribute('instance_state_names'));
   }
   public set instanceStateNames(value: string[]) {
     this._instanceStateNames = value;
@@ -113,12 +113,11 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   }
 
   // instance_tags - computed: true, optional: true, required: false
-  private _instanceTags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _instanceTags?: { [key: string]: string }; 
   public get instanceTags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('instance_tags') as any;
+    return this.getStringMapAttribute('instance_tags');
   }
-  public set instanceTags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set instanceTags(value: { [key: string]: string }) {
     this._instanceTags = value;
   }
   public resetInstanceTags() {
@@ -140,12 +139,12 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsInstancesFilter[]; 
+  private _filter?: DataAwsInstancesFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsInstancesFilter[]) {
+  public set filter(value: DataAwsInstancesFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -163,7 +162,7 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       instance_state_names: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceStateNames),
-      instance_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._instanceTags),
+      instance_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._instanceTags),
       filter: cdktf.listMapper(dataAwsInstancesFilterToTerraform)(this._filter),
     };
   }

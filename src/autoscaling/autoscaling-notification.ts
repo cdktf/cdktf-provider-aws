@@ -65,7 +65,7 @@ export class AutoscalingNotification extends cdktf.TerraformResource {
   // group_names - computed: false, optional: false, required: true
   private _groupNames?: string[]; 
   public get groupNames() {
-    return this.getListAttribute('group_names');
+    return cdktf.Fn.tolist(this.getListAttribute('group_names'));
   }
   public set groupNames(value: string[]) {
     this._groupNames = value;
@@ -83,7 +83,7 @@ export class AutoscalingNotification extends cdktf.TerraformResource {
   // notifications - computed: false, optional: false, required: true
   private _notifications?: string[]; 
   public get notifications() {
-    return this.getListAttribute('notifications');
+    return cdktf.Fn.tolist(this.getListAttribute('notifications'));
   }
   public set notifications(value: string[]) {
     this._notifications = value;

@@ -38,7 +38,7 @@ export interface ConfigConfigurationRecorderRecordingGroup {
 }
 
 export function configConfigurationRecorderRecordingGroupToTerraform(struct?: ConfigConfigurationRecorderRecordingGroupOutputReference | ConfigConfigurationRecorderRecordingGroup): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -57,7 +57,7 @@ export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -97,7 +97,7 @@ export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cd
   // all_supported - computed: false, optional: true, required: false
   private _allSupported?: boolean | cdktf.IResolvable; 
   public get allSupported() {
-    return this.getBooleanAttribute('all_supported') as any;
+    return this.getBooleanAttribute('all_supported');
   }
   public set allSupported(value: boolean | cdktf.IResolvable) {
     this._allSupported = value;
@@ -113,7 +113,7 @@ export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cd
   // include_global_resource_types - computed: false, optional: true, required: false
   private _includeGlobalResourceTypes?: boolean | cdktf.IResolvable; 
   public get includeGlobalResourceTypes() {
-    return this.getBooleanAttribute('include_global_resource_types') as any;
+    return this.getBooleanAttribute('include_global_resource_types');
   }
   public set includeGlobalResourceTypes(value: boolean | cdktf.IResolvable) {
     this._includeGlobalResourceTypes = value;
@@ -129,7 +129,7 @@ export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cd
   // resource_types - computed: false, optional: true, required: false
   private _resourceTypes?: string[]; 
   public get resourceTypes() {
-    return this.getListAttribute('resource_types');
+    return cdktf.Fn.tolist(this.getListAttribute('resource_types'));
   }
   public set resourceTypes(value: string[]) {
     this._resourceTypes = value;
@@ -219,7 +219,7 @@ export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
   }
 
   // recording_group - computed: false, optional: true, required: false
-  private _recordingGroup = new ConfigConfigurationRecorderRecordingGroupOutputReference(this as any, "recording_group", true);
+  private _recordingGroup = new ConfigConfigurationRecorderRecordingGroupOutputReference(this, "recording_group", true);
   public get recordingGroup() {
     return this._recordingGroup;
   }

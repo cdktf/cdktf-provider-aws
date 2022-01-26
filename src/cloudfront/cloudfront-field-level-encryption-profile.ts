@@ -30,7 +30,7 @@ export interface CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFie
 }
 
 export function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsToTerraform(struct?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsOutputReference | CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatterns): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -47,7 +47,7 @@ export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPa
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -75,7 +75,7 @@ export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPa
   // items - computed: false, optional: true, required: false
   private _items?: string[]; 
   public get items() {
-    return this.getListAttribute('items');
+    return cdktf.Fn.tolist(this.getListAttribute('items'));
   }
   public set items(value: string[]) {
     this._items = value;
@@ -105,8 +105,8 @@ export interface CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems {
   readonly fieldPatterns: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatterns;
 }
 
-export function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsToTerraform(struct?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsToTerraform(struct?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -123,11 +123,11 @@ export interface CloudfrontFieldLevelEncryptionProfileEncryptionEntities {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_profile#items CloudfrontFieldLevelEncryptionProfile#items}
   */
-  readonly items?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems[];
+  readonly items?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems[] | cdktf.IResolvable;
 }
 
 export function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesToTerraform(struct?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference | CloudfrontFieldLevelEncryptionProfileEncryptionEntities): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -144,7 +144,7 @@ export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputRefere
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -170,12 +170,12 @@ export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputRefere
   }
 
   // items - computed: false, optional: true, required: false
-  private _items?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems[]; 
+  private _items?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems[] | cdktf.IResolvable; 
   public get items() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('items') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('items')));
   }
-  public set items(value: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems[]) {
+  public set items(value: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems[] | cdktf.IResolvable) {
     this._items = value;
   }
   public resetItems() {
@@ -273,7 +273,7 @@ export class CloudfrontFieldLevelEncryptionProfile extends cdktf.TerraformResour
   }
 
   // encryption_entities - computed: false, optional: false, required: true
-  private _encryptionEntities = new CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference(this as any, "encryption_entities", true);
+  private _encryptionEntities = new CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference(this, "encryption_entities", true);
   public get encryptionEntities() {
     return this._encryptionEntities;
   }

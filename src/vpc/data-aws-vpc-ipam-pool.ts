@@ -10,7 +10,7 @@ export interface DataAwsVpcIpamPoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool#allocation_resource_tags DataAwsVpcIpamPool#allocation_resource_tags}
   */
-  readonly allocationResourceTags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly allocationResourceTags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool#id DataAwsVpcIpamPool#id}
   */
@@ -22,13 +22,13 @@ export interface DataAwsVpcIpamPoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool#tags DataAwsVpcIpamPool#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * filter block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool#filter DataAwsVpcIpamPool#filter}
   */
-  readonly filter?: DataAwsVpcIpamPoolFilter[];
+  readonly filter?: DataAwsVpcIpamPoolFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsVpcIpamPoolFilter {
   /**
@@ -41,8 +41,8 @@ export interface DataAwsVpcIpamPoolFilter {
   readonly values: string[];
 }
 
-export function dataAwsVpcIpamPoolFilterToTerraform(struct?: DataAwsVpcIpamPoolFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsVpcIpamPoolFilterToTerraform(struct?: DataAwsVpcIpamPoolFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -117,12 +117,11 @@ export class DataAwsVpcIpamPool extends cdktf.TerraformDataSource {
   }
 
   // allocation_resource_tags - computed: true, optional: true, required: false
-  private _allocationResourceTags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _allocationResourceTags?: { [key: string]: string }; 
   public get allocationResourceTags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('allocation_resource_tags') as any;
+    return this.getStringMapAttribute('allocation_resource_tags');
   }
-  public set allocationResourceTags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set allocationResourceTags(value: { [key: string]: string }) {
     this._allocationResourceTags = value;
   }
   public resetAllocationResourceTags() {
@@ -140,7 +139,7 @@ export class DataAwsVpcIpamPool extends cdktf.TerraformDataSource {
 
   // auto_import - computed: true, optional: false, required: false
   public get autoImport() {
-    return this.getBooleanAttribute('auto_import') as any;
+    return this.getBooleanAttribute('auto_import');
   }
 
   // aws_service - computed: true, optional: false, required: false
@@ -207,7 +206,7 @@ export class DataAwsVpcIpamPool extends cdktf.TerraformDataSource {
 
   // publicly_advertisable - computed: true, optional: false, required: false
   public get publiclyAdvertisable() {
-    return this.getBooleanAttribute('publicly_advertisable') as any;
+    return this.getBooleanAttribute('publicly_advertisable');
   }
 
   // source_ipam_pool_id - computed: true, optional: false, required: false
@@ -221,12 +220,11 @@ export class DataAwsVpcIpamPool extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -238,12 +236,12 @@ export class DataAwsVpcIpamPool extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsVpcIpamPoolFilter[]; 
+  private _filter?: DataAwsVpcIpamPoolFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsVpcIpamPoolFilter[]) {
+  public set filter(value: DataAwsVpcIpamPoolFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -260,10 +258,10 @@ export class DataAwsVpcIpamPool extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocation_resource_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._allocationResourceTags),
+      allocation_resource_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._allocationResourceTags),
       id: cdktf.stringToTerraform(this._id),
       ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsVpcIpamPoolFilterToTerraform)(this._filter),
     };
   }

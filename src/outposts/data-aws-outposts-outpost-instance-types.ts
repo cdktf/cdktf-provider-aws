@@ -72,7 +72,7 @@ export class DataAwsOutpostsOutpostInstanceTypes extends cdktf.TerraformDataSour
 
   // instance_types - computed: true, optional: false, required: false
   public get instanceTypes() {
-    return this.getListAttribute('instance_types');
+    return cdktf.Fn.tolist(this.getListAttribute('instance_types'));
   }
 
   // =========

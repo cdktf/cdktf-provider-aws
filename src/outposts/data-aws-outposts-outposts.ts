@@ -69,7 +69,7 @@ export class DataAwsOutpostsOutposts extends cdktf.TerraformDataSource {
 
   // arns - computed: true, optional: false, required: false
   public get arns() {
-    return this.getListAttribute('arns');
+    return cdktf.Fn.tolist(this.getListAttribute('arns'));
   }
 
   // availability_zone - computed: true, optional: true, required: false
@@ -111,7 +111,7 @@ export class DataAwsOutpostsOutposts extends cdktf.TerraformDataSource {
 
   // ids - computed: true, optional: false, required: false
   public get ids() {
-    return this.getListAttribute('ids');
+    return cdktf.Fn.tolist(this.getListAttribute('ids'));
   }
 
   // owner_id - computed: true, optional: true, required: false

@@ -126,7 +126,7 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
 
   // encrypted - computed: true, optional: false, required: false
   public get encrypted() {
-    return this.getBooleanAttribute('encrypted') as any;
+    return this.getBooleanAttribute('encrypted');
   }
 
   // engine - computed: true, optional: false, required: false
@@ -147,7 +147,7 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
   // include_public - computed: false, optional: true, required: false
   private _includePublic?: boolean | cdktf.IResolvable; 
   public get includePublic() {
-    return this.getBooleanAttribute('include_public') as any;
+    return this.getBooleanAttribute('include_public');
   }
   public set includePublic(value: boolean | cdktf.IResolvable) {
     this._includePublic = value;
@@ -163,7 +163,7 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
   // include_shared - computed: false, optional: true, required: false
   private _includeShared?: boolean | cdktf.IResolvable; 
   public get includeShared() {
-    return this.getBooleanAttribute('include_shared') as any;
+    return this.getBooleanAttribute('include_shared');
   }
   public set includeShared(value: boolean | cdktf.IResolvable) {
     this._includeShared = value;
@@ -194,7 +194,7 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
   // most_recent - computed: false, optional: true, required: false
   private _mostRecent?: boolean | cdktf.IResolvable; 
   public get mostRecent() {
-    return this.getBooleanAttribute('most_recent') as any;
+    return this.getBooleanAttribute('most_recent');
   }
   public set mostRecent(value: boolean | cdktf.IResolvable) {
     this._mostRecent = value;

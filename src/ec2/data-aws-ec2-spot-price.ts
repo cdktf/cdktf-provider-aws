@@ -20,7 +20,7 @@ export interface DataAwsEc2SpotPriceConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_spot_price#filter DataAwsEc2SpotPrice#filter}
   */
-  readonly filter?: DataAwsEc2SpotPriceFilter[];
+  readonly filter?: DataAwsEc2SpotPriceFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsEc2SpotPriceFilter {
   /**
@@ -33,8 +33,8 @@ export interface DataAwsEc2SpotPriceFilter {
   readonly values: string[];
 }
 
-export function dataAwsEc2SpotPriceFilterToTerraform(struct?: DataAwsEc2SpotPriceFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsEc2SpotPriceFilterToTerraform(struct?: DataAwsEc2SpotPriceFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -134,12 +134,12 @@ export class DataAwsEc2SpotPrice extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsEc2SpotPriceFilter[]; 
+  private _filter?: DataAwsEc2SpotPriceFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsEc2SpotPriceFilter[]) {
+  public set filter(value: DataAwsEc2SpotPriceFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {

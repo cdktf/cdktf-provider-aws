@@ -42,11 +42,11 @@ export interface DxPublicVirtualInterfaceConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_public_virtual_interface#tags DxPublicVirtualInterface#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_public_virtual_interface#tags_all DxPublicVirtualInterface#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_public_virtual_interface#vlan DxPublicVirtualInterface#vlan}
   */
@@ -69,8 +69,8 @@ export interface DxPublicVirtualInterfaceTimeouts {
   readonly delete?: string;
 }
 
-export function dxPublicVirtualInterfaceTimeoutsToTerraform(struct?: DxPublicVirtualInterfaceTimeoutsOutputReference | DxPublicVirtualInterfaceTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dxPublicVirtualInterfaceTimeoutsToTerraform(struct?: DxPublicVirtualInterfaceTimeoutsOutputReference | DxPublicVirtualInterfaceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -88,7 +88,7 @@ export class DxPublicVirtualInterfaceTimeoutsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -325,7 +325,7 @@ export class DxPublicVirtualInterface extends cdktf.TerraformResource {
   // route_filter_prefixes - computed: false, optional: false, required: true
   private _routeFilterPrefixes?: string[]; 
   public get routeFilterPrefixes() {
-    return this.getListAttribute('route_filter_prefixes');
+    return cdktf.Fn.tolist(this.getListAttribute('route_filter_prefixes'));
   }
   public set routeFilterPrefixes(value: string[]) {
     this._routeFilterPrefixes = value;
@@ -336,12 +336,11 @@ export class DxPublicVirtualInterface extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -353,12 +352,11 @@ export class DxPublicVirtualInterface extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -383,7 +381,7 @@ export class DxPublicVirtualInterface extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DxPublicVirtualInterfaceTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DxPublicVirtualInterfaceTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -412,8 +410,8 @@ export class DxPublicVirtualInterface extends cdktf.TerraformResource {
       customer_address: cdktf.stringToTerraform(this._customerAddress),
       name: cdktf.stringToTerraform(this._name),
       route_filter_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._routeFilterPrefixes),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vlan: cdktf.numberToTerraform(this._vlan),
       timeouts: dxPublicVirtualInterfaceTimeoutsToTerraform(this._timeouts.internalValue),
     };

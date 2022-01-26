@@ -30,7 +30,7 @@ export interface GuarddutyOrganizationConfigurationDatasourcesS3Logs {
 }
 
 export function guarddutyOrganizationConfigurationDatasourcesS3LogsToTerraform(struct?: GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference | GuarddutyOrganizationConfigurationDatasourcesS3Logs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -47,7 +47,7 @@ export class GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -75,7 +75,7 @@ export class GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference 
   // auto_enable - computed: false, optional: false, required: true
   private _autoEnable?: boolean | cdktf.IResolvable; 
   public get autoEnable() {
-    return this.getBooleanAttribute('auto_enable') as any;
+    return this.getBooleanAttribute('auto_enable');
   }
   public set autoEnable(value: boolean | cdktf.IResolvable) {
     this._autoEnable = value;
@@ -95,7 +95,7 @@ export interface GuarddutyOrganizationConfigurationDatasources {
 }
 
 export function guarddutyOrganizationConfigurationDatasourcesToTerraform(struct?: GuarddutyOrganizationConfigurationDatasourcesOutputReference | GuarddutyOrganizationConfigurationDatasources): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -112,7 +112,7 @@ export class GuarddutyOrganizationConfigurationDatasourcesOutputReference extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -138,7 +138,7 @@ export class GuarddutyOrganizationConfigurationDatasourcesOutputReference extend
   }
 
   // s3_logs - computed: false, optional: true, required: false
-  private _s3Logs = new GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference(this as any, "s3_logs", true);
+  private _s3Logs = new GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference(this, "s3_logs", true);
   public get s3Logs() {
     return this._s3Logs;
   }
@@ -198,7 +198,7 @@ export class GuarddutyOrganizationConfiguration extends cdktf.TerraformResource 
   // auto_enable - computed: false, optional: false, required: true
   private _autoEnable?: boolean | cdktf.IResolvable; 
   public get autoEnable() {
-    return this.getBooleanAttribute('auto_enable') as any;
+    return this.getBooleanAttribute('auto_enable');
   }
   public set autoEnable(value: boolean | cdktf.IResolvable) {
     this._autoEnable = value;
@@ -227,7 +227,7 @@ export class GuarddutyOrganizationConfiguration extends cdktf.TerraformResource 
   }
 
   // datasources - computed: false, optional: true, required: false
-  private _datasources = new GuarddutyOrganizationConfigurationDatasourcesOutputReference(this as any, "datasources", true);
+  private _datasources = new GuarddutyOrganizationConfigurationDatasourcesOutputReference(this, "datasources", true);
   public get datasources() {
     return this._datasources;
   }

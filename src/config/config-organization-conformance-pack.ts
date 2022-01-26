@@ -36,7 +36,7 @@ export interface ConfigOrganizationConformancePackConfig extends cdktf.Terraform
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_organization_conformance_pack#input_parameter ConfigOrganizationConformancePack#input_parameter}
   */
-  readonly inputParameter?: ConfigOrganizationConformancePackInputParameter[];
+  readonly inputParameter?: ConfigOrganizationConformancePackInputParameter[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -55,8 +55,8 @@ export interface ConfigOrganizationConformancePackInputParameter {
   readonly parameterValue: string;
 }
 
-export function configOrganizationConformancePackInputParameterToTerraform(struct?: ConfigOrganizationConformancePackInputParameter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function configOrganizationConformancePackInputParameterToTerraform(struct?: ConfigOrganizationConformancePackInputParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -81,8 +81,8 @@ export interface ConfigOrganizationConformancePackTimeouts {
   readonly update?: string;
 }
 
-export function configOrganizationConformancePackTimeoutsToTerraform(struct?: ConfigOrganizationConformancePackTimeoutsOutputReference | ConfigOrganizationConformancePackTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function configOrganizationConformancePackTimeoutsToTerraform(struct?: ConfigOrganizationConformancePackTimeoutsOutputReference | ConfigOrganizationConformancePackTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -101,7 +101,7 @@ export class ConfigOrganizationConformancePackTimeoutsOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -273,7 +273,7 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
   // excluded_accounts - computed: false, optional: true, required: false
   private _excludedAccounts?: string[]; 
   public get excludedAccounts() {
-    return this.getListAttribute('excluded_accounts');
+    return cdktf.Fn.tolist(this.getListAttribute('excluded_accounts'));
   }
   public set excludedAccounts(value: string[]) {
     this._excludedAccounts = value;
@@ -337,12 +337,12 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
   }
 
   // input_parameter - computed: false, optional: true, required: false
-  private _inputParameter?: ConfigOrganizationConformancePackInputParameter[]; 
+  private _inputParameter?: ConfigOrganizationConformancePackInputParameter[] | cdktf.IResolvable; 
   public get inputParameter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('input_parameter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('input_parameter')));
   }
-  public set inputParameter(value: ConfigOrganizationConformancePackInputParameter[]) {
+  public set inputParameter(value: ConfigOrganizationConformancePackInputParameter[] | cdktf.IResolvable) {
     this._inputParameter = value;
   }
   public resetInputParameter() {
@@ -354,7 +354,7 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ConfigOrganizationConformancePackTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ConfigOrganizationConformancePackTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

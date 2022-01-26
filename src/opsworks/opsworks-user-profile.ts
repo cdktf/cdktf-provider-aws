@@ -70,7 +70,7 @@ export class OpsworksUserProfile extends cdktf.TerraformResource {
   // allow_self_management - computed: false, optional: true, required: false
   private _allowSelfManagement?: boolean | cdktf.IResolvable; 
   public get allowSelfManagement() {
-    return this.getBooleanAttribute('allow_self_management') as any;
+    return this.getBooleanAttribute('allow_self_management');
   }
   public set allowSelfManagement(value: boolean | cdktf.IResolvable) {
     this._allowSelfManagement = value;

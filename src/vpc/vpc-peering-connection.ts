@@ -26,11 +26,11 @@ export interface VpcPeeringConnectionConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection#tags VpcPeeringConnection#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection#tags_all VpcPeeringConnection#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection#vpc_id VpcPeeringConnection#vpc_id}
   */
@@ -70,7 +70,7 @@ export interface VpcPeeringConnectionAccepter {
 }
 
 export function vpcPeeringConnectionAccepterToTerraform(struct?: VpcPeeringConnectionAccepterOutputReference | VpcPeeringConnectionAccepter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -89,7 +89,7 @@ export class VpcPeeringConnectionAccepterOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -129,7 +129,7 @@ export class VpcPeeringConnectionAccepterOutputReference extends cdktf.ComplexOb
   // allow_classic_link_to_remote_vpc - computed: false, optional: true, required: false
   private _allowClassicLinkToRemoteVpc?: boolean | cdktf.IResolvable; 
   public get allowClassicLinkToRemoteVpc() {
-    return this.getBooleanAttribute('allow_classic_link_to_remote_vpc') as any;
+    return this.getBooleanAttribute('allow_classic_link_to_remote_vpc');
   }
   public set allowClassicLinkToRemoteVpc(value: boolean | cdktf.IResolvable) {
     this._allowClassicLinkToRemoteVpc = value;
@@ -145,7 +145,7 @@ export class VpcPeeringConnectionAccepterOutputReference extends cdktf.ComplexOb
   // allow_remote_vpc_dns_resolution - computed: false, optional: true, required: false
   private _allowRemoteVpcDnsResolution?: boolean | cdktf.IResolvable; 
   public get allowRemoteVpcDnsResolution() {
-    return this.getBooleanAttribute('allow_remote_vpc_dns_resolution') as any;
+    return this.getBooleanAttribute('allow_remote_vpc_dns_resolution');
   }
   public set allowRemoteVpcDnsResolution(value: boolean | cdktf.IResolvable) {
     this._allowRemoteVpcDnsResolution = value;
@@ -161,7 +161,7 @@ export class VpcPeeringConnectionAccepterOutputReference extends cdktf.ComplexOb
   // allow_vpc_to_remote_classic_link - computed: false, optional: true, required: false
   private _allowVpcToRemoteClassicLink?: boolean | cdktf.IResolvable; 
   public get allowVpcToRemoteClassicLink() {
-    return this.getBooleanAttribute('allow_vpc_to_remote_classic_link') as any;
+    return this.getBooleanAttribute('allow_vpc_to_remote_classic_link');
   }
   public set allowVpcToRemoteClassicLink(value: boolean | cdktf.IResolvable) {
     this._allowVpcToRemoteClassicLink = value;
@@ -190,7 +190,7 @@ export interface VpcPeeringConnectionRequester {
 }
 
 export function vpcPeeringConnectionRequesterToTerraform(struct?: VpcPeeringConnectionRequesterOutputReference | VpcPeeringConnectionRequester): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -209,7 +209,7 @@ export class VpcPeeringConnectionRequesterOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -249,7 +249,7 @@ export class VpcPeeringConnectionRequesterOutputReference extends cdktf.ComplexO
   // allow_classic_link_to_remote_vpc - computed: false, optional: true, required: false
   private _allowClassicLinkToRemoteVpc?: boolean | cdktf.IResolvable; 
   public get allowClassicLinkToRemoteVpc() {
-    return this.getBooleanAttribute('allow_classic_link_to_remote_vpc') as any;
+    return this.getBooleanAttribute('allow_classic_link_to_remote_vpc');
   }
   public set allowClassicLinkToRemoteVpc(value: boolean | cdktf.IResolvable) {
     this._allowClassicLinkToRemoteVpc = value;
@@ -265,7 +265,7 @@ export class VpcPeeringConnectionRequesterOutputReference extends cdktf.ComplexO
   // allow_remote_vpc_dns_resolution - computed: false, optional: true, required: false
   private _allowRemoteVpcDnsResolution?: boolean | cdktf.IResolvable; 
   public get allowRemoteVpcDnsResolution() {
-    return this.getBooleanAttribute('allow_remote_vpc_dns_resolution') as any;
+    return this.getBooleanAttribute('allow_remote_vpc_dns_resolution');
   }
   public set allowRemoteVpcDnsResolution(value: boolean | cdktf.IResolvable) {
     this._allowRemoteVpcDnsResolution = value;
@@ -281,7 +281,7 @@ export class VpcPeeringConnectionRequesterOutputReference extends cdktf.ComplexO
   // allow_vpc_to_remote_classic_link - computed: false, optional: true, required: false
   private _allowVpcToRemoteClassicLink?: boolean | cdktf.IResolvable; 
   public get allowVpcToRemoteClassicLink() {
-    return this.getBooleanAttribute('allow_vpc_to_remote_classic_link') as any;
+    return this.getBooleanAttribute('allow_vpc_to_remote_classic_link');
   }
   public set allowVpcToRemoteClassicLink(value: boolean | cdktf.IResolvable) {
     this._allowVpcToRemoteClassicLink = value;
@@ -309,8 +309,8 @@ export interface VpcPeeringConnectionTimeouts {
   readonly update?: string;
 }
 
-export function vpcPeeringConnectionTimeoutsToTerraform(struct?: VpcPeeringConnectionTimeoutsOutputReference | VpcPeeringConnectionTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vpcPeeringConnectionTimeoutsToTerraform(struct?: VpcPeeringConnectionTimeoutsOutputReference | VpcPeeringConnectionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -329,7 +329,7 @@ export class VpcPeeringConnectionTimeoutsOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -471,7 +471,7 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
   // auto_accept - computed: false, optional: true, required: false
   private _autoAccept?: boolean | cdktf.IResolvable; 
   public get autoAccept() {
-    return this.getBooleanAttribute('auto_accept') as any;
+    return this.getBooleanAttribute('auto_accept');
   }
   public set autoAccept(value: boolean | cdktf.IResolvable) {
     this._autoAccept = value;
@@ -535,12 +535,11 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -552,12 +551,11 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -582,7 +580,7 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
   }
 
   // accepter - computed: false, optional: true, required: false
-  private _accepter = new VpcPeeringConnectionAccepterOutputReference(this as any, "accepter", true);
+  private _accepter = new VpcPeeringConnectionAccepterOutputReference(this, "accepter", true);
   public get accepter() {
     return this._accepter;
   }
@@ -598,7 +596,7 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
   }
 
   // requester - computed: false, optional: true, required: false
-  private _requester = new VpcPeeringConnectionRequesterOutputReference(this as any, "requester", true);
+  private _requester = new VpcPeeringConnectionRequesterOutputReference(this, "requester", true);
   public get requester() {
     return this._requester;
   }
@@ -614,7 +612,7 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VpcPeeringConnectionTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpcPeeringConnectionTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -639,8 +637,8 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
       peer_owner_id: cdktf.stringToTerraform(this._peerOwnerId),
       peer_region: cdktf.stringToTerraform(this._peerRegion),
       peer_vpc_id: cdktf.stringToTerraform(this._peerVpcId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       accepter: vpcPeeringConnectionAccepterToTerraform(this._accepter.internalValue),
       requester: vpcPeeringConnectionRequesterToTerraform(this._requester.internalValue),

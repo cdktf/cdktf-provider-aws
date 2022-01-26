@@ -77,7 +77,7 @@ export class Route53RecoverycontrolconfigControlPanel extends cdktf.TerraformRes
 
   // default_control_panel - computed: true, optional: false, required: false
   public get defaultControlPanel() {
-    return this.getBooleanAttribute('default_control_panel') as any;
+    return this.getBooleanAttribute('default_control_panel');
   }
 
   // id - computed: true, optional: true, required: false

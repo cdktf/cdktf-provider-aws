@@ -64,7 +64,7 @@ export interface GlueClassifierCsvClassifier {
 }
 
 export function glueClassifierCsvClassifierToTerraform(struct?: GlueClassifierCsvClassifierOutputReference | GlueClassifierCsvClassifier): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -86,7 +86,7 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -144,7 +144,7 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
   // allow_single_column - computed: false, optional: true, required: false
   private _allowSingleColumn?: boolean | cdktf.IResolvable; 
   public get allowSingleColumn() {
-    return this.getBooleanAttribute('allow_single_column') as any;
+    return this.getBooleanAttribute('allow_single_column');
   }
   public set allowSingleColumn(value: boolean | cdktf.IResolvable) {
     this._allowSingleColumn = value;
@@ -192,7 +192,7 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
   // disable_value_trimming - computed: false, optional: true, required: false
   private _disableValueTrimming?: boolean | cdktf.IResolvable; 
   public get disableValueTrimming() {
-    return this.getBooleanAttribute('disable_value_trimming') as any;
+    return this.getBooleanAttribute('disable_value_trimming');
   }
   public set disableValueTrimming(value: boolean | cdktf.IResolvable) {
     this._disableValueTrimming = value;
@@ -253,7 +253,7 @@ export interface GlueClassifierGrokClassifier {
 }
 
 export function glueClassifierGrokClassifierToTerraform(struct?: GlueClassifierGrokClassifierOutputReference | GlueClassifierGrokClassifier): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -272,7 +272,7 @@ export class GlueClassifierGrokClassifierOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -359,7 +359,7 @@ export interface GlueClassifierJsonClassifier {
 }
 
 export function glueClassifierJsonClassifierToTerraform(struct?: GlueClassifierJsonClassifierOutputReference | GlueClassifierJsonClassifier): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -376,7 +376,7 @@ export class GlueClassifierJsonClassifierOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -426,7 +426,7 @@ export interface GlueClassifierXmlClassifier {
 }
 
 export function glueClassifierXmlClassifierToTerraform(struct?: GlueClassifierXmlClassifierOutputReference | GlueClassifierXmlClassifier): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -444,7 +444,7 @@ export class GlueClassifierXmlClassifierOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -564,7 +564,7 @@ export class GlueClassifier extends cdktf.TerraformResource {
   }
 
   // csv_classifier - computed: false, optional: true, required: false
-  private _csvClassifier = new GlueClassifierCsvClassifierOutputReference(this as any, "csv_classifier", true);
+  private _csvClassifier = new GlueClassifierCsvClassifierOutputReference(this, "csv_classifier", true);
   public get csvClassifier() {
     return this._csvClassifier;
   }
@@ -580,7 +580,7 @@ export class GlueClassifier extends cdktf.TerraformResource {
   }
 
   // grok_classifier - computed: false, optional: true, required: false
-  private _grokClassifier = new GlueClassifierGrokClassifierOutputReference(this as any, "grok_classifier", true);
+  private _grokClassifier = new GlueClassifierGrokClassifierOutputReference(this, "grok_classifier", true);
   public get grokClassifier() {
     return this._grokClassifier;
   }
@@ -596,7 +596,7 @@ export class GlueClassifier extends cdktf.TerraformResource {
   }
 
   // json_classifier - computed: false, optional: true, required: false
-  private _jsonClassifier = new GlueClassifierJsonClassifierOutputReference(this as any, "json_classifier", true);
+  private _jsonClassifier = new GlueClassifierJsonClassifierOutputReference(this, "json_classifier", true);
   public get jsonClassifier() {
     return this._jsonClassifier;
   }
@@ -612,7 +612,7 @@ export class GlueClassifier extends cdktf.TerraformResource {
   }
 
   // xml_classifier - computed: false, optional: true, required: false
-  private _xmlClassifier = new GlueClassifierXmlClassifierOutputReference(this as any, "xml_classifier", true);
+  private _xmlClassifier = new GlueClassifierXmlClassifierOutputReference(this, "xml_classifier", true);
   public get xmlClassifier() {
     return this._xmlClassifier;
   }

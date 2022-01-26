@@ -34,11 +34,11 @@ export interface NetworkfirewallFirewallConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall#tags NetworkfirewallFirewall#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall#tags_all NetworkfirewallFirewall#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall#vpc_id NetworkfirewallFirewall#vpc_id}
   */
@@ -48,7 +48,7 @@ export interface NetworkfirewallFirewallConfig extends cdktf.TerraformMetaArgume
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall#subnet_mapping NetworkfirewallFirewall#subnet_mapping}
   */
-  readonly subnetMapping: NetworkfirewallFirewallSubnetMapping[];
+  readonly subnetMapping: NetworkfirewallFirewallSubnetMapping[] | cdktf.IResolvable;
 }
 export class NetworkfirewallFirewallFirewallStatusSyncStatesAttachment extends cdktf.ComplexComputedList {
 
@@ -67,7 +67,7 @@ export class NetworkfirewallFirewallFirewallStatusSyncStates extends cdktf.Compl
   // attachment - computed: true, optional: false, required: false
   public get attachment() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('attachment') as any;
+    return this.interpolationForAttribute('attachment');
   }
 
   // availability_zone - computed: true, optional: false, required: false
@@ -80,7 +80,7 @@ export class NetworkfirewallFirewallFirewallStatus extends cdktf.ComplexComputed
   // sync_states - computed: true, optional: false, required: false
   public get syncStates() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('sync_states') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('sync_states')));
   }
 }
 export interface NetworkfirewallFirewallSubnetMapping {
@@ -90,8 +90,8 @@ export interface NetworkfirewallFirewallSubnetMapping {
   readonly subnetId: string;
 }
 
-export function networkfirewallFirewallSubnetMappingToTerraform(struct?: NetworkfirewallFirewallSubnetMapping): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function networkfirewallFirewallSubnetMappingToTerraform(struct?: NetworkfirewallFirewallSubnetMapping | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -157,7 +157,7 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   // delete_protection - computed: false, optional: true, required: false
   private _deleteProtection?: boolean | cdktf.IResolvable; 
   public get deleteProtection() {
-    return this.getBooleanAttribute('delete_protection') as any;
+    return this.getBooleanAttribute('delete_protection');
   }
   public set deleteProtection(value: boolean | cdktf.IResolvable) {
     this._deleteProtection = value;
@@ -202,7 +202,7 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   // firewall_policy_change_protection - computed: false, optional: true, required: false
   private _firewallPolicyChangeProtection?: boolean | cdktf.IResolvable; 
   public get firewallPolicyChangeProtection() {
-    return this.getBooleanAttribute('firewall_policy_change_protection') as any;
+    return this.getBooleanAttribute('firewall_policy_change_protection');
   }
   public set firewallPolicyChangeProtection(value: boolean | cdktf.IResolvable) {
     this._firewallPolicyChangeProtection = value;
@@ -217,7 +217,7 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
 
   // firewall_status - computed: true, optional: false, required: false
   public firewallStatus(index: string) {
-    return new NetworkfirewallFirewallFirewallStatus(this, 'firewall_status', index);
+    return new NetworkfirewallFirewallFirewallStatus(this, 'firewall_status', index, false);
   }
 
   // id - computed: true, optional: true, required: false
@@ -241,7 +241,7 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   // subnet_change_protection - computed: false, optional: true, required: false
   private _subnetChangeProtection?: boolean | cdktf.IResolvable; 
   public get subnetChangeProtection() {
-    return this.getBooleanAttribute('subnet_change_protection') as any;
+    return this.getBooleanAttribute('subnet_change_protection');
   }
   public set subnetChangeProtection(value: boolean | cdktf.IResolvable) {
     this._subnetChangeProtection = value;
@@ -255,12 +255,11 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -272,12 +271,11 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -307,12 +305,12 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   }
 
   // subnet_mapping - computed: false, optional: false, required: true
-  private _subnetMapping?: NetworkfirewallFirewallSubnetMapping[]; 
+  private _subnetMapping?: NetworkfirewallFirewallSubnetMapping[] | cdktf.IResolvable; 
   public get subnetMapping() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('subnet_mapping') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('subnet_mapping')));
   }
-  public set subnetMapping(value: NetworkfirewallFirewallSubnetMapping[]) {
+  public set subnetMapping(value: NetworkfirewallFirewallSubnetMapping[] | cdktf.IResolvable) {
     this._subnetMapping = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -332,8 +330,8 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
       firewall_policy_change_protection: cdktf.booleanToTerraform(this._firewallPolicyChangeProtection),
       name: cdktf.stringToTerraform(this._name),
       subnet_change_protection: cdktf.booleanToTerraform(this._subnetChangeProtection),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       subnet_mapping: cdktf.listMapper(networkfirewallFirewallSubnetMappingToTerraform)(this._subnetMapping),
     };

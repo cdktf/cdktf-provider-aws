@@ -48,31 +48,31 @@ export interface Route53RecordConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#alias Route53Record#alias}
   */
-  readonly alias?: Route53RecordAlias[];
+  readonly alias?: Route53RecordAlias[] | cdktf.IResolvable;
   /**
   * failover_routing_policy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#failover_routing_policy Route53Record#failover_routing_policy}
   */
-  readonly failoverRoutingPolicy?: Route53RecordFailoverRoutingPolicy[];
+  readonly failoverRoutingPolicy?: Route53RecordFailoverRoutingPolicy[] | cdktf.IResolvable;
   /**
   * geolocation_routing_policy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#geolocation_routing_policy Route53Record#geolocation_routing_policy}
   */
-  readonly geolocationRoutingPolicy?: Route53RecordGeolocationRoutingPolicy[];
+  readonly geolocationRoutingPolicy?: Route53RecordGeolocationRoutingPolicy[] | cdktf.IResolvable;
   /**
   * latency_routing_policy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#latency_routing_policy Route53Record#latency_routing_policy}
   */
-  readonly latencyRoutingPolicy?: Route53RecordLatencyRoutingPolicy[];
+  readonly latencyRoutingPolicy?: Route53RecordLatencyRoutingPolicy[] | cdktf.IResolvable;
   /**
   * weighted_routing_policy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#weighted_routing_policy Route53Record#weighted_routing_policy}
   */
-  readonly weightedRoutingPolicy?: Route53RecordWeightedRoutingPolicy[];
+  readonly weightedRoutingPolicy?: Route53RecordWeightedRoutingPolicy[] | cdktf.IResolvable;
 }
 export interface Route53RecordAlias {
   /**
@@ -89,8 +89,8 @@ export interface Route53RecordAlias {
   readonly zoneId: string;
 }
 
-export function route53RecordAliasToTerraform(struct?: Route53RecordAlias): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function route53RecordAliasToTerraform(struct?: Route53RecordAlias | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -108,8 +108,8 @@ export interface Route53RecordFailoverRoutingPolicy {
   readonly type: string;
 }
 
-export function route53RecordFailoverRoutingPolicyToTerraform(struct?: Route53RecordFailoverRoutingPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function route53RecordFailoverRoutingPolicyToTerraform(struct?: Route53RecordFailoverRoutingPolicy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -133,8 +133,8 @@ export interface Route53RecordGeolocationRoutingPolicy {
   readonly subdivision?: string;
 }
 
-export function route53RecordGeolocationRoutingPolicyToTerraform(struct?: Route53RecordGeolocationRoutingPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function route53RecordGeolocationRoutingPolicyToTerraform(struct?: Route53RecordGeolocationRoutingPolicy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -152,8 +152,8 @@ export interface Route53RecordLatencyRoutingPolicy {
   readonly region: string;
 }
 
-export function route53RecordLatencyRoutingPolicyToTerraform(struct?: Route53RecordLatencyRoutingPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function route53RecordLatencyRoutingPolicyToTerraform(struct?: Route53RecordLatencyRoutingPolicy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -169,8 +169,8 @@ export interface Route53RecordWeightedRoutingPolicy {
   readonly weight: number;
 }
 
-export function route53RecordWeightedRoutingPolicyToTerraform(struct?: Route53RecordWeightedRoutingPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function route53RecordWeightedRoutingPolicyToTerraform(struct?: Route53RecordWeightedRoutingPolicy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -235,7 +235,7 @@ export class Route53Record extends cdktf.TerraformResource {
   // allow_overwrite - computed: true, optional: true, required: false
   private _allowOverwrite?: boolean | cdktf.IResolvable; 
   public get allowOverwrite() {
-    return this.getBooleanAttribute('allow_overwrite') as any;
+    return this.getBooleanAttribute('allow_overwrite');
   }
   public set allowOverwrite(value: boolean | cdktf.IResolvable) {
     this._allowOverwrite = value;
@@ -277,7 +277,7 @@ export class Route53Record extends cdktf.TerraformResource {
   // multivalue_answer_routing_policy - computed: false, optional: true, required: false
   private _multivalueAnswerRoutingPolicy?: boolean | cdktf.IResolvable; 
   public get multivalueAnswerRoutingPolicy() {
-    return this.getBooleanAttribute('multivalue_answer_routing_policy') as any;
+    return this.getBooleanAttribute('multivalue_answer_routing_policy');
   }
   public set multivalueAnswerRoutingPolicy(value: boolean | cdktf.IResolvable) {
     this._multivalueAnswerRoutingPolicy = value;
@@ -306,7 +306,7 @@ export class Route53Record extends cdktf.TerraformResource {
   // records - computed: false, optional: true, required: false
   private _records?: string[]; 
   public get records() {
-    return this.getListAttribute('records');
+    return cdktf.Fn.tolist(this.getListAttribute('records'));
   }
   public set records(value: string[]) {
     this._records = value;
@@ -378,12 +378,12 @@ export class Route53Record extends cdktf.TerraformResource {
   }
 
   // alias - computed: false, optional: true, required: false
-  private _alias?: Route53RecordAlias[]; 
+  private _alias?: Route53RecordAlias[] | cdktf.IResolvable; 
   public get alias() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('alias') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('alias')));
   }
-  public set alias(value: Route53RecordAlias[]) {
+  public set alias(value: Route53RecordAlias[] | cdktf.IResolvable) {
     this._alias = value;
   }
   public resetAlias() {
@@ -395,12 +395,12 @@ export class Route53Record extends cdktf.TerraformResource {
   }
 
   // failover_routing_policy - computed: false, optional: true, required: false
-  private _failoverRoutingPolicy?: Route53RecordFailoverRoutingPolicy[]; 
+  private _failoverRoutingPolicy?: Route53RecordFailoverRoutingPolicy[] | cdktf.IResolvable; 
   public get failoverRoutingPolicy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('failover_routing_policy') as any;
+    return this.interpolationForAttribute('failover_routing_policy');
   }
-  public set failoverRoutingPolicy(value: Route53RecordFailoverRoutingPolicy[]) {
+  public set failoverRoutingPolicy(value: Route53RecordFailoverRoutingPolicy[] | cdktf.IResolvable) {
     this._failoverRoutingPolicy = value;
   }
   public resetFailoverRoutingPolicy() {
@@ -412,12 +412,12 @@ export class Route53Record extends cdktf.TerraformResource {
   }
 
   // geolocation_routing_policy - computed: false, optional: true, required: false
-  private _geolocationRoutingPolicy?: Route53RecordGeolocationRoutingPolicy[]; 
+  private _geolocationRoutingPolicy?: Route53RecordGeolocationRoutingPolicy[] | cdktf.IResolvable; 
   public get geolocationRoutingPolicy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('geolocation_routing_policy') as any;
+    return this.interpolationForAttribute('geolocation_routing_policy');
   }
-  public set geolocationRoutingPolicy(value: Route53RecordGeolocationRoutingPolicy[]) {
+  public set geolocationRoutingPolicy(value: Route53RecordGeolocationRoutingPolicy[] | cdktf.IResolvable) {
     this._geolocationRoutingPolicy = value;
   }
   public resetGeolocationRoutingPolicy() {
@@ -429,12 +429,12 @@ export class Route53Record extends cdktf.TerraformResource {
   }
 
   // latency_routing_policy - computed: false, optional: true, required: false
-  private _latencyRoutingPolicy?: Route53RecordLatencyRoutingPolicy[]; 
+  private _latencyRoutingPolicy?: Route53RecordLatencyRoutingPolicy[] | cdktf.IResolvable; 
   public get latencyRoutingPolicy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('latency_routing_policy') as any;
+    return this.interpolationForAttribute('latency_routing_policy');
   }
-  public set latencyRoutingPolicy(value: Route53RecordLatencyRoutingPolicy[]) {
+  public set latencyRoutingPolicy(value: Route53RecordLatencyRoutingPolicy[] | cdktf.IResolvable) {
     this._latencyRoutingPolicy = value;
   }
   public resetLatencyRoutingPolicy() {
@@ -446,12 +446,12 @@ export class Route53Record extends cdktf.TerraformResource {
   }
 
   // weighted_routing_policy - computed: false, optional: true, required: false
-  private _weightedRoutingPolicy?: Route53RecordWeightedRoutingPolicy[]; 
+  private _weightedRoutingPolicy?: Route53RecordWeightedRoutingPolicy[] | cdktf.IResolvable; 
   public get weightedRoutingPolicy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('weighted_routing_policy') as any;
+    return this.interpolationForAttribute('weighted_routing_policy');
   }
-  public set weightedRoutingPolicy(value: Route53RecordWeightedRoutingPolicy[]) {
+  public set weightedRoutingPolicy(value: Route53RecordWeightedRoutingPolicy[] | cdktf.IResolvable) {
     this._weightedRoutingPolicy = value;
   }
   public resetWeightedRoutingPolicy() {

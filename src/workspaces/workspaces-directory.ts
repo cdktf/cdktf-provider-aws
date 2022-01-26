@@ -22,11 +22,11 @@ export interface WorkspacesDirectoryConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/workspaces_directory#tags WorkspacesDirectory#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/workspaces_directory#tags_all WorkspacesDirectory#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * self_service_permissions block
   * 
@@ -70,7 +70,7 @@ export interface WorkspacesDirectorySelfServicePermissions {
 }
 
 export function workspacesDirectorySelfServicePermissionsToTerraform(struct?: WorkspacesDirectorySelfServicePermissionsOutputReference | WorkspacesDirectorySelfServicePermissions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -91,7 +91,7 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -143,7 +143,7 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
   // change_compute_type - computed: false, optional: true, required: false
   private _changeComputeType?: boolean | cdktf.IResolvable; 
   public get changeComputeType() {
-    return this.getBooleanAttribute('change_compute_type') as any;
+    return this.getBooleanAttribute('change_compute_type');
   }
   public set changeComputeType(value: boolean | cdktf.IResolvable) {
     this._changeComputeType = value;
@@ -159,7 +159,7 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
   // increase_volume_size - computed: false, optional: true, required: false
   private _increaseVolumeSize?: boolean | cdktf.IResolvable; 
   public get increaseVolumeSize() {
-    return this.getBooleanAttribute('increase_volume_size') as any;
+    return this.getBooleanAttribute('increase_volume_size');
   }
   public set increaseVolumeSize(value: boolean | cdktf.IResolvable) {
     this._increaseVolumeSize = value;
@@ -175,7 +175,7 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
   // rebuild_workspace - computed: false, optional: true, required: false
   private _rebuildWorkspace?: boolean | cdktf.IResolvable; 
   public get rebuildWorkspace() {
-    return this.getBooleanAttribute('rebuild_workspace') as any;
+    return this.getBooleanAttribute('rebuild_workspace');
   }
   public set rebuildWorkspace(value: boolean | cdktf.IResolvable) {
     this._rebuildWorkspace = value;
@@ -191,7 +191,7 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
   // restart_workspace - computed: false, optional: true, required: false
   private _restartWorkspace?: boolean | cdktf.IResolvable; 
   public get restartWorkspace() {
-    return this.getBooleanAttribute('restart_workspace') as any;
+    return this.getBooleanAttribute('restart_workspace');
   }
   public set restartWorkspace(value: boolean | cdktf.IResolvable) {
     this._restartWorkspace = value;
@@ -207,7 +207,7 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
   // switch_running_mode - computed: false, optional: true, required: false
   private _switchRunningMode?: boolean | cdktf.IResolvable; 
   public get switchRunningMode() {
-    return this.getBooleanAttribute('switch_running_mode') as any;
+    return this.getBooleanAttribute('switch_running_mode');
   }
   public set switchRunningMode(value: boolean | cdktf.IResolvable) {
     this._switchRunningMode = value;
@@ -256,7 +256,7 @@ export interface WorkspacesDirectoryWorkspaceAccessProperties {
 }
 
 export function workspacesDirectoryWorkspaceAccessPropertiesToTerraform(struct?: WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference | WorkspacesDirectoryWorkspaceAccessProperties): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -280,7 +280,7 @@ export class WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -499,7 +499,7 @@ export interface WorkspacesDirectoryWorkspaceCreationProperties {
 }
 
 export function workspacesDirectoryWorkspaceCreationPropertiesToTerraform(struct?: WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference | WorkspacesDirectoryWorkspaceCreationProperties): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -520,7 +520,7 @@ export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -604,7 +604,7 @@ export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference exten
   // enable_internet_access - computed: false, optional: true, required: false
   private _enableInternetAccess?: boolean | cdktf.IResolvable; 
   public get enableInternetAccess() {
-    return this.getBooleanAttribute('enable_internet_access') as any;
+    return this.getBooleanAttribute('enable_internet_access');
   }
   public set enableInternetAccess(value: boolean | cdktf.IResolvable) {
     this._enableInternetAccess = value;
@@ -620,7 +620,7 @@ export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference exten
   // enable_maintenance_mode - computed: false, optional: true, required: false
   private _enableMaintenanceMode?: boolean | cdktf.IResolvable; 
   public get enableMaintenanceMode() {
-    return this.getBooleanAttribute('enable_maintenance_mode') as any;
+    return this.getBooleanAttribute('enable_maintenance_mode');
   }
   public set enableMaintenanceMode(value: boolean | cdktf.IResolvable) {
     this._enableMaintenanceMode = value;
@@ -636,7 +636,7 @@ export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference exten
   // user_enabled_as_local_administrator - computed: false, optional: true, required: false
   private _userEnabledAsLocalAdministrator?: boolean | cdktf.IResolvable; 
   public get userEnabledAsLocalAdministrator() {
-    return this.getBooleanAttribute('user_enabled_as_local_administrator') as any;
+    return this.getBooleanAttribute('user_enabled_as_local_administrator');
   }
   public set userEnabledAsLocalAdministrator(value: boolean | cdktf.IResolvable) {
     this._userEnabledAsLocalAdministrator = value;
@@ -731,7 +731,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
 
   // dns_ip_addresses - computed: true, optional: false, required: false
   public get dnsIpAddresses() {
-    return this.getListAttribute('dns_ip_addresses');
+    return cdktf.Fn.tolist(this.getListAttribute('dns_ip_addresses'));
   }
 
   // iam_role_id - computed: true, optional: false, required: false
@@ -747,7 +747,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   // ip_group_ids - computed: true, optional: true, required: false
   private _ipGroupIds?: string[]; 
   public get ipGroupIds() {
-    return this.getListAttribute('ip_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('ip_group_ids'));
   }
   public set ipGroupIds(value: string[]) {
     this._ipGroupIds = value;
@@ -768,7 +768,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   // subnet_ids - computed: true, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -782,12 +782,11 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -799,12 +798,11 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -821,7 +819,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   }
 
   // self_service_permissions - computed: false, optional: true, required: false
-  private _selfServicePermissions = new WorkspacesDirectorySelfServicePermissionsOutputReference(this as any, "self_service_permissions", true);
+  private _selfServicePermissions = new WorkspacesDirectorySelfServicePermissionsOutputReference(this, "self_service_permissions", true);
   public get selfServicePermissions() {
     return this._selfServicePermissions;
   }
@@ -837,7 +835,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   }
 
   // workspace_access_properties - computed: false, optional: true, required: false
-  private _workspaceAccessProperties = new WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference(this as any, "workspace_access_properties", true);
+  private _workspaceAccessProperties = new WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference(this, "workspace_access_properties", true);
   public get workspaceAccessProperties() {
     return this._workspaceAccessProperties;
   }
@@ -853,7 +851,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   }
 
   // workspace_creation_properties - computed: false, optional: true, required: false
-  private _workspaceCreationProperties = new WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference(this as any, "workspace_creation_properties", true);
+  private _workspaceCreationProperties = new WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference(this, "workspace_creation_properties", true);
   public get workspaceCreationProperties() {
     return this._workspaceCreationProperties;
   }
@@ -877,8 +875,8 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
       directory_id: cdktf.stringToTerraform(this._directoryId),
       ip_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._ipGroupIds),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       self_service_permissions: workspacesDirectorySelfServicePermissionsToTerraform(this._selfServicePermissions.internalValue),
       workspace_access_properties: workspacesDirectoryWorkspaceAccessPropertiesToTerraform(this._workspaceAccessProperties.internalValue),
       workspace_creation_properties: workspacesDirectoryWorkspaceCreationPropertiesToTerraform(this._workspaceCreationProperties.internalValue),

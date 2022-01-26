@@ -48,7 +48,7 @@ export interface DbProxyDefaultTargetGroupConnectionPoolConfig {
 }
 
 export function dbProxyDefaultTargetGroupConnectionPoolConfigToTerraform(struct?: DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference | DbProxyDefaultTargetGroupConnectionPoolConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -69,7 +69,7 @@ export class DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -185,7 +185,7 @@ export class DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference extend
   // session_pinning_filters - computed: false, optional: true, required: false
   private _sessionPinningFilters?: string[]; 
   public get sessionPinningFilters() {
-    return this.getListAttribute('session_pinning_filters');
+    return cdktf.Fn.tolist(this.getListAttribute('session_pinning_filters'));
   }
   public set sessionPinningFilters(value: string[]) {
     this._sessionPinningFilters = value;
@@ -209,8 +209,8 @@ export interface DbProxyDefaultTargetGroupTimeouts {
   readonly update?: string;
 }
 
-export function dbProxyDefaultTargetGroupTimeoutsToTerraform(struct?: DbProxyDefaultTargetGroupTimeoutsOutputReference | DbProxyDefaultTargetGroupTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dbProxyDefaultTargetGroupTimeoutsToTerraform(struct?: DbProxyDefaultTargetGroupTimeoutsOutputReference | DbProxyDefaultTargetGroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -228,7 +228,7 @@ export class DbProxyDefaultTargetGroupTimeoutsOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -362,7 +362,7 @@ export class DbProxyDefaultTargetGroup extends cdktf.TerraformResource {
   }
 
   // connection_pool_config - computed: false, optional: true, required: false
-  private _connectionPoolConfig = new DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference(this as any, "connection_pool_config", true);
+  private _connectionPoolConfig = new DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference(this, "connection_pool_config", true);
   public get connectionPoolConfig() {
     return this._connectionPoolConfig;
   }
@@ -378,7 +378,7 @@ export class DbProxyDefaultTargetGroup extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DbProxyDefaultTargetGroupTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DbProxyDefaultTargetGroupTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

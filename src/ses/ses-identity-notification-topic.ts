@@ -88,7 +88,7 @@ export class SesIdentityNotificationTopic extends cdktf.TerraformResource {
   // include_original_headers - computed: false, optional: true, required: false
   private _includeOriginalHeaders?: boolean | cdktf.IResolvable; 
   public get includeOriginalHeaders() {
-    return this.getBooleanAttribute('include_original_headers') as any;
+    return this.getBooleanAttribute('include_original_headers');
   }
   public set includeOriginalHeaders(value: boolean | cdktf.IResolvable) {
     this._includeOriginalHeaders = value;

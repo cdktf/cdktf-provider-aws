@@ -28,7 +28,7 @@ export interface EmrInstanceFleetConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_fleet#instance_type_configs EmrInstanceFleet#instance_type_configs}
   */
-  readonly instanceTypeConfigs?: EmrInstanceFleetInstanceTypeConfigs[];
+  readonly instanceTypeConfigs?: EmrInstanceFleetInstanceTypeConfigs[] | cdktf.IResolvable;
   /**
   * launch_specifications block
   * 
@@ -44,17 +44,17 @@ export interface EmrInstanceFleetInstanceTypeConfigsConfigurations {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_fleet#properties EmrInstanceFleet#properties}
   */
-  readonly properties?: { [key: string]: string } | cdktf.IResolvable;
+  readonly properties?: { [key: string]: string };
 }
 
-export function emrInstanceFleetInstanceTypeConfigsConfigurationsToTerraform(struct?: EmrInstanceFleetInstanceTypeConfigsConfigurations): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function emrInstanceFleetInstanceTypeConfigsConfigurationsToTerraform(struct?: EmrInstanceFleetInstanceTypeConfigsConfigurations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     classification: cdktf.stringToTerraform(struct!.classification),
-    properties: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.properties),
+    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
   }
 }
 
@@ -77,8 +77,8 @@ export interface EmrInstanceFleetInstanceTypeConfigsEbsConfig {
   readonly volumesPerInstance?: number;
 }
 
-export function emrInstanceFleetInstanceTypeConfigsEbsConfigToTerraform(struct?: EmrInstanceFleetInstanceTypeConfigsEbsConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function emrInstanceFleetInstanceTypeConfigsEbsConfigToTerraform(struct?: EmrInstanceFleetInstanceTypeConfigsEbsConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -112,17 +112,17 @@ export interface EmrInstanceFleetInstanceTypeConfigs {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_fleet#configurations EmrInstanceFleet#configurations}
   */
-  readonly configurations?: EmrInstanceFleetInstanceTypeConfigsConfigurations[];
+  readonly configurations?: EmrInstanceFleetInstanceTypeConfigsConfigurations[] | cdktf.IResolvable;
   /**
   * ebs_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_fleet#ebs_config EmrInstanceFleet#ebs_config}
   */
-  readonly ebsConfig?: EmrInstanceFleetInstanceTypeConfigsEbsConfig[];
+  readonly ebsConfig?: EmrInstanceFleetInstanceTypeConfigsEbsConfig[] | cdktf.IResolvable;
 }
 
-export function emrInstanceFleetInstanceTypeConfigsToTerraform(struct?: EmrInstanceFleetInstanceTypeConfigs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function emrInstanceFleetInstanceTypeConfigsToTerraform(struct?: EmrInstanceFleetInstanceTypeConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -143,8 +143,8 @@ export interface EmrInstanceFleetLaunchSpecificationsOnDemandSpecification {
   readonly allocationStrategy: string;
 }
 
-export function emrInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerraform(struct?: EmrInstanceFleetLaunchSpecificationsOnDemandSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function emrInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerraform(struct?: EmrInstanceFleetLaunchSpecificationsOnDemandSpecification | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -172,8 +172,8 @@ export interface EmrInstanceFleetLaunchSpecificationsSpotSpecification {
   readonly timeoutDurationMinutes: number;
 }
 
-export function emrInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform(struct?: EmrInstanceFleetLaunchSpecificationsSpotSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function emrInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform(struct?: EmrInstanceFleetLaunchSpecificationsSpotSpecification | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -191,17 +191,17 @@ export interface EmrInstanceFleetLaunchSpecifications {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_fleet#on_demand_specification EmrInstanceFleet#on_demand_specification}
   */
-  readonly onDemandSpecification?: EmrInstanceFleetLaunchSpecificationsOnDemandSpecification[];
+  readonly onDemandSpecification?: EmrInstanceFleetLaunchSpecificationsOnDemandSpecification[] | cdktf.IResolvable;
   /**
   * spot_specification block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_fleet#spot_specification EmrInstanceFleet#spot_specification}
   */
-  readonly spotSpecification?: EmrInstanceFleetLaunchSpecificationsSpotSpecification[];
+  readonly spotSpecification?: EmrInstanceFleetLaunchSpecificationsSpotSpecification[] | cdktf.IResolvable;
 }
 
 export function emrInstanceFleetLaunchSpecificationsToTerraform(struct?: EmrInstanceFleetLaunchSpecificationsOutputReference | EmrInstanceFleetLaunchSpecifications): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -219,7 +219,7 @@ export class EmrInstanceFleetLaunchSpecificationsOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -251,12 +251,12 @@ export class EmrInstanceFleetLaunchSpecificationsOutputReference extends cdktf.C
   }
 
   // on_demand_specification - computed: false, optional: true, required: false
-  private _onDemandSpecification?: EmrInstanceFleetLaunchSpecificationsOnDemandSpecification[]; 
+  private _onDemandSpecification?: EmrInstanceFleetLaunchSpecificationsOnDemandSpecification[] | cdktf.IResolvable; 
   public get onDemandSpecification() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('on_demand_specification') as any;
+    return this.interpolationForAttribute('on_demand_specification');
   }
-  public set onDemandSpecification(value: EmrInstanceFleetLaunchSpecificationsOnDemandSpecification[]) {
+  public set onDemandSpecification(value: EmrInstanceFleetLaunchSpecificationsOnDemandSpecification[] | cdktf.IResolvable) {
     this._onDemandSpecification = value;
   }
   public resetOnDemandSpecification() {
@@ -268,12 +268,12 @@ export class EmrInstanceFleetLaunchSpecificationsOutputReference extends cdktf.C
   }
 
   // spot_specification - computed: false, optional: true, required: false
-  private _spotSpecification?: EmrInstanceFleetLaunchSpecificationsSpotSpecification[]; 
+  private _spotSpecification?: EmrInstanceFleetLaunchSpecificationsSpotSpecification[] | cdktf.IResolvable; 
   public get spotSpecification() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('spot_specification') as any;
+    return this.interpolationForAttribute('spot_specification');
   }
-  public set spotSpecification(value: EmrInstanceFleetLaunchSpecificationsSpotSpecification[]) {
+  public set spotSpecification(value: EmrInstanceFleetLaunchSpecificationsSpotSpecification[] | cdktf.IResolvable) {
     this._spotSpecification = value;
   }
   public resetSpotSpecification() {
@@ -406,12 +406,12 @@ export class EmrInstanceFleet extends cdktf.TerraformResource {
   }
 
   // instance_type_configs - computed: false, optional: true, required: false
-  private _instanceTypeConfigs?: EmrInstanceFleetInstanceTypeConfigs[]; 
+  private _instanceTypeConfigs?: EmrInstanceFleetInstanceTypeConfigs[] | cdktf.IResolvable; 
   public get instanceTypeConfigs() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('instance_type_configs') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('instance_type_configs')));
   }
-  public set instanceTypeConfigs(value: EmrInstanceFleetInstanceTypeConfigs[]) {
+  public set instanceTypeConfigs(value: EmrInstanceFleetInstanceTypeConfigs[] | cdktf.IResolvable) {
     this._instanceTypeConfigs = value;
   }
   public resetInstanceTypeConfigs() {
@@ -423,7 +423,7 @@ export class EmrInstanceFleet extends cdktf.TerraformResource {
   }
 
   // launch_specifications - computed: false, optional: true, required: false
-  private _launchSpecifications = new EmrInstanceFleetLaunchSpecificationsOutputReference(this as any, "launch_specifications", true);
+  private _launchSpecifications = new EmrInstanceFleetLaunchSpecificationsOutputReference(this, "launch_specifications", true);
   public get launchSpecifications() {
     return this._launchSpecifications;
   }

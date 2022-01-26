@@ -98,7 +98,7 @@ export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#tags AutoscalingGroup#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#target_group_arns AutoscalingGroup#target_group_arns}
   */
@@ -124,7 +124,7 @@ export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#initial_lifecycle_hook AutoscalingGroup#initial_lifecycle_hook}
   */
-  readonly initialLifecycleHook?: AutoscalingGroupInitialLifecycleHook[];
+  readonly initialLifecycleHook?: AutoscalingGroupInitialLifecycleHook[] | cdktf.IResolvable;
   /**
   * instance_refresh block
   * 
@@ -148,7 +148,7 @@ export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#tag AutoscalingGroup#tag}
   */
-  readonly tag?: AutoscalingGroupTag[];
+  readonly tag?: AutoscalingGroupTag[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -193,8 +193,8 @@ export interface AutoscalingGroupInitialLifecycleHook {
   readonly roleArn?: string;
 }
 
-export function autoscalingGroupInitialLifecycleHookToTerraform(struct?: AutoscalingGroupInitialLifecycleHook): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function autoscalingGroupInitialLifecycleHookToTerraform(struct?: AutoscalingGroupInitialLifecycleHook | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -229,7 +229,7 @@ export interface AutoscalingGroupInstanceRefreshPreferences {
 }
 
 export function autoscalingGroupInstanceRefreshPreferencesToTerraform(struct?: AutoscalingGroupInstanceRefreshPreferencesOutputReference | AutoscalingGroupInstanceRefreshPreferences): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -249,7 +249,7 @@ export class AutoscalingGroupInstanceRefreshPreferencesOutputReference extends c
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -311,8 +311,7 @@ export class AutoscalingGroupInstanceRefreshPreferencesOutputReference extends c
   // checkpoint_percentages - computed: false, optional: true, required: false
   private _checkpointPercentages?: number[]; 
   public get checkpointPercentages() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('checkpoint_percentages') as any;
+    return this.getNumberListAttribute('checkpoint_percentages');
   }
   public set checkpointPercentages(value: number[]) {
     this._checkpointPercentages = value;
@@ -375,7 +374,7 @@ export interface AutoscalingGroupInstanceRefresh {
 }
 
 export function autoscalingGroupInstanceRefreshToTerraform(struct?: AutoscalingGroupInstanceRefreshOutputReference | AutoscalingGroupInstanceRefresh): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -394,7 +393,7 @@ export class AutoscalingGroupInstanceRefreshOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -447,7 +446,7 @@ export class AutoscalingGroupInstanceRefreshOutputReference extends cdktf.Comple
   // triggers - computed: false, optional: true, required: false
   private _triggers?: string[]; 
   public get triggers() {
-    return this.getListAttribute('triggers');
+    return cdktf.Fn.tolist(this.getListAttribute('triggers'));
   }
   public set triggers(value: string[]) {
     this._triggers = value;
@@ -461,7 +460,7 @@ export class AutoscalingGroupInstanceRefreshOutputReference extends cdktf.Comple
   }
 
   // preferences - computed: false, optional: true, required: false
-  private _preferences = new AutoscalingGroupInstanceRefreshPreferencesOutputReference(this as any, "preferences", true);
+  private _preferences = new AutoscalingGroupInstanceRefreshPreferencesOutputReference(this, "preferences", true);
   public get preferences() {
     return this._preferences;
   }
@@ -492,7 +491,7 @@ export interface AutoscalingGroupLaunchTemplate {
 }
 
 export function autoscalingGroupLaunchTemplateToTerraform(struct?: AutoscalingGroupLaunchTemplateOutputReference | AutoscalingGroupLaunchTemplate): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -510,7 +509,7 @@ export class AutoscalingGroupLaunchTemplateOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -606,7 +605,7 @@ export interface AutoscalingGroupMixedInstancesPolicyInstancesDistribution {
 }
 
 export function autoscalingGroupMixedInstancesPolicyInstancesDistributionToTerraform(struct?: AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference | AutoscalingGroupMixedInstancesPolicyInstancesDistribution): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -628,7 +627,7 @@ export class AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputRefe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -795,7 +794,7 @@ export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplat
 }
 
 export function autoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationToTerraform(struct?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationOutputReference | AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -814,7 +813,7 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -915,7 +914,7 @@ export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunc
 }
 
 export function autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationToTerraform(struct?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationOutputReference | AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -934,7 +933,7 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTem
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1036,8 +1035,8 @@ export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride {
   readonly launchTemplateSpecification?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification;
 }
 
-export function autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideToTerraform(struct?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideToTerraform(struct?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1060,11 +1059,11 @@ export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplate {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#override AutoscalingGroup#override}
   */
-  readonly override?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride[];
+  readonly override?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride[] | cdktf.IResolvable;
 }
 
 export function autoscalingGroupMixedInstancesPolicyLaunchTemplateToTerraform(struct?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference | AutoscalingGroupMixedInstancesPolicyLaunchTemplate): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1082,7 +1081,7 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference e
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1114,7 +1113,7 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference e
   }
 
   // launch_template_specification - computed: false, optional: false, required: true
-  private _launchTemplateSpecification = new AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationOutputReference(this as any, "launch_template_specification", true);
+  private _launchTemplateSpecification = new AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationOutputReference(this, "launch_template_specification", true);
   public get launchTemplateSpecification() {
     return this._launchTemplateSpecification;
   }
@@ -1127,12 +1126,12 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference e
   }
 
   // override - computed: false, optional: true, required: false
-  private _override?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride[]; 
+  private _override?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride[] | cdktf.IResolvable; 
   public get override() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('override') as any;
+    return this.interpolationForAttribute('override');
   }
-  public set override(value: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride[]) {
+  public set override(value: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride[] | cdktf.IResolvable) {
     this._override = value;
   }
   public resetOverride() {
@@ -1159,7 +1158,7 @@ export interface AutoscalingGroupMixedInstancesPolicy {
 }
 
 export function autoscalingGroupMixedInstancesPolicyToTerraform(struct?: AutoscalingGroupMixedInstancesPolicyOutputReference | AutoscalingGroupMixedInstancesPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1177,7 +1176,7 @@ export class AutoscalingGroupMixedInstancesPolicyOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1209,7 +1208,7 @@ export class AutoscalingGroupMixedInstancesPolicyOutputReference extends cdktf.C
   }
 
   // instances_distribution - computed: false, optional: true, required: false
-  private _instancesDistribution = new AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference(this as any, "instances_distribution", true);
+  private _instancesDistribution = new AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference(this, "instances_distribution", true);
   public get instancesDistribution() {
     return this._instancesDistribution;
   }
@@ -1225,7 +1224,7 @@ export class AutoscalingGroupMixedInstancesPolicyOutputReference extends cdktf.C
   }
 
   // launch_template - computed: false, optional: false, required: true
-  private _launchTemplate = new AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference(this as any, "launch_template", true);
+  private _launchTemplate = new AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference(this, "launch_template", true);
   public get launchTemplate() {
     return this._launchTemplate;
   }
@@ -1252,8 +1251,8 @@ export interface AutoscalingGroupTag {
   readonly value: string;
 }
 
-export function autoscalingGroupTagToTerraform(struct?: AutoscalingGroupTag): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function autoscalingGroupTagToTerraform(struct?: AutoscalingGroupTag | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1271,8 +1270,8 @@ export interface AutoscalingGroupTimeouts {
   readonly delete?: string;
 }
 
-export function autoscalingGroupTimeoutsToTerraform(struct?: AutoscalingGroupTimeoutsOutputReference | AutoscalingGroupTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function autoscalingGroupTimeoutsToTerraform(struct?: AutoscalingGroupTimeoutsOutputReference | AutoscalingGroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1289,7 +1288,7 @@ export class AutoscalingGroupTimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1346,7 +1345,7 @@ export interface AutoscalingGroupWarmPool {
 }
 
 export function autoscalingGroupWarmPoolToTerraform(struct?: AutoscalingGroupWarmPoolOutputReference | AutoscalingGroupWarmPool): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1365,7 +1364,7 @@ export class AutoscalingGroupWarmPoolOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1532,7 +1531,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // availability_zones - computed: true, optional: true, required: false
   private _availabilityZones?: string[]; 
   public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
+    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
   }
   public set availabilityZones(value: string[]) {
     this._availabilityZones = value;
@@ -1548,7 +1547,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // capacity_rebalance - computed: false, optional: true, required: false
   private _capacityRebalance?: boolean | cdktf.IResolvable; 
   public get capacityRebalance() {
-    return this.getBooleanAttribute('capacity_rebalance') as any;
+    return this.getBooleanAttribute('capacity_rebalance');
   }
   public set capacityRebalance(value: boolean | cdktf.IResolvable) {
     this._capacityRebalance = value;
@@ -1596,7 +1595,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // enabled_metrics - computed: false, optional: true, required: false
   private _enabledMetrics?: string[]; 
   public get enabledMetrics() {
-    return this.getListAttribute('enabled_metrics');
+    return cdktf.Fn.tolist(this.getListAttribute('enabled_metrics'));
   }
   public set enabledMetrics(value: string[]) {
     this._enabledMetrics = value;
@@ -1612,7 +1611,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // force_delete - computed: false, optional: true, required: false
   private _forceDelete?: boolean | cdktf.IResolvable; 
   public get forceDelete() {
-    return this.getBooleanAttribute('force_delete') as any;
+    return this.getBooleanAttribute('force_delete');
   }
   public set forceDelete(value: boolean | cdktf.IResolvable) {
     this._forceDelete = value;
@@ -1628,7 +1627,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // force_delete_warm_pool - computed: false, optional: true, required: false
   private _forceDeleteWarmPool?: boolean | cdktf.IResolvable; 
   public get forceDeleteWarmPool() {
-    return this.getBooleanAttribute('force_delete_warm_pool') as any;
+    return this.getBooleanAttribute('force_delete_warm_pool');
   }
   public set forceDeleteWarmPool(value: boolean | cdktf.IResolvable) {
     this._forceDeleteWarmPool = value;
@@ -1697,7 +1696,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // load_balancers - computed: false, optional: true, required: false
   private _loadBalancers?: string[]; 
   public get loadBalancers() {
-    return this.getListAttribute('load_balancers');
+    return cdktf.Fn.tolist(this.getListAttribute('load_balancers'));
   }
   public set loadBalancers(value: string[]) {
     this._loadBalancers = value;
@@ -1835,7 +1834,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // protect_from_scale_in - computed: false, optional: true, required: false
   private _protectFromScaleIn?: boolean | cdktf.IResolvable; 
   public get protectFromScaleIn() {
-    return this.getBooleanAttribute('protect_from_scale_in') as any;
+    return this.getBooleanAttribute('protect_from_scale_in');
   }
   public set protectFromScaleIn(value: boolean | cdktf.IResolvable) {
     this._protectFromScaleIn = value;
@@ -1867,7 +1866,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // suspended_processes - computed: false, optional: true, required: false
   private _suspendedProcesses?: string[]; 
   public get suspendedProcesses() {
-    return this.getListAttribute('suspended_processes');
+    return cdktf.Fn.tolist(this.getListAttribute('suspended_processes'));
   }
   public set suspendedProcesses(value: string[]) {
     this._suspendedProcesses = value;
@@ -1881,12 +1880,11 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -1900,7 +1898,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // target_group_arns - computed: false, optional: true, required: false
   private _targetGroupArns?: string[]; 
   public get targetGroupArns() {
-    return this.getListAttribute('target_group_arns');
+    return cdktf.Fn.tolist(this.getListAttribute('target_group_arns'));
   }
   public set targetGroupArns(value: string[]) {
     this._targetGroupArns = value;
@@ -1932,7 +1930,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // vpc_zone_identifier - computed: true, optional: true, required: false
   private _vpcZoneIdentifier?: string[]; 
   public get vpcZoneIdentifier() {
-    return this.getListAttribute('vpc_zone_identifier');
+    return cdktf.Fn.tolist(this.getListAttribute('vpc_zone_identifier'));
   }
   public set vpcZoneIdentifier(value: string[]) {
     this._vpcZoneIdentifier = value;
@@ -1978,12 +1976,12 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // initial_lifecycle_hook - computed: false, optional: true, required: false
-  private _initialLifecycleHook?: AutoscalingGroupInitialLifecycleHook[]; 
+  private _initialLifecycleHook?: AutoscalingGroupInitialLifecycleHook[] | cdktf.IResolvable; 
   public get initialLifecycleHook() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('initial_lifecycle_hook') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('initial_lifecycle_hook')));
   }
-  public set initialLifecycleHook(value: AutoscalingGroupInitialLifecycleHook[]) {
+  public set initialLifecycleHook(value: AutoscalingGroupInitialLifecycleHook[] | cdktf.IResolvable) {
     this._initialLifecycleHook = value;
   }
   public resetInitialLifecycleHook() {
@@ -1995,7 +1993,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // instance_refresh - computed: false, optional: true, required: false
-  private _instanceRefresh = new AutoscalingGroupInstanceRefreshOutputReference(this as any, "instance_refresh", true);
+  private _instanceRefresh = new AutoscalingGroupInstanceRefreshOutputReference(this, "instance_refresh", true);
   public get instanceRefresh() {
     return this._instanceRefresh;
   }
@@ -2011,7 +2009,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // launch_template - computed: false, optional: true, required: false
-  private _launchTemplate = new AutoscalingGroupLaunchTemplateOutputReference(this as any, "launch_template", true);
+  private _launchTemplate = new AutoscalingGroupLaunchTemplateOutputReference(this, "launch_template", true);
   public get launchTemplate() {
     return this._launchTemplate;
   }
@@ -2027,7 +2025,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // mixed_instances_policy - computed: false, optional: true, required: false
-  private _mixedInstancesPolicy = new AutoscalingGroupMixedInstancesPolicyOutputReference(this as any, "mixed_instances_policy", true);
+  private _mixedInstancesPolicy = new AutoscalingGroupMixedInstancesPolicyOutputReference(this, "mixed_instances_policy", true);
   public get mixedInstancesPolicy() {
     return this._mixedInstancesPolicy;
   }
@@ -2043,12 +2041,12 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // tag - computed: false, optional: true, required: false
-  private _tag?: AutoscalingGroupTag[]; 
+  private _tag?: AutoscalingGroupTag[] | cdktf.IResolvable; 
   public get tag() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tag') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('tag')));
   }
-  public set tag(value: AutoscalingGroupTag[]) {
+  public set tag(value: AutoscalingGroupTag[] | cdktf.IResolvable) {
     this._tag = value;
   }
   public resetTag() {
@@ -2060,7 +2058,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new AutoscalingGroupTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new AutoscalingGroupTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -2076,7 +2074,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // warm_pool - computed: false, optional: true, required: false
-  private _warmPool = new AutoscalingGroupWarmPoolOutputReference(this as any, "warm_pool", true);
+  private _warmPool = new AutoscalingGroupWarmPoolOutputReference(this, "warm_pool", true);
   public get warmPool() {
     return this._warmPool;
   }
@@ -2119,7 +2117,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       protect_from_scale_in: cdktf.booleanToTerraform(this._protectFromScaleIn),
       service_linked_role_arn: cdktf.stringToTerraform(this._serviceLinkedRoleArn),
       suspended_processes: cdktf.listMapper(cdktf.stringToTerraform)(this._suspendedProcesses),
-      tags: cdktf.listMapper(cdktf.hashMapper(cdktf.anyToTerraform))(this._tags),
+      tags: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform))(this._tags),
       target_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._targetGroupArns),
       termination_policies: cdktf.listMapper(cdktf.stringToTerraform)(this._terminationPolicies),
       vpc_zone_identifier: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcZoneIdentifier),

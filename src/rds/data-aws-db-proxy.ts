@@ -81,12 +81,12 @@ export class DataAwsDbProxy extends cdktf.TerraformDataSource {
 
   // auth - computed: true, optional: false, required: false
   public auth(index: string) {
-    return new DataAwsDbProxyAuth(this, 'auth', index);
+    return new DataAwsDbProxyAuth(this, 'auth', index, true);
   }
 
   // debug_logging - computed: true, optional: false, required: false
   public get debugLogging() {
-    return this.getBooleanAttribute('debug_logging') as any;
+    return this.getBooleanAttribute('debug_logging');
   }
 
   // endpoint - computed: true, optional: false, required: false
@@ -124,7 +124,7 @@ export class DataAwsDbProxy extends cdktf.TerraformDataSource {
 
   // require_tls - computed: true, optional: false, required: false
   public get requireTls() {
-    return this.getBooleanAttribute('require_tls') as any;
+    return this.getBooleanAttribute('require_tls');
   }
 
   // role_arn - computed: true, optional: false, required: false
@@ -139,12 +139,12 @@ export class DataAwsDbProxy extends cdktf.TerraformDataSource {
 
   // vpc_security_group_ids - computed: true, optional: false, required: false
   public get vpcSecurityGroupIds() {
-    return this.getListAttribute('vpc_security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
   }
 
   // vpc_subnet_ids - computed: true, optional: false, required: false
   public get vpcSubnetIds() {
-    return this.getListAttribute('vpc_subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('vpc_subnet_ids'));
   }
 
   // =========

@@ -116,7 +116,7 @@ export class ServicecatalogProvisioningArtifact extends cdktf.TerraformResource 
   // active - computed: false, optional: true, required: false
   private _active?: boolean | cdktf.IResolvable; 
   public get active() {
-    return this.getBooleanAttribute('active') as any;
+    return this.getBooleanAttribute('active');
   }
   public set active(value: boolean | cdktf.IResolvable) {
     this._active = value;
@@ -153,7 +153,7 @@ export class ServicecatalogProvisioningArtifact extends cdktf.TerraformResource 
   // disable_template_validation - computed: false, optional: true, required: false
   private _disableTemplateValidation?: boolean | cdktf.IResolvable; 
   public get disableTemplateValidation() {
-    return this.getBooleanAttribute('disable_template_validation') as any;
+    return this.getBooleanAttribute('disable_template_validation');
   }
   public set disableTemplateValidation(value: boolean | cdktf.IResolvable) {
     this._disableTemplateValidation = value;

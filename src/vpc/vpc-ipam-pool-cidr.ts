@@ -34,7 +34,7 @@ export interface VpcIpamPoolCidrCidrAuthorizationContext {
 }
 
 export function vpcIpamPoolCidrCidrAuthorizationContextToTerraform(struct?: VpcIpamPoolCidrCidrAuthorizationContextOutputReference | VpcIpamPoolCidrCidrAuthorizationContext): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -52,7 +52,7 @@ export class VpcIpamPoolCidrCidrAuthorizationContextOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -192,7 +192,7 @@ export class VpcIpamPoolCidr extends cdktf.TerraformResource {
   }
 
   // cidr_authorization_context - computed: false, optional: true, required: false
-  private _cidrAuthorizationContext = new VpcIpamPoolCidrCidrAuthorizationContextOutputReference(this as any, "cidr_authorization_context", true);
+  private _cidrAuthorizationContext = new VpcIpamPoolCidrCidrAuthorizationContextOutputReference(this, "cidr_authorization_context", true);
   public get cidrAuthorizationContext() {
     return this._cidrAuthorizationContext;
   }

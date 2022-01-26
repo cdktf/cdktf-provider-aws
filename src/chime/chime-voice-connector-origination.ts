@@ -20,7 +20,7 @@ export interface ChimeVoiceConnectorOriginationConfig extends cdktf.TerraformMet
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_origination#route ChimeVoiceConnectorOrigination#route}
   */
-  readonly route: ChimeVoiceConnectorOriginationRoute[];
+  readonly route: ChimeVoiceConnectorOriginationRoute[] | cdktf.IResolvable;
 }
 export interface ChimeVoiceConnectorOriginationRoute {
   /**
@@ -45,8 +45,8 @@ export interface ChimeVoiceConnectorOriginationRoute {
   readonly weight: number;
 }
 
-export function chimeVoiceConnectorOriginationRouteToTerraform(struct?: ChimeVoiceConnectorOriginationRoute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function chimeVoiceConnectorOriginationRouteToTerraform(struct?: ChimeVoiceConnectorOriginationRoute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -104,7 +104,7 @@ export class ChimeVoiceConnectorOrigination extends cdktf.TerraformResource {
   // disabled - computed: false, optional: true, required: false
   private _disabled?: boolean | cdktf.IResolvable; 
   public get disabled() {
-    return this.getBooleanAttribute('disabled') as any;
+    return this.getBooleanAttribute('disabled');
   }
   public set disabled(value: boolean | cdktf.IResolvable) {
     this._disabled = value;
@@ -136,12 +136,12 @@ export class ChimeVoiceConnectorOrigination extends cdktf.TerraformResource {
   }
 
   // route - computed: false, optional: false, required: true
-  private _route?: ChimeVoiceConnectorOriginationRoute[]; 
+  private _route?: ChimeVoiceConnectorOriginationRoute[] | cdktf.IResolvable; 
   public get route() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('route') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('route')));
   }
-  public set route(value: ChimeVoiceConnectorOriginationRoute[]) {
+  public set route(value: ChimeVoiceConnectorOriginationRoute[] | cdktf.IResolvable) {
     this._route = value;
   }
   // Temporarily expose input value. Use with caution.

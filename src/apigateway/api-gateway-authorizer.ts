@@ -193,7 +193,7 @@ export class ApiGatewayAuthorizer extends cdktf.TerraformResource {
   // provider_arns - computed: false, optional: true, required: false
   private _providerArns?: string[]; 
   public get providerArns() {
-    return this.getListAttribute('provider_arns');
+    return cdktf.Fn.tolist(this.getListAttribute('provider_arns'));
   }
   public set providerArns(value: string[]) {
     this._providerArns = value;

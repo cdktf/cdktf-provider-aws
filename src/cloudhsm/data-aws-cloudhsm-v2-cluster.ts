@@ -86,7 +86,7 @@ export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
 
   // cluster_certificates - computed: true, optional: false, required: false
   public clusterCertificates(index: string) {
-    return new DataAwsCloudhsmV2ClusterClusterCertificates(this, 'cluster_certificates', index);
+    return new DataAwsCloudhsmV2ClusterClusterCertificates(this, 'cluster_certificates', index, false);
   }
 
   // cluster_id - computed: false, optional: false, required: true
@@ -130,7 +130,7 @@ export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
 
   // subnet_ids - computed: true, optional: false, required: false
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
 
   // vpc_id - computed: true, optional: false, required: false

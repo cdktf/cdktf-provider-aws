@@ -14,7 +14,7 @@ export interface DataAwsGlueConnectionConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/glue_connection#tags DataAwsGlueConnection#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsGlueConnectionPhysicalConnectionRequirements extends cdktf.ComplexComputedList {
 
@@ -25,7 +25,7 @@ export class DataAwsGlueConnectionPhysicalConnectionRequirements extends cdktf.C
 
   // security_group_id_list - computed: true, optional: false, required: false
   public get securityGroupIdList() {
-    return this.getListAttribute('security_group_id_list');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_id_list'));
   }
 
   // subnet_id - computed: true, optional: false, required: false
@@ -85,7 +85,7 @@ export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
   }
 
   // connection_properties - computed: true, optional: false, required: false
-  public connectionProperties(key: string): string {
+  public connectionProperties(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'connection_properties').lookup(key);
   }
 
@@ -124,16 +124,15 @@ export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
 
   // physical_connection_requirements - computed: true, optional: false, required: false
   public physicalConnectionRequirements(index: string) {
-    return new DataAwsGlueConnectionPhysicalConnectionRequirements(this, 'physical_connection_requirements', index);
+    return new DataAwsGlueConnectionPhysicalConnectionRequirements(this, 'physical_connection_requirements', index, false);
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -151,7 +150,7 @@ export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

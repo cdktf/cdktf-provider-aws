@@ -16,7 +16,7 @@ export interface CodecommitTriggerConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codecommit_trigger#trigger CodecommitTrigger#trigger}
   */
-  readonly trigger: CodecommitTriggerTrigger[];
+  readonly trigger: CodecommitTriggerTrigger[] | cdktf.IResolvable;
 }
 export interface CodecommitTriggerTrigger {
   /**
@@ -41,8 +41,8 @@ export interface CodecommitTriggerTrigger {
   readonly name: string;
 }
 
-export function codecommitTriggerTriggerToTerraform(struct?: CodecommitTriggerTrigger): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function codecommitTriggerTriggerToTerraform(struct?: CodecommitTriggerTrigger | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -120,12 +120,12 @@ export class CodecommitTrigger extends cdktf.TerraformResource {
   }
 
   // trigger - computed: false, optional: false, required: true
-  private _trigger?: CodecommitTriggerTrigger[]; 
+  private _trigger?: CodecommitTriggerTrigger[] | cdktf.IResolvable; 
   public get trigger() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('trigger') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('trigger')));
   }
-  public set trigger(value: CodecommitTriggerTrigger[]) {
+  public set trigger(value: CodecommitTriggerTrigger[] | cdktf.IResolvable) {
     this._trigger = value;
   }
   // Temporarily expose input value. Use with caution.

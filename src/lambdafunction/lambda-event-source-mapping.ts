@@ -90,7 +90,7 @@ export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArgum
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#source_access_configuration LambdaEventSourceMapping#source_access_configuration}
   */
-  readonly sourceAccessConfiguration?: LambdaEventSourceMappingSourceAccessConfiguration[];
+  readonly sourceAccessConfiguration?: LambdaEventSourceMappingSourceAccessConfiguration[] | cdktf.IResolvable;
 }
 export interface LambdaEventSourceMappingDestinationConfigOnFailure {
   /**
@@ -100,7 +100,7 @@ export interface LambdaEventSourceMappingDestinationConfigOnFailure {
 }
 
 export function lambdaEventSourceMappingDestinationConfigOnFailureToTerraform(struct?: LambdaEventSourceMappingDestinationConfigOnFailureOutputReference | LambdaEventSourceMappingDestinationConfigOnFailure): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -117,7 +117,7 @@ export class LambdaEventSourceMappingDestinationConfigOnFailureOutputReference e
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -165,7 +165,7 @@ export interface LambdaEventSourceMappingDestinationConfig {
 }
 
 export function lambdaEventSourceMappingDestinationConfigToTerraform(struct?: LambdaEventSourceMappingDestinationConfigOutputReference | LambdaEventSourceMappingDestinationConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -182,7 +182,7 @@ export class LambdaEventSourceMappingDestinationConfigOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -208,7 +208,7 @@ export class LambdaEventSourceMappingDestinationConfigOutputReference extends cd
   }
 
   // on_failure - computed: false, optional: true, required: false
-  private _onFailure = new LambdaEventSourceMappingDestinationConfigOnFailureOutputReference(this as any, "on_failure", true);
+  private _onFailure = new LambdaEventSourceMappingDestinationConfigOnFailureOutputReference(this, "on_failure", true);
   public get onFailure() {
     return this._onFailure;
   }
@@ -230,8 +230,8 @@ export interface LambdaEventSourceMappingFilterCriteriaFilter {
   readonly pattern?: string;
 }
 
-export function lambdaEventSourceMappingFilterCriteriaFilterToTerraform(struct?: LambdaEventSourceMappingFilterCriteriaFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lambdaEventSourceMappingFilterCriteriaFilterToTerraform(struct?: LambdaEventSourceMappingFilterCriteriaFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -246,11 +246,11 @@ export interface LambdaEventSourceMappingFilterCriteria {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#filter LambdaEventSourceMapping#filter}
   */
-  readonly filter?: LambdaEventSourceMappingFilterCriteriaFilter[];
+  readonly filter?: LambdaEventSourceMappingFilterCriteriaFilter[] | cdktf.IResolvable;
 }
 
 export function lambdaEventSourceMappingFilterCriteriaToTerraform(struct?: LambdaEventSourceMappingFilterCriteriaOutputReference | LambdaEventSourceMappingFilterCriteria): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -267,7 +267,7 @@ export class LambdaEventSourceMappingFilterCriteriaOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -293,12 +293,12 @@ export class LambdaEventSourceMappingFilterCriteriaOutputReference extends cdktf
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: LambdaEventSourceMappingFilterCriteriaFilter[]; 
+  private _filter?: LambdaEventSourceMappingFilterCriteriaFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: LambdaEventSourceMappingFilterCriteriaFilter[]) {
+  public set filter(value: LambdaEventSourceMappingFilterCriteriaFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -313,16 +313,16 @@ export interface LambdaEventSourceMappingSelfManagedEventSource {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#endpoints LambdaEventSourceMapping#endpoints}
   */
-  readonly endpoints: { [key: string]: string } | cdktf.IResolvable;
+  readonly endpoints: { [key: string]: string };
 }
 
 export function lambdaEventSourceMappingSelfManagedEventSourceToTerraform(struct?: LambdaEventSourceMappingSelfManagedEventSourceOutputReference | LambdaEventSourceMappingSelfManagedEventSource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoints: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.endpoints),
+    endpoints: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.endpoints),
   }
 }
 
@@ -334,7 +334,7 @@ export class LambdaEventSourceMappingSelfManagedEventSourceOutputReference exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -360,12 +360,11 @@ export class LambdaEventSourceMappingSelfManagedEventSourceOutputReference exten
   }
 
   // endpoints - computed: false, optional: false, required: true
-  private _endpoints?: { [key: string]: string } | cdktf.IResolvable; 
+  private _endpoints?: { [key: string]: string }; 
   public get endpoints() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('endpoints') as any;
+    return this.getStringMapAttribute('endpoints');
   }
-  public set endpoints(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set endpoints(value: { [key: string]: string }) {
     this._endpoints = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -384,8 +383,8 @@ export interface LambdaEventSourceMappingSourceAccessConfiguration {
   readonly uri: string;
 }
 
-export function lambdaEventSourceMappingSourceAccessConfigurationToTerraform(struct?: LambdaEventSourceMappingSourceAccessConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lambdaEventSourceMappingSourceAccessConfigurationToTerraform(struct?: LambdaEventSourceMappingSourceAccessConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -472,7 +471,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   // bisect_batch_on_function_error - computed: false, optional: true, required: false
   private _bisectBatchOnFunctionError?: boolean | cdktf.IResolvable; 
   public get bisectBatchOnFunctionError() {
-    return this.getBooleanAttribute('bisect_batch_on_function_error') as any;
+    return this.getBooleanAttribute('bisect_batch_on_function_error');
   }
   public set bisectBatchOnFunctionError(value: boolean | cdktf.IResolvable) {
     this._bisectBatchOnFunctionError = value;
@@ -488,7 +487,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -538,7 +537,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   // function_response_types - computed: false, optional: true, required: false
   private _functionResponseTypes?: string[]; 
   public get functionResponseTypes() {
-    return this.getListAttribute('function_response_types');
+    return cdktf.Fn.tolist(this.getListAttribute('function_response_types'));
   }
   public set functionResponseTypes(value: string[]) {
     this._functionResponseTypes = value;
@@ -633,7 +632,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   // queues - computed: false, optional: true, required: false
   private _queues?: string[]; 
   public get queues() {
-    return this.getListAttribute('queues');
+    return cdktf.Fn.tolist(this.getListAttribute('queues'));
   }
   public set queues(value: string[]) {
     this._queues = value;
@@ -691,7 +690,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   // topics - computed: false, optional: true, required: false
   private _topics?: string[]; 
   public get topics() {
-    return this.getListAttribute('topics');
+    return cdktf.Fn.tolist(this.getListAttribute('topics'));
   }
   public set topics(value: string[]) {
     this._topics = value;
@@ -726,7 +725,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   }
 
   // destination_config - computed: false, optional: true, required: false
-  private _destinationConfig = new LambdaEventSourceMappingDestinationConfigOutputReference(this as any, "destination_config", true);
+  private _destinationConfig = new LambdaEventSourceMappingDestinationConfigOutputReference(this, "destination_config", true);
   public get destinationConfig() {
     return this._destinationConfig;
   }
@@ -742,7 +741,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   }
 
   // filter_criteria - computed: false, optional: true, required: false
-  private _filterCriteria = new LambdaEventSourceMappingFilterCriteriaOutputReference(this as any, "filter_criteria", true);
+  private _filterCriteria = new LambdaEventSourceMappingFilterCriteriaOutputReference(this, "filter_criteria", true);
   public get filterCriteria() {
     return this._filterCriteria;
   }
@@ -758,7 +757,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   }
 
   // self_managed_event_source - computed: false, optional: true, required: false
-  private _selfManagedEventSource = new LambdaEventSourceMappingSelfManagedEventSourceOutputReference(this as any, "self_managed_event_source", true);
+  private _selfManagedEventSource = new LambdaEventSourceMappingSelfManagedEventSourceOutputReference(this, "self_managed_event_source", true);
   public get selfManagedEventSource() {
     return this._selfManagedEventSource;
   }
@@ -774,12 +773,12 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   }
 
   // source_access_configuration - computed: false, optional: true, required: false
-  private _sourceAccessConfiguration?: LambdaEventSourceMappingSourceAccessConfiguration[]; 
+  private _sourceAccessConfiguration?: LambdaEventSourceMappingSourceAccessConfiguration[] | cdktf.IResolvable; 
   public get sourceAccessConfiguration() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('source_access_configuration') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('source_access_configuration')));
   }
-  public set sourceAccessConfiguration(value: LambdaEventSourceMappingSourceAccessConfiguration[]) {
+  public set sourceAccessConfiguration(value: LambdaEventSourceMappingSourceAccessConfiguration[] | cdktf.IResolvable) {
     this._sourceAccessConfiguration = value;
   }
   public resetSourceAccessConfiguration() {

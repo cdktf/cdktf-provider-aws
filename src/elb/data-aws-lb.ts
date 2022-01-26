@@ -14,7 +14,7 @@ export interface DataAwsLbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lb#tags DataAwsLb#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsLbAccessLogs extends cdktf.ComplexComputedList {
 
@@ -25,7 +25,7 @@ export class DataAwsLbAccessLogs extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // prefix - computed: true, optional: false, required: false
@@ -103,7 +103,7 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
 
   // access_logs - computed: true, optional: false, required: false
   public accessLogs(index: string) {
-    return new DataAwsLbAccessLogs(this, 'access_logs', index);
+    return new DataAwsLbAccessLogs(this, 'access_logs', index, false);
   }
 
   // arn - computed: true, optional: true, required: false
@@ -133,22 +133,22 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
 
   // drop_invalid_header_fields - computed: true, optional: false, required: false
   public get dropInvalidHeaderFields() {
-    return this.getBooleanAttribute('drop_invalid_header_fields') as any;
+    return this.getBooleanAttribute('drop_invalid_header_fields');
   }
 
   // enable_deletion_protection - computed: true, optional: false, required: false
   public get enableDeletionProtection() {
-    return this.getBooleanAttribute('enable_deletion_protection') as any;
+    return this.getBooleanAttribute('enable_deletion_protection');
   }
 
   // enable_http2 - computed: true, optional: false, required: false
   public get enableHttp2() {
-    return this.getBooleanAttribute('enable_http2') as any;
+    return this.getBooleanAttribute('enable_http2');
   }
 
   // enable_waf_fail_open - computed: true, optional: false, required: false
   public get enableWafFailOpen() {
-    return this.getBooleanAttribute('enable_waf_fail_open') as any;
+    return this.getBooleanAttribute('enable_waf_fail_open');
   }
 
   // id - computed: true, optional: true, required: false
@@ -163,7 +163,7 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
 
   // internal - computed: true, optional: false, required: false
   public get internal() {
-    return this.getBooleanAttribute('internal') as any;
+    return this.getBooleanAttribute('internal');
   }
 
   // ip_address_type - computed: true, optional: false, required: false
@@ -194,26 +194,25 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
 
   // security_groups - computed: true, optional: false, required: false
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
 
   // subnet_mapping - computed: true, optional: false, required: false
   public subnetMapping(index: string) {
-    return new DataAwsLbSubnetMapping(this, 'subnet_mapping', index);
+    return new DataAwsLbSubnetMapping(this, 'subnet_mapping', index, true);
   }
 
   // subnets - computed: true, optional: false, required: false
   public get subnets() {
-    return this.getListAttribute('subnets');
+    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -241,7 +240,7 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

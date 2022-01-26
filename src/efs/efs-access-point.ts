@@ -14,11 +14,11 @@ export interface EfsAccessPointConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point#tags EfsAccessPoint#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point#tags_all EfsAccessPoint#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * posix_user block
   * 
@@ -48,7 +48,7 @@ export interface EfsAccessPointPosixUser {
 }
 
 export function efsAccessPointPosixUserToTerraform(struct?: EfsAccessPointPosixUserOutputReference | EfsAccessPointPosixUser): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -67,7 +67,7 @@ export class EfsAccessPointPosixUserOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -120,8 +120,7 @@ export class EfsAccessPointPosixUserOutputReference extends cdktf.ComplexObject 
   // secondary_gids - computed: false, optional: true, required: false
   private _secondaryGids?: number[]; 
   public get secondaryGids() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('secondary_gids') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('secondary_gids')));
   }
   public set secondaryGids(value: number[]) {
     this._secondaryGids = value;
@@ -163,7 +162,7 @@ export interface EfsAccessPointRootDirectoryCreationInfo {
 }
 
 export function efsAccessPointRootDirectoryCreationInfoToTerraform(struct?: EfsAccessPointRootDirectoryCreationInfoOutputReference | EfsAccessPointRootDirectoryCreationInfo): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -182,7 +181,7 @@ export class EfsAccessPointRootDirectoryCreationInfoOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -272,7 +271,7 @@ export interface EfsAccessPointRootDirectory {
 }
 
 export function efsAccessPointRootDirectoryToTerraform(struct?: EfsAccessPointRootDirectoryOutputReference | EfsAccessPointRootDirectory): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -290,7 +289,7 @@ export class EfsAccessPointRootDirectoryOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -338,7 +337,7 @@ export class EfsAccessPointRootDirectoryOutputReference extends cdktf.ComplexObj
   }
 
   // creation_info - computed: false, optional: true, required: false
-  private _creationInfo = new EfsAccessPointRootDirectoryCreationInfoOutputReference(this as any, "creation_info", true);
+  private _creationInfo = new EfsAccessPointRootDirectoryCreationInfoOutputReference(this, "creation_info", true);
   public get creationInfo() {
     return this._creationInfo;
   }
@@ -431,12 +430,11 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -448,12 +446,11 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -465,7 +462,7 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
   }
 
   // posix_user - computed: false, optional: true, required: false
-  private _posixUser = new EfsAccessPointPosixUserOutputReference(this as any, "posix_user", true);
+  private _posixUser = new EfsAccessPointPosixUserOutputReference(this, "posix_user", true);
   public get posixUser() {
     return this._posixUser;
   }
@@ -481,7 +478,7 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
   }
 
   // root_directory - computed: false, optional: true, required: false
-  private _rootDirectory = new EfsAccessPointRootDirectoryOutputReference(this as any, "root_directory", true);
+  private _rootDirectory = new EfsAccessPointRootDirectoryOutputReference(this, "root_directory", true);
   public get rootDirectory() {
     return this._rootDirectory;
   }
@@ -503,8 +500,8 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       file_system_id: cdktf.stringToTerraform(this._fileSystemId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       posix_user: efsAccessPointPosixUserToTerraform(this._posixUser.internalValue),
       root_directory: efsAccessPointRootDirectoryToTerraform(this._rootDirectory.internalValue),
     };

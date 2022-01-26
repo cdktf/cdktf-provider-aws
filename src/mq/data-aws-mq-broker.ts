@@ -18,7 +18,7 @@ export interface DataAwsMqBrokerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mq_broker#tags DataAwsMqBroker#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsMqBrokerConfiguration extends cdktf.ComplexComputedList {
 
@@ -41,7 +41,7 @@ export class DataAwsMqBrokerEncryptionOptions extends cdktf.ComplexComputedList 
 
   // use_aws_owned_key - computed: true, optional: false, required: false
   public get useAwsOwnedKey() {
-    return this.getBooleanAttribute('use_aws_owned_key') as any;
+    return this.getBooleanAttribute('use_aws_owned_key');
   }
 }
 export class DataAwsMqBrokerInstances extends cdktf.ComplexComputedList {
@@ -85,7 +85,7 @@ export class DataAwsMqBrokerLdapServerMetadata extends cdktf.ComplexComputedList
 
   // role_search_subtree - computed: true, optional: false, required: false
   public get roleSearchSubtree() {
-    return this.getBooleanAttribute('role_search_subtree') as any;
+    return this.getBooleanAttribute('role_search_subtree');
   }
 
   // service_account_password - computed: true, optional: false, required: false
@@ -115,7 +115,7 @@ export class DataAwsMqBrokerLdapServerMetadata extends cdktf.ComplexComputedList
 
   // user_search_subtree - computed: true, optional: false, required: false
   public get userSearchSubtree() {
-    return this.getBooleanAttribute('user_search_subtree') as any;
+    return this.getBooleanAttribute('user_search_subtree');
   }
 }
 export class DataAwsMqBrokerLogs extends cdktf.ComplexComputedList {
@@ -127,7 +127,7 @@ export class DataAwsMqBrokerLogs extends cdktf.ComplexComputedList {
 
   // general - computed: true, optional: false, required: false
   public get general() {
-    return this.getBooleanAttribute('general') as any;
+    return this.getBooleanAttribute('general');
   }
 }
 export class DataAwsMqBrokerMaintenanceWindowStartTime extends cdktf.ComplexComputedList {
@@ -151,12 +151,12 @@ export class DataAwsMqBrokerUser extends cdktf.ComplexComputedList {
 
   // console_access - computed: true, optional: false, required: false
   public get consoleAccess() {
-    return this.getBooleanAttribute('console_access') as any;
+    return this.getBooleanAttribute('console_access');
   }
 
   // groups - computed: true, optional: false, required: false
   public get groups() {
-    return this.getListAttribute('groups');
+    return cdktf.Fn.tolist(this.getListAttribute('groups'));
   }
 
   // username - computed: true, optional: false, required: false
@@ -218,7 +218,7 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
 
   // auto_minor_version_upgrade - computed: true, optional: false, required: false
   public get autoMinorVersionUpgrade() {
-    return this.getBooleanAttribute('auto_minor_version_upgrade') as any;
+    return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
 
   // broker_id - computed: true, optional: true, required: false
@@ -255,7 +255,7 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
 
   // configuration - computed: true, optional: false, required: false
   public configuration(index: string) {
-    return new DataAwsMqBrokerConfiguration(this, 'configuration', index);
+    return new DataAwsMqBrokerConfiguration(this, 'configuration', index, false);
   }
 
   // deployment_mode - computed: true, optional: false, required: false
@@ -265,7 +265,7 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
 
   // encryption_options - computed: true, optional: false, required: false
   public encryptionOptions(index: string) {
-    return new DataAwsMqBrokerEncryptionOptions(this, 'encryption_options', index);
+    return new DataAwsMqBrokerEncryptionOptions(this, 'encryption_options', index, false);
   }
 
   // engine_type - computed: true, optional: false, required: false
@@ -290,32 +290,32 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
 
   // instances - computed: true, optional: false, required: false
   public instances(index: string) {
-    return new DataAwsMqBrokerInstances(this, 'instances', index);
+    return new DataAwsMqBrokerInstances(this, 'instances', index, false);
   }
 
   // ldap_server_metadata - computed: true, optional: false, required: false
   public ldapServerMetadata(index: string) {
-    return new DataAwsMqBrokerLdapServerMetadata(this, 'ldap_server_metadata', index);
+    return new DataAwsMqBrokerLdapServerMetadata(this, 'ldap_server_metadata', index, false);
   }
 
   // logs - computed: true, optional: false, required: false
   public logs(index: string) {
-    return new DataAwsMqBrokerLogs(this, 'logs', index);
+    return new DataAwsMqBrokerLogs(this, 'logs', index, false);
   }
 
   // maintenance_window_start_time - computed: true, optional: false, required: false
   public maintenanceWindowStartTime(index: string) {
-    return new DataAwsMqBrokerMaintenanceWindowStartTime(this, 'maintenance_window_start_time', index);
+    return new DataAwsMqBrokerMaintenanceWindowStartTime(this, 'maintenance_window_start_time', index, false);
   }
 
   // publicly_accessible - computed: true, optional: false, required: false
   public get publiclyAccessible() {
-    return this.getBooleanAttribute('publicly_accessible') as any;
+    return this.getBooleanAttribute('publicly_accessible');
   }
 
   // security_groups - computed: true, optional: false, required: false
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
 
   // storage_type - computed: true, optional: false, required: false
@@ -325,16 +325,15 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
 
   // subnet_ids - computed: true, optional: false, required: false
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -347,7 +346,7 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
 
   // user - computed: true, optional: false, required: false
   public user(index: string) {
-    return new DataAwsMqBrokerUser(this, 'user', index);
+    return new DataAwsMqBrokerUser(this, 'user', index, true);
   }
 
   // =========
@@ -358,7 +357,7 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
     return {
       broker_id: cdktf.stringToTerraform(this._brokerId),
       broker_name: cdktf.stringToTerraform(this._brokerName),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

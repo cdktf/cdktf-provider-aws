@@ -62,11 +62,11 @@ export interface ElbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb#tags Elb#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb#tags_all Elb#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * access_logs block
   * 
@@ -84,7 +84,7 @@ export interface ElbConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb#listener Elb#listener}
   */
-  readonly listener: ElbListener[];
+  readonly listener: ElbListener[] | cdktf.IResolvable;
 }
 export interface ElbAccessLogs {
   /**
@@ -106,7 +106,7 @@ export interface ElbAccessLogs {
 }
 
 export function elbAccessLogsToTerraform(struct?: ElbAccessLogsOutputReference | ElbAccessLogs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -126,7 +126,7 @@ export class ElbAccessLogsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -201,7 +201,7 @@ export class ElbAccessLogsOutputReference extends cdktf.ComplexObject {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -254,7 +254,7 @@ export interface ElbHealthCheck {
 }
 
 export function elbHealthCheckToTerraform(struct?: ElbHealthCheckOutputReference | ElbHealthCheck): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -275,7 +275,7 @@ export class ElbHealthCheckOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -412,8 +412,8 @@ export interface ElbListener {
   readonly sslCertificateId?: string;
 }
 
-export function elbListenerToTerraform(struct?: ElbListener): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function elbListenerToTerraform(struct?: ElbListener | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -491,7 +491,7 @@ export class Elb extends cdktf.TerraformResource {
   // availability_zones - computed: true, optional: true, required: false
   private _availabilityZones?: string[]; 
   public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
+    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
   }
   public set availabilityZones(value: string[]) {
     this._availabilityZones = value;
@@ -507,7 +507,7 @@ export class Elb extends cdktf.TerraformResource {
   // connection_draining - computed: false, optional: true, required: false
   private _connectionDraining?: boolean | cdktf.IResolvable; 
   public get connectionDraining() {
-    return this.getBooleanAttribute('connection_draining') as any;
+    return this.getBooleanAttribute('connection_draining');
   }
   public set connectionDraining(value: boolean | cdktf.IResolvable) {
     this._connectionDraining = value;
@@ -539,7 +539,7 @@ export class Elb extends cdktf.TerraformResource {
   // cross_zone_load_balancing - computed: false, optional: true, required: false
   private _crossZoneLoadBalancing?: boolean | cdktf.IResolvable; 
   public get crossZoneLoadBalancing() {
-    return this.getBooleanAttribute('cross_zone_load_balancing') as any;
+    return this.getBooleanAttribute('cross_zone_load_balancing');
   }
   public set crossZoneLoadBalancing(value: boolean | cdktf.IResolvable) {
     this._crossZoneLoadBalancing = value;
@@ -597,7 +597,7 @@ export class Elb extends cdktf.TerraformResource {
   // instances - computed: true, optional: true, required: false
   private _instances?: string[]; 
   public get instances() {
-    return this.getListAttribute('instances');
+    return cdktf.Fn.tolist(this.getListAttribute('instances'));
   }
   public set instances(value: string[]) {
     this._instances = value;
@@ -613,7 +613,7 @@ export class Elb extends cdktf.TerraformResource {
   // internal - computed: true, optional: true, required: false
   private _internal?: boolean | cdktf.IResolvable; 
   public get internal() {
-    return this.getBooleanAttribute('internal') as any;
+    return this.getBooleanAttribute('internal');
   }
   public set internal(value: boolean | cdktf.IResolvable) {
     this._internal = value;
@@ -661,7 +661,7 @@ export class Elb extends cdktf.TerraformResource {
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -698,7 +698,7 @@ export class Elb extends cdktf.TerraformResource {
   // subnets - computed: true, optional: true, required: false
   private _subnets?: string[]; 
   public get subnets() {
-    return this.getListAttribute('subnets');
+    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -712,12 +712,11 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -729,12 +728,11 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -751,7 +749,7 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // access_logs - computed: false, optional: true, required: false
-  private _accessLogs = new ElbAccessLogsOutputReference(this as any, "access_logs", true);
+  private _accessLogs = new ElbAccessLogsOutputReference(this, "access_logs", true);
   public get accessLogs() {
     return this._accessLogs;
   }
@@ -767,7 +765,7 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // health_check - computed: false, optional: true, required: false
-  private _healthCheck = new ElbHealthCheckOutputReference(this as any, "health_check", true);
+  private _healthCheck = new ElbHealthCheckOutputReference(this, "health_check", true);
   public get healthCheck() {
     return this._healthCheck;
   }
@@ -783,12 +781,12 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // listener - computed: false, optional: false, required: true
-  private _listener?: ElbListener[]; 
+  private _listener?: ElbListener[] | cdktf.IResolvable; 
   public get listener() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('listener') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('listener')));
   }
-  public set listener(value: ElbListener[]) {
+  public set listener(value: ElbListener[] | cdktf.IResolvable) {
     this._listener = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -815,8 +813,8 @@ export class Elb extends cdktf.TerraformResource {
       security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
       source_security_group: cdktf.stringToTerraform(this._sourceSecurityGroup),
       subnets: cdktf.listMapper(cdktf.stringToTerraform)(this._subnets),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       access_logs: elbAccessLogsToTerraform(this._accessLogs.internalValue),
       health_check: elbHealthCheckToTerraform(this._healthCheck.internalValue),
       listener: cdktf.listMapper(elbListenerToTerraform)(this._listener),

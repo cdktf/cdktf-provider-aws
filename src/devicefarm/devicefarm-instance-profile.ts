@@ -30,11 +30,11 @@ export interface DevicefarmInstanceProfileConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_instance_profile#tags DevicefarmInstanceProfile#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_instance_profile#tags_all DevicefarmInstanceProfile#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
 }
 
 /**
@@ -106,7 +106,7 @@ export class DevicefarmInstanceProfile extends cdktf.TerraformResource {
   // exclude_app_packages_from_cleanup - computed: false, optional: true, required: false
   private _excludeAppPackagesFromCleanup?: string[]; 
   public get excludeAppPackagesFromCleanup() {
-    return this.getListAttribute('exclude_app_packages_from_cleanup');
+    return cdktf.Fn.tolist(this.getListAttribute('exclude_app_packages_from_cleanup'));
   }
   public set excludeAppPackagesFromCleanup(value: string[]) {
     this._excludeAppPackagesFromCleanup = value;
@@ -140,7 +140,7 @@ export class DevicefarmInstanceProfile extends cdktf.TerraformResource {
   // package_cleanup - computed: false, optional: true, required: false
   private _packageCleanup?: boolean | cdktf.IResolvable; 
   public get packageCleanup() {
-    return this.getBooleanAttribute('package_cleanup') as any;
+    return this.getBooleanAttribute('package_cleanup');
   }
   public set packageCleanup(value: boolean | cdktf.IResolvable) {
     this._packageCleanup = value;
@@ -156,7 +156,7 @@ export class DevicefarmInstanceProfile extends cdktf.TerraformResource {
   // reboot_after_use - computed: false, optional: true, required: false
   private _rebootAfterUse?: boolean | cdktf.IResolvable; 
   public get rebootAfterUse() {
-    return this.getBooleanAttribute('reboot_after_use') as any;
+    return this.getBooleanAttribute('reboot_after_use');
   }
   public set rebootAfterUse(value: boolean | cdktf.IResolvable) {
     this._rebootAfterUse = value;
@@ -170,12 +170,11 @@ export class DevicefarmInstanceProfile extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -187,12 +186,11 @@ export class DevicefarmInstanceProfile extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -214,8 +212,8 @@ export class DevicefarmInstanceProfile extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       package_cleanup: cdktf.booleanToTerraform(this._packageCleanup),
       reboot_after_use: cdktf.booleanToTerraform(this._rebootAfterUse),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
   }
 }

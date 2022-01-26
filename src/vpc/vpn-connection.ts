@@ -38,11 +38,11 @@ export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#tags VpnConnection#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#tags_all VpnConnection#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#transit_gateway_id VpnConnection#transit_gateway_id}
   */
@@ -367,7 +367,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // enable_acceleration - computed: true, optional: true, required: false
   private _enableAcceleration?: boolean | cdktf.IResolvable; 
   public get enableAcceleration() {
-    return this.getBooleanAttribute('enable_acceleration') as any;
+    return this.getBooleanAttribute('enable_acceleration');
   }
   public set enableAcceleration(value: boolean | cdktf.IResolvable) {
     this._enableAcceleration = value;
@@ -451,13 +451,13 @@ export class VpnConnection extends cdktf.TerraformResource {
 
   // routes - computed: true, optional: false, required: false
   public routes(index: string) {
-    return new VpnConnectionRoutes(this, 'routes', index);
+    return new VpnConnectionRoutes(this, 'routes', index, true);
   }
 
   // static_routes_only - computed: true, optional: true, required: false
   private _staticRoutesOnly?: boolean | cdktf.IResolvable; 
   public get staticRoutesOnly() {
-    return this.getBooleanAttribute('static_routes_only') as any;
+    return this.getBooleanAttribute('static_routes_only');
   }
   public set staticRoutesOnly(value: boolean | cdktf.IResolvable) {
     this._staticRoutesOnly = value;
@@ -471,12 +471,11 @@ export class VpnConnection extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -488,12 +487,11 @@ export class VpnConnection extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -580,7 +578,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel1_ike_versions - computed: false, optional: true, required: false
   private _tunnel1IkeVersions?: string[]; 
   public get tunnel1IkeVersions() {
-    return this.getListAttribute('tunnel1_ike_versions');
+    return cdktf.Fn.tolist(this.getListAttribute('tunnel1_ike_versions'));
   }
   public set tunnel1IkeVersions(value: string[]) {
     this._tunnel1IkeVersions = value;
@@ -628,8 +626,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel1_phase1_dh_group_numbers - computed: false, optional: true, required: false
   private _tunnel1Phase1DhGroupNumbers?: number[]; 
   public get tunnel1Phase1DhGroupNumbers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tunnel1_phase1_dh_group_numbers') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('tunnel1_phase1_dh_group_numbers')));
   }
   public set tunnel1Phase1DhGroupNumbers(value: number[]) {
     this._tunnel1Phase1DhGroupNumbers = value;
@@ -645,7 +642,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel1_phase1_encryption_algorithms - computed: false, optional: true, required: false
   private _tunnel1Phase1EncryptionAlgorithms?: string[]; 
   public get tunnel1Phase1EncryptionAlgorithms() {
-    return this.getListAttribute('tunnel1_phase1_encryption_algorithms');
+    return cdktf.Fn.tolist(this.getListAttribute('tunnel1_phase1_encryption_algorithms'));
   }
   public set tunnel1Phase1EncryptionAlgorithms(value: string[]) {
     this._tunnel1Phase1EncryptionAlgorithms = value;
@@ -661,7 +658,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel1_phase1_integrity_algorithms - computed: false, optional: true, required: false
   private _tunnel1Phase1IntegrityAlgorithms?: string[]; 
   public get tunnel1Phase1IntegrityAlgorithms() {
-    return this.getListAttribute('tunnel1_phase1_integrity_algorithms');
+    return cdktf.Fn.tolist(this.getListAttribute('tunnel1_phase1_integrity_algorithms'));
   }
   public set tunnel1Phase1IntegrityAlgorithms(value: string[]) {
     this._tunnel1Phase1IntegrityAlgorithms = value;
@@ -693,8 +690,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel1_phase2_dh_group_numbers - computed: false, optional: true, required: false
   private _tunnel1Phase2DhGroupNumbers?: number[]; 
   public get tunnel1Phase2DhGroupNumbers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tunnel1_phase2_dh_group_numbers') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('tunnel1_phase2_dh_group_numbers')));
   }
   public set tunnel1Phase2DhGroupNumbers(value: number[]) {
     this._tunnel1Phase2DhGroupNumbers = value;
@@ -710,7 +706,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel1_phase2_encryption_algorithms - computed: false, optional: true, required: false
   private _tunnel1Phase2EncryptionAlgorithms?: string[]; 
   public get tunnel1Phase2EncryptionAlgorithms() {
-    return this.getListAttribute('tunnel1_phase2_encryption_algorithms');
+    return cdktf.Fn.tolist(this.getListAttribute('tunnel1_phase2_encryption_algorithms'));
   }
   public set tunnel1Phase2EncryptionAlgorithms(value: string[]) {
     this._tunnel1Phase2EncryptionAlgorithms = value;
@@ -726,7 +722,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel1_phase2_integrity_algorithms - computed: false, optional: true, required: false
   private _tunnel1Phase2IntegrityAlgorithms?: string[]; 
   public get tunnel1Phase2IntegrityAlgorithms() {
-    return this.getListAttribute('tunnel1_phase2_integrity_algorithms');
+    return cdktf.Fn.tolist(this.getListAttribute('tunnel1_phase2_integrity_algorithms'));
   }
   public set tunnel1Phase2IntegrityAlgorithms(value: string[]) {
     this._tunnel1Phase2IntegrityAlgorithms = value;
@@ -895,7 +891,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel2_ike_versions - computed: false, optional: true, required: false
   private _tunnel2IkeVersions?: string[]; 
   public get tunnel2IkeVersions() {
-    return this.getListAttribute('tunnel2_ike_versions');
+    return cdktf.Fn.tolist(this.getListAttribute('tunnel2_ike_versions'));
   }
   public set tunnel2IkeVersions(value: string[]) {
     this._tunnel2IkeVersions = value;
@@ -943,8 +939,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel2_phase1_dh_group_numbers - computed: false, optional: true, required: false
   private _tunnel2Phase1DhGroupNumbers?: number[]; 
   public get tunnel2Phase1DhGroupNumbers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tunnel2_phase1_dh_group_numbers') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('tunnel2_phase1_dh_group_numbers')));
   }
   public set tunnel2Phase1DhGroupNumbers(value: number[]) {
     this._tunnel2Phase1DhGroupNumbers = value;
@@ -960,7 +955,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel2_phase1_encryption_algorithms - computed: false, optional: true, required: false
   private _tunnel2Phase1EncryptionAlgorithms?: string[]; 
   public get tunnel2Phase1EncryptionAlgorithms() {
-    return this.getListAttribute('tunnel2_phase1_encryption_algorithms');
+    return cdktf.Fn.tolist(this.getListAttribute('tunnel2_phase1_encryption_algorithms'));
   }
   public set tunnel2Phase1EncryptionAlgorithms(value: string[]) {
     this._tunnel2Phase1EncryptionAlgorithms = value;
@@ -976,7 +971,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel2_phase1_integrity_algorithms - computed: false, optional: true, required: false
   private _tunnel2Phase1IntegrityAlgorithms?: string[]; 
   public get tunnel2Phase1IntegrityAlgorithms() {
-    return this.getListAttribute('tunnel2_phase1_integrity_algorithms');
+    return cdktf.Fn.tolist(this.getListAttribute('tunnel2_phase1_integrity_algorithms'));
   }
   public set tunnel2Phase1IntegrityAlgorithms(value: string[]) {
     this._tunnel2Phase1IntegrityAlgorithms = value;
@@ -1008,8 +1003,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel2_phase2_dh_group_numbers - computed: false, optional: true, required: false
   private _tunnel2Phase2DhGroupNumbers?: number[]; 
   public get tunnel2Phase2DhGroupNumbers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tunnel2_phase2_dh_group_numbers') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('tunnel2_phase2_dh_group_numbers')));
   }
   public set tunnel2Phase2DhGroupNumbers(value: number[]) {
     this._tunnel2Phase2DhGroupNumbers = value;
@@ -1025,7 +1019,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel2_phase2_encryption_algorithms - computed: false, optional: true, required: false
   private _tunnel2Phase2EncryptionAlgorithms?: string[]; 
   public get tunnel2Phase2EncryptionAlgorithms() {
-    return this.getListAttribute('tunnel2_phase2_encryption_algorithms');
+    return cdktf.Fn.tolist(this.getListAttribute('tunnel2_phase2_encryption_algorithms'));
   }
   public set tunnel2Phase2EncryptionAlgorithms(value: string[]) {
     this._tunnel2Phase2EncryptionAlgorithms = value;
@@ -1041,7 +1035,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // tunnel2_phase2_integrity_algorithms - computed: false, optional: true, required: false
   private _tunnel2Phase2IntegrityAlgorithms?: string[]; 
   public get tunnel2Phase2IntegrityAlgorithms() {
-    return this.getListAttribute('tunnel2_phase2_integrity_algorithms');
+    return cdktf.Fn.tolist(this.getListAttribute('tunnel2_phase2_integrity_algorithms'));
   }
   public set tunnel2Phase2IntegrityAlgorithms(value: string[]) {
     this._tunnel2Phase2IntegrityAlgorithms = value;
@@ -1186,7 +1180,7 @@ export class VpnConnection extends cdktf.TerraformResource {
 
   // vgw_telemetry - computed: true, optional: false, required: false
   public vgwTelemetry(index: string) {
-    return new VpnConnectionVgwTelemetry(this, 'vgw_telemetry', index);
+    return new VpnConnectionVgwTelemetry(this, 'vgw_telemetry', index, true);
   }
 
   // vpn_gateway_id - computed: false, optional: true, required: false
@@ -1218,8 +1212,8 @@ export class VpnConnection extends cdktf.TerraformResource {
       remote_ipv4_network_cidr: cdktf.stringToTerraform(this._remoteIpv4NetworkCidr),
       remote_ipv6_network_cidr: cdktf.stringToTerraform(this._remoteIpv6NetworkCidr),
       static_routes_only: cdktf.booleanToTerraform(this._staticRoutesOnly),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
       tunnel1_dpd_timeout_action: cdktf.stringToTerraform(this._tunnel1DpdTimeoutAction),
       tunnel1_dpd_timeout_seconds: cdktf.numberToTerraform(this._tunnel1DpdTimeoutSeconds),

@@ -60,7 +60,7 @@ export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
   // enable_sip_logs - computed: false, optional: true, required: false
   private _enableSipLogs?: boolean | cdktf.IResolvable; 
   public get enableSipLogs() {
-    return this.getBooleanAttribute('enable_sip_logs') as any;
+    return this.getBooleanAttribute('enable_sip_logs');
   }
   public set enableSipLogs(value: boolean | cdktf.IResolvable) {
     this._enableSipLogs = value;

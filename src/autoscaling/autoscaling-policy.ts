@@ -54,7 +54,7 @@ export interface AutoscalingPolicyConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#step_adjustment AutoscalingPolicy#step_adjustment}
   */
-  readonly stepAdjustment?: AutoscalingPolicyStepAdjustment[];
+  readonly stepAdjustment?: AutoscalingPolicyStepAdjustment[] | cdktf.IResolvable;
   /**
   * target_tracking_configuration block
   * 
@@ -74,7 +74,7 @@ export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificat
 }
 
 export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationToTerraform(struct?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationOutputReference | AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -92,7 +92,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -161,7 +161,7 @@ export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificat
 }
 
 export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationToTerraform(struct?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationOutputReference | AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -179,7 +179,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -248,7 +248,7 @@ export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificat
 }
 
 export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationToTerraform(struct?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationOutputReference | AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -266,7 +266,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationP
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -349,7 +349,7 @@ export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificat
 }
 
 export function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationToTerraform(struct?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationOutputReference | AutoscalingPolicyPredictiveScalingConfigurationMetricSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -369,7 +369,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -426,7 +426,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationO
   }
 
   // predefined_load_metric_specification - computed: false, optional: true, required: false
-  private _predefinedLoadMetricSpecification = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationOutputReference(this as any, "predefined_load_metric_specification", true);
+  private _predefinedLoadMetricSpecification = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationOutputReference(this, "predefined_load_metric_specification", true);
   public get predefinedLoadMetricSpecification() {
     return this._predefinedLoadMetricSpecification;
   }
@@ -442,7 +442,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationO
   }
 
   // predefined_metric_pair_specification - computed: false, optional: true, required: false
-  private _predefinedMetricPairSpecification = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationOutputReference(this as any, "predefined_metric_pair_specification", true);
+  private _predefinedMetricPairSpecification = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationOutputReference(this, "predefined_metric_pair_specification", true);
   public get predefinedMetricPairSpecification() {
     return this._predefinedMetricPairSpecification;
   }
@@ -458,7 +458,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationO
   }
 
   // predefined_scaling_metric_specification - computed: false, optional: true, required: false
-  private _predefinedScalingMetricSpecification = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationOutputReference(this as any, "predefined_scaling_metric_specification", true);
+  private _predefinedScalingMetricSpecification = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationOutputReference(this, "predefined_scaling_metric_specification", true);
   public get predefinedScalingMetricSpecification() {
     return this._predefinedScalingMetricSpecification;
   }
@@ -499,7 +499,7 @@ export interface AutoscalingPolicyPredictiveScalingConfiguration {
 }
 
 export function autoscalingPolicyPredictiveScalingConfigurationToTerraform(struct?: AutoscalingPolicyPredictiveScalingConfigurationOutputReference | AutoscalingPolicyPredictiveScalingConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -520,7 +520,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -634,7 +634,7 @@ export class AutoscalingPolicyPredictiveScalingConfigurationOutputReference exte
   }
 
   // metric_specification - computed: false, optional: false, required: true
-  private _metricSpecification = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationOutputReference(this as any, "metric_specification", true);
+  private _metricSpecification = new AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationOutputReference(this, "metric_specification", true);
   public get metricSpecification() {
     return this._metricSpecification;
   }
@@ -661,8 +661,8 @@ export interface AutoscalingPolicyStepAdjustment {
   readonly scalingAdjustment: number;
 }
 
-export function autoscalingPolicyStepAdjustmentToTerraform(struct?: AutoscalingPolicyStepAdjustment): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function autoscalingPolicyStepAdjustmentToTerraform(struct?: AutoscalingPolicyStepAdjustment | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -684,8 +684,8 @@ export interface AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpe
   readonly value: string;
 }
 
-export function autoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionToTerraform(struct?: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function autoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionToTerraform(struct?: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -717,11 +717,11 @@ export interface AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpe
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#metric_dimension AutoscalingPolicy#metric_dimension}
   */
-  readonly metricDimension?: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension[];
+  readonly metricDimension?: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension[] | cdktf.IResolvable;
 }
 
 export function autoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationToTerraform(struct?: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutputReference | AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -742,7 +742,7 @@ export class AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecifi
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -847,12 +847,12 @@ export class AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecifi
   }
 
   // metric_dimension - computed: false, optional: true, required: false
-  private _metricDimension?: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension[]; 
+  private _metricDimension?: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension[] | cdktf.IResolvable; 
   public get metricDimension() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('metric_dimension') as any;
+    return this.interpolationForAttribute('metric_dimension');
   }
-  public set metricDimension(value: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension[]) {
+  public set metricDimension(value: AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension[] | cdktf.IResolvable) {
     this._metricDimension = value;
   }
   public resetMetricDimension() {
@@ -875,7 +875,7 @@ export interface AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpe
 }
 
 export function autoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecificationToTerraform(struct?: AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecificationOutputReference | AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -893,7 +893,7 @@ export class AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecifi
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -977,7 +977,7 @@ export interface AutoscalingPolicyTargetTrackingConfiguration {
 }
 
 export function autoscalingPolicyTargetTrackingConfigurationToTerraform(struct?: AutoscalingPolicyTargetTrackingConfigurationOutputReference | AutoscalingPolicyTargetTrackingConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -997,7 +997,7 @@ export class AutoscalingPolicyTargetTrackingConfigurationOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1043,7 +1043,7 @@ export class AutoscalingPolicyTargetTrackingConfigurationOutputReference extends
   // disable_scale_in - computed: false, optional: true, required: false
   private _disableScaleIn?: boolean | cdktf.IResolvable; 
   public get disableScaleIn() {
-    return this.getBooleanAttribute('disable_scale_in') as any;
+    return this.getBooleanAttribute('disable_scale_in');
   }
   public set disableScaleIn(value: boolean | cdktf.IResolvable) {
     this._disableScaleIn = value;
@@ -1070,7 +1070,7 @@ export class AutoscalingPolicyTargetTrackingConfigurationOutputReference extends
   }
 
   // customized_metric_specification - computed: false, optional: true, required: false
-  private _customizedMetricSpecification = new AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutputReference(this as any, "customized_metric_specification", true);
+  private _customizedMetricSpecification = new AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutputReference(this, "customized_metric_specification", true);
   public get customizedMetricSpecification() {
     return this._customizedMetricSpecification;
   }
@@ -1086,7 +1086,7 @@ export class AutoscalingPolicyTargetTrackingConfigurationOutputReference extends
   }
 
   // predefined_metric_specification - computed: false, optional: true, required: false
-  private _predefinedMetricSpecification = new AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecificationOutputReference(this as any, "predefined_metric_specification", true);
+  private _predefinedMetricSpecification = new AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecificationOutputReference(this, "predefined_metric_specification", true);
   public get predefinedMetricSpecification() {
     return this._predefinedMetricSpecification;
   }
@@ -1301,7 +1301,7 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
   }
 
   // predictive_scaling_configuration - computed: false, optional: true, required: false
-  private _predictiveScalingConfiguration = new AutoscalingPolicyPredictiveScalingConfigurationOutputReference(this as any, "predictive_scaling_configuration", true);
+  private _predictiveScalingConfiguration = new AutoscalingPolicyPredictiveScalingConfigurationOutputReference(this, "predictive_scaling_configuration", true);
   public get predictiveScalingConfiguration() {
     return this._predictiveScalingConfiguration;
   }
@@ -1317,12 +1317,12 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
   }
 
   // step_adjustment - computed: false, optional: true, required: false
-  private _stepAdjustment?: AutoscalingPolicyStepAdjustment[]; 
+  private _stepAdjustment?: AutoscalingPolicyStepAdjustment[] | cdktf.IResolvable; 
   public get stepAdjustment() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('step_adjustment') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('step_adjustment')));
   }
-  public set stepAdjustment(value: AutoscalingPolicyStepAdjustment[]) {
+  public set stepAdjustment(value: AutoscalingPolicyStepAdjustment[] | cdktf.IResolvable) {
     this._stepAdjustment = value;
   }
   public resetStepAdjustment() {
@@ -1334,7 +1334,7 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
   }
 
   // target_tracking_configuration - computed: false, optional: true, required: false
-  private _targetTrackingConfiguration = new AutoscalingPolicyTargetTrackingConfigurationOutputReference(this as any, "target_tracking_configuration", true);
+  private _targetTrackingConfiguration = new AutoscalingPolicyTargetTrackingConfigurationOutputReference(this, "target_tracking_configuration", true);
   public get targetTrackingConfiguration() {
     return this._targetTrackingConfiguration;
   }

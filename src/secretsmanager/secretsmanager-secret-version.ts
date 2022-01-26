@@ -130,7 +130,7 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
   // version_stages - computed: true, optional: true, required: false
   private _versionStages?: string[]; 
   public get versionStages() {
-    return this.getListAttribute('version_stages');
+    return cdktf.Fn.tolist(this.getListAttribute('version_stages'));
   }
   public set versionStages(value: string[]) {
     this._versionStages = value;

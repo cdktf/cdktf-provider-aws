@@ -38,7 +38,7 @@ export interface Apigatewayv2RouteConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route#request_models Apigatewayv2Route#request_models}
   */
-  readonly requestModels?: { [key: string]: string } | cdktf.IResolvable;
+  readonly requestModels?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route#route_key Apigatewayv2Route#route_key}
   */
@@ -56,7 +56,7 @@ export interface Apigatewayv2RouteConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route#request_parameter Apigatewayv2Route#request_parameter}
   */
-  readonly requestParameter?: Apigatewayv2RouteRequestParameter[];
+  readonly requestParameter?: Apigatewayv2RouteRequestParameter[] | cdktf.IResolvable;
 }
 export interface Apigatewayv2RouteRequestParameter {
   /**
@@ -69,8 +69,8 @@ export interface Apigatewayv2RouteRequestParameter {
   readonly required: boolean | cdktf.IResolvable;
 }
 
-export function apigatewayv2RouteRequestParameterToTerraform(struct?: Apigatewayv2RouteRequestParameter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function apigatewayv2RouteRequestParameterToTerraform(struct?: Apigatewayv2RouteRequestParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -147,7 +147,7 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
   // api_key_required - computed: false, optional: true, required: false
   private _apiKeyRequired?: boolean | cdktf.IResolvable; 
   public get apiKeyRequired() {
-    return this.getBooleanAttribute('api_key_required') as any;
+    return this.getBooleanAttribute('api_key_required');
   }
   public set apiKeyRequired(value: boolean | cdktf.IResolvable) {
     this._apiKeyRequired = value;
@@ -163,7 +163,7 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
   // authorization_scopes - computed: false, optional: true, required: false
   private _authorizationScopes?: string[]; 
   public get authorizationScopes() {
-    return this.getListAttribute('authorization_scopes');
+    return cdktf.Fn.tolist(this.getListAttribute('authorization_scopes'));
   }
   public set authorizationScopes(value: string[]) {
     this._authorizationScopes = value;
@@ -246,12 +246,11 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
   }
 
   // request_models - computed: false, optional: true, required: false
-  private _requestModels?: { [key: string]: string } | cdktf.IResolvable; 
+  private _requestModels?: { [key: string]: string }; 
   public get requestModels() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request_models') as any;
+    return this.getStringMapAttribute('request_models');
   }
-  public set requestModels(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set requestModels(value: { [key: string]: string }) {
     this._requestModels = value;
   }
   public resetRequestModels() {
@@ -308,12 +307,12 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
   }
 
   // request_parameter - computed: false, optional: true, required: false
-  private _requestParameter?: Apigatewayv2RouteRequestParameter[]; 
+  private _requestParameter?: Apigatewayv2RouteRequestParameter[] | cdktf.IResolvable; 
   public get requestParameter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request_parameter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('request_parameter')));
   }
-  public set requestParameter(value: Apigatewayv2RouteRequestParameter[]) {
+  public set requestParameter(value: Apigatewayv2RouteRequestParameter[] | cdktf.IResolvable) {
     this._requestParameter = value;
   }
   public resetRequestParameter() {
@@ -337,7 +336,7 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
       authorizer_id: cdktf.stringToTerraform(this._authorizerId),
       model_selection_expression: cdktf.stringToTerraform(this._modelSelectionExpression),
       operation_name: cdktf.stringToTerraform(this._operationName),
-      request_models: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestModels),
+      request_models: cdktf.hashMapper(cdktf.stringToTerraform)(this._requestModels),
       route_key: cdktf.stringToTerraform(this._routeKey),
       route_response_selection_expression: cdktf.stringToTerraform(this._routeResponseSelectionExpression),
       target: cdktf.stringToTerraform(this._target),

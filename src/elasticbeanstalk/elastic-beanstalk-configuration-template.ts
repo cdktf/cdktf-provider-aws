@@ -32,7 +32,7 @@ export interface ElasticBeanstalkConfigurationTemplateConfig extends cdktf.Terra
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_configuration_template#setting ElasticBeanstalkConfigurationTemplate#setting}
   */
-  readonly setting?: ElasticBeanstalkConfigurationTemplateSetting[];
+  readonly setting?: ElasticBeanstalkConfigurationTemplateSetting[] | cdktf.IResolvable;
 }
 export interface ElasticBeanstalkConfigurationTemplateSetting {
   /**
@@ -53,8 +53,8 @@ export interface ElasticBeanstalkConfigurationTemplateSetting {
   readonly value: string;
 }
 
-export function elasticBeanstalkConfigurationTemplateSettingToTerraform(struct?: ElasticBeanstalkConfigurationTemplateSetting): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function elasticBeanstalkConfigurationTemplateSettingToTerraform(struct?: ElasticBeanstalkConfigurationTemplateSetting | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -191,12 +191,12 @@ export class ElasticBeanstalkConfigurationTemplate extends cdktf.TerraformResour
   }
 
   // setting - computed: false, optional: true, required: false
-  private _setting?: ElasticBeanstalkConfigurationTemplateSetting[]; 
+  private _setting?: ElasticBeanstalkConfigurationTemplateSetting[] | cdktf.IResolvable; 
   public get setting() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('setting') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('setting')));
   }
-  public set setting(value: ElasticBeanstalkConfigurationTemplateSetting[]) {
+  public set setting(value: ElasticBeanstalkConfigurationTemplateSetting[] | cdktf.IResolvable) {
     this._setting = value;
   }
   public resetSetting() {

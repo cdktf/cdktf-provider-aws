@@ -130,11 +130,11 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster#tags RedshiftCluster#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster#tags_all RedshiftCluster#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster#vpc_security_group_ids RedshiftCluster#vpc_security_group_ids}
   */
@@ -191,7 +191,7 @@ export interface RedshiftClusterLogging {
 }
 
 export function redshiftClusterLoggingToTerraform(struct?: RedshiftClusterLoggingOutputReference | RedshiftClusterLogging): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -210,7 +210,7 @@ export class RedshiftClusterLoggingOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -266,7 +266,7 @@ export class RedshiftClusterLoggingOutputReference extends cdktf.ComplexObject {
   // enable - computed: false, optional: false, required: true
   private _enable?: boolean | cdktf.IResolvable; 
   public get enable() {
-    return this.getBooleanAttribute('enable') as any;
+    return this.getBooleanAttribute('enable');
   }
   public set enable(value: boolean | cdktf.IResolvable) {
     this._enable = value;
@@ -308,7 +308,7 @@ export interface RedshiftClusterSnapshotCopy {
 }
 
 export function redshiftClusterSnapshotCopyToTerraform(struct?: RedshiftClusterSnapshotCopyOutputReference | RedshiftClusterSnapshotCopy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -327,7 +327,7 @@ export class RedshiftClusterSnapshotCopyOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -424,8 +424,8 @@ export interface RedshiftClusterTimeouts {
   readonly update?: string;
 }
 
-export function redshiftClusterTimeoutsToTerraform(struct?: RedshiftClusterTimeoutsOutputReference | RedshiftClusterTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function redshiftClusterTimeoutsToTerraform(struct?: RedshiftClusterTimeoutsOutputReference | RedshiftClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -444,7 +444,7 @@ export class RedshiftClusterTimeoutsOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -607,7 +607,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // allow_version_upgrade - computed: false, optional: true, required: false
   private _allowVersionUpgrade?: boolean | cdktf.IResolvable; 
   public get allowVersionUpgrade() {
-    return this.getBooleanAttribute('allow_version_upgrade') as any;
+    return this.getBooleanAttribute('allow_version_upgrade');
   }
   public set allowVersionUpgrade(value: boolean | cdktf.IResolvable) {
     this._allowVersionUpgrade = value;
@@ -672,7 +672,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
 
   // cluster_nodes - computed: true, optional: false, required: false
   public clusterNodes(index: string) {
-    return new RedshiftClusterClusterNodes(this, 'cluster_nodes', index);
+    return new RedshiftClusterClusterNodes(this, 'cluster_nodes', index, false);
   }
 
   // cluster_parameter_group_name - computed: true, optional: true, required: false
@@ -726,7 +726,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // cluster_security_groups - computed: true, optional: true, required: false
   private _clusterSecurityGroups?: string[]; 
   public get clusterSecurityGroups() {
-    return this.getListAttribute('cluster_security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('cluster_security_groups'));
   }
   public set clusterSecurityGroups(value: string[]) {
     this._clusterSecurityGroups = value;
@@ -827,7 +827,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // encrypted - computed: false, optional: true, required: false
   private _encrypted?: boolean | cdktf.IResolvable; 
   public get encrypted() {
-    return this.getBooleanAttribute('encrypted') as any;
+    return this.getBooleanAttribute('encrypted');
   }
   public set encrypted(value: boolean | cdktf.IResolvable) {
     this._encrypted = value;
@@ -859,7 +859,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // enhanced_vpc_routing - computed: true, optional: true, required: false
   private _enhancedVpcRouting?: boolean | cdktf.IResolvable; 
   public get enhancedVpcRouting() {
-    return this.getBooleanAttribute('enhanced_vpc_routing') as any;
+    return this.getBooleanAttribute('enhanced_vpc_routing');
   }
   public set enhancedVpcRouting(value: boolean | cdktf.IResolvable) {
     this._enhancedVpcRouting = value;
@@ -891,7 +891,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // iam_roles - computed: true, optional: true, required: false
   private _iamRoles?: string[]; 
   public get iamRoles() {
-    return this.getListAttribute('iam_roles');
+    return cdktf.Fn.tolist(this.getListAttribute('iam_roles'));
   }
   public set iamRoles(value: string[]) {
     this._iamRoles = value;
@@ -1037,7 +1037,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // publicly_accessible - computed: false, optional: true, required: false
   private _publiclyAccessible?: boolean | cdktf.IResolvable; 
   public get publiclyAccessible() {
-    return this.getBooleanAttribute('publicly_accessible') as any;
+    return this.getBooleanAttribute('publicly_accessible');
   }
   public set publiclyAccessible(value: boolean | cdktf.IResolvable) {
     this._publiclyAccessible = value;
@@ -1053,7 +1053,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // skip_final_snapshot - computed: false, optional: true, required: false
   private _skipFinalSnapshot?: boolean | cdktf.IResolvable; 
   public get skipFinalSnapshot() {
-    return this.getBooleanAttribute('skip_final_snapshot') as any;
+    return this.getBooleanAttribute('skip_final_snapshot');
   }
   public set skipFinalSnapshot(value: boolean | cdktf.IResolvable) {
     this._skipFinalSnapshot = value;
@@ -1099,12 +1099,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -1116,12 +1115,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -1135,7 +1133,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[]; 
   public get vpcSecurityGroupIds() {
-    return this.getListAttribute('vpc_security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
   }
   public set vpcSecurityGroupIds(value: string[]) {
     this._vpcSecurityGroupIds = value;
@@ -1149,7 +1147,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // logging - computed: false, optional: true, required: false
-  private _logging = new RedshiftClusterLoggingOutputReference(this as any, "logging", true);
+  private _logging = new RedshiftClusterLoggingOutputReference(this, "logging", true);
   public get logging() {
     return this._logging;
   }
@@ -1165,7 +1163,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // snapshot_copy - computed: false, optional: true, required: false
-  private _snapshotCopy = new RedshiftClusterSnapshotCopyOutputReference(this as any, "snapshot_copy", true);
+  private _snapshotCopy = new RedshiftClusterSnapshotCopyOutputReference(this, "snapshot_copy", true);
   public get snapshotCopy() {
     return this._snapshotCopy;
   }
@@ -1181,7 +1179,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new RedshiftClusterTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new RedshiftClusterTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -1232,8 +1230,8 @@ export class RedshiftCluster extends cdktf.TerraformResource {
       skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
       snapshot_cluster_identifier: cdktf.stringToTerraform(this._snapshotClusterIdentifier),
       snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
       logging: redshiftClusterLoggingToTerraform(this._logging.internalValue),
       snapshot_copy: redshiftClusterSnapshotCopyToTerraform(this._snapshotCopy.internalValue),

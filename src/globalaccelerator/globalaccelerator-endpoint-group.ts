@@ -44,13 +44,13 @@ export interface GlobalacceleratorEndpointGroupConfig extends cdktf.TerraformMet
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_endpoint_group#endpoint_configuration GlobalacceleratorEndpointGroup#endpoint_configuration}
   */
-  readonly endpointConfiguration?: GlobalacceleratorEndpointGroupEndpointConfiguration[];
+  readonly endpointConfiguration?: GlobalacceleratorEndpointGroupEndpointConfiguration[] | cdktf.IResolvable;
   /**
   * port_override block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_endpoint_group#port_override GlobalacceleratorEndpointGroup#port_override}
   */
-  readonly portOverride?: GlobalacceleratorEndpointGroupPortOverride[];
+  readonly portOverride?: GlobalacceleratorEndpointGroupPortOverride[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -73,8 +73,8 @@ export interface GlobalacceleratorEndpointGroupEndpointConfiguration {
   readonly weight?: number;
 }
 
-export function globalacceleratorEndpointGroupEndpointConfigurationToTerraform(struct?: GlobalacceleratorEndpointGroupEndpointConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function globalacceleratorEndpointGroupEndpointConfigurationToTerraform(struct?: GlobalacceleratorEndpointGroupEndpointConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -96,8 +96,8 @@ export interface GlobalacceleratorEndpointGroupPortOverride {
   readonly listenerPort: number;
 }
 
-export function globalacceleratorEndpointGroupPortOverrideToTerraform(struct?: GlobalacceleratorEndpointGroupPortOverride): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function globalacceleratorEndpointGroupPortOverrideToTerraform(struct?: GlobalacceleratorEndpointGroupPortOverride | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -122,8 +122,8 @@ export interface GlobalacceleratorEndpointGroupTimeouts {
   readonly update?: string;
 }
 
-export function globalacceleratorEndpointGroupTimeoutsToTerraform(struct?: GlobalacceleratorEndpointGroupTimeoutsOutputReference | GlobalacceleratorEndpointGroupTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function globalacceleratorEndpointGroupTimeoutsToTerraform(struct?: GlobalacceleratorEndpointGroupTimeoutsOutputReference | GlobalacceleratorEndpointGroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -142,7 +142,7 @@ export class GlobalacceleratorEndpointGroupTimeoutsOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -413,12 +413,12 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
   }
 
   // endpoint_configuration - computed: false, optional: true, required: false
-  private _endpointConfiguration?: GlobalacceleratorEndpointGroupEndpointConfiguration[]; 
+  private _endpointConfiguration?: GlobalacceleratorEndpointGroupEndpointConfiguration[] | cdktf.IResolvable; 
   public get endpointConfiguration() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('endpoint_configuration') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('endpoint_configuration')));
   }
-  public set endpointConfiguration(value: GlobalacceleratorEndpointGroupEndpointConfiguration[]) {
+  public set endpointConfiguration(value: GlobalacceleratorEndpointGroupEndpointConfiguration[] | cdktf.IResolvable) {
     this._endpointConfiguration = value;
   }
   public resetEndpointConfiguration() {
@@ -430,12 +430,12 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
   }
 
   // port_override - computed: false, optional: true, required: false
-  private _portOverride?: GlobalacceleratorEndpointGroupPortOverride[]; 
+  private _portOverride?: GlobalacceleratorEndpointGroupPortOverride[] | cdktf.IResolvable; 
   public get portOverride() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('port_override') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('port_override')));
   }
-  public set portOverride(value: GlobalacceleratorEndpointGroupPortOverride[]) {
+  public set portOverride(value: GlobalacceleratorEndpointGroupPortOverride[] | cdktf.IResolvable) {
     this._portOverride = value;
   }
   public resetPortOverride() {
@@ -447,7 +447,7 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new GlobalacceleratorEndpointGroupTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new GlobalacceleratorEndpointGroupTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

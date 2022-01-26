@@ -86,7 +86,7 @@ export class ApprunnerCustomDomainAssociation extends cdktf.TerraformResource {
 
   // certificate_validation_records - computed: true, optional: false, required: false
   public certificateValidationRecords(index: string) {
-    return new ApprunnerCustomDomainAssociationCertificateValidationRecords(this, 'certificate_validation_records', index);
+    return new ApprunnerCustomDomainAssociationCertificateValidationRecords(this, 'certificate_validation_records', index, true);
   }
 
   // dns_target - computed: true, optional: false, required: false
@@ -110,7 +110,7 @@ export class ApprunnerCustomDomainAssociation extends cdktf.TerraformResource {
   // enable_www_subdomain - computed: false, optional: true, required: false
   private _enableWwwSubdomain?: boolean | cdktf.IResolvable; 
   public get enableWwwSubdomain() {
-    return this.getBooleanAttribute('enable_www_subdomain') as any;
+    return this.getBooleanAttribute('enable_www_subdomain');
   }
   public set enableWwwSubdomain(value: boolean | cdktf.IResolvable) {
     this._enableWwwSubdomain = value;

@@ -48,7 +48,7 @@ export interface SsmMaintenanceWindowTaskConfig extends cdktf.TerraformMetaArgum
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task#targets SsmMaintenanceWindowTask#targets}
   */
-  readonly targets?: SsmMaintenanceWindowTaskTargets[];
+  readonly targets?: SsmMaintenanceWindowTaskTargets[] | cdktf.IResolvable;
   /**
   * task_invocation_parameters block
   * 
@@ -67,8 +67,8 @@ export interface SsmMaintenanceWindowTaskTargets {
   readonly values: string[];
 }
 
-export function ssmMaintenanceWindowTaskTargetsToTerraform(struct?: SsmMaintenanceWindowTaskTargets): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ssmMaintenanceWindowTaskTargetsToTerraform(struct?: SsmMaintenanceWindowTaskTargets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -89,8 +89,8 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParam
   readonly values: string[];
 }
 
-export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -110,11 +110,11 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParam
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task#parameter SsmMaintenanceWindowTask#parameter}
   */
-  readonly parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[];
+  readonly parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[] | cdktf.IResolvable;
 }
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -132,7 +132,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameter
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -180,12 +180,12 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameter
   }
 
   // parameter - computed: false, optional: true, required: false
-  private _parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[]; 
+  private _parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[] | cdktf.IResolvable; 
   public get parameter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('parameter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('parameter')));
   }
-  public set parameter(value: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[]) {
+  public set parameter(value: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[] | cdktf.IResolvable) {
     this._parameter = value;
   }
   public resetParameter() {
@@ -212,7 +212,7 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameter
 }
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -231,7 +231,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOut
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -328,7 +328,7 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParam
 }
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -346,7 +346,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -396,7 +396,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   // cloudwatch_output_enabled - computed: false, optional: true, required: false
   private _cloudwatchOutputEnabled?: boolean | cdktf.IResolvable; 
   public get cloudwatchOutputEnabled() {
-    return this.getBooleanAttribute('cloudwatch_output_enabled') as any;
+    return this.getBooleanAttribute('cloudwatch_output_enabled');
   }
   public set cloudwatchOutputEnabled(value: boolean | cdktf.IResolvable) {
     this._cloudwatchOutputEnabled = value;
@@ -425,7 +425,7 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParam
 }
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -444,7 +444,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -540,8 +540,8 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParam
   readonly values: string[];
 }
 
-export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -601,11 +601,11 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParam
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task#parameter SsmMaintenanceWindowTask#parameter}
   */
-  readonly parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[];
+  readonly parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[] | cdktf.IResolvable;
 }
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -632,7 +632,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -846,7 +846,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   }
 
   // cloudwatch_config - computed: false, optional: true, required: false
-  private _cloudwatchConfig = new SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference(this as any, "cloudwatch_config", true);
+  private _cloudwatchConfig = new SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference(this, "cloudwatch_config", true);
   public get cloudwatchConfig() {
     return this._cloudwatchConfig;
   }
@@ -862,7 +862,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   }
 
   // notification_config - computed: false, optional: true, required: false
-  private _notificationConfig = new SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference(this as any, "notification_config", true);
+  private _notificationConfig = new SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference(this, "notification_config", true);
   public get notificationConfig() {
     return this._notificationConfig;
   }
@@ -878,12 +878,12 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   }
 
   // parameter - computed: false, optional: true, required: false
-  private _parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[]; 
+  private _parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[] | cdktf.IResolvable; 
   public get parameter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('parameter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('parameter')));
   }
-  public set parameter(value: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[]) {
+  public set parameter(value: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[] | cdktf.IResolvable) {
     this._parameter = value;
   }
   public resetParameter() {
@@ -906,7 +906,7 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsPa
 }
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -924,7 +924,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParame
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1015,7 +1015,7 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParameters {
 }
 
 export function ssmMaintenanceWindowTaskTaskInvocationParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference | SsmMaintenanceWindowTaskTaskInvocationParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1035,7 +1035,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference ext
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1079,7 +1079,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference ext
   }
 
   // automation_parameters - computed: false, optional: true, required: false
-  private _automationParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference(this as any, "automation_parameters", true);
+  private _automationParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference(this, "automation_parameters", true);
   public get automationParameters() {
     return this._automationParameters;
   }
@@ -1095,7 +1095,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference ext
   }
 
   // lambda_parameters - computed: false, optional: true, required: false
-  private _lambdaParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference(this as any, "lambda_parameters", true);
+  private _lambdaParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference(this, "lambda_parameters", true);
   public get lambdaParameters() {
     return this._lambdaParameters;
   }
@@ -1111,7 +1111,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference ext
   }
 
   // run_command_parameters - computed: false, optional: true, required: false
-  private _runCommandParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference(this as any, "run_command_parameters", true);
+  private _runCommandParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference(this, "run_command_parameters", true);
   public get runCommandParameters() {
     return this._runCommandParameters;
   }
@@ -1127,7 +1127,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference ext
   }
 
   // step_functions_parameters - computed: false, optional: true, required: false
-  private _stepFunctionsParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference(this as any, "step_functions_parameters", true);
+  private _stepFunctionsParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference(this, "step_functions_parameters", true);
   public get stepFunctionsParameters() {
     return this._stepFunctionsParameters;
   }
@@ -1327,12 +1327,12 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
   }
 
   // targets - computed: false, optional: true, required: false
-  private _targets?: SsmMaintenanceWindowTaskTargets[]; 
+  private _targets?: SsmMaintenanceWindowTaskTargets[] | cdktf.IResolvable; 
   public get targets() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('targets') as any;
+    return this.interpolationForAttribute('targets');
   }
-  public set targets(value: SsmMaintenanceWindowTaskTargets[]) {
+  public set targets(value: SsmMaintenanceWindowTaskTargets[] | cdktf.IResolvable) {
     this._targets = value;
   }
   public resetTargets() {
@@ -1344,7 +1344,7 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
   }
 
   // task_invocation_parameters - computed: false, optional: true, required: false
-  private _taskInvocationParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference(this as any, "task_invocation_parameters", true);
+  private _taskInvocationParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference(this, "task_invocation_parameters", true);
   public get taskInvocationParameters() {
     return this._taskInvocationParameters;
   }

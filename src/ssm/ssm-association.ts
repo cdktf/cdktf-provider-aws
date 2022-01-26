@@ -46,7 +46,7 @@ export interface SsmAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_association#parameters SsmAssociation#parameters}
   */
-  readonly parameters?: { [key: string]: string } | cdktf.IResolvable;
+  readonly parameters?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_association#schedule_expression SsmAssociation#schedule_expression}
   */
@@ -62,7 +62,7 @@ export interface SsmAssociationConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_association#targets SsmAssociation#targets}
   */
-  readonly targets?: SsmAssociationTargets[];
+  readonly targets?: SsmAssociationTargets[] | cdktf.IResolvable;
 }
 export interface SsmAssociationOutputLocation {
   /**
@@ -80,7 +80,7 @@ export interface SsmAssociationOutputLocation {
 }
 
 export function ssmAssociationOutputLocationToTerraform(struct?: SsmAssociationOutputLocationOutputReference | SsmAssociationOutputLocation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -99,7 +99,7 @@ export class SsmAssociationOutputLocationOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -192,8 +192,8 @@ export interface SsmAssociationTargets {
   readonly values: string[];
 }
 
-export function ssmAssociationTargetsToTerraform(struct?: SsmAssociationTargets): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ssmAssociationTargetsToTerraform(struct?: SsmAssociationTargets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -258,7 +258,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
   // apply_only_at_cron_interval - computed: false, optional: true, required: false
   private _applyOnlyAtCronInterval?: boolean | cdktf.IResolvable; 
   public get applyOnlyAtCronInterval() {
-    return this.getBooleanAttribute('apply_only_at_cron_interval') as any;
+    return this.getBooleanAttribute('apply_only_at_cron_interval');
   }
   public set applyOnlyAtCronInterval(value: boolean | cdktf.IResolvable) {
     this._applyOnlyAtCronInterval = value;
@@ -407,12 +407,11 @@ export class SsmAssociation extends cdktf.TerraformResource {
   }
 
   // parameters - computed: true, optional: true, required: false
-  private _parameters?: { [key: string]: string } | cdktf.IResolvable; 
+  private _parameters?: { [key: string]: string }; 
   public get parameters() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('parameters') as any;
+    return this.getStringMapAttribute('parameters');
   }
-  public set parameters(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set parameters(value: { [key: string]: string }) {
     this._parameters = value;
   }
   public resetParameters() {
@@ -440,7 +439,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
   }
 
   // output_location - computed: false, optional: true, required: false
-  private _outputLocation = new SsmAssociationOutputLocationOutputReference(this as any, "output_location", true);
+  private _outputLocation = new SsmAssociationOutputLocationOutputReference(this, "output_location", true);
   public get outputLocation() {
     return this._outputLocation;
   }
@@ -456,12 +455,12 @@ export class SsmAssociation extends cdktf.TerraformResource {
   }
 
   // targets - computed: false, optional: true, required: false
-  private _targets?: SsmAssociationTargets[]; 
+  private _targets?: SsmAssociationTargets[] | cdktf.IResolvable; 
   public get targets() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('targets') as any;
+    return this.interpolationForAttribute('targets');
   }
-  public set targets(value: SsmAssociationTargets[]) {
+  public set targets(value: SsmAssociationTargets[] | cdktf.IResolvable) {
     this._targets = value;
   }
   public resetTargets() {
@@ -487,7 +486,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
       max_concurrency: cdktf.stringToTerraform(this._maxConcurrency),
       max_errors: cdktf.stringToTerraform(this._maxErrors),
       name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
+      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
       schedule_expression: cdktf.stringToTerraform(this._scheduleExpression),
       output_location: ssmAssociationOutputLocationToTerraform(this._outputLocation.internalValue),
       targets: cdktf.listMapper(ssmAssociationTargetsToTerraform)(this._targets),

@@ -16,7 +16,7 @@ export interface WafregionalGeoMatchSetConfig extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_geo_match_set#geo_match_constraint WafregionalGeoMatchSet#geo_match_constraint}
   */
-  readonly geoMatchConstraint?: WafregionalGeoMatchSetGeoMatchConstraint[];
+  readonly geoMatchConstraint?: WafregionalGeoMatchSetGeoMatchConstraint[] | cdktf.IResolvable;
 }
 export interface WafregionalGeoMatchSetGeoMatchConstraint {
   /**
@@ -29,8 +29,8 @@ export interface WafregionalGeoMatchSetGeoMatchConstraint {
   readonly value: string;
 }
 
-export function wafregionalGeoMatchSetGeoMatchConstraintToTerraform(struct?: WafregionalGeoMatchSetGeoMatchConstraint): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafregionalGeoMatchSetGeoMatchConstraintToTerraform(struct?: WafregionalGeoMatchSetGeoMatchConstraint | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -100,12 +100,12 @@ export class WafregionalGeoMatchSet extends cdktf.TerraformResource {
   }
 
   // geo_match_constraint - computed: false, optional: true, required: false
-  private _geoMatchConstraint?: WafregionalGeoMatchSetGeoMatchConstraint[]; 
+  private _geoMatchConstraint?: WafregionalGeoMatchSetGeoMatchConstraint[] | cdktf.IResolvable; 
   public get geoMatchConstraint() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('geo_match_constraint') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('geo_match_constraint')));
   }
-  public set geoMatchConstraint(value: WafregionalGeoMatchSetGeoMatchConstraint[]) {
+  public set geoMatchConstraint(value: WafregionalGeoMatchSetGeoMatchConstraint[] | cdktf.IResolvable) {
     this._geoMatchConstraint = value;
   }
   public resetGeoMatchConstraint() {

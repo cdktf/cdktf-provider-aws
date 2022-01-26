@@ -14,11 +14,11 @@ export interface MemorydbUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user#tags MemorydbUser#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user#tags_all MemorydbUser#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_user#user_name MemorydbUser#user_name}
   */
@@ -42,7 +42,7 @@ export interface MemorydbUserAuthenticationMode {
 }
 
 export function memorydbUserAuthenticationModeToTerraform(struct?: MemorydbUserAuthenticationModeOutputReference | MemorydbUserAuthenticationMode): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -60,7 +60,7 @@ export class MemorydbUserAuthenticationModeOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -91,10 +91,15 @@ export class MemorydbUserAuthenticationModeOutputReference extends cdktf.Complex
     }
   }
 
+  // password_count - computed: true, optional: false, required: false
+  public get passwordCount() {
+    return this.getNumberAttribute('password_count');
+  }
+
   // passwords - computed: false, optional: false, required: true
   private _passwords?: string[]; 
   public get passwords() {
-    return this.getListAttribute('passwords');
+    return cdktf.Fn.tolist(this.getListAttribute('passwords'));
   }
   public set passwords(value: string[]) {
     this._passwords = value;
@@ -190,12 +195,11 @@ export class MemorydbUser extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -207,12 +211,11 @@ export class MemorydbUser extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -237,7 +240,7 @@ export class MemorydbUser extends cdktf.TerraformResource {
   }
 
   // authentication_mode - computed: false, optional: false, required: true
-  private _authenticationMode = new MemorydbUserAuthenticationModeOutputReference(this as any, "authentication_mode", true);
+  private _authenticationMode = new MemorydbUserAuthenticationModeOutputReference(this, "authentication_mode", true);
   public get authenticationMode() {
     return this._authenticationMode;
   }
@@ -256,8 +259,8 @@ export class MemorydbUser extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_string: cdktf.stringToTerraform(this._accessString),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       user_name: cdktf.stringToTerraform(this._userName),
       authentication_mode: memorydbUserAuthenticationModeToTerraform(this._authenticationMode.internalValue),
     };

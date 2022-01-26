@@ -44,7 +44,7 @@ export interface EmrInstanceGroupConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_group#ebs_config EmrInstanceGroup#ebs_config}
   */
-  readonly ebsConfig?: EmrInstanceGroupEbsConfig[];
+  readonly ebsConfig?: EmrInstanceGroupEbsConfig[] | cdktf.IResolvable;
 }
 export interface EmrInstanceGroupEbsConfig {
   /**
@@ -65,8 +65,8 @@ export interface EmrInstanceGroupEbsConfig {
   readonly volumesPerInstance?: number;
 }
 
-export function emrInstanceGroupEbsConfigToTerraform(struct?: EmrInstanceGroupEbsConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function emrInstanceGroupEbsConfigToTerraform(struct?: EmrInstanceGroupEbsConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -190,7 +190,7 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
   // ebs_optimized - computed: false, optional: true, required: false
   private _ebsOptimized?: boolean | cdktf.IResolvable; 
   public get ebsOptimized() {
-    return this.getBooleanAttribute('ebs_optimized') as any;
+    return this.getBooleanAttribute('ebs_optimized');
   }
   public set ebsOptimized(value: boolean | cdktf.IResolvable) {
     this._ebsOptimized = value;
@@ -264,12 +264,12 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
   }
 
   // ebs_config - computed: false, optional: true, required: false
-  private _ebsConfig?: EmrInstanceGroupEbsConfig[]; 
+  private _ebsConfig?: EmrInstanceGroupEbsConfig[] | cdktf.IResolvable; 
   public get ebsConfig() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ebs_config') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ebs_config')));
   }
-  public set ebsConfig(value: EmrInstanceGroupEbsConfig[]) {
+  public set ebsConfig(value: EmrInstanceGroupEbsConfig[] | cdktf.IResolvable) {
     this._ebsConfig = value;
   }
   public resetEbsConfig() {

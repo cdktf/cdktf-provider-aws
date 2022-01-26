@@ -91,7 +91,7 @@ export class S3OutpostsEndpoint extends cdktf.TerraformResource {
 
   // network_interfaces - computed: true, optional: false, required: false
   public networkInterfaces(index: string) {
-    return new S3OutpostsEndpointNetworkInterfaces(this, 'network_interfaces', index);
+    return new S3OutpostsEndpointNetworkInterfaces(this, 'network_interfaces', index, true);
   }
 
   // outpost_id - computed: false, optional: false, required: true

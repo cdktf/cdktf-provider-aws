@@ -69,7 +69,7 @@ export class DataAwsMskConfiguration extends cdktf.TerraformDataSource {
 
   // kafka_versions - computed: true, optional: false, required: false
   public get kafkaVersions() {
-    return this.getListAttribute('kafka_versions');
+    return cdktf.Fn.tolist(this.getListAttribute('kafka_versions'));
   }
 
   // latest_revision - computed: true, optional: false, required: false

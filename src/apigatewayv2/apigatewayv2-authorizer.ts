@@ -62,7 +62,7 @@ export interface Apigatewayv2AuthorizerJwtConfiguration {
 }
 
 export function apigatewayv2AuthorizerJwtConfigurationToTerraform(struct?: Apigatewayv2AuthorizerJwtConfigurationOutputReference | Apigatewayv2AuthorizerJwtConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -80,7 +80,7 @@ export class Apigatewayv2AuthorizerJwtConfigurationOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -114,7 +114,7 @@ export class Apigatewayv2AuthorizerJwtConfigurationOutputReference extends cdktf
   // audience - computed: false, optional: true, required: false
   private _audience?: string[]; 
   public get audience() {
-    return this.getListAttribute('audience');
+    return cdktf.Fn.tolist(this.getListAttribute('audience'));
   }
   public set audience(value: string[]) {
     this._audience = value;
@@ -285,7 +285,7 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
   // enable_simple_responses - computed: false, optional: true, required: false
   private _enableSimpleResponses?: boolean | cdktf.IResolvable; 
   public get enableSimpleResponses() {
-    return this.getBooleanAttribute('enable_simple_responses') as any;
+    return this.getBooleanAttribute('enable_simple_responses');
   }
   public set enableSimpleResponses(value: boolean | cdktf.IResolvable) {
     this._enableSimpleResponses = value;
@@ -306,7 +306,7 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
   // identity_sources - computed: false, optional: true, required: false
   private _identitySources?: string[]; 
   public get identitySources() {
-    return this.getListAttribute('identity_sources');
+    return cdktf.Fn.tolist(this.getListAttribute('identity_sources'));
   }
   public set identitySources(value: string[]) {
     this._identitySources = value;
@@ -333,7 +333,7 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
   }
 
   // jwt_configuration - computed: false, optional: true, required: false
-  private _jwtConfiguration = new Apigatewayv2AuthorizerJwtConfigurationOutputReference(this as any, "jwt_configuration", true);
+  private _jwtConfiguration = new Apigatewayv2AuthorizerJwtConfigurationOutputReference(this, "jwt_configuration", true);
   public get jwtConfiguration() {
     return this._jwtConfiguration;
   }

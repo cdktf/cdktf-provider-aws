@@ -70,7 +70,7 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
   // allowed_prefixes - computed: true, optional: true, required: false
   private _allowedPrefixes?: string[]; 
   public get allowedPrefixes() {
-    return this.getListAttribute('allowed_prefixes');
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_prefixes'));
   }
   public set allowedPrefixes(value: string[]) {
     this._allowedPrefixes = value;

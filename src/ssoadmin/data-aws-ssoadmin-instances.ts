@@ -49,7 +49,7 @@ export class DataAwsSsoadminInstances extends cdktf.TerraformDataSource {
 
   // arns - computed: true, optional: false, required: false
   public get arns() {
-    return this.getListAttribute('arns');
+    return cdktf.Fn.tolist(this.getListAttribute('arns'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -59,7 +59,7 @@ export class DataAwsSsoadminInstances extends cdktf.TerraformDataSource {
 
   // identity_store_ids - computed: true, optional: false, required: false
   public get identityStoreIds() {
-    return this.getListAttribute('identity_store_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('identity_store_ids'));
   }
 
   // =========

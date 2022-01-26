@@ -14,33 +14,33 @@ export interface DataAwsWorkspacesDirectoryConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/workspaces_directory#tags DataAwsWorkspacesDirectory#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsWorkspacesDirectorySelfServicePermissions extends cdktf.ComplexComputedList {
 
   // change_compute_type - computed: true, optional: false, required: false
   public get changeComputeType() {
-    return this.getBooleanAttribute('change_compute_type') as any;
+    return this.getBooleanAttribute('change_compute_type');
   }
 
   // increase_volume_size - computed: true, optional: false, required: false
   public get increaseVolumeSize() {
-    return this.getBooleanAttribute('increase_volume_size') as any;
+    return this.getBooleanAttribute('increase_volume_size');
   }
 
   // rebuild_workspace - computed: true, optional: false, required: false
   public get rebuildWorkspace() {
-    return this.getBooleanAttribute('rebuild_workspace') as any;
+    return this.getBooleanAttribute('rebuild_workspace');
   }
 
   // restart_workspace - computed: true, optional: false, required: false
   public get restartWorkspace() {
-    return this.getBooleanAttribute('restart_workspace') as any;
+    return this.getBooleanAttribute('restart_workspace');
   }
 
   // switch_running_mode - computed: true, optional: false, required: false
   public get switchRunningMode() {
-    return this.getBooleanAttribute('switch_running_mode') as any;
+    return this.getBooleanAttribute('switch_running_mode');
   }
 }
 export class DataAwsWorkspacesDirectoryWorkspaceAccessProperties extends cdktf.ComplexComputedList {
@@ -99,17 +99,17 @@ export class DataAwsWorkspacesDirectoryWorkspaceCreationProperties extends cdktf
 
   // enable_internet_access - computed: true, optional: false, required: false
   public get enableInternetAccess() {
-    return this.getBooleanAttribute('enable_internet_access') as any;
+    return this.getBooleanAttribute('enable_internet_access');
   }
 
   // enable_maintenance_mode - computed: true, optional: false, required: false
   public get enableMaintenanceMode() {
-    return this.getBooleanAttribute('enable_maintenance_mode') as any;
+    return this.getBooleanAttribute('enable_maintenance_mode');
   }
 
   // user_enabled_as_local_administrator - computed: true, optional: false, required: false
   public get userEnabledAsLocalAdministrator() {
-    return this.getBooleanAttribute('user_enabled_as_local_administrator') as any;
+    return this.getBooleanAttribute('user_enabled_as_local_administrator');
   }
 }
 
@@ -188,7 +188,7 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
 
   // dns_ip_addresses - computed: true, optional: false, required: false
   public get dnsIpAddresses() {
-    return this.getListAttribute('dns_ip_addresses');
+    return cdktf.Fn.tolist(this.getListAttribute('dns_ip_addresses'));
   }
 
   // iam_role_id - computed: true, optional: false, required: false
@@ -203,7 +203,7 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
 
   // ip_group_ids - computed: true, optional: false, required: false
   public get ipGroupIds() {
-    return this.getListAttribute('ip_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('ip_group_ids'));
   }
 
   // registration_code - computed: true, optional: false, required: false
@@ -213,21 +213,20 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
 
   // self_service_permissions - computed: true, optional: false, required: false
   public selfServicePermissions(index: string) {
-    return new DataAwsWorkspacesDirectorySelfServicePermissions(this, 'self_service_permissions', index);
+    return new DataAwsWorkspacesDirectorySelfServicePermissions(this, 'self_service_permissions', index, false);
   }
 
   // subnet_ids - computed: true, optional: false, required: false
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -240,12 +239,12 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
 
   // workspace_access_properties - computed: true, optional: false, required: false
   public workspaceAccessProperties(index: string) {
-    return new DataAwsWorkspacesDirectoryWorkspaceAccessProperties(this, 'workspace_access_properties', index);
+    return new DataAwsWorkspacesDirectoryWorkspaceAccessProperties(this, 'workspace_access_properties', index, false);
   }
 
   // workspace_creation_properties - computed: true, optional: false, required: false
   public workspaceCreationProperties(index: string) {
-    return new DataAwsWorkspacesDirectoryWorkspaceCreationProperties(this, 'workspace_creation_properties', index);
+    return new DataAwsWorkspacesDirectoryWorkspaceCreationProperties(this, 'workspace_creation_properties', index, false);
   }
 
   // workspace_security_group_id - computed: true, optional: false, required: false
@@ -260,7 +259,7 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       directory_id: cdktf.stringToTerraform(this._directoryId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

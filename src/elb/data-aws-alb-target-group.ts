@@ -14,13 +14,13 @@ export interface DataAwsAlbTargetGroupConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/alb_target_group#tags DataAwsAlbTargetGroup#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsAlbTargetGroupHealthCheck extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // healthy_threshold - computed: true, optional: false, required: false
@@ -77,7 +77,7 @@ export class DataAwsAlbTargetGroupStickiness extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // type - computed: true, optional: false, required: false
@@ -138,7 +138,7 @@ export class DataAwsAlbTargetGroup extends cdktf.TerraformDataSource {
 
   // connection_termination - computed: true, optional: false, required: false
   public get connectionTermination() {
-    return this.getBooleanAttribute('connection_termination') as any;
+    return this.getBooleanAttribute('connection_termination');
   }
 
   // deregistration_delay - computed: true, optional: false, required: false
@@ -148,7 +148,7 @@ export class DataAwsAlbTargetGroup extends cdktf.TerraformDataSource {
 
   // health_check - computed: true, optional: false, required: false
   public healthCheck(index: string) {
-    return new DataAwsAlbTargetGroupHealthCheck(this, 'health_check', index);
+    return new DataAwsAlbTargetGroupHealthCheck(this, 'health_check', index, false);
   }
 
   // id - computed: true, optional: true, required: false
@@ -158,7 +158,7 @@ export class DataAwsAlbTargetGroup extends cdktf.TerraformDataSource {
 
   // lambda_multi_value_headers_enabled - computed: true, optional: false, required: false
   public get lambdaMultiValueHeadersEnabled() {
-    return this.getBooleanAttribute('lambda_multi_value_headers_enabled') as any;
+    return this.getBooleanAttribute('lambda_multi_value_headers_enabled');
   }
 
   // load_balancing_algorithm_type - computed: true, optional: false, required: false
@@ -204,7 +204,7 @@ export class DataAwsAlbTargetGroup extends cdktf.TerraformDataSource {
 
   // proxy_protocol_v2 - computed: true, optional: false, required: false
   public get proxyProtocolV2() {
-    return this.getBooleanAttribute('proxy_protocol_v2') as any;
+    return this.getBooleanAttribute('proxy_protocol_v2');
   }
 
   // slow_start - computed: true, optional: false, required: false
@@ -214,16 +214,15 @@ export class DataAwsAlbTargetGroup extends cdktf.TerraformDataSource {
 
   // stickiness - computed: true, optional: false, required: false
   public stickiness(index: string) {
-    return new DataAwsAlbTargetGroupStickiness(this, 'stickiness', index);
+    return new DataAwsAlbTargetGroupStickiness(this, 'stickiness', index, false);
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -251,7 +250,7 @@ export class DataAwsAlbTargetGroup extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

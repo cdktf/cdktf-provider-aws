@@ -54,7 +54,7 @@ export interface AppsyncFunctionSyncConfigLambdaConflictHandlerConfig {
 }
 
 export function appsyncFunctionSyncConfigLambdaConflictHandlerConfigToTerraform(struct?: AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference | AppsyncFunctionSyncConfigLambdaConflictHandlerConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -71,7 +71,7 @@ export class AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -130,7 +130,7 @@ export interface AppsyncFunctionSyncConfig {
 }
 
 export function appsyncFunctionSyncConfigToTerraform(struct?: AppsyncFunctionSyncConfigOutputReference | AppsyncFunctionSyncConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -149,7 +149,7 @@ export class AppsyncFunctionSyncConfigOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -219,7 +219,7 @@ export class AppsyncFunctionSyncConfigOutputReference extends cdktf.ComplexObjec
   }
 
   // lambda_conflict_handler_config - computed: false, optional: true, required: false
-  private _lambdaConflictHandlerConfig = new AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference(this as any, "lambda_conflict_handler_config", true);
+  private _lambdaConflictHandlerConfig = new AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference(this, "lambda_conflict_handler_config", true);
   public get lambdaConflictHandlerConfig() {
     return this._lambdaConflictHandlerConfig;
   }
@@ -411,7 +411,7 @@ export class AppsyncFunction extends cdktf.TerraformResource {
   }
 
   // sync_config - computed: false, optional: true, required: false
-  private _syncConfig = new AppsyncFunctionSyncConfigOutputReference(this as any, "sync_config", true);
+  private _syncConfig = new AppsyncFunctionSyncConfigOutputReference(this, "sync_config", true);
   public get syncConfig() {
     return this._syncConfig;
   }
