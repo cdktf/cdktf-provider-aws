@@ -50,13 +50,13 @@ export class DataAwsKmsKeyMultiRegionConfiguration extends cdktf.ComplexComputed
   // primary_key - computed: true, optional: false, required: false
   public get primaryKey() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('primary_key') as any;
+    return this.interpolationForAttribute('primary_key');
   }
 
   // replica_keys - computed: true, optional: false, required: false
   public get replicaKeys() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('replica_keys') as any;
+    return this.interpolationForAttribute('replica_keys');
   }
 }
 
@@ -132,7 +132,7 @@ export class DataAwsKmsKey extends cdktf.TerraformDataSource {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // expiration_model - computed: true, optional: false, required: false
@@ -191,12 +191,12 @@ export class DataAwsKmsKey extends cdktf.TerraformDataSource {
 
   // multi_region - computed: true, optional: false, required: false
   public get multiRegion() {
-    return this.getBooleanAttribute('multi_region') as any;
+    return this.getBooleanAttribute('multi_region');
   }
 
   // multi_region_configuration - computed: true, optional: false, required: false
   public multiRegionConfiguration(index: string) {
-    return new DataAwsKmsKeyMultiRegionConfiguration(this, 'multi_region_configuration', index);
+    return new DataAwsKmsKeyMultiRegionConfiguration(this, 'multi_region_configuration', index, false);
   }
 
   // origin - computed: true, optional: false, required: false

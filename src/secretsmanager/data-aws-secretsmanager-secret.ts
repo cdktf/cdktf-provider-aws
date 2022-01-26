@@ -102,7 +102,7 @@ export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
 
   // rotation_enabled - computed: true, optional: false, required: false
   public get rotationEnabled() {
-    return this.getBooleanAttribute('rotation_enabled') as any;
+    return this.getBooleanAttribute('rotation_enabled');
   }
 
   // rotation_lambda_arn - computed: true, optional: false, required: false
@@ -112,11 +112,11 @@ export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
 
   // rotation_rules - computed: true, optional: false, required: false
   public rotationRules(index: string) {
-    return new DataAwsSecretsmanagerSecretRotationRules(this, 'rotation_rules', index);
+    return new DataAwsSecretsmanagerSecretRotationRules(this, 'rotation_rules', index, false);
   }
 
   // tags - computed: true, optional: false, required: false
-  public tags(key: string): string {
+  public tags(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'tags').lookup(key);
   }
 

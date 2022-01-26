@@ -78,7 +78,7 @@ export class MskScramSecretAssociation extends cdktf.TerraformResource {
   // secret_arn_list - computed: false, optional: false, required: true
   private _secretArnList?: string[]; 
   public get secretArnList() {
-    return this.getListAttribute('secret_arn_list');
+    return cdktf.Fn.tolist(this.getListAttribute('secret_arn_list'));
   }
   public set secretArnList(value: string[]) {
     this._secretArnList = value;

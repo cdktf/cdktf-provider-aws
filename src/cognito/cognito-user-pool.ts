@@ -42,11 +42,11 @@ export interface CognitoUserPoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#tags CognitoUserPool#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#tags_all CognitoUserPool#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#username_attributes CognitoUserPool#username_attributes}
   */
@@ -92,7 +92,7 @@ export interface CognitoUserPoolConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#schema CognitoUserPool#schema}
   */
-  readonly schema?: CognitoUserPoolSchema[];
+  readonly schema?: CognitoUserPoolSchema[] | cdktf.IResolvable;
   /**
   * sms_configuration block
   * 
@@ -135,8 +135,8 @@ export interface CognitoUserPoolAccountRecoverySettingRecoveryMechanism {
   readonly priority: number;
 }
 
-export function cognitoUserPoolAccountRecoverySettingRecoveryMechanismToTerraform(struct?: CognitoUserPoolAccountRecoverySettingRecoveryMechanism): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cognitoUserPoolAccountRecoverySettingRecoveryMechanismToTerraform(struct?: CognitoUserPoolAccountRecoverySettingRecoveryMechanism | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -152,11 +152,11 @@ export interface CognitoUserPoolAccountRecoverySetting {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool#recovery_mechanism CognitoUserPool#recovery_mechanism}
   */
-  readonly recoveryMechanism: CognitoUserPoolAccountRecoverySettingRecoveryMechanism[];
+  readonly recoveryMechanism: CognitoUserPoolAccountRecoverySettingRecoveryMechanism[] | cdktf.IResolvable;
 }
 
 export function cognitoUserPoolAccountRecoverySettingToTerraform(struct?: CognitoUserPoolAccountRecoverySettingOutputReference | CognitoUserPoolAccountRecoverySetting): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -173,7 +173,7 @@ export class CognitoUserPoolAccountRecoverySettingOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -199,12 +199,12 @@ export class CognitoUserPoolAccountRecoverySettingOutputReference extends cdktf.
   }
 
   // recovery_mechanism - computed: false, optional: false, required: true
-  private _recoveryMechanism?: CognitoUserPoolAccountRecoverySettingRecoveryMechanism[]; 
+  private _recoveryMechanism?: CognitoUserPoolAccountRecoverySettingRecoveryMechanism[] | cdktf.IResolvable; 
   public get recoveryMechanism() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('recovery_mechanism') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('recovery_mechanism')));
   }
-  public set recoveryMechanism(value: CognitoUserPoolAccountRecoverySettingRecoveryMechanism[]) {
+  public set recoveryMechanism(value: CognitoUserPoolAccountRecoverySettingRecoveryMechanism[] | cdktf.IResolvable) {
     this._recoveryMechanism = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -228,7 +228,7 @@ export interface CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate {
 }
 
 export function cognitoUserPoolAdminCreateUserConfigInviteMessageTemplateToTerraform(struct?: CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference | CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -247,7 +247,7 @@ export class CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputRefe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -346,7 +346,7 @@ export interface CognitoUserPoolAdminCreateUserConfig {
 }
 
 export function cognitoUserPoolAdminCreateUserConfigToTerraform(struct?: CognitoUserPoolAdminCreateUserConfigOutputReference | CognitoUserPoolAdminCreateUserConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -364,7 +364,7 @@ export class CognitoUserPoolAdminCreateUserConfigOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -398,7 +398,7 @@ export class CognitoUserPoolAdminCreateUserConfigOutputReference extends cdktf.C
   // allow_admin_create_user_only - computed: false, optional: true, required: false
   private _allowAdminCreateUserOnly?: boolean | cdktf.IResolvable; 
   public get allowAdminCreateUserOnly() {
-    return this.getBooleanAttribute('allow_admin_create_user_only') as any;
+    return this.getBooleanAttribute('allow_admin_create_user_only');
   }
   public set allowAdminCreateUserOnly(value: boolean | cdktf.IResolvable) {
     this._allowAdminCreateUserOnly = value;
@@ -412,7 +412,7 @@ export class CognitoUserPoolAdminCreateUserConfigOutputReference extends cdktf.C
   }
 
   // invite_message_template - computed: false, optional: true, required: false
-  private _inviteMessageTemplate = new CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference(this as any, "invite_message_template", true);
+  private _inviteMessageTemplate = new CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference(this, "invite_message_template", true);
   public get inviteMessageTemplate() {
     return this._inviteMessageTemplate;
   }
@@ -439,7 +439,7 @@ export interface CognitoUserPoolDeviceConfiguration {
 }
 
 export function cognitoUserPoolDeviceConfigurationToTerraform(struct?: CognitoUserPoolDeviceConfigurationOutputReference | CognitoUserPoolDeviceConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -457,7 +457,7 @@ export class CognitoUserPoolDeviceConfigurationOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -491,7 +491,7 @@ export class CognitoUserPoolDeviceConfigurationOutputReference extends cdktf.Com
   // challenge_required_on_new_device - computed: false, optional: true, required: false
   private _challengeRequiredOnNewDevice?: boolean | cdktf.IResolvable; 
   public get challengeRequiredOnNewDevice() {
-    return this.getBooleanAttribute('challenge_required_on_new_device') as any;
+    return this.getBooleanAttribute('challenge_required_on_new_device');
   }
   public set challengeRequiredOnNewDevice(value: boolean | cdktf.IResolvable) {
     this._challengeRequiredOnNewDevice = value;
@@ -507,7 +507,7 @@ export class CognitoUserPoolDeviceConfigurationOutputReference extends cdktf.Com
   // device_only_remembered_on_user_prompt - computed: false, optional: true, required: false
   private _deviceOnlyRememberedOnUserPrompt?: boolean | cdktf.IResolvable; 
   public get deviceOnlyRememberedOnUserPrompt() {
-    return this.getBooleanAttribute('device_only_remembered_on_user_prompt') as any;
+    return this.getBooleanAttribute('device_only_remembered_on_user_prompt');
   }
   public set deviceOnlyRememberedOnUserPrompt(value: boolean | cdktf.IResolvable) {
     this._deviceOnlyRememberedOnUserPrompt = value;
@@ -544,7 +544,7 @@ export interface CognitoUserPoolEmailConfiguration {
 }
 
 export function cognitoUserPoolEmailConfigurationToTerraform(struct?: CognitoUserPoolEmailConfigurationOutputReference | CognitoUserPoolEmailConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -565,7 +565,7 @@ export class CognitoUserPoolEmailConfigurationOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -706,7 +706,7 @@ export interface CognitoUserPoolLambdaConfigCustomEmailSender {
 }
 
 export function cognitoUserPoolLambdaConfigCustomEmailSenderToTerraform(struct?: CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference | CognitoUserPoolLambdaConfigCustomEmailSender): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -724,7 +724,7 @@ export class CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -793,7 +793,7 @@ export interface CognitoUserPoolLambdaConfigCustomSmsSender {
 }
 
 export function cognitoUserPoolLambdaConfigCustomSmsSenderToTerraform(struct?: CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference | CognitoUserPoolLambdaConfigCustomSmsSender): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -811,7 +811,7 @@ export class CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference extends c
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -928,7 +928,7 @@ export interface CognitoUserPoolLambdaConfig {
 }
 
 export function cognitoUserPoolLambdaConfigToTerraform(struct?: CognitoUserPoolLambdaConfigOutputReference | CognitoUserPoolLambdaConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -957,7 +957,7 @@ export class CognitoUserPoolLambdaConfigOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1231,7 +1231,7 @@ export class CognitoUserPoolLambdaConfigOutputReference extends cdktf.ComplexObj
   }
 
   // custom_email_sender - computed: false, optional: true, required: false
-  private _customEmailSender = new CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference(this as any, "custom_email_sender", true);
+  private _customEmailSender = new CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference(this, "custom_email_sender", true);
   public get customEmailSender() {
     return this._customEmailSender;
   }
@@ -1247,7 +1247,7 @@ export class CognitoUserPoolLambdaConfigOutputReference extends cdktf.ComplexObj
   }
 
   // custom_sms_sender - computed: false, optional: true, required: false
-  private _customSmsSender = new CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference(this as any, "custom_sms_sender", true);
+  private _customSmsSender = new CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference(this, "custom_sms_sender", true);
   public get customSmsSender() {
     return this._customSmsSender;
   }
@@ -1290,7 +1290,7 @@ export interface CognitoUserPoolPasswordPolicy {
 }
 
 export function cognitoUserPoolPasswordPolicyToTerraform(struct?: CognitoUserPoolPasswordPolicyOutputReference | CognitoUserPoolPasswordPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1312,7 +1312,7 @@ export class CognitoUserPoolPasswordPolicyOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1386,7 +1386,7 @@ export class CognitoUserPoolPasswordPolicyOutputReference extends cdktf.ComplexO
   // require_lowercase - computed: false, optional: true, required: false
   private _requireLowercase?: boolean | cdktf.IResolvable; 
   public get requireLowercase() {
-    return this.getBooleanAttribute('require_lowercase') as any;
+    return this.getBooleanAttribute('require_lowercase');
   }
   public set requireLowercase(value: boolean | cdktf.IResolvable) {
     this._requireLowercase = value;
@@ -1402,7 +1402,7 @@ export class CognitoUserPoolPasswordPolicyOutputReference extends cdktf.ComplexO
   // require_numbers - computed: false, optional: true, required: false
   private _requireNumbers?: boolean | cdktf.IResolvable; 
   public get requireNumbers() {
-    return this.getBooleanAttribute('require_numbers') as any;
+    return this.getBooleanAttribute('require_numbers');
   }
   public set requireNumbers(value: boolean | cdktf.IResolvable) {
     this._requireNumbers = value;
@@ -1418,7 +1418,7 @@ export class CognitoUserPoolPasswordPolicyOutputReference extends cdktf.ComplexO
   // require_symbols - computed: false, optional: true, required: false
   private _requireSymbols?: boolean | cdktf.IResolvable; 
   public get requireSymbols() {
-    return this.getBooleanAttribute('require_symbols') as any;
+    return this.getBooleanAttribute('require_symbols');
   }
   public set requireSymbols(value: boolean | cdktf.IResolvable) {
     this._requireSymbols = value;
@@ -1434,7 +1434,7 @@ export class CognitoUserPoolPasswordPolicyOutputReference extends cdktf.ComplexO
   // require_uppercase - computed: false, optional: true, required: false
   private _requireUppercase?: boolean | cdktf.IResolvable; 
   public get requireUppercase() {
-    return this.getBooleanAttribute('require_uppercase') as any;
+    return this.getBooleanAttribute('require_uppercase');
   }
   public set requireUppercase(value: boolean | cdktf.IResolvable) {
     this._requireUppercase = value;
@@ -1475,7 +1475,7 @@ export interface CognitoUserPoolSchemaNumberAttributeConstraints {
 }
 
 export function cognitoUserPoolSchemaNumberAttributeConstraintsToTerraform(struct?: CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference | CognitoUserPoolSchemaNumberAttributeConstraints): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1493,7 +1493,7 @@ export class CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1568,7 +1568,7 @@ export interface CognitoUserPoolSchemaStringAttributeConstraints {
 }
 
 export function cognitoUserPoolSchemaStringAttributeConstraintsToTerraform(struct?: CognitoUserPoolSchemaStringAttributeConstraintsOutputReference | CognitoUserPoolSchemaStringAttributeConstraints): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1586,7 +1586,7 @@ export class CognitoUserPoolSchemaStringAttributeConstraintsOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1684,8 +1684,8 @@ export interface CognitoUserPoolSchema {
   readonly stringAttributeConstraints?: CognitoUserPoolSchemaStringAttributeConstraints;
 }
 
-export function cognitoUserPoolSchemaToTerraform(struct?: CognitoUserPoolSchema): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cognitoUserPoolSchemaToTerraform(struct?: CognitoUserPoolSchema | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1712,7 +1712,7 @@ export interface CognitoUserPoolSmsConfiguration {
 }
 
 export function cognitoUserPoolSmsConfigurationToTerraform(struct?: CognitoUserPoolSmsConfigurationOutputReference | CognitoUserPoolSmsConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1730,7 +1730,7 @@ export class CognitoUserPoolSmsConfigurationOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1795,7 +1795,7 @@ export interface CognitoUserPoolSoftwareTokenMfaConfiguration {
 }
 
 export function cognitoUserPoolSoftwareTokenMfaConfigurationToTerraform(struct?: CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference | CognitoUserPoolSoftwareTokenMfaConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1812,7 +1812,7 @@ export class CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1840,7 +1840,7 @@ export class CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference extends
   // enabled - computed: false, optional: false, required: true
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -1858,7 +1858,7 @@ export interface CognitoUserPoolUserPoolAddOns {
 }
 
 export function cognitoUserPoolUserPoolAddOnsToTerraform(struct?: CognitoUserPoolUserPoolAddOnsOutputReference | CognitoUserPoolUserPoolAddOns): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1875,7 +1875,7 @@ export class CognitoUserPoolUserPoolAddOnsOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1921,7 +1921,7 @@ export interface CognitoUserPoolUsernameConfiguration {
 }
 
 export function cognitoUserPoolUsernameConfigurationToTerraform(struct?: CognitoUserPoolUsernameConfigurationOutputReference | CognitoUserPoolUsernameConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1938,7 +1938,7 @@ export class CognitoUserPoolUsernameConfigurationOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1966,7 +1966,7 @@ export class CognitoUserPoolUsernameConfigurationOutputReference extends cdktf.C
   // case_sensitive - computed: false, optional: false, required: true
   private _caseSensitive?: boolean | cdktf.IResolvable; 
   public get caseSensitive() {
-    return this.getBooleanAttribute('case_sensitive') as any;
+    return this.getBooleanAttribute('case_sensitive');
   }
   public set caseSensitive(value: boolean | cdktf.IResolvable) {
     this._caseSensitive = value;
@@ -2004,7 +2004,7 @@ export interface CognitoUserPoolVerificationMessageTemplate {
 }
 
 export function cognitoUserPoolVerificationMessageTemplateToTerraform(struct?: CognitoUserPoolVerificationMessageTemplateOutputReference | CognitoUserPoolVerificationMessageTemplate): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2026,7 +2026,7 @@ export class CognitoUserPoolVerificationMessageTemplateOutputReference extends c
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2242,7 +2242,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   // alias_attributes - computed: false, optional: true, required: false
   private _aliasAttributes?: string[]; 
   public get aliasAttributes() {
-    return this.getListAttribute('alias_attributes');
+    return cdktf.Fn.tolist(this.getListAttribute('alias_attributes'));
   }
   public set aliasAttributes(value: string[]) {
     this._aliasAttributes = value;
@@ -2263,7 +2263,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   // auto_verified_attributes - computed: false, optional: true, required: false
   private _autoVerifiedAttributes?: string[]; 
   public get autoVerifiedAttributes() {
-    return this.getListAttribute('auto_verified_attributes');
+    return cdktf.Fn.tolist(this.getListAttribute('auto_verified_attributes'));
   }
   public set autoVerifiedAttributes(value: string[]) {
     this._autoVerifiedAttributes = value;
@@ -2405,12 +2405,11 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -2422,12 +2421,11 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -2441,7 +2439,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   // username_attributes - computed: false, optional: true, required: false
   private _usernameAttributes?: string[]; 
   public get usernameAttributes() {
-    return this.getListAttribute('username_attributes');
+    return cdktf.Fn.tolist(this.getListAttribute('username_attributes'));
   }
   public set usernameAttributes(value: string[]) {
     this._usernameAttributes = value;
@@ -2455,7 +2453,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // account_recovery_setting - computed: false, optional: true, required: false
-  private _accountRecoverySetting = new CognitoUserPoolAccountRecoverySettingOutputReference(this as any, "account_recovery_setting", true);
+  private _accountRecoverySetting = new CognitoUserPoolAccountRecoverySettingOutputReference(this, "account_recovery_setting", true);
   public get accountRecoverySetting() {
     return this._accountRecoverySetting;
   }
@@ -2471,7 +2469,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // admin_create_user_config - computed: false, optional: true, required: false
-  private _adminCreateUserConfig = new CognitoUserPoolAdminCreateUserConfigOutputReference(this as any, "admin_create_user_config", true);
+  private _adminCreateUserConfig = new CognitoUserPoolAdminCreateUserConfigOutputReference(this, "admin_create_user_config", true);
   public get adminCreateUserConfig() {
     return this._adminCreateUserConfig;
   }
@@ -2487,7 +2485,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // device_configuration - computed: false, optional: true, required: false
-  private _deviceConfiguration = new CognitoUserPoolDeviceConfigurationOutputReference(this as any, "device_configuration", true);
+  private _deviceConfiguration = new CognitoUserPoolDeviceConfigurationOutputReference(this, "device_configuration", true);
   public get deviceConfiguration() {
     return this._deviceConfiguration;
   }
@@ -2503,7 +2501,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // email_configuration - computed: false, optional: true, required: false
-  private _emailConfiguration = new CognitoUserPoolEmailConfigurationOutputReference(this as any, "email_configuration", true);
+  private _emailConfiguration = new CognitoUserPoolEmailConfigurationOutputReference(this, "email_configuration", true);
   public get emailConfiguration() {
     return this._emailConfiguration;
   }
@@ -2519,7 +2517,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // lambda_config - computed: false, optional: true, required: false
-  private _lambdaConfig = new CognitoUserPoolLambdaConfigOutputReference(this as any, "lambda_config", true);
+  private _lambdaConfig = new CognitoUserPoolLambdaConfigOutputReference(this, "lambda_config", true);
   public get lambdaConfig() {
     return this._lambdaConfig;
   }
@@ -2535,7 +2533,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // password_policy - computed: false, optional: true, required: false
-  private _passwordPolicy = new CognitoUserPoolPasswordPolicyOutputReference(this as any, "password_policy", true);
+  private _passwordPolicy = new CognitoUserPoolPasswordPolicyOutputReference(this, "password_policy", true);
   public get passwordPolicy() {
     return this._passwordPolicy;
   }
@@ -2551,12 +2549,12 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // schema - computed: false, optional: true, required: false
-  private _schema?: CognitoUserPoolSchema[]; 
+  private _schema?: CognitoUserPoolSchema[] | cdktf.IResolvable; 
   public get schema() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('schema') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('schema')));
   }
-  public set schema(value: CognitoUserPoolSchema[]) {
+  public set schema(value: CognitoUserPoolSchema[] | cdktf.IResolvable) {
     this._schema = value;
   }
   public resetSchema() {
@@ -2568,7 +2566,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // sms_configuration - computed: false, optional: true, required: false
-  private _smsConfiguration = new CognitoUserPoolSmsConfigurationOutputReference(this as any, "sms_configuration", true);
+  private _smsConfiguration = new CognitoUserPoolSmsConfigurationOutputReference(this, "sms_configuration", true);
   public get smsConfiguration() {
     return this._smsConfiguration;
   }
@@ -2584,7 +2582,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // software_token_mfa_configuration - computed: false, optional: true, required: false
-  private _softwareTokenMfaConfiguration = new CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference(this as any, "software_token_mfa_configuration", true);
+  private _softwareTokenMfaConfiguration = new CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference(this, "software_token_mfa_configuration", true);
   public get softwareTokenMfaConfiguration() {
     return this._softwareTokenMfaConfiguration;
   }
@@ -2600,7 +2598,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // user_pool_add_ons - computed: false, optional: true, required: false
-  private _userPoolAddOns = new CognitoUserPoolUserPoolAddOnsOutputReference(this as any, "user_pool_add_ons", true);
+  private _userPoolAddOns = new CognitoUserPoolUserPoolAddOnsOutputReference(this, "user_pool_add_ons", true);
   public get userPoolAddOns() {
     return this._userPoolAddOns;
   }
@@ -2616,7 +2614,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // username_configuration - computed: false, optional: true, required: false
-  private _usernameConfiguration = new CognitoUserPoolUsernameConfigurationOutputReference(this as any, "username_configuration", true);
+  private _usernameConfiguration = new CognitoUserPoolUsernameConfigurationOutputReference(this, "username_configuration", true);
   public get usernameConfiguration() {
     return this._usernameConfiguration;
   }
@@ -2632,7 +2630,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // verification_message_template - computed: false, optional: true, required: false
-  private _verificationMessageTemplate = new CognitoUserPoolVerificationMessageTemplateOutputReference(this as any, "verification_message_template", true);
+  private _verificationMessageTemplate = new CognitoUserPoolVerificationMessageTemplateOutputReference(this, "verification_message_template", true);
   public get verificationMessageTemplate() {
     return this._verificationMessageTemplate;
   }
@@ -2661,8 +2659,8 @@ export class CognitoUserPool extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       sms_authentication_message: cdktf.stringToTerraform(this._smsAuthenticationMessage),
       sms_verification_message: cdktf.stringToTerraform(this._smsVerificationMessage),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       username_attributes: cdktf.listMapper(cdktf.stringToTerraform)(this._usernameAttributes),
       account_recovery_setting: cognitoUserPoolAccountRecoverySettingToTerraform(this._accountRecoverySetting.internalValue),
       admin_create_user_config: cognitoUserPoolAdminCreateUserConfigToTerraform(this._adminCreateUserConfig.internalValue),

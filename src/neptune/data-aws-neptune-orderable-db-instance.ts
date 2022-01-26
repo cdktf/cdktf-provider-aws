@@ -183,7 +183,7 @@ export class DataAwsNeptuneOrderableDbInstance extends cdktf.TerraformDataSource
 
   // multi_az_capable - computed: true, optional: false, required: false
   public get multiAzCapable() {
-    return this.getBooleanAttribute('multi_az_capable') as any;
+    return this.getBooleanAttribute('multi_az_capable');
   }
 
   // preferred_instance_classes - computed: false, optional: true, required: false
@@ -204,7 +204,7 @@ export class DataAwsNeptuneOrderableDbInstance extends cdktf.TerraformDataSource
 
   // read_replica_capable - computed: true, optional: false, required: false
   public get readReplicaCapable() {
-    return this.getBooleanAttribute('read_replica_capable') as any;
+    return this.getBooleanAttribute('read_replica_capable');
   }
 
   // storage_type - computed: true, optional: false, required: false
@@ -214,33 +214,33 @@ export class DataAwsNeptuneOrderableDbInstance extends cdktf.TerraformDataSource
 
   // supports_enhanced_monitoring - computed: true, optional: false, required: false
   public get supportsEnhancedMonitoring() {
-    return this.getBooleanAttribute('supports_enhanced_monitoring') as any;
+    return this.getBooleanAttribute('supports_enhanced_monitoring');
   }
 
   // supports_iam_database_authentication - computed: true, optional: false, required: false
   public get supportsIamDatabaseAuthentication() {
-    return this.getBooleanAttribute('supports_iam_database_authentication') as any;
+    return this.getBooleanAttribute('supports_iam_database_authentication');
   }
 
   // supports_iops - computed: true, optional: false, required: false
   public get supportsIops() {
-    return this.getBooleanAttribute('supports_iops') as any;
+    return this.getBooleanAttribute('supports_iops');
   }
 
   // supports_performance_insights - computed: true, optional: false, required: false
   public get supportsPerformanceInsights() {
-    return this.getBooleanAttribute('supports_performance_insights') as any;
+    return this.getBooleanAttribute('supports_performance_insights');
   }
 
   // supports_storage_encryption - computed: true, optional: false, required: false
   public get supportsStorageEncryption() {
-    return this.getBooleanAttribute('supports_storage_encryption') as any;
+    return this.getBooleanAttribute('supports_storage_encryption');
   }
 
   // vpc - computed: true, optional: true, required: false
   private _vpc?: boolean | cdktf.IResolvable; 
   public get vpc() {
-    return this.getBooleanAttribute('vpc') as any;
+    return this.getBooleanAttribute('vpc');
   }
   public set vpc(value: boolean | cdktf.IResolvable) {
     this._vpc = value;

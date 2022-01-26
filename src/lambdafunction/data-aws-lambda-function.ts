@@ -18,7 +18,7 @@ export interface DataAwsLambdaFunctionConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_function#tags DataAwsLambdaFunction#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsLambdaFunctionDeadLetterConfig extends cdktf.ComplexComputedList {
 
@@ -31,8 +31,7 @@ export class DataAwsLambdaFunctionEnvironment extends cdktf.ComplexComputedList 
 
   // variables - computed: true, optional: false, required: false
   public get variables() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('variables') as any;
+    return this.getStringMapAttribute('variables');
   }
 }
 export class DataAwsLambdaFunctionFileSystemConfig extends cdktf.ComplexComputedList {
@@ -58,12 +57,12 @@ export class DataAwsLambdaFunctionVpcConfig extends cdktf.ComplexComputedList {
 
   // security_group_ids - computed: true, optional: false, required: false
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
 
   // subnet_ids - computed: true, optional: false, required: false
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
 
   // vpc_id - computed: true, optional: false, required: false
@@ -130,7 +129,7 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
 
   // dead_letter_config - computed: true, optional: false, required: false
   public deadLetterConfig(index: string) {
-    return new DataAwsLambdaFunctionDeadLetterConfig(this, 'dead_letter_config', index);
+    return new DataAwsLambdaFunctionDeadLetterConfig(this, 'dead_letter_config', index, false);
   }
 
   // description - computed: true, optional: false, required: false
@@ -140,12 +139,12 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
 
   // environment - computed: true, optional: false, required: false
   public environment(index: string) {
-    return new DataAwsLambdaFunctionEnvironment(this, 'environment', index);
+    return new DataAwsLambdaFunctionEnvironment(this, 'environment', index, false);
   }
 
   // file_system_config - computed: true, optional: false, required: false
   public fileSystemConfig(index: string) {
-    return new DataAwsLambdaFunctionFileSystemConfig(this, 'file_system_config', index);
+    return new DataAwsLambdaFunctionFileSystemConfig(this, 'file_system_config', index, false);
   }
 
   // function_name - computed: false, optional: false, required: true
@@ -258,12 +257,11 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -281,7 +279,7 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
 
   // tracing_config - computed: true, optional: false, required: false
   public tracingConfig(index: string) {
-    return new DataAwsLambdaFunctionTracingConfig(this, 'tracing_config', index);
+    return new DataAwsLambdaFunctionTracingConfig(this, 'tracing_config', index, false);
   }
 
   // version - computed: true, optional: false, required: false
@@ -291,7 +289,7 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
 
   // vpc_config - computed: true, optional: false, required: false
   public vpcConfig(index: string) {
-    return new DataAwsLambdaFunctionVpcConfig(this, 'vpc_config', index);
+    return new DataAwsLambdaFunctionVpcConfig(this, 'vpc_config', index, false);
   }
 
   // =========
@@ -302,7 +300,7 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
     return {
       function_name: cdktf.stringToTerraform(this._functionName),
       qualifier: cdktf.stringToTerraform(this._qualifier),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

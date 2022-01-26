@@ -65,7 +65,7 @@ export class EfsFileSystemPolicy extends cdktf.TerraformResource {
   // bypass_policy_lockout_safety_check - computed: false, optional: true, required: false
   private _bypassPolicyLockoutSafetyCheck?: boolean | cdktf.IResolvable; 
   public get bypassPolicyLockoutSafetyCheck() {
-    return this.getBooleanAttribute('bypass_policy_lockout_safety_check') as any;
+    return this.getBooleanAttribute('bypass_policy_lockout_safety_check');
   }
   public set bypassPolicyLockoutSafetyCheck(value: boolean | cdktf.IResolvable) {
     this._bypassPolicyLockoutSafetyCheck = value;

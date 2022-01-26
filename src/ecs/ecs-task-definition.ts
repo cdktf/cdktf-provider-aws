@@ -50,11 +50,11 @@ export interface EcsTaskDefinitionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#tags EcsTaskDefinition#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#tags_all EcsTaskDefinition#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#task_role_arn EcsTaskDefinition#task_role_arn}
   */
@@ -70,13 +70,13 @@ export interface EcsTaskDefinitionConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#inference_accelerator EcsTaskDefinition#inference_accelerator}
   */
-  readonly inferenceAccelerator?: EcsTaskDefinitionInferenceAccelerator[];
+  readonly inferenceAccelerator?: EcsTaskDefinitionInferenceAccelerator[] | cdktf.IResolvable;
   /**
   * placement_constraints block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#placement_constraints EcsTaskDefinition#placement_constraints}
   */
-  readonly placementConstraints?: EcsTaskDefinitionPlacementConstraints[];
+  readonly placementConstraints?: EcsTaskDefinitionPlacementConstraints[] | cdktf.IResolvable;
   /**
   * proxy_configuration block
   * 
@@ -94,7 +94,7 @@ export interface EcsTaskDefinitionConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#volume EcsTaskDefinition#volume}
   */
-  readonly volume?: EcsTaskDefinitionVolume[];
+  readonly volume?: EcsTaskDefinitionVolume[] | cdktf.IResolvable;
 }
 export interface EcsTaskDefinitionEphemeralStorage {
   /**
@@ -104,7 +104,7 @@ export interface EcsTaskDefinitionEphemeralStorage {
 }
 
 export function ecsTaskDefinitionEphemeralStorageToTerraform(struct?: EcsTaskDefinitionEphemeralStorageOutputReference | EcsTaskDefinitionEphemeralStorage): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -121,7 +121,7 @@ export class EcsTaskDefinitionEphemeralStorageOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -170,8 +170,8 @@ export interface EcsTaskDefinitionInferenceAccelerator {
   readonly deviceType: string;
 }
 
-export function ecsTaskDefinitionInferenceAcceleratorToTerraform(struct?: EcsTaskDefinitionInferenceAccelerator): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ecsTaskDefinitionInferenceAcceleratorToTerraform(struct?: EcsTaskDefinitionInferenceAccelerator | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -192,8 +192,8 @@ export interface EcsTaskDefinitionPlacementConstraints {
   readonly type: string;
 }
 
-export function ecsTaskDefinitionPlacementConstraintsToTerraform(struct?: EcsTaskDefinitionPlacementConstraints): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ecsTaskDefinitionPlacementConstraintsToTerraform(struct?: EcsTaskDefinitionPlacementConstraints | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -211,7 +211,7 @@ export interface EcsTaskDefinitionProxyConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#properties EcsTaskDefinition#properties}
   */
-  readonly properties?: { [key: string]: string } | cdktf.IResolvable;
+  readonly properties?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#type EcsTaskDefinition#type}
   */
@@ -219,13 +219,13 @@ export interface EcsTaskDefinitionProxyConfiguration {
 }
 
 export function ecsTaskDefinitionProxyConfigurationToTerraform(struct?: EcsTaskDefinitionProxyConfigurationOutputReference | EcsTaskDefinitionProxyConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     container_name: cdktf.stringToTerraform(struct!.containerName),
-    properties: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.properties),
+    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }
@@ -238,7 +238,7 @@ export class EcsTaskDefinitionProxyConfigurationOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -289,12 +289,11 @@ export class EcsTaskDefinitionProxyConfigurationOutputReference extends cdktf.Co
   }
 
   // properties - computed: false, optional: true, required: false
-  private _properties?: { [key: string]: string } | cdktf.IResolvable; 
+  private _properties?: { [key: string]: string }; 
   public get properties() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('properties') as any;
+    return this.getStringMapAttribute('properties');
   }
-  public set properties(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set properties(value: { [key: string]: string }) {
     this._properties = value;
   }
   public resetProperties() {
@@ -333,7 +332,7 @@ export interface EcsTaskDefinitionRuntimePlatform {
 }
 
 export function ecsTaskDefinitionRuntimePlatformToTerraform(struct?: EcsTaskDefinitionRuntimePlatformOutputReference | EcsTaskDefinitionRuntimePlatform): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -351,7 +350,7 @@ export class EcsTaskDefinitionRuntimePlatformOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -426,11 +425,11 @@ export interface EcsTaskDefinitionVolumeDockerVolumeConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#driver_opts EcsTaskDefinition#driver_opts}
   */
-  readonly driverOpts?: { [key: string]: string } | cdktf.IResolvable;
+  readonly driverOpts?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#labels EcsTaskDefinition#labels}
   */
-  readonly labels?: { [key: string]: string } | cdktf.IResolvable;
+  readonly labels?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition#scope EcsTaskDefinition#scope}
   */
@@ -438,15 +437,15 @@ export interface EcsTaskDefinitionVolumeDockerVolumeConfiguration {
 }
 
 export function ecsTaskDefinitionVolumeDockerVolumeConfigurationToTerraform(struct?: EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference | EcsTaskDefinitionVolumeDockerVolumeConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     autoprovision: cdktf.booleanToTerraform(struct!.autoprovision),
     driver: cdktf.stringToTerraform(struct!.driver),
-    driver_opts: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.driverOpts),
-    labels: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.labels),
+    driver_opts: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.driverOpts),
+    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
     scope: cdktf.stringToTerraform(struct!.scope),
   }
 }
@@ -459,7 +458,7 @@ export class EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference ext
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -511,7 +510,7 @@ export class EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference ext
   // autoprovision - computed: false, optional: true, required: false
   private _autoprovision?: boolean | cdktf.IResolvable; 
   public get autoprovision() {
-    return this.getBooleanAttribute('autoprovision') as any;
+    return this.getBooleanAttribute('autoprovision');
   }
   public set autoprovision(value: boolean | cdktf.IResolvable) {
     this._autoprovision = value;
@@ -541,12 +540,11 @@ export class EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference ext
   }
 
   // driver_opts - computed: false, optional: true, required: false
-  private _driverOpts?: { [key: string]: string } | cdktf.IResolvable; 
+  private _driverOpts?: { [key: string]: string }; 
   public get driverOpts() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('driver_opts') as any;
+    return this.getStringMapAttribute('driver_opts');
   }
-  public set driverOpts(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set driverOpts(value: { [key: string]: string }) {
     this._driverOpts = value;
   }
   public resetDriverOpts() {
@@ -558,12 +556,11 @@ export class EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference ext
   }
 
   // labels - computed: false, optional: true, required: false
-  private _labels?: { [key: string]: string } | cdktf.IResolvable; 
+  private _labels?: { [key: string]: string }; 
   public get labels() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('labels') as any;
+    return this.getStringMapAttribute('labels');
   }
-  public set labels(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set labels(value: { [key: string]: string }) {
     this._labels = value;
   }
   public resetLabels() {
@@ -602,7 +599,7 @@ export interface EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfi
 }
 
 export function ecsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigToTerraform(struct?: EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference | EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -620,7 +617,7 @@ export class EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOut
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -709,7 +706,7 @@ export interface EcsTaskDefinitionVolumeEfsVolumeConfiguration {
 }
 
 export function ecsTaskDefinitionVolumeEfsVolumeConfigurationToTerraform(struct?: EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference | EcsTaskDefinitionVolumeEfsVolumeConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -730,7 +727,7 @@ export class EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -841,7 +838,7 @@ export class EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference extend
   }
 
   // authorization_config - computed: false, optional: true, required: false
-  private _authorizationConfig = new EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference(this as any, "authorization_config", true);
+  private _authorizationConfig = new EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference(this, "authorization_config", true);
   public get authorizationConfig() {
     return this._authorizationConfig;
   }
@@ -868,7 +865,7 @@ export interface EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationA
 }
 
 export function ecsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigToTerraform(struct?: EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference | EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -886,7 +883,7 @@ export class EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAutho
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -961,7 +958,7 @@ export interface EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration 
 }
 
 export function ecsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationToTerraform(struct?: EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference | EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -980,7 +977,7 @@ export class EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutpu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1044,7 +1041,7 @@ export class EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutpu
   }
 
   // authorization_config - computed: false, optional: false, required: true
-  private _authorizationConfig = new EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference(this as any, "authorization_config", true);
+  private _authorizationConfig = new EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference(this, "authorization_config", true);
   public get authorizationConfig() {
     return this._authorizationConfig;
   }
@@ -1085,8 +1082,8 @@ export interface EcsTaskDefinitionVolume {
   readonly fsxWindowsFileServerVolumeConfiguration?: EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration;
 }
 
-export function ecsTaskDefinitionVolumeToTerraform(struct?: EcsTaskDefinitionVolume): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ecsTaskDefinitionVolumeToTerraform(struct?: EcsTaskDefinitionVolume | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1292,7 +1289,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
   // requires_compatibilities - computed: false, optional: true, required: false
   private _requiresCompatibilities?: string[]; 
   public get requiresCompatibilities() {
-    return this.getListAttribute('requires_compatibilities');
+    return cdktf.Fn.tolist(this.getListAttribute('requires_compatibilities'));
   }
   public set requiresCompatibilities(value: string[]) {
     this._requiresCompatibilities = value;
@@ -1313,7 +1310,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
   // skip_destroy - computed: false, optional: true, required: false
   private _skipDestroy?: boolean | cdktf.IResolvable; 
   public get skipDestroy() {
-    return this.getBooleanAttribute('skip_destroy') as any;
+    return this.getBooleanAttribute('skip_destroy');
   }
   public set skipDestroy(value: boolean | cdktf.IResolvable) {
     this._skipDestroy = value;
@@ -1327,12 +1324,11 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -1344,12 +1340,11 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -1377,7 +1372,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
   }
 
   // ephemeral_storage - computed: false, optional: true, required: false
-  private _ephemeralStorage = new EcsTaskDefinitionEphemeralStorageOutputReference(this as any, "ephemeral_storage", true);
+  private _ephemeralStorage = new EcsTaskDefinitionEphemeralStorageOutputReference(this, "ephemeral_storage", true);
   public get ephemeralStorage() {
     return this._ephemeralStorage;
   }
@@ -1393,12 +1388,12 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
   }
 
   // inference_accelerator - computed: false, optional: true, required: false
-  private _inferenceAccelerator?: EcsTaskDefinitionInferenceAccelerator[]; 
+  private _inferenceAccelerator?: EcsTaskDefinitionInferenceAccelerator[] | cdktf.IResolvable; 
   public get inferenceAccelerator() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('inference_accelerator') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('inference_accelerator')));
   }
-  public set inferenceAccelerator(value: EcsTaskDefinitionInferenceAccelerator[]) {
+  public set inferenceAccelerator(value: EcsTaskDefinitionInferenceAccelerator[] | cdktf.IResolvable) {
     this._inferenceAccelerator = value;
   }
   public resetInferenceAccelerator() {
@@ -1410,12 +1405,12 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
   }
 
   // placement_constraints - computed: false, optional: true, required: false
-  private _placementConstraints?: EcsTaskDefinitionPlacementConstraints[]; 
+  private _placementConstraints?: EcsTaskDefinitionPlacementConstraints[] | cdktf.IResolvable; 
   public get placementConstraints() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('placement_constraints') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('placement_constraints')));
   }
-  public set placementConstraints(value: EcsTaskDefinitionPlacementConstraints[]) {
+  public set placementConstraints(value: EcsTaskDefinitionPlacementConstraints[] | cdktf.IResolvable) {
     this._placementConstraints = value;
   }
   public resetPlacementConstraints() {
@@ -1427,7 +1422,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
   }
 
   // proxy_configuration - computed: false, optional: true, required: false
-  private _proxyConfiguration = new EcsTaskDefinitionProxyConfigurationOutputReference(this as any, "proxy_configuration", true);
+  private _proxyConfiguration = new EcsTaskDefinitionProxyConfigurationOutputReference(this, "proxy_configuration", true);
   public get proxyConfiguration() {
     return this._proxyConfiguration;
   }
@@ -1443,7 +1438,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
   }
 
   // runtime_platform - computed: false, optional: true, required: false
-  private _runtimePlatform = new EcsTaskDefinitionRuntimePlatformOutputReference(this as any, "runtime_platform", true);
+  private _runtimePlatform = new EcsTaskDefinitionRuntimePlatformOutputReference(this, "runtime_platform", true);
   public get runtimePlatform() {
     return this._runtimePlatform;
   }
@@ -1459,12 +1454,12 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
   }
 
   // volume - computed: false, optional: true, required: false
-  private _volume?: EcsTaskDefinitionVolume[]; 
+  private _volume?: EcsTaskDefinitionVolume[] | cdktf.IResolvable; 
   public get volume() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('volume') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('volume')));
   }
-  public set volume(value: EcsTaskDefinitionVolume[]) {
+  public set volume(value: EcsTaskDefinitionVolume[] | cdktf.IResolvable) {
     this._volume = value;
   }
   public resetVolume() {
@@ -1491,8 +1486,8 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
       pid_mode: cdktf.stringToTerraform(this._pidMode),
       requires_compatibilities: cdktf.listMapper(cdktf.stringToTerraform)(this._requiresCompatibilities),
       skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       task_role_arn: cdktf.stringToTerraform(this._taskRoleArn),
       ephemeral_storage: ecsTaskDefinitionEphemeralStorageToTerraform(this._ephemeralStorage.internalValue),
       inference_accelerator: cdktf.listMapper(ecsTaskDefinitionInferenceAcceleratorToTerraform)(this._inferenceAccelerator),

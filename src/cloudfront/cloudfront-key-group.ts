@@ -91,7 +91,7 @@ export class CloudfrontKeyGroup extends cdktf.TerraformResource {
   // items - computed: false, optional: false, required: true
   private _items?: string[]; 
   public get items() {
-    return this.getListAttribute('items');
+    return cdktf.Fn.tolist(this.getListAttribute('items'));
   }
   public set items(value: string[]) {
     this._items = value;

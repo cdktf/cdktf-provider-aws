@@ -24,7 +24,7 @@ export interface GlobalacceleratorListenerConfig extends cdktf.TerraformMetaArgu
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_listener#port_range GlobalacceleratorListener#port_range}
   */
-  readonly portRange: GlobalacceleratorListenerPortRange[];
+  readonly portRange: GlobalacceleratorListenerPortRange[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -43,8 +43,8 @@ export interface GlobalacceleratorListenerPortRange {
   readonly toPort?: number;
 }
 
-export function globalacceleratorListenerPortRangeToTerraform(struct?: GlobalacceleratorListenerPortRange): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function globalacceleratorListenerPortRangeToTerraform(struct?: GlobalacceleratorListenerPortRange | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -69,8 +69,8 @@ export interface GlobalacceleratorListenerTimeouts {
   readonly update?: string;
 }
 
-export function globalacceleratorListenerTimeoutsToTerraform(struct?: GlobalacceleratorListenerTimeoutsOutputReference | GlobalacceleratorListenerTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function globalacceleratorListenerTimeoutsToTerraform(struct?: GlobalacceleratorListenerTimeoutsOutputReference | GlobalacceleratorListenerTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -89,7 +89,7 @@ export class GlobalacceleratorListenerTimeoutsOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -266,12 +266,12 @@ export class GlobalacceleratorListener extends cdktf.TerraformResource {
   }
 
   // port_range - computed: false, optional: false, required: true
-  private _portRange?: GlobalacceleratorListenerPortRange[]; 
+  private _portRange?: GlobalacceleratorListenerPortRange[] | cdktf.IResolvable; 
   public get portRange() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('port_range') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('port_range')));
   }
-  public set portRange(value: GlobalacceleratorListenerPortRange[]) {
+  public set portRange(value: GlobalacceleratorListenerPortRange[] | cdktf.IResolvable) {
     this._portRange = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -280,7 +280,7 @@ export class GlobalacceleratorListener extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new GlobalacceleratorListenerTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new GlobalacceleratorListenerTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

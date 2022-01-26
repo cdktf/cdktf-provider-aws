@@ -54,7 +54,7 @@ export class DataAwsDxLocations extends cdktf.TerraformDataSource {
 
   // location_codes - computed: true, optional: false, required: false
   public get locationCodes() {
-    return this.getListAttribute('location_codes');
+    return cdktf.Fn.tolist(this.getListAttribute('location_codes'));
   }
 
   // =========

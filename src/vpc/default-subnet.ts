@@ -50,11 +50,11 @@ export interface DefaultSubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_subnet#tags DefaultSubnet#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_subnet#tags_all DefaultSubnet#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   * 
@@ -73,8 +73,8 @@ export interface DefaultSubnetTimeouts {
   readonly delete?: string;
 }
 
-export function defaultSubnetTimeoutsToTerraform(struct?: DefaultSubnetTimeoutsOutputReference | DefaultSubnetTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function defaultSubnetTimeoutsToTerraform(struct?: DefaultSubnetTimeoutsOutputReference | DefaultSubnetTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -92,7 +92,7 @@ export class DefaultSubnetTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -214,7 +214,7 @@ export class DefaultSubnet extends cdktf.TerraformResource {
 
   // assign_ipv6_address_on_creation - computed: true, optional: false, required: false
   public get assignIpv6AddressOnCreation() {
-    return this.getBooleanAttribute('assign_ipv6_address_on_creation') as any;
+    return this.getBooleanAttribute('assign_ipv6_address_on_creation');
   }
 
   // availability_zone - computed: false, optional: false, required: true
@@ -259,7 +259,7 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   // enable_dns64 - computed: false, optional: true, required: false
   private _enableDns64?: boolean | cdktf.IResolvable; 
   public get enableDns64() {
-    return this.getBooleanAttribute('enable_dns64') as any;
+    return this.getBooleanAttribute('enable_dns64');
   }
   public set enableDns64(value: boolean | cdktf.IResolvable) {
     this._enableDns64 = value;
@@ -275,7 +275,7 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   // enable_resource_name_dns_a_record_on_launch - computed: false, optional: true, required: false
   private _enableResourceNameDnsARecordOnLaunch?: boolean | cdktf.IResolvable; 
   public get enableResourceNameDnsARecordOnLaunch() {
-    return this.getBooleanAttribute('enable_resource_name_dns_a_record_on_launch') as any;
+    return this.getBooleanAttribute('enable_resource_name_dns_a_record_on_launch');
   }
   public set enableResourceNameDnsARecordOnLaunch(value: boolean | cdktf.IResolvable) {
     this._enableResourceNameDnsARecordOnLaunch = value;
@@ -291,7 +291,7 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   // enable_resource_name_dns_aaaa_record_on_launch - computed: false, optional: true, required: false
   private _enableResourceNameDnsAaaaRecordOnLaunch?: boolean | cdktf.IResolvable; 
   public get enableResourceNameDnsAaaaRecordOnLaunch() {
-    return this.getBooleanAttribute('enable_resource_name_dns_aaaa_record_on_launch') as any;
+    return this.getBooleanAttribute('enable_resource_name_dns_aaaa_record_on_launch');
   }
   public set enableResourceNameDnsAaaaRecordOnLaunch(value: boolean | cdktf.IResolvable) {
     this._enableResourceNameDnsAaaaRecordOnLaunch = value;
@@ -322,7 +322,7 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   // ipv6_native - computed: false, optional: true, required: false
   private _ipv6Native?: boolean | cdktf.IResolvable; 
   public get ipv6Native() {
-    return this.getBooleanAttribute('ipv6_native') as any;
+    return this.getBooleanAttribute('ipv6_native');
   }
   public set ipv6Native(value: boolean | cdktf.IResolvable) {
     this._ipv6Native = value;
@@ -338,7 +338,7 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   // map_customer_owned_ip_on_launch - computed: false, optional: true, required: false
   private _mapCustomerOwnedIpOnLaunch?: boolean | cdktf.IResolvable; 
   public get mapCustomerOwnedIpOnLaunch() {
-    return this.getBooleanAttribute('map_customer_owned_ip_on_launch') as any;
+    return this.getBooleanAttribute('map_customer_owned_ip_on_launch');
   }
   public set mapCustomerOwnedIpOnLaunch(value: boolean | cdktf.IResolvable) {
     this._mapCustomerOwnedIpOnLaunch = value;
@@ -354,7 +354,7 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   // map_public_ip_on_launch - computed: true, optional: true, required: false
   private _mapPublicIpOnLaunch?: boolean | cdktf.IResolvable; 
   public get mapPublicIpOnLaunch() {
-    return this.getBooleanAttribute('map_public_ip_on_launch') as any;
+    return this.getBooleanAttribute('map_public_ip_on_launch');
   }
   public set mapPublicIpOnLaunch(value: boolean | cdktf.IResolvable) {
     this._mapPublicIpOnLaunch = value;
@@ -405,12 +405,11 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -422,12 +421,11 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -444,7 +442,7 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DefaultSubnetTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DefaultSubnetTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -475,8 +473,8 @@ export class DefaultSubnet extends cdktf.TerraformResource {
       map_public_ip_on_launch: cdktf.booleanToTerraform(this._mapPublicIpOnLaunch),
       outpost_arn: cdktf.stringToTerraform(this._outpostArn),
       private_dns_hostname_type_on_launch: cdktf.stringToTerraform(this._privateDnsHostnameTypeOnLaunch),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: defaultSubnetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

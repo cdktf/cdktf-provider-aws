@@ -157,7 +157,7 @@ export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
 
   // security_groups - computed: true, optional: false, required: false
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
 
   // subnet_id - computed: true, optional: false, required: false

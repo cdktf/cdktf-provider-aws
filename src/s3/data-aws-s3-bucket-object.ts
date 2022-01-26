@@ -22,7 +22,7 @@ export interface DataAwsS3BucketObjectConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/s3_bucket_object#tags DataAwsS3BucketObject#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/s3_bucket_object#version_id DataAwsS3BucketObject#version_id}
   */
@@ -92,7 +92,7 @@ export class DataAwsS3BucketObject extends cdktf.TerraformDataSource {
 
   // bucket_key_enabled - computed: true, optional: false, required: false
   public get bucketKeyEnabled() {
-    return this.getBooleanAttribute('bucket_key_enabled') as any;
+    return this.getBooleanAttribute('bucket_key_enabled');
   }
 
   // cache_control - computed: true, optional: false, required: false
@@ -164,7 +164,7 @@ export class DataAwsS3BucketObject extends cdktf.TerraformDataSource {
   }
 
   // metadata - computed: true, optional: false, required: false
-  public metadata(key: string): string {
+  public metadata(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'metadata').lookup(key);
   }
 
@@ -215,12 +215,11 @@ export class DataAwsS3BucketObject extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -261,7 +260,7 @@ export class DataAwsS3BucketObject extends cdktf.TerraformDataSource {
       bucket: cdktf.stringToTerraform(this._bucket),
       key: cdktf.stringToTerraform(this._key),
       range: cdktf.stringToTerraform(this._range),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       version_id: cdktf.stringToTerraform(this._versionId),
     };
   }

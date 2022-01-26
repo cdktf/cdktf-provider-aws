@@ -42,7 +42,7 @@ export interface SagemakerWorkforceCognitoConfig {
 }
 
 export function sagemakerWorkforceCognitoConfigToTerraform(struct?: SagemakerWorkforceCognitoConfigOutputReference | SagemakerWorkforceCognitoConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -60,7 +60,7 @@ export class SagemakerWorkforceCognitoConfigOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -153,7 +153,7 @@ export interface SagemakerWorkforceOidcConfig {
 }
 
 export function sagemakerWorkforceOidcConfigToTerraform(struct?: SagemakerWorkforceOidcConfigOutputReference | SagemakerWorkforceOidcConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -177,7 +177,7 @@ export class SagemakerWorkforceOidcConfigOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -356,7 +356,7 @@ export interface SagemakerWorkforceSourceIpConfig {
 }
 
 export function sagemakerWorkforceSourceIpConfigToTerraform(struct?: SagemakerWorkforceSourceIpConfigOutputReference | SagemakerWorkforceSourceIpConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -373,7 +373,7 @@ export class SagemakerWorkforceSourceIpConfigOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -401,7 +401,7 @@ export class SagemakerWorkforceSourceIpConfigOutputReference extends cdktf.Compl
   // cidrs - computed: false, optional: false, required: true
   private _cidrs?: string[]; 
   public get cidrs() {
-    return this.getListAttribute('cidrs');
+    return cdktf.Fn.tolist(this.getListAttribute('cidrs'));
   }
   public set cidrs(value: string[]) {
     this._cidrs = value;
@@ -483,7 +483,7 @@ export class SagemakerWorkforce extends cdktf.TerraformResource {
   }
 
   // cognito_config - computed: false, optional: true, required: false
-  private _cognitoConfig = new SagemakerWorkforceCognitoConfigOutputReference(this as any, "cognito_config", true);
+  private _cognitoConfig = new SagemakerWorkforceCognitoConfigOutputReference(this, "cognito_config", true);
   public get cognitoConfig() {
     return this._cognitoConfig;
   }
@@ -499,7 +499,7 @@ export class SagemakerWorkforce extends cdktf.TerraformResource {
   }
 
   // oidc_config - computed: false, optional: true, required: false
-  private _oidcConfig = new SagemakerWorkforceOidcConfigOutputReference(this as any, "oidc_config", true);
+  private _oidcConfig = new SagemakerWorkforceOidcConfigOutputReference(this, "oidc_config", true);
   public get oidcConfig() {
     return this._oidcConfig;
   }
@@ -515,7 +515,7 @@ export class SagemakerWorkforce extends cdktf.TerraformResource {
   }
 
   // source_ip_config - computed: false, optional: true, required: false
-  private _sourceIpConfig = new SagemakerWorkforceSourceIpConfigOutputReference(this as any, "source_ip_config", true);
+  private _sourceIpConfig = new SagemakerWorkforceSourceIpConfigOutputReference(this, "source_ip_config", true);
   public get sourceIpConfig() {
     return this._sourceIpConfig;
   }

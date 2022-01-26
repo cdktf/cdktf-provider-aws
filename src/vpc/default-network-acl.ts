@@ -18,23 +18,23 @@ export interface DefaultNetworkAclConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#tags DefaultNetworkAcl#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#tags_all DefaultNetworkAcl#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * egress block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#egress DefaultNetworkAcl#egress}
   */
-  readonly egress?: DefaultNetworkAclEgress[];
+  readonly egress?: DefaultNetworkAclEgress[] | cdktf.IResolvable;
   /**
   * ingress block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl#ingress DefaultNetworkAcl#ingress}
   */
-  readonly ingress?: DefaultNetworkAclIngress[];
+  readonly ingress?: DefaultNetworkAclIngress[] | cdktf.IResolvable;
 }
 export interface DefaultNetworkAclEgress {
   /**
@@ -75,8 +75,8 @@ export interface DefaultNetworkAclEgress {
   readonly toPort: number;
 }
 
-export function defaultNetworkAclEgressToTerraform(struct?: DefaultNetworkAclEgress): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function defaultNetworkAclEgressToTerraform(struct?: DefaultNetworkAclEgress | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -132,8 +132,8 @@ export interface DefaultNetworkAclIngress {
   readonly toPort: number;
 }
 
-export function defaultNetworkAclIngressToTerraform(struct?: DefaultNetworkAclIngress): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function defaultNetworkAclIngressToTerraform(struct?: DefaultNetworkAclIngress | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -226,7 +226,7 @@ export class DefaultNetworkAcl extends cdktf.TerraformResource {
   // subnet_ids - computed: false, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -240,12 +240,11 @@ export class DefaultNetworkAcl extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -257,12 +256,11 @@ export class DefaultNetworkAcl extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -279,12 +277,12 @@ export class DefaultNetworkAcl extends cdktf.TerraformResource {
   }
 
   // egress - computed: false, optional: true, required: false
-  private _egress?: DefaultNetworkAclEgress[]; 
+  private _egress?: DefaultNetworkAclEgress[] | cdktf.IResolvable; 
   public get egress() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('egress') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('egress')));
   }
-  public set egress(value: DefaultNetworkAclEgress[]) {
+  public set egress(value: DefaultNetworkAclEgress[] | cdktf.IResolvable) {
     this._egress = value;
   }
   public resetEgress() {
@@ -296,12 +294,12 @@ export class DefaultNetworkAcl extends cdktf.TerraformResource {
   }
 
   // ingress - computed: false, optional: true, required: false
-  private _ingress?: DefaultNetworkAclIngress[]; 
+  private _ingress?: DefaultNetworkAclIngress[] | cdktf.IResolvable; 
   public get ingress() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ingress') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ingress')));
   }
-  public set ingress(value: DefaultNetworkAclIngress[]) {
+  public set ingress(value: DefaultNetworkAclIngress[] | cdktf.IResolvable) {
     this._ingress = value;
   }
   public resetIngress() {
@@ -320,8 +318,8 @@ export class DefaultNetworkAcl extends cdktf.TerraformResource {
     return {
       default_network_acl_id: cdktf.stringToTerraform(this._defaultNetworkAclId),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       egress: cdktf.listMapper(defaultNetworkAclEgressToTerraform)(this._egress),
       ingress: cdktf.listMapper(defaultNetworkAclIngressToTerraform)(this._ingress),
     };

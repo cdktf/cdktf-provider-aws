@@ -70,11 +70,11 @@ export interface AlbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#tags Alb#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#tags_all Alb#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * access_logs block
   * 
@@ -86,7 +86,7 @@ export interface AlbConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#subnet_mapping Alb#subnet_mapping}
   */
-  readonly subnetMapping?: AlbSubnetMapping[];
+  readonly subnetMapping?: AlbSubnetMapping[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -110,7 +110,7 @@ export interface AlbAccessLogs {
 }
 
 export function albAccessLogsToTerraform(struct?: AlbAccessLogsOutputReference | AlbAccessLogs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -129,7 +129,7 @@ export class AlbAccessLogsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -182,7 +182,7 @@ export class AlbAccessLogsOutputReference extends cdktf.ComplexObject {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -230,8 +230,8 @@ export interface AlbSubnetMapping {
   readonly subnetId: string;
 }
 
-export function albSubnetMappingToTerraform(struct?: AlbSubnetMapping): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function albSubnetMappingToTerraform(struct?: AlbSubnetMapping | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -258,8 +258,8 @@ export interface AlbTimeouts {
   readonly update?: string;
 }
 
-export function albTimeoutsToTerraform(struct?: AlbTimeoutsOutputReference | AlbTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function albTimeoutsToTerraform(struct?: AlbTimeoutsOutputReference | AlbTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -278,7 +278,7 @@ export class AlbTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -472,7 +472,7 @@ export class Alb extends cdktf.TerraformResource {
   // drop_invalid_header_fields - computed: false, optional: true, required: false
   private _dropInvalidHeaderFields?: boolean | cdktf.IResolvable; 
   public get dropInvalidHeaderFields() {
-    return this.getBooleanAttribute('drop_invalid_header_fields') as any;
+    return this.getBooleanAttribute('drop_invalid_header_fields');
   }
   public set dropInvalidHeaderFields(value: boolean | cdktf.IResolvable) {
     this._dropInvalidHeaderFields = value;
@@ -488,7 +488,7 @@ export class Alb extends cdktf.TerraformResource {
   // enable_cross_zone_load_balancing - computed: false, optional: true, required: false
   private _enableCrossZoneLoadBalancing?: boolean | cdktf.IResolvable; 
   public get enableCrossZoneLoadBalancing() {
-    return this.getBooleanAttribute('enable_cross_zone_load_balancing') as any;
+    return this.getBooleanAttribute('enable_cross_zone_load_balancing');
   }
   public set enableCrossZoneLoadBalancing(value: boolean | cdktf.IResolvable) {
     this._enableCrossZoneLoadBalancing = value;
@@ -504,7 +504,7 @@ export class Alb extends cdktf.TerraformResource {
   // enable_deletion_protection - computed: false, optional: true, required: false
   private _enableDeletionProtection?: boolean | cdktf.IResolvable; 
   public get enableDeletionProtection() {
-    return this.getBooleanAttribute('enable_deletion_protection') as any;
+    return this.getBooleanAttribute('enable_deletion_protection');
   }
   public set enableDeletionProtection(value: boolean | cdktf.IResolvable) {
     this._enableDeletionProtection = value;
@@ -520,7 +520,7 @@ export class Alb extends cdktf.TerraformResource {
   // enable_http2 - computed: false, optional: true, required: false
   private _enableHttp2?: boolean | cdktf.IResolvable; 
   public get enableHttp2() {
-    return this.getBooleanAttribute('enable_http2') as any;
+    return this.getBooleanAttribute('enable_http2');
   }
   public set enableHttp2(value: boolean | cdktf.IResolvable) {
     this._enableHttp2 = value;
@@ -536,7 +536,7 @@ export class Alb extends cdktf.TerraformResource {
   // enable_waf_fail_open - computed: false, optional: true, required: false
   private _enableWafFailOpen?: boolean | cdktf.IResolvable; 
   public get enableWafFailOpen() {
-    return this.getBooleanAttribute('enable_waf_fail_open') as any;
+    return this.getBooleanAttribute('enable_waf_fail_open');
   }
   public set enableWafFailOpen(value: boolean | cdktf.IResolvable) {
     this._enableWafFailOpen = value;
@@ -573,7 +573,7 @@ export class Alb extends cdktf.TerraformResource {
   // internal - computed: true, optional: true, required: false
   private _internal?: boolean | cdktf.IResolvable; 
   public get internal() {
-    return this.getBooleanAttribute('internal') as any;
+    return this.getBooleanAttribute('internal');
   }
   public set internal(value: boolean | cdktf.IResolvable) {
     this._internal = value;
@@ -653,7 +653,7 @@ export class Alb extends cdktf.TerraformResource {
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -669,7 +669,7 @@ export class Alb extends cdktf.TerraformResource {
   // subnets - computed: true, optional: true, required: false
   private _subnets?: string[]; 
   public get subnets() {
-    return this.getListAttribute('subnets');
+    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
   }
   public set subnets(value: string[]) {
     this._subnets = value;
@@ -683,12 +683,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -700,12 +699,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -727,7 +725,7 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // access_logs - computed: false, optional: true, required: false
-  private _accessLogs = new AlbAccessLogsOutputReference(this as any, "access_logs", true);
+  private _accessLogs = new AlbAccessLogsOutputReference(this, "access_logs", true);
   public get accessLogs() {
     return this._accessLogs;
   }
@@ -743,12 +741,12 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // subnet_mapping - computed: false, optional: true, required: false
-  private _subnetMapping?: AlbSubnetMapping[]; 
+  private _subnetMapping?: AlbSubnetMapping[] | cdktf.IResolvable; 
   public get subnetMapping() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('subnet_mapping') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('subnet_mapping')));
   }
-  public set subnetMapping(value: AlbSubnetMapping[]) {
+  public set subnetMapping(value: AlbSubnetMapping[] | cdktf.IResolvable) {
     this._subnetMapping = value;
   }
   public resetSubnetMapping() {
@@ -760,7 +758,7 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new AlbTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new AlbTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -796,8 +794,8 @@ export class Alb extends cdktf.TerraformResource {
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
       subnets: cdktf.listMapper(cdktf.stringToTerraform)(this._subnets),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       access_logs: albAccessLogsToTerraform(this._accessLogs.internalValue),
       subnet_mapping: cdktf.listMapper(albSubnetMappingToTerraform)(this._subnetMapping),
       timeouts: albTimeoutsToTerraform(this._timeouts.internalValue),

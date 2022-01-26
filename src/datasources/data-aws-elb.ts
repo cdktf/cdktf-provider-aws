@@ -14,7 +14,7 @@ export interface DataAwsElbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elb#tags DataAwsElb#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsElbAccessLogs extends cdktf.ComplexComputedList {
 
@@ -30,7 +30,7 @@ export class DataAwsElbAccessLogs extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // interval - computed: true, optional: false, required: false
@@ -135,7 +135,7 @@ export class DataAwsElb extends cdktf.TerraformDataSource {
 
   // access_logs - computed: true, optional: false, required: false
   public accessLogs(index: string) {
-    return new DataAwsElbAccessLogs(this, 'access_logs', index);
+    return new DataAwsElbAccessLogs(this, 'access_logs', index, false);
   }
 
   // arn - computed: true, optional: false, required: false
@@ -145,12 +145,12 @@ export class DataAwsElb extends cdktf.TerraformDataSource {
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
+    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
   }
 
   // connection_draining - computed: true, optional: false, required: false
   public get connectionDraining() {
-    return this.getBooleanAttribute('connection_draining') as any;
+    return this.getBooleanAttribute('connection_draining');
   }
 
   // connection_draining_timeout - computed: true, optional: false, required: false
@@ -160,7 +160,7 @@ export class DataAwsElb extends cdktf.TerraformDataSource {
 
   // cross_zone_load_balancing - computed: true, optional: false, required: false
   public get crossZoneLoadBalancing() {
-    return this.getBooleanAttribute('cross_zone_load_balancing') as any;
+    return this.getBooleanAttribute('cross_zone_load_balancing');
   }
 
   // desync_mitigation_mode - computed: true, optional: false, required: false
@@ -175,7 +175,7 @@ export class DataAwsElb extends cdktf.TerraformDataSource {
 
   // health_check - computed: true, optional: false, required: false
   public healthCheck(index: string) {
-    return new DataAwsElbHealthCheck(this, 'health_check', index);
+    return new DataAwsElbHealthCheck(this, 'health_check', index, false);
   }
 
   // id - computed: true, optional: true, required: false
@@ -190,17 +190,17 @@ export class DataAwsElb extends cdktf.TerraformDataSource {
 
   // instances - computed: true, optional: false, required: false
   public get instances() {
-    return this.getListAttribute('instances');
+    return cdktf.Fn.tolist(this.getListAttribute('instances'));
   }
 
   // internal - computed: true, optional: false, required: false
   public get internal() {
-    return this.getBooleanAttribute('internal') as any;
+    return this.getBooleanAttribute('internal');
   }
 
   // listener - computed: true, optional: false, required: false
   public listener(index: string) {
-    return new DataAwsElbListener(this, 'listener', index);
+    return new DataAwsElbListener(this, 'listener', index, true);
   }
 
   // name - computed: false, optional: false, required: true
@@ -218,7 +218,7 @@ export class DataAwsElb extends cdktf.TerraformDataSource {
 
   // security_groups - computed: true, optional: false, required: false
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
 
   // source_security_group - computed: true, optional: false, required: false
@@ -233,16 +233,15 @@ export class DataAwsElb extends cdktf.TerraformDataSource {
 
   // subnets - computed: true, optional: false, required: false
   public get subnets() {
-    return this.getListAttribute('subnets');
+    return cdktf.Fn.tolist(this.getListAttribute('subnets'));
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -265,7 +264,7 @@ export class DataAwsElb extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

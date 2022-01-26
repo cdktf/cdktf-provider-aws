@@ -18,11 +18,11 @@ export interface WafregionalWebAclConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#tags WafregionalWebAcl#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#tags_all WafregionalWebAcl#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * default_action block
   * 
@@ -40,7 +40,7 @@ export interface WafregionalWebAclConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#rule WafregionalWebAcl#rule}
   */
-  readonly rule?: WafregionalWebAclRule[];
+  readonly rule?: WafregionalWebAclRule[] | cdktf.IResolvable;
 }
 export interface WafregionalWebAclDefaultAction {
   /**
@@ -50,7 +50,7 @@ export interface WafregionalWebAclDefaultAction {
 }
 
 export function wafregionalWebAclDefaultActionToTerraform(struct?: WafregionalWebAclDefaultActionOutputReference | WafregionalWebAclDefaultAction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -67,7 +67,7 @@ export class WafregionalWebAclDefaultActionOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -116,8 +116,8 @@ export interface WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch
   readonly type: string;
 }
 
-export function wafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchToTerraform(struct?: WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchToTerraform(struct?: WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -133,11 +133,11 @@ export interface WafregionalWebAclLoggingConfigurationRedactedFields {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl#field_to_match WafregionalWebAcl#field_to_match}
   */
-  readonly fieldToMatch: WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch[];
+  readonly fieldToMatch: WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch[] | cdktf.IResolvable;
 }
 
 export function wafregionalWebAclLoggingConfigurationRedactedFieldsToTerraform(struct?: WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference | WafregionalWebAclLoggingConfigurationRedactedFields): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -154,7 +154,7 @@ export class WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -180,12 +180,12 @@ export class WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference 
   }
 
   // field_to_match - computed: false, optional: false, required: true
-  private _fieldToMatch?: WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch[]; 
+  private _fieldToMatch?: WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch[] | cdktf.IResolvable; 
   public get fieldToMatch() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('field_to_match') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('field_to_match')));
   }
-  public set fieldToMatch(value: WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch[]) {
+  public set fieldToMatch(value: WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch[] | cdktf.IResolvable) {
     this._fieldToMatch = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -207,7 +207,7 @@ export interface WafregionalWebAclLoggingConfiguration {
 }
 
 export function wafregionalWebAclLoggingConfigurationToTerraform(struct?: WafregionalWebAclLoggingConfigurationOutputReference | WafregionalWebAclLoggingConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -225,7 +225,7 @@ export class WafregionalWebAclLoggingConfigurationOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -270,7 +270,7 @@ export class WafregionalWebAclLoggingConfigurationOutputReference extends cdktf.
   }
 
   // redacted_fields - computed: false, optional: true, required: false
-  private _redactedFields = new WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference(this as any, "redacted_fields", true);
+  private _redactedFields = new WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference(this, "redacted_fields", true);
   public get redactedFields() {
     return this._redactedFields;
   }
@@ -293,7 +293,7 @@ export interface WafregionalWebAclRuleAction {
 }
 
 export function wafregionalWebAclRuleActionToTerraform(struct?: WafregionalWebAclRuleActionOutputReference | WafregionalWebAclRuleAction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -310,7 +310,7 @@ export class WafregionalWebAclRuleActionOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -356,7 +356,7 @@ export interface WafregionalWebAclRuleOverrideAction {
 }
 
 export function wafregionalWebAclRuleOverrideActionToTerraform(struct?: WafregionalWebAclRuleOverrideActionOutputReference | WafregionalWebAclRuleOverrideAction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -373,7 +373,7 @@ export class WafregionalWebAclRuleOverrideActionOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -438,8 +438,8 @@ export interface WafregionalWebAclRule {
   readonly overrideAction?: WafregionalWebAclRuleOverrideAction;
 }
 
-export function wafregionalWebAclRuleToTerraform(struct?: WafregionalWebAclRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafregionalWebAclRuleToTerraform(struct?: WafregionalWebAclRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -535,12 +535,11 @@ export class WafregionalWebAcl extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -552,12 +551,11 @@ export class WafregionalWebAcl extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -569,7 +567,7 @@ export class WafregionalWebAcl extends cdktf.TerraformResource {
   }
 
   // default_action - computed: false, optional: false, required: true
-  private _defaultAction = new WafregionalWebAclDefaultActionOutputReference(this as any, "default_action", true);
+  private _defaultAction = new WafregionalWebAclDefaultActionOutputReference(this, "default_action", true);
   public get defaultAction() {
     return this._defaultAction;
   }
@@ -582,7 +580,7 @@ export class WafregionalWebAcl extends cdktf.TerraformResource {
   }
 
   // logging_configuration - computed: false, optional: true, required: false
-  private _loggingConfiguration = new WafregionalWebAclLoggingConfigurationOutputReference(this as any, "logging_configuration", true);
+  private _loggingConfiguration = new WafregionalWebAclLoggingConfigurationOutputReference(this, "logging_configuration", true);
   public get loggingConfiguration() {
     return this._loggingConfiguration;
   }
@@ -598,12 +596,12 @@ export class WafregionalWebAcl extends cdktf.TerraformResource {
   }
 
   // rule - computed: false, optional: true, required: false
-  private _rule?: WafregionalWebAclRule[]; 
+  private _rule?: WafregionalWebAclRule[] | cdktf.IResolvable; 
   public get rule() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rule') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('rule')));
   }
-  public set rule(value: WafregionalWebAclRule[]) {
+  public set rule(value: WafregionalWebAclRule[] | cdktf.IResolvable) {
     this._rule = value;
   }
   public resetRule() {
@@ -622,8 +620,8 @@ export class WafregionalWebAcl extends cdktf.TerraformResource {
     return {
       metric_name: cdktf.stringToTerraform(this._metricName),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       default_action: wafregionalWebAclDefaultActionToTerraform(this._defaultAction.internalValue),
       logging_configuration: wafregionalWebAclLoggingConfigurationToTerraform(this._loggingConfiguration.internalValue),
       rule: cdktf.listMapper(wafregionalWebAclRuleToTerraform)(this._rule),

@@ -30,7 +30,7 @@ export interface S3BucketIntelligentTieringConfigurationConfig extends cdktf.Ter
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_intelligent_tiering_configuration#tiering S3BucketIntelligentTieringConfiguration#tiering}
   */
-  readonly tiering: S3BucketIntelligentTieringConfigurationTiering[];
+  readonly tiering: S3BucketIntelligentTieringConfigurationTiering[] | cdktf.IResolvable;
 }
 export interface S3BucketIntelligentTieringConfigurationFilter {
   /**
@@ -40,17 +40,17 @@ export interface S3BucketIntelligentTieringConfigurationFilter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_intelligent_tiering_configuration#tags S3BucketIntelligentTieringConfiguration#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 
 export function s3BucketIntelligentTieringConfigurationFilterToTerraform(struct?: S3BucketIntelligentTieringConfigurationFilterOutputReference | S3BucketIntelligentTieringConfigurationFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     prefix: cdktf.stringToTerraform(struct!.prefix),
-    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+    tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
   }
 }
 
@@ -62,7 +62,7 @@ export class S3BucketIntelligentTieringConfigurationFilterOutputReference extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -110,12 +110,11 @@ export class S3BucketIntelligentTieringConfigurationFilterOutputReference extend
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -137,8 +136,8 @@ export interface S3BucketIntelligentTieringConfigurationTiering {
   readonly days: number;
 }
 
-export function s3BucketIntelligentTieringConfigurationTieringToTerraform(struct?: S3BucketIntelligentTieringConfigurationTiering): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function s3BucketIntelligentTieringConfigurationTieringToTerraform(struct?: S3BucketIntelligentTieringConfigurationTiering | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -240,7 +239,7 @@ export class S3BucketIntelligentTieringConfiguration extends cdktf.TerraformReso
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter = new S3BucketIntelligentTieringConfigurationFilterOutputReference(this as any, "filter", true);
+  private _filter = new S3BucketIntelligentTieringConfigurationFilterOutputReference(this, "filter", true);
   public get filter() {
     return this._filter;
   }
@@ -256,12 +255,12 @@ export class S3BucketIntelligentTieringConfiguration extends cdktf.TerraformReso
   }
 
   // tiering - computed: false, optional: false, required: true
-  private _tiering?: S3BucketIntelligentTieringConfigurationTiering[]; 
+  private _tiering?: S3BucketIntelligentTieringConfigurationTiering[] | cdktf.IResolvable; 
   public get tiering() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tiering') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('tiering')));
   }
-  public set tiering(value: S3BucketIntelligentTieringConfigurationTiering[]) {
+  public set tiering(value: S3BucketIntelligentTieringConfigurationTiering[] | cdktf.IResolvable) {
     this._tiering = value;
   }
   // Temporarily expose input value. Use with caution.

@@ -112,7 +112,7 @@ export class DataAwsServicecatalogPortfolioConstraints extends cdktf.TerraformDa
 
   // details - computed: true, optional: false, required: false
   public details(index: string) {
-    return new DataAwsServicecatalogPortfolioConstraintsDetails(this, 'details', index);
+    return new DataAwsServicecatalogPortfolioConstraintsDetails(this, 'details', index, false);
   }
 
   // id - computed: true, optional: true, required: false

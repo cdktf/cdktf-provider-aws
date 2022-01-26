@@ -95,7 +95,7 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
 
   // accepted - computed: true, optional: false, required: false
   public get accepted() {
-    return this.getBooleanAttribute('accepted') as any;
+    return this.getBooleanAttribute('accepted');
   }
 
   // id - computed: true, optional: true, required: false
@@ -132,7 +132,7 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
   // share_tag_options - computed: false, optional: true, required: false
   private _shareTagOptions?: boolean | cdktf.IResolvable; 
   public get shareTagOptions() {
-    return this.getBooleanAttribute('share_tag_options') as any;
+    return this.getBooleanAttribute('share_tag_options');
   }
   public set shareTagOptions(value: boolean | cdktf.IResolvable) {
     this._shareTagOptions = value;
@@ -161,7 +161,7 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
   // wait_for_acceptance - computed: false, optional: true, required: false
   private _waitForAcceptance?: boolean | cdktf.IResolvable; 
   public get waitForAcceptance() {
-    return this.getBooleanAttribute('wait_for_acceptance') as any;
+    return this.getBooleanAttribute('wait_for_acceptance');
   }
   public set waitForAcceptance(value: boolean | cdktf.IResolvable) {
     this._waitForAcceptance = value;

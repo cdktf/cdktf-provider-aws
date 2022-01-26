@@ -96,7 +96,7 @@ export class DataAwsOrganizationsDelegatedAdministrators extends cdktf.Terraform
 
   // delegated_administrators - computed: true, optional: false, required: false
   public delegatedAdministrators(index: string) {
-    return new DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministrators(this, 'delegated_administrators', index);
+    return new DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministrators(this, 'delegated_administrators', index, true);
   }
 
   // id - computed: true, optional: true, required: false

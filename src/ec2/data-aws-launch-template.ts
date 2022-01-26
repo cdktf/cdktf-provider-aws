@@ -14,13 +14,13 @@ export interface DataAwsLaunchTemplateConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_template#tags DataAwsLaunchTemplate#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * filter block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_template#filter DataAwsLaunchTemplate#filter}
   */
-  readonly filter?: DataAwsLaunchTemplateFilter[];
+  readonly filter?: DataAwsLaunchTemplateFilter[] | cdktf.IResolvable;
 }
 export class DataAwsLaunchTemplateBlockDeviceMappingsEbs extends cdktf.ComplexComputedList {
 
@@ -74,7 +74,7 @@ export class DataAwsLaunchTemplateBlockDeviceMappings extends cdktf.ComplexCompu
   // ebs - computed: true, optional: false, required: false
   public get ebs() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ebs') as any;
+    return this.interpolationForAttribute('ebs');
   }
 
   // no_device - computed: true, optional: false, required: false
@@ -105,14 +105,14 @@ export class DataAwsLaunchTemplateEnclaveOptions extends cdktf.ComplexComputedLi
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 }
 export class DataAwsLaunchTemplateHibernationOptions extends cdktf.ComplexComputedList {
 
   // configured - computed: true, optional: false, required: false
   public get configured() {
-    return this.getBooleanAttribute('configured') as any;
+    return this.getBooleanAttribute('configured');
   }
 }
 export class DataAwsLaunchTemplateIamInstanceProfile extends cdktf.ComplexComputedList {
@@ -164,7 +164,7 @@ export class DataAwsLaunchTemplateInstanceMarketOptions extends cdktf.ComplexCom
   // spot_options - computed: true, optional: false, required: false
   public get spotOptions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('spot_options') as any;
+    return this.interpolationForAttribute('spot_options');
   }
 }
 export class DataAwsLaunchTemplateMetadataOptions extends cdktf.ComplexComputedList {
@@ -198,7 +198,7 @@ export class DataAwsLaunchTemplateMonitoring extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 }
 export class DataAwsLaunchTemplateNetworkInterfaces extends cdktf.ComplexComputedList {
@@ -240,7 +240,7 @@ export class DataAwsLaunchTemplateNetworkInterfaces extends cdktf.ComplexCompute
 
   // ipv4_addresses - computed: true, optional: false, required: false
   public get ipv4Addresses() {
-    return this.getListAttribute('ipv4_addresses');
+    return cdktf.Fn.tolist(this.getListAttribute('ipv4_addresses'));
   }
 
   // ipv6_address_count - computed: true, optional: false, required: false
@@ -250,7 +250,7 @@ export class DataAwsLaunchTemplateNetworkInterfaces extends cdktf.ComplexCompute
 
   // ipv6_addresses - computed: true, optional: false, required: false
   public get ipv6Addresses() {
-    return this.getListAttribute('ipv6_addresses');
+    return cdktf.Fn.tolist(this.getListAttribute('ipv6_addresses'));
   }
 
   // network_card_index - computed: true, optional: false, required: false
@@ -270,7 +270,7 @@ export class DataAwsLaunchTemplateNetworkInterfaces extends cdktf.ComplexCompute
 
   // security_groups - computed: true, optional: false, required: false
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
 
   // subnet_id - computed: true, optional: false, required: false
@@ -329,8 +329,7 @@ export class DataAwsLaunchTemplateTagSpecifications extends cdktf.ComplexCompute
 
   // tags - computed: true, optional: false, required: false
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
 }
 export interface DataAwsLaunchTemplateFilter {
@@ -344,8 +343,8 @@ export interface DataAwsLaunchTemplateFilter {
   readonly values: string[];
 }
 
-export function dataAwsLaunchTemplateFilterToTerraform(struct?: DataAwsLaunchTemplateFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsLaunchTemplateFilterToTerraform(struct?: DataAwsLaunchTemplateFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -404,12 +403,12 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
 
   // block_device_mappings - computed: true, optional: false, required: false
   public blockDeviceMappings(index: string) {
-    return new DataAwsLaunchTemplateBlockDeviceMappings(this, 'block_device_mappings', index);
+    return new DataAwsLaunchTemplateBlockDeviceMappings(this, 'block_device_mappings', index, false);
   }
 
   // credit_specification - computed: true, optional: false, required: false
   public creditSpecification(index: string) {
-    return new DataAwsLaunchTemplateCreditSpecification(this, 'credit_specification', index);
+    return new DataAwsLaunchTemplateCreditSpecification(this, 'credit_specification', index, false);
   }
 
   // default_version - computed: true, optional: false, required: false
@@ -424,7 +423,7 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
 
   // disable_api_termination - computed: true, optional: false, required: false
   public get disableApiTermination() {
-    return this.getBooleanAttribute('disable_api_termination') as any;
+    return this.getBooleanAttribute('disable_api_termination');
   }
 
   // ebs_optimized - computed: true, optional: false, required: false
@@ -434,22 +433,22 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
 
   // elastic_gpu_specifications - computed: true, optional: false, required: false
   public elasticGpuSpecifications(index: string) {
-    return new DataAwsLaunchTemplateElasticGpuSpecifications(this, 'elastic_gpu_specifications', index);
+    return new DataAwsLaunchTemplateElasticGpuSpecifications(this, 'elastic_gpu_specifications', index, false);
   }
 
   // enclave_options - computed: true, optional: false, required: false
   public enclaveOptions(index: string) {
-    return new DataAwsLaunchTemplateEnclaveOptions(this, 'enclave_options', index);
+    return new DataAwsLaunchTemplateEnclaveOptions(this, 'enclave_options', index, false);
   }
 
   // hibernation_options - computed: true, optional: false, required: false
   public hibernationOptions(index: string) {
-    return new DataAwsLaunchTemplateHibernationOptions(this, 'hibernation_options', index);
+    return new DataAwsLaunchTemplateHibernationOptions(this, 'hibernation_options', index, false);
   }
 
   // iam_instance_profile - computed: true, optional: false, required: false
   public iamInstanceProfile(index: string) {
-    return new DataAwsLaunchTemplateIamInstanceProfile(this, 'iam_instance_profile', index);
+    return new DataAwsLaunchTemplateIamInstanceProfile(this, 'iam_instance_profile', index, false);
   }
 
   // id - computed: true, optional: true, required: false
@@ -469,7 +468,7 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
 
   // instance_market_options - computed: true, optional: false, required: false
   public instanceMarketOptions(index: string) {
-    return new DataAwsLaunchTemplateInstanceMarketOptions(this, 'instance_market_options', index);
+    return new DataAwsLaunchTemplateInstanceMarketOptions(this, 'instance_market_options', index, false);
   }
 
   // instance_type - computed: true, optional: false, required: false
@@ -494,12 +493,12 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
 
   // metadata_options - computed: true, optional: false, required: false
   public metadataOptions(index: string) {
-    return new DataAwsLaunchTemplateMetadataOptions(this, 'metadata_options', index);
+    return new DataAwsLaunchTemplateMetadataOptions(this, 'metadata_options', index, false);
   }
 
   // monitoring - computed: true, optional: false, required: false
   public monitoring(index: string) {
-    return new DataAwsLaunchTemplateMonitoring(this, 'monitoring', index);
+    return new DataAwsLaunchTemplateMonitoring(this, 'monitoring', index, false);
   }
 
   // name - computed: false, optional: true, required: false
@@ -520,12 +519,12 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
 
   // network_interfaces - computed: true, optional: false, required: false
   public networkInterfaces(index: string) {
-    return new DataAwsLaunchTemplateNetworkInterfaces(this, 'network_interfaces', index);
+    return new DataAwsLaunchTemplateNetworkInterfaces(this, 'network_interfaces', index, false);
   }
 
   // placement - computed: true, optional: false, required: false
   public placement(index: string) {
-    return new DataAwsLaunchTemplatePlacement(this, 'placement', index);
+    return new DataAwsLaunchTemplatePlacement(this, 'placement', index, false);
   }
 
   // ram_disk_id - computed: true, optional: false, required: false
@@ -535,21 +534,20 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
 
   // security_group_names - computed: true, optional: false, required: false
   public get securityGroupNames() {
-    return this.getListAttribute('security_group_names');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_names'));
   }
 
   // tag_specifications - computed: true, optional: false, required: false
   public tagSpecifications(index: string) {
-    return new DataAwsLaunchTemplateTagSpecifications(this, 'tag_specifications', index);
+    return new DataAwsLaunchTemplateTagSpecifications(this, 'tag_specifications', index, false);
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -567,16 +565,16 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
 
   // vpc_security_group_ids - computed: true, optional: false, required: false
   public get vpcSecurityGroupIds() {
-    return this.getListAttribute('vpc_security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsLaunchTemplateFilter[]; 
+  private _filter?: DataAwsLaunchTemplateFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsLaunchTemplateFilter[]) {
+  public set filter(value: DataAwsLaunchTemplateFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -594,7 +592,7 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsLaunchTemplateFilterToTerraform)(this._filter),
     };
   }

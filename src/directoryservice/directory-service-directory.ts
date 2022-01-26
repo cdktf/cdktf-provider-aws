@@ -42,11 +42,11 @@ export interface DirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory#tags DirectoryServiceDirectory#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory#tags_all DirectoryServiceDirectory#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory#type DirectoryServiceDirectory#type}
   */
@@ -84,7 +84,7 @@ export interface DirectoryServiceDirectoryConnectSettings {
 }
 
 export function directoryServiceDirectoryConnectSettingsToTerraform(struct?: DirectoryServiceDirectoryConnectSettingsOutputReference | DirectoryServiceDirectoryConnectSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -104,7 +104,7 @@ export class DirectoryServiceDirectoryConnectSettingsOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -147,10 +147,20 @@ export class DirectoryServiceDirectoryConnectSettingsOutputReference extends cdk
     }
   }
 
+  // availability_zones - computed: true, optional: false, required: false
+  public get availabilityZones() {
+    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
+  }
+
+  // connect_ips - computed: true, optional: false, required: false
+  public get connectIps() {
+    return cdktf.Fn.tolist(this.getListAttribute('connect_ips'));
+  }
+
   // customer_dns_ips - computed: false, optional: false, required: true
   private _customerDnsIps?: string[]; 
   public get customerDnsIps() {
-    return this.getListAttribute('customer_dns_ips');
+    return cdktf.Fn.tolist(this.getListAttribute('customer_dns_ips'));
   }
   public set customerDnsIps(value: string[]) {
     this._customerDnsIps = value;
@@ -176,7 +186,7 @@ export class DirectoryServiceDirectoryConnectSettingsOutputReference extends cdk
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -211,7 +221,7 @@ export interface DirectoryServiceDirectoryVpcSettings {
 }
 
 export function directoryServiceDirectoryVpcSettingsToTerraform(struct?: DirectoryServiceDirectoryVpcSettingsOutputReference | DirectoryServiceDirectoryVpcSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -229,7 +239,7 @@ export class DirectoryServiceDirectoryVpcSettingsOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -260,10 +270,15 @@ export class DirectoryServiceDirectoryVpcSettingsOutputReference extends cdktf.C
     }
   }
 
+  // availability_zones - computed: true, optional: false, required: false
+  public get availabilityZones() {
+    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
+  }
+
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -377,7 +392,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
 
   // dns_ip_addresses - computed: true, optional: false, required: false
   public get dnsIpAddresses() {
-    return this.getListAttribute('dns_ip_addresses');
+    return cdktf.Fn.tolist(this.getListAttribute('dns_ip_addresses'));
   }
 
   // edition - computed: true, optional: true, required: false
@@ -399,7 +414,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   // enable_sso - computed: false, optional: true, required: false
   private _enableSso?: boolean | cdktf.IResolvable; 
   public get enableSso() {
-    return this.getBooleanAttribute('enable_sso') as any;
+    return this.getBooleanAttribute('enable_sso');
   }
   public set enableSso(value: boolean | cdktf.IResolvable) {
     this._enableSso = value;
@@ -481,12 +496,11 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -498,12 +512,11 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -531,7 +544,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   }
 
   // connect_settings - computed: false, optional: true, required: false
-  private _connectSettings = new DirectoryServiceDirectoryConnectSettingsOutputReference(this as any, "connect_settings", true);
+  private _connectSettings = new DirectoryServiceDirectoryConnectSettingsOutputReference(this, "connect_settings", true);
   public get connectSettings() {
     return this._connectSettings;
   }
@@ -547,7 +560,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   }
 
   // vpc_settings - computed: false, optional: true, required: false
-  private _vpcSettings = new DirectoryServiceDirectoryVpcSettingsOutputReference(this as any, "vpc_settings", true);
+  private _vpcSettings = new DirectoryServiceDirectoryVpcSettingsOutputReference(this, "vpc_settings", true);
   public get vpcSettings() {
     return this._vpcSettings;
   }
@@ -576,8 +589,8 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
       password: cdktf.stringToTerraform(this._password),
       short_name: cdktf.stringToTerraform(this._shortName),
       size: cdktf.stringToTerraform(this._size),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
       connect_settings: directoryServiceDirectoryConnectSettingsToTerraform(this._connectSettings.internalValue),
       vpc_settings: directoryServiceDirectoryVpcSettingsToTerraform(this._vpcSettings.internalValue),

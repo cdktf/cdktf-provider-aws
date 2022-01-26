@@ -56,7 +56,7 @@ export interface EcrpublicRepositoryCatalogData {
 }
 
 export function ecrpublicRepositoryCatalogDataToTerraform(struct?: EcrpublicRepositoryCatalogDataOutputReference | EcrpublicRepositoryCatalogData): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -78,7 +78,7 @@ export class EcrpublicRepositoryCatalogDataOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -152,7 +152,7 @@ export class EcrpublicRepositoryCatalogDataOutputReference extends cdktf.Complex
   // architectures - computed: false, optional: true, required: false
   private _architectures?: string[]; 
   public get architectures() {
-    return this.getListAttribute('architectures');
+    return cdktf.Fn.tolist(this.getListAttribute('architectures'));
   }
   public set architectures(value: string[]) {
     this._architectures = value;
@@ -200,7 +200,7 @@ export class EcrpublicRepositoryCatalogDataOutputReference extends cdktf.Complex
   // operating_systems - computed: false, optional: true, required: false
   private _operatingSystems?: string[]; 
   public get operatingSystems() {
-    return this.getListAttribute('operating_systems');
+    return cdktf.Fn.tolist(this.getListAttribute('operating_systems'));
   }
   public set operatingSystems(value: string[]) {
     this._operatingSystems = value;
@@ -236,8 +236,8 @@ export interface EcrpublicRepositoryTimeouts {
   readonly delete?: string;
 }
 
-export function ecrpublicRepositoryTimeoutsToTerraform(struct?: EcrpublicRepositoryTimeoutsOutputReference | EcrpublicRepositoryTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ecrpublicRepositoryTimeoutsToTerraform(struct?: EcrpublicRepositoryTimeoutsOutputReference | EcrpublicRepositoryTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -254,7 +254,7 @@ export class EcrpublicRepositoryTimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -346,7 +346,7 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean | cdktf.IResolvable; 
   public get forceDestroy() {
-    return this.getBooleanAttribute('force_destroy') as any;
+    return this.getBooleanAttribute('force_destroy');
   }
   public set forceDestroy(value: boolean | cdktf.IResolvable) {
     this._forceDestroy = value;
@@ -388,7 +388,7 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
   }
 
   // catalog_data - computed: false, optional: true, required: false
-  private _catalogData = new EcrpublicRepositoryCatalogDataOutputReference(this as any, "catalog_data", true);
+  private _catalogData = new EcrpublicRepositoryCatalogDataOutputReference(this, "catalog_data", true);
   public get catalogData() {
     return this._catalogData;
   }
@@ -404,7 +404,7 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new EcrpublicRepositoryTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new EcrpublicRepositoryTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

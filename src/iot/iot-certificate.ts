@@ -60,7 +60,7 @@ export class IotCertificate extends cdktf.TerraformResource {
   // active - computed: false, optional: false, required: true
   private _active?: boolean | cdktf.IResolvable; 
   public get active() {
-    return this.getBooleanAttribute('active') as any;
+    return this.getBooleanAttribute('active');
   }
   public set active(value: boolean | cdktf.IResolvable) {
     this._active = value;

@@ -16,7 +16,7 @@ export interface EcrRegistryScanningConfigurationConfig extends cdktf.TerraformM
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration#rule EcrRegistryScanningConfiguration#rule}
   */
-  readonly rule?: EcrRegistryScanningConfigurationRule[];
+  readonly rule?: EcrRegistryScanningConfigurationRule[] | cdktf.IResolvable;
 }
 export interface EcrRegistryScanningConfigurationRuleRepositoryFilter {
   /**
@@ -29,8 +29,8 @@ export interface EcrRegistryScanningConfigurationRuleRepositoryFilter {
   readonly filterType: string;
 }
 
-export function ecrRegistryScanningConfigurationRuleRepositoryFilterToTerraform(struct?: EcrRegistryScanningConfigurationRuleRepositoryFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ecrRegistryScanningConfigurationRuleRepositoryFilterToTerraform(struct?: EcrRegistryScanningConfigurationRuleRepositoryFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -50,11 +50,11 @@ export interface EcrRegistryScanningConfigurationRule {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_registry_scanning_configuration#repository_filter EcrRegistryScanningConfiguration#repository_filter}
   */
-  readonly repositoryFilter: EcrRegistryScanningConfigurationRuleRepositoryFilter[];
+  readonly repositoryFilter: EcrRegistryScanningConfigurationRuleRepositoryFilter[] | cdktf.IResolvable;
 }
 
-export function ecrRegistryScanningConfigurationRuleToTerraform(struct?: EcrRegistryScanningConfigurationRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ecrRegistryScanningConfigurationRuleToTerraform(struct?: EcrRegistryScanningConfigurationRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -129,12 +129,12 @@ export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
   }
 
   // rule - computed: false, optional: true, required: false
-  private _rule?: EcrRegistryScanningConfigurationRule[]; 
+  private _rule?: EcrRegistryScanningConfigurationRule[] | cdktf.IResolvable; 
   public get rule() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rule') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('rule')));
   }
-  public set rule(value: EcrRegistryScanningConfigurationRule[]) {
+  public set rule(value: EcrRegistryScanningConfigurationRule[] | cdktf.IResolvable) {
     this._rule = value;
   }
   public resetRule() {

@@ -18,17 +18,17 @@ export interface WafRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_rule#tags WafRule#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_rule#tags_all WafRule#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * predicates block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_rule#predicates WafRule#predicates}
   */
-  readonly predicates?: WafRulePredicates[];
+  readonly predicates?: WafRulePredicates[] | cdktf.IResolvable;
 }
 export interface WafRulePredicates {
   /**
@@ -45,8 +45,8 @@ export interface WafRulePredicates {
   readonly type: string;
 }
 
-export function wafRulePredicatesToTerraform(struct?: WafRulePredicates): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafRulePredicatesToTerraform(struct?: WafRulePredicates | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -138,12 +138,11 @@ export class WafRule extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -155,12 +154,11 @@ export class WafRule extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -172,12 +170,12 @@ export class WafRule extends cdktf.TerraformResource {
   }
 
   // predicates - computed: false, optional: true, required: false
-  private _predicates?: WafRulePredicates[]; 
+  private _predicates?: WafRulePredicates[] | cdktf.IResolvable; 
   public get predicates() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('predicates') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('predicates')));
   }
-  public set predicates(value: WafRulePredicates[]) {
+  public set predicates(value: WafRulePredicates[] | cdktf.IResolvable) {
     this._predicates = value;
   }
   public resetPredicates() {
@@ -196,8 +194,8 @@ export class WafRule extends cdktf.TerraformResource {
     return {
       metric_name: cdktf.stringToTerraform(this._metricName),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       predicates: cdktf.listMapper(wafRulePredicatesToTerraform)(this._predicates),
     };
   }

@@ -70,7 +70,7 @@ export class DataAwsSsmPatchBaseline extends cdktf.TerraformDataSource {
   // default_baseline - computed: false, optional: true, required: false
   private _defaultBaseline?: boolean | cdktf.IResolvable; 
   public get defaultBaseline() {
-    return this.getBooleanAttribute('default_baseline') as any;
+    return this.getBooleanAttribute('default_baseline');
   }
   public set defaultBaseline(value: boolean | cdktf.IResolvable) {
     this._defaultBaseline = value;

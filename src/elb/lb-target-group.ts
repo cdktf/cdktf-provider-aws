@@ -58,11 +58,11 @@ export interface LbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group#tags LbTargetGroup#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group#tags_all LbTargetGroup#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group#target_type LbTargetGroup#target_type}
   */
@@ -124,7 +124,7 @@ export interface LbTargetGroupHealthCheck {
 }
 
 export function lbTargetGroupHealthCheckToTerraform(struct?: LbTargetGroupHealthCheckOutputReference | LbTargetGroupHealthCheck): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -149,7 +149,7 @@ export class LbTargetGroupHealthCheckOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -225,7 +225,7 @@ export class LbTargetGroupHealthCheckOutputReference extends cdktf.ComplexObject
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -386,7 +386,7 @@ export interface LbTargetGroupStickiness {
 }
 
 export function lbTargetGroupStickinessToTerraform(struct?: LbTargetGroupStickinessOutputReference | LbTargetGroupStickiness): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -406,7 +406,7 @@ export class LbTargetGroupStickinessOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -484,7 +484,7 @@ export class LbTargetGroupStickinessOutputReference extends cdktf.ComplexObject 
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -580,7 +580,7 @@ export class LbTargetGroup extends cdktf.TerraformResource {
   // connection_termination - computed: false, optional: true, required: false
   private _connectionTermination?: boolean | cdktf.IResolvable; 
   public get connectionTermination() {
-    return this.getBooleanAttribute('connection_termination') as any;
+    return this.getBooleanAttribute('connection_termination');
   }
   public set connectionTermination(value: boolean | cdktf.IResolvable) {
     this._connectionTermination = value;
@@ -617,7 +617,7 @@ export class LbTargetGroup extends cdktf.TerraformResource {
   // lambda_multi_value_headers_enabled - computed: false, optional: true, required: false
   private _lambdaMultiValueHeadersEnabled?: boolean | cdktf.IResolvable; 
   public get lambdaMultiValueHeadersEnabled() {
-    return this.getBooleanAttribute('lambda_multi_value_headers_enabled') as any;
+    return this.getBooleanAttribute('lambda_multi_value_headers_enabled');
   }
   public set lambdaMultiValueHeadersEnabled(value: boolean | cdktf.IResolvable) {
     this._lambdaMultiValueHeadersEnabled = value;
@@ -745,7 +745,7 @@ export class LbTargetGroup extends cdktf.TerraformResource {
   // proxy_protocol_v2 - computed: false, optional: true, required: false
   private _proxyProtocolV2?: boolean | cdktf.IResolvable; 
   public get proxyProtocolV2() {
-    return this.getBooleanAttribute('proxy_protocol_v2') as any;
+    return this.getBooleanAttribute('proxy_protocol_v2');
   }
   public set proxyProtocolV2(value: boolean | cdktf.IResolvable) {
     this._proxyProtocolV2 = value;
@@ -775,12 +775,11 @@ export class LbTargetGroup extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -792,12 +791,11 @@ export class LbTargetGroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -841,7 +839,7 @@ export class LbTargetGroup extends cdktf.TerraformResource {
   }
 
   // health_check - computed: false, optional: true, required: false
-  private _healthCheck = new LbTargetGroupHealthCheckOutputReference(this as any, "health_check", true);
+  private _healthCheck = new LbTargetGroupHealthCheckOutputReference(this, "health_check", true);
   public get healthCheck() {
     return this._healthCheck;
   }
@@ -857,7 +855,7 @@ export class LbTargetGroup extends cdktf.TerraformResource {
   }
 
   // stickiness - computed: false, optional: true, required: false
-  private _stickiness = new LbTargetGroupStickinessOutputReference(this as any, "stickiness", true);
+  private _stickiness = new LbTargetGroupStickinessOutputReference(this, "stickiness", true);
   public get stickiness() {
     return this._stickiness;
   }
@@ -890,8 +888,8 @@ export class LbTargetGroup extends cdktf.TerraformResource {
       protocol_version: cdktf.stringToTerraform(this._protocolVersion),
       proxy_protocol_v2: cdktf.booleanToTerraform(this._proxyProtocolV2),
       slow_start: cdktf.numberToTerraform(this._slowStart),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       target_type: cdktf.stringToTerraform(this._targetType),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       health_check: lbTargetGroupHealthCheckToTerraform(this._healthCheck.internalValue),

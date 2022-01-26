@@ -18,11 +18,11 @@ export interface SagemakerEndpointConfigurationConfig extends cdktf.TerraformMet
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#tags SagemakerEndpointConfiguration#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#tags_all SagemakerEndpointConfiguration#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * async_inference_config block
   * 
@@ -40,7 +40,7 @@ export interface SagemakerEndpointConfigurationConfig extends cdktf.TerraformMet
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#production_variants SagemakerEndpointConfiguration#production_variants}
   */
-  readonly productionVariants: SagemakerEndpointConfigurationProductionVariants[];
+  readonly productionVariants: SagemakerEndpointConfigurationProductionVariants[] | cdktf.IResolvable;
 }
 export interface SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig {
   /**
@@ -50,7 +50,7 @@ export interface SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig 
 }
 
 export function sagemakerEndpointConfigurationAsyncInferenceConfigClientConfigToTerraform(struct?: SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutputReference | SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -67,7 +67,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutpu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -120,7 +120,7 @@ export interface SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigN
 }
 
 export function sagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigToTerraform(struct?: SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigOutputReference | SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -138,7 +138,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotif
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -219,7 +219,7 @@ export interface SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig 
 }
 
 export function sagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigToTerraform(struct?: SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference | SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -238,7 +238,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutpu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -305,7 +305,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutpu
   }
 
   // notification_config - computed: false, optional: true, required: false
-  private _notificationConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigOutputReference(this as any, "notification_config", true);
+  private _notificationConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigOutputReference(this, "notification_config", true);
   public get notificationConfig() {
     return this._notificationConfig;
   }
@@ -336,7 +336,7 @@ export interface SagemakerEndpointConfigurationAsyncInferenceConfig {
 }
 
 export function sagemakerEndpointConfigurationAsyncInferenceConfigToTerraform(struct?: SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference | SagemakerEndpointConfigurationAsyncInferenceConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -354,7 +354,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference e
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -386,7 +386,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference e
   }
 
   // client_config - computed: false, optional: true, required: false
-  private _clientConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutputReference(this as any, "client_config", true);
+  private _clientConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutputReference(this, "client_config", true);
   public get clientConfig() {
     return this._clientConfig;
   }
@@ -402,7 +402,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference e
   }
 
   // output_config - computed: false, optional: false, required: true
-  private _outputConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference(this as any, "output_config", true);
+  private _outputConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference(this, "output_config", true);
   public get outputConfig() {
     return this._outputConfig;
   }
@@ -426,7 +426,7 @@ export interface SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTy
 }
 
 export function sagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderToTerraform(struct?: SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderOutputReference | SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeader): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -444,7 +444,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -478,7 +478,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHe
   // csv_content_types - computed: false, optional: true, required: false
   private _csvContentTypes?: string[]; 
   public get csvContentTypes() {
-    return this.getListAttribute('csv_content_types');
+    return cdktf.Fn.tolist(this.getListAttribute('csv_content_types'));
   }
   public set csvContentTypes(value: string[]) {
     this._csvContentTypes = value;
@@ -494,7 +494,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHe
   // json_content_types - computed: false, optional: true, required: false
   private _jsonContentTypes?: string[]; 
   public get jsonContentTypes() {
-    return this.getListAttribute('json_content_types');
+    return cdktf.Fn.tolist(this.getListAttribute('json_content_types'));
   }
   public set jsonContentTypes(value: string[]) {
     this._jsonContentTypes = value;
@@ -514,8 +514,8 @@ export interface SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions {
   readonly captureMode: string;
 }
 
-export function sagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsToTerraform(struct?: SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function sagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsToTerraform(struct?: SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -552,11 +552,11 @@ export interface SagemakerEndpointConfigurationDataCaptureConfig {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#capture_options SagemakerEndpointConfiguration#capture_options}
   */
-  readonly captureOptions: SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions[];
+  readonly captureOptions: SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions[] | cdktf.IResolvable;
 }
 
 export function sagemakerEndpointConfigurationDataCaptureConfigToTerraform(struct?: SagemakerEndpointConfigurationDataCaptureConfigOutputReference | SagemakerEndpointConfigurationDataCaptureConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -578,7 +578,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -649,7 +649,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
   // enable_capture - computed: false, optional: true, required: false
   private _enableCapture?: boolean | cdktf.IResolvable; 
   public get enableCapture() {
-    return this.getBooleanAttribute('enable_capture') as any;
+    return this.getBooleanAttribute('enable_capture');
   }
   public set enableCapture(value: boolean | cdktf.IResolvable) {
     this._enableCapture = value;
@@ -692,7 +692,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
   }
 
   // capture_content_type_header - computed: false, optional: true, required: false
-  private _captureContentTypeHeader = new SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderOutputReference(this as any, "capture_content_type_header", true);
+  private _captureContentTypeHeader = new SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderOutputReference(this, "capture_content_type_header", true);
   public get captureContentTypeHeader() {
     return this._captureContentTypeHeader;
   }
@@ -708,12 +708,12 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
   }
 
   // capture_options - computed: false, optional: false, required: true
-  private _captureOptions?: SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions[]; 
+  private _captureOptions?: SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions[] | cdktf.IResolvable; 
   public get captureOptions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('capture_options') as any;
+    return this.interpolationForAttribute('capture_options');
   }
-  public set captureOptions(value: SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions[]) {
+  public set captureOptions(value: SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions[] | cdktf.IResolvable) {
     this._captureOptions = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -748,8 +748,8 @@ export interface SagemakerEndpointConfigurationProductionVariants {
   readonly variantName?: string;
 }
 
-export function sagemakerEndpointConfigurationProductionVariantsToTerraform(struct?: SagemakerEndpointConfigurationProductionVariants): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function sagemakerEndpointConfigurationProductionVariantsToTerraform(struct?: SagemakerEndpointConfigurationProductionVariants | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -852,12 +852,11 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -869,12 +868,11 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -886,7 +884,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
   }
 
   // async_inference_config - computed: false, optional: true, required: false
-  private _asyncInferenceConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference(this as any, "async_inference_config", true);
+  private _asyncInferenceConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference(this, "async_inference_config", true);
   public get asyncInferenceConfig() {
     return this._asyncInferenceConfig;
   }
@@ -902,7 +900,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
   }
 
   // data_capture_config - computed: false, optional: true, required: false
-  private _dataCaptureConfig = new SagemakerEndpointConfigurationDataCaptureConfigOutputReference(this as any, "data_capture_config", true);
+  private _dataCaptureConfig = new SagemakerEndpointConfigurationDataCaptureConfigOutputReference(this, "data_capture_config", true);
   public get dataCaptureConfig() {
     return this._dataCaptureConfig;
   }
@@ -918,12 +916,12 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
   }
 
   // production_variants - computed: false, optional: false, required: true
-  private _productionVariants?: SagemakerEndpointConfigurationProductionVariants[]; 
+  private _productionVariants?: SagemakerEndpointConfigurationProductionVariants[] | cdktf.IResolvable; 
   public get productionVariants() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('production_variants') as any;
+    return this.interpolationForAttribute('production_variants');
   }
-  public set productionVariants(value: SagemakerEndpointConfigurationProductionVariants[]) {
+  public set productionVariants(value: SagemakerEndpointConfigurationProductionVariants[] | cdktf.IResolvable) {
     this._productionVariants = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -939,8 +937,8 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
     return {
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       async_inference_config: sagemakerEndpointConfigurationAsyncInferenceConfigToTerraform(this._asyncInferenceConfig.internalValue),
       data_capture_config: sagemakerEndpointConfigurationDataCaptureConfigToTerraform(this._dataCaptureConfig.internalValue),
       production_variants: cdktf.listMapper(sagemakerEndpointConfigurationProductionVariantsToTerraform)(this._productionVariants),

@@ -72,7 +72,7 @@ export class S3ControlAccessPointPolicy extends cdktf.TerraformResource {
 
   // has_public_access_policy - computed: true, optional: false, required: false
   public get hasPublicAccessPolicy() {
-    return this.getBooleanAttribute('has_public_access_policy') as any;
+    return this.getBooleanAttribute('has_public_access_policy');
   }
 
   // id - computed: true, optional: true, required: false

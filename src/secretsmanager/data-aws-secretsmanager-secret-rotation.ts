@@ -66,7 +66,7 @@ export class DataAwsSecretsmanagerSecretRotation extends cdktf.TerraformDataSour
 
   // rotation_enabled - computed: true, optional: false, required: false
   public get rotationEnabled() {
-    return this.getBooleanAttribute('rotation_enabled') as any;
+    return this.getBooleanAttribute('rotation_enabled');
   }
 
   // rotation_lambda_arn - computed: true, optional: false, required: false
@@ -76,7 +76,7 @@ export class DataAwsSecretsmanagerSecretRotation extends cdktf.TerraformDataSour
 
   // rotation_rules - computed: true, optional: false, required: false
   public rotationRules(index: string) {
-    return new DataAwsSecretsmanagerSecretRotationRotationRules(this, 'rotation_rules', index);
+    return new DataAwsSecretsmanagerSecretRotationRotationRules(this, 'rotation_rules', index, false);
   }
 
   // secret_id - computed: false, optional: false, required: true

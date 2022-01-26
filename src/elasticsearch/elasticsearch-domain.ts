@@ -14,7 +14,7 @@ export interface ElasticsearchDomainConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#advanced_options ElasticsearchDomain#advanced_options}
   */
-  readonly advancedOptions?: { [key: string]: string } | cdktf.IResolvable;
+  readonly advancedOptions?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#domain_name ElasticsearchDomain#domain_name}
   */
@@ -26,11 +26,11 @@ export interface ElasticsearchDomainConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#tags ElasticsearchDomain#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#tags_all ElasticsearchDomain#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * advanced_security_options block
   * 
@@ -78,7 +78,7 @@ export interface ElasticsearchDomainConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#log_publishing_options ElasticsearchDomain#log_publishing_options}
   */
-  readonly logPublishingOptions?: ElasticsearchDomainLogPublishingOptions[];
+  readonly logPublishingOptions?: ElasticsearchDomainLogPublishingOptions[] | cdktf.IResolvable;
   /**
   * node_to_node_encryption block
   * 
@@ -120,7 +120,7 @@ export interface ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions {
 }
 
 export function elasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsToTerraform(struct?: ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference | ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -139,7 +139,7 @@ export class ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputRe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -242,7 +242,7 @@ export interface ElasticsearchDomainAdvancedSecurityOptions {
 }
 
 export function elasticsearchDomainAdvancedSecurityOptionsToTerraform(struct?: ElasticsearchDomainAdvancedSecurityOptionsOutputReference | ElasticsearchDomainAdvancedSecurityOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -261,7 +261,7 @@ export class ElasticsearchDomainAdvancedSecurityOptionsOutputReference extends c
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -301,7 +301,7 @@ export class ElasticsearchDomainAdvancedSecurityOptionsOutputReference extends c
   // enabled - computed: false, optional: false, required: true
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -314,7 +314,7 @@ export class ElasticsearchDomainAdvancedSecurityOptionsOutputReference extends c
   // internal_user_database_enabled - computed: false, optional: true, required: false
   private _internalUserDatabaseEnabled?: boolean | cdktf.IResolvable; 
   public get internalUserDatabaseEnabled() {
-    return this.getBooleanAttribute('internal_user_database_enabled') as any;
+    return this.getBooleanAttribute('internal_user_database_enabled');
   }
   public set internalUserDatabaseEnabled(value: boolean | cdktf.IResolvable) {
     this._internalUserDatabaseEnabled = value;
@@ -328,7 +328,7 @@ export class ElasticsearchDomainAdvancedSecurityOptionsOutputReference extends c
   }
 
   // master_user_options - computed: false, optional: true, required: false
-  private _masterUserOptions = new ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference(this as any, "master_user_options", true);
+  private _masterUserOptions = new ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference(this, "master_user_options", true);
   public get masterUserOptions() {
     return this._masterUserOptions;
   }
@@ -355,7 +355,7 @@ export interface ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration {
 }
 
 export function elasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationToTerraform(struct?: ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference | ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -373,7 +373,7 @@ export class ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutput
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -447,8 +447,8 @@ export interface ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule {
   readonly duration: ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration;
 }
 
-export function elasticsearchDomainAutoTuneOptionsMaintenanceScheduleToTerraform(struct?: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function elasticsearchDomainAutoTuneOptionsMaintenanceScheduleToTerraform(struct?: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -473,11 +473,11 @@ export interface ElasticsearchDomainAutoTuneOptions {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#maintenance_schedule ElasticsearchDomain#maintenance_schedule}
   */
-  readonly maintenanceSchedule?: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule[];
+  readonly maintenanceSchedule?: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule[] | cdktf.IResolvable;
 }
 
 export function elasticsearchDomainAutoTuneOptionsToTerraform(struct?: ElasticsearchDomainAutoTuneOptionsOutputReference | ElasticsearchDomainAutoTuneOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -496,7 +496,7 @@ export class ElasticsearchDomainAutoTuneOptionsOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -563,12 +563,12 @@ export class ElasticsearchDomainAutoTuneOptionsOutputReference extends cdktf.Com
   }
 
   // maintenance_schedule - computed: false, optional: true, required: false
-  private _maintenanceSchedule?: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule[]; 
+  private _maintenanceSchedule?: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule[] | cdktf.IResolvable; 
   public get maintenanceSchedule() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('maintenance_schedule') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('maintenance_schedule')));
   }
-  public set maintenanceSchedule(value: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule[]) {
+  public set maintenanceSchedule(value: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule[] | cdktf.IResolvable) {
     this._maintenanceSchedule = value;
   }
   public resetMaintenanceSchedule() {
@@ -587,7 +587,7 @@ export interface ElasticsearchDomainClusterConfigZoneAwarenessConfig {
 }
 
 export function elasticsearchDomainClusterConfigZoneAwarenessConfigToTerraform(struct?: ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference | ElasticsearchDomainClusterConfigZoneAwarenessConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -604,7 +604,7 @@ export class ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -691,7 +691,7 @@ export interface ElasticsearchDomainClusterConfig {
 }
 
 export function elasticsearchDomainClusterConfigToTerraform(struct?: ElasticsearchDomainClusterConfigOutputReference | ElasticsearchDomainClusterConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -717,7 +717,7 @@ export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -815,7 +815,7 @@ export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.Compl
   // dedicated_master_enabled - computed: false, optional: true, required: false
   private _dedicatedMasterEnabled?: boolean | cdktf.IResolvable; 
   public get dedicatedMasterEnabled() {
-    return this.getBooleanAttribute('dedicated_master_enabled') as any;
+    return this.getBooleanAttribute('dedicated_master_enabled');
   }
   public set dedicatedMasterEnabled(value: boolean | cdktf.IResolvable) {
     this._dedicatedMasterEnabled = value;
@@ -895,7 +895,7 @@ export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.Compl
   // warm_enabled - computed: false, optional: true, required: false
   private _warmEnabled?: boolean | cdktf.IResolvable; 
   public get warmEnabled() {
-    return this.getBooleanAttribute('warm_enabled') as any;
+    return this.getBooleanAttribute('warm_enabled');
   }
   public set warmEnabled(value: boolean | cdktf.IResolvable) {
     this._warmEnabled = value;
@@ -927,7 +927,7 @@ export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.Compl
   // zone_awareness_enabled - computed: false, optional: true, required: false
   private _zoneAwarenessEnabled?: boolean | cdktf.IResolvable; 
   public get zoneAwarenessEnabled() {
-    return this.getBooleanAttribute('zone_awareness_enabled') as any;
+    return this.getBooleanAttribute('zone_awareness_enabled');
   }
   public set zoneAwarenessEnabled(value: boolean | cdktf.IResolvable) {
     this._zoneAwarenessEnabled = value;
@@ -941,7 +941,7 @@ export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.Compl
   }
 
   // zone_awareness_config - computed: false, optional: true, required: false
-  private _zoneAwarenessConfig = new ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference(this as any, "zone_awareness_config", true);
+  private _zoneAwarenessConfig = new ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference(this, "zone_awareness_config", true);
   public get zoneAwarenessConfig() {
     return this._zoneAwarenessConfig;
   }
@@ -976,7 +976,7 @@ export interface ElasticsearchDomainCognitoOptions {
 }
 
 export function elasticsearchDomainCognitoOptionsToTerraform(struct?: ElasticsearchDomainCognitoOptionsOutputReference | ElasticsearchDomainCognitoOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -996,7 +996,7 @@ export class ElasticsearchDomainCognitoOptionsOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1042,7 +1042,7 @@ export class ElasticsearchDomainCognitoOptionsOutputReference extends cdktf.Comp
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -1118,7 +1118,7 @@ export interface ElasticsearchDomainDomainEndpointOptions {
 }
 
 export function elasticsearchDomainDomainEndpointOptionsToTerraform(struct?: ElasticsearchDomainDomainEndpointOptionsOutputReference | ElasticsearchDomainDomainEndpointOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1139,7 +1139,7 @@ export class ElasticsearchDomainDomainEndpointOptionsOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1223,7 +1223,7 @@ export class ElasticsearchDomainDomainEndpointOptionsOutputReference extends cdk
   // custom_endpoint_enabled - computed: false, optional: true, required: false
   private _customEndpointEnabled?: boolean | cdktf.IResolvable; 
   public get customEndpointEnabled() {
-    return this.getBooleanAttribute('custom_endpoint_enabled') as any;
+    return this.getBooleanAttribute('custom_endpoint_enabled');
   }
   public set customEndpointEnabled(value: boolean | cdktf.IResolvable) {
     this._customEndpointEnabled = value;
@@ -1239,7 +1239,7 @@ export class ElasticsearchDomainDomainEndpointOptionsOutputReference extends cdk
   // enforce_https - computed: false, optional: true, required: false
   private _enforceHttps?: boolean | cdktf.IResolvable; 
   public get enforceHttps() {
-    return this.getBooleanAttribute('enforce_https') as any;
+    return this.getBooleanAttribute('enforce_https');
   }
   public set enforceHttps(value: boolean | cdktf.IResolvable) {
     this._enforceHttps = value;
@@ -1288,7 +1288,7 @@ export interface ElasticsearchDomainEbsOptions {
 }
 
 export function elasticsearchDomainEbsOptionsToTerraform(struct?: ElasticsearchDomainEbsOptionsOutputReference | ElasticsearchDomainEbsOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1308,7 +1308,7 @@ export class ElasticsearchDomainEbsOptionsOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1354,7 +1354,7 @@ export class ElasticsearchDomainEbsOptionsOutputReference extends cdktf.ComplexO
   // ebs_enabled - computed: false, optional: false, required: true
   private _ebsEnabled?: boolean | cdktf.IResolvable; 
   public get ebsEnabled() {
-    return this.getBooleanAttribute('ebs_enabled') as any;
+    return this.getBooleanAttribute('ebs_enabled');
   }
   public set ebsEnabled(value: boolean | cdktf.IResolvable) {
     this._ebsEnabled = value;
@@ -1424,7 +1424,7 @@ export interface ElasticsearchDomainEncryptAtRest {
 }
 
 export function elasticsearchDomainEncryptAtRestToTerraform(struct?: ElasticsearchDomainEncryptAtRestOutputReference | ElasticsearchDomainEncryptAtRest): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1442,7 +1442,7 @@ export class ElasticsearchDomainEncryptAtRestOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1476,7 +1476,7 @@ export class ElasticsearchDomainEncryptAtRestOutputReference extends cdktf.Compl
   // enabled - computed: false, optional: false, required: true
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -1517,8 +1517,8 @@ export interface ElasticsearchDomainLogPublishingOptions {
   readonly logType: string;
 }
 
-export function elasticsearchDomainLogPublishingOptionsToTerraform(struct?: ElasticsearchDomainLogPublishingOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function elasticsearchDomainLogPublishingOptionsToTerraform(struct?: ElasticsearchDomainLogPublishingOptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1537,7 +1537,7 @@ export interface ElasticsearchDomainNodeToNodeEncryption {
 }
 
 export function elasticsearchDomainNodeToNodeEncryptionToTerraform(struct?: ElasticsearchDomainNodeToNodeEncryptionOutputReference | ElasticsearchDomainNodeToNodeEncryption): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1554,7 +1554,7 @@ export class ElasticsearchDomainNodeToNodeEncryptionOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1582,7 +1582,7 @@ export class ElasticsearchDomainNodeToNodeEncryptionOutputReference extends cdkt
   // enabled - computed: false, optional: false, required: true
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -1600,7 +1600,7 @@ export interface ElasticsearchDomainSnapshotOptions {
 }
 
 export function elasticsearchDomainSnapshotOptionsToTerraform(struct?: ElasticsearchDomainSnapshotOptionsOutputReference | ElasticsearchDomainSnapshotOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1617,7 +1617,7 @@ export class ElasticsearchDomainSnapshotOptionsOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1662,8 +1662,8 @@ export interface ElasticsearchDomainTimeouts {
   readonly update?: string;
 }
 
-export function elasticsearchDomainTimeoutsToTerraform(struct?: ElasticsearchDomainTimeoutsOutputReference | ElasticsearchDomainTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function elasticsearchDomainTimeoutsToTerraform(struct?: ElasticsearchDomainTimeoutsOutputReference | ElasticsearchDomainTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1680,7 +1680,7 @@ export class ElasticsearchDomainTimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1733,7 +1733,7 @@ export interface ElasticsearchDomainVpcOptions {
 }
 
 export function elasticsearchDomainVpcOptionsToTerraform(struct?: ElasticsearchDomainVpcOptionsOutputReference | ElasticsearchDomainVpcOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1751,7 +1751,7 @@ export class ElasticsearchDomainVpcOptionsOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1782,10 +1782,15 @@ export class ElasticsearchDomainVpcOptionsOutputReference extends cdktf.ComplexO
     }
   }
 
+  // availability_zones - computed: true, optional: false, required: false
+  public get availabilityZones() {
+    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
+  }
+
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -1801,7 +1806,7 @@ export class ElasticsearchDomainVpcOptionsOutputReference extends cdktf.ComplexO
   // subnet_ids - computed: false, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -1812,6 +1817,11 @@ export class ElasticsearchDomainVpcOptionsOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get subnetIdsInput() {
     return this._subnetIds;
+  }
+
+  // vpc_id - computed: true, optional: false, required: false
+  public get vpcId() {
+    return this.getStringAttribute('vpc_id');
   }
 }
 
@@ -1888,12 +1898,11 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // advanced_options - computed: true, optional: true, required: false
-  private _advancedOptions?: { [key: string]: string } | cdktf.IResolvable; 
+  private _advancedOptions?: { [key: string]: string }; 
   public get advancedOptions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('advanced_options') as any;
+    return this.getStringMapAttribute('advanced_options');
   }
-  public set advancedOptions(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set advancedOptions(value: { [key: string]: string }) {
     this._advancedOptions = value;
   }
   public resetAdvancedOptions() {
@@ -1959,12 +1968,11 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -1976,12 +1984,11 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -1993,7 +2000,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // advanced_security_options - computed: false, optional: true, required: false
-  private _advancedSecurityOptions = new ElasticsearchDomainAdvancedSecurityOptionsOutputReference(this as any, "advanced_security_options", true);
+  private _advancedSecurityOptions = new ElasticsearchDomainAdvancedSecurityOptionsOutputReference(this, "advanced_security_options", true);
   public get advancedSecurityOptions() {
     return this._advancedSecurityOptions;
   }
@@ -2009,7 +2016,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // auto_tune_options - computed: false, optional: true, required: false
-  private _autoTuneOptions = new ElasticsearchDomainAutoTuneOptionsOutputReference(this as any, "auto_tune_options", true);
+  private _autoTuneOptions = new ElasticsearchDomainAutoTuneOptionsOutputReference(this, "auto_tune_options", true);
   public get autoTuneOptions() {
     return this._autoTuneOptions;
   }
@@ -2025,7 +2032,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // cluster_config - computed: false, optional: true, required: false
-  private _clusterConfig = new ElasticsearchDomainClusterConfigOutputReference(this as any, "cluster_config", true);
+  private _clusterConfig = new ElasticsearchDomainClusterConfigOutputReference(this, "cluster_config", true);
   public get clusterConfig() {
     return this._clusterConfig;
   }
@@ -2041,7 +2048,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // cognito_options - computed: false, optional: true, required: false
-  private _cognitoOptions = new ElasticsearchDomainCognitoOptionsOutputReference(this as any, "cognito_options", true);
+  private _cognitoOptions = new ElasticsearchDomainCognitoOptionsOutputReference(this, "cognito_options", true);
   public get cognitoOptions() {
     return this._cognitoOptions;
   }
@@ -2057,7 +2064,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // domain_endpoint_options - computed: false, optional: true, required: false
-  private _domainEndpointOptions = new ElasticsearchDomainDomainEndpointOptionsOutputReference(this as any, "domain_endpoint_options", true);
+  private _domainEndpointOptions = new ElasticsearchDomainDomainEndpointOptionsOutputReference(this, "domain_endpoint_options", true);
   public get domainEndpointOptions() {
     return this._domainEndpointOptions;
   }
@@ -2073,7 +2080,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // ebs_options - computed: false, optional: true, required: false
-  private _ebsOptions = new ElasticsearchDomainEbsOptionsOutputReference(this as any, "ebs_options", true);
+  private _ebsOptions = new ElasticsearchDomainEbsOptionsOutputReference(this, "ebs_options", true);
   public get ebsOptions() {
     return this._ebsOptions;
   }
@@ -2089,7 +2096,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // encrypt_at_rest - computed: false, optional: true, required: false
-  private _encryptAtRest = new ElasticsearchDomainEncryptAtRestOutputReference(this as any, "encrypt_at_rest", true);
+  private _encryptAtRest = new ElasticsearchDomainEncryptAtRestOutputReference(this, "encrypt_at_rest", true);
   public get encryptAtRest() {
     return this._encryptAtRest;
   }
@@ -2105,12 +2112,12 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // log_publishing_options - computed: false, optional: true, required: false
-  private _logPublishingOptions?: ElasticsearchDomainLogPublishingOptions[]; 
+  private _logPublishingOptions?: ElasticsearchDomainLogPublishingOptions[] | cdktf.IResolvable; 
   public get logPublishingOptions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('log_publishing_options') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('log_publishing_options')));
   }
-  public set logPublishingOptions(value: ElasticsearchDomainLogPublishingOptions[]) {
+  public set logPublishingOptions(value: ElasticsearchDomainLogPublishingOptions[] | cdktf.IResolvable) {
     this._logPublishingOptions = value;
   }
   public resetLogPublishingOptions() {
@@ -2122,7 +2129,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // node_to_node_encryption - computed: false, optional: true, required: false
-  private _nodeToNodeEncryption = new ElasticsearchDomainNodeToNodeEncryptionOutputReference(this as any, "node_to_node_encryption", true);
+  private _nodeToNodeEncryption = new ElasticsearchDomainNodeToNodeEncryptionOutputReference(this, "node_to_node_encryption", true);
   public get nodeToNodeEncryption() {
     return this._nodeToNodeEncryption;
   }
@@ -2138,7 +2145,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // snapshot_options - computed: false, optional: true, required: false
-  private _snapshotOptions = new ElasticsearchDomainSnapshotOptionsOutputReference(this as any, "snapshot_options", true);
+  private _snapshotOptions = new ElasticsearchDomainSnapshotOptionsOutputReference(this, "snapshot_options", true);
   public get snapshotOptions() {
     return this._snapshotOptions;
   }
@@ -2154,7 +2161,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ElasticsearchDomainTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ElasticsearchDomainTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -2170,7 +2177,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // vpc_options - computed: false, optional: true, required: false
-  private _vpcOptions = new ElasticsearchDomainVpcOptionsOutputReference(this as any, "vpc_options", true);
+  private _vpcOptions = new ElasticsearchDomainVpcOptionsOutputReference(this, "vpc_options", true);
   public get vpcOptions() {
     return this._vpcOptions;
   }
@@ -2192,11 +2199,11 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_policies: cdktf.stringToTerraform(this._accessPolicies),
-      advanced_options: cdktf.hashMapper(cdktf.anyToTerraform)(this._advancedOptions),
+      advanced_options: cdktf.hashMapper(cdktf.stringToTerraform)(this._advancedOptions),
       domain_name: cdktf.stringToTerraform(this._domainName),
       elasticsearch_version: cdktf.stringToTerraform(this._elasticsearchVersion),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       advanced_security_options: elasticsearchDomainAdvancedSecurityOptionsToTerraform(this._advancedSecurityOptions.internalValue),
       auto_tune_options: elasticsearchDomainAutoTuneOptionsToTerraform(this._autoTuneOptions.internalValue),
       cluster_config: elasticsearchDomainClusterConfigToTerraform(this._clusterConfig.internalValue),

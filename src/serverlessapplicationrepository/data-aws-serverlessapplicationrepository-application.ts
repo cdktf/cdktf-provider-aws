@@ -82,7 +82,7 @@ export class DataAwsServerlessapplicationrepositoryApplication extends cdktf.Ter
 
   // required_capabilities - computed: true, optional: false, required: false
   public get requiredCapabilities() {
-    return this.getListAttribute('required_capabilities');
+    return cdktf.Fn.tolist(this.getListAttribute('required_capabilities'));
   }
 
   // semantic_version - computed: true, optional: true, required: false

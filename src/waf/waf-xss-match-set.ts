@@ -16,7 +16,7 @@ export interface WafXssMatchSetConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_xss_match_set#xss_match_tuples WafXssMatchSet#xss_match_tuples}
   */
-  readonly xssMatchTuples?: WafXssMatchSetXssMatchTuples[];
+  readonly xssMatchTuples?: WafXssMatchSetXssMatchTuples[] | cdktf.IResolvable;
 }
 export interface WafXssMatchSetXssMatchTuplesFieldToMatch {
   /**
@@ -30,7 +30,7 @@ export interface WafXssMatchSetXssMatchTuplesFieldToMatch {
 }
 
 export function wafXssMatchSetXssMatchTuplesFieldToMatchToTerraform(struct?: WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference | WafXssMatchSetXssMatchTuplesFieldToMatch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -48,7 +48,7 @@ export class WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -121,8 +121,8 @@ export interface WafXssMatchSetXssMatchTuples {
   readonly fieldToMatch: WafXssMatchSetXssMatchTuplesFieldToMatch;
 }
 
-export function wafXssMatchSetXssMatchTuplesToTerraform(struct?: WafXssMatchSetXssMatchTuples): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafXssMatchSetXssMatchTuplesToTerraform(struct?: WafXssMatchSetXssMatchTuples | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -197,12 +197,12 @@ export class WafXssMatchSet extends cdktf.TerraformResource {
   }
 
   // xss_match_tuples - computed: false, optional: true, required: false
-  private _xssMatchTuples?: WafXssMatchSetXssMatchTuples[]; 
+  private _xssMatchTuples?: WafXssMatchSetXssMatchTuples[] | cdktf.IResolvable; 
   public get xssMatchTuples() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('xss_match_tuples') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('xss_match_tuples')));
   }
-  public set xssMatchTuples(value: WafXssMatchSetXssMatchTuples[]) {
+  public set xssMatchTuples(value: WafXssMatchSetXssMatchTuples[] | cdktf.IResolvable) {
     this._xssMatchTuples = value;
   }
   public resetXssMatchTuples() {

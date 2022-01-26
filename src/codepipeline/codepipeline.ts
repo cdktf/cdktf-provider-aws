@@ -18,23 +18,23 @@ export interface CodepipelineConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codepipeline#tags Codepipeline#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codepipeline#tags_all Codepipeline#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * artifact_store block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codepipeline#artifact_store Codepipeline#artifact_store}
   */
-  readonly artifactStore: CodepipelineArtifactStore[];
+  readonly artifactStore: CodepipelineArtifactStore[] | cdktf.IResolvable;
   /**
   * stage block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codepipeline#stage Codepipeline#stage}
   */
-  readonly stage: CodepipelineStage[];
+  readonly stage: CodepipelineStage[] | cdktf.IResolvable;
 }
 export interface CodepipelineArtifactStoreEncryptionKey {
   /**
@@ -48,7 +48,7 @@ export interface CodepipelineArtifactStoreEncryptionKey {
 }
 
 export function codepipelineArtifactStoreEncryptionKeyToTerraform(struct?: CodepipelineArtifactStoreEncryptionKeyOutputReference | CodepipelineArtifactStoreEncryptionKey): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -66,7 +66,7 @@ export class CodepipelineArtifactStoreEncryptionKeyOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -144,8 +144,8 @@ export interface CodepipelineArtifactStore {
   readonly encryptionKey?: CodepipelineArtifactStoreEncryptionKey;
 }
 
-export function codepipelineArtifactStoreToTerraform(struct?: CodepipelineArtifactStore): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function codepipelineArtifactStoreToTerraform(struct?: CodepipelineArtifactStore | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -165,7 +165,7 @@ export interface CodepipelineStageAction {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codepipeline#configuration Codepipeline#configuration}
   */
-  readonly configuration?: { [key: string]: string } | cdktf.IResolvable;
+  readonly configuration?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codepipeline#input_artifacts Codepipeline#input_artifacts}
   */
@@ -208,14 +208,14 @@ export interface CodepipelineStageAction {
   readonly version: string;
 }
 
-export function codepipelineStageActionToTerraform(struct?: CodepipelineStageAction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function codepipelineStageActionToTerraform(struct?: CodepipelineStageAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     category: cdktf.stringToTerraform(struct!.category),
-    configuration: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.configuration),
+    configuration: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.configuration),
     input_artifacts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.inputArtifacts),
     name: cdktf.stringToTerraform(struct!.name),
     namespace: cdktf.stringToTerraform(struct!.namespace),
@@ -239,11 +239,11 @@ export interface CodepipelineStage {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codepipeline#action Codepipeline#action}
   */
-  readonly action: CodepipelineStageAction[];
+  readonly action: CodepipelineStageAction[] | cdktf.IResolvable;
 }
 
-export function codepipelineStageToTerraform(struct?: CodepipelineStage): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function codepipelineStageToTerraform(struct?: CodepipelineStage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -335,12 +335,11 @@ export class Codepipeline extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -352,12 +351,11 @@ export class Codepipeline extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -369,12 +367,12 @@ export class Codepipeline extends cdktf.TerraformResource {
   }
 
   // artifact_store - computed: false, optional: false, required: true
-  private _artifactStore?: CodepipelineArtifactStore[]; 
+  private _artifactStore?: CodepipelineArtifactStore[] | cdktf.IResolvable; 
   public get artifactStore() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('artifact_store') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('artifact_store')));
   }
-  public set artifactStore(value: CodepipelineArtifactStore[]) {
+  public set artifactStore(value: CodepipelineArtifactStore[] | cdktf.IResolvable) {
     this._artifactStore = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -383,12 +381,12 @@ export class Codepipeline extends cdktf.TerraformResource {
   }
 
   // stage - computed: false, optional: false, required: true
-  private _stage?: CodepipelineStage[]; 
+  private _stage?: CodepipelineStage[] | cdktf.IResolvable; 
   public get stage() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('stage') as any;
+    return this.interpolationForAttribute('stage');
   }
-  public set stage(value: CodepipelineStage[]) {
+  public set stage(value: CodepipelineStage[] | cdktf.IResolvable) {
     this._stage = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -404,8 +402,8 @@ export class Codepipeline extends cdktf.TerraformResource {
     return {
       name: cdktf.stringToTerraform(this._name),
       role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       artifact_store: cdktf.listMapper(codepipelineArtifactStoreToTerraform)(this._artifactStore),
       stage: cdktf.listMapper(codepipelineStageToTerraform)(this._stage),
     };

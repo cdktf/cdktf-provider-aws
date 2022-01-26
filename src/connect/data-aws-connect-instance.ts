@@ -64,17 +64,17 @@ export class DataAwsConnectInstance extends cdktf.TerraformDataSource {
 
   // auto_resolve_best_voices_enabled - computed: true, optional: false, required: false
   public get autoResolveBestVoicesEnabled() {
-    return this.getBooleanAttribute('auto_resolve_best_voices_enabled') as any;
+    return this.getBooleanAttribute('auto_resolve_best_voices_enabled');
   }
 
   // contact_flow_logs_enabled - computed: true, optional: false, required: false
   public get contactFlowLogsEnabled() {
-    return this.getBooleanAttribute('contact_flow_logs_enabled') as any;
+    return this.getBooleanAttribute('contact_flow_logs_enabled');
   }
 
   // contact_lens_enabled - computed: true, optional: false, required: false
   public get contactLensEnabled() {
-    return this.getBooleanAttribute('contact_lens_enabled') as any;
+    return this.getBooleanAttribute('contact_lens_enabled');
   }
 
   // created_time - computed: true, optional: false, required: false
@@ -84,7 +84,7 @@ export class DataAwsConnectInstance extends cdktf.TerraformDataSource {
 
   // early_media_enabled - computed: true, optional: false, required: false
   public get earlyMediaEnabled() {
-    return this.getBooleanAttribute('early_media_enabled') as any;
+    return this.getBooleanAttribute('early_media_enabled');
   }
 
   // id - computed: true, optional: true, required: false
@@ -99,7 +99,7 @@ export class DataAwsConnectInstance extends cdktf.TerraformDataSource {
 
   // inbound_calls_enabled - computed: true, optional: false, required: false
   public get inboundCallsEnabled() {
-    return this.getBooleanAttribute('inbound_calls_enabled') as any;
+    return this.getBooleanAttribute('inbound_calls_enabled');
   }
 
   // instance_alias - computed: true, optional: true, required: false
@@ -136,7 +136,7 @@ export class DataAwsConnectInstance extends cdktf.TerraformDataSource {
 
   // outbound_calls_enabled - computed: true, optional: false, required: false
   public get outboundCallsEnabled() {
-    return this.getBooleanAttribute('outbound_calls_enabled') as any;
+    return this.getBooleanAttribute('outbound_calls_enabled');
   }
 
   // service_role - computed: true, optional: false, required: false

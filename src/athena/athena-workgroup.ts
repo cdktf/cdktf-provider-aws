@@ -26,11 +26,11 @@ export interface AthenaWorkgroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#tags AthenaWorkgroup#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#tags_all AthenaWorkgroup#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * configuration block
   * 
@@ -46,7 +46,7 @@ export interface AthenaWorkgroupConfigurationEngineVersion {
 }
 
 export function athenaWorkgroupConfigurationEngineVersionToTerraform(struct?: AthenaWorkgroupConfigurationEngineVersionOutputReference | AthenaWorkgroupConfigurationEngineVersion): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -63,7 +63,7 @@ export class AthenaWorkgroupConfigurationEngineVersionOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -86,6 +86,11 @@ export class AthenaWorkgroupConfigurationEngineVersionOutputReference extends cd
       this.isEmptyObject = Object.keys(value).length === 0;
       this._selectedEngineVersion = value.selectedEngineVersion;
     }
+  }
+
+  // effective_engine_version - computed: true, optional: false, required: false
+  public get effectiveEngineVersion() {
+    return this.getStringAttribute('effective_engine_version');
   }
 
   // selected_engine_version - computed: false, optional: true, required: false
@@ -116,7 +121,7 @@ export interface AthenaWorkgroupConfigurationResultConfigurationEncryptionConfig
 }
 
 export function athenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference | AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -134,7 +139,7 @@ export class AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurat
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -211,7 +216,7 @@ export interface AthenaWorkgroupConfigurationResultConfiguration {
 }
 
 export function athenaWorkgroupConfigurationResultConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationResultConfigurationOutputReference | AthenaWorkgroupConfigurationResultConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -229,7 +234,7 @@ export class AthenaWorkgroupConfigurationResultConfigurationOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -277,7 +282,7 @@ export class AthenaWorkgroupConfigurationResultConfigurationOutputReference exte
   }
 
   // encryption_configuration - computed: false, optional: true, required: false
-  private _encryptionConfiguration = new AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference(this as any, "encryption_configuration", true);
+  private _encryptionConfiguration = new AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference(this, "encryption_configuration", true);
   public get encryptionConfiguration() {
     return this._encryptionConfiguration;
   }
@@ -324,7 +329,7 @@ export interface AthenaWorkgroupConfiguration {
 }
 
 export function athenaWorkgroupConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationOutputReference | AthenaWorkgroupConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -346,7 +351,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -420,7 +425,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   // enforce_workgroup_configuration - computed: false, optional: true, required: false
   private _enforceWorkgroupConfiguration?: boolean | cdktf.IResolvable; 
   public get enforceWorkgroupConfiguration() {
-    return this.getBooleanAttribute('enforce_workgroup_configuration') as any;
+    return this.getBooleanAttribute('enforce_workgroup_configuration');
   }
   public set enforceWorkgroupConfiguration(value: boolean | cdktf.IResolvable) {
     this._enforceWorkgroupConfiguration = value;
@@ -436,7 +441,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   // publish_cloudwatch_metrics_enabled - computed: false, optional: true, required: false
   private _publishCloudwatchMetricsEnabled?: boolean | cdktf.IResolvable; 
   public get publishCloudwatchMetricsEnabled() {
-    return this.getBooleanAttribute('publish_cloudwatch_metrics_enabled') as any;
+    return this.getBooleanAttribute('publish_cloudwatch_metrics_enabled');
   }
   public set publishCloudwatchMetricsEnabled(value: boolean | cdktf.IResolvable) {
     this._publishCloudwatchMetricsEnabled = value;
@@ -452,7 +457,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   // requester_pays_enabled - computed: false, optional: true, required: false
   private _requesterPaysEnabled?: boolean | cdktf.IResolvable; 
   public get requesterPaysEnabled() {
-    return this.getBooleanAttribute('requester_pays_enabled') as any;
+    return this.getBooleanAttribute('requester_pays_enabled');
   }
   public set requesterPaysEnabled(value: boolean | cdktf.IResolvable) {
     this._requesterPaysEnabled = value;
@@ -466,7 +471,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   }
 
   // engine_version - computed: false, optional: true, required: false
-  private _engineVersion = new AthenaWorkgroupConfigurationEngineVersionOutputReference(this as any, "engine_version", true);
+  private _engineVersion = new AthenaWorkgroupConfigurationEngineVersionOutputReference(this, "engine_version", true);
   public get engineVersion() {
     return this._engineVersion;
   }
@@ -482,7 +487,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   }
 
   // result_configuration - computed: false, optional: true, required: false
-  private _resultConfiguration = new AthenaWorkgroupConfigurationResultConfigurationOutputReference(this as any, "result_configuration", true);
+  private _resultConfiguration = new AthenaWorkgroupConfigurationResultConfigurationOutputReference(this, "result_configuration", true);
   public get resultConfiguration() {
     return this._resultConfiguration;
   }
@@ -567,7 +572,7 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean | cdktf.IResolvable; 
   public get forceDestroy() {
-    return this.getBooleanAttribute('force_destroy') as any;
+    return this.getBooleanAttribute('force_destroy');
   }
   public set forceDestroy(value: boolean | cdktf.IResolvable) {
     this._forceDestroy = value;
@@ -615,12 +620,11 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -632,12 +636,11 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -649,7 +652,7 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
   }
 
   // configuration - computed: false, optional: true, required: false
-  private _configuration = new AthenaWorkgroupConfigurationOutputReference(this as any, "configuration", true);
+  private _configuration = new AthenaWorkgroupConfigurationOutputReference(this, "configuration", true);
   public get configuration() {
     return this._configuration;
   }
@@ -674,8 +677,8 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       name: cdktf.stringToTerraform(this._name),
       state: cdktf.stringToTerraform(this._state),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       configuration: athenaWorkgroupConfigurationToTerraform(this._configuration.internalValue),
     };
   }

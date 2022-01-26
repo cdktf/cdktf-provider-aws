@@ -24,7 +24,7 @@ export interface CognitoResourceServerConfig extends cdktf.TerraformMetaArgument
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_resource_server#scope CognitoResourceServer#scope}
   */
-  readonly scope?: CognitoResourceServerScope[];
+  readonly scope?: CognitoResourceServerScope[] | cdktf.IResolvable;
 }
 export interface CognitoResourceServerScope {
   /**
@@ -37,8 +37,8 @@ export interface CognitoResourceServerScope {
   readonly scopeName: string;
 }
 
-export function cognitoResourceServerScopeToTerraform(struct?: CognitoResourceServerScope): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cognitoResourceServerScopeToTerraform(struct?: CognitoResourceServerScope | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -141,12 +141,12 @@ export class CognitoResourceServer extends cdktf.TerraformResource {
   }
 
   // scope - computed: false, optional: true, required: false
-  private _scope?: CognitoResourceServerScope[]; 
+  private _scope?: CognitoResourceServerScope[] | cdktf.IResolvable; 
   public get scope() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('scope') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('scope')));
   }
-  public set scope(value: CognitoResourceServerScope[]) {
+  public set scope(value: CognitoResourceServerScope[] | cdktf.IResolvable) {
     this._scope = value;
   }
   public resetScope() {

@@ -16,7 +16,7 @@ export interface DataAwsRoute53ResolverEndpointConfig extends cdktf.TerraformMet
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route53_resolver_endpoint#filter DataAwsRoute53ResolverEndpoint#filter}
   */
-  readonly filter?: DataAwsRoute53ResolverEndpointFilter[];
+  readonly filter?: DataAwsRoute53ResolverEndpointFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsRoute53ResolverEndpointFilter {
   /**
@@ -29,8 +29,8 @@ export interface DataAwsRoute53ResolverEndpointFilter {
   readonly values: string[];
 }
 
-export function dataAwsRoute53ResolverEndpointFilterToTerraform(struct?: DataAwsRoute53ResolverEndpointFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsRoute53ResolverEndpointFilterToTerraform(struct?: DataAwsRoute53ResolverEndpointFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -98,7 +98,7 @@ export class DataAwsRoute53ResolverEndpoint extends cdktf.TerraformDataSource {
 
   // ip_addresses - computed: true, optional: false, required: false
   public get ipAddresses() {
-    return this.getListAttribute('ip_addresses');
+    return cdktf.Fn.tolist(this.getListAttribute('ip_addresses'));
   }
 
   // name - computed: true, optional: false, required: false
@@ -133,12 +133,12 @@ export class DataAwsRoute53ResolverEndpoint extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsRoute53ResolverEndpointFilter[]; 
+  private _filter?: DataAwsRoute53ResolverEndpointFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsRoute53ResolverEndpointFilter[]) {
+  public set filter(value: DataAwsRoute53ResolverEndpointFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {

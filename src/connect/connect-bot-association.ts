@@ -30,7 +30,7 @@ export interface ConnectBotAssociationLexBot {
 }
 
 export function connectBotAssociationLexBotToTerraform(struct?: ConnectBotAssociationLexBotOutputReference | ConnectBotAssociationLexBot): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -48,7 +48,7 @@ export class ConnectBotAssociationLexBotOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -168,7 +168,7 @@ export class ConnectBotAssociation extends cdktf.TerraformResource {
   }
 
   // lex_bot - computed: false, optional: false, required: true
-  private _lexBot = new ConnectBotAssociationLexBotOutputReference(this as any, "lex_bot", true);
+  private _lexBot = new ConnectBotAssociationLexBotOutputReference(this, "lex_bot", true);
   public get lexBot() {
     return this._lexBot;
   }

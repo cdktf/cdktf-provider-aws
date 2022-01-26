@@ -137,7 +137,7 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
   // publish - computed: false, optional: true, required: false
   private _publish?: boolean | cdktf.IResolvable; 
   public get publish() {
-    return this.getBooleanAttribute('publish') as any;
+    return this.getBooleanAttribute('publish');
   }
   public set publish(value: boolean | cdktf.IResolvable) {
     this._publish = value;

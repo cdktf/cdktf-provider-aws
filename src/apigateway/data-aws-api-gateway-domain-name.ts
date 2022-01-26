@@ -14,7 +14,7 @@ export interface DataAwsApiGatewayDomainNameConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_domain_name#tags DataAwsApiGatewayDomainName#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsApiGatewayDomainNameEndpointConfiguration extends cdktf.ComplexComputedList {
 
@@ -109,7 +109,7 @@ export class DataAwsApiGatewayDomainName extends cdktf.TerraformDataSource {
 
   // endpoint_configuration - computed: true, optional: false, required: false
   public endpointConfiguration(index: string) {
-    return new DataAwsApiGatewayDomainNameEndpointConfiguration(this, 'endpoint_configuration', index);
+    return new DataAwsApiGatewayDomainNameEndpointConfiguration(this, 'endpoint_configuration', index, false);
   }
 
   // id - computed: true, optional: true, required: false
@@ -143,12 +143,11 @@ export class DataAwsApiGatewayDomainName extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -166,7 +165,7 @@ export class DataAwsApiGatewayDomainName extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       domain_name: cdktf.stringToTerraform(this._domainName),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

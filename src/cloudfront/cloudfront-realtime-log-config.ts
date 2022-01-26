@@ -38,7 +38,7 @@ export interface CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig {
 }
 
 export function cloudfrontRealtimeLogConfigEndpointKinesisStreamConfigToTerraform(struct?: CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference | CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -56,7 +56,7 @@ export class CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReferen
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -127,7 +127,7 @@ export interface CloudfrontRealtimeLogConfigEndpoint {
 }
 
 export function cloudfrontRealtimeLogConfigEndpointToTerraform(struct?: CloudfrontRealtimeLogConfigEndpointOutputReference | CloudfrontRealtimeLogConfigEndpoint): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -145,7 +145,7 @@ export class CloudfrontRealtimeLogConfigEndpointOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -190,7 +190,7 @@ export class CloudfrontRealtimeLogConfigEndpointOutputReference extends cdktf.Co
   }
 
   // kinesis_stream_config - computed: false, optional: false, required: true
-  private _kinesisStreamConfig = new CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference(this as any, "kinesis_stream_config", true);
+  private _kinesisStreamConfig = new CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference(this, "kinesis_stream_config", true);
   public get kinesisStreamConfig() {
     return this._kinesisStreamConfig;
   }
@@ -253,7 +253,7 @@ export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
   // fields - computed: false, optional: false, required: true
   private _fields?: string[]; 
   public get fields() {
-    return this.getListAttribute('fields');
+    return cdktf.Fn.tolist(this.getListAttribute('fields'));
   }
   public set fields(value: string[]) {
     this._fields = value;
@@ -295,7 +295,7 @@ export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
   }
 
   // endpoint - computed: false, optional: false, required: true
-  private _endpoint = new CloudfrontRealtimeLogConfigEndpointOutputReference(this as any, "endpoint", true);
+  private _endpoint = new CloudfrontRealtimeLogConfigEndpointOutputReference(this, "endpoint", true);
   public get endpoint() {
     return this._endpoint;
   }

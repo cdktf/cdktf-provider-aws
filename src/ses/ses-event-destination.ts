@@ -28,7 +28,7 @@ export interface SesEventDestinationConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_event_destination#cloudwatch_destination SesEventDestination#cloudwatch_destination}
   */
-  readonly cloudwatchDestination?: SesEventDestinationCloudwatchDestination[];
+  readonly cloudwatchDestination?: SesEventDestinationCloudwatchDestination[] | cdktf.IResolvable;
   /**
   * kinesis_destination block
   * 
@@ -57,8 +57,8 @@ export interface SesEventDestinationCloudwatchDestination {
   readonly valueSource: string;
 }
 
-export function sesEventDestinationCloudwatchDestinationToTerraform(struct?: SesEventDestinationCloudwatchDestination): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function sesEventDestinationCloudwatchDestinationToTerraform(struct?: SesEventDestinationCloudwatchDestination | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -81,7 +81,7 @@ export interface SesEventDestinationKinesisDestination {
 }
 
 export function sesEventDestinationKinesisDestinationToTerraform(struct?: SesEventDestinationKinesisDestinationOutputReference | SesEventDestinationKinesisDestination): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -99,7 +99,7 @@ export class SesEventDestinationKinesisDestinationOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -164,7 +164,7 @@ export interface SesEventDestinationSnsDestination {
 }
 
 export function sesEventDestinationSnsDestinationToTerraform(struct?: SesEventDestinationSnsDestinationOutputReference | SesEventDestinationSnsDestination): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -181,7 +181,7 @@ export class SesEventDestinationSnsDestinationOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -286,7 +286,7 @@ export class SesEventDestination extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -307,7 +307,7 @@ export class SesEventDestination extends cdktf.TerraformResource {
   // matching_types - computed: false, optional: false, required: true
   private _matchingTypes?: string[]; 
   public get matchingTypes() {
-    return this.getListAttribute('matching_types');
+    return cdktf.Fn.tolist(this.getListAttribute('matching_types'));
   }
   public set matchingTypes(value: string[]) {
     this._matchingTypes = value;
@@ -331,12 +331,12 @@ export class SesEventDestination extends cdktf.TerraformResource {
   }
 
   // cloudwatch_destination - computed: false, optional: true, required: false
-  private _cloudwatchDestination?: SesEventDestinationCloudwatchDestination[]; 
+  private _cloudwatchDestination?: SesEventDestinationCloudwatchDestination[] | cdktf.IResolvable; 
   public get cloudwatchDestination() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('cloudwatch_destination') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('cloudwatch_destination')));
   }
-  public set cloudwatchDestination(value: SesEventDestinationCloudwatchDestination[]) {
+  public set cloudwatchDestination(value: SesEventDestinationCloudwatchDestination[] | cdktf.IResolvable) {
     this._cloudwatchDestination = value;
   }
   public resetCloudwatchDestination() {
@@ -348,7 +348,7 @@ export class SesEventDestination extends cdktf.TerraformResource {
   }
 
   // kinesis_destination - computed: false, optional: true, required: false
-  private _kinesisDestination = new SesEventDestinationKinesisDestinationOutputReference(this as any, "kinesis_destination", true);
+  private _kinesisDestination = new SesEventDestinationKinesisDestinationOutputReference(this, "kinesis_destination", true);
   public get kinesisDestination() {
     return this._kinesisDestination;
   }
@@ -364,7 +364,7 @@ export class SesEventDestination extends cdktf.TerraformResource {
   }
 
   // sns_destination - computed: false, optional: true, required: false
-  private _snsDestination = new SesEventDestinationSnsDestinationOutputReference(this as any, "sns_destination", true);
+  private _snsDestination = new SesEventDestinationSnsDestinationOutputReference(this, "sns_destination", true);
   public get snsDestination() {
     return this._snsDestination;
   }

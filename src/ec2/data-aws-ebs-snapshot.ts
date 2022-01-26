@@ -26,13 +26,13 @@ export interface DataAwsEbsSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_snapshot#tags DataAwsEbsSnapshot#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * filter block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_snapshot#filter DataAwsEbsSnapshot#filter}
   */
-  readonly filter?: DataAwsEbsSnapshotFilter[];
+  readonly filter?: DataAwsEbsSnapshotFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsEbsSnapshotFilter {
   /**
@@ -45,8 +45,8 @@ export interface DataAwsEbsSnapshotFilter {
   readonly values: string[];
 }
 
-export function dataAwsEbsSnapshotFilterToTerraform(struct?: DataAwsEbsSnapshotFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsEbsSnapshotFilterToTerraform(struct?: DataAwsEbsSnapshotFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -118,7 +118,7 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
 
   // encrypted - computed: true, optional: false, required: false
   public get encrypted() {
-    return this.getBooleanAttribute('encrypted') as any;
+    return this.getBooleanAttribute('encrypted');
   }
 
   // id - computed: true, optional: true, required: false
@@ -134,7 +134,7 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
   // most_recent - computed: false, optional: true, required: false
   private _mostRecent?: boolean | cdktf.IResolvable; 
   public get mostRecent() {
-    return this.getBooleanAttribute('most_recent') as any;
+    return this.getBooleanAttribute('most_recent');
   }
   public set mostRecent(value: boolean | cdktf.IResolvable) {
     this._mostRecent = value;
@@ -226,12 +226,11 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -253,12 +252,12 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsEbsSnapshotFilter[]; 
+  private _filter?: DataAwsEbsSnapshotFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsEbsSnapshotFilter[]) {
+  public set filter(value: DataAwsEbsSnapshotFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -279,7 +278,7 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
       owners: cdktf.listMapper(cdktf.stringToTerraform)(this._owners),
       restorable_by_user_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._restorableByUserIds),
       snapshot_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._snapshotIds),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsEbsSnapshotFilterToTerraform)(this._filter),
     };
   }

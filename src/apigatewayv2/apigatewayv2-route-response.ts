@@ -18,7 +18,7 @@ export interface Apigatewayv2RouteResponseConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route_response#response_models Apigatewayv2RouteResponse#response_models}
   */
-  readonly responseModels?: { [key: string]: string } | cdktf.IResolvable;
+  readonly responseModels?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route_response#route_id Apigatewayv2RouteResponse#route_id}
   */
@@ -107,12 +107,11 @@ export class Apigatewayv2RouteResponse extends cdktf.TerraformResource {
   }
 
   // response_models - computed: false, optional: true, required: false
-  private _responseModels?: { [key: string]: string } | cdktf.IResolvable; 
+  private _responseModels?: { [key: string]: string }; 
   public get responseModels() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('response_models') as any;
+    return this.getStringMapAttribute('response_models');
   }
-  public set responseModels(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set responseModels(value: { [key: string]: string }) {
     this._responseModels = value;
   }
   public resetResponseModels() {
@@ -157,7 +156,7 @@ export class Apigatewayv2RouteResponse extends cdktf.TerraformResource {
     return {
       api_id: cdktf.stringToTerraform(this._apiId),
       model_selection_expression: cdktf.stringToTerraform(this._modelSelectionExpression),
-      response_models: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseModels),
+      response_models: cdktf.hashMapper(cdktf.stringToTerraform)(this._responseModels),
       route_id: cdktf.stringToTerraform(this._routeId),
       route_response_key: cdktf.stringToTerraform(this._routeResponseKey),
     };

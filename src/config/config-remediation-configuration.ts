@@ -50,7 +50,7 @@ export interface ConfigRemediationConfigurationConfig extends cdktf.TerraformMet
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration#parameter ConfigRemediationConfiguration#parameter}
   */
-  readonly parameter?: ConfigRemediationConfigurationParameter[];
+  readonly parameter?: ConfigRemediationConfigurationParameter[] | cdktf.IResolvable;
 }
 export interface ConfigRemediationConfigurationExecutionControlsSsmControls {
   /**
@@ -64,7 +64,7 @@ export interface ConfigRemediationConfigurationExecutionControlsSsmControls {
 }
 
 export function configRemediationConfigurationExecutionControlsSsmControlsToTerraform(struct?: ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference | ConfigRemediationConfigurationExecutionControlsSsmControls): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -82,7 +82,7 @@ export class ConfigRemediationConfigurationExecutionControlsSsmControlsOutputRef
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -155,7 +155,7 @@ export interface ConfigRemediationConfigurationExecutionControls {
 }
 
 export function configRemediationConfigurationExecutionControlsToTerraform(struct?: ConfigRemediationConfigurationExecutionControlsOutputReference | ConfigRemediationConfigurationExecutionControls): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -172,7 +172,7 @@ export class ConfigRemediationConfigurationExecutionControlsOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -198,7 +198,7 @@ export class ConfigRemediationConfigurationExecutionControlsOutputReference exte
   }
 
   // ssm_controls - computed: false, optional: true, required: false
-  private _ssmControls = new ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference(this as any, "ssm_controls", true);
+  private _ssmControls = new ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference(this, "ssm_controls", true);
   public get ssmControls() {
     return this._ssmControls;
   }
@@ -228,8 +228,8 @@ export interface ConfigRemediationConfigurationParameter {
   readonly staticValue?: string;
 }
 
-export function configRemediationConfigurationParameterToTerraform(struct?: ConfigRemediationConfigurationParameter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function configRemediationConfigurationParameterToTerraform(struct?: ConfigRemediationConfigurationParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -297,7 +297,7 @@ export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
   // automatic - computed: false, optional: true, required: false
   private _automatic?: boolean | cdktf.IResolvable; 
   public get automatic() {
-    return this.getBooleanAttribute('automatic') as any;
+    return this.getBooleanAttribute('automatic');
   }
   public set automatic(value: boolean | cdktf.IResolvable) {
     this._automatic = value;
@@ -419,7 +419,7 @@ export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
   }
 
   // execution_controls - computed: false, optional: true, required: false
-  private _executionControls = new ConfigRemediationConfigurationExecutionControlsOutputReference(this as any, "execution_controls", true);
+  private _executionControls = new ConfigRemediationConfigurationExecutionControlsOutputReference(this, "execution_controls", true);
   public get executionControls() {
     return this._executionControls;
   }
@@ -435,12 +435,12 @@ export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
   }
 
   // parameter - computed: false, optional: true, required: false
-  private _parameter?: ConfigRemediationConfigurationParameter[]; 
+  private _parameter?: ConfigRemediationConfigurationParameter[] | cdktf.IResolvable; 
   public get parameter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('parameter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('parameter')));
   }
-  public set parameter(value: ConfigRemediationConfigurationParameter[]) {
+  public set parameter(value: ConfigRemediationConfigurationParameter[] | cdktf.IResolvable) {
     this._parameter = value;
   }
   public resetParameter() {

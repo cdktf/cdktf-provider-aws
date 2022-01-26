@@ -74,11 +74,11 @@ export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue#tags SqsQueue#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue#tags_all SqsQueue#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue#visibility_timeout_seconds SqsQueue#visibility_timeout_seconds}
   */
@@ -150,7 +150,7 @@ export class SqsQueue extends cdktf.TerraformResource {
   // content_based_deduplication - computed: false, optional: true, required: false
   private _contentBasedDeduplication?: boolean | cdktf.IResolvable; 
   public get contentBasedDeduplication() {
-    return this.getBooleanAttribute('content_based_deduplication') as any;
+    return this.getBooleanAttribute('content_based_deduplication');
   }
   public set contentBasedDeduplication(value: boolean | cdktf.IResolvable) {
     this._contentBasedDeduplication = value;
@@ -198,7 +198,7 @@ export class SqsQueue extends cdktf.TerraformResource {
   // fifo_queue - computed: false, optional: true, required: false
   private _fifoQueue?: boolean | cdktf.IResolvable; 
   public get fifoQueue() {
-    return this.getBooleanAttribute('fifo_queue') as any;
+    return this.getBooleanAttribute('fifo_queue');
   }
   public set fifoQueue(value: boolean | cdktf.IResolvable) {
     this._fifoQueue = value;
@@ -395,7 +395,7 @@ export class SqsQueue extends cdktf.TerraformResource {
   // sqs_managed_sse_enabled - computed: false, optional: true, required: false
   private _sqsManagedSseEnabled?: boolean | cdktf.IResolvable; 
   public get sqsManagedSseEnabled() {
-    return this.getBooleanAttribute('sqs_managed_sse_enabled') as any;
+    return this.getBooleanAttribute('sqs_managed_sse_enabled');
   }
   public set sqsManagedSseEnabled(value: boolean | cdktf.IResolvable) {
     this._sqsManagedSseEnabled = value;
@@ -409,12 +409,11 @@ export class SqsQueue extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -426,12 +425,11 @@ export class SqsQueue extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -485,8 +483,8 @@ export class SqsQueue extends cdktf.TerraformResource {
       redrive_allow_policy: cdktf.stringToTerraform(this._redriveAllowPolicy),
       redrive_policy: cdktf.stringToTerraform(this._redrivePolicy),
       sqs_managed_sse_enabled: cdktf.booleanToTerraform(this._sqsManagedSseEnabled),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       visibility_timeout_seconds: cdktf.numberToTerraform(this._visibilityTimeoutSeconds),
     };
   }

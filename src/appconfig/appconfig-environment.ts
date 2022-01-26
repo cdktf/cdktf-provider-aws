@@ -22,17 +22,17 @@ export interface AppconfigEnvironmentConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appconfig_environment#tags AppconfigEnvironment#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appconfig_environment#tags_all AppconfigEnvironment#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * monitor block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appconfig_environment#monitor AppconfigEnvironment#monitor}
   */
-  readonly monitor?: AppconfigEnvironmentMonitor[];
+  readonly monitor?: AppconfigEnvironmentMonitor[] | cdktf.IResolvable;
 }
 export interface AppconfigEnvironmentMonitor {
   /**
@@ -45,8 +45,8 @@ export interface AppconfigEnvironmentMonitor {
   readonly alarmRoleArn?: string;
 }
 
-export function appconfigEnvironmentMonitorToTerraform(struct?: AppconfigEnvironmentMonitor): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appconfigEnvironmentMonitorToTerraform(struct?: AppconfigEnvironmentMonitor | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -164,12 +164,11 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -181,12 +180,11 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -198,12 +196,12 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
   }
 
   // monitor - computed: false, optional: true, required: false
-  private _monitor?: AppconfigEnvironmentMonitor[]; 
+  private _monitor?: AppconfigEnvironmentMonitor[] | cdktf.IResolvable; 
   public get monitor() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('monitor') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('monitor')));
   }
-  public set monitor(value: AppconfigEnvironmentMonitor[]) {
+  public set monitor(value: AppconfigEnvironmentMonitor[] | cdktf.IResolvable) {
     this._monitor = value;
   }
   public resetMonitor() {
@@ -223,8 +221,8 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
       application_id: cdktf.stringToTerraform(this._applicationId),
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       monitor: cdktf.listMapper(appconfigEnvironmentMonitorToTerraform)(this._monitor),
     };
   }

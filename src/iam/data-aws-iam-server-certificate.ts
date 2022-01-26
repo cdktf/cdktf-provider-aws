@@ -95,7 +95,7 @@ export class DataAwsIamServerCertificate extends cdktf.TerraformDataSource {
   // latest - computed: false, optional: true, required: false
   private _latest?: boolean | cdktf.IResolvable; 
   public get latest() {
-    return this.getBooleanAttribute('latest') as any;
+    return this.getBooleanAttribute('latest');
   }
   public set latest(value: boolean | cdktf.IResolvable) {
     this._latest = value;

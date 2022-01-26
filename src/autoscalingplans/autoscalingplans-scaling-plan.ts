@@ -22,7 +22,7 @@ export interface AutoscalingplansScalingPlanConfig extends cdktf.TerraformMetaAr
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan#scaling_instruction AutoscalingplansScalingPlan#scaling_instruction}
   */
-  readonly scalingInstruction: AutoscalingplansScalingPlanScalingInstruction[];
+  readonly scalingInstruction: AutoscalingplansScalingPlanScalingInstruction[] | cdktf.IResolvable;
 }
 export interface AutoscalingplansScalingPlanApplicationSourceTagFilter {
   /**
@@ -35,8 +35,8 @@ export interface AutoscalingplansScalingPlanApplicationSourceTagFilter {
   readonly values?: string[];
 }
 
-export function autoscalingplansScalingPlanApplicationSourceTagFilterToTerraform(struct?: AutoscalingplansScalingPlanApplicationSourceTagFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function autoscalingplansScalingPlanApplicationSourceTagFilterToTerraform(struct?: AutoscalingplansScalingPlanApplicationSourceTagFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -56,11 +56,11 @@ export interface AutoscalingplansScalingPlanApplicationSource {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan#tag_filter AutoscalingplansScalingPlan#tag_filter}
   */
-  readonly tagFilter?: AutoscalingplansScalingPlanApplicationSourceTagFilter[];
+  readonly tagFilter?: AutoscalingplansScalingPlanApplicationSourceTagFilter[] | cdktf.IResolvable;
 }
 
 export function autoscalingplansScalingPlanApplicationSourceToTerraform(struct?: AutoscalingplansScalingPlanApplicationSourceOutputReference | AutoscalingplansScalingPlanApplicationSource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -78,7 +78,7 @@ export class AutoscalingplansScalingPlanApplicationSourceOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -126,12 +126,12 @@ export class AutoscalingplansScalingPlanApplicationSourceOutputReference extends
   }
 
   // tag_filter - computed: false, optional: true, required: false
-  private _tagFilter?: AutoscalingplansScalingPlanApplicationSourceTagFilter[]; 
+  private _tagFilter?: AutoscalingplansScalingPlanApplicationSourceTagFilter[] | cdktf.IResolvable; 
   public get tagFilter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tag_filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('tag_filter')));
   }
-  public set tagFilter(value: AutoscalingplansScalingPlanApplicationSourceTagFilter[]) {
+  public set tagFilter(value: AutoscalingplansScalingPlanApplicationSourceTagFilter[] | cdktf.IResolvable) {
     this._tagFilter = value;
   }
   public resetTagFilter() {
@@ -146,7 +146,7 @@ export interface AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan#dimensions AutoscalingplansScalingPlan#dimensions}
   */
-  readonly dimensions?: { [key: string]: string } | cdktf.IResolvable;
+  readonly dimensions?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan#metric_name AutoscalingplansScalingPlan#metric_name}
   */
@@ -166,12 +166,12 @@ export interface AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetr
 }
 
 export function autoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationToTerraform(struct?: AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference | AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dimensions: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.dimensions),
+    dimensions: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.dimensions),
     metric_name: cdktf.stringToTerraform(struct!.metricName),
     namespace: cdktf.stringToTerraform(struct!.namespace),
     statistic: cdktf.stringToTerraform(struct!.statistic),
@@ -187,7 +187,7 @@ export class AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -237,12 +237,11 @@ export class AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSp
   }
 
   // dimensions - computed: false, optional: true, required: false
-  private _dimensions?: { [key: string]: string } | cdktf.IResolvable; 
+  private _dimensions?: { [key: string]: string }; 
   public get dimensions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dimensions') as any;
+    return this.getStringMapAttribute('dimensions');
   }
-  public set dimensions(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set dimensions(value: { [key: string]: string }) {
     this._dimensions = value;
   }
   public resetDimensions() {
@@ -320,7 +319,7 @@ export interface AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetr
 }
 
 export function autoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecificationToTerraform(struct?: AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecificationOutputReference | AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -338,7 +337,7 @@ export class AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -402,7 +401,7 @@ export interface AutoscalingplansScalingPlanScalingInstructionTargetTrackingConf
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan#dimensions AutoscalingplansScalingPlan#dimensions}
   */
-  readonly dimensions?: { [key: string]: string } | cdktf.IResolvable;
+  readonly dimensions?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan#metric_name AutoscalingplansScalingPlan#metric_name}
   */
@@ -422,12 +421,12 @@ export interface AutoscalingplansScalingPlanScalingInstructionTargetTrackingConf
 }
 
 export function autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationToTerraform(struct?: AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationOutputReference | AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dimensions: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.dimensions),
+    dimensions: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.dimensions),
     metric_name: cdktf.stringToTerraform(struct!.metricName),
     namespace: cdktf.stringToTerraform(struct!.namespace),
     statistic: cdktf.stringToTerraform(struct!.statistic),
@@ -443,7 +442,7 @@ export class AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigur
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -493,12 +492,11 @@ export class AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigur
   }
 
   // dimensions - computed: false, optional: true, required: false
-  private _dimensions?: { [key: string]: string } | cdktf.IResolvable; 
+  private _dimensions?: { [key: string]: string }; 
   public get dimensions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dimensions') as any;
+    return this.getStringMapAttribute('dimensions');
   }
-  public set dimensions(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set dimensions(value: { [key: string]: string }) {
     this._dimensions = value;
   }
   public resetDimensions() {
@@ -576,7 +574,7 @@ export interface AutoscalingplansScalingPlanScalingInstructionTargetTrackingConf
 }
 
 export function autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationToTerraform(struct?: AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationOutputReference | AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -594,7 +592,7 @@ export class AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigur
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -689,8 +687,8 @@ export interface AutoscalingplansScalingPlanScalingInstructionTargetTrackingConf
   readonly predefinedScalingMetricSpecification?: AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecification;
 }
 
-export function autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationToTerraform(struct?: AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationToTerraform(struct?: AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -767,11 +765,11 @@ export interface AutoscalingplansScalingPlanScalingInstruction {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan#target_tracking_configuration AutoscalingplansScalingPlan#target_tracking_configuration}
   */
-  readonly targetTrackingConfiguration: AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfiguration[];
+  readonly targetTrackingConfiguration: AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfiguration[] | cdktf.IResolvable;
 }
 
-export function autoscalingplansScalingPlanScalingInstructionToTerraform(struct?: AutoscalingplansScalingPlanScalingInstruction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function autoscalingplansScalingPlanScalingInstructionToTerraform(struct?: AutoscalingplansScalingPlanScalingInstruction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -859,7 +857,7 @@ export class AutoscalingplansScalingPlan extends cdktf.TerraformResource {
   }
 
   // application_source - computed: false, optional: false, required: true
-  private _applicationSource = new AutoscalingplansScalingPlanApplicationSourceOutputReference(this as any, "application_source", true);
+  private _applicationSource = new AutoscalingplansScalingPlanApplicationSourceOutputReference(this, "application_source", true);
   public get applicationSource() {
     return this._applicationSource;
   }
@@ -872,12 +870,12 @@ export class AutoscalingplansScalingPlan extends cdktf.TerraformResource {
   }
 
   // scaling_instruction - computed: false, optional: false, required: true
-  private _scalingInstruction?: AutoscalingplansScalingPlanScalingInstruction[]; 
+  private _scalingInstruction?: AutoscalingplansScalingPlanScalingInstruction[] | cdktf.IResolvable; 
   public get scalingInstruction() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('scaling_instruction') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('scaling_instruction')));
   }
-  public set scalingInstruction(value: AutoscalingplansScalingPlanScalingInstruction[]) {
+  public set scalingInstruction(value: AutoscalingplansScalingPlanScalingInstruction[] | cdktf.IResolvable) {
     this._scalingInstruction = value;
   }
   // Temporarily expose input value. Use with caution.

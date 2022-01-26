@@ -93,7 +93,7 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
   // recursive - computed: false, optional: true, required: false
   private _recursive?: boolean | cdktf.IResolvable; 
   public get recursive() {
-    return this.getBooleanAttribute('recursive') as any;
+    return this.getBooleanAttribute('recursive');
   }
   public set recursive(value: boolean | cdktf.IResolvable) {
     this._recursive = value;
@@ -119,7 +119,7 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
   // with_decryption - computed: false, optional: true, required: false
   private _withDecryption?: boolean | cdktf.IResolvable; 
   public get withDecryption() {
-    return this.getBooleanAttribute('with_decryption') as any;
+    return this.getBooleanAttribute('with_decryption');
   }
   public set withDecryption(value: boolean | cdktf.IResolvable) {
     this._withDecryption = value;

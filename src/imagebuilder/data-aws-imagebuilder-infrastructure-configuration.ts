@@ -14,11 +14,11 @@ export interface DataAwsImagebuilderInfrastructureConfigurationConfig extends cd
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_infrastructure_configuration#resource_tags DataAwsImagebuilderInfrastructureConfiguration#resource_tags}
   */
-  readonly resourceTags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly resourceTags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_infrastructure_configuration#tags DataAwsImagebuilderInfrastructureConfiguration#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsImagebuilderInfrastructureConfigurationLoggingS3Logs extends cdktf.ComplexComputedList {
 
@@ -37,7 +37,7 @@ export class DataAwsImagebuilderInfrastructureConfigurationLogging extends cdktf
   // s3_logs - computed: true, optional: false, required: false
   public get s3Logs() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('s3_logs') as any;
+    return this.interpolationForAttribute('s3_logs');
   }
 }
 
@@ -122,7 +122,7 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
 
   // instance_types - computed: true, optional: false, required: false
   public get instanceTypes() {
-    return this.getListAttribute('instance_types');
+    return cdktf.Fn.tolist(this.getListAttribute('instance_types'));
   }
 
   // key_pair - computed: true, optional: false, required: false
@@ -132,7 +132,7 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
 
   // logging - computed: true, optional: false, required: false
   public logging(index: string) {
-    return new DataAwsImagebuilderInfrastructureConfigurationLogging(this, 'logging', index);
+    return new DataAwsImagebuilderInfrastructureConfigurationLogging(this, 'logging', index, false);
   }
 
   // name - computed: true, optional: false, required: false
@@ -141,12 +141,11 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
   }
 
   // resource_tags - computed: true, optional: true, required: false
-  private _resourceTags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _resourceTags?: { [key: string]: string }; 
   public get resourceTags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('resource_tags') as any;
+    return this.getStringMapAttribute('resource_tags');
   }
-  public set resourceTags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set resourceTags(value: { [key: string]: string }) {
     this._resourceTags = value;
   }
   public resetResourceTags() {
@@ -159,7 +158,7 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
 
   // security_group_ids - computed: true, optional: false, required: false
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
 
   // sns_topic_arn - computed: true, optional: false, required: false
@@ -173,12 +172,11 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -191,7 +189,7 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
 
   // terminate_instance_on_failure - computed: true, optional: false, required: false
   public get terminateInstanceOnFailure() {
-    return this.getBooleanAttribute('terminate_instance_on_failure') as any;
+    return this.getBooleanAttribute('terminate_instance_on_failure');
   }
 
   // =========
@@ -201,8 +199,8 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       arn: cdktf.stringToTerraform(this._arn),
-      resource_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._resourceTags),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      resource_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._resourceTags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

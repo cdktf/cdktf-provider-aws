@@ -92,7 +92,7 @@ export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
 
   // exportable_log_types - computed: true, optional: false, required: false
   public get exportableLogTypes() {
-    return this.getListAttribute('exportable_log_types');
+    return cdktf.Fn.tolist(this.getListAttribute('exportable_log_types'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -139,47 +139,47 @@ export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
 
   // supported_character_sets - computed: true, optional: false, required: false
   public get supportedCharacterSets() {
-    return this.getListAttribute('supported_character_sets');
+    return cdktf.Fn.tolist(this.getListAttribute('supported_character_sets'));
   }
 
   // supported_feature_names - computed: true, optional: false, required: false
   public get supportedFeatureNames() {
-    return this.getListAttribute('supported_feature_names');
+    return cdktf.Fn.tolist(this.getListAttribute('supported_feature_names'));
   }
 
   // supported_modes - computed: true, optional: false, required: false
   public get supportedModes() {
-    return this.getListAttribute('supported_modes');
+    return cdktf.Fn.tolist(this.getListAttribute('supported_modes'));
   }
 
   // supported_timezones - computed: true, optional: false, required: false
   public get supportedTimezones() {
-    return this.getListAttribute('supported_timezones');
+    return cdktf.Fn.tolist(this.getListAttribute('supported_timezones'));
   }
 
   // supports_global_databases - computed: true, optional: false, required: false
   public get supportsGlobalDatabases() {
-    return this.getBooleanAttribute('supports_global_databases') as any;
+    return this.getBooleanAttribute('supports_global_databases');
   }
 
   // supports_log_exports_to_cloudwatch - computed: true, optional: false, required: false
   public get supportsLogExportsToCloudwatch() {
-    return this.getBooleanAttribute('supports_log_exports_to_cloudwatch') as any;
+    return this.getBooleanAttribute('supports_log_exports_to_cloudwatch');
   }
 
   // supports_parallel_query - computed: true, optional: false, required: false
   public get supportsParallelQuery() {
-    return this.getBooleanAttribute('supports_parallel_query') as any;
+    return this.getBooleanAttribute('supports_parallel_query');
   }
 
   // supports_read_replica - computed: true, optional: false, required: false
   public get supportsReadReplica() {
-    return this.getBooleanAttribute('supports_read_replica') as any;
+    return this.getBooleanAttribute('supports_read_replica');
   }
 
   // valid_upgrade_targets - computed: true, optional: false, required: false
   public get validUpgradeTargets() {
-    return this.getListAttribute('valid_upgrade_targets');
+    return cdktf.Fn.tolist(this.getListAttribute('valid_upgrade_targets'));
   }
 
   // version - computed: true, optional: true, required: false

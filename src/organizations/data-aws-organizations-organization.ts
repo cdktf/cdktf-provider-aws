@@ -94,7 +94,7 @@ export class DataAwsOrganizationsOrganizationRoots extends cdktf.ComplexComputed
   // policy_types - computed: true, optional: false, required: false
   public get policyTypes() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('policy_types') as any;
+    return this.interpolationForAttribute('policy_types');
   }
 }
 
@@ -138,7 +138,7 @@ export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource 
 
   // accounts - computed: true, optional: false, required: false
   public accounts(index: string) {
-    return new DataAwsOrganizationsOrganizationAccounts(this, 'accounts', index);
+    return new DataAwsOrganizationsOrganizationAccounts(this, 'accounts', index, false);
   }
 
   // arn - computed: true, optional: false, required: false
@@ -148,12 +148,12 @@ export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource 
 
   // aws_service_access_principals - computed: true, optional: false, required: false
   public get awsServiceAccessPrincipals() {
-    return this.getListAttribute('aws_service_access_principals');
+    return cdktf.Fn.tolist(this.getListAttribute('aws_service_access_principals'));
   }
 
   // enabled_policy_types - computed: true, optional: false, required: false
   public get enabledPolicyTypes() {
-    return this.getListAttribute('enabled_policy_types');
+    return cdktf.Fn.tolist(this.getListAttribute('enabled_policy_types'));
   }
 
   // feature_set - computed: true, optional: false, required: false
@@ -183,12 +183,12 @@ export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource 
 
   // non_master_accounts - computed: true, optional: false, required: false
   public nonMasterAccounts(index: string) {
-    return new DataAwsOrganizationsOrganizationNonMasterAccounts(this, 'non_master_accounts', index);
+    return new DataAwsOrganizationsOrganizationNonMasterAccounts(this, 'non_master_accounts', index, false);
   }
 
   // roots - computed: true, optional: false, required: false
   public roots(index: string) {
-    return new DataAwsOrganizationsOrganizationRoots(this, 'roots', index);
+    return new DataAwsOrganizationsOrganizationRoots(this, 'roots', index, false);
   }
 
   // =========

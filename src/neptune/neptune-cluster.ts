@@ -102,11 +102,11 @@ export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#tags NeptuneCluster#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#tags_all NeptuneCluster#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster#vpc_security_group_ids NeptuneCluster#vpc_security_group_ids}
   */
@@ -133,8 +133,8 @@ export interface NeptuneClusterTimeouts {
   readonly update?: string;
 }
 
-export function neptuneClusterTimeoutsToTerraform(struct?: NeptuneClusterTimeoutsOutputReference | NeptuneClusterTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function neptuneClusterTimeoutsToTerraform(struct?: NeptuneClusterTimeoutsOutputReference | NeptuneClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -153,7 +153,7 @@ export class NeptuneClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -307,7 +307,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // apply_immediately - computed: true, optional: true, required: false
   private _applyImmediately?: boolean | cdktf.IResolvable; 
   public get applyImmediately() {
-    return this.getBooleanAttribute('apply_immediately') as any;
+    return this.getBooleanAttribute('apply_immediately');
   }
   public set applyImmediately(value: boolean | cdktf.IResolvable) {
     this._applyImmediately = value;
@@ -328,7 +328,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // availability_zones - computed: true, optional: true, required: false
   private _availabilityZones?: string[]; 
   public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
+    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
   }
   public set availabilityZones(value: string[]) {
     this._availabilityZones = value;
@@ -391,7 +391,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
 
   // cluster_members - computed: true, optional: false, required: false
   public get clusterMembers() {
-    return this.getListAttribute('cluster_members');
+    return cdktf.Fn.tolist(this.getListAttribute('cluster_members'));
   }
 
   // cluster_resource_id - computed: true, optional: false, required: false
@@ -402,7 +402,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // copy_tags_to_snapshot - computed: false, optional: true, required: false
   private _copyTagsToSnapshot?: boolean | cdktf.IResolvable; 
   public get copyTagsToSnapshot() {
-    return this.getBooleanAttribute('copy_tags_to_snapshot') as any;
+    return this.getBooleanAttribute('copy_tags_to_snapshot');
   }
   public set copyTagsToSnapshot(value: boolean | cdktf.IResolvable) {
     this._copyTagsToSnapshot = value;
@@ -418,7 +418,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // deletion_protection - computed: false, optional: true, required: false
   private _deletionProtection?: boolean | cdktf.IResolvable; 
   public get deletionProtection() {
-    return this.getBooleanAttribute('deletion_protection') as any;
+    return this.getBooleanAttribute('deletion_protection');
   }
   public set deletionProtection(value: boolean | cdktf.IResolvable) {
     this._deletionProtection = value;
@@ -434,7 +434,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // enable_cloudwatch_logs_exports - computed: false, optional: true, required: false
   private _enableCloudwatchLogsExports?: string[]; 
   public get enableCloudwatchLogsExports() {
-    return this.getListAttribute('enable_cloudwatch_logs_exports');
+    return cdktf.Fn.tolist(this.getListAttribute('enable_cloudwatch_logs_exports'));
   }
   public set enableCloudwatchLogsExports(value: string[]) {
     this._enableCloudwatchLogsExports = value;
@@ -508,7 +508,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // iam_database_authentication_enabled - computed: false, optional: true, required: false
   private _iamDatabaseAuthenticationEnabled?: boolean | cdktf.IResolvable; 
   public get iamDatabaseAuthenticationEnabled() {
-    return this.getBooleanAttribute('iam_database_authentication_enabled') as any;
+    return this.getBooleanAttribute('iam_database_authentication_enabled');
   }
   public set iamDatabaseAuthenticationEnabled(value: boolean | cdktf.IResolvable) {
     this._iamDatabaseAuthenticationEnabled = value;
@@ -524,7 +524,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // iam_roles - computed: false, optional: true, required: false
   private _iamRoles?: string[]; 
   public get iamRoles() {
-    return this.getListAttribute('iam_roles');
+    return cdktf.Fn.tolist(this.getListAttribute('iam_roles'));
   }
   public set iamRoles(value: string[]) {
     this._iamRoles = value;
@@ -662,7 +662,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // skip_final_snapshot - computed: false, optional: true, required: false
   private _skipFinalSnapshot?: boolean | cdktf.IResolvable; 
   public get skipFinalSnapshot() {
-    return this.getBooleanAttribute('skip_final_snapshot') as any;
+    return this.getBooleanAttribute('skip_final_snapshot');
   }
   public set skipFinalSnapshot(value: boolean | cdktf.IResolvable) {
     this._skipFinalSnapshot = value;
@@ -694,7 +694,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // storage_encrypted - computed: false, optional: true, required: false
   private _storageEncrypted?: boolean | cdktf.IResolvable; 
   public get storageEncrypted() {
-    return this.getBooleanAttribute('storage_encrypted') as any;
+    return this.getBooleanAttribute('storage_encrypted');
   }
   public set storageEncrypted(value: boolean | cdktf.IResolvable) {
     this._storageEncrypted = value;
@@ -708,12 +708,11 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -725,12 +724,11 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -744,7 +742,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[]; 
   public get vpcSecurityGroupIds() {
-    return this.getListAttribute('vpc_security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
   }
   public set vpcSecurityGroupIds(value: string[]) {
     this._vpcSecurityGroupIds = value;
@@ -758,7 +756,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new NeptuneClusterTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new NeptuneClusterTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -802,8 +800,8 @@ export class NeptuneCluster extends cdktf.TerraformResource {
       skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
       snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
       storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
       timeouts: neptuneClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };

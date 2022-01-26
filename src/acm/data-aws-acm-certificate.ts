@@ -26,7 +26,7 @@ export interface DataAwsAcmCertificateConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/acm_certificate#tags DataAwsAcmCertificate#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/acm_certificate#types DataAwsAcmCertificate#types}
   */
@@ -103,7 +103,7 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
   // key_types - computed: false, optional: true, required: false
   private _keyTypes?: string[]; 
   public get keyTypes() {
-    return this.getListAttribute('key_types');
+    return cdktf.Fn.tolist(this.getListAttribute('key_types'));
   }
   public set keyTypes(value: string[]) {
     this._keyTypes = value;
@@ -119,7 +119,7 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
   // most_recent - computed: false, optional: true, required: false
   private _mostRecent?: boolean | cdktf.IResolvable; 
   public get mostRecent() {
-    return this.getBooleanAttribute('most_recent') as any;
+    return this.getBooleanAttribute('most_recent');
   }
   public set mostRecent(value: boolean | cdktf.IResolvable) {
     this._mostRecent = value;
@@ -154,12 +154,11 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -196,7 +195,7 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
       key_types: cdktf.listMapper(cdktf.stringToTerraform)(this._keyTypes),
       most_recent: cdktf.booleanToTerraform(this._mostRecent),
       statuses: cdktf.listMapper(cdktf.stringToTerraform)(this._statuses),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       types: cdktf.listMapper(cdktf.stringToTerraform)(this._types),
     };
   }

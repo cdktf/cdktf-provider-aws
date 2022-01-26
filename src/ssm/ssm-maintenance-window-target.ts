@@ -32,7 +32,7 @@ export interface SsmMaintenanceWindowTargetConfig extends cdktf.TerraformMetaArg
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_target#targets SsmMaintenanceWindowTarget#targets}
   */
-  readonly targets: SsmMaintenanceWindowTargetTargets[];
+  readonly targets: SsmMaintenanceWindowTargetTargets[] | cdktf.IResolvable;
 }
 export interface SsmMaintenanceWindowTargetTargets {
   /**
@@ -45,8 +45,8 @@ export interface SsmMaintenanceWindowTargetTargets {
   readonly values: string[];
 }
 
-export function ssmMaintenanceWindowTargetTargetsToTerraform(struct?: SsmMaintenanceWindowTargetTargets): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ssmMaintenanceWindowTargetTargetsToTerraform(struct?: SsmMaintenanceWindowTargetTargets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -181,12 +181,12 @@ export class SsmMaintenanceWindowTarget extends cdktf.TerraformResource {
   }
 
   // targets - computed: false, optional: false, required: true
-  private _targets?: SsmMaintenanceWindowTargetTargets[]; 
+  private _targets?: SsmMaintenanceWindowTargetTargets[] | cdktf.IResolvable; 
   public get targets() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('targets') as any;
+    return this.interpolationForAttribute('targets');
   }
-  public set targets(value: SsmMaintenanceWindowTargetTargets[]) {
+  public set targets(value: SsmMaintenanceWindowTargetTargets[] | cdktf.IResolvable) {
     this._targets = value;
   }
   // Temporarily expose input value. Use with caution.

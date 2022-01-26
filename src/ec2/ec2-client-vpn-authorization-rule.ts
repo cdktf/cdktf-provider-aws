@@ -91,7 +91,7 @@ export class Ec2ClientVpnAuthorizationRule extends cdktf.TerraformResource {
   // authorize_all_groups - computed: false, optional: true, required: false
   private _authorizeAllGroups?: boolean | cdktf.IResolvable; 
   public get authorizeAllGroups() {
-    return this.getBooleanAttribute('authorize_all_groups') as any;
+    return this.getBooleanAttribute('authorize_all_groups');
   }
   public set authorizeAllGroups(value: boolean | cdktf.IResolvable) {
     this._authorizeAllGroups = value;

@@ -32,7 +32,7 @@ export interface LambdaCodeSigningConfigAllowedPublishers {
 }
 
 export function lambdaCodeSigningConfigAllowedPublishersToTerraform(struct?: LambdaCodeSigningConfigAllowedPublishersOutputReference | LambdaCodeSigningConfigAllowedPublishers): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -49,7 +49,7 @@ export class LambdaCodeSigningConfigAllowedPublishersOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -77,7 +77,7 @@ export class LambdaCodeSigningConfigAllowedPublishersOutputReference extends cdk
   // signing_profile_version_arns - computed: false, optional: false, required: true
   private _signingProfileVersionArns?: string[]; 
   public get signingProfileVersionArns() {
-    return this.getListAttribute('signing_profile_version_arns');
+    return cdktf.Fn.tolist(this.getListAttribute('signing_profile_version_arns'));
   }
   public set signingProfileVersionArns(value: string[]) {
     this._signingProfileVersionArns = value;
@@ -95,7 +95,7 @@ export interface LambdaCodeSigningConfigPolicies {
 }
 
 export function lambdaCodeSigningConfigPoliciesToTerraform(struct?: LambdaCodeSigningConfigPoliciesOutputReference | LambdaCodeSigningConfigPolicies): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -112,7 +112,7 @@ export class LambdaCodeSigningConfigPoliciesOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -229,7 +229,7 @@ export class LambdaCodeSigningConfig extends cdktf.TerraformResource {
   }
 
   // allowed_publishers - computed: false, optional: false, required: true
-  private _allowedPublishers = new LambdaCodeSigningConfigAllowedPublishersOutputReference(this as any, "allowed_publishers", true);
+  private _allowedPublishers = new LambdaCodeSigningConfigAllowedPublishersOutputReference(this, "allowed_publishers", true);
   public get allowedPublishers() {
     return this._allowedPublishers;
   }
@@ -242,7 +242,7 @@ export class LambdaCodeSigningConfig extends cdktf.TerraformResource {
   }
 
   // policies - computed: false, optional: true, required: false
-  private _policies = new LambdaCodeSigningConfigPoliciesOutputReference(this as any, "policies", true);
+  private _policies = new LambdaCodeSigningConfigPoliciesOutputReference(this, "policies", true);
   public get policies() {
     return this._policies;
   }

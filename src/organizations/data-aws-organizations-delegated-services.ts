@@ -79,7 +79,7 @@ export class DataAwsOrganizationsDelegatedServices extends cdktf.TerraformDataSo
 
   // delegated_services - computed: true, optional: false, required: false
   public delegatedServices(index: string) {
-    return new DataAwsOrganizationsDelegatedServicesDelegatedServices(this, 'delegated_services', index);
+    return new DataAwsOrganizationsDelegatedServicesDelegatedServices(this, 'delegated_services', index, true);
   }
 
   // id - computed: true, optional: true, required: false

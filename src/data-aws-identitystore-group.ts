@@ -20,7 +20,7 @@ export interface DataAwsIdentitystoreGroupConfig extends cdktf.TerraformMetaArgu
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/identitystore_group#filter DataAwsIdentitystoreGroup#filter}
   */
-  readonly filter: DataAwsIdentitystoreGroupFilter[];
+  readonly filter: DataAwsIdentitystoreGroupFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsIdentitystoreGroupFilter {
   /**
@@ -33,8 +33,8 @@ export interface DataAwsIdentitystoreGroupFilter {
   readonly attributeValue: string;
 }
 
-export function dataAwsIdentitystoreGroupFilterToTerraform(struct?: DataAwsIdentitystoreGroupFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsIdentitystoreGroupFilterToTerraform(struct?: DataAwsIdentitystoreGroupFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -126,12 +126,12 @@ export class DataAwsIdentitystoreGroup extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: false, required: true
-  private _filter?: DataAwsIdentitystoreGroupFilter[]; 
+  private _filter?: DataAwsIdentitystoreGroupFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsIdentitystoreGroupFilter[]) {
+  public set filter(value: DataAwsIdentitystoreGroupFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   // Temporarily expose input value. Use with caution.

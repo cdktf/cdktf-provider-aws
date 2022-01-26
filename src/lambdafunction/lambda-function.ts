@@ -86,11 +86,11 @@ export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#tags LambdaFunction#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#tags_all LambdaFunction#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#timeout LambdaFunction#timeout}
   */
@@ -146,7 +146,7 @@ export interface LambdaFunctionDeadLetterConfig {
 }
 
 export function lambdaFunctionDeadLetterConfigToTerraform(struct?: LambdaFunctionDeadLetterConfigOutputReference | LambdaFunctionDeadLetterConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -163,7 +163,7 @@ export class LambdaFunctionDeadLetterConfigOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -205,16 +205,16 @@ export interface LambdaFunctionEnvironment {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#variables LambdaFunction#variables}
   */
-  readonly variables?: { [key: string]: string } | cdktf.IResolvable;
+  readonly variables?: { [key: string]: string };
 }
 
 export function lambdaFunctionEnvironmentToTerraform(struct?: LambdaFunctionEnvironmentOutputReference | LambdaFunctionEnvironment): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    variables: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.variables),
+    variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.variables),
   }
 }
 
@@ -226,7 +226,7 @@ export class LambdaFunctionEnvironmentOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -252,12 +252,11 @@ export class LambdaFunctionEnvironmentOutputReference extends cdktf.ComplexObjec
   }
 
   // variables - computed: false, optional: true, required: false
-  private _variables?: { [key: string]: string } | cdktf.IResolvable; 
+  private _variables?: { [key: string]: string }; 
   public get variables() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('variables') as any;
+    return this.getStringMapAttribute('variables');
   }
-  public set variables(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set variables(value: { [key: string]: string }) {
     this._variables = value;
   }
   public resetVariables() {
@@ -280,7 +279,7 @@ export interface LambdaFunctionFileSystemConfig {
 }
 
 export function lambdaFunctionFileSystemConfigToTerraform(struct?: LambdaFunctionFileSystemConfigOutputReference | LambdaFunctionFileSystemConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -298,7 +297,7 @@ export class LambdaFunctionFileSystemConfigOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -371,7 +370,7 @@ export interface LambdaFunctionImageConfig {
 }
 
 export function lambdaFunctionImageConfigToTerraform(struct?: LambdaFunctionImageConfigOutputReference | LambdaFunctionImageConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -390,7 +389,7 @@ export class LambdaFunctionImageConfigOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -482,8 +481,8 @@ export interface LambdaFunctionTimeouts {
   readonly create?: string;
 }
 
-export function lambdaFunctionTimeoutsToTerraform(struct?: LambdaFunctionTimeoutsOutputReference | LambdaFunctionTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lambdaFunctionTimeoutsToTerraform(struct?: LambdaFunctionTimeoutsOutputReference | LambdaFunctionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -500,7 +499,7 @@ export class LambdaFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -549,7 +548,7 @@ export interface LambdaFunctionTracingConfig {
 }
 
 export function lambdaFunctionTracingConfigToTerraform(struct?: LambdaFunctionTracingConfigOutputReference | LambdaFunctionTracingConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -566,7 +565,7 @@ export class LambdaFunctionTracingConfigOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -616,7 +615,7 @@ export interface LambdaFunctionVpcConfig {
 }
 
 export function lambdaFunctionVpcConfigToTerraform(struct?: LambdaFunctionVpcConfigOutputReference | LambdaFunctionVpcConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -634,7 +633,7 @@ export class LambdaFunctionVpcConfigOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -668,7 +667,7 @@ export class LambdaFunctionVpcConfigOutputReference extends cdktf.ComplexObject 
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -681,7 +680,7 @@ export class LambdaFunctionVpcConfigOutputReference extends cdktf.ComplexObject 
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -689,6 +688,11 @@ export class LambdaFunctionVpcConfigOutputReference extends cdktf.ComplexObject 
   // Temporarily expose input value. Use with caution.
   public get subnetIdsInput() {
     return this._subnetIds;
+  }
+
+  // vpc_id - computed: true, optional: false, required: false
+  public get vpcId() {
+    return this.getStringAttribute('vpc_id');
   }
 }
 
@@ -955,7 +959,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
   // publish - computed: false, optional: true, required: false
   private _publish?: boolean | cdktf.IResolvable; 
   public get publish() {
-    return this.getBooleanAttribute('publish') as any;
+    return this.getBooleanAttribute('publish');
   }
   public set publish(value: boolean | cdktf.IResolvable) {
     this._publish = value;
@@ -1098,12 +1102,11 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -1115,12 +1118,11 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -1153,7 +1155,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // dead_letter_config - computed: false, optional: true, required: false
-  private _deadLetterConfig = new LambdaFunctionDeadLetterConfigOutputReference(this as any, "dead_letter_config", true);
+  private _deadLetterConfig = new LambdaFunctionDeadLetterConfigOutputReference(this, "dead_letter_config", true);
   public get deadLetterConfig() {
     return this._deadLetterConfig;
   }
@@ -1169,7 +1171,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // environment - computed: false, optional: true, required: false
-  private _environment = new LambdaFunctionEnvironmentOutputReference(this as any, "environment", true);
+  private _environment = new LambdaFunctionEnvironmentOutputReference(this, "environment", true);
   public get environment() {
     return this._environment;
   }
@@ -1185,7 +1187,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // file_system_config - computed: false, optional: true, required: false
-  private _fileSystemConfig = new LambdaFunctionFileSystemConfigOutputReference(this as any, "file_system_config", true);
+  private _fileSystemConfig = new LambdaFunctionFileSystemConfigOutputReference(this, "file_system_config", true);
   public get fileSystemConfig() {
     return this._fileSystemConfig;
   }
@@ -1201,7 +1203,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // image_config - computed: false, optional: true, required: false
-  private _imageConfig = new LambdaFunctionImageConfigOutputReference(this as any, "image_config", true);
+  private _imageConfig = new LambdaFunctionImageConfigOutputReference(this, "image_config", true);
   public get imageConfig() {
     return this._imageConfig;
   }
@@ -1217,7 +1219,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new LambdaFunctionTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new LambdaFunctionTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -1233,7 +1235,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // tracing_config - computed: false, optional: true, required: false
-  private _tracingConfig = new LambdaFunctionTracingConfigOutputReference(this as any, "tracing_config", true);
+  private _tracingConfig = new LambdaFunctionTracingConfigOutputReference(this, "tracing_config", true);
   public get tracingConfig() {
     return this._tracingConfig;
   }
@@ -1249,7 +1251,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // vpc_config - computed: false, optional: true, required: false
-  private _vpcConfig = new LambdaFunctionVpcConfigOutputReference(this as any, "vpc_config", true);
+  private _vpcConfig = new LambdaFunctionVpcConfigOutputReference(this, "vpc_config", true);
   public get vpcConfig() {
     return this._vpcConfig;
   }
@@ -1289,8 +1291,8 @@ export class LambdaFunction extends cdktf.TerraformResource {
       s3_key: cdktf.stringToTerraform(this._s3Key),
       s3_object_version: cdktf.stringToTerraform(this._s3ObjectVersion),
       source_code_hash: cdktf.stringToTerraform(this._sourceCodeHash),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeout: cdktf.numberToTerraform(this._timeout),
       dead_letter_config: lambdaFunctionDeadLetterConfigToTerraform(this._deadLetterConfig.internalValue),
       environment: lambdaFunctionEnvironmentToTerraform(this._environment.internalValue),

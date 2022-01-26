@@ -20,7 +20,7 @@ export interface RedshiftSecurityGroupConfig extends cdktf.TerraformMetaArgument
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_security_group#ingress RedshiftSecurityGroup#ingress}
   */
-  readonly ingress: RedshiftSecurityGroupIngress[];
+  readonly ingress: RedshiftSecurityGroupIngress[] | cdktf.IResolvable;
 }
 export interface RedshiftSecurityGroupIngress {
   /**
@@ -37,8 +37,8 @@ export interface RedshiftSecurityGroupIngress {
   readonly securityGroupOwnerId?: string;
 }
 
-export function redshiftSecurityGroupIngressToTerraform(struct?: RedshiftSecurityGroupIngress): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function redshiftSecurityGroupIngressToTerraform(struct?: RedshiftSecurityGroupIngress | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -126,12 +126,12 @@ export class RedshiftSecurityGroup extends cdktf.TerraformResource {
   }
 
   // ingress - computed: false, optional: false, required: true
-  private _ingress?: RedshiftSecurityGroupIngress[]; 
+  private _ingress?: RedshiftSecurityGroupIngress[] | cdktf.IResolvable; 
   public get ingress() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ingress') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ingress')));
   }
-  public set ingress(value: RedshiftSecurityGroupIngress[]) {
+  public set ingress(value: RedshiftSecurityGroupIngress[] | cdktf.IResolvable) {
     this._ingress = value;
   }
   // Temporarily expose input value. Use with caution.

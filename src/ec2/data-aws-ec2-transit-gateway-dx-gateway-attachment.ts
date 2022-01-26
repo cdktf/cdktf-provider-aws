@@ -14,7 +14,7 @@ export interface DataAwsEc2TransitGatewayDxGatewayAttachmentConfig extends cdktf
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_dx_gateway_attachment#tags DataAwsEc2TransitGatewayDxGatewayAttachment#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_dx_gateway_attachment#transit_gateway_id DataAwsEc2TransitGatewayDxGatewayAttachment#transit_gateway_id}
   */
@@ -24,7 +24,7 @@ export interface DataAwsEc2TransitGatewayDxGatewayAttachmentConfig extends cdktf
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_dx_gateway_attachment#filter DataAwsEc2TransitGatewayDxGatewayAttachment#filter}
   */
-  readonly filter?: DataAwsEc2TransitGatewayDxGatewayAttachmentFilter[];
+  readonly filter?: DataAwsEc2TransitGatewayDxGatewayAttachmentFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsEc2TransitGatewayDxGatewayAttachmentFilter {
   /**
@@ -37,8 +37,8 @@ export interface DataAwsEc2TransitGatewayDxGatewayAttachmentFilter {
   readonly values: string[];
 }
 
-export function dataAwsEc2TransitGatewayDxGatewayAttachmentFilterToTerraform(struct?: DataAwsEc2TransitGatewayDxGatewayAttachmentFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsEc2TransitGatewayDxGatewayAttachmentFilterToTerraform(struct?: DataAwsEc2TransitGatewayDxGatewayAttachmentFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -113,12 +113,11 @@ export class DataAwsEc2TransitGatewayDxGatewayAttachment extends cdktf.Terraform
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -146,12 +145,12 @@ export class DataAwsEc2TransitGatewayDxGatewayAttachment extends cdktf.Terraform
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsEc2TransitGatewayDxGatewayAttachmentFilter[]; 
+  private _filter?: DataAwsEc2TransitGatewayDxGatewayAttachmentFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsEc2TransitGatewayDxGatewayAttachmentFilter[]) {
+  public set filter(value: DataAwsEc2TransitGatewayDxGatewayAttachmentFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -169,7 +168,7 @@ export class DataAwsEc2TransitGatewayDxGatewayAttachment extends cdktf.Terraform
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
       filter: cdktf.listMapper(dataAwsEc2TransitGatewayDxGatewayAttachmentFilterToTerraform)(this._filter),
     };

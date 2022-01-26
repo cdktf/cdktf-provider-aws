@@ -68,7 +68,7 @@ export interface LexBotConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_bot#intent LexBot#intent}
   */
-  readonly intent: LexBotIntent[];
+  readonly intent: LexBotIntent[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -91,8 +91,8 @@ export interface LexBotAbortStatementMessage {
   readonly groupNumber?: number;
 }
 
-export function lexBotAbortStatementMessageToTerraform(struct?: LexBotAbortStatementMessage): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lexBotAbortStatementMessageToTerraform(struct?: LexBotAbortStatementMessage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -113,11 +113,11 @@ export interface LexBotAbortStatement {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_bot#message LexBot#message}
   */
-  readonly message: LexBotAbortStatementMessage[];
+  readonly message: LexBotAbortStatementMessage[] | cdktf.IResolvable;
 }
 
 export function lexBotAbortStatementToTerraform(struct?: LexBotAbortStatementOutputReference | LexBotAbortStatement): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -135,7 +135,7 @@ export class LexBotAbortStatementOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -183,12 +183,12 @@ export class LexBotAbortStatementOutputReference extends cdktf.ComplexObject {
   }
 
   // message - computed: false, optional: false, required: true
-  private _message?: LexBotAbortStatementMessage[]; 
+  private _message?: LexBotAbortStatementMessage[] | cdktf.IResolvable; 
   public get message() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('message') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('message')));
   }
-  public set message(value: LexBotAbortStatementMessage[]) {
+  public set message(value: LexBotAbortStatementMessage[] | cdktf.IResolvable) {
     this._message = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -211,8 +211,8 @@ export interface LexBotClarificationPromptMessage {
   readonly groupNumber?: number;
 }
 
-export function lexBotClarificationPromptMessageToTerraform(struct?: LexBotClarificationPromptMessage): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lexBotClarificationPromptMessageToTerraform(struct?: LexBotClarificationPromptMessage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -237,11 +237,11 @@ export interface LexBotClarificationPrompt {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_bot#message LexBot#message}
   */
-  readonly message: LexBotClarificationPromptMessage[];
+  readonly message: LexBotClarificationPromptMessage[] | cdktf.IResolvable;
 }
 
 export function lexBotClarificationPromptToTerraform(struct?: LexBotClarificationPromptOutputReference | LexBotClarificationPrompt): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -260,7 +260,7 @@ export class LexBotClarificationPromptOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -327,12 +327,12 @@ export class LexBotClarificationPromptOutputReference extends cdktf.ComplexObjec
   }
 
   // message - computed: false, optional: false, required: true
-  private _message?: LexBotClarificationPromptMessage[]; 
+  private _message?: LexBotClarificationPromptMessage[] | cdktf.IResolvable; 
   public get message() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('message') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('message')));
   }
-  public set message(value: LexBotClarificationPromptMessage[]) {
+  public set message(value: LexBotClarificationPromptMessage[] | cdktf.IResolvable) {
     this._message = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -351,8 +351,8 @@ export interface LexBotIntent {
   readonly intentVersion: string;
 }
 
-export function lexBotIntentToTerraform(struct?: LexBotIntent): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lexBotIntentToTerraform(struct?: LexBotIntent | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -377,8 +377,8 @@ export interface LexBotTimeouts {
   readonly update?: string;
 }
 
-export function lexBotTimeoutsToTerraform(struct?: LexBotTimeoutsOutputReference | LexBotTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lexBotTimeoutsToTerraform(struct?: LexBotTimeoutsOutputReference | LexBotTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -397,7 +397,7 @@ export class LexBotTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -549,7 +549,7 @@ export class LexBot extends cdktf.TerraformResource {
   // child_directed - computed: false, optional: false, required: true
   private _childDirected?: boolean | cdktf.IResolvable; 
   public get childDirected() {
-    return this.getBooleanAttribute('child_directed') as any;
+    return this.getBooleanAttribute('child_directed');
   }
   public set childDirected(value: boolean | cdktf.IResolvable) {
     this._childDirected = value;
@@ -562,7 +562,7 @@ export class LexBot extends cdktf.TerraformResource {
   // create_version - computed: false, optional: true, required: false
   private _createVersion?: boolean | cdktf.IResolvable; 
   public get createVersion() {
-    return this.getBooleanAttribute('create_version') as any;
+    return this.getBooleanAttribute('create_version');
   }
   public set createVersion(value: boolean | cdktf.IResolvable) {
     this._createVersion = value;
@@ -599,7 +599,7 @@ export class LexBot extends cdktf.TerraformResource {
   // detect_sentiment - computed: false, optional: true, required: false
   private _detectSentiment?: boolean | cdktf.IResolvable; 
   public get detectSentiment() {
-    return this.getBooleanAttribute('detect_sentiment') as any;
+    return this.getBooleanAttribute('detect_sentiment');
   }
   public set detectSentiment(value: boolean | cdktf.IResolvable) {
     this._detectSentiment = value;
@@ -615,7 +615,7 @@ export class LexBot extends cdktf.TerraformResource {
   // enable_model_improvements - computed: false, optional: true, required: false
   private _enableModelImprovements?: boolean | cdktf.IResolvable; 
   public get enableModelImprovements() {
-    return this.getBooleanAttribute('enable_model_improvements') as any;
+    return this.getBooleanAttribute('enable_model_improvements');
   }
   public set enableModelImprovements(value: boolean | cdktf.IResolvable) {
     this._enableModelImprovements = value;
@@ -747,7 +747,7 @@ export class LexBot extends cdktf.TerraformResource {
   }
 
   // abort_statement - computed: false, optional: false, required: true
-  private _abortStatement = new LexBotAbortStatementOutputReference(this as any, "abort_statement", true);
+  private _abortStatement = new LexBotAbortStatementOutputReference(this, "abort_statement", true);
   public get abortStatement() {
     return this._abortStatement;
   }
@@ -760,7 +760,7 @@ export class LexBot extends cdktf.TerraformResource {
   }
 
   // clarification_prompt - computed: false, optional: true, required: false
-  private _clarificationPrompt = new LexBotClarificationPromptOutputReference(this as any, "clarification_prompt", true);
+  private _clarificationPrompt = new LexBotClarificationPromptOutputReference(this, "clarification_prompt", true);
   public get clarificationPrompt() {
     return this._clarificationPrompt;
   }
@@ -776,12 +776,12 @@ export class LexBot extends cdktf.TerraformResource {
   }
 
   // intent - computed: false, optional: false, required: true
-  private _intent?: LexBotIntent[]; 
+  private _intent?: LexBotIntent[] | cdktf.IResolvable; 
   public get intent() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('intent') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('intent')));
   }
-  public set intent(value: LexBotIntent[]) {
+  public set intent(value: LexBotIntent[] | cdktf.IResolvable) {
     this._intent = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -790,7 +790,7 @@ export class LexBot extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new LexBotTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new LexBotTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

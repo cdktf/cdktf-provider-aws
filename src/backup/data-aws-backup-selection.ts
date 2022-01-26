@@ -87,7 +87,7 @@ export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
 
   // resources - computed: true, optional: false, required: false
   public get resources() {
-    return this.getListAttribute('resources');
+    return cdktf.Fn.tolist(this.getListAttribute('resources'));
   }
 
   // selection_id - computed: false, optional: false, required: true

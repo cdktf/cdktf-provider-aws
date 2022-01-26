@@ -150,11 +150,11 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#tags RdsCluster#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#tags_all RdsCluster#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#vpc_security_group_ids RdsCluster#vpc_security_group_ids}
   */
@@ -204,7 +204,7 @@ export interface RdsClusterRestoreToPointInTime {
 }
 
 export function rdsClusterRestoreToPointInTimeToTerraform(struct?: RdsClusterRestoreToPointInTimeOutputReference | RdsClusterRestoreToPointInTime): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -224,7 +224,7 @@ export class RdsClusterRestoreToPointInTimeOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -315,7 +315,7 @@ export class RdsClusterRestoreToPointInTimeOutputReference extends cdktf.Complex
   // use_latest_restorable_time - computed: false, optional: true, required: false
   private _useLatestRestorableTime?: boolean | cdktf.IResolvable; 
   public get useLatestRestorableTime() {
-    return this.getBooleanAttribute('use_latest_restorable_time') as any;
+    return this.getBooleanAttribute('use_latest_restorable_time');
   }
   public set useLatestRestorableTime(value: boolean | cdktf.IResolvable) {
     this._useLatestRestorableTime = value;
@@ -352,7 +352,7 @@ export interface RdsClusterS3Import {
 }
 
 export function rdsClusterS3ImportToTerraform(struct?: RdsClusterS3ImportOutputReference | RdsClusterS3Import): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -373,7 +373,7 @@ export class RdsClusterS3ImportOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -514,7 +514,7 @@ export interface RdsClusterScalingConfiguration {
 }
 
 export function rdsClusterScalingConfigurationToTerraform(struct?: RdsClusterScalingConfigurationOutputReference | RdsClusterScalingConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -535,7 +535,7 @@ export class RdsClusterScalingConfigurationOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -587,7 +587,7 @@ export class RdsClusterScalingConfigurationOutputReference extends cdktf.Complex
   // auto_pause - computed: false, optional: true, required: false
   private _autoPause?: boolean | cdktf.IResolvable; 
   public get autoPause() {
-    return this.getBooleanAttribute('auto_pause') as any;
+    return this.getBooleanAttribute('auto_pause');
   }
   public set autoPause(value: boolean | cdktf.IResolvable) {
     this._autoPause = value;
@@ -679,8 +679,8 @@ export interface RdsClusterTimeouts {
   readonly update?: string;
 }
 
-export function rdsClusterTimeoutsToTerraform(struct?: RdsClusterTimeoutsOutputReference | RdsClusterTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function rdsClusterTimeoutsToTerraform(struct?: RdsClusterTimeoutsOutputReference | RdsClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -699,7 +699,7 @@ export class RdsClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -868,7 +868,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   // allow_major_version_upgrade - computed: false, optional: true, required: false
   private _allowMajorVersionUpgrade?: boolean | cdktf.IResolvable; 
   public get allowMajorVersionUpgrade() {
-    return this.getBooleanAttribute('allow_major_version_upgrade') as any;
+    return this.getBooleanAttribute('allow_major_version_upgrade');
   }
   public set allowMajorVersionUpgrade(value: boolean | cdktf.IResolvable) {
     this._allowMajorVersionUpgrade = value;
@@ -884,7 +884,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   // apply_immediately - computed: true, optional: true, required: false
   private _applyImmediately?: boolean | cdktf.IResolvable; 
   public get applyImmediately() {
-    return this.getBooleanAttribute('apply_immediately') as any;
+    return this.getBooleanAttribute('apply_immediately');
   }
   public set applyImmediately(value: boolean | cdktf.IResolvable) {
     this._applyImmediately = value;
@@ -905,7 +905,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   // availability_zones - computed: true, optional: true, required: false
   private _availabilityZones?: string[]; 
   public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
+    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
   }
   public set availabilityZones(value: string[]) {
     this._availabilityZones = value;
@@ -985,7 +985,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   // cluster_members - computed: true, optional: true, required: false
   private _clusterMembers?: string[]; 
   public get clusterMembers() {
-    return this.getListAttribute('cluster_members');
+    return cdktf.Fn.tolist(this.getListAttribute('cluster_members'));
   }
   public set clusterMembers(value: string[]) {
     this._clusterMembers = value;
@@ -1006,7 +1006,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   // copy_tags_to_snapshot - computed: false, optional: true, required: false
   private _copyTagsToSnapshot?: boolean | cdktf.IResolvable; 
   public get copyTagsToSnapshot() {
-    return this.getBooleanAttribute('copy_tags_to_snapshot') as any;
+    return this.getBooleanAttribute('copy_tags_to_snapshot');
   }
   public set copyTagsToSnapshot(value: boolean | cdktf.IResolvable) {
     this._copyTagsToSnapshot = value;
@@ -1086,7 +1086,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   // deletion_protection - computed: false, optional: true, required: false
   private _deletionProtection?: boolean | cdktf.IResolvable; 
   public get deletionProtection() {
-    return this.getBooleanAttribute('deletion_protection') as any;
+    return this.getBooleanAttribute('deletion_protection');
   }
   public set deletionProtection(value: boolean | cdktf.IResolvable) {
     this._deletionProtection = value;
@@ -1102,7 +1102,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   // enable_global_write_forwarding - computed: false, optional: true, required: false
   private _enableGlobalWriteForwarding?: boolean | cdktf.IResolvable; 
   public get enableGlobalWriteForwarding() {
-    return this.getBooleanAttribute('enable_global_write_forwarding') as any;
+    return this.getBooleanAttribute('enable_global_write_forwarding');
   }
   public set enableGlobalWriteForwarding(value: boolean | cdktf.IResolvable) {
     this._enableGlobalWriteForwarding = value;
@@ -1118,7 +1118,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   // enable_http_endpoint - computed: false, optional: true, required: false
   private _enableHttpEndpoint?: boolean | cdktf.IResolvable; 
   public get enableHttpEndpoint() {
-    return this.getBooleanAttribute('enable_http_endpoint') as any;
+    return this.getBooleanAttribute('enable_http_endpoint');
   }
   public set enableHttpEndpoint(value: boolean | cdktf.IResolvable) {
     this._enableHttpEndpoint = value;
@@ -1134,7 +1134,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   // enabled_cloudwatch_logs_exports - computed: false, optional: true, required: false
   private _enabledCloudwatchLogsExports?: string[]; 
   public get enabledCloudwatchLogsExports() {
-    return this.getListAttribute('enabled_cloudwatch_logs_exports');
+    return cdktf.Fn.tolist(this.getListAttribute('enabled_cloudwatch_logs_exports'));
   }
   public set enabledCloudwatchLogsExports(value: string[]) {
     this._enabledCloudwatchLogsExports = value;
@@ -1245,7 +1245,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   // iam_database_authentication_enabled - computed: false, optional: true, required: false
   private _iamDatabaseAuthenticationEnabled?: boolean | cdktf.IResolvable; 
   public get iamDatabaseAuthenticationEnabled() {
-    return this.getBooleanAttribute('iam_database_authentication_enabled') as any;
+    return this.getBooleanAttribute('iam_database_authentication_enabled');
   }
   public set iamDatabaseAuthenticationEnabled(value: boolean | cdktf.IResolvable) {
     this._iamDatabaseAuthenticationEnabled = value;
@@ -1261,7 +1261,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   // iam_roles - computed: true, optional: true, required: false
   private _iamRoles?: string[]; 
   public get iamRoles() {
-    return this.getListAttribute('iam_roles');
+    return cdktf.Fn.tolist(this.getListAttribute('iam_roles'));
   }
   public set iamRoles(value: string[]) {
     this._iamRoles = value;
@@ -1399,7 +1399,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   // skip_final_snapshot - computed: false, optional: true, required: false
   private _skipFinalSnapshot?: boolean | cdktf.IResolvable; 
   public get skipFinalSnapshot() {
-    return this.getBooleanAttribute('skip_final_snapshot') as any;
+    return this.getBooleanAttribute('skip_final_snapshot');
   }
   public set skipFinalSnapshot(value: boolean | cdktf.IResolvable) {
     this._skipFinalSnapshot = value;
@@ -1447,7 +1447,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   // storage_encrypted - computed: true, optional: true, required: false
   private _storageEncrypted?: boolean | cdktf.IResolvable; 
   public get storageEncrypted() {
-    return this.getBooleanAttribute('storage_encrypted') as any;
+    return this.getBooleanAttribute('storage_encrypted');
   }
   public set storageEncrypted(value: boolean | cdktf.IResolvable) {
     this._storageEncrypted = value;
@@ -1461,12 +1461,11 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -1478,12 +1477,11 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -1497,7 +1495,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[]; 
   public get vpcSecurityGroupIds() {
-    return this.getListAttribute('vpc_security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
   }
   public set vpcSecurityGroupIds(value: string[]) {
     this._vpcSecurityGroupIds = value;
@@ -1511,7 +1509,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // restore_to_point_in_time - computed: false, optional: true, required: false
-  private _restoreToPointInTime = new RdsClusterRestoreToPointInTimeOutputReference(this as any, "restore_to_point_in_time", true);
+  private _restoreToPointInTime = new RdsClusterRestoreToPointInTimeOutputReference(this, "restore_to_point_in_time", true);
   public get restoreToPointInTime() {
     return this._restoreToPointInTime;
   }
@@ -1527,7 +1525,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // s3_import - computed: false, optional: true, required: false
-  private _s3Import = new RdsClusterS3ImportOutputReference(this as any, "s3_import", true);
+  private _s3Import = new RdsClusterS3ImportOutputReference(this, "s3_import", true);
   public get s3Import() {
     return this._s3Import;
   }
@@ -1543,7 +1541,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // scaling_configuration - computed: false, optional: true, required: false
-  private _scalingConfiguration = new RdsClusterScalingConfigurationOutputReference(this as any, "scaling_configuration", true);
+  private _scalingConfiguration = new RdsClusterScalingConfigurationOutputReference(this, "scaling_configuration", true);
   public get scalingConfiguration() {
     return this._scalingConfiguration;
   }
@@ -1559,7 +1557,7 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new RdsClusterTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new RdsClusterTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -1615,8 +1613,8 @@ export class RdsCluster extends cdktf.TerraformResource {
       snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
       source_region: cdktf.stringToTerraform(this._sourceRegion),
       storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
       restore_to_point_in_time: rdsClusterRestoreToPointInTimeToTerraform(this._restoreToPointInTime.internalValue),
       s3_import: rdsClusterS3ImportToTerraform(this._s3Import.internalValue),

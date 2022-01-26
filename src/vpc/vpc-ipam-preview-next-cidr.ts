@@ -70,7 +70,7 @@ export class VpcIpamPreviewNextCidr extends cdktf.TerraformResource {
   // disallowed_cidrs - computed: false, optional: true, required: false
   private _disallowedCidrs?: string[]; 
   public get disallowedCidrs() {
-    return this.getListAttribute('disallowed_cidrs');
+    return cdktf.Fn.tolist(this.getListAttribute('disallowed_cidrs'));
   }
   public set disallowedCidrs(value: string[]) {
     this._disallowedCidrs = value;

@@ -91,7 +91,7 @@ export class CloudwatchLogDestinationPolicy extends cdktf.TerraformResource {
   // force_update - computed: false, optional: true, required: false
   private _forceUpdate?: boolean | cdktf.IResolvable; 
   public get forceUpdate() {
-    return this.getBooleanAttribute('force_update') as any;
+    return this.getBooleanAttribute('force_update');
   }
   public set forceUpdate(value: boolean | cdktf.IResolvable) {
     this._forceUpdate = value;

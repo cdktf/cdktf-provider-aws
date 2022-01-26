@@ -76,7 +76,7 @@ export class DataAwsAutoscalingGroup extends cdktf.TerraformDataSource {
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
+    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
   }
 
   // default_cooldown - computed: true, optional: false, required: false
@@ -111,12 +111,12 @@ export class DataAwsAutoscalingGroup extends cdktf.TerraformDataSource {
 
   // launch_template - computed: true, optional: false, required: false
   public launchTemplate(index: string) {
-    return new DataAwsAutoscalingGroupLaunchTemplate(this, 'launch_template', index);
+    return new DataAwsAutoscalingGroupLaunchTemplate(this, 'launch_template', index, false);
   }
 
   // load_balancers - computed: true, optional: false, required: false
   public get loadBalancers() {
-    return this.getListAttribute('load_balancers');
+    return cdktf.Fn.tolist(this.getListAttribute('load_balancers'));
   }
 
   // max_size - computed: true, optional: false, required: false
@@ -144,7 +144,7 @@ export class DataAwsAutoscalingGroup extends cdktf.TerraformDataSource {
 
   // new_instances_protected_from_scale_in - computed: true, optional: false, required: false
   public get newInstancesProtectedFromScaleIn() {
-    return this.getBooleanAttribute('new_instances_protected_from_scale_in') as any;
+    return this.getBooleanAttribute('new_instances_protected_from_scale_in');
   }
 
   // placement_group - computed: true, optional: false, required: false
@@ -164,12 +164,12 @@ export class DataAwsAutoscalingGroup extends cdktf.TerraformDataSource {
 
   // target_group_arns - computed: true, optional: false, required: false
   public get targetGroupArns() {
-    return this.getListAttribute('target_group_arns');
+    return cdktf.Fn.tolist(this.getListAttribute('target_group_arns'));
   }
 
   // termination_policies - computed: true, optional: false, required: false
   public get terminationPolicies() {
-    return this.getListAttribute('termination_policies');
+    return cdktf.Fn.tolist(this.getListAttribute('termination_policies'));
   }
 
   // vpc_zone_identifier - computed: true, optional: false, required: false

@@ -16,7 +16,7 @@ export interface WafregionalSizeConstraintSetConfig extends cdktf.TerraformMetaA
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_size_constraint_set#size_constraints WafregionalSizeConstraintSet#size_constraints}
   */
-  readonly sizeConstraints?: WafregionalSizeConstraintSetSizeConstraints[];
+  readonly sizeConstraints?: WafregionalSizeConstraintSetSizeConstraints[] | cdktf.IResolvable;
 }
 export interface WafregionalSizeConstraintSetSizeConstraintsFieldToMatch {
   /**
@@ -30,7 +30,7 @@ export interface WafregionalSizeConstraintSetSizeConstraintsFieldToMatch {
 }
 
 export function wafregionalSizeConstraintSetSizeConstraintsFieldToMatchToTerraform(struct?: WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference | WafregionalSizeConstraintSetSizeConstraintsFieldToMatch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -48,7 +48,7 @@ export class WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputRefere
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -129,8 +129,8 @@ export interface WafregionalSizeConstraintSetSizeConstraints {
   readonly fieldToMatch: WafregionalSizeConstraintSetSizeConstraintsFieldToMatch;
 }
 
-export function wafregionalSizeConstraintSetSizeConstraintsToTerraform(struct?: WafregionalSizeConstraintSetSizeConstraints): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafregionalSizeConstraintSetSizeConstraintsToTerraform(struct?: WafregionalSizeConstraintSetSizeConstraints | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -207,12 +207,12 @@ export class WafregionalSizeConstraintSet extends cdktf.TerraformResource {
   }
 
   // size_constraints - computed: false, optional: true, required: false
-  private _sizeConstraints?: WafregionalSizeConstraintSetSizeConstraints[]; 
+  private _sizeConstraints?: WafregionalSizeConstraintSetSizeConstraints[] | cdktf.IResolvable; 
   public get sizeConstraints() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('size_constraints') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('size_constraints')));
   }
-  public set sizeConstraints(value: WafregionalSizeConstraintSetSizeConstraints[]) {
+  public set sizeConstraints(value: WafregionalSizeConstraintSetSizeConstraints[] | cdktf.IResolvable) {
     this._sizeConstraints = value;
   }
   public resetSizeConstraints() {

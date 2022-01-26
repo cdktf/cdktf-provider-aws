@@ -76,13 +76,13 @@ export interface LaunchConfigurationConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration#ebs_block_device LaunchConfiguration#ebs_block_device}
   */
-  readonly ebsBlockDevice?: LaunchConfigurationEbsBlockDevice[];
+  readonly ebsBlockDevice?: LaunchConfigurationEbsBlockDevice[] | cdktf.IResolvable;
   /**
   * ephemeral_block_device block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration#ephemeral_block_device LaunchConfiguration#ephemeral_block_device}
   */
-  readonly ephemeralBlockDevice?: LaunchConfigurationEphemeralBlockDevice[];
+  readonly ephemeralBlockDevice?: LaunchConfigurationEphemeralBlockDevice[] | cdktf.IResolvable;
   /**
   * metadata_options block
   * 
@@ -135,8 +135,8 @@ export interface LaunchConfigurationEbsBlockDevice {
   readonly volumeType?: string;
 }
 
-export function launchConfigurationEbsBlockDeviceToTerraform(struct?: LaunchConfigurationEbsBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function launchConfigurationEbsBlockDeviceToTerraform(struct?: LaunchConfigurationEbsBlockDevice | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -164,8 +164,8 @@ export interface LaunchConfigurationEphemeralBlockDevice {
   readonly virtualName: string;
 }
 
-export function launchConfigurationEphemeralBlockDeviceToTerraform(struct?: LaunchConfigurationEphemeralBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function launchConfigurationEphemeralBlockDeviceToTerraform(struct?: LaunchConfigurationEphemeralBlockDevice | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -191,7 +191,7 @@ export interface LaunchConfigurationMetadataOptions {
 }
 
 export function launchConfigurationMetadataOptionsToTerraform(struct?: LaunchConfigurationMetadataOptionsOutputReference | LaunchConfigurationMetadataOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -210,7 +210,7 @@ export class LaunchConfigurationMetadataOptionsOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -323,7 +323,7 @@ export interface LaunchConfigurationRootBlockDevice {
 }
 
 export function launchConfigurationRootBlockDeviceToTerraform(struct?: LaunchConfigurationRootBlockDeviceOutputReference | LaunchConfigurationRootBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -345,7 +345,7 @@ export class LaunchConfigurationRootBlockDeviceOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -403,7 +403,7 @@ export class LaunchConfigurationRootBlockDeviceOutputReference extends cdktf.Com
   // delete_on_termination - computed: false, optional: true, required: false
   private _deleteOnTermination?: boolean | cdktf.IResolvable; 
   public get deleteOnTermination() {
-    return this.getBooleanAttribute('delete_on_termination') as any;
+    return this.getBooleanAttribute('delete_on_termination');
   }
   public set deleteOnTermination(value: boolean | cdktf.IResolvable) {
     this._deleteOnTermination = value;
@@ -419,7 +419,7 @@ export class LaunchConfigurationRootBlockDeviceOutputReference extends cdktf.Com
   // encrypted - computed: true, optional: true, required: false
   private _encrypted?: boolean | cdktf.IResolvable; 
   public get encrypted() {
-    return this.getBooleanAttribute('encrypted') as any;
+    return this.getBooleanAttribute('encrypted');
   }
   public set encrypted(value: boolean | cdktf.IResolvable) {
     this._encrypted = value;
@@ -563,7 +563,7 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   // associate_public_ip_address - computed: false, optional: true, required: false
   private _associatePublicIpAddress?: boolean | cdktf.IResolvable; 
   public get associatePublicIpAddress() {
-    return this.getBooleanAttribute('associate_public_ip_address') as any;
+    return this.getBooleanAttribute('associate_public_ip_address');
   }
   public set associatePublicIpAddress(value: boolean | cdktf.IResolvable) {
     this._associatePublicIpAddress = value;
@@ -579,7 +579,7 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   // ebs_optimized - computed: true, optional: true, required: false
   private _ebsOptimized?: boolean | cdktf.IResolvable; 
   public get ebsOptimized() {
-    return this.getBooleanAttribute('ebs_optimized') as any;
+    return this.getBooleanAttribute('ebs_optimized');
   }
   public set ebsOptimized(value: boolean | cdktf.IResolvable) {
     this._ebsOptimized = value;
@@ -595,7 +595,7 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   // enable_monitoring - computed: false, optional: true, required: false
   private _enableMonitoring?: boolean | cdktf.IResolvable; 
   public get enableMonitoring() {
-    return this.getBooleanAttribute('enable_monitoring') as any;
+    return this.getBooleanAttribute('enable_monitoring');
   }
   public set enableMonitoring(value: boolean | cdktf.IResolvable) {
     this._enableMonitoring = value;
@@ -722,7 +722,7 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   // security_groups - computed: false, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -802,7 +802,7 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   // vpc_classic_link_security_groups - computed: false, optional: true, required: false
   private _vpcClassicLinkSecurityGroups?: string[]; 
   public get vpcClassicLinkSecurityGroups() {
-    return this.getListAttribute('vpc_classic_link_security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('vpc_classic_link_security_groups'));
   }
   public set vpcClassicLinkSecurityGroups(value: string[]) {
     this._vpcClassicLinkSecurityGroups = value;
@@ -816,12 +816,12 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   }
 
   // ebs_block_device - computed: false, optional: true, required: false
-  private _ebsBlockDevice?: LaunchConfigurationEbsBlockDevice[]; 
+  private _ebsBlockDevice?: LaunchConfigurationEbsBlockDevice[] | cdktf.IResolvable; 
   public get ebsBlockDevice() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ebs_block_device') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ebs_block_device')));
   }
-  public set ebsBlockDevice(value: LaunchConfigurationEbsBlockDevice[]) {
+  public set ebsBlockDevice(value: LaunchConfigurationEbsBlockDevice[] | cdktf.IResolvable) {
     this._ebsBlockDevice = value;
   }
   public resetEbsBlockDevice() {
@@ -833,12 +833,12 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   }
 
   // ephemeral_block_device - computed: false, optional: true, required: false
-  private _ephemeralBlockDevice?: LaunchConfigurationEphemeralBlockDevice[]; 
+  private _ephemeralBlockDevice?: LaunchConfigurationEphemeralBlockDevice[] | cdktf.IResolvable; 
   public get ephemeralBlockDevice() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ephemeral_block_device') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ephemeral_block_device')));
   }
-  public set ephemeralBlockDevice(value: LaunchConfigurationEphemeralBlockDevice[]) {
+  public set ephemeralBlockDevice(value: LaunchConfigurationEphemeralBlockDevice[] | cdktf.IResolvable) {
     this._ephemeralBlockDevice = value;
   }
   public resetEphemeralBlockDevice() {
@@ -850,7 +850,7 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   }
 
   // metadata_options - computed: false, optional: true, required: false
-  private _metadataOptions = new LaunchConfigurationMetadataOptionsOutputReference(this as any, "metadata_options", true);
+  private _metadataOptions = new LaunchConfigurationMetadataOptionsOutputReference(this, "metadata_options", true);
   public get metadataOptions() {
     return this._metadataOptions;
   }
@@ -866,7 +866,7 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   }
 
   // root_block_device - computed: false, optional: true, required: false
-  private _rootBlockDevice = new LaunchConfigurationRootBlockDeviceOutputReference(this as any, "root_block_device", true);
+  private _rootBlockDevice = new LaunchConfigurationRootBlockDeviceOutputReference(this, "root_block_device", true);
   public get rootBlockDevice() {
     return this._rootBlockDevice;
   }

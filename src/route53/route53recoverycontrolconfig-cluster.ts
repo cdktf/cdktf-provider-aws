@@ -71,7 +71,7 @@ export class Route53RecoverycontrolconfigCluster extends cdktf.TerraformResource
 
   // cluster_endpoints - computed: true, optional: false, required: false
   public clusterEndpoints(index: string) {
-    return new Route53RecoverycontrolconfigClusterClusterEndpoints(this, 'cluster_endpoints', index);
+    return new Route53RecoverycontrolconfigClusterClusterEndpoints(this, 'cluster_endpoints', index, false);
   }
 
   // id - computed: true, optional: true, required: false

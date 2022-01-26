@@ -24,13 +24,13 @@ export interface LakeformationDataLakeSettingsConfig extends cdktf.TerraformMeta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lakeformation_data_lake_settings#create_database_default_permissions LakeformationDataLakeSettings#create_database_default_permissions}
   */
-  readonly createDatabaseDefaultPermissions?: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[];
+  readonly createDatabaseDefaultPermissions?: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[] | cdktf.IResolvable;
   /**
   * create_table_default_permissions block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lakeformation_data_lake_settings#create_table_default_permissions LakeformationDataLakeSettings#create_table_default_permissions}
   */
-  readonly createTableDefaultPermissions?: LakeformationDataLakeSettingsCreateTableDefaultPermissions[];
+  readonly createTableDefaultPermissions?: LakeformationDataLakeSettingsCreateTableDefaultPermissions[] | cdktf.IResolvable;
 }
 export interface LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions {
   /**
@@ -43,8 +43,8 @@ export interface LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions {
   readonly principal?: string;
 }
 
-export function lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToTerraform(struct?: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToTerraform(struct?: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -65,8 +65,8 @@ export interface LakeformationDataLakeSettingsCreateTableDefaultPermissions {
   readonly principal?: string;
 }
 
-export function lakeformationDataLakeSettingsCreateTableDefaultPermissionsToTerraform(struct?: LakeformationDataLakeSettingsCreateTableDefaultPermissions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lakeformationDataLakeSettingsCreateTableDefaultPermissionsToTerraform(struct?: LakeformationDataLakeSettingsCreateTableDefaultPermissions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -123,7 +123,7 @@ export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
   // admins - computed: true, optional: true, required: false
   private _admins?: string[]; 
   public get admins() {
-    return this.getListAttribute('admins');
+    return cdktf.Fn.tolist(this.getListAttribute('admins'));
   }
   public set admins(value: string[]) {
     this._admins = value;
@@ -174,12 +174,12 @@ export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
   }
 
   // create_database_default_permissions - computed: false, optional: true, required: false
-  private _createDatabaseDefaultPermissions?: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[]; 
+  private _createDatabaseDefaultPermissions?: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[] | cdktf.IResolvable; 
   public get createDatabaseDefaultPermissions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('create_database_default_permissions') as any;
+    return this.interpolationForAttribute('create_database_default_permissions');
   }
-  public set createDatabaseDefaultPermissions(value: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[]) {
+  public set createDatabaseDefaultPermissions(value: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[] | cdktf.IResolvable) {
     this._createDatabaseDefaultPermissions = value;
   }
   public resetCreateDatabaseDefaultPermissions() {
@@ -191,12 +191,12 @@ export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
   }
 
   // create_table_default_permissions - computed: false, optional: true, required: false
-  private _createTableDefaultPermissions?: LakeformationDataLakeSettingsCreateTableDefaultPermissions[]; 
+  private _createTableDefaultPermissions?: LakeformationDataLakeSettingsCreateTableDefaultPermissions[] | cdktf.IResolvable; 
   public get createTableDefaultPermissions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('create_table_default_permissions') as any;
+    return this.interpolationForAttribute('create_table_default_permissions');
   }
-  public set createTableDefaultPermissions(value: LakeformationDataLakeSettingsCreateTableDefaultPermissions[]) {
+  public set createTableDefaultPermissions(value: LakeformationDataLakeSettingsCreateTableDefaultPermissions[] | cdktf.IResolvable) {
     this._createTableDefaultPermissions = value;
   }
   public resetCreateTableDefaultPermissions() {

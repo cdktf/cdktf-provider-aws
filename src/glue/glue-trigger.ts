@@ -30,11 +30,11 @@ export interface GlueTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger#tags GlueTrigger#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger#tags_all GlueTrigger#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger#type GlueTrigger#type}
   */
@@ -48,7 +48,7 @@ export interface GlueTriggerConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger#actions GlueTrigger#actions}
   */
-  readonly actions: GlueTriggerActions[];
+  readonly actions: GlueTriggerActions[] | cdktf.IResolvable;
   /**
   * predicate block
   * 
@@ -70,7 +70,7 @@ export interface GlueTriggerActionsNotificationProperty {
 }
 
 export function glueTriggerActionsNotificationPropertyToTerraform(struct?: GlueTriggerActionsNotificationPropertyOutputReference | GlueTriggerActionsNotificationProperty): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -87,7 +87,7 @@ export class GlueTriggerActionsNotificationPropertyOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -132,7 +132,7 @@ export interface GlueTriggerActions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger#arguments GlueTrigger#arguments}
   */
-  readonly arguments?: { [key: string]: string } | cdktf.IResolvable;
+  readonly arguments?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger#crawler_name GlueTrigger#crawler_name}
   */
@@ -157,13 +157,13 @@ export interface GlueTriggerActions {
   readonly notificationProperty?: GlueTriggerActionsNotificationProperty;
 }
 
-export function glueTriggerActionsToTerraform(struct?: GlueTriggerActions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function glueTriggerActionsToTerraform(struct?: GlueTriggerActions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arguments: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.arguments),
+    arguments: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.arguments),
     crawler_name: cdktf.stringToTerraform(struct!.crawlerName),
     job_name: cdktf.stringToTerraform(struct!.jobName),
     security_configuration: cdktf.stringToTerraform(struct!.securityConfiguration),
@@ -195,8 +195,8 @@ export interface GlueTriggerPredicateConditions {
   readonly state?: string;
 }
 
-export function glueTriggerPredicateConditionsToTerraform(struct?: GlueTriggerPredicateConditions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function glueTriggerPredicateConditionsToTerraform(struct?: GlueTriggerPredicateConditions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -219,11 +219,11 @@ export interface GlueTriggerPredicate {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger#conditions GlueTrigger#conditions}
   */
-  readonly conditions: GlueTriggerPredicateConditions[];
+  readonly conditions: GlueTriggerPredicateConditions[] | cdktf.IResolvable;
 }
 
 export function glueTriggerPredicateToTerraform(struct?: GlueTriggerPredicateOutputReference | GlueTriggerPredicate): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -241,7 +241,7 @@ export class GlueTriggerPredicateOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -289,12 +289,12 @@ export class GlueTriggerPredicateOutputReference extends cdktf.ComplexObject {
   }
 
   // conditions - computed: false, optional: false, required: true
-  private _conditions?: GlueTriggerPredicateConditions[]; 
+  private _conditions?: GlueTriggerPredicateConditions[] | cdktf.IResolvable; 
   public get conditions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('conditions') as any;
+    return this.interpolationForAttribute('conditions');
   }
-  public set conditions(value: GlueTriggerPredicateConditions[]) {
+  public set conditions(value: GlueTriggerPredicateConditions[] | cdktf.IResolvable) {
     this._conditions = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -313,8 +313,8 @@ export interface GlueTriggerTimeouts {
   readonly delete?: string;
 }
 
-export function glueTriggerTimeoutsToTerraform(struct?: GlueTriggerTimeoutsOutputReference | GlueTriggerTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function glueTriggerTimeoutsToTerraform(struct?: GlueTriggerTimeoutsOutputReference | GlueTriggerTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -332,7 +332,7 @@ export class GlueTriggerTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -470,7 +470,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -520,7 +520,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
   // start_on_creation - computed: false, optional: true, required: false
   private _startOnCreation?: boolean | cdktf.IResolvable; 
   public get startOnCreation() {
-    return this.getBooleanAttribute('start_on_creation') as any;
+    return this.getBooleanAttribute('start_on_creation');
   }
   public set startOnCreation(value: boolean | cdktf.IResolvable) {
     this._startOnCreation = value;
@@ -539,12 +539,11 @@ export class GlueTrigger extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -556,12 +555,11 @@ export class GlueTrigger extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -602,12 +600,12 @@ export class GlueTrigger extends cdktf.TerraformResource {
   }
 
   // actions - computed: false, optional: false, required: true
-  private _actions?: GlueTriggerActions[]; 
+  private _actions?: GlueTriggerActions[] | cdktf.IResolvable; 
   public get actions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('actions') as any;
+    return this.interpolationForAttribute('actions');
   }
-  public set actions(value: GlueTriggerActions[]) {
+  public set actions(value: GlueTriggerActions[] | cdktf.IResolvable) {
     this._actions = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -616,7 +614,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
   }
 
   // predicate - computed: false, optional: true, required: false
-  private _predicate = new GlueTriggerPredicateOutputReference(this as any, "predicate", true);
+  private _predicate = new GlueTriggerPredicateOutputReference(this, "predicate", true);
   public get predicate() {
     return this._predicate;
   }
@@ -632,7 +630,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new GlueTriggerTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new GlueTriggerTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -658,8 +656,8 @@ export class GlueTrigger extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       schedule: cdktf.stringToTerraform(this._schedule),
       start_on_creation: cdktf.booleanToTerraform(this._startOnCreation),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
       workflow_name: cdktf.stringToTerraform(this._workflowName),
       actions: cdktf.listMapper(glueTriggerActionsToTerraform)(this._actions),

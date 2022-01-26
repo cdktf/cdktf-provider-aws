@@ -42,17 +42,17 @@ export interface SecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret#tags SecretsmanagerSecret#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret#tags_all SecretsmanagerSecret#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * replica block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret#replica SecretsmanagerSecret#replica}
   */
-  readonly replica?: SecretsmanagerSecretReplica[];
+  readonly replica?: SecretsmanagerSecretReplica[] | cdktf.IResolvable;
   /**
   * rotation_rules block
   * 
@@ -71,8 +71,8 @@ export interface SecretsmanagerSecretReplica {
   readonly region: string;
 }
 
-export function secretsmanagerSecretReplicaToTerraform(struct?: SecretsmanagerSecretReplica): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function secretsmanagerSecretReplicaToTerraform(struct?: SecretsmanagerSecretReplica | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -90,7 +90,7 @@ export interface SecretsmanagerSecretRotationRules {
 }
 
 export function secretsmanagerSecretRotationRulesToTerraform(struct?: SecretsmanagerSecretRotationRulesOutputReference | SecretsmanagerSecretRotationRules): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -107,7 +107,7 @@ export class SecretsmanagerSecretRotationRulesOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -220,7 +220,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   // force_overwrite_replica_secret - computed: false, optional: true, required: false
   private _forceOverwriteReplicaSecret?: boolean | cdktf.IResolvable; 
   public get forceOverwriteReplicaSecret() {
-    return this.getBooleanAttribute('force_overwrite_replica_secret') as any;
+    return this.getBooleanAttribute('force_overwrite_replica_secret');
   }
   public set forceOverwriteReplicaSecret(value: boolean | cdktf.IResolvable) {
     this._forceOverwriteReplicaSecret = value;
@@ -320,7 +320,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
 
   // rotation_enabled - computed: true, optional: false, required: false
   public get rotationEnabled() {
-    return this.getBooleanAttribute('rotation_enabled') as any;
+    return this.getBooleanAttribute('rotation_enabled');
   }
 
   // rotation_lambda_arn - computed: true, optional: true, required: false
@@ -340,12 +340,11 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -357,12 +356,11 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -374,12 +372,12 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   }
 
   // replica - computed: false, optional: true, required: false
-  private _replica?: SecretsmanagerSecretReplica[]; 
+  private _replica?: SecretsmanagerSecretReplica[] | cdktf.IResolvable; 
   public get replica() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('replica') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('replica')));
   }
-  public set replica(value: SecretsmanagerSecretReplica[]) {
+  public set replica(value: SecretsmanagerSecretReplica[] | cdktf.IResolvable) {
     this._replica = value;
   }
   public resetReplica() {
@@ -391,7 +389,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   }
 
   // rotation_rules - computed: false, optional: true, required: false
-  private _rotationRules = new SecretsmanagerSecretRotationRulesOutputReference(this as any, "rotation_rules", true);
+  private _rotationRules = new SecretsmanagerSecretRotationRulesOutputReference(this, "rotation_rules", true);
   public get rotationRules() {
     return this._rotationRules;
   }
@@ -420,8 +418,8 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
       policy: cdktf.stringToTerraform(this._policy),
       recovery_window_in_days: cdktf.numberToTerraform(this._recoveryWindowInDays),
       rotation_lambda_arn: cdktf.stringToTerraform(this._rotationLambdaArn),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       replica: cdktf.listMapper(secretsmanagerSecretReplicaToTerraform)(this._replica),
       rotation_rules: secretsmanagerSecretRotationRulesToTerraform(this._rotationRules.internalValue),
     };

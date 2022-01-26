@@ -91,7 +91,7 @@ export class S3AccountPublicAccessBlock extends cdktf.TerraformResource {
   // block_public_acls - computed: false, optional: true, required: false
   private _blockPublicAcls?: boolean | cdktf.IResolvable; 
   public get blockPublicAcls() {
-    return this.getBooleanAttribute('block_public_acls') as any;
+    return this.getBooleanAttribute('block_public_acls');
   }
   public set blockPublicAcls(value: boolean | cdktf.IResolvable) {
     this._blockPublicAcls = value;
@@ -107,7 +107,7 @@ export class S3AccountPublicAccessBlock extends cdktf.TerraformResource {
   // block_public_policy - computed: false, optional: true, required: false
   private _blockPublicPolicy?: boolean | cdktf.IResolvable; 
   public get blockPublicPolicy() {
-    return this.getBooleanAttribute('block_public_policy') as any;
+    return this.getBooleanAttribute('block_public_policy');
   }
   public set blockPublicPolicy(value: boolean | cdktf.IResolvable) {
     this._blockPublicPolicy = value;
@@ -128,7 +128,7 @@ export class S3AccountPublicAccessBlock extends cdktf.TerraformResource {
   // ignore_public_acls - computed: false, optional: true, required: false
   private _ignorePublicAcls?: boolean | cdktf.IResolvable; 
   public get ignorePublicAcls() {
-    return this.getBooleanAttribute('ignore_public_acls') as any;
+    return this.getBooleanAttribute('ignore_public_acls');
   }
   public set ignorePublicAcls(value: boolean | cdktf.IResolvable) {
     this._ignorePublicAcls = value;
@@ -144,7 +144,7 @@ export class S3AccountPublicAccessBlock extends cdktf.TerraformResource {
   // restrict_public_buckets - computed: false, optional: true, required: false
   private _restrictPublicBuckets?: boolean | cdktf.IResolvable; 
   public get restrictPublicBuckets() {
-    return this.getBooleanAttribute('restrict_public_buckets') as any;
+    return this.getBooleanAttribute('restrict_public_buckets');
   }
   public set restrictPublicBuckets(value: boolean | cdktf.IResolvable) {
     this._restrictPublicBuckets = value;

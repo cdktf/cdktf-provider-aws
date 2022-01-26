@@ -22,7 +22,7 @@ export interface DataAwsRoute53ZoneConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route53_zone#tags DataAwsRoute53Zone#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route53_zone#vpc_id DataAwsRoute53Zone#vpc_id}
   */
@@ -131,7 +131,7 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
   // private_zone - computed: false, optional: true, required: false
   private _privateZone?: boolean | cdktf.IResolvable; 
   public get privateZone() {
-    return this.getBooleanAttribute('private_zone') as any;
+    return this.getBooleanAttribute('private_zone');
   }
   public set privateZone(value: boolean | cdktf.IResolvable) {
     this._privateZone = value;
@@ -161,12 +161,11 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -218,7 +217,7 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       private_zone: cdktf.booleanToTerraform(this._privateZone),
       resource_record_set_count: cdktf.numberToTerraform(this._resourceRecordSetCount),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       zone_id: cdktf.stringToTerraform(this._zoneId),
     };

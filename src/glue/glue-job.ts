@@ -14,7 +14,7 @@ export interface GlueJobConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job#default_arguments GlueJob#default_arguments}
   */
-  readonly defaultArguments?: { [key: string]: string } | cdktf.IResolvable;
+  readonly defaultArguments?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job#description GlueJob#description}
   */
@@ -38,7 +38,7 @@ export interface GlueJobConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job#non_overridable_arguments GlueJob#non_overridable_arguments}
   */
-  readonly nonOverridableArguments?: { [key: string]: string } | cdktf.IResolvable;
+  readonly nonOverridableArguments?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job#number_of_workers GlueJob#number_of_workers}
   */
@@ -54,11 +54,11 @@ export interface GlueJobConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job#tags GlueJob#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job#tags_all GlueJob#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job#timeout GlueJob#timeout}
   */
@@ -102,7 +102,7 @@ export interface GlueJobCommand {
 }
 
 export function glueJobCommandToTerraform(struct?: GlueJobCommandOutputReference | GlueJobCommand): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -121,7 +121,7 @@ export class GlueJobCommandOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -211,7 +211,7 @@ export interface GlueJobExecutionProperty {
 }
 
 export function glueJobExecutionPropertyToTerraform(struct?: GlueJobExecutionPropertyOutputReference | GlueJobExecutionProperty): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -228,7 +228,7 @@ export class GlueJobExecutionPropertyOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -277,7 +277,7 @@ export interface GlueJobNotificationProperty {
 }
 
 export function glueJobNotificationPropertyToTerraform(struct?: GlueJobNotificationPropertyOutputReference | GlueJobNotificationProperty): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -294,7 +294,7 @@ export class GlueJobNotificationPropertyOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -414,12 +414,11 @@ export class GlueJob extends cdktf.TerraformResource {
   }
 
   // default_arguments - computed: false, optional: true, required: false
-  private _defaultArguments?: { [key: string]: string } | cdktf.IResolvable; 
+  private _defaultArguments?: { [key: string]: string }; 
   public get defaultArguments() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('default_arguments') as any;
+    return this.getStringMapAttribute('default_arguments');
   }
-  public set defaultArguments(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set defaultArguments(value: { [key: string]: string }) {
     this._defaultArguments = value;
   }
   public resetDefaultArguments() {
@@ -513,12 +512,11 @@ export class GlueJob extends cdktf.TerraformResource {
   }
 
   // non_overridable_arguments - computed: false, optional: true, required: false
-  private _nonOverridableArguments?: { [key: string]: string } | cdktf.IResolvable; 
+  private _nonOverridableArguments?: { [key: string]: string }; 
   public get nonOverridableArguments() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('non_overridable_arguments') as any;
+    return this.getStringMapAttribute('non_overridable_arguments');
   }
-  public set nonOverridableArguments(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set nonOverridableArguments(value: { [key: string]: string }) {
     this._nonOverridableArguments = value;
   }
   public resetNonOverridableArguments() {
@@ -575,12 +573,11 @@ export class GlueJob extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -592,12 +589,11 @@ export class GlueJob extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -641,7 +637,7 @@ export class GlueJob extends cdktf.TerraformResource {
   }
 
   // command - computed: false, optional: false, required: true
-  private _command = new GlueJobCommandOutputReference(this as any, "command", true);
+  private _command = new GlueJobCommandOutputReference(this, "command", true);
   public get command() {
     return this._command;
   }
@@ -654,7 +650,7 @@ export class GlueJob extends cdktf.TerraformResource {
   }
 
   // execution_property - computed: false, optional: true, required: false
-  private _executionProperty = new GlueJobExecutionPropertyOutputReference(this as any, "execution_property", true);
+  private _executionProperty = new GlueJobExecutionPropertyOutputReference(this, "execution_property", true);
   public get executionProperty() {
     return this._executionProperty;
   }
@@ -670,7 +666,7 @@ export class GlueJob extends cdktf.TerraformResource {
   }
 
   // notification_property - computed: false, optional: true, required: false
-  private _notificationProperty = new GlueJobNotificationPropertyOutputReference(this as any, "notification_property", true);
+  private _notificationProperty = new GlueJobNotificationPropertyOutputReference(this, "notification_property", true);
   public get notificationProperty() {
     return this._notificationProperty;
   }
@@ -692,18 +688,18 @@ export class GlueJob extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       connections: cdktf.listMapper(cdktf.stringToTerraform)(this._connections),
-      default_arguments: cdktf.hashMapper(cdktf.anyToTerraform)(this._defaultArguments),
+      default_arguments: cdktf.hashMapper(cdktf.stringToTerraform)(this._defaultArguments),
       description: cdktf.stringToTerraform(this._description),
       glue_version: cdktf.stringToTerraform(this._glueVersion),
       max_capacity: cdktf.numberToTerraform(this._maxCapacity),
       max_retries: cdktf.numberToTerraform(this._maxRetries),
       name: cdktf.stringToTerraform(this._name),
-      non_overridable_arguments: cdktf.hashMapper(cdktf.anyToTerraform)(this._nonOverridableArguments),
+      non_overridable_arguments: cdktf.hashMapper(cdktf.stringToTerraform)(this._nonOverridableArguments),
       number_of_workers: cdktf.numberToTerraform(this._numberOfWorkers),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       security_configuration: cdktf.stringToTerraform(this._securityConfiguration),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeout: cdktf.numberToTerraform(this._timeout),
       worker_type: cdktf.stringToTerraform(this._workerType),
       command: glueJobCommandToTerraform(this._command.internalValue),

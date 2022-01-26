@@ -20,7 +20,7 @@ export interface DaxParameterGroupConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_parameter_group#parameters DaxParameterGroup#parameters}
   */
-  readonly parameters?: DaxParameterGroupParameters[];
+  readonly parameters?: DaxParameterGroupParameters[] | cdktf.IResolvable;
 }
 export interface DaxParameterGroupParameters {
   /**
@@ -33,8 +33,8 @@ export interface DaxParameterGroupParameters {
   readonly value: string;
 }
 
-export function daxParameterGroupParametersToTerraform(struct?: DaxParameterGroupParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function daxParameterGroupParametersToTerraform(struct?: DaxParameterGroupParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -121,12 +121,12 @@ export class DaxParameterGroup extends cdktf.TerraformResource {
   }
 
   // parameters - computed: false, optional: true, required: false
-  private _parameters?: DaxParameterGroupParameters[]; 
+  private _parameters?: DaxParameterGroupParameters[] | cdktf.IResolvable; 
   public get parameters() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('parameters') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('parameters')));
   }
-  public set parameters(value: DaxParameterGroupParameters[]) {
+  public set parameters(value: DaxParameterGroupParameters[] | cdktf.IResolvable) {
     this._parameters = value;
   }
   public resetParameters() {

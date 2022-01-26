@@ -55,7 +55,7 @@ export class SecurityhubOrganizationConfiguration extends cdktf.TerraformResourc
   // auto_enable - computed: false, optional: false, required: true
   private _autoEnable?: boolean | cdktf.IResolvable; 
   public get autoEnable() {
-    return this.getBooleanAttribute('auto_enable') as any;
+    return this.getBooleanAttribute('auto_enable');
   }
   public set autoEnable(value: boolean | cdktf.IResolvable) {
     this._autoEnable = value;

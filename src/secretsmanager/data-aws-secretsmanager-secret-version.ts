@@ -129,7 +129,7 @@ export class DataAwsSecretsmanagerSecretVersion extends cdktf.TerraformDataSourc
 
   // version_stages - computed: true, optional: false, required: false
   public get versionStages() {
-    return this.getListAttribute('version_stages');
+    return cdktf.Fn.tolist(this.getListAttribute('version_stages'));
   }
 
   // =========

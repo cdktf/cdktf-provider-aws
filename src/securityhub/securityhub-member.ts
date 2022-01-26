@@ -96,7 +96,7 @@ export class SecurityhubMember extends cdktf.TerraformResource {
   // invite - computed: false, optional: true, required: false
   private _invite?: boolean | cdktf.IResolvable; 
   public get invite() {
-    return this.getBooleanAttribute('invite') as any;
+    return this.getBooleanAttribute('invite');
   }
   public set invite(value: boolean | cdktf.IResolvable) {
     this._invite = value;

@@ -70,7 +70,7 @@ export class Ec2TransitGatewayPrefixListReference extends cdktf.TerraformResourc
   // blackhole - computed: false, optional: true, required: false
   private _blackhole?: boolean | cdktf.IResolvable; 
   public get blackhole() {
-    return this.getBooleanAttribute('blackhole') as any;
+    return this.getBooleanAttribute('blackhole');
   }
   public set blackhole(value: boolean | cdktf.IResolvable) {
     this._blackhole = value;

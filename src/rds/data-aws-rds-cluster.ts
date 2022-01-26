@@ -14,7 +14,7 @@ export interface DataAwsRdsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_cluster#tags DataAwsRdsCluster#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 
 /**
@@ -64,7 +64,7 @@ export class DataAwsRdsCluster extends cdktf.TerraformDataSource {
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
+    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
   }
 
   // backtrack_window - computed: true, optional: false, required: false
@@ -92,7 +92,7 @@ export class DataAwsRdsCluster extends cdktf.TerraformDataSource {
 
   // cluster_members - computed: true, optional: false, required: false
   public get clusterMembers() {
-    return this.getListAttribute('cluster_members');
+    return cdktf.Fn.tolist(this.getListAttribute('cluster_members'));
   }
 
   // cluster_resource_id - computed: true, optional: false, required: false
@@ -147,12 +147,12 @@ export class DataAwsRdsCluster extends cdktf.TerraformDataSource {
 
   // iam_database_authentication_enabled - computed: true, optional: false, required: false
   public get iamDatabaseAuthenticationEnabled() {
-    return this.getBooleanAttribute('iam_database_authentication_enabled') as any;
+    return this.getBooleanAttribute('iam_database_authentication_enabled');
   }
 
   // iam_roles - computed: true, optional: false, required: false
   public get iamRoles() {
-    return this.getListAttribute('iam_roles');
+    return cdktf.Fn.tolist(this.getListAttribute('iam_roles'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -197,16 +197,15 @@ export class DataAwsRdsCluster extends cdktf.TerraformDataSource {
 
   // storage_encrypted - computed: true, optional: false, required: false
   public get storageEncrypted() {
-    return this.getBooleanAttribute('storage_encrypted') as any;
+    return this.getBooleanAttribute('storage_encrypted');
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -219,7 +218,7 @@ export class DataAwsRdsCluster extends cdktf.TerraformDataSource {
 
   // vpc_security_group_ids - computed: true, optional: false, required: false
   public get vpcSecurityGroupIds() {
-    return this.getListAttribute('vpc_security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('vpc_security_group_ids'));
   }
 
   // =========
@@ -229,7 +228,7 @@ export class DataAwsRdsCluster extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

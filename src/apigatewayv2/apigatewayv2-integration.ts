@@ -58,11 +58,11 @@ export interface Apigatewayv2IntegrationConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration#request_parameters Apigatewayv2Integration#request_parameters}
   */
-  readonly requestParameters?: { [key: string]: string } | cdktf.IResolvable;
+  readonly requestParameters?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration#request_templates Apigatewayv2Integration#request_templates}
   */
-  readonly requestTemplates?: { [key: string]: string } | cdktf.IResolvable;
+  readonly requestTemplates?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration#template_selection_expression Apigatewayv2Integration#template_selection_expression}
   */
@@ -76,7 +76,7 @@ export interface Apigatewayv2IntegrationConfig extends cdktf.TerraformMetaArgume
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration#response_parameters Apigatewayv2Integration#response_parameters}
   */
-  readonly responseParameters?: Apigatewayv2IntegrationResponseParameters[];
+  readonly responseParameters?: Apigatewayv2IntegrationResponseParameters[] | cdktf.IResolvable;
   /**
   * tls_config block
   * 
@@ -88,20 +88,20 @@ export interface Apigatewayv2IntegrationResponseParameters {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration#mappings Apigatewayv2Integration#mappings}
   */
-  readonly mappings: { [key: string]: string } | cdktf.IResolvable;
+  readonly mappings: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration#status_code Apigatewayv2Integration#status_code}
   */
   readonly statusCode: string;
 }
 
-export function apigatewayv2IntegrationResponseParametersToTerraform(struct?: Apigatewayv2IntegrationResponseParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function apigatewayv2IntegrationResponseParametersToTerraform(struct?: Apigatewayv2IntegrationResponseParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mappings: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.mappings),
+    mappings: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.mappings),
     status_code: cdktf.stringToTerraform(struct!.statusCode),
   }
 }
@@ -114,7 +114,7 @@ export interface Apigatewayv2IntegrationTlsConfig {
 }
 
 export function apigatewayv2IntegrationTlsConfigToTerraform(struct?: Apigatewayv2IntegrationTlsConfigOutputReference | Apigatewayv2IntegrationTlsConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -131,7 +131,7 @@ export class Apigatewayv2IntegrationTlsConfigOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -426,12 +426,11 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
   }
 
   // request_parameters - computed: false, optional: true, required: false
-  private _requestParameters?: { [key: string]: string } | cdktf.IResolvable; 
+  private _requestParameters?: { [key: string]: string }; 
   public get requestParameters() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request_parameters') as any;
+    return this.getStringMapAttribute('request_parameters');
   }
-  public set requestParameters(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set requestParameters(value: { [key: string]: string }) {
     this._requestParameters = value;
   }
   public resetRequestParameters() {
@@ -443,12 +442,11 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
   }
 
   // request_templates - computed: false, optional: true, required: false
-  private _requestTemplates?: { [key: string]: string } | cdktf.IResolvable; 
+  private _requestTemplates?: { [key: string]: string }; 
   public get requestTemplates() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request_templates') as any;
+    return this.getStringMapAttribute('request_templates');
   }
-  public set requestTemplates(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set requestTemplates(value: { [key: string]: string }) {
     this._requestTemplates = value;
   }
   public resetRequestTemplates() {
@@ -492,12 +490,12 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
   }
 
   // response_parameters - computed: false, optional: true, required: false
-  private _responseParameters?: Apigatewayv2IntegrationResponseParameters[]; 
+  private _responseParameters?: Apigatewayv2IntegrationResponseParameters[] | cdktf.IResolvable; 
   public get responseParameters() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('response_parameters') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('response_parameters')));
   }
-  public set responseParameters(value: Apigatewayv2IntegrationResponseParameters[]) {
+  public set responseParameters(value: Apigatewayv2IntegrationResponseParameters[] | cdktf.IResolvable) {
     this._responseParameters = value;
   }
   public resetResponseParameters() {
@@ -509,7 +507,7 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
   }
 
   // tls_config - computed: false, optional: true, required: false
-  private _tlsConfig = new Apigatewayv2IntegrationTlsConfigOutputReference(this as any, "tls_config", true);
+  private _tlsConfig = new Apigatewayv2IntegrationTlsConfigOutputReference(this, "tls_config", true);
   public get tlsConfig() {
     return this._tlsConfig;
   }
@@ -542,8 +540,8 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
       integration_uri: cdktf.stringToTerraform(this._integrationUri),
       passthrough_behavior: cdktf.stringToTerraform(this._passthroughBehavior),
       payload_format_version: cdktf.stringToTerraform(this._payloadFormatVersion),
-      request_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestParameters),
-      request_templates: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestTemplates),
+      request_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._requestParameters),
+      request_templates: cdktf.hashMapper(cdktf.stringToTerraform)(this._requestTemplates),
       template_selection_expression: cdktf.stringToTerraform(this._templateSelectionExpression),
       timeout_milliseconds: cdktf.numberToTerraform(this._timeoutMilliseconds),
       response_parameters: cdktf.listMapper(apigatewayv2IntegrationResponseParametersToTerraform)(this._responseParameters),

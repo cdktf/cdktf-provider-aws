@@ -109,7 +109,7 @@ export class DataAwsIamGroup extends cdktf.TerraformDataSource {
 
   // users - computed: true, optional: false, required: false
   public users(index: string) {
-    return new DataAwsIamGroupUsers(this, 'users', index);
+    return new DataAwsIamGroupUsers(this, 'users', index, false);
   }
 
   // =========

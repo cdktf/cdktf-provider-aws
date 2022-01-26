@@ -62,11 +62,11 @@ export interface VpcConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc#tags Vpc#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc#tags_all Vpc#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
 }
 
 /**
@@ -130,7 +130,7 @@ export class Vpc extends cdktf.TerraformResource {
   // assign_generated_ipv6_cidr_block - computed: false, optional: true, required: false
   private _assignGeneratedIpv6CidrBlock?: boolean | cdktf.IResolvable; 
   public get assignGeneratedIpv6CidrBlock() {
-    return this.getBooleanAttribute('assign_generated_ipv6_cidr_block') as any;
+    return this.getBooleanAttribute('assign_generated_ipv6_cidr_block');
   }
   public set assignGeneratedIpv6CidrBlock(value: boolean | cdktf.IResolvable) {
     this._assignGeneratedIpv6CidrBlock = value;
@@ -182,7 +182,7 @@ export class Vpc extends cdktf.TerraformResource {
   // enable_classiclink - computed: true, optional: true, required: false
   private _enableClassiclink?: boolean | cdktf.IResolvable; 
   public get enableClassiclink() {
-    return this.getBooleanAttribute('enable_classiclink') as any;
+    return this.getBooleanAttribute('enable_classiclink');
   }
   public set enableClassiclink(value: boolean | cdktf.IResolvable) {
     this._enableClassiclink = value;
@@ -198,7 +198,7 @@ export class Vpc extends cdktf.TerraformResource {
   // enable_classiclink_dns_support - computed: true, optional: true, required: false
   private _enableClassiclinkDnsSupport?: boolean | cdktf.IResolvable; 
   public get enableClassiclinkDnsSupport() {
-    return this.getBooleanAttribute('enable_classiclink_dns_support') as any;
+    return this.getBooleanAttribute('enable_classiclink_dns_support');
   }
   public set enableClassiclinkDnsSupport(value: boolean | cdktf.IResolvable) {
     this._enableClassiclinkDnsSupport = value;
@@ -214,7 +214,7 @@ export class Vpc extends cdktf.TerraformResource {
   // enable_dns_hostnames - computed: true, optional: true, required: false
   private _enableDnsHostnames?: boolean | cdktf.IResolvable; 
   public get enableDnsHostnames() {
-    return this.getBooleanAttribute('enable_dns_hostnames') as any;
+    return this.getBooleanAttribute('enable_dns_hostnames');
   }
   public set enableDnsHostnames(value: boolean | cdktf.IResolvable) {
     this._enableDnsHostnames = value;
@@ -230,7 +230,7 @@ export class Vpc extends cdktf.TerraformResource {
   // enable_dns_support - computed: false, optional: true, required: false
   private _enableDnsSupport?: boolean | cdktf.IResolvable; 
   public get enableDnsSupport() {
-    return this.getBooleanAttribute('enable_dns_support') as any;
+    return this.getBooleanAttribute('enable_dns_support');
   }
   public set enableDnsSupport(value: boolean | cdktf.IResolvable) {
     this._enableDnsSupport = value;
@@ -376,12 +376,11 @@ export class Vpc extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -393,12 +392,11 @@ export class Vpc extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -428,8 +426,8 @@ export class Vpc extends cdktf.TerraformResource {
       ipv6_cidr_block_network_border_group: cdktf.stringToTerraform(this._ipv6CidrBlockNetworkBorderGroup),
       ipv6_ipam_pool_id: cdktf.stringToTerraform(this._ipv6IpamPoolId),
       ipv6_netmask_length: cdktf.numberToTerraform(this._ipv6NetmaskLength),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
   }
 }

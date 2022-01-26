@@ -26,11 +26,11 @@ export interface ImagebuilderImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image#tags ImagebuilderImage#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image#tags_all ImagebuilderImage#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * image_tests_configuration block
   * 
@@ -76,7 +76,7 @@ export class ImagebuilderImageOutputResources extends cdktf.ComplexComputedList 
   // amis - computed: true, optional: false, required: false
   public get amis() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('amis') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('amis')));
   }
 }
 export interface ImagebuilderImageImageTestsConfiguration {
@@ -91,7 +91,7 @@ export interface ImagebuilderImageImageTestsConfiguration {
 }
 
 export function imagebuilderImageImageTestsConfigurationToTerraform(struct?: ImagebuilderImageImageTestsConfigurationOutputReference | ImagebuilderImageImageTestsConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -109,7 +109,7 @@ export class ImagebuilderImageImageTestsConfigurationOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -143,7 +143,7 @@ export class ImagebuilderImageImageTestsConfigurationOutputReference extends cdk
   // image_tests_enabled - computed: false, optional: true, required: false
   private _imageTestsEnabled?: boolean | cdktf.IResolvable; 
   public get imageTestsEnabled() {
-    return this.getBooleanAttribute('image_tests_enabled') as any;
+    return this.getBooleanAttribute('image_tests_enabled');
   }
   public set imageTestsEnabled(value: boolean | cdktf.IResolvable) {
     this._imageTestsEnabled = value;
@@ -179,8 +179,8 @@ export interface ImagebuilderImageTimeouts {
   readonly create?: string;
 }
 
-export function imagebuilderImageTimeoutsToTerraform(struct?: ImagebuilderImageTimeoutsOutputReference | ImagebuilderImageTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function imagebuilderImageTimeoutsToTerraform(struct?: ImagebuilderImageTimeoutsOutputReference | ImagebuilderImageTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -197,7 +197,7 @@ export class ImagebuilderImageTimeoutsOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -314,7 +314,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
   // enhanced_image_metadata_enabled - computed: false, optional: true, required: false
   private _enhancedImageMetadataEnabled?: boolean | cdktf.IResolvable; 
   public get enhancedImageMetadataEnabled() {
-    return this.getBooleanAttribute('enhanced_image_metadata_enabled') as any;
+    return this.getBooleanAttribute('enhanced_image_metadata_enabled');
   }
   public set enhancedImageMetadataEnabled(value: boolean | cdktf.IResolvable) {
     this._enhancedImageMetadataEnabled = value;
@@ -370,7 +370,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
 
   // output_resources - computed: true, optional: false, required: false
   public outputResources(index: string) {
-    return new ImagebuilderImageOutputResources(this, 'output_resources', index);
+    return new ImagebuilderImageOutputResources(this, 'output_resources', index, false);
   }
 
   // platform - computed: true, optional: false, required: false
@@ -379,12 +379,11 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -396,12 +395,11 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -418,7 +416,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
   }
 
   // image_tests_configuration - computed: false, optional: true, required: false
-  private _imageTestsConfiguration = new ImagebuilderImageImageTestsConfigurationOutputReference(this as any, "image_tests_configuration", true);
+  private _imageTestsConfiguration = new ImagebuilderImageImageTestsConfigurationOutputReference(this, "image_tests_configuration", true);
   public get imageTestsConfiguration() {
     return this._imageTestsConfiguration;
   }
@@ -434,7 +432,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ImagebuilderImageTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ImagebuilderImageTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -459,8 +457,8 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
       enhanced_image_metadata_enabled: cdktf.booleanToTerraform(this._enhancedImageMetadataEnabled),
       image_recipe_arn: cdktf.stringToTerraform(this._imageRecipeArn),
       infrastructure_configuration_arn: cdktf.stringToTerraform(this._infrastructureConfigurationArn),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       image_tests_configuration: imagebuilderImageImageTestsConfigurationToTerraform(this._imageTestsConfiguration.internalValue),
       timeouts: imagebuilderImageTimeoutsToTerraform(this._timeouts.internalValue),
     };

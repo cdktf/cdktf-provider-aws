@@ -14,7 +14,7 @@ export interface DataAwsCloudformationStackConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudformation_stack#tags DataAwsCloudformationStack#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 
 /**
@@ -59,7 +59,7 @@ export class DataAwsCloudformationStack extends cdktf.TerraformDataSource {
 
   // capabilities - computed: true, optional: false, required: false
   public get capabilities() {
-    return this.getListAttribute('capabilities');
+    return cdktf.Fn.tolist(this.getListAttribute('capabilities'));
   }
 
   // description - computed: true, optional: false, required: false
@@ -69,7 +69,7 @@ export class DataAwsCloudformationStack extends cdktf.TerraformDataSource {
 
   // disable_rollback - computed: true, optional: false, required: false
   public get disableRollback() {
-    return this.getBooleanAttribute('disable_rollback') as any;
+    return this.getBooleanAttribute('disable_rollback');
   }
 
   // iam_role_arn - computed: true, optional: false, required: false
@@ -97,26 +97,25 @@ export class DataAwsCloudformationStack extends cdktf.TerraformDataSource {
 
   // notification_arns - computed: true, optional: false, required: false
   public get notificationArns() {
-    return this.getListAttribute('notification_arns');
+    return cdktf.Fn.tolist(this.getListAttribute('notification_arns'));
   }
 
   // outputs - computed: true, optional: false, required: false
-  public outputs(key: string): string {
+  public outputs(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'outputs').lookup(key);
   }
 
   // parameters - computed: true, optional: false, required: false
-  public parameters(key: string): string {
+  public parameters(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'parameters').lookup(key);
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -144,7 +143,7 @@ export class DataAwsCloudformationStack extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

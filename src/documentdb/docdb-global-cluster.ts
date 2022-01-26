@@ -51,7 +51,7 @@ export class DocdbGlobalClusterGlobalClusterMembers extends cdktf.ComplexCompute
 
   // is_writer - computed: true, optional: false, required: false
   public get isWriter() {
-    return this.getBooleanAttribute('is_writer') as any;
+    return this.getBooleanAttribute('is_writer');
   }
 }
 export interface DocdbGlobalClusterTimeouts {
@@ -69,8 +69,8 @@ export interface DocdbGlobalClusterTimeouts {
   readonly update?: string;
 }
 
-export function docdbGlobalClusterTimeoutsToTerraform(struct?: DocdbGlobalClusterTimeoutsOutputReference | DocdbGlobalClusterTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function docdbGlobalClusterTimeoutsToTerraform(struct?: DocdbGlobalClusterTimeoutsOutputReference | DocdbGlobalClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -89,7 +89,7 @@ export class DocdbGlobalClusterTimeoutsOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -245,7 +245,7 @@ export class DocdbGlobalCluster extends cdktf.TerraformResource {
   // deletion_protection - computed: false, optional: true, required: false
   private _deletionProtection?: boolean | cdktf.IResolvable; 
   public get deletionProtection() {
-    return this.getBooleanAttribute('deletion_protection') as any;
+    return this.getBooleanAttribute('deletion_protection');
   }
   public set deletionProtection(value: boolean | cdktf.IResolvable) {
     this._deletionProtection = value;
@@ -305,7 +305,7 @@ export class DocdbGlobalCluster extends cdktf.TerraformResource {
 
   // global_cluster_members - computed: true, optional: false, required: false
   public globalClusterMembers(index: string) {
-    return new DocdbGlobalClusterGlobalClusterMembers(this, 'global_cluster_members', index);
+    return new DocdbGlobalClusterGlobalClusterMembers(this, 'global_cluster_members', index, true);
   }
 
   // global_cluster_resource_id - computed: true, optional: false, required: false
@@ -342,7 +342,7 @@ export class DocdbGlobalCluster extends cdktf.TerraformResource {
   // storage_encrypted - computed: true, optional: true, required: false
   private _storageEncrypted?: boolean | cdktf.IResolvable; 
   public get storageEncrypted() {
-    return this.getBooleanAttribute('storage_encrypted') as any;
+    return this.getBooleanAttribute('storage_encrypted');
   }
   public set storageEncrypted(value: boolean | cdktf.IResolvable) {
     this._storageEncrypted = value;
@@ -356,7 +356,7 @@ export class DocdbGlobalCluster extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DocdbGlobalClusterTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DocdbGlobalClusterTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

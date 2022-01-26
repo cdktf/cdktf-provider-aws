@@ -83,7 +83,7 @@ export class WafRegexPatternSet extends cdktf.TerraformResource {
   // regex_pattern_strings - computed: false, optional: true, required: false
   private _regexPatternStrings?: string[]; 
   public get regexPatternStrings() {
-    return this.getListAttribute('regex_pattern_strings');
+    return cdktf.Fn.tolist(this.getListAttribute('regex_pattern_strings'));
   }
   public set regexPatternStrings(value: string[]) {
     this._regexPatternStrings = value;

@@ -62,7 +62,7 @@ export class SignerSigningJobSignedObject extends cdktf.ComplexComputedList {
   // s3 - computed: true, optional: false, required: false
   public get s3() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('s3') as any;
+    return this.interpolationForAttribute('s3');
   }
 }
 export interface SignerSigningJobDestinationS3 {
@@ -77,7 +77,7 @@ export interface SignerSigningJobDestinationS3 {
 }
 
 export function signerSigningJobDestinationS3ToTerraform(struct?: SignerSigningJobDestinationS3OutputReference | SignerSigningJobDestinationS3): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -95,7 +95,7 @@ export class SignerSigningJobDestinationS3OutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -165,7 +165,7 @@ export interface SignerSigningJobDestination {
 }
 
 export function signerSigningJobDestinationToTerraform(struct?: SignerSigningJobDestinationOutputReference | SignerSigningJobDestination): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -182,7 +182,7 @@ export class SignerSigningJobDestinationOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -208,7 +208,7 @@ export class SignerSigningJobDestinationOutputReference extends cdktf.ComplexObj
   }
 
   // s3 - computed: false, optional: false, required: true
-  private _s3 = new SignerSigningJobDestinationS3OutputReference(this as any, "s3", true);
+  private _s3 = new SignerSigningJobDestinationS3OutputReference(this, "s3", true);
   public get s3() {
     return this._s3;
   }
@@ -236,7 +236,7 @@ export interface SignerSigningJobSourceS3 {
 }
 
 export function signerSigningJobSourceS3ToTerraform(struct?: SignerSigningJobSourceS3OutputReference | SignerSigningJobSourceS3): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -255,7 +255,7 @@ export class SignerSigningJobSourceS3OutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -341,7 +341,7 @@ export interface SignerSigningJobSource {
 }
 
 export function signerSigningJobSourceToTerraform(struct?: SignerSigningJobSourceOutputReference | SignerSigningJobSource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -358,7 +358,7 @@ export class SignerSigningJobSourceOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -384,7 +384,7 @@ export class SignerSigningJobSourceOutputReference extends cdktf.ComplexObject {
   }
 
   // s3 - computed: false, optional: false, required: true
-  private _s3 = new SignerSigningJobSourceS3OutputReference(this as any, "s3", true);
+  private _s3 = new SignerSigningJobSourceS3OutputReference(this, "s3", true);
   public get s3() {
     return this._s3;
   }
@@ -457,7 +457,7 @@ export class SignerSigningJob extends cdktf.TerraformResource {
   // ignore_signing_job_failure - computed: false, optional: true, required: false
   private _ignoreSigningJobFailure?: boolean | cdktf.IResolvable; 
   public get ignoreSigningJobFailure() {
-    return this.getBooleanAttribute('ignore_signing_job_failure') as any;
+    return this.getBooleanAttribute('ignore_signing_job_failure');
   }
   public set ignoreSigningJobFailure(value: boolean | cdktf.IResolvable) {
     this._ignoreSigningJobFailure = value;
@@ -520,7 +520,7 @@ export class SignerSigningJob extends cdktf.TerraformResource {
 
   // revocation_record - computed: true, optional: false, required: false
   public revocationRecord(index: string) {
-    return new SignerSigningJobRevocationRecord(this, 'revocation_record', index);
+    return new SignerSigningJobRevocationRecord(this, 'revocation_record', index, false);
   }
 
   // signature_expires_at - computed: true, optional: false, required: false
@@ -530,7 +530,7 @@ export class SignerSigningJob extends cdktf.TerraformResource {
 
   // signed_object - computed: true, optional: false, required: false
   public signedObject(index: string) {
-    return new SignerSigningJobSignedObject(this, 'signed_object', index);
+    return new SignerSigningJobSignedObject(this, 'signed_object', index, false);
   }
 
   // status - computed: true, optional: false, required: false
@@ -544,7 +544,7 @@ export class SignerSigningJob extends cdktf.TerraformResource {
   }
 
   // destination - computed: false, optional: false, required: true
-  private _destination = new SignerSigningJobDestinationOutputReference(this as any, "destination", true);
+  private _destination = new SignerSigningJobDestinationOutputReference(this, "destination", true);
   public get destination() {
     return this._destination;
   }
@@ -557,7 +557,7 @@ export class SignerSigningJob extends cdktf.TerraformResource {
   }
 
   // source - computed: false, optional: false, required: true
-  private _source = new SignerSigningJobSourceOutputReference(this as any, "source", true);
+  private _source = new SignerSigningJobSourceOutputReference(this, "source", true);
   public get source() {
     return this._source;
   }

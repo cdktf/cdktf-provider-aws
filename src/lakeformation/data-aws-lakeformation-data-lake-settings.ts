@@ -16,7 +16,7 @@ export class DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermission
 
   // permissions - computed: true, optional: false, required: false
   public get permissions() {
-    return this.getListAttribute('permissions');
+    return cdktf.Fn.tolist(this.getListAttribute('permissions'));
   }
 
   // principal - computed: true, optional: false, required: false
@@ -28,7 +28,7 @@ export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions e
 
   // permissions - computed: true, optional: false, required: false
   public get permissions() {
-    return this.getListAttribute('permissions');
+    return cdktf.Fn.tolist(this.getListAttribute('permissions'));
   }
 
   // principal - computed: true, optional: false, required: false
@@ -78,7 +78,7 @@ export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSou
 
   // admins - computed: true, optional: false, required: false
   public get admins() {
-    return this.getListAttribute('admins');
+    return cdktf.Fn.tolist(this.getListAttribute('admins'));
   }
 
   // catalog_id - computed: false, optional: true, required: false
@@ -99,12 +99,12 @@ export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSou
 
   // create_database_default_permissions - computed: true, optional: false, required: false
   public createDatabaseDefaultPermissions(index: string) {
-    return new DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions(this, 'create_database_default_permissions', index);
+    return new DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions(this, 'create_database_default_permissions', index, false);
   }
 
   // create_table_default_permissions - computed: true, optional: false, required: false
   public createTableDefaultPermissions(index: string) {
-    return new DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions(this, 'create_table_default_permissions', index);
+    return new DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions(this, 'create_table_default_permissions', index, false);
   }
 
   // id - computed: true, optional: true, required: false

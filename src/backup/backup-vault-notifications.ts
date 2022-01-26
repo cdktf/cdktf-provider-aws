@@ -70,7 +70,7 @@ export class BackupVaultNotifications extends cdktf.TerraformResource {
   // backup_vault_events - computed: false, optional: false, required: true
   private _backupVaultEvents?: string[]; 
   public get backupVaultEvents() {
-    return this.getListAttribute('backup_vault_events');
+    return cdktf.Fn.tolist(this.getListAttribute('backup_vault_events'));
   }
   public set backupVaultEvents(value: string[]) {
     this._backupVaultEvents = value;

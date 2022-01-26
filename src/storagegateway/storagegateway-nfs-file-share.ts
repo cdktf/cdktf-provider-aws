@@ -70,11 +70,11 @@ export interface StoragegatewayNfsFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_nfs_file_share#tags StoragegatewayNfsFileShare#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_nfs_file_share#tags_all StoragegatewayNfsFileShare#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * cache_attributes block
   * 
@@ -102,7 +102,7 @@ export interface StoragegatewayNfsFileShareCacheAttributes {
 }
 
 export function storagegatewayNfsFileShareCacheAttributesToTerraform(struct?: StoragegatewayNfsFileShareCacheAttributesOutputReference | StoragegatewayNfsFileShareCacheAttributes): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -119,7 +119,7 @@ export class StoragegatewayNfsFileShareCacheAttributesOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -180,7 +180,7 @@ export interface StoragegatewayNfsFileShareNfsFileShareDefaults {
 }
 
 export function storagegatewayNfsFileShareNfsFileShareDefaultsToTerraform(struct?: StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference | StoragegatewayNfsFileShareNfsFileShareDefaults): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -200,7 +200,7 @@ export class StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -322,8 +322,8 @@ export interface StoragegatewayNfsFileShareTimeouts {
   readonly update?: string;
 }
 
-export function storagegatewayNfsFileShareTimeoutsToTerraform(struct?: StoragegatewayNfsFileShareTimeoutsOutputReference | StoragegatewayNfsFileShareTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function storagegatewayNfsFileShareTimeoutsToTerraform(struct?: StoragegatewayNfsFileShareTimeoutsOutputReference | StoragegatewayNfsFileShareTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -342,7 +342,7 @@ export class StoragegatewayNfsFileShareTimeoutsOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -510,7 +510,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   // client_list - computed: false, optional: false, required: true
   private _clientList?: string[]; 
   public get clientList() {
-    return this.getListAttribute('client_list');
+    return cdktf.Fn.tolist(this.getListAttribute('client_list'));
   }
   public set clientList(value: string[]) {
     this._clientList = value;
@@ -573,7 +573,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   // guess_mime_type_enabled - computed: false, optional: true, required: false
   private _guessMimeTypeEnabled?: boolean | cdktf.IResolvable; 
   public get guessMimeTypeEnabled() {
-    return this.getBooleanAttribute('guess_mime_type_enabled') as any;
+    return this.getBooleanAttribute('guess_mime_type_enabled');
   }
   public set guessMimeTypeEnabled(value: boolean | cdktf.IResolvable) {
     this._guessMimeTypeEnabled = value;
@@ -594,7 +594,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   // kms_encrypted - computed: false, optional: true, required: false
   private _kmsEncrypted?: boolean | cdktf.IResolvable; 
   public get kmsEncrypted() {
-    return this.getBooleanAttribute('kms_encrypted') as any;
+    return this.getBooleanAttribute('kms_encrypted');
   }
   public set kmsEncrypted(value: boolean | cdktf.IResolvable) {
     this._kmsEncrypted = value;
@@ -676,7 +676,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   // read_only - computed: false, optional: true, required: false
   private _readOnly?: boolean | cdktf.IResolvable; 
   public get readOnly() {
-    return this.getBooleanAttribute('read_only') as any;
+    return this.getBooleanAttribute('read_only');
   }
   public set readOnly(value: boolean | cdktf.IResolvable) {
     this._readOnly = value;
@@ -692,7 +692,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   // requester_pays - computed: false, optional: true, required: false
   private _requesterPays?: boolean | cdktf.IResolvable; 
   public get requesterPays() {
-    return this.getBooleanAttribute('requester_pays') as any;
+    return this.getBooleanAttribute('requester_pays');
   }
   public set requesterPays(value: boolean | cdktf.IResolvable) {
     this._requesterPays = value;
@@ -735,12 +735,11 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -752,12 +751,11 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -769,7 +767,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // cache_attributes - computed: false, optional: true, required: false
-  private _cacheAttributes = new StoragegatewayNfsFileShareCacheAttributesOutputReference(this as any, "cache_attributes", true);
+  private _cacheAttributes = new StoragegatewayNfsFileShareCacheAttributesOutputReference(this, "cache_attributes", true);
   public get cacheAttributes() {
     return this._cacheAttributes;
   }
@@ -785,7 +783,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // nfs_file_share_defaults - computed: false, optional: true, required: false
-  private _nfsFileShareDefaults = new StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference(this as any, "nfs_file_share_defaults", true);
+  private _nfsFileShareDefaults = new StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference(this, "nfs_file_share_defaults", true);
   public get nfsFileShareDefaults() {
     return this._nfsFileShareDefaults;
   }
@@ -801,7 +799,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new StoragegatewayNfsFileShareTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new StoragegatewayNfsFileShareTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -837,8 +835,8 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
       requester_pays: cdktf.booleanToTerraform(this._requesterPays),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       squash: cdktf.stringToTerraform(this._squash),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       cache_attributes: storagegatewayNfsFileShareCacheAttributesToTerraform(this._cacheAttributes.internalValue),
       nfs_file_share_defaults: storagegatewayNfsFileShareNfsFileShareDefaultsToTerraform(this._nfsFileShareDefaults.internalValue),
       timeouts: storagegatewayNfsFileShareTimeoutsToTerraform(this._timeouts.internalValue),

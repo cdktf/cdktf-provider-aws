@@ -71,7 +71,7 @@ export class DataAwsOrganizationsOrganizationalUnits extends cdktf.TerraformData
 
   // children - computed: true, optional: false, required: false
   public children(index: string) {
-    return new DataAwsOrganizationsOrganizationalUnitsChildren(this, 'children', index);
+    return new DataAwsOrganizationsOrganizationalUnitsChildren(this, 'children', index, false);
   }
 
   // id - computed: true, optional: true, required: false

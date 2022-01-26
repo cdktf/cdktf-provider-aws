@@ -49,7 +49,7 @@ export class RdsGlobalClusterGlobalClusterMembers extends cdktf.ComplexComputedL
 
   // is_writer - computed: true, optional: false, required: false
   public get isWriter() {
-    return this.getBooleanAttribute('is_writer') as any;
+    return this.getBooleanAttribute('is_writer');
   }
 }
 
@@ -123,7 +123,7 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
   // deletion_protection - computed: false, optional: true, required: false
   private _deletionProtection?: boolean | cdktf.IResolvable; 
   public get deletionProtection() {
-    return this.getBooleanAttribute('deletion_protection') as any;
+    return this.getBooleanAttribute('deletion_protection');
   }
   public set deletionProtection(value: boolean | cdktf.IResolvable) {
     this._deletionProtection = value;
@@ -171,7 +171,7 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean | cdktf.IResolvable; 
   public get forceDestroy() {
-    return this.getBooleanAttribute('force_destroy') as any;
+    return this.getBooleanAttribute('force_destroy');
   }
   public set forceDestroy(value: boolean | cdktf.IResolvable) {
     this._forceDestroy = value;
@@ -199,7 +199,7 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
 
   // global_cluster_members - computed: true, optional: false, required: false
   public globalClusterMembers(index: string) {
-    return new RdsGlobalClusterGlobalClusterMembers(this, 'global_cluster_members', index);
+    return new RdsGlobalClusterGlobalClusterMembers(this, 'global_cluster_members', index, true);
   }
 
   // global_cluster_resource_id - computed: true, optional: false, required: false
@@ -231,7 +231,7 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
   // storage_encrypted - computed: true, optional: true, required: false
   private _storageEncrypted?: boolean | cdktf.IResolvable; 
   public get storageEncrypted() {
-    return this.getBooleanAttribute('storage_encrypted') as any;
+    return this.getBooleanAttribute('storage_encrypted');
   }
   public set storageEncrypted(value: boolean | cdktf.IResolvable) {
     this._storageEncrypted = value;

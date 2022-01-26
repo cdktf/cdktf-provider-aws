@@ -68,19 +68,19 @@ export interface OpsworksApplicationConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_application#app_source OpsworksApplication#app_source}
   */
-  readonly appSource?: OpsworksApplicationAppSource[];
+  readonly appSource?: OpsworksApplicationAppSource[] | cdktf.IResolvable;
   /**
   * environment block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_application#environment OpsworksApplication#environment}
   */
-  readonly environment?: OpsworksApplicationEnvironment[];
+  readonly environment?: OpsworksApplicationEnvironment[] | cdktf.IResolvable;
   /**
   * ssl_configuration block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_application#ssl_configuration OpsworksApplication#ssl_configuration}
   */
-  readonly sslConfiguration?: OpsworksApplicationSslConfiguration[];
+  readonly sslConfiguration?: OpsworksApplicationSslConfiguration[] | cdktf.IResolvable;
 }
 export interface OpsworksApplicationAppSource {
   /**
@@ -109,8 +109,8 @@ export interface OpsworksApplicationAppSource {
   readonly username?: string;
 }
 
-export function opsworksApplicationAppSourceToTerraform(struct?: OpsworksApplicationAppSource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function opsworksApplicationAppSourceToTerraform(struct?: OpsworksApplicationAppSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -139,8 +139,8 @@ export interface OpsworksApplicationEnvironment {
   readonly value: string;
 }
 
-export function opsworksApplicationEnvironmentToTerraform(struct?: OpsworksApplicationEnvironment): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function opsworksApplicationEnvironmentToTerraform(struct?: OpsworksApplicationEnvironment | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -166,8 +166,8 @@ export interface OpsworksApplicationSslConfiguration {
   readonly privateKey: string;
 }
 
-export function opsworksApplicationSslConfigurationToTerraform(struct?: OpsworksApplicationSslConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function opsworksApplicationSslConfigurationToTerraform(struct?: OpsworksApplicationSslConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -365,7 +365,7 @@ export class OpsworksApplication extends cdktf.TerraformResource {
   // enable_ssl - computed: false, optional: true, required: false
   private _enableSsl?: boolean | cdktf.IResolvable; 
   public get enableSsl() {
-    return this.getBooleanAttribute('enable_ssl') as any;
+    return this.getBooleanAttribute('enable_ssl');
   }
   public set enableSsl(value: boolean | cdktf.IResolvable) {
     this._enableSsl = value;
@@ -455,12 +455,12 @@ export class OpsworksApplication extends cdktf.TerraformResource {
   }
 
   // app_source - computed: false, optional: true, required: false
-  private _appSource?: OpsworksApplicationAppSource[]; 
+  private _appSource?: OpsworksApplicationAppSource[] | cdktf.IResolvable; 
   public get appSource() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('app_source') as any;
+    return this.interpolationForAttribute('app_source');
   }
-  public set appSource(value: OpsworksApplicationAppSource[]) {
+  public set appSource(value: OpsworksApplicationAppSource[] | cdktf.IResolvable) {
     this._appSource = value;
   }
   public resetAppSource() {
@@ -472,12 +472,12 @@ export class OpsworksApplication extends cdktf.TerraformResource {
   }
 
   // environment - computed: false, optional: true, required: false
-  private _environment?: OpsworksApplicationEnvironment[]; 
+  private _environment?: OpsworksApplicationEnvironment[] | cdktf.IResolvable; 
   public get environment() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('environment') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('environment')));
   }
-  public set environment(value: OpsworksApplicationEnvironment[]) {
+  public set environment(value: OpsworksApplicationEnvironment[] | cdktf.IResolvable) {
     this._environment = value;
   }
   public resetEnvironment() {
@@ -489,12 +489,12 @@ export class OpsworksApplication extends cdktf.TerraformResource {
   }
 
   // ssl_configuration - computed: false, optional: true, required: false
-  private _sslConfiguration?: OpsworksApplicationSslConfiguration[]; 
+  private _sslConfiguration?: OpsworksApplicationSslConfiguration[] | cdktf.IResolvable; 
   public get sslConfiguration() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ssl_configuration') as any;
+    return this.interpolationForAttribute('ssl_configuration');
   }
-  public set sslConfiguration(value: OpsworksApplicationSslConfiguration[]) {
+  public set sslConfiguration(value: OpsworksApplicationSslConfiguration[] | cdktf.IResolvable) {
     this._sslConfiguration = value;
   }
   public resetSslConfiguration() {

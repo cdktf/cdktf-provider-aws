@@ -38,11 +38,11 @@ export interface FsxOpenzfsVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#tags FsxOpenzfsVolume#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#tags_all FsxOpenzfsVolume#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#volume_type FsxOpenzfsVolume#volume_type}
   */
@@ -70,7 +70,7 @@ export interface FsxOpenzfsVolumeConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#user_and_group_quotas FsxOpenzfsVolume#user_and_group_quotas}
   */
-  readonly userAndGroupQuotas?: FsxOpenzfsVolumeUserAndGroupQuotas[];
+  readonly userAndGroupQuotas?: FsxOpenzfsVolumeUserAndGroupQuotas[] | cdktf.IResolvable;
 }
 export interface FsxOpenzfsVolumeNfsExportsClientConfigurations {
   /**
@@ -83,8 +83,8 @@ export interface FsxOpenzfsVolumeNfsExportsClientConfigurations {
   readonly options: string[];
 }
 
-export function fsxOpenzfsVolumeNfsExportsClientConfigurationsToTerraform(struct?: FsxOpenzfsVolumeNfsExportsClientConfigurations): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function fsxOpenzfsVolumeNfsExportsClientConfigurationsToTerraform(struct?: FsxOpenzfsVolumeNfsExportsClientConfigurations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -100,11 +100,11 @@ export interface FsxOpenzfsVolumeNfsExports {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#client_configurations FsxOpenzfsVolume#client_configurations}
   */
-  readonly clientConfigurations: FsxOpenzfsVolumeNfsExportsClientConfigurations[];
+  readonly clientConfigurations: FsxOpenzfsVolumeNfsExportsClientConfigurations[] | cdktf.IResolvable;
 }
 
 export function fsxOpenzfsVolumeNfsExportsToTerraform(struct?: FsxOpenzfsVolumeNfsExportsOutputReference | FsxOpenzfsVolumeNfsExports): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -121,7 +121,7 @@ export class FsxOpenzfsVolumeNfsExportsOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -147,12 +147,12 @@ export class FsxOpenzfsVolumeNfsExportsOutputReference extends cdktf.ComplexObje
   }
 
   // client_configurations - computed: false, optional: false, required: true
-  private _clientConfigurations?: FsxOpenzfsVolumeNfsExportsClientConfigurations[]; 
+  private _clientConfigurations?: FsxOpenzfsVolumeNfsExportsClientConfigurations[] | cdktf.IResolvable; 
   public get clientConfigurations() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('client_configurations') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('client_configurations')));
   }
-  public set clientConfigurations(value: FsxOpenzfsVolumeNfsExportsClientConfigurations[]) {
+  public set clientConfigurations(value: FsxOpenzfsVolumeNfsExportsClientConfigurations[] | cdktf.IResolvable) {
     this._clientConfigurations = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -172,7 +172,7 @@ export interface FsxOpenzfsVolumeOriginSnapshot {
 }
 
 export function fsxOpenzfsVolumeOriginSnapshotToTerraform(struct?: FsxOpenzfsVolumeOriginSnapshotOutputReference | FsxOpenzfsVolumeOriginSnapshot): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -190,7 +190,7 @@ export class FsxOpenzfsVolumeOriginSnapshotOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -262,8 +262,8 @@ export interface FsxOpenzfsVolumeTimeouts {
   readonly update?: string;
 }
 
-export function fsxOpenzfsVolumeTimeoutsToTerraform(struct?: FsxOpenzfsVolumeTimeoutsOutputReference | FsxOpenzfsVolumeTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function fsxOpenzfsVolumeTimeoutsToTerraform(struct?: FsxOpenzfsVolumeTimeoutsOutputReference | FsxOpenzfsVolumeTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -282,7 +282,7 @@ export class FsxOpenzfsVolumeTimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -382,8 +382,8 @@ export interface FsxOpenzfsVolumeUserAndGroupQuotas {
   readonly type: string;
 }
 
-export function fsxOpenzfsVolumeUserAndGroupQuotasToTerraform(struct?: FsxOpenzfsVolumeUserAndGroupQuotas): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function fsxOpenzfsVolumeUserAndGroupQuotasToTerraform(struct?: FsxOpenzfsVolumeUserAndGroupQuotas | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -455,7 +455,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   // copy_tags_to_snapshots - computed: false, optional: true, required: false
   private _copyTagsToSnapshots?: boolean | cdktf.IResolvable; 
   public get copyTagsToSnapshots() {
-    return this.getBooleanAttribute('copy_tags_to_snapshots') as any;
+    return this.getBooleanAttribute('copy_tags_to_snapshots');
   }
   public set copyTagsToSnapshots(value: boolean | cdktf.IResolvable) {
     this._copyTagsToSnapshots = value;
@@ -518,7 +518,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   // read_only - computed: true, optional: true, required: false
   private _readOnly?: boolean | cdktf.IResolvable; 
   public get readOnly() {
-    return this.getBooleanAttribute('read_only') as any;
+    return this.getBooleanAttribute('read_only');
   }
   public set readOnly(value: boolean | cdktf.IResolvable) {
     this._readOnly = value;
@@ -564,12 +564,11 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -581,12 +580,11 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -614,7 +612,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   }
 
   // nfs_exports - computed: false, optional: true, required: false
-  private _nfsExports = new FsxOpenzfsVolumeNfsExportsOutputReference(this as any, "nfs_exports", true);
+  private _nfsExports = new FsxOpenzfsVolumeNfsExportsOutputReference(this, "nfs_exports", true);
   public get nfsExports() {
     return this._nfsExports;
   }
@@ -630,7 +628,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   }
 
   // origin_snapshot - computed: false, optional: true, required: false
-  private _originSnapshot = new FsxOpenzfsVolumeOriginSnapshotOutputReference(this as any, "origin_snapshot", true);
+  private _originSnapshot = new FsxOpenzfsVolumeOriginSnapshotOutputReference(this, "origin_snapshot", true);
   public get originSnapshot() {
     return this._originSnapshot;
   }
@@ -646,7 +644,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new FsxOpenzfsVolumeTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new FsxOpenzfsVolumeTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -662,12 +660,12 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   }
 
   // user_and_group_quotas - computed: false, optional: true, required: false
-  private _userAndGroupQuotas?: FsxOpenzfsVolumeUserAndGroupQuotas[]; 
+  private _userAndGroupQuotas?: FsxOpenzfsVolumeUserAndGroupQuotas[] | cdktf.IResolvable; 
   public get userAndGroupQuotas() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('user_and_group_quotas') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('user_and_group_quotas')));
   }
-  public set userAndGroupQuotas(value: FsxOpenzfsVolumeUserAndGroupQuotas[]) {
+  public set userAndGroupQuotas(value: FsxOpenzfsVolumeUserAndGroupQuotas[] | cdktf.IResolvable) {
     this._userAndGroupQuotas = value;
   }
   public resetUserAndGroupQuotas() {
@@ -691,8 +689,8 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
       read_only: cdktf.booleanToTerraform(this._readOnly),
       storage_capacity_quota_gib: cdktf.numberToTerraform(this._storageCapacityQuotaGib),
       storage_capacity_reservation_gib: cdktf.numberToTerraform(this._storageCapacityReservationGib),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       volume_type: cdktf.stringToTerraform(this._volumeType),
       nfs_exports: fsxOpenzfsVolumeNfsExportsToTerraform(this._nfsExports.internalValue),
       origin_snapshot: fsxOpenzfsVolumeOriginSnapshotToTerraform(this._originSnapshot.internalValue),

@@ -132,22 +132,22 @@ export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
 
   // supported_timezones - computed: true, optional: false, required: false
   public get supportedTimezones() {
-    return this.getListAttribute('supported_timezones');
+    return cdktf.Fn.tolist(this.getListAttribute('supported_timezones'));
   }
 
   // supports_log_exports_to_cloudwatch - computed: true, optional: false, required: false
   public get supportsLogExportsToCloudwatch() {
-    return this.getBooleanAttribute('supports_log_exports_to_cloudwatch') as any;
+    return this.getBooleanAttribute('supports_log_exports_to_cloudwatch');
   }
 
   // supports_read_replica - computed: true, optional: false, required: false
   public get supportsReadReplica() {
-    return this.getBooleanAttribute('supports_read_replica') as any;
+    return this.getBooleanAttribute('supports_read_replica');
   }
 
   // valid_upgrade_targets - computed: true, optional: false, required: false
   public get validUpgradeTargets() {
-    return this.getListAttribute('valid_upgrade_targets');
+    return cdktf.Fn.tolist(this.getListAttribute('valid_upgrade_targets'));
   }
 
   // version - computed: true, optional: true, required: false

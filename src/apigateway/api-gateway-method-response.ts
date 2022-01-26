@@ -18,11 +18,11 @@ export interface ApiGatewayMethodResponseConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_response#response_models ApiGatewayMethodResponse#response_models}
   */
-  readonly responseModels?: { [key: string]: string } | cdktf.IResolvable;
+  readonly responseModels?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_response#response_parameters ApiGatewayMethodResponse#response_parameters}
   */
-  readonly responseParameters?: { [key: string]: boolean } | cdktf.IResolvable;
+  readonly responseParameters?: { [key: string]: (boolean | cdktf.IResolvable) };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_response#rest_api_id ApiGatewayMethodResponse#rest_api_id}
   */
@@ -109,12 +109,11 @@ export class ApiGatewayMethodResponse extends cdktf.TerraformResource {
   }
 
   // response_models - computed: false, optional: true, required: false
-  private _responseModels?: { [key: string]: string } | cdktf.IResolvable; 
+  private _responseModels?: { [key: string]: string }; 
   public get responseModels() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('response_models') as any;
+    return this.getStringMapAttribute('response_models');
   }
-  public set responseModels(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set responseModels(value: { [key: string]: string }) {
     this._responseModels = value;
   }
   public resetResponseModels() {
@@ -126,11 +125,11 @@ export class ApiGatewayMethodResponse extends cdktf.TerraformResource {
   }
 
   // response_parameters - computed: false, optional: true, required: false
-  private _responseParameters?: { [key: string]: boolean } | cdktf.IResolvable; 
+  private _responseParameters?: { [key: string]: (boolean | cdktf.IResolvable) }; 
   public get responseParameters() {
-    return this.getBooleanAttribute('response_parameters') as any;
+    return this.getBooleanMapAttribute('response_parameters');
   }
-  public set responseParameters(value: { [key: string]: boolean } | cdktf.IResolvable) {
+  public set responseParameters(value: { [key: string]: (boolean | cdktf.IResolvable) }) {
     this._responseParameters = value;
   }
   public resetResponseParameters() {
@@ -175,8 +174,8 @@ export class ApiGatewayMethodResponse extends cdktf.TerraformResource {
     return {
       http_method: cdktf.stringToTerraform(this._httpMethod),
       resource_id: cdktf.stringToTerraform(this._resourceId),
-      response_models: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseModels),
-      response_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseParameters),
+      response_models: cdktf.hashMapper(cdktf.stringToTerraform)(this._responseModels),
+      response_parameters: cdktf.hashMapper(cdktf.booleanToTerraform)(this._responseParameters),
       rest_api_id: cdktf.stringToTerraform(this._restApiId),
       status_code: cdktf.stringToTerraform(this._statusCode),
     };

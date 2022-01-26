@@ -34,15 +34,15 @@ export interface Apigatewayv2StageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage#stage_variables Apigatewayv2Stage#stage_variables}
   */
-  readonly stageVariables?: { [key: string]: string } | cdktf.IResolvable;
+  readonly stageVariables?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage#tags Apigatewayv2Stage#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage#tags_all Apigatewayv2Stage#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * access_log_settings block
   * 
@@ -60,7 +60,7 @@ export interface Apigatewayv2StageConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage#route_settings Apigatewayv2Stage#route_settings}
   */
-  readonly routeSettings?: Apigatewayv2StageRouteSettings[];
+  readonly routeSettings?: Apigatewayv2StageRouteSettings[] | cdktf.IResolvable;
 }
 export interface Apigatewayv2StageAccessLogSettings {
   /**
@@ -74,7 +74,7 @@ export interface Apigatewayv2StageAccessLogSettings {
 }
 
 export function apigatewayv2StageAccessLogSettingsToTerraform(struct?: Apigatewayv2StageAccessLogSettingsOutputReference | Apigatewayv2StageAccessLogSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -92,7 +92,7 @@ export class Apigatewayv2StageAccessLogSettingsOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -173,7 +173,7 @@ export interface Apigatewayv2StageDefaultRouteSettings {
 }
 
 export function apigatewayv2StageDefaultRouteSettingsToTerraform(struct?: Apigatewayv2StageDefaultRouteSettingsOutputReference | Apigatewayv2StageDefaultRouteSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -194,7 +194,7 @@ export class Apigatewayv2StageDefaultRouteSettingsOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -246,7 +246,7 @@ export class Apigatewayv2StageDefaultRouteSettingsOutputReference extends cdktf.
   // data_trace_enabled - computed: false, optional: true, required: false
   private _dataTraceEnabled?: boolean | cdktf.IResolvable; 
   public get dataTraceEnabled() {
-    return this.getBooleanAttribute('data_trace_enabled') as any;
+    return this.getBooleanAttribute('data_trace_enabled');
   }
   public set dataTraceEnabled(value: boolean | cdktf.IResolvable) {
     this._dataTraceEnabled = value;
@@ -262,7 +262,7 @@ export class Apigatewayv2StageDefaultRouteSettingsOutputReference extends cdktf.
   // detailed_metrics_enabled - computed: false, optional: true, required: false
   private _detailedMetricsEnabled?: boolean | cdktf.IResolvable; 
   public get detailedMetricsEnabled() {
-    return this.getBooleanAttribute('detailed_metrics_enabled') as any;
+    return this.getBooleanAttribute('detailed_metrics_enabled');
   }
   public set detailedMetricsEnabled(value: boolean | cdktf.IResolvable) {
     this._detailedMetricsEnabled = value;
@@ -350,8 +350,8 @@ export interface Apigatewayv2StageRouteSettings {
   readonly throttlingRateLimit?: number;
 }
 
-export function apigatewayv2StageRouteSettingsToTerraform(struct?: Apigatewayv2StageRouteSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function apigatewayv2StageRouteSettingsToTerraform(struct?: Apigatewayv2StageRouteSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -437,7 +437,7 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
   // auto_deploy - computed: false, optional: true, required: false
   private _autoDeploy?: boolean | cdktf.IResolvable; 
   public get autoDeploy() {
-    return this.getBooleanAttribute('auto_deploy') as any;
+    return this.getBooleanAttribute('auto_deploy');
   }
   public set autoDeploy(value: boolean | cdktf.IResolvable) {
     this._autoDeploy = value;
@@ -527,12 +527,11 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
   }
 
   // stage_variables - computed: false, optional: true, required: false
-  private _stageVariables?: { [key: string]: string } | cdktf.IResolvable; 
+  private _stageVariables?: { [key: string]: string }; 
   public get stageVariables() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('stage_variables') as any;
+    return this.getStringMapAttribute('stage_variables');
   }
-  public set stageVariables(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set stageVariables(value: { [key: string]: string }) {
     this._stageVariables = value;
   }
   public resetStageVariables() {
@@ -544,12 +543,11 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -561,12 +559,11 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -578,7 +575,7 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
   }
 
   // access_log_settings - computed: false, optional: true, required: false
-  private _accessLogSettings = new Apigatewayv2StageAccessLogSettingsOutputReference(this as any, "access_log_settings", true);
+  private _accessLogSettings = new Apigatewayv2StageAccessLogSettingsOutputReference(this, "access_log_settings", true);
   public get accessLogSettings() {
     return this._accessLogSettings;
   }
@@ -594,7 +591,7 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
   }
 
   // default_route_settings - computed: false, optional: true, required: false
-  private _defaultRouteSettings = new Apigatewayv2StageDefaultRouteSettingsOutputReference(this as any, "default_route_settings", true);
+  private _defaultRouteSettings = new Apigatewayv2StageDefaultRouteSettingsOutputReference(this, "default_route_settings", true);
   public get defaultRouteSettings() {
     return this._defaultRouteSettings;
   }
@@ -610,12 +607,12 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
   }
 
   // route_settings - computed: false, optional: true, required: false
-  private _routeSettings?: Apigatewayv2StageRouteSettings[]; 
+  private _routeSettings?: Apigatewayv2StageRouteSettings[] | cdktf.IResolvable; 
   public get routeSettings() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('route_settings') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('route_settings')));
   }
-  public set routeSettings(value: Apigatewayv2StageRouteSettings[]) {
+  public set routeSettings(value: Apigatewayv2StageRouteSettings[] | cdktf.IResolvable) {
     this._routeSettings = value;
   }
   public resetRouteSettings() {
@@ -638,9 +635,9 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
       deployment_id: cdktf.stringToTerraform(this._deploymentId),
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
-      stage_variables: cdktf.hashMapper(cdktf.anyToTerraform)(this._stageVariables),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      stage_variables: cdktf.hashMapper(cdktf.stringToTerraform)(this._stageVariables),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       access_log_settings: apigatewayv2StageAccessLogSettingsToTerraform(this._accessLogSettings.internalValue),
       default_route_settings: apigatewayv2StageDefaultRouteSettingsToTerraform(this._defaultRouteSettings.internalValue),
       route_settings: cdktf.listMapper(apigatewayv2StageRouteSettingsToTerraform)(this._routeSettings),

@@ -94,11 +94,11 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share#tags StoragegatewaySmbFileShare#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share#tags_all StoragegatewaySmbFileShare#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share#valid_user_list StoragegatewaySmbFileShare#valid_user_list}
   */
@@ -128,7 +128,7 @@ export interface StoragegatewaySmbFileShareCacheAttributes {
 }
 
 export function storagegatewaySmbFileShareCacheAttributesToTerraform(struct?: StoragegatewaySmbFileShareCacheAttributesOutputReference | StoragegatewaySmbFileShareCacheAttributes): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -145,7 +145,7 @@ export class StoragegatewaySmbFileShareCacheAttributesOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -201,8 +201,8 @@ export interface StoragegatewaySmbFileShareTimeouts {
   readonly update?: string;
 }
 
-export function storagegatewaySmbFileShareTimeoutsToTerraform(struct?: StoragegatewaySmbFileShareTimeoutsOutputReference | StoragegatewaySmbFileShareTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function storagegatewaySmbFileShareTimeoutsToTerraform(struct?: StoragegatewaySmbFileShareTimeoutsOutputReference | StoragegatewaySmbFileShareTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -221,7 +221,7 @@ export class StoragegatewaySmbFileShareTimeoutsOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -375,7 +375,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // access_based_enumeration - computed: false, optional: true, required: false
   private _accessBasedEnumeration?: boolean | cdktf.IResolvable; 
   public get accessBasedEnumeration() {
-    return this.getBooleanAttribute('access_based_enumeration') as any;
+    return this.getBooleanAttribute('access_based_enumeration');
   }
   public set accessBasedEnumeration(value: boolean | cdktf.IResolvable) {
     this._accessBasedEnumeration = value;
@@ -391,7 +391,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // admin_user_list - computed: false, optional: true, required: false
   private _adminUserList?: string[]; 
   public get adminUserList() {
-    return this.getListAttribute('admin_user_list');
+    return cdktf.Fn.tolist(this.getListAttribute('admin_user_list'));
   }
   public set adminUserList(value: string[]) {
     this._adminUserList = value;
@@ -526,7 +526,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // guess_mime_type_enabled - computed: false, optional: true, required: false
   private _guessMimeTypeEnabled?: boolean | cdktf.IResolvable; 
   public get guessMimeTypeEnabled() {
-    return this.getBooleanAttribute('guess_mime_type_enabled') as any;
+    return this.getBooleanAttribute('guess_mime_type_enabled');
   }
   public set guessMimeTypeEnabled(value: boolean | cdktf.IResolvable) {
     this._guessMimeTypeEnabled = value;
@@ -547,7 +547,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // invalid_user_list - computed: false, optional: true, required: false
   private _invalidUserList?: string[]; 
   public get invalidUserList() {
-    return this.getListAttribute('invalid_user_list');
+    return cdktf.Fn.tolist(this.getListAttribute('invalid_user_list'));
   }
   public set invalidUserList(value: string[]) {
     this._invalidUserList = value;
@@ -563,7 +563,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // kms_encrypted - computed: false, optional: true, required: false
   private _kmsEncrypted?: boolean | cdktf.IResolvable; 
   public get kmsEncrypted() {
-    return this.getBooleanAttribute('kms_encrypted') as any;
+    return this.getBooleanAttribute('kms_encrypted');
   }
   public set kmsEncrypted(value: boolean | cdktf.IResolvable) {
     this._kmsEncrypted = value;
@@ -640,7 +640,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // oplocks_enabled - computed: true, optional: true, required: false
   private _oplocksEnabled?: boolean | cdktf.IResolvable; 
   public get oplocksEnabled() {
-    return this.getBooleanAttribute('oplocks_enabled') as any;
+    return this.getBooleanAttribute('oplocks_enabled');
   }
   public set oplocksEnabled(value: boolean | cdktf.IResolvable) {
     this._oplocksEnabled = value;
@@ -661,7 +661,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // read_only - computed: false, optional: true, required: false
   private _readOnly?: boolean | cdktf.IResolvable; 
   public get readOnly() {
-    return this.getBooleanAttribute('read_only') as any;
+    return this.getBooleanAttribute('read_only');
   }
   public set readOnly(value: boolean | cdktf.IResolvable) {
     this._readOnly = value;
@@ -677,7 +677,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // requester_pays - computed: false, optional: true, required: false
   private _requesterPays?: boolean | cdktf.IResolvable; 
   public get requesterPays() {
-    return this.getBooleanAttribute('requester_pays') as any;
+    return this.getBooleanAttribute('requester_pays');
   }
   public set requesterPays(value: boolean | cdktf.IResolvable) {
     this._requesterPays = value;
@@ -706,7 +706,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // smb_acl_enabled - computed: false, optional: true, required: false
   private _smbAclEnabled?: boolean | cdktf.IResolvable; 
   public get smbAclEnabled() {
-    return this.getBooleanAttribute('smb_acl_enabled') as any;
+    return this.getBooleanAttribute('smb_acl_enabled');
   }
   public set smbAclEnabled(value: boolean | cdktf.IResolvable) {
     this._smbAclEnabled = value;
@@ -720,12 +720,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -737,12 +736,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -756,7 +754,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // valid_user_list - computed: false, optional: true, required: false
   private _validUserList?: string[]; 
   public get validUserList() {
-    return this.getListAttribute('valid_user_list');
+    return cdktf.Fn.tolist(this.getListAttribute('valid_user_list'));
   }
   public set validUserList(value: string[]) {
     this._validUserList = value;
@@ -786,7 +784,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // cache_attributes - computed: false, optional: true, required: false
-  private _cacheAttributes = new StoragegatewaySmbFileShareCacheAttributesOutputReference(this as any, "cache_attributes", true);
+  private _cacheAttributes = new StoragegatewaySmbFileShareCacheAttributesOutputReference(this, "cache_attributes", true);
   public get cacheAttributes() {
     return this._cacheAttributes;
   }
@@ -802,7 +800,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new StoragegatewaySmbFileShareTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new StoragegatewaySmbFileShareTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -844,8 +842,8 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
       requester_pays: cdktf.booleanToTerraform(this._requesterPays),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       smb_acl_enabled: cdktf.booleanToTerraform(this._smbAclEnabled),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       valid_user_list: cdktf.listMapper(cdktf.stringToTerraform)(this._validUserList),
       vpc_endpoint_dns_name: cdktf.stringToTerraform(this._vpcEndpointDnsName),
       cache_attributes: storagegatewaySmbFileShareCacheAttributesToTerraform(this._cacheAttributes.internalValue),

@@ -110,7 +110,7 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
   // compatible_architectures - computed: false, optional: true, required: false
   private _compatibleArchitectures?: string[]; 
   public get compatibleArchitectures() {
-    return this.getListAttribute('compatible_architectures');
+    return cdktf.Fn.tolist(this.getListAttribute('compatible_architectures'));
   }
   public set compatibleArchitectures(value: string[]) {
     this._compatibleArchitectures = value;
@@ -126,7 +126,7 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
   // compatible_runtimes - computed: false, optional: true, required: false
   private _compatibleRuntimes?: string[]; 
   public get compatibleRuntimes() {
-    return this.getListAttribute('compatible_runtimes');
+    return cdktf.Fn.tolist(this.getListAttribute('compatible_runtimes'));
   }
   public set compatibleRuntimes(value: string[]) {
     this._compatibleRuntimes = value;
@@ -276,7 +276,7 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
   // skip_destroy - computed: false, optional: true, required: false
   private _skipDestroy?: boolean | cdktf.IResolvable; 
   public get skipDestroy() {
-    return this.getBooleanAttribute('skip_destroy') as any;
+    return this.getBooleanAttribute('skip_destroy');
   }
   public set skipDestroy(value: boolean | cdktf.IResolvable) {
     this._skipDestroy = value;

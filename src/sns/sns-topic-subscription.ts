@@ -120,7 +120,7 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
 
   // confirmation_was_authenticated - computed: true, optional: false, required: false
   public get confirmationWasAuthenticated() {
-    return this.getBooleanAttribute('confirmation_was_authenticated') as any;
+    return this.getBooleanAttribute('confirmation_was_authenticated');
   }
 
   // delivery_policy - computed: false, optional: true, required: false
@@ -155,7 +155,7 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
   // endpoint_auto_confirms - computed: false, optional: true, required: false
   private _endpointAutoConfirms?: boolean | cdktf.IResolvable; 
   public get endpointAutoConfirms() {
-    return this.getBooleanAttribute('endpoint_auto_confirms') as any;
+    return this.getBooleanAttribute('endpoint_auto_confirms');
   }
   public set endpointAutoConfirms(value: boolean | cdktf.IResolvable) {
     this._endpointAutoConfirms = value;
@@ -196,7 +196,7 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
 
   // pending_confirmation - computed: true, optional: false, required: false
   public get pendingConfirmation() {
-    return this.getBooleanAttribute('pending_confirmation') as any;
+    return this.getBooleanAttribute('pending_confirmation');
   }
 
   // protocol - computed: false, optional: false, required: true
@@ -215,7 +215,7 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
   // raw_message_delivery - computed: false, optional: true, required: false
   private _rawMessageDelivery?: boolean | cdktf.IResolvable; 
   public get rawMessageDelivery() {
-    return this.getBooleanAttribute('raw_message_delivery') as any;
+    return this.getBooleanAttribute('raw_message_delivery');
   }
   public set rawMessageDelivery(value: boolean | cdktf.IResolvable) {
     this._rawMessageDelivery = value;

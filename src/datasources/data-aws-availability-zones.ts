@@ -28,7 +28,7 @@ export interface DataAwsAvailabilityZonesConfig extends cdktf.TerraformMetaArgum
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/availability_zones#filter DataAwsAvailabilityZones#filter}
   */
-  readonly filter?: DataAwsAvailabilityZonesFilter[];
+  readonly filter?: DataAwsAvailabilityZonesFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsAvailabilityZonesFilter {
   /**
@@ -41,8 +41,8 @@ export interface DataAwsAvailabilityZonesFilter {
   readonly values: string[];
 }
 
-export function dataAwsAvailabilityZonesFilterToTerraform(struct?: DataAwsAvailabilityZonesFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsAvailabilityZonesFilterToTerraform(struct?: DataAwsAvailabilityZonesFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -99,7 +99,7 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   // all_availability_zones - computed: false, optional: true, required: false
   private _allAvailabilityZones?: boolean | cdktf.IResolvable; 
   public get allAvailabilityZones() {
-    return this.getBooleanAttribute('all_availability_zones') as any;
+    return this.getBooleanAttribute('all_availability_zones');
   }
   public set allAvailabilityZones(value: boolean | cdktf.IResolvable) {
     this._allAvailabilityZones = value;
@@ -115,7 +115,7 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   // exclude_names - computed: false, optional: true, required: false
   private _excludeNames?: string[]; 
   public get excludeNames() {
-    return this.getListAttribute('exclude_names');
+    return cdktf.Fn.tolist(this.getListAttribute('exclude_names'));
   }
   public set excludeNames(value: string[]) {
     this._excludeNames = value;
@@ -131,7 +131,7 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   // exclude_zone_ids - computed: false, optional: true, required: false
   private _excludeZoneIds?: string[]; 
   public get excludeZoneIds() {
-    return this.getListAttribute('exclude_zone_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('exclude_zone_ids'));
   }
   public set excludeZoneIds(value: string[]) {
     this._excludeZoneIds = value;
@@ -146,7 +146,7 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
 
   // group_names - computed: true, optional: false, required: false
   public get groupNames() {
-    return this.getListAttribute('group_names');
+    return cdktf.Fn.tolist(this.getListAttribute('group_names'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -181,12 +181,12 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsAvailabilityZonesFilter[]; 
+  private _filter?: DataAwsAvailabilityZonesFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsAvailabilityZonesFilter[]) {
+  public set filter(value: DataAwsAvailabilityZonesFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {

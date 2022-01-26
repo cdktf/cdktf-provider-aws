@@ -53,8 +53,8 @@ export interface DxGatewayAssociationTimeouts {
   readonly update?: string;
 }
 
-export function dxGatewayAssociationTimeoutsToTerraform(struct?: DxGatewayAssociationTimeoutsOutputReference | DxGatewayAssociationTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dxGatewayAssociationTimeoutsToTerraform(struct?: DxGatewayAssociationTimeoutsOutputReference | DxGatewayAssociationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -73,7 +73,7 @@ export class DxGatewayAssociationTimeoutsOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -207,7 +207,7 @@ export class DxGatewayAssociation extends cdktf.TerraformResource {
   // allowed_prefixes - computed: true, optional: true, required: false
   private _allowedPrefixes?: string[]; 
   public get allowedPrefixes() {
-    return this.getListAttribute('allowed_prefixes');
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_prefixes'));
   }
   public set allowedPrefixes(value: string[]) {
     this._allowedPrefixes = value;
@@ -318,7 +318,7 @@ export class DxGatewayAssociation extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DxGatewayAssociationTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DxGatewayAssociationTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

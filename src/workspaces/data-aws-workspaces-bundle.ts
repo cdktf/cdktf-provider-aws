@@ -101,7 +101,7 @@ export class DataAwsWorkspacesBundle extends cdktf.TerraformDataSource {
 
   // compute_type - computed: true, optional: false, required: false
   public computeType(index: string) {
-    return new DataAwsWorkspacesBundleComputeType(this, 'compute_type', index);
+    return new DataAwsWorkspacesBundleComputeType(this, 'compute_type', index, false);
   }
 
   // description - computed: true, optional: false, required: false
@@ -148,12 +148,12 @@ export class DataAwsWorkspacesBundle extends cdktf.TerraformDataSource {
 
   // root_storage - computed: true, optional: false, required: false
   public rootStorage(index: string) {
-    return new DataAwsWorkspacesBundleRootStorage(this, 'root_storage', index);
+    return new DataAwsWorkspacesBundleRootStorage(this, 'root_storage', index, false);
   }
 
   // user_storage - computed: true, optional: false, required: false
   public userStorage(index: string) {
-    return new DataAwsWorkspacesBundleUserStorage(this, 'user_storage', index);
+    return new DataAwsWorkspacesBundleUserStorage(this, 'user_storage', index, false);
   }
 
   // =========

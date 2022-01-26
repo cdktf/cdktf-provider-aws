@@ -96,7 +96,7 @@ export class EipAssociation extends cdktf.TerraformResource {
   // allow_reassociation - computed: false, optional: true, required: false
   private _allowReassociation?: boolean | cdktf.IResolvable; 
   public get allowReassociation() {
-    return this.getBooleanAttribute('allow_reassociation') as any;
+    return this.getBooleanAttribute('allow_reassociation');
   }
   public set allowReassociation(value: boolean | cdktf.IResolvable) {
     this._allowReassociation = value;

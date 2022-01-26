@@ -101,7 +101,7 @@ export class IamUserLoginProfile extends cdktf.TerraformResource {
   // password_reset_required - computed: false, optional: true, required: false
   private _passwordResetRequired?: boolean | cdktf.IResolvable; 
   public get passwordResetRequired() {
-    return this.getBooleanAttribute('password_reset_required') as any;
+    return this.getBooleanAttribute('password_reset_required');
   }
   public set passwordResetRequired(value: boolean | cdktf.IResolvable) {
     this._passwordResetRequired = value;

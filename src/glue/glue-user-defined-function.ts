@@ -36,7 +36,7 @@ export interface GlueUserDefinedFunctionConfig extends cdktf.TerraformMetaArgume
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_user_defined_function#resource_uris GlueUserDefinedFunction#resource_uris}
   */
-  readonly resourceUris?: GlueUserDefinedFunctionResourceUris[];
+  readonly resourceUris?: GlueUserDefinedFunctionResourceUris[] | cdktf.IResolvable;
 }
 export interface GlueUserDefinedFunctionResourceUris {
   /**
@@ -49,8 +49,8 @@ export interface GlueUserDefinedFunctionResourceUris {
   readonly uri: string;
 }
 
-export function glueUserDefinedFunctionResourceUrisToTerraform(struct?: GlueUserDefinedFunctionResourceUris): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function glueUserDefinedFunctionResourceUrisToTerraform(struct?: GlueUserDefinedFunctionResourceUris | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -203,12 +203,12 @@ export class GlueUserDefinedFunction extends cdktf.TerraformResource {
   }
 
   // resource_uris - computed: false, optional: true, required: false
-  private _resourceUris?: GlueUserDefinedFunctionResourceUris[]; 
+  private _resourceUris?: GlueUserDefinedFunctionResourceUris[] | cdktf.IResolvable; 
   public get resourceUris() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('resource_uris') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('resource_uris')));
   }
-  public set resourceUris(value: GlueUserDefinedFunctionResourceUris[]) {
+  public set resourceUris(value: GlueUserDefinedFunctionResourceUris[] | cdktf.IResolvable) {
     this._resourceUris = value;
   }
   public resetResourceUris() {

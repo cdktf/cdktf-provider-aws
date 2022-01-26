@@ -58,7 +58,7 @@ export interface AppautoscalingScheduledActionScalableTargetAction {
 }
 
 export function appautoscalingScheduledActionScalableTargetActionToTerraform(struct?: AppautoscalingScheduledActionScalableTargetActionOutputReference | AppautoscalingScheduledActionScalableTargetAction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -76,7 +76,7 @@ export class AppautoscalingScheduledActionScalableTargetActionOutputReference ex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -311,7 +311,7 @@ export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
   }
 
   // scalable_target_action - computed: false, optional: false, required: true
-  private _scalableTargetAction = new AppautoscalingScheduledActionScalableTargetActionOutputReference(this as any, "scalable_target_action", true);
+  private _scalableTargetAction = new AppautoscalingScheduledActionScalableTargetActionOutputReference(this, "scalable_target_action", true);
   public get scalableTargetAction() {
     return this._scalableTargetAction;
   }

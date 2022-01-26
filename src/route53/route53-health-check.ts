@@ -86,11 +86,11 @@ export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check#tags Route53HealthCheck#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check#tags_all Route53HealthCheck#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check#type Route53HealthCheck#type}
   */
@@ -181,7 +181,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   // child_healthchecks - computed: false, optional: true, required: false
   private _childHealthchecks?: string[]; 
   public get childHealthchecks() {
-    return this.getListAttribute('child_healthchecks');
+    return cdktf.Fn.tolist(this.getListAttribute('child_healthchecks'));
   }
   public set childHealthchecks(value: string[]) {
     this._childHealthchecks = value;
@@ -229,7 +229,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   // disabled - computed: false, optional: true, required: false
   private _disabled?: boolean | cdktf.IResolvable; 
   public get disabled() {
-    return this.getBooleanAttribute('disabled') as any;
+    return this.getBooleanAttribute('disabled');
   }
   public set disabled(value: boolean | cdktf.IResolvable) {
     this._disabled = value;
@@ -245,7 +245,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   // enable_sni - computed: true, optional: true, required: false
   private _enableSni?: boolean | cdktf.IResolvable; 
   public get enableSni() {
-    return this.getBooleanAttribute('enable_sni') as any;
+    return this.getBooleanAttribute('enable_sni');
   }
   public set enableSni(value: boolean | cdktf.IResolvable) {
     this._enableSni = value;
@@ -314,7 +314,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   // invert_healthcheck - computed: false, optional: true, required: false
   private _invertHealthcheck?: boolean | cdktf.IResolvable; 
   public get invertHealthcheck() {
-    return this.getBooleanAttribute('invert_healthcheck') as any;
+    return this.getBooleanAttribute('invert_healthcheck');
   }
   public set invertHealthcheck(value: boolean | cdktf.IResolvable) {
     this._invertHealthcheck = value;
@@ -346,7 +346,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   // measure_latency - computed: false, optional: true, required: false
   private _measureLatency?: boolean | cdktf.IResolvable; 
   public get measureLatency() {
-    return this.getBooleanAttribute('measure_latency') as any;
+    return this.getBooleanAttribute('measure_latency');
   }
   public set measureLatency(value: boolean | cdktf.IResolvable) {
     this._measureLatency = value;
@@ -394,7 +394,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   // regions - computed: false, optional: true, required: false
   private _regions?: string[]; 
   public get regions() {
-    return this.getListAttribute('regions');
+    return cdktf.Fn.tolist(this.getListAttribute('regions'));
   }
   public set regions(value: string[]) {
     this._regions = value;
@@ -472,12 +472,11 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -489,12 +488,11 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -543,8 +541,8 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
       resource_path: cdktf.stringToTerraform(this._resourcePath),
       routing_control_arn: cdktf.stringToTerraform(this._routingControlArn),
       search_string: cdktf.stringToTerraform(this._searchString),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
     };
   }

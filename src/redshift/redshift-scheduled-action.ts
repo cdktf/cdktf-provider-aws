@@ -50,7 +50,7 @@ export interface RedshiftScheduledActionTargetActionPauseCluster {
 }
 
 export function redshiftScheduledActionTargetActionPauseClusterToTerraform(struct?: RedshiftScheduledActionTargetActionPauseClusterOutputReference | RedshiftScheduledActionTargetActionPauseCluster): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -67,7 +67,7 @@ export class RedshiftScheduledActionTargetActionPauseClusterOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -129,7 +129,7 @@ export interface RedshiftScheduledActionTargetActionResizeCluster {
 }
 
 export function redshiftScheduledActionTargetActionResizeClusterToTerraform(struct?: RedshiftScheduledActionTargetActionResizeClusterOutputReference | RedshiftScheduledActionTargetActionResizeCluster): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -150,7 +150,7 @@ export class RedshiftScheduledActionTargetActionResizeClusterOutputReference ext
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -202,7 +202,7 @@ export class RedshiftScheduledActionTargetActionResizeClusterOutputReference ext
   // classic - computed: false, optional: true, required: false
   private _classic?: boolean | cdktf.IResolvable; 
   public get classic() {
-    return this.getBooleanAttribute('classic') as any;
+    return this.getBooleanAttribute('classic');
   }
   public set classic(value: boolean | cdktf.IResolvable) {
     this._classic = value;
@@ -284,7 +284,7 @@ export interface RedshiftScheduledActionTargetActionResumeCluster {
 }
 
 export function redshiftScheduledActionTargetActionResumeClusterToTerraform(struct?: RedshiftScheduledActionTargetActionResumeClusterOutputReference | RedshiftScheduledActionTargetActionResumeCluster): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -301,7 +301,7 @@ export class RedshiftScheduledActionTargetActionResumeClusterOutputReference ext
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -361,7 +361,7 @@ export interface RedshiftScheduledActionTargetAction {
 }
 
 export function redshiftScheduledActionTargetActionToTerraform(struct?: RedshiftScheduledActionTargetActionOutputReference | RedshiftScheduledActionTargetAction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -380,7 +380,7 @@ export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -418,7 +418,7 @@ export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.Co
   }
 
   // pause_cluster - computed: false, optional: true, required: false
-  private _pauseCluster = new RedshiftScheduledActionTargetActionPauseClusterOutputReference(this as any, "pause_cluster", true);
+  private _pauseCluster = new RedshiftScheduledActionTargetActionPauseClusterOutputReference(this, "pause_cluster", true);
   public get pauseCluster() {
     return this._pauseCluster;
   }
@@ -434,7 +434,7 @@ export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.Co
   }
 
   // resize_cluster - computed: false, optional: true, required: false
-  private _resizeCluster = new RedshiftScheduledActionTargetActionResizeClusterOutputReference(this as any, "resize_cluster", true);
+  private _resizeCluster = new RedshiftScheduledActionTargetActionResizeClusterOutputReference(this, "resize_cluster", true);
   public get resizeCluster() {
     return this._resizeCluster;
   }
@@ -450,7 +450,7 @@ export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.Co
   }
 
   // resume_cluster - computed: false, optional: true, required: false
-  private _resumeCluster = new RedshiftScheduledActionTargetActionResumeClusterOutputReference(this as any, "resume_cluster", true);
+  private _resumeCluster = new RedshiftScheduledActionTargetActionResumeClusterOutputReference(this, "resume_cluster", true);
   public get resumeCluster() {
     return this._resumeCluster;
   }
@@ -531,7 +531,7 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
   // enable - computed: false, optional: true, required: false
   private _enable?: boolean | cdktf.IResolvable; 
   public get enable() {
-    return this.getBooleanAttribute('enable') as any;
+    return this.getBooleanAttribute('enable');
   }
   public set enable(value: boolean | cdktf.IResolvable) {
     this._enable = value;
@@ -621,7 +621,7 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
   }
 
   // target_action - computed: false, optional: false, required: true
-  private _targetAction = new RedshiftScheduledActionTargetActionOutputReference(this as any, "target_action", true);
+  private _targetAction = new RedshiftScheduledActionTargetActionOutputReference(this, "target_action", true);
   public get targetAction() {
     return this._targetAction;
   }

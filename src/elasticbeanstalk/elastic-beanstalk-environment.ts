@@ -38,11 +38,11 @@ export interface ElasticBeanstalkEnvironmentConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_environment#tags ElasticBeanstalkEnvironment#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_environment#tags_all ElasticBeanstalkEnvironment#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_environment#template_name ElasticBeanstalkEnvironment#template_name}
   */
@@ -64,7 +64,7 @@ export interface ElasticBeanstalkEnvironmentConfig extends cdktf.TerraformMetaAr
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_environment#setting ElasticBeanstalkEnvironment#setting}
   */
-  readonly setting?: ElasticBeanstalkEnvironmentSetting[];
+  readonly setting?: ElasticBeanstalkEnvironmentSetting[] | cdktf.IResolvable;
 }
 export class ElasticBeanstalkEnvironmentAllSettings extends cdktf.ComplexComputedList {
 
@@ -107,8 +107,8 @@ export interface ElasticBeanstalkEnvironmentSetting {
   readonly value: string;
 }
 
-export function elasticBeanstalkEnvironmentSettingToTerraform(struct?: ElasticBeanstalkEnvironmentSetting): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function elasticBeanstalkEnvironmentSettingToTerraform(struct?: ElasticBeanstalkEnvironmentSetting | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -175,7 +175,7 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
 
   // all_settings - computed: true, optional: false, required: false
   public allSettings(index: string) {
-    return new ElasticBeanstalkEnvironmentAllSettings(this, 'all_settings', index);
+    return new ElasticBeanstalkEnvironmentAllSettings(this, 'all_settings', index, true);
   }
 
   // application - computed: false, optional: false, required: true
@@ -330,12 +330,11 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -347,12 +346,11 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -433,12 +431,12 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
   }
 
   // setting - computed: false, optional: true, required: false
-  private _setting?: ElasticBeanstalkEnvironmentSetting[]; 
+  private _setting?: ElasticBeanstalkEnvironmentSetting[] | cdktf.IResolvable; 
   public get setting() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('setting') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('setting')));
   }
-  public set setting(value: ElasticBeanstalkEnvironmentSetting[]) {
+  public set setting(value: ElasticBeanstalkEnvironmentSetting[] | cdktf.IResolvable) {
     this._setting = value;
   }
   public resetSetting() {
@@ -462,8 +460,8 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
       platform_arn: cdktf.stringToTerraform(this._platformArn),
       poll_interval: cdktf.stringToTerraform(this._pollInterval),
       solution_stack_name: cdktf.stringToTerraform(this._solutionStackName),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       template_name: cdktf.stringToTerraform(this._templateName),
       tier: cdktf.stringToTerraform(this._tier),
       version_label: cdktf.stringToTerraform(this._versionLabel),

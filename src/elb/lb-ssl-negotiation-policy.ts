@@ -24,7 +24,7 @@ export interface LbSslNegotiationPolicyConfig extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_ssl_negotiation_policy#attribute LbSslNegotiationPolicy#attribute}
   */
-  readonly attribute?: LbSslNegotiationPolicyAttribute[];
+  readonly attribute?: LbSslNegotiationPolicyAttribute[] | cdktf.IResolvable;
 }
 export interface LbSslNegotiationPolicyAttribute {
   /**
@@ -37,8 +37,8 @@ export interface LbSslNegotiationPolicyAttribute {
   readonly value: string;
 }
 
-export function lbSslNegotiationPolicyAttributeToTerraform(struct?: LbSslNegotiationPolicyAttribute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lbSslNegotiationPolicyAttributeToTerraform(struct?: LbSslNegotiationPolicyAttribute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -136,12 +136,12 @@ export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
   }
 
   // attribute - computed: false, optional: true, required: false
-  private _attribute?: LbSslNegotiationPolicyAttribute[]; 
+  private _attribute?: LbSslNegotiationPolicyAttribute[] | cdktf.IResolvable; 
   public get attribute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('attribute') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('attribute')));
   }
-  public set attribute(value: LbSslNegotiationPolicyAttribute[]) {
+  public set attribute(value: LbSslNegotiationPolicyAttribute[] | cdktf.IResolvable) {
     this._attribute = value;
   }
   public resetAttribute() {

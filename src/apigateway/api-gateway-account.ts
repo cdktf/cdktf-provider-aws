@@ -87,7 +87,7 @@ export class ApiGatewayAccount extends cdktf.TerraformResource {
 
   // throttle_settings - computed: true, optional: false, required: false
   public throttleSettings(index: string) {
-    return new ApiGatewayAccountThrottleSettings(this, 'throttle_settings', index);
+    return new ApiGatewayAccountThrottleSettings(this, 'throttle_settings', index, false);
   }
 
   // =========

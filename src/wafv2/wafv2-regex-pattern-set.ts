@@ -22,17 +22,17 @@ export interface Wafv2RegexPatternSetConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set#tags Wafv2RegexPatternSet#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set#tags_all Wafv2RegexPatternSet#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * regular_expression block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set#regular_expression Wafv2RegexPatternSet#regular_expression}
   */
-  readonly regularExpression?: Wafv2RegexPatternSetRegularExpression[];
+  readonly regularExpression?: Wafv2RegexPatternSetRegularExpression[] | cdktf.IResolvable;
 }
 export interface Wafv2RegexPatternSetRegularExpression {
   /**
@@ -41,8 +41,8 @@ export interface Wafv2RegexPatternSetRegularExpression {
   readonly regexString: string;
 }
 
-export function wafv2RegexPatternSetRegularExpressionToTerraform(struct?: Wafv2RegexPatternSetRegularExpression): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafv2RegexPatternSetRegularExpressionToTerraform(struct?: Wafv2RegexPatternSetRegularExpression | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -154,12 +154,11 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -171,12 +170,11 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -188,12 +186,12 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
   }
 
   // regular_expression - computed: false, optional: true, required: false
-  private _regularExpression?: Wafv2RegexPatternSetRegularExpression[]; 
+  private _regularExpression?: Wafv2RegexPatternSetRegularExpression[] | cdktf.IResolvable; 
   public get regularExpression() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('regular_expression') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('regular_expression')));
   }
-  public set regularExpression(value: Wafv2RegexPatternSetRegularExpression[]) {
+  public set regularExpression(value: Wafv2RegexPatternSetRegularExpression[] | cdktf.IResolvable) {
     this._regularExpression = value;
   }
   public resetRegularExpression() {
@@ -213,8 +211,8 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       scope: cdktf.stringToTerraform(this._scope),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       regular_expression: cdktf.listMapper(wafv2RegexPatternSetRegularExpressionToTerraform)(this._regularExpression),
     };
   }

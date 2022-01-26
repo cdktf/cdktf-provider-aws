@@ -111,12 +111,12 @@ export class DataAwsCloudformationType extends cdktf.TerraformDataSource {
 
   // is_default_version - computed: true, optional: false, required: false
   public get isDefaultVersion() {
-    return this.getBooleanAttribute('is_default_version') as any;
+    return this.getBooleanAttribute('is_default_version');
   }
 
   // logging_config - computed: true, optional: false, required: false
   public loggingConfig(index: string) {
-    return new DataAwsCloudformationTypeLoggingConfig(this, 'logging_config', index);
+    return new DataAwsCloudformationTypeLoggingConfig(this, 'logging_config', index, false);
   }
 
   // provisioning_type - computed: true, optional: false, required: false

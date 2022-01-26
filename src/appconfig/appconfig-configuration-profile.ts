@@ -30,17 +30,17 @@ export interface AppconfigConfigurationProfileConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appconfig_configuration_profile#tags AppconfigConfigurationProfile#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appconfig_configuration_profile#tags_all AppconfigConfigurationProfile#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * validator block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appconfig_configuration_profile#validator AppconfigConfigurationProfile#validator}
   */
-  readonly validator?: AppconfigConfigurationProfileValidator[];
+  readonly validator?: AppconfigConfigurationProfileValidator[] | cdktf.IResolvable;
 }
 export interface AppconfigConfigurationProfileValidator {
   /**
@@ -53,8 +53,8 @@ export interface AppconfigConfigurationProfileValidator {
   readonly type: string;
 }
 
-export function appconfigConfigurationProfileValidatorToTerraform(struct?: AppconfigConfigurationProfileValidator): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appconfigConfigurationProfileValidatorToTerraform(struct?: AppconfigConfigurationProfileValidator | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -198,12 +198,11 @@ export class AppconfigConfigurationProfile extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -215,12 +214,11 @@ export class AppconfigConfigurationProfile extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -232,12 +230,12 @@ export class AppconfigConfigurationProfile extends cdktf.TerraformResource {
   }
 
   // validator - computed: false, optional: true, required: false
-  private _validator?: AppconfigConfigurationProfileValidator[]; 
+  private _validator?: AppconfigConfigurationProfileValidator[] | cdktf.IResolvable; 
   public get validator() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('validator') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('validator')));
   }
-  public set validator(value: AppconfigConfigurationProfileValidator[]) {
+  public set validator(value: AppconfigConfigurationProfileValidator[] | cdktf.IResolvable) {
     this._validator = value;
   }
   public resetValidator() {
@@ -259,8 +257,8 @@ export class AppconfigConfigurationProfile extends cdktf.TerraformResource {
       location_uri: cdktf.stringToTerraform(this._locationUri),
       name: cdktf.stringToTerraform(this._name),
       retrieval_role_arn: cdktf.stringToTerraform(this._retrievalRoleArn),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       validator: cdktf.listMapper(appconfigConfigurationProfileValidatorToTerraform)(this._validator),
     };
   }

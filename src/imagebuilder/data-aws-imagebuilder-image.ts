@@ -14,13 +14,13 @@ export interface DataAwsImagebuilderImageConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image#tags DataAwsImagebuilderImage#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsImagebuilderImageImageTestsConfiguration extends cdktf.ComplexComputedList {
 
   // image_tests_enabled - computed: true, optional: false, required: false
   public get imageTestsEnabled() {
-    return this.getBooleanAttribute('image_tests_enabled') as any;
+    return this.getBooleanAttribute('image_tests_enabled');
   }
 
   // timeout_minutes - computed: true, optional: false, required: false
@@ -60,7 +60,7 @@ export class DataAwsImagebuilderImageOutputResources extends cdktf.ComplexComput
   // amis - computed: true, optional: false, required: false
   public get amis() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('amis') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('amis')));
   }
 }
 
@@ -134,7 +134,7 @@ export class DataAwsImagebuilderImage extends cdktf.TerraformDataSource {
 
   // enhanced_image_metadata_enabled - computed: true, optional: false, required: false
   public get enhancedImageMetadataEnabled() {
-    return this.getBooleanAttribute('enhanced_image_metadata_enabled') as any;
+    return this.getBooleanAttribute('enhanced_image_metadata_enabled');
   }
 
   // id - computed: true, optional: true, required: false
@@ -149,7 +149,7 @@ export class DataAwsImagebuilderImage extends cdktf.TerraformDataSource {
 
   // image_tests_configuration - computed: true, optional: false, required: false
   public imageTestsConfiguration(index: string) {
-    return new DataAwsImagebuilderImageImageTestsConfiguration(this, 'image_tests_configuration', index);
+    return new DataAwsImagebuilderImageImageTestsConfiguration(this, 'image_tests_configuration', index, false);
   }
 
   // infrastructure_configuration_arn - computed: true, optional: false, required: false
@@ -169,7 +169,7 @@ export class DataAwsImagebuilderImage extends cdktf.TerraformDataSource {
 
   // output_resources - computed: true, optional: false, required: false
   public outputResources(index: string) {
-    return new DataAwsImagebuilderImageOutputResources(this, 'output_resources', index);
+    return new DataAwsImagebuilderImageOutputResources(this, 'output_resources', index, false);
   }
 
   // platform - computed: true, optional: false, required: false
@@ -178,12 +178,11 @@ export class DataAwsImagebuilderImage extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -206,7 +205,7 @@ export class DataAwsImagebuilderImage extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       arn: cdktf.stringToTerraform(this._arn),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

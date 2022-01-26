@@ -135,7 +135,7 @@ export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
   // fetch_owner - computed: false, optional: true, required: false
   private _fetchOwner?: boolean | cdktf.IResolvable; 
   public get fetchOwner() {
-    return this.getBooleanAttribute('fetch_owner') as any;
+    return this.getBooleanAttribute('fetch_owner');
   }
   public set fetchOwner(value: boolean | cdktf.IResolvable) {
     this._fetchOwner = value;

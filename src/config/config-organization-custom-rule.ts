@@ -73,8 +73,8 @@ export interface ConfigOrganizationCustomRuleTimeouts {
   readonly update?: string;
 }
 
-export function configOrganizationCustomRuleTimeoutsToTerraform(struct?: ConfigOrganizationCustomRuleTimeoutsOutputReference | ConfigOrganizationCustomRuleTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function configOrganizationCustomRuleTimeoutsToTerraform(struct?: ConfigOrganizationCustomRuleTimeoutsOutputReference | ConfigOrganizationCustomRuleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -93,7 +93,7 @@ export class ConfigOrganizationCustomRuleTimeoutsOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -253,7 +253,7 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
   // excluded_accounts - computed: false, optional: true, required: false
   private _excludedAccounts?: string[]; 
   public get excludedAccounts() {
-    return this.getListAttribute('excluded_accounts');
+    return cdktf.Fn.tolist(this.getListAttribute('excluded_accounts'));
   }
   public set excludedAccounts(value: string[]) {
     this._excludedAccounts = value;
@@ -348,7 +348,7 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
   // resource_types_scope - computed: false, optional: true, required: false
   private _resourceTypesScope?: string[]; 
   public get resourceTypesScope() {
-    return this.getListAttribute('resource_types_scope');
+    return cdktf.Fn.tolist(this.getListAttribute('resource_types_scope'));
   }
   public set resourceTypesScope(value: string[]) {
     this._resourceTypesScope = value;
@@ -396,7 +396,7 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
   // trigger_types - computed: false, optional: false, required: true
   private _triggerTypes?: string[]; 
   public get triggerTypes() {
-    return this.getListAttribute('trigger_types');
+    return cdktf.Fn.tolist(this.getListAttribute('trigger_types'));
   }
   public set triggerTypes(value: string[]) {
     this._triggerTypes = value;
@@ -407,7 +407,7 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ConfigOrganizationCustomRuleTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ConfigOrganizationCustomRuleTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

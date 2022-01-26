@@ -10,7 +10,7 @@ export interface DataAwsKmsCiphertextConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_ciphertext#context DataAwsKmsCiphertext#context}
   */
-  readonly context?: { [key: string]: string } | cdktf.IResolvable;
+  readonly context?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_ciphertext#key_id DataAwsKmsCiphertext#key_id}
   */
@@ -68,12 +68,11 @@ export class DataAwsKmsCiphertext extends cdktf.TerraformDataSource {
   }
 
   // context - computed: false, optional: true, required: false
-  private _context?: { [key: string]: string } | cdktf.IResolvable; 
+  private _context?: { [key: string]: string }; 
   public get context() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('context') as any;
+    return this.getStringMapAttribute('context');
   }
-  public set context(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set context(value: { [key: string]: string }) {
     this._context = value;
   }
   public resetContext() {
@@ -121,7 +120,7 @@ export class DataAwsKmsCiphertext extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      context: cdktf.hashMapper(cdktf.anyToTerraform)(this._context),
+      context: cdktf.hashMapper(cdktf.stringToTerraform)(this._context),
       key_id: cdktf.stringToTerraform(this._keyId),
       plaintext: cdktf.stringToTerraform(this._plaintext),
     };

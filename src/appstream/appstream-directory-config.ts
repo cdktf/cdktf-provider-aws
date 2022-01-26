@@ -34,7 +34,7 @@ export interface AppstreamDirectoryConfigServiceAccountCredentials {
 }
 
 export function appstreamDirectoryConfigServiceAccountCredentialsToTerraform(struct?: AppstreamDirectoryConfigServiceAccountCredentialsOutputReference | AppstreamDirectoryConfigServiceAccountCredentials): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -52,7 +52,7 @@ export class AppstreamDirectoryConfigServiceAccountCredentialsOutputReference ex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -177,7 +177,7 @@ export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
   // organizational_unit_distinguished_names - computed: false, optional: false, required: true
   private _organizationalUnitDistinguishedNames?: string[]; 
   public get organizationalUnitDistinguishedNames() {
-    return this.getListAttribute('organizational_unit_distinguished_names');
+    return cdktf.Fn.tolist(this.getListAttribute('organizational_unit_distinguished_names'));
   }
   public set organizationalUnitDistinguishedNames(value: string[]) {
     this._organizationalUnitDistinguishedNames = value;
@@ -188,7 +188,7 @@ export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
   }
 
   // service_account_credentials - computed: false, optional: false, required: true
-  private _serviceAccountCredentials = new AppstreamDirectoryConfigServiceAccountCredentialsOutputReference(this as any, "service_account_credentials", true);
+  private _serviceAccountCredentials = new AppstreamDirectoryConfigServiceAccountCredentialsOutputReference(this, "service_account_credentials", true);
   public get serviceAccountCredentials() {
     return this._serviceAccountCredentials;
   }

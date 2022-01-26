@@ -14,13 +14,13 @@ export interface DataAwsEc2HostConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_host#tags DataAwsEc2Host#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * filter block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_host#filter DataAwsEc2Host#filter}
   */
-  readonly filter?: DataAwsEc2HostFilter[];
+  readonly filter?: DataAwsEc2HostFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsEc2HostFilter {
   /**
@@ -33,8 +33,8 @@ export interface DataAwsEc2HostFilter {
   readonly values: string[];
 }
 
-export function dataAwsEc2HostFilterToTerraform(struct?: DataAwsEc2HostFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsEc2HostFilterToTerraform(struct?: DataAwsEc2HostFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -153,12 +153,11 @@ export class DataAwsEc2Host extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -175,12 +174,12 @@ export class DataAwsEc2Host extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsEc2HostFilter[]; 
+  private _filter?: DataAwsEc2HostFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsEc2HostFilter[]) {
+  public set filter(value: DataAwsEc2HostFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -198,7 +197,7 @@ export class DataAwsEc2Host extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       host_id: cdktf.stringToTerraform(this._hostId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsEc2HostFilterToTerraform)(this._filter),
     };
   }

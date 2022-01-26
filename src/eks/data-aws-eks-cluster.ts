@@ -14,7 +14,7 @@ export interface DataAwsEksClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/eks_cluster#tags DataAwsEksCluster#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsEksClusterCertificateAuthority extends cdktf.ComplexComputedList {
 
@@ -35,7 +35,7 @@ export class DataAwsEksClusterIdentity extends cdktf.ComplexComputedList {
   // oidc - computed: true, optional: false, required: false
   public get oidc() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('oidc') as any;
+    return this.interpolationForAttribute('oidc');
   }
 }
 export class DataAwsEksClusterKubernetesNetworkConfig extends cdktf.ComplexComputedList {
@@ -59,27 +59,27 @@ export class DataAwsEksClusterVpcConfig extends cdktf.ComplexComputedList {
 
   // endpoint_private_access - computed: true, optional: false, required: false
   public get endpointPrivateAccess() {
-    return this.getBooleanAttribute('endpoint_private_access') as any;
+    return this.getBooleanAttribute('endpoint_private_access');
   }
 
   // endpoint_public_access - computed: true, optional: false, required: false
   public get endpointPublicAccess() {
-    return this.getBooleanAttribute('endpoint_public_access') as any;
+    return this.getBooleanAttribute('endpoint_public_access');
   }
 
   // public_access_cidrs - computed: true, optional: false, required: false
   public get publicAccessCidrs() {
-    return this.getListAttribute('public_access_cidrs');
+    return cdktf.Fn.tolist(this.getListAttribute('public_access_cidrs'));
   }
 
   // security_group_ids - computed: true, optional: false, required: false
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
 
   // subnet_ids - computed: true, optional: false, required: false
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
 
   // vpc_id - computed: true, optional: false, required: false
@@ -135,7 +135,7 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
 
   // certificate_authority - computed: true, optional: false, required: false
   public certificateAuthority(index: string) {
-    return new DataAwsEksClusterCertificateAuthority(this, 'certificate_authority', index);
+    return new DataAwsEksClusterCertificateAuthority(this, 'certificate_authority', index, false);
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -145,7 +145,7 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
 
   // enabled_cluster_log_types - computed: true, optional: false, required: false
   public get enabledClusterLogTypes() {
-    return this.getListAttribute('enabled_cluster_log_types');
+    return cdktf.Fn.tolist(this.getListAttribute('enabled_cluster_log_types'));
   }
 
   // endpoint - computed: true, optional: false, required: false
@@ -160,12 +160,12 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
 
   // identity - computed: true, optional: false, required: false
   public identity(index: string) {
-    return new DataAwsEksClusterIdentity(this, 'identity', index);
+    return new DataAwsEksClusterIdentity(this, 'identity', index, false);
   }
 
   // kubernetes_network_config - computed: true, optional: false, required: false
   public kubernetesNetworkConfig(index: string) {
-    return new DataAwsEksClusterKubernetesNetworkConfig(this, 'kubernetes_network_config', index);
+    return new DataAwsEksClusterKubernetesNetworkConfig(this, 'kubernetes_network_config', index, false);
   }
 
   // name - computed: false, optional: false, required: true
@@ -197,12 +197,11 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -220,7 +219,7 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
 
   // vpc_config - computed: true, optional: false, required: false
   public vpcConfig(index: string) {
-    return new DataAwsEksClusterVpcConfig(this, 'vpc_config', index);
+    return new DataAwsEksClusterVpcConfig(this, 'vpc_config', index, false);
   }
 
   // =========
@@ -230,7 +229,7 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

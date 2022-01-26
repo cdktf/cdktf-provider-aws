@@ -86,7 +86,7 @@ export class DataAwsLexSlotType extends cdktf.TerraformDataSource {
 
   // enumeration_value - computed: true, optional: false, required: false
   public enumerationValue(index: string) {
-    return new DataAwsLexSlotTypeEnumerationValue(this, 'enumeration_value', index);
+    return new DataAwsLexSlotTypeEnumerationValue(this, 'enumeration_value', index, true);
   }
 
   // id - computed: true, optional: true, required: false

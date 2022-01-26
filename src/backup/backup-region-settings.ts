@@ -10,11 +10,11 @@ export interface BackupRegionSettingsConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_region_settings#resource_type_management_preference BackupRegionSettings#resource_type_management_preference}
   */
-  readonly resourceTypeManagementPreference?: { [key: string]: boolean } | cdktf.IResolvable;
+  readonly resourceTypeManagementPreference?: { [key: string]: (boolean | cdktf.IResolvable) };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_region_settings#resource_type_opt_in_preference BackupRegionSettings#resource_type_opt_in_preference}
   */
-  readonly resourceTypeOptInPreference: { [key: string]: boolean } | cdktf.IResolvable;
+  readonly resourceTypeOptInPreference: { [key: string]: (boolean | cdktf.IResolvable) };
 }
 
 /**
@@ -63,11 +63,11 @@ export class BackupRegionSettings extends cdktf.TerraformResource {
   }
 
   // resource_type_management_preference - computed: true, optional: true, required: false
-  private _resourceTypeManagementPreference?: { [key: string]: boolean } | cdktf.IResolvable; 
+  private _resourceTypeManagementPreference?: { [key: string]: (boolean | cdktf.IResolvable) }; 
   public get resourceTypeManagementPreference() {
-    return this.getBooleanAttribute('resource_type_management_preference') as any;
+    return this.getBooleanMapAttribute('resource_type_management_preference');
   }
-  public set resourceTypeManagementPreference(value: { [key: string]: boolean } | cdktf.IResolvable) {
+  public set resourceTypeManagementPreference(value: { [key: string]: (boolean | cdktf.IResolvable) }) {
     this._resourceTypeManagementPreference = value;
   }
   public resetResourceTypeManagementPreference() {
@@ -79,11 +79,11 @@ export class BackupRegionSettings extends cdktf.TerraformResource {
   }
 
   // resource_type_opt_in_preference - computed: false, optional: false, required: true
-  private _resourceTypeOptInPreference?: { [key: string]: boolean } | cdktf.IResolvable; 
+  private _resourceTypeOptInPreference?: { [key: string]: (boolean | cdktf.IResolvable) }; 
   public get resourceTypeOptInPreference() {
-    return this.getBooleanAttribute('resource_type_opt_in_preference') as any;
+    return this.getBooleanMapAttribute('resource_type_opt_in_preference');
   }
-  public set resourceTypeOptInPreference(value: { [key: string]: boolean } | cdktf.IResolvable) {
+  public set resourceTypeOptInPreference(value: { [key: string]: (boolean | cdktf.IResolvable) }) {
     this._resourceTypeOptInPreference = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -97,8 +97,8 @@ export class BackupRegionSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      resource_type_management_preference: cdktf.hashMapper(cdktf.anyToTerraform)(this._resourceTypeManagementPreference),
-      resource_type_opt_in_preference: cdktf.hashMapper(cdktf.anyToTerraform)(this._resourceTypeOptInPreference),
+      resource_type_management_preference: cdktf.hashMapper(cdktf.booleanToTerraform)(this._resourceTypeManagementPreference),
+      resource_type_opt_in_preference: cdktf.hashMapper(cdktf.booleanToTerraform)(this._resourceTypeOptInPreference),
     };
   }
 }

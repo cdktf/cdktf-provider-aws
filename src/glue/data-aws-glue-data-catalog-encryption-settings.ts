@@ -21,7 +21,7 @@ export class DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettin
 
   // return_connection_password_encrypted - computed: true, optional: false, required: false
   public get returnConnectionPasswordEncrypted() {
-    return this.getBooleanAttribute('return_connection_password_encrypted') as any;
+    return this.getBooleanAttribute('return_connection_password_encrypted');
   }
 }
 export class DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest extends cdktf.ComplexComputedList {
@@ -41,13 +41,13 @@ export class DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettin
   // connection_password_encryption - computed: true, optional: false, required: false
   public get connectionPasswordEncryption() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('connection_password_encryption') as any;
+    return this.interpolationForAttribute('connection_password_encryption');
   }
 
   // encryption_at_rest - computed: true, optional: false, required: false
   public get encryptionAtRest() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('encryption_at_rest') as any;
+    return this.interpolationForAttribute('encryption_at_rest');
   }
 }
 
@@ -105,7 +105,7 @@ export class DataAwsGlueDataCatalogEncryptionSettings extends cdktf.TerraformDat
 
   // data_catalog_encryption_settings - computed: true, optional: false, required: false
   public dataCatalogEncryptionSettings(index: string) {
-    return new DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings(this, 'data_catalog_encryption_settings', index);
+    return new DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings(this, 'data_catalog_encryption_settings', index, false);
   }
 
   // id - computed: true, optional: true, required: false

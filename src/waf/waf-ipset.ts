@@ -16,7 +16,7 @@ export interface WafIpsetConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_ipset#ip_set_descriptors WafIpset#ip_set_descriptors}
   */
-  readonly ipSetDescriptors?: WafIpsetIpSetDescriptors[];
+  readonly ipSetDescriptors?: WafIpsetIpSetDescriptors[] | cdktf.IResolvable;
 }
 export interface WafIpsetIpSetDescriptors {
   /**
@@ -29,8 +29,8 @@ export interface WafIpsetIpSetDescriptors {
   readonly value: string;
 }
 
-export function wafIpsetIpSetDescriptorsToTerraform(struct?: WafIpsetIpSetDescriptors): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafIpsetIpSetDescriptorsToTerraform(struct?: WafIpsetIpSetDescriptors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -105,12 +105,12 @@ export class WafIpset extends cdktf.TerraformResource {
   }
 
   // ip_set_descriptors - computed: false, optional: true, required: false
-  private _ipSetDescriptors?: WafIpsetIpSetDescriptors[]; 
+  private _ipSetDescriptors?: WafIpsetIpSetDescriptors[] | cdktf.IResolvable; 
   public get ipSetDescriptors() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ip_set_descriptors') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ip_set_descriptors')));
   }
-  public set ipSetDescriptors(value: WafIpsetIpSetDescriptors[]) {
+  public set ipSetDescriptors(value: WafIpsetIpSetDescriptors[] | cdktf.IResolvable) {
     this._ipSetDescriptors = value;
   }
   public resetIpSetDescriptors() {

@@ -176,19 +176,19 @@ export interface OpsworksInstanceConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#ebs_block_device OpsworksInstance#ebs_block_device}
   */
-  readonly ebsBlockDevice?: OpsworksInstanceEbsBlockDevice[];
+  readonly ebsBlockDevice?: OpsworksInstanceEbsBlockDevice[] | cdktf.IResolvable;
   /**
   * ephemeral_block_device block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#ephemeral_block_device OpsworksInstance#ephemeral_block_device}
   */
-  readonly ephemeralBlockDevice?: OpsworksInstanceEphemeralBlockDevice[];
+  readonly ephemeralBlockDevice?: OpsworksInstanceEphemeralBlockDevice[] | cdktf.IResolvable;
   /**
   * root_block_device block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#root_block_device OpsworksInstance#root_block_device}
   */
-  readonly rootBlockDevice?: OpsworksInstanceRootBlockDevice[];
+  readonly rootBlockDevice?: OpsworksInstanceRootBlockDevice[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -223,8 +223,8 @@ export interface OpsworksInstanceEbsBlockDevice {
   readonly volumeType?: string;
 }
 
-export function opsworksInstanceEbsBlockDeviceToTerraform(struct?: OpsworksInstanceEbsBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function opsworksInstanceEbsBlockDeviceToTerraform(struct?: OpsworksInstanceEbsBlockDevice | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -249,8 +249,8 @@ export interface OpsworksInstanceEphemeralBlockDevice {
   readonly virtualName: string;
 }
 
-export function opsworksInstanceEphemeralBlockDeviceToTerraform(struct?: OpsworksInstanceEphemeralBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function opsworksInstanceEphemeralBlockDeviceToTerraform(struct?: OpsworksInstanceEphemeralBlockDevice | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -279,8 +279,8 @@ export interface OpsworksInstanceRootBlockDevice {
   readonly volumeType?: string;
 }
 
-export function opsworksInstanceRootBlockDeviceToTerraform(struct?: OpsworksInstanceRootBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function opsworksInstanceRootBlockDeviceToTerraform(struct?: OpsworksInstanceRootBlockDevice | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -307,8 +307,8 @@ export interface OpsworksInstanceTimeouts {
   readonly update?: string;
 }
 
-export function opsworksInstanceTimeoutsToTerraform(struct?: OpsworksInstanceTimeoutsOutputReference | OpsworksInstanceTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function opsworksInstanceTimeoutsToTerraform(struct?: OpsworksInstanceTimeoutsOutputReference | OpsworksInstanceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -327,7 +327,7 @@ export class OpsworksInstanceTimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -595,7 +595,7 @@ export class OpsworksInstance extends cdktf.TerraformResource {
   // delete_ebs - computed: false, optional: true, required: false
   private _deleteEbs?: boolean | cdktf.IResolvable; 
   public get deleteEbs() {
-    return this.getBooleanAttribute('delete_ebs') as any;
+    return this.getBooleanAttribute('delete_ebs');
   }
   public set deleteEbs(value: boolean | cdktf.IResolvable) {
     this._deleteEbs = value;
@@ -611,7 +611,7 @@ export class OpsworksInstance extends cdktf.TerraformResource {
   // delete_eip - computed: false, optional: true, required: false
   private _deleteEip?: boolean | cdktf.IResolvable; 
   public get deleteEip() {
-    return this.getBooleanAttribute('delete_eip') as any;
+    return this.getBooleanAttribute('delete_eip');
   }
   public set deleteEip(value: boolean | cdktf.IResolvable) {
     this._deleteEip = value;
@@ -627,7 +627,7 @@ export class OpsworksInstance extends cdktf.TerraformResource {
   // ebs_optimized - computed: false, optional: true, required: false
   private _ebsOptimized?: boolean | cdktf.IResolvable; 
   public get ebsOptimized() {
-    return this.getBooleanAttribute('ebs_optimized') as any;
+    return this.getBooleanAttribute('ebs_optimized');
   }
   public set ebsOptimized(value: boolean | cdktf.IResolvable) {
     this._ebsOptimized = value;
@@ -717,7 +717,7 @@ export class OpsworksInstance extends cdktf.TerraformResource {
   // install_updates_on_boot - computed: false, optional: true, required: false
   private _installUpdatesOnBoot?: boolean | cdktf.IResolvable; 
   public get installUpdatesOnBoot() {
-    return this.getBooleanAttribute('install_updates_on_boot') as any;
+    return this.getBooleanAttribute('install_updates_on_boot');
   }
   public set installUpdatesOnBoot(value: boolean | cdktf.IResolvable) {
     this._installUpdatesOnBoot = value;
@@ -1157,12 +1157,12 @@ export class OpsworksInstance extends cdktf.TerraformResource {
   }
 
   // ebs_block_device - computed: false, optional: true, required: false
-  private _ebsBlockDevice?: OpsworksInstanceEbsBlockDevice[]; 
+  private _ebsBlockDevice?: OpsworksInstanceEbsBlockDevice[] | cdktf.IResolvable; 
   public get ebsBlockDevice() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ebs_block_device') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ebs_block_device')));
   }
-  public set ebsBlockDevice(value: OpsworksInstanceEbsBlockDevice[]) {
+  public set ebsBlockDevice(value: OpsworksInstanceEbsBlockDevice[] | cdktf.IResolvable) {
     this._ebsBlockDevice = value;
   }
   public resetEbsBlockDevice() {
@@ -1174,12 +1174,12 @@ export class OpsworksInstance extends cdktf.TerraformResource {
   }
 
   // ephemeral_block_device - computed: false, optional: true, required: false
-  private _ephemeralBlockDevice?: OpsworksInstanceEphemeralBlockDevice[]; 
+  private _ephemeralBlockDevice?: OpsworksInstanceEphemeralBlockDevice[] | cdktf.IResolvable; 
   public get ephemeralBlockDevice() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ephemeral_block_device') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ephemeral_block_device')));
   }
-  public set ephemeralBlockDevice(value: OpsworksInstanceEphemeralBlockDevice[]) {
+  public set ephemeralBlockDevice(value: OpsworksInstanceEphemeralBlockDevice[] | cdktf.IResolvable) {
     this._ephemeralBlockDevice = value;
   }
   public resetEphemeralBlockDevice() {
@@ -1191,12 +1191,12 @@ export class OpsworksInstance extends cdktf.TerraformResource {
   }
 
   // root_block_device - computed: false, optional: true, required: false
-  private _rootBlockDevice?: OpsworksInstanceRootBlockDevice[]; 
+  private _rootBlockDevice?: OpsworksInstanceRootBlockDevice[] | cdktf.IResolvable; 
   public get rootBlockDevice() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('root_block_device') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('root_block_device')));
   }
-  public set rootBlockDevice(value: OpsworksInstanceRootBlockDevice[]) {
+  public set rootBlockDevice(value: OpsworksInstanceRootBlockDevice[] | cdktf.IResolvable) {
     this._rootBlockDevice = value;
   }
   public resetRootBlockDevice() {
@@ -1208,7 +1208,7 @@ export class OpsworksInstance extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new OpsworksInstanceTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new OpsworksInstanceTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

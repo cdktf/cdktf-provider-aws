@@ -34,7 +34,7 @@ export interface DataAwsSubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnet#tags DataAwsSubnet#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnet#vpc_id DataAwsSubnet#vpc_id}
   */
@@ -44,7 +44,7 @@ export interface DataAwsSubnetConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnet#filter DataAwsSubnet#filter}
   */
-  readonly filter?: DataAwsSubnetFilter[];
+  readonly filter?: DataAwsSubnetFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsSubnetFilter {
   /**
@@ -57,8 +57,8 @@ export interface DataAwsSubnetFilter {
   readonly values: string[];
 }
 
-export function dataAwsSubnetFilterToTerraform(struct?: DataAwsSubnetFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsSubnetFilterToTerraform(struct?: DataAwsSubnetFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -123,7 +123,7 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
 
   // assign_ipv6_address_on_creation - computed: true, optional: false, required: false
   public get assignIpv6AddressOnCreation() {
-    return this.getBooleanAttribute('assign_ipv6_address_on_creation') as any;
+    return this.getBooleanAttribute('assign_ipv6_address_on_creation');
   }
 
   // availability_zone - computed: true, optional: true, required: false
@@ -187,7 +187,7 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
   // default_for_az - computed: true, optional: true, required: false
   private _defaultForAz?: boolean | cdktf.IResolvable; 
   public get defaultForAz() {
-    return this.getBooleanAttribute('default_for_az') as any;
+    return this.getBooleanAttribute('default_for_az');
   }
   public set defaultForAz(value: boolean | cdktf.IResolvable) {
     this._defaultForAz = value;
@@ -202,17 +202,17 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
 
   // enable_dns64 - computed: true, optional: false, required: false
   public get enableDns64() {
-    return this.getBooleanAttribute('enable_dns64') as any;
+    return this.getBooleanAttribute('enable_dns64');
   }
 
   // enable_resource_name_dns_a_record_on_launch - computed: true, optional: false, required: false
   public get enableResourceNameDnsARecordOnLaunch() {
-    return this.getBooleanAttribute('enable_resource_name_dns_a_record_on_launch') as any;
+    return this.getBooleanAttribute('enable_resource_name_dns_a_record_on_launch');
   }
 
   // enable_resource_name_dns_aaaa_record_on_launch - computed: true, optional: false, required: false
   public get enableResourceNameDnsAaaaRecordOnLaunch() {
-    return this.getBooleanAttribute('enable_resource_name_dns_aaaa_record_on_launch') as any;
+    return this.getBooleanAttribute('enable_resource_name_dns_aaaa_record_on_launch');
   }
 
   // id - computed: true, optional: true, required: false
@@ -243,17 +243,17 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
 
   // ipv6_native - computed: true, optional: false, required: false
   public get ipv6Native() {
-    return this.getBooleanAttribute('ipv6_native') as any;
+    return this.getBooleanAttribute('ipv6_native');
   }
 
   // map_customer_owned_ip_on_launch - computed: true, optional: false, required: false
   public get mapCustomerOwnedIpOnLaunch() {
-    return this.getBooleanAttribute('map_customer_owned_ip_on_launch') as any;
+    return this.getBooleanAttribute('map_customer_owned_ip_on_launch');
   }
 
   // map_public_ip_on_launch - computed: true, optional: false, required: false
   public get mapPublicIpOnLaunch() {
-    return this.getBooleanAttribute('map_public_ip_on_launch') as any;
+    return this.getBooleanAttribute('map_public_ip_on_launch');
   }
 
   // outpost_arn - computed: true, optional: false, required: false
@@ -288,12 +288,11 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -321,12 +320,12 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsSubnetFilter[]; 
+  private _filter?: DataAwsSubnetFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsSubnetFilter[]) {
+  public set filter(value: DataAwsSubnetFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -349,7 +348,7 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
       default_for_az: cdktf.booleanToTerraform(this._defaultForAz),
       ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
       state: cdktf.stringToTerraform(this._state),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       filter: cdktf.listMapper(dataAwsSubnetFilterToTerraform)(this._filter),
     };

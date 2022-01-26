@@ -16,7 +16,7 @@ export interface DynamodbGlobalTableConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_global_table#replica DynamodbGlobalTable#replica}
   */
-  readonly replica: DynamodbGlobalTableReplica[];
+  readonly replica: DynamodbGlobalTableReplica[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -31,8 +31,8 @@ export interface DynamodbGlobalTableReplica {
   readonly regionName: string;
 }
 
-export function dynamodbGlobalTableReplicaToTerraform(struct?: DynamodbGlobalTableReplica): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dynamodbGlobalTableReplicaToTerraform(struct?: DynamodbGlobalTableReplica | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -56,8 +56,8 @@ export interface DynamodbGlobalTableTimeouts {
   readonly update?: string;
 }
 
-export function dynamodbGlobalTableTimeoutsToTerraform(struct?: DynamodbGlobalTableTimeoutsOutputReference | DynamodbGlobalTableTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dynamodbGlobalTableTimeoutsToTerraform(struct?: DynamodbGlobalTableTimeoutsOutputReference | DynamodbGlobalTableTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -76,7 +76,7 @@ export class DynamodbGlobalTableTimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -227,12 +227,12 @@ export class DynamodbGlobalTable extends cdktf.TerraformResource {
   }
 
   // replica - computed: false, optional: false, required: true
-  private _replica?: DynamodbGlobalTableReplica[]; 
+  private _replica?: DynamodbGlobalTableReplica[] | cdktf.IResolvable; 
   public get replica() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('replica') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('replica')));
   }
-  public set replica(value: DynamodbGlobalTableReplica[]) {
+  public set replica(value: DynamodbGlobalTableReplica[] | cdktf.IResolvable) {
     this._replica = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -241,7 +241,7 @@ export class DynamodbGlobalTable extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DynamodbGlobalTableTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DynamodbGlobalTableTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

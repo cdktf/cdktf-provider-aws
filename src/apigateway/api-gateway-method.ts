@@ -34,11 +34,11 @@ export interface ApiGatewayMethodConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method#request_models ApiGatewayMethod#request_models}
   */
-  readonly requestModels?: { [key: string]: string } | cdktf.IResolvable;
+  readonly requestModels?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method#request_parameters ApiGatewayMethod#request_parameters}
   */
-  readonly requestParameters?: { [key: string]: boolean } | cdktf.IResolvable;
+  readonly requestParameters?: { [key: string]: (boolean | cdktf.IResolvable) };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method#request_validator_id ApiGatewayMethod#request_validator_id}
   */
@@ -105,7 +105,7 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
   // api_key_required - computed: false, optional: true, required: false
   private _apiKeyRequired?: boolean | cdktf.IResolvable; 
   public get apiKeyRequired() {
-    return this.getBooleanAttribute('api_key_required') as any;
+    return this.getBooleanAttribute('api_key_required');
   }
   public set apiKeyRequired(value: boolean | cdktf.IResolvable) {
     this._apiKeyRequired = value;
@@ -134,7 +134,7 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
   // authorization_scopes - computed: false, optional: true, required: false
   private _authorizationScopes?: string[]; 
   public get authorizationScopes() {
-    return this.getListAttribute('authorization_scopes');
+    return cdktf.Fn.tolist(this.getListAttribute('authorization_scopes'));
   }
   public set authorizationScopes(value: string[]) {
     this._authorizationScopes = value;
@@ -198,12 +198,11 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
   }
 
   // request_models - computed: false, optional: true, required: false
-  private _requestModels?: { [key: string]: string } | cdktf.IResolvable; 
+  private _requestModels?: { [key: string]: string }; 
   public get requestModels() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request_models') as any;
+    return this.getStringMapAttribute('request_models');
   }
-  public set requestModels(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set requestModels(value: { [key: string]: string }) {
     this._requestModels = value;
   }
   public resetRequestModels() {
@@ -215,11 +214,11 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
   }
 
   // request_parameters - computed: false, optional: true, required: false
-  private _requestParameters?: { [key: string]: boolean } | cdktf.IResolvable; 
+  private _requestParameters?: { [key: string]: (boolean | cdktf.IResolvable) }; 
   public get requestParameters() {
-    return this.getBooleanAttribute('request_parameters') as any;
+    return this.getBooleanMapAttribute('request_parameters');
   }
-  public set requestParameters(value: { [key: string]: boolean } | cdktf.IResolvable) {
+  public set requestParameters(value: { [key: string]: (boolean | cdktf.IResolvable) }) {
     this._requestParameters = value;
   }
   public resetRequestParameters() {
@@ -284,8 +283,8 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
       authorizer_id: cdktf.stringToTerraform(this._authorizerId),
       http_method: cdktf.stringToTerraform(this._httpMethod),
       operation_name: cdktf.stringToTerraform(this._operationName),
-      request_models: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestModels),
-      request_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestParameters),
+      request_models: cdktf.hashMapper(cdktf.stringToTerraform)(this._requestModels),
+      request_parameters: cdktf.hashMapper(cdktf.booleanToTerraform)(this._requestParameters),
       request_validator_id: cdktf.stringToTerraform(this._requestValidatorId),
       resource_id: cdktf.stringToTerraform(this._resourceId),
       rest_api_id: cdktf.stringToTerraform(this._restApiId),

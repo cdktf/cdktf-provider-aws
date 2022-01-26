@@ -38,7 +38,7 @@ export interface ElastictranscoderPipelineConfig extends cdktf.TerraformMetaArgu
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastictranscoder_pipeline#content_config_permissions ElastictranscoderPipeline#content_config_permissions}
   */
-  readonly contentConfigPermissions?: ElastictranscoderPipelineContentConfigPermissions[];
+  readonly contentConfigPermissions?: ElastictranscoderPipelineContentConfigPermissions[] | cdktf.IResolvable;
   /**
   * notifications block
   * 
@@ -56,7 +56,7 @@ export interface ElastictranscoderPipelineConfig extends cdktf.TerraformMetaArgu
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastictranscoder_pipeline#thumbnail_config_permissions ElastictranscoderPipeline#thumbnail_config_permissions}
   */
-  readonly thumbnailConfigPermissions?: ElastictranscoderPipelineThumbnailConfigPermissions[];
+  readonly thumbnailConfigPermissions?: ElastictranscoderPipelineThumbnailConfigPermissions[] | cdktf.IResolvable;
 }
 export interface ElastictranscoderPipelineContentConfig {
   /**
@@ -70,7 +70,7 @@ export interface ElastictranscoderPipelineContentConfig {
 }
 
 export function elastictranscoderPipelineContentConfigToTerraform(struct?: ElastictranscoderPipelineContentConfigOutputReference | ElastictranscoderPipelineContentConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -88,7 +88,7 @@ export class ElastictranscoderPipelineContentConfigOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -166,8 +166,8 @@ export interface ElastictranscoderPipelineContentConfigPermissions {
   readonly granteeType?: string;
 }
 
-export function elastictranscoderPipelineContentConfigPermissionsToTerraform(struct?: ElastictranscoderPipelineContentConfigPermissions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function elastictranscoderPipelineContentConfigPermissionsToTerraform(struct?: ElastictranscoderPipelineContentConfigPermissions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -198,7 +198,7 @@ export interface ElastictranscoderPipelineNotifications {
 }
 
 export function elastictranscoderPipelineNotificationsToTerraform(struct?: ElastictranscoderPipelineNotificationsOutputReference | ElastictranscoderPipelineNotifications): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -218,7 +218,7 @@ export class ElastictranscoderPipelineNotificationsOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -337,7 +337,7 @@ export interface ElastictranscoderPipelineThumbnailConfig {
 }
 
 export function elastictranscoderPipelineThumbnailConfigToTerraform(struct?: ElastictranscoderPipelineThumbnailConfigOutputReference | ElastictranscoderPipelineThumbnailConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -355,7 +355,7 @@ export class ElastictranscoderPipelineThumbnailConfigOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -433,8 +433,8 @@ export interface ElastictranscoderPipelineThumbnailConfigPermissions {
   readonly granteeType?: string;
 }
 
-export function elastictranscoderPipelineThumbnailConfigPermissionsToTerraform(struct?: ElastictranscoderPipelineThumbnailConfigPermissions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function elastictranscoderPipelineThumbnailConfigPermissionsToTerraform(struct?: ElastictranscoderPipelineThumbnailConfigPermissions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -579,7 +579,7 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
   }
 
   // content_config - computed: false, optional: true, required: false
-  private _contentConfig = new ElastictranscoderPipelineContentConfigOutputReference(this as any, "content_config", true);
+  private _contentConfig = new ElastictranscoderPipelineContentConfigOutputReference(this, "content_config", true);
   public get contentConfig() {
     return this._contentConfig;
   }
@@ -595,12 +595,12 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
   }
 
   // content_config_permissions - computed: false, optional: true, required: false
-  private _contentConfigPermissions?: ElastictranscoderPipelineContentConfigPermissions[]; 
+  private _contentConfigPermissions?: ElastictranscoderPipelineContentConfigPermissions[] | cdktf.IResolvable; 
   public get contentConfigPermissions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('content_config_permissions') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('content_config_permissions')));
   }
-  public set contentConfigPermissions(value: ElastictranscoderPipelineContentConfigPermissions[]) {
+  public set contentConfigPermissions(value: ElastictranscoderPipelineContentConfigPermissions[] | cdktf.IResolvable) {
     this._contentConfigPermissions = value;
   }
   public resetContentConfigPermissions() {
@@ -612,7 +612,7 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
   }
 
   // notifications - computed: false, optional: true, required: false
-  private _notifications = new ElastictranscoderPipelineNotificationsOutputReference(this as any, "notifications", true);
+  private _notifications = new ElastictranscoderPipelineNotificationsOutputReference(this, "notifications", true);
   public get notifications() {
     return this._notifications;
   }
@@ -628,7 +628,7 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
   }
 
   // thumbnail_config - computed: false, optional: true, required: false
-  private _thumbnailConfig = new ElastictranscoderPipelineThumbnailConfigOutputReference(this as any, "thumbnail_config", true);
+  private _thumbnailConfig = new ElastictranscoderPipelineThumbnailConfigOutputReference(this, "thumbnail_config", true);
   public get thumbnailConfig() {
     return this._thumbnailConfig;
   }
@@ -644,12 +644,12 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
   }
 
   // thumbnail_config_permissions - computed: false, optional: true, required: false
-  private _thumbnailConfigPermissions?: ElastictranscoderPipelineThumbnailConfigPermissions[]; 
+  private _thumbnailConfigPermissions?: ElastictranscoderPipelineThumbnailConfigPermissions[] | cdktf.IResolvable; 
   public get thumbnailConfigPermissions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('thumbnail_config_permissions') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('thumbnail_config_permissions')));
   }
-  public set thumbnailConfigPermissions(value: ElastictranscoderPipelineThumbnailConfigPermissions[]) {
+  public set thumbnailConfigPermissions(value: ElastictranscoderPipelineThumbnailConfigPermissions[] | cdktf.IResolvable) {
     this._thumbnailConfigPermissions = value;
   }
   public resetThumbnailConfigPermissions() {

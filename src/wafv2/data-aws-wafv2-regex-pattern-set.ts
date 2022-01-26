@@ -94,7 +94,7 @@ export class DataAwsWafv2RegexPatternSet extends cdktf.TerraformDataSource {
 
   // regular_expression - computed: true, optional: false, required: false
   public regularExpression(index: string) {
-    return new DataAwsWafv2RegexPatternSetRegularExpression(this, 'regular_expression', index);
+    return new DataAwsWafv2RegexPatternSetRegularExpression(this, 'regular_expression', index, true);
   }
 
   // scope - computed: false, optional: false, required: true

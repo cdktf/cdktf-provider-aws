@@ -70,7 +70,7 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
   // complete_lock - computed: false, optional: false, required: true
   private _completeLock?: boolean | cdktf.IResolvable; 
   public get completeLock() {
-    return this.getBooleanAttribute('complete_lock') as any;
+    return this.getBooleanAttribute('complete_lock');
   }
   public set completeLock(value: boolean | cdktf.IResolvable) {
     this._completeLock = value;
@@ -88,7 +88,7 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
   // ignore_deletion_error - computed: false, optional: true, required: false
   private _ignoreDeletionError?: boolean | cdktf.IResolvable; 
   public get ignoreDeletionError() {
-    return this.getBooleanAttribute('ignore_deletion_error') as any;
+    return this.getBooleanAttribute('ignore_deletion_error');
   }
   public set ignoreDeletionError(value: boolean | cdktf.IResolvable) {
     this._ignoreDeletionError = value;

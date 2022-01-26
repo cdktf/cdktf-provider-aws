@@ -18,14 +18,13 @@ export interface DataAwsAlbListenerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/alb_listener#tags DataAwsAlbListener#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsAlbListenerDefaultActionAuthenticateCognito extends cdktf.ComplexComputedList {
 
   // authentication_request_extra_params - computed: true, optional: false, required: false
   public get authenticationRequestExtraParams() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('authentication_request_extra_params') as any;
+    return this.getStringMapAttribute('authentication_request_extra_params');
   }
 
   // on_unauthenticated_request - computed: true, optional: false, required: false
@@ -67,8 +66,7 @@ export class DataAwsAlbListenerDefaultActionAuthenticateOidc extends cdktf.Compl
 
   // authentication_request_extra_params - computed: true, optional: false, required: false
   public get authenticationRequestExtraParams() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('authentication_request_extra_params') as any;
+    return this.getStringMapAttribute('authentication_request_extra_params');
   }
 
   // authorization_endpoint - computed: true, optional: false, required: false
@@ -147,7 +145,7 @@ export class DataAwsAlbListenerDefaultActionForwardStickiness extends cdktf.Comp
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 }
 export class DataAwsAlbListenerDefaultActionForwardTargetGroup extends cdktf.ComplexComputedList {
@@ -167,13 +165,13 @@ export class DataAwsAlbListenerDefaultActionForward extends cdktf.ComplexCompute
   // stickiness - computed: true, optional: false, required: false
   public get stickiness() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('stickiness') as any;
+    return this.interpolationForAttribute('stickiness');
   }
 
   // target_group - computed: true, optional: false, required: false
   public get targetGroup() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('target_group') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('target_group')));
   }
 }
 export class DataAwsAlbListenerDefaultActionRedirect extends cdktf.ComplexComputedList {
@@ -213,25 +211,25 @@ export class DataAwsAlbListenerDefaultAction extends cdktf.ComplexComputedList {
   // authenticate_cognito - computed: true, optional: false, required: false
   public get authenticateCognito() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('authenticate_cognito') as any;
+    return this.interpolationForAttribute('authenticate_cognito');
   }
 
   // authenticate_oidc - computed: true, optional: false, required: false
   public get authenticateOidc() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('authenticate_oidc') as any;
+    return this.interpolationForAttribute('authenticate_oidc');
   }
 
   // fixed_response - computed: true, optional: false, required: false
   public get fixedResponse() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('fixed_response') as any;
+    return this.interpolationForAttribute('fixed_response');
   }
 
   // forward - computed: true, optional: false, required: false
   public get forward() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('forward') as any;
+    return this.interpolationForAttribute('forward');
   }
 
   // order - computed: true, optional: false, required: false
@@ -242,7 +240,7 @@ export class DataAwsAlbListenerDefaultAction extends cdktf.ComplexComputedList {
   // redirect - computed: true, optional: false, required: false
   public get redirect() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('redirect') as any;
+    return this.interpolationForAttribute('redirect');
   }
 
   // target_group_arn - computed: true, optional: false, required: false
@@ -314,7 +312,7 @@ export class DataAwsAlbListener extends cdktf.TerraformDataSource {
 
   // default_action - computed: true, optional: false, required: false
   public defaultAction(index: string) {
-    return new DataAwsAlbListenerDefaultAction(this, 'default_action', index);
+    return new DataAwsAlbListenerDefaultAction(this, 'default_action', index, false);
   }
 
   // id - computed: true, optional: true, required: false
@@ -365,12 +363,11 @@ export class DataAwsAlbListener extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -389,7 +386,7 @@ export class DataAwsAlbListener extends cdktf.TerraformDataSource {
     return {
       load_balancer_arn: cdktf.stringToTerraform(this._loadBalancerArn),
       port: cdktf.numberToTerraform(this._port),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

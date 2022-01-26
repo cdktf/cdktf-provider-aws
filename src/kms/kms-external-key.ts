@@ -38,11 +38,11 @@ export interface KmsExternalKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_external_key#tags KmsExternalKey#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_external_key#tags_all KmsExternalKey#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_external_key#valid_to KmsExternalKey#valid_to}
   */
@@ -105,7 +105,7 @@ export class KmsExternalKey extends cdktf.TerraformResource {
   // bypass_policy_lockout_safety_check - computed: false, optional: true, required: false
   private _bypassPolicyLockoutSafetyCheck?: boolean | cdktf.IResolvable; 
   public get bypassPolicyLockoutSafetyCheck() {
-    return this.getBooleanAttribute('bypass_policy_lockout_safety_check') as any;
+    return this.getBooleanAttribute('bypass_policy_lockout_safety_check');
   }
   public set bypassPolicyLockoutSafetyCheck(value: boolean | cdktf.IResolvable) {
     this._bypassPolicyLockoutSafetyCheck = value;
@@ -153,7 +153,7 @@ export class KmsExternalKey extends cdktf.TerraformResource {
   // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -205,7 +205,7 @@ export class KmsExternalKey extends cdktf.TerraformResource {
   // multi_region - computed: true, optional: true, required: false
   private _multiRegion?: boolean | cdktf.IResolvable; 
   public get multiRegion() {
-    return this.getBooleanAttribute('multi_region') as any;
+    return this.getBooleanAttribute('multi_region');
   }
   public set multiRegion(value: boolean | cdktf.IResolvable) {
     this._multiRegion = value;
@@ -235,12 +235,11 @@ export class KmsExternalKey extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -252,12 +251,11 @@ export class KmsExternalKey extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -297,8 +295,8 @@ export class KmsExternalKey extends cdktf.TerraformResource {
       key_material_base64: cdktf.stringToTerraform(this._keyMaterialBase64),
       multi_region: cdktf.booleanToTerraform(this._multiRegion),
       policy: cdktf.stringToTerraform(this._policy),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       valid_to: cdktf.stringToTerraform(this._validTo),
     };
   }

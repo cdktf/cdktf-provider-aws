@@ -42,7 +42,7 @@ export interface DataAwsVpcPeeringConnectionConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_peering_connection#tags DataAwsVpcPeeringConnection#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_peering_connection#vpc_id DataAwsVpcPeeringConnection#vpc_id}
   */
@@ -52,7 +52,7 @@ export interface DataAwsVpcPeeringConnectionConfig extends cdktf.TerraformMetaAr
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_peering_connection#filter DataAwsVpcPeeringConnection#filter}
   */
-  readonly filter?: DataAwsVpcPeeringConnectionFilter[];
+  readonly filter?: DataAwsVpcPeeringConnectionFilter[] | cdktf.IResolvable;
 }
 export class DataAwsVpcPeeringConnectionCidrBlockSet extends cdktf.ComplexComputedList {
 
@@ -79,8 +79,8 @@ export interface DataAwsVpcPeeringConnectionFilter {
   readonly values: string[];
 }
 
-export function dataAwsVpcPeeringConnectionFilterToTerraform(struct?: DataAwsVpcPeeringConnectionFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsVpcPeeringConnectionFilterToTerraform(struct?: DataAwsVpcPeeringConnectionFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -141,7 +141,7 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
   // ==========
 
   // accepter - computed: true, optional: false, required: false
-  public accepter(key: string): boolean {
+  public accepter(key: string): boolean | cdktf.IResolvable {
     return new cdktf.BooleanMap(this, 'accepter').lookup(key);
   }
 
@@ -163,7 +163,7 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
 
   // cidr_block_set - computed: true, optional: false, required: false
   public cidrBlockSet(index: string) {
-    return new DataAwsVpcPeeringConnectionCidrBlockSet(this, 'cidr_block_set', index);
+    return new DataAwsVpcPeeringConnectionCidrBlockSet(this, 'cidr_block_set', index, false);
   }
 
   // id - computed: true, optional: true, required: false
@@ -205,7 +205,7 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
 
   // peer_cidr_block_set - computed: true, optional: false, required: false
   public peerCidrBlockSet(index: string) {
-    return new DataAwsVpcPeeringConnectionPeerCidrBlockSet(this, 'peer_cidr_block_set', index);
+    return new DataAwsVpcPeeringConnectionPeerCidrBlockSet(this, 'peer_cidr_block_set', index, false);
   }
 
   // peer_owner_id - computed: true, optional: true, required: false
@@ -273,7 +273,7 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
   }
 
   // requester - computed: true, optional: false, required: false
-  public requester(key: string): boolean {
+  public requester(key: string): boolean | cdktf.IResolvable {
     return new cdktf.BooleanMap(this, 'requester').lookup(key);
   }
 
@@ -294,12 +294,11 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -327,12 +326,12 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsVpcPeeringConnectionFilter[]; 
+  private _filter?: DataAwsVpcPeeringConnectionFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsVpcPeeringConnectionFilter[]) {
+  public set filter(value: DataAwsVpcPeeringConnectionFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -357,7 +356,7 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
       peer_vpc_id: cdktf.stringToTerraform(this._peerVpcId),
       region: cdktf.stringToTerraform(this._region),
       status: cdktf.stringToTerraform(this._status),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       filter: cdktf.listMapper(dataAwsVpcPeeringConnectionFilterToTerraform)(this._filter),
     };

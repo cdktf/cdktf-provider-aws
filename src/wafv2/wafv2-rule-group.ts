@@ -33,23 +33,23 @@ export interface Wafv2RuleGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#tags Wafv2RuleGroup#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#tags_all Wafv2RuleGroup#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * custom_response_body block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#custom_response_body Wafv2RuleGroup#custom_response_body}
   */
-  readonly customResponseBody?: Wafv2RuleGroupCustomResponseBody[];
+  readonly customResponseBody?: Wafv2RuleGroupCustomResponseBody[] | cdktf.IResolvable;
   /**
   * rule block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#rule Wafv2RuleGroup#rule}
   */
-  readonly rule?: Wafv2RuleGroupRule[];
+  readonly rule?: Wafv2RuleGroupRule[] | cdktf.IResolvable;
   /**
   * visibility_config block
   * 
@@ -176,12 +176,11 @@ export class Wafv2RuleGroup extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -193,12 +192,11 @@ export class Wafv2RuleGroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -210,12 +208,12 @@ export class Wafv2RuleGroup extends cdktf.TerraformResource {
   }
 
   // custom_response_body - computed: false, optional: true, required: false
-  private _customResponseBody?: Wafv2RuleGroupCustomResponseBody[]; 
+  private _customResponseBody?: Wafv2RuleGroupCustomResponseBody[] | cdktf.IResolvable; 
   public get customResponseBody() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_response_body') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('custom_response_body')));
   }
-  public set customResponseBody(value: Wafv2RuleGroupCustomResponseBody[]) {
+  public set customResponseBody(value: Wafv2RuleGroupCustomResponseBody[] | cdktf.IResolvable) {
     this._customResponseBody = value;
   }
   public resetCustomResponseBody() {
@@ -227,12 +225,12 @@ export class Wafv2RuleGroup extends cdktf.TerraformResource {
   }
 
   // rule - computed: false, optional: true, required: false
-  private _rule?: Wafv2RuleGroupRule[]; 
+  private _rule?: Wafv2RuleGroupRule[] | cdktf.IResolvable; 
   public get rule() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rule') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('rule')));
   }
-  public set rule(value: Wafv2RuleGroupRule[]) {
+  public set rule(value: Wafv2RuleGroupRule[] | cdktf.IResolvable) {
     this._rule = value;
   }
   public resetRule() {
@@ -244,7 +242,7 @@ export class Wafv2RuleGroup extends cdktf.TerraformResource {
   }
 
   // visibility_config - computed: false, optional: false, required: true
-  private _visibilityConfig = new Wafv2RuleGroupVisibilityConfigOutputReference(this as any, "visibility_config", true);
+  private _visibilityConfig = new Wafv2RuleGroupVisibilityConfigOutputReference(this, "visibility_config", true);
   public get visibilityConfig() {
     return this._visibilityConfig;
   }
@@ -266,8 +264,8 @@ export class Wafv2RuleGroup extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       scope: cdktf.stringToTerraform(this._scope),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       custom_response_body: cdktf.listMapper(wafv2RuleGroupCustomResponseBodyToTerraform)(this._customResponseBody),
       rule: cdktf.listMapper(wafv2RuleGroupRuleToTerraform)(this._rule),
       visibility_config: wafv2RuleGroupVisibilityConfigToTerraform(this._visibilityConfig.internalValue),

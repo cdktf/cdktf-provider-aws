@@ -20,7 +20,7 @@ export interface DataAwsEbsSnapshotIdsConfig extends cdktf.TerraformMetaArgument
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_snapshot_ids#filter DataAwsEbsSnapshotIds#filter}
   */
-  readonly filter?: DataAwsEbsSnapshotIdsFilter[];
+  readonly filter?: DataAwsEbsSnapshotIdsFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsEbsSnapshotIdsFilter {
   /**
@@ -33,8 +33,8 @@ export interface DataAwsEbsSnapshotIdsFilter {
   readonly values: string[];
 }
 
-export function dataAwsEbsSnapshotIdsFilterToTerraform(struct?: DataAwsEbsSnapshotIdsFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsEbsSnapshotIdsFilterToTerraform(struct?: DataAwsEbsSnapshotIdsFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -129,12 +129,12 @@ export class DataAwsEbsSnapshotIds extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsEbsSnapshotIdsFilter[]; 
+  private _filter?: DataAwsEbsSnapshotIdsFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsEbsSnapshotIdsFilter[]) {
+  public set filter(value: DataAwsEbsSnapshotIdsFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {

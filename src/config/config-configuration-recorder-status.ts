@@ -65,7 +65,7 @@ export class ConfigConfigurationRecorderStatus extends cdktf.TerraformResource {
   // is_enabled - computed: false, optional: false, required: true
   private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
-    return this.getBooleanAttribute('is_enabled') as any;
+    return this.getBooleanAttribute('is_enabled');
   }
   public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;

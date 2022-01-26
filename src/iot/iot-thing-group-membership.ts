@@ -70,7 +70,7 @@ export class IotThingGroupMembership extends cdktf.TerraformResource {
   // override_dynamic_group - computed: false, optional: true, required: false
   private _overrideDynamicGroup?: boolean | cdktf.IResolvable; 
   public get overrideDynamicGroup() {
-    return this.getBooleanAttribute('override_dynamic_group') as any;
+    return this.getBooleanAttribute('override_dynamic_group');
   }
   public set overrideDynamicGroup(value: boolean | cdktf.IResolvable) {
     this._overrideDynamicGroup = value;

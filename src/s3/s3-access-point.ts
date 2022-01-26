@@ -56,7 +56,7 @@ export interface S3AccessPointPublicAccessBlockConfiguration {
 }
 
 export function s3AccessPointPublicAccessBlockConfigurationToTerraform(struct?: S3AccessPointPublicAccessBlockConfigurationOutputReference | S3AccessPointPublicAccessBlockConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -76,7 +76,7 @@ export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -122,7 +122,7 @@ export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends 
   // block_public_acls - computed: false, optional: true, required: false
   private _blockPublicAcls?: boolean | cdktf.IResolvable; 
   public get blockPublicAcls() {
-    return this.getBooleanAttribute('block_public_acls') as any;
+    return this.getBooleanAttribute('block_public_acls');
   }
   public set blockPublicAcls(value: boolean | cdktf.IResolvable) {
     this._blockPublicAcls = value;
@@ -138,7 +138,7 @@ export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends 
   // block_public_policy - computed: false, optional: true, required: false
   private _blockPublicPolicy?: boolean | cdktf.IResolvable; 
   public get blockPublicPolicy() {
-    return this.getBooleanAttribute('block_public_policy') as any;
+    return this.getBooleanAttribute('block_public_policy');
   }
   public set blockPublicPolicy(value: boolean | cdktf.IResolvable) {
     this._blockPublicPolicy = value;
@@ -154,7 +154,7 @@ export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends 
   // ignore_public_acls - computed: false, optional: true, required: false
   private _ignorePublicAcls?: boolean | cdktf.IResolvable; 
   public get ignorePublicAcls() {
-    return this.getBooleanAttribute('ignore_public_acls') as any;
+    return this.getBooleanAttribute('ignore_public_acls');
   }
   public set ignorePublicAcls(value: boolean | cdktf.IResolvable) {
     this._ignorePublicAcls = value;
@@ -170,7 +170,7 @@ export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends 
   // restrict_public_buckets - computed: false, optional: true, required: false
   private _restrictPublicBuckets?: boolean | cdktf.IResolvable; 
   public get restrictPublicBuckets() {
-    return this.getBooleanAttribute('restrict_public_buckets') as any;
+    return this.getBooleanAttribute('restrict_public_buckets');
   }
   public set restrictPublicBuckets(value: boolean | cdktf.IResolvable) {
     this._restrictPublicBuckets = value;
@@ -191,7 +191,7 @@ export interface S3AccessPointVpcConfiguration {
 }
 
 export function s3AccessPointVpcConfigurationToTerraform(struct?: S3AccessPointVpcConfigurationOutputReference | S3AccessPointVpcConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -208,7 +208,7 @@ export class S3AccessPointVpcConfigurationOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -336,13 +336,13 @@ export class S3AccessPoint extends cdktf.TerraformResource {
   }
 
   // endpoints - computed: true, optional: false, required: false
-  public endpoints(key: string): string {
+  public endpoints(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'endpoints').lookup(key);
   }
 
   // has_public_access_policy - computed: true, optional: false, required: false
   public get hasPublicAccessPolicy() {
-    return this.getBooleanAttribute('has_public_access_policy') as any;
+    return this.getBooleanAttribute('has_public_access_policy');
   }
 
   // id - computed: true, optional: true, required: false
@@ -385,7 +385,7 @@ export class S3AccessPoint extends cdktf.TerraformResource {
   }
 
   // public_access_block_configuration - computed: false, optional: true, required: false
-  private _publicAccessBlockConfiguration = new S3AccessPointPublicAccessBlockConfigurationOutputReference(this as any, "public_access_block_configuration", true);
+  private _publicAccessBlockConfiguration = new S3AccessPointPublicAccessBlockConfigurationOutputReference(this, "public_access_block_configuration", true);
   public get publicAccessBlockConfiguration() {
     return this._publicAccessBlockConfiguration;
   }
@@ -401,7 +401,7 @@ export class S3AccessPoint extends cdktf.TerraformResource {
   }
 
   // vpc_configuration - computed: false, optional: true, required: false
-  private _vpcConfiguration = new S3AccessPointVpcConfigurationOutputReference(this as any, "vpc_configuration", true);
+  private _vpcConfiguration = new S3AccessPointVpcConfigurationOutputReference(this, "vpc_configuration", true);
   public get vpcConfiguration() {
     return this._vpcConfiguration;
   }

@@ -14,7 +14,7 @@ export interface CloudformationStackSetInstanceConfig extends cdktf.TerraformMet
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set_instance#parameter_overrides CloudformationStackSetInstance#parameter_overrides}
   */
-  readonly parameterOverrides?: { [key: string]: string } | cdktf.IResolvable;
+  readonly parameterOverrides?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set_instance#region CloudformationStackSetInstance#region}
   */
@@ -48,7 +48,7 @@ export interface CloudformationStackSetInstanceDeploymentTargets {
 }
 
 export function cloudformationStackSetInstanceDeploymentTargetsToTerraform(struct?: CloudformationStackSetInstanceDeploymentTargetsOutputReference | CloudformationStackSetInstanceDeploymentTargets): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -65,7 +65,7 @@ export class CloudformationStackSetInstanceDeploymentTargetsOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -93,7 +93,7 @@ export class CloudformationStackSetInstanceDeploymentTargetsOutputReference exte
   // organizational_unit_ids - computed: false, optional: true, required: false
   private _organizationalUnitIds?: string[]; 
   public get organizationalUnitIds() {
-    return this.getListAttribute('organizational_unit_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('organizational_unit_ids'));
   }
   public set organizationalUnitIds(value: string[]) {
     this._organizationalUnitIds = value;
@@ -121,8 +121,8 @@ export interface CloudformationStackSetInstanceTimeouts {
   readonly update?: string;
 }
 
-export function cloudformationStackSetInstanceTimeoutsToTerraform(struct?: CloudformationStackSetInstanceTimeoutsOutputReference | CloudformationStackSetInstanceTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cloudformationStackSetInstanceTimeoutsToTerraform(struct?: CloudformationStackSetInstanceTimeoutsOutputReference | CloudformationStackSetInstanceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -141,7 +141,7 @@ export class CloudformationStackSetInstanceTimeoutsOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -299,12 +299,11 @@ export class CloudformationStackSetInstance extends cdktf.TerraformResource {
   }
 
   // parameter_overrides - computed: false, optional: true, required: false
-  private _parameterOverrides?: { [key: string]: string } | cdktf.IResolvable; 
+  private _parameterOverrides?: { [key: string]: string }; 
   public get parameterOverrides() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('parameter_overrides') as any;
+    return this.getStringMapAttribute('parameter_overrides');
   }
-  public set parameterOverrides(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set parameterOverrides(value: { [key: string]: string }) {
     this._parameterOverrides = value;
   }
   public resetParameterOverrides() {
@@ -334,7 +333,7 @@ export class CloudformationStackSetInstance extends cdktf.TerraformResource {
   // retain_stack - computed: false, optional: true, required: false
   private _retainStack?: boolean | cdktf.IResolvable; 
   public get retainStack() {
-    return this.getBooleanAttribute('retain_stack') as any;
+    return this.getBooleanAttribute('retain_stack');
   }
   public set retainStack(value: boolean | cdktf.IResolvable) {
     this._retainStack = value;
@@ -366,7 +365,7 @@ export class CloudformationStackSetInstance extends cdktf.TerraformResource {
   }
 
   // deployment_targets - computed: false, optional: true, required: false
-  private _deploymentTargets = new CloudformationStackSetInstanceDeploymentTargetsOutputReference(this as any, "deployment_targets", true);
+  private _deploymentTargets = new CloudformationStackSetInstanceDeploymentTargetsOutputReference(this, "deployment_targets", true);
   public get deploymentTargets() {
     return this._deploymentTargets;
   }
@@ -382,7 +381,7 @@ export class CloudformationStackSetInstance extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CloudformationStackSetInstanceTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CloudformationStackSetInstanceTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -404,7 +403,7 @@ export class CloudformationStackSetInstance extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
-      parameter_overrides: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameterOverrides),
+      parameter_overrides: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameterOverrides),
       region: cdktf.stringToTerraform(this._region),
       retain_stack: cdktf.booleanToTerraform(this._retainStack),
       stack_set_name: cdktf.stringToTerraform(this._stackSetName),

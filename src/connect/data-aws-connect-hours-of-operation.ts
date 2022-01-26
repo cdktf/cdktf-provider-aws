@@ -22,7 +22,7 @@ export interface DataAwsConnectHoursOfOperationConfig extends cdktf.TerraformMet
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/connect_hours_of_operation#tags DataAwsConnectHoursOfOperation#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsConnectHoursOfOperationConfigEndTime extends cdktf.ComplexComputedList {
 
@@ -58,13 +58,13 @@ export class DataAwsConnectHoursOfOperationConfigA extends cdktf.ComplexComputed
   // end_time - computed: true, optional: false, required: false
   public get endTime() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('end_time') as any;
+    return this.interpolationForAttribute('end_time');
   }
 
   // start_time - computed: true, optional: false, required: false
   public get startTime() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('start_time') as any;
+    return this.interpolationForAttribute('start_time');
   }
 }
 
@@ -112,7 +112,7 @@ export class DataAwsConnectHoursOfOperation extends cdktf.TerraformDataSource {
 
   // config - computed: true, optional: false, required: false
   public config(index: string) {
-    return new DataAwsConnectHoursOfOperationConfigA(this, 'config', index);
+    return new DataAwsConnectHoursOfOperationConfigA(this, 'config', index, true);
   }
 
   // description - computed: true, optional: false, required: false
@@ -176,12 +176,11 @@ export class DataAwsConnectHoursOfOperation extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -206,7 +205,7 @@ export class DataAwsConnectHoursOfOperation extends cdktf.TerraformDataSource {
       hours_of_operation_id: cdktf.stringToTerraform(this._hoursOfOperationId),
       instance_id: cdktf.stringToTerraform(this._instanceId),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

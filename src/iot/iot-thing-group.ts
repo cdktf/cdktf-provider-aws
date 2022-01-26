@@ -18,11 +18,11 @@ export interface IotThingGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_group#tags IotThingGroup#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_group#tags_all IotThingGroup#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * properties block
   * 
@@ -57,23 +57,23 @@ export class IotThingGroupMetadata extends cdktf.ComplexComputedList {
   // root_to_parent_groups - computed: true, optional: false, required: false
   public get rootToParentGroups() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('root_to_parent_groups') as any;
+    return this.interpolationForAttribute('root_to_parent_groups');
   }
 }
 export interface IotThingGroupPropertiesAttributePayload {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_group#attributes IotThingGroup#attributes}
   */
-  readonly attributes?: { [key: string]: string } | cdktf.IResolvable;
+  readonly attributes?: { [key: string]: string };
 }
 
 export function iotThingGroupPropertiesAttributePayloadToTerraform(struct?: IotThingGroupPropertiesAttributePayloadOutputReference | IotThingGroupPropertiesAttributePayload): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attributes: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.attributes),
+    attributes: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.attributes),
   }
 }
 
@@ -85,7 +85,7 @@ export class IotThingGroupPropertiesAttributePayloadOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -111,12 +111,11 @@ export class IotThingGroupPropertiesAttributePayloadOutputReference extends cdkt
   }
 
   // attributes - computed: false, optional: true, required: false
-  private _attributes?: { [key: string]: string } | cdktf.IResolvable; 
+  private _attributes?: { [key: string]: string }; 
   public get attributes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('attributes') as any;
+    return this.getStringMapAttribute('attributes');
   }
-  public set attributes(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set attributes(value: { [key: string]: string }) {
     this._attributes = value;
   }
   public resetAttributes() {
@@ -141,7 +140,7 @@ export interface IotThingGroupProperties {
 }
 
 export function iotThingGroupPropertiesToTerraform(struct?: IotThingGroupPropertiesOutputReference | IotThingGroupProperties): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -159,7 +158,7 @@ export class IotThingGroupPropertiesOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -207,7 +206,7 @@ export class IotThingGroupPropertiesOutputReference extends cdktf.ComplexObject 
   }
 
   // attribute_payload - computed: false, optional: true, required: false
-  private _attributePayload = new IotThingGroupPropertiesAttributePayloadOutputReference(this as any, "attribute_payload", true);
+  private _attributePayload = new IotThingGroupPropertiesAttributePayloadOutputReference(this, "attribute_payload", true);
   public get attributePayload() {
     return this._attributePayload;
   }
@@ -278,7 +277,7 @@ export class IotThingGroup extends cdktf.TerraformResource {
 
   // metadata - computed: true, optional: false, required: false
   public metadata(index: string) {
-    return new IotThingGroupMetadata(this, 'metadata', index);
+    return new IotThingGroupMetadata(this, 'metadata', index, false);
   }
 
   // name - computed: false, optional: false, required: true
@@ -311,12 +310,11 @@ export class IotThingGroup extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -328,12 +326,11 @@ export class IotThingGroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -350,7 +347,7 @@ export class IotThingGroup extends cdktf.TerraformResource {
   }
 
   // properties - computed: false, optional: true, required: false
-  private _properties = new IotThingGroupPropertiesOutputReference(this as any, "properties", true);
+  private _properties = new IotThingGroupPropertiesOutputReference(this, "properties", true);
   public get properties() {
     return this._properties;
   }
@@ -373,8 +370,8 @@ export class IotThingGroup extends cdktf.TerraformResource {
     return {
       name: cdktf.stringToTerraform(this._name),
       parent_group_name: cdktf.stringToTerraform(this._parentGroupName),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       properties: iotThingGroupPropertiesToTerraform(this._properties.internalValue),
     };
   }

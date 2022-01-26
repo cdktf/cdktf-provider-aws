@@ -75,7 +75,7 @@ export class OpsworksPermission extends cdktf.TerraformResource {
   // allow_ssh - computed: true, optional: true, required: false
   private _allowSsh?: boolean | cdktf.IResolvable; 
   public get allowSsh() {
-    return this.getBooleanAttribute('allow_ssh') as any;
+    return this.getBooleanAttribute('allow_ssh');
   }
   public set allowSsh(value: boolean | cdktf.IResolvable) {
     this._allowSsh = value;
@@ -91,7 +91,7 @@ export class OpsworksPermission extends cdktf.TerraformResource {
   // allow_sudo - computed: true, optional: true, required: false
   private _allowSudo?: boolean | cdktf.IResolvable; 
   public get allowSudo() {
-    return this.getBooleanAttribute('allow_sudo') as any;
+    return this.getBooleanAttribute('allow_sudo');
   }
   public set allowSudo(value: boolean | cdktf.IResolvable) {
     this._allowSudo = value;

@@ -94,11 +94,11 @@ export interface MemorydbClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_cluster#tags MemorydbCluster#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_cluster#tags_all MemorydbCluster#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_cluster#tls_enabled MemorydbCluster#tls_enabled}
   */
@@ -149,7 +149,7 @@ export class MemorydbClusterShardsNodes extends cdktf.ComplexComputedList {
   // endpoint - computed: true, optional: false, required: false
   public get endpoint() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('endpoint') as any;
+    return this.interpolationForAttribute('endpoint');
   }
 
   // name - computed: true, optional: false, required: false
@@ -167,7 +167,7 @@ export class MemorydbClusterShards extends cdktf.ComplexComputedList {
   // nodes - computed: true, optional: false, required: false
   public get nodes() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('nodes') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('nodes')));
   }
 
   // num_nodes - computed: true, optional: false, required: false
@@ -195,8 +195,8 @@ export interface MemorydbClusterTimeouts {
   readonly update?: string;
 }
 
-export function memorydbClusterTimeoutsToTerraform(struct?: MemorydbClusterTimeoutsOutputReference | MemorydbClusterTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function memorydbClusterTimeoutsToTerraform(struct?: MemorydbClusterTimeoutsOutputReference | MemorydbClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -215,7 +215,7 @@ export class MemorydbClusterTimeoutsOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -385,7 +385,7 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
   private _autoMinorVersionUpgrade?: boolean | cdktf.IResolvable; 
   public get autoMinorVersionUpgrade() {
-    return this.getBooleanAttribute('auto_minor_version_upgrade') as any;
+    return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
   public set autoMinorVersionUpgrade(value: boolean | cdktf.IResolvable) {
     this._autoMinorVersionUpgrade = value;
@@ -400,7 +400,7 @@ export class MemorydbCluster extends cdktf.TerraformResource {
 
   // cluster_endpoint - computed: true, optional: false, required: false
   public clusterEndpoint(index: string) {
-    return new MemorydbClusterClusterEndpoint(this, 'cluster_endpoint', index);
+    return new MemorydbClusterClusterEndpoint(this, 'cluster_endpoint', index, false);
   }
 
   // description - computed: false, optional: true, required: false
@@ -605,7 +605,7 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -620,7 +620,7 @@ export class MemorydbCluster extends cdktf.TerraformResource {
 
   // shards - computed: true, optional: false, required: false
   public shards(index: string) {
-    return new MemorydbClusterShards(this, 'shards', index);
+    return new MemorydbClusterShards(this, 'shards', index, true);
   }
 
   // snapshot_arns - computed: false, optional: true, required: false
@@ -720,12 +720,11 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -737,12 +736,11 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -756,7 +754,7 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   // tls_enabled - computed: false, optional: true, required: false
   private _tlsEnabled?: boolean | cdktf.IResolvable; 
   public get tlsEnabled() {
-    return this.getBooleanAttribute('tls_enabled') as any;
+    return this.getBooleanAttribute('tls_enabled');
   }
   public set tlsEnabled(value: boolean | cdktf.IResolvable) {
     this._tlsEnabled = value;
@@ -770,7 +768,7 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new MemorydbClusterTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new MemorydbClusterTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -812,8 +810,8 @@ export class MemorydbCluster extends cdktf.TerraformResource {
       snapshot_window: cdktf.stringToTerraform(this._snapshotWindow),
       sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
       subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       tls_enabled: cdktf.booleanToTerraform(this._tlsEnabled),
       timeouts: memorydbClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -49,8 +49,8 @@ export interface GuarddutyMemberTimeouts {
   readonly update?: string;
 }
 
-export function guarddutyMemberTimeoutsToTerraform(struct?: GuarddutyMemberTimeoutsOutputReference | GuarddutyMemberTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function guarddutyMemberTimeoutsToTerraform(struct?: GuarddutyMemberTimeoutsOutputReference | GuarddutyMemberTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -68,7 +68,7 @@ export class GuarddutyMemberTimeoutsOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -206,7 +206,7 @@ export class GuarddutyMember extends cdktf.TerraformResource {
   // disable_email_notification - computed: false, optional: true, required: false
   private _disableEmailNotification?: boolean | cdktf.IResolvable; 
   public get disableEmailNotification() {
-    return this.getBooleanAttribute('disable_email_notification') as any;
+    return this.getBooleanAttribute('disable_email_notification');
   }
   public set disableEmailNotification(value: boolean | cdktf.IResolvable) {
     this._disableEmailNotification = value;
@@ -256,7 +256,7 @@ export class GuarddutyMember extends cdktf.TerraformResource {
   // invite - computed: false, optional: true, required: false
   private _invite?: boolean | cdktf.IResolvable; 
   public get invite() {
-    return this.getBooleanAttribute('invite') as any;
+    return this.getBooleanAttribute('invite');
   }
   public set invite(value: boolean | cdktf.IResolvable) {
     this._invite = value;
@@ -275,7 +275,7 @@ export class GuarddutyMember extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new GuarddutyMemberTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new GuarddutyMemberTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

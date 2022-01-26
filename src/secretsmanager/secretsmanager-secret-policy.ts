@@ -65,7 +65,7 @@ export class SecretsmanagerSecretPolicy extends cdktf.TerraformResource {
   // block_public_policy - computed: false, optional: true, required: false
   private _blockPublicPolicy?: boolean | cdktf.IResolvable; 
   public get blockPublicPolicy() {
-    return this.getBooleanAttribute('block_public_policy') as any;
+    return this.getBooleanAttribute('block_public_policy');
   }
   public set blockPublicPolicy(value: boolean | cdktf.IResolvable) {
     this._blockPublicPolicy = value;

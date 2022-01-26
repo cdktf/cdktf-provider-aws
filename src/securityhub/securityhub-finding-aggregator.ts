@@ -78,7 +78,7 @@ export class SecurityhubFindingAggregator extends cdktf.TerraformResource {
   // specified_regions - computed: false, optional: true, required: false
   private _specifiedRegions?: string[]; 
   public get specifiedRegions() {
-    return this.getListAttribute('specified_regions');
+    return cdktf.Fn.tolist(this.getListAttribute('specified_regions'));
   }
   public set specifiedRegions(value: string[]) {
     this._specifiedRegions = value;

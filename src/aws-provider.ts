@@ -137,7 +137,7 @@ using temporary security credentials.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#endpoints AwsProvider#endpoints}
   */
-  readonly endpoints?: AwsProviderEndpoints[];
+  readonly endpoints?: AwsProviderEndpoints[] | cdktf.IResolvable;
   /**
   * ignore_tags block
   * 
@@ -187,7 +187,7 @@ export interface AwsProviderAssumeRole {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#tags AwsProvider#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Assume role session tag keys to pass to any subsequent sessions.
   * 
@@ -197,7 +197,7 @@ export interface AwsProviderAssumeRole {
 }
 
 export function awsProviderAssumeRoleToTerraform(struct?: AwsProviderAssumeRole): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -208,7 +208,7 @@ export function awsProviderAssumeRoleToTerraform(struct?: AwsProviderAssumeRole)
     policy_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.policyArns),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     session_name: cdktf.stringToTerraform(struct!.sessionName),
-    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+    tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     transitive_tag_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.transitiveTagKeys),
   }
 }
@@ -219,16 +219,16 @@ export interface AwsProviderDefaultTags {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#tags AwsProvider#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 
 export function awsProviderDefaultTagsToTerraform(struct?: AwsProviderDefaultTags): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+    tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
   }
 }
 
@@ -2041,8 +2041,8 @@ export interface AwsProviderEndpoints {
   readonly xray?: string;
 }
 
-export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2367,7 +2367,7 @@ export interface AwsProviderIgnoreTags {
 }
 
 export function awsProviderIgnoreTagsToTerraform(struct?: AwsProviderIgnoreTags): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2754,11 +2754,11 @@ export class AwsProvider extends cdktf.TerraformProvider {
   }
 
   // endpoints - computed: false, optional: true, required: false
-  private _endpoints?: AwsProviderEndpoints[]; 
+  private _endpoints?: AwsProviderEndpoints[] | cdktf.IResolvable; 
   public get endpoints() {
     return this._endpoints;
   }
-  public set endpoints(value: AwsProviderEndpoints[] | undefined) {
+  public set endpoints(value: AwsProviderEndpoints[] | cdktf.IResolvable | undefined) {
     this._endpoints = value;
   }
   public resetEndpoints() {

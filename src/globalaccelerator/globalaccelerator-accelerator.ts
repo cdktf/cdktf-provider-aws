@@ -22,11 +22,11 @@ export interface GlobalacceleratorAcceleratorConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator#tags GlobalacceleratorAccelerator#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator#tags_all GlobalacceleratorAccelerator#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * attributes block
   * 
@@ -68,7 +68,7 @@ export interface GlobalacceleratorAcceleratorAttributes {
 }
 
 export function globalacceleratorAcceleratorAttributesToTerraform(struct?: GlobalacceleratorAcceleratorAttributesOutputReference | GlobalacceleratorAcceleratorAttributes): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -87,7 +87,7 @@ export class GlobalacceleratorAcceleratorAttributesOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -127,7 +127,7 @@ export class GlobalacceleratorAcceleratorAttributesOutputReference extends cdktf
   // flow_logs_enabled - computed: false, optional: true, required: false
   private _flowLogsEnabled?: boolean | cdktf.IResolvable; 
   public get flowLogsEnabled() {
-    return this.getBooleanAttribute('flow_logs_enabled') as any;
+    return this.getBooleanAttribute('flow_logs_enabled');
   }
   public set flowLogsEnabled(value: boolean | cdktf.IResolvable) {
     this._flowLogsEnabled = value;
@@ -183,8 +183,8 @@ export interface GlobalacceleratorAcceleratorTimeouts {
   readonly update?: string;
 }
 
-export function globalacceleratorAcceleratorTimeoutsToTerraform(struct?: GlobalacceleratorAcceleratorTimeoutsOutputReference | GlobalacceleratorAcceleratorTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function globalacceleratorAcceleratorTimeoutsToTerraform(struct?: GlobalacceleratorAcceleratorTimeoutsOutputReference | GlobalacceleratorAcceleratorTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -202,7 +202,7 @@ export class GlobalacceleratorAcceleratorTimeoutsOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -319,7 +319,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -360,7 +360,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
 
   // ip_sets - computed: true, optional: false, required: false
   public ipSets(index: string) {
-    return new GlobalacceleratorAcceleratorIpSets(this, 'ip_sets', index);
+    return new GlobalacceleratorAcceleratorIpSets(this, 'ip_sets', index, false);
   }
 
   // name - computed: false, optional: false, required: true
@@ -377,12 +377,11 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -394,12 +393,11 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -411,7 +409,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   }
 
   // attributes - computed: false, optional: true, required: false
-  private _attributes = new GlobalacceleratorAcceleratorAttributesOutputReference(this as any, "attributes", true);
+  private _attributes = new GlobalacceleratorAcceleratorAttributesOutputReference(this, "attributes", true);
   public get attributes() {
     return this._attributes;
   }
@@ -427,7 +425,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new GlobalacceleratorAcceleratorTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new GlobalacceleratorAcceleratorTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -451,8 +449,8 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
       enabled: cdktf.booleanToTerraform(this._enabled),
       ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       attributes: globalacceleratorAcceleratorAttributesToTerraform(this._attributes.internalValue),
       timeouts: globalacceleratorAcceleratorTimeoutsToTerraform(this._timeouts.internalValue),
     };

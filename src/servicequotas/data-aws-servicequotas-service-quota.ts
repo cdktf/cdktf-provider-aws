@@ -64,7 +64,7 @@ export class DataAwsServicequotasServiceQuota extends cdktf.TerraformDataSource 
 
   // adjustable - computed: true, optional: false, required: false
   public get adjustable() {
-    return this.getBooleanAttribute('adjustable') as any;
+    return this.getBooleanAttribute('adjustable');
   }
 
   // arn - computed: true, optional: false, required: false
@@ -79,7 +79,7 @@ export class DataAwsServicequotasServiceQuota extends cdktf.TerraformDataSource 
 
   // global_quota - computed: true, optional: false, required: false
   public get globalQuota() {
-    return this.getBooleanAttribute('global_quota') as any;
+    return this.getBooleanAttribute('global_quota');
   }
 
   // id - computed: true, optional: true, required: false

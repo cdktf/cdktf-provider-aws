@@ -34,7 +34,7 @@ export interface CloudwatchMetricAlarmConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#dimensions CloudwatchMetricAlarm#dimensions}
   */
-  readonly dimensions?: { [key: string]: string } | cdktf.IResolvable;
+  readonly dimensions?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#evaluate_low_sample_count_percentiles CloudwatchMetricAlarm#evaluate_low_sample_count_percentiles}
   */
@@ -74,11 +74,11 @@ export interface CloudwatchMetricAlarmConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#tags CloudwatchMetricAlarm#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#tags_all CloudwatchMetricAlarm#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#threshold CloudwatchMetricAlarm#threshold}
   */
@@ -100,13 +100,13 @@ export interface CloudwatchMetricAlarmConfig extends cdktf.TerraformMetaArgument
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#metric_query CloudwatchMetricAlarm#metric_query}
   */
-  readonly metricQuery?: CloudwatchMetricAlarmMetricQuery[];
+  readonly metricQuery?: CloudwatchMetricAlarmMetricQuery[] | cdktf.IResolvable;
 }
 export interface CloudwatchMetricAlarmMetricQueryMetric {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#dimensions CloudwatchMetricAlarm#dimensions}
   */
-  readonly dimensions?: { [key: string]: string } | cdktf.IResolvable;
+  readonly dimensions?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#metric_name CloudwatchMetricAlarm#metric_name}
   */
@@ -130,12 +130,12 @@ export interface CloudwatchMetricAlarmMetricQueryMetric {
 }
 
 export function cloudwatchMetricAlarmMetricQueryMetricToTerraform(struct?: CloudwatchMetricAlarmMetricQueryMetricOutputReference | CloudwatchMetricAlarmMetricQueryMetric): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dimensions: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.dimensions),
+    dimensions: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.dimensions),
     metric_name: cdktf.stringToTerraform(struct!.metricName),
     namespace: cdktf.stringToTerraform(struct!.namespace),
     period: cdktf.numberToTerraform(struct!.period),
@@ -152,7 +152,7 @@ export class CloudwatchMetricAlarmMetricQueryMetricOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -208,12 +208,11 @@ export class CloudwatchMetricAlarmMetricQueryMetricOutputReference extends cdktf
   }
 
   // dimensions - computed: false, optional: true, required: false
-  private _dimensions?: { [key: string]: string } | cdktf.IResolvable; 
+  private _dimensions?: { [key: string]: string }; 
   public get dimensions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dimensions') as any;
+    return this.getStringMapAttribute('dimensions');
   }
-  public set dimensions(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set dimensions(value: { [key: string]: string }) {
     this._dimensions = value;
   }
   public resetDimensions() {
@@ -324,8 +323,8 @@ export interface CloudwatchMetricAlarmMetricQuery {
   readonly metric?: CloudwatchMetricAlarmMetricQueryMetric;
 }
 
-export function cloudwatchMetricAlarmMetricQueryToTerraform(struct?: CloudwatchMetricAlarmMetricQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cloudwatchMetricAlarmMetricQueryToTerraform(struct?: CloudwatchMetricAlarmMetricQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -404,7 +403,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   // actions_enabled - computed: false, optional: true, required: false
   private _actionsEnabled?: boolean | cdktf.IResolvable; 
   public get actionsEnabled() {
-    return this.getBooleanAttribute('actions_enabled') as any;
+    return this.getBooleanAttribute('actions_enabled');
   }
   public set actionsEnabled(value: boolean | cdktf.IResolvable) {
     this._actionsEnabled = value;
@@ -420,7 +419,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   // alarm_actions - computed: false, optional: true, required: false
   private _alarmActions?: string[]; 
   public get alarmActions() {
-    return this.getListAttribute('alarm_actions');
+    return cdktf.Fn.tolist(this.getListAttribute('alarm_actions'));
   }
   public set alarmActions(value: string[]) {
     this._alarmActions = value;
@@ -497,12 +496,11 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   }
 
   // dimensions - computed: false, optional: true, required: false
-  private _dimensions?: { [key: string]: string } | cdktf.IResolvable; 
+  private _dimensions?: { [key: string]: string }; 
   public get dimensions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dimensions') as any;
+    return this.getStringMapAttribute('dimensions');
   }
-  public set dimensions(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set dimensions(value: { [key: string]: string }) {
     this._dimensions = value;
   }
   public resetDimensions() {
@@ -566,7 +564,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   // insufficient_data_actions - computed: false, optional: true, required: false
   private _insufficientDataActions?: string[]; 
   public get insufficientDataActions() {
-    return this.getListAttribute('insufficient_data_actions');
+    return cdktf.Fn.tolist(this.getListAttribute('insufficient_data_actions'));
   }
   public set insufficientDataActions(value: string[]) {
     this._insufficientDataActions = value;
@@ -614,7 +612,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   // ok_actions - computed: false, optional: true, required: false
   private _okActions?: string[]; 
   public get okActions() {
-    return this.getListAttribute('ok_actions');
+    return cdktf.Fn.tolist(this.getListAttribute('ok_actions'));
   }
   public set okActions(value: string[]) {
     this._okActions = value;
@@ -660,12 +658,11 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -677,12 +674,11 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -758,12 +754,12 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   }
 
   // metric_query - computed: false, optional: true, required: false
-  private _metricQuery?: CloudwatchMetricAlarmMetricQuery[]; 
+  private _metricQuery?: CloudwatchMetricAlarmMetricQuery[] | cdktf.IResolvable; 
   public get metricQuery() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('metric_query') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('metric_query')));
   }
-  public set metricQuery(value: CloudwatchMetricAlarmMetricQuery[]) {
+  public set metricQuery(value: CloudwatchMetricAlarmMetricQuery[] | cdktf.IResolvable) {
     this._metricQuery = value;
   }
   public resetMetricQuery() {
@@ -786,7 +782,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
       alarm_name: cdktf.stringToTerraform(this._alarmName),
       comparison_operator: cdktf.stringToTerraform(this._comparisonOperator),
       datapoints_to_alarm: cdktf.numberToTerraform(this._datapointsToAlarm),
-      dimensions: cdktf.hashMapper(cdktf.anyToTerraform)(this._dimensions),
+      dimensions: cdktf.hashMapper(cdktf.stringToTerraform)(this._dimensions),
       evaluate_low_sample_count_percentiles: cdktf.stringToTerraform(this._evaluateLowSampleCountPercentiles),
       evaluation_periods: cdktf.numberToTerraform(this._evaluationPeriods),
       extended_statistic: cdktf.stringToTerraform(this._extendedStatistic),
@@ -796,8 +792,8 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
       ok_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._okActions),
       period: cdktf.numberToTerraform(this._period),
       statistic: cdktf.stringToTerraform(this._statistic),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       threshold: cdktf.numberToTerraform(this._threshold),
       threshold_metric_id: cdktf.stringToTerraform(this._thresholdMetricId),
       treat_missing_data: cdktf.stringToTerraform(this._treatMissingData),

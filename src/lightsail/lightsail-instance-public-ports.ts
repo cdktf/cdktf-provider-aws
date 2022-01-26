@@ -16,7 +16,7 @@ export interface LightsailInstancePublicPortsConfig extends cdktf.TerraformMetaA
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance_public_ports#port_info LightsailInstancePublicPorts#port_info}
   */
-  readonly portInfo: LightsailInstancePublicPortsPortInfo[];
+  readonly portInfo: LightsailInstancePublicPortsPortInfo[] | cdktf.IResolvable;
 }
 export interface LightsailInstancePublicPortsPortInfo {
   /**
@@ -37,8 +37,8 @@ export interface LightsailInstancePublicPortsPortInfo {
   readonly toPort: number;
 }
 
-export function lightsailInstancePublicPortsPortInfoToTerraform(struct?: LightsailInstancePublicPortsPortInfo): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lightsailInstancePublicPortsPortInfoToTerraform(struct?: LightsailInstancePublicPortsPortInfo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -110,12 +110,12 @@ export class LightsailInstancePublicPorts extends cdktf.TerraformResource {
   }
 
   // port_info - computed: false, optional: false, required: true
-  private _portInfo?: LightsailInstancePublicPortsPortInfo[]; 
+  private _portInfo?: LightsailInstancePublicPortsPortInfo[] | cdktf.IResolvable; 
   public get portInfo() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('port_info') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('port_info')));
   }
-  public set portInfo(value: LightsailInstancePublicPortsPortInfo[]) {
+  public set portInfo(value: LightsailInstancePublicPortsPortInfo[] | cdktf.IResolvable) {
     this._portInfo = value;
   }
   // Temporarily expose input value. Use with caution.

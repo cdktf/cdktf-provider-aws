@@ -170,7 +170,7 @@ export class DataAwsDocdbOrderableDbInstance extends cdktf.TerraformDataSource {
   // vpc - computed: true, optional: true, required: false
   private _vpc?: boolean | cdktf.IResolvable; 
   public get vpc() {
-    return this.getBooleanAttribute('vpc') as any;
+    return this.getBooleanAttribute('vpc');
   }
   public set vpc(value: boolean | cdktf.IResolvable) {
     this._vpc = value;

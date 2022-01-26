@@ -14,13 +14,13 @@ export interface DataAwsGlobalacceleratorAcceleratorConfig extends cdktf.Terrafo
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/globalaccelerator_accelerator#tags DataAwsGlobalacceleratorAccelerator#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsGlobalacceleratorAcceleratorAttributes extends cdktf.ComplexComputedList {
 
   // flow_logs_enabled - computed: true, optional: false, required: false
   public get flowLogsEnabled() {
-    return this.getBooleanAttribute('flow_logs_enabled') as any;
+    return this.getBooleanAttribute('flow_logs_enabled');
   }
 
   // flow_logs_s3_bucket - computed: true, optional: false, required: false
@@ -93,7 +93,7 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
 
   // attributes - computed: true, optional: false, required: false
   public attributes(index: string) {
-    return new DataAwsGlobalacceleratorAcceleratorAttributes(this, 'attributes', index);
+    return new DataAwsGlobalacceleratorAcceleratorAttributes(this, 'attributes', index, false);
   }
 
   // dns_name - computed: true, optional: false, required: false
@@ -103,7 +103,7 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // hosted_zone_id - computed: true, optional: false, required: false
@@ -123,7 +123,7 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
 
   // ip_sets - computed: true, optional: false, required: false
   public ipSets(index: string) {
-    return new DataAwsGlobalacceleratorAcceleratorIpSets(this, 'ip_sets', index);
+    return new DataAwsGlobalacceleratorAcceleratorIpSets(this, 'ip_sets', index, false);
   }
 
   // name - computed: true, optional: true, required: false
@@ -143,12 +143,11 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -166,7 +165,7 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

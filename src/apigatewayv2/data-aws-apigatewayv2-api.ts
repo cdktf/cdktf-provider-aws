@@ -14,33 +14,33 @@ export interface DataAwsApigatewayv2ApiConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/apigatewayv2_api#tags DataAwsApigatewayv2Api#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsApigatewayv2ApiCorsConfiguration extends cdktf.ComplexComputedList {
 
   // allow_credentials - computed: true, optional: false, required: false
   public get allowCredentials() {
-    return this.getBooleanAttribute('allow_credentials') as any;
+    return this.getBooleanAttribute('allow_credentials');
   }
 
   // allow_headers - computed: true, optional: false, required: false
   public get allowHeaders() {
-    return this.getListAttribute('allow_headers');
+    return cdktf.Fn.tolist(this.getListAttribute('allow_headers'));
   }
 
   // allow_methods - computed: true, optional: false, required: false
   public get allowMethods() {
-    return this.getListAttribute('allow_methods');
+    return cdktf.Fn.tolist(this.getListAttribute('allow_methods'));
   }
 
   // allow_origins - computed: true, optional: false, required: false
   public get allowOrigins() {
-    return this.getListAttribute('allow_origins');
+    return cdktf.Fn.tolist(this.getListAttribute('allow_origins'));
   }
 
   // expose_headers - computed: true, optional: false, required: false
   public get exposeHeaders() {
-    return this.getListAttribute('expose_headers');
+    return cdktf.Fn.tolist(this.getListAttribute('expose_headers'));
   }
 
   // max_age - computed: true, optional: false, required: false
@@ -119,7 +119,7 @@ export class DataAwsApigatewayv2Api extends cdktf.TerraformDataSource {
 
   // cors_configuration - computed: true, optional: false, required: false
   public corsConfiguration(index: string) {
-    return new DataAwsApigatewayv2ApiCorsConfiguration(this, 'cors_configuration', index);
+    return new DataAwsApigatewayv2ApiCorsConfiguration(this, 'cors_configuration', index, false);
   }
 
   // description - computed: true, optional: false, required: false
@@ -129,7 +129,7 @@ export class DataAwsApigatewayv2Api extends cdktf.TerraformDataSource {
 
   // disable_execute_api_endpoint - computed: true, optional: false, required: false
   public get disableExecuteApiEndpoint() {
-    return this.getBooleanAttribute('disable_execute_api_endpoint') as any;
+    return this.getBooleanAttribute('disable_execute_api_endpoint');
   }
 
   // execution_arn - computed: true, optional: false, required: false
@@ -158,12 +158,11 @@ export class DataAwsApigatewayv2Api extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -186,7 +185,7 @@ export class DataAwsApigatewayv2Api extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_id: cdktf.stringToTerraform(this._apiId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

@@ -16,7 +16,7 @@ export interface DataAwsImagebuilderImageRecipesConfig extends cdktf.TerraformMe
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_recipes#filter DataAwsImagebuilderImageRecipes#filter}
   */
-  readonly filter?: DataAwsImagebuilderImageRecipesFilter[];
+  readonly filter?: DataAwsImagebuilderImageRecipesFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsImagebuilderImageRecipesFilter {
   /**
@@ -29,8 +29,8 @@ export interface DataAwsImagebuilderImageRecipesFilter {
   readonly values: string[];
 }
 
-export function dataAwsImagebuilderImageRecipesFilterToTerraform(struct?: DataAwsImagebuilderImageRecipesFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsImagebuilderImageRecipesFilterToTerraform(struct?: DataAwsImagebuilderImageRecipesFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -83,7 +83,7 @@ export class DataAwsImagebuilderImageRecipes extends cdktf.TerraformDataSource {
 
   // arns - computed: true, optional: false, required: false
   public get arns() {
-    return this.getListAttribute('arns');
+    return cdktf.Fn.tolist(this.getListAttribute('arns'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -93,7 +93,7 @@ export class DataAwsImagebuilderImageRecipes extends cdktf.TerraformDataSource {
 
   // names - computed: true, optional: false, required: false
   public get names() {
-    return this.getListAttribute('names');
+    return cdktf.Fn.tolist(this.getListAttribute('names'));
   }
 
   // owner - computed: false, optional: true, required: false
@@ -113,12 +113,12 @@ export class DataAwsImagebuilderImageRecipes extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsImagebuilderImageRecipesFilter[]; 
+  private _filter?: DataAwsImagebuilderImageRecipesFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsImagebuilderImageRecipesFilter[]) {
+  public set filter(value: DataAwsImagebuilderImageRecipesFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {

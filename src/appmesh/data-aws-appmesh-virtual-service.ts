@@ -22,7 +22,7 @@ export interface DataAwsAppmeshVirtualServiceConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/appmesh_virtual_service#tags DataAwsAppmeshVirtualService#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsAppmeshVirtualServiceSpecProviderVirtualNode extends cdktf.ComplexComputedList {
 
@@ -43,13 +43,13 @@ export class DataAwsAppmeshVirtualServiceSpecProvider extends cdktf.ComplexCompu
   // virtual_node - computed: true, optional: false, required: false
   public get virtualNode() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('virtual_node') as any;
+    return this.interpolationForAttribute('virtual_node');
   }
 
   // virtual_router - computed: true, optional: false, required: false
   public get virtualRouter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('virtual_router') as any;
+    return this.interpolationForAttribute('virtual_router');
   }
 }
 export class DataAwsAppmeshVirtualServiceSpec extends cdktf.ComplexComputedList {
@@ -57,7 +57,7 @@ export class DataAwsAppmeshVirtualServiceSpec extends cdktf.ComplexComputedList 
   // provider - computed: true, optional: false, required: false
   public get provider() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('provider') as any;
+    return this.interpolationForAttribute('provider');
   }
 }
 
@@ -172,16 +172,15 @@ export class DataAwsAppmeshVirtualService extends cdktf.TerraformDataSource {
 
   // spec - computed: true, optional: false, required: false
   public spec(index: string) {
-    return new DataAwsAppmeshVirtualServiceSpec(this, 'spec', index);
+    return new DataAwsAppmeshVirtualServiceSpec(this, 'spec', index, false);
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -201,7 +200,7 @@ export class DataAwsAppmeshVirtualService extends cdktf.TerraformDataSource {
       mesh_name: cdktf.stringToTerraform(this._meshName),
       mesh_owner: cdktf.stringToTerraform(this._meshOwner),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

@@ -22,11 +22,11 @@ export interface ImagebuilderImageRecipeConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe#tags ImagebuilderImageRecipe#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe#tags_all ImagebuilderImageRecipe#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe#user_data_base64 ImagebuilderImageRecipe#user_data_base64}
   */
@@ -44,13 +44,13 @@ export interface ImagebuilderImageRecipeConfig extends cdktf.TerraformMetaArgume
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe#block_device_mapping ImagebuilderImageRecipe#block_device_mapping}
   */
-  readonly blockDeviceMapping?: ImagebuilderImageRecipeBlockDeviceMapping[];
+  readonly blockDeviceMapping?: ImagebuilderImageRecipeBlockDeviceMapping[] | cdktf.IResolvable;
   /**
   * component block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe#component ImagebuilderImageRecipe#component}
   */
-  readonly component: ImagebuilderImageRecipeComponent[];
+  readonly component: ImagebuilderImageRecipeComponent[] | cdktf.IResolvable;
 }
 export interface ImagebuilderImageRecipeBlockDeviceMappingEbs {
   /**
@@ -84,7 +84,7 @@ export interface ImagebuilderImageRecipeBlockDeviceMappingEbs {
 }
 
 export function imagebuilderImageRecipeBlockDeviceMappingEbsToTerraform(struct?: ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference | ImagebuilderImageRecipeBlockDeviceMappingEbs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -107,7 +107,7 @@ export class ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -301,8 +301,8 @@ export interface ImagebuilderImageRecipeBlockDeviceMapping {
   readonly ebs?: ImagebuilderImageRecipeBlockDeviceMappingEbs;
 }
 
-export function imagebuilderImageRecipeBlockDeviceMappingToTerraform(struct?: ImagebuilderImageRecipeBlockDeviceMapping): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function imagebuilderImageRecipeBlockDeviceMappingToTerraform(struct?: ImagebuilderImageRecipeBlockDeviceMapping | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -321,8 +321,8 @@ export interface ImagebuilderImageRecipeComponent {
   readonly componentArn: string;
 }
 
-export function imagebuilderImageRecipeComponentToTerraform(struct?: ImagebuilderImageRecipeComponent): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function imagebuilderImageRecipeComponentToTerraform(struct?: ImagebuilderImageRecipeComponent | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -448,12 +448,11 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -465,12 +464,11 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -527,12 +525,12 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
   }
 
   // block_device_mapping - computed: false, optional: true, required: false
-  private _blockDeviceMapping?: ImagebuilderImageRecipeBlockDeviceMapping[]; 
+  private _blockDeviceMapping?: ImagebuilderImageRecipeBlockDeviceMapping[] | cdktf.IResolvable; 
   public get blockDeviceMapping() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('block_device_mapping') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('block_device_mapping')));
   }
-  public set blockDeviceMapping(value: ImagebuilderImageRecipeBlockDeviceMapping[]) {
+  public set blockDeviceMapping(value: ImagebuilderImageRecipeBlockDeviceMapping[] | cdktf.IResolvable) {
     this._blockDeviceMapping = value;
   }
   public resetBlockDeviceMapping() {
@@ -544,12 +542,12 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
   }
 
   // component - computed: false, optional: false, required: true
-  private _component?: ImagebuilderImageRecipeComponent[]; 
+  private _component?: ImagebuilderImageRecipeComponent[] | cdktf.IResolvable; 
   public get component() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('component') as any;
+    return this.interpolationForAttribute('component');
   }
-  public set component(value: ImagebuilderImageRecipeComponent[]) {
+  public set component(value: ImagebuilderImageRecipeComponent[] | cdktf.IResolvable) {
     this._component = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -566,8 +564,8 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       parent_image: cdktf.stringToTerraform(this._parentImage),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       user_data_base64: cdktf.stringToTerraform(this._userDataBase64),
       version: cdktf.stringToTerraform(this._version),
       working_directory: cdktf.stringToTerraform(this._workingDirectory),

@@ -54,7 +54,7 @@ export interface S3BucketInventoryDestinationBucketEncryptionSseKms {
 }
 
 export function s3BucketInventoryDestinationBucketEncryptionSseKmsToTerraform(struct?: S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference | S3BucketInventoryDestinationBucketEncryptionSseKms): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -71,7 +71,7 @@ export class S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference e
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -113,7 +113,7 @@ export interface S3BucketInventoryDestinationBucketEncryptionSseS3 {
 }
 
 export function s3BucketInventoryDestinationBucketEncryptionSseS3ToTerraform(struct?: S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference | S3BucketInventoryDestinationBucketEncryptionSseS3): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -129,7 +129,7 @@ export class S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference ex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -164,7 +164,7 @@ export interface S3BucketInventoryDestinationBucketEncryption {
 }
 
 export function s3BucketInventoryDestinationBucketEncryptionToTerraform(struct?: S3BucketInventoryDestinationBucketEncryptionOutputReference | S3BucketInventoryDestinationBucketEncryption): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -182,7 +182,7 @@ export class S3BucketInventoryDestinationBucketEncryptionOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -214,7 +214,7 @@ export class S3BucketInventoryDestinationBucketEncryptionOutputReference extends
   }
 
   // sse_kms - computed: false, optional: true, required: false
-  private _sseKms = new S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference(this as any, "sse_kms", true);
+  private _sseKms = new S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference(this, "sse_kms", true);
   public get sseKms() {
     return this._sseKms;
   }
@@ -230,7 +230,7 @@ export class S3BucketInventoryDestinationBucketEncryptionOutputReference extends
   }
 
   // sse_s3 - computed: false, optional: true, required: false
-  private _sseS3 = new S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference(this as any, "sse_s3", true);
+  private _sseS3 = new S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference(this, "sse_s3", true);
   public get sseS3() {
     return this._sseS3;
   }
@@ -271,7 +271,7 @@ export interface S3BucketInventoryDestinationBucket {
 }
 
 export function s3BucketInventoryDestinationBucketToTerraform(struct?: S3BucketInventoryDestinationBucketOutputReference | S3BucketInventoryDestinationBucket): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -292,7 +292,7 @@ export class S3BucketInventoryDestinationBucketOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -400,7 +400,7 @@ export class S3BucketInventoryDestinationBucketOutputReference extends cdktf.Com
   }
 
   // encryption - computed: false, optional: true, required: false
-  private _encryption = new S3BucketInventoryDestinationBucketEncryptionOutputReference(this as any, "encryption", true);
+  private _encryption = new S3BucketInventoryDestinationBucketEncryptionOutputReference(this, "encryption", true);
   public get encryption() {
     return this._encryption;
   }
@@ -425,7 +425,7 @@ export interface S3BucketInventoryDestination {
 }
 
 export function s3BucketInventoryDestinationToTerraform(struct?: S3BucketInventoryDestinationOutputReference | S3BucketInventoryDestination): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -442,7 +442,7 @@ export class S3BucketInventoryDestinationOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -468,7 +468,7 @@ export class S3BucketInventoryDestinationOutputReference extends cdktf.ComplexOb
   }
 
   // bucket - computed: false, optional: false, required: true
-  private _bucket = new S3BucketInventoryDestinationBucketOutputReference(this as any, "bucket", true);
+  private _bucket = new S3BucketInventoryDestinationBucketOutputReference(this, "bucket", true);
   public get bucket() {
     return this._bucket;
   }
@@ -488,7 +488,7 @@ export interface S3BucketInventoryFilter {
 }
 
 export function s3BucketInventoryFilterToTerraform(struct?: S3BucketInventoryFilterOutputReference | S3BucketInventoryFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -505,7 +505,7 @@ export class S3BucketInventoryFilterOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -554,7 +554,7 @@ export interface S3BucketInventorySchedule {
 }
 
 export function s3BucketInventoryScheduleToTerraform(struct?: S3BucketInventoryScheduleOutputReference | S3BucketInventorySchedule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -571,7 +571,7 @@ export class S3BucketInventoryScheduleOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -672,7 +672,7 @@ export class S3BucketInventory extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -719,7 +719,7 @@ export class S3BucketInventory extends cdktf.TerraformResource {
   // optional_fields - computed: false, optional: true, required: false
   private _optionalFields?: string[]; 
   public get optionalFields() {
-    return this.getListAttribute('optional_fields');
+    return cdktf.Fn.tolist(this.getListAttribute('optional_fields'));
   }
   public set optionalFields(value: string[]) {
     this._optionalFields = value;
@@ -733,7 +733,7 @@ export class S3BucketInventory extends cdktf.TerraformResource {
   }
 
   // destination - computed: false, optional: false, required: true
-  private _destination = new S3BucketInventoryDestinationOutputReference(this as any, "destination", true);
+  private _destination = new S3BucketInventoryDestinationOutputReference(this, "destination", true);
   public get destination() {
     return this._destination;
   }
@@ -746,7 +746,7 @@ export class S3BucketInventory extends cdktf.TerraformResource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter = new S3BucketInventoryFilterOutputReference(this as any, "filter", true);
+  private _filter = new S3BucketInventoryFilterOutputReference(this, "filter", true);
   public get filter() {
     return this._filter;
   }
@@ -762,7 +762,7 @@ export class S3BucketInventory extends cdktf.TerraformResource {
   }
 
   // schedule - computed: false, optional: false, required: true
-  private _schedule = new S3BucketInventoryScheduleOutputReference(this as any, "schedule", true);
+  private _schedule = new S3BucketInventoryScheduleOutputReference(this, "schedule", true);
   public get schedule() {
     return this._schedule;
   }

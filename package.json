@@ -13,6 +13,7 @@
     "compile": "jsii --silence-warnings=reserved-word",
     "default": "npx projen default",
     "docgen": "npx projen docgen",
+    "eject": "npx projen eject",
     "fetch": "npx projen fetch",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
@@ -43,20 +44,20 @@
   "devDependencies": {
     "@cdktf/provider-project": "^0.2.8",
     "@types/node": "^14",
-    "cdktf": "^0.8",
-    "cdktf-cli": "^0.8",
+    "cdktf": "^0.9",
+    "cdktf-cli": "^0.9",
     "constructs": "^10.0.0",
     "dot-prop": "^5.2.0",
     "jsii": "^1.46.0",
     "jsii-diff": "^1.52.1",
     "jsii-docgen": "^1.8.110",
     "npm-check-updates": "^12",
-    "projen": "^0.50.26",
+    "projen": "^0.52.1",
     "standard-version": "^9",
     "typescript": "^3.9.10"
   },
   "peerDependencies": {
-    "cdktf": "^0.8",
+    "cdktf": "^0.9",
     "constructs": "^10.0.0"
   },
   "keywords": [

@@ -16,7 +16,7 @@ export interface WafregionalByteMatchSetConfig extends cdktf.TerraformMetaArgume
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_byte_match_set#byte_match_tuples WafregionalByteMatchSet#byte_match_tuples}
   */
-  readonly byteMatchTuples?: WafregionalByteMatchSetByteMatchTuples[];
+  readonly byteMatchTuples?: WafregionalByteMatchSetByteMatchTuples[] | cdktf.IResolvable;
 }
 export interface WafregionalByteMatchSetByteMatchTuplesFieldToMatch {
   /**
@@ -30,7 +30,7 @@ export interface WafregionalByteMatchSetByteMatchTuplesFieldToMatch {
 }
 
 export function wafregionalByteMatchSetByteMatchTuplesFieldToMatchToTerraform(struct?: WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference | WafregionalByteMatchSetByteMatchTuplesFieldToMatch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -48,7 +48,7 @@ export class WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference e
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -129,8 +129,8 @@ export interface WafregionalByteMatchSetByteMatchTuples {
   readonly fieldToMatch: WafregionalByteMatchSetByteMatchTuplesFieldToMatch;
 }
 
-export function wafregionalByteMatchSetByteMatchTuplesToTerraform(struct?: WafregionalByteMatchSetByteMatchTuples): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafregionalByteMatchSetByteMatchTuplesToTerraform(struct?: WafregionalByteMatchSetByteMatchTuples | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -202,12 +202,12 @@ export class WafregionalByteMatchSet extends cdktf.TerraformResource {
   }
 
   // byte_match_tuples - computed: false, optional: true, required: false
-  private _byteMatchTuples?: WafregionalByteMatchSetByteMatchTuples[]; 
+  private _byteMatchTuples?: WafregionalByteMatchSetByteMatchTuples[] | cdktf.IResolvable; 
   public get byteMatchTuples() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('byte_match_tuples') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('byte_match_tuples')));
   }
-  public set byteMatchTuples(value: WafregionalByteMatchSetByteMatchTuples[]) {
+  public set byteMatchTuples(value: WafregionalByteMatchSetByteMatchTuples[] | cdktf.IResolvable) {
     this._byteMatchTuples = value;
   }
   public resetByteMatchTuples() {

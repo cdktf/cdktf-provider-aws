@@ -70,7 +70,7 @@ export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
   // connection_events - computed: false, optional: false, required: true
   private _connectionEvents?: string[]; 
   public get connectionEvents() {
-    return this.getListAttribute('connection_events');
+    return cdktf.Fn.tolist(this.getListAttribute('connection_events'));
   }
   public set connectionEvents(value: string[]) {
     this._connectionEvents = value;

@@ -99,7 +99,7 @@ export class ElasticacheSecurityGroup extends cdktf.TerraformResource {
   // security_group_names - computed: false, optional: false, required: true
   private _securityGroupNames?: string[]; 
   public get securityGroupNames() {
-    return this.getListAttribute('security_group_names');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_names'));
   }
   public set securityGroupNames(value: string[]) {
     this._securityGroupNames = value;

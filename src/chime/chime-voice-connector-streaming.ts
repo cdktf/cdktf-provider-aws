@@ -83,7 +83,7 @@ export class ChimeVoiceConnectorStreaming extends cdktf.TerraformResource {
   // disabled - computed: false, optional: true, required: false
   private _disabled?: boolean | cdktf.IResolvable; 
   public get disabled() {
-    return this.getBooleanAttribute('disabled') as any;
+    return this.getBooleanAttribute('disabled');
   }
   public set disabled(value: boolean | cdktf.IResolvable) {
     this._disabled = value;
@@ -104,7 +104,7 @@ export class ChimeVoiceConnectorStreaming extends cdktf.TerraformResource {
   // streaming_notification_targets - computed: false, optional: true, required: false
   private _streamingNotificationTargets?: string[]; 
   public get streamingNotificationTargets() {
-    return this.getListAttribute('streaming_notification_targets');
+    return cdktf.Fn.tolist(this.getListAttribute('streaming_notification_targets'));
   }
   public set streamingNotificationTargets(value: string[]) {
     this._streamingNotificationTargets = value;

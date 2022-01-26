@@ -16,7 +16,7 @@ export interface WafGeoMatchSetConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_geo_match_set#geo_match_constraint WafGeoMatchSet#geo_match_constraint}
   */
-  readonly geoMatchConstraint?: WafGeoMatchSetGeoMatchConstraint[];
+  readonly geoMatchConstraint?: WafGeoMatchSetGeoMatchConstraint[] | cdktf.IResolvable;
 }
 export interface WafGeoMatchSetGeoMatchConstraint {
   /**
@@ -29,8 +29,8 @@ export interface WafGeoMatchSetGeoMatchConstraint {
   readonly value: string;
 }
 
-export function wafGeoMatchSetGeoMatchConstraintToTerraform(struct?: WafGeoMatchSetGeoMatchConstraint): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafGeoMatchSetGeoMatchConstraintToTerraform(struct?: WafGeoMatchSetGeoMatchConstraint | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -105,12 +105,12 @@ export class WafGeoMatchSet extends cdktf.TerraformResource {
   }
 
   // geo_match_constraint - computed: false, optional: true, required: false
-  private _geoMatchConstraint?: WafGeoMatchSetGeoMatchConstraint[]; 
+  private _geoMatchConstraint?: WafGeoMatchSetGeoMatchConstraint[] | cdktf.IResolvable; 
   public get geoMatchConstraint() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('geo_match_constraint') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('geo_match_constraint')));
   }
-  public set geoMatchConstraint(value: WafGeoMatchSetGeoMatchConstraint[]) {
+  public set geoMatchConstraint(value: WafGeoMatchSetGeoMatchConstraint[] | cdktf.IResolvable) {
     this._geoMatchConstraint = value;
   }
   public resetGeoMatchConstraint() {

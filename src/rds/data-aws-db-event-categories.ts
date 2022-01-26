@@ -54,7 +54,7 @@ export class DataAwsDbEventCategories extends cdktf.TerraformDataSource {
 
   // event_categories - computed: true, optional: false, required: false
   public get eventCategories() {
-    return this.getListAttribute('event_categories');
+    return cdktf.Fn.tolist(this.getListAttribute('event_categories'));
   }
 
   // id - computed: true, optional: true, required: false

@@ -14,11 +14,11 @@ export interface EksIdentityProviderConfigConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_identity_provider_config#tags EksIdentityProviderConfig#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_identity_provider_config#tags_all EksIdentityProviderConfig#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * oidc block
   * 
@@ -56,7 +56,7 @@ export interface EksIdentityProviderConfigOidc {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_identity_provider_config#required_claims EksIdentityProviderConfig#required_claims}
   */
-  readonly requiredClaims?: { [key: string]: string } | cdktf.IResolvable;
+  readonly requiredClaims?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_identity_provider_config#username_claim EksIdentityProviderConfig#username_claim}
   */
@@ -68,7 +68,7 @@ export interface EksIdentityProviderConfigOidc {
 }
 
 export function eksIdentityProviderConfigOidcToTerraform(struct?: EksIdentityProviderConfigOidcOutputReference | EksIdentityProviderConfigOidc): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -78,7 +78,7 @@ export function eksIdentityProviderConfigOidcToTerraform(struct?: EksIdentityPro
     groups_prefix: cdktf.stringToTerraform(struct!.groupsPrefix),
     identity_provider_config_name: cdktf.stringToTerraform(struct!.identityProviderConfigName),
     issuer_url: cdktf.stringToTerraform(struct!.issuerUrl),
-    required_claims: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.requiredClaims),
+    required_claims: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requiredClaims),
     username_claim: cdktf.stringToTerraform(struct!.usernameClaim),
     username_prefix: cdktf.stringToTerraform(struct!.usernamePrefix),
   }
@@ -92,7 +92,7 @@ export class EksIdentityProviderConfigOidcOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -231,12 +231,11 @@ export class EksIdentityProviderConfigOidcOutputReference extends cdktf.ComplexO
   }
 
   // required_claims - computed: false, optional: true, required: false
-  private _requiredClaims?: { [key: string]: string } | cdktf.IResolvable; 
+  private _requiredClaims?: { [key: string]: string }; 
   public get requiredClaims() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('required_claims') as any;
+    return this.getStringMapAttribute('required_claims');
   }
-  public set requiredClaims(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set requiredClaims(value: { [key: string]: string }) {
     this._requiredClaims = value;
   }
   public resetRequiredClaims() {
@@ -290,8 +289,8 @@ export interface EksIdentityProviderConfigTimeouts {
   readonly delete?: string;
 }
 
-export function eksIdentityProviderConfigTimeoutsToTerraform(struct?: EksIdentityProviderConfigTimeoutsOutputReference | EksIdentityProviderConfigTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function eksIdentityProviderConfigTimeoutsToTerraform(struct?: EksIdentityProviderConfigTimeoutsOutputReference | EksIdentityProviderConfigTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -309,7 +308,7 @@ export class EksIdentityProviderConfigTimeoutsOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -445,12 +444,11 @@ export class EksIdentityProviderConfig extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -462,12 +460,11 @@ export class EksIdentityProviderConfig extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -479,7 +476,7 @@ export class EksIdentityProviderConfig extends cdktf.TerraformResource {
   }
 
   // oidc - computed: false, optional: false, required: true
-  private _oidc = new EksIdentityProviderConfigOidcOutputReference(this as any, "oidc", true);
+  private _oidc = new EksIdentityProviderConfigOidcOutputReference(this, "oidc", true);
   public get oidc() {
     return this._oidc;
   }
@@ -492,7 +489,7 @@ export class EksIdentityProviderConfig extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new EksIdentityProviderConfigTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new EksIdentityProviderConfigTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -514,8 +511,8 @@ export class EksIdentityProviderConfig extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_name: cdktf.stringToTerraform(this._clusterName),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       oidc: eksIdentityProviderConfigOidcToTerraform(this._oidc.internalValue),
       timeouts: eksIdentityProviderConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -33,7 +33,7 @@ export class DataAwsServicecatalogLaunchPathsSummaries extends cdktf.ComplexComp
   // constraint_summaries - computed: true, optional: false, required: false
   public get constraintSummaries() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('constraint_summaries') as any;
+    return this.interpolationForAttribute('constraint_summaries');
   }
 
   // name - computed: true, optional: false, required: false
@@ -48,8 +48,7 @@ export class DataAwsServicecatalogLaunchPathsSummaries extends cdktf.ComplexComp
 
   // tags - computed: true, optional: false, required: false
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
 }
 
@@ -129,7 +128,7 @@ export class DataAwsServicecatalogLaunchPaths extends cdktf.TerraformDataSource 
 
   // summaries - computed: true, optional: false, required: false
   public summaries(index: string) {
-    return new DataAwsServicecatalogLaunchPathsSummaries(this, 'summaries', index);
+    return new DataAwsServicecatalogLaunchPathsSummaries(this, 'summaries', index, false);
   }
 
   // =========

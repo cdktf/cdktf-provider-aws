@@ -46,7 +46,7 @@ export interface AmplifyAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_app#environment_variables AmplifyApp#environment_variables}
   */
-  readonly environmentVariables?: { [key: string]: string } | cdktf.IResolvable;
+  readonly environmentVariables?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}
   */
@@ -70,11 +70,11 @@ export interface AmplifyAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_app#tags AmplifyApp#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_app#tags_all AmplifyApp#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * auto_branch_creation_config block
   * 
@@ -86,7 +86,7 @@ export interface AmplifyAppConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_app#custom_rule AmplifyApp#custom_rule}
   */
-  readonly customRule?: AmplifyAppCustomRule[];
+  readonly customRule?: AmplifyAppCustomRule[] | cdktf.IResolvable;
 }
 export class AmplifyAppProductionBranch extends cdktf.ComplexComputedList {
 
@@ -138,7 +138,7 @@ export interface AmplifyAppAutoBranchCreationConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_app#environment_variables AmplifyApp#environment_variables}
   */
-  readonly environmentVariables?: { [key: string]: string } | cdktf.IResolvable;
+  readonly environmentVariables?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_app#framework AmplifyApp#framework}
   */
@@ -154,7 +154,7 @@ export interface AmplifyAppAutoBranchCreationConfig {
 }
 
 export function amplifyAppAutoBranchCreationConfigToTerraform(struct?: AmplifyAppAutoBranchCreationConfigOutputReference | AmplifyAppAutoBranchCreationConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -165,7 +165,7 @@ export function amplifyAppAutoBranchCreationConfigToTerraform(struct?: AmplifyAp
     enable_basic_auth: cdktf.booleanToTerraform(struct!.enableBasicAuth),
     enable_performance_mode: cdktf.booleanToTerraform(struct!.enablePerformanceMode),
     enable_pull_request_preview: cdktf.booleanToTerraform(struct!.enablePullRequestPreview),
-    environment_variables: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.environmentVariables),
+    environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.environmentVariables),
     framework: cdktf.stringToTerraform(struct!.framework),
     pull_request_environment_name: cdktf.stringToTerraform(struct!.pullRequestEnvironmentName),
     stage: cdktf.stringToTerraform(struct!.stage),
@@ -180,7 +180,7 @@ export class AmplifyAppAutoBranchCreationConfigOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -294,7 +294,7 @@ export class AmplifyAppAutoBranchCreationConfigOutputReference extends cdktf.Com
   // enable_auto_build - computed: false, optional: true, required: false
   private _enableAutoBuild?: boolean | cdktf.IResolvable; 
   public get enableAutoBuild() {
-    return this.getBooleanAttribute('enable_auto_build') as any;
+    return this.getBooleanAttribute('enable_auto_build');
   }
   public set enableAutoBuild(value: boolean | cdktf.IResolvable) {
     this._enableAutoBuild = value;
@@ -310,7 +310,7 @@ export class AmplifyAppAutoBranchCreationConfigOutputReference extends cdktf.Com
   // enable_basic_auth - computed: false, optional: true, required: false
   private _enableBasicAuth?: boolean | cdktf.IResolvable; 
   public get enableBasicAuth() {
-    return this.getBooleanAttribute('enable_basic_auth') as any;
+    return this.getBooleanAttribute('enable_basic_auth');
   }
   public set enableBasicAuth(value: boolean | cdktf.IResolvable) {
     this._enableBasicAuth = value;
@@ -326,7 +326,7 @@ export class AmplifyAppAutoBranchCreationConfigOutputReference extends cdktf.Com
   // enable_performance_mode - computed: false, optional: true, required: false
   private _enablePerformanceMode?: boolean | cdktf.IResolvable; 
   public get enablePerformanceMode() {
-    return this.getBooleanAttribute('enable_performance_mode') as any;
+    return this.getBooleanAttribute('enable_performance_mode');
   }
   public set enablePerformanceMode(value: boolean | cdktf.IResolvable) {
     this._enablePerformanceMode = value;
@@ -342,7 +342,7 @@ export class AmplifyAppAutoBranchCreationConfigOutputReference extends cdktf.Com
   // enable_pull_request_preview - computed: false, optional: true, required: false
   private _enablePullRequestPreview?: boolean | cdktf.IResolvable; 
   public get enablePullRequestPreview() {
-    return this.getBooleanAttribute('enable_pull_request_preview') as any;
+    return this.getBooleanAttribute('enable_pull_request_preview');
   }
   public set enablePullRequestPreview(value: boolean | cdktf.IResolvable) {
     this._enablePullRequestPreview = value;
@@ -356,12 +356,11 @@ export class AmplifyAppAutoBranchCreationConfigOutputReference extends cdktf.Com
   }
 
   // environment_variables - computed: false, optional: true, required: false
-  private _environmentVariables?: { [key: string]: string } | cdktf.IResolvable; 
+  private _environmentVariables?: { [key: string]: string }; 
   public get environmentVariables() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('environment_variables') as any;
+    return this.getStringMapAttribute('environment_variables');
   }
-  public set environmentVariables(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set environmentVariables(value: { [key: string]: string }) {
     this._environmentVariables = value;
   }
   public resetEnvironmentVariables() {
@@ -439,8 +438,8 @@ export interface AmplifyAppCustomRule {
   readonly target: string;
 }
 
-export function amplifyAppCustomRuleToTerraform(struct?: AmplifyAppCustomRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function amplifyAppCustomRuleToTerraform(struct?: AmplifyAppCustomRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -534,7 +533,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
   // auto_branch_creation_patterns - computed: false, optional: true, required: false
   private _autoBranchCreationPatterns?: string[]; 
   public get autoBranchCreationPatterns() {
-    return this.getListAttribute('auto_branch_creation_patterns');
+    return cdktf.Fn.tolist(this.getListAttribute('auto_branch_creation_patterns'));
   }
   public set autoBranchCreationPatterns(value: string[]) {
     this._autoBranchCreationPatterns = value;
@@ -603,7 +602,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
   // enable_auto_branch_creation - computed: false, optional: true, required: false
   private _enableAutoBranchCreation?: boolean | cdktf.IResolvable; 
   public get enableAutoBranchCreation() {
-    return this.getBooleanAttribute('enable_auto_branch_creation') as any;
+    return this.getBooleanAttribute('enable_auto_branch_creation');
   }
   public set enableAutoBranchCreation(value: boolean | cdktf.IResolvable) {
     this._enableAutoBranchCreation = value;
@@ -619,7 +618,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
   // enable_basic_auth - computed: false, optional: true, required: false
   private _enableBasicAuth?: boolean | cdktf.IResolvable; 
   public get enableBasicAuth() {
-    return this.getBooleanAttribute('enable_basic_auth') as any;
+    return this.getBooleanAttribute('enable_basic_auth');
   }
   public set enableBasicAuth(value: boolean | cdktf.IResolvable) {
     this._enableBasicAuth = value;
@@ -635,7 +634,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
   // enable_branch_auto_build - computed: false, optional: true, required: false
   private _enableBranchAutoBuild?: boolean | cdktf.IResolvable; 
   public get enableBranchAutoBuild() {
-    return this.getBooleanAttribute('enable_branch_auto_build') as any;
+    return this.getBooleanAttribute('enable_branch_auto_build');
   }
   public set enableBranchAutoBuild(value: boolean | cdktf.IResolvable) {
     this._enableBranchAutoBuild = value;
@@ -651,7 +650,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
   // enable_branch_auto_deletion - computed: false, optional: true, required: false
   private _enableBranchAutoDeletion?: boolean | cdktf.IResolvable; 
   public get enableBranchAutoDeletion() {
-    return this.getBooleanAttribute('enable_branch_auto_deletion') as any;
+    return this.getBooleanAttribute('enable_branch_auto_deletion');
   }
   public set enableBranchAutoDeletion(value: boolean | cdktf.IResolvable) {
     this._enableBranchAutoDeletion = value;
@@ -665,12 +664,11 @@ export class AmplifyApp extends cdktf.TerraformResource {
   }
 
   // environment_variables - computed: false, optional: true, required: false
-  private _environmentVariables?: { [key: string]: string } | cdktf.IResolvable; 
+  private _environmentVariables?: { [key: string]: string }; 
   public get environmentVariables() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('environment_variables') as any;
+    return this.getStringMapAttribute('environment_variables');
   }
-  public set environmentVariables(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set environmentVariables(value: { [key: string]: string }) {
     this._environmentVariables = value;
   }
   public resetEnvironmentVariables() {
@@ -749,7 +747,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
 
   // production_branch - computed: true, optional: false, required: false
   public productionBranch(index: string) {
-    return new AmplifyAppProductionBranch(this, 'production_branch', index);
+    return new AmplifyAppProductionBranch(this, 'production_branch', index, false);
   }
 
   // repository - computed: false, optional: true, required: false
@@ -769,12 +767,11 @@ export class AmplifyApp extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -786,12 +783,11 @@ export class AmplifyApp extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -803,7 +799,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
   }
 
   // auto_branch_creation_config - computed: false, optional: true, required: false
-  private _autoBranchCreationConfig = new AmplifyAppAutoBranchCreationConfigOutputReference(this as any, "auto_branch_creation_config", true);
+  private _autoBranchCreationConfig = new AmplifyAppAutoBranchCreationConfigOutputReference(this, "auto_branch_creation_config", true);
   public get autoBranchCreationConfig() {
     return this._autoBranchCreationConfig;
   }
@@ -819,12 +815,12 @@ export class AmplifyApp extends cdktf.TerraformResource {
   }
 
   // custom_rule - computed: false, optional: true, required: false
-  private _customRule?: AmplifyAppCustomRule[]; 
+  private _customRule?: AmplifyAppCustomRule[] | cdktf.IResolvable; 
   public get customRule() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_rule') as any;
+    return this.interpolationForAttribute('custom_rule');
   }
-  public set customRule(value: AmplifyAppCustomRule[]) {
+  public set customRule(value: AmplifyAppCustomRule[] | cdktf.IResolvable) {
     this._customRule = value;
   }
   public resetCustomRule() {
@@ -850,14 +846,14 @@ export class AmplifyApp extends cdktf.TerraformResource {
       enable_basic_auth: cdktf.booleanToTerraform(this._enableBasicAuth),
       enable_branch_auto_build: cdktf.booleanToTerraform(this._enableBranchAutoBuild),
       enable_branch_auto_deletion: cdktf.booleanToTerraform(this._enableBranchAutoDeletion),
-      environment_variables: cdktf.hashMapper(cdktf.anyToTerraform)(this._environmentVariables),
+      environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(this._environmentVariables),
       iam_service_role_arn: cdktf.stringToTerraform(this._iamServiceRoleArn),
       name: cdktf.stringToTerraform(this._name),
       oauth_token: cdktf.stringToTerraform(this._oauthToken),
       platform: cdktf.stringToTerraform(this._platform),
       repository: cdktf.stringToTerraform(this._repository),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       auto_branch_creation_config: amplifyAppAutoBranchCreationConfigToTerraform(this._autoBranchCreationConfig.internalValue),
       custom_rule: cdktf.listMapper(amplifyAppCustomRuleToTerraform)(this._customRule),
     };

@@ -96,7 +96,7 @@ export class LoadBalancerListenerPolicy extends cdktf.TerraformResource {
   // policy_names - computed: false, optional: true, required: false
   private _policyNames?: string[]; 
   public get policyNames() {
-    return this.getListAttribute('policy_names');
+    return cdktf.Fn.tolist(this.getListAttribute('policy_names'));
   }
   public set policyNames(value: string[]) {
     this._policyNames = value;

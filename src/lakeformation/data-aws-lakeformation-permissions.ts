@@ -56,7 +56,7 @@ export interface DataAwsLakeformationPermissionsDataLocation {
 }
 
 export function dataAwsLakeformationPermissionsDataLocationToTerraform(struct?: DataAwsLakeformationPermissionsDataLocationOutputReference | DataAwsLakeformationPermissionsDataLocation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -74,7 +74,7 @@ export class DataAwsLakeformationPermissionsDataLocationOutputReference extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -146,7 +146,7 @@ export interface DataAwsLakeformationPermissionsDatabase {
 }
 
 export function dataAwsLakeformationPermissionsDatabaseToTerraform(struct?: DataAwsLakeformationPermissionsDatabaseOutputReference | DataAwsLakeformationPermissionsDatabase): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -164,7 +164,7 @@ export class DataAwsLakeformationPermissionsDatabaseOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -244,7 +244,7 @@ export interface DataAwsLakeformationPermissionsTable {
 }
 
 export function dataAwsLakeformationPermissionsTableToTerraform(struct?: DataAwsLakeformationPermissionsTableOutputReference | DataAwsLakeformationPermissionsTable): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -264,7 +264,7 @@ export class DataAwsLakeformationPermissionsTableOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -355,7 +355,7 @@ export class DataAwsLakeformationPermissionsTableOutputReference extends cdktf.C
   // wildcard - computed: false, optional: true, required: false
   private _wildcard?: boolean | cdktf.IResolvable; 
   public get wildcard() {
-    return this.getBooleanAttribute('wildcard') as any;
+    return this.getBooleanAttribute('wildcard');
   }
   public set wildcard(value: boolean | cdktf.IResolvable) {
     this._wildcard = value;
@@ -396,7 +396,7 @@ export interface DataAwsLakeformationPermissionsTableWithColumns {
 }
 
 export function dataAwsLakeformationPermissionsTableWithColumnsToTerraform(struct?: DataAwsLakeformationPermissionsTableWithColumnsOutputReference | DataAwsLakeformationPermissionsTableWithColumns): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -418,7 +418,7 @@ export class DataAwsLakeformationPermissionsTableWithColumnsOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -492,7 +492,7 @@ export class DataAwsLakeformationPermissionsTableWithColumnsOutputReference exte
   // column_names - computed: false, optional: true, required: false
   private _columnNames?: string[]; 
   public get columnNames() {
-    return this.getListAttribute('column_names');
+    return cdktf.Fn.tolist(this.getListAttribute('column_names'));
   }
   public set columnNames(value: string[]) {
     this._columnNames = value;
@@ -521,7 +521,7 @@ export class DataAwsLakeformationPermissionsTableWithColumnsOutputReference exte
   // excluded_column_names - computed: false, optional: true, required: false
   private _excludedColumnNames?: string[]; 
   public get excludedColumnNames() {
-    return this.getListAttribute('excluded_column_names');
+    return cdktf.Fn.tolist(this.getListAttribute('excluded_column_names'));
   }
   public set excludedColumnNames(value: string[]) {
     this._excludedColumnNames = value;
@@ -550,7 +550,7 @@ export class DataAwsLakeformationPermissionsTableWithColumnsOutputReference exte
   // wildcard - computed: false, optional: true, required: false
   private _wildcard?: boolean | cdktf.IResolvable; 
   public get wildcard() {
-    return this.getBooleanAttribute('wildcard') as any;
+    return this.getBooleanAttribute('wildcard');
   }
   public set wildcard(value: boolean | cdktf.IResolvable) {
     this._wildcard = value;
@@ -628,7 +628,7 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
   // catalog_resource - computed: false, optional: true, required: false
   private _catalogResource?: boolean | cdktf.IResolvable; 
   public get catalogResource() {
-    return this.getBooleanAttribute('catalog_resource') as any;
+    return this.getBooleanAttribute('catalog_resource');
   }
   public set catalogResource(value: boolean | cdktf.IResolvable) {
     this._catalogResource = value;
@@ -670,7 +670,7 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
   }
 
   // data_location - computed: false, optional: true, required: false
-  private _dataLocation = new DataAwsLakeformationPermissionsDataLocationOutputReference(this as any, "data_location", true);
+  private _dataLocation = new DataAwsLakeformationPermissionsDataLocationOutputReference(this, "data_location", true);
   public get dataLocation() {
     return this._dataLocation;
   }
@@ -686,7 +686,7 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
   }
 
   // database - computed: false, optional: true, required: false
-  private _database = new DataAwsLakeformationPermissionsDatabaseOutputReference(this as any, "database", true);
+  private _database = new DataAwsLakeformationPermissionsDatabaseOutputReference(this, "database", true);
   public get database() {
     return this._database;
   }
@@ -702,7 +702,7 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
   }
 
   // table - computed: false, optional: true, required: false
-  private _table = new DataAwsLakeformationPermissionsTableOutputReference(this as any, "table", true);
+  private _table = new DataAwsLakeformationPermissionsTableOutputReference(this, "table", true);
   public get table() {
     return this._table;
   }
@@ -718,7 +718,7 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
   }
 
   // table_with_columns - computed: false, optional: true, required: false
-  private _tableWithColumns = new DataAwsLakeformationPermissionsTableWithColumnsOutputReference(this as any, "table_with_columns", true);
+  private _tableWithColumns = new DataAwsLakeformationPermissionsTableWithColumnsOutputReference(this, "table_with_columns", true);
   public get tableWithColumns() {
     return this._tableWithColumns;
   }

@@ -40,7 +40,7 @@ export class DataAwsCognitoUserPoolClientAnalyticsConfiguration extends cdktf.Co
 
   // user_data_shared - computed: true, optional: false, required: false
   public get userDataShared() {
-    return this.getBooleanAttribute('user_data_shared') as any;
+    return this.getBooleanAttribute('user_data_shared');
   }
 }
 export class DataAwsCognitoUserPoolClientTokenValidityUnits extends cdktf.ComplexComputedList {
@@ -108,27 +108,27 @@ export class DataAwsCognitoUserPoolClient extends cdktf.TerraformDataSource {
 
   // allowed_oauth_flows - computed: true, optional: false, required: false
   public get allowedOauthFlows() {
-    return this.getListAttribute('allowed_oauth_flows');
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_oauth_flows'));
   }
 
   // allowed_oauth_flows_user_pool_client - computed: true, optional: false, required: false
   public get allowedOauthFlowsUserPoolClient() {
-    return this.getBooleanAttribute('allowed_oauth_flows_user_pool_client') as any;
+    return this.getBooleanAttribute('allowed_oauth_flows_user_pool_client');
   }
 
   // allowed_oauth_scopes - computed: true, optional: false, required: false
   public get allowedOauthScopes() {
-    return this.getListAttribute('allowed_oauth_scopes');
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_oauth_scopes'));
   }
 
   // analytics_configuration - computed: true, optional: false, required: false
   public analyticsConfiguration(index: string) {
-    return new DataAwsCognitoUserPoolClientAnalyticsConfiguration(this, 'analytics_configuration', index);
+    return new DataAwsCognitoUserPoolClientAnalyticsConfiguration(this, 'analytics_configuration', index, false);
   }
 
   // callback_urls - computed: true, optional: false, required: false
   public get callbackUrls() {
-    return this.getListAttribute('callback_urls');
+    return cdktf.Fn.tolist(this.getListAttribute('callback_urls'));
   }
 
   // client_id - computed: false, optional: false, required: true
@@ -156,17 +156,17 @@ export class DataAwsCognitoUserPoolClient extends cdktf.TerraformDataSource {
 
   // enable_token_revocation - computed: true, optional: false, required: false
   public get enableTokenRevocation() {
-    return this.getBooleanAttribute('enable_token_revocation') as any;
+    return this.getBooleanAttribute('enable_token_revocation');
   }
 
   // explicit_auth_flows - computed: true, optional: false, required: false
   public get explicitAuthFlows() {
-    return this.getListAttribute('explicit_auth_flows');
+    return cdktf.Fn.tolist(this.getListAttribute('explicit_auth_flows'));
   }
 
   // generate_secret - computed: true, optional: false, required: false
   public get generateSecret() {
-    return this.getBooleanAttribute('generate_secret') as any;
+    return this.getBooleanAttribute('generate_secret');
   }
 
   // id - computed: true, optional: true, required: false
@@ -181,7 +181,7 @@ export class DataAwsCognitoUserPoolClient extends cdktf.TerraformDataSource {
 
   // logout_urls - computed: true, optional: false, required: false
   public get logoutUrls() {
-    return this.getListAttribute('logout_urls');
+    return cdktf.Fn.tolist(this.getListAttribute('logout_urls'));
   }
 
   // name - computed: true, optional: false, required: false
@@ -196,7 +196,7 @@ export class DataAwsCognitoUserPoolClient extends cdktf.TerraformDataSource {
 
   // read_attributes - computed: true, optional: false, required: false
   public get readAttributes() {
-    return this.getListAttribute('read_attributes');
+    return cdktf.Fn.tolist(this.getListAttribute('read_attributes'));
   }
 
   // refresh_token_validity - computed: true, optional: false, required: false
@@ -206,12 +206,12 @@ export class DataAwsCognitoUserPoolClient extends cdktf.TerraformDataSource {
 
   // supported_identity_providers - computed: true, optional: false, required: false
   public get supportedIdentityProviders() {
-    return this.getListAttribute('supported_identity_providers');
+    return cdktf.Fn.tolist(this.getListAttribute('supported_identity_providers'));
   }
 
   // token_validity_units - computed: true, optional: false, required: false
   public tokenValidityUnits(index: string) {
-    return new DataAwsCognitoUserPoolClientTokenValidityUnits(this, 'token_validity_units', index);
+    return new DataAwsCognitoUserPoolClientTokenValidityUnits(this, 'token_validity_units', index, false);
   }
 
   // user_pool_id - computed: false, optional: false, required: true
@@ -229,7 +229,7 @@ export class DataAwsCognitoUserPoolClient extends cdktf.TerraformDataSource {
 
   // write_attributes - computed: true, optional: false, required: false
   public get writeAttributes() {
-    return this.getListAttribute('write_attributes');
+    return cdktf.Fn.tolist(this.getListAttribute('write_attributes'));
   }
 
   // =========

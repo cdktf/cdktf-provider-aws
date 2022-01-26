@@ -28,7 +28,7 @@ export interface DataAwsAvailabilityZoneConfig extends cdktf.TerraformMetaArgume
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/availability_zone#filter DataAwsAvailabilityZone#filter}
   */
-  readonly filter?: DataAwsAvailabilityZoneFilter[];
+  readonly filter?: DataAwsAvailabilityZoneFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsAvailabilityZoneFilter {
   /**
@@ -41,8 +41,8 @@ export interface DataAwsAvailabilityZoneFilter {
   readonly values: string[];
 }
 
-export function dataAwsAvailabilityZoneFilterToTerraform(struct?: DataAwsAvailabilityZoneFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsAvailabilityZoneFilterToTerraform(struct?: DataAwsAvailabilityZoneFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -99,7 +99,7 @@ export class DataAwsAvailabilityZone extends cdktf.TerraformDataSource {
   // all_availability_zones - computed: false, optional: true, required: false
   private _allAvailabilityZones?: boolean | cdktf.IResolvable; 
   public get allAvailabilityZones() {
-    return this.getBooleanAttribute('all_availability_zones') as any;
+    return this.getBooleanAttribute('all_availability_zones');
   }
   public set allAvailabilityZones(value: boolean | cdktf.IResolvable) {
     this._allAvailabilityZones = value;
@@ -206,12 +206,12 @@ export class DataAwsAvailabilityZone extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: DataAwsAvailabilityZoneFilter[]; 
+  private _filter?: DataAwsAvailabilityZoneFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
   }
-  public set filter(value: DataAwsAvailabilityZoneFilter[]) {
+  public set filter(value: DataAwsAvailabilityZoneFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {

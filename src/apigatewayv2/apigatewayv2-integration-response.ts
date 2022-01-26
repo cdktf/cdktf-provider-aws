@@ -26,7 +26,7 @@ export interface Apigatewayv2IntegrationResponseConfig extends cdktf.TerraformMe
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration_response#response_templates Apigatewayv2IntegrationResponse#response_templates}
   */
-  readonly responseTemplates?: { [key: string]: string } | cdktf.IResolvable;
+  readonly responseTemplates?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration_response#template_selection_expression Apigatewayv2IntegrationResponse#template_selection_expression}
   */
@@ -138,12 +138,11 @@ export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
   }
 
   // response_templates - computed: false, optional: true, required: false
-  private _responseTemplates?: { [key: string]: string } | cdktf.IResolvable; 
+  private _responseTemplates?: { [key: string]: string }; 
   public get responseTemplates() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('response_templates') as any;
+    return this.getStringMapAttribute('response_templates');
   }
-  public set responseTemplates(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set responseTemplates(value: { [key: string]: string }) {
     this._responseTemplates = value;
   }
   public resetResponseTemplates() {
@@ -180,7 +179,7 @@ export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
       content_handling_strategy: cdktf.stringToTerraform(this._contentHandlingStrategy),
       integration_id: cdktf.stringToTerraform(this._integrationId),
       integration_response_key: cdktf.stringToTerraform(this._integrationResponseKey),
-      response_templates: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseTemplates),
+      response_templates: cdktf.hashMapper(cdktf.stringToTerraform)(this._responseTemplates),
       template_selection_expression: cdktf.stringToTerraform(this._templateSelectionExpression),
     };
   }

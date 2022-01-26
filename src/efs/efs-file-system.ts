@@ -34,11 +34,11 @@ export interface EfsFileSystemConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_file_system#tags EfsFileSystem#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_file_system#tags_all EfsFileSystem#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tagsAll?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_file_system#throughput_mode EfsFileSystem#throughput_mode}
   */
@@ -48,7 +48,7 @@ export interface EfsFileSystemConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_file_system#lifecycle_policy EfsFileSystem#lifecycle_policy}
   */
-  readonly lifecyclePolicy?: EfsFileSystemLifecyclePolicy[];
+  readonly lifecyclePolicy?: EfsFileSystemLifecyclePolicy[] | cdktf.IResolvable;
 }
 export class EfsFileSystemSizeInBytes extends cdktf.ComplexComputedList {
 
@@ -78,8 +78,8 @@ export interface EfsFileSystemLifecyclePolicy {
   readonly transitionToPrimaryStorageClass?: string;
 }
 
-export function efsFileSystemLifecyclePolicyToTerraform(struct?: EfsFileSystemLifecyclePolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function efsFileSystemLifecyclePolicyToTerraform(struct?: EfsFileSystemLifecyclePolicy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -188,7 +188,7 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   // encrypted - computed: true, optional: true, required: false
   private _encrypted?: boolean | cdktf.IResolvable; 
   public get encrypted() {
-    return this.getBooleanAttribute('encrypted') as any;
+    return this.getBooleanAttribute('encrypted');
   }
   public set encrypted(value: boolean | cdktf.IResolvable) {
     this._encrypted = value;
@@ -266,16 +266,15 @@ export class EfsFileSystem extends cdktf.TerraformResource {
 
   // size_in_bytes - computed: true, optional: false, required: false
   public sizeInBytes(index: string) {
-    return new EfsFileSystemSizeInBytes(this, 'size_in_bytes', index);
+    return new EfsFileSystemSizeInBytes(this, 'size_in_bytes', index, false);
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -287,12 +286,11 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tagsAll?: { [key: string]: string }; 
   public get tagsAll() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags_all') as any;
+    return this.getStringMapAttribute('tags_all');
   }
-  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tagsAll(value: { [key: string]: string }) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -320,12 +318,12 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   }
 
   // lifecycle_policy - computed: false, optional: true, required: false
-  private _lifecyclePolicy?: EfsFileSystemLifecyclePolicy[]; 
+  private _lifecyclePolicy?: EfsFileSystemLifecyclePolicy[] | cdktf.IResolvable; 
   public get lifecyclePolicy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('lifecycle_policy') as any;
+    return this.interpolationForAttribute('lifecycle_policy');
   }
-  public set lifecyclePolicy(value: EfsFileSystemLifecyclePolicy[]) {
+  public set lifecyclePolicy(value: EfsFileSystemLifecyclePolicy[] | cdktf.IResolvable) {
     this._lifecyclePolicy = value;
   }
   public resetLifecyclePolicy() {
@@ -348,8 +346,8 @@ export class EfsFileSystem extends cdktf.TerraformResource {
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       performance_mode: cdktf.stringToTerraform(this._performanceMode),
       provisioned_throughput_in_mibps: cdktf.numberToTerraform(this._provisionedThroughputInMibps),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       throughput_mode: cdktf.stringToTerraform(this._throughputMode),
       lifecycle_policy: cdktf.listMapper(efsFileSystemLifecyclePolicyToTerraform)(this._lifecyclePolicy),
     };

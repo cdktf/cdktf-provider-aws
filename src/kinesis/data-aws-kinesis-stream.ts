@@ -14,7 +14,7 @@ export interface DataAwsKinesisStreamConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kinesis_stream#tags DataAwsKinesisStream#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsKinesisStreamStreamModeDetails extends cdktf.ComplexComputedList {
 
@@ -71,7 +71,7 @@ export class DataAwsKinesisStream extends cdktf.TerraformDataSource {
 
   // closed_shards - computed: true, optional: false, required: false
   public get closedShards() {
-    return this.getListAttribute('closed_shards');
+    return cdktf.Fn.tolist(this.getListAttribute('closed_shards'));
   }
 
   // creation_timestamp - computed: true, optional: false, required: false
@@ -99,7 +99,7 @@ export class DataAwsKinesisStream extends cdktf.TerraformDataSource {
 
   // open_shards - computed: true, optional: false, required: false
   public get openShards() {
-    return this.getListAttribute('open_shards');
+    return cdktf.Fn.tolist(this.getListAttribute('open_shards'));
   }
 
   // retention_period - computed: true, optional: false, required: false
@@ -109,7 +109,7 @@ export class DataAwsKinesisStream extends cdktf.TerraformDataSource {
 
   // shard_level_metrics - computed: true, optional: false, required: false
   public get shardLevelMetrics() {
-    return this.getListAttribute('shard_level_metrics');
+    return cdktf.Fn.tolist(this.getListAttribute('shard_level_metrics'));
   }
 
   // status - computed: true, optional: false, required: false
@@ -119,16 +119,15 @@ export class DataAwsKinesisStream extends cdktf.TerraformDataSource {
 
   // stream_mode_details - computed: true, optional: false, required: false
   public streamModeDetails(index: string) {
-    return new DataAwsKinesisStreamStreamModeDetails(this, 'stream_mode_details', index);
+    return new DataAwsKinesisStreamStreamModeDetails(this, 'stream_mode_details', index, false);
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -146,7 +145,7 @@ export class DataAwsKinesisStream extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

@@ -16,7 +16,7 @@ export class DataAwsLambdaCodeSigningConfigAllowedPublishers extends cdktf.Compl
 
   // signing_profile_version_arns - computed: true, optional: false, required: false
   public get signingProfileVersionArns() {
-    return this.getListAttribute('signing_profile_version_arns');
+    return cdktf.Fn.tolist(this.getListAttribute('signing_profile_version_arns'));
   }
 }
 export class DataAwsLambdaCodeSigningConfigPolicies extends cdktf.ComplexComputedList {
@@ -68,7 +68,7 @@ export class DataAwsLambdaCodeSigningConfig extends cdktf.TerraformDataSource {
 
   // allowed_publishers - computed: true, optional: false, required: false
   public allowedPublishers(index: string) {
-    return new DataAwsLambdaCodeSigningConfigAllowedPublishers(this, 'allowed_publishers', index);
+    return new DataAwsLambdaCodeSigningConfigAllowedPublishers(this, 'allowed_publishers', index, false);
   }
 
   // arn - computed: false, optional: false, required: true
@@ -106,7 +106,7 @@ export class DataAwsLambdaCodeSigningConfig extends cdktf.TerraformDataSource {
 
   // policies - computed: true, optional: false, required: false
   public policies(index: string) {
-    return new DataAwsLambdaCodeSigningConfigPolicies(this, 'policies', index);
+    return new DataAwsLambdaCodeSigningConfigPolicies(this, 'policies', index, false);
   }
 
   // =========

@@ -36,7 +36,7 @@ export interface DataAwsIamPolicyDocumentConfig extends cdktf.TerraformMetaArgum
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_policy_document#statement DataAwsIamPolicyDocument#statement}
   */
-  readonly statement?: DataAwsIamPolicyDocumentStatement[];
+  readonly statement?: DataAwsIamPolicyDocumentStatement[] | cdktf.IResolvable;
 }
 export interface DataAwsIamPolicyDocumentStatementCondition {
   /**
@@ -53,8 +53,8 @@ export interface DataAwsIamPolicyDocumentStatementCondition {
   readonly variable: string;
 }
 
-export function dataAwsIamPolicyDocumentStatementConditionToTerraform(struct?: DataAwsIamPolicyDocumentStatementCondition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsIamPolicyDocumentStatementConditionToTerraform(struct?: DataAwsIamPolicyDocumentStatementCondition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -76,8 +76,8 @@ export interface DataAwsIamPolicyDocumentStatementNotPrincipals {
   readonly type: string;
 }
 
-export function dataAwsIamPolicyDocumentStatementNotPrincipalsToTerraform(struct?: DataAwsIamPolicyDocumentStatementNotPrincipals): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsIamPolicyDocumentStatementNotPrincipalsToTerraform(struct?: DataAwsIamPolicyDocumentStatementNotPrincipals | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -98,8 +98,8 @@ export interface DataAwsIamPolicyDocumentStatementPrincipals {
   readonly type: string;
 }
 
-export function dataAwsIamPolicyDocumentStatementPrincipalsToTerraform(struct?: DataAwsIamPolicyDocumentStatementPrincipals): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsIamPolicyDocumentStatementPrincipalsToTerraform(struct?: DataAwsIamPolicyDocumentStatementPrincipals | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -139,23 +139,23 @@ export interface DataAwsIamPolicyDocumentStatement {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_policy_document#condition DataAwsIamPolicyDocument#condition}
   */
-  readonly condition?: DataAwsIamPolicyDocumentStatementCondition[];
+  readonly condition?: DataAwsIamPolicyDocumentStatementCondition[] | cdktf.IResolvable;
   /**
   * not_principals block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_policy_document#not_principals DataAwsIamPolicyDocument#not_principals}
   */
-  readonly notPrincipals?: DataAwsIamPolicyDocumentStatementNotPrincipals[];
+  readonly notPrincipals?: DataAwsIamPolicyDocumentStatementNotPrincipals[] | cdktf.IResolvable;
   /**
   * principals block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_policy_document#principals DataAwsIamPolicyDocument#principals}
   */
-  readonly principals?: DataAwsIamPolicyDocumentStatementPrincipals[];
+  readonly principals?: DataAwsIamPolicyDocumentStatementPrincipals[] | cdktf.IResolvable;
 }
 
-export function dataAwsIamPolicyDocumentStatementToTerraform(struct?: DataAwsIamPolicyDocumentStatement): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAwsIamPolicyDocumentStatementToTerraform(struct?: DataAwsIamPolicyDocumentStatement | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -325,12 +325,12 @@ export class DataAwsIamPolicyDocument extends cdktf.TerraformDataSource {
   }
 
   // statement - computed: false, optional: true, required: false
-  private _statement?: DataAwsIamPolicyDocumentStatement[]; 
+  private _statement?: DataAwsIamPolicyDocumentStatement[] | cdktf.IResolvable; 
   public get statement() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('statement') as any;
+    return this.interpolationForAttribute('statement');
   }
-  public set statement(value: DataAwsIamPolicyDocumentStatement[]) {
+  public set statement(value: DataAwsIamPolicyDocumentStatement[] | cdktf.IResolvable) {
     this._statement = value;
   }
   public resetStatement() {
