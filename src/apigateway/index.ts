@@ -25,7 +25,9 @@ export * from './api-gateway-usage-plan-key';
 export * from './api-gateway-vpc-link';
 export * from './data-aws-api-gateway-api-key';
 export * from './data-aws-api-gateway-domain-name';
+export * from './data-aws-api-gateway-export';
 export * from './data-aws-api-gateway-resource';
 export * from './data-aws-api-gateway-rest-api';
+export * from './data-aws-api-gateway-sdk';
 export * from './data-aws-api-gateway-vpc-link';
 

@@ -17,6 +17,7 @@ export * from './sagemaker-model-package-group';
 export * from './sagemaker-model-package-group-policy';
 export * from './sagemaker-notebook-instance';
 export * from './sagemaker-notebook-instance-lifecycle-configuration';
+export * from './sagemaker-project';
 export * from './sagemaker-studio-lifecycle-config';
 export * from './sagemaker-user-profile';
 export * from './sagemaker-workforce';

@@ -13,4 +13,5 @@ export * from './apigatewayv2-stage';
 export * from './apigatewayv2-vpc-link';
 export * from './data-aws-apigatewayv2-api';
 export * from './data-aws-apigatewayv2-apis';
+export * from './data-aws-apigatewayv2-export';
 

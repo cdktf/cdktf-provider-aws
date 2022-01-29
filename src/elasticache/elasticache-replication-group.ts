@@ -132,6 +132,10 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   */
   readonly transitEncryptionEnabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group#user_group_ids ElasticacheReplicationGroup#user_group_ids}
+  */
+  readonly userGroupIds?: string[];
+  /**
   * cluster_mode block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group#cluster_mode ElasticacheReplicationGroup#cluster_mode}
@@ -418,6 +422,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._transitEncryptionEnabled = config.transitEncryptionEnabled;
+    this._userGroupIds = config.userGroupIds;
     this._clusterMode.internalValue = config.clusterMode;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -956,6 +961,22 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     return this._transitEncryptionEnabled;
   }
 
+  // user_group_ids - computed: false, optional: true, required: false
+  private _userGroupIds?: string[]; 
+  public get userGroupIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('user_group_ids'));
+  }
+  public set userGroupIds(value: string[]) {
+    this._userGroupIds = value;
+  }
+  public resetUserGroupIds() {
+    this._userGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userGroupIdsInput() {
+    return this._userGroupIds;
+  }
+
   // cluster_mode - computed: false, optional: true, required: false
   private _clusterMode = new ElasticacheReplicationGroupClusterModeOutputReference(this, "cluster_mode", true);
   public get clusterMode() {
@@ -1025,6 +1046,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       transit_encryption_enabled: cdktf.booleanToTerraform(this._transitEncryptionEnabled),
+      user_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._userGroupIds),
       cluster_mode: elasticacheReplicationGroupClusterModeToTerraform(this._clusterMode.internalValue),
       timeouts: elasticacheReplicationGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
