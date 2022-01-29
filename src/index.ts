@@ -3,6 +3,7 @@ export * from './account-alternate-contact';
 export * from './cloudcontrolapi-resource';
 export * from './cloudsearch-domain';
 export * from './cloudsearch-domain-service-access-policy';
+export * from './dataexchange-data-set';
 export * from './detective-graph';
 export * from './detective-invitation-accepter';
 export * from './detective-member';

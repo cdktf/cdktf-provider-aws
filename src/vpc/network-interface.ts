@@ -28,6 +28,14 @@ export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ipv6AddressCount?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}
+  */
+  readonly ipv6AddressList?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}
+  */
+  readonly ipv6AddressListEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}
   */
   readonly ipv6Addresses?: string[];
@@ -43,6 +51,14 @@ export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface#private_ip NetworkInterface#private_ip}
   */
   readonly privateIp?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface#private_ip_list NetworkInterface#private_ip_list}
+  */
+  readonly privateIpList?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}
+  */
+  readonly privateIpListEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface#private_ips NetworkInterface#private_ips}
   */
@@ -138,10 +154,14 @@ export class NetworkInterface extends cdktf.TerraformResource {
     this._ipv4PrefixCount = config.ipv4PrefixCount;
     this._ipv4Prefixes = config.ipv4Prefixes;
     this._ipv6AddressCount = config.ipv6AddressCount;
+    this._ipv6AddressList = config.ipv6AddressList;
+    this._ipv6AddressListEnabled = config.ipv6AddressListEnabled;
     this._ipv6Addresses = config.ipv6Addresses;
     this._ipv6PrefixCount = config.ipv6PrefixCount;
     this._ipv6Prefixes = config.ipv6Prefixes;
     this._privateIp = config.privateIp;
+    this._privateIpList = config.privateIpList;
+    this._privateIpListEnabled = config.privateIpListEnabled;
     this._privateIps = config.privateIps;
     this._privateIpsCount = config.privateIpsCount;
     this._securityGroups = config.securityGroups;
@@ -246,6 +266,38 @@ export class NetworkInterface extends cdktf.TerraformResource {
     return this._ipv6AddressCount;
   }
 
+  // ipv6_address_list - computed: true, optional: true, required: false
+  private _ipv6AddressList?: string[]; 
+  public get ipv6AddressList() {
+    return this.getListAttribute('ipv6_address_list');
+  }
+  public set ipv6AddressList(value: string[]) {
+    this._ipv6AddressList = value;
+  }
+  public resetIpv6AddressList() {
+    this._ipv6AddressList = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6AddressListInput() {
+    return this._ipv6AddressList;
+  }
+
+  // ipv6_address_list_enabled - computed: false, optional: true, required: false
+  private _ipv6AddressListEnabled?: boolean | cdktf.IResolvable; 
+  public get ipv6AddressListEnabled() {
+    return this.getBooleanAttribute('ipv6_address_list_enabled');
+  }
+  public set ipv6AddressListEnabled(value: boolean | cdktf.IResolvable) {
+    this._ipv6AddressListEnabled = value;
+  }
+  public resetIpv6AddressListEnabled() {
+    this._ipv6AddressListEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6AddressListEnabledInput() {
+    return this._ipv6AddressListEnabled;
+  }
+
   // ipv6_addresses - computed: true, optional: true, required: false
   private _ipv6Addresses?: string[]; 
   public get ipv6Addresses() {
@@ -328,6 +380,38 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get privateIpInput() {
     return this._privateIp;
+  }
+
+  // private_ip_list - computed: true, optional: true, required: false
+  private _privateIpList?: string[]; 
+  public get privateIpList() {
+    return this.getListAttribute('private_ip_list');
+  }
+  public set privateIpList(value: string[]) {
+    this._privateIpList = value;
+  }
+  public resetPrivateIpList() {
+    this._privateIpList = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateIpListInput() {
+    return this._privateIpList;
+  }
+
+  // private_ip_list_enabled - computed: false, optional: true, required: false
+  private _privateIpListEnabled?: boolean | cdktf.IResolvable; 
+  public get privateIpListEnabled() {
+    return this.getBooleanAttribute('private_ip_list_enabled');
+  }
+  public set privateIpListEnabled(value: boolean | cdktf.IResolvable) {
+    this._privateIpListEnabled = value;
+  }
+  public resetPrivateIpListEnabled() {
+    this._privateIpListEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateIpListEnabledInput() {
+    return this._privateIpListEnabled;
   }
 
   // private_ips - computed: true, optional: true, required: false
@@ -467,10 +551,14 @@ export class NetworkInterface extends cdktf.TerraformResource {
       ipv4_prefix_count: cdktf.numberToTerraform(this._ipv4PrefixCount),
       ipv4_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv4Prefixes),
       ipv6_address_count: cdktf.numberToTerraform(this._ipv6AddressCount),
+      ipv6_address_list: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6AddressList),
+      ipv6_address_list_enabled: cdktf.booleanToTerraform(this._ipv6AddressListEnabled),
       ipv6_addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6Addresses),
       ipv6_prefix_count: cdktf.numberToTerraform(this._ipv6PrefixCount),
       ipv6_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6Prefixes),
       private_ip: cdktf.stringToTerraform(this._privateIp),
+      private_ip_list: cdktf.listMapper(cdktf.stringToTerraform)(this._privateIpList),
+      private_ip_list_enabled: cdktf.booleanToTerraform(this._privateIpListEnabled),
       private_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._privateIps),
       private_ips_count: cdktf.numberToTerraform(this._privateIpsCount),
       security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),

@@ -12,6 +12,10 @@ export interface S3BucketNotificationConfig extends cdktf.TerraformMetaArguments
   */
   readonly bucket: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_notification#eventbridge S3BucketNotification#eventbridge}
+  */
+  readonly eventbridge?: boolean | cdktf.IResolvable;
+  /**
   * lambda_function block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_notification#lambda_function S3BucketNotification#lambda_function}
@@ -172,6 +176,7 @@ export class S3BucketNotification extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._bucket = config.bucket;
+    this._eventbridge = config.eventbridge;
     this._lambdaFunction = config.lambdaFunction;
     this._queue = config.queue;
     this._topic = config.topic;
@@ -192,6 +197,22 @@ export class S3BucketNotification extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get bucketInput() {
     return this._bucket;
+  }
+
+  // eventbridge - computed: false, optional: true, required: false
+  private _eventbridge?: boolean | cdktf.IResolvable; 
+  public get eventbridge() {
+    return this.getBooleanAttribute('eventbridge');
+  }
+  public set eventbridge(value: boolean | cdktf.IResolvable) {
+    this._eventbridge = value;
+  }
+  public resetEventbridge() {
+    this._eventbridge = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventbridgeInput() {
+    return this._eventbridge;
   }
 
   // id - computed: true, optional: true, required: false
@@ -257,6 +278,7 @@ export class S3BucketNotification extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
+      eventbridge: cdktf.booleanToTerraform(this._eventbridge),
       lambda_function: cdktf.listMapper(s3BucketNotificationLambdaFunctionToTerraform)(this._lambdaFunction),
       queue: cdktf.listMapper(s3BucketNotificationQueueToTerraform)(this._queue),
       topic: cdktf.listMapper(s3BucketNotificationTopicToTerraform)(this._topic),

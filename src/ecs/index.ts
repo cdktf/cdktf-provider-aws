@@ -2,6 +2,7 @@
 export * from './ecs-account-setting-default';
 export * from './ecs-capacity-provider';
 export * from './ecs-cluster';
+export * from './ecs-cluster-capacity-providers';
 export * from './ecs-service';
 export * from './ecs-tag';
 export * from './ecs-task-definition';

@@ -388,6 +388,11 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
     return this._variables;
   }
 
+  // web_acl_arn - computed: true, optional: false, required: false
+  public get webAclArn() {
+    return this.getStringAttribute('web_acl_arn');
+  }
+
   // xray_tracing_enabled - computed: false, optional: true, required: false
   private _xrayTracingEnabled?: boolean | cdktf.IResolvable; 
   public get xrayTracingEnabled() {
