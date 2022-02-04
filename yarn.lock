@@ -2207,9 +2207,9 @@ jsii-rosetta@^1.52.1:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.455:
-  version "0.1.464"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.464.tgz#d8052b6613c9cba371cb0dd50747a44002f49120"
-  integrity sha512-vFyBuZU6kKhHbD6GVyUHKv3Q19goCip+X1NYGep3/LpQmXKuTCysNR11g/+7mNO45XAAdYieitjOZHvynZVmUA==
+  version "0.1.465"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.465.tgz#69db2b54048a624e520cc07e3117ccbe7e74c78c"
+  integrity sha512-I21uc1Wf8LZdASZCa+S6WzJPG0LcN+BkWAvRi5TcanhCCmzLi4vQ4Bo4xdKtFjEDcptFgCD1yqifZubFd8A9Bw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.52.1"
@@ -3526,9 +3526,9 @@ side-channel@^1.0.3, side-channel@^1.0.4:
     object-inspect "^1.9.0"
 
 signal-exit@^3.0.0, signal-exit@^3.0.2:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.6.tgz#24e630c4b0f03fea446a2bd299e62b4a6ca8d0af"
-  integrity sha512-sDl4qMFpijcGw22U5w63KmD3cZJfBuFlVNbVMKje2keoKML7X2UzWbc4XrmEbDwg0NXJc3yv4/ox7b+JWb57kQ==
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
+  integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
 sisteransi@^1.0.5:
   version "1.0.5"
