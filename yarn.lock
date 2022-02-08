@@ -275,9 +275,9 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "17.0.15"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.15.tgz#97779282c09c09577120a2162e71d8380003590a"
-  integrity sha512-zWt4SDDv1S9WRBNxLFxFRHxdD9tvH8f5/kg5/IaLFdnSNXsDY4eL3Q3XXN+VxUnWIhyVFDwcsmAprvwXoM/ClA==
+  version "17.0.16"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.16.tgz#e3733f46797b9df9e853ca9f719c8a6f7b84cd26"
+  integrity sha512-ydLaGVfQOQ6hI1xK2A5nVh8bl0OGoIfYMxPWHqqYe9bTkWCfqiVvZoh2I/QF2sNSkZzZyROBoTefIEI+PB6iIA==
 
 "@types/node@^14":
   version "14.18.10"
@@ -865,9 +865,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.0.54"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.54.tgz#586cdab18c06d1145638173aefc76e510689666e"
-  integrity sha512-/lYkNB8DV9N2Q0tIOtVlBjrpI21ESX+l3ABDhtdPLoxGuHSFl27d7FxnfSNRkVOM4X8NTutnCRonxLt/WwmZkQ==
+  version "10.0.55"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.55.tgz#5a2d6f546521807222bed5c3b3048fd0dfe8c245"
+  integrity sha512-yTxzYsxVWw2g6cGZkGiuREy0zAE3OsQdP3xF9UAEW0Ouler0OPllHso/8Vsukm73NY8kfvAvvFwNVw9RX9UfEQ==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -3899,9 +3899,9 @@ typescript@^3.9.10, typescript@~3.9.10:
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
 uglify-js@^3.1.4:
-  version "3.15.0"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.15.0.tgz#2d6a689d94783cab43975721977a13c2afec28f1"
-  integrity sha512-x+xdeDWq7FiORDvyIJ0q/waWd4PhjBNOm5dQUOq2AKC0IEjxOS66Ha9tctiVDGcRQuh69K7fgU5oRuTK4cysSg==
+  version "3.15.1"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.15.1.tgz#9403dc6fa5695a6172a91bc983ea39f0f7c9086d"
+  integrity sha512-FAGKF12fWdkpvNJZENacOH0e/83eG6JyVQyanIJaBXCN1J11TUQv1T1/z8S+Z0CG0ZPk1nPcreF/c7lrTd0TEQ==
 
 unbox-primitive@^1.0.1:
   version "1.0.1"
