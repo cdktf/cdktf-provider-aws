@@ -272,7 +272,7 @@ export class BackupSelection extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // not_resources - computed: false, optional: true, required: false
+  // not_resources - computed: true, optional: true, required: false
   private _notResources?: string[]; 
   public get notResources() {
     return cdktf.Fn.tolist(this.getListAttribute('not_resources'));
