@@ -40,7 +40,7 @@
     },
     {
       "name": "jsii",
-      "version": "^1.46.0",
+      "version": "^1.53.0",
       "type": "build"
     },
     {

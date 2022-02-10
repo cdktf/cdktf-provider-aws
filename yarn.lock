@@ -2215,7 +2215,7 @@ jsii-srcmak@^0.1.455:
     ncp "^2.0.0"
     yargs "^15.4.1"
 
-jsii@1.53.0, jsii@^1.46.0, jsii@^1.52.1:
+jsii@1.53.0, jsii@^1.52.1, jsii@^1.53.0:
   version "1.53.0"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-1.53.0.tgz#946b557ef50523a57e9b5a570293b951186c83d2"
   integrity sha512-hPwapfZD3zIzHD49gewtM/w/iSi6QMPKf+HjovFA4u4j/cwUJBpb5DqG55m3LtUKHLj23Ll6KDuh7xr+H5PiDA==
@@ -3155,10 +3155,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.52.15:
-  version "0.52.15"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.52.15.tgz#b5c33d1e9a0f650315885c47e2a020546844f78e"
-  integrity sha512-EdUUAltxKDQjsxBuyFqAwo1wGsCY84gN6DaVgIRPglidUVnE21YFIMRaAoNDL16D0Q6YwtlBIXKEvC3SOU1GtA==
+projen@^0.52.24:
+  version "0.52.24"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.52.24.tgz#9c14bfa4bcf1210d27911370667901a449961dcc"
+  integrity sha512-35rERSl9khtZTTisfhVTYCfBoYaM33P4iNEUtuafpu8nnSA/U/eRRgWYfhCCSchHBeV7K06rHuqvy2VIDHP7OA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"

@@ -48,11 +48,11 @@
     "cdktf-cli": "^0.9",
     "constructs": "^10.0.0",
     "dot-prop": "^5.2.0",
-    "jsii": "^1.46.0",
+    "jsii": "^1.53.0",
     "jsii-diff": "^1.53.0",
     "jsii-docgen": "^1.8.110",
     "npm-check-updates": "^12",
-    "projen": "^0.52.15",
+    "projen": "^0.52.24",
     "standard-version": "^9",
     "typescript": "^3.9.10"
   },
