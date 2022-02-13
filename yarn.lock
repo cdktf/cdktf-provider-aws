@@ -860,9 +860,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.0.60"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.60.tgz#5790dcf2357c222479e68bc93fa5a08693a28a6b"
-  integrity sha512-/w3eCUTnM8jW+1OwUAWMOMrxxKD+L5Ncmf4t956JtayX1KlxoxPonhQlzXSDPaq5F6D4952UlLESxF7UR3cozA==
+  version "10.0.61"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.61.tgz#2d7bc21fe296598665508b327bc9ce3d3c06a736"
+  integrity sha512-0OyCuBTGRFwORpJ7cST9/gNFBTd3bu/Kx67O3UnGy6//o1T0XyDVWttkGegsC+aw7wdYu0OyhmJvu90lG/xznA==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2205,9 +2205,9 @@ jsii-rosetta@^1.52.1, jsii-rosetta@^1.53.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.455:
-  version "0.1.473"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.473.tgz#3f0674d6a97c95233e2c1d4af237e1667e54dfe0"
-  integrity sha512-Ufw3aLe0IvZjUcfBWwYiKXMAJfBlQG4iX/NXwQncCvnSyDfKhT104xx6dN12kVGN0HOAIb800AqXX2gwAL/jkw==
+  version "0.1.474"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.474.tgz#f39cad118f9759b31a5e94075c1ca6f8f22064d2"
+  integrity sha512-xfC2i22CVoriOa4WkvnDuE54gIX9hBeUmjS3zhzp3LbpG1UjBUl4Uf3T83DX7Uq6y6LYJjsYIaI0nh7+9Tgc/A==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.53.0"
@@ -2590,9 +2590,9 @@ min-indent@^1.0.0:
   integrity sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==
 
 minimatch@^3.0.4:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.5.tgz#4da8f1290ee0f0f8e83d60ca69f8f134068604a3"
-  integrity sha512-tUpxzX0VAzJHjLu0xUfFv1gwVp9ba3IOuRAVH2EGuRW8a5emA2FlACLqiT/lDVtS1W+TGNwqz3sWaNyLgDJWuw==
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.6.tgz#4a2cab247c5f4cc03b85813ebbde7ae23a6406a2"
+  integrity sha512-dpxq1Q5/wIfWZjlpjEZMpHWLDIEGKAzfxdWG/vDJs6sX2mtpm0vuysXd9bD/XnMrGc/O14D116bYXsSDBJK2lQ==
   dependencies:
     brace-expansion "^1.1.7"
 
@@ -3575,9 +3575,9 @@ socks@^2.6.1:
     smart-buffer "^4.2.0"
 
 sort-json@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/sort-json/-/sort-json-2.0.0.tgz#a7030d8875adbd4a5ea39a000567ed94c1aa3c50"
-  integrity sha512-OgXPErPJM/rBK5OhzIJ+etib/BmLQ1JY55Nb/ElhoWUec62pXNF/X6DrecHq3NW5OAGX0KxYD7m0HtgB9dvGeA==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/sort-json/-/sort-json-2.0.1.tgz#7338783bef807185dc37d5b02e3afd905d537cfb"
+  integrity sha512-s8cs2bcsQCzo/P2T/uoU6Js4dS/jnX8+4xunziNoq9qmSpZNCrRIAIvp4avsz0ST18HycV4z/7myJ7jsHWB2XQ==
   dependencies:
     detect-indent "^5.0.0"
     detect-newline "^2.1.0"
