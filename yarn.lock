@@ -860,9 +860,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.0.61"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.61.tgz#2d7bc21fe296598665508b327bc9ce3d3c06a736"
-  integrity sha512-0OyCuBTGRFwORpJ7cST9/gNFBTd3bu/Kx67O3UnGy6//o1T0XyDVWttkGegsC+aw7wdYu0OyhmJvu90lG/xznA==
+  version "10.0.62"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.62.tgz#d21d544d671873597bcf9de02b9b5210e2e464a7"
+  integrity sha512-Wxy2JBzhsoP1onx68CgGDGVsFqsHfCs8hmZLx9PNoH2hu7iFBP8uoo2zZzE/P/N11QUfwliR/BgBRp3PGXdbzQ==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2205,9 +2205,9 @@ jsii-rosetta@^1.52.1, jsii-rosetta@^1.53.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.455:
-  version "0.1.474"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.474.tgz#f39cad118f9759b31a5e94075c1ca6f8f22064d2"
-  integrity sha512-xfC2i22CVoriOa4WkvnDuE54gIX9hBeUmjS3zhzp3LbpG1UjBUl4Uf3T83DX7Uq6y6LYJjsYIaI0nh7+9Tgc/A==
+  version "0.1.475"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.475.tgz#ccd1320cbcffaa8db486d8a04e9ad1a4aa3e5914"
+  integrity sha512-q474uqf6eBYkxJphynp5D5P7Y4nlrTHr5Pc2kdbltrlB5sWopRgzjohIlm1nhnjMTgKKR9Ffu5U1fqq1WKhTfg==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.53.0"
@@ -2590,9 +2590,9 @@ min-indent@^1.0.0:
   integrity sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==
 
 minimatch@^3.0.4:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.6.tgz#4a2cab247c5f4cc03b85813ebbde7ae23a6406a2"
-  integrity sha512-dpxq1Q5/wIfWZjlpjEZMpHWLDIEGKAzfxdWG/vDJs6sX2mtpm0vuysXd9bD/XnMrGc/O14D116bYXsSDBJK2lQ==
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.1.tgz#879ad447200773912898b46cd516a7abbb5e50b0"
+  integrity sha512-reLxBcKUPNBnc/sVtAbxgRVFSegoGeLaSjmphNhcwcolhYLRgtJscn5mRl6YRZNQv40Y7P6JM2YhSIsbL9OB5A==
   dependencies:
     brace-expansion "^1.1.7"
 
