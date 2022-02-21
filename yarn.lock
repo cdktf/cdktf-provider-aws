@@ -868,9 +868,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.0.67"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.67.tgz#6240eced1489ff8116cb655c2d3dc594f16333bb"
-  integrity sha512-23Rpdo5EkO57p+O8JVPN6mGKC+Qg9Sc7r/pkN77awuXZOlExwbp8v92l6VAmxksudUI3rrCxLA2Jdoyp9it5ww==
+  version "10.0.68"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.68.tgz#d238be0c611e9497eefbff40c7c8061b9d7f4a2e"
+  integrity sha512-UoHYvlQDEXpSKHDJ5n5e2kcJwojswF0ASvuSyQDesziZN0QjSZBViylRknK1AJuWCelC9sad/ghk4E4a+D8axw==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2213,9 +2213,9 @@ jsii-rosetta@^1.53.0, jsii-rosetta@^1.54.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.471:
-  version "0.1.481"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.481.tgz#a9a75db2057050e85f87272f39e0d6d08bdee606"
-  integrity sha512-G8ICR8+2mJDEjhicWgVWJ/Z7rErYvClUK0ol6aDPMGdJDBSpnwR2GS5UgdLTSBySdZGeQqOTlEkAG0Xova5C8g==
+  version "0.1.482"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.482.tgz#b25201dd2cb720aa9b547ea9016da2d8d2d4ddc3"
+  integrity sha512-Dr7eCmWXtYSPMODMxJxbzf6m5+iFH9WcKtmwWDFwcUke5bxTndovEKkK/GKHKD1sNZcF6FHX2Nak5Lib0bPUTw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.54.0"
@@ -2798,9 +2798,9 @@ npm-bundled@^1.1.1:
     npm-normalize-package-bin "^1.0.1"
 
 npm-check-updates@^12:
-  version "12.3.1"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-12.3.1.tgz#48339da0331e9c857b94be04b33dfe7f5ec34fbd"
-  integrity sha512-rvXyiUnc9zw3WXakqv0LsdFDc1V4T8DHG8AdWEjJiqfOZdBI4q8ekTt/BFqLQAtcXo5Pu6WGqjA9oDnFi4UV3g==
+  version "12.4.0"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-12.4.0.tgz#67e8e1b88551167368ec246dfd4302ce3007d83d"
+  integrity sha512-X14H74M8SVFkStmP1NDOMh0OjLB3mU2dwUeM71zyITJHkm08MASwwTcydW6YuGcNW1RUlVq1cQY2yWijv4zKUQ==
   dependencies:
     chalk "^4.1.2"
     cint "^8.2.1"
