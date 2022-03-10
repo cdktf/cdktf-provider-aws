@@ -863,9 +863,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.0.82"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.82.tgz#062c0f47f60da281a499112f3ee1d1041d449490"
-  integrity sha512-Drfj8QTF2zBO2h0sSYr+dMDbyafetONeeFeOINC7NV1K/zGUWZd8iS3T3CgnQZuXX+0+SkLq4q1TBXczl9A2PQ==
+  version "10.0.83"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.83.tgz#baaad327862403268cb229b7133836262ef7d178"
+  integrity sha512-Lq79m0R3ZHq7xImwr2P8RRJQkEUY/ApQKO0KYf6yWSUKOKMgTvVT+zv9zeGYbzb9rfEEP5xhIOMbRSEjSQrU1Q==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2199,9 +2199,9 @@ jsii-rosetta@^1.54.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.482:
-  version "0.1.497"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.497.tgz#a7c9d2e6ca4ee176950945b1d804ecc008b418e6"
-  integrity sha512-CWRdTmBGQeI7aYr3WQ1aOGVemoVfwaUvggB01VdC6Z0AJ+CHlzU4qVqvJzLJnu/mU9KGeO42QTBxYWSmSJ1bKA==
+  version "0.1.498"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.498.tgz#bae23da945ac90d2d4b6202f35db5d6d803ff9a9"
+  integrity sha512-rlBMBqWJOsPZ761xIRTrvrjnwDgRB8hQxFS5+hGMYFkhqpdJx8U2weTnCb0Q9xCzIvZWS0zsImm3D/pI4ysqXw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.54.0"
@@ -2461,9 +2461,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lru-cache@^7.3.1, lru-cache@^7.4.1:
-  version "7.4.1"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.4.1.tgz#afe07e885ef0cd5bf99f62f4fa7545d48746d779"
-  integrity sha512-NCD7/WRlFmADccuHjsRUYqdluYBr//n/O0fesCb/n52FoGcgKh8o4Dpm7YIbZwVcDs8rPBQbCZLmWWsp6m+xGQ==
+  version "7.4.2"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.4.2.tgz#92f7b5afe82759f51b216a96fae3bc1828df9712"
+  integrity sha512-Xs3+hFPDSKQmL05Gs6NhvAADol1u9TmLoNoE03ZjszX6a5iYIO3rPUM4jIjoBUJeTaWEBMozjjmV70gvdRfIdw==
 
 make-dir@^3.0.0:
   version "3.1.0"
