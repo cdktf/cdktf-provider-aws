@@ -16,6 +16,10 @@ export interface S3BucketReplicationConfigurationAConfig extends cdktf.Terraform
   */
   readonly role: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#token S3BucketReplicationConfigurationA#token}
+  */
+  readonly token?: string;
+  /**
   * rule block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_replication_configuration#rule S3BucketReplicationConfigurationA#rule}
@@ -1396,7 +1400,6 @@ export function s3BucketReplicationConfigurationRuleToTerraform(struct?: S3Bucke
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
     prefix: cdktf.stringToTerraform(struct!.prefix),
     priority: cdktf.numberToTerraform(struct!.priority),
     status: cdktf.stringToTerraform(struct!.status),
@@ -1443,6 +1446,7 @@ export class S3BucketReplicationConfigurationA extends cdktf.TerraformResource {
     });
     this._bucket = config.bucket;
     this._role = config.role;
+    this._token = config.token;
     this._rule = config.rule;
   }
 
@@ -1481,11 +1485,27 @@ export class S3BucketReplicationConfigurationA extends cdktf.TerraformResource {
     return this._role;
   }
 
+  // token - computed: false, optional: true, required: false
+  private _token?: string; 
+  public get token() {
+    return this.getStringAttribute('token');
+  }
+  public set token(value: string) {
+    this._token = value;
+  }
+  public resetToken() {
+    this._token = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenInput() {
+    return this._token;
+  }
+
   // rule - computed: false, optional: false, required: true
   private _rule?: S3BucketReplicationConfigurationRule[] | cdktf.IResolvable; 
   public get rule() {
     // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('rule')));
+    return this.interpolationForAttribute('rule');
   }
   public set rule(value: S3BucketReplicationConfigurationRule[] | cdktf.IResolvable) {
     this._rule = value;
@@ -1503,6 +1523,7 @@ export class S3BucketReplicationConfigurationA extends cdktf.TerraformResource {
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
       role: cdktf.stringToTerraform(this._role),
+      token: cdktf.stringToTerraform(this._token),
       rule: cdktf.listMapper(s3BucketReplicationConfigurationRuleToTerraform)(this._rule),
     };
   }

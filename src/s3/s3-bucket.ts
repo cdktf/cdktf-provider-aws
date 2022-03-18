@@ -32,6 +32,10 @@ export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   */
   readonly hostedZoneId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}
+  */
+  readonly objectLockEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#policy S3Bucket#policy}
   */
   readonly policy?: string;
@@ -686,7 +690,7 @@ export interface S3BucketObjectLockConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}
   */
-  readonly objectLockEnabled: string;
+  readonly objectLockEnabled?: string;
   /**
   * rule block
   * 
@@ -745,13 +749,16 @@ export class S3BucketObjectLockConfigurationOutputReference extends cdktf.Comple
     }
   }
 
-  // object_lock_enabled - computed: false, optional: false, required: true
+  // object_lock_enabled - computed: false, optional: true, required: false
   private _objectLockEnabled?: string; 
   public get objectLockEnabled() {
     return this.getStringAttribute('object_lock_enabled');
   }
   public set objectLockEnabled(value: string) {
     this._objectLockEnabled = value;
+  }
+  public resetObjectLockEnabled() {
+    this._objectLockEnabled = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get objectLockEnabledInput() {
@@ -2152,6 +2159,7 @@ export class S3Bucket extends cdktf.TerraformResource {
     this._bucketPrefix = config.bucketPrefix;
     this._forceDestroy = config.forceDestroy;
     this._hostedZoneId = config.hostedZoneId;
+    this._objectLockEnabled = config.objectLockEnabled;
     this._policy = config.policy;
     this._requestPayer = config.requestPayer;
     this._tags = config.tags;
@@ -2287,6 +2295,22 @@ export class S3Bucket extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // object_lock_enabled - computed: true, optional: true, required: false
+  private _objectLockEnabled?: boolean | cdktf.IResolvable; 
+  public get objectLockEnabled() {
+    return this.getBooleanAttribute('object_lock_enabled');
+  }
+  public set objectLockEnabled(value: boolean | cdktf.IResolvable) {
+    this._objectLockEnabled = value;
+  }
+  public resetObjectLockEnabled() {
+    this._objectLockEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get objectLockEnabledInput() {
+    return this._objectLockEnabled;
   }
 
   // policy - computed: false, optional: true, required: false
@@ -2550,6 +2574,7 @@ export class S3Bucket extends cdktf.TerraformResource {
       bucket_prefix: cdktf.stringToTerraform(this._bucketPrefix),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       hosted_zone_id: cdktf.stringToTerraform(this._hostedZoneId),
+      object_lock_enabled: cdktf.booleanToTerraform(this._objectLockEnabled),
       policy: cdktf.stringToTerraform(this._policy),
       request_payer: cdktf.stringToTerraform(this._requestPayer),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
