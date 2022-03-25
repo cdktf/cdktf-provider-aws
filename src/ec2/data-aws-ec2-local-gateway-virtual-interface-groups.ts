@@ -88,12 +88,12 @@ export class DataAwsEc2LocalGatewayVirtualInterfaceGroups extends cdktf.Terrafor
 
   // ids - computed: true, optional: false, required: false
   public get ids() {
-    return cdktf.Fn.tolist(this.getListAttribute('ids'));
+    return this.getListAttribute('ids');
   }
 
   // local_gateway_virtual_interface_ids - computed: true, optional: false, required: false
   public get localGatewayVirtualInterfaceIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('local_gateway_virtual_interface_ids'));
+    return this.getListAttribute('local_gateway_virtual_interface_ids');
   }
 
   // tags - computed: true, optional: true, required: false

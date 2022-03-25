@@ -131,6 +131,11 @@ export class DataAwsMskCluster extends cdktf.TerraformDataSource {
     return this.getStringAttribute('zookeeper_connect_string');
   }
 
+  // zookeeper_connect_string_tls - computed: true, optional: false, required: false
+  public get zookeeperConnectStringTls() {
+    return this.getStringAttribute('zookeeper_connect_string_tls');
+  }
+
   // =========
   // SYNTHESIS
   // =========

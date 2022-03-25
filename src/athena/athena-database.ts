@@ -10,7 +10,15 @@ export interface AthenaDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database#bucket AthenaDatabase#bucket}
   */
-  readonly bucket: string;
+  readonly bucket?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database#comment AthenaDatabase#comment}
+  */
+  readonly comment?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database#expected_bucket_owner AthenaDatabase#expected_bucket_owner}
+  */
+  readonly expectedBucketOwner?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database#force_destroy AthenaDatabase#force_destroy}
   */
@@ -20,11 +28,80 @@ export interface AthenaDatabaseConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * acl_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database#acl_configuration AthenaDatabase#acl_configuration}
+  */
+  readonly aclConfiguration?: AthenaDatabaseAclConfiguration;
+  /**
   * encryption_configuration block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database#encryption_configuration AthenaDatabase#encryption_configuration}
   */
   readonly encryptionConfiguration?: AthenaDatabaseEncryptionConfiguration;
+}
+export interface AthenaDatabaseAclConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database#s3_acl_option AthenaDatabase#s3_acl_option}
+  */
+  readonly s3AclOption: string;
+}
+
+export function athenaDatabaseAclConfigurationToTerraform(struct?: AthenaDatabaseAclConfigurationOutputReference | AthenaDatabaseAclConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    s3_acl_option: cdktf.stringToTerraform(struct!.s3AclOption),
+  }
+}
+
+export class AthenaDatabaseAclConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): AthenaDatabaseAclConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._s3AclOption !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3AclOption = this._s3AclOption;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AthenaDatabaseAclConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._s3AclOption = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._s3AclOption = value.s3AclOption;
+    }
+  }
+
+  // s3_acl_option - computed: false, optional: false, required: true
+  private _s3AclOption?: string; 
+  public get s3AclOption() {
+    return this.getStringAttribute('s3_acl_option');
+  }
+  public set s3AclOption(value: string) {
+    this._s3AclOption = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3AclOptionInput() {
+    return this._s3AclOption;
+  }
 }
 export interface AthenaDatabaseEncryptionConfiguration {
   /**
@@ -150,8 +227,11 @@ export class AthenaDatabase extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._bucket = config.bucket;
+    this._comment = config.comment;
+    this._expectedBucketOwner = config.expectedBucketOwner;
     this._forceDestroy = config.forceDestroy;
     this._name = config.name;
+    this._aclConfiguration.internalValue = config.aclConfiguration;
     this._encryptionConfiguration.internalValue = config.encryptionConfiguration;
   }
 
@@ -159,7 +239,7 @@ export class AthenaDatabase extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // bucket - computed: false, optional: false, required: true
+  // bucket - computed: false, optional: true, required: false
   private _bucket?: string; 
   public get bucket() {
     return this.getStringAttribute('bucket');
@@ -167,9 +247,44 @@ export class AthenaDatabase extends cdktf.TerraformResource {
   public set bucket(value: string) {
     this._bucket = value;
   }
+  public resetBucket() {
+    this._bucket = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get bucketInput() {
     return this._bucket;
+  }
+
+  // comment - computed: false, optional: true, required: false
+  private _comment?: string; 
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+  public set comment(value: string) {
+    this._comment = value;
+  }
+  public resetComment() {
+    this._comment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentInput() {
+    return this._comment;
+  }
+
+  // expected_bucket_owner - computed: false, optional: true, required: false
+  private _expectedBucketOwner?: string; 
+  public get expectedBucketOwner() {
+    return this.getStringAttribute('expected_bucket_owner');
+  }
+  public set expectedBucketOwner(value: string) {
+    this._expectedBucketOwner = value;
+  }
+  public resetExpectedBucketOwner() {
+    this._expectedBucketOwner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expectedBucketOwnerInput() {
+    return this._expectedBucketOwner;
   }
 
   // force_destroy - computed: false, optional: true, required: false
@@ -206,6 +321,22 @@ export class AthenaDatabase extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // acl_configuration - computed: false, optional: true, required: false
+  private _aclConfiguration = new AthenaDatabaseAclConfigurationOutputReference(this, "acl_configuration", true);
+  public get aclConfiguration() {
+    return this._aclConfiguration;
+  }
+  public putAclConfiguration(value: AthenaDatabaseAclConfiguration) {
+    this._aclConfiguration.internalValue = value;
+  }
+  public resetAclConfiguration() {
+    this._aclConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aclConfigurationInput() {
+    return this._aclConfiguration.internalValue;
+  }
+
   // encryption_configuration - computed: false, optional: true, required: false
   private _encryptionConfiguration = new AthenaDatabaseEncryptionConfigurationOutputReference(this, "encryption_configuration", true);
   public get encryptionConfiguration() {
@@ -229,8 +360,11 @@ export class AthenaDatabase extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
+      comment: cdktf.stringToTerraform(this._comment),
+      expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       name: cdktf.stringToTerraform(this._name),
+      acl_configuration: athenaDatabaseAclConfigurationToTerraform(this._aclConfiguration.internalValue),
       encryption_configuration: athenaDatabaseEncryptionConfigurationToTerraform(this._encryptionConfiguration.internalValue),
     };
   }

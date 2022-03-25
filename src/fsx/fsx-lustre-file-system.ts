@@ -92,11 +92,110 @@ export interface FsxLustreFileSystemConfig extends cdktf.TerraformMetaArguments 
   */
   readonly weeklyMaintenanceStartTime?: string;
   /**
+  * log_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system#log_configuration FsxLustreFileSystem#log_configuration}
+  */
+  readonly logConfiguration?: FsxLustreFileSystemLogConfiguration;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system#timeouts FsxLustreFileSystem#timeouts}
   */
   readonly timeouts?: FsxLustreFileSystemTimeouts;
+}
+export interface FsxLustreFileSystemLogConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system#destination FsxLustreFileSystem#destination}
+  */
+  readonly destination?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system#level FsxLustreFileSystem#level}
+  */
+  readonly level?: string;
+}
+
+export function fsxLustreFileSystemLogConfigurationToTerraform(struct?: FsxLustreFileSystemLogConfigurationOutputReference | FsxLustreFileSystemLogConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination: cdktf.stringToTerraform(struct!.destination),
+    level: cdktf.stringToTerraform(struct!.level),
+  }
+}
+
+export class FsxLustreFileSystemLogConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): FsxLustreFileSystemLogConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destination = this._destination;
+    }
+    if (this._level !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.level = this._level;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FsxLustreFileSystemLogConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._destination = undefined;
+      this._level = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._destination = value.destination;
+      this._level = value.level;
+    }
+  }
+
+  // destination - computed: true, optional: true, required: false
+  private _destination?: string; 
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+  public set destination(value: string) {
+    this._destination = value;
+  }
+  public resetDestination() {
+    this._destination = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination;
+  }
+
+  // level - computed: false, optional: true, required: false
+  private _level?: string; 
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+  public set level(value: string) {
+    this._level = value;
+  }
+  public resetLevel() {
+    this._level = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get levelInput() {
+    return this._level;
+  }
 }
 export interface FsxLustreFileSystemTimeouts {
   /**
@@ -272,6 +371,7 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._weeklyMaintenanceStartTime = config.weeklyMaintenanceStartTime;
+    this._logConfiguration.internalValue = config.logConfiguration;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -647,6 +747,22 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
     return this._weeklyMaintenanceStartTime;
   }
 
+  // log_configuration - computed: false, optional: true, required: false
+  private _logConfiguration = new FsxLustreFileSystemLogConfigurationOutputReference(this, "log_configuration", true);
+  public get logConfiguration() {
+    return this._logConfiguration;
+  }
+  public putLogConfiguration(value: FsxLustreFileSystemLogConfiguration) {
+    this._logConfiguration.internalValue = value;
+  }
+  public resetLogConfiguration() {
+    this._logConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logConfigurationInput() {
+    return this._logConfiguration.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new FsxLustreFileSystemTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
@@ -690,6 +806,7 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       weekly_maintenance_start_time: cdktf.stringToTerraform(this._weeklyMaintenanceStartTime),
+      log_configuration: fsxLustreFileSystemLogConfigurationToTerraform(this._logConfiguration.internalValue),
       timeouts: fsxLustreFileSystemTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

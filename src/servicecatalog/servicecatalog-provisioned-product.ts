@@ -78,6 +78,23 @@ export interface ServicecatalogProvisionedProductConfig extends cdktf.TerraformM
   */
   readonly timeouts?: ServicecatalogProvisionedProductTimeouts;
 }
+export class ServicecatalogProvisionedProductOutputs extends cdktf.ComplexComputedList {
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
 export interface ServicecatalogProvisionedProductProvisioningParameters {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product#key ServicecatalogProvisionedProduct#key}
@@ -316,6 +333,10 @@ export interface ServicecatalogProvisionedProductTimeouts {
   */
   readonly delete?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product#read ServicecatalogProvisionedProduct#read}
+  */
+  readonly read?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product#update ServicecatalogProvisionedProduct#update}
   */
   readonly update?: string;
@@ -329,6 +350,7 @@ export function servicecatalogProvisionedProductTimeoutsToTerraform(struct?: Ser
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
+    read: cdktf.stringToTerraform(struct!.read),
     update: cdktf.stringToTerraform(struct!.update),
   }
 }
@@ -356,6 +378,10 @@ export class ServicecatalogProvisionedProductTimeoutsOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
     if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
@@ -368,12 +394,14 @@ export class ServicecatalogProvisionedProductTimeoutsOutputReference extends cdk
       this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
+      this._read = undefined;
       this._update = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
+      this._read = value.read;
       this._update = value.update;
     }
   }
@@ -408,6 +436,22 @@ export class ServicecatalogProvisionedProductTimeoutsOutputReference extends cdk
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
     return this._delete;
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
   }
 
   // update - computed: false, optional: true, required: false
@@ -580,6 +624,11 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get notificationArnsInput() {
     return this._notificationArns;
+  }
+
+  // outputs - computed: true, optional: false, required: false
+  public outputs(index: string) {
+    return new ServicecatalogProvisionedProductOutputs(this, 'outputs', index, true);
   }
 
   // path_id - computed: true, optional: true, required: false

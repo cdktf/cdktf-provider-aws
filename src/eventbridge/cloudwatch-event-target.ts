@@ -871,7 +871,7 @@ export class CloudwatchEventTargetHttpTargetOutputReference extends cdktf.Comple
   // path_parameter_values - computed: false, optional: true, required: false
   private _pathParameterValues?: string[]; 
   public get pathParameterValues() {
-    return cdktf.Fn.tolist(this.getListAttribute('path_parameter_values'));
+    return this.getListAttribute('path_parameter_values');
   }
   public set pathParameterValues(value: string[]) {
     this._pathParameterValues = value;

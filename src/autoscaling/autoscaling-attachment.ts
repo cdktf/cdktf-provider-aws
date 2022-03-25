@@ -19,6 +19,10 @@ export interface AutoscalingAttachmentConfig extends cdktf.TerraformMetaArgument
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_attachment#elb AutoscalingAttachment#elb}
   */
   readonly elb?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_attachment#lb_target_group_arn AutoscalingAttachment#lb_target_group_arn}
+  */
+  readonly lbTargetGroupArn?: string;
 }
 
 /**
@@ -56,6 +60,7 @@ export class AutoscalingAttachment extends cdktf.TerraformResource {
     this._albTargetGroupArn = config.albTargetGroupArn;
     this._autoscalingGroupName = config.autoscalingGroupName;
     this._elb = config.elb;
+    this._lbTargetGroupArn = config.lbTargetGroupArn;
   }
 
   // ==========
@@ -112,6 +117,22 @@ export class AutoscalingAttachment extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // lb_target_group_arn - computed: false, optional: true, required: false
+  private _lbTargetGroupArn?: string; 
+  public get lbTargetGroupArn() {
+    return this.getStringAttribute('lb_target_group_arn');
+  }
+  public set lbTargetGroupArn(value: string) {
+    this._lbTargetGroupArn = value;
+  }
+  public resetLbTargetGroupArn() {
+    this._lbTargetGroupArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lbTargetGroupArnInput() {
+    return this._lbTargetGroupArn;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -121,6 +142,7 @@ export class AutoscalingAttachment extends cdktf.TerraformResource {
       alb_target_group_arn: cdktf.stringToTerraform(this._albTargetGroupArn),
       autoscaling_group_name: cdktf.stringToTerraform(this._autoscalingGroupName),
       elb: cdktf.stringToTerraform(this._elb),
+      lb_target_group_arn: cdktf.stringToTerraform(this._lbTargetGroupArn),
     };
   }
 }

@@ -32,6 +32,10 @@ export interface ApiGatewayDomainNameConfig extends cdktf.TerraformMetaArguments
   */
   readonly domainName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_domain_name#ownership_verification_certificate_arn ApiGatewayDomainName#ownership_verification_certificate_arn}
+  */
+  readonly ownershipVerificationCertificateArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_domain_name#regional_certificate_arn ApiGatewayDomainName#regional_certificate_arn}
   */
   readonly regionalCertificateArn?: string;
@@ -256,6 +260,7 @@ export class ApiGatewayDomainName extends cdktf.TerraformResource {
     this._certificateName = config.certificateName;
     this._certificatePrivateKey = config.certificatePrivateKey;
     this._domainName = config.domainName;
+    this._ownershipVerificationCertificateArn = config.ownershipVerificationCertificateArn;
     this._regionalCertificateArn = config.regionalCertificateArn;
     this._regionalCertificateName = config.regionalCertificateName;
     this._securityPolicy = config.securityPolicy;
@@ -385,6 +390,22 @@ export class ApiGatewayDomainName extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ownership_verification_certificate_arn - computed: true, optional: true, required: false
+  private _ownershipVerificationCertificateArn?: string; 
+  public get ownershipVerificationCertificateArn() {
+    return this.getStringAttribute('ownership_verification_certificate_arn');
+  }
+  public set ownershipVerificationCertificateArn(value: string) {
+    this._ownershipVerificationCertificateArn = value;
+  }
+  public resetOwnershipVerificationCertificateArn() {
+    this._ownershipVerificationCertificateArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownershipVerificationCertificateArnInput() {
+    return this._ownershipVerificationCertificateArn;
   }
 
   // regional_certificate_arn - computed: false, optional: true, required: false
@@ -521,6 +542,7 @@ export class ApiGatewayDomainName extends cdktf.TerraformResource {
       certificate_name: cdktf.stringToTerraform(this._certificateName),
       certificate_private_key: cdktf.stringToTerraform(this._certificatePrivateKey),
       domain_name: cdktf.stringToTerraform(this._domainName),
+      ownership_verification_certificate_arn: cdktf.stringToTerraform(this._ownershipVerificationCertificateArn),
       regional_certificate_arn: cdktf.stringToTerraform(this._regionalCertificateArn),
       regional_certificate_name: cdktf.stringToTerraform(this._regionalCertificateName),
       security_policy: cdktf.stringToTerraform(this._securityPolicy),

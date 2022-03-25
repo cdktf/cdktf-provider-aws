@@ -109,7 +109,7 @@ export class InternetGateway extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
-  // vpc_id - computed: false, optional: true, required: false
+  // vpc_id - computed: true, optional: true, required: false
   private _vpcId?: string; 
   public get vpcId() {
     return this.getStringAttribute('vpc_id');

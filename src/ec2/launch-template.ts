@@ -170,6 +170,12 @@ export interface LaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   */
   readonly placement?: LaunchTemplatePlacement;
   /**
+  * private_dns_name_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#private_dns_name_options LaunchTemplate#private_dns_name_options}
+  */
+  readonly privateDnsNameOptions?: LaunchTemplatePrivateDnsNameOptions;
+  /**
   * tag_specifications block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#tag_specifications LaunchTemplate#tag_specifications}
@@ -470,6 +476,10 @@ export interface LaunchTemplateCapacityReservationSpecificationCapacityReservati
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#capacity_reservation_id LaunchTemplate#capacity_reservation_id}
   */
   readonly capacityReservationId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#capacity_reservation_resource_group_arn LaunchTemplate#capacity_reservation_resource_group_arn}
+  */
+  readonly capacityReservationResourceGroupArn?: string;
 }
 
 export function launchTemplateCapacityReservationSpecificationCapacityReservationTargetToTerraform(struct?: LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference | LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget): any {
@@ -479,6 +489,7 @@ export function launchTemplateCapacityReservationSpecificationCapacityReservatio
   }
   return {
     capacity_reservation_id: cdktf.stringToTerraform(struct!.capacityReservationId),
+    capacity_reservation_resource_group_arn: cdktf.stringToTerraform(struct!.capacityReservationResourceGroupArn),
   }
 }
 
@@ -501,6 +512,10 @@ export class LaunchTemplateCapacityReservationSpecificationCapacityReservationTa
       hasAnyValues = true;
       internalValueResult.capacityReservationId = this._capacityReservationId;
     }
+    if (this._capacityReservationResourceGroupArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.capacityReservationResourceGroupArn = this._capacityReservationResourceGroupArn;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -508,10 +523,12 @@ export class LaunchTemplateCapacityReservationSpecificationCapacityReservationTa
     if (value === undefined) {
       this.isEmptyObject = false;
       this._capacityReservationId = undefined;
+      this._capacityReservationResourceGroupArn = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._capacityReservationId = value.capacityReservationId;
+      this._capacityReservationResourceGroupArn = value.capacityReservationResourceGroupArn;
     }
   }
 
@@ -529,6 +546,22 @@ export class LaunchTemplateCapacityReservationSpecificationCapacityReservationTa
   // Temporarily expose input value. Use with caution.
   public get capacityReservationIdInput() {
     return this._capacityReservationId;
+  }
+
+  // capacity_reservation_resource_group_arn - computed: false, optional: true, required: false
+  private _capacityReservationResourceGroupArn?: string; 
+  public get capacityReservationResourceGroupArn() {
+    return this.getStringAttribute('capacity_reservation_resource_group_arn');
+  }
+  public set capacityReservationResourceGroupArn(value: string) {
+    this._capacityReservationResourceGroupArn = value;
+  }
+  public resetCapacityReservationResourceGroupArn() {
+    this._capacityReservationResourceGroupArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capacityReservationResourceGroupArnInput() {
+    return this._capacityReservationResourceGroupArn;
   }
 }
 export interface LaunchTemplateCapacityReservationSpecification {
@@ -1647,6 +1680,14 @@ export interface LaunchTemplateNetworkInterfaces {
   */
   readonly ipv4Addresses?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#ipv4_prefix_count LaunchTemplate#ipv4_prefix_count}
+  */
+  readonly ipv4PrefixCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#ipv4_prefixes LaunchTemplate#ipv4_prefixes}
+  */
+  readonly ipv4Prefixes?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#ipv6_address_count LaunchTemplate#ipv6_address_count}
   */
   readonly ipv6AddressCount?: number;
@@ -1654,6 +1695,14 @@ export interface LaunchTemplateNetworkInterfaces {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#ipv6_addresses LaunchTemplate#ipv6_addresses}
   */
   readonly ipv6Addresses?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#ipv6_prefix_count LaunchTemplate#ipv6_prefix_count}
+  */
+  readonly ipv6PrefixCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#ipv6_prefixes LaunchTemplate#ipv6_prefixes}
+  */
+  readonly ipv6Prefixes?: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#network_card_index LaunchTemplate#network_card_index}
   */
@@ -1690,8 +1739,12 @@ export function launchTemplateNetworkInterfacesToTerraform(struct?: LaunchTempla
     interface_type: cdktf.stringToTerraform(struct!.interfaceType),
     ipv4_address_count: cdktf.numberToTerraform(struct!.ipv4AddressCount),
     ipv4_addresses: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipv4Addresses),
+    ipv4_prefix_count: cdktf.numberToTerraform(struct!.ipv4PrefixCount),
+    ipv4_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipv4Prefixes),
     ipv6_address_count: cdktf.numberToTerraform(struct!.ipv6AddressCount),
     ipv6_addresses: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipv6Addresses),
+    ipv6_prefix_count: cdktf.numberToTerraform(struct!.ipv6PrefixCount),
+    ipv6_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipv6Prefixes),
     network_card_index: cdktf.numberToTerraform(struct!.networkCardIndex),
     network_interface_id: cdktf.stringToTerraform(struct!.networkInterfaceId),
     private_ip_address: cdktf.stringToTerraform(struct!.privateIpAddress),
@@ -1955,6 +2008,126 @@ export class LaunchTemplatePlacementOutputReference extends cdktf.ComplexObject 
     return this._tenancy;
   }
 }
+export interface LaunchTemplatePrivateDnsNameOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#enable_resource_name_dns_a_record LaunchTemplate#enable_resource_name_dns_a_record}
+  */
+  readonly enableResourceNameDnsARecord?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#enable_resource_name_dns_aaaa_record LaunchTemplate#enable_resource_name_dns_aaaa_record}
+  */
+  readonly enableResourceNameDnsAaaaRecord?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#hostname_type LaunchTemplate#hostname_type}
+  */
+  readonly hostnameType?: string;
+}
+
+export function launchTemplatePrivateDnsNameOptionsToTerraform(struct?: LaunchTemplatePrivateDnsNameOptionsOutputReference | LaunchTemplatePrivateDnsNameOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enable_resource_name_dns_a_record: cdktf.booleanToTerraform(struct!.enableResourceNameDnsARecord),
+    enable_resource_name_dns_aaaa_record: cdktf.booleanToTerraform(struct!.enableResourceNameDnsAaaaRecord),
+    hostname_type: cdktf.stringToTerraform(struct!.hostnameType),
+  }
+}
+
+export class LaunchTemplatePrivateDnsNameOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LaunchTemplatePrivateDnsNameOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enableResourceNameDnsARecord !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableResourceNameDnsARecord = this._enableResourceNameDnsARecord;
+    }
+    if (this._enableResourceNameDnsAaaaRecord !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableResourceNameDnsAaaaRecord = this._enableResourceNameDnsAaaaRecord;
+    }
+    if (this._hostnameType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostnameType = this._hostnameType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplatePrivateDnsNameOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enableResourceNameDnsARecord = undefined;
+      this._enableResourceNameDnsAaaaRecord = undefined;
+      this._hostnameType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enableResourceNameDnsARecord = value.enableResourceNameDnsARecord;
+      this._enableResourceNameDnsAaaaRecord = value.enableResourceNameDnsAaaaRecord;
+      this._hostnameType = value.hostnameType;
+    }
+  }
+
+  // enable_resource_name_dns_a_record - computed: false, optional: true, required: false
+  private _enableResourceNameDnsARecord?: boolean | cdktf.IResolvable; 
+  public get enableResourceNameDnsARecord() {
+    return this.getBooleanAttribute('enable_resource_name_dns_a_record');
+  }
+  public set enableResourceNameDnsARecord(value: boolean | cdktf.IResolvable) {
+    this._enableResourceNameDnsARecord = value;
+  }
+  public resetEnableResourceNameDnsARecord() {
+    this._enableResourceNameDnsARecord = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableResourceNameDnsARecordInput() {
+    return this._enableResourceNameDnsARecord;
+  }
+
+  // enable_resource_name_dns_aaaa_record - computed: false, optional: true, required: false
+  private _enableResourceNameDnsAaaaRecord?: boolean | cdktf.IResolvable; 
+  public get enableResourceNameDnsAaaaRecord() {
+    return this.getBooleanAttribute('enable_resource_name_dns_aaaa_record');
+  }
+  public set enableResourceNameDnsAaaaRecord(value: boolean | cdktf.IResolvable) {
+    this._enableResourceNameDnsAaaaRecord = value;
+  }
+  public resetEnableResourceNameDnsAaaaRecord() {
+    this._enableResourceNameDnsAaaaRecord = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableResourceNameDnsAaaaRecordInput() {
+    return this._enableResourceNameDnsAaaaRecord;
+  }
+
+  // hostname_type - computed: false, optional: true, required: false
+  private _hostnameType?: string; 
+  public get hostnameType() {
+    return this.getStringAttribute('hostname_type');
+  }
+  public set hostnameType(value: string) {
+    this._hostnameType = value;
+  }
+  public resetHostnameType() {
+    this._hostnameType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostnameTypeInput() {
+    return this._hostnameType;
+  }
+}
 export interface LaunchTemplateTagSpecifications {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#resource_type LaunchTemplate#resource_type}
@@ -2043,6 +2216,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
     this._monitoring.internalValue = config.monitoring;
     this._networkInterfaces = config.networkInterfaces;
     this._placement.internalValue = config.placement;
+    this._privateDnsNameOptions.internalValue = config.privateDnsNameOptions;
     this._tagSpecifications = config.tagSpecifications;
   }
 
@@ -2597,6 +2771,22 @@ export class LaunchTemplate extends cdktf.TerraformResource {
     return this._placement.internalValue;
   }
 
+  // private_dns_name_options - computed: false, optional: true, required: false
+  private _privateDnsNameOptions = new LaunchTemplatePrivateDnsNameOptionsOutputReference(this, "private_dns_name_options", true);
+  public get privateDnsNameOptions() {
+    return this._privateDnsNameOptions;
+  }
+  public putPrivateDnsNameOptions(value: LaunchTemplatePrivateDnsNameOptions) {
+    this._privateDnsNameOptions.internalValue = value;
+  }
+  public resetPrivateDnsNameOptions() {
+    this._privateDnsNameOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateDnsNameOptionsInput() {
+    return this._privateDnsNameOptions.internalValue;
+  }
+
   // tag_specifications - computed: false, optional: true, required: false
   private _tagSpecifications?: LaunchTemplateTagSpecifications[] | cdktf.IResolvable; 
   public get tagSpecifications() {
@@ -2653,6 +2843,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
       monitoring: launchTemplateMonitoringToTerraform(this._monitoring.internalValue),
       network_interfaces: cdktf.listMapper(launchTemplateNetworkInterfacesToTerraform)(this._networkInterfaces),
       placement: launchTemplatePlacementToTerraform(this._placement.internalValue),
+      private_dns_name_options: launchTemplatePrivateDnsNameOptionsToTerraform(this._privateDnsNameOptions.internalValue),
       tag_specifications: cdktf.listMapper(launchTemplateTagSpecificationsToTerraform)(this._tagSpecifications),
     };
   }

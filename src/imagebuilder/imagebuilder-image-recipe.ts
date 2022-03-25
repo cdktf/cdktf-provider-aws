@@ -51,6 +51,12 @@ export interface ImagebuilderImageRecipeConfig extends cdktf.TerraformMetaArgume
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe#component ImagebuilderImageRecipe#component}
   */
   readonly component: ImagebuilderImageRecipeComponent[] | cdktf.IResolvable;
+  /**
+  * systems_manager_agent block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe#systems_manager_agent ImagebuilderImageRecipe#systems_manager_agent}
+  */
+  readonly systemsManagerAgent?: ImagebuilderImageRecipeSystemsManagerAgent;
 }
 export interface ImagebuilderImageRecipeBlockDeviceMappingEbs {
   /**
@@ -314,11 +320,39 @@ export function imagebuilderImageRecipeBlockDeviceMappingToTerraform(struct?: Im
   }
 }
 
+export interface ImagebuilderImageRecipeComponentParameter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe#name ImagebuilderImageRecipe#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe#value ImagebuilderImageRecipe#value}
+  */
+  readonly value: string;
+}
+
+export function imagebuilderImageRecipeComponentParameterToTerraform(struct?: ImagebuilderImageRecipeComponentParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
 export interface ImagebuilderImageRecipeComponent {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe#component_arn ImagebuilderImageRecipe#component_arn}
   */
   readonly componentArn: string;
+  /**
+  * parameter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe#parameter ImagebuilderImageRecipe#parameter}
+  */
+  readonly parameter?: ImagebuilderImageRecipeComponentParameter[] | cdktf.IResolvable;
 }
 
 export function imagebuilderImageRecipeComponentToTerraform(struct?: ImagebuilderImageRecipeComponent | cdktf.IResolvable): any {
@@ -328,9 +362,73 @@ export function imagebuilderImageRecipeComponentToTerraform(struct?: Imagebuilde
   }
   return {
     component_arn: cdktf.stringToTerraform(struct!.componentArn),
+    parameter: cdktf.listMapper(imagebuilderImageRecipeComponentParameterToTerraform)(struct!.parameter),
   }
 }
 
+export interface ImagebuilderImageRecipeSystemsManagerAgent {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe#uninstall_after_build ImagebuilderImageRecipe#uninstall_after_build}
+  */
+  readonly uninstallAfterBuild: boolean | cdktf.IResolvable;
+}
+
+export function imagebuilderImageRecipeSystemsManagerAgentToTerraform(struct?: ImagebuilderImageRecipeSystemsManagerAgentOutputReference | ImagebuilderImageRecipeSystemsManagerAgent): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    uninstall_after_build: cdktf.booleanToTerraform(struct!.uninstallAfterBuild),
+  }
+}
+
+export class ImagebuilderImageRecipeSystemsManagerAgentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): ImagebuilderImageRecipeSystemsManagerAgent | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._uninstallAfterBuild !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uninstallAfterBuild = this._uninstallAfterBuild;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ImagebuilderImageRecipeSystemsManagerAgent | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._uninstallAfterBuild = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._uninstallAfterBuild = value.uninstallAfterBuild;
+    }
+  }
+
+  // uninstall_after_build - computed: false, optional: false, required: true
+  private _uninstallAfterBuild?: boolean | cdktf.IResolvable; 
+  public get uninstallAfterBuild() {
+    return this.getBooleanAttribute('uninstall_after_build');
+  }
+  public set uninstallAfterBuild(value: boolean | cdktf.IResolvable) {
+    this._uninstallAfterBuild = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uninstallAfterBuildInput() {
+    return this._uninstallAfterBuild;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_recipe aws_imagebuilder_image_recipe}
@@ -374,6 +472,7 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
     this._workingDirectory = config.workingDirectory;
     this._blockDeviceMapping = config.blockDeviceMapping;
     this._component = config.component;
+    this._systemsManagerAgent.internalValue = config.systemsManagerAgent;
   }
 
   // ==========
@@ -555,6 +654,22 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
     return this._component;
   }
 
+  // systems_manager_agent - computed: false, optional: true, required: false
+  private _systemsManagerAgent = new ImagebuilderImageRecipeSystemsManagerAgentOutputReference(this, "systems_manager_agent", true);
+  public get systemsManagerAgent() {
+    return this._systemsManagerAgent;
+  }
+  public putSystemsManagerAgent(value: ImagebuilderImageRecipeSystemsManagerAgent) {
+    this._systemsManagerAgent.internalValue = value;
+  }
+  public resetSystemsManagerAgent() {
+    this._systemsManagerAgent.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get systemsManagerAgentInput() {
+    return this._systemsManagerAgent.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -571,6 +686,7 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
       working_directory: cdktf.stringToTerraform(this._workingDirectory),
       block_device_mapping: cdktf.listMapper(imagebuilderImageRecipeBlockDeviceMappingToTerraform)(this._blockDeviceMapping),
       component: cdktf.listMapper(imagebuilderImageRecipeComponentToTerraform)(this._component),
+      systems_manager_agent: imagebuilderImageRecipeSystemsManagerAgentToTerraform(this._systemsManagerAgent.internalValue),
     };
   }
 }

@@ -17,5 +17,6 @@ export * from './data-aws-cloudfront-function';
 export * from './data-aws-cloudfront-log-delivery-canonical-user-id';
 export * from './data-aws-cloudfront-origin-access-identity';
 export * from './data-aws-cloudfront-origin-request-policy';
+export * from './data-aws-cloudfront-realtime-log-config';
 export * from './data-aws-cloudfront-response-headers-policy';
 

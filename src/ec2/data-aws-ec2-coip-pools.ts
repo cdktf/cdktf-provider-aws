@@ -88,7 +88,7 @@ export class DataAwsEc2CoipPools extends cdktf.TerraformDataSource {
 
   // pool_ids - computed: true, optional: false, required: false
   public get poolIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('pool_ids'));
+    return this.getListAttribute('pool_ids');
   }
 
   // tags - computed: true, optional: true, required: false

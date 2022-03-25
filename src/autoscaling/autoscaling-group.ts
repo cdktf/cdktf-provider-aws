@@ -1329,6 +1329,72 @@ export class AutoscalingGroupTimeoutsOutputReference extends cdktf.ComplexObject
     return this._delete;
   }
 }
+export interface AutoscalingGroupWarmPoolInstanceReusePolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#reuse_on_scale_in AutoscalingGroup#reuse_on_scale_in}
+  */
+  readonly reuseOnScaleIn?: boolean | cdktf.IResolvable;
+}
+
+export function autoscalingGroupWarmPoolInstanceReusePolicyToTerraform(struct?: AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference | AutoscalingGroupWarmPoolInstanceReusePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    reuse_on_scale_in: cdktf.booleanToTerraform(struct!.reuseOnScaleIn),
+  }
+}
+
+export class AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): AutoscalingGroupWarmPoolInstanceReusePolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._reuseOnScaleIn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.reuseOnScaleIn = this._reuseOnScaleIn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AutoscalingGroupWarmPoolInstanceReusePolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._reuseOnScaleIn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._reuseOnScaleIn = value.reuseOnScaleIn;
+    }
+  }
+
+  // reuse_on_scale_in - computed: false, optional: true, required: false
+  private _reuseOnScaleIn?: boolean | cdktf.IResolvable; 
+  public get reuseOnScaleIn() {
+    return this.getBooleanAttribute('reuse_on_scale_in');
+  }
+  public set reuseOnScaleIn(value: boolean | cdktf.IResolvable) {
+    this._reuseOnScaleIn = value;
+  }
+  public resetReuseOnScaleIn() {
+    this._reuseOnScaleIn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reuseOnScaleInInput() {
+    return this._reuseOnScaleIn;
+  }
+}
 export interface AutoscalingGroupWarmPool {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#max_group_prepared_capacity AutoscalingGroup#max_group_prepared_capacity}
@@ -1342,6 +1408,12 @@ export interface AutoscalingGroupWarmPool {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#pool_state AutoscalingGroup#pool_state}
   */
   readonly poolState?: string;
+  /**
+  * instance_reuse_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#instance_reuse_policy AutoscalingGroup#instance_reuse_policy}
+  */
+  readonly instanceReusePolicy?: AutoscalingGroupWarmPoolInstanceReusePolicy;
 }
 
 export function autoscalingGroupWarmPoolToTerraform(struct?: AutoscalingGroupWarmPoolOutputReference | AutoscalingGroupWarmPool): any {
@@ -1353,6 +1425,7 @@ export function autoscalingGroupWarmPoolToTerraform(struct?: AutoscalingGroupWar
     max_group_prepared_capacity: cdktf.numberToTerraform(struct!.maxGroupPreparedCapacity),
     min_size: cdktf.numberToTerraform(struct!.minSize),
     pool_state: cdktf.stringToTerraform(struct!.poolState),
+    instance_reuse_policy: autoscalingGroupWarmPoolInstanceReusePolicyToTerraform(struct!.instanceReusePolicy),
   }
 }
 
@@ -1383,6 +1456,10 @@ export class AutoscalingGroupWarmPoolOutputReference extends cdktf.ComplexObject
       hasAnyValues = true;
       internalValueResult.poolState = this._poolState;
     }
+    if (this._instanceReusePolicy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceReusePolicy = this._instanceReusePolicy?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1392,12 +1469,14 @@ export class AutoscalingGroupWarmPoolOutputReference extends cdktf.ComplexObject
       this._maxGroupPreparedCapacity = undefined;
       this._minSize = undefined;
       this._poolState = undefined;
+      this._instanceReusePolicy.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._maxGroupPreparedCapacity = value.maxGroupPreparedCapacity;
       this._minSize = value.minSize;
       this._poolState = value.poolState;
+      this._instanceReusePolicy.internalValue = value.instanceReusePolicy;
     }
   }
 
@@ -1447,6 +1526,22 @@ export class AutoscalingGroupWarmPoolOutputReference extends cdktf.ComplexObject
   // Temporarily expose input value. Use with caution.
   public get poolStateInput() {
     return this._poolState;
+  }
+
+  // instance_reuse_policy - computed: false, optional: true, required: false
+  private _instanceReusePolicy = new AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference(this, "instance_reuse_policy", true);
+  public get instanceReusePolicy() {
+    return this._instanceReusePolicy;
+  }
+  public putInstanceReusePolicy(value: AutoscalingGroupWarmPoolInstanceReusePolicy) {
+    this._instanceReusePolicy.internalValue = value;
+  }
+  public resetInstanceReusePolicy() {
+    this._instanceReusePolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceReusePolicyInput() {
+    return this._instanceReusePolicy.internalValue;
   }
 }
 

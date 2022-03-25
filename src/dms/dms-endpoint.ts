@@ -1254,6 +1254,10 @@ export class DmsEndpointMongodbSettingsOutputReference extends cdktf.ComplexObje
 }
 export interface DmsEndpointS3Settings {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#add_column_name DmsEndpoint#add_column_name}
+  */
+  readonly addColumnName?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#bucket_folder DmsEndpoint#bucket_folder}
   */
   readonly bucketFolder?: string;
@@ -1261,6 +1265,30 @@ export interface DmsEndpointS3Settings {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#bucket_name DmsEndpoint#bucket_name}
   */
   readonly bucketName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#canned_acl_for_objects DmsEndpoint#canned_acl_for_objects}
+  */
+  readonly cannedAclForObjects?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#cdc_inserts_and_updates DmsEndpoint#cdc_inserts_and_updates}
+  */
+  readonly cdcInsertsAndUpdates?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#cdc_inserts_only DmsEndpoint#cdc_inserts_only}
+  */
+  readonly cdcInsertsOnly?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#cdc_max_batch_interval DmsEndpoint#cdc_max_batch_interval}
+  */
+  readonly cdcMaxBatchInterval?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#cdc_min_file_size DmsEndpoint#cdc_min_file_size}
+  */
+  readonly cdcMinFileSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#cdc_path DmsEndpoint#cdc_path}
+  */
+  readonly cdcPath?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#compression_type DmsEndpoint#compression_type}
   */
@@ -1270,6 +1298,14 @@ export interface DmsEndpointS3Settings {
   */
   readonly csvDelimiter?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#csv_no_sup_value DmsEndpoint#csv_no_sup_value}
+  */
+  readonly csvNoSupValue?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#csv_null_value DmsEndpoint#csv_null_value}
+  */
+  readonly csvNullValue?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#csv_row_delimiter DmsEndpoint#csv_row_delimiter}
   */
   readonly csvRowDelimiter?: string;
@@ -1278,9 +1314,33 @@ export interface DmsEndpointS3Settings {
   */
   readonly dataFormat?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#data_page_size DmsEndpoint#data_page_size}
+  */
+  readonly dataPageSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#date_partition_delimiter DmsEndpoint#date_partition_delimiter}
+  */
+  readonly datePartitionDelimiter?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#date_partition_enabled DmsEndpoint#date_partition_enabled}
   */
   readonly datePartitionEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#date_partition_sequence DmsEndpoint#date_partition_sequence}
+  */
+  readonly datePartitionSequence?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#dict_page_size_limit DmsEndpoint#dict_page_size_limit}
+  */
+  readonly dictPageSizeLimit?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#enable_statistics DmsEndpoint#enable_statistics}
+  */
+  readonly enableStatistics?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#encoding_type DmsEndpoint#encoding_type}
+  */
+  readonly encodingType?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#encryption_mode DmsEndpoint#encryption_mode}
   */
@@ -1290,6 +1350,18 @@ export interface DmsEndpointS3Settings {
   */
   readonly externalTableDefinition?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#ignore_headers_row DmsEndpoint#ignore_headers_row}
+  */
+  readonly ignoreHeadersRow?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#include_op_for_full_load DmsEndpoint#include_op_for_full_load}
+  */
+  readonly includeOpForFullLoad?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#max_file_size DmsEndpoint#max_file_size}
+  */
+  readonly maxFileSize?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#parquet_timestamp_in_millisecond DmsEndpoint#parquet_timestamp_in_millisecond}
   */
   readonly parquetTimestampInMillisecond?: boolean | cdktf.IResolvable;
@@ -1298,6 +1370,18 @@ export interface DmsEndpointS3Settings {
   */
   readonly parquetVersion?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#preserve_transactions DmsEndpoint#preserve_transactions}
+  */
+  readonly preserveTransactions?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#rfc_4180 DmsEndpoint#rfc_4180}
+  */
+  readonly rfc4180?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#row_group_length DmsEndpoint#row_group_length}
+  */
+  readonly rowGroupLength?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#server_side_encryption_kms_key_id DmsEndpoint#server_side_encryption_kms_key_id}
   */
   readonly serverSideEncryptionKmsKeyId?: string;
@@ -1305,6 +1389,14 @@ export interface DmsEndpointS3Settings {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}
   */
   readonly serviceAccessRoleArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#timestamp_column_name DmsEndpoint#timestamp_column_name}
+  */
+  readonly timestampColumnName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#use_csv_no_sup_value DmsEndpoint#use_csv_no_sup_value}
+  */
+  readonly useCsvNoSupValue?: boolean | cdktf.IResolvable;
 }
 
 export function dmsEndpointS3SettingsToTerraform(struct?: DmsEndpointS3SettingsOutputReference | DmsEndpointS3Settings): any {
@@ -1313,19 +1405,42 @@ export function dmsEndpointS3SettingsToTerraform(struct?: DmsEndpointS3SettingsO
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    add_column_name: cdktf.booleanToTerraform(struct!.addColumnName),
     bucket_folder: cdktf.stringToTerraform(struct!.bucketFolder),
     bucket_name: cdktf.stringToTerraform(struct!.bucketName),
+    canned_acl_for_objects: cdktf.stringToTerraform(struct!.cannedAclForObjects),
+    cdc_inserts_and_updates: cdktf.booleanToTerraform(struct!.cdcInsertsAndUpdates),
+    cdc_inserts_only: cdktf.booleanToTerraform(struct!.cdcInsertsOnly),
+    cdc_max_batch_interval: cdktf.numberToTerraform(struct!.cdcMaxBatchInterval),
+    cdc_min_file_size: cdktf.numberToTerraform(struct!.cdcMinFileSize),
+    cdc_path: cdktf.stringToTerraform(struct!.cdcPath),
     compression_type: cdktf.stringToTerraform(struct!.compressionType),
     csv_delimiter: cdktf.stringToTerraform(struct!.csvDelimiter),
+    csv_no_sup_value: cdktf.stringToTerraform(struct!.csvNoSupValue),
+    csv_null_value: cdktf.stringToTerraform(struct!.csvNullValue),
     csv_row_delimiter: cdktf.stringToTerraform(struct!.csvRowDelimiter),
     data_format: cdktf.stringToTerraform(struct!.dataFormat),
+    data_page_size: cdktf.numberToTerraform(struct!.dataPageSize),
+    date_partition_delimiter: cdktf.stringToTerraform(struct!.datePartitionDelimiter),
     date_partition_enabled: cdktf.booleanToTerraform(struct!.datePartitionEnabled),
+    date_partition_sequence: cdktf.stringToTerraform(struct!.datePartitionSequence),
+    dict_page_size_limit: cdktf.numberToTerraform(struct!.dictPageSizeLimit),
+    enable_statistics: cdktf.booleanToTerraform(struct!.enableStatistics),
+    encoding_type: cdktf.stringToTerraform(struct!.encodingType),
     encryption_mode: cdktf.stringToTerraform(struct!.encryptionMode),
     external_table_definition: cdktf.stringToTerraform(struct!.externalTableDefinition),
+    ignore_headers_row: cdktf.numberToTerraform(struct!.ignoreHeadersRow),
+    include_op_for_full_load: cdktf.booleanToTerraform(struct!.includeOpForFullLoad),
+    max_file_size: cdktf.numberToTerraform(struct!.maxFileSize),
     parquet_timestamp_in_millisecond: cdktf.booleanToTerraform(struct!.parquetTimestampInMillisecond),
     parquet_version: cdktf.stringToTerraform(struct!.parquetVersion),
+    preserve_transactions: cdktf.booleanToTerraform(struct!.preserveTransactions),
+    rfc_4180: cdktf.booleanToTerraform(struct!.rfc4180),
+    row_group_length: cdktf.numberToTerraform(struct!.rowGroupLength),
     server_side_encryption_kms_key_id: cdktf.stringToTerraform(struct!.serverSideEncryptionKmsKeyId),
     service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
+    timestamp_column_name: cdktf.stringToTerraform(struct!.timestampColumnName),
+    use_csv_no_sup_value: cdktf.booleanToTerraform(struct!.useCsvNoSupValue),
   }
 }
 
@@ -1344,6 +1459,10 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): DmsEndpointS3Settings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._addColumnName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.addColumnName = this._addColumnName;
+    }
     if (this._bucketFolder !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketFolder = this._bucketFolder;
@@ -1351,6 +1470,30 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
     if (this._bucketName !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucketName = this._bucketName;
+    }
+    if (this._cannedAclForObjects !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cannedAclForObjects = this._cannedAclForObjects;
+    }
+    if (this._cdcInsertsAndUpdates !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cdcInsertsAndUpdates = this._cdcInsertsAndUpdates;
+    }
+    if (this._cdcInsertsOnly !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cdcInsertsOnly = this._cdcInsertsOnly;
+    }
+    if (this._cdcMaxBatchInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cdcMaxBatchInterval = this._cdcMaxBatchInterval;
+    }
+    if (this._cdcMinFileSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cdcMinFileSize = this._cdcMinFileSize;
+    }
+    if (this._cdcPath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cdcPath = this._cdcPath;
     }
     if (this._compressionType !== undefined) {
       hasAnyValues = true;
@@ -1360,6 +1503,14 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.csvDelimiter = this._csvDelimiter;
     }
+    if (this._csvNoSupValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.csvNoSupValue = this._csvNoSupValue;
+    }
+    if (this._csvNullValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.csvNullValue = this._csvNullValue;
+    }
     if (this._csvRowDelimiter !== undefined) {
       hasAnyValues = true;
       internalValueResult.csvRowDelimiter = this._csvRowDelimiter;
@@ -1368,9 +1519,33 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.dataFormat = this._dataFormat;
     }
+    if (this._dataPageSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataPageSize = this._dataPageSize;
+    }
+    if (this._datePartitionDelimiter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.datePartitionDelimiter = this._datePartitionDelimiter;
+    }
     if (this._datePartitionEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.datePartitionEnabled = this._datePartitionEnabled;
+    }
+    if (this._datePartitionSequence !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.datePartitionSequence = this._datePartitionSequence;
+    }
+    if (this._dictPageSizeLimit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dictPageSizeLimit = this._dictPageSizeLimit;
+    }
+    if (this._enableStatistics !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableStatistics = this._enableStatistics;
+    }
+    if (this._encodingType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encodingType = this._encodingType;
     }
     if (this._encryptionMode !== undefined) {
       hasAnyValues = true;
@@ -1380,6 +1555,18 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.externalTableDefinition = this._externalTableDefinition;
     }
+    if (this._ignoreHeadersRow !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreHeadersRow = this._ignoreHeadersRow;
+    }
+    if (this._includeOpForFullLoad !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includeOpForFullLoad = this._includeOpForFullLoad;
+    }
+    if (this._maxFileSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxFileSize = this._maxFileSize;
+    }
     if (this._parquetTimestampInMillisecond !== undefined) {
       hasAnyValues = true;
       internalValueResult.parquetTimestampInMillisecond = this._parquetTimestampInMillisecond;
@@ -1387,6 +1574,18 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
     if (this._parquetVersion !== undefined) {
       hasAnyValues = true;
       internalValueResult.parquetVersion = this._parquetVersion;
+    }
+    if (this._preserveTransactions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preserveTransactions = this._preserveTransactions;
+    }
+    if (this._rfc4180 !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rfc4180 = this._rfc4180;
+    }
+    if (this._rowGroupLength !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rowGroupLength = this._rowGroupLength;
     }
     if (this._serverSideEncryptionKmsKeyId !== undefined) {
       hasAnyValues = true;
@@ -1396,42 +1595,112 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.serviceAccessRoleArn = this._serviceAccessRoleArn;
     }
+    if (this._timestampColumnName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timestampColumnName = this._timestampColumnName;
+    }
+    if (this._useCsvNoSupValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useCsvNoSupValue = this._useCsvNoSupValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: DmsEndpointS3Settings | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._addColumnName = undefined;
       this._bucketFolder = undefined;
       this._bucketName = undefined;
+      this._cannedAclForObjects = undefined;
+      this._cdcInsertsAndUpdates = undefined;
+      this._cdcInsertsOnly = undefined;
+      this._cdcMaxBatchInterval = undefined;
+      this._cdcMinFileSize = undefined;
+      this._cdcPath = undefined;
       this._compressionType = undefined;
       this._csvDelimiter = undefined;
+      this._csvNoSupValue = undefined;
+      this._csvNullValue = undefined;
       this._csvRowDelimiter = undefined;
       this._dataFormat = undefined;
+      this._dataPageSize = undefined;
+      this._datePartitionDelimiter = undefined;
       this._datePartitionEnabled = undefined;
+      this._datePartitionSequence = undefined;
+      this._dictPageSizeLimit = undefined;
+      this._enableStatistics = undefined;
+      this._encodingType = undefined;
       this._encryptionMode = undefined;
       this._externalTableDefinition = undefined;
+      this._ignoreHeadersRow = undefined;
+      this._includeOpForFullLoad = undefined;
+      this._maxFileSize = undefined;
       this._parquetTimestampInMillisecond = undefined;
       this._parquetVersion = undefined;
+      this._preserveTransactions = undefined;
+      this._rfc4180 = undefined;
+      this._rowGroupLength = undefined;
       this._serverSideEncryptionKmsKeyId = undefined;
       this._serviceAccessRoleArn = undefined;
+      this._timestampColumnName = undefined;
+      this._useCsvNoSupValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._addColumnName = value.addColumnName;
       this._bucketFolder = value.bucketFolder;
       this._bucketName = value.bucketName;
+      this._cannedAclForObjects = value.cannedAclForObjects;
+      this._cdcInsertsAndUpdates = value.cdcInsertsAndUpdates;
+      this._cdcInsertsOnly = value.cdcInsertsOnly;
+      this._cdcMaxBatchInterval = value.cdcMaxBatchInterval;
+      this._cdcMinFileSize = value.cdcMinFileSize;
+      this._cdcPath = value.cdcPath;
       this._compressionType = value.compressionType;
       this._csvDelimiter = value.csvDelimiter;
+      this._csvNoSupValue = value.csvNoSupValue;
+      this._csvNullValue = value.csvNullValue;
       this._csvRowDelimiter = value.csvRowDelimiter;
       this._dataFormat = value.dataFormat;
+      this._dataPageSize = value.dataPageSize;
+      this._datePartitionDelimiter = value.datePartitionDelimiter;
       this._datePartitionEnabled = value.datePartitionEnabled;
+      this._datePartitionSequence = value.datePartitionSequence;
+      this._dictPageSizeLimit = value.dictPageSizeLimit;
+      this._enableStatistics = value.enableStatistics;
+      this._encodingType = value.encodingType;
       this._encryptionMode = value.encryptionMode;
       this._externalTableDefinition = value.externalTableDefinition;
+      this._ignoreHeadersRow = value.ignoreHeadersRow;
+      this._includeOpForFullLoad = value.includeOpForFullLoad;
+      this._maxFileSize = value.maxFileSize;
       this._parquetTimestampInMillisecond = value.parquetTimestampInMillisecond;
       this._parquetVersion = value.parquetVersion;
+      this._preserveTransactions = value.preserveTransactions;
+      this._rfc4180 = value.rfc4180;
+      this._rowGroupLength = value.rowGroupLength;
       this._serverSideEncryptionKmsKeyId = value.serverSideEncryptionKmsKeyId;
       this._serviceAccessRoleArn = value.serviceAccessRoleArn;
+      this._timestampColumnName = value.timestampColumnName;
+      this._useCsvNoSupValue = value.useCsvNoSupValue;
     }
+  }
+
+  // add_column_name - computed: false, optional: true, required: false
+  private _addColumnName?: boolean | cdktf.IResolvable; 
+  public get addColumnName() {
+    return this.getBooleanAttribute('add_column_name');
+  }
+  public set addColumnName(value: boolean | cdktf.IResolvable) {
+    this._addColumnName = value;
+  }
+  public resetAddColumnName() {
+    this._addColumnName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addColumnNameInput() {
+    return this._addColumnName;
   }
 
   // bucket_folder - computed: false, optional: true, required: false
@@ -1466,6 +1735,102 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
     return this._bucketName;
   }
 
+  // canned_acl_for_objects - computed: false, optional: true, required: false
+  private _cannedAclForObjects?: string; 
+  public get cannedAclForObjects() {
+    return this.getStringAttribute('canned_acl_for_objects');
+  }
+  public set cannedAclForObjects(value: string) {
+    this._cannedAclForObjects = value;
+  }
+  public resetCannedAclForObjects() {
+    this._cannedAclForObjects = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cannedAclForObjectsInput() {
+    return this._cannedAclForObjects;
+  }
+
+  // cdc_inserts_and_updates - computed: false, optional: true, required: false
+  private _cdcInsertsAndUpdates?: boolean | cdktf.IResolvable; 
+  public get cdcInsertsAndUpdates() {
+    return this.getBooleanAttribute('cdc_inserts_and_updates');
+  }
+  public set cdcInsertsAndUpdates(value: boolean | cdktf.IResolvable) {
+    this._cdcInsertsAndUpdates = value;
+  }
+  public resetCdcInsertsAndUpdates() {
+    this._cdcInsertsAndUpdates = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cdcInsertsAndUpdatesInput() {
+    return this._cdcInsertsAndUpdates;
+  }
+
+  // cdc_inserts_only - computed: false, optional: true, required: false
+  private _cdcInsertsOnly?: boolean | cdktf.IResolvable; 
+  public get cdcInsertsOnly() {
+    return this.getBooleanAttribute('cdc_inserts_only');
+  }
+  public set cdcInsertsOnly(value: boolean | cdktf.IResolvable) {
+    this._cdcInsertsOnly = value;
+  }
+  public resetCdcInsertsOnly() {
+    this._cdcInsertsOnly = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cdcInsertsOnlyInput() {
+    return this._cdcInsertsOnly;
+  }
+
+  // cdc_max_batch_interval - computed: false, optional: true, required: false
+  private _cdcMaxBatchInterval?: number; 
+  public get cdcMaxBatchInterval() {
+    return this.getNumberAttribute('cdc_max_batch_interval');
+  }
+  public set cdcMaxBatchInterval(value: number) {
+    this._cdcMaxBatchInterval = value;
+  }
+  public resetCdcMaxBatchInterval() {
+    this._cdcMaxBatchInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cdcMaxBatchIntervalInput() {
+    return this._cdcMaxBatchInterval;
+  }
+
+  // cdc_min_file_size - computed: false, optional: true, required: false
+  private _cdcMinFileSize?: number; 
+  public get cdcMinFileSize() {
+    return this.getNumberAttribute('cdc_min_file_size');
+  }
+  public set cdcMinFileSize(value: number) {
+    this._cdcMinFileSize = value;
+  }
+  public resetCdcMinFileSize() {
+    this._cdcMinFileSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cdcMinFileSizeInput() {
+    return this._cdcMinFileSize;
+  }
+
+  // cdc_path - computed: false, optional: true, required: false
+  private _cdcPath?: string; 
+  public get cdcPath() {
+    return this.getStringAttribute('cdc_path');
+  }
+  public set cdcPath(value: string) {
+    this._cdcPath = value;
+  }
+  public resetCdcPath() {
+    this._cdcPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cdcPathInput() {
+    return this._cdcPath;
+  }
+
   // compression_type - computed: false, optional: true, required: false
   private _compressionType?: string; 
   public get compressionType() {
@@ -1496,6 +1861,38 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get csvDelimiterInput() {
     return this._csvDelimiter;
+  }
+
+  // csv_no_sup_value - computed: false, optional: true, required: false
+  private _csvNoSupValue?: string; 
+  public get csvNoSupValue() {
+    return this.getStringAttribute('csv_no_sup_value');
+  }
+  public set csvNoSupValue(value: string) {
+    this._csvNoSupValue = value;
+  }
+  public resetCsvNoSupValue() {
+    this._csvNoSupValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get csvNoSupValueInput() {
+    return this._csvNoSupValue;
+  }
+
+  // csv_null_value - computed: false, optional: true, required: false
+  private _csvNullValue?: string; 
+  public get csvNullValue() {
+    return this.getStringAttribute('csv_null_value');
+  }
+  public set csvNullValue(value: string) {
+    this._csvNullValue = value;
+  }
+  public resetCsvNullValue() {
+    this._csvNullValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get csvNullValueInput() {
+    return this._csvNullValue;
   }
 
   // csv_row_delimiter - computed: false, optional: true, required: false
@@ -1530,6 +1927,38 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
     return this._dataFormat;
   }
 
+  // data_page_size - computed: false, optional: true, required: false
+  private _dataPageSize?: number; 
+  public get dataPageSize() {
+    return this.getNumberAttribute('data_page_size');
+  }
+  public set dataPageSize(value: number) {
+    this._dataPageSize = value;
+  }
+  public resetDataPageSize() {
+    this._dataPageSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataPageSizeInput() {
+    return this._dataPageSize;
+  }
+
+  // date_partition_delimiter - computed: false, optional: true, required: false
+  private _datePartitionDelimiter?: string; 
+  public get datePartitionDelimiter() {
+    return this.getStringAttribute('date_partition_delimiter');
+  }
+  public set datePartitionDelimiter(value: string) {
+    this._datePartitionDelimiter = value;
+  }
+  public resetDatePartitionDelimiter() {
+    this._datePartitionDelimiter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datePartitionDelimiterInput() {
+    return this._datePartitionDelimiter;
+  }
+
   // date_partition_enabled - computed: false, optional: true, required: false
   private _datePartitionEnabled?: boolean | cdktf.IResolvable; 
   public get datePartitionEnabled() {
@@ -1544,6 +1973,70 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get datePartitionEnabledInput() {
     return this._datePartitionEnabled;
+  }
+
+  // date_partition_sequence - computed: false, optional: true, required: false
+  private _datePartitionSequence?: string; 
+  public get datePartitionSequence() {
+    return this.getStringAttribute('date_partition_sequence');
+  }
+  public set datePartitionSequence(value: string) {
+    this._datePartitionSequence = value;
+  }
+  public resetDatePartitionSequence() {
+    this._datePartitionSequence = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datePartitionSequenceInput() {
+    return this._datePartitionSequence;
+  }
+
+  // dict_page_size_limit - computed: false, optional: true, required: false
+  private _dictPageSizeLimit?: number; 
+  public get dictPageSizeLimit() {
+    return this.getNumberAttribute('dict_page_size_limit');
+  }
+  public set dictPageSizeLimit(value: number) {
+    this._dictPageSizeLimit = value;
+  }
+  public resetDictPageSizeLimit() {
+    this._dictPageSizeLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dictPageSizeLimitInput() {
+    return this._dictPageSizeLimit;
+  }
+
+  // enable_statistics - computed: false, optional: true, required: false
+  private _enableStatistics?: boolean | cdktf.IResolvable; 
+  public get enableStatistics() {
+    return this.getBooleanAttribute('enable_statistics');
+  }
+  public set enableStatistics(value: boolean | cdktf.IResolvable) {
+    this._enableStatistics = value;
+  }
+  public resetEnableStatistics() {
+    this._enableStatistics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableStatisticsInput() {
+    return this._enableStatistics;
+  }
+
+  // encoding_type - computed: false, optional: true, required: false
+  private _encodingType?: string; 
+  public get encodingType() {
+    return this.getStringAttribute('encoding_type');
+  }
+  public set encodingType(value: string) {
+    this._encodingType = value;
+  }
+  public resetEncodingType() {
+    this._encodingType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encodingTypeInput() {
+    return this._encodingType;
   }
 
   // encryption_mode - computed: false, optional: true, required: false
@@ -1578,6 +2071,54 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
     return this._externalTableDefinition;
   }
 
+  // ignore_headers_row - computed: false, optional: true, required: false
+  private _ignoreHeadersRow?: number; 
+  public get ignoreHeadersRow() {
+    return this.getNumberAttribute('ignore_headers_row');
+  }
+  public set ignoreHeadersRow(value: number) {
+    this._ignoreHeadersRow = value;
+  }
+  public resetIgnoreHeadersRow() {
+    this._ignoreHeadersRow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreHeadersRowInput() {
+    return this._ignoreHeadersRow;
+  }
+
+  // include_op_for_full_load - computed: false, optional: true, required: false
+  private _includeOpForFullLoad?: boolean | cdktf.IResolvable; 
+  public get includeOpForFullLoad() {
+    return this.getBooleanAttribute('include_op_for_full_load');
+  }
+  public set includeOpForFullLoad(value: boolean | cdktf.IResolvable) {
+    this._includeOpForFullLoad = value;
+  }
+  public resetIncludeOpForFullLoad() {
+    this._includeOpForFullLoad = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeOpForFullLoadInput() {
+    return this._includeOpForFullLoad;
+  }
+
+  // max_file_size - computed: false, optional: true, required: false
+  private _maxFileSize?: number; 
+  public get maxFileSize() {
+    return this.getNumberAttribute('max_file_size');
+  }
+  public set maxFileSize(value: number) {
+    this._maxFileSize = value;
+  }
+  public resetMaxFileSize() {
+    this._maxFileSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxFileSizeInput() {
+    return this._maxFileSize;
+  }
+
   // parquet_timestamp_in_millisecond - computed: false, optional: true, required: false
   private _parquetTimestampInMillisecond?: boolean | cdktf.IResolvable; 
   public get parquetTimestampInMillisecond() {
@@ -1610,6 +2151,54 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
     return this._parquetVersion;
   }
 
+  // preserve_transactions - computed: false, optional: true, required: false
+  private _preserveTransactions?: boolean | cdktf.IResolvable; 
+  public get preserveTransactions() {
+    return this.getBooleanAttribute('preserve_transactions');
+  }
+  public set preserveTransactions(value: boolean | cdktf.IResolvable) {
+    this._preserveTransactions = value;
+  }
+  public resetPreserveTransactions() {
+    this._preserveTransactions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preserveTransactionsInput() {
+    return this._preserveTransactions;
+  }
+
+  // rfc_4180 - computed: false, optional: true, required: false
+  private _rfc4180?: boolean | cdktf.IResolvable; 
+  public get rfc4180() {
+    return this.getBooleanAttribute('rfc_4180');
+  }
+  public set rfc4180(value: boolean | cdktf.IResolvable) {
+    this._rfc4180 = value;
+  }
+  public resetRfc4180() {
+    this._rfc4180 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rfc4180Input() {
+    return this._rfc4180;
+  }
+
+  // row_group_length - computed: false, optional: true, required: false
+  private _rowGroupLength?: number; 
+  public get rowGroupLength() {
+    return this.getNumberAttribute('row_group_length');
+  }
+  public set rowGroupLength(value: number) {
+    this._rowGroupLength = value;
+  }
+  public resetRowGroupLength() {
+    this._rowGroupLength = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rowGroupLengthInput() {
+    return this._rowGroupLength;
+  }
+
   // server_side_encryption_kms_key_id - computed: false, optional: true, required: false
   private _serverSideEncryptionKmsKeyId?: string; 
   public get serverSideEncryptionKmsKeyId() {
@@ -1640,6 +2229,38 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get serviceAccessRoleArnInput() {
     return this._serviceAccessRoleArn;
+  }
+
+  // timestamp_column_name - computed: false, optional: true, required: false
+  private _timestampColumnName?: string; 
+  public get timestampColumnName() {
+    return this.getStringAttribute('timestamp_column_name');
+  }
+  public set timestampColumnName(value: string) {
+    this._timestampColumnName = value;
+  }
+  public resetTimestampColumnName() {
+    this._timestampColumnName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timestampColumnNameInput() {
+    return this._timestampColumnName;
+  }
+
+  // use_csv_no_sup_value - computed: false, optional: true, required: false
+  private _useCsvNoSupValue?: boolean | cdktf.IResolvable; 
+  public get useCsvNoSupValue() {
+    return this.getBooleanAttribute('use_csv_no_sup_value');
+  }
+  public set useCsvNoSupValue(value: boolean | cdktf.IResolvable) {
+    this._useCsvNoSupValue = value;
+  }
+  public resetUseCsvNoSupValue() {
+    this._useCsvNoSupValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useCsvNoSupValueInput() {
+    return this._useCsvNoSupValue;
   }
 }
 

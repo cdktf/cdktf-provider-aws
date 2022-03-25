@@ -50,6 +50,12 @@ export interface GlueTriggerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly actions: GlueTriggerActions[] | cdktf.IResolvable;
   /**
+  * event_batching_condition block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger#event_batching_condition GlueTrigger#event_batching_condition}
+  */
+  readonly eventBatchingCondition?: GlueTriggerEventBatchingCondition[] | cdktf.IResolvable;
+  /**
   * predicate block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger#predicate GlueTrigger#predicate}
@@ -169,6 +175,28 @@ export function glueTriggerActionsToTerraform(struct?: GlueTriggerActions | cdkt
     security_configuration: cdktf.stringToTerraform(struct!.securityConfiguration),
     timeout: cdktf.numberToTerraform(struct!.timeout),
     notification_property: glueTriggerActionsNotificationPropertyToTerraform(struct!.notificationProperty),
+  }
+}
+
+export interface GlueTriggerEventBatchingCondition {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger#batch_size GlueTrigger#batch_size}
+  */
+  readonly batchSize: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger#batch_window GlueTrigger#batch_window}
+  */
+  readonly batchWindow?: number;
+}
+
+export function glueTriggerEventBatchingConditionToTerraform(struct?: GlueTriggerEventBatchingCondition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    batch_size: cdktf.numberToTerraform(struct!.batchSize),
+    batch_window: cdktf.numberToTerraform(struct!.batchWindow),
   }
 }
 
@@ -438,6 +466,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
     this._type = config.type;
     this._workflowName = config.workflowName;
     this._actions = config.actions;
+    this._eventBatchingCondition = config.eventBatchingCondition;
     this._predicate.internalValue = config.predicate;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -613,6 +642,23 @@ export class GlueTrigger extends cdktf.TerraformResource {
     return this._actions;
   }
 
+  // event_batching_condition - computed: false, optional: true, required: false
+  private _eventBatchingCondition?: GlueTriggerEventBatchingCondition[] | cdktf.IResolvable; 
+  public get eventBatchingCondition() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('event_batching_condition');
+  }
+  public set eventBatchingCondition(value: GlueTriggerEventBatchingCondition[] | cdktf.IResolvable) {
+    this._eventBatchingCondition = value;
+  }
+  public resetEventBatchingCondition() {
+    this._eventBatchingCondition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventBatchingConditionInput() {
+    return this._eventBatchingCondition;
+  }
+
   // predicate - computed: false, optional: true, required: false
   private _predicate = new GlueTriggerPredicateOutputReference(this, "predicate", true);
   public get predicate() {
@@ -661,6 +707,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       workflow_name: cdktf.stringToTerraform(this._workflowName),
       actions: cdktf.listMapper(glueTriggerActionsToTerraform)(this._actions),
+      event_batching_condition: cdktf.listMapper(glueTriggerEventBatchingConditionToTerraform)(this._eventBatchingCondition),
       predicate: glueTriggerPredicateToTerraform(this._predicate.internalValue),
       timeouts: glueTriggerTimeoutsToTerraform(this._timeouts.internalValue),
     };

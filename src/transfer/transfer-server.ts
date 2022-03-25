@@ -48,6 +48,14 @@ export interface TransferServerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly loggingRole?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#post_authentication_login_banner TransferServer#post_authentication_login_banner}
+  */
+  readonly postAuthenticationLoginBanner?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#pre_authentication_login_banner TransferServer#pre_authentication_login_banner}
+  */
+  readonly preAuthenticationLoginBanner?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#protocols TransferServer#protocols}
   */
   readonly protocols?: string[];
@@ -291,6 +299,8 @@ export class TransferServer extends cdktf.TerraformResource {
     this._identityProviderType = config.identityProviderType;
     this._invocationRole = config.invocationRole;
     this._loggingRole = config.loggingRole;
+    this._postAuthenticationLoginBanner = config.postAuthenticationLoginBanner;
+    this._preAuthenticationLoginBanner = config.preAuthenticationLoginBanner;
     this._protocols = config.protocols;
     this._securityPolicyName = config.securityPolicyName;
     this._tags = config.tags;
@@ -483,6 +493,38 @@ export class TransferServer extends cdktf.TerraformResource {
     return this._loggingRole;
   }
 
+  // post_authentication_login_banner - computed: false, optional: true, required: false
+  private _postAuthenticationLoginBanner?: string; 
+  public get postAuthenticationLoginBanner() {
+    return this.getStringAttribute('post_authentication_login_banner');
+  }
+  public set postAuthenticationLoginBanner(value: string) {
+    this._postAuthenticationLoginBanner = value;
+  }
+  public resetPostAuthenticationLoginBanner() {
+    this._postAuthenticationLoginBanner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get postAuthenticationLoginBannerInput() {
+    return this._postAuthenticationLoginBanner;
+  }
+
+  // pre_authentication_login_banner - computed: false, optional: true, required: false
+  private _preAuthenticationLoginBanner?: string; 
+  public get preAuthenticationLoginBanner() {
+    return this.getStringAttribute('pre_authentication_login_banner');
+  }
+  public set preAuthenticationLoginBanner(value: string) {
+    this._preAuthenticationLoginBanner = value;
+  }
+  public resetPreAuthenticationLoginBanner() {
+    this._preAuthenticationLoginBanner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preAuthenticationLoginBannerInput() {
+    return this._preAuthenticationLoginBanner;
+  }
+
   // protocols - computed: true, optional: true, required: false
   private _protocols?: string[]; 
   public get protocols() {
@@ -595,6 +637,8 @@ export class TransferServer extends cdktf.TerraformResource {
       identity_provider_type: cdktf.stringToTerraform(this._identityProviderType),
       invocation_role: cdktf.stringToTerraform(this._invocationRole),
       logging_role: cdktf.stringToTerraform(this._loggingRole),
+      post_authentication_login_banner: cdktf.stringToTerraform(this._postAuthenticationLoginBanner),
+      pre_authentication_login_banner: cdktf.stringToTerraform(this._preAuthenticationLoginBanner),
       protocols: cdktf.listMapper(cdktf.stringToTerraform)(this._protocols),
       security_policy_name: cdktf.stringToTerraform(this._securityPolicyName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

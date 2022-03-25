@@ -8,17 +8,21 @@ import * as cdktf from 'cdktf';
 */
 export interface SsmMaintenanceWindowTaskConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task#cutoff_behavior SsmMaintenanceWindowTask#cutoff_behavior}
+  */
+  readonly cutoffBehavior?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task#description SsmMaintenanceWindowTask#description}
   */
   readonly description?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task#max_concurrency SsmMaintenanceWindowTask#max_concurrency}
   */
-  readonly maxConcurrency: string;
+  readonly maxConcurrency?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task#max_errors SsmMaintenanceWindowTask#max_errors}
   */
-  readonly maxErrors: string;
+  readonly maxErrors?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task#name SsmMaintenanceWindowTask#name}
   */
@@ -1175,6 +1179,7 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._cutoffBehavior = config.cutoffBehavior;
     this._description = config.description;
     this._maxConcurrency = config.maxConcurrency;
     this._maxErrors = config.maxErrors;
@@ -1191,6 +1196,27 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
+  // cutoff_behavior - computed: false, optional: true, required: false
+  private _cutoffBehavior?: string; 
+  public get cutoffBehavior() {
+    return this.getStringAttribute('cutoff_behavior');
+  }
+  public set cutoffBehavior(value: string) {
+    this._cutoffBehavior = value;
+  }
+  public resetCutoffBehavior() {
+    this._cutoffBehavior = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cutoffBehaviorInput() {
+    return this._cutoffBehavior;
+  }
 
   // description - computed: false, optional: true, required: false
   private _description?: string; 
@@ -1213,7 +1239,7 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // max_concurrency - computed: false, optional: false, required: true
+  // max_concurrency - computed: true, optional: true, required: false
   private _maxConcurrency?: string; 
   public get maxConcurrency() {
     return this.getStringAttribute('max_concurrency');
@@ -1221,18 +1247,24 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
   public set maxConcurrency(value: string) {
     this._maxConcurrency = value;
   }
+  public resetMaxConcurrency() {
+    this._maxConcurrency = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get maxConcurrencyInput() {
     return this._maxConcurrency;
   }
 
-  // max_errors - computed: false, optional: false, required: true
+  // max_errors - computed: true, optional: true, required: false
   private _maxErrors?: string; 
   public get maxErrors() {
     return this.getStringAttribute('max_errors');
   }
   public set maxErrors(value: string) {
     this._maxErrors = value;
+  }
+  public resetMaxErrors() {
+    this._maxErrors = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get maxErrorsInput() {
@@ -1326,6 +1358,11 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
     return this._windowId;
   }
 
+  // window_task_id - computed: true, optional: false, required: false
+  public get windowTaskId() {
+    return this.getStringAttribute('window_task_id');
+  }
+
   // targets - computed: false, optional: true, required: false
   private _targets?: SsmMaintenanceWindowTaskTargets[] | cdktf.IResolvable; 
   public get targets() {
@@ -1365,6 +1402,7 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      cutoff_behavior: cdktf.stringToTerraform(this._cutoffBehavior),
       description: cdktf.stringToTerraform(this._description),
       max_concurrency: cdktf.stringToTerraform(this._maxConcurrency),
       max_errors: cdktf.stringToTerraform(this._maxErrors),

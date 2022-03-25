@@ -64,10 +64,6 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   */
   readonly instanceInterruptionBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#instance_interruption_behaviour SpotInstanceRequest#instance_interruption_behaviour}
-  */
-  readonly instanceInterruptionBehaviour?: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#instance_type SpotInstanceRequest#instance_type}
   */
   readonly instanceType?: string;
@@ -147,6 +143,10 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#user_data_base64 SpotInstanceRequest#user_data_base64}
   */
   readonly userDataBase64?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#user_data_replace_on_change SpotInstanceRequest#user_data_replace_on_change}
+  */
+  readonly userDataReplaceOnChange?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#valid_from SpotInstanceRequest#valid_from}
   */
@@ -1291,7 +1291,6 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     this._iamInstanceProfile = config.iamInstanceProfile;
     this._instanceInitiatedShutdownBehavior = config.instanceInitiatedShutdownBehavior;
     this._instanceInterruptionBehavior = config.instanceInterruptionBehavior;
-    this._instanceInterruptionBehaviour = config.instanceInterruptionBehaviour;
     this._instanceType = config.instanceType;
     this._ipv6AddressCount = config.ipv6AddressCount;
     this._ipv6Addresses = config.ipv6Addresses;
@@ -1312,6 +1311,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     this._tenancy = config.tenancy;
     this._userData = config.userData;
     this._userDataBase64 = config.userDataBase64;
+    this._userDataReplaceOnChange = config.userDataReplaceOnChange;
     this._validFrom = config.validFrom;
     this._validUntil = config.validUntil;
     this._volumeTags = config.volumeTags;
@@ -1551,7 +1551,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this._instanceInitiatedShutdownBehavior;
   }
 
-  // instance_interruption_behavior - computed: true, optional: true, required: false
+  // instance_interruption_behavior - computed: false, optional: true, required: false
   private _instanceInterruptionBehavior?: string; 
   public get instanceInterruptionBehavior() {
     return this.getStringAttribute('instance_interruption_behavior');
@@ -1565,22 +1565,6 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get instanceInterruptionBehaviorInput() {
     return this._instanceInterruptionBehavior;
-  }
-
-  // instance_interruption_behaviour - computed: true, optional: true, required: false
-  private _instanceInterruptionBehaviour?: string; 
-  public get instanceInterruptionBehaviour() {
-    return this.getStringAttribute('instance_interruption_behaviour');
-  }
-  public set instanceInterruptionBehaviour(value: string) {
-    this._instanceInterruptionBehaviour = value;
-  }
-  public resetInstanceInterruptionBehaviour() {
-    this._instanceInterruptionBehaviour = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceInterruptionBehaviourInput() {
-    return this._instanceInterruptionBehaviour;
   }
 
   // instance_state - computed: true, optional: false, required: false
@@ -1953,6 +1937,22 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this._userDataBase64;
   }
 
+  // user_data_replace_on_change - computed: false, optional: true, required: false
+  private _userDataReplaceOnChange?: boolean | cdktf.IResolvable; 
+  public get userDataReplaceOnChange() {
+    return this.getBooleanAttribute('user_data_replace_on_change');
+  }
+  public set userDataReplaceOnChange(value: boolean | cdktf.IResolvable) {
+    this._userDataReplaceOnChange = value;
+  }
+  public resetUserDataReplaceOnChange() {
+    this._userDataReplaceOnChange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userDataReplaceOnChangeInput() {
+    return this._userDataReplaceOnChange;
+  }
+
   // valid_from - computed: true, optional: true, required: false
   private _validFrom?: string; 
   public get validFrom() {
@@ -2216,7 +2216,6 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
       iam_instance_profile: cdktf.stringToTerraform(this._iamInstanceProfile),
       instance_initiated_shutdown_behavior: cdktf.stringToTerraform(this._instanceInitiatedShutdownBehavior),
       instance_interruption_behavior: cdktf.stringToTerraform(this._instanceInterruptionBehavior),
-      instance_interruption_behaviour: cdktf.stringToTerraform(this._instanceInterruptionBehaviour),
       instance_type: cdktf.stringToTerraform(this._instanceType),
       ipv6_address_count: cdktf.numberToTerraform(this._ipv6AddressCount),
       ipv6_addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6Addresses),
@@ -2237,6 +2236,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
       tenancy: cdktf.stringToTerraform(this._tenancy),
       user_data: cdktf.stringToTerraform(this._userData),
       user_data_base64: cdktf.stringToTerraform(this._userDataBase64),
+      user_data_replace_on_change: cdktf.booleanToTerraform(this._userDataReplaceOnChange),
       valid_from: cdktf.stringToTerraform(this._validFrom),
       valid_until: cdktf.stringToTerraform(this._validUntil),
       volume_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._volumeTags),

@@ -36,6 +36,10 @@ export interface DmsReplicationTaskConfig extends cdktf.TerraformMetaArguments {
   */
   readonly sourceEndpointArn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_task#start_replication_task DmsReplicationTask#start_replication_task}
+  */
+  readonly startReplicationTask?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_task#table_mappings DmsReplicationTask#table_mappings}
   */
   readonly tableMappings: string;
@@ -92,6 +96,7 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
     this._replicationTaskId = config.replicationTaskId;
     this._replicationTaskSettings = config.replicationTaskSettings;
     this._sourceEndpointArn = config.sourceEndpointArn;
+    this._startReplicationTask = config.startReplicationTask;
     this._tableMappings = config.tableMappings;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -102,7 +107,7 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // cdc_start_position - computed: false, optional: true, required: false
+  // cdc_start_position - computed: true, optional: true, required: false
   private _cdcStartPosition?: string; 
   public get cdcStartPosition() {
     return this.getStringAttribute('cdc_start_position');
@@ -212,6 +217,27 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
     return this._sourceEndpointArn;
   }
 
+  // start_replication_task - computed: false, optional: true, required: false
+  private _startReplicationTask?: boolean | cdktf.IResolvable; 
+  public get startReplicationTask() {
+    return this.getBooleanAttribute('start_replication_task');
+  }
+  public set startReplicationTask(value: boolean | cdktf.IResolvable) {
+    this._startReplicationTask = value;
+  }
+  public resetStartReplicationTask() {
+    this._startReplicationTask = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startReplicationTaskInput() {
+    return this._startReplicationTask;
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+
   // table_mappings - computed: false, optional: false, required: true
   private _tableMappings?: string; 
   public get tableMappings() {
@@ -283,6 +309,7 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
       replication_task_id: cdktf.stringToTerraform(this._replicationTaskId),
       replication_task_settings: cdktf.stringToTerraform(this._replicationTaskSettings),
       source_endpoint_arn: cdktf.stringToTerraform(this._sourceEndpointArn),
+      start_replication_task: cdktf.booleanToTerraform(this._startReplicationTask),
       table_mappings: cdktf.stringToTerraform(this._tableMappings),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

@@ -94,6 +94,11 @@ export class DataAwsImagebuilderImagePipeline extends cdktf.TerraformDataSource 
     return this._arn;
   }
 
+  // container_recipe_arn - computed: true, optional: false, required: false
+  public get containerRecipeArn() {
+    return this.getStringAttribute('container_recipe_arn');
+  }
+
   // date_created - computed: true, optional: false, required: false
   public get dateCreated() {
     return this.getStringAttribute('date_created');

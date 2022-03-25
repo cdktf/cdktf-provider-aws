@@ -19,6 +19,78 @@ export interface DataAwsServicecatalogPortfolioConfig extends cdktf.TerraformMet
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_portfolio#tags DataAwsServicecatalogPortfolio#tags}
   */
   readonly tags?: { [key: string]: string };
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_portfolio#timeouts DataAwsServicecatalogPortfolio#timeouts}
+  */
+  readonly timeouts?: DataAwsServicecatalogPortfolioTimeouts;
+}
+export interface DataAwsServicecatalogPortfolioTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_portfolio#read DataAwsServicecatalogPortfolio#read}
+  */
+  readonly read?: string;
+}
+
+export function dataAwsServicecatalogPortfolioTimeoutsToTerraform(struct?: DataAwsServicecatalogPortfolioTimeoutsOutputReference | DataAwsServicecatalogPortfolioTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    read: cdktf.stringToTerraform(struct!.read),
+  }
+}
+
+export class DataAwsServicecatalogPortfolioTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): DataAwsServicecatalogPortfolioTimeouts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsServicecatalogPortfolioTimeouts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._read = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._read = value.read;
+    }
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
+  }
 }
 
 /**
@@ -56,6 +128,7 @@ export class DataAwsServicecatalogPortfolio extends cdktf.TerraformDataSource {
     this._acceptLanguage = config.acceptLanguage;
     this._id = config.id;
     this._tags = config.tags;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -132,6 +205,22 @@ export class DataAwsServicecatalogPortfolio extends cdktf.TerraformDataSource {
     return this._tags;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new DataAwsServicecatalogPortfolioTimeoutsOutputReference(this, "timeouts", true);
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: DataAwsServicecatalogPortfolioTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -141,6 +230,7 @@ export class DataAwsServicecatalogPortfolio extends cdktf.TerraformDataSource {
       accept_language: cdktf.stringToTerraform(this._acceptLanguage),
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      timeouts: dataAwsServicecatalogPortfolioTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

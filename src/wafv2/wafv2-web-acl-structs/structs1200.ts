@@ -23332,6 +23332,10 @@ export interface Wafv2WebAclRuleStatementManagedRuleGroupStatement {
   */
   readonly vendorName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#version Wafv2WebAcl#version}
+  */
+  readonly version?: string;
+  /**
   * excluded_rule block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#excluded_rule Wafv2WebAcl#excluded_rule}
@@ -23353,6 +23357,7 @@ export function wafv2WebAclRuleStatementManagedRuleGroupStatementToTerraform(str
   return {
     name: cdktf.stringToTerraform(struct!.name),
     vendor_name: cdktf.stringToTerraform(struct!.vendorName),
+    version: cdktf.stringToTerraform(struct!.version),
     excluded_rule: cdktf.listMapper(wafv2WebAclRuleStatementManagedRuleGroupStatementExcludedRuleToTerraform)(struct!.excludedRule),
     scope_down_statement: wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementToTerraform(struct!.scopeDownStatement),
   }
@@ -23381,6 +23386,10 @@ export class Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference ex
       hasAnyValues = true;
       internalValueResult.vendorName = this._vendorName;
     }
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
     if (this._excludedRule !== undefined) {
       hasAnyValues = true;
       internalValueResult.excludedRule = this._excludedRule;
@@ -23397,6 +23406,7 @@ export class Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference ex
       this.isEmptyObject = false;
       this._name = undefined;
       this._vendorName = undefined;
+      this._version = undefined;
       this._excludedRule = undefined;
       this._scopeDownStatement.internalValue = undefined;
     }
@@ -23404,6 +23414,7 @@ export class Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference ex
       this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
       this._vendorName = value.vendorName;
+      this._version = value.version;
       this._excludedRule = value.excludedRule;
       this._scopeDownStatement.internalValue = value.scopeDownStatement;
     }
@@ -23433,6 +23444,22 @@ export class Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference ex
   // Temporarily expose input value. Use with caution.
   public get vendorNameInput() {
     return this._vendorName;
+  }
+
+  // version - computed: false, optional: true, required: false
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
   }
 
   // excluded_rule - computed: false, optional: true, required: false

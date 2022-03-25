@@ -52,6 +52,10 @@ export interface SsmAssociationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly scheduleExpression?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_association#wait_for_success_timeout_seconds SsmAssociation#wait_for_success_timeout_seconds}
+  */
+  readonly waitForSuccessTimeoutSeconds?: number;
+  /**
   * output_location block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_association#output_location SsmAssociation#output_location}
@@ -247,6 +251,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
     this._name = config.name;
     this._parameters = config.parameters;
     this._scheduleExpression = config.scheduleExpression;
+    this._waitForSuccessTimeoutSeconds = config.waitForSuccessTimeoutSeconds;
     this._outputLocation.internalValue = config.outputLocation;
     this._targets = config.targets;
   }
@@ -269,6 +274,11 @@ export class SsmAssociation extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get applyOnlyAtCronIntervalInput() {
     return this._applyOnlyAtCronInterval;
+  }
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
   }
 
   // association_id - computed: true, optional: false, required: false
@@ -438,6 +448,22 @@ export class SsmAssociation extends cdktf.TerraformResource {
     return this._scheduleExpression;
   }
 
+  // wait_for_success_timeout_seconds - computed: false, optional: true, required: false
+  private _waitForSuccessTimeoutSeconds?: number; 
+  public get waitForSuccessTimeoutSeconds() {
+    return this.getNumberAttribute('wait_for_success_timeout_seconds');
+  }
+  public set waitForSuccessTimeoutSeconds(value: number) {
+    this._waitForSuccessTimeoutSeconds = value;
+  }
+  public resetWaitForSuccessTimeoutSeconds() {
+    this._waitForSuccessTimeoutSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get waitForSuccessTimeoutSecondsInput() {
+    return this._waitForSuccessTimeoutSeconds;
+  }
+
   // output_location - computed: false, optional: true, required: false
   private _outputLocation = new SsmAssociationOutputLocationOutputReference(this, "output_location", true);
   public get outputLocation() {
@@ -488,6 +514,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
       schedule_expression: cdktf.stringToTerraform(this._scheduleExpression),
+      wait_for_success_timeout_seconds: cdktf.numberToTerraform(this._waitForSuccessTimeoutSeconds),
       output_location: ssmAssociationOutputLocationToTerraform(this._outputLocation.internalValue),
       targets: cdktf.listMapper(ssmAssociationTargetsToTerraform)(this._targets),
     };

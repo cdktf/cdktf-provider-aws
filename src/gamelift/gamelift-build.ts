@@ -44,6 +44,10 @@ export interface GameliftBuildStorageLocation {
   */
   readonly key: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_build#object_version GameliftBuild#object_version}
+  */
+  readonly objectVersion?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_build#role_arn GameliftBuild#role_arn}
   */
   readonly roleArn: string;
@@ -57,6 +61,7 @@ export function gameliftBuildStorageLocationToTerraform(struct?: GameliftBuildSt
   return {
     bucket: cdktf.stringToTerraform(struct!.bucket),
     key: cdktf.stringToTerraform(struct!.key),
+    object_version: cdktf.stringToTerraform(struct!.objectVersion),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
   }
 }
@@ -84,6 +89,10 @@ export class GameliftBuildStorageLocationOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.key = this._key;
     }
+    if (this._objectVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.objectVersion = this._objectVersion;
+    }
     if (this._roleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleArn = this._roleArn;
@@ -96,12 +105,14 @@ export class GameliftBuildStorageLocationOutputReference extends cdktf.ComplexOb
       this.isEmptyObject = false;
       this._bucket = undefined;
       this._key = undefined;
+      this._objectVersion = undefined;
       this._roleArn = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._bucket = value.bucket;
       this._key = value.key;
+      this._objectVersion = value.objectVersion;
       this._roleArn = value.roleArn;
     }
   }
@@ -130,6 +141,22 @@ export class GameliftBuildStorageLocationOutputReference extends cdktf.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get keyInput() {
     return this._key;
+  }
+
+  // object_version - computed: false, optional: true, required: false
+  private _objectVersion?: string; 
+  public get objectVersion() {
+    return this.getStringAttribute('object_version');
+  }
+  public set objectVersion(value: string) {
+    this._objectVersion = value;
+  }
+  public resetObjectVersion() {
+    this._objectVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get objectVersionInput() {
+    return this._objectVersion;
   }
 
   // role_arn - computed: false, optional: false, required: true

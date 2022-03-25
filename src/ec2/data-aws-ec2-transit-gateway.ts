@@ -126,6 +126,11 @@ export class DataAwsEc2TransitGateway extends cdktf.TerraformDataSource {
     return this.getStringAttribute('id');
   }
 
+  // multicast_support - computed: true, optional: false, required: false
+  public get multicastSupport() {
+    return this.getStringAttribute('multicast_support');
+  }
+
   // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
@@ -150,6 +155,11 @@ export class DataAwsEc2TransitGateway extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags;
+  }
+
+  // transit_gateway_cidr_blocks - computed: true, optional: false, required: false
+  public get transitGatewayCidrBlocks() {
+    return this.getListAttribute('transit_gateway_cidr_blocks');
   }
 
   // vpn_ecmp_support - computed: true, optional: false, required: false

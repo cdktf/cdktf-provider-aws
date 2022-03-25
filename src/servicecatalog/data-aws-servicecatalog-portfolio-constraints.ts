@@ -19,6 +19,12 @@ export interface DataAwsServicecatalogPortfolioConstraintsConfig extends cdktf.T
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_portfolio_constraints#product_id DataAwsServicecatalogPortfolioConstraints#product_id}
   */
   readonly productId?: string;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_portfolio_constraints#timeouts DataAwsServicecatalogPortfolioConstraints#timeouts}
+  */
+  readonly timeouts?: DataAwsServicecatalogPortfolioConstraintsTimeouts;
 }
 export class DataAwsServicecatalogPortfolioConstraintsDetails extends cdktf.ComplexComputedList {
 
@@ -50,6 +56,72 @@ export class DataAwsServicecatalogPortfolioConstraintsDetails extends cdktf.Comp
   // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
+  }
+}
+export interface DataAwsServicecatalogPortfolioConstraintsTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_portfolio_constraints#read DataAwsServicecatalogPortfolioConstraints#read}
+  */
+  readonly read?: string;
+}
+
+export function dataAwsServicecatalogPortfolioConstraintsTimeoutsToTerraform(struct?: DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference | DataAwsServicecatalogPortfolioConstraintsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    read: cdktf.stringToTerraform(struct!.read),
+  }
+}
+
+export class DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): DataAwsServicecatalogPortfolioConstraintsTimeouts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsServicecatalogPortfolioConstraintsTimeouts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._read = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._read = value.read;
+    }
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
   }
 }
 
@@ -88,6 +160,7 @@ export class DataAwsServicecatalogPortfolioConstraints extends cdktf.TerraformDa
     this._acceptLanguage = config.acceptLanguage;
     this._portfolioId = config.portfolioId;
     this._productId = config.productId;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -149,6 +222,22 @@ export class DataAwsServicecatalogPortfolioConstraints extends cdktf.TerraformDa
     return this._productId;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference(this, "timeouts", true);
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: DataAwsServicecatalogPortfolioConstraintsTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -158,6 +247,7 @@ export class DataAwsServicecatalogPortfolioConstraints extends cdktf.TerraformDa
       accept_language: cdktf.stringToTerraform(this._acceptLanguage),
       portfolio_id: cdktf.stringToTerraform(this._portfolioId),
       product_id: cdktf.stringToTerraform(this._productId),
+      timeouts: dataAwsServicecatalogPortfolioConstraintsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

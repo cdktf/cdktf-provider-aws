@@ -154,7 +154,7 @@ export class DataAwsEmrReleaseLabels extends cdktf.TerraformDataSource {
 
   // release_labels - computed: true, optional: false, required: false
   public get releaseLabels() {
-    return cdktf.Fn.tolist(this.getListAttribute('release_labels'));
+    return this.getListAttribute('release_labels');
   }
 
   // filters - computed: false, optional: true, required: false

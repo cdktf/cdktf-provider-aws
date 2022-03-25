@@ -52,6 +52,10 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly customerOwnedIpEnabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#db_name DbInstance#db_name}
+  */
+  readonly dbName?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#db_subnet_group_name DbInstance#db_subnet_group_name}
   */
   readonly dbSubnetGroupName?: string;
@@ -248,6 +252,10 @@ export interface DbInstanceRestoreToPointInTime {
   */
   readonly restoreTime?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#source_db_instance_automated_backups_arn DbInstance#source_db_instance_automated_backups_arn}
+  */
+  readonly sourceDbInstanceAutomatedBackupsArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#source_db_instance_identifier DbInstance#source_db_instance_identifier}
   */
   readonly sourceDbInstanceIdentifier?: string;
@@ -268,6 +276,7 @@ export function dbInstanceRestoreToPointInTimeToTerraform(struct?: DbInstanceRes
   }
   return {
     restore_time: cdktf.stringToTerraform(struct!.restoreTime),
+    source_db_instance_automated_backups_arn: cdktf.stringToTerraform(struct!.sourceDbInstanceAutomatedBackupsArn),
     source_db_instance_identifier: cdktf.stringToTerraform(struct!.sourceDbInstanceIdentifier),
     source_dbi_resource_id: cdktf.stringToTerraform(struct!.sourceDbiResourceId),
     use_latest_restorable_time: cdktf.booleanToTerraform(struct!.useLatestRestorableTime),
@@ -293,6 +302,10 @@ export class DbInstanceRestoreToPointInTimeOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.restoreTime = this._restoreTime;
     }
+    if (this._sourceDbInstanceAutomatedBackupsArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceDbInstanceAutomatedBackupsArn = this._sourceDbInstanceAutomatedBackupsArn;
+    }
     if (this._sourceDbInstanceIdentifier !== undefined) {
       hasAnyValues = true;
       internalValueResult.sourceDbInstanceIdentifier = this._sourceDbInstanceIdentifier;
@@ -312,6 +325,7 @@ export class DbInstanceRestoreToPointInTimeOutputReference extends cdktf.Complex
     if (value === undefined) {
       this.isEmptyObject = false;
       this._restoreTime = undefined;
+      this._sourceDbInstanceAutomatedBackupsArn = undefined;
       this._sourceDbInstanceIdentifier = undefined;
       this._sourceDbiResourceId = undefined;
       this._useLatestRestorableTime = undefined;
@@ -319,6 +333,7 @@ export class DbInstanceRestoreToPointInTimeOutputReference extends cdktf.Complex
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._restoreTime = value.restoreTime;
+      this._sourceDbInstanceAutomatedBackupsArn = value.sourceDbInstanceAutomatedBackupsArn;
       this._sourceDbInstanceIdentifier = value.sourceDbInstanceIdentifier;
       this._sourceDbiResourceId = value.sourceDbiResourceId;
       this._useLatestRestorableTime = value.useLatestRestorableTime;
@@ -339,6 +354,22 @@ export class DbInstanceRestoreToPointInTimeOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get restoreTimeInput() {
     return this._restoreTime;
+  }
+
+  // source_db_instance_automated_backups_arn - computed: false, optional: true, required: false
+  private _sourceDbInstanceAutomatedBackupsArn?: string; 
+  public get sourceDbInstanceAutomatedBackupsArn() {
+    return this.getStringAttribute('source_db_instance_automated_backups_arn');
+  }
+  public set sourceDbInstanceAutomatedBackupsArn(value: string) {
+    this._sourceDbInstanceAutomatedBackupsArn = value;
+  }
+  public resetSourceDbInstanceAutomatedBackupsArn() {
+    this._sourceDbInstanceAutomatedBackupsArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceDbInstanceAutomatedBackupsArnInput() {
+    return this._sourceDbInstanceAutomatedBackupsArn;
   }
 
   // source_db_instance_identifier - computed: false, optional: true, required: false
@@ -715,6 +746,7 @@ export class DbInstance extends cdktf.TerraformResource {
     this._characterSetName = config.characterSetName;
     this._copyTagsToSnapshot = config.copyTagsToSnapshot;
     this._customerOwnedIpEnabled = config.customerOwnedIpEnabled;
+    this._dbName = config.dbName;
     this._dbSubnetGroupName = config.dbSubnetGroupName;
     this._deleteAutomatedBackups = config.deleteAutomatedBackups;
     this._deletionProtection = config.deletionProtection;
@@ -951,6 +983,22 @@ export class DbInstance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get customerOwnedIpEnabledInput() {
     return this._customerOwnedIpEnabled;
+  }
+
+  // db_name - computed: true, optional: true, required: false
+  private _dbName?: string; 
+  public get dbName() {
+    return this.getStringAttribute('db_name');
+  }
+  public set dbName(value: string) {
+    this._dbName = value;
+  }
+  public resetDbName() {
+    this._dbName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbNameInput() {
+    return this._dbName;
   }
 
   // db_subnet_group_name - computed: true, optional: true, required: false
@@ -1471,7 +1519,7 @@ export class DbInstance extends cdktf.TerraformResource {
     return this._publiclyAccessible;
   }
 
-  // replica_mode - computed: false, optional: true, required: false
+  // replica_mode - computed: true, optional: true, required: false
   private _replicaMode?: string; 
   public get replicaMode() {
     return this.getStringAttribute('replica_mode');
@@ -1743,6 +1791,7 @@ export class DbInstance extends cdktf.TerraformResource {
       character_set_name: cdktf.stringToTerraform(this._characterSetName),
       copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
       customer_owned_ip_enabled: cdktf.booleanToTerraform(this._customerOwnedIpEnabled),
+      db_name: cdktf.stringToTerraform(this._dbName),
       db_subnet_group_name: cdktf.stringToTerraform(this._dbSubnetGroupName),
       delete_automated_backups: cdktf.booleanToTerraform(this._deleteAutomatedBackups),
       deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),

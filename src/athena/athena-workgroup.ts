@@ -109,6 +109,69 @@ export class AthenaWorkgroupConfigurationEngineVersionOutputReference extends cd
     return this._selectedEngineVersion;
   }
 }
+export interface AthenaWorkgroupConfigurationResultConfigurationAclConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#s3_acl_option AthenaWorkgroup#s3_acl_option}
+  */
+  readonly s3AclOption: string;
+}
+
+export function athenaWorkgroupConfigurationResultConfigurationAclConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference | AthenaWorkgroupConfigurationResultConfigurationAclConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    s3_acl_option: cdktf.stringToTerraform(struct!.s3AclOption),
+  }
+}
+
+export class AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): AthenaWorkgroupConfigurationResultConfigurationAclConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._s3AclOption !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3AclOption = this._s3AclOption;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AthenaWorkgroupConfigurationResultConfigurationAclConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._s3AclOption = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._s3AclOption = value.s3AclOption;
+    }
+  }
+
+  // s3_acl_option - computed: false, optional: false, required: true
+  private _s3AclOption?: string; 
+  public get s3AclOption() {
+    return this.getStringAttribute('s3_acl_option');
+  }
+  public set s3AclOption(value: string) {
+    this._s3AclOption = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3AclOptionInput() {
+    return this._s3AclOption;
+  }
+}
 export interface AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#encryption_option AthenaWorkgroup#encryption_option}
@@ -204,9 +267,19 @@ export class AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurat
 }
 export interface AthenaWorkgroupConfigurationResultConfiguration {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#expected_bucket_owner AthenaWorkgroup#expected_bucket_owner}
+  */
+  readonly expectedBucketOwner?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#output_location AthenaWorkgroup#output_location}
   */
   readonly outputLocation?: string;
+  /**
+  * acl_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup#acl_configuration AthenaWorkgroup#acl_configuration}
+  */
+  readonly aclConfiguration?: AthenaWorkgroupConfigurationResultConfigurationAclConfiguration;
   /**
   * encryption_configuration block
   * 
@@ -221,7 +294,9 @@ export function athenaWorkgroupConfigurationResultConfigurationToTerraform(struc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    expected_bucket_owner: cdktf.stringToTerraform(struct!.expectedBucketOwner),
     output_location: cdktf.stringToTerraform(struct!.outputLocation),
+    acl_configuration: athenaWorkgroupConfigurationResultConfigurationAclConfigurationToTerraform(struct!.aclConfiguration),
     encryption_configuration: athenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationToTerraform(struct!.encryptionConfiguration),
   }
 }
@@ -241,9 +316,17 @@ export class AthenaWorkgroupConfigurationResultConfigurationOutputReference exte
   public get internalValue(): AthenaWorkgroupConfigurationResultConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._expectedBucketOwner !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expectedBucketOwner = this._expectedBucketOwner;
+    }
     if (this._outputLocation !== undefined) {
       hasAnyValues = true;
       internalValueResult.outputLocation = this._outputLocation;
+    }
+    if (this._aclConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aclConfiguration = this._aclConfiguration?.internalValue;
     }
     if (this._encryptionConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -255,14 +338,34 @@ export class AthenaWorkgroupConfigurationResultConfigurationOutputReference exte
   public set internalValue(value: AthenaWorkgroupConfigurationResultConfiguration | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._expectedBucketOwner = undefined;
       this._outputLocation = undefined;
+      this._aclConfiguration.internalValue = undefined;
       this._encryptionConfiguration.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._expectedBucketOwner = value.expectedBucketOwner;
       this._outputLocation = value.outputLocation;
+      this._aclConfiguration.internalValue = value.aclConfiguration;
       this._encryptionConfiguration.internalValue = value.encryptionConfiguration;
     }
+  }
+
+  // expected_bucket_owner - computed: false, optional: true, required: false
+  private _expectedBucketOwner?: string; 
+  public get expectedBucketOwner() {
+    return this.getStringAttribute('expected_bucket_owner');
+  }
+  public set expectedBucketOwner(value: string) {
+    this._expectedBucketOwner = value;
+  }
+  public resetExpectedBucketOwner() {
+    this._expectedBucketOwner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expectedBucketOwnerInput() {
+    return this._expectedBucketOwner;
   }
 
   // output_location - computed: false, optional: true, required: false
@@ -279,6 +382,22 @@ export class AthenaWorkgroupConfigurationResultConfigurationOutputReference exte
   // Temporarily expose input value. Use with caution.
   public get outputLocationInput() {
     return this._outputLocation;
+  }
+
+  // acl_configuration - computed: false, optional: true, required: false
+  private _aclConfiguration = new AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference(this, "acl_configuration", true);
+  public get aclConfiguration() {
+    return this._aclConfiguration;
+  }
+  public putAclConfiguration(value: AthenaWorkgroupConfigurationResultConfigurationAclConfiguration) {
+    this._aclConfiguration.internalValue = value;
+  }
+  public resetAclConfiguration() {
+    this._aclConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aclConfigurationInput() {
+    return this._aclConfiguration.internalValue;
   }
 
   // encryption_configuration - computed: false, optional: true, required: false

@@ -76,11 +76,29 @@ export class DataAwsImagebuilderImageRecipeBlockDeviceMapping extends cdktf.Comp
     return this.getStringAttribute('virtual_name');
   }
 }
+export class DataAwsImagebuilderImageRecipeComponentParameter extends cdktf.ComplexComputedList {
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
 export class DataAwsImagebuilderImageRecipeComponent extends cdktf.ComplexComputedList {
 
   // component_arn - computed: true, optional: false, required: false
   public get componentArn() {
     return this.getStringAttribute('component_arn');
+  }
+
+  // parameter - computed: true, optional: false, required: false
+  public get parameter() {
+    // Getting the computed value is not yet implemented
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('parameter')));
   }
 }
 

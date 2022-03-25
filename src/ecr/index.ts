@@ -11,4 +11,5 @@ export * from './ecrpublic-repository-policy';
 export * from './data-aws-ecr-authorization-token';
 export * from './data-aws-ecr-image';
 export * from './data-aws-ecr-repository';
+export * from './data-aws-ecrpublic-authorization-token';
 

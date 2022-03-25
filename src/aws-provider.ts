@@ -19,6 +19,24 @@ from the 'Security & Credentials' section of the AWS console.
   */
   readonly allowedAccountIds?: string[];
   /**
+  * File containing custom root and intermediate certificates. Can also be configured using the `AWS_CA_BUNDLE` environment variable. (Setting `ca_bundle` in the shared config file is not supported.)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#custom_ca_bundle AwsProvider#custom_ca_bundle}
+  */
+  readonly customCaBundle?: string;
+  /**
+  * Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#ec2_metadata_service_endpoint AwsProvider#ec2_metadata_service_endpoint}
+  */
+  readonly ec2MetadataServiceEndpoint?: string;
+  /**
+  * Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#ec2_metadata_service_endpoint_mode AwsProvider#ec2_metadata_service_endpoint_mode}
+  */
+  readonly ec2MetadataServiceEndpointMode?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#forbidden_account_ids AwsProvider#forbidden_account_ids}
   */
   readonly forbiddenAccountIds?: string[];
@@ -55,16 +73,25 @@ are us-east-1, us-west-2, etc.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#region AwsProvider#region}
   */
-  readonly region: string;
+  readonly region?: string;
   /**
-  * Set this to true to force the request to use path-style addressing,
-i.e., http://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will
+  * Set this to true to enable the request to use path-style addressing,
+i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will
 use virtual hosted bucket addressing when possible
-(http://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service.
+(https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#s3_force_path_style AwsProvider#s3_force_path_style}
   */
   readonly s3ForcePathStyle?: boolean | cdktf.IResolvable;
+  /**
+  * Set this to true to enable the request to use path-style addressing,
+i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will
+use virtual hosted bucket addressing when possible
+(https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#s3_use_path_style AwsProvider#s3_use_path_style}
+  */
+  readonly s3UsePathStyle?: boolean | cdktf.IResolvable;
   /**
   * The secret key for API operations. You can retrieve this
 from the 'Security & Credentials' section of the AWS console.
@@ -73,12 +100,23 @@ from the 'Security & Credentials' section of the AWS console.
   */
   readonly secretKey?: string;
   /**
-  * The path to the shared credentials file. If not set
-this defaults to ~/.aws/credentials.
+  * List of paths to shared config files. If not set, defaults to [~/.aws/config].
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#shared_config_files AwsProvider#shared_config_files}
+  */
+  readonly sharedConfigFiles?: string[];
+  /**
+  * The path to the shared credentials file. If not set, defaults to ~/.aws/credentials.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#shared_credentials_file AwsProvider#shared_credentials_file}
   */
   readonly sharedCredentialsFile?: string;
+  /**
+  * List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials].
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#shared_credentials_files AwsProvider#shared_credentials_files}
+  */
+  readonly sharedCredentialsFiles?: string[];
   /**
   * Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented.
   * 
@@ -92,6 +130,8 @@ this defaults to ~/.aws/credentials.
   */
   readonly skipGetEc2Platforms?: boolean | cdktf.IResolvable;
   /**
+  * Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#skip_metadata_api_check AwsProvider#skip_metadata_api_check}
   */
   readonly skipMetadataApiCheck?: boolean | cdktf.IResolvable;
@@ -108,12 +148,31 @@ this defaults to ~/.aws/credentials.
   */
   readonly skipRequestingAccountId?: boolean | cdktf.IResolvable;
   /**
+  * The region where AWS STS operations will take place. Examples
+are us-east-1 and us-west-2.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#sts_region AwsProvider#sts_region}
+  */
+  readonly stsRegion?: string;
+  /**
   * session token. A session token is only required if you are
 using temporary security credentials.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#token AwsProvider#token}
   */
   readonly token?: string;
+  /**
+  * Resolve an endpoint with DualStack capability
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#use_dualstack_endpoint AwsProvider#use_dualstack_endpoint}
+  */
+  readonly useDualstackEndpoint?: boolean | cdktf.IResolvable;
+  /**
+  * Resolve an endpoint with FIPS capability
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#use_fips_endpoint AwsProvider#use_fips_endpoint}
+  */
+  readonly useFipsEndpoint?: boolean | cdktf.IResolvable;
   /**
   * Alias name
   * 
@@ -146,6 +205,12 @@ using temporary security credentials.
   readonly ignoreTags?: AwsProviderIgnoreTags;
 }
 export interface AwsProviderAssumeRole {
+  /**
+  * The duration, between 15 minutes and 12 hours, of the role session. Valid time units are ns, us (or µs), ms, s, h, or m.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#duration AwsProvider#duration}
+  */
+  readonly duration?: string;
   /**
   * The duration, in seconds, of the role session.
   * 
@@ -202,6 +267,7 @@ export function awsProviderAssumeRoleToTerraform(struct?: AwsProviderAssumeRole)
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    duration: cdktf.stringToTerraform(struct!.duration),
     duration_seconds: cdktf.numberToTerraform(struct!.durationSeconds),
     external_id: cdktf.stringToTerraform(struct!.externalId),
     policy: cdktf.stringToTerraform(struct!.policy),
@@ -263,6 +329,12 @@ export interface AwsProviderEndpoints {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#alexaforbusiness AwsProvider#alexaforbusiness}
   */
   readonly alexaforbusiness?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#amg AwsProvider#amg}
+  */
+  readonly amg?: string;
   /**
   * Use this to override the default service endpoint URL
   * 
@@ -527,6 +599,12 @@ export interface AwsProviderEndpoints {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloudwatchlogs AwsProvider#cloudwatchlogs}
   */
   readonly cloudwatchlogs?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloudwatchrum AwsProvider#cloudwatchrum}
+  */
+  readonly cloudwatchrum?: string;
   /**
   * Use this to override the default service endpoint URL
   * 
@@ -986,6 +1064,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#grafana AwsProvider#grafana}
+  */
+  readonly grafana?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#greengrass AwsProvider#greengrass}
   */
   readonly greengrass?: string;
@@ -1160,6 +1244,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#keyspaces AwsProvider#keyspaces}
+  */
+  readonly keyspaces?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#kinesis AwsProvider#kinesis}
   */
   readonly kinesis?: string;
@@ -1319,6 +1409,12 @@ export interface AwsProviderEndpoints {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#managedblockchain AwsProvider#managedblockchain}
   */
   readonly managedblockchain?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#managedgrafana AwsProvider#managedgrafana}
+  */
+  readonly managedgrafana?: string;
   /**
   * Use this to override the default service endpoint URL
   * 
@@ -2052,6 +2148,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     acm: cdktf.stringToTerraform(struct!.acm),
     acmpca: cdktf.stringToTerraform(struct!.acmpca),
     alexaforbusiness: cdktf.stringToTerraform(struct!.alexaforbusiness),
+    amg: cdktf.stringToTerraform(struct!.amg),
     amp: cdktf.stringToTerraform(struct!.amp),
     amplify: cdktf.stringToTerraform(struct!.amplify),
     amplifybackend: cdktf.stringToTerraform(struct!.amplifybackend),
@@ -2096,6 +2193,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     cloudwatch: cdktf.stringToTerraform(struct!.cloudwatch),
     cloudwatchevents: cdktf.stringToTerraform(struct!.cloudwatchevents),
     cloudwatchlogs: cdktf.stringToTerraform(struct!.cloudwatchlogs),
+    cloudwatchrum: cdktf.stringToTerraform(struct!.cloudwatchrum),
     codeartifact: cdktf.stringToTerraform(struct!.codeartifact),
     codebuild: cdktf.stringToTerraform(struct!.codebuild),
     codecommit: cdktf.stringToTerraform(struct!.codecommit),
@@ -2172,6 +2270,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     globalaccelerator: cdktf.stringToTerraform(struct!.globalaccelerator),
     glue: cdktf.stringToTerraform(struct!.glue),
     gluedatabrew: cdktf.stringToTerraform(struct!.gluedatabrew),
+    grafana: cdktf.stringToTerraform(struct!.grafana),
     greengrass: cdktf.stringToTerraform(struct!.greengrass),
     greengrassv2: cdktf.stringToTerraform(struct!.greengrassv2),
     groundstation: cdktf.stringToTerraform(struct!.groundstation),
@@ -2201,6 +2300,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     kafka: cdktf.stringToTerraform(struct!.kafka),
     kafkaconnect: cdktf.stringToTerraform(struct!.kafkaconnect),
     kendra: cdktf.stringToTerraform(struct!.kendra),
+    keyspaces: cdktf.stringToTerraform(struct!.keyspaces),
     kinesis: cdktf.stringToTerraform(struct!.kinesis),
     kinesisanalytics: cdktf.stringToTerraform(struct!.kinesisanalytics),
     kinesisanalyticsv2: cdktf.stringToTerraform(struct!.kinesisanalyticsv2),
@@ -2228,6 +2328,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     macie: cdktf.stringToTerraform(struct!.macie),
     macie2: cdktf.stringToTerraform(struct!.macie2),
     managedblockchain: cdktf.stringToTerraform(struct!.managedblockchain),
+    managedgrafana: cdktf.stringToTerraform(struct!.managedgrafana),
     marketplacecatalog: cdktf.stringToTerraform(struct!.marketplacecatalog),
     marketplacecommerceanalytics: cdktf.stringToTerraform(struct!.marketplacecommerceanalytics),
     marketplaceentitlement: cdktf.stringToTerraform(struct!.marketplaceentitlement),
@@ -2397,19 +2498,22 @@ export class AwsProvider extends cdktf.TerraformProvider {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options AwsProviderConfig
+  * @param options AwsProviderConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: AwsProviderConfig) {
+  public constructor(scope: Construct, id: string, config: AwsProviderConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersionConstraint: '~> 3.0'
+        providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'
     });
     this._accessKey = config.accessKey;
     this._allowedAccountIds = config.allowedAccountIds;
+    this._customCaBundle = config.customCaBundle;
+    this._ec2MetadataServiceEndpoint = config.ec2MetadataServiceEndpoint;
+    this._ec2MetadataServiceEndpointMode = config.ec2MetadataServiceEndpointMode;
     this._forbiddenAccountIds = config.forbiddenAccountIds;
     this._httpProxy = config.httpProxy;
     this._insecure = config.insecure;
@@ -2417,14 +2521,20 @@ export class AwsProvider extends cdktf.TerraformProvider {
     this._profile = config.profile;
     this._region = config.region;
     this._s3ForcePathStyle = config.s3ForcePathStyle;
+    this._s3UsePathStyle = config.s3UsePathStyle;
     this._secretKey = config.secretKey;
+    this._sharedConfigFiles = config.sharedConfigFiles;
     this._sharedCredentialsFile = config.sharedCredentialsFile;
+    this._sharedCredentialsFiles = config.sharedCredentialsFiles;
     this._skipCredentialsValidation = config.skipCredentialsValidation;
     this._skipGetEc2Platforms = config.skipGetEc2Platforms;
     this._skipMetadataApiCheck = config.skipMetadataApiCheck;
     this._skipRegionValidation = config.skipRegionValidation;
     this._skipRequestingAccountId = config.skipRequestingAccountId;
+    this._stsRegion = config.stsRegion;
     this._token = config.token;
+    this._useDualstackEndpoint = config.useDualstackEndpoint;
+    this._useFipsEndpoint = config.useFipsEndpoint;
     this._alias = config.alias;
     this._assumeRole = config.assumeRole;
     this._defaultTags = config.defaultTags;
@@ -2466,6 +2576,54 @@ export class AwsProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get allowedAccountIdsInput() {
     return this._allowedAccountIds;
+  }
+
+  // custom_ca_bundle - computed: false, optional: true, required: false
+  private _customCaBundle?: string; 
+  public get customCaBundle() {
+    return this._customCaBundle;
+  }
+  public set customCaBundle(value: string | undefined) {
+    this._customCaBundle = value;
+  }
+  public resetCustomCaBundle() {
+    this._customCaBundle = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customCaBundleInput() {
+    return this._customCaBundle;
+  }
+
+  // ec2_metadata_service_endpoint - computed: false, optional: true, required: false
+  private _ec2MetadataServiceEndpoint?: string; 
+  public get ec2MetadataServiceEndpoint() {
+    return this._ec2MetadataServiceEndpoint;
+  }
+  public set ec2MetadataServiceEndpoint(value: string | undefined) {
+    this._ec2MetadataServiceEndpoint = value;
+  }
+  public resetEc2MetadataServiceEndpoint() {
+    this._ec2MetadataServiceEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ec2MetadataServiceEndpointInput() {
+    return this._ec2MetadataServiceEndpoint;
+  }
+
+  // ec2_metadata_service_endpoint_mode - computed: false, optional: true, required: false
+  private _ec2MetadataServiceEndpointMode?: string; 
+  public get ec2MetadataServiceEndpointMode() {
+    return this._ec2MetadataServiceEndpointMode;
+  }
+  public set ec2MetadataServiceEndpointMode(value: string | undefined) {
+    this._ec2MetadataServiceEndpointMode = value;
+  }
+  public resetEc2MetadataServiceEndpointMode() {
+    this._ec2MetadataServiceEndpointMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ec2MetadataServiceEndpointModeInput() {
+    return this._ec2MetadataServiceEndpointMode;
   }
 
   // forbidden_account_ids - computed: false, optional: true, required: false
@@ -2548,13 +2706,16 @@ export class AwsProvider extends cdktf.TerraformProvider {
     return this._profile;
   }
 
-  // region - computed: false, optional: false, required: true
+  // region - computed: false, optional: true, required: false
   private _region?: string; 
   public get region() {
     return this._region;
   }
   public set region(value: string | undefined) {
     this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
@@ -2577,6 +2738,22 @@ export class AwsProvider extends cdktf.TerraformProvider {
     return this._s3ForcePathStyle;
   }
 
+  // s3_use_path_style - computed: false, optional: true, required: false
+  private _s3UsePathStyle?: boolean | cdktf.IResolvable; 
+  public get s3UsePathStyle() {
+    return this._s3UsePathStyle;
+  }
+  public set s3UsePathStyle(value: boolean | cdktf.IResolvable | undefined) {
+    this._s3UsePathStyle = value;
+  }
+  public resetS3UsePathStyle() {
+    this._s3UsePathStyle = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3UsePathStyleInput() {
+    return this._s3UsePathStyle;
+  }
+
   // secret_key - computed: false, optional: true, required: false
   private _secretKey?: string; 
   public get secretKey() {
@@ -2593,6 +2770,22 @@ export class AwsProvider extends cdktf.TerraformProvider {
     return this._secretKey;
   }
 
+  // shared_config_files - computed: false, optional: true, required: false
+  private _sharedConfigFiles?: string[]; 
+  public get sharedConfigFiles() {
+    return this._sharedConfigFiles;
+  }
+  public set sharedConfigFiles(value: string[] | undefined) {
+    this._sharedConfigFiles = value;
+  }
+  public resetSharedConfigFiles() {
+    this._sharedConfigFiles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sharedConfigFilesInput() {
+    return this._sharedConfigFiles;
+  }
+
   // shared_credentials_file - computed: false, optional: true, required: false
   private _sharedCredentialsFile?: string; 
   public get sharedCredentialsFile() {
@@ -2607,6 +2800,22 @@ export class AwsProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get sharedCredentialsFileInput() {
     return this._sharedCredentialsFile;
+  }
+
+  // shared_credentials_files - computed: false, optional: true, required: false
+  private _sharedCredentialsFiles?: string[]; 
+  public get sharedCredentialsFiles() {
+    return this._sharedCredentialsFiles;
+  }
+  public set sharedCredentialsFiles(value: string[] | undefined) {
+    this._sharedCredentialsFiles = value;
+  }
+  public resetSharedCredentialsFiles() {
+    this._sharedCredentialsFiles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sharedCredentialsFilesInput() {
+    return this._sharedCredentialsFiles;
   }
 
   // skip_credentials_validation - computed: false, optional: true, required: false
@@ -2689,6 +2898,22 @@ export class AwsProvider extends cdktf.TerraformProvider {
     return this._skipRequestingAccountId;
   }
 
+  // sts_region - computed: false, optional: true, required: false
+  private _stsRegion?: string; 
+  public get stsRegion() {
+    return this._stsRegion;
+  }
+  public set stsRegion(value: string | undefined) {
+    this._stsRegion = value;
+  }
+  public resetStsRegion() {
+    this._stsRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stsRegionInput() {
+    return this._stsRegion;
+  }
+
   // token - computed: false, optional: true, required: false
   private _token?: string; 
   public get token() {
@@ -2703,6 +2928,38 @@ export class AwsProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get tokenInput() {
     return this._token;
+  }
+
+  // use_dualstack_endpoint - computed: false, optional: true, required: false
+  private _useDualstackEndpoint?: boolean | cdktf.IResolvable; 
+  public get useDualstackEndpoint() {
+    return this._useDualstackEndpoint;
+  }
+  public set useDualstackEndpoint(value: boolean | cdktf.IResolvable | undefined) {
+    this._useDualstackEndpoint = value;
+  }
+  public resetUseDualstackEndpoint() {
+    this._useDualstackEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useDualstackEndpointInput() {
+    return this._useDualstackEndpoint;
+  }
+
+  // use_fips_endpoint - computed: false, optional: true, required: false
+  private _useFipsEndpoint?: boolean | cdktf.IResolvable; 
+  public get useFipsEndpoint() {
+    return this._useFipsEndpoint;
+  }
+  public set useFipsEndpoint(value: boolean | cdktf.IResolvable | undefined) {
+    this._useFipsEndpoint = value;
+  }
+  public resetUseFipsEndpoint() {
+    this._useFipsEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useFipsEndpointInput() {
+    return this._useFipsEndpoint;
   }
 
   // alias - computed: false, optional: true, required: false
@@ -2793,6 +3050,9 @@ export class AwsProvider extends cdktf.TerraformProvider {
     return {
       access_key: cdktf.stringToTerraform(this._accessKey),
       allowed_account_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedAccountIds),
+      custom_ca_bundle: cdktf.stringToTerraform(this._customCaBundle),
+      ec2_metadata_service_endpoint: cdktf.stringToTerraform(this._ec2MetadataServiceEndpoint),
+      ec2_metadata_service_endpoint_mode: cdktf.stringToTerraform(this._ec2MetadataServiceEndpointMode),
       forbidden_account_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._forbiddenAccountIds),
       http_proxy: cdktf.stringToTerraform(this._httpProxy),
       insecure: cdktf.booleanToTerraform(this._insecure),
@@ -2800,14 +3060,20 @@ export class AwsProvider extends cdktf.TerraformProvider {
       profile: cdktf.stringToTerraform(this._profile),
       region: cdktf.stringToTerraform(this._region),
       s3_force_path_style: cdktf.booleanToTerraform(this._s3ForcePathStyle),
+      s3_use_path_style: cdktf.booleanToTerraform(this._s3UsePathStyle),
       secret_key: cdktf.stringToTerraform(this._secretKey),
+      shared_config_files: cdktf.listMapper(cdktf.stringToTerraform)(this._sharedConfigFiles),
       shared_credentials_file: cdktf.stringToTerraform(this._sharedCredentialsFile),
+      shared_credentials_files: cdktf.listMapper(cdktf.stringToTerraform)(this._sharedCredentialsFiles),
       skip_credentials_validation: cdktf.booleanToTerraform(this._skipCredentialsValidation),
       skip_get_ec2_platforms: cdktf.booleanToTerraform(this._skipGetEc2Platforms),
       skip_metadata_api_check: cdktf.booleanToTerraform(this._skipMetadataApiCheck),
       skip_region_validation: cdktf.booleanToTerraform(this._skipRegionValidation),
       skip_requesting_account_id: cdktf.booleanToTerraform(this._skipRequestingAccountId),
+      sts_region: cdktf.stringToTerraform(this._stsRegion),
       token: cdktf.stringToTerraform(this._token),
+      use_dualstack_endpoint: cdktf.booleanToTerraform(this._useDualstackEndpoint),
+      use_fips_endpoint: cdktf.booleanToTerraform(this._useFipsEndpoint),
       alias: cdktf.stringToTerraform(this._alias),
       assume_role: awsProviderAssumeRoleToTerraform(this._assumeRole),
       default_tags: awsProviderDefaultTagsToTerraform(this._defaultTags),

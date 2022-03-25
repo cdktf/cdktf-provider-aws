@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface ImagebuilderImageConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image#container_recipe_arn ImagebuilderImage#container_recipe_arn}
+  */
+  readonly containerRecipeArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image#distribution_configuration_arn ImagebuilderImage#distribution_configuration_arn}
   */
   readonly distributionConfigurationArn?: string;
@@ -18,7 +22,7 @@ export interface ImagebuilderImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image#image_recipe_arn ImagebuilderImage#image_recipe_arn}
   */
-  readonly imageRecipeArn: string;
+  readonly imageRecipeArn?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image#infrastructure_configuration_arn ImagebuilderImage#infrastructure_configuration_arn}
   */
@@ -271,6 +275,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._containerRecipeArn = config.containerRecipeArn;
     this._distributionConfigurationArn = config.distributionConfigurationArn;
     this._enhancedImageMetadataEnabled = config.enhancedImageMetadataEnabled;
     this._imageRecipeArn = config.imageRecipeArn;
@@ -288,6 +293,22 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // container_recipe_arn - computed: false, optional: true, required: false
+  private _containerRecipeArn?: string; 
+  public get containerRecipeArn() {
+    return this.getStringAttribute('container_recipe_arn');
+  }
+  public set containerRecipeArn(value: string) {
+    this._containerRecipeArn = value;
+  }
+  public resetContainerRecipeArn() {
+    this._containerRecipeArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerRecipeArnInput() {
+    return this._containerRecipeArn;
   }
 
   // date_created - computed: true, optional: false, required: false
@@ -332,13 +353,16 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // image_recipe_arn - computed: false, optional: false, required: true
+  // image_recipe_arn - computed: false, optional: true, required: false
   private _imageRecipeArn?: string; 
   public get imageRecipeArn() {
     return this.getStringAttribute('image_recipe_arn');
   }
   public set imageRecipeArn(value: string) {
     this._imageRecipeArn = value;
+  }
+  public resetImageRecipeArn() {
+    this._imageRecipeArn = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get imageRecipeArnInput() {
@@ -453,6 +477,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      container_recipe_arn: cdktf.stringToTerraform(this._containerRecipeArn),
       distribution_configuration_arn: cdktf.stringToTerraform(this._distributionConfigurationArn),
       enhanced_image_metadata_enabled: cdktf.booleanToTerraform(this._enhancedImageMetadataEnabled),
       image_recipe_arn: cdktf.stringToTerraform(this._imageRecipeArn),

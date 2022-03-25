@@ -277,6 +277,10 @@ export interface SyntheticsCanaryRunConfig {
   */
   readonly activeTracing?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/synthetics_canary#environment_variables SyntheticsCanary#environment_variables}
+  */
+  readonly environmentVariables?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/synthetics_canary#memory_in_mb SyntheticsCanary#memory_in_mb}
   */
   readonly memoryInMb?: number;
@@ -293,6 +297,7 @@ export function syntheticsCanaryRunConfigToTerraform(struct?: SyntheticsCanaryRu
   }
   return {
     active_tracing: cdktf.booleanToTerraform(struct!.activeTracing),
+    environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.environmentVariables),
     memory_in_mb: cdktf.numberToTerraform(struct!.memoryInMb),
     timeout_in_seconds: cdktf.numberToTerraform(struct!.timeoutInSeconds),
   }
@@ -317,6 +322,10 @@ export class SyntheticsCanaryRunConfigOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.activeTracing = this._activeTracing;
     }
+    if (this._environmentVariables !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.environmentVariables = this._environmentVariables;
+    }
     if (this._memoryInMb !== undefined) {
       hasAnyValues = true;
       internalValueResult.memoryInMb = this._memoryInMb;
@@ -332,12 +341,14 @@ export class SyntheticsCanaryRunConfigOutputReference extends cdktf.ComplexObjec
     if (value === undefined) {
       this.isEmptyObject = false;
       this._activeTracing = undefined;
+      this._environmentVariables = undefined;
       this._memoryInMb = undefined;
       this._timeoutInSeconds = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._activeTracing = value.activeTracing;
+      this._environmentVariables = value.environmentVariables;
       this._memoryInMb = value.memoryInMb;
       this._timeoutInSeconds = value.timeoutInSeconds;
     }
@@ -357,6 +368,22 @@ export class SyntheticsCanaryRunConfigOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get activeTracingInput() {
     return this._activeTracing;
+  }
+
+  // environment_variables - computed: false, optional: true, required: false
+  private _environmentVariables?: { [key: string]: string }; 
+  public get environmentVariables() {
+    return this.getStringMapAttribute('environment_variables');
+  }
+  public set environmentVariables(value: { [key: string]: string }) {
+    this._environmentVariables = value;
+  }
+  public resetEnvironmentVariables() {
+    this._environmentVariables = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get environmentVariablesInput() {
+    return this._environmentVariables;
   }
 
   // memory_in_mb - computed: true, optional: true, required: false

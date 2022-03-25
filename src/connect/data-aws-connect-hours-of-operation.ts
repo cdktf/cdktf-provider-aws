@@ -110,6 +110,11 @@ export class DataAwsConnectHoursOfOperation extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // config - computed: true, optional: false, required: false
   public config(index: string) {
     return new DataAwsConnectHoursOfOperationConfigA(this, 'config', index, true);
