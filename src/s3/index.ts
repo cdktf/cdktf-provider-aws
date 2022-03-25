@@ -22,6 +22,7 @@ export * from './s3-bucket-request-payment-configuration';
 export * from './s3-bucket-server-side-encryption-configuration';
 export * from './s3-bucket-versioning';
 export * from './s3-bucket-website-configuration';
+export * from './s3-object';
 export * from './s3-object-copy';
 export * from './s3control-access-point-policy';
 export * from './s3control-bucket';
@@ -35,4 +36,6 @@ export * from './s3outposts-endpoint';
 export * from './data-aws-s3-bucket';
 export * from './data-aws-s3-bucket-object';
 export * from './data-aws-s3-bucket-objects';
+export * from './data-aws-s3-object';
+export * from './data-aws-s3-objects';
 

@@ -69,6 +69,23 @@ export class DataAwsEksNodeGroupScalingConfig extends cdktf.ComplexComputedList 
     return this.getNumberAttribute('min_size');
   }
 }
+export class DataAwsEksNodeGroupTaints extends cdktf.ComplexComputedList {
+
+  // effect - computed: true, optional: false, required: false
+  public get effect() {
+    return this.getStringAttribute('effect');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/eks_node_group aws_eks_node_group}
@@ -216,6 +233,11 @@ export class DataAwsEksNodeGroup extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags;
+  }
+
+  // taints - computed: true, optional: false, required: false
+  public taints(index: string) {
+    return new DataAwsEksNodeGroupTaints(this, 'taints', index, false);
   }
 
   // version - computed: true, optional: false, required: false

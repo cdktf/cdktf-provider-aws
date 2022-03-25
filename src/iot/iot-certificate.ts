@@ -12,6 +12,14 @@ export interface IotCertificateConfig extends cdktf.TerraformMetaArguments {
   */
   readonly active: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_certificate#ca_pem IotCertificate#ca_pem}
+  */
+  readonly caPem?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_certificate#certificate_pem IotCertificate#certificate_pem}
+  */
+  readonly certificatePem?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_certificate#csr IotCertificate#csr}
   */
   readonly csr?: string;
@@ -50,6 +58,8 @@ export class IotCertificate extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._active = config.active;
+    this._caPem = config.caPem;
+    this._certificatePem = config.certificatePem;
     this._csr = config.csr;
   }
 
@@ -75,9 +85,36 @@ export class IotCertificate extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
-  // certificate_pem - computed: true, optional: false, required: false
+  // ca_pem - computed: false, optional: true, required: false
+  private _caPem?: string; 
+  public get caPem() {
+    return this.getStringAttribute('ca_pem');
+  }
+  public set caPem(value: string) {
+    this._caPem = value;
+  }
+  public resetCaPem() {
+    this._caPem = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get caPemInput() {
+    return this._caPem;
+  }
+
+  // certificate_pem - computed: true, optional: true, required: false
+  private _certificatePem?: string; 
   public get certificatePem() {
     return this.getStringAttribute('certificate_pem');
+  }
+  public set certificatePem(value: string) {
+    this._certificatePem = value;
+  }
+  public resetCertificatePem() {
+    this._certificatePem = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificatePemInput() {
+    return this._certificatePem;
   }
 
   // csr - computed: false, optional: true, required: false
@@ -118,6 +155,8 @@ export class IotCertificate extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       active: cdktf.booleanToTerraform(this._active),
+      ca_pem: cdktf.stringToTerraform(this._caPem),
+      certificate_pem: cdktf.stringToTerraform(this._certificatePem),
       csr: cdktf.stringToTerraform(this._csr),
     };
   }

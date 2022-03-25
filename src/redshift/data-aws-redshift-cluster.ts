@@ -72,6 +72,11 @@ export class DataAwsRedshiftCluster extends cdktf.TerraformDataSource {
     return this.getStringAttribute('availability_zone');
   }
 
+  // availability_zone_relocation_enabled - computed: true, optional: false, required: false
+  public get availabilityZoneRelocationEnabled() {
+    return this.getBooleanAttribute('availability_zone_relocation_enabled');
+  }
+
   // bucket_name - computed: true, optional: false, required: false
   public get bucketName() {
     return this.getStringAttribute('bucket_name');

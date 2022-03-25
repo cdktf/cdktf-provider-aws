@@ -42,6 +42,12 @@ export interface ApprunnerServiceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly instanceConfiguration?: ApprunnerServiceInstanceConfiguration;
   /**
+  * network_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#network_configuration ApprunnerService#network_configuration}
+  */
+  readonly networkConfiguration?: ApprunnerServiceNetworkConfiguration;
+  /**
   * source_configuration block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#source_configuration ApprunnerService#source_configuration}
@@ -430,6 +436,167 @@ export class ApprunnerServiceInstanceConfigurationOutputReference extends cdktf.
   // Temporarily expose input value. Use with caution.
   public get memoryInput() {
     return this._memory;
+  }
+}
+export interface ApprunnerServiceNetworkConfigurationEgressConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#egress_type ApprunnerService#egress_type}
+  */
+  readonly egressType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#vpc_connector_arn ApprunnerService#vpc_connector_arn}
+  */
+  readonly vpcConnectorArn?: string;
+}
+
+export function apprunnerServiceNetworkConfigurationEgressConfigurationToTerraform(struct?: ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference | ApprunnerServiceNetworkConfigurationEgressConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    egress_type: cdktf.stringToTerraform(struct!.egressType),
+    vpc_connector_arn: cdktf.stringToTerraform(struct!.vpcConnectorArn),
+  }
+}
+
+export class ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): ApprunnerServiceNetworkConfigurationEgressConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._egressType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.egressType = this._egressType;
+    }
+    if (this._vpcConnectorArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpcConnectorArn = this._vpcConnectorArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApprunnerServiceNetworkConfigurationEgressConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._egressType = undefined;
+      this._vpcConnectorArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._egressType = value.egressType;
+      this._vpcConnectorArn = value.vpcConnectorArn;
+    }
+  }
+
+  // egress_type - computed: true, optional: true, required: false
+  private _egressType?: string; 
+  public get egressType() {
+    return this.getStringAttribute('egress_type');
+  }
+  public set egressType(value: string) {
+    this._egressType = value;
+  }
+  public resetEgressType() {
+    this._egressType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get egressTypeInput() {
+    return this._egressType;
+  }
+
+  // vpc_connector_arn - computed: false, optional: true, required: false
+  private _vpcConnectorArn?: string; 
+  public get vpcConnectorArn() {
+    return this.getStringAttribute('vpc_connector_arn');
+  }
+  public set vpcConnectorArn(value: string) {
+    this._vpcConnectorArn = value;
+  }
+  public resetVpcConnectorArn() {
+    this._vpcConnectorArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcConnectorArnInput() {
+    return this._vpcConnectorArn;
+  }
+}
+export interface ApprunnerServiceNetworkConfiguration {
+  /**
+  * egress_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#egress_configuration ApprunnerService#egress_configuration}
+  */
+  readonly egressConfiguration?: ApprunnerServiceNetworkConfigurationEgressConfiguration;
+}
+
+export function apprunnerServiceNetworkConfigurationToTerraform(struct?: ApprunnerServiceNetworkConfigurationOutputReference | ApprunnerServiceNetworkConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    egress_configuration: apprunnerServiceNetworkConfigurationEgressConfigurationToTerraform(struct!.egressConfiguration),
+  }
+}
+
+export class ApprunnerServiceNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): ApprunnerServiceNetworkConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._egressConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.egressConfiguration = this._egressConfiguration?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApprunnerServiceNetworkConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._egressConfiguration.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._egressConfiguration.internalValue = value.egressConfiguration;
+    }
+  }
+
+  // egress_configuration - computed: false, optional: true, required: false
+  private _egressConfiguration = new ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference(this, "egress_configuration", true);
+  public get egressConfiguration() {
+    return this._egressConfiguration;
+  }
+  public putEgressConfiguration(value: ApprunnerServiceNetworkConfigurationEgressConfiguration) {
+    this._egressConfiguration.internalValue = value;
+  }
+  public resetEgressConfiguration() {
+    this._egressConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get egressConfigurationInput() {
+    return this._egressConfiguration.internalValue;
   }
 }
 export interface ApprunnerServiceSourceConfigurationAuthenticationConfiguration {
@@ -1422,6 +1589,7 @@ export class ApprunnerService extends cdktf.TerraformResource {
     this._encryptionConfiguration.internalValue = config.encryptionConfiguration;
     this._healthCheckConfiguration.internalValue = config.healthCheckConfiguration;
     this._instanceConfiguration.internalValue = config.instanceConfiguration;
+    this._networkConfiguration.internalValue = config.networkConfiguration;
     this._sourceConfiguration.internalValue = config.sourceConfiguration;
   }
 
@@ -1563,6 +1731,22 @@ export class ApprunnerService extends cdktf.TerraformResource {
     return this._instanceConfiguration.internalValue;
   }
 
+  // network_configuration - computed: false, optional: true, required: false
+  private _networkConfiguration = new ApprunnerServiceNetworkConfigurationOutputReference(this, "network_configuration", true);
+  public get networkConfiguration() {
+    return this._networkConfiguration;
+  }
+  public putNetworkConfiguration(value: ApprunnerServiceNetworkConfiguration) {
+    this._networkConfiguration.internalValue = value;
+  }
+  public resetNetworkConfiguration() {
+    this._networkConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkConfigurationInput() {
+    return this._networkConfiguration.internalValue;
+  }
+
   // source_configuration - computed: false, optional: false, required: true
   private _sourceConfiguration = new ApprunnerServiceSourceConfigurationOutputReference(this, "source_configuration", true);
   public get sourceConfiguration() {
@@ -1589,6 +1773,7 @@ export class ApprunnerService extends cdktf.TerraformResource {
       encryption_configuration: apprunnerServiceEncryptionConfigurationToTerraform(this._encryptionConfiguration.internalValue),
       health_check_configuration: apprunnerServiceHealthCheckConfigurationToTerraform(this._healthCheckConfiguration.internalValue),
       instance_configuration: apprunnerServiceInstanceConfigurationToTerraform(this._instanceConfiguration.internalValue),
+      network_configuration: apprunnerServiceNetworkConfigurationToTerraform(this._networkConfiguration.internalValue),
       source_configuration: apprunnerServiceSourceConfigurationToTerraform(this._sourceConfiguration.internalValue),
     };
   }

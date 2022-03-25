@@ -12,6 +12,10 @@ export interface CloudformationStackSetConfig extends cdktf.TerraformMetaArgumen
   */
   readonly administrationRoleArn?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set#call_as CloudformationStackSet#call_as}
+  */
+  readonly callAs?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set#capabilities CloudformationStackSet#capabilities}
   */
   readonly capabilities?: string[];
@@ -257,6 +261,7 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._administrationRoleArn = config.administrationRoleArn;
+    this._callAs = config.callAs;
     this._capabilities = config.capabilities;
     this._description = config.description;
     this._executionRoleName = config.executionRoleName;
@@ -294,6 +299,22 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // call_as - computed: false, optional: true, required: false
+  private _callAs?: string; 
+  public get callAs() {
+    return this.getStringAttribute('call_as');
+  }
+  public set callAs(value: string) {
+    this._callAs = value;
+  }
+  public resetCallAs() {
+    this._callAs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get callAsInput() {
+    return this._callAs;
   }
 
   // capabilities - computed: false, optional: true, required: false
@@ -502,6 +523,7 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       administration_role_arn: cdktf.stringToTerraform(this._administrationRoleArn),
+      call_as: cdktf.stringToTerraform(this._callAs),
       capabilities: cdktf.listMapper(cdktf.stringToTerraform)(this._capabilities),
       description: cdktf.stringToTerraform(this._description),
       execution_role_name: cdktf.stringToTerraform(this._executionRoleName),

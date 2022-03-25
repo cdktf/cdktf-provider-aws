@@ -27,6 +27,105 @@ export interface Ec2ClientVpnAuthorizationRuleConfig extends cdktf.TerraformMeta
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_authorization_rule#target_network_cidr Ec2ClientVpnAuthorizationRule#target_network_cidr}
   */
   readonly targetNetworkCidr: string;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_authorization_rule#timeouts Ec2ClientVpnAuthorizationRule#timeouts}
+  */
+  readonly timeouts?: Ec2ClientVpnAuthorizationRuleTimeouts;
+}
+export interface Ec2ClientVpnAuthorizationRuleTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_authorization_rule#create Ec2ClientVpnAuthorizationRule#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_authorization_rule#delete Ec2ClientVpnAuthorizationRule#delete}
+  */
+  readonly delete?: string;
+}
+
+export function ec2ClientVpnAuthorizationRuleTimeoutsToTerraform(struct?: Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference | Ec2ClientVpnAuthorizationRuleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+export class Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): Ec2ClientVpnAuthorizationRuleTimeouts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Ec2ClientVpnAuthorizationRuleTimeouts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
 }
 
 /**
@@ -66,6 +165,7 @@ export class Ec2ClientVpnAuthorizationRule extends cdktf.TerraformResource {
     this._clientVpnEndpointId = config.clientVpnEndpointId;
     this._description = config.description;
     this._targetNetworkCidr = config.targetNetworkCidr;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -151,6 +251,22 @@ export class Ec2ClientVpnAuthorizationRule extends cdktf.TerraformResource {
     return this._targetNetworkCidr;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference(this, "timeouts", true);
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: Ec2ClientVpnAuthorizationRuleTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -162,6 +278,7 @@ export class Ec2ClientVpnAuthorizationRule extends cdktf.TerraformResource {
       client_vpn_endpoint_id: cdktf.stringToTerraform(this._clientVpnEndpointId),
       description: cdktf.stringToTerraform(this._description),
       target_network_cidr: cdktf.stringToTerraform(this._targetNetworkCidr),
+      timeouts: ec2ClientVpnAuthorizationRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

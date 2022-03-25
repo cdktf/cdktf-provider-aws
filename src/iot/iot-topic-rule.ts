@@ -42,6 +42,12 @@ export interface IotTopicRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly cloudwatchAlarm?: IotTopicRuleCloudwatchAlarm[] | cdktf.IResolvable;
   /**
+  * cloudwatch_logs block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
+  */
+  readonly cloudwatchLogs?: IotTopicRuleCloudwatchLogs[] | cdktf.IResolvable;
+  /**
   * cloudwatch_metric block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
@@ -161,6 +167,28 @@ export function iotTopicRuleCloudwatchAlarmToTerraform(struct?: IotTopicRuleClou
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     state_reason: cdktf.stringToTerraform(struct!.stateReason),
     state_value: cdktf.stringToTerraform(struct!.stateValue),
+  }
+}
+
+export interface IotTopicRuleCloudwatchLogs {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#log_group_name IotTopicRule#log_group_name}
+  */
+  readonly logGroupName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  */
+  readonly roleArn: string;
+}
+
+export function iotTopicRuleCloudwatchLogsToTerraform(struct?: IotTopicRuleCloudwatchLogs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
   }
 }
 
@@ -525,6 +553,93 @@ export class IotTopicRuleErrorActionCloudwatchAlarmOutputReference extends cdktf
   // Temporarily expose input value. Use with caution.
   public get stateValueInput() {
     return this._stateValue;
+  }
+}
+export interface IotTopicRuleErrorActionCloudwatchLogs {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#log_group_name IotTopicRule#log_group_name}
+  */
+  readonly logGroupName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#role_arn IotTopicRule#role_arn}
+  */
+  readonly roleArn: string;
+}
+
+export function iotTopicRuleErrorActionCloudwatchLogsToTerraform(struct?: IotTopicRuleErrorActionCloudwatchLogsOutputReference | IotTopicRuleErrorActionCloudwatchLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
+export class IotTopicRuleErrorActionCloudwatchLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): IotTopicRuleErrorActionCloudwatchLogs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._logGroupName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logGroupName = this._logGroupName;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleErrorActionCloudwatchLogs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._logGroupName = undefined;
+      this._roleArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._logGroupName = value.logGroupName;
+      this._roleArn = value.roleArn;
+    }
+  }
+
+  // log_group_name - computed: false, optional: false, required: true
+  private _logGroupName?: string; 
+  public get logGroupName() {
+    return this.getStringAttribute('log_group_name');
+  }
+  public set logGroupName(value: string) {
+    this._logGroupName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logGroupNameInput() {
+    return this._logGroupName;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
   }
 }
 export interface IotTopicRuleErrorActionCloudwatchMetric {
@@ -2388,6 +2503,12 @@ export interface IotTopicRuleErrorAction {
   */
   readonly cloudwatchAlarm?: IotTopicRuleErrorActionCloudwatchAlarm;
   /**
+  * cloudwatch_logs block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
+  */
+  readonly cloudwatchLogs?: IotTopicRuleErrorActionCloudwatchLogs;
+  /**
   * cloudwatch_metric block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
@@ -2480,6 +2601,7 @@ export function iotTopicRuleErrorActionToTerraform(struct?: IotTopicRuleErrorAct
   }
   return {
     cloudwatch_alarm: iotTopicRuleErrorActionCloudwatchAlarmToTerraform(struct!.cloudwatchAlarm),
+    cloudwatch_logs: iotTopicRuleErrorActionCloudwatchLogsToTerraform(struct!.cloudwatchLogs),
     cloudwatch_metric: iotTopicRuleErrorActionCloudwatchMetricToTerraform(struct!.cloudwatchMetric),
     dynamodb: iotTopicRuleErrorActionDynamodbToTerraform(struct!.dynamodb),
     dynamodbv2: iotTopicRuleErrorActionDynamodbv2ToTerraform(struct!.dynamodbv2),
@@ -2515,6 +2637,10 @@ export class IotTopicRuleErrorActionOutputReference extends cdktf.ComplexObject 
     if (this._cloudwatchAlarm?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchAlarm = this._cloudwatchAlarm?.internalValue;
+    }
+    if (this._cloudwatchLogs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cloudwatchLogs = this._cloudwatchLogs?.internalValue;
     }
     if (this._cloudwatchMetric?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -2579,6 +2705,7 @@ export class IotTopicRuleErrorActionOutputReference extends cdktf.ComplexObject 
     if (value === undefined) {
       this.isEmptyObject = false;
       this._cloudwatchAlarm.internalValue = undefined;
+      this._cloudwatchLogs.internalValue = undefined;
       this._cloudwatchMetric.internalValue = undefined;
       this._dynamodb.internalValue = undefined;
       this._dynamodbv2.internalValue = undefined;
@@ -2597,6 +2724,7 @@ export class IotTopicRuleErrorActionOutputReference extends cdktf.ComplexObject 
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._cloudwatchAlarm.internalValue = value.cloudwatchAlarm;
+      this._cloudwatchLogs.internalValue = value.cloudwatchLogs;
       this._cloudwatchMetric.internalValue = value.cloudwatchMetric;
       this._dynamodb.internalValue = value.dynamodb;
       this._dynamodbv2.internalValue = value.dynamodbv2;
@@ -2628,6 +2756,22 @@ export class IotTopicRuleErrorActionOutputReference extends cdktf.ComplexObject 
   // Temporarily expose input value. Use with caution.
   public get cloudwatchAlarmInput() {
     return this._cloudwatchAlarm.internalValue;
+  }
+
+  // cloudwatch_logs - computed: false, optional: true, required: false
+  private _cloudwatchLogs = new IotTopicRuleErrorActionCloudwatchLogsOutputReference(this, "cloudwatch_logs", true);
+  public get cloudwatchLogs() {
+    return this._cloudwatchLogs;
+  }
+  public putCloudwatchLogs(value: IotTopicRuleErrorActionCloudwatchLogs) {
+    this._cloudwatchLogs.internalValue = value;
+  }
+  public resetCloudwatchLogs() {
+    this._cloudwatchLogs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchLogsInput() {
+    return this._cloudwatchLogs.internalValue;
   }
 
   // cloudwatch_metric - computed: false, optional: true, required: false
@@ -3150,6 +3294,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._cloudwatchAlarm = config.cloudwatchAlarm;
+    this._cloudwatchLogs = config.cloudwatchLogs;
     this._cloudwatchMetric = config.cloudwatchMetric;
     this._dynamodb = config.dynamodb;
     this._dynamodbv2 = config.dynamodbv2;
@@ -3296,6 +3441,23 @@ export class IotTopicRule extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get cloudwatchAlarmInput() {
     return this._cloudwatchAlarm;
+  }
+
+  // cloudwatch_logs - computed: false, optional: true, required: false
+  private _cloudwatchLogs?: IotTopicRuleCloudwatchLogs[] | cdktf.IResolvable; 
+  public get cloudwatchLogs() {
+    // Getting the computed value is not yet implemented
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('cloudwatch_logs')));
+  }
+  public set cloudwatchLogs(value: IotTopicRuleCloudwatchLogs[] | cdktf.IResolvable) {
+    this._cloudwatchLogs = value;
+  }
+  public resetCloudwatchLogs() {
+    this._cloudwatchLogs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchLogsInput() {
+    return this._cloudwatchLogs;
   }
 
   // cloudwatch_metric - computed: false, optional: true, required: false
@@ -3566,6 +3728,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       cloudwatch_alarm: cdktf.listMapper(iotTopicRuleCloudwatchAlarmToTerraform)(this._cloudwatchAlarm),
+      cloudwatch_logs: cdktf.listMapper(iotTopicRuleCloudwatchLogsToTerraform)(this._cloudwatchLogs),
       cloudwatch_metric: cdktf.listMapper(iotTopicRuleCloudwatchMetricToTerraform)(this._cloudwatchMetric),
       dynamodb: cdktf.listMapper(iotTopicRuleDynamodbToTerraform)(this._dynamodb),
       dynamodbv2: cdktf.listMapper(iotTopicRuleDynamodbv2ToTerraform)(this._dynamodbv2),

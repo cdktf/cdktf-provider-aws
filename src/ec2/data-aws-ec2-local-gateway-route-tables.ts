@@ -88,7 +88,7 @@ export class DataAwsEc2LocalGatewayRouteTables extends cdktf.TerraformDataSource
 
   // ids - computed: true, optional: false, required: false
   public get ids() {
-    return cdktf.Fn.tolist(this.getListAttribute('ids'));
+    return this.getListAttribute('ids');
   }
 
   // tags - computed: true, optional: true, required: false

@@ -4,9 +4,15 @@ export * from './cloudcontrolapi-resource';
 export * from './cloudsearch-domain';
 export * from './cloudsearch-domain-service-access-policy';
 export * from './dataexchange-data-set';
+export * from './dataexchange-revision';
 export * from './detective-graph';
 export * from './detective-invitation-accepter';
 export * from './detective-member';
+export * from './grafana-license-association';
+export * from './grafana-role-association';
+export * from './grafana-workspace';
+export * from './grafana-workspace-saml-configuration';
+export * from './keyspaces-keyspace';
 export * from './memorydb-acl';
 export * from './memorydb-cluster';
 export * from './memorydb-parameter-group';
@@ -15,8 +21,12 @@ export * from './memorydb-subnet-group';
 export * from './memorydb-user';
 export * from './data-aws-cloudcontrolapi-resource';
 export * from './data-aws-default-tags';
+export * from './data-aws-grafana-workspace';
 export * from './data-aws-identitystore-group';
 export * from './data-aws-identitystore-user';
+export * from './data-aws-memorydb-parameter-group';
+export * from './data-aws-memorydb-subnet-group';
+export * from './data-aws-service';
 export * as accessanalyzer from './accessanalyzer'
 export * as acm from './acm'
 export * as elb from './elb'

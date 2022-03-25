@@ -150,6 +150,11 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
     return new DataAwsAmiBlockDeviceMappings(this, 'block_device_mappings', index, true);
   }
 
+  // boot_mode - computed: true, optional: false, required: false
+  public get bootMode() {
+    return this.getStringAttribute('boot_mode');
+  }
+
   // creation_date - computed: true, optional: false, required: false
   public get creationDate() {
     return this.getStringAttribute('creation_date');

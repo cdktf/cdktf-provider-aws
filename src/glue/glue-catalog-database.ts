@@ -28,12 +28,108 @@ export interface GlueCatalogDatabaseConfig extends cdktf.TerraformMetaArguments 
   */
   readonly parameters?: { [key: string]: string };
   /**
+  * create_table_default_permission block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_database#create_table_default_permission GlueCatalogDatabase#create_table_default_permission}
+  */
+  readonly createTableDefaultPermission?: GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktf.IResolvable;
+  /**
   * target_database block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_database#target_database GlueCatalogDatabase#target_database}
   */
   readonly targetDatabase?: GlueCatalogDatabaseTargetDatabase;
 }
+export interface GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_database#data_lake_principal_identifier GlueCatalogDatabase#data_lake_principal_identifier}
+  */
+  readonly dataLakePrincipalIdentifier?: string;
+}
+
+export function glueCatalogDatabaseCreateTableDefaultPermissionPrincipalToTerraform(struct?: GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference | GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_lake_principal_identifier: cdktf.stringToTerraform(struct!.dataLakePrincipalIdentifier),
+  }
+}
+
+export class GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dataLakePrincipalIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataLakePrincipalIdentifier = this._dataLakePrincipalIdentifier;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dataLakePrincipalIdentifier = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dataLakePrincipalIdentifier = value.dataLakePrincipalIdentifier;
+    }
+  }
+
+  // data_lake_principal_identifier - computed: false, optional: true, required: false
+  private _dataLakePrincipalIdentifier?: string; 
+  public get dataLakePrincipalIdentifier() {
+    return this.getStringAttribute('data_lake_principal_identifier');
+  }
+  public set dataLakePrincipalIdentifier(value: string) {
+    this._dataLakePrincipalIdentifier = value;
+  }
+  public resetDataLakePrincipalIdentifier() {
+    this._dataLakePrincipalIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataLakePrincipalIdentifierInput() {
+    return this._dataLakePrincipalIdentifier;
+  }
+}
+export interface GlueCatalogDatabaseCreateTableDefaultPermission {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_database#permissions GlueCatalogDatabase#permissions}
+  */
+  readonly permissions?: string[];
+  /**
+  * principal block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_database#principal GlueCatalogDatabase#principal}
+  */
+  readonly principal?: GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal;
+}
+
+export function glueCatalogDatabaseCreateTableDefaultPermissionToTerraform(struct?: GlueCatalogDatabaseCreateTableDefaultPermission | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    permissions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.permissions),
+    principal: glueCatalogDatabaseCreateTableDefaultPermissionPrincipalToTerraform(struct!.principal),
+  }
+}
+
 export interface GlueCatalogDatabaseTargetDatabase {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_database#catalog_id GlueCatalogDatabase#catalog_id}
@@ -159,6 +255,7 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
     this._locationUri = config.locationUri;
     this._name = config.name;
     this._parameters = config.parameters;
+    this._createTableDefaultPermission = config.createTableDefaultPermission;
     this._targetDatabase.internalValue = config.targetDatabase;
   }
 
@@ -253,6 +350,23 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
     return this._parameters;
   }
 
+  // create_table_default_permission - computed: false, optional: true, required: false
+  private _createTableDefaultPermission?: GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktf.IResolvable; 
+  public get createTableDefaultPermission() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('create_table_default_permission');
+  }
+  public set createTableDefaultPermission(value: GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktf.IResolvable) {
+    this._createTableDefaultPermission = value;
+  }
+  public resetCreateTableDefaultPermission() {
+    this._createTableDefaultPermission = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createTableDefaultPermissionInput() {
+    return this._createTableDefaultPermission;
+  }
+
   // target_database - computed: false, optional: true, required: false
   private _targetDatabase = new GlueCatalogDatabaseTargetDatabaseOutputReference(this, "target_database", true);
   public get targetDatabase() {
@@ -280,6 +394,7 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
       location_uri: cdktf.stringToTerraform(this._locationUri),
       name: cdktf.stringToTerraform(this._name),
       parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
+      create_table_default_permission: cdktf.listMapper(glueCatalogDatabaseCreateTableDefaultPermissionToTerraform)(this._createTableDefaultPermission),
       target_database: glueCatalogDatabaseTargetDatabaseToTerraform(this._targetDatabase.internalValue),
     };
   }

@@ -267,6 +267,11 @@ export class AmiCopy extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
+  // boot_mode - computed: true, optional: false, required: false
+  public get bootMode() {
+    return this.getStringAttribute('boot_mode');
+  }
+
   // description - computed: false, optional: true, required: false
   private _description?: string; 
   public get description() {

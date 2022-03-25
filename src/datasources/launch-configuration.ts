@@ -159,9 +159,13 @@ export interface LaunchConfigurationEphemeralBlockDevice {
   */
   readonly deviceName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration#no_device LaunchConfiguration#no_device}
+  */
+  readonly noDevice?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration#virtual_name LaunchConfiguration#virtual_name}
   */
-  readonly virtualName: string;
+  readonly virtualName?: string;
 }
 
 export function launchConfigurationEphemeralBlockDeviceToTerraform(struct?: LaunchConfigurationEphemeralBlockDevice | cdktf.IResolvable): any {
@@ -171,6 +175,7 @@ export function launchConfigurationEphemeralBlockDeviceToTerraform(struct?: Laun
   }
   return {
     device_name: cdktf.stringToTerraform(struct!.deviceName),
+    no_device: cdktf.booleanToTerraform(struct!.noDevice),
     virtual_name: cdktf.stringToTerraform(struct!.virtualName),
   }
 }

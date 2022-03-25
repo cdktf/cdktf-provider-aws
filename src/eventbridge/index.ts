@@ -7,6 +7,7 @@ export * from './cloudwatch-event-connection';
 export * from './cloudwatch-event-permission';
 export * from './cloudwatch-event-rule';
 export * from './cloudwatch-event-target';
+export * from './data-aws-cloudwatch-event-bus';
 export * from './data-aws-cloudwatch-event-connection';
 export * from './data-aws-cloudwatch-event-source';
 

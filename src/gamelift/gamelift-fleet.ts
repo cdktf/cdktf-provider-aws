@@ -10,7 +10,7 @@ export interface GameliftFleetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_fleet#build_id GameliftFleet#build_id}
   */
-  readonly buildId: string;
+  readonly buildId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_fleet#description GameliftFleet#description}
   */
@@ -40,6 +40,10 @@ export interface GameliftFleetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly newGameSessionProtectionPolicy?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_fleet#script_id GameliftFleet#script_id}
+  */
+  readonly scriptId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_fleet#tags GameliftFleet#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -47,6 +51,12 @@ export interface GameliftFleetConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_fleet#tags_all GameliftFleet#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * certificate_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_fleet#certificate_configuration GameliftFleet#certificate_configuration}
+  */
+  readonly certificateConfiguration?: GameliftFleetCertificateConfiguration;
   /**
   * ec2_inbound_permission block
   * 
@@ -71,6 +81,72 @@ export interface GameliftFleetConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_fleet#timeouts GameliftFleet#timeouts}
   */
   readonly timeouts?: GameliftFleetTimeouts;
+}
+export interface GameliftFleetCertificateConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_fleet#certificate_type GameliftFleet#certificate_type}
+  */
+  readonly certificateType?: string;
+}
+
+export function gameliftFleetCertificateConfigurationToTerraform(struct?: GameliftFleetCertificateConfigurationOutputReference | GameliftFleetCertificateConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    certificate_type: cdktf.stringToTerraform(struct!.certificateType),
+  }
+}
+
+export class GameliftFleetCertificateConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): GameliftFleetCertificateConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._certificateType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificateType = this._certificateType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GameliftFleetCertificateConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._certificateType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._certificateType = value.certificateType;
+    }
+  }
+
+  // certificate_type - computed: false, optional: true, required: false
+  private _certificateType?: string; 
+  public get certificateType() {
+    return this.getStringAttribute('certificate_type');
+  }
+  public set certificateType(value: string) {
+    this._certificateType = value;
+  }
+  public resetCertificateType() {
+    this._certificateType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateTypeInput() {
+    return this._certificateType;
+  }
 }
 export interface GameliftFleetEc2InboundPermission {
   /**
@@ -481,8 +557,10 @@ export class GameliftFleet extends cdktf.TerraformResource {
     this._metricGroups = config.metricGroups;
     this._name = config.name;
     this._newGameSessionProtectionPolicy = config.newGameSessionProtectionPolicy;
+    this._scriptId = config.scriptId;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._certificateConfiguration.internalValue = config.certificateConfiguration;
     this._ec2InboundPermission = config.ec2InboundPermission;
     this._resourceCreationLimitPolicy.internalValue = config.resourceCreationLimitPolicy;
     this._runtimeConfiguration.internalValue = config.runtimeConfiguration;
@@ -498,13 +576,21 @@ export class GameliftFleet extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
-  // build_id - computed: false, optional: false, required: true
+  // build_arn - computed: true, optional: false, required: false
+  public get buildArn() {
+    return this.getStringAttribute('build_arn');
+  }
+
+  // build_id - computed: false, optional: true, required: false
   private _buildId?: string; 
   public get buildId() {
     return this.getStringAttribute('build_id');
   }
   public set buildId(value: string) {
     this._buildId = value;
+  }
+  public resetBuildId() {
+    this._buildId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get buildIdInput() {
@@ -632,6 +718,27 @@ export class GameliftFleet extends cdktf.TerraformResource {
     return this.getStringAttribute('operating_system');
   }
 
+  // script_arn - computed: true, optional: false, required: false
+  public get scriptArn() {
+    return this.getStringAttribute('script_arn');
+  }
+
+  // script_id - computed: false, optional: true, required: false
+  private _scriptId?: string; 
+  public get scriptId() {
+    return this.getStringAttribute('script_id');
+  }
+  public set scriptId(value: string) {
+    this._scriptId = value;
+  }
+  public resetScriptId() {
+    this._scriptId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scriptIdInput() {
+    return this._scriptId;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -664,11 +771,27 @@ export class GameliftFleet extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // certificate_configuration - computed: false, optional: true, required: false
+  private _certificateConfiguration = new GameliftFleetCertificateConfigurationOutputReference(this, "certificate_configuration", true);
+  public get certificateConfiguration() {
+    return this._certificateConfiguration;
+  }
+  public putCertificateConfiguration(value: GameliftFleetCertificateConfiguration) {
+    this._certificateConfiguration.internalValue = value;
+  }
+  public resetCertificateConfiguration() {
+    this._certificateConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateConfigurationInput() {
+    return this._certificateConfiguration.internalValue;
+  }
+
   // ec2_inbound_permission - computed: false, optional: true, required: false
   private _ec2InboundPermission?: GameliftFleetEc2InboundPermission[] | cdktf.IResolvable; 
   public get ec2InboundPermission() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ec2_inbound_permission');
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ec2_inbound_permission')));
   }
   public set ec2InboundPermission(value: GameliftFleetEc2InboundPermission[] | cdktf.IResolvable) {
     this._ec2InboundPermission = value;
@@ -743,8 +866,10 @@ export class GameliftFleet extends cdktf.TerraformResource {
       metric_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._metricGroups),
       name: cdktf.stringToTerraform(this._name),
       new_game_session_protection_policy: cdktf.stringToTerraform(this._newGameSessionProtectionPolicy),
+      script_id: cdktf.stringToTerraform(this._scriptId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      certificate_configuration: gameliftFleetCertificateConfigurationToTerraform(this._certificateConfiguration.internalValue),
       ec2_inbound_permission: cdktf.listMapper(gameliftFleetEc2InboundPermissionToTerraform)(this._ec2InboundPermission),
       resource_creation_limit_policy: gameliftFleetResourceCreationLimitPolicyToTerraform(this._resourceCreationLimitPolicy.internalValue),
       runtime_configuration: gameliftFleetRuntimeConfigurationToTerraform(this._runtimeConfiguration.internalValue),

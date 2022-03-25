@@ -19,6 +19,78 @@ export interface DataAwsServicecatalogConstraintConfig extends cdktf.TerraformMe
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_constraint#id DataAwsServicecatalogConstraint#id}
   */
   readonly id: string;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_constraint#timeouts DataAwsServicecatalogConstraint#timeouts}
+  */
+  readonly timeouts?: DataAwsServicecatalogConstraintTimeouts;
+}
+export interface DataAwsServicecatalogConstraintTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_constraint#read DataAwsServicecatalogConstraint#read}
+  */
+  readonly read?: string;
+}
+
+export function dataAwsServicecatalogConstraintTimeoutsToTerraform(struct?: DataAwsServicecatalogConstraintTimeoutsOutputReference | DataAwsServicecatalogConstraintTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    read: cdktf.stringToTerraform(struct!.read),
+  }
+}
+
+export class DataAwsServicecatalogConstraintTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): DataAwsServicecatalogConstraintTimeouts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsServicecatalogConstraintTimeouts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._read = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._read = value.read;
+    }
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
+  }
 }
 
 /**
@@ -56,6 +128,7 @@ export class DataAwsServicecatalogConstraint extends cdktf.TerraformDataSource {
     this._acceptLanguage = config.acceptLanguage;
     this._description = config.description;
     this._id = config.id;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -137,6 +210,22 @@ export class DataAwsServicecatalogConstraint extends cdktf.TerraformDataSource {
     return this.getStringAttribute('type');
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new DataAwsServicecatalogConstraintTimeoutsOutputReference(this, "timeouts", true);
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: DataAwsServicecatalogConstraintTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -146,6 +235,7 @@ export class DataAwsServicecatalogConstraint extends cdktf.TerraformDataSource {
       accept_language: cdktf.stringToTerraform(this._acceptLanguage),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
+      timeouts: dataAwsServicecatalogConstraintTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

@@ -124,6 +124,10 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly userDataBase64?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#user_data_replace_on_change Instance#user_data_replace_on_change}
+  */
+  readonly userDataReplaceOnChange?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#volume_tags Instance#volume_tags}
   */
   readonly volumeTags?: { [key: string]: string };
@@ -1297,6 +1301,7 @@ export class Instance extends cdktf.TerraformResource {
     this._tenancy = config.tenancy;
     this._userData = config.userData;
     this._userDataBase64 = config.userDataBase64;
+    this._userDataReplaceOnChange = config.userDataReplaceOnChange;
     this._volumeTags = config.volumeTags;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
     this._capacityReservationSpecification.internalValue = config.capacityReservationSpecification;
@@ -1824,6 +1829,22 @@ export class Instance extends cdktf.TerraformResource {
     return this._userDataBase64;
   }
 
+  // user_data_replace_on_change - computed: false, optional: true, required: false
+  private _userDataReplaceOnChange?: boolean | cdktf.IResolvable; 
+  public get userDataReplaceOnChange() {
+    return this.getBooleanAttribute('user_data_replace_on_change');
+  }
+  public set userDataReplaceOnChange(value: boolean | cdktf.IResolvable) {
+    this._userDataReplaceOnChange = value;
+  }
+  public resetUserDataReplaceOnChange() {
+    this._userDataReplaceOnChange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userDataReplaceOnChangeInput() {
+    return this._userDataReplaceOnChange;
+  }
+
   // volume_tags - computed: false, optional: true, required: false
   private _volumeTags?: { [key: string]: string }; 
   public get volumeTags() {
@@ -2054,6 +2075,7 @@ export class Instance extends cdktf.TerraformResource {
       tenancy: cdktf.stringToTerraform(this._tenancy),
       user_data: cdktf.stringToTerraform(this._userData),
       user_data_base64: cdktf.stringToTerraform(this._userDataBase64),
+      user_data_replace_on_change: cdktf.booleanToTerraform(this._userDataReplaceOnChange),
       volume_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._volumeTags),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
       capacity_reservation_specification: instanceCapacityReservationSpecificationToTerraform(this._capacityReservationSpecification.internalValue),

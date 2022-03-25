@@ -32,6 +32,10 @@ export interface Ec2TransitGatewayConfig extends cdktf.TerraformMetaArguments {
   */
   readonly dnsSupport?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway#multicast_support Ec2TransitGateway#multicast_support}
+  */
+  readonly multicastSupport?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway#tags Ec2TransitGateway#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -40,9 +44,139 @@ export interface Ec2TransitGatewayConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway#transit_gateway_cidr_blocks Ec2TransitGateway#transit_gateway_cidr_blocks}
+  */
+  readonly transitGatewayCidrBlocks?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway#vpn_ecmp_support Ec2TransitGateway#vpn_ecmp_support}
   */
   readonly vpnEcmpSupport?: string;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway#timeouts Ec2TransitGateway#timeouts}
+  */
+  readonly timeouts?: Ec2TransitGatewayTimeouts;
+}
+export interface Ec2TransitGatewayTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway#create Ec2TransitGateway#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway#delete Ec2TransitGateway#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway#update Ec2TransitGateway#update}
+  */
+  readonly update?: string;
+}
+
+export function ec2TransitGatewayTimeoutsToTerraform(struct?: Ec2TransitGatewayTimeoutsOutputReference | Ec2TransitGatewayTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+export class Ec2TransitGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): Ec2TransitGatewayTimeouts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Ec2TransitGatewayTimeouts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
 }
 
 /**
@@ -83,9 +217,12 @@ export class Ec2TransitGateway extends cdktf.TerraformResource {
     this._defaultRouteTablePropagation = config.defaultRouteTablePropagation;
     this._description = config.description;
     this._dnsSupport = config.dnsSupport;
+    this._multicastSupport = config.multicastSupport;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._transitGatewayCidrBlocks = config.transitGatewayCidrBlocks;
     this._vpnEcmpSupport = config.vpnEcmpSupport;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -203,6 +340,22 @@ export class Ec2TransitGateway extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // multicast_support - computed: false, optional: true, required: false
+  private _multicastSupport?: string; 
+  public get multicastSupport() {
+    return this.getStringAttribute('multicast_support');
+  }
+  public set multicastSupport(value: string) {
+    this._multicastSupport = value;
+  }
+  public resetMulticastSupport() {
+    this._multicastSupport = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get multicastSupportInput() {
+    return this._multicastSupport;
+  }
+
   // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
@@ -245,6 +398,22 @@ export class Ec2TransitGateway extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // transit_gateway_cidr_blocks - computed: false, optional: true, required: false
+  private _transitGatewayCidrBlocks?: string[]; 
+  public get transitGatewayCidrBlocks() {
+    return cdktf.Fn.tolist(this.getListAttribute('transit_gateway_cidr_blocks'));
+  }
+  public set transitGatewayCidrBlocks(value: string[]) {
+    this._transitGatewayCidrBlocks = value;
+  }
+  public resetTransitGatewayCidrBlocks() {
+    this._transitGatewayCidrBlocks = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitGatewayCidrBlocksInput() {
+    return this._transitGatewayCidrBlocks;
+  }
+
   // vpn_ecmp_support - computed: false, optional: true, required: false
   private _vpnEcmpSupport?: string; 
   public get vpnEcmpSupport() {
@@ -261,6 +430,22 @@ export class Ec2TransitGateway extends cdktf.TerraformResource {
     return this._vpnEcmpSupport;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new Ec2TransitGatewayTimeoutsOutputReference(this, "timeouts", true);
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: Ec2TransitGatewayTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -273,9 +458,12 @@ export class Ec2TransitGateway extends cdktf.TerraformResource {
       default_route_table_propagation: cdktf.stringToTerraform(this._defaultRouteTablePropagation),
       description: cdktf.stringToTerraform(this._description),
       dns_support: cdktf.stringToTerraform(this._dnsSupport),
+      multicast_support: cdktf.stringToTerraform(this._multicastSupport),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      transit_gateway_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(this._transitGatewayCidrBlocks),
       vpn_ecmp_support: cdktf.stringToTerraform(this._vpnEcmpSupport),
+      timeouts: ec2TransitGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

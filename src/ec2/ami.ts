@@ -12,6 +12,10 @@ export interface AmiConfig extends cdktf.TerraformMetaArguments {
   */
   readonly architecture?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami#boot_mode Ami#boot_mode}
+  */
+  readonly bootMode?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami#description Ami#description}
   */
   readonly description?: string;
@@ -92,6 +96,10 @@ export interface AmiEbsBlockDevice {
   */
   readonly iops?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami#outpost_arn Ami#outpost_arn}
+  */
+  readonly outpostArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami#snapshot_id Ami#snapshot_id}
   */
   readonly snapshotId?: string;
@@ -119,6 +127,7 @@ export function amiEbsBlockDeviceToTerraform(struct?: AmiEbsBlockDevice | cdktf.
     device_name: cdktf.stringToTerraform(struct!.deviceName),
     encrypted: cdktf.booleanToTerraform(struct!.encrypted),
     iops: cdktf.numberToTerraform(struct!.iops),
+    outpost_arn: cdktf.stringToTerraform(struct!.outpostArn),
     snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
     throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
@@ -302,6 +311,7 @@ export class Ami extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._architecture = config.architecture;
+    this._bootMode = config.bootMode;
     this._description = config.description;
     this._enaSupport = config.enaSupport;
     this._imageLocation = config.imageLocation;
@@ -341,6 +351,22 @@ export class Ami extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // boot_mode - computed: false, optional: true, required: false
+  private _bootMode?: string; 
+  public get bootMode() {
+    return this.getStringAttribute('boot_mode');
+  }
+  public set bootMode(value: string) {
+    this._bootMode = value;
+  }
+  public resetBootMode() {
+    this._bootMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bootModeInput() {
+    return this._bootMode;
   }
 
   // description - computed: false, optional: true, required: false
@@ -628,6 +654,7 @@ export class Ami extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       architecture: cdktf.stringToTerraform(this._architecture),
+      boot_mode: cdktf.stringToTerraform(this._bootMode),
       description: cdktf.stringToTerraform(this._description),
       ena_support: cdktf.booleanToTerraform(this._enaSupport),
       image_location: cdktf.stringToTerraform(this._imageLocation),

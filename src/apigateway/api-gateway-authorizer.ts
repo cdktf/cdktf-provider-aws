@@ -92,6 +92,11 @@ export class ApiGatewayAuthorizer extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // authorizer_credentials - computed: false, optional: true, required: false
   private _authorizerCredentials?: string; 
   public get authorizerCredentials() {

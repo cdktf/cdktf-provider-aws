@@ -72,6 +72,11 @@ export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSourc
     return this.getStringAttribute('configuration_endpoint_address');
   }
 
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -92,6 +97,16 @@ export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSourc
     return this.getStringAttribute('node_type');
   }
 
+  // num_cache_clusters - computed: true, optional: false, required: false
+  public get numCacheClusters() {
+    return this.getNumberAttribute('num_cache_clusters');
+  }
+
+  // num_node_groups - computed: true, optional: false, required: false
+  public get numNodeGroups() {
+    return this.getNumberAttribute('num_node_groups');
+  }
+
   // number_cache_clusters - computed: true, optional: false, required: false
   public get numberCacheClusters() {
     return this.getNumberAttribute('number_cache_clusters');
@@ -110,6 +125,11 @@ export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSourc
   // reader_endpoint_address - computed: true, optional: false, required: false
   public get readerEndpointAddress() {
     return this.getStringAttribute('reader_endpoint_address');
+  }
+
+  // replicas_per_node_group - computed: true, optional: false, required: false
+  public get replicasPerNodeGroup() {
+    return this.getNumberAttribute('replicas_per_node_group');
   }
 
   // replication_group_description - computed: true, optional: false, required: false

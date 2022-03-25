@@ -18,6 +18,16 @@ export interface DataAwsImagebuilderDistributionConfigurationConfig extends cdkt
 }
 export class DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission extends cdktf.ComplexComputedList {
 
+  // organization_arns - computed: true, optional: false, required: false
+  public get organizationArns() {
+    return cdktf.Fn.tolist(this.getListAttribute('organization_arns'));
+  }
+
+  // organizational_unit_arns - computed: true, optional: false, required: false
+  public get organizationalUnitArns() {
+    return cdktf.Fn.tolist(this.getListAttribute('organizational_unit_arns'));
+  }
+
   // user_groups - computed: true, optional: false, required: false
   public get userGroups() {
     return cdktf.Fn.tolist(this.getListAttribute('user_groups'));
@@ -61,12 +71,66 @@ export class DataAwsImagebuilderDistributionConfigurationDistributionAmiDistribu
     return cdktf.Fn.tolist(this.getListAttribute('target_account_ids'));
   }
 }
+export class DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepository extends cdktf.ComplexComputedList {
+
+  // repository_name - computed: true, optional: false, required: false
+  public get repositoryName() {
+    return this.getStringAttribute('repository_name');
+  }
+
+  // service - computed: true, optional: false, required: false
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+}
+export class DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfiguration extends cdktf.ComplexComputedList {
+
+  // container_tags - computed: true, optional: false, required: false
+  public get containerTags() {
+    return cdktf.Fn.tolist(this.getListAttribute('container_tags'));
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // target_repository - computed: true, optional: false, required: false
+  public get targetRepository() {
+    // Getting the computed value is not yet implemented
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('target_repository')));
+  }
+}
+export class DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration extends cdktf.ComplexComputedList {
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getBooleanAttribute('default');
+  }
+
+  // launch_template_id - computed: true, optional: false, required: false
+  public get launchTemplateId() {
+    return this.getStringAttribute('launch_template_id');
+  }
+}
 export class DataAwsImagebuilderDistributionConfigurationDistribution extends cdktf.ComplexComputedList {
 
   // ami_distribution_configuration - computed: true, optional: false, required: false
   public get amiDistributionConfiguration() {
     // Getting the computed value is not yet implemented
     return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ami_distribution_configuration')));
+  }
+
+  // container_distribution_configuration - computed: true, optional: false, required: false
+  public get containerDistributionConfiguration() {
+    // Getting the computed value is not yet implemented
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('container_distribution_configuration')));
+  }
+
+  // launch_template_configuration - computed: true, optional: false, required: false
+  public get launchTemplateConfiguration() {
+    // Getting the computed value is not yet implemented
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('launch_template_configuration')));
   }
 
   // license_configuration_arns - computed: true, optional: false, required: false

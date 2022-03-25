@@ -72,10 +72,6 @@ export interface OpsworksInstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#last_service_error_id OpsworksInstance#last_service_error_id}
-  */
-  readonly lastServiceErrorId?: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#layer_ids OpsworksInstance#layer_ids}
   */
   readonly layerIds: string[];
@@ -84,65 +80,13 @@ export interface OpsworksInstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly os?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#platform OpsworksInstance#platform}
-  */
-  readonly platform?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#private_dns OpsworksInstance#private_dns}
-  */
-  readonly privateDns?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#private_ip OpsworksInstance#private_ip}
-  */
-  readonly privateIp?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#public_dns OpsworksInstance#public_dns}
-  */
-  readonly publicDns?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#public_ip OpsworksInstance#public_ip}
-  */
-  readonly publicIp?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#registered_by OpsworksInstance#registered_by}
-  */
-  readonly registeredBy?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#reported_agent_version OpsworksInstance#reported_agent_version}
-  */
-  readonly reportedAgentVersion?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#reported_os_family OpsworksInstance#reported_os_family}
-  */
-  readonly reportedOsFamily?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#reported_os_name OpsworksInstance#reported_os_name}
-  */
-  readonly reportedOsName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#reported_os_version OpsworksInstance#reported_os_version}
-  */
-  readonly reportedOsVersion?: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#root_device_type OpsworksInstance#root_device_type}
   */
   readonly rootDeviceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#root_device_volume_id OpsworksInstance#root_device_volume_id}
-  */
-  readonly rootDeviceVolumeId?: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#security_group_ids OpsworksInstance#security_group_ids}
   */
   readonly securityGroupIds?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#ssh_host_dsa_key_fingerprint OpsworksInstance#ssh_host_dsa_key_fingerprint}
-  */
-  readonly sshHostDsaKeyFingerprint?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#ssh_host_rsa_key_fingerprint OpsworksInstance#ssh_host_rsa_key_fingerprint}
-  */
-  readonly sshHostRsaKeyFingerprint?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance#ssh_key_name OpsworksInstance#ssh_key_name}
   */
@@ -461,24 +405,10 @@ export class OpsworksInstance extends cdktf.TerraformResource {
     this._installUpdatesOnBoot = config.installUpdatesOnBoot;
     this._instanceProfileArn = config.instanceProfileArn;
     this._instanceType = config.instanceType;
-    this._lastServiceErrorId = config.lastServiceErrorId;
     this._layerIds = config.layerIds;
     this._os = config.os;
-    this._platform = config.platform;
-    this._privateDns = config.privateDns;
-    this._privateIp = config.privateIp;
-    this._publicDns = config.publicDns;
-    this._publicIp = config.publicIp;
-    this._registeredBy = config.registeredBy;
-    this._reportedAgentVersion = config.reportedAgentVersion;
-    this._reportedOsFamily = config.reportedOsFamily;
-    this._reportedOsName = config.reportedOsName;
-    this._reportedOsVersion = config.reportedOsVersion;
     this._rootDeviceType = config.rootDeviceType;
-    this._rootDeviceVolumeId = config.rootDeviceVolumeId;
     this._securityGroupIds = config.securityGroupIds;
-    this._sshHostDsaKeyFingerprint = config.sshHostDsaKeyFingerprint;
-    this._sshHostRsaKeyFingerprint = config.sshHostRsaKeyFingerprint;
     this._sshKeyName = config.sshKeyName;
     this._stackId = config.stackId;
     this._state = config.state;
@@ -762,20 +692,9 @@ export class OpsworksInstance extends cdktf.TerraformResource {
     return this._instanceType;
   }
 
-  // last_service_error_id - computed: true, optional: true, required: false
-  private _lastServiceErrorId?: string; 
+  // last_service_error_id - computed: true, optional: false, required: false
   public get lastServiceErrorId() {
     return this.getStringAttribute('last_service_error_id');
-  }
-  public set lastServiceErrorId(value: string) {
-    this._lastServiceErrorId = value;
-  }
-  public resetLastServiceErrorId() {
-    this._lastServiceErrorId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get lastServiceErrorIdInput() {
-    return this._lastServiceErrorId;
   }
 
   // layer_ids - computed: false, optional: false, required: true
@@ -807,164 +726,54 @@ export class OpsworksInstance extends cdktf.TerraformResource {
     return this._os;
   }
 
-  // platform - computed: true, optional: true, required: false
-  private _platform?: string; 
+  // platform - computed: true, optional: false, required: false
   public get platform() {
     return this.getStringAttribute('platform');
   }
-  public set platform(value: string) {
-    this._platform = value;
-  }
-  public resetPlatform() {
-    this._platform = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get platformInput() {
-    return this._platform;
-  }
 
-  // private_dns - computed: true, optional: true, required: false
-  private _privateDns?: string; 
+  // private_dns - computed: true, optional: false, required: false
   public get privateDns() {
     return this.getStringAttribute('private_dns');
   }
-  public set privateDns(value: string) {
-    this._privateDns = value;
-  }
-  public resetPrivateDns() {
-    this._privateDns = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get privateDnsInput() {
-    return this._privateDns;
-  }
 
-  // private_ip - computed: true, optional: true, required: false
-  private _privateIp?: string; 
+  // private_ip - computed: true, optional: false, required: false
   public get privateIp() {
     return this.getStringAttribute('private_ip');
   }
-  public set privateIp(value: string) {
-    this._privateIp = value;
-  }
-  public resetPrivateIp() {
-    this._privateIp = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get privateIpInput() {
-    return this._privateIp;
-  }
 
-  // public_dns - computed: true, optional: true, required: false
-  private _publicDns?: string; 
+  // public_dns - computed: true, optional: false, required: false
   public get publicDns() {
     return this.getStringAttribute('public_dns');
   }
-  public set publicDns(value: string) {
-    this._publicDns = value;
-  }
-  public resetPublicDns() {
-    this._publicDns = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get publicDnsInput() {
-    return this._publicDns;
-  }
 
-  // public_ip - computed: true, optional: true, required: false
-  private _publicIp?: string; 
+  // public_ip - computed: true, optional: false, required: false
   public get publicIp() {
     return this.getStringAttribute('public_ip');
   }
-  public set publicIp(value: string) {
-    this._publicIp = value;
-  }
-  public resetPublicIp() {
-    this._publicIp = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get publicIpInput() {
-    return this._publicIp;
-  }
 
-  // registered_by - computed: true, optional: true, required: false
-  private _registeredBy?: string; 
+  // registered_by - computed: true, optional: false, required: false
   public get registeredBy() {
     return this.getStringAttribute('registered_by');
   }
-  public set registeredBy(value: string) {
-    this._registeredBy = value;
-  }
-  public resetRegisteredBy() {
-    this._registeredBy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get registeredByInput() {
-    return this._registeredBy;
-  }
 
-  // reported_agent_version - computed: true, optional: true, required: false
-  private _reportedAgentVersion?: string; 
+  // reported_agent_version - computed: true, optional: false, required: false
   public get reportedAgentVersion() {
     return this.getStringAttribute('reported_agent_version');
   }
-  public set reportedAgentVersion(value: string) {
-    this._reportedAgentVersion = value;
-  }
-  public resetReportedAgentVersion() {
-    this._reportedAgentVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get reportedAgentVersionInput() {
-    return this._reportedAgentVersion;
-  }
 
-  // reported_os_family - computed: true, optional: true, required: false
-  private _reportedOsFamily?: string; 
+  // reported_os_family - computed: true, optional: false, required: false
   public get reportedOsFamily() {
     return this.getStringAttribute('reported_os_family');
   }
-  public set reportedOsFamily(value: string) {
-    this._reportedOsFamily = value;
-  }
-  public resetReportedOsFamily() {
-    this._reportedOsFamily = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get reportedOsFamilyInput() {
-    return this._reportedOsFamily;
-  }
 
-  // reported_os_name - computed: true, optional: true, required: false
-  private _reportedOsName?: string; 
+  // reported_os_name - computed: true, optional: false, required: false
   public get reportedOsName() {
     return this.getStringAttribute('reported_os_name');
   }
-  public set reportedOsName(value: string) {
-    this._reportedOsName = value;
-  }
-  public resetReportedOsName() {
-    this._reportedOsName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get reportedOsNameInput() {
-    return this._reportedOsName;
-  }
 
-  // reported_os_version - computed: true, optional: true, required: false
-  private _reportedOsVersion?: string; 
+  // reported_os_version - computed: true, optional: false, required: false
   public get reportedOsVersion() {
     return this.getStringAttribute('reported_os_version');
-  }
-  public set reportedOsVersion(value: string) {
-    this._reportedOsVersion = value;
-  }
-  public resetReportedOsVersion() {
-    this._reportedOsVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get reportedOsVersionInput() {
-    return this._reportedOsVersion;
   }
 
   // root_device_type - computed: true, optional: true, required: false
@@ -983,20 +792,9 @@ export class OpsworksInstance extends cdktf.TerraformResource {
     return this._rootDeviceType;
   }
 
-  // root_device_volume_id - computed: true, optional: true, required: false
-  private _rootDeviceVolumeId?: string; 
+  // root_device_volume_id - computed: true, optional: false, required: false
   public get rootDeviceVolumeId() {
     return this.getStringAttribute('root_device_volume_id');
-  }
-  public set rootDeviceVolumeId(value: string) {
-    this._rootDeviceVolumeId = value;
-  }
-  public resetRootDeviceVolumeId() {
-    this._rootDeviceVolumeId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rootDeviceVolumeIdInput() {
-    return this._rootDeviceVolumeId;
   }
 
   // security_group_ids - computed: true, optional: true, required: false
@@ -1015,36 +813,14 @@ export class OpsworksInstance extends cdktf.TerraformResource {
     return this._securityGroupIds;
   }
 
-  // ssh_host_dsa_key_fingerprint - computed: true, optional: true, required: false
-  private _sshHostDsaKeyFingerprint?: string; 
+  // ssh_host_dsa_key_fingerprint - computed: true, optional: false, required: false
   public get sshHostDsaKeyFingerprint() {
     return this.getStringAttribute('ssh_host_dsa_key_fingerprint');
   }
-  public set sshHostDsaKeyFingerprint(value: string) {
-    this._sshHostDsaKeyFingerprint = value;
-  }
-  public resetSshHostDsaKeyFingerprint() {
-    this._sshHostDsaKeyFingerprint = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sshHostDsaKeyFingerprintInput() {
-    return this._sshHostDsaKeyFingerprint;
-  }
 
-  // ssh_host_rsa_key_fingerprint - computed: true, optional: true, required: false
-  private _sshHostRsaKeyFingerprint?: string; 
+  // ssh_host_rsa_key_fingerprint - computed: true, optional: false, required: false
   public get sshHostRsaKeyFingerprint() {
     return this.getStringAttribute('ssh_host_rsa_key_fingerprint');
-  }
-  public set sshHostRsaKeyFingerprint(value: string) {
-    this._sshHostRsaKeyFingerprint = value;
-  }
-  public resetSshHostRsaKeyFingerprint() {
-    this._sshHostRsaKeyFingerprint = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sshHostRsaKeyFingerprintInput() {
-    return this._sshHostRsaKeyFingerprint;
   }
 
   // ssh_key_name - computed: true, optional: true, required: false
@@ -1245,24 +1021,10 @@ export class OpsworksInstance extends cdktf.TerraformResource {
       install_updates_on_boot: cdktf.booleanToTerraform(this._installUpdatesOnBoot),
       instance_profile_arn: cdktf.stringToTerraform(this._instanceProfileArn),
       instance_type: cdktf.stringToTerraform(this._instanceType),
-      last_service_error_id: cdktf.stringToTerraform(this._lastServiceErrorId),
       layer_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._layerIds),
       os: cdktf.stringToTerraform(this._os),
-      platform: cdktf.stringToTerraform(this._platform),
-      private_dns: cdktf.stringToTerraform(this._privateDns),
-      private_ip: cdktf.stringToTerraform(this._privateIp),
-      public_dns: cdktf.stringToTerraform(this._publicDns),
-      public_ip: cdktf.stringToTerraform(this._publicIp),
-      registered_by: cdktf.stringToTerraform(this._registeredBy),
-      reported_agent_version: cdktf.stringToTerraform(this._reportedAgentVersion),
-      reported_os_family: cdktf.stringToTerraform(this._reportedOsFamily),
-      reported_os_name: cdktf.stringToTerraform(this._reportedOsName),
-      reported_os_version: cdktf.stringToTerraform(this._reportedOsVersion),
       root_device_type: cdktf.stringToTerraform(this._rootDeviceType),
-      root_device_volume_id: cdktf.stringToTerraform(this._rootDeviceVolumeId),
       security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
-      ssh_host_dsa_key_fingerprint: cdktf.stringToTerraform(this._sshHostDsaKeyFingerprint),
-      ssh_host_rsa_key_fingerprint: cdktf.stringToTerraform(this._sshHostRsaKeyFingerprint),
       ssh_key_name: cdktf.stringToTerraform(this._sshKeyName),
       stack_id: cdktf.stringToTerraform(this._stackId),
       state: cdktf.stringToTerraform(this._state),

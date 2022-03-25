@@ -48,6 +48,10 @@ export interface Apigatewayv2DomainNameDomainNameConfiguration {
   */
   readonly endpointType: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name#ownership_verification_certificate_arn Apigatewayv2DomainName#ownership_verification_certificate_arn}
+  */
+  readonly ownershipVerificationCertificateArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name#security_policy Apigatewayv2DomainName#security_policy}
   */
   readonly securityPolicy: string;
@@ -61,6 +65,7 @@ export function apigatewayv2DomainNameDomainNameConfigurationToTerraform(struct?
   return {
     certificate_arn: cdktf.stringToTerraform(struct!.certificateArn),
     endpoint_type: cdktf.stringToTerraform(struct!.endpointType),
+    ownership_verification_certificate_arn: cdktf.stringToTerraform(struct!.ownershipVerificationCertificateArn),
     security_policy: cdktf.stringToTerraform(struct!.securityPolicy),
   }
 }
@@ -88,6 +93,10 @@ export class Apigatewayv2DomainNameDomainNameConfigurationOutputReference extend
       hasAnyValues = true;
       internalValueResult.endpointType = this._endpointType;
     }
+    if (this._ownershipVerificationCertificateArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ownershipVerificationCertificateArn = this._ownershipVerificationCertificateArn;
+    }
     if (this._securityPolicy !== undefined) {
       hasAnyValues = true;
       internalValueResult.securityPolicy = this._securityPolicy;
@@ -100,12 +109,14 @@ export class Apigatewayv2DomainNameDomainNameConfigurationOutputReference extend
       this.isEmptyObject = false;
       this._certificateArn = undefined;
       this._endpointType = undefined;
+      this._ownershipVerificationCertificateArn = undefined;
       this._securityPolicy = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._certificateArn = value.certificateArn;
       this._endpointType = value.endpointType;
+      this._ownershipVerificationCertificateArn = value.ownershipVerificationCertificateArn;
       this._securityPolicy = value.securityPolicy;
     }
   }
@@ -139,6 +150,22 @@ export class Apigatewayv2DomainNameDomainNameConfigurationOutputReference extend
   // hosted_zone_id - computed: true, optional: false, required: false
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
+  }
+
+  // ownership_verification_certificate_arn - computed: true, optional: true, required: false
+  private _ownershipVerificationCertificateArn?: string; 
+  public get ownershipVerificationCertificateArn() {
+    return this.getStringAttribute('ownership_verification_certificate_arn');
+  }
+  public set ownershipVerificationCertificateArn(value: string) {
+    this._ownershipVerificationCertificateArn = value;
+  }
+  public resetOwnershipVerificationCertificateArn() {
+    this._ownershipVerificationCertificateArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownershipVerificationCertificateArnInput() {
+    return this._ownershipVerificationCertificateArn;
   }
 
   // security_policy - computed: false, optional: false, required: true

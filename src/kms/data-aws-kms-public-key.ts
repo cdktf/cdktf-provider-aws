@@ -116,6 +116,11 @@ export class DataAwsKmsPublicKey extends cdktf.TerraformDataSource {
     return this.getStringAttribute('public_key');
   }
 
+  // public_key_pem - computed: true, optional: false, required: false
+  public get publicKeyPem() {
+    return this.getStringAttribute('public_key_pem');
+  }
+
   // signing_algorithms - computed: true, optional: false, required: false
   public get signingAlgorithms() {
     return this.getListAttribute('signing_algorithms');

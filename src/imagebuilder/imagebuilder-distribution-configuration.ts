@@ -32,6 +32,14 @@ export interface ImagebuilderDistributionConfigurationConfig extends cdktf.Terra
 }
 export interface ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#organization_arns ImagebuilderDistributionConfiguration#organization_arns}
+  */
+  readonly organizationArns?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#organizational_unit_arns ImagebuilderDistributionConfiguration#organizational_unit_arns}
+  */
+  readonly organizationalUnitArns?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#user_groups ImagebuilderDistributionConfiguration#user_groups}
   */
   readonly userGroups?: string[];
@@ -47,6 +55,8 @@ export function imagebuilderDistributionConfigurationDistributionAmiDistribution
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    organization_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.organizationArns),
+    organizational_unit_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.organizationalUnitArns),
     user_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.userGroups),
     user_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.userIds),
   }
@@ -67,6 +77,14 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   public get internalValue(): ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._organizationArns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.organizationArns = this._organizationArns;
+    }
+    if (this._organizationalUnitArns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.organizationalUnitArns = this._organizationalUnitArns;
+    }
     if (this._userGroups !== undefined) {
       hasAnyValues = true;
       internalValueResult.userGroups = this._userGroups;
@@ -81,14 +99,50 @@ export class ImagebuilderDistributionConfigurationDistributionAmiDistributionCon
   public set internalValue(value: ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._organizationArns = undefined;
+      this._organizationalUnitArns = undefined;
       this._userGroups = undefined;
       this._userIds = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._organizationArns = value.organizationArns;
+      this._organizationalUnitArns = value.organizationalUnitArns;
       this._userGroups = value.userGroups;
       this._userIds = value.userIds;
     }
+  }
+
+  // organization_arns - computed: false, optional: true, required: false
+  private _organizationArns?: string[]; 
+  public get organizationArns() {
+    return cdktf.Fn.tolist(this.getListAttribute('organization_arns'));
+  }
+  public set organizationArns(value: string[]) {
+    this._organizationArns = value;
+  }
+  public resetOrganizationArns() {
+    this._organizationArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationArnsInput() {
+    return this._organizationArns;
+  }
+
+  // organizational_unit_arns - computed: false, optional: true, required: false
+  private _organizationalUnitArns?: string[]; 
+  public get organizationalUnitArns() {
+    return cdktf.Fn.tolist(this.getListAttribute('organizational_unit_arns'));
+  }
+  public set organizationalUnitArns(value: string[]) {
+    this._organizationalUnitArns = value;
+  }
+  public resetOrganizationalUnitArns() {
+    this._organizationalUnitArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationalUnitArnsInput() {
+    return this._organizationalUnitArns;
   }
 
   // user_groups - computed: false, optional: true, required: false
@@ -532,6 +586,28 @@ export class ImagebuilderDistributionConfigurationDistributionContainerDistribut
     return this._targetRepository.internalValue;
   }
 }
+export interface ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#default ImagebuilderDistributionConfiguration#default}
+  */
+  readonly default?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#launch_template_id ImagebuilderDistributionConfiguration#launch_template_id}
+  */
+  readonly launchTemplateId: string;
+}
+
+export function imagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationToTerraform(struct?: ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    default: cdktf.booleanToTerraform(struct!.default),
+    launch_template_id: cdktf.stringToTerraform(struct!.launchTemplateId),
+  }
+}
+
 export interface ImagebuilderDistributionConfigurationDistribution {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#license_configuration_arns ImagebuilderDistributionConfiguration#license_configuration_arns}
@@ -553,6 +629,12 @@ export interface ImagebuilderDistributionConfigurationDistribution {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#container_distribution_configuration ImagebuilderDistributionConfiguration#container_distribution_configuration}
   */
   readonly containerDistributionConfiguration?: ImagebuilderDistributionConfigurationDistributionContainerDistributionConfiguration;
+  /**
+  * launch_template_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#launch_template_configuration ImagebuilderDistributionConfiguration#launch_template_configuration}
+  */
+  readonly launchTemplateConfiguration?: ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration[] | cdktf.IResolvable;
 }
 
 export function imagebuilderDistributionConfigurationDistributionToTerraform(struct?: ImagebuilderDistributionConfigurationDistribution | cdktf.IResolvable): any {
@@ -565,6 +647,7 @@ export function imagebuilderDistributionConfigurationDistributionToTerraform(str
     region: cdktf.stringToTerraform(struct!.region),
     ami_distribution_configuration: imagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationToTerraform(struct!.amiDistributionConfiguration),
     container_distribution_configuration: imagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationToTerraform(struct!.containerDistributionConfiguration),
+    launch_template_configuration: cdktf.listMapper(imagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationToTerraform)(struct!.launchTemplateConfiguration),
   }
 }
 

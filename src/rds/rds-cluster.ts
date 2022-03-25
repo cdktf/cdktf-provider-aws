@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#allocated_storage RdsCluster#allocated_storage}
+  */
+  readonly allocatedStorage?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#allow_major_version_upgrade RdsCluster#allow_major_version_upgrade}
   */
   readonly allowMajorVersionUpgrade?: boolean | cdktf.IResolvable;
@@ -47,6 +51,10 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#database_name RdsCluster#database_name}
   */
   readonly databaseName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#db_cluster_instance_class RdsCluster#db_cluster_instance_class}
+  */
+  readonly dbClusterInstanceClass?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#db_cluster_parameter_group_name RdsCluster#db_cluster_parameter_group_name}
   */
@@ -104,6 +112,10 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly iamRoles?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#iops RdsCluster#iops}
+  */
+  readonly iops?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#kms_key_id RdsCluster#kms_key_id}
   */
   readonly kmsKeyId?: string;
@@ -147,6 +159,10 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#storage_encrypted RdsCluster#storage_encrypted}
   */
   readonly storageEncrypted?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#storage_type RdsCluster#storage_type}
+  */
+  readonly storageType?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#tags RdsCluster#tags}
   */
@@ -817,6 +833,7 @@ export class RdsCluster extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._allocatedStorage = config.allocatedStorage;
     this._allowMajorVersionUpgrade = config.allowMajorVersionUpgrade;
     this._applyImmediately = config.applyImmediately;
     this._availabilityZones = config.availabilityZones;
@@ -827,6 +844,7 @@ export class RdsCluster extends cdktf.TerraformResource {
     this._clusterMembers = config.clusterMembers;
     this._copyTagsToSnapshot = config.copyTagsToSnapshot;
     this._databaseName = config.databaseName;
+    this._dbClusterInstanceClass = config.dbClusterInstanceClass;
     this._dbClusterParameterGroupName = config.dbClusterParameterGroupName;
     this._dbInstanceParameterGroupName = config.dbInstanceParameterGroupName;
     this._dbSubnetGroupName = config.dbSubnetGroupName;
@@ -841,6 +859,7 @@ export class RdsCluster extends cdktf.TerraformResource {
     this._globalClusterIdentifier = config.globalClusterIdentifier;
     this._iamDatabaseAuthenticationEnabled = config.iamDatabaseAuthenticationEnabled;
     this._iamRoles = config.iamRoles;
+    this._iops = config.iops;
     this._kmsKeyId = config.kmsKeyId;
     this._masterPassword = config.masterPassword;
     this._masterUsername = config.masterUsername;
@@ -852,6 +871,7 @@ export class RdsCluster extends cdktf.TerraformResource {
     this._snapshotIdentifier = config.snapshotIdentifier;
     this._sourceRegion = config.sourceRegion;
     this._storageEncrypted = config.storageEncrypted;
+    this._storageType = config.storageType;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
@@ -864,6 +884,22 @@ export class RdsCluster extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // allocated_storage - computed: true, optional: true, required: false
+  private _allocatedStorage?: number; 
+  public get allocatedStorage() {
+    return this.getNumberAttribute('allocated_storage');
+  }
+  public set allocatedStorage(value: number) {
+    this._allocatedStorage = value;
+  }
+  public resetAllocatedStorage() {
+    this._allocatedStorage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allocatedStorageInput() {
+    return this._allocatedStorage;
+  }
 
   // allow_major_version_upgrade - computed: false, optional: true, required: false
   private _allowMajorVersionUpgrade?: boolean | cdktf.IResolvable; 
@@ -1033,6 +1069,22 @@ export class RdsCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get databaseNameInput() {
     return this._databaseName;
+  }
+
+  // db_cluster_instance_class - computed: false, optional: true, required: false
+  private _dbClusterInstanceClass?: string; 
+  public get dbClusterInstanceClass() {
+    return this.getStringAttribute('db_cluster_instance_class');
+  }
+  public set dbClusterInstanceClass(value: string) {
+    this._dbClusterInstanceClass = value;
+  }
+  public resetDbClusterInstanceClass() {
+    this._dbClusterInstanceClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbClusterInstanceClassInput() {
+    return this._dbClusterInstanceClass;
   }
 
   // db_cluster_parameter_group_name - computed: true, optional: true, required: false
@@ -1279,6 +1331,22 @@ export class RdsCluster extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // iops - computed: false, optional: true, required: false
+  private _iops?: number; 
+  public get iops() {
+    return this.getNumberAttribute('iops');
+  }
+  public set iops(value: number) {
+    this._iops = value;
+  }
+  public resetIops() {
+    this._iops = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iopsInput() {
+    return this._iops;
+  }
+
   // kms_key_id - computed: true, optional: true, required: false
   private _kmsKeyId?: string; 
   public get kmsKeyId() {
@@ -1460,6 +1528,22 @@ export class RdsCluster extends cdktf.TerraformResource {
     return this._storageEncrypted;
   }
 
+  // storage_type - computed: false, optional: true, required: false
+  private _storageType?: string; 
+  public get storageType() {
+    return this.getStringAttribute('storage_type');
+  }
+  public set storageType(value: string) {
+    this._storageType = value;
+  }
+  public resetStorageType() {
+    this._storageType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageTypeInput() {
+    return this._storageType;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -1578,6 +1662,7 @@ export class RdsCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      allocated_storage: cdktf.numberToTerraform(this._allocatedStorage),
       allow_major_version_upgrade: cdktf.booleanToTerraform(this._allowMajorVersionUpgrade),
       apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
       availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
@@ -1588,6 +1673,7 @@ export class RdsCluster extends cdktf.TerraformResource {
       cluster_members: cdktf.listMapper(cdktf.stringToTerraform)(this._clusterMembers),
       copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
       database_name: cdktf.stringToTerraform(this._databaseName),
+      db_cluster_instance_class: cdktf.stringToTerraform(this._dbClusterInstanceClass),
       db_cluster_parameter_group_name: cdktf.stringToTerraform(this._dbClusterParameterGroupName),
       db_instance_parameter_group_name: cdktf.stringToTerraform(this._dbInstanceParameterGroupName),
       db_subnet_group_name: cdktf.stringToTerraform(this._dbSubnetGroupName),
@@ -1602,6 +1688,7 @@ export class RdsCluster extends cdktf.TerraformResource {
       global_cluster_identifier: cdktf.stringToTerraform(this._globalClusterIdentifier),
       iam_database_authentication_enabled: cdktf.booleanToTerraform(this._iamDatabaseAuthenticationEnabled),
       iam_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._iamRoles),
+      iops: cdktf.numberToTerraform(this._iops),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       master_password: cdktf.stringToTerraform(this._masterPassword),
       master_username: cdktf.stringToTerraform(this._masterUsername),
@@ -1613,6 +1700,7 @@ export class RdsCluster extends cdktf.TerraformResource {
       snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
       source_region: cdktf.stringToTerraform(this._sourceRegion),
       storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
+      storage_type: cdktf.stringToTerraform(this._storageType),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),

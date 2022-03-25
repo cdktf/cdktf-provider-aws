@@ -87,6 +87,43 @@ export class DataAwsLaunchTemplateBlockDeviceMappings extends cdktf.ComplexCompu
     return this.getStringAttribute('virtual_name');
   }
 }
+export class DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTarget extends cdktf.ComplexComputedList {
+
+  // capacity_reservation_id - computed: true, optional: false, required: false
+  public get capacityReservationId() {
+    return this.getStringAttribute('capacity_reservation_id');
+  }
+
+  // capacity_reservation_resource_group_arn - computed: true, optional: false, required: false
+  public get capacityReservationResourceGroupArn() {
+    return this.getStringAttribute('capacity_reservation_resource_group_arn');
+  }
+}
+export class DataAwsLaunchTemplateCapacityReservationSpecification extends cdktf.ComplexComputedList {
+
+  // capacity_reservation_preference - computed: true, optional: false, required: false
+  public get capacityReservationPreference() {
+    return this.getStringAttribute('capacity_reservation_preference');
+  }
+
+  // capacity_reservation_target - computed: true, optional: false, required: false
+  public get capacityReservationTarget() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('capacity_reservation_target');
+  }
+}
+export class DataAwsLaunchTemplateCpuOptions extends cdktf.ComplexComputedList {
+
+  // core_count - computed: true, optional: false, required: false
+  public get coreCount() {
+    return this.getNumberAttribute('core_count');
+  }
+
+  // threads_per_core - computed: true, optional: false, required: false
+  public get threadsPerCore() {
+    return this.getNumberAttribute('threads_per_core');
+  }
+}
 export class DataAwsLaunchTemplateCreditSpecification extends cdktf.ComplexComputedList {
 
   // cpu_credits - computed: true, optional: false, required: false
@@ -95,6 +132,13 @@ export class DataAwsLaunchTemplateCreditSpecification extends cdktf.ComplexCompu
   }
 }
 export class DataAwsLaunchTemplateElasticGpuSpecifications extends cdktf.ComplexComputedList {
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+export class DataAwsLaunchTemplateElasticInferenceAccelerator extends cdktf.ComplexComputedList {
 
   // type - computed: true, optional: false, required: false
   public get type() {
@@ -165,6 +209,13 @@ export class DataAwsLaunchTemplateInstanceMarketOptions extends cdktf.ComplexCom
   public get spotOptions() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('spot_options');
+  }
+}
+export class DataAwsLaunchTemplateLicenseSpecification extends cdktf.ComplexComputedList {
+
+  // license_configuration_arn - computed: true, optional: false, required: false
+  public get licenseConfigurationArn() {
+    return this.getStringAttribute('license_configuration_arn');
   }
 }
 export class DataAwsLaunchTemplateMetadataOptions extends cdktf.ComplexComputedList {
@@ -243,6 +294,16 @@ export class DataAwsLaunchTemplateNetworkInterfaces extends cdktf.ComplexCompute
     return cdktf.Fn.tolist(this.getListAttribute('ipv4_addresses'));
   }
 
+  // ipv4_prefix_count - computed: true, optional: false, required: false
+  public get ipv4PrefixCount() {
+    return this.getNumberAttribute('ipv4_prefix_count');
+  }
+
+  // ipv4_prefixes - computed: true, optional: false, required: false
+  public get ipv4Prefixes() {
+    return cdktf.Fn.tolist(this.getListAttribute('ipv4_prefixes'));
+  }
+
   // ipv6_address_count - computed: true, optional: false, required: false
   public get ipv6AddressCount() {
     return this.getNumberAttribute('ipv6_address_count');
@@ -251,6 +312,16 @@ export class DataAwsLaunchTemplateNetworkInterfaces extends cdktf.ComplexCompute
   // ipv6_addresses - computed: true, optional: false, required: false
   public get ipv6Addresses() {
     return cdktf.Fn.tolist(this.getListAttribute('ipv6_addresses'));
+  }
+
+  // ipv6_prefix_count - computed: true, optional: false, required: false
+  public get ipv6PrefixCount() {
+    return this.getNumberAttribute('ipv6_prefix_count');
+  }
+
+  // ipv6_prefixes - computed: true, optional: false, required: false
+  public get ipv6Prefixes() {
+    return cdktf.Fn.tolist(this.getListAttribute('ipv6_prefixes'));
   }
 
   // network_card_index - computed: true, optional: false, required: false
@@ -318,6 +389,23 @@ export class DataAwsLaunchTemplatePlacement extends cdktf.ComplexComputedList {
   // tenancy - computed: true, optional: false, required: false
   public get tenancy() {
     return this.getStringAttribute('tenancy');
+  }
+}
+export class DataAwsLaunchTemplatePrivateDnsNameOptions extends cdktf.ComplexComputedList {
+
+  // enable_resource_name_dns_a_record - computed: true, optional: false, required: false
+  public get enableResourceNameDnsARecord() {
+    return this.getBooleanAttribute('enable_resource_name_dns_a_record');
+  }
+
+  // enable_resource_name_dns_aaaa_record - computed: true, optional: false, required: false
+  public get enableResourceNameDnsAaaaRecord() {
+    return this.getBooleanAttribute('enable_resource_name_dns_aaaa_record');
+  }
+
+  // hostname_type - computed: true, optional: false, required: false
+  public get hostnameType() {
+    return this.getStringAttribute('hostname_type');
   }
 }
 export class DataAwsLaunchTemplateTagSpecifications extends cdktf.ComplexComputedList {
@@ -406,6 +494,16 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
     return new DataAwsLaunchTemplateBlockDeviceMappings(this, 'block_device_mappings', index, false);
   }
 
+  // capacity_reservation_specification - computed: true, optional: false, required: false
+  public capacityReservationSpecification(index: string) {
+    return new DataAwsLaunchTemplateCapacityReservationSpecification(this, 'capacity_reservation_specification', index, false);
+  }
+
+  // cpu_options - computed: true, optional: false, required: false
+  public cpuOptions(index: string) {
+    return new DataAwsLaunchTemplateCpuOptions(this, 'cpu_options', index, false);
+  }
+
   // credit_specification - computed: true, optional: false, required: false
   public creditSpecification(index: string) {
     return new DataAwsLaunchTemplateCreditSpecification(this, 'credit_specification', index, false);
@@ -434,6 +532,11 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
   // elastic_gpu_specifications - computed: true, optional: false, required: false
   public elasticGpuSpecifications(index: string) {
     return new DataAwsLaunchTemplateElasticGpuSpecifications(this, 'elastic_gpu_specifications', index, false);
+  }
+
+  // elastic_inference_accelerator - computed: true, optional: false, required: false
+  public elasticInferenceAccelerator(index: string) {
+    return new DataAwsLaunchTemplateElasticInferenceAccelerator(this, 'elastic_inference_accelerator', index, false);
   }
 
   // enclave_options - computed: true, optional: false, required: false
@@ -491,6 +594,11 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
     return this.getNumberAttribute('latest_version');
   }
 
+  // license_specification - computed: true, optional: false, required: false
+  public licenseSpecification(index: string) {
+    return new DataAwsLaunchTemplateLicenseSpecification(this, 'license_specification', index, false);
+  }
+
   // metadata_options - computed: true, optional: false, required: false
   public metadataOptions(index: string) {
     return new DataAwsLaunchTemplateMetadataOptions(this, 'metadata_options', index, false);
@@ -501,7 +609,7 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
     return new DataAwsLaunchTemplateMonitoring(this, 'monitoring', index, false);
   }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -525,6 +633,11 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
   // placement - computed: true, optional: false, required: false
   public placement(index: string) {
     return new DataAwsLaunchTemplatePlacement(this, 'placement', index, false);
+  }
+
+  // private_dns_name_options - computed: true, optional: false, required: false
+  public privateDnsNameOptions(index: string) {
+    return new DataAwsLaunchTemplatePrivateDnsNameOptions(this, 'private_dns_name_options', index, false);
   }
 
   // ram_disk_id - computed: true, optional: false, required: false

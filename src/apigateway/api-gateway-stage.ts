@@ -61,6 +61,12 @@ export interface ApiGatewayStageConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage#access_log_settings ApiGatewayStage#access_log_settings}
   */
   readonly accessLogSettings?: ApiGatewayStageAccessLogSettings;
+  /**
+  * canary_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage#canary_settings ApiGatewayStage#canary_settings}
+  */
+  readonly canarySettings?: ApiGatewayStageCanarySettings;
 }
 export interface ApiGatewayStageAccessLogSettings {
   /**
@@ -149,6 +155,126 @@ export class ApiGatewayStageAccessLogSettingsOutputReference extends cdktf.Compl
     return this._format;
   }
 }
+export interface ApiGatewayStageCanarySettings {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage#percent_traffic ApiGatewayStage#percent_traffic}
+  */
+  readonly percentTraffic?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage#stage_variable_overrides ApiGatewayStage#stage_variable_overrides}
+  */
+  readonly stageVariableOverrides?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage#use_stage_cache ApiGatewayStage#use_stage_cache}
+  */
+  readonly useStageCache?: boolean | cdktf.IResolvable;
+}
+
+export function apiGatewayStageCanarySettingsToTerraform(struct?: ApiGatewayStageCanarySettingsOutputReference | ApiGatewayStageCanarySettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    percent_traffic: cdktf.numberToTerraform(struct!.percentTraffic),
+    stage_variable_overrides: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.stageVariableOverrides),
+    use_stage_cache: cdktf.booleanToTerraform(struct!.useStageCache),
+  }
+}
+
+export class ApiGatewayStageCanarySettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): ApiGatewayStageCanarySettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._percentTraffic !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.percentTraffic = this._percentTraffic;
+    }
+    if (this._stageVariableOverrides !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stageVariableOverrides = this._stageVariableOverrides;
+    }
+    if (this._useStageCache !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useStageCache = this._useStageCache;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApiGatewayStageCanarySettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._percentTraffic = undefined;
+      this._stageVariableOverrides = undefined;
+      this._useStageCache = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._percentTraffic = value.percentTraffic;
+      this._stageVariableOverrides = value.stageVariableOverrides;
+      this._useStageCache = value.useStageCache;
+    }
+  }
+
+  // percent_traffic - computed: false, optional: true, required: false
+  private _percentTraffic?: number; 
+  public get percentTraffic() {
+    return this.getNumberAttribute('percent_traffic');
+  }
+  public set percentTraffic(value: number) {
+    this._percentTraffic = value;
+  }
+  public resetPercentTraffic() {
+    this._percentTraffic = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get percentTrafficInput() {
+    return this._percentTraffic;
+  }
+
+  // stage_variable_overrides - computed: false, optional: true, required: false
+  private _stageVariableOverrides?: { [key: string]: string }; 
+  public get stageVariableOverrides() {
+    return this.getStringMapAttribute('stage_variable_overrides');
+  }
+  public set stageVariableOverrides(value: { [key: string]: string }) {
+    this._stageVariableOverrides = value;
+  }
+  public resetStageVariableOverrides() {
+    this._stageVariableOverrides = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stageVariableOverridesInput() {
+    return this._stageVariableOverrides;
+  }
+
+  // use_stage_cache - computed: false, optional: true, required: false
+  private _useStageCache?: boolean | cdktf.IResolvable; 
+  public get useStageCache() {
+    return this.getBooleanAttribute('use_stage_cache');
+  }
+  public set useStageCache(value: boolean | cdktf.IResolvable) {
+    this._useStageCache = value;
+  }
+  public resetUseStageCache() {
+    this._useStageCache = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useStageCacheInput() {
+    return this._useStageCache;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage aws_api_gateway_stage}
@@ -195,6 +321,7 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
     this._variables = config.variables;
     this._xrayTracingEnabled = config.xrayTracingEnabled;
     this._accessLogSettings.internalValue = config.accessLogSettings;
+    this._canarySettings.internalValue = config.canarySettings;
   }
 
   // ==========
@@ -425,6 +552,22 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
     return this._accessLogSettings.internalValue;
   }
 
+  // canary_settings - computed: false, optional: true, required: false
+  private _canarySettings = new ApiGatewayStageCanarySettingsOutputReference(this, "canary_settings", true);
+  public get canarySettings() {
+    return this._canarySettings;
+  }
+  public putCanarySettings(value: ApiGatewayStageCanarySettings) {
+    this._canarySettings.internalValue = value;
+  }
+  public resetCanarySettings() {
+    this._canarySettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get canarySettingsInput() {
+    return this._canarySettings.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -444,6 +587,7 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
       variables: cdktf.hashMapper(cdktf.stringToTerraform)(this._variables),
       xray_tracing_enabled: cdktf.booleanToTerraform(this._xrayTracingEnabled),
       access_log_settings: apiGatewayStageAccessLogSettingsToTerraform(this._accessLogSettings.internalValue),
+      canary_settings: apiGatewayStageCanarySettingsToTerraform(this._canarySettings.internalValue),
     };
   }
 }

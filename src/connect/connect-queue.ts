@@ -321,6 +321,11 @@ export class ConnectQueue extends cdktf.TerraformResource {
     return this._quickConnectIds;
   }
 
+  // quick_connect_ids_associated - computed: true, optional: false, required: false
+  public get quickConnectIdsAssociated() {
+    return cdktf.Fn.tolist(this.getListAttribute('quick_connect_ids_associated'));
+  }
+
   // status - computed: true, optional: true, required: false
   private _status?: string; 
   public get status() {

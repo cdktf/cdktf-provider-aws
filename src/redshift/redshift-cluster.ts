@@ -20,6 +20,10 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly availabilityZone?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster#availability_zone_relocation_enabled RedshiftCluster#availability_zone_relocation_enabled}
+  */
+  readonly availabilityZoneRelocationEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster#cluster_identifier RedshiftCluster#cluster_identifier}
   */
   readonly clusterIdentifier: string;
@@ -565,6 +569,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
     this._allowVersionUpgrade = config.allowVersionUpgrade;
     this._automatedSnapshotRetentionPeriod = config.automatedSnapshotRetentionPeriod;
     this._availabilityZone = config.availabilityZone;
+    this._availabilityZoneRelocationEnabled = config.availabilityZoneRelocationEnabled;
     this._clusterIdentifier = config.clusterIdentifier;
     this._clusterParameterGroupName = config.clusterParameterGroupName;
     this._clusterPublicKey = config.clusterPublicKey;
@@ -655,6 +660,22 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get availabilityZoneInput() {
     return this._availabilityZone;
+  }
+
+  // availability_zone_relocation_enabled - computed: false, optional: true, required: false
+  private _availabilityZoneRelocationEnabled?: boolean | cdktf.IResolvable; 
+  public get availabilityZoneRelocationEnabled() {
+    return this.getBooleanAttribute('availability_zone_relocation_enabled');
+  }
+  public set availabilityZoneRelocationEnabled(value: boolean | cdktf.IResolvable) {
+    this._availabilityZoneRelocationEnabled = value;
+  }
+  public resetAvailabilityZoneRelocationEnabled() {
+    this._availabilityZoneRelocationEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneRelocationEnabledInput() {
+    return this._availabilityZoneRelocationEnabled;
   }
 
   // cluster_identifier - computed: false, optional: false, required: true
@@ -1203,6 +1224,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
       allow_version_upgrade: cdktf.booleanToTerraform(this._allowVersionUpgrade),
       automated_snapshot_retention_period: cdktf.numberToTerraform(this._automatedSnapshotRetentionPeriod),
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      availability_zone_relocation_enabled: cdktf.booleanToTerraform(this._availabilityZoneRelocationEnabled),
       cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
       cluster_parameter_group_name: cdktf.stringToTerraform(this._clusterParameterGroupName),
       cluster_public_key: cdktf.stringToTerraform(this._clusterPublicKey),

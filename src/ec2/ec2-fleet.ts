@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface Ec2FleetConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#context Ec2Fleet#context}
+  */
+  readonly context?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#excess_capacity_termination_policy Ec2Fleet#excess_capacity_termination_policy}
   */
   readonly excessCapacityTerminationPolicy?: string;
@@ -963,6 +967,7 @@ export class Ec2Fleet extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._context = config.context;
     this._excessCapacityTerminationPolicy = config.excessCapacityTerminationPolicy;
     this._replaceUnhealthyInstances = config.replaceUnhealthyInstances;
     this._tags = config.tags;
@@ -980,6 +985,22 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // context - computed: false, optional: true, required: false
+  private _context?: string; 
+  public get context() {
+    return this.getStringAttribute('context');
+  }
+  public set context(value: string) {
+    this._context = value;
+  }
+  public resetContext() {
+    this._context = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contextInput() {
+    return this._context;
+  }
 
   // excess_capacity_termination_policy - computed: false, optional: true, required: false
   private _excessCapacityTerminationPolicy?: string; 
@@ -1178,6 +1199,7 @@ export class Ec2Fleet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      context: cdktf.stringToTerraform(this._context),
       excess_capacity_termination_policy: cdktf.stringToTerraform(this._excessCapacityTerminationPolicy),
       replace_unhealthy_instances: cdktf.booleanToTerraform(this._replaceUnhealthyInstances),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

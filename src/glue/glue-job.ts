@@ -604,7 +604,7 @@ export class GlueJob extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
-  // timeout - computed: false, optional: true, required: false
+  // timeout - computed: true, optional: true, required: false
   private _timeout?: number; 
   public get timeout() {
     return this.getNumberAttribute('timeout');

@@ -4,7 +4,6 @@
 !/.projen/deps.json
 !/.projen/files.json
 !/.github/workflows/pull-request-lint.yml
-!/.github/workflows/stale.yml
 !/package.json
 !/LICENSE
 !/.npmignore
@@ -36,6 +35,7 @@ jspm_packages/
 /dist/changelog.md
 /dist/version.txt
 !/.github/workflows/release.yml
+!/.github/workflows/upgrade-main.yml
 !/.github/pull_request_template.md
 !/test/
 !/tsconfig.dev.json
@@ -52,4 +52,3 @@ package-lock.json
 !/README.md
 !/.github/workflows/provider-upgrade.yml
 !/.github/workflows/automerge.yml
-!/.github/workflows/upgrade-main.yml
