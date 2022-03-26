@@ -60,6 +60,10 @@ export interface MwaaEnvironmentConfig extends cdktf.TerraformMetaArguments {
   */
   readonly requirementsS3Path?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#schedulers MwaaEnvironment#schedulers}
+  */
+  readonly schedulers?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#source_bucket_arn MwaaEnvironment#source_bucket_arn}
   */
   readonly sourceBucketArn: string;
@@ -929,6 +933,7 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
     this._pluginsS3Path = config.pluginsS3Path;
     this._requirementsS3ObjectVersion = config.requirementsS3ObjectVersion;
     this._requirementsS3Path = config.requirementsS3Path;
+    this._schedulers = config.schedulers;
     this._sourceBucketArn = config.sourceBucketArn;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -1161,6 +1166,22 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
     return this._requirementsS3Path;
   }
 
+  // schedulers - computed: true, optional: true, required: false
+  private _schedulers?: number; 
+  public get schedulers() {
+    return this.getNumberAttribute('schedulers');
+  }
+  public set schedulers(value: number) {
+    this._schedulers = value;
+  }
+  public resetSchedulers() {
+    this._schedulers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schedulersInput() {
+    return this._schedulers;
+  }
+
   // service_role_arn - computed: true, optional: false, required: false
   public get serviceRoleArn() {
     return this.getStringAttribute('service_role_arn');
@@ -1301,6 +1322,7 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
       plugins_s3_path: cdktf.stringToTerraform(this._pluginsS3Path),
       requirements_s3_object_version: cdktf.stringToTerraform(this._requirementsS3ObjectVersion),
       requirements_s3_path: cdktf.stringToTerraform(this._requirementsS3Path),
+      schedulers: cdktf.numberToTerraform(this._schedulers),
       source_bucket_arn: cdktf.stringToTerraform(this._sourceBucketArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

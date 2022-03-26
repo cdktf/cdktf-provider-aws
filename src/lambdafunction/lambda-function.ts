@@ -108,6 +108,12 @@ export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly environment?: LambdaFunctionEnvironment;
   /**
+  * ephemeral_storage block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#ephemeral_storage LambdaFunction#ephemeral_storage}
+  */
+  readonly ephemeralStorage?: LambdaFunctionEphemeralStorage;
+  /**
   * file_system_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#file_system_config LambdaFunction#file_system_config}
@@ -265,6 +271,72 @@ export class LambdaFunctionEnvironmentOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get variablesInput() {
     return this._variables;
+  }
+}
+export interface LambdaFunctionEphemeralStorage {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#size LambdaFunction#size}
+  */
+  readonly size?: number;
+}
+
+export function lambdaFunctionEphemeralStorageToTerraform(struct?: LambdaFunctionEphemeralStorageOutputReference | LambdaFunctionEphemeralStorage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    size: cdktf.numberToTerraform(struct!.size),
+  }
+}
+
+export class LambdaFunctionEphemeralStorageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LambdaFunctionEphemeralStorage | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._size !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LambdaFunctionEphemeralStorage | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._size = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._size = value.size;
+    }
+  }
+
+  // size - computed: true, optional: true, required: false
+  private _size?: number; 
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+  public set size(value: number) {
+    this._size = value;
+  }
+  public resetSize() {
+    this._size = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size;
   }
 }
 export interface LambdaFunctionFileSystemConfig {
@@ -752,6 +824,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
     this._timeout = config.timeout;
     this._deadLetterConfig.internalValue = config.deadLetterConfig;
     this._environment.internalValue = config.environment;
+    this._ephemeralStorage.internalValue = config.ephemeralStorage;
     this._fileSystemConfig.internalValue = config.fileSystemConfig;
     this._imageConfig.internalValue = config.imageConfig;
     this._timeouts.internalValue = config.timeouts;
@@ -1186,6 +1259,22 @@ export class LambdaFunction extends cdktf.TerraformResource {
     return this._environment.internalValue;
   }
 
+  // ephemeral_storage - computed: false, optional: true, required: false
+  private _ephemeralStorage = new LambdaFunctionEphemeralStorageOutputReference(this, "ephemeral_storage", true);
+  public get ephemeralStorage() {
+    return this._ephemeralStorage;
+  }
+  public putEphemeralStorage(value: LambdaFunctionEphemeralStorage) {
+    this._ephemeralStorage.internalValue = value;
+  }
+  public resetEphemeralStorage() {
+    this._ephemeralStorage.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ephemeralStorageInput() {
+    return this._ephemeralStorage.internalValue;
+  }
+
   // file_system_config - computed: false, optional: true, required: false
   private _fileSystemConfig = new LambdaFunctionFileSystemConfigOutputReference(this, "file_system_config", true);
   public get fileSystemConfig() {
@@ -1296,6 +1385,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
       timeout: cdktf.numberToTerraform(this._timeout),
       dead_letter_config: lambdaFunctionDeadLetterConfigToTerraform(this._deadLetterConfig.internalValue),
       environment: lambdaFunctionEnvironmentToTerraform(this._environment.internalValue),
+      ephemeral_storage: lambdaFunctionEphemeralStorageToTerraform(this._ephemeralStorage.internalValue),
       file_system_config: lambdaFunctionFileSystemConfigToTerraform(this._fileSystemConfig.internalValue),
       image_config: lambdaFunctionImageConfigToTerraform(this._imageConfig.internalValue),
       timeouts: lambdaFunctionTimeoutsToTerraform(this._timeouts.internalValue),

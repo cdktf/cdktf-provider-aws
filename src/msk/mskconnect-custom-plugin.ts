@@ -216,6 +216,10 @@ export interface MskconnectCustomPluginTimeouts {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin#create MskconnectCustomPlugin#create}
   */
   readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin#delete MskconnectCustomPlugin#delete}
+  */
+  readonly delete?: string;
 }
 
 export function mskconnectCustomPluginTimeoutsToTerraform(struct?: MskconnectCustomPluginTimeoutsOutputReference | MskconnectCustomPluginTimeouts | cdktf.IResolvable): any {
@@ -225,6 +229,7 @@ export function mskconnectCustomPluginTimeoutsToTerraform(struct?: MskconnectCus
   }
   return {
     create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
   }
 }
 
@@ -247,6 +252,10 @@ export class MskconnectCustomPluginTimeoutsOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -254,10 +263,12 @@ export class MskconnectCustomPluginTimeoutsOutputReference extends cdktf.Complex
     if (value === undefined) {
       this.isEmptyObject = false;
       this._create = undefined;
+      this._delete = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
+      this._delete = value.delete;
     }
   }
 
@@ -275,6 +286,22 @@ export class MskconnectCustomPluginTimeoutsOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get createInput() {
     return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
   }
 }
 

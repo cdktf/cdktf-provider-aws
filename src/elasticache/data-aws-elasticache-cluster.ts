@@ -38,6 +38,28 @@ export class DataAwsElasticacheClusterCacheNodes extends cdktf.ComplexComputedLi
     return this.getNumberAttribute('port');
   }
 }
+export class DataAwsElasticacheClusterLogDeliveryConfiguration extends cdktf.ComplexComputedList {
+
+  // destination - computed: true, optional: false, required: false
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+
+  // destination_type - computed: true, optional: false, required: false
+  public get destinationType() {
+    return this.getStringAttribute('destination_type');
+  }
+
+  // log_format - computed: true, optional: false, required: false
+  public get logFormat() {
+    return this.getStringAttribute('log_format');
+  }
+
+  // log_type - computed: true, optional: false, required: false
+  public get logType() {
+    return this.getStringAttribute('log_type');
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/elasticache_cluster aws_elasticache_cluster}
@@ -130,6 +152,11 @@ export class DataAwsElasticacheCluster extends cdktf.TerraformDataSource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // log_delivery_configuration - computed: true, optional: false, required: false
+  public logDeliveryConfiguration(index: string) {
+    return new DataAwsElasticacheClusterLogDeliveryConfiguration(this, 'log_delivery_configuration', index, true);
   }
 
   // maintenance_window - computed: true, optional: false, required: false

@@ -103,6 +103,12 @@ export interface ElasticacheClusterConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#tags_all ElasticacheCluster#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * log_delivery_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#log_delivery_configuration ElasticacheCluster#log_delivery_configuration}
+  */
+  readonly logDeliveryConfiguration?: ElasticacheClusterLogDeliveryConfiguration[] | cdktf.IResolvable;
 }
 export class ElasticacheClusterCacheNodes extends cdktf.ComplexComputedList {
 
@@ -126,6 +132,38 @@ export class ElasticacheClusterCacheNodes extends cdktf.ComplexComputedList {
     return this.getNumberAttribute('port');
   }
 }
+export interface ElasticacheClusterLogDeliveryConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#destination ElasticacheCluster#destination}
+  */
+  readonly destination: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#destination_type ElasticacheCluster#destination_type}
+  */
+  readonly destinationType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#log_format ElasticacheCluster#log_format}
+  */
+  readonly logFormat: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#log_type ElasticacheCluster#log_type}
+  */
+  readonly logType: string;
+}
+
+export function elasticacheClusterLogDeliveryConfigurationToTerraform(struct?: ElasticacheClusterLogDeliveryConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination: cdktf.stringToTerraform(struct!.destination),
+    destination_type: cdktf.stringToTerraform(struct!.destinationType),
+    log_format: cdktf.stringToTerraform(struct!.logFormat),
+    log_type: cdktf.stringToTerraform(struct!.logType),
+  }
+}
+
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster aws_elasticache_cluster}
@@ -183,6 +221,7 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
     this._subnetGroupName = config.subnetGroupName;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._logDeliveryConfiguration = config.logDeliveryConfiguration;
   }
 
   // ==========
@@ -600,6 +639,23 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // log_delivery_configuration - computed: false, optional: true, required: false
+  private _logDeliveryConfiguration?: ElasticacheClusterLogDeliveryConfiguration[] | cdktf.IResolvable; 
+  public get logDeliveryConfiguration() {
+    // Getting the computed value is not yet implemented
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('log_delivery_configuration')));
+  }
+  public set logDeliveryConfiguration(value: ElasticacheClusterLogDeliveryConfiguration[] | cdktf.IResolvable) {
+    this._logDeliveryConfiguration = value;
+  }
+  public resetLogDeliveryConfiguration() {
+    this._logDeliveryConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logDeliveryConfigurationInput() {
+    return this._logDeliveryConfiguration;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -630,6 +686,7 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
       subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      log_delivery_configuration: cdktf.listMapper(elasticacheClusterLogDeliveryConfigurationToTerraform)(this._logDeliveryConfiguration),
     };
   }
 }
