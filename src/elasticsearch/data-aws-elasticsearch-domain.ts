@@ -76,6 +76,13 @@ export class DataAwsElasticsearchDomainAutoTuneOptions extends cdktf.ComplexComp
     return this.getStringAttribute('rollback_on_disable');
   }
 }
+export class DataAwsElasticsearchDomainClusterConfigColdStorageOptions extends cdktf.ComplexComputedList {
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+}
 export class DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfig extends cdktf.ComplexComputedList {
 
   // availability_zone_count - computed: true, optional: false, required: false
@@ -84,6 +91,12 @@ export class DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfig extends 
   }
 }
 export class DataAwsElasticsearchDomainClusterConfig extends cdktf.ComplexComputedList {
+
+  // cold_storage_options - computed: true, optional: false, required: false
+  public get coldStorageOptions() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('cold_storage_options');
+  }
 
   // dedicated_master_count - computed: true, optional: false, required: false
   public get dedicatedMasterCount() {

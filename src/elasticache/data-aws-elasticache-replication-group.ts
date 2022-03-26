@@ -12,6 +12,28 @@ export interface DataAwsElasticacheReplicationGroupConfig extends cdktf.Terrafor
   */
   readonly replicationGroupId: string;
 }
+export class DataAwsElasticacheReplicationGroupLogDeliveryConfiguration extends cdktf.ComplexComputedList {
+
+  // destination - computed: true, optional: false, required: false
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+
+  // destination_type - computed: true, optional: false, required: false
+  public get destinationType() {
+    return this.getStringAttribute('destination_type');
+  }
+
+  // log_format - computed: true, optional: false, required: false
+  public get logFormat() {
+    return this.getStringAttribute('log_format');
+  }
+
+  // log_type - computed: true, optional: false, required: false
+  public get logType() {
+    return this.getStringAttribute('log_type');
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/elasticache_replication_group aws_elasticache_replication_group}
@@ -80,6 +102,11 @@ export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSourc
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // log_delivery_configuration - computed: true, optional: false, required: false
+  public logDeliveryConfiguration(index: string) {
+    return new DataAwsElasticacheReplicationGroupLogDeliveryConfiguration(this, 'log_delivery_configuration', index, true);
   }
 
   // member_clusters - computed: true, optional: false, required: false

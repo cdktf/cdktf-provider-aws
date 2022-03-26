@@ -162,6 +162,12 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   */
   readonly clusterMode?: ElasticacheReplicationGroupClusterMode;
   /**
+  * log_delivery_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group#log_delivery_configuration ElasticacheReplicationGroup#log_delivery_configuration}
+  */
+  readonly logDeliveryConfiguration?: ElasticacheReplicationGroupLogDeliveryConfiguration[] | cdktf.IResolvable;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group#timeouts ElasticacheReplicationGroup#timeouts}
@@ -261,6 +267,38 @@ export class ElasticacheReplicationGroupClusterModeOutputReference extends cdktf
     return this._replicasPerNodeGroup;
   }
 }
+export interface ElasticacheReplicationGroupLogDeliveryConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group#destination ElasticacheReplicationGroup#destination}
+  */
+  readonly destination: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group#destination_type ElasticacheReplicationGroup#destination_type}
+  */
+  readonly destinationType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group#log_format ElasticacheReplicationGroup#log_format}
+  */
+  readonly logFormat: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group#log_type ElasticacheReplicationGroup#log_type}
+  */
+  readonly logType: string;
+}
+
+export function elasticacheReplicationGroupLogDeliveryConfigurationToTerraform(struct?: ElasticacheReplicationGroupLogDeliveryConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination: cdktf.stringToTerraform(struct!.destination),
+    destination_type: cdktf.stringToTerraform(struct!.destinationType),
+    log_format: cdktf.stringToTerraform(struct!.logFormat),
+    log_type: cdktf.stringToTerraform(struct!.logType),
+  }
+}
+
 export interface ElasticacheReplicationGroupTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group#create ElasticacheReplicationGroup#create}
@@ -452,6 +490,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     this._transitEncryptionEnabled = config.transitEncryptionEnabled;
     this._userGroupIds = config.userGroupIds;
     this._clusterMode.internalValue = config.clusterMode;
+    this._logDeliveryConfiguration = config.logDeliveryConfiguration;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1104,6 +1143,23 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     return this._clusterMode.internalValue;
   }
 
+  // log_delivery_configuration - computed: false, optional: true, required: false
+  private _logDeliveryConfiguration?: ElasticacheReplicationGroupLogDeliveryConfiguration[] | cdktf.IResolvable; 
+  public get logDeliveryConfiguration() {
+    // Getting the computed value is not yet implemented
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('log_delivery_configuration')));
+  }
+  public set logDeliveryConfiguration(value: ElasticacheReplicationGroupLogDeliveryConfiguration[] | cdktf.IResolvable) {
+    this._logDeliveryConfiguration = value;
+  }
+  public resetLogDeliveryConfiguration() {
+    this._logDeliveryConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logDeliveryConfigurationInput() {
+    return this._logDeliveryConfiguration;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new ElasticacheReplicationGroupTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
@@ -1164,6 +1220,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
       transit_encryption_enabled: cdktf.booleanToTerraform(this._transitEncryptionEnabled),
       user_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._userGroupIds),
       cluster_mode: elasticacheReplicationGroupClusterModeToTerraform(this._clusterMode.internalValue),
+      log_delivery_configuration: cdktf.listMapper(elasticacheReplicationGroupLogDeliveryConfigurationToTerraform)(this._logDeliveryConfiguration),
       timeouts: elasticacheReplicationGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

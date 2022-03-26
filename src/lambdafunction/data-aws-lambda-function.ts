@@ -34,6 +34,13 @@ export class DataAwsLambdaFunctionEnvironment extends cdktf.ComplexComputedList 
     return this.getStringMapAttribute('variables');
   }
 }
+export class DataAwsLambdaFunctionEphemeralStorage extends cdktf.ComplexComputedList {
+
+  // size - computed: true, optional: false, required: false
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+}
 export class DataAwsLambdaFunctionFileSystemConfig extends cdktf.ComplexComputedList {
 
   // arn - computed: true, optional: false, required: false
@@ -140,6 +147,11 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
   // environment - computed: true, optional: false, required: false
   public environment(index: string) {
     return new DataAwsLambdaFunctionEnvironment(this, 'environment', index, false);
+  }
+
+  // ephemeral_storage - computed: true, optional: false, required: false
+  public ephemeralStorage(index: string) {
+    return new DataAwsLambdaFunctionEphemeralStorage(this, 'ephemeral_storage', index, false);
   }
 
   // file_system_config - computed: true, optional: false, required: false
