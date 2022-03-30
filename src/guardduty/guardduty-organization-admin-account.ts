@@ -21,7 +21,7 @@ export class GuarddutyOrganizationAdminAccount extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_guardduty_organization_admin_account";
+  public static readonly tfResourceType = "aws_guardduty_organization_admin_account";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class GuarddutyOrganizationAdminAccount extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_guardduty_organization_admin_account',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

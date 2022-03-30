@@ -103,10 +103,9 @@ export class Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification | undefined {
@@ -261,10 +260,9 @@ export class Ec2FleetLaunchTemplateConfigOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Ec2FleetLaunchTemplateConfig | undefined {
@@ -295,7 +293,7 @@ export class Ec2FleetLaunchTemplateConfigOutputReference extends cdktf.ComplexOb
   }
 
   // launch_template_specification - computed: false, optional: false, required: true
-  private _launchTemplateSpecification = new Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputReference(this, "launch_template_specification", true);
+  private _launchTemplateSpecification = new Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputReference(this, "launch_template_specification");
   public get launchTemplateSpecification() {
     return this._launchTemplateSpecification;
   }
@@ -347,10 +345,9 @@ export class Ec2FleetOnDemandOptionsOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Ec2FleetOnDemandOptions | undefined {
@@ -413,10 +410,9 @@ export class Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputRefe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance | undefined {
@@ -481,10 +477,9 @@ export class Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Ec2FleetSpotOptionsMaintenanceStrategies | undefined {
@@ -509,7 +504,7 @@ export class Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference extends cdk
   }
 
   // capacity_rebalance - computed: false, optional: true, required: false
-  private _capacityRebalance = new Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference(this, "capacity_rebalance", true);
+  private _capacityRebalance = new Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference(this, "capacity_rebalance");
   public get capacityRebalance() {
     return this._capacityRebalance;
   }
@@ -564,10 +559,9 @@ export class Ec2FleetSpotOptionsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Ec2FleetSpotOptions | undefined {
@@ -658,7 +652,7 @@ export class Ec2FleetSpotOptionsOutputReference extends cdktf.ComplexObject {
   }
 
   // maintenance_strategies - computed: false, optional: true, required: false
-  private _maintenanceStrategies = new Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference(this, "maintenance_strategies", true);
+  private _maintenanceStrategies = new Ec2FleetSpotOptionsMaintenanceStrategiesOutputReference(this, "maintenance_strategies");
   public get maintenanceStrategies() {
     return this._maintenanceStrategies;
   }
@@ -711,10 +705,9 @@ export class Ec2FleetTargetCapacitySpecificationOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Ec2FleetTargetCapacitySpecification | undefined {
@@ -847,10 +840,9 @@ export class Ec2FleetTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Ec2FleetTimeouts | undefined {
@@ -943,7 +935,7 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ec2_fleet";
+  public static readonly tfResourceType = "aws_ec2_fleet";
 
   // ===========
   // INITIALIZER
@@ -960,7 +952,9 @@ export class Ec2Fleet extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_fleet',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1120,7 +1114,7 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   }
 
   // launch_template_config - computed: false, optional: false, required: true
-  private _launchTemplateConfig = new Ec2FleetLaunchTemplateConfigOutputReference(this, "launch_template_config", true);
+  private _launchTemplateConfig = new Ec2FleetLaunchTemplateConfigOutputReference(this, "launch_template_config");
   public get launchTemplateConfig() {
     return this._launchTemplateConfig;
   }
@@ -1133,7 +1127,7 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   }
 
   // on_demand_options - computed: false, optional: true, required: false
-  private _onDemandOptions = new Ec2FleetOnDemandOptionsOutputReference(this, "on_demand_options", true);
+  private _onDemandOptions = new Ec2FleetOnDemandOptionsOutputReference(this, "on_demand_options");
   public get onDemandOptions() {
     return this._onDemandOptions;
   }
@@ -1149,7 +1143,7 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   }
 
   // spot_options - computed: false, optional: true, required: false
-  private _spotOptions = new Ec2FleetSpotOptionsOutputReference(this, "spot_options", true);
+  private _spotOptions = new Ec2FleetSpotOptionsOutputReference(this, "spot_options");
   public get spotOptions() {
     return this._spotOptions;
   }
@@ -1165,7 +1159,7 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   }
 
   // target_capacity_specification - computed: false, optional: false, required: true
-  private _targetCapacitySpecification = new Ec2FleetTargetCapacitySpecificationOutputReference(this, "target_capacity_specification", true);
+  private _targetCapacitySpecification = new Ec2FleetTargetCapacitySpecificationOutputReference(this, "target_capacity_specification");
   public get targetCapacitySpecification() {
     return this._targetCapacitySpecification;
   }
@@ -1178,7 +1172,7 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new Ec2FleetTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new Ec2FleetTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

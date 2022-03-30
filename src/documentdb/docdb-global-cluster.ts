@@ -42,7 +42,45 @@ export interface DocdbGlobalClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: DocdbGlobalClusterTimeouts;
 }
-export class DocdbGlobalClusterGlobalClusterMembers extends cdktf.ComplexComputedList {
+export interface DocdbGlobalClusterGlobalClusterMembers {
+}
+
+export function docdbGlobalClusterGlobalClusterMembersToTerraform(struct?: DocdbGlobalClusterGlobalClusterMembers): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DocdbGlobalClusterGlobalClusterMembersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DocdbGlobalClusterGlobalClusterMembers | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DocdbGlobalClusterGlobalClusterMembers | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // db_cluster_arn - computed: true, optional: false, required: false
   public get dbClusterArn() {
@@ -52,6 +90,25 @@ export class DocdbGlobalClusterGlobalClusterMembers extends cdktf.ComplexCompute
   // is_writer - computed: true, optional: false, required: false
   public get isWriter() {
     return this.getBooleanAttribute('is_writer');
+  }
+}
+
+export class DocdbGlobalClusterGlobalClusterMembersList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DocdbGlobalClusterGlobalClusterMembersOutputReference {
+    return new DocdbGlobalClusterGlobalClusterMembersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DocdbGlobalClusterTimeouts {
@@ -87,10 +144,9 @@ export class DocdbGlobalClusterTimeoutsOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DocdbGlobalClusterTimeouts | undefined {
@@ -183,7 +239,7 @@ export class DocdbGlobalCluster extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_docdb_global_cluster";
+  public static readonly tfResourceType = "aws_docdb_global_cluster";
 
   // ===========
   // INITIALIZER
@@ -200,7 +256,9 @@ export class DocdbGlobalCluster extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_docdb_global_cluster',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -304,8 +362,9 @@ export class DocdbGlobalCluster extends cdktf.TerraformResource {
   }
 
   // global_cluster_members - computed: true, optional: false, required: false
-  public globalClusterMembers(index: string) {
-    return new DocdbGlobalClusterGlobalClusterMembers(this, 'global_cluster_members', index, true);
+  private _globalClusterMembers = new DocdbGlobalClusterGlobalClusterMembersList(this, "global_cluster_members", true);
+  public get globalClusterMembers() {
+    return this._globalClusterMembers;
   }
 
   // global_cluster_resource_id - computed: true, optional: false, required: false
@@ -356,7 +415,7 @@ export class DocdbGlobalCluster extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DocdbGlobalClusterTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new DocdbGlobalClusterTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

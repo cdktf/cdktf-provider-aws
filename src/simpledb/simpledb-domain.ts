@@ -21,7 +21,7 @@ export class SimpledbDomain extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_simpledb_domain";
+  public static readonly tfResourceType = "aws_simpledb_domain";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class SimpledbDomain extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_simpledb_domain',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

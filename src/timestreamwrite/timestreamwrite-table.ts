@@ -74,10 +74,9 @@ export class TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreReject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration | undefined {
@@ -208,10 +207,9 @@ export class TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreReject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation | undefined {
@@ -236,7 +234,7 @@ export class TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreReject
   }
 
   // s3_configuration - computed: false, optional: true, required: false
-  private _s3Configuration = new TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationOutputReference(this, "s3_configuration", true);
+  private _s3Configuration = new TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationOutputReference(this, "s3_configuration");
   public get s3Configuration() {
     return this._s3Configuration;
   }
@@ -281,10 +279,9 @@ export class TimestreamwriteTableMagneticStoreWritePropertiesOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): TimestreamwriteTableMagneticStoreWriteProperties | undefined {
@@ -331,7 +328,7 @@ export class TimestreamwriteTableMagneticStoreWritePropertiesOutputReference ext
   }
 
   // magnetic_store_rejected_data_location - computed: false, optional: true, required: false
-  private _magneticStoreRejectedDataLocation = new TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference(this, "magnetic_store_rejected_data_location", true);
+  private _magneticStoreRejectedDataLocation = new TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference(this, "magnetic_store_rejected_data_location");
   public get magneticStoreRejectedDataLocation() {
     return this._magneticStoreRejectedDataLocation;
   }
@@ -374,10 +371,9 @@ export class TimestreamwriteTableRetentionPropertiesOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): TimestreamwriteTableRetentionProperties | undefined {
@@ -442,7 +438,7 @@ export class TimestreamwriteTable extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_timestreamwrite_table";
+  public static readonly tfResourceType = "aws_timestreamwrite_table";
 
   // ===========
   // INITIALIZER
@@ -459,7 +455,9 @@ export class TimestreamwriteTable extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_timestreamwrite_table',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -547,7 +545,7 @@ export class TimestreamwriteTable extends cdktf.TerraformResource {
   }
 
   // magnetic_store_write_properties - computed: false, optional: true, required: false
-  private _magneticStoreWriteProperties = new TimestreamwriteTableMagneticStoreWritePropertiesOutputReference(this, "magnetic_store_write_properties", true);
+  private _magneticStoreWriteProperties = new TimestreamwriteTableMagneticStoreWritePropertiesOutputReference(this, "magnetic_store_write_properties");
   public get magneticStoreWriteProperties() {
     return this._magneticStoreWriteProperties;
   }
@@ -563,7 +561,7 @@ export class TimestreamwriteTable extends cdktf.TerraformResource {
   }
 
   // retention_properties - computed: false, optional: true, required: false
-  private _retentionProperties = new TimestreamwriteTableRetentionPropertiesOutputReference(this, "retention_properties", true);
+  private _retentionProperties = new TimestreamwriteTableRetentionPropertiesOutputReference(this, "retention_properties");
   public get retentionProperties() {
     return this._retentionProperties;
   }

@@ -37,7 +37,7 @@ export class ServiceDiscoveryPrivateDnsNamespace extends cdktf.TerraformResource
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_service_discovery_private_dns_namespace";
+  public static readonly tfResourceType = "aws_service_discovery_private_dns_namespace";
 
   // ===========
   // INITIALIZER
@@ -54,7 +54,9 @@ export class ServiceDiscoveryPrivateDnsNamespace extends cdktf.TerraformResource
     super(scope, id, {
       terraformResourceType: 'aws_service_discovery_private_dns_namespace',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

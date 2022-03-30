@@ -102,10 +102,9 @@ export class DirectoryServiceDirectoryConnectSettingsOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DirectoryServiceDirectoryConnectSettings | undefined {
@@ -237,10 +236,9 @@ export class DirectoryServiceDirectoryVpcSettingsOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DirectoryServiceDirectoryVpcSettings | undefined {
@@ -310,7 +308,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_directory_service_directory";
+  public static readonly tfResourceType = "aws_directory_service_directory";
 
   // ===========
   // INITIALIZER
@@ -327,7 +325,9 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_directory_service_directory',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -544,7 +544,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   }
 
   // connect_settings - computed: false, optional: true, required: false
-  private _connectSettings = new DirectoryServiceDirectoryConnectSettingsOutputReference(this, "connect_settings", true);
+  private _connectSettings = new DirectoryServiceDirectoryConnectSettingsOutputReference(this, "connect_settings");
   public get connectSettings() {
     return this._connectSettings;
   }
@@ -560,7 +560,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   }
 
   // vpc_settings - computed: false, optional: true, required: false
-  private _vpcSettings = new DirectoryServiceDirectoryVpcSettingsOutputReference(this, "vpc_settings", true);
+  private _vpcSettings = new DirectoryServiceDirectoryVpcSettingsOutputReference(this, "vpc_settings");
   public get vpcSettings() {
     return this._vpcSettings;
   }

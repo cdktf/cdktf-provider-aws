@@ -85,10 +85,9 @@ export class AppmeshRouteSpecGrpcRouteActionOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteAction | undefined {
@@ -154,10 +153,9 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange | undefined {
@@ -258,10 +256,9 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteMatchMetadataMatch | undefined {
@@ -374,7 +371,7 @@ export class AppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference extends 
   }
 
   // range - computed: false, optional: true, required: false
-  private _range = new AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference(this, "range", true);
+  private _range = new AppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference(this, "range");
   public get range() {
     return this._range;
   }
@@ -458,10 +455,9 @@ export class AppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteMatch | undefined {
@@ -596,10 +592,9 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout | undefined {
@@ -700,10 +695,9 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteRetryPolicy | undefined {
@@ -813,7 +807,7 @@ export class AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends cdktf.C
   }
 
   // per_retry_timeout - computed: false, optional: false, required: true
-  private _perRetryTimeout = new AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference(this, "per_retry_timeout", true);
+  private _perRetryTimeout = new AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference(this, "per_retry_timeout");
   public get perRetryTimeout() {
     return this._perRetryTimeout;
   }
@@ -853,10 +847,9 @@ export class AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteTimeoutIdle | undefined {
@@ -940,10 +933,9 @@ export class AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteTimeoutPerRequest | undefined {
@@ -1031,10 +1023,9 @@ export class AppmeshRouteSpecGrpcRouteTimeoutOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRouteTimeout | undefined {
@@ -1065,7 +1056,7 @@ export class AppmeshRouteSpecGrpcRouteTimeoutOutputReference extends cdktf.Compl
   }
 
   // idle - computed: false, optional: true, required: false
-  private _idle = new AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference(this, "idle", true);
+  private _idle = new AppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference(this, "idle");
   public get idle() {
     return this._idle;
   }
@@ -1081,7 +1072,7 @@ export class AppmeshRouteSpecGrpcRouteTimeoutOutputReference extends cdktf.Compl
   }
 
   // per_request - computed: false, optional: true, required: false
-  private _perRequest = new AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference(this, "per_request", true);
+  private _perRequest = new AppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference(this, "per_request");
   public get perRequest() {
     return this._perRequest;
   }
@@ -1142,10 +1133,9 @@ export class AppmeshRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecGrpcRoute | undefined {
@@ -1188,7 +1178,7 @@ export class AppmeshRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObjec
   }
 
   // action - computed: false, optional: false, required: true
-  private _action = new AppmeshRouteSpecGrpcRouteActionOutputReference(this, "action", true);
+  private _action = new AppmeshRouteSpecGrpcRouteActionOutputReference(this, "action");
   public get action() {
     return this._action;
   }
@@ -1201,7 +1191,7 @@ export class AppmeshRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObjec
   }
 
   // match - computed: false, optional: true, required: false
-  private _match = new AppmeshRouteSpecGrpcRouteMatchOutputReference(this, "match", true);
+  private _match = new AppmeshRouteSpecGrpcRouteMatchOutputReference(this, "match");
   public get match() {
     return this._match;
   }
@@ -1217,7 +1207,7 @@ export class AppmeshRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObjec
   }
 
   // retry_policy - computed: false, optional: true, required: false
-  private _retryPolicy = new AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference(this, "retry_policy", true);
+  private _retryPolicy = new AppmeshRouteSpecGrpcRouteRetryPolicyOutputReference(this, "retry_policy");
   public get retryPolicy() {
     return this._retryPolicy;
   }
@@ -1233,7 +1223,7 @@ export class AppmeshRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObjec
   }
 
   // timeout - computed: false, optional: true, required: false
-  private _timeout = new AppmeshRouteSpecGrpcRouteTimeoutOutputReference(this, "timeout", true);
+  private _timeout = new AppmeshRouteSpecGrpcRouteTimeoutOutputReference(this, "timeout");
   public get timeout() {
     return this._timeout;
   }
@@ -1295,10 +1285,9 @@ export class AppmeshRouteSpecHttp2RouteActionOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteAction | undefined {
@@ -1364,10 +1353,9 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange | undefined {
@@ -1468,10 +1456,9 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteMatchHeaderMatch | undefined {
@@ -1584,7 +1571,7 @@ export class AppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference extends c
   }
 
   // range - computed: false, optional: true, required: false
-  private _range = new AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference(this, "range", true);
+  private _range = new AppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference(this, "range");
   public get range() {
     return this._range;
   }
@@ -1668,10 +1655,9 @@ export class AppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteMatch | undefined {
@@ -1803,10 +1789,9 @@ export class AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout | undefined {
@@ -1902,10 +1887,9 @@ export class AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteRetryPolicy | undefined {
@@ -1993,7 +1977,7 @@ export class AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends cdktf.
   }
 
   // per_retry_timeout - computed: false, optional: false, required: true
-  private _perRetryTimeout = new AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference(this, "per_retry_timeout", true);
+  private _perRetryTimeout = new AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference(this, "per_retry_timeout");
   public get perRetryTimeout() {
     return this._perRetryTimeout;
   }
@@ -2033,10 +2017,9 @@ export class AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteTimeoutIdle | undefined {
@@ -2120,10 +2103,9 @@ export class AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteTimeoutPerRequest | undefined {
@@ -2211,10 +2193,9 @@ export class AppmeshRouteSpecHttp2RouteTimeoutOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2RouteTimeout | undefined {
@@ -2245,7 +2226,7 @@ export class AppmeshRouteSpecHttp2RouteTimeoutOutputReference extends cdktf.Comp
   }
 
   // idle - computed: false, optional: true, required: false
-  private _idle = new AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference(this, "idle", true);
+  private _idle = new AppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference(this, "idle");
   public get idle() {
     return this._idle;
   }
@@ -2261,7 +2242,7 @@ export class AppmeshRouteSpecHttp2RouteTimeoutOutputReference extends cdktf.Comp
   }
 
   // per_request - computed: false, optional: true, required: false
-  private _perRequest = new AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference(this, "per_request", true);
+  private _perRequest = new AppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference(this, "per_request");
   public get perRequest() {
     return this._perRequest;
   }
@@ -2322,10 +2303,9 @@ export class AppmeshRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttp2Route | undefined {
@@ -2368,7 +2348,7 @@ export class AppmeshRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObje
   }
 
   // action - computed: false, optional: false, required: true
-  private _action = new AppmeshRouteSpecHttp2RouteActionOutputReference(this, "action", true);
+  private _action = new AppmeshRouteSpecHttp2RouteActionOutputReference(this, "action");
   public get action() {
     return this._action;
   }
@@ -2381,7 +2361,7 @@ export class AppmeshRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObje
   }
 
   // match - computed: false, optional: false, required: true
-  private _match = new AppmeshRouteSpecHttp2RouteMatchOutputReference(this, "match", true);
+  private _match = new AppmeshRouteSpecHttp2RouteMatchOutputReference(this, "match");
   public get match() {
     return this._match;
   }
@@ -2394,7 +2374,7 @@ export class AppmeshRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObje
   }
 
   // retry_policy - computed: false, optional: true, required: false
-  private _retryPolicy = new AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference(this, "retry_policy", true);
+  private _retryPolicy = new AppmeshRouteSpecHttp2RouteRetryPolicyOutputReference(this, "retry_policy");
   public get retryPolicy() {
     return this._retryPolicy;
   }
@@ -2410,7 +2390,7 @@ export class AppmeshRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObje
   }
 
   // timeout - computed: false, optional: true, required: false
-  private _timeout = new AppmeshRouteSpecHttp2RouteTimeoutOutputReference(this, "timeout", true);
+  private _timeout = new AppmeshRouteSpecHttp2RouteTimeoutOutputReference(this, "timeout");
   public get timeout() {
     return this._timeout;
   }
@@ -2472,10 +2452,9 @@ export class AppmeshRouteSpecHttpRouteActionOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteAction | undefined {
@@ -2541,10 +2520,9 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteMatchHeaderMatchRange | undefined {
@@ -2645,10 +2623,9 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteMatchHeaderMatch | undefined {
@@ -2761,7 +2738,7 @@ export class AppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference extends cd
   }
 
   // range - computed: false, optional: true, required: false
-  private _range = new AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference(this, "range", true);
+  private _range = new AppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference(this, "range");
   public get range() {
     return this._range;
   }
@@ -2845,10 +2822,9 @@ export class AppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteMatch | undefined {
@@ -2980,10 +2956,9 @@ export class AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout | undefined {
@@ -3079,10 +3054,9 @@ export class AppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteRetryPolicy | undefined {
@@ -3170,7 +3144,7 @@ export class AppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends cdktf.C
   }
 
   // per_retry_timeout - computed: false, optional: false, required: true
-  private _perRetryTimeout = new AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference(this, "per_retry_timeout", true);
+  private _perRetryTimeout = new AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference(this, "per_retry_timeout");
   public get perRetryTimeout() {
     return this._perRetryTimeout;
   }
@@ -3210,10 +3184,9 @@ export class AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteTimeoutIdle | undefined {
@@ -3297,10 +3270,9 @@ export class AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteTimeoutPerRequest | undefined {
@@ -3388,10 +3360,9 @@ export class AppmeshRouteSpecHttpRouteTimeoutOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRouteTimeout | undefined {
@@ -3422,7 +3393,7 @@ export class AppmeshRouteSpecHttpRouteTimeoutOutputReference extends cdktf.Compl
   }
 
   // idle - computed: false, optional: true, required: false
-  private _idle = new AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference(this, "idle", true);
+  private _idle = new AppmeshRouteSpecHttpRouteTimeoutIdleOutputReference(this, "idle");
   public get idle() {
     return this._idle;
   }
@@ -3438,7 +3409,7 @@ export class AppmeshRouteSpecHttpRouteTimeoutOutputReference extends cdktf.Compl
   }
 
   // per_request - computed: false, optional: true, required: false
-  private _perRequest = new AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference(this, "per_request", true);
+  private _perRequest = new AppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference(this, "per_request");
   public get perRequest() {
     return this._perRequest;
   }
@@ -3499,10 +3470,9 @@ export class AppmeshRouteSpecHttpRouteOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecHttpRoute | undefined {
@@ -3545,7 +3515,7 @@ export class AppmeshRouteSpecHttpRouteOutputReference extends cdktf.ComplexObjec
   }
 
   // action - computed: false, optional: false, required: true
-  private _action = new AppmeshRouteSpecHttpRouteActionOutputReference(this, "action", true);
+  private _action = new AppmeshRouteSpecHttpRouteActionOutputReference(this, "action");
   public get action() {
     return this._action;
   }
@@ -3558,7 +3528,7 @@ export class AppmeshRouteSpecHttpRouteOutputReference extends cdktf.ComplexObjec
   }
 
   // match - computed: false, optional: false, required: true
-  private _match = new AppmeshRouteSpecHttpRouteMatchOutputReference(this, "match", true);
+  private _match = new AppmeshRouteSpecHttpRouteMatchOutputReference(this, "match");
   public get match() {
     return this._match;
   }
@@ -3571,7 +3541,7 @@ export class AppmeshRouteSpecHttpRouteOutputReference extends cdktf.ComplexObjec
   }
 
   // retry_policy - computed: false, optional: true, required: false
-  private _retryPolicy = new AppmeshRouteSpecHttpRouteRetryPolicyOutputReference(this, "retry_policy", true);
+  private _retryPolicy = new AppmeshRouteSpecHttpRouteRetryPolicyOutputReference(this, "retry_policy");
   public get retryPolicy() {
     return this._retryPolicy;
   }
@@ -3587,7 +3557,7 @@ export class AppmeshRouteSpecHttpRouteOutputReference extends cdktf.ComplexObjec
   }
 
   // timeout - computed: false, optional: true, required: false
-  private _timeout = new AppmeshRouteSpecHttpRouteTimeoutOutputReference(this, "timeout", true);
+  private _timeout = new AppmeshRouteSpecHttpRouteTimeoutOutputReference(this, "timeout");
   public get timeout() {
     return this._timeout;
   }
@@ -3649,10 +3619,9 @@ export class AppmeshRouteSpecTcpRouteActionOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecTcpRouteAction | undefined {
@@ -3718,10 +3687,9 @@ export class AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecTcpRouteTimeoutIdle | undefined {
@@ -3802,10 +3770,9 @@ export class AppmeshRouteSpecTcpRouteTimeoutOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecTcpRouteTimeout | undefined {
@@ -3830,7 +3797,7 @@ export class AppmeshRouteSpecTcpRouteTimeoutOutputReference extends cdktf.Comple
   }
 
   // idle - computed: false, optional: true, required: false
-  private _idle = new AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference(this, "idle", true);
+  private _idle = new AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference(this, "idle");
   public get idle() {
     return this._idle;
   }
@@ -3877,10 +3844,9 @@ export class AppmeshRouteSpecTcpRouteOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpecTcpRoute | undefined {
@@ -3911,7 +3877,7 @@ export class AppmeshRouteSpecTcpRouteOutputReference extends cdktf.ComplexObject
   }
 
   // action - computed: false, optional: false, required: true
-  private _action = new AppmeshRouteSpecTcpRouteActionOutputReference(this, "action", true);
+  private _action = new AppmeshRouteSpecTcpRouteActionOutputReference(this, "action");
   public get action() {
     return this._action;
   }
@@ -3924,7 +3890,7 @@ export class AppmeshRouteSpecTcpRouteOutputReference extends cdktf.ComplexObject
   }
 
   // timeout - computed: false, optional: true, required: false
-  private _timeout = new AppmeshRouteSpecTcpRouteTimeoutOutputReference(this, "timeout", true);
+  private _timeout = new AppmeshRouteSpecTcpRouteTimeoutOutputReference(this, "timeout");
   public get timeout() {
     return this._timeout;
   }
@@ -3990,10 +3956,9 @@ export class AppmeshRouteSpecOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshRouteSpec | undefined {
@@ -4058,7 +4023,7 @@ export class AppmeshRouteSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // grpc_route - computed: false, optional: true, required: false
-  private _grpcRoute = new AppmeshRouteSpecGrpcRouteOutputReference(this, "grpc_route", true);
+  private _grpcRoute = new AppmeshRouteSpecGrpcRouteOutputReference(this, "grpc_route");
   public get grpcRoute() {
     return this._grpcRoute;
   }
@@ -4074,7 +4039,7 @@ export class AppmeshRouteSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // http2_route - computed: false, optional: true, required: false
-  private _http2Route = new AppmeshRouteSpecHttp2RouteOutputReference(this, "http2_route", true);
+  private _http2Route = new AppmeshRouteSpecHttp2RouteOutputReference(this, "http2_route");
   public get http2Route() {
     return this._http2Route;
   }
@@ -4090,7 +4055,7 @@ export class AppmeshRouteSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // http_route - computed: false, optional: true, required: false
-  private _httpRoute = new AppmeshRouteSpecHttpRouteOutputReference(this, "http_route", true);
+  private _httpRoute = new AppmeshRouteSpecHttpRouteOutputReference(this, "http_route");
   public get httpRoute() {
     return this._httpRoute;
   }
@@ -4106,7 +4071,7 @@ export class AppmeshRouteSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // tcp_route - computed: false, optional: true, required: false
-  private _tcpRoute = new AppmeshRouteSpecTcpRouteOutputReference(this, "tcp_route", true);
+  private _tcpRoute = new AppmeshRouteSpecTcpRouteOutputReference(this, "tcp_route");
   public get tcpRoute() {
     return this._tcpRoute;
   }
@@ -4130,7 +4095,7 @@ export class AppmeshRoute extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appmesh_route";
+  public static readonly tfResourceType = "aws_appmesh_route";
 
   // ===========
   // INITIALIZER
@@ -4147,7 +4112,9 @@ export class AppmeshRoute extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_appmesh_route',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -4280,7 +4247,7 @@ export class AppmeshRoute extends cdktf.TerraformResource {
   }
 
   // spec - computed: false, optional: false, required: true
-  private _spec = new AppmeshRouteSpecOutputReference(this, "spec", true);
+  private _spec = new AppmeshRouteSpecOutputReference(this, "spec");
   public get spec() {
     return this._spec;
   }

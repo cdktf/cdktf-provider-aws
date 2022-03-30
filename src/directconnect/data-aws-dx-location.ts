@@ -21,7 +21,7 @@ export class DataAwsDxLocation extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_dx_location";
+  public static readonly tfResourceType = "aws_dx_location";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class DataAwsDxLocation extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_dx_location',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

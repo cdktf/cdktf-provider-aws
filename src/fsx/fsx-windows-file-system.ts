@@ -131,10 +131,9 @@ export class FsxWindowsFileSystemAuditLogConfigurationOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): FsxWindowsFileSystemAuditLogConfiguration | undefined {
@@ -266,10 +265,9 @@ export class FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): FsxWindowsFileSystemSelfManagedActiveDirectory | undefined {
@@ -440,10 +438,9 @@ export class FsxWindowsFileSystemTimeoutsOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): FsxWindowsFileSystemTimeouts | undefined {
@@ -536,7 +533,7 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_fsx_windows_file_system";
+  public static readonly tfResourceType = "aws_fsx_windows_file_system";
 
   // ===========
   // INITIALIZER
@@ -553,7 +550,9 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_fsx_windows_file_system',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -910,7 +909,7 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
   }
 
   // audit_log_configuration - computed: false, optional: true, required: false
-  private _auditLogConfiguration = new FsxWindowsFileSystemAuditLogConfigurationOutputReference(this, "audit_log_configuration", true);
+  private _auditLogConfiguration = new FsxWindowsFileSystemAuditLogConfigurationOutputReference(this, "audit_log_configuration");
   public get auditLogConfiguration() {
     return this._auditLogConfiguration;
   }
@@ -926,7 +925,7 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
   }
 
   // self_managed_active_directory - computed: false, optional: true, required: false
-  private _selfManagedActiveDirectory = new FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference(this, "self_managed_active_directory", true);
+  private _selfManagedActiveDirectory = new FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference(this, "self_managed_active_directory");
   public get selfManagedActiveDirectory() {
     return this._selfManagedActiveDirectory;
   }
@@ -942,7 +941,7 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new FsxWindowsFileSystemTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new FsxWindowsFileSystemTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

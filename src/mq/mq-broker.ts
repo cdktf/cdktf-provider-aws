@@ -100,7 +100,45 @@ export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly user: MqBrokerUser[] | cdktf.IResolvable;
 }
-export class MqBrokerInstances extends cdktf.ComplexComputedList {
+export interface MqBrokerInstances {
+}
+
+export function mqBrokerInstancesToTerraform(struct?: MqBrokerInstances): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MqBrokerInstancesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MqBrokerInstances | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MqBrokerInstances | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // console_url - computed: true, optional: false, required: false
   public get consoleUrl() {
@@ -115,6 +153,25 @@ export class MqBrokerInstances extends cdktf.ComplexComputedList {
   // ip_address - computed: true, optional: false, required: false
   public get ipAddress() {
     return this.getStringAttribute('ip_address');
+  }
+}
+
+export class MqBrokerInstancesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MqBrokerInstancesOutputReference {
+    return new MqBrokerInstancesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface MqBrokerConfiguration {
@@ -144,10 +201,9 @@ export class MqBrokerConfigurationOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MqBrokerConfiguration | undefined {
@@ -220,10 +276,9 @@ export class MqBrokerEncryptionOptionsOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MqBrokerEncryptionOptions | undefined {
@@ -358,10 +413,9 @@ export class MqBrokerLdapServerMetadataOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MqBrokerLdapServerMetadata | undefined {
@@ -649,10 +703,9 @@ export class MqBrokerLogsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MqBrokerLogs | undefined {
@@ -747,10 +800,9 @@ export class MqBrokerMaintenanceWindowStartTimeOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MqBrokerMaintenanceWindowStartTime | undefined {
@@ -866,7 +918,7 @@ export class MqBroker extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_mq_broker";
+  public static readonly tfResourceType = "aws_mq_broker";
 
   // ===========
   // INITIALIZER
@@ -883,7 +935,9 @@ export class MqBroker extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_mq_broker',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1043,8 +1097,9 @@ export class MqBroker extends cdktf.TerraformResource {
   }
 
   // instances - computed: true, optional: false, required: false
-  public instances(index: string) {
-    return new MqBrokerInstances(this, 'instances', index, false);
+  private _instances = new MqBrokerInstancesList(this, "instances", false);
+  public get instances() {
+    return this._instances;
   }
 
   // publicly_accessible - computed: false, optional: true, required: false
@@ -1144,7 +1199,7 @@ export class MqBroker extends cdktf.TerraformResource {
   }
 
   // configuration - computed: false, optional: true, required: false
-  private _configuration = new MqBrokerConfigurationOutputReference(this, "configuration", true);
+  private _configuration = new MqBrokerConfigurationOutputReference(this, "configuration");
   public get configuration() {
     return this._configuration;
   }
@@ -1160,7 +1215,7 @@ export class MqBroker extends cdktf.TerraformResource {
   }
 
   // encryption_options - computed: false, optional: true, required: false
-  private _encryptionOptions = new MqBrokerEncryptionOptionsOutputReference(this, "encryption_options", true);
+  private _encryptionOptions = new MqBrokerEncryptionOptionsOutputReference(this, "encryption_options");
   public get encryptionOptions() {
     return this._encryptionOptions;
   }
@@ -1176,7 +1231,7 @@ export class MqBroker extends cdktf.TerraformResource {
   }
 
   // ldap_server_metadata - computed: false, optional: true, required: false
-  private _ldapServerMetadata = new MqBrokerLdapServerMetadataOutputReference(this, "ldap_server_metadata", true);
+  private _ldapServerMetadata = new MqBrokerLdapServerMetadataOutputReference(this, "ldap_server_metadata");
   public get ldapServerMetadata() {
     return this._ldapServerMetadata;
   }
@@ -1192,7 +1247,7 @@ export class MqBroker extends cdktf.TerraformResource {
   }
 
   // logs - computed: false, optional: true, required: false
-  private _logs = new MqBrokerLogsOutputReference(this, "logs", true);
+  private _logs = new MqBrokerLogsOutputReference(this, "logs");
   public get logs() {
     return this._logs;
   }
@@ -1208,7 +1263,7 @@ export class MqBroker extends cdktf.TerraformResource {
   }
 
   // maintenance_window_start_time - computed: false, optional: true, required: false
-  private _maintenanceWindowStartTime = new MqBrokerMaintenanceWindowStartTimeOutputReference(this, "maintenance_window_start_time", true);
+  private _maintenanceWindowStartTime = new MqBrokerMaintenanceWindowStartTimeOutputReference(this, "maintenance_window_start_time");
   public get maintenanceWindowStartTime() {
     return this._maintenanceWindowStartTime;
   }

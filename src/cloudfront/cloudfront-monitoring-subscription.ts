@@ -41,10 +41,9 @@ export class CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetri
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfig | undefined {
@@ -106,10 +105,9 @@ export class CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReferen
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontMonitoringSubscriptionMonitoringSubscription | undefined {
@@ -134,7 +132,7 @@ export class CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReferen
   }
 
   // realtime_metrics_subscription_config - computed: false, optional: false, required: true
-  private _realtimeMetricsSubscriptionConfig = new CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigOutputReference(this, "realtime_metrics_subscription_config", true);
+  private _realtimeMetricsSubscriptionConfig = new CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigOutputReference(this, "realtime_metrics_subscription_config");
   public get realtimeMetricsSubscriptionConfig() {
     return this._realtimeMetricsSubscriptionConfig;
   }
@@ -155,7 +153,7 @@ export class CloudfrontMonitoringSubscription extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudfront_monitoring_subscription";
+  public static readonly tfResourceType = "aws_cloudfront_monitoring_subscription";
 
   // ===========
   // INITIALIZER
@@ -172,7 +170,9 @@ export class CloudfrontMonitoringSubscription extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_cloudfront_monitoring_subscription',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -206,7 +206,7 @@ export class CloudfrontMonitoringSubscription extends cdktf.TerraformResource {
   }
 
   // monitoring_subscription - computed: false, optional: false, required: true
-  private _monitoringSubscription = new CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference(this, "monitoring_subscription", true);
+  private _monitoringSubscription = new CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference(this, "monitoring_subscription");
   public get monitoringSubscription() {
     return this._monitoringSubscription;
   }

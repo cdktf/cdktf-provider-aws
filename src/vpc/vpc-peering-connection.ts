@@ -87,10 +87,9 @@ export class VpcPeeringConnectionAccepterOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): VpcPeeringConnectionAccepter | undefined {
@@ -207,10 +206,9 @@ export class VpcPeeringConnectionRequesterOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): VpcPeeringConnectionRequester | undefined {
@@ -327,10 +325,9 @@ export class VpcPeeringConnectionTimeoutsOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): VpcPeeringConnectionTimeouts | undefined {
@@ -423,7 +420,7 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_vpc_peering_connection";
+  public static readonly tfResourceType = "aws_vpc_peering_connection";
 
   // ===========
   // INITIALIZER
@@ -440,7 +437,9 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_vpc_peering_connection',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -580,7 +579,7 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
   }
 
   // accepter - computed: false, optional: true, required: false
-  private _accepter = new VpcPeeringConnectionAccepterOutputReference(this, "accepter", true);
+  private _accepter = new VpcPeeringConnectionAccepterOutputReference(this, "accepter");
   public get accepter() {
     return this._accepter;
   }
@@ -596,7 +595,7 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
   }
 
   // requester - computed: false, optional: true, required: false
-  private _requester = new VpcPeeringConnectionRequesterOutputReference(this, "requester", true);
+  private _requester = new VpcPeeringConnectionRequesterOutputReference(this, "requester");
   public get requester() {
     return this._requester;
   }
@@ -612,7 +611,7 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VpcPeeringConnectionTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new VpcPeeringConnectionTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

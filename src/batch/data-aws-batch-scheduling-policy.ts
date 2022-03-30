@@ -16,7 +16,45 @@ export interface DataAwsBatchSchedulingPolicyConfig extends cdktf.TerraformMetaA
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsBatchSchedulingPolicyFairSharePolicyShareDistribution extends cdktf.ComplexComputedList {
+export interface DataAwsBatchSchedulingPolicyFairSharePolicyShareDistribution {
+}
+
+export function dataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionToTerraform(struct?: DataAwsBatchSchedulingPolicyFairSharePolicyShareDistribution): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsBatchSchedulingPolicyFairSharePolicyShareDistribution | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsBatchSchedulingPolicyFairSharePolicyShareDistribution | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // share_identifier - computed: true, optional: false, required: false
   public get shareIdentifier() {
@@ -28,7 +66,64 @@ export class DataAwsBatchSchedulingPolicyFairSharePolicyShareDistribution extend
     return this.getNumberAttribute('weight_factor');
   }
 }
-export class DataAwsBatchSchedulingPolicyFairSharePolicy extends cdktf.ComplexComputedList {
+
+export class DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference {
+    return new DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsBatchSchedulingPolicyFairSharePolicy {
+}
+
+export function dataAwsBatchSchedulingPolicyFairSharePolicyToTerraform(struct?: DataAwsBatchSchedulingPolicyFairSharePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsBatchSchedulingPolicyFairSharePolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsBatchSchedulingPolicyFairSharePolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // compute_reservation - computed: true, optional: false, required: false
   public get computeReservation() {
@@ -41,9 +136,28 @@ export class DataAwsBatchSchedulingPolicyFairSharePolicy extends cdktf.ComplexCo
   }
 
   // share_distribution - computed: true, optional: false, required: false
+  private _shareDistribution = new DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionList(this, "share_distribution", true);
   public get shareDistribution() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('share_distribution')));
+    return this._shareDistribution;
+  }
+}
+
+export class DataAwsBatchSchedulingPolicyFairSharePolicyList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference {
+    return new DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -55,7 +169,7 @@ export class DataAwsBatchSchedulingPolicy extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_batch_scheduling_policy";
+  public static readonly tfResourceType = "aws_batch_scheduling_policy";
 
   // ===========
   // INITIALIZER
@@ -72,7 +186,9 @@ export class DataAwsBatchSchedulingPolicy extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_batch_scheduling_policy',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -101,8 +217,9 @@ export class DataAwsBatchSchedulingPolicy extends cdktf.TerraformDataSource {
   }
 
   // fair_share_policy - computed: true, optional: false, required: false
-  public fairSharePolicy(index: string) {
-    return new DataAwsBatchSchedulingPolicyFairSharePolicy(this, 'fair_share_policy', index, false);
+  private _fairSharePolicy = new DataAwsBatchSchedulingPolicyFairSharePolicyList(this, "fair_share_policy", false);
+  public get fairSharePolicy() {
+    return this._fairSharePolicy;
   }
 
   // id - computed: true, optional: true, required: false

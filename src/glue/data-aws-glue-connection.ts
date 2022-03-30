@@ -16,7 +16,45 @@ export interface DataAwsGlueConnectionConfig extends cdktf.TerraformMetaArgument
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsGlueConnectionPhysicalConnectionRequirements extends cdktf.ComplexComputedList {
+export interface DataAwsGlueConnectionPhysicalConnectionRequirements {
+}
+
+export function dataAwsGlueConnectionPhysicalConnectionRequirementsToTerraform(struct?: DataAwsGlueConnectionPhysicalConnectionRequirements): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsGlueConnectionPhysicalConnectionRequirements | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsGlueConnectionPhysicalConnectionRequirements | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // availability_zone - computed: true, optional: false, required: false
   public get availabilityZone() {
@@ -34,6 +72,25 @@ export class DataAwsGlueConnectionPhysicalConnectionRequirements extends cdktf.C
   }
 }
 
+export class DataAwsGlueConnectionPhysicalConnectionRequirementsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference {
+    return new DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/glue_connection aws_glue_connection}
 */
@@ -42,7 +99,7 @@ export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_glue_connection";
+  public static readonly tfResourceType = "aws_glue_connection";
 
   // ===========
   // INITIALIZER
@@ -59,7 +116,9 @@ export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_glue_connection',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -123,8 +182,9 @@ export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
   }
 
   // physical_connection_requirements - computed: true, optional: false, required: false
-  public physicalConnectionRequirements(index: string) {
-    return new DataAwsGlueConnectionPhysicalConnectionRequirements(this, 'physical_connection_requirements', index, false);
+  private _physicalConnectionRequirements = new DataAwsGlueConnectionPhysicalConnectionRequirementsList(this, "physical_connection_requirements", false);
+  public get physicalConnectionRequirements() {
+    return this._physicalConnectionRequirements;
   }
 
   // tags - computed: true, optional: true, required: false

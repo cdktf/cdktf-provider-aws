@@ -25,7 +25,7 @@ export class DataAwsWafv2RuleGroup extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_wafv2_rule_group";
+  public static readonly tfResourceType = "aws_wafv2_rule_group";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class DataAwsWafv2RuleGroup extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_wafv2_rule_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

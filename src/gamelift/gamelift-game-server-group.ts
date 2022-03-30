@@ -91,10 +91,9 @@ export class GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration | undefined {
@@ -161,10 +160,9 @@ export class GameliftGameServerGroupAutoScalingPolicyOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GameliftGameServerGroupAutoScalingPolicy | undefined {
@@ -211,7 +209,7 @@ export class GameliftGameServerGroupAutoScalingPolicyOutputReference extends cdk
   }
 
   // target_tracking_configuration - computed: false, optional: false, required: true
-  private _targetTrackingConfiguration = new GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference(this, "target_tracking_configuration", true);
+  private _targetTrackingConfiguration = new GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference(this, "target_tracking_configuration");
   public get targetTrackingConfiguration() {
     return this._targetTrackingConfiguration;
   }
@@ -277,10 +275,9 @@ export class GameliftGameServerGroupLaunchTemplateOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GameliftGameServerGroupLaunchTemplate | undefined {
@@ -375,10 +372,9 @@ export class GameliftGameServerGroupTimeoutsOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GameliftGameServerGroupTimeouts | undefined {
@@ -449,7 +445,7 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_gamelift_game_server_group";
+  public static readonly tfResourceType = "aws_gamelift_game_server_group";
 
   // ===========
   // INITIALIZER
@@ -466,7 +462,9 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_gamelift_game_server_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -640,7 +638,7 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
   }
 
   // auto_scaling_policy - computed: false, optional: true, required: false
-  private _autoScalingPolicy = new GameliftGameServerGroupAutoScalingPolicyOutputReference(this, "auto_scaling_policy", true);
+  private _autoScalingPolicy = new GameliftGameServerGroupAutoScalingPolicyOutputReference(this, "auto_scaling_policy");
   public get autoScalingPolicy() {
     return this._autoScalingPolicy;
   }
@@ -670,7 +668,7 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
   }
 
   // launch_template - computed: false, optional: false, required: true
-  private _launchTemplate = new GameliftGameServerGroupLaunchTemplateOutputReference(this, "launch_template", true);
+  private _launchTemplate = new GameliftGameServerGroupLaunchTemplateOutputReference(this, "launch_template");
   public get launchTemplate() {
     return this._launchTemplate;
   }
@@ -683,7 +681,7 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new GameliftGameServerGroupTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new GameliftGameServerGroupTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

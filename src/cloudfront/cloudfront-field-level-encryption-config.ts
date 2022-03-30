@@ -76,10 +76,9 @@ export class CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContent
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfiles | undefined {
@@ -147,10 +146,9 @@ export class CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputR
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfig | undefined {
@@ -194,7 +192,7 @@ export class CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputR
   }
 
   // content_type_profiles - computed: false, optional: false, required: true
-  private _contentTypeProfiles = new CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesOutputReference(this, "content_type_profiles", true);
+  private _contentTypeProfiles = new CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesOutputReference(this, "content_type_profiles");
   public get contentTypeProfiles() {
     return this._contentTypeProfiles;
   }
@@ -253,10 +251,9 @@ export class CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgPr
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfiles | undefined {
@@ -327,10 +324,9 @@ export class CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputRefe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfig | undefined {
@@ -374,7 +370,7 @@ export class CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputRefe
   }
 
   // query_arg_profiles - computed: false, optional: true, required: false
-  private _queryArgProfiles = new CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesOutputReference(this, "query_arg_profiles", true);
+  private _queryArgProfiles = new CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesOutputReference(this, "query_arg_profiles");
   public get queryArgProfiles() {
     return this._queryArgProfiles;
   }
@@ -398,7 +394,7 @@ export class CloudfrontFieldLevelEncryptionConfig extends cdktf.TerraformResourc
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudfront_field_level_encryption_config";
+  public static readonly tfResourceType = "aws_cloudfront_field_level_encryption_config";
 
   // ===========
   // INITIALIZER
@@ -415,7 +411,9 @@ export class CloudfrontFieldLevelEncryptionConfig extends cdktf.TerraformResourc
     super(scope, id, {
       terraformResourceType: 'aws_cloudfront_field_level_encryption_config',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -463,7 +461,7 @@ export class CloudfrontFieldLevelEncryptionConfig extends cdktf.TerraformResourc
   }
 
   // content_type_profile_config - computed: false, optional: false, required: true
-  private _contentTypeProfileConfig = new CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference(this, "content_type_profile_config", true);
+  private _contentTypeProfileConfig = new CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference(this, "content_type_profile_config");
   public get contentTypeProfileConfig() {
     return this._contentTypeProfileConfig;
   }
@@ -476,7 +474,7 @@ export class CloudfrontFieldLevelEncryptionConfig extends cdktf.TerraformResourc
   }
 
   // query_arg_profile_config - computed: false, optional: false, required: true
-  private _queryArgProfileConfig = new CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference(this, "query_arg_profile_config", true);
+  private _queryArgProfileConfig = new CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference(this, "query_arg_profile_config");
   public get queryArgProfileConfig() {
     return this._queryArgProfileConfig;
   }

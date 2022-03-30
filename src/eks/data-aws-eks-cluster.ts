@@ -16,29 +16,238 @@ export interface DataAwsEksClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsEksClusterCertificateAuthority extends cdktf.ComplexComputedList {
+export interface DataAwsEksClusterCertificateAuthority {
+}
+
+export function dataAwsEksClusterCertificateAuthorityToTerraform(struct?: DataAwsEksClusterCertificateAuthority): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEksClusterCertificateAuthorityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksClusterCertificateAuthority | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksClusterCertificateAuthority | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // data - computed: true, optional: false, required: false
   public get data() {
     return this.getStringAttribute('data');
   }
 }
-export class DataAwsEksClusterIdentityOidc extends cdktf.ComplexComputedList {
+
+export class DataAwsEksClusterCertificateAuthorityList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksClusterCertificateAuthorityOutputReference {
+    return new DataAwsEksClusterCertificateAuthorityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksClusterIdentityOidc {
+}
+
+export function dataAwsEksClusterIdentityOidcToTerraform(struct?: DataAwsEksClusterIdentityOidc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEksClusterIdentityOidcOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksClusterIdentityOidc | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksClusterIdentityOidc | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // issuer - computed: true, optional: false, required: false
   public get issuer() {
     return this.getStringAttribute('issuer');
   }
 }
-export class DataAwsEksClusterIdentity extends cdktf.ComplexComputedList {
 
-  // oidc - computed: true, optional: false, required: false
-  public get oidc() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('oidc');
+export class DataAwsEksClusterIdentityOidcList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksClusterIdentityOidcOutputReference {
+    return new DataAwsEksClusterIdentityOidcOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export class DataAwsEksClusterKubernetesNetworkConfig extends cdktf.ComplexComputedList {
+export interface DataAwsEksClusterIdentity {
+}
+
+export function dataAwsEksClusterIdentityToTerraform(struct?: DataAwsEksClusterIdentity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEksClusterIdentityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksClusterIdentity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksClusterIdentity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // oidc - computed: true, optional: false, required: false
+  private _oidc = new DataAwsEksClusterIdentityOidcList(this, "oidc", false);
+  public get oidc() {
+    return this._oidc;
+  }
+}
+
+export class DataAwsEksClusterIdentityList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksClusterIdentityOutputReference {
+    return new DataAwsEksClusterIdentityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksClusterKubernetesNetworkConfig {
+}
+
+export function dataAwsEksClusterKubernetesNetworkConfigToTerraform(struct?: DataAwsEksClusterKubernetesNetworkConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEksClusterKubernetesNetworkConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksClusterKubernetesNetworkConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksClusterKubernetesNetworkConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // ip_family - computed: true, optional: false, required: false
   public get ipFamily() {
@@ -50,7 +259,64 @@ export class DataAwsEksClusterKubernetesNetworkConfig extends cdktf.ComplexCompu
     return this.getStringAttribute('service_ipv4_cidr');
   }
 }
-export class DataAwsEksClusterVpcConfig extends cdktf.ComplexComputedList {
+
+export class DataAwsEksClusterKubernetesNetworkConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksClusterKubernetesNetworkConfigOutputReference {
+    return new DataAwsEksClusterKubernetesNetworkConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksClusterVpcConfig {
+}
+
+export function dataAwsEksClusterVpcConfigToTerraform(struct?: DataAwsEksClusterVpcConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksClusterVpcConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksClusterVpcConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // cluster_security_group_id - computed: true, optional: false, required: false
   public get clusterSecurityGroupId() {
@@ -88,6 +354,25 @@ export class DataAwsEksClusterVpcConfig extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataAwsEksClusterVpcConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksClusterVpcConfigOutputReference {
+    return new DataAwsEksClusterVpcConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/eks_cluster aws_eks_cluster}
 */
@@ -96,7 +381,7 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_eks_cluster";
+  public static readonly tfResourceType = "aws_eks_cluster";
 
   // ===========
   // INITIALIZER
@@ -113,7 +398,9 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_eks_cluster',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -134,8 +421,9 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
   }
 
   // certificate_authority - computed: true, optional: false, required: false
-  public certificateAuthority(index: string) {
-    return new DataAwsEksClusterCertificateAuthority(this, 'certificate_authority', index, false);
+  private _certificateAuthority = new DataAwsEksClusterCertificateAuthorityList(this, "certificate_authority", false);
+  public get certificateAuthority() {
+    return this._certificateAuthority;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -159,13 +447,15 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
   }
 
   // identity - computed: true, optional: false, required: false
-  public identity(index: string) {
-    return new DataAwsEksClusterIdentity(this, 'identity', index, false);
+  private _identity = new DataAwsEksClusterIdentityList(this, "identity", false);
+  public get identity() {
+    return this._identity;
   }
 
   // kubernetes_network_config - computed: true, optional: false, required: false
-  public kubernetesNetworkConfig(index: string) {
-    return new DataAwsEksClusterKubernetesNetworkConfig(this, 'kubernetes_network_config', index, false);
+  private _kubernetesNetworkConfig = new DataAwsEksClusterKubernetesNetworkConfigList(this, "kubernetes_network_config", false);
+  public get kubernetesNetworkConfig() {
+    return this._kubernetesNetworkConfig;
   }
 
   // name - computed: false, optional: false, required: true
@@ -218,8 +508,9 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
   }
 
   // vpc_config - computed: true, optional: false, required: false
-  public vpcConfig(index: string) {
-    return new DataAwsEksClusterVpcConfig(this, 'vpc_config', index, false);
+  private _vpcConfig = new DataAwsEksClusterVpcConfigList(this, "vpc_config", false);
+  public get vpcConfig() {
+    return this._vpcConfig;
   }
 
   // =========

@@ -73,7 +73,7 @@ export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ecr_registry_scanning_configuration";
+  public static readonly tfResourceType = "aws_ecr_registry_scanning_configuration";
 
   // ===========
   // INITIALIZER
@@ -90,7 +90,9 @@ export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_ecr_registry_scanning_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

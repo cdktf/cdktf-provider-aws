@@ -90,10 +90,9 @@ export class ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ImagebuilderInfrastructureConfigurationLoggingS3Logs | undefined {
@@ -177,10 +176,9 @@ export class ImagebuilderInfrastructureConfigurationLoggingOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ImagebuilderInfrastructureConfigurationLogging | undefined {
@@ -205,7 +203,7 @@ export class ImagebuilderInfrastructureConfigurationLoggingOutputReference exten
   }
 
   // s3_logs - computed: false, optional: false, required: true
-  private _s3Logs = new ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference(this, "s3_logs", true);
+  private _s3Logs = new ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference(this, "s3_logs");
   public get s3Logs() {
     return this._s3Logs;
   }
@@ -226,7 +224,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_imagebuilder_infrastructure_configuration";
+  public static readonly tfResourceType = "aws_imagebuilder_infrastructure_configuration";
 
   // ===========
   // INITIALIZER
@@ -243,7 +241,9 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
     super(scope, id, {
       terraformResourceType: 'aws_imagebuilder_infrastructure_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -476,7 +476,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   }
 
   // logging - computed: false, optional: true, required: false
-  private _logging = new ImagebuilderInfrastructureConfigurationLoggingOutputReference(this, "logging", true);
+  private _logging = new ImagebuilderInfrastructureConfigurationLoggingOutputReference(this, "logging");
   public get logging() {
     return this._logging;
   }

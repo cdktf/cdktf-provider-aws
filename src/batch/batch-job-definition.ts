@@ -114,10 +114,9 @@ export class BatchJobDefinitionRetryStrategyOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): BatchJobDefinitionRetryStrategy | undefined {
@@ -203,10 +202,9 @@ export class BatchJobDefinitionTimeoutOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): BatchJobDefinitionTimeout | undefined {
@@ -255,7 +253,7 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_batch_job_definition";
+  public static readonly tfResourceType = "aws_batch_job_definition";
 
   // ===========
   // INITIALIZER
@@ -272,7 +270,9 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_batch_job_definition',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -433,7 +433,7 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
   }
 
   // retry_strategy - computed: false, optional: true, required: false
-  private _retryStrategy = new BatchJobDefinitionRetryStrategyOutputReference(this, "retry_strategy", true);
+  private _retryStrategy = new BatchJobDefinitionRetryStrategyOutputReference(this, "retry_strategy");
   public get retryStrategy() {
     return this._retryStrategy;
   }
@@ -449,7 +449,7 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
   }
 
   // timeout - computed: false, optional: true, required: false
-  private _timeout = new BatchJobDefinitionTimeoutOutputReference(this, "timeout", true);
+  private _timeout = new BatchJobDefinitionTimeoutOutputReference(this, "timeout");
   public get timeout() {
     return this._timeout;
   }

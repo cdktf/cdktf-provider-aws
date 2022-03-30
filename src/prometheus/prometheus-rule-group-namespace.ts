@@ -29,7 +29,7 @@ export class PrometheusRuleGroupNamespace extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_prometheus_rule_group_namespace";
+  public static readonly tfResourceType = "aws_prometheus_rule_group_namespace";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class PrometheusRuleGroupNamespace extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_prometheus_rule_group_namespace',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

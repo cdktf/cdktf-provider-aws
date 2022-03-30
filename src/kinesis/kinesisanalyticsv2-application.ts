@@ -91,10 +91,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation | undefined {
@@ -202,10 +201,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent | undefined {
@@ -252,7 +250,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
   }
 
   // s3_content_location - computed: false, optional: true, required: false
-  private _s3ContentLocation = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationOutputReference(this, "s3_content_location", true);
+  private _s3ContentLocation = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationOutputReference(this, "s3_content_location");
   public get s3ContentLocation() {
     return this._s3ContentLocation;
   }
@@ -297,10 +295,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfiguration | undefined {
@@ -344,7 +341,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCod
   }
 
   // code_content - computed: false, optional: true, required: false
-  private _codeContent = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentOutputReference(this, "code_content", true);
+  private _codeContent = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentOutputReference(this, "code_content");
   public get codeContent() {
     return this._codeContent;
   }
@@ -382,10 +379,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSna
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSnapshotConfiguration | undefined {
@@ -469,10 +465,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPro
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentProperties | undefined {
@@ -548,10 +543,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration | undefined {
@@ -687,10 +681,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration | undefined {
@@ -809,10 +802,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration | undefined {
@@ -954,10 +946,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfiguration | undefined {
@@ -994,7 +985,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   }
 
   // checkpoint_configuration - computed: false, optional: true, required: false
-  private _checkpointConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfigurationOutputReference(this, "checkpoint_configuration", true);
+  private _checkpointConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfigurationOutputReference(this, "checkpoint_configuration");
   public get checkpointConfiguration() {
     return this._checkpointConfiguration;
   }
@@ -1010,7 +1001,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   }
 
   // monitoring_configuration - computed: false, optional: true, required: false
-  private _monitoringConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfigurationOutputReference(this, "monitoring_configuration", true);
+  private _monitoringConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfigurationOutputReference(this, "monitoring_configuration");
   public get monitoringConfiguration() {
     return this._monitoringConfiguration;
   }
@@ -1026,7 +1017,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicati
   }
 
   // parallelism_configuration - computed: false, optional: true, required: false
-  private _parallelismConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfigurationOutputReference(this, "parallelism_configuration", true);
+  private _parallelismConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfigurationOutputReference(this, "parallelism_configuration");
   public get parallelismConfiguration() {
     return this._parallelismConfiguration;
   }
@@ -1069,10 +1060,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfiguration | undefined {
@@ -1157,10 +1147,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfiguration | undefined {
@@ -1232,10 +1221,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfiguration | undefined {
@@ -1266,7 +1254,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
   }
 
   // application_restore_configuration - computed: false, optional: true, required: false
-  private _applicationRestoreConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfigurationOutputReference(this, "application_restore_configuration", true);
+  private _applicationRestoreConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfigurationOutputReference(this, "application_restore_configuration");
   public get applicationRestoreConfiguration() {
     return this._applicationRestoreConfiguration;
   }
@@ -1282,7 +1270,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurati
   }
 
   // flink_run_configuration - computed: false, optional: true, required: false
-  private _flinkRunConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationOutputReference(this, "flink_run_configuration", true);
+  private _flinkRunConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationOutputReference(this, "flink_run_configuration");
   public get flinkRunConfiguration() {
     return this._flinkRunConfiguration;
   }
@@ -1320,10 +1308,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism | undefined {
@@ -1386,10 +1373,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor | undefined {
@@ -1451,10 +1437,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration | undefined {
@@ -1479,7 +1464,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // input_lambda_processor - computed: false, optional: false, required: true
-  private _inputLambdaProcessor = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessorOutputReference(this, "input_lambda_processor", true);
+  private _inputLambdaProcessor = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessorOutputReference(this, "input_lambda_processor");
   public get inputLambdaProcessor() {
     return this._inputLambdaProcessor;
   }
@@ -1546,10 +1531,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters | undefined {
@@ -1628,10 +1612,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters | undefined {
@@ -1700,10 +1683,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters | undefined {
@@ -1734,7 +1716,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // csv_mapping_parameters - computed: false, optional: true, required: false
-  private _csvMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParametersOutputReference(this, "csv_mapping_parameters", true);
+  private _csvMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParametersOutputReference(this, "csv_mapping_parameters");
   public get csvMappingParameters() {
     return this._csvMappingParameters;
   }
@@ -1750,7 +1732,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // json_mapping_parameters - computed: false, optional: true, required: false
-  private _jsonMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParametersOutputReference(this, "json_mapping_parameters", true);
+  private _jsonMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParametersOutputReference(this, "json_mapping_parameters");
   public get jsonMappingParameters() {
     return this._jsonMappingParameters;
   }
@@ -1795,10 +1777,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat | undefined {
@@ -1842,7 +1823,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // mapping_parameters - computed: false, optional: false, required: true
-  private _mappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersOutputReference(this, "mapping_parameters", true);
+  private _mappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersOutputReference(this, "mapping_parameters");
   public get mappingParameters() {
     return this._mappingParameters;
   }
@@ -1891,10 +1872,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema | undefined {
@@ -1961,7 +1941,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // record_format - computed: false, optional: false, required: true
-  private _recordFormat = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatOutputReference(this, "record_format", true);
+  private _recordFormat = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatOutputReference(this, "record_format");
   public get recordFormat() {
     return this._recordFormat;
   }
@@ -2013,10 +1993,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput | undefined {
@@ -2076,10 +2055,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput | undefined {
@@ -2181,10 +2159,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInput | undefined {
@@ -2268,7 +2245,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // input_parallelism - computed: false, optional: true, required: false
-  private _inputParallelism = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelismOutputReference(this, "input_parallelism", true);
+  private _inputParallelism = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelismOutputReference(this, "input_parallelism");
   public get inputParallelism() {
     return this._inputParallelism;
   }
@@ -2284,7 +2261,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // input_processing_configuration - computed: false, optional: true, required: false
-  private _inputProcessingConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationOutputReference(this, "input_processing_configuration", true);
+  private _inputProcessingConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationOutputReference(this, "input_processing_configuration");
   public get inputProcessingConfiguration() {
     return this._inputProcessingConfiguration;
   }
@@ -2300,7 +2277,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // input_schema - computed: false, optional: false, required: true
-  private _inputSchema = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaOutputReference(this, "input_schema", true);
+  private _inputSchema = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaOutputReference(this, "input_schema");
   public get inputSchema() {
     return this._inputSchema;
   }
@@ -2330,7 +2307,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // kinesis_firehose_input - computed: false, optional: true, required: false
-  private _kinesisFirehoseInput = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInputOutputReference(this, "kinesis_firehose_input", true);
+  private _kinesisFirehoseInput = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInputOutputReference(this, "kinesis_firehose_input");
   public get kinesisFirehoseInput() {
     return this._kinesisFirehoseInput;
   }
@@ -2346,7 +2323,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // kinesis_streams_input - computed: false, optional: true, required: false
-  private _kinesisStreamsInput = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputOutputReference(this, "kinesis_streams_input", true);
+  private _kinesisStreamsInput = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputOutputReference(this, "kinesis_streams_input");
   public get kinesisStreamsInput() {
     return this._kinesisStreamsInput;
   }
@@ -2384,10 +2361,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema | undefined {
@@ -2447,10 +2423,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput | undefined {
@@ -2510,10 +2485,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput | undefined {
@@ -2573,10 +2547,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput | undefined {
@@ -2713,10 +2686,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters | undefined {
@@ -2795,10 +2767,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParameters | undefined {
@@ -2867,10 +2838,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParameters | undefined {
@@ -2901,7 +2871,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // csv_mapping_parameters - computed: false, optional: true, required: false
-  private _csvMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParametersOutputReference(this, "csv_mapping_parameters", true);
+  private _csvMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParametersOutputReference(this, "csv_mapping_parameters");
   public get csvMappingParameters() {
     return this._csvMappingParameters;
   }
@@ -2917,7 +2887,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // json_mapping_parameters - computed: false, optional: true, required: false
-  private _jsonMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParametersOutputReference(this, "json_mapping_parameters", true);
+  private _jsonMappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParametersOutputReference(this, "json_mapping_parameters");
   public get jsonMappingParameters() {
     return this._jsonMappingParameters;
   }
@@ -2962,10 +2932,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat | undefined {
@@ -3009,7 +2978,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // mapping_parameters - computed: false, optional: false, required: true
-  private _mappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersOutputReference(this, "mapping_parameters", true);
+  private _mappingParameters = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersOutputReference(this, "mapping_parameters");
   public get mappingParameters() {
     return this._mappingParameters;
   }
@@ -3058,10 +3027,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema | undefined {
@@ -3128,7 +3096,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // record_format - computed: false, optional: false, required: true
-  private _recordFormat = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatOutputReference(this, "record_format", true);
+  private _recordFormat = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatOutputReference(this, "record_format");
   public get recordFormat() {
     return this._recordFormat;
   }
@@ -3168,10 +3136,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource | undefined {
@@ -3264,10 +3231,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource | undefined {
@@ -3322,7 +3288,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // reference_schema - computed: false, optional: false, required: true
-  private _referenceSchema = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaOutputReference(this, "reference_schema", true);
+  private _referenceSchema = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaOutputReference(this, "reference_schema");
   public get referenceSchema() {
     return this._referenceSchema;
   }
@@ -3335,7 +3301,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // s3_reference_data_source - computed: false, optional: false, required: true
-  private _s3ReferenceDataSource = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceOutputReference(this, "s3_reference_data_source", true);
+  private _s3ReferenceDataSource = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceOutputReference(this, "s3_reference_data_source");
   public get s3ReferenceDataSource() {
     return this._s3ReferenceDataSource;
   }
@@ -3386,10 +3352,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfiguration | undefined {
@@ -3426,7 +3391,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // input - computed: false, optional: true, required: false
-  private _input = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputOutputReference(this, "input", true);
+  private _input = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputOutputReference(this, "input");
   public get input() {
     return this._input;
   }
@@ -3459,7 +3424,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplication
   }
 
   // reference_data_source - computed: false, optional: true, required: false
-  private _referenceDataSource = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceOutputReference(this, "reference_data_source", true);
+  private _referenceDataSource = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceOutputReference(this, "reference_data_source");
   public get referenceDataSource() {
     return this._referenceDataSource;
   }
@@ -3502,10 +3467,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurati
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfiguration | undefined {
@@ -3638,10 +3602,9 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationApplicationConfiguration | undefined {
@@ -3702,7 +3665,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   }
 
   // application_code_configuration - computed: false, optional: false, required: true
-  private _applicationCodeConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationOutputReference(this, "application_code_configuration", true);
+  private _applicationCodeConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationOutputReference(this, "application_code_configuration");
   public get applicationCodeConfiguration() {
     return this._applicationCodeConfiguration;
   }
@@ -3715,7 +3678,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   }
 
   // application_snapshot_configuration - computed: false, optional: true, required: false
-  private _applicationSnapshotConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSnapshotConfigurationOutputReference(this, "application_snapshot_configuration", true);
+  private _applicationSnapshotConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSnapshotConfigurationOutputReference(this, "application_snapshot_configuration");
   public get applicationSnapshotConfiguration() {
     return this._applicationSnapshotConfiguration;
   }
@@ -3731,7 +3694,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   }
 
   // environment_properties - computed: false, optional: true, required: false
-  private _environmentProperties = new Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesOutputReference(this, "environment_properties", true);
+  private _environmentProperties = new Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesOutputReference(this, "environment_properties");
   public get environmentProperties() {
     return this._environmentProperties;
   }
@@ -3747,7 +3710,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   }
 
   // flink_application_configuration - computed: false, optional: true, required: false
-  private _flinkApplicationConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationOutputReference(this, "flink_application_configuration", true);
+  private _flinkApplicationConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationOutputReference(this, "flink_application_configuration");
   public get flinkApplicationConfiguration() {
     return this._flinkApplicationConfiguration;
   }
@@ -3763,7 +3726,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   }
 
   // run_configuration - computed: false, optional: true, required: false
-  private _runConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationOutputReference(this, "run_configuration", true);
+  private _runConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationOutputReference(this, "run_configuration");
   public get runConfiguration() {
     return this._runConfiguration;
   }
@@ -3779,7 +3742,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   }
 
   // sql_application_configuration - computed: false, optional: true, required: false
-  private _sqlApplicationConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputReference(this, "sql_application_configuration", true);
+  private _sqlApplicationConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationOutputReference(this, "sql_application_configuration");
   public get sqlApplicationConfiguration() {
     return this._sqlApplicationConfiguration;
   }
@@ -3795,7 +3758,7 @@ export class Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReferenc
   }
 
   // vpc_configuration - computed: false, optional: true, required: false
-  private _vpcConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurationOutputReference(this, "vpc_configuration", true);
+  private _vpcConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurationOutputReference(this, "vpc_configuration");
   public get vpcConfiguration() {
     return this._vpcConfiguration;
   }
@@ -3833,10 +3796,9 @@ export class Kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsOutputReferenc
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationCloudwatchLoggingOptions | undefined {
@@ -3911,10 +3873,9 @@ export class Kinesisanalyticsv2ApplicationTimeoutsOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Kinesisanalyticsv2ApplicationTimeouts | undefined {
@@ -4007,7 +3968,7 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_kinesisanalyticsv2_application";
+  public static readonly tfResourceType = "aws_kinesisanalyticsv2_application";
 
   // ===========
   // INITIALIZER
@@ -4024,7 +3985,9 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_kinesisanalyticsv2_application',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -4198,7 +4161,7 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   }
 
   // application_configuration - computed: false, optional: true, required: false
-  private _applicationConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReference(this, "application_configuration", true);
+  private _applicationConfiguration = new Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReference(this, "application_configuration");
   public get applicationConfiguration() {
     return this._applicationConfiguration;
   }
@@ -4214,7 +4177,7 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   }
 
   // cloudwatch_logging_options - computed: false, optional: true, required: false
-  private _cloudwatchLoggingOptions = new Kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsOutputReference(this, "cloudwatch_logging_options", true);
+  private _cloudwatchLoggingOptions = new Kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsOutputReference(this, "cloudwatch_logging_options");
   public get cloudwatchLoggingOptions() {
     return this._cloudwatchLoggingOptions;
   }
@@ -4230,7 +4193,7 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new Kinesisanalyticsv2ApplicationTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new Kinesisanalyticsv2ApplicationTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

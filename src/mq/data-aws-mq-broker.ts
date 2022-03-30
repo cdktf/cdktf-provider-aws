@@ -20,7 +20,45 @@ export interface DataAwsMqBrokerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsMqBrokerConfiguration extends cdktf.ComplexComputedList {
+export interface DataAwsMqBrokerConfiguration {
+}
+
+export function dataAwsMqBrokerConfigurationToTerraform(struct?: DataAwsMqBrokerConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsMqBrokerConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsMqBrokerConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsMqBrokerConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // id - computed: true, optional: false, required: false
   public get id() {
@@ -32,7 +70,64 @@ export class DataAwsMqBrokerConfiguration extends cdktf.ComplexComputedList {
     return this.getNumberAttribute('revision');
   }
 }
-export class DataAwsMqBrokerEncryptionOptions extends cdktf.ComplexComputedList {
+
+export class DataAwsMqBrokerConfigurationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsMqBrokerConfigurationOutputReference {
+    return new DataAwsMqBrokerConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsMqBrokerEncryptionOptions {
+}
+
+export function dataAwsMqBrokerEncryptionOptionsToTerraform(struct?: DataAwsMqBrokerEncryptionOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsMqBrokerEncryptionOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsMqBrokerEncryptionOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsMqBrokerEncryptionOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // kms_key_id - computed: true, optional: false, required: false
   public get kmsKeyId() {
@@ -44,7 +139,64 @@ export class DataAwsMqBrokerEncryptionOptions extends cdktf.ComplexComputedList 
     return this.getBooleanAttribute('use_aws_owned_key');
   }
 }
-export class DataAwsMqBrokerInstances extends cdktf.ComplexComputedList {
+
+export class DataAwsMqBrokerEncryptionOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsMqBrokerEncryptionOptionsOutputReference {
+    return new DataAwsMqBrokerEncryptionOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsMqBrokerInstances {
+}
+
+export function dataAwsMqBrokerInstancesToTerraform(struct?: DataAwsMqBrokerInstances): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsMqBrokerInstancesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsMqBrokerInstances | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsMqBrokerInstances | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // console_url - computed: true, optional: false, required: false
   public get consoleUrl() {
@@ -61,7 +213,64 @@ export class DataAwsMqBrokerInstances extends cdktf.ComplexComputedList {
     return this.getStringAttribute('ip_address');
   }
 }
-export class DataAwsMqBrokerLdapServerMetadata extends cdktf.ComplexComputedList {
+
+export class DataAwsMqBrokerInstancesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsMqBrokerInstancesOutputReference {
+    return new DataAwsMqBrokerInstancesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsMqBrokerLdapServerMetadata {
+}
+
+export function dataAwsMqBrokerLdapServerMetadataToTerraform(struct?: DataAwsMqBrokerLdapServerMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsMqBrokerLdapServerMetadataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsMqBrokerLdapServerMetadata | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsMqBrokerLdapServerMetadata | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // hosts - computed: true, optional: false, required: false
   public get hosts() {
@@ -118,7 +327,64 @@ export class DataAwsMqBrokerLdapServerMetadata extends cdktf.ComplexComputedList
     return this.getBooleanAttribute('user_search_subtree');
   }
 }
-export class DataAwsMqBrokerLogs extends cdktf.ComplexComputedList {
+
+export class DataAwsMqBrokerLdapServerMetadataList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsMqBrokerLdapServerMetadataOutputReference {
+    return new DataAwsMqBrokerLdapServerMetadataOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsMqBrokerLogs {
+}
+
+export function dataAwsMqBrokerLogsToTerraform(struct?: DataAwsMqBrokerLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsMqBrokerLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsMqBrokerLogs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsMqBrokerLogs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // audit - computed: true, optional: false, required: false
   public get audit() {
@@ -130,7 +396,64 @@ export class DataAwsMqBrokerLogs extends cdktf.ComplexComputedList {
     return this.getBooleanAttribute('general');
   }
 }
-export class DataAwsMqBrokerMaintenanceWindowStartTime extends cdktf.ComplexComputedList {
+
+export class DataAwsMqBrokerLogsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsMqBrokerLogsOutputReference {
+    return new DataAwsMqBrokerLogsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsMqBrokerMaintenanceWindowStartTime {
+}
+
+export function dataAwsMqBrokerMaintenanceWindowStartTimeToTerraform(struct?: DataAwsMqBrokerMaintenanceWindowStartTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsMqBrokerMaintenanceWindowStartTimeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsMqBrokerMaintenanceWindowStartTime | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsMqBrokerMaintenanceWindowStartTime | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // day_of_week - computed: true, optional: false, required: false
   public get dayOfWeek() {
@@ -147,7 +470,64 @@ export class DataAwsMqBrokerMaintenanceWindowStartTime extends cdktf.ComplexComp
     return this.getStringAttribute('time_zone');
   }
 }
-export class DataAwsMqBrokerUser extends cdktf.ComplexComputedList {
+
+export class DataAwsMqBrokerMaintenanceWindowStartTimeList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsMqBrokerMaintenanceWindowStartTimeOutputReference {
+    return new DataAwsMqBrokerMaintenanceWindowStartTimeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsMqBrokerUser {
+}
+
+export function dataAwsMqBrokerUserToTerraform(struct?: DataAwsMqBrokerUser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsMqBrokerUserOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsMqBrokerUser | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsMqBrokerUser | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // console_access - computed: true, optional: false, required: false
   public get consoleAccess() {
@@ -165,6 +545,25 @@ export class DataAwsMqBrokerUser extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataAwsMqBrokerUserList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsMqBrokerUserOutputReference {
+    return new DataAwsMqBrokerUserOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/mq_broker aws_mq_broker}
 */
@@ -173,7 +572,7 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_mq_broker";
+  public static readonly tfResourceType = "aws_mq_broker";
 
   // ===========
   // INITIALIZER
@@ -190,7 +589,9 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_mq_broker',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -254,8 +655,9 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
   }
 
   // configuration - computed: true, optional: false, required: false
-  public configuration(index: string) {
-    return new DataAwsMqBrokerConfiguration(this, 'configuration', index, false);
+  private _configuration = new DataAwsMqBrokerConfigurationList(this, "configuration", false);
+  public get configuration() {
+    return this._configuration;
   }
 
   // deployment_mode - computed: true, optional: false, required: false
@@ -264,8 +666,9 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
   }
 
   // encryption_options - computed: true, optional: false, required: false
-  public encryptionOptions(index: string) {
-    return new DataAwsMqBrokerEncryptionOptions(this, 'encryption_options', index, false);
+  private _encryptionOptions = new DataAwsMqBrokerEncryptionOptionsList(this, "encryption_options", false);
+  public get encryptionOptions() {
+    return this._encryptionOptions;
   }
 
   // engine_type - computed: true, optional: false, required: false
@@ -289,23 +692,27 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
   }
 
   // instances - computed: true, optional: false, required: false
-  public instances(index: string) {
-    return new DataAwsMqBrokerInstances(this, 'instances', index, false);
+  private _instances = new DataAwsMqBrokerInstancesList(this, "instances", false);
+  public get instances() {
+    return this._instances;
   }
 
   // ldap_server_metadata - computed: true, optional: false, required: false
-  public ldapServerMetadata(index: string) {
-    return new DataAwsMqBrokerLdapServerMetadata(this, 'ldap_server_metadata', index, false);
+  private _ldapServerMetadata = new DataAwsMqBrokerLdapServerMetadataList(this, "ldap_server_metadata", false);
+  public get ldapServerMetadata() {
+    return this._ldapServerMetadata;
   }
 
   // logs - computed: true, optional: false, required: false
-  public logs(index: string) {
-    return new DataAwsMqBrokerLogs(this, 'logs', index, false);
+  private _logs = new DataAwsMqBrokerLogsList(this, "logs", false);
+  public get logs() {
+    return this._logs;
   }
 
   // maintenance_window_start_time - computed: true, optional: false, required: false
-  public maintenanceWindowStartTime(index: string) {
-    return new DataAwsMqBrokerMaintenanceWindowStartTime(this, 'maintenance_window_start_time', index, false);
+  private _maintenanceWindowStartTime = new DataAwsMqBrokerMaintenanceWindowStartTimeList(this, "maintenance_window_start_time", false);
+  public get maintenanceWindowStartTime() {
+    return this._maintenanceWindowStartTime;
   }
 
   // publicly_accessible - computed: true, optional: false, required: false
@@ -345,8 +752,9 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
   }
 
   // user - computed: true, optional: false, required: false
-  public user(index: string) {
-    return new DataAwsMqBrokerUser(this, 'user', index, true);
+  private _user = new DataAwsMqBrokerUserList(this, "user", true);
+  public get user() {
+    return this._user;
   }
 
   // =========

@@ -16,7 +16,45 @@ export interface DataAwsWorkspacesDirectoryConfig extends cdktf.TerraformMetaArg
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsWorkspacesDirectorySelfServicePermissions extends cdktf.ComplexComputedList {
+export interface DataAwsWorkspacesDirectorySelfServicePermissions {
+}
+
+export function dataAwsWorkspacesDirectorySelfServicePermissionsToTerraform(struct?: DataAwsWorkspacesDirectorySelfServicePermissions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsWorkspacesDirectorySelfServicePermissionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsWorkspacesDirectorySelfServicePermissions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsWorkspacesDirectorySelfServicePermissions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // change_compute_type - computed: true, optional: false, required: false
   public get changeComputeType() {
@@ -43,7 +81,64 @@ export class DataAwsWorkspacesDirectorySelfServicePermissions extends cdktf.Comp
     return this.getBooleanAttribute('switch_running_mode');
   }
 }
-export class DataAwsWorkspacesDirectoryWorkspaceAccessProperties extends cdktf.ComplexComputedList {
+
+export class DataAwsWorkspacesDirectorySelfServicePermissionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsWorkspacesDirectorySelfServicePermissionsOutputReference {
+    return new DataAwsWorkspacesDirectorySelfServicePermissionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsWorkspacesDirectoryWorkspaceAccessProperties {
+}
+
+export function dataAwsWorkspacesDirectoryWorkspaceAccessPropertiesToTerraform(struct?: DataAwsWorkspacesDirectoryWorkspaceAccessProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsWorkspacesDirectoryWorkspaceAccessProperties | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsWorkspacesDirectoryWorkspaceAccessProperties | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // device_type_android - computed: true, optional: false, required: false
   public get deviceTypeAndroid() {
@@ -85,7 +180,64 @@ export class DataAwsWorkspacesDirectoryWorkspaceAccessProperties extends cdktf.C
     return this.getStringAttribute('device_type_zeroclient');
   }
 }
-export class DataAwsWorkspacesDirectoryWorkspaceCreationProperties extends cdktf.ComplexComputedList {
+
+export class DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference {
+    return new DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsWorkspacesDirectoryWorkspaceCreationProperties {
+}
+
+export function dataAwsWorkspacesDirectoryWorkspaceCreationPropertiesToTerraform(struct?: DataAwsWorkspacesDirectoryWorkspaceCreationProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsWorkspacesDirectoryWorkspaceCreationProperties | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsWorkspacesDirectoryWorkspaceCreationProperties | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // custom_security_group_id - computed: true, optional: false, required: false
   public get customSecurityGroupId() {
@@ -113,6 +265,25 @@ export class DataAwsWorkspacesDirectoryWorkspaceCreationProperties extends cdktf
   }
 }
 
+export class DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference {
+    return new DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/workspaces_directory aws_workspaces_directory}
 */
@@ -121,7 +292,7 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_workspaces_directory";
+  public static readonly tfResourceType = "aws_workspaces_directory";
 
   // ===========
   // INITIALIZER
@@ -138,7 +309,9 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_workspaces_directory',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -212,8 +385,9 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
   }
 
   // self_service_permissions - computed: true, optional: false, required: false
-  public selfServicePermissions(index: string) {
-    return new DataAwsWorkspacesDirectorySelfServicePermissions(this, 'self_service_permissions', index, false);
+  private _selfServicePermissions = new DataAwsWorkspacesDirectorySelfServicePermissionsList(this, "self_service_permissions", false);
+  public get selfServicePermissions() {
+    return this._selfServicePermissions;
   }
 
   // subnet_ids - computed: true, optional: false, required: false
@@ -238,13 +412,15 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
   }
 
   // workspace_access_properties - computed: true, optional: false, required: false
-  public workspaceAccessProperties(index: string) {
-    return new DataAwsWorkspacesDirectoryWorkspaceAccessProperties(this, 'workspace_access_properties', index, false);
+  private _workspaceAccessProperties = new DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesList(this, "workspace_access_properties", false);
+  public get workspaceAccessProperties() {
+    return this._workspaceAccessProperties;
   }
 
   // workspace_creation_properties - computed: true, optional: false, required: false
-  public workspaceCreationProperties(index: string) {
-    return new DataAwsWorkspacesDirectoryWorkspaceCreationProperties(this, 'workspace_creation_properties', index, false);
+  private _workspaceCreationProperties = new DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesList(this, "workspace_creation_properties", false);
+  public get workspaceCreationProperties() {
+    return this._workspaceCreationProperties;
   }
 
   // workspace_security_group_id - computed: true, optional: false, required: false

@@ -29,7 +29,7 @@ export class IotThing extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_iot_thing";
+  public static readonly tfResourceType = "aws_iot_thing";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class IotThing extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_iot_thing',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

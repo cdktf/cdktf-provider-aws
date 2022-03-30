@@ -29,7 +29,7 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cognito_user_pool_domain";
+  public static readonly tfResourceType = "aws_cognito_user_pool_domain";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_cognito_user_pool_domain',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

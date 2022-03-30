@@ -16,7 +16,45 @@ export interface DataAwsSignerSigningProfileConfig extends cdktf.TerraformMetaAr
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsSignerSigningProfileRevocationRecord extends cdktf.ComplexComputedList {
+export interface DataAwsSignerSigningProfileRevocationRecord {
+}
+
+export function dataAwsSignerSigningProfileRevocationRecordToTerraform(struct?: DataAwsSignerSigningProfileRevocationRecord): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsSignerSigningProfileRevocationRecordOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsSignerSigningProfileRevocationRecord | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsSignerSigningProfileRevocationRecord | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // revocation_effective_from - computed: true, optional: false, required: false
   public get revocationEffectiveFrom() {
@@ -33,7 +71,64 @@ export class DataAwsSignerSigningProfileRevocationRecord extends cdktf.ComplexCo
     return this.getStringAttribute('revoked_by');
   }
 }
-export class DataAwsSignerSigningProfileSignatureValidityPeriod extends cdktf.ComplexComputedList {
+
+export class DataAwsSignerSigningProfileRevocationRecordList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsSignerSigningProfileRevocationRecordOutputReference {
+    return new DataAwsSignerSigningProfileRevocationRecordOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsSignerSigningProfileSignatureValidityPeriod {
+}
+
+export function dataAwsSignerSigningProfileSignatureValidityPeriodToTerraform(struct?: DataAwsSignerSigningProfileSignatureValidityPeriod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsSignerSigningProfileSignatureValidityPeriod | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsSignerSigningProfileSignatureValidityPeriod | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // type - computed: true, optional: false, required: false
   public get type() {
@@ -46,6 +141,25 @@ export class DataAwsSignerSigningProfileSignatureValidityPeriod extends cdktf.Co
   }
 }
 
+export class DataAwsSignerSigningProfileSignatureValidityPeriodList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference {
+    return new DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/signer_signing_profile aws_signer_signing_profile}
 */
@@ -54,7 +168,7 @@ export class DataAwsSignerSigningProfile extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_signer_signing_profile";
+  public static readonly tfResourceType = "aws_signer_signing_profile";
 
   // ===========
   // INITIALIZER
@@ -71,7 +185,9 @@ export class DataAwsSignerSigningProfile extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_signer_signing_profile',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -120,13 +236,15 @@ export class DataAwsSignerSigningProfile extends cdktf.TerraformDataSource {
   }
 
   // revocation_record - computed: true, optional: false, required: false
-  public revocationRecord(index: string) {
-    return new DataAwsSignerSigningProfileRevocationRecord(this, 'revocation_record', index, false);
+  private _revocationRecord = new DataAwsSignerSigningProfileRevocationRecordList(this, "revocation_record", false);
+  public get revocationRecord() {
+    return this._revocationRecord;
   }
 
   // signature_validity_period - computed: true, optional: false, required: false
-  public signatureValidityPeriod(index: string) {
-    return new DataAwsSignerSigningProfileSignatureValidityPeriod(this, 'signature_validity_period', index, false);
+  private _signatureValidityPeriod = new DataAwsSignerSigningProfileSignatureValidityPeriodList(this, "signature_validity_period", false);
+  public get signatureValidityPeriod() {
+    return this._signatureValidityPeriod;
   }
 
   // status - computed: true, optional: false, required: false

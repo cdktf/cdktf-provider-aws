@@ -50,7 +50,45 @@ export interface EfsFileSystemConfig extends cdktf.TerraformMetaArguments {
   */
   readonly lifecyclePolicy?: EfsFileSystemLifecyclePolicy[] | cdktf.IResolvable;
 }
-export class EfsFileSystemSizeInBytes extends cdktf.ComplexComputedList {
+export interface EfsFileSystemSizeInBytes {
+}
+
+export function efsFileSystemSizeInBytesToTerraform(struct?: EfsFileSystemSizeInBytes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class EfsFileSystemSizeInBytesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EfsFileSystemSizeInBytes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EfsFileSystemSizeInBytes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // value - computed: true, optional: false, required: false
   public get value() {
@@ -65,6 +103,25 @@ export class EfsFileSystemSizeInBytes extends cdktf.ComplexComputedList {
   // value_in_standard - computed: true, optional: false, required: false
   public get valueInStandard() {
     return this.getNumberAttribute('value_in_standard');
+  }
+}
+
+export class EfsFileSystemSizeInBytesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EfsFileSystemSizeInBytesOutputReference {
+    return new EfsFileSystemSizeInBytesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface EfsFileSystemLifecyclePolicy {
@@ -98,7 +155,7 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_efs_file_system";
+  public static readonly tfResourceType = "aws_efs_file_system";
 
   // ===========
   // INITIALIZER
@@ -115,7 +172,9 @@ export class EfsFileSystem extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_efs_file_system',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -265,8 +324,9 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   }
 
   // size_in_bytes - computed: true, optional: false, required: false
-  public sizeInBytes(index: string) {
-    return new EfsFileSystemSizeInBytes(this, 'size_in_bytes', index, false);
+  private _sizeInBytes = new EfsFileSystemSizeInBytesList(this, "size_in_bytes", false);
+  public get sizeInBytes() {
+    return this._sizeInBytes;
   }
 
   // tags - computed: false, optional: true, required: false

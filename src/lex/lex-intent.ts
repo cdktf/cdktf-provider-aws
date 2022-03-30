@@ -133,10 +133,9 @@ export class LexIntentConclusionStatementOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LexIntentConclusionStatement | undefined {
@@ -258,10 +257,9 @@ export class LexIntentConfirmationPromptOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LexIntentConfirmationPrompt | undefined {
@@ -368,10 +366,9 @@ export class LexIntentDialogCodeHookOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LexIntentDialogCodeHook | undefined {
@@ -489,10 +486,9 @@ export class LexIntentFollowUpPromptPromptOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LexIntentFollowUpPromptPrompt | undefined {
@@ -628,10 +624,9 @@ export class LexIntentFollowUpPromptRejectionStatementOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LexIntentFollowUpPromptRejectionStatement | undefined {
@@ -723,10 +718,9 @@ export class LexIntentFollowUpPromptOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LexIntentFollowUpPrompt | undefined {
@@ -757,7 +751,7 @@ export class LexIntentFollowUpPromptOutputReference extends cdktf.ComplexObject 
   }
 
   // prompt - computed: false, optional: false, required: true
-  private _prompt = new LexIntentFollowUpPromptPromptOutputReference(this, "prompt", true);
+  private _prompt = new LexIntentFollowUpPromptPromptOutputReference(this, "prompt");
   public get prompt() {
     return this._prompt;
   }
@@ -770,7 +764,7 @@ export class LexIntentFollowUpPromptOutputReference extends cdktf.ComplexObject 
   }
 
   // rejection_statement - computed: false, optional: false, required: true
-  private _rejectionStatement = new LexIntentFollowUpPromptRejectionStatementOutputReference(this, "rejection_statement", true);
+  private _rejectionStatement = new LexIntentFollowUpPromptRejectionStatementOutputReference(this, "rejection_statement");
   public get rejectionStatement() {
     return this._rejectionStatement;
   }
@@ -810,10 +804,9 @@ export class LexIntentFulfillmentActivityCodeHookOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LexIntentFulfillmentActivityCodeHook | undefined {
@@ -899,10 +892,9 @@ export class LexIntentFulfillmentActivityOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LexIntentFulfillmentActivity | undefined {
@@ -946,7 +938,7 @@ export class LexIntentFulfillmentActivityOutputReference extends cdktf.ComplexOb
   }
 
   // code_hook - computed: false, optional: true, required: false
-  private _codeHook = new LexIntentFulfillmentActivityCodeHookOutputReference(this, "code_hook", true);
+  private _codeHook = new LexIntentFulfillmentActivityCodeHookOutputReference(this, "code_hook");
   public get codeHook() {
     return this._codeHook;
   }
@@ -1018,10 +1010,9 @@ export class LexIntentRejectionStatementOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LexIntentRejectionStatement | undefined {
@@ -1143,10 +1134,9 @@ export class LexIntentSlotValueElicitationPromptOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LexIntentSlotValueElicitationPrompt | undefined {
@@ -1317,10 +1307,9 @@ export class LexIntentTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LexIntentTimeouts | undefined {
@@ -1413,7 +1402,7 @@ export class LexIntent extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_lex_intent";
+  public static readonly tfResourceType = "aws_lex_intent";
 
   // ===========
   // INITIALIZER
@@ -1430,7 +1419,9 @@ export class LexIntent extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_lex_intent',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1564,7 +1555,7 @@ export class LexIntent extends cdktf.TerraformResource {
   }
 
   // conclusion_statement - computed: false, optional: true, required: false
-  private _conclusionStatement = new LexIntentConclusionStatementOutputReference(this, "conclusion_statement", true);
+  private _conclusionStatement = new LexIntentConclusionStatementOutputReference(this, "conclusion_statement");
   public get conclusionStatement() {
     return this._conclusionStatement;
   }
@@ -1580,7 +1571,7 @@ export class LexIntent extends cdktf.TerraformResource {
   }
 
   // confirmation_prompt - computed: false, optional: true, required: false
-  private _confirmationPrompt = new LexIntentConfirmationPromptOutputReference(this, "confirmation_prompt", true);
+  private _confirmationPrompt = new LexIntentConfirmationPromptOutputReference(this, "confirmation_prompt");
   public get confirmationPrompt() {
     return this._confirmationPrompt;
   }
@@ -1596,7 +1587,7 @@ export class LexIntent extends cdktf.TerraformResource {
   }
 
   // dialog_code_hook - computed: false, optional: true, required: false
-  private _dialogCodeHook = new LexIntentDialogCodeHookOutputReference(this, "dialog_code_hook", true);
+  private _dialogCodeHook = new LexIntentDialogCodeHookOutputReference(this, "dialog_code_hook");
   public get dialogCodeHook() {
     return this._dialogCodeHook;
   }
@@ -1612,7 +1603,7 @@ export class LexIntent extends cdktf.TerraformResource {
   }
 
   // follow_up_prompt - computed: false, optional: true, required: false
-  private _followUpPrompt = new LexIntentFollowUpPromptOutputReference(this, "follow_up_prompt", true);
+  private _followUpPrompt = new LexIntentFollowUpPromptOutputReference(this, "follow_up_prompt");
   public get followUpPrompt() {
     return this._followUpPrompt;
   }
@@ -1628,7 +1619,7 @@ export class LexIntent extends cdktf.TerraformResource {
   }
 
   // fulfillment_activity - computed: false, optional: false, required: true
-  private _fulfillmentActivity = new LexIntentFulfillmentActivityOutputReference(this, "fulfillment_activity", true);
+  private _fulfillmentActivity = new LexIntentFulfillmentActivityOutputReference(this, "fulfillment_activity");
   public get fulfillmentActivity() {
     return this._fulfillmentActivity;
   }
@@ -1641,7 +1632,7 @@ export class LexIntent extends cdktf.TerraformResource {
   }
 
   // rejection_statement - computed: false, optional: true, required: false
-  private _rejectionStatement = new LexIntentRejectionStatementOutputReference(this, "rejection_statement", true);
+  private _rejectionStatement = new LexIntentRejectionStatementOutputReference(this, "rejection_statement");
   public get rejectionStatement() {
     return this._rejectionStatement;
   }
@@ -1674,7 +1665,7 @@ export class LexIntent extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new LexIntentTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new LexIntentTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

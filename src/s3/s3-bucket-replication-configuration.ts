@@ -49,10 +49,9 @@ export class S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputRe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDeleteMarkerReplication | undefined {
@@ -112,10 +111,9 @@ export class S3BucketReplicationConfigurationRuleDestinationAccessControlTransla
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation | undefined {
@@ -175,10 +173,9 @@ export class S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurat
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration | undefined {
@@ -238,10 +235,9 @@ export class S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshol
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold | undefined {
@@ -308,10 +304,9 @@ export class S3BucketReplicationConfigurationRuleDestinationMetricsOutputReferen
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationMetrics | undefined {
@@ -355,7 +350,7 @@ export class S3BucketReplicationConfigurationRuleDestinationMetricsOutputReferen
   }
 
   // event_threshold - computed: false, optional: true, required: false
-  private _eventThreshold = new S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference(this, "event_threshold", true);
+  private _eventThreshold = new S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference(this, "event_threshold");
   public get eventThreshold() {
     return this._eventThreshold;
   }
@@ -393,10 +388,9 @@ export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime | undefined {
@@ -463,10 +457,9 @@ export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutpu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDestinationReplicationTime | undefined {
@@ -510,7 +503,7 @@ export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutpu
   }
 
   // time - computed: false, optional: false, required: true
-  private _time = new S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference(this, "time", true);
+  private _time = new S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference(this, "time");
   public get time() {
     return this._time;
   }
@@ -583,10 +576,9 @@ export class S3BucketReplicationConfigurationRuleDestinationOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleDestination | undefined {
@@ -692,7 +684,7 @@ export class S3BucketReplicationConfigurationRuleDestinationOutputReference exte
   }
 
   // access_control_translation - computed: false, optional: true, required: false
-  private _accessControlTranslation = new S3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference(this, "access_control_translation", true);
+  private _accessControlTranslation = new S3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference(this, "access_control_translation");
   public get accessControlTranslation() {
     return this._accessControlTranslation;
   }
@@ -708,7 +700,7 @@ export class S3BucketReplicationConfigurationRuleDestinationOutputReference exte
   }
 
   // encryption_configuration - computed: false, optional: true, required: false
-  private _encryptionConfiguration = new S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference(this, "encryption_configuration", true);
+  private _encryptionConfiguration = new S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference(this, "encryption_configuration");
   public get encryptionConfiguration() {
     return this._encryptionConfiguration;
   }
@@ -724,7 +716,7 @@ export class S3BucketReplicationConfigurationRuleDestinationOutputReference exte
   }
 
   // metrics - computed: false, optional: true, required: false
-  private _metrics = new S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference(this, "metrics", true);
+  private _metrics = new S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference(this, "metrics");
   public get metrics() {
     return this._metrics;
   }
@@ -740,7 +732,7 @@ export class S3BucketReplicationConfigurationRuleDestinationOutputReference exte
   }
 
   // replication_time - computed: false, optional: true, required: false
-  private _replicationTime = new S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference(this, "replication_time", true);
+  private _replicationTime = new S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference(this, "replication_time");
   public get replicationTime() {
     return this._replicationTime;
   }
@@ -778,10 +770,9 @@ export class S3BucketReplicationConfigurationRuleExistingObjectReplicationOutput
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleExistingObjectReplication | undefined {
@@ -846,10 +837,9 @@ export class S3BucketReplicationConfigurationRuleFilterAndOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleFilterAnd | undefined {
@@ -939,10 +929,9 @@ export class S3BucketReplicationConfigurationRuleFilterTagOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleFilterTag | undefined {
@@ -1035,10 +1024,9 @@ export class S3BucketReplicationConfigurationRuleFilterOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleFilter | undefined {
@@ -1091,7 +1079,7 @@ export class S3BucketReplicationConfigurationRuleFilterOutputReference extends c
   }
 
   // and - computed: false, optional: true, required: false
-  private _and = new S3BucketReplicationConfigurationRuleFilterAndOutputReference(this, "and", true);
+  private _and = new S3BucketReplicationConfigurationRuleFilterAndOutputReference(this, "and");
   public get and() {
     return this._and;
   }
@@ -1107,7 +1095,7 @@ export class S3BucketReplicationConfigurationRuleFilterOutputReference extends c
   }
 
   // tag - computed: false, optional: true, required: false
-  private _tag = new S3BucketReplicationConfigurationRuleFilterTagOutputReference(this, "tag", true);
+  private _tag = new S3BucketReplicationConfigurationRuleFilterTagOutputReference(this, "tag");
   public get tag() {
     return this._tag;
   }
@@ -1145,10 +1133,9 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaM
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications | undefined {
@@ -1208,10 +1195,9 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEn
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects | undefined {
@@ -1280,10 +1266,9 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputRe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketReplicationConfigurationRuleSourceSelectionCriteria | undefined {
@@ -1314,7 +1299,7 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputRe
   }
 
   // replica_modifications - computed: false, optional: true, required: false
-  private _replicaModifications = new S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference(this, "replica_modifications", true);
+  private _replicaModifications = new S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference(this, "replica_modifications");
   public get replicaModifications() {
     return this._replicaModifications;
   }
@@ -1330,7 +1315,7 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputRe
   }
 
   // sse_kms_encrypted_objects - computed: false, optional: true, required: false
-  private _sseKmsEncryptedObjects = new S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference(this, "sse_kms_encrypted_objects", true);
+  private _sseKmsEncryptedObjects = new S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference(this, "sse_kms_encrypted_objects");
   public get sseKmsEncryptedObjects() {
     return this._sseKmsEncryptedObjects;
   }
@@ -1420,7 +1405,7 @@ export class S3BucketReplicationConfigurationA extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_s3_bucket_replication_configuration";
+  public static readonly tfResourceType = "aws_s3_bucket_replication_configuration";
 
   // ===========
   // INITIALIZER
@@ -1437,7 +1422,9 @@ export class S3BucketReplicationConfigurationA extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_s3_bucket_replication_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

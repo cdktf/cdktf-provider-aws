@@ -64,10 +64,9 @@ export class CodepipelineArtifactStoreEncryptionKeyOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodepipelineArtifactStoreEncryptionKey | undefined {
@@ -262,7 +261,7 @@ export class Codepipeline extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_codepipeline";
+  public static readonly tfResourceType = "aws_codepipeline";
 
   // ===========
   // INITIALIZER
@@ -279,7 +278,9 @@ export class Codepipeline extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_codepipeline',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -69,10 +69,9 @@ export class BackupReportPlanReportDeliveryChannelOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): BackupReportPlanReportDeliveryChannel | undefined {
@@ -186,10 +185,9 @@ export class BackupReportPlanReportSettingOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): BackupReportPlanReportSetting | undefined {
@@ -279,7 +277,7 @@ export class BackupReportPlan extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_backup_report_plan";
+  public static readonly tfResourceType = "aws_backup_report_plan";
 
   // ===========
   // INITIALIZER
@@ -296,7 +294,9 @@ export class BackupReportPlan extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_backup_report_plan',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -397,7 +397,7 @@ export class BackupReportPlan extends cdktf.TerraformResource {
   }
 
   // report_delivery_channel - computed: false, optional: false, required: true
-  private _reportDeliveryChannel = new BackupReportPlanReportDeliveryChannelOutputReference(this, "report_delivery_channel", true);
+  private _reportDeliveryChannel = new BackupReportPlanReportDeliveryChannelOutputReference(this, "report_delivery_channel");
   public get reportDeliveryChannel() {
     return this._reportDeliveryChannel;
   }
@@ -410,7 +410,7 @@ export class BackupReportPlan extends cdktf.TerraformResource {
   }
 
   // report_setting - computed: false, optional: false, required: true
-  private _reportSetting = new BackupReportPlanReportSettingOutputReference(this, "report_setting", true);
+  private _reportSetting = new BackupReportPlanReportSettingOutputReference(this, "report_setting");
   public get reportSetting() {
     return this._reportSetting;
   }

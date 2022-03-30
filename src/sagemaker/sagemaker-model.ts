@@ -75,10 +75,9 @@ export class SagemakerModelContainerImageConfigOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerModelContainerImageConfig | undefined {
@@ -182,10 +181,9 @@ export class SagemakerModelInferenceExecutionConfigOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerModelInferenceExecutionConfig | undefined {
@@ -245,10 +243,9 @@ export class SagemakerModelPrimaryContainerImageConfigOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerModelPrimaryContainerImageConfig | undefined {
@@ -335,10 +332,9 @@ export class SagemakerModelPrimaryContainerOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerModelPrimaryContainer | undefined {
@@ -470,7 +466,7 @@ export class SagemakerModelPrimaryContainerOutputReference extends cdktf.Complex
   }
 
   // image_config - computed: false, optional: true, required: false
-  private _imageConfig = new SagemakerModelPrimaryContainerImageConfigOutputReference(this, "image_config", true);
+  private _imageConfig = new SagemakerModelPrimaryContainerImageConfigOutputReference(this, "image_config");
   public get imageConfig() {
     return this._imageConfig;
   }
@@ -513,10 +509,9 @@ export class SagemakerModelVpcConfigOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerModelVpcConfig | undefined {
@@ -581,7 +576,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_sagemaker_model";
+  public static readonly tfResourceType = "aws_sagemaker_model";
 
   // ===========
   // INITIALIZER
@@ -598,7 +593,9 @@ export class SagemakerModel extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_sagemaker_model',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -725,7 +722,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
   }
 
   // inference_execution_config - computed: false, optional: true, required: false
-  private _inferenceExecutionConfig = new SagemakerModelInferenceExecutionConfigOutputReference(this, "inference_execution_config", true);
+  private _inferenceExecutionConfig = new SagemakerModelInferenceExecutionConfigOutputReference(this, "inference_execution_config");
   public get inferenceExecutionConfig() {
     return this._inferenceExecutionConfig;
   }
@@ -741,7 +738,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
   }
 
   // primary_container - computed: false, optional: true, required: false
-  private _primaryContainer = new SagemakerModelPrimaryContainerOutputReference(this, "primary_container", true);
+  private _primaryContainer = new SagemakerModelPrimaryContainerOutputReference(this, "primary_container");
   public get primaryContainer() {
     return this._primaryContainer;
   }
@@ -757,7 +754,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
   }
 
   // vpc_config - computed: false, optional: true, required: false
-  private _vpcConfig = new SagemakerModelVpcConfigOutputReference(this, "vpc_config", true);
+  private _vpcConfig = new SagemakerModelVpcConfigOutputReference(this, "vpc_config");
   public get vpcConfig() {
     return this._vpcConfig;
   }

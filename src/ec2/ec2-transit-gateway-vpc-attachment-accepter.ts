@@ -37,7 +37,7 @@ export class Ec2TransitGatewayVpcAttachmentAccepter extends cdktf.TerraformResou
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ec2_transit_gateway_vpc_attachment_accepter";
+  public static readonly tfResourceType = "aws_ec2_transit_gateway_vpc_attachment_accepter";
 
   // ===========
   // INITIALIZER
@@ -54,7 +54,9 @@ export class Ec2TransitGatewayVpcAttachmentAccepter extends cdktf.TerraformResou
     super(scope, id, {
       terraformResourceType: 'aws_ec2_transit_gateway_vpc_attachment_accepter',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

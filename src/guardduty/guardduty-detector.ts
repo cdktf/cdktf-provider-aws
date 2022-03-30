@@ -53,10 +53,9 @@ export class GuarddutyDetectorDatasourcesS3LogsOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GuarddutyDetectorDatasourcesS3Logs | undefined {
@@ -118,10 +117,9 @@ export class GuarddutyDetectorDatasourcesOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GuarddutyDetectorDatasources | undefined {
@@ -146,7 +144,7 @@ export class GuarddutyDetectorDatasourcesOutputReference extends cdktf.ComplexOb
   }
 
   // s3_logs - computed: false, optional: true, required: false
-  private _s3Logs = new GuarddutyDetectorDatasourcesS3LogsOutputReference(this, "s3_logs", true);
+  private _s3Logs = new GuarddutyDetectorDatasourcesS3LogsOutputReference(this, "s3_logs");
   public get s3Logs() {
     return this._s3Logs;
   }
@@ -170,7 +168,7 @@ export class GuarddutyDetector extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_guardduty_detector";
+  public static readonly tfResourceType = "aws_guardduty_detector";
 
   // ===========
   // INITIALIZER
@@ -187,7 +185,9 @@ export class GuarddutyDetector extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_guardduty_detector',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -285,7 +285,7 @@ export class GuarddutyDetector extends cdktf.TerraformResource {
   }
 
   // datasources - computed: false, optional: true, required: false
-  private _datasources = new GuarddutyDetectorDatasourcesOutputReference(this, "datasources", true);
+  private _datasources = new GuarddutyDetectorDatasourcesOutputReference(this, "datasources");
   public get datasources() {
     return this._datasources;
   }

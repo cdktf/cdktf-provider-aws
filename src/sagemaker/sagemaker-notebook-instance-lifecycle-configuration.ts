@@ -29,7 +29,7 @@ export class SagemakerNotebookInstanceLifecycleConfiguration extends cdktf.Terra
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_sagemaker_notebook_instance_lifecycle_configuration";
+  public static readonly tfResourceType = "aws_sagemaker_notebook_instance_lifecycle_configuration";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class SagemakerNotebookInstanceLifecycleConfiguration extends cdktf.Terra
     super(scope, id, {
       terraformResourceType: 'aws_sagemaker_notebook_instance_lifecycle_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

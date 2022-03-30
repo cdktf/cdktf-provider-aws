@@ -181,7 +181,7 @@ export class DataAwsIamPolicyDocument extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_iam_policy_document";
+  public static readonly tfResourceType = "aws_iam_policy_document";
 
   // ===========
   // INITIALIZER
@@ -198,7 +198,9 @@ export class DataAwsIamPolicyDocument extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_iam_policy_document',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

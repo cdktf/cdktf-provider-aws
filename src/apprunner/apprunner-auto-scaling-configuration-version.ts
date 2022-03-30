@@ -41,7 +41,7 @@ export class ApprunnerAutoScalingConfigurationVersion extends cdktf.TerraformRes
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_apprunner_auto_scaling_configuration_version";
+  public static readonly tfResourceType = "aws_apprunner_auto_scaling_configuration_version";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class ApprunnerAutoScalingConfigurationVersion extends cdktf.TerraformRes
     super(scope, id, {
       terraformResourceType: 'aws_apprunner_auto_scaling_configuration_version',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

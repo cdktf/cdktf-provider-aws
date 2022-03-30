@@ -99,10 +99,9 @@ export class MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorCapacityAutoscalingScaleInPolicy | undefined {
@@ -165,10 +164,9 @@ export class MskconnectConnectorCapacityAutoscalingScaleOutPolicyOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorCapacityAutoscalingScaleOutPolicy | undefined {
@@ -255,10 +253,9 @@ export class MskconnectConnectorCapacityAutoscalingOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorCapacityAutoscaling | undefined {
@@ -349,7 +346,7 @@ export class MskconnectConnectorCapacityAutoscalingOutputReference extends cdktf
   }
 
   // scale_in_policy - computed: false, optional: true, required: false
-  private _scaleInPolicy = new MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference(this, "scale_in_policy", true);
+  private _scaleInPolicy = new MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference(this, "scale_in_policy");
   public get scaleInPolicy() {
     return this._scaleInPolicy;
   }
@@ -365,7 +362,7 @@ export class MskconnectConnectorCapacityAutoscalingOutputReference extends cdktf
   }
 
   // scale_out_policy - computed: false, optional: true, required: false
-  private _scaleOutPolicy = new MskconnectConnectorCapacityAutoscalingScaleOutPolicyOutputReference(this, "scale_out_policy", true);
+  private _scaleOutPolicy = new MskconnectConnectorCapacityAutoscalingScaleOutPolicyOutputReference(this, "scale_out_policy");
   public get scaleOutPolicy() {
     return this._scaleOutPolicy;
   }
@@ -408,10 +405,9 @@ export class MskconnectConnectorCapacityProvisionedCapacityOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorCapacityProvisionedCapacity | undefined {
@@ -502,10 +498,9 @@ export class MskconnectConnectorCapacityOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorCapacity | undefined {
@@ -536,7 +531,7 @@ export class MskconnectConnectorCapacityOutputReference extends cdktf.ComplexObj
   }
 
   // autoscaling - computed: false, optional: true, required: false
-  private _autoscaling = new MskconnectConnectorCapacityAutoscalingOutputReference(this, "autoscaling", true);
+  private _autoscaling = new MskconnectConnectorCapacityAutoscalingOutputReference(this, "autoscaling");
   public get autoscaling() {
     return this._autoscaling;
   }
@@ -552,7 +547,7 @@ export class MskconnectConnectorCapacityOutputReference extends cdktf.ComplexObj
   }
 
   // provisioned_capacity - computed: false, optional: true, required: false
-  private _provisionedCapacity = new MskconnectConnectorCapacityProvisionedCapacityOutputReference(this, "provisioned_capacity", true);
+  private _provisionedCapacity = new MskconnectConnectorCapacityProvisionedCapacityOutputReference(this, "provisioned_capacity");
   public get provisionedCapacity() {
     return this._provisionedCapacity;
   }
@@ -595,10 +590,9 @@ export class MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorKafkaClusterApacheKafkaClusterVpc | undefined {
@@ -684,10 +678,9 @@ export class MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorKafkaClusterApacheKafkaCluster | undefined {
@@ -731,7 +724,7 @@ export class MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference ex
   }
 
   // vpc - computed: false, optional: false, required: true
-  private _vpc = new MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference(this, "vpc", true);
+  private _vpc = new MskconnectConnectorKafkaClusterApacheKafkaClusterVpcOutputReference(this, "vpc");
   public get vpc() {
     return this._vpc;
   }
@@ -768,10 +761,9 @@ export class MskconnectConnectorKafkaClusterOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorKafkaCluster | undefined {
@@ -796,7 +788,7 @@ export class MskconnectConnectorKafkaClusterOutputReference extends cdktf.Comple
   }
 
   // apache_kafka_cluster - computed: false, optional: false, required: true
-  private _apacheKafkaCluster = new MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference(this, "apache_kafka_cluster", true);
+  private _apacheKafkaCluster = new MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference(this, "apache_kafka_cluster");
   public get apacheKafkaCluster() {
     return this._apacheKafkaCluster;
   }
@@ -831,10 +823,9 @@ export class MskconnectConnectorKafkaClusterClientAuthenticationOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorKafkaClusterClientAuthentication | undefined {
@@ -897,10 +888,9 @@ export class MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorKafkaClusterEncryptionInTransit | undefined {
@@ -968,10 +958,9 @@ export class MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutput
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs | undefined {
@@ -1058,10 +1047,9 @@ export class MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose | undefined {
@@ -1153,10 +1141,9 @@ export class MskconnectConnectorLogDeliveryWorkerLogDeliveryS3OutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorLogDeliveryWorkerLogDeliveryS3 | undefined {
@@ -1276,10 +1263,9 @@ export class MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorLogDeliveryWorkerLogDelivery | undefined {
@@ -1316,7 +1302,7 @@ export class MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference exte
   }
 
   // cloudwatch_logs - computed: false, optional: true, required: false
-  private _cloudwatchLogs = new MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference(this, "cloudwatch_logs", true);
+  private _cloudwatchLogs = new MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogsOutputReference(this, "cloudwatch_logs");
   public get cloudwatchLogs() {
     return this._cloudwatchLogs;
   }
@@ -1332,7 +1318,7 @@ export class MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference exte
   }
 
   // firehose - computed: false, optional: true, required: false
-  private _firehose = new MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference(this, "firehose", true);
+  private _firehose = new MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference(this, "firehose");
   public get firehose() {
     return this._firehose;
   }
@@ -1348,7 +1334,7 @@ export class MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference exte
   }
 
   // s3 - computed: false, optional: true, required: false
-  private _s3 = new MskconnectConnectorLogDeliveryWorkerLogDeliveryS3OutputReference(this, "s3", true);
+  private _s3 = new MskconnectConnectorLogDeliveryWorkerLogDeliveryS3OutputReference(this, "s3");
   public get s3() {
     return this._s3;
   }
@@ -1388,10 +1374,9 @@ export class MskconnectConnectorLogDeliveryOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorLogDelivery | undefined {
@@ -1416,7 +1401,7 @@ export class MskconnectConnectorLogDeliveryOutputReference extends cdktf.Complex
   }
 
   // worker_log_delivery - computed: false, optional: false, required: true
-  private _workerLogDelivery = new MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference(this, "worker_log_delivery", true);
+  private _workerLogDelivery = new MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference(this, "worker_log_delivery");
   public get workerLogDelivery() {
     return this._workerLogDelivery;
   }
@@ -1456,10 +1441,9 @@ export class MskconnectConnectorPluginCustomPluginOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorPluginCustomPlugin | undefined {
@@ -1567,10 +1551,9 @@ export class MskconnectConnectorTimeoutsOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorTimeouts | undefined {
@@ -1682,10 +1665,9 @@ export class MskconnectConnectorWorkerConfigurationOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskconnectConnectorWorkerConfiguration | undefined {
@@ -1750,7 +1732,7 @@ export class MskconnectConnector extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_mskconnect_connector";
+  public static readonly tfResourceType = "aws_mskconnect_connector";
 
   // ===========
   // INITIALIZER
@@ -1767,7 +1749,9 @@ export class MskconnectConnector extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_mskconnect_connector',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1877,7 +1861,7 @@ export class MskconnectConnector extends cdktf.TerraformResource {
   }
 
   // capacity - computed: false, optional: false, required: true
-  private _capacity = new MskconnectConnectorCapacityOutputReference(this, "capacity", true);
+  private _capacity = new MskconnectConnectorCapacityOutputReference(this, "capacity");
   public get capacity() {
     return this._capacity;
   }
@@ -1890,7 +1874,7 @@ export class MskconnectConnector extends cdktf.TerraformResource {
   }
 
   // kafka_cluster - computed: false, optional: false, required: true
-  private _kafkaCluster = new MskconnectConnectorKafkaClusterOutputReference(this, "kafka_cluster", true);
+  private _kafkaCluster = new MskconnectConnectorKafkaClusterOutputReference(this, "kafka_cluster");
   public get kafkaCluster() {
     return this._kafkaCluster;
   }
@@ -1903,7 +1887,7 @@ export class MskconnectConnector extends cdktf.TerraformResource {
   }
 
   // kafka_cluster_client_authentication - computed: false, optional: false, required: true
-  private _kafkaClusterClientAuthentication = new MskconnectConnectorKafkaClusterClientAuthenticationOutputReference(this, "kafka_cluster_client_authentication", true);
+  private _kafkaClusterClientAuthentication = new MskconnectConnectorKafkaClusterClientAuthenticationOutputReference(this, "kafka_cluster_client_authentication");
   public get kafkaClusterClientAuthentication() {
     return this._kafkaClusterClientAuthentication;
   }
@@ -1916,7 +1900,7 @@ export class MskconnectConnector extends cdktf.TerraformResource {
   }
 
   // kafka_cluster_encryption_in_transit - computed: false, optional: false, required: true
-  private _kafkaClusterEncryptionInTransit = new MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference(this, "kafka_cluster_encryption_in_transit", true);
+  private _kafkaClusterEncryptionInTransit = new MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference(this, "kafka_cluster_encryption_in_transit");
   public get kafkaClusterEncryptionInTransit() {
     return this._kafkaClusterEncryptionInTransit;
   }
@@ -1929,7 +1913,7 @@ export class MskconnectConnector extends cdktf.TerraformResource {
   }
 
   // log_delivery - computed: false, optional: true, required: false
-  private _logDelivery = new MskconnectConnectorLogDeliveryOutputReference(this, "log_delivery", true);
+  private _logDelivery = new MskconnectConnectorLogDeliveryOutputReference(this, "log_delivery");
   public get logDelivery() {
     return this._logDelivery;
   }
@@ -1959,7 +1943,7 @@ export class MskconnectConnector extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new MskconnectConnectorTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new MskconnectConnectorTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
@@ -1975,7 +1959,7 @@ export class MskconnectConnector extends cdktf.TerraformResource {
   }
 
   // worker_configuration - computed: false, optional: true, required: false
-  private _workerConfiguration = new MskconnectConnectorWorkerConfigurationOutputReference(this, "worker_configuration", true);
+  private _workerConfiguration = new MskconnectConnectorWorkerConfigurationOutputReference(this, "worker_configuration");
   public get workerConfiguration() {
     return this._workerConfiguration;
   }

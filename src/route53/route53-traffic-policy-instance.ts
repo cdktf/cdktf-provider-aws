@@ -37,7 +37,7 @@ export class Route53TrafficPolicyInstance extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_route53_traffic_policy_instance";
+  public static readonly tfResourceType = "aws_route53_traffic_policy_instance";
 
   // ===========
   // INITIALIZER
@@ -54,7 +54,9 @@ export class Route53TrafficPolicyInstance extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_route53_traffic_policy_instance',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

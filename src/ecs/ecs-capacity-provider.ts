@@ -69,10 +69,9 @@ export class EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputRefe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EcsCapacityProviderAutoScalingGroupProviderManagedScaling | undefined {
@@ -235,10 +234,9 @@ export class EcsCapacityProviderAutoScalingGroupProviderOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EcsCapacityProviderAutoScalingGroupProvider | undefined {
@@ -304,7 +302,7 @@ export class EcsCapacityProviderAutoScalingGroupProviderOutputReference extends 
   }
 
   // managed_scaling - computed: false, optional: true, required: false
-  private _managedScaling = new EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference(this, "managed_scaling", true);
+  private _managedScaling = new EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference(this, "managed_scaling");
   public get managedScaling() {
     return this._managedScaling;
   }
@@ -328,7 +326,7 @@ export class EcsCapacityProvider extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ecs_capacity_provider";
+  public static readonly tfResourceType = "aws_ecs_capacity_provider";
 
   // ===========
   // INITIALIZER
@@ -345,7 +343,9 @@ export class EcsCapacityProvider extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_ecs_capacity_provider',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -418,7 +418,7 @@ export class EcsCapacityProvider extends cdktf.TerraformResource {
   }
 
   // auto_scaling_group_provider - computed: false, optional: false, required: true
-  private _autoScalingGroupProvider = new EcsCapacityProviderAutoScalingGroupProviderOutputReference(this, "auto_scaling_group_provider", true);
+  private _autoScalingGroupProvider = new EcsCapacityProviderAutoScalingGroupProviderOutputReference(this, "auto_scaling_group_provider");
   public get autoScalingGroupProvider() {
     return this._autoScalingGroupProvider;
   }

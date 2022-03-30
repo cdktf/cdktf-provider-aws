@@ -54,10 +54,9 @@ export class MacieS3BucketAssociationClassificationTypeOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MacieS3BucketAssociationClassificationType | undefined {
@@ -128,7 +127,7 @@ export class MacieS3BucketAssociation extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_macie_s3_bucket_association";
+  public static readonly tfResourceType = "aws_macie_s3_bucket_association";
 
   // ===========
   // INITIALIZER
@@ -145,7 +144,9 @@ export class MacieS3BucketAssociation extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_macie_s3_bucket_association',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -213,7 +214,7 @@ export class MacieS3BucketAssociation extends cdktf.TerraformResource {
   }
 
   // classification_type - computed: false, optional: true, required: false
-  private _classificationType = new MacieS3BucketAssociationClassificationTypeOutputReference(this, "classification_type", true);
+  private _classificationType = new MacieS3BucketAssociationClassificationTypeOutputReference(this, "classification_type");
   public get classificationType() {
     return this._classificationType;
   }

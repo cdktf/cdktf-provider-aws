@@ -74,10 +74,9 @@ export class S3AccessPointPublicAccessBlockConfigurationOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3AccessPointPublicAccessBlockConfiguration | undefined {
@@ -206,10 +205,9 @@ export class S3AccessPointVpcConfigurationOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3AccessPointVpcConfiguration | undefined {
@@ -255,7 +253,7 @@ export class S3AccessPoint extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_s3_access_point";
+  public static readonly tfResourceType = "aws_s3_access_point";
 
   // ===========
   // INITIALIZER
@@ -272,7 +270,9 @@ export class S3AccessPoint extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_s3_access_point',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -385,7 +385,7 @@ export class S3AccessPoint extends cdktf.TerraformResource {
   }
 
   // public_access_block_configuration - computed: false, optional: true, required: false
-  private _publicAccessBlockConfiguration = new S3AccessPointPublicAccessBlockConfigurationOutputReference(this, "public_access_block_configuration", true);
+  private _publicAccessBlockConfiguration = new S3AccessPointPublicAccessBlockConfigurationOutputReference(this, "public_access_block_configuration");
   public get publicAccessBlockConfiguration() {
     return this._publicAccessBlockConfiguration;
   }
@@ -401,7 +401,7 @@ export class S3AccessPoint extends cdktf.TerraformResource {
   }
 
   // vpc_configuration - computed: false, optional: true, required: false
-  private _vpcConfiguration = new S3AccessPointVpcConfigurationOutputReference(this, "vpc_configuration", true);
+  private _vpcConfiguration = new S3AccessPointVpcConfigurationOutputReference(this, "vpc_configuration");
   public get vpcConfiguration() {
     return this._vpcConfiguration;
   }

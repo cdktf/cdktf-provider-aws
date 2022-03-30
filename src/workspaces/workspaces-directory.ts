@@ -89,10 +89,9 @@ export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): WorkspacesDirectorySelfServicePermissions | undefined {
@@ -278,10 +277,9 @@ export class WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): WorkspacesDirectoryWorkspaceAccessProperties | undefined {
@@ -518,10 +516,9 @@ export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): WorkspacesDirectoryWorkspaceCreationProperties | undefined {
@@ -658,7 +655,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_workspaces_directory";
+  public static readonly tfResourceType = "aws_workspaces_directory";
 
   // ===========
   // INITIALIZER
@@ -675,7 +672,9 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_workspaces_directory',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -819,7 +818,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   }
 
   // self_service_permissions - computed: false, optional: true, required: false
-  private _selfServicePermissions = new WorkspacesDirectorySelfServicePermissionsOutputReference(this, "self_service_permissions", true);
+  private _selfServicePermissions = new WorkspacesDirectorySelfServicePermissionsOutputReference(this, "self_service_permissions");
   public get selfServicePermissions() {
     return this._selfServicePermissions;
   }
@@ -835,7 +834,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   }
 
   // workspace_access_properties - computed: false, optional: true, required: false
-  private _workspaceAccessProperties = new WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference(this, "workspace_access_properties", true);
+  private _workspaceAccessProperties = new WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference(this, "workspace_access_properties");
   public get workspaceAccessProperties() {
     return this._workspaceAccessProperties;
   }
@@ -851,7 +850,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   }
 
   // workspace_creation_properties - computed: false, optional: true, required: false
-  private _workspaceCreationProperties = new WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference(this, "workspace_creation_properties", true);
+  private _workspaceCreationProperties = new WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference(this, "workspace_creation_properties");
   public get workspaceCreationProperties() {
     return this._workspaceCreationProperties;
   }

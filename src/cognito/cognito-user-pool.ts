@@ -171,10 +171,9 @@ export class CognitoUserPoolAccountRecoverySettingOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolAccountRecoverySetting | undefined {
@@ -245,10 +244,9 @@ export class CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputRefe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate | undefined {
@@ -362,10 +360,9 @@ export class CognitoUserPoolAdminCreateUserConfigOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolAdminCreateUserConfig | undefined {
@@ -412,7 +409,7 @@ export class CognitoUserPoolAdminCreateUserConfigOutputReference extends cdktf.C
   }
 
   // invite_message_template - computed: false, optional: true, required: false
-  private _inviteMessageTemplate = new CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference(this, "invite_message_template", true);
+  private _inviteMessageTemplate = new CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference(this, "invite_message_template");
   public get inviteMessageTemplate() {
     return this._inviteMessageTemplate;
   }
@@ -455,10 +452,9 @@ export class CognitoUserPoolDeviceConfigurationOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolDeviceConfiguration | undefined {
@@ -563,10 +559,9 @@ export class CognitoUserPoolEmailConfigurationOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolEmailConfiguration | undefined {
@@ -722,10 +717,9 @@ export class CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolLambdaConfigCustomEmailSender | undefined {
@@ -809,10 +803,9 @@ export class CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolLambdaConfigCustomSmsSender | undefined {
@@ -955,10 +948,9 @@ export class CognitoUserPoolLambdaConfigOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolLambdaConfig | undefined {
@@ -1231,7 +1223,7 @@ export class CognitoUserPoolLambdaConfigOutputReference extends cdktf.ComplexObj
   }
 
   // custom_email_sender - computed: false, optional: true, required: false
-  private _customEmailSender = new CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference(this, "custom_email_sender", true);
+  private _customEmailSender = new CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference(this, "custom_email_sender");
   public get customEmailSender() {
     return this._customEmailSender;
   }
@@ -1247,7 +1239,7 @@ export class CognitoUserPoolLambdaConfigOutputReference extends cdktf.ComplexObj
   }
 
   // custom_sms_sender - computed: false, optional: true, required: false
-  private _customSmsSender = new CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference(this, "custom_sms_sender", true);
+  private _customSmsSender = new CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference(this, "custom_sms_sender");
   public get customSmsSender() {
     return this._customSmsSender;
   }
@@ -1310,10 +1302,9 @@ export class CognitoUserPoolPasswordPolicyOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolPasswordPolicy | undefined {
@@ -1491,10 +1482,9 @@ export class CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolSchemaNumberAttributeConstraints | undefined {
@@ -1584,10 +1574,9 @@ export class CognitoUserPoolSchemaStringAttributeConstraintsOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolSchemaStringAttributeConstraints | undefined {
@@ -1728,10 +1717,9 @@ export class CognitoUserPoolSmsConfigurationOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolSmsConfiguration | undefined {
@@ -1810,10 +1798,9 @@ export class CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolSoftwareTokenMfaConfiguration | undefined {
@@ -1873,10 +1860,9 @@ export class CognitoUserPoolUserPoolAddOnsOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolUserPoolAddOns | undefined {
@@ -1936,10 +1922,9 @@ export class CognitoUserPoolUsernameConfigurationOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolUsernameConfiguration | undefined {
@@ -2024,10 +2009,9 @@ export class CognitoUserPoolVerificationMessageTemplateOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CognitoUserPoolVerificationMessageTemplate | undefined {
@@ -2186,7 +2170,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cognito_user_pool";
+  public static readonly tfResourceType = "aws_cognito_user_pool";
 
   // ===========
   // INITIALIZER
@@ -2203,7 +2187,9 @@ export class CognitoUserPool extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_cognito_user_pool',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2453,7 +2439,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // account_recovery_setting - computed: false, optional: true, required: false
-  private _accountRecoverySetting = new CognitoUserPoolAccountRecoverySettingOutputReference(this, "account_recovery_setting", true);
+  private _accountRecoverySetting = new CognitoUserPoolAccountRecoverySettingOutputReference(this, "account_recovery_setting");
   public get accountRecoverySetting() {
     return this._accountRecoverySetting;
   }
@@ -2469,7 +2455,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // admin_create_user_config - computed: false, optional: true, required: false
-  private _adminCreateUserConfig = new CognitoUserPoolAdminCreateUserConfigOutputReference(this, "admin_create_user_config", true);
+  private _adminCreateUserConfig = new CognitoUserPoolAdminCreateUserConfigOutputReference(this, "admin_create_user_config");
   public get adminCreateUserConfig() {
     return this._adminCreateUserConfig;
   }
@@ -2485,7 +2471,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // device_configuration - computed: false, optional: true, required: false
-  private _deviceConfiguration = new CognitoUserPoolDeviceConfigurationOutputReference(this, "device_configuration", true);
+  private _deviceConfiguration = new CognitoUserPoolDeviceConfigurationOutputReference(this, "device_configuration");
   public get deviceConfiguration() {
     return this._deviceConfiguration;
   }
@@ -2501,7 +2487,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // email_configuration - computed: false, optional: true, required: false
-  private _emailConfiguration = new CognitoUserPoolEmailConfigurationOutputReference(this, "email_configuration", true);
+  private _emailConfiguration = new CognitoUserPoolEmailConfigurationOutputReference(this, "email_configuration");
   public get emailConfiguration() {
     return this._emailConfiguration;
   }
@@ -2517,7 +2503,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // lambda_config - computed: false, optional: true, required: false
-  private _lambdaConfig = new CognitoUserPoolLambdaConfigOutputReference(this, "lambda_config", true);
+  private _lambdaConfig = new CognitoUserPoolLambdaConfigOutputReference(this, "lambda_config");
   public get lambdaConfig() {
     return this._lambdaConfig;
   }
@@ -2533,7 +2519,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // password_policy - computed: false, optional: true, required: false
-  private _passwordPolicy = new CognitoUserPoolPasswordPolicyOutputReference(this, "password_policy", true);
+  private _passwordPolicy = new CognitoUserPoolPasswordPolicyOutputReference(this, "password_policy");
   public get passwordPolicy() {
     return this._passwordPolicy;
   }
@@ -2566,7 +2552,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // sms_configuration - computed: false, optional: true, required: false
-  private _smsConfiguration = new CognitoUserPoolSmsConfigurationOutputReference(this, "sms_configuration", true);
+  private _smsConfiguration = new CognitoUserPoolSmsConfigurationOutputReference(this, "sms_configuration");
   public get smsConfiguration() {
     return this._smsConfiguration;
   }
@@ -2582,7 +2568,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // software_token_mfa_configuration - computed: false, optional: true, required: false
-  private _softwareTokenMfaConfiguration = new CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference(this, "software_token_mfa_configuration", true);
+  private _softwareTokenMfaConfiguration = new CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference(this, "software_token_mfa_configuration");
   public get softwareTokenMfaConfiguration() {
     return this._softwareTokenMfaConfiguration;
   }
@@ -2598,7 +2584,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // user_pool_add_ons - computed: false, optional: true, required: false
-  private _userPoolAddOns = new CognitoUserPoolUserPoolAddOnsOutputReference(this, "user_pool_add_ons", true);
+  private _userPoolAddOns = new CognitoUserPoolUserPoolAddOnsOutputReference(this, "user_pool_add_ons");
   public get userPoolAddOns() {
     return this._userPoolAddOns;
   }
@@ -2614,7 +2600,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // username_configuration - computed: false, optional: true, required: false
-  private _usernameConfiguration = new CognitoUserPoolUsernameConfigurationOutputReference(this, "username_configuration", true);
+  private _usernameConfiguration = new CognitoUserPoolUsernameConfigurationOutputReference(this, "username_configuration");
   public get usernameConfiguration() {
     return this._usernameConfiguration;
   }
@@ -2630,7 +2616,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // verification_message_template - computed: false, optional: true, required: false
-  private _verificationMessageTemplate = new CognitoUserPoolVerificationMessageTemplateOutputReference(this, "verification_message_template", true);
+  private _verificationMessageTemplate = new CognitoUserPoolVerificationMessageTemplateOutputReference(this, "verification_message_template");
   public get verificationMessageTemplate() {
     return this._verificationMessageTemplate;
   }

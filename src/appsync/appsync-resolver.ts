@@ -86,10 +86,9 @@ export class AppsyncResolverCachingConfigOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncResolverCachingConfig | undefined {
@@ -174,10 +173,9 @@ export class AppsyncResolverPipelineConfigOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncResolverPipelineConfig | undefined {
@@ -240,10 +238,9 @@ export class AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncResolverSyncConfigLambdaConflictHandlerConfig | undefined {
@@ -318,10 +315,9 @@ export class AppsyncResolverSyncConfigOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncResolverSyncConfig | undefined {
@@ -390,7 +386,7 @@ export class AppsyncResolverSyncConfigOutputReference extends cdktf.ComplexObjec
   }
 
   // lambda_conflict_handler_config - computed: false, optional: true, required: false
-  private _lambdaConflictHandlerConfig = new AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference(this, "lambda_conflict_handler_config", true);
+  private _lambdaConflictHandlerConfig = new AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference(this, "lambda_conflict_handler_config");
   public get lambdaConflictHandlerConfig() {
     return this._lambdaConflictHandlerConfig;
   }
@@ -414,7 +410,7 @@ export class AppsyncResolver extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appsync_resolver";
+  public static readonly tfResourceType = "aws_appsync_resolver";
 
   // ===========
   // INITIALIZER
@@ -431,7 +427,9 @@ export class AppsyncResolver extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_appsync_resolver',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -585,7 +583,7 @@ export class AppsyncResolver extends cdktf.TerraformResource {
   }
 
   // caching_config - computed: false, optional: true, required: false
-  private _cachingConfig = new AppsyncResolverCachingConfigOutputReference(this, "caching_config", true);
+  private _cachingConfig = new AppsyncResolverCachingConfigOutputReference(this, "caching_config");
   public get cachingConfig() {
     return this._cachingConfig;
   }
@@ -601,7 +599,7 @@ export class AppsyncResolver extends cdktf.TerraformResource {
   }
 
   // pipeline_config - computed: false, optional: true, required: false
-  private _pipelineConfig = new AppsyncResolverPipelineConfigOutputReference(this, "pipeline_config", true);
+  private _pipelineConfig = new AppsyncResolverPipelineConfigOutputReference(this, "pipeline_config");
   public get pipelineConfig() {
     return this._pipelineConfig;
   }
@@ -617,7 +615,7 @@ export class AppsyncResolver extends cdktf.TerraformResource {
   }
 
   // sync_config - computed: false, optional: true, required: false
-  private _syncConfig = new AppsyncResolverSyncConfigOutputReference(this, "sync_config", true);
+  private _syncConfig = new AppsyncResolverSyncConfigOutputReference(this, "sync_config");
   public get syncConfig() {
     return this._syncConfig;
   }

@@ -75,10 +75,9 @@ export class FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): FsxDataRepositoryAssociationS3AutoExportPolicy | undefined {
@@ -141,10 +140,9 @@ export class FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): FsxDataRepositoryAssociationS3AutoImportPolicy | undefined {
@@ -216,10 +214,9 @@ export class FsxDataRepositoryAssociationS3OutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): FsxDataRepositoryAssociationS3 | undefined {
@@ -250,7 +247,7 @@ export class FsxDataRepositoryAssociationS3OutputReference extends cdktf.Complex
   }
 
   // auto_export_policy - computed: false, optional: true, required: false
-  private _autoExportPolicy = new FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference(this, "auto_export_policy", true);
+  private _autoExportPolicy = new FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference(this, "auto_export_policy");
   public get autoExportPolicy() {
     return this._autoExportPolicy;
   }
@@ -266,7 +263,7 @@ export class FsxDataRepositoryAssociationS3OutputReference extends cdktf.Complex
   }
 
   // auto_import_policy - computed: false, optional: true, required: false
-  private _autoImportPolicy = new FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference(this, "auto_import_policy", true);
+  private _autoImportPolicy = new FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference(this, "auto_import_policy");
   public get autoImportPolicy() {
     return this._autoImportPolicy;
   }
@@ -314,10 +311,9 @@ export class FsxDataRepositoryAssociationTimeoutsOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): FsxDataRepositoryAssociationTimeouts | undefined {
@@ -410,7 +406,7 @@ export class FsxDataRepositoryAssociation extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_fsx_data_repository_association";
+  public static readonly tfResourceType = "aws_fsx_data_repository_association";
 
   // ===========
   // INITIALIZER
@@ -427,7 +423,9 @@ export class FsxDataRepositoryAssociation extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_fsx_data_repository_association',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -585,7 +583,7 @@ export class FsxDataRepositoryAssociation extends cdktf.TerraformResource {
   }
 
   // s3 - computed: false, optional: true, required: false
-  private _s3 = new FsxDataRepositoryAssociationS3OutputReference(this, "s3", true);
+  private _s3 = new FsxDataRepositoryAssociationS3OutputReference(this, "s3");
   public get s3() {
     return this._s3;
   }
@@ -601,7 +599,7 @@ export class FsxDataRepositoryAssociation extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new FsxDataRepositoryAssociationTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new FsxDataRepositoryAssociationTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

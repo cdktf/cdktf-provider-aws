@@ -186,10 +186,9 @@ export class GlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputRefer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueCatalogTableStorageDescriptorSchemaReferenceSchemaId | undefined {
@@ -308,10 +307,9 @@ export class GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueCatalogTableStorageDescriptorSchemaReference | undefined {
@@ -377,7 +375,7 @@ export class GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference ext
   }
 
   // schema_id - computed: false, optional: true, required: false
-  private _schemaId = new GlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputReference(this, "schema_id", true);
+  private _schemaId = new GlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputReference(this, "schema_id");
   public get schemaId() {
     return this._schemaId;
   }
@@ -425,10 +423,9 @@ export class GlueCatalogTableStorageDescriptorSerDeInfoOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueCatalogTableStorageDescriptorSerDeInfo | undefined {
@@ -545,10 +542,9 @@ export class GlueCatalogTableStorageDescriptorSkewedInfoOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueCatalogTableStorageDescriptorSkewedInfo | undefined {
@@ -747,10 +743,9 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueCatalogTableStorageDescriptor | undefined {
@@ -992,7 +987,7 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.Comp
   }
 
   // schema_reference - computed: false, optional: true, required: false
-  private _schemaReference = new GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference(this, "schema_reference", true);
+  private _schemaReference = new GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference(this, "schema_reference");
   public get schemaReference() {
     return this._schemaReference;
   }
@@ -1008,7 +1003,7 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.Comp
   }
 
   // ser_de_info - computed: false, optional: true, required: false
-  private _serDeInfo = new GlueCatalogTableStorageDescriptorSerDeInfoOutputReference(this, "ser_de_info", true);
+  private _serDeInfo = new GlueCatalogTableStorageDescriptorSerDeInfoOutputReference(this, "ser_de_info");
   public get serDeInfo() {
     return this._serDeInfo;
   }
@@ -1024,7 +1019,7 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktf.Comp
   }
 
   // skewed_info - computed: false, optional: true, required: false
-  private _skewedInfo = new GlueCatalogTableStorageDescriptorSkewedInfoOutputReference(this, "skewed_info", true);
+  private _skewedInfo = new GlueCatalogTableStorageDescriptorSkewedInfoOutputReference(this, "skewed_info");
   public get skewedInfo() {
     return this._skewedInfo;
   }
@@ -1089,10 +1084,9 @@ export class GlueCatalogTableTargetTableOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueCatalogTableTargetTable | undefined {
@@ -1176,7 +1170,7 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_glue_catalog_table";
+  public static readonly tfResourceType = "aws_glue_catalog_table";
 
   // ===========
   // INITIALIZER
@@ -1193,7 +1187,9 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_glue_catalog_table',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1419,7 +1415,7 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
   }
 
   // storage_descriptor - computed: false, optional: true, required: false
-  private _storageDescriptor = new GlueCatalogTableStorageDescriptorOutputReference(this, "storage_descriptor", true);
+  private _storageDescriptor = new GlueCatalogTableStorageDescriptorOutputReference(this, "storage_descriptor");
   public get storageDescriptor() {
     return this._storageDescriptor;
   }
@@ -1435,7 +1431,7 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
   }
 
   // target_table - computed: false, optional: true, required: false
-  private _targetTable = new GlueCatalogTableTargetTableOutputReference(this, "target_table", true);
+  private _targetTable = new GlueCatalogTableTargetTableOutputReference(this, "target_table");
   public get targetTable() {
     return this._targetTable;
   }

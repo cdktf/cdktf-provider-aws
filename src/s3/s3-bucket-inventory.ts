@@ -69,10 +69,9 @@ export class S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketInventoryDestinationBucketEncryptionSseKms | undefined {
@@ -127,10 +126,9 @@ export class S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketInventoryDestinationBucketEncryptionSseS3 | undefined {
@@ -180,10 +178,9 @@ export class S3BucketInventoryDestinationBucketEncryptionOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketInventoryDestinationBucketEncryption | undefined {
@@ -214,7 +211,7 @@ export class S3BucketInventoryDestinationBucketEncryptionOutputReference extends
   }
 
   // sse_kms - computed: false, optional: true, required: false
-  private _sseKms = new S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference(this, "sse_kms", true);
+  private _sseKms = new S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference(this, "sse_kms");
   public get sseKms() {
     return this._sseKms;
   }
@@ -230,7 +227,7 @@ export class S3BucketInventoryDestinationBucketEncryptionOutputReference extends
   }
 
   // sse_s3 - computed: false, optional: true, required: false
-  private _sseS3 = new S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference(this, "sse_s3", true);
+  private _sseS3 = new S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference(this, "sse_s3");
   public get sseS3() {
     return this._sseS3;
   }
@@ -290,10 +287,9 @@ export class S3BucketInventoryDestinationBucketOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketInventoryDestinationBucket | undefined {
@@ -400,7 +396,7 @@ export class S3BucketInventoryDestinationBucketOutputReference extends cdktf.Com
   }
 
   // encryption - computed: false, optional: true, required: false
-  private _encryption = new S3BucketInventoryDestinationBucketEncryptionOutputReference(this, "encryption", true);
+  private _encryption = new S3BucketInventoryDestinationBucketEncryptionOutputReference(this, "encryption");
   public get encryption() {
     return this._encryption;
   }
@@ -440,10 +436,9 @@ export class S3BucketInventoryDestinationOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketInventoryDestination | undefined {
@@ -468,7 +463,7 @@ export class S3BucketInventoryDestinationOutputReference extends cdktf.ComplexOb
   }
 
   // bucket - computed: false, optional: false, required: true
-  private _bucket = new S3BucketInventoryDestinationBucketOutputReference(this, "bucket", true);
+  private _bucket = new S3BucketInventoryDestinationBucketOutputReference(this, "bucket");
   public get bucket() {
     return this._bucket;
   }
@@ -503,10 +498,9 @@ export class S3BucketInventoryFilterOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketInventoryFilter | undefined {
@@ -569,10 +563,9 @@ export class S3BucketInventoryScheduleOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketInventorySchedule | undefined {
@@ -618,7 +611,7 @@ export class S3BucketInventory extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_s3_bucket_inventory";
+  public static readonly tfResourceType = "aws_s3_bucket_inventory";
 
   // ===========
   // INITIALIZER
@@ -635,7 +628,9 @@ export class S3BucketInventory extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_s3_bucket_inventory',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -733,7 +728,7 @@ export class S3BucketInventory extends cdktf.TerraformResource {
   }
 
   // destination - computed: false, optional: false, required: true
-  private _destination = new S3BucketInventoryDestinationOutputReference(this, "destination", true);
+  private _destination = new S3BucketInventoryDestinationOutputReference(this, "destination");
   public get destination() {
     return this._destination;
   }
@@ -746,7 +741,7 @@ export class S3BucketInventory extends cdktf.TerraformResource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter = new S3BucketInventoryFilterOutputReference(this, "filter", true);
+  private _filter = new S3BucketInventoryFilterOutputReference(this, "filter");
   public get filter() {
     return this._filter;
   }
@@ -762,7 +757,7 @@ export class S3BucketInventory extends cdktf.TerraformResource {
   }
 
   // schedule - computed: false, optional: false, required: true
-  private _schedule = new S3BucketInventoryScheduleOutputReference(this, "schedule", true);
+  private _schedule = new S3BucketInventoryScheduleOutputReference(this, "schedule");
   public get schedule() {
     return this._schedule;
   }

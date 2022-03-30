@@ -64,7 +64,45 @@ export interface GlueMlTransformConfig extends cdktf.TerraformMetaArguments {
   */
   readonly parameters: GlueMlTransformParameters;
 }
-export class GlueMlTransformSchema extends cdktf.ComplexComputedList {
+export interface GlueMlTransformSchema {
+}
+
+export function glueMlTransformSchemaToTerraform(struct?: GlueMlTransformSchema): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GlueMlTransformSchemaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueMlTransformSchema | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueMlTransformSchema | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // data_type - computed: true, optional: false, required: false
   public get dataType() {
@@ -74,6 +112,25 @@ export class GlueMlTransformSchema extends cdktf.ComplexComputedList {
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
+  }
+}
+
+export class GlueMlTransformSchemaList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueMlTransformSchemaOutputReference {
+    return new GlueMlTransformSchemaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface GlueMlTransformInputRecordTables {
@@ -146,10 +203,9 @@ export class GlueMlTransformParametersFindMatchesParametersOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueMlTransformParametersFindMatchesParameters | undefined {
@@ -285,10 +341,9 @@ export class GlueMlTransformParametersOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueMlTransformParameters | undefined {
@@ -332,7 +387,7 @@ export class GlueMlTransformParametersOutputReference extends cdktf.ComplexObjec
   }
 
   // find_matches_parameters - computed: false, optional: false, required: true
-  private _findMatchesParameters = new GlueMlTransformParametersFindMatchesParametersOutputReference(this, "find_matches_parameters", true);
+  private _findMatchesParameters = new GlueMlTransformParametersFindMatchesParametersOutputReference(this, "find_matches_parameters");
   public get findMatchesParameters() {
     return this._findMatchesParameters;
   }
@@ -353,7 +408,7 @@ export class GlueMlTransform extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_glue_ml_transform";
+  public static readonly tfResourceType = "aws_glue_ml_transform";
 
   // ===========
   // INITIALIZER
@@ -370,7 +425,9 @@ export class GlueMlTransform extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_glue_ml_transform',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -518,8 +575,9 @@ export class GlueMlTransform extends cdktf.TerraformResource {
   }
 
   // schema - computed: true, optional: false, required: false
-  public schema(index: string) {
-    return new GlueMlTransformSchema(this, 'schema', index, false);
+  private _schema = new GlueMlTransformSchemaList(this, "schema", false);
+  public get schema() {
+    return this._schema;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -601,7 +659,7 @@ export class GlueMlTransform extends cdktf.TerraformResource {
   }
 
   // parameters - computed: false, optional: false, required: true
-  private _parameters = new GlueMlTransformParametersOutputReference(this, "parameters", true);
+  private _parameters = new GlueMlTransformParametersOutputReference(this, "parameters");
   public get parameters() {
     return this._parameters;
   }

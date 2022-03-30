@@ -75,10 +75,9 @@ export class PinpointAppCampaignHookOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): PinpointAppCampaignHook | undefined {
@@ -200,10 +199,9 @@ export class PinpointAppLimitsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): PinpointAppLimits | undefined {
@@ -337,10 +335,9 @@ export class PinpointAppQuietTimeOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): PinpointAppQuietTime | undefined {
@@ -411,7 +408,7 @@ export class PinpointApp extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_pinpoint_app";
+  public static readonly tfResourceType = "aws_pinpoint_app";
 
   // ===========
   // INITIALIZER
@@ -428,7 +425,9 @@ export class PinpointApp extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_pinpoint_app',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -528,7 +527,7 @@ export class PinpointApp extends cdktf.TerraformResource {
   }
 
   // campaign_hook - computed: false, optional: true, required: false
-  private _campaignHook = new PinpointAppCampaignHookOutputReference(this, "campaign_hook", true);
+  private _campaignHook = new PinpointAppCampaignHookOutputReference(this, "campaign_hook");
   public get campaignHook() {
     return this._campaignHook;
   }
@@ -544,7 +543,7 @@ export class PinpointApp extends cdktf.TerraformResource {
   }
 
   // limits - computed: false, optional: true, required: false
-  private _limits = new PinpointAppLimitsOutputReference(this, "limits", true);
+  private _limits = new PinpointAppLimitsOutputReference(this, "limits");
   public get limits() {
     return this._limits;
   }
@@ -560,7 +559,7 @@ export class PinpointApp extends cdktf.TerraformResource {
   }
 
   // quiet_time - computed: false, optional: true, required: false
-  private _quietTime = new PinpointAppQuietTimeOutputReference(this, "quiet_time", true);
+  private _quietTime = new PinpointAppQuietTimeOutputReference(this, "quiet_time");
   public get quietTime() {
     return this._quietTime;
   }

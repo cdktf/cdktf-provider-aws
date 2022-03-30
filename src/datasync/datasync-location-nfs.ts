@@ -59,10 +59,9 @@ export class DatasyncLocationNfsMountOptionsOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DatasyncLocationNfsMountOptions | undefined {
@@ -125,10 +124,9 @@ export class DatasyncLocationNfsOnPremConfigOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DatasyncLocationNfsOnPremConfig | undefined {
@@ -174,7 +172,7 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_datasync_location_nfs";
+  public static readonly tfResourceType = "aws_datasync_location_nfs";
 
   // ===========
   // INITIALIZER
@@ -191,7 +189,9 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_datasync_location_nfs',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -284,7 +284,7 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
   }
 
   // mount_options - computed: false, optional: true, required: false
-  private _mountOptions = new DatasyncLocationNfsMountOptionsOutputReference(this, "mount_options", true);
+  private _mountOptions = new DatasyncLocationNfsMountOptionsOutputReference(this, "mount_options");
   public get mountOptions() {
     return this._mountOptions;
   }
@@ -300,7 +300,7 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
   }
 
   // on_prem_config - computed: false, optional: false, required: true
-  private _onPremConfig = new DatasyncLocationNfsOnPremConfigOutputReference(this, "on_prem_config", true);
+  private _onPremConfig = new DatasyncLocationNfsOnPremConfigOutputReference(this, "on_prem_config");
   public get onPremConfig() {
     return this._onPremConfig;
   }

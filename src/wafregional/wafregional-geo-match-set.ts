@@ -49,7 +49,7 @@ export class WafregionalGeoMatchSet extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_wafregional_geo_match_set";
+  public static readonly tfResourceType = "aws_wafregional_geo_match_set";
 
   // ===========
   // INITIALIZER
@@ -66,7 +66,9 @@ export class WafregionalGeoMatchSet extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_wafregional_geo_match_set',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

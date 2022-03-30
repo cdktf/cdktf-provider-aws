@@ -84,10 +84,9 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueClassifierCsvClassifier | undefined {
@@ -270,10 +269,9 @@ export class GlueClassifierGrokClassifierOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueClassifierGrokClassifier | undefined {
@@ -374,10 +372,9 @@ export class GlueClassifierJsonClassifierOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueClassifierJsonClassifier | undefined {
@@ -442,10 +439,9 @@ export class GlueClassifierXmlClassifierOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueClassifierXmlClassifier | undefined {
@@ -510,7 +506,7 @@ export class GlueClassifier extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_glue_classifier";
+  public static readonly tfResourceType = "aws_glue_classifier";
 
   // ===========
   // INITIALIZER
@@ -527,7 +523,9 @@ export class GlueClassifier extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_glue_classifier',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -564,7 +562,7 @@ export class GlueClassifier extends cdktf.TerraformResource {
   }
 
   // csv_classifier - computed: false, optional: true, required: false
-  private _csvClassifier = new GlueClassifierCsvClassifierOutputReference(this, "csv_classifier", true);
+  private _csvClassifier = new GlueClassifierCsvClassifierOutputReference(this, "csv_classifier");
   public get csvClassifier() {
     return this._csvClassifier;
   }
@@ -580,7 +578,7 @@ export class GlueClassifier extends cdktf.TerraformResource {
   }
 
   // grok_classifier - computed: false, optional: true, required: false
-  private _grokClassifier = new GlueClassifierGrokClassifierOutputReference(this, "grok_classifier", true);
+  private _grokClassifier = new GlueClassifierGrokClassifierOutputReference(this, "grok_classifier");
   public get grokClassifier() {
     return this._grokClassifier;
   }
@@ -596,7 +594,7 @@ export class GlueClassifier extends cdktf.TerraformResource {
   }
 
   // json_classifier - computed: false, optional: true, required: false
-  private _jsonClassifier = new GlueClassifierJsonClassifierOutputReference(this, "json_classifier", true);
+  private _jsonClassifier = new GlueClassifierJsonClassifierOutputReference(this, "json_classifier");
   public get jsonClassifier() {
     return this._jsonClassifier;
   }
@@ -612,7 +610,7 @@ export class GlueClassifier extends cdktf.TerraformResource {
   }
 
   // xml_classifier - computed: false, optional: true, required: false
-  private _xmlClassifier = new GlueClassifierXmlClassifierOutputReference(this, "xml_classifier", true);
+  private _xmlClassifier = new GlueClassifierXmlClassifierOutputReference(this, "xml_classifier");
   public get xmlClassifier() {
     return this._xmlClassifier;
   }

@@ -80,10 +80,9 @@ export class LakeformationPermissionsDataLocationOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LakeformationPermissionsDataLocation | undefined {
@@ -170,10 +169,9 @@ export class LakeformationPermissionsDatabaseOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LakeformationPermissionsDatabase | undefined {
@@ -270,10 +268,9 @@ export class LakeformationPermissionsTableOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LakeformationPermissionsTable | undefined {
@@ -424,10 +421,9 @@ export class LakeformationPermissionsTableWithColumnsOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LakeformationPermissionsTableWithColumns | undefined {
@@ -580,7 +576,7 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_lakeformation_permissions";
+  public static readonly tfResourceType = "aws_lakeformation_permissions";
 
   // ===========
   // INITIALIZER
@@ -597,7 +593,9 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_lakeformation_permissions',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -699,7 +697,7 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
   }
 
   // data_location - computed: false, optional: true, required: false
-  private _dataLocation = new LakeformationPermissionsDataLocationOutputReference(this, "data_location", true);
+  private _dataLocation = new LakeformationPermissionsDataLocationOutputReference(this, "data_location");
   public get dataLocation() {
     return this._dataLocation;
   }
@@ -715,7 +713,7 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
   }
 
   // database - computed: false, optional: true, required: false
-  private _database = new LakeformationPermissionsDatabaseOutputReference(this, "database", true);
+  private _database = new LakeformationPermissionsDatabaseOutputReference(this, "database");
   public get database() {
     return this._database;
   }
@@ -731,7 +729,7 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
   }
 
   // table - computed: false, optional: true, required: false
-  private _table = new LakeformationPermissionsTableOutputReference(this, "table", true);
+  private _table = new LakeformationPermissionsTableOutputReference(this, "table");
   public get table() {
     return this._table;
   }
@@ -747,7 +745,7 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
   }
 
   // table_with_columns - computed: false, optional: true, required: false
-  private _tableWithColumns = new LakeformationPermissionsTableWithColumnsOutputReference(this, "table_with_columns", true);
+  private _tableWithColumns = new LakeformationPermissionsTableWithColumnsOutputReference(this, "table_with_columns");
   public get tableWithColumns() {
     return this._tableWithColumns;
   }

@@ -129,10 +129,9 @@ export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject | undefined {
@@ -471,10 +470,9 @@ export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputRe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AcmpcaCertificateAuthorityCertificateAuthorityConfiguration | undefined {
@@ -537,7 +535,7 @@ export class AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputRe
   }
 
   // subject - computed: false, optional: false, required: true
-  private _subject = new AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference(this, "subject", true);
+  private _subject = new AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference(this, "subject");
   public get subject() {
     return this._subject;
   }
@@ -592,10 +590,9 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration | undefined {
@@ -745,10 +742,9 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationOutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AcmpcaCertificateAuthorityRevocationConfiguration | undefined {
@@ -773,7 +769,7 @@ export class AcmpcaCertificateAuthorityRevocationConfigurationOutputReference ex
   }
 
   // crl_configuration - computed: false, optional: true, required: false
-  private _crlConfiguration = new AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference(this, "crl_configuration", true);
+  private _crlConfiguration = new AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference(this, "crl_configuration");
   public get crlConfiguration() {
     return this._crlConfiguration;
   }
@@ -811,10 +807,9 @@ export class AcmpcaCertificateAuthorityTimeoutsOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AcmpcaCertificateAuthorityTimeouts | undefined {
@@ -863,7 +858,7 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_acmpca_certificate_authority";
+  public static readonly tfResourceType = "aws_acmpca_certificate_authority";
 
   // ===========
   // INITIALIZER
@@ -880,7 +875,9 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_acmpca_certificate_authority',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1027,7 +1024,7 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
   }
 
   // certificate_authority_configuration - computed: false, optional: false, required: true
-  private _certificateAuthorityConfiguration = new AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference(this, "certificate_authority_configuration", true);
+  private _certificateAuthorityConfiguration = new AcmpcaCertificateAuthorityCertificateAuthorityConfigurationOutputReference(this, "certificate_authority_configuration");
   public get certificateAuthorityConfiguration() {
     return this._certificateAuthorityConfiguration;
   }
@@ -1040,7 +1037,7 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
   }
 
   // revocation_configuration - computed: false, optional: true, required: false
-  private _revocationConfiguration = new AcmpcaCertificateAuthorityRevocationConfigurationOutputReference(this, "revocation_configuration", true);
+  private _revocationConfiguration = new AcmpcaCertificateAuthorityRevocationConfigurationOutputReference(this, "revocation_configuration");
   public get revocationConfiguration() {
     return this._revocationConfiguration;
   }
@@ -1056,7 +1053,7 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new AcmpcaCertificateAuthorityTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new AcmpcaCertificateAuthorityTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

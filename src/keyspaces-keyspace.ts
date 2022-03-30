@@ -29,7 +29,7 @@ export class KeyspacesKeyspace extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_keyspaces_keyspace";
+  public static readonly tfResourceType = "aws_keyspaces_keyspace";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class KeyspacesKeyspace extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_keyspaces_keyspace',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

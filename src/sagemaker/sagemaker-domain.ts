@@ -90,10 +90,9 @@ export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultRe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec | undefined {
@@ -229,10 +228,9 @@ export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputRef
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettingsJupyterServerAppSettings | undefined {
@@ -279,7 +277,7 @@ export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputRef
   }
 
   // default_resource_spec - computed: false, optional: true, required: false
-  private _defaultResourceSpec = new SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference(this, "default_resource_spec", true);
+  private _defaultResourceSpec = new SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference(this, "default_resource_spec");
   public get defaultResourceSpec() {
     return this._defaultResourceSpec;
   }
@@ -359,10 +357,9 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultRe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec | undefined {
@@ -505,10 +502,9 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputRef
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings | undefined {
@@ -578,7 +574,7 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputRef
   }
 
   // default_resource_spec - computed: false, optional: true, required: false
-  private _defaultResourceSpec = new SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference(this, "default_resource_spec", true);
+  private _defaultResourceSpec = new SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference(this, "default_resource_spec");
   public get defaultResourceSpec() {
     return this._defaultResourceSpec;
   }
@@ -626,10 +622,9 @@ export class SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettingsSharingSettings | undefined {
@@ -751,10 +746,9 @@ export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultReso
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec | undefined {
@@ -885,10 +879,9 @@ export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputRefer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettingsTensorBoardAppSettings | undefined {
@@ -913,7 +906,7 @@ export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputRefer
   }
 
   // default_resource_spec - computed: false, optional: true, required: false
-  private _defaultResourceSpec = new SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference(this, "default_resource_spec", true);
+  private _defaultResourceSpec = new SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference(this, "default_resource_spec");
   public get defaultResourceSpec() {
     return this._defaultResourceSpec;
   }
@@ -984,10 +977,9 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerDomainDefaultUserSettings | undefined {
@@ -1071,7 +1063,7 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
   }
 
   // jupyter_server_app_settings - computed: false, optional: true, required: false
-  private _jupyterServerAppSettings = new SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference(this, "jupyter_server_app_settings", true);
+  private _jupyterServerAppSettings = new SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference(this, "jupyter_server_app_settings");
   public get jupyterServerAppSettings() {
     return this._jupyterServerAppSettings;
   }
@@ -1087,7 +1079,7 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
   }
 
   // kernel_gateway_app_settings - computed: false, optional: true, required: false
-  private _kernelGatewayAppSettings = new SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputReference(this, "kernel_gateway_app_settings", true);
+  private _kernelGatewayAppSettings = new SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputReference(this, "kernel_gateway_app_settings");
   public get kernelGatewayAppSettings() {
     return this._kernelGatewayAppSettings;
   }
@@ -1103,7 +1095,7 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
   }
 
   // sharing_settings - computed: false, optional: true, required: false
-  private _sharingSettings = new SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference(this, "sharing_settings", true);
+  private _sharingSettings = new SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference(this, "sharing_settings");
   public get sharingSettings() {
     return this._sharingSettings;
   }
@@ -1119,7 +1111,7 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
   }
 
   // tensor_board_app_settings - computed: false, optional: true, required: false
-  private _tensorBoardAppSettings = new SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputReference(this, "tensor_board_app_settings", true);
+  private _tensorBoardAppSettings = new SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputReference(this, "tensor_board_app_settings");
   public get tensorBoardAppSettings() {
     return this._tensorBoardAppSettings;
   }
@@ -1157,10 +1149,9 @@ export class SagemakerDomainRetentionPolicyOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerDomainRetentionPolicy | undefined {
@@ -1209,7 +1200,7 @@ export class SagemakerDomain extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_sagemaker_domain";
+  public static readonly tfResourceType = "aws_sagemaker_domain";
 
   // ===========
   // INITIALIZER
@@ -1226,7 +1217,9 @@ export class SagemakerDomain extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_sagemaker_domain',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1391,7 +1384,7 @@ export class SagemakerDomain extends cdktf.TerraformResource {
   }
 
   // default_user_settings - computed: false, optional: false, required: true
-  private _defaultUserSettings = new SagemakerDomainDefaultUserSettingsOutputReference(this, "default_user_settings", true);
+  private _defaultUserSettings = new SagemakerDomainDefaultUserSettingsOutputReference(this, "default_user_settings");
   public get defaultUserSettings() {
     return this._defaultUserSettings;
   }
@@ -1404,7 +1397,7 @@ export class SagemakerDomain extends cdktf.TerraformResource {
   }
 
   // retention_policy - computed: false, optional: true, required: false
-  private _retentionPolicy = new SagemakerDomainRetentionPolicyOutputReference(this, "retention_policy", true);
+  private _retentionPolicy = new SagemakerDomainRetentionPolicyOutputReference(this, "retention_policy");
   public get retentionPolicy() {
     return this._retentionPolicy;
   }

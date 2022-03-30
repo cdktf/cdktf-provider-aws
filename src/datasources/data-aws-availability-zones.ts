@@ -61,7 +61,7 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_availability_zones";
+  public static readonly tfResourceType = "aws_availability_zones";
 
   // ===========
   // INITIALIZER
@@ -78,7 +78,9 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_availability_zones',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

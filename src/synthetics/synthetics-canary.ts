@@ -88,7 +88,45 @@ export interface SyntheticsCanaryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly vpcConfig?: SyntheticsCanaryVpcConfig;
 }
-export class SyntheticsCanaryTimeline extends cdktf.ComplexComputedList {
+export interface SyntheticsCanaryTimeline {
+}
+
+export function syntheticsCanaryTimelineToTerraform(struct?: SyntheticsCanaryTimeline): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class SyntheticsCanaryTimelineOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SyntheticsCanaryTimeline | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsCanaryTimeline | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // created - computed: true, optional: false, required: false
   public get created() {
@@ -108,6 +146,25 @@ export class SyntheticsCanaryTimeline extends cdktf.ComplexComputedList {
   // last_stopped - computed: true, optional: false, required: false
   public get lastStopped() {
     return this.getStringAttribute('last_stopped');
+  }
+}
+
+export class SyntheticsCanaryTimelineList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SyntheticsCanaryTimelineOutputReference {
+    return new SyntheticsCanaryTimelineOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface SyntheticsCanaryArtifactConfigS3Encryption {
@@ -138,10 +195,9 @@ export class SyntheticsCanaryArtifactConfigS3EncryptionOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsCanaryArtifactConfigS3Encryption | undefined {
@@ -228,10 +284,9 @@ export class SyntheticsCanaryArtifactConfigOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsCanaryArtifactConfig | undefined {
@@ -256,7 +311,7 @@ export class SyntheticsCanaryArtifactConfigOutputReference extends cdktf.Complex
   }
 
   // s3_encryption - computed: false, optional: true, required: false
-  private _s3Encryption = new SyntheticsCanaryArtifactConfigS3EncryptionOutputReference(this, "s3_encryption", true);
+  private _s3Encryption = new SyntheticsCanaryArtifactConfigS3EncryptionOutputReference(this, "s3_encryption");
   public get s3Encryption() {
     return this._s3Encryption;
   }
@@ -309,10 +364,9 @@ export class SyntheticsCanaryRunConfigOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsCanaryRunConfig | undefined {
@@ -446,10 +500,9 @@ export class SyntheticsCanaryScheduleOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsCanarySchedule | undefined {
@@ -536,10 +589,9 @@ export class SyntheticsCanaryVpcConfigOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsCanaryVpcConfig | undefined {
@@ -615,7 +667,7 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_synthetics_canary";
+  public static readonly tfResourceType = "aws_synthetics_canary";
 
   // ===========
   // INITIALIZER
@@ -632,7 +684,9 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_synthetics_canary',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -882,8 +936,9 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
   }
 
   // timeline - computed: true, optional: false, required: false
-  public timeline(index: string) {
-    return new SyntheticsCanaryTimeline(this, 'timeline', index, false);
+  private _timeline = new SyntheticsCanaryTimelineList(this, "timeline", false);
+  public get timeline() {
+    return this._timeline;
   }
 
   // zip_file - computed: false, optional: true, required: false
@@ -903,7 +958,7 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
   }
 
   // artifact_config - computed: false, optional: true, required: false
-  private _artifactConfig = new SyntheticsCanaryArtifactConfigOutputReference(this, "artifact_config", true);
+  private _artifactConfig = new SyntheticsCanaryArtifactConfigOutputReference(this, "artifact_config");
   public get artifactConfig() {
     return this._artifactConfig;
   }
@@ -919,7 +974,7 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
   }
 
   // run_config - computed: false, optional: true, required: false
-  private _runConfig = new SyntheticsCanaryRunConfigOutputReference(this, "run_config", true);
+  private _runConfig = new SyntheticsCanaryRunConfigOutputReference(this, "run_config");
   public get runConfig() {
     return this._runConfig;
   }
@@ -935,7 +990,7 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
   }
 
   // schedule - computed: false, optional: false, required: true
-  private _schedule = new SyntheticsCanaryScheduleOutputReference(this, "schedule", true);
+  private _schedule = new SyntheticsCanaryScheduleOutputReference(this, "schedule");
   public get schedule() {
     return this._schedule;
   }
@@ -948,7 +1003,7 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
   }
 
   // vpc_config - computed: false, optional: true, required: false
-  private _vpcConfig = new SyntheticsCanaryVpcConfigOutputReference(this, "vpc_config", true);
+  private _vpcConfig = new SyntheticsCanaryVpcConfigOutputReference(this, "vpc_config");
   public get vpcConfig() {
     return this._vpcConfig;
   }

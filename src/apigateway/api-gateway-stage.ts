@@ -96,10 +96,9 @@ export class ApiGatewayStageAccessLogSettingsOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ApiGatewayStageAccessLogSettings | undefined {
@@ -188,10 +187,9 @@ export class ApiGatewayStageCanarySettingsOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ApiGatewayStageCanarySettings | undefined {
@@ -284,7 +282,7 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_api_gateway_stage";
+  public static readonly tfResourceType = "aws_api_gateway_stage";
 
   // ===========
   // INITIALIZER
@@ -301,7 +299,9 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_api_gateway_stage',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -537,7 +537,7 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   }
 
   // access_log_settings - computed: false, optional: true, required: false
-  private _accessLogSettings = new ApiGatewayStageAccessLogSettingsOutputReference(this, "access_log_settings", true);
+  private _accessLogSettings = new ApiGatewayStageAccessLogSettingsOutputReference(this, "access_log_settings");
   public get accessLogSettings() {
     return this._accessLogSettings;
   }
@@ -553,7 +553,7 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   }
 
   // canary_settings - computed: false, optional: true, required: false
-  private _canarySettings = new ApiGatewayStageCanarySettingsOutputReference(this, "canary_settings", true);
+  private _canarySettings = new ApiGatewayStageCanarySettingsOutputReference(this, "canary_settings");
   public get canarySettings() {
     return this._canarySettings;
   }

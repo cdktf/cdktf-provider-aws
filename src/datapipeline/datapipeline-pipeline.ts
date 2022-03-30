@@ -33,7 +33,7 @@ export class DatapipelinePipeline extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_datapipeline_pipeline";
+  public static readonly tfResourceType = "aws_datapipeline_pipeline";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class DatapipelinePipeline extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_datapipeline_pipeline',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

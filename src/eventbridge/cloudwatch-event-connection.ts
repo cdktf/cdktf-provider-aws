@@ -54,10 +54,9 @@ export class CloudwatchEventConnectionAuthParametersApiKeyOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventConnectionAuthParametersApiKey | undefined {
@@ -141,10 +140,9 @@ export class CloudwatchEventConnectionAuthParametersBasicOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventConnectionAuthParametersBasic | undefined {
@@ -320,10 +318,9 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventConnectionAuthParametersInvocationHttpParameters | undefined {
@@ -438,10 +435,9 @@ export class CloudwatchEventConnectionAuthParametersOauthClientParametersOutputR
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventConnectionAuthParametersOauthClientParameters | undefined {
@@ -617,10 +613,9 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters | undefined {
@@ -749,10 +744,9 @@ export class CloudwatchEventConnectionAuthParametersOauthOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventConnectionAuthParametersOauth | undefined {
@@ -821,7 +815,7 @@ export class CloudwatchEventConnectionAuthParametersOauthOutputReference extends
   }
 
   // client_parameters - computed: false, optional: true, required: false
-  private _clientParameters = new CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference(this, "client_parameters", true);
+  private _clientParameters = new CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference(this, "client_parameters");
   public get clientParameters() {
     return this._clientParameters;
   }
@@ -837,7 +831,7 @@ export class CloudwatchEventConnectionAuthParametersOauthOutputReference extends
   }
 
   // oauth_http_parameters - computed: false, optional: false, required: true
-  private _oauthHttpParameters = new CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference(this, "oauth_http_parameters", true);
+  private _oauthHttpParameters = new CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference(this, "oauth_http_parameters");
   public get oauthHttpParameters() {
     return this._oauthHttpParameters;
   }
@@ -895,10 +889,9 @@ export class CloudwatchEventConnectionAuthParametersOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventConnectionAuthParameters | undefined {
@@ -941,7 +934,7 @@ export class CloudwatchEventConnectionAuthParametersOutputReference extends cdkt
   }
 
   // api_key - computed: false, optional: true, required: false
-  private _apiKey = new CloudwatchEventConnectionAuthParametersApiKeyOutputReference(this, "api_key", true);
+  private _apiKey = new CloudwatchEventConnectionAuthParametersApiKeyOutputReference(this, "api_key");
   public get apiKey() {
     return this._apiKey;
   }
@@ -957,7 +950,7 @@ export class CloudwatchEventConnectionAuthParametersOutputReference extends cdkt
   }
 
   // basic - computed: false, optional: true, required: false
-  private _basic = new CloudwatchEventConnectionAuthParametersBasicOutputReference(this, "basic", true);
+  private _basic = new CloudwatchEventConnectionAuthParametersBasicOutputReference(this, "basic");
   public get basic() {
     return this._basic;
   }
@@ -973,7 +966,7 @@ export class CloudwatchEventConnectionAuthParametersOutputReference extends cdkt
   }
 
   // invocation_http_parameters - computed: false, optional: true, required: false
-  private _invocationHttpParameters = new CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference(this, "invocation_http_parameters", true);
+  private _invocationHttpParameters = new CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference(this, "invocation_http_parameters");
   public get invocationHttpParameters() {
     return this._invocationHttpParameters;
   }
@@ -989,7 +982,7 @@ export class CloudwatchEventConnectionAuthParametersOutputReference extends cdkt
   }
 
   // oauth - computed: false, optional: true, required: false
-  private _oauth = new CloudwatchEventConnectionAuthParametersOauthOutputReference(this, "oauth", true);
+  private _oauth = new CloudwatchEventConnectionAuthParametersOauthOutputReference(this, "oauth");
   public get oauth() {
     return this._oauth;
   }
@@ -1013,7 +1006,7 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudwatch_event_connection";
+  public static readonly tfResourceType = "aws_cloudwatch_event_connection";
 
   // ===========
   // INITIALIZER
@@ -1030,7 +1023,9 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_cloudwatch_event_connection',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1105,7 +1100,7 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
   }
 
   // auth_parameters - computed: false, optional: false, required: true
-  private _authParameters = new CloudwatchEventConnectionAuthParametersOutputReference(this, "auth_parameters", true);
+  private _authParameters = new CloudwatchEventConnectionAuthParametersOutputReference(this, "auth_parameters");
   public get authParameters() {
     return this._authParameters;
   }

@@ -56,10 +56,9 @@ export class CodedeployDeploymentConfigMinimumHealthyHostsOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentConfigMinimumHealthyHosts | undefined {
@@ -149,10 +148,9 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutput
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary | undefined {
@@ -242,10 +240,9 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutput
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear | undefined {
@@ -344,10 +341,9 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentConfigTrafficRoutingConfig | undefined {
@@ -400,7 +396,7 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigOutputReference exten
   }
 
   // time_based_canary - computed: false, optional: true, required: false
-  private _timeBasedCanary = new CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference(this, "time_based_canary", true);
+  private _timeBasedCanary = new CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference(this, "time_based_canary");
   public get timeBasedCanary() {
     return this._timeBasedCanary;
   }
@@ -416,7 +412,7 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigOutputReference exten
   }
 
   // time_based_linear - computed: false, optional: true, required: false
-  private _timeBasedLinear = new CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference(this, "time_based_linear", true);
+  private _timeBasedLinear = new CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference(this, "time_based_linear");
   public get timeBasedLinear() {
     return this._timeBasedLinear;
   }
@@ -440,7 +436,7 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_codedeploy_deployment_config";
+  public static readonly tfResourceType = "aws_codedeploy_deployment_config";
 
   // ===========
   // INITIALIZER
@@ -457,7 +453,9 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_codedeploy_deployment_config',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -514,7 +512,7 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
   }
 
   // minimum_healthy_hosts - computed: false, optional: true, required: false
-  private _minimumHealthyHosts = new CodedeployDeploymentConfigMinimumHealthyHostsOutputReference(this, "minimum_healthy_hosts", true);
+  private _minimumHealthyHosts = new CodedeployDeploymentConfigMinimumHealthyHostsOutputReference(this, "minimum_healthy_hosts");
   public get minimumHealthyHosts() {
     return this._minimumHealthyHosts;
   }
@@ -530,7 +528,7 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
   }
 
   // traffic_routing_config - computed: false, optional: true, required: false
-  private _trafficRoutingConfig = new CodedeployDeploymentConfigTrafficRoutingConfigOutputReference(this, "traffic_routing_config", true);
+  private _trafficRoutingConfig = new CodedeployDeploymentConfigTrafficRoutingConfigOutputReference(this, "traffic_routing_config");
   public get trafficRoutingConfig() {
     return this._trafficRoutingConfig;
   }

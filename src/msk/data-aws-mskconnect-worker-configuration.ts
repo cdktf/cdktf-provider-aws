@@ -21,7 +21,7 @@ export class DataAwsMskconnectWorkerConfiguration extends cdktf.TerraformDataSou
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_mskconnect_worker_configuration";
+  public static readonly tfResourceType = "aws_mskconnect_worker_configuration";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class DataAwsMskconnectWorkerConfiguration extends cdktf.TerraformDataSou
     super(scope, id, {
       terraformResourceType: 'aws_mskconnect_worker_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

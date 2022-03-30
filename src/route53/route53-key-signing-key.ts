@@ -33,7 +33,7 @@ export class Route53KeySigningKey extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_route53_key_signing_key";
+  public static readonly tfResourceType = "aws_route53_key_signing_key";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class Route53KeySigningKey extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_route53_key_signing_key',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

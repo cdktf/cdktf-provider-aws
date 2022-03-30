@@ -8,7 +8,45 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsOrganizationsOrganizationConfig extends cdktf.TerraformMetaArguments {
 }
-export class DataAwsOrganizationsOrganizationAccounts extends cdktf.ComplexComputedList {
+export interface DataAwsOrganizationsOrganizationAccounts {
+}
+
+export function dataAwsOrganizationsOrganizationAccountsToTerraform(struct?: DataAwsOrganizationsOrganizationAccounts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsOrganizationsOrganizationAccountsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsOrganizationsOrganizationAccounts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsOrganizationsOrganizationAccounts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -35,7 +73,64 @@ export class DataAwsOrganizationsOrganizationAccounts extends cdktf.ComplexCompu
     return this.getStringAttribute('status');
   }
 }
-export class DataAwsOrganizationsOrganizationNonMasterAccounts extends cdktf.ComplexComputedList {
+
+export class DataAwsOrganizationsOrganizationAccountsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsOrganizationsOrganizationAccountsOutputReference {
+    return new DataAwsOrganizationsOrganizationAccountsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsOrganizationsOrganizationNonMasterAccounts {
+}
+
+export function dataAwsOrganizationsOrganizationNonMasterAccountsToTerraform(struct?: DataAwsOrganizationsOrganizationNonMasterAccounts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsOrganizationsOrganizationNonMasterAccountsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsOrganizationsOrganizationNonMasterAccounts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsOrganizationsOrganizationNonMasterAccounts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -62,7 +157,64 @@ export class DataAwsOrganizationsOrganizationNonMasterAccounts extends cdktf.Com
     return this.getStringAttribute('status');
   }
 }
-export class DataAwsOrganizationsOrganizationRootsPolicyTypes extends cdktf.ComplexComputedList {
+
+export class DataAwsOrganizationsOrganizationNonMasterAccountsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsOrganizationsOrganizationNonMasterAccountsOutputReference {
+    return new DataAwsOrganizationsOrganizationNonMasterAccountsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsOrganizationsOrganizationRootsPolicyTypes {
+}
+
+export function dataAwsOrganizationsOrganizationRootsPolicyTypesToTerraform(struct?: DataAwsOrganizationsOrganizationRootsPolicyTypes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsOrganizationsOrganizationRootsPolicyTypes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsOrganizationsOrganizationRootsPolicyTypes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // status - computed: true, optional: false, required: false
   public get status() {
@@ -74,7 +226,64 @@ export class DataAwsOrganizationsOrganizationRootsPolicyTypes extends cdktf.Comp
     return this.getStringAttribute('type');
   }
 }
-export class DataAwsOrganizationsOrganizationRoots extends cdktf.ComplexComputedList {
+
+export class DataAwsOrganizationsOrganizationRootsPolicyTypesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference {
+    return new DataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsOrganizationsOrganizationRoots {
+}
+
+export function dataAwsOrganizationsOrganizationRootsToTerraform(struct?: DataAwsOrganizationsOrganizationRoots): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsOrganizationsOrganizationRootsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsOrganizationsOrganizationRoots | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsOrganizationsOrganizationRoots | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -92,9 +301,28 @@ export class DataAwsOrganizationsOrganizationRoots extends cdktf.ComplexComputed
   }
 
   // policy_types - computed: true, optional: false, required: false
+  private _policyTypes = new DataAwsOrganizationsOrganizationRootsPolicyTypesList(this, "policy_types", false);
   public get policyTypes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('policy_types');
+    return this._policyTypes;
+  }
+}
+
+export class DataAwsOrganizationsOrganizationRootsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsOrganizationsOrganizationRootsOutputReference {
+    return new DataAwsOrganizationsOrganizationRootsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -106,7 +334,7 @@ export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_organizations_organization";
+  public static readonly tfResourceType = "aws_organizations_organization";
 
   // ===========
   // INITIALIZER
@@ -123,7 +351,9 @@ export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource 
     super(scope, id, {
       terraformResourceType: 'aws_organizations_organization',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -137,8 +367,9 @@ export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource 
   // ==========
 
   // accounts - computed: true, optional: false, required: false
-  public accounts(index: string) {
-    return new DataAwsOrganizationsOrganizationAccounts(this, 'accounts', index, false);
+  private _accounts = new DataAwsOrganizationsOrganizationAccountsList(this, "accounts", false);
+  public get accounts() {
+    return this._accounts;
   }
 
   // arn - computed: true, optional: false, required: false
@@ -182,13 +413,15 @@ export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource 
   }
 
   // non_master_accounts - computed: true, optional: false, required: false
-  public nonMasterAccounts(index: string) {
-    return new DataAwsOrganizationsOrganizationNonMasterAccounts(this, 'non_master_accounts', index, false);
+  private _nonMasterAccounts = new DataAwsOrganizationsOrganizationNonMasterAccountsList(this, "non_master_accounts", false);
+  public get nonMasterAccounts() {
+    return this._nonMasterAccounts;
   }
 
   // roots - computed: true, optional: false, required: false
-  public roots(index: string) {
-    return new DataAwsOrganizationsOrganizationRoots(this, 'roots', index, false);
+  private _roots = new DataAwsOrganizationsOrganizationRootsList(this, "roots", false);
+  public get roots() {
+    return this._roots;
   }
 
   // =========

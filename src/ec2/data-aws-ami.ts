@@ -34,7 +34,45 @@ export interface DataAwsAmiConfig extends cdktf.TerraformMetaArguments {
   */
   readonly filter?: DataAwsAmiFilter[] | cdktf.IResolvable;
 }
-export class DataAwsAmiBlockDeviceMappings extends cdktf.ComplexComputedList {
+export interface DataAwsAmiBlockDeviceMappings {
+}
+
+export function dataAwsAmiBlockDeviceMappingsToTerraform(struct?: DataAwsAmiBlockDeviceMappings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAmiBlockDeviceMappingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAmiBlockDeviceMappings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAmiBlockDeviceMappings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // device_name - computed: true, optional: false, required: false
   public get deviceName() {
@@ -42,8 +80,8 @@ export class DataAwsAmiBlockDeviceMappings extends cdktf.ComplexComputedList {
   }
 
   // ebs - computed: true, optional: false, required: false
-  public get ebs() {
-    return this.getStringMapAttribute('ebs');
+  public ebs(key: string): string | cdktf.IResolvable {
+    return new cdktf.StringMap(this, 'ebs').lookup(key);
   }
 
   // no_device - computed: true, optional: false, required: false
@@ -56,7 +94,64 @@ export class DataAwsAmiBlockDeviceMappings extends cdktf.ComplexComputedList {
     return this.getStringAttribute('virtual_name');
   }
 }
-export class DataAwsAmiProductCodes extends cdktf.ComplexComputedList {
+
+export class DataAwsAmiBlockDeviceMappingsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAmiBlockDeviceMappingsOutputReference {
+    return new DataAwsAmiBlockDeviceMappingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsAmiProductCodes {
+}
+
+export function dataAwsAmiProductCodesToTerraform(struct?: DataAwsAmiProductCodes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAmiProductCodesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAmiProductCodes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAmiProductCodes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // product_code_id - computed: true, optional: false, required: false
   public get productCodeId() {
@@ -66,6 +161,25 @@ export class DataAwsAmiProductCodes extends cdktf.ComplexComputedList {
   // product_code_type - computed: true, optional: false, required: false
   public get productCodeType() {
     return this.getStringAttribute('product_code_type');
+  }
+}
+
+export class DataAwsAmiProductCodesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAmiProductCodesOutputReference {
+    return new DataAwsAmiProductCodesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsAmiFilter {
@@ -99,7 +213,7 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ami";
+  public static readonly tfResourceType = "aws_ami";
 
   // ===========
   // INITIALIZER
@@ -116,7 +230,9 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_ami',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -146,8 +262,9 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   }
 
   // block_device_mappings - computed: true, optional: false, required: false
-  public blockDeviceMappings(index: string) {
-    return new DataAwsAmiBlockDeviceMappings(this, 'block_device_mappings', index, true);
+  private _blockDeviceMappings = new DataAwsAmiBlockDeviceMappingsList(this, "block_device_mappings", true);
+  public get blockDeviceMappings() {
+    return this._blockDeviceMappings;
   }
 
   // boot_mode - computed: true, optional: false, required: false
@@ -287,8 +404,9 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   }
 
   // product_codes - computed: true, optional: false, required: false
-  public productCodes(index: string) {
-    return new DataAwsAmiProductCodes(this, 'product_codes', index, true);
+  private _productCodes = new DataAwsAmiProductCodesList(this, "product_codes", true);
+  public get productCodes() {
+    return this._productCodes;
   }
 
   // public - computed: true, optional: false, required: false

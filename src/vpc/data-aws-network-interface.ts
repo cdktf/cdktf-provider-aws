@@ -18,7 +18,45 @@ export interface DataAwsNetworkInterfaceConfig extends cdktf.TerraformMetaArgume
   */
   readonly filter?: DataAwsNetworkInterfaceFilter[] | cdktf.IResolvable;
 }
-export class DataAwsNetworkInterfaceAssociation extends cdktf.ComplexComputedList {
+export interface DataAwsNetworkInterfaceAssociation {
+}
+
+export function dataAwsNetworkInterfaceAssociationToTerraform(struct?: DataAwsNetworkInterfaceAssociation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsNetworkInterfaceAssociationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsNetworkInterfaceAssociation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsNetworkInterfaceAssociation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // allocation_id - computed: true, optional: false, required: false
   public get allocationId() {
@@ -55,7 +93,64 @@ export class DataAwsNetworkInterfaceAssociation extends cdktf.ComplexComputedLis
     return this.getStringAttribute('public_ip');
   }
 }
-export class DataAwsNetworkInterfaceAttachment extends cdktf.ComplexComputedList {
+
+export class DataAwsNetworkInterfaceAssociationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsNetworkInterfaceAssociationOutputReference {
+    return new DataAwsNetworkInterfaceAssociationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsNetworkInterfaceAttachment {
+}
+
+export function dataAwsNetworkInterfaceAttachmentToTerraform(struct?: DataAwsNetworkInterfaceAttachment): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsNetworkInterfaceAttachmentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsNetworkInterfaceAttachment | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsNetworkInterfaceAttachment | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // attachment_id - computed: true, optional: false, required: false
   public get attachmentId() {
@@ -75,6 +170,25 @@ export class DataAwsNetworkInterfaceAttachment extends cdktf.ComplexComputedList
   // instance_owner_id - computed: true, optional: false, required: false
   public get instanceOwnerId() {
     return this.getStringAttribute('instance_owner_id');
+  }
+}
+
+export class DataAwsNetworkInterfaceAttachmentList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsNetworkInterfaceAttachmentOutputReference {
+    return new DataAwsNetworkInterfaceAttachmentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsNetworkInterfaceFilter {
@@ -108,7 +222,7 @@ export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_network_interface";
+  public static readonly tfResourceType = "aws_network_interface";
 
   // ===========
   // INITIALIZER
@@ -125,7 +239,9 @@ export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_network_interface',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -146,13 +262,15 @@ export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
   }
 
   // association - computed: true, optional: false, required: false
-  public association(index: string) {
-    return new DataAwsNetworkInterfaceAssociation(this, 'association', index, false);
+  private _association = new DataAwsNetworkInterfaceAssociationList(this, "association", false);
+  public get association() {
+    return this._association;
   }
 
   // attachment - computed: true, optional: false, required: false
-  public attachment(index: string) {
-    return new DataAwsNetworkInterfaceAttachment(this, 'attachment', index, false);
+  private _attachment = new DataAwsNetworkInterfaceAttachmentList(this, "attachment", false);
+  public get attachment() {
+    return this._attachment;
   }
 
   // availability_zone - computed: true, optional: false, required: false

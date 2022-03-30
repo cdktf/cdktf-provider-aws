@@ -117,10 +117,9 @@ export class StoragegatewayNfsFileShareCacheAttributesOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): StoragegatewayNfsFileShareCacheAttributes | undefined {
@@ -198,10 +197,9 @@ export class StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): StoragegatewayNfsFileShareNfsFileShareDefaults | undefined {
@@ -340,10 +338,9 @@ export class StoragegatewayNfsFileShareTimeoutsOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): StoragegatewayNfsFileShareTimeouts | undefined {
@@ -436,7 +433,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_storagegateway_nfs_file_share";
+  public static readonly tfResourceType = "aws_storagegateway_nfs_file_share";
 
   // ===========
   // INITIALIZER
@@ -453,7 +450,9 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_storagegateway_nfs_file_share',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -767,7 +766,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // cache_attributes - computed: false, optional: true, required: false
-  private _cacheAttributes = new StoragegatewayNfsFileShareCacheAttributesOutputReference(this, "cache_attributes", true);
+  private _cacheAttributes = new StoragegatewayNfsFileShareCacheAttributesOutputReference(this, "cache_attributes");
   public get cacheAttributes() {
     return this._cacheAttributes;
   }
@@ -783,7 +782,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // nfs_file_share_defaults - computed: false, optional: true, required: false
-  private _nfsFileShareDefaults = new StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference(this, "nfs_file_share_defaults", true);
+  private _nfsFileShareDefaults = new StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference(this, "nfs_file_share_defaults");
   public get nfsFileShareDefaults() {
     return this._nfsFileShareDefaults;
   }
@@ -799,7 +798,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new StoragegatewayNfsFileShareTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new StoragegatewayNfsFileShareTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

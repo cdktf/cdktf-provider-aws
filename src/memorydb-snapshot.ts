@@ -38,7 +38,45 @@ export interface MemorydbSnapshotConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: MemorydbSnapshotTimeouts;
 }
-export class MemorydbSnapshotClusterConfiguration extends cdktf.ComplexComputedList {
+export interface MemorydbSnapshotClusterConfiguration {
+}
+
+export function memorydbSnapshotClusterConfigurationToTerraform(struct?: MemorydbSnapshotClusterConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MemorydbSnapshotClusterConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MemorydbSnapshotClusterConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MemorydbSnapshotClusterConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // description - computed: true, optional: false, required: false
   public get description() {
@@ -105,6 +143,25 @@ export class MemorydbSnapshotClusterConfiguration extends cdktf.ComplexComputedL
     return this.getStringAttribute('vpc_id');
   }
 }
+
+export class MemorydbSnapshotClusterConfigurationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MemorydbSnapshotClusterConfigurationOutputReference {
+    return new MemorydbSnapshotClusterConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface MemorydbSnapshotTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/memorydb_snapshot#create MemorydbSnapshot#create}
@@ -133,10 +190,9 @@ export class MemorydbSnapshotTimeoutsOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MemorydbSnapshotTimeouts | undefined {
@@ -207,7 +263,7 @@ export class MemorydbSnapshot extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_memorydb_snapshot";
+  public static readonly tfResourceType = "aws_memorydb_snapshot";
 
   // ===========
   // INITIALIZER
@@ -224,7 +280,9 @@ export class MemorydbSnapshot extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_memorydb_snapshot',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -250,8 +308,9 @@ export class MemorydbSnapshot extends cdktf.TerraformResource {
   }
 
   // cluster_configuration - computed: true, optional: false, required: false
-  public clusterConfiguration(index: string) {
-    return new MemorydbSnapshotClusterConfiguration(this, 'cluster_configuration', index, false);
+  private _clusterConfiguration = new MemorydbSnapshotClusterConfigurationList(this, "cluster_configuration", false);
+  public get clusterConfiguration() {
+    return this._clusterConfiguration;
   }
 
   // cluster_name - computed: false, optional: false, required: true
@@ -358,7 +417,7 @@ export class MemorydbSnapshot extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new MemorydbSnapshotTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new MemorydbSnapshotTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

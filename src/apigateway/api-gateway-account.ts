@@ -12,7 +12,45 @@ export interface ApiGatewayAccountConfig extends cdktf.TerraformMetaArguments {
   */
   readonly cloudwatchRoleArn?: string;
 }
-export class ApiGatewayAccountThrottleSettings extends cdktf.ComplexComputedList {
+export interface ApiGatewayAccountThrottleSettings {
+}
+
+export function apiGatewayAccountThrottleSettingsToTerraform(struct?: ApiGatewayAccountThrottleSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ApiGatewayAccountThrottleSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ApiGatewayAccountThrottleSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApiGatewayAccountThrottleSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // burst_limit - computed: true, optional: false, required: false
   public get burstLimit() {
@@ -25,6 +63,25 @@ export class ApiGatewayAccountThrottleSettings extends cdktf.ComplexComputedList
   }
 }
 
+export class ApiGatewayAccountThrottleSettingsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ApiGatewayAccountThrottleSettingsOutputReference {
+    return new ApiGatewayAccountThrottleSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_account aws_api_gateway_account}
 */
@@ -33,7 +90,7 @@ export class ApiGatewayAccount extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_api_gateway_account";
+  public static readonly tfResourceType = "aws_api_gateway_account";
 
   // ===========
   // INITIALIZER
@@ -50,7 +107,9 @@ export class ApiGatewayAccount extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_api_gateway_account',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -86,8 +145,9 @@ export class ApiGatewayAccount extends cdktf.TerraformResource {
   }
 
   // throttle_settings - computed: true, optional: false, required: false
-  public throttleSettings(index: string) {
-    return new ApiGatewayAccountThrottleSettings(this, 'throttle_settings', index, false);
+  private _throttleSettings = new ApiGatewayAccountThrottleSettingsList(this, "throttle_settings", false);
+  public get throttleSettings() {
+    return this._throttleSettings;
   }
 
   // =========

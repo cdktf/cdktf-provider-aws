@@ -72,10 +72,9 @@ export class SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputRef
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerEndpointDeploymentConfigAutoRollbackConfiguration | undefined {
@@ -144,10 +143,9 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize | undefined {
@@ -231,10 +229,9 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize | undefined {
@@ -332,10 +329,9 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration | undefined {
@@ -404,7 +400,7 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
   }
 
   // canary_size - computed: false, optional: true, required: false
-  private _canarySize = new SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference(this, "canary_size", true);
+  private _canarySize = new SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference(this, "canary_size");
   public get canarySize() {
     return this._canarySize;
   }
@@ -420,7 +416,7 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
   }
 
   // linear_step_size - computed: false, optional: true, required: false
-  private _linearStepSize = new SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeOutputReference(this, "linear_step_size", true);
+  private _linearStepSize = new SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeOutputReference(this, "linear_step_size");
   public get linearStepSize() {
     return this._linearStepSize;
   }
@@ -470,10 +466,9 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReferen
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy | undefined {
@@ -542,7 +537,7 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReferen
   }
 
   // traffic_routing_configuration - computed: false, optional: false, required: true
-  private _trafficRoutingConfiguration = new SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationOutputReference(this, "traffic_routing_configuration", true);
+  private _trafficRoutingConfiguration = new SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationOutputReference(this, "traffic_routing_configuration");
   public get trafficRoutingConfiguration() {
     return this._trafficRoutingConfiguration;
   }
@@ -586,10 +581,9 @@ export class SagemakerEndpointDeploymentConfigOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerEndpointDeploymentConfig | undefined {
@@ -620,7 +614,7 @@ export class SagemakerEndpointDeploymentConfigOutputReference extends cdktf.Comp
   }
 
   // auto_rollback_configuration - computed: false, optional: true, required: false
-  private _autoRollbackConfiguration = new SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference(this, "auto_rollback_configuration", true);
+  private _autoRollbackConfiguration = new SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference(this, "auto_rollback_configuration");
   public get autoRollbackConfiguration() {
     return this._autoRollbackConfiguration;
   }
@@ -636,7 +630,7 @@ export class SagemakerEndpointDeploymentConfigOutputReference extends cdktf.Comp
   }
 
   // blue_green_update_policy - computed: false, optional: false, required: true
-  private _blueGreenUpdatePolicy = new SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference(this, "blue_green_update_policy", true);
+  private _blueGreenUpdatePolicy = new SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference(this, "blue_green_update_policy");
   public get blueGreenUpdatePolicy() {
     return this._blueGreenUpdatePolicy;
   }
@@ -657,7 +651,7 @@ export class SagemakerEndpoint extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_sagemaker_endpoint";
+  public static readonly tfResourceType = "aws_sagemaker_endpoint";
 
   // ===========
   // INITIALIZER
@@ -674,7 +668,9 @@ export class SagemakerEndpoint extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_sagemaker_endpoint',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -764,7 +760,7 @@ export class SagemakerEndpoint extends cdktf.TerraformResource {
   }
 
   // deployment_config - computed: false, optional: true, required: false
-  private _deploymentConfig = new SagemakerEndpointDeploymentConfigOutputReference(this, "deployment_config", true);
+  private _deploymentConfig = new SagemakerEndpointDeploymentConfigOutputReference(this, "deployment_config");
   public get deploymentConfig() {
     return this._deploymentConfig;
   }

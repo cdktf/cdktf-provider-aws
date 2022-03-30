@@ -30,7 +30,45 @@ export interface IotThingGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly properties?: IotThingGroupProperties;
 }
-export class IotThingGroupMetadataRootToParentGroups extends cdktf.ComplexComputedList {
+export interface IotThingGroupMetadataRootToParentGroups {
+}
+
+export function iotThingGroupMetadataRootToParentGroupsToTerraform(struct?: IotThingGroupMetadataRootToParentGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class IotThingGroupMetadataRootToParentGroupsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotThingGroupMetadataRootToParentGroups | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotThingGroupMetadataRootToParentGroups | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // group_arn - computed: true, optional: false, required: false
   public get groupArn() {
@@ -42,7 +80,64 @@ export class IotThingGroupMetadataRootToParentGroups extends cdktf.ComplexComput
     return this.getStringAttribute('group_name');
   }
 }
-export class IotThingGroupMetadata extends cdktf.ComplexComputedList {
+
+export class IotThingGroupMetadataRootToParentGroupsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotThingGroupMetadataRootToParentGroupsOutputReference {
+    return new IotThingGroupMetadataRootToParentGroupsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface IotThingGroupMetadata {
+}
+
+export function iotThingGroupMetadataToTerraform(struct?: IotThingGroupMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class IotThingGroupMetadataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotThingGroupMetadata | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotThingGroupMetadata | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // creation_date - computed: true, optional: false, required: false
   public get creationDate() {
@@ -55,9 +150,28 @@ export class IotThingGroupMetadata extends cdktf.ComplexComputedList {
   }
 
   // root_to_parent_groups - computed: true, optional: false, required: false
+  private _rootToParentGroups = new IotThingGroupMetadataRootToParentGroupsList(this, "root_to_parent_groups", false);
   public get rootToParentGroups() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('root_to_parent_groups');
+    return this._rootToParentGroups;
+  }
+}
+
+export class IotThingGroupMetadataList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotThingGroupMetadataOutputReference {
+    return new IotThingGroupMetadataOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface IotThingGroupPropertiesAttributePayload {
@@ -83,10 +197,9 @@ export class IotThingGroupPropertiesAttributePayloadOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): IotThingGroupPropertiesAttributePayload | undefined {
@@ -156,10 +269,9 @@ export class IotThingGroupPropertiesOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): IotThingGroupProperties | undefined {
@@ -206,7 +318,7 @@ export class IotThingGroupPropertiesOutputReference extends cdktf.ComplexObject 
   }
 
   // attribute_payload - computed: false, optional: true, required: false
-  private _attributePayload = new IotThingGroupPropertiesAttributePayloadOutputReference(this, "attribute_payload", true);
+  private _attributePayload = new IotThingGroupPropertiesAttributePayloadOutputReference(this, "attribute_payload");
   public get attributePayload() {
     return this._attributePayload;
   }
@@ -230,7 +342,7 @@ export class IotThingGroup extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_iot_thing_group";
+  public static readonly tfResourceType = "aws_iot_thing_group";
 
   // ===========
   // INITIALIZER
@@ -247,7 +359,9 @@ export class IotThingGroup extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_iot_thing_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -276,8 +390,9 @@ export class IotThingGroup extends cdktf.TerraformResource {
   }
 
   // metadata - computed: true, optional: false, required: false
-  public metadata(index: string) {
-    return new IotThingGroupMetadata(this, 'metadata', index, false);
+  private _metadata = new IotThingGroupMetadataList(this, "metadata", false);
+  public get metadata() {
+    return this._metadata;
   }
 
   // name - computed: false, optional: false, required: true
@@ -347,7 +462,7 @@ export class IotThingGroup extends cdktf.TerraformResource {
   }
 
   // properties - computed: false, optional: true, required: false
-  private _properties = new IotThingGroupPropertiesOutputReference(this, "properties", true);
+  private _properties = new IotThingGroupPropertiesOutputReference(this, "properties");
   public get properties() {
     return this._properties;
   }

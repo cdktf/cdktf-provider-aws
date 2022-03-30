@@ -64,10 +64,9 @@ export class S3BucketAclAccessControlPolicyGrantGranteeOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketAclAccessControlPolicyGrantGrantee | undefined {
@@ -227,10 +226,9 @@ export class S3BucketAclAccessControlPolicyOwnerOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketAclAccessControlPolicyOwner | undefined {
@@ -321,10 +319,9 @@ export class S3BucketAclAccessControlPolicyOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketAclAccessControlPolicy | undefined {
@@ -372,7 +369,7 @@ export class S3BucketAclAccessControlPolicyOutputReference extends cdktf.Complex
   }
 
   // owner - computed: false, optional: false, required: true
-  private _owner = new S3BucketAclAccessControlPolicyOwnerOutputReference(this, "owner", true);
+  private _owner = new S3BucketAclAccessControlPolicyOwnerOutputReference(this, "owner");
   public get owner() {
     return this._owner;
   }
@@ -393,7 +390,7 @@ export class S3BucketAcl extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_s3_bucket_acl";
+  public static readonly tfResourceType = "aws_s3_bucket_acl";
 
   // ===========
   // INITIALIZER
@@ -410,7 +407,9 @@ export class S3BucketAcl extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_s3_bucket_acl',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -478,7 +477,7 @@ export class S3BucketAcl extends cdktf.TerraformResource {
   }
 
   // access_control_policy - computed: false, optional: true, required: false
-  private _accessControlPolicy = new S3BucketAclAccessControlPolicyOutputReference(this, "access_control_policy", true);
+  private _accessControlPolicy = new S3BucketAclAccessControlPolicyOutputReference(this, "access_control_policy");
   public get accessControlPolicy() {
     return this._accessControlPolicy;
   }

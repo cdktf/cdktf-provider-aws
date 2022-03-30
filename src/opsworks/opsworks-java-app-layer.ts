@@ -221,10 +221,9 @@ export class OpsworksJavaAppLayerCloudwatchConfigurationOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): OpsworksJavaAppLayerCloudwatchConfiguration | undefined {
@@ -343,7 +342,7 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_opsworks_java_app_layer";
+  public static readonly tfResourceType = "aws_opsworks_java_app_layer";
 
   // ===========
   // INITIALIZER
@@ -360,7 +359,9 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_opsworks_java_app_layer',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -825,7 +826,7 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   }
 
   // cloudwatch_configuration - computed: false, optional: true, required: false
-  private _cloudwatchConfiguration = new OpsworksJavaAppLayerCloudwatchConfigurationOutputReference(this, "cloudwatch_configuration", true);
+  private _cloudwatchConfiguration = new OpsworksJavaAppLayerCloudwatchConfigurationOutputReference(this, "cloudwatch_configuration");
   public get cloudwatchConfiguration() {
     return this._cloudwatchConfiguration;
   }

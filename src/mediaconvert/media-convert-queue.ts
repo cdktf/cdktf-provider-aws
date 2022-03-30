@@ -71,10 +71,9 @@ export class MediaConvertQueueReservationPlanSettingsOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MediaConvertQueueReservationPlanSettings | undefined {
@@ -158,7 +157,7 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_media_convert_queue";
+  public static readonly tfResourceType = "aws_media_convert_queue";
 
   // ===========
   // INITIALIZER
@@ -175,7 +174,9 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_media_convert_queue',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -299,7 +300,7 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
   }
 
   // reservation_plan_settings - computed: false, optional: true, required: false
-  private _reservationPlanSettings = new MediaConvertQueueReservationPlanSettingsOutputReference(this, "reservation_plan_settings", true);
+  private _reservationPlanSettings = new MediaConvertQueueReservationPlanSettingsOutputReference(this, "reservation_plan_settings");
   public get reservationPlanSettings() {
     return this._reservationPlanSettings;
   }

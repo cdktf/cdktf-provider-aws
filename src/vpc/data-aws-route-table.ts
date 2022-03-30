@@ -34,7 +34,45 @@ export interface DataAwsRouteTableConfig extends cdktf.TerraformMetaArguments {
   */
   readonly filter?: DataAwsRouteTableFilter[] | cdktf.IResolvable;
 }
-export class DataAwsRouteTableAssociations extends cdktf.ComplexComputedList {
+export interface DataAwsRouteTableAssociations {
+}
+
+export function dataAwsRouteTableAssociationsToTerraform(struct?: DataAwsRouteTableAssociations): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsRouteTableAssociationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsRouteTableAssociations | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsRouteTableAssociations | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // gateway_id - computed: true, optional: false, required: false
   public get gatewayId() {
@@ -61,7 +99,64 @@ export class DataAwsRouteTableAssociations extends cdktf.ComplexComputedList {
     return this.getStringAttribute('subnet_id');
   }
 }
-export class DataAwsRouteTableRoutes extends cdktf.ComplexComputedList {
+
+export class DataAwsRouteTableAssociationsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsRouteTableAssociationsOutputReference {
+    return new DataAwsRouteTableAssociationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsRouteTableRoutes {
+}
+
+export function dataAwsRouteTableRoutesToTerraform(struct?: DataAwsRouteTableRoutes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsRouteTableRoutesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsRouteTableRoutes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsRouteTableRoutes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // carrier_gateway_id - computed: true, optional: false, required: false
   public get carrierGatewayId() {
@@ -128,6 +223,25 @@ export class DataAwsRouteTableRoutes extends cdktf.ComplexComputedList {
     return this.getStringAttribute('vpc_peering_connection_id');
   }
 }
+
+export class DataAwsRouteTableRoutesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsRouteTableRoutesOutputReference {
+    return new DataAwsRouteTableRoutesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsRouteTableFilter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_table#name DataAwsRouteTable#name}
@@ -159,7 +273,7 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_route_table";
+  public static readonly tfResourceType = "aws_route_table";
 
   // ===========
   // INITIALIZER
@@ -176,7 +290,9 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_route_table',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -201,8 +317,9 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
   }
 
   // associations - computed: true, optional: false, required: false
-  public associations(index: string) {
-    return new DataAwsRouteTableAssociations(this, 'associations', index, false);
+  private _associations = new DataAwsRouteTableAssociationsList(this, "associations", false);
+  public get associations() {
+    return this._associations;
   }
 
   // gateway_id - computed: true, optional: true, required: false
@@ -248,8 +365,9 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
   }
 
   // routes - computed: true, optional: false, required: false
-  public routes(index: string) {
-    return new DataAwsRouteTableRoutes(this, 'routes', index, false);
+  private _routes = new DataAwsRouteTableRoutesList(this, "routes", false);
+  public get routes() {
+    return this._routes;
   }
 
   // subnet_id - computed: true, optional: true, required: false

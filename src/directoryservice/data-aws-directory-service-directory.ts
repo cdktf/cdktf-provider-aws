@@ -16,7 +16,45 @@ export interface DataAwsDirectoryServiceDirectoryConfig extends cdktf.TerraformM
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsDirectoryServiceDirectoryConnectSettings extends cdktf.ComplexComputedList {
+export interface DataAwsDirectoryServiceDirectoryConnectSettings {
+}
+
+export function dataAwsDirectoryServiceDirectoryConnectSettingsToTerraform(struct?: DataAwsDirectoryServiceDirectoryConnectSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDirectoryServiceDirectoryConnectSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDirectoryServiceDirectoryConnectSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
@@ -48,7 +86,64 @@ export class DataAwsDirectoryServiceDirectoryConnectSettings extends cdktf.Compl
     return this.getStringAttribute('vpc_id');
   }
 }
-export class DataAwsDirectoryServiceDirectoryVpcSettings extends cdktf.ComplexComputedList {
+
+export class DataAwsDirectoryServiceDirectoryConnectSettingsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference {
+    return new DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsDirectoryServiceDirectoryVpcSettings {
+}
+
+export function dataAwsDirectoryServiceDirectoryVpcSettingsToTerraform(struct?: DataAwsDirectoryServiceDirectoryVpcSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDirectoryServiceDirectoryVpcSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDirectoryServiceDirectoryVpcSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
@@ -66,6 +161,25 @@ export class DataAwsDirectoryServiceDirectoryVpcSettings extends cdktf.ComplexCo
   }
 }
 
+export class DataAwsDirectoryServiceDirectoryVpcSettingsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference {
+    return new DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/directory_service_directory aws_directory_service_directory}
 */
@@ -74,7 +188,7 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_directory_service_directory";
+  public static readonly tfResourceType = "aws_directory_service_directory";
 
   // ===========
   // INITIALIZER
@@ -91,7 +205,9 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
     super(scope, id, {
       terraformResourceType: 'aws_directory_service_directory',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -117,8 +233,9 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
   }
 
   // connect_settings - computed: true, optional: false, required: false
-  public connectSettings(index: string) {
-    return new DataAwsDirectoryServiceDirectoryConnectSettings(this, 'connect_settings', index, false);
+  private _connectSettings = new DataAwsDirectoryServiceDirectoryConnectSettingsList(this, "connect_settings", false);
+  public get connectSettings() {
+    return this._connectSettings;
   }
 
   // description - computed: true, optional: false, required: false
@@ -201,8 +318,9 @@ export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource 
   }
 
   // vpc_settings - computed: true, optional: false, required: false
-  public vpcSettings(index: string) {
-    return new DataAwsDirectoryServiceDirectoryVpcSettings(this, 'vpc_settings', index, false);
+  private _vpcSettings = new DataAwsDirectoryServiceDirectoryVpcSettingsList(this, "vpc_settings", false);
+  public get vpcSettings() {
+    return this._vpcSettings;
   }
 
   // =========

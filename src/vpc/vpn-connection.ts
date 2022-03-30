@@ -204,7 +204,45 @@ export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly vpnGatewayId?: string;
 }
-export class VpnConnectionRoutes extends cdktf.ComplexComputedList {
+export interface VpnConnectionRoutes {
+}
+
+export function vpnConnectionRoutesToTerraform(struct?: VpnConnectionRoutes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class VpnConnectionRoutesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): VpnConnectionRoutes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpnConnectionRoutes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // destination_cidr_block - computed: true, optional: false, required: false
   public get destinationCidrBlock() {
@@ -221,7 +259,64 @@ export class VpnConnectionRoutes extends cdktf.ComplexComputedList {
     return this.getStringAttribute('state');
   }
 }
-export class VpnConnectionVgwTelemetry extends cdktf.ComplexComputedList {
+
+export class VpnConnectionRoutesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VpnConnectionRoutesOutputReference {
+    return new VpnConnectionRoutesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface VpnConnectionVgwTelemetry {
+}
+
+export function vpnConnectionVgwTelemetryToTerraform(struct?: VpnConnectionVgwTelemetry): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class VpnConnectionVgwTelemetryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): VpnConnectionVgwTelemetry | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpnConnectionVgwTelemetry | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // accepted_route_count - computed: true, optional: false, required: false
   public get acceptedRouteCount() {
@@ -254,6 +349,25 @@ export class VpnConnectionVgwTelemetry extends cdktf.ComplexComputedList {
   }
 }
 
+export class VpnConnectionVgwTelemetryList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VpnConnectionVgwTelemetryOutputReference {
+    return new VpnConnectionVgwTelemetryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection aws_vpn_connection}
 */
@@ -262,7 +376,7 @@ export class VpnConnection extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_vpn_connection";
+  public static readonly tfResourceType = "aws_vpn_connection";
 
   // ===========
   // INITIALIZER
@@ -279,7 +393,9 @@ export class VpnConnection extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_vpn_connection',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -450,8 +566,9 @@ export class VpnConnection extends cdktf.TerraformResource {
   }
 
   // routes - computed: true, optional: false, required: false
-  public routes(index: string) {
-    return new VpnConnectionRoutes(this, 'routes', index, true);
+  private _routes = new VpnConnectionRoutesList(this, "routes", true);
+  public get routes() {
+    return this._routes;
   }
 
   // static_routes_only - computed: true, optional: true, required: false
@@ -1179,8 +1296,9 @@ export class VpnConnection extends cdktf.TerraformResource {
   }
 
   // vgw_telemetry - computed: true, optional: false, required: false
-  public vgwTelemetry(index: string) {
-    return new VpnConnectionVgwTelemetry(this, 'vgw_telemetry', index, true);
+  private _vgwTelemetry = new VpnConnectionVgwTelemetryList(this, "vgw_telemetry", true);
+  public get vgwTelemetry() {
+    return this._vgwTelemetry;
   }
 
   // vpn_gateway_id - computed: false, optional: true, required: false

@@ -88,7 +88,45 @@ export interface AmplifyAppConfig extends cdktf.TerraformMetaArguments {
   */
   readonly customRule?: AmplifyAppCustomRule[] | cdktf.IResolvable;
 }
-export class AmplifyAppProductionBranch extends cdktf.ComplexComputedList {
+export interface AmplifyAppProductionBranch {
+}
+
+export function amplifyAppProductionBranchToTerraform(struct?: AmplifyAppProductionBranch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class AmplifyAppProductionBranchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AmplifyAppProductionBranch | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AmplifyAppProductionBranch | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // branch_name - computed: true, optional: false, required: false
   public get branchName() {
@@ -108,6 +146,25 @@ export class AmplifyAppProductionBranch extends cdktf.ComplexComputedList {
   // thumbnail_url - computed: true, optional: false, required: false
   public get thumbnailUrl() {
     return this.getStringAttribute('thumbnail_url');
+  }
+}
+
+export class AmplifyAppProductionBranchList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AmplifyAppProductionBranchOutputReference {
+    return new AmplifyAppProductionBranchOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface AmplifyAppAutoBranchCreationConfig {
@@ -178,10 +235,9 @@ export class AmplifyAppAutoBranchCreationConfigOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AmplifyAppAutoBranchCreationConfig | undefined {
@@ -460,7 +516,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_amplify_app";
+  public static readonly tfResourceType = "aws_amplify_app";
 
   // ===========
   // INITIALIZER
@@ -477,7 +533,9 @@ export class AmplifyApp extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_amplify_app',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -746,8 +804,9 @@ export class AmplifyApp extends cdktf.TerraformResource {
   }
 
   // production_branch - computed: true, optional: false, required: false
-  public productionBranch(index: string) {
-    return new AmplifyAppProductionBranch(this, 'production_branch', index, false);
+  private _productionBranch = new AmplifyAppProductionBranchList(this, "production_branch", false);
+  public get productionBranch() {
+    return this._productionBranch;
   }
 
   // repository - computed: false, optional: true, required: false
@@ -799,7 +858,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
   }
 
   // auto_branch_creation_config - computed: false, optional: true, required: false
-  private _autoBranchCreationConfig = new AmplifyAppAutoBranchCreationConfigOutputReference(this, "auto_branch_creation_config", true);
+  private _autoBranchCreationConfig = new AmplifyAppAutoBranchCreationConfigOutputReference(this, "auto_branch_creation_config");
   public get autoBranchCreationConfig() {
     return this._autoBranchCreationConfig;
   }

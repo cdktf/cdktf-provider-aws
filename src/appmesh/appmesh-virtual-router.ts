@@ -62,10 +62,9 @@ export class AppmeshVirtualRouterSpecListenerPortMappingOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualRouterSpecListenerPortMapping | undefined {
@@ -146,10 +145,9 @@ export class AppmeshVirtualRouterSpecListenerOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualRouterSpecListener | undefined {
@@ -174,7 +172,7 @@ export class AppmeshVirtualRouterSpecListenerOutputReference extends cdktf.Compl
   }
 
   // port_mapping - computed: false, optional: false, required: true
-  private _portMapping = new AppmeshVirtualRouterSpecListenerPortMappingOutputReference(this, "port_mapping", true);
+  private _portMapping = new AppmeshVirtualRouterSpecListenerPortMappingOutputReference(this, "port_mapping");
   public get portMapping() {
     return this._portMapping;
   }
@@ -211,10 +209,9 @@ export class AppmeshVirtualRouterSpecOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualRouterSpec | undefined {
@@ -239,7 +236,7 @@ export class AppmeshVirtualRouterSpecOutputReference extends cdktf.ComplexObject
   }
 
   // listener - computed: false, optional: false, required: true
-  private _listener = new AppmeshVirtualRouterSpecListenerOutputReference(this, "listener", true);
+  private _listener = new AppmeshVirtualRouterSpecListenerOutputReference(this, "listener");
   public get listener() {
     return this._listener;
   }
@@ -260,7 +257,7 @@ export class AppmeshVirtualRouter extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appmesh_virtual_router";
+  public static readonly tfResourceType = "aws_appmesh_virtual_router";
 
   // ===========
   // INITIALIZER
@@ -277,7 +274,9 @@ export class AppmeshVirtualRouter extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_appmesh_virtual_router',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -396,7 +395,7 @@ export class AppmeshVirtualRouter extends cdktf.TerraformResource {
   }
 
   // spec - computed: false, optional: false, required: true
-  private _spec = new AppmeshVirtualRouterSpecOutputReference(this, "spec", true);
+  private _spec = new AppmeshVirtualRouterSpecOutputReference(this, "spec");
   public get spec() {
     return this._spec;
   }

@@ -24,7 +24,45 @@ export interface MediaPackageChannelConfig extends cdktf.TerraformMetaArguments 
   */
   readonly tagsAll?: { [key: string]: string };
 }
-export class MediaPackageChannelHlsIngestIngestEndpoints extends cdktf.ComplexComputedList {
+export interface MediaPackageChannelHlsIngestIngestEndpoints {
+}
+
+export function mediaPackageChannelHlsIngestIngestEndpointsToTerraform(struct?: MediaPackageChannelHlsIngestIngestEndpoints): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MediaPackageChannelHlsIngestIngestEndpointsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MediaPackageChannelHlsIngestIngestEndpoints | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MediaPackageChannelHlsIngestIngestEndpoints | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // password - computed: true, optional: false, required: false
   public get password() {
@@ -41,12 +79,88 @@ export class MediaPackageChannelHlsIngestIngestEndpoints extends cdktf.ComplexCo
     return this.getStringAttribute('username');
   }
 }
-export class MediaPackageChannelHlsIngest extends cdktf.ComplexComputedList {
+
+export class MediaPackageChannelHlsIngestIngestEndpointsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MediaPackageChannelHlsIngestIngestEndpointsOutputReference {
+    return new MediaPackageChannelHlsIngestIngestEndpointsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MediaPackageChannelHlsIngest {
+}
+
+export function mediaPackageChannelHlsIngestToTerraform(struct?: MediaPackageChannelHlsIngest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MediaPackageChannelHlsIngestOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MediaPackageChannelHlsIngest | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MediaPackageChannelHlsIngest | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // ingest_endpoints - computed: true, optional: false, required: false
+  private _ingestEndpoints = new MediaPackageChannelHlsIngestIngestEndpointsList(this, "ingest_endpoints", false);
   public get ingestEndpoints() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ingest_endpoints');
+    return this._ingestEndpoints;
+  }
+}
+
+export class MediaPackageChannelHlsIngestList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MediaPackageChannelHlsIngestOutputReference {
+    return new MediaPackageChannelHlsIngestOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -58,7 +172,7 @@ export class MediaPackageChannel extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_media_package_channel";
+  public static readonly tfResourceType = "aws_media_package_channel";
 
   // ===========
   // INITIALIZER
@@ -75,7 +189,9 @@ export class MediaPackageChannel extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_media_package_channel',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -127,8 +243,9 @@ export class MediaPackageChannel extends cdktf.TerraformResource {
   }
 
   // hls_ingest - computed: true, optional: false, required: false
-  public hlsIngest(index: string) {
-    return new MediaPackageChannelHlsIngest(this, 'hls_ingest', index, false);
+  private _hlsIngest = new MediaPackageChannelHlsIngestList(this, "hls_ingest", false);
+  public get hlsIngest() {
+    return this._hlsIngest;
   }
 
   // id - computed: true, optional: true, required: false

@@ -61,7 +61,7 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_api_gateway_method";
+  public static readonly tfResourceType = "aws_api_gateway_method";
 
   // ===========
   // INITIALIZER
@@ -78,7 +78,9 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_api_gateway_method',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -12,7 +12,45 @@ export interface DataAwsSignerSigningJobConfig extends cdktf.TerraformMetaArgume
   */
   readonly jobId: string;
 }
-export class DataAwsSignerSigningJobRevocationRecord extends cdktf.ComplexComputedList {
+export interface DataAwsSignerSigningJobRevocationRecord {
+}
+
+export function dataAwsSignerSigningJobRevocationRecordToTerraform(struct?: DataAwsSignerSigningJobRevocationRecord): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsSignerSigningJobRevocationRecordOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsSignerSigningJobRevocationRecord | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsSignerSigningJobRevocationRecord | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // reason - computed: true, optional: false, required: false
   public get reason() {
@@ -29,7 +67,64 @@ export class DataAwsSignerSigningJobRevocationRecord extends cdktf.ComplexComput
     return this.getStringAttribute('revoked_by');
   }
 }
-export class DataAwsSignerSigningJobSignedObjectS3 extends cdktf.ComplexComputedList {
+
+export class DataAwsSignerSigningJobRevocationRecordList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsSignerSigningJobRevocationRecordOutputReference {
+    return new DataAwsSignerSigningJobRevocationRecordOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsSignerSigningJobSignedObjectS3 {
+}
+
+export function dataAwsSignerSigningJobSignedObjectS3ToTerraform(struct?: DataAwsSignerSigningJobSignedObjectS3): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsSignerSigningJobSignedObjectS3OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsSignerSigningJobSignedObjectS3 | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsSignerSigningJobSignedObjectS3 | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // bucket - computed: true, optional: false, required: false
   public get bucket() {
@@ -41,15 +136,129 @@ export class DataAwsSignerSigningJobSignedObjectS3 extends cdktf.ComplexComputed
     return this.getStringAttribute('key');
   }
 }
-export class DataAwsSignerSigningJobSignedObject extends cdktf.ComplexComputedList {
 
-  // s3 - computed: true, optional: false, required: false
-  public get s3() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('s3');
+export class DataAwsSignerSigningJobSignedObjectS3List extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsSignerSigningJobSignedObjectS3OutputReference {
+    return new DataAwsSignerSigningJobSignedObjectS3OutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export class DataAwsSignerSigningJobSourceS3 extends cdktf.ComplexComputedList {
+export interface DataAwsSignerSigningJobSignedObject {
+}
+
+export function dataAwsSignerSigningJobSignedObjectToTerraform(struct?: DataAwsSignerSigningJobSignedObject): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsSignerSigningJobSignedObjectOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsSignerSigningJobSignedObject | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsSignerSigningJobSignedObject | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // s3 - computed: true, optional: false, required: false
+  private _s3 = new DataAwsSignerSigningJobSignedObjectS3List(this, "s3", false);
+  public get s3() {
+    return this._s3;
+  }
+}
+
+export class DataAwsSignerSigningJobSignedObjectList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsSignerSigningJobSignedObjectOutputReference {
+    return new DataAwsSignerSigningJobSignedObjectOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsSignerSigningJobSourceS3 {
+}
+
+export function dataAwsSignerSigningJobSourceS3ToTerraform(struct?: DataAwsSignerSigningJobSourceS3): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsSignerSigningJobSourceS3OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsSignerSigningJobSourceS3 | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsSignerSigningJobSourceS3 | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // bucket - computed: true, optional: false, required: false
   public get bucket() {
@@ -66,12 +275,88 @@ export class DataAwsSignerSigningJobSourceS3 extends cdktf.ComplexComputedList {
     return this.getStringAttribute('version');
   }
 }
-export class DataAwsSignerSigningJobSource extends cdktf.ComplexComputedList {
+
+export class DataAwsSignerSigningJobSourceS3List extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsSignerSigningJobSourceS3OutputReference {
+    return new DataAwsSignerSigningJobSourceS3OutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsSignerSigningJobSource {
+}
+
+export function dataAwsSignerSigningJobSourceToTerraform(struct?: DataAwsSignerSigningJobSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsSignerSigningJobSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsSignerSigningJobSource | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsSignerSigningJobSource | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // s3 - computed: true, optional: false, required: false
+  private _s3 = new DataAwsSignerSigningJobSourceS3List(this, "s3", false);
   public get s3() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('s3');
+    return this._s3;
+  }
+}
+
+export class DataAwsSignerSigningJobSourceList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsSignerSigningJobSourceOutputReference {
+    return new DataAwsSignerSigningJobSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -83,7 +368,7 @@ export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_signer_signing_job";
+  public static readonly tfResourceType = "aws_signer_signing_job";
 
   // ===========
   // INITIALIZER
@@ -100,7 +385,9 @@ export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_signer_signing_job',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -178,8 +465,9 @@ export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
   }
 
   // revocation_record - computed: true, optional: false, required: false
-  public revocationRecord(index: string) {
-    return new DataAwsSignerSigningJobRevocationRecord(this, 'revocation_record', index, false);
+  private _revocationRecord = new DataAwsSignerSigningJobRevocationRecordList(this, "revocation_record", false);
+  public get revocationRecord() {
+    return this._revocationRecord;
   }
 
   // signature_expires_at - computed: true, optional: false, required: false
@@ -188,13 +476,15 @@ export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
   }
 
   // signed_object - computed: true, optional: false, required: false
-  public signedObject(index: string) {
-    return new DataAwsSignerSigningJobSignedObject(this, 'signed_object', index, false);
+  private _signedObject = new DataAwsSignerSigningJobSignedObjectList(this, "signed_object", false);
+  public get signedObject() {
+    return this._signedObject;
   }
 
   // source - computed: true, optional: false, required: false
-  public source(index: string) {
-    return new DataAwsSignerSigningJobSource(this, 'source', index, false);
+  private _source = new DataAwsSignerSigningJobSourceList(this, "source", false);
+  public get source() {
+    return this._source;
   }
 
   // status - computed: true, optional: false, required: false

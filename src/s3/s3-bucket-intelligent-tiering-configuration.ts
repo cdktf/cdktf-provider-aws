@@ -60,10 +60,9 @@ export class S3BucketIntelligentTieringConfigurationFilterOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketIntelligentTieringConfigurationFilter | undefined {
@@ -156,7 +155,7 @@ export class S3BucketIntelligentTieringConfiguration extends cdktf.TerraformReso
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_s3_bucket_intelligent_tiering_configuration";
+  public static readonly tfResourceType = "aws_s3_bucket_intelligent_tiering_configuration";
 
   // ===========
   // INITIALIZER
@@ -173,7 +172,9 @@ export class S3BucketIntelligentTieringConfiguration extends cdktf.TerraformReso
     super(scope, id, {
       terraformResourceType: 'aws_s3_bucket_intelligent_tiering_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -239,7 +240,7 @@ export class S3BucketIntelligentTieringConfiguration extends cdktf.TerraformReso
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter = new S3BucketIntelligentTieringConfigurationFilterOutputReference(this, "filter", true);
+  private _filter = new S3BucketIntelligentTieringConfigurationFilterOutputReference(this, "filter");
   public get filter() {
     return this._filter;
   }

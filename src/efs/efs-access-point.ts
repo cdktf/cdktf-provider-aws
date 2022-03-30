@@ -65,10 +65,9 @@ export class EfsAccessPointPosixUserOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EfsAccessPointPosixUser | undefined {
@@ -179,10 +178,9 @@ export class EfsAccessPointRootDirectoryCreationInfoOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EfsAccessPointRootDirectoryCreationInfo | undefined {
@@ -287,10 +285,9 @@ export class EfsAccessPointRootDirectoryOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EfsAccessPointRootDirectory | undefined {
@@ -337,7 +334,7 @@ export class EfsAccessPointRootDirectoryOutputReference extends cdktf.ComplexObj
   }
 
   // creation_info - computed: false, optional: true, required: false
-  private _creationInfo = new EfsAccessPointRootDirectoryCreationInfoOutputReference(this, "creation_info", true);
+  private _creationInfo = new EfsAccessPointRootDirectoryCreationInfoOutputReference(this, "creation_info");
   public get creationInfo() {
     return this._creationInfo;
   }
@@ -361,7 +358,7 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_efs_access_point";
+  public static readonly tfResourceType = "aws_efs_access_point";
 
   // ===========
   // INITIALIZER
@@ -378,7 +375,9 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_efs_access_point',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -462,7 +461,7 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
   }
 
   // posix_user - computed: false, optional: true, required: false
-  private _posixUser = new EfsAccessPointPosixUserOutputReference(this, "posix_user", true);
+  private _posixUser = new EfsAccessPointPosixUserOutputReference(this, "posix_user");
   public get posixUser() {
     return this._posixUser;
   }
@@ -478,7 +477,7 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
   }
 
   // root_directory - computed: false, optional: true, required: false
-  private _rootDirectory = new EfsAccessPointRootDirectoryOutputReference(this, "root_directory", true);
+  private _rootDirectory = new EfsAccessPointRootDirectoryOutputReference(this, "root_directory");
   public get rootDirectory() {
     return this._rootDirectory;
   }

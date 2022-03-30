@@ -29,7 +29,7 @@ export class BackupVaultNotifications extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_backup_vault_notifications";
+  public static readonly tfResourceType = "aws_backup_vault_notifications";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class BackupVaultNotifications extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_backup_vault_notifications',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

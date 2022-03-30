@@ -84,11 +84,68 @@ export interface StoragegatewayGatewayConfig extends cdktf.TerraformMetaArgument
   */
   readonly timeouts?: StoragegatewayGatewayTimeouts;
 }
-export class StoragegatewayGatewayGatewayNetworkInterface extends cdktf.ComplexComputedList {
+export interface StoragegatewayGatewayGatewayNetworkInterface {
+}
+
+export function storagegatewayGatewayGatewayNetworkInterfaceToTerraform(struct?: StoragegatewayGatewayGatewayNetworkInterface): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class StoragegatewayGatewayGatewayNetworkInterfaceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): StoragegatewayGatewayGatewayNetworkInterface | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: StoragegatewayGatewayGatewayNetworkInterface | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // ipv4_address - computed: true, optional: false, required: false
   public get ipv4Address() {
     return this.getStringAttribute('ipv4_address');
+  }
+}
+
+export class StoragegatewayGatewayGatewayNetworkInterfaceList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): StoragegatewayGatewayGatewayNetworkInterfaceOutputReference {
+    return new StoragegatewayGatewayGatewayNetworkInterfaceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface StoragegatewayGatewaySmbActiveDirectorySettings {
@@ -139,10 +196,9 @@ export class StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): StoragegatewayGatewaySmbActiveDirectorySettings | undefined {
@@ -311,10 +367,9 @@ export class StoragegatewayGatewayTimeoutsOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): StoragegatewayGatewayTimeouts | undefined {
@@ -363,7 +418,7 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_storagegateway_gateway";
+  public static readonly tfResourceType = "aws_storagegateway_gateway";
 
   // ===========
   // INITIALIZER
@@ -380,7 +435,9 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_storagegateway_gateway',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -525,8 +582,9 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
   }
 
   // gateway_network_interface - computed: true, optional: false, required: false
-  public gatewayNetworkInterface(index: string) {
-    return new StoragegatewayGatewayGatewayNetworkInterface(this, 'gateway_network_interface', index, false);
+  private _gatewayNetworkInterface = new StoragegatewayGatewayGatewayNetworkInterfaceList(this, "gateway_network_interface", false);
+  public get gatewayNetworkInterface() {
+    return this._gatewayNetworkInterface;
   }
 
   // gateway_timezone - computed: false, optional: false, required: true
@@ -697,7 +755,7 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
   }
 
   // smb_active_directory_settings - computed: false, optional: true, required: false
-  private _smbActiveDirectorySettings = new StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference(this, "smb_active_directory_settings", true);
+  private _smbActiveDirectorySettings = new StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference(this, "smb_active_directory_settings");
   public get smbActiveDirectorySettings() {
     return this._smbActiveDirectorySettings;
   }
@@ -713,7 +771,7 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new StoragegatewayGatewayTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new StoragegatewayGatewayTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

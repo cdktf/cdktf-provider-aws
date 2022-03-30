@@ -61,10 +61,9 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders | undefined {
@@ -127,10 +126,9 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods | undefined {
@@ -193,10 +191,9 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins | undefined {
@@ -259,10 +256,9 @@ export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders | undefined {
@@ -363,10 +359,9 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicyCorsConfig | undefined {
@@ -469,7 +464,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
   }
 
   // access_control_allow_headers - computed: false, optional: false, required: true
-  private _accessControlAllowHeaders = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference(this, "access_control_allow_headers", true);
+  private _accessControlAllowHeaders = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference(this, "access_control_allow_headers");
   public get accessControlAllowHeaders() {
     return this._accessControlAllowHeaders;
   }
@@ -482,7 +477,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
   }
 
   // access_control_allow_methods - computed: false, optional: false, required: true
-  private _accessControlAllowMethods = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference(this, "access_control_allow_methods", true);
+  private _accessControlAllowMethods = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference(this, "access_control_allow_methods");
   public get accessControlAllowMethods() {
     return this._accessControlAllowMethods;
   }
@@ -495,7 +490,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
   }
 
   // access_control_allow_origins - computed: false, optional: false, required: true
-  private _accessControlAllowOrigins = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference(this, "access_control_allow_origins", true);
+  private _accessControlAllowOrigins = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference(this, "access_control_allow_origins");
   public get accessControlAllowOrigins() {
     return this._accessControlAllowOrigins;
   }
@@ -508,7 +503,7 @@ export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cd
   }
 
   // access_control_expose_headers - computed: false, optional: true, required: false
-  private _accessControlExposeHeaders = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference(this, "access_control_expose_headers", true);
+  private _accessControlExposeHeaders = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference(this, "access_control_expose_headers");
   public get accessControlExposeHeaders() {
     return this._accessControlExposeHeaders;
   }
@@ -575,10 +570,9 @@ export class CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicyCustomHeadersConfig | undefined {
@@ -647,10 +641,9 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurity
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy | undefined {
@@ -729,10 +722,9 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOpti
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions | undefined {
@@ -797,10 +789,9 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOut
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions | undefined {
@@ -884,10 +875,9 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy | undefined {
@@ -981,10 +971,9 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransport
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity | undefined {
@@ -1122,10 +1111,9 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection | undefined {
@@ -1285,10 +1273,9 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontResponseHeadersPolicySecurityHeadersConfig | undefined {
@@ -1343,7 +1330,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   }
 
   // content_security_policy - computed: false, optional: true, required: false
-  private _contentSecurityPolicy = new CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference(this, "content_security_policy", true);
+  private _contentSecurityPolicy = new CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference(this, "content_security_policy");
   public get contentSecurityPolicy() {
     return this._contentSecurityPolicy;
   }
@@ -1359,7 +1346,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   }
 
   // content_type_options - computed: false, optional: true, required: false
-  private _contentTypeOptions = new CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference(this, "content_type_options", true);
+  private _contentTypeOptions = new CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference(this, "content_type_options");
   public get contentTypeOptions() {
     return this._contentTypeOptions;
   }
@@ -1375,7 +1362,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   }
 
   // frame_options - computed: false, optional: true, required: false
-  private _frameOptions = new CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference(this, "frame_options", true);
+  private _frameOptions = new CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference(this, "frame_options");
   public get frameOptions() {
     return this._frameOptions;
   }
@@ -1391,7 +1378,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   }
 
   // referrer_policy - computed: false, optional: true, required: false
-  private _referrerPolicy = new CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference(this, "referrer_policy", true);
+  private _referrerPolicy = new CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference(this, "referrer_policy");
   public get referrerPolicy() {
     return this._referrerPolicy;
   }
@@ -1407,7 +1394,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   }
 
   // strict_transport_security - computed: false, optional: true, required: false
-  private _strictTransportSecurity = new CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference(this, "strict_transport_security", true);
+  private _strictTransportSecurity = new CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference(this, "strict_transport_security");
   public get strictTransportSecurity() {
     return this._strictTransportSecurity;
   }
@@ -1423,7 +1410,7 @@ export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
   }
 
   // xss_protection - computed: false, optional: true, required: false
-  private _xssProtection = new CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference(this, "xss_protection", true);
+  private _xssProtection = new CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference(this, "xss_protection");
   public get xssProtection() {
     return this._xssProtection;
   }
@@ -1447,7 +1434,7 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudfront_response_headers_policy";
+  public static readonly tfResourceType = "aws_cloudfront_response_headers_policy";
 
   // ===========
   // INITIALIZER
@@ -1464,7 +1451,9 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_cloudfront_response_headers_policy',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1534,7 +1523,7 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
   }
 
   // cors_config - computed: false, optional: true, required: false
-  private _corsConfig = new CloudfrontResponseHeadersPolicyCorsConfigOutputReference(this, "cors_config", true);
+  private _corsConfig = new CloudfrontResponseHeadersPolicyCorsConfigOutputReference(this, "cors_config");
   public get corsConfig() {
     return this._corsConfig;
   }
@@ -1550,7 +1539,7 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
   }
 
   // custom_headers_config - computed: false, optional: true, required: false
-  private _customHeadersConfig = new CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference(this, "custom_headers_config", true);
+  private _customHeadersConfig = new CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference(this, "custom_headers_config");
   public get customHeadersConfig() {
     return this._customHeadersConfig;
   }
@@ -1566,7 +1555,7 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
   }
 
   // security_headers_config - computed: false, optional: true, required: false
-  private _securityHeadersConfig = new CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference(this, "security_headers_config", true);
+  private _securityHeadersConfig = new CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference(this, "security_headers_config");
   public get securityHeadersConfig() {
     return this._securityHeadersConfig;
   }

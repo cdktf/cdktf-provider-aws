@@ -65,7 +65,7 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appconfig_environment";
+  public static readonly tfResourceType = "aws_appconfig_environment";
 
   // ===========
   // INITIALIZER
@@ -82,7 +82,9 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_appconfig_environment',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

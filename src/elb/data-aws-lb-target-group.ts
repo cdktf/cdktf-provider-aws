@@ -16,7 +16,45 @@ export interface DataAwsLbTargetGroupConfig extends cdktf.TerraformMetaArguments
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsLbTargetGroupHealthCheck extends cdktf.ComplexComputedList {
+export interface DataAwsLbTargetGroupHealthCheck {
+}
+
+export function dataAwsLbTargetGroupHealthCheckToTerraform(struct?: DataAwsLbTargetGroupHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLbTargetGroupHealthCheckOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLbTargetGroupHealthCheck | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLbTargetGroupHealthCheck | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
@@ -63,7 +101,64 @@ export class DataAwsLbTargetGroupHealthCheck extends cdktf.ComplexComputedList {
     return this.getNumberAttribute('unhealthy_threshold');
   }
 }
-export class DataAwsLbTargetGroupStickiness extends cdktf.ComplexComputedList {
+
+export class DataAwsLbTargetGroupHealthCheckList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLbTargetGroupHealthCheckOutputReference {
+    return new DataAwsLbTargetGroupHealthCheckOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLbTargetGroupStickiness {
+}
+
+export function dataAwsLbTargetGroupStickinessToTerraform(struct?: DataAwsLbTargetGroupStickiness): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLbTargetGroupStickinessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLbTargetGroupStickiness | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLbTargetGroupStickiness | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // cookie_duration - computed: true, optional: false, required: false
   public get cookieDuration() {
@@ -86,6 +181,25 @@ export class DataAwsLbTargetGroupStickiness extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataAwsLbTargetGroupStickinessList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLbTargetGroupStickinessOutputReference {
+    return new DataAwsLbTargetGroupStickinessOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/lb_target_group aws_lb_target_group}
 */
@@ -94,7 +208,7 @@ export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_lb_target_group";
+  public static readonly tfResourceType = "aws_lb_target_group";
 
   // ===========
   // INITIALIZER
@@ -111,7 +225,9 @@ export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_lb_target_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -147,8 +263,9 @@ export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
   }
 
   // health_check - computed: true, optional: false, required: false
-  public healthCheck(index: string) {
-    return new DataAwsLbTargetGroupHealthCheck(this, 'health_check', index, false);
+  private _healthCheck = new DataAwsLbTargetGroupHealthCheckList(this, "health_check", false);
+  public get healthCheck() {
+    return this._healthCheck;
   }
 
   // id - computed: true, optional: true, required: false
@@ -213,8 +330,9 @@ export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
   }
 
   // stickiness - computed: true, optional: false, required: false
-  public stickiness(index: string) {
-    return new DataAwsLbTargetGroupStickiness(this, 'stickiness', index, false);
+  private _stickiness = new DataAwsLbTargetGroupStickinessList(this, "stickiness", false);
+  public get stickiness() {
+    return this._stickiness;
   }
 
   // tags - computed: true, optional: true, required: false

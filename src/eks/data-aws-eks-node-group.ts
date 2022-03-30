@@ -20,7 +20,45 @@ export interface DataAwsEksNodeGroupConfig extends cdktf.TerraformMetaArguments 
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsEksNodeGroupRemoteAccess extends cdktf.ComplexComputedList {
+export interface DataAwsEksNodeGroupRemoteAccess {
+}
+
+export function dataAwsEksNodeGroupRemoteAccessToTerraform(struct?: DataAwsEksNodeGroupRemoteAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEksNodeGroupRemoteAccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksNodeGroupRemoteAccess | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksNodeGroupRemoteAccess | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // ec2_ssh_key - computed: true, optional: false, required: false
   public get ec2SshKey() {
@@ -32,19 +70,133 @@ export class DataAwsEksNodeGroupRemoteAccess extends cdktf.ComplexComputedList {
     return cdktf.Fn.tolist(this.getListAttribute('source_security_group_ids'));
   }
 }
-export class DataAwsEksNodeGroupResourcesAutoscalingGroups extends cdktf.ComplexComputedList {
+
+export class DataAwsEksNodeGroupRemoteAccessList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksNodeGroupRemoteAccessOutputReference {
+    return new DataAwsEksNodeGroupRemoteAccessOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksNodeGroupResourcesAutoscalingGroups {
+}
+
+export function dataAwsEksNodeGroupResourcesAutoscalingGroupsToTerraform(struct?: DataAwsEksNodeGroupResourcesAutoscalingGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksNodeGroupResourcesAutoscalingGroups | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksNodeGroupResourcesAutoscalingGroups | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 }
-export class DataAwsEksNodeGroupResources extends cdktf.ComplexComputedList {
+
+export class DataAwsEksNodeGroupResourcesAutoscalingGroupsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference {
+    return new DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksNodeGroupResources {
+}
+
+export function dataAwsEksNodeGroupResourcesToTerraform(struct?: DataAwsEksNodeGroupResources): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEksNodeGroupResourcesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksNodeGroupResources | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksNodeGroupResources | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // autoscaling_groups - computed: true, optional: false, required: false
+  private _autoscalingGroups = new DataAwsEksNodeGroupResourcesAutoscalingGroupsList(this, "autoscaling_groups", false);
   public get autoscalingGroups() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('autoscaling_groups');
+    return this._autoscalingGroups;
   }
 
   // remote_access_security_group_id - computed: true, optional: false, required: false
@@ -52,7 +204,64 @@ export class DataAwsEksNodeGroupResources extends cdktf.ComplexComputedList {
     return this.getStringAttribute('remote_access_security_group_id');
   }
 }
-export class DataAwsEksNodeGroupScalingConfig extends cdktf.ComplexComputedList {
+
+export class DataAwsEksNodeGroupResourcesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksNodeGroupResourcesOutputReference {
+    return new DataAwsEksNodeGroupResourcesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksNodeGroupScalingConfig {
+}
+
+export function dataAwsEksNodeGroupScalingConfigToTerraform(struct?: DataAwsEksNodeGroupScalingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEksNodeGroupScalingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksNodeGroupScalingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksNodeGroupScalingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // desired_size - computed: true, optional: false, required: false
   public get desiredSize() {
@@ -69,7 +278,64 @@ export class DataAwsEksNodeGroupScalingConfig extends cdktf.ComplexComputedList 
     return this.getNumberAttribute('min_size');
   }
 }
-export class DataAwsEksNodeGroupTaints extends cdktf.ComplexComputedList {
+
+export class DataAwsEksNodeGroupScalingConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksNodeGroupScalingConfigOutputReference {
+    return new DataAwsEksNodeGroupScalingConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEksNodeGroupTaints {
+}
+
+export function dataAwsEksNodeGroupTaintsToTerraform(struct?: DataAwsEksNodeGroupTaints): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEksNodeGroupTaintsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEksNodeGroupTaints | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEksNodeGroupTaints | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // effect - computed: true, optional: false, required: false
   public get effect() {
@@ -87,6 +353,25 @@ export class DataAwsEksNodeGroupTaints extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataAwsEksNodeGroupTaintsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEksNodeGroupTaintsOutputReference {
+    return new DataAwsEksNodeGroupTaintsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/eks_node_group aws_eks_node_group}
 */
@@ -95,7 +380,7 @@ export class DataAwsEksNodeGroup extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_eks_node_group";
+  public static readonly tfResourceType = "aws_eks_node_group";
 
   // ===========
   // INITIALIZER
@@ -112,7 +397,9 @@ export class DataAwsEksNodeGroup extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_eks_node_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -195,18 +482,21 @@ export class DataAwsEksNodeGroup extends cdktf.TerraformDataSource {
   }
 
   // remote_access - computed: true, optional: false, required: false
-  public remoteAccess(index: string) {
-    return new DataAwsEksNodeGroupRemoteAccess(this, 'remote_access', index, false);
+  private _remoteAccess = new DataAwsEksNodeGroupRemoteAccessList(this, "remote_access", false);
+  public get remoteAccess() {
+    return this._remoteAccess;
   }
 
   // resources - computed: true, optional: false, required: false
-  public resources(index: string) {
-    return new DataAwsEksNodeGroupResources(this, 'resources', index, false);
+  private _resources = new DataAwsEksNodeGroupResourcesList(this, "resources", false);
+  public get resources() {
+    return this._resources;
   }
 
   // scaling_config - computed: true, optional: false, required: false
-  public scalingConfig(index: string) {
-    return new DataAwsEksNodeGroupScalingConfig(this, 'scaling_config', index, false);
+  private _scalingConfig = new DataAwsEksNodeGroupScalingConfigList(this, "scaling_config", false);
+  public get scalingConfig() {
+    return this._scalingConfig;
   }
 
   // status - computed: true, optional: false, required: false
@@ -236,8 +526,9 @@ export class DataAwsEksNodeGroup extends cdktf.TerraformDataSource {
   }
 
   // taints - computed: true, optional: false, required: false
-  public taints(index: string) {
-    return new DataAwsEksNodeGroupTaints(this, 'taints', index, false);
+  private _taints = new DataAwsEksNodeGroupTaintsList(this, "taints", false);
+  public get taints() {
+    return this._taints;
   }
 
   // version - computed: true, optional: false, required: false

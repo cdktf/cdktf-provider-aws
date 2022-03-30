@@ -158,10 +158,9 @@ export class Route53DomainsRegisteredDomainAdminContactOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Route53DomainsRegisteredDomainAdminContact | undefined {
@@ -597,10 +596,9 @@ export class Route53DomainsRegisteredDomainRegistrantContactOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Route53DomainsRegisteredDomainRegistrantContact | undefined {
@@ -1014,10 +1012,9 @@ export class Route53DomainsRegisteredDomainTechContactOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Route53DomainsRegisteredDomainTechContact | undefined {
@@ -1371,10 +1368,9 @@ export class Route53DomainsRegisteredDomainTimeoutsOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Route53DomainsRegisteredDomainTimeouts | undefined {
@@ -1445,7 +1441,7 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_route53domains_registered_domain";
+  public static readonly tfResourceType = "aws_route53domains_registered_domain";
 
   // ===========
   // INITIALIZER
@@ -1462,7 +1458,9 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_route53domains_registered_domain',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1669,7 +1667,7 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
   }
 
   // admin_contact - computed: false, optional: true, required: false
-  private _adminContact = new Route53DomainsRegisteredDomainAdminContactOutputReference(this, "admin_contact", true);
+  private _adminContact = new Route53DomainsRegisteredDomainAdminContactOutputReference(this, "admin_contact");
   public get adminContact() {
     return this._adminContact;
   }
@@ -1702,7 +1700,7 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
   }
 
   // registrant_contact - computed: false, optional: true, required: false
-  private _registrantContact = new Route53DomainsRegisteredDomainRegistrantContactOutputReference(this, "registrant_contact", true);
+  private _registrantContact = new Route53DomainsRegisteredDomainRegistrantContactOutputReference(this, "registrant_contact");
   public get registrantContact() {
     return this._registrantContact;
   }
@@ -1718,7 +1716,7 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
   }
 
   // tech_contact - computed: false, optional: true, required: false
-  private _techContact = new Route53DomainsRegisteredDomainTechContactOutputReference(this, "tech_contact", true);
+  private _techContact = new Route53DomainsRegisteredDomainTechContactOutputReference(this, "tech_contact");
   public get techContact() {
     return this._techContact;
   }
@@ -1734,7 +1732,7 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new Route53DomainsRegisteredDomainTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new Route53DomainsRegisteredDomainTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

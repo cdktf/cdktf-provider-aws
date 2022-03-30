@@ -63,10 +63,9 @@ export class CloudwatchEventPermissionConditionOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventPermissionCondition | undefined {
@@ -150,7 +149,7 @@ export class CloudwatchEventPermission extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudwatch_event_permission";
+  public static readonly tfResourceType = "aws_cloudwatch_event_permission";
 
   // ===========
   // INITIALIZER
@@ -167,7 +166,9 @@ export class CloudwatchEventPermission extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_cloudwatch_event_permission',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -249,7 +250,7 @@ export class CloudwatchEventPermission extends cdktf.TerraformResource {
   }
 
   // condition - computed: false, optional: true, required: false
-  private _condition = new CloudwatchEventPermissionConditionOutputReference(this, "condition", true);
+  private _condition = new CloudwatchEventPermissionConditionOutputReference(this, "condition");
   public get condition() {
     return this._condition;
   }

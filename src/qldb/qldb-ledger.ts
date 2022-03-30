@@ -37,7 +37,7 @@ export class QldbLedger extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_qldb_ledger";
+  public static readonly tfResourceType = "aws_qldb_ledger";
 
   // ===========
   // INITIALIZER
@@ -54,7 +54,9 @@ export class QldbLedger extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_qldb_ledger',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

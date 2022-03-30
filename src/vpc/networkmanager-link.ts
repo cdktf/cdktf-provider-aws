@@ -76,10 +76,9 @@ export class NetworkmanagerLinkBandwidthOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): NetworkmanagerLinkBandwidth | undefined {
@@ -174,10 +173,9 @@ export class NetworkmanagerLinkTimeoutsOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): NetworkmanagerLinkTimeouts | undefined {
@@ -270,7 +268,7 @@ export class NetworkmanagerLink extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_networkmanager_link";
+  public static readonly tfResourceType = "aws_networkmanager_link";
 
   // ===========
   // INITIALIZER
@@ -287,7 +285,9 @@ export class NetworkmanagerLink extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_networkmanager_link',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -426,7 +426,7 @@ export class NetworkmanagerLink extends cdktf.TerraformResource {
   }
 
   // bandwidth - computed: false, optional: false, required: true
-  private _bandwidth = new NetworkmanagerLinkBandwidthOutputReference(this, "bandwidth", true);
+  private _bandwidth = new NetworkmanagerLinkBandwidthOutputReference(this, "bandwidth");
   public get bandwidth() {
     return this._bandwidth;
   }
@@ -439,7 +439,7 @@ export class NetworkmanagerLink extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new NetworkmanagerLinkTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new NetworkmanagerLinkTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

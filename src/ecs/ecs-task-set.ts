@@ -174,10 +174,9 @@ export class EcsTaskSetNetworkConfigurationOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EcsTaskSetNetworkConfiguration | undefined {
@@ -286,10 +285,9 @@ export class EcsTaskSetScaleOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EcsTaskSetScale | undefined {
@@ -389,10 +387,9 @@ export class EcsTaskSetServiceRegistriesOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EcsTaskSetServiceRegistries | undefined {
@@ -504,7 +501,7 @@ export class EcsTaskSet extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ecs_task_set";
+  public static readonly tfResourceType = "aws_ecs_task_set";
 
   // ===========
   // INITIALIZER
@@ -521,7 +518,9 @@ export class EcsTaskSet extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_ecs_task_set',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -777,7 +776,7 @@ export class EcsTaskSet extends cdktf.TerraformResource {
   }
 
   // network_configuration - computed: false, optional: true, required: false
-  private _networkConfiguration = new EcsTaskSetNetworkConfigurationOutputReference(this, "network_configuration", true);
+  private _networkConfiguration = new EcsTaskSetNetworkConfigurationOutputReference(this, "network_configuration");
   public get networkConfiguration() {
     return this._networkConfiguration;
   }
@@ -793,7 +792,7 @@ export class EcsTaskSet extends cdktf.TerraformResource {
   }
 
   // scale - computed: false, optional: true, required: false
-  private _scale = new EcsTaskSetScaleOutputReference(this, "scale", true);
+  private _scale = new EcsTaskSetScaleOutputReference(this, "scale");
   public get scale() {
     return this._scale;
   }
@@ -809,7 +808,7 @@ export class EcsTaskSet extends cdktf.TerraformResource {
   }
 
   // service_registries - computed: false, optional: true, required: false
-  private _serviceRegistries = new EcsTaskSetServiceRegistriesOutputReference(this, "service_registries", true);
+  private _serviceRegistries = new EcsTaskSetServiceRegistriesOutputReference(this, "service_registries");
   public get serviceRegistries() {
     return this._serviceRegistries;
   }

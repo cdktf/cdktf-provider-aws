@@ -119,10 +119,9 @@ export class GlueJobCommandOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueJobCommand | undefined {
@@ -226,10 +225,9 @@ export class GlueJobExecutionPropertyOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueJobExecutionProperty | undefined {
@@ -292,10 +290,9 @@ export class GlueJobNotificationPropertyOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueJobNotificationProperty | undefined {
@@ -344,7 +341,7 @@ export class GlueJob extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_glue_job";
+  public static readonly tfResourceType = "aws_glue_job";
 
   // ===========
   // INITIALIZER
@@ -361,7 +358,9 @@ export class GlueJob extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_glue_job',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -637,7 +636,7 @@ export class GlueJob extends cdktf.TerraformResource {
   }
 
   // command - computed: false, optional: false, required: true
-  private _command = new GlueJobCommandOutputReference(this, "command", true);
+  private _command = new GlueJobCommandOutputReference(this, "command");
   public get command() {
     return this._command;
   }
@@ -650,7 +649,7 @@ export class GlueJob extends cdktf.TerraformResource {
   }
 
   // execution_property - computed: false, optional: true, required: false
-  private _executionProperty = new GlueJobExecutionPropertyOutputReference(this, "execution_property", true);
+  private _executionProperty = new GlueJobExecutionPropertyOutputReference(this, "execution_property");
   public get executionProperty() {
     return this._executionProperty;
   }
@@ -666,7 +665,7 @@ export class GlueJob extends cdktf.TerraformResource {
   }
 
   // notification_property - computed: false, optional: true, required: false
-  private _notificationProperty = new GlueJobNotificationPropertyOutputReference(this, "notification_property", true);
+  private _notificationProperty = new GlueJobNotificationPropertyOutputReference(this, "notification_property");
   public get notificationProperty() {
     return this._notificationProperty;
   }

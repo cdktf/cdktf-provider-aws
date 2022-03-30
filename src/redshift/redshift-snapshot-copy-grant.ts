@@ -33,7 +33,7 @@ export class RedshiftSnapshotCopyGrant extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_redshift_snapshot_copy_grant";
+  public static readonly tfResourceType = "aws_redshift_snapshot_copy_grant";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class RedshiftSnapshotCopyGrant extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_redshift_snapshot_copy_grant',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

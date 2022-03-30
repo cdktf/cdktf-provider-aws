@@ -33,7 +33,7 @@ export class BackupVault extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_backup_vault";
+  public static readonly tfResourceType = "aws_backup_vault";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class BackupVault extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_backup_vault',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -110,7 +110,45 @@ export interface MemorydbClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: MemorydbClusterTimeouts;
 }
-export class MemorydbClusterClusterEndpoint extends cdktf.ComplexComputedList {
+export interface MemorydbClusterClusterEndpoint {
+}
+
+export function memorydbClusterClusterEndpointToTerraform(struct?: MemorydbClusterClusterEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MemorydbClusterClusterEndpointOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MemorydbClusterClusterEndpoint | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MemorydbClusterClusterEndpoint | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // address - computed: true, optional: false, required: false
   public get address() {
@@ -122,7 +160,64 @@ export class MemorydbClusterClusterEndpoint extends cdktf.ComplexComputedList {
     return this.getNumberAttribute('port');
   }
 }
-export class MemorydbClusterShardsNodesEndpoint extends cdktf.ComplexComputedList {
+
+export class MemorydbClusterClusterEndpointList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MemorydbClusterClusterEndpointOutputReference {
+    return new MemorydbClusterClusterEndpointOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MemorydbClusterShardsNodesEndpoint {
+}
+
+export function memorydbClusterShardsNodesEndpointToTerraform(struct?: MemorydbClusterShardsNodesEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MemorydbClusterShardsNodesEndpointOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MemorydbClusterShardsNodesEndpoint | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MemorydbClusterShardsNodesEndpoint | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // address - computed: true, optional: false, required: false
   public get address() {
@@ -134,7 +229,64 @@ export class MemorydbClusterShardsNodesEndpoint extends cdktf.ComplexComputedLis
     return this.getNumberAttribute('port');
   }
 }
-export class MemorydbClusterShardsNodes extends cdktf.ComplexComputedList {
+
+export class MemorydbClusterShardsNodesEndpointList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MemorydbClusterShardsNodesEndpointOutputReference {
+    return new MemorydbClusterShardsNodesEndpointOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MemorydbClusterShardsNodes {
+}
+
+export function memorydbClusterShardsNodesToTerraform(struct?: MemorydbClusterShardsNodes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MemorydbClusterShardsNodesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MemorydbClusterShardsNodes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MemorydbClusterShardsNodes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // availability_zone - computed: true, optional: false, required: false
   public get availabilityZone() {
@@ -147,9 +299,9 @@ export class MemorydbClusterShardsNodes extends cdktf.ComplexComputedList {
   }
 
   // endpoint - computed: true, optional: false, required: false
+  private _endpoint = new MemorydbClusterShardsNodesEndpointList(this, "endpoint", false);
   public get endpoint() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('endpoint');
+    return this._endpoint;
   }
 
   // name - computed: true, optional: false, required: false
@@ -157,7 +309,64 @@ export class MemorydbClusterShardsNodes extends cdktf.ComplexComputedList {
     return this.getStringAttribute('name');
   }
 }
-export class MemorydbClusterShards extends cdktf.ComplexComputedList {
+
+export class MemorydbClusterShardsNodesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MemorydbClusterShardsNodesOutputReference {
+    return new MemorydbClusterShardsNodesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MemorydbClusterShards {
+}
+
+export function memorydbClusterShardsToTerraform(struct?: MemorydbClusterShards): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MemorydbClusterShardsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MemorydbClusterShards | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MemorydbClusterShards | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // name - computed: true, optional: false, required: false
   public get name() {
@@ -165,9 +374,9 @@ export class MemorydbClusterShards extends cdktf.ComplexComputedList {
   }
 
   // nodes - computed: true, optional: false, required: false
+  private _nodes = new MemorydbClusterShardsNodesList(this, "nodes", true);
   public get nodes() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('nodes')));
+    return this._nodes;
   }
 
   // num_nodes - computed: true, optional: false, required: false
@@ -178,6 +387,25 @@ export class MemorydbClusterShards extends cdktf.ComplexComputedList {
   // slots - computed: true, optional: false, required: false
   public get slots() {
     return this.getStringAttribute('slots');
+  }
+}
+
+export class MemorydbClusterShardsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MemorydbClusterShardsOutputReference {
+    return new MemorydbClusterShardsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface MemorydbClusterTimeouts {
@@ -213,10 +441,9 @@ export class MemorydbClusterTimeoutsOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MemorydbClusterTimeouts | undefined {
@@ -309,7 +536,7 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_memorydb_cluster";
+  public static readonly tfResourceType = "aws_memorydb_cluster";
 
   // ===========
   // INITIALIZER
@@ -326,7 +553,9 @@ export class MemorydbCluster extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_memorydb_cluster',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -399,8 +628,9 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   }
 
   // cluster_endpoint - computed: true, optional: false, required: false
-  public clusterEndpoint(index: string) {
-    return new MemorydbClusterClusterEndpoint(this, 'cluster_endpoint', index, false);
+  private _clusterEndpoint = new MemorydbClusterClusterEndpointList(this, "cluster_endpoint", false);
+  public get clusterEndpoint() {
+    return this._clusterEndpoint;
   }
 
   // description - computed: false, optional: true, required: false
@@ -619,8 +849,9 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   }
 
   // shards - computed: true, optional: false, required: false
-  public shards(index: string) {
-    return new MemorydbClusterShards(this, 'shards', index, true);
+  private _shards = new MemorydbClusterShardsList(this, "shards", true);
+  public get shards() {
+    return this._shards;
   }
 
   // snapshot_arns - computed: false, optional: true, required: false
@@ -768,7 +999,7 @@ export class MemorydbCluster extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new MemorydbClusterTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new MemorydbClusterTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

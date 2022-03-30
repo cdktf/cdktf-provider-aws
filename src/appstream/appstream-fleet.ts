@@ -109,10 +109,9 @@ export class AppstreamFleetComputeCapacityOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppstreamFleetComputeCapacity | undefined {
@@ -192,10 +191,9 @@ export class AppstreamFleetDomainJoinInfoOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppstreamFleetDomainJoinInfo | undefined {
@@ -285,10 +283,9 @@ export class AppstreamFleetVpcConfigOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppstreamFleetVpcConfig | undefined {
@@ -359,7 +356,7 @@ export class AppstreamFleet extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appstream_fleet";
+  public static readonly tfResourceType = "aws_appstream_fleet";
 
   // ===========
   // INITIALIZER
@@ -376,7 +373,9 @@ export class AppstreamFleet extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_appstream_fleet',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -662,7 +661,7 @@ export class AppstreamFleet extends cdktf.TerraformResource {
   }
 
   // compute_capacity - computed: false, optional: false, required: true
-  private _computeCapacity = new AppstreamFleetComputeCapacityOutputReference(this, "compute_capacity", true);
+  private _computeCapacity = new AppstreamFleetComputeCapacityOutputReference(this, "compute_capacity");
   public get computeCapacity() {
     return this._computeCapacity;
   }
@@ -675,7 +674,7 @@ export class AppstreamFleet extends cdktf.TerraformResource {
   }
 
   // domain_join_info - computed: false, optional: true, required: false
-  private _domainJoinInfo = new AppstreamFleetDomainJoinInfoOutputReference(this, "domain_join_info", true);
+  private _domainJoinInfo = new AppstreamFleetDomainJoinInfoOutputReference(this, "domain_join_info");
   public get domainJoinInfo() {
     return this._domainJoinInfo;
   }
@@ -691,7 +690,7 @@ export class AppstreamFleet extends cdktf.TerraformResource {
   }
 
   // vpc_config - computed: false, optional: true, required: false
-  private _vpcConfig = new AppstreamFleetVpcConfigOutputReference(this, "vpc_config", true);
+  private _vpcConfig = new AppstreamFleetVpcConfigOutputReference(this, "vpc_config");
   public get vpcConfig() {
     return this._vpcConfig;
   }

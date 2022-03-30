@@ -112,10 +112,9 @@ export class AppautoscalingPolicyStepScalingPolicyConfigurationOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppautoscalingPolicyStepScalingPolicyConfiguration | undefined {
@@ -311,10 +310,9 @@ export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomi
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification | undefined {
@@ -462,10 +460,9 @@ export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefi
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification | undefined {
@@ -576,10 +573,9 @@ export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputR
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration | undefined {
@@ -695,7 +691,7 @@ export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputR
   }
 
   // customized_metric_specification - computed: false, optional: true, required: false
-  private _customizedMetricSpecification = new AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationOutputReference(this, "customized_metric_specification", true);
+  private _customizedMetricSpecification = new AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationOutputReference(this, "customized_metric_specification");
   public get customizedMetricSpecification() {
     return this._customizedMetricSpecification;
   }
@@ -711,7 +707,7 @@ export class AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputR
   }
 
   // predefined_metric_specification - computed: false, optional: true, required: false
-  private _predefinedMetricSpecification = new AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecificationOutputReference(this, "predefined_metric_specification", true);
+  private _predefinedMetricSpecification = new AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecificationOutputReference(this, "predefined_metric_specification");
   public get predefinedMetricSpecification() {
     return this._predefinedMetricSpecification;
   }
@@ -735,7 +731,7 @@ export class AppautoscalingPolicy extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appautoscaling_policy";
+  public static readonly tfResourceType = "aws_appautoscaling_policy";
 
   // ===========
   // INITIALIZER
@@ -752,7 +748,9 @@ export class AppautoscalingPolicy extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_appautoscaling_policy',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -851,7 +849,7 @@ export class AppautoscalingPolicy extends cdktf.TerraformResource {
   }
 
   // step_scaling_policy_configuration - computed: false, optional: true, required: false
-  private _stepScalingPolicyConfiguration = new AppautoscalingPolicyStepScalingPolicyConfigurationOutputReference(this, "step_scaling_policy_configuration", true);
+  private _stepScalingPolicyConfiguration = new AppautoscalingPolicyStepScalingPolicyConfigurationOutputReference(this, "step_scaling_policy_configuration");
   public get stepScalingPolicyConfiguration() {
     return this._stepScalingPolicyConfiguration;
   }
@@ -867,7 +865,7 @@ export class AppautoscalingPolicy extends cdktf.TerraformResource {
   }
 
   // target_tracking_scaling_policy_configuration - computed: false, optional: true, required: false
-  private _targetTrackingScalingPolicyConfiguration = new AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputReference(this, "target_tracking_scaling_policy_configuration", true);
+  private _targetTrackingScalingPolicyConfiguration = new AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputReference(this, "target_tracking_scaling_policy_configuration");
   public get targetTrackingScalingPolicyConfiguration() {
     return this._targetTrackingScalingPolicyConfiguration;
   }

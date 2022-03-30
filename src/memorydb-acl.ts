@@ -37,7 +37,7 @@ export class MemorydbAcl extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_memorydb_acl";
+  public static readonly tfResourceType = "aws_memorydb_acl";
 
   // ===========
   // INITIALIZER
@@ -54,7 +54,9 @@ export class MemorydbAcl extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_memorydb_acl',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

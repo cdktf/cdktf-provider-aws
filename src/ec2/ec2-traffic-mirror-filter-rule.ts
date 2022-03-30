@@ -80,10 +80,9 @@ export class Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Ec2TrafficMirrorFilterRuleDestinationPortRange | undefined {
@@ -173,10 +172,9 @@ export class Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Ec2TrafficMirrorFilterRuleSourcePortRange | undefined {
@@ -247,7 +245,7 @@ export class Ec2TrafficMirrorFilterRule extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ec2_traffic_mirror_filter_rule";
+  public static readonly tfResourceType = "aws_ec2_traffic_mirror_filter_rule";
 
   // ===========
   // INITIALIZER
@@ -264,7 +262,9 @@ export class Ec2TrafficMirrorFilterRule extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_traffic_mirror_filter_rule',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -408,7 +408,7 @@ export class Ec2TrafficMirrorFilterRule extends cdktf.TerraformResource {
   }
 
   // destination_port_range - computed: false, optional: true, required: false
-  private _destinationPortRange = new Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference(this, "destination_port_range", true);
+  private _destinationPortRange = new Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference(this, "destination_port_range");
   public get destinationPortRange() {
     return this._destinationPortRange;
   }
@@ -424,7 +424,7 @@ export class Ec2TrafficMirrorFilterRule extends cdktf.TerraformResource {
   }
 
   // source_port_range - computed: false, optional: true, required: false
-  private _sourcePortRange = new Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference(this, "source_port_range", true);
+  private _sourcePortRange = new Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference(this, "source_port_range");
   public get sourcePortRange() {
     return this._sourcePortRange;
   }

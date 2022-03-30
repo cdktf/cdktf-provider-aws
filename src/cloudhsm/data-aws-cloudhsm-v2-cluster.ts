@@ -16,7 +16,45 @@ export interface DataAwsCloudhsmV2ClusterConfig extends cdktf.TerraformMetaArgum
   */
   readonly clusterState?: string;
 }
-export class DataAwsCloudhsmV2ClusterClusterCertificates extends cdktf.ComplexComputedList {
+export interface DataAwsCloudhsmV2ClusterClusterCertificates {
+}
+
+export function dataAwsCloudhsmV2ClusterClusterCertificatesToTerraform(struct?: DataAwsCloudhsmV2ClusterClusterCertificates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsCloudhsmV2ClusterClusterCertificates | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsCloudhsmV2ClusterClusterCertificates | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // aws_hardware_certificate - computed: true, optional: false, required: false
   public get awsHardwareCertificate() {
@@ -44,6 +82,25 @@ export class DataAwsCloudhsmV2ClusterClusterCertificates extends cdktf.ComplexCo
   }
 }
 
+export class DataAwsCloudhsmV2ClusterClusterCertificatesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference {
+    return new DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster}
 */
@@ -52,7 +109,7 @@ export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudhsm_v2_cluster";
+  public static readonly tfResourceType = "aws_cloudhsm_v2_cluster";
 
   // ===========
   // INITIALIZER
@@ -69,7 +126,9 @@ export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_cloudhsm_v2_cluster',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -85,8 +144,9 @@ export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
   // ==========
 
   // cluster_certificates - computed: true, optional: false, required: false
-  public clusterCertificates(index: string) {
-    return new DataAwsCloudhsmV2ClusterClusterCertificates(this, 'cluster_certificates', index, false);
+  private _clusterCertificates = new DataAwsCloudhsmV2ClusterClusterCertificatesList(this, "cluster_certificates", false);
+  public get clusterCertificates() {
+    return this._clusterCertificates;
   }
 
   // cluster_id - computed: false, optional: false, required: true

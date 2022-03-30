@@ -72,10 +72,9 @@ export class CodepipelineWebhookAuthenticationConfigurationOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodepipelineWebhookAuthenticationConfiguration | undefined {
@@ -168,7 +167,7 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_codepipeline_webhook";
+  public static readonly tfResourceType = "aws_codepipeline_webhook";
 
   // ===========
   // INITIALIZER
@@ -185,7 +184,9 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_codepipeline_webhook',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -306,7 +307,7 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
   }
 
   // authentication_configuration - computed: false, optional: true, required: false
-  private _authenticationConfiguration = new CodepipelineWebhookAuthenticationConfigurationOutputReference(this, "authentication_configuration", true);
+  private _authenticationConfiguration = new CodepipelineWebhookAuthenticationConfigurationOutputReference(this, "authentication_configuration");
   public get authenticationConfiguration() {
     return this._authenticationConfiguration;
   }

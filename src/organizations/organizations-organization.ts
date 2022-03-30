@@ -20,7 +20,45 @@ export interface OrganizationsOrganizationConfig extends cdktf.TerraformMetaArgu
   */
   readonly featureSet?: string;
 }
-export class OrganizationsOrganizationAccounts extends cdktf.ComplexComputedList {
+export interface OrganizationsOrganizationAccounts {
+}
+
+export function organizationsOrganizationAccountsToTerraform(struct?: OrganizationsOrganizationAccounts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class OrganizationsOrganizationAccountsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): OrganizationsOrganizationAccounts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OrganizationsOrganizationAccounts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -47,7 +85,64 @@ export class OrganizationsOrganizationAccounts extends cdktf.ComplexComputedList
     return this.getStringAttribute('status');
   }
 }
-export class OrganizationsOrganizationNonMasterAccounts extends cdktf.ComplexComputedList {
+
+export class OrganizationsOrganizationAccountsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OrganizationsOrganizationAccountsOutputReference {
+    return new OrganizationsOrganizationAccountsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface OrganizationsOrganizationNonMasterAccounts {
+}
+
+export function organizationsOrganizationNonMasterAccountsToTerraform(struct?: OrganizationsOrganizationNonMasterAccounts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class OrganizationsOrganizationNonMasterAccountsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): OrganizationsOrganizationNonMasterAccounts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OrganizationsOrganizationNonMasterAccounts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -74,7 +169,64 @@ export class OrganizationsOrganizationNonMasterAccounts extends cdktf.ComplexCom
     return this.getStringAttribute('status');
   }
 }
-export class OrganizationsOrganizationRootsPolicyTypes extends cdktf.ComplexComputedList {
+
+export class OrganizationsOrganizationNonMasterAccountsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OrganizationsOrganizationNonMasterAccountsOutputReference {
+    return new OrganizationsOrganizationNonMasterAccountsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface OrganizationsOrganizationRootsPolicyTypes {
+}
+
+export function organizationsOrganizationRootsPolicyTypesToTerraform(struct?: OrganizationsOrganizationRootsPolicyTypes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class OrganizationsOrganizationRootsPolicyTypesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): OrganizationsOrganizationRootsPolicyTypes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OrganizationsOrganizationRootsPolicyTypes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // status - computed: true, optional: false, required: false
   public get status() {
@@ -86,7 +238,64 @@ export class OrganizationsOrganizationRootsPolicyTypes extends cdktf.ComplexComp
     return this.getStringAttribute('type');
   }
 }
-export class OrganizationsOrganizationRoots extends cdktf.ComplexComputedList {
+
+export class OrganizationsOrganizationRootsPolicyTypesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OrganizationsOrganizationRootsPolicyTypesOutputReference {
+    return new OrganizationsOrganizationRootsPolicyTypesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface OrganizationsOrganizationRoots {
+}
+
+export function organizationsOrganizationRootsToTerraform(struct?: OrganizationsOrganizationRoots): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class OrganizationsOrganizationRootsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): OrganizationsOrganizationRoots | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OrganizationsOrganizationRoots | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -104,9 +313,28 @@ export class OrganizationsOrganizationRoots extends cdktf.ComplexComputedList {
   }
 
   // policy_types - computed: true, optional: false, required: false
+  private _policyTypes = new OrganizationsOrganizationRootsPolicyTypesList(this, "policy_types", false);
   public get policyTypes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('policy_types');
+    return this._policyTypes;
+  }
+}
+
+export class OrganizationsOrganizationRootsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OrganizationsOrganizationRootsOutputReference {
+    return new OrganizationsOrganizationRootsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -118,7 +346,7 @@ export class OrganizationsOrganization extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_organizations_organization";
+  public static readonly tfResourceType = "aws_organizations_organization";
 
   // ===========
   // INITIALIZER
@@ -135,7 +363,9 @@ export class OrganizationsOrganization extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_organizations_organization',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -152,8 +382,9 @@ export class OrganizationsOrganization extends cdktf.TerraformResource {
   // ==========
 
   // accounts - computed: true, optional: false, required: false
-  public accounts(index: string) {
-    return new OrganizationsOrganizationAccounts(this, 'accounts', index, false);
+  private _accounts = new OrganizationsOrganizationAccountsList(this, "accounts", false);
+  public get accounts() {
+    return this._accounts;
   }
 
   // arn - computed: true, optional: false, required: false
@@ -230,13 +461,15 @@ export class OrganizationsOrganization extends cdktf.TerraformResource {
   }
 
   // non_master_accounts - computed: true, optional: false, required: false
-  public nonMasterAccounts(index: string) {
-    return new OrganizationsOrganizationNonMasterAccounts(this, 'non_master_accounts', index, false);
+  private _nonMasterAccounts = new OrganizationsOrganizationNonMasterAccountsList(this, "non_master_accounts", false);
+  public get nonMasterAccounts() {
+    return this._nonMasterAccounts;
   }
 
   // roots - computed: true, optional: false, required: false
-  public roots(index: string) {
-    return new OrganizationsOrganizationRoots(this, 'roots', index, false);
+  private _roots = new OrganizationsOrganizationRootsList(this, "roots", false);
+  public get roots() {
+    return this._roots;
   }
 
   // =========

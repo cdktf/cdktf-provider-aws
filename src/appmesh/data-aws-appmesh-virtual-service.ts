@@ -24,40 +24,268 @@ export interface DataAwsAppmeshVirtualServiceConfig extends cdktf.TerraformMetaA
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsAppmeshVirtualServiceSpecProviderVirtualNode extends cdktf.ComplexComputedList {
+export interface DataAwsAppmeshVirtualServiceSpecProviderVirtualNode {
+}
+
+export function dataAwsAppmeshVirtualServiceSpecProviderVirtualNodeToTerraform(struct?: DataAwsAppmeshVirtualServiceSpecProviderVirtualNode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAppmeshVirtualServiceSpecProviderVirtualNode | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAppmeshVirtualServiceSpecProviderVirtualNode | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // virtual_node_name - computed: true, optional: false, required: false
   public get virtualNodeName() {
     return this.getStringAttribute('virtual_node_name');
   }
 }
-export class DataAwsAppmeshVirtualServiceSpecProviderVirtualRouter extends cdktf.ComplexComputedList {
+
+export class DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeOutputReference {
+    return new DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsAppmeshVirtualServiceSpecProviderVirtualRouter {
+}
+
+export function dataAwsAppmeshVirtualServiceSpecProviderVirtualRouterToTerraform(struct?: DataAwsAppmeshVirtualServiceSpecProviderVirtualRouter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAppmeshVirtualServiceSpecProviderVirtualRouter | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAppmeshVirtualServiceSpecProviderVirtualRouter | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // virtual_router_name - computed: true, optional: false, required: false
   public get virtualRouterName() {
     return this.getStringAttribute('virtual_router_name');
   }
 }
-export class DataAwsAppmeshVirtualServiceSpecProvider extends cdktf.ComplexComputedList {
+
+export class DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference {
+    return new DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsAppmeshVirtualServiceSpecProvider {
+}
+
+export function dataAwsAppmeshVirtualServiceSpecProviderToTerraform(struct?: DataAwsAppmeshVirtualServiceSpecProvider): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAppmeshVirtualServiceSpecProviderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAppmeshVirtualServiceSpecProvider | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAppmeshVirtualServiceSpecProvider | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // virtual_node - computed: true, optional: false, required: false
+  private _virtualNode = new DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeList(this, "virtual_node", false);
   public get virtualNode() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('virtual_node');
+    return this._virtualNode;
   }
 
   // virtual_router - computed: true, optional: false, required: false
+  private _virtualRouter = new DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterList(this, "virtual_router", false);
   public get virtualRouter() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('virtual_router');
+    return this._virtualRouter;
   }
 }
-export class DataAwsAppmeshVirtualServiceSpec extends cdktf.ComplexComputedList {
+
+export class DataAwsAppmeshVirtualServiceSpecProviderList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAppmeshVirtualServiceSpecProviderOutputReference {
+    return new DataAwsAppmeshVirtualServiceSpecProviderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsAppmeshVirtualServiceSpec {
+}
+
+export function dataAwsAppmeshVirtualServiceSpecToTerraform(struct?: DataAwsAppmeshVirtualServiceSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAppmeshVirtualServiceSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAppmeshVirtualServiceSpec | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAppmeshVirtualServiceSpec | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // provider - computed: true, optional: false, required: false
+  private _provider = new DataAwsAppmeshVirtualServiceSpecProviderList(this, "provider", false);
   public get provider() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('provider');
+    return this._provider;
+  }
+}
+
+export class DataAwsAppmeshVirtualServiceSpecList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAppmeshVirtualServiceSpecOutputReference {
+    return new DataAwsAppmeshVirtualServiceSpecOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -69,7 +297,7 @@ export class DataAwsAppmeshVirtualService extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appmesh_virtual_service";
+  public static readonly tfResourceType = "aws_appmesh_virtual_service";
 
   // ===========
   // INITIALIZER
@@ -86,7 +314,9 @@ export class DataAwsAppmeshVirtualService extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_appmesh_virtual_service',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -171,8 +401,9 @@ export class DataAwsAppmeshVirtualService extends cdktf.TerraformDataSource {
   }
 
   // spec - computed: true, optional: false, required: false
-  public spec(index: string) {
-    return new DataAwsAppmeshVirtualServiceSpec(this, 'spec', index, false);
+  private _spec = new DataAwsAppmeshVirtualServiceSpecList(this, "spec", false);
+  public get spec() {
+    return this._spec;
   }
 
   // tags - computed: false, optional: true, required: false

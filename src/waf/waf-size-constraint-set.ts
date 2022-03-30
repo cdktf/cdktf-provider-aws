@@ -46,10 +46,9 @@ export class WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): WafSizeConstraintSetSizeConstraintsFieldToMatch | undefined {
@@ -151,7 +150,7 @@ export class WafSizeConstraintSet extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_waf_size_constraint_set";
+  public static readonly tfResourceType = "aws_waf_size_constraint_set";
 
   // ===========
   // INITIALIZER
@@ -168,7 +167,9 @@ export class WafSizeConstraintSet extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_waf_size_constraint_set',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

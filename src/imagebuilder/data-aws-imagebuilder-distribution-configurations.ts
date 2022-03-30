@@ -45,7 +45,7 @@ export class DataAwsImagebuilderDistributionConfigurations extends cdktf.Terrafo
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_imagebuilder_distribution_configurations";
+  public static readonly tfResourceType = "aws_imagebuilder_distribution_configurations";
 
   // ===========
   // INITIALIZER
@@ -62,7 +62,9 @@ export class DataAwsImagebuilderDistributionConfigurations extends cdktf.Terrafo
     super(scope, id, {
       terraformResourceType: 'aws_imagebuilder_distribution_configurations',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -70,10 +70,9 @@ export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): BatchComputeEnvironmentComputeResourcesEc2Configuration | undefined {
@@ -168,10 +167,9 @@ export class BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReferenc
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): BatchComputeEnvironmentComputeResourcesLaunchTemplate | undefined {
@@ -357,10 +355,9 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): BatchComputeEnvironmentComputeResources | undefined {
@@ -687,7 +684,7 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
   }
 
   // ec2_configuration - computed: false, optional: true, required: false
-  private _ec2Configuration = new BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference(this, "ec2_configuration", true);
+  private _ec2Configuration = new BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference(this, "ec2_configuration");
   public get ec2Configuration() {
     return this._ec2Configuration;
   }
@@ -703,7 +700,7 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
   }
 
   // launch_template - computed: false, optional: true, required: false
-  private _launchTemplate = new BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference(this, "launch_template", true);
+  private _launchTemplate = new BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReference(this, "launch_template");
   public get launchTemplate() {
     return this._launchTemplate;
   }
@@ -727,7 +724,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_batch_compute_environment";
+  public static readonly tfResourceType = "aws_batch_compute_environment";
 
   // ===========
   // INITIALIZER
@@ -744,7 +741,9 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_batch_compute_environment',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -900,7 +899,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
   }
 
   // compute_resources - computed: false, optional: true, required: false
-  private _computeResources = new BatchComputeEnvironmentComputeResourcesOutputReference(this, "compute_resources", true);
+  private _computeResources = new BatchComputeEnvironmentComputeResourcesOutputReference(this, "compute_resources");
   public get computeResources() {
     return this._computeResources;
   }

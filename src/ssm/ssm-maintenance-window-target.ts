@@ -65,7 +65,7 @@ export class SsmMaintenanceWindowTarget extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ssm_maintenance_window_target";
+  public static readonly tfResourceType = "aws_ssm_maintenance_window_target";
 
   // ===========
   // INITIALIZER
@@ -82,7 +82,9 @@ export class SsmMaintenanceWindowTarget extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_ssm_maintenance_window_target',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -25,7 +25,7 @@ export class ConfigConfigurationRecorderStatus extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_config_configuration_recorder_status";
+  public static readonly tfResourceType = "aws_config_configuration_recorder_status";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class ConfigConfigurationRecorderStatus extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_config_configuration_recorder_status',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

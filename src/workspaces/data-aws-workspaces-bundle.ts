@@ -20,25 +20,196 @@ export interface DataAwsWorkspacesBundleConfig extends cdktf.TerraformMetaArgume
   */
   readonly owner?: string;
 }
-export class DataAwsWorkspacesBundleComputeType extends cdktf.ComplexComputedList {
+export interface DataAwsWorkspacesBundleComputeType {
+}
+
+export function dataAwsWorkspacesBundleComputeTypeToTerraform(struct?: DataAwsWorkspacesBundleComputeType): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsWorkspacesBundleComputeTypeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsWorkspacesBundleComputeType | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsWorkspacesBundleComputeType | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 }
-export class DataAwsWorkspacesBundleRootStorage extends cdktf.ComplexComputedList {
+
+export class DataAwsWorkspacesBundleComputeTypeList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsWorkspacesBundleComputeTypeOutputReference {
+    return new DataAwsWorkspacesBundleComputeTypeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsWorkspacesBundleRootStorage {
+}
+
+export function dataAwsWorkspacesBundleRootStorageToTerraform(struct?: DataAwsWorkspacesBundleRootStorage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsWorkspacesBundleRootStorageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsWorkspacesBundleRootStorage | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsWorkspacesBundleRootStorage | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // capacity - computed: true, optional: false, required: false
   public get capacity() {
     return this.getStringAttribute('capacity');
   }
 }
-export class DataAwsWorkspacesBundleUserStorage extends cdktf.ComplexComputedList {
+
+export class DataAwsWorkspacesBundleRootStorageList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsWorkspacesBundleRootStorageOutputReference {
+    return new DataAwsWorkspacesBundleRootStorageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsWorkspacesBundleUserStorage {
+}
+
+export function dataAwsWorkspacesBundleUserStorageToTerraform(struct?: DataAwsWorkspacesBundleUserStorage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsWorkspacesBundleUserStorageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsWorkspacesBundleUserStorage | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsWorkspacesBundleUserStorage | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // capacity - computed: true, optional: false, required: false
   public get capacity() {
     return this.getStringAttribute('capacity');
+  }
+}
+
+export class DataAwsWorkspacesBundleUserStorageList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsWorkspacesBundleUserStorageOutputReference {
+    return new DataAwsWorkspacesBundleUserStorageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -50,7 +221,7 @@ export class DataAwsWorkspacesBundle extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_workspaces_bundle";
+  public static readonly tfResourceType = "aws_workspaces_bundle";
 
   // ===========
   // INITIALIZER
@@ -67,7 +238,9 @@ export class DataAwsWorkspacesBundle extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_workspaces_bundle',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -100,8 +273,9 @@ export class DataAwsWorkspacesBundle extends cdktf.TerraformDataSource {
   }
 
   // compute_type - computed: true, optional: false, required: false
-  public computeType(index: string) {
-    return new DataAwsWorkspacesBundleComputeType(this, 'compute_type', index, false);
+  private _computeType = new DataAwsWorkspacesBundleComputeTypeList(this, "compute_type", false);
+  public get computeType() {
+    return this._computeType;
   }
 
   // description - computed: true, optional: false, required: false
@@ -147,13 +321,15 @@ export class DataAwsWorkspacesBundle extends cdktf.TerraformDataSource {
   }
 
   // root_storage - computed: true, optional: false, required: false
-  public rootStorage(index: string) {
-    return new DataAwsWorkspacesBundleRootStorage(this, 'root_storage', index, false);
+  private _rootStorage = new DataAwsWorkspacesBundleRootStorageList(this, "root_storage", false);
+  public get rootStorage() {
+    return this._rootStorage;
   }
 
   // user_storage - computed: true, optional: false, required: false
-  public userStorage(index: string) {
-    return new DataAwsWorkspacesBundleUserStorage(this, 'user_storage', index, false);
+  private _userStorage = new DataAwsWorkspacesBundleUserStorageList(this, "user_storage", false);
+  public get userStorage() {
+    return this._userStorage;
   }
 
   // =========

@@ -57,7 +57,7 @@ export class StoragegatewayStoredIscsiVolume extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_storagegateway_stored_iscsi_volume";
+  public static readonly tfResourceType = "aws_storagegateway_stored_iscsi_volume";
 
   // ===========
   // INITIALIZER
@@ -74,7 +74,9 @@ export class StoragegatewayStoredIscsiVolume extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_storagegateway_stored_iscsi_volume',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

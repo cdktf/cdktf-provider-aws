@@ -12,7 +12,45 @@ export interface DataAwsLakeformationDataLakeSettingsConfig extends cdktf.Terraf
   */
   readonly catalogId?: string;
 }
-export class DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions extends cdktf.ComplexComputedList {
+export interface DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions {
+}
+
+export function dataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToTerraform(struct?: DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // permissions - computed: true, optional: false, required: false
   public get permissions() {
@@ -24,7 +62,64 @@ export class DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermission
     return this.getStringAttribute('principal');
   }
 }
-export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions extends cdktf.ComplexComputedList {
+
+export class DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference {
+    return new DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions {
+}
+
+export function dataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsToTerraform(struct?: DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // permissions - computed: true, optional: false, required: false
   public get permissions() {
@@ -34,6 +129,25 @@ export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions e
   // principal - computed: true, optional: false, required: false
   public get principal() {
     return this.getStringAttribute('principal');
+  }
+}
+
+export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference {
+    return new DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -45,7 +159,7 @@ export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSou
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_lakeformation_data_lake_settings";
+  public static readonly tfResourceType = "aws_lakeformation_data_lake_settings";
 
   // ===========
   // INITIALIZER
@@ -62,7 +176,9 @@ export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSou
     super(scope, id, {
       terraformResourceType: 'aws_lakeformation_data_lake_settings',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -98,13 +214,15 @@ export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSou
   }
 
   // create_database_default_permissions - computed: true, optional: false, required: false
-  public createDatabaseDefaultPermissions(index: string) {
-    return new DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions(this, 'create_database_default_permissions', index, false);
+  private _createDatabaseDefaultPermissions = new DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList(this, "create_database_default_permissions", false);
+  public get createDatabaseDefaultPermissions() {
+    return this._createDatabaseDefaultPermissions;
   }
 
   // create_table_default_permissions - computed: true, optional: false, required: false
-  public createTableDefaultPermissions(index: string) {
-    return new DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions(this, 'create_table_default_permissions', index, false);
+  private _createTableDefaultPermissions = new DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsList(this, "create_table_default_permissions", false);
+  public get createTableDefaultPermissions() {
+    return this._createTableDefaultPermissions;
   }
 
   // id - computed: true, optional: true, required: false

@@ -83,10 +83,9 @@ export class ConnectQueueOutboundCallerConfigOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConnectQueueOutboundCallerConfig | undefined {
@@ -179,7 +178,7 @@ export class ConnectQueue extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_connect_queue";
+  public static readonly tfResourceType = "aws_connect_queue";
 
   // ===========
   // INITIALIZER
@@ -196,7 +195,9 @@ export class ConnectQueue extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_connect_queue',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -375,7 +376,7 @@ export class ConnectQueue extends cdktf.TerraformResource {
   }
 
   // outbound_caller_config - computed: false, optional: true, required: false
-  private _outboundCallerConfig = new ConnectQueueOutboundCallerConfigOutputReference(this, "outbound_caller_config", true);
+  private _outboundCallerConfig = new ConnectQueueOutboundCallerConfigOutputReference(this, "outbound_caller_config");
   public get outboundCallerConfig() {
     return this._outboundCallerConfig;
   }

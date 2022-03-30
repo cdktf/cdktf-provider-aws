@@ -100,10 +100,9 @@ export class EbsSnapshotImportClientDataOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EbsSnapshotImportClientData | undefined {
@@ -237,10 +236,9 @@ export class EbsSnapshotImportDiskContainerUserBucketOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EbsSnapshotImportDiskContainerUserBucket | undefined {
@@ -336,10 +334,9 @@ export class EbsSnapshotImportDiskContainerOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EbsSnapshotImportDiskContainer | undefined {
@@ -427,7 +424,7 @@ export class EbsSnapshotImportDiskContainerOutputReference extends cdktf.Complex
   }
 
   // user_bucket - computed: false, optional: true, required: false
-  private _userBucket = new EbsSnapshotImportDiskContainerUserBucketOutputReference(this, "user_bucket", true);
+  private _userBucket = new EbsSnapshotImportDiskContainerUserBucketOutputReference(this, "user_bucket");
   public get userBucket() {
     return this._userBucket;
   }
@@ -470,10 +467,9 @@ export class EbsSnapshotImportTimeoutsOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EbsSnapshotImportTimeouts | undefined {
@@ -544,7 +540,7 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ebs_snapshot_import";
+  public static readonly tfResourceType = "aws_ebs_snapshot_import";
 
   // ===========
   // INITIALIZER
@@ -561,7 +557,9 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_ebs_snapshot_import',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -771,7 +769,7 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
   }
 
   // client_data - computed: false, optional: true, required: false
-  private _clientData = new EbsSnapshotImportClientDataOutputReference(this, "client_data", true);
+  private _clientData = new EbsSnapshotImportClientDataOutputReference(this, "client_data");
   public get clientData() {
     return this._clientData;
   }
@@ -787,7 +785,7 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
   }
 
   // disk_container - computed: false, optional: false, required: true
-  private _diskContainer = new EbsSnapshotImportDiskContainerOutputReference(this, "disk_container", true);
+  private _diskContainer = new EbsSnapshotImportDiskContainerOutputReference(this, "disk_container");
   public get diskContainer() {
     return this._diskContainer;
   }
@@ -800,7 +798,7 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new EbsSnapshotImportTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new EbsSnapshotImportTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

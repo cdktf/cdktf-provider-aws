@@ -69,10 +69,9 @@ export class AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncFunctionSyncConfigLambdaConflictHandlerConfig | undefined {
@@ -147,10 +146,9 @@ export class AppsyncFunctionSyncConfigOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncFunctionSyncConfig | undefined {
@@ -219,7 +217,7 @@ export class AppsyncFunctionSyncConfigOutputReference extends cdktf.ComplexObjec
   }
 
   // lambda_conflict_handler_config - computed: false, optional: true, required: false
-  private _lambdaConflictHandlerConfig = new AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference(this, "lambda_conflict_handler_config", true);
+  private _lambdaConflictHandlerConfig = new AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference(this, "lambda_conflict_handler_config");
   public get lambdaConflictHandlerConfig() {
     return this._lambdaConflictHandlerConfig;
   }
@@ -243,7 +241,7 @@ export class AppsyncFunction extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appsync_function";
+  public static readonly tfResourceType = "aws_appsync_function";
 
   // ===========
   // INITIALIZER
@@ -260,7 +258,9 @@ export class AppsyncFunction extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_appsync_function',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -411,7 +411,7 @@ export class AppsyncFunction extends cdktf.TerraformResource {
   }
 
   // sync_config - computed: false, optional: true, required: false
-  private _syncConfig = new AppsyncFunctionSyncConfigOutputReference(this, "sync_config", true);
+  private _syncConfig = new AppsyncFunctionSyncConfigOutputReference(this, "sync_config");
   public get syncConfig() {
     return this._syncConfig;
   }

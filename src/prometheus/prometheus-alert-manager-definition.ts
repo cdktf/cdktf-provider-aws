@@ -25,7 +25,7 @@ export class PrometheusAlertManagerDefinition extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_prometheus_alert_manager_definition";
+  public static readonly tfResourceType = "aws_prometheus_alert_manager_definition";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class PrometheusAlertManagerDefinition extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_prometheus_alert_manager_definition',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

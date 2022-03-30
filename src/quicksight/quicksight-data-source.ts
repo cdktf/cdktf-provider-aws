@@ -90,10 +90,9 @@ export class QuicksightDataSourceCredentialsCredentialPairOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceCredentialsCredentialPair | undefined {
@@ -179,10 +178,9 @@ export class QuicksightDataSourceCredentialsOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceCredentials | undefined {
@@ -229,7 +227,7 @@ export class QuicksightDataSourceCredentialsOutputReference extends cdktf.Comple
   }
 
   // credential_pair - computed: false, optional: true, required: false
-  private _credentialPair = new QuicksightDataSourceCredentialsCredentialPairOutputReference(this, "credential_pair", true);
+  private _credentialPair = new QuicksightDataSourceCredentialsCredentialPairOutputReference(this, "credential_pair");
   public get credentialPair() {
     return this._credentialPair;
   }
@@ -267,10 +265,9 @@ export class QuicksightDataSourceParametersAmazonElasticsearchOutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersAmazonElasticsearch | undefined {
@@ -330,10 +327,9 @@ export class QuicksightDataSourceParametersAthenaOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersAthena | undefined {
@@ -406,10 +402,9 @@ export class QuicksightDataSourceParametersAuroraOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersAurora | undefined {
@@ -517,10 +512,9 @@ export class QuicksightDataSourceParametersAuroraPostgresqlOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersAuroraPostgresql | undefined {
@@ -618,10 +612,9 @@ export class QuicksightDataSourceParametersAwsIotAnalyticsOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersAwsIotAnalytics | undefined {
@@ -681,10 +674,9 @@ export class QuicksightDataSourceParametersJiraOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersJira | undefined {
@@ -754,10 +746,9 @@ export class QuicksightDataSourceParametersMariaDbOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersMariaDb | undefined {
@@ -865,10 +856,9 @@ export class QuicksightDataSourceParametersMysqlOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersMysql | undefined {
@@ -976,10 +966,9 @@ export class QuicksightDataSourceParametersOracleOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersOracle | undefined {
@@ -1087,10 +1076,9 @@ export class QuicksightDataSourceParametersPostgresqlOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersPostgresql | undefined {
@@ -1198,10 +1186,9 @@ export class QuicksightDataSourceParametersPrestoOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersPresto | undefined {
@@ -1304,10 +1291,9 @@ export class QuicksightDataSourceParametersRdsOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersRds | undefined {
@@ -1401,10 +1387,9 @@ export class QuicksightDataSourceParametersRedshiftOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersRedshift | undefined {
@@ -1535,10 +1520,9 @@ export class QuicksightDataSourceParametersS3ManifestFileLocationOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersS3ManifestFileLocation | undefined {
@@ -1619,10 +1603,9 @@ export class QuicksightDataSourceParametersS3OutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersS3 | undefined {
@@ -1647,7 +1630,7 @@ export class QuicksightDataSourceParametersS3OutputReference extends cdktf.Compl
   }
 
   // manifest_file_location - computed: false, optional: false, required: true
-  private _manifestFileLocation = new QuicksightDataSourceParametersS3ManifestFileLocationOutputReference(this, "manifest_file_location", true);
+  private _manifestFileLocation = new QuicksightDataSourceParametersS3ManifestFileLocationOutputReference(this, "manifest_file_location");
   public get manifestFileLocation() {
     return this._manifestFileLocation;
   }
@@ -1682,10 +1665,9 @@ export class QuicksightDataSourceParametersServiceNowOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersServiceNow | undefined {
@@ -1755,10 +1737,9 @@ export class QuicksightDataSourceParametersSnowflakeOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersSnowflake | undefined {
@@ -1861,10 +1842,9 @@ export class QuicksightDataSourceParametersSparkOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersSpark | undefined {
@@ -1953,10 +1933,9 @@ export class QuicksightDataSourceParametersSqlServerOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersSqlServer | undefined {
@@ -2064,10 +2043,9 @@ export class QuicksightDataSourceParametersTeradataOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersTeradata | undefined {
@@ -2170,10 +2148,9 @@ export class QuicksightDataSourceParametersTwitterOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParametersTwitter | undefined {
@@ -2387,10 +2364,9 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceParameters | undefined {
@@ -2529,7 +2505,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // amazon_elasticsearch - computed: false, optional: true, required: false
-  private _amazonElasticsearch = new QuicksightDataSourceParametersAmazonElasticsearchOutputReference(this, "amazon_elasticsearch", true);
+  private _amazonElasticsearch = new QuicksightDataSourceParametersAmazonElasticsearchOutputReference(this, "amazon_elasticsearch");
   public get amazonElasticsearch() {
     return this._amazonElasticsearch;
   }
@@ -2545,7 +2521,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // athena - computed: false, optional: true, required: false
-  private _athena = new QuicksightDataSourceParametersAthenaOutputReference(this, "athena", true);
+  private _athena = new QuicksightDataSourceParametersAthenaOutputReference(this, "athena");
   public get athena() {
     return this._athena;
   }
@@ -2561,7 +2537,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // aurora - computed: false, optional: true, required: false
-  private _aurora = new QuicksightDataSourceParametersAuroraOutputReference(this, "aurora", true);
+  private _aurora = new QuicksightDataSourceParametersAuroraOutputReference(this, "aurora");
   public get aurora() {
     return this._aurora;
   }
@@ -2577,7 +2553,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // aurora_postgresql - computed: false, optional: true, required: false
-  private _auroraPostgresql = new QuicksightDataSourceParametersAuroraPostgresqlOutputReference(this, "aurora_postgresql", true);
+  private _auroraPostgresql = new QuicksightDataSourceParametersAuroraPostgresqlOutputReference(this, "aurora_postgresql");
   public get auroraPostgresql() {
     return this._auroraPostgresql;
   }
@@ -2593,7 +2569,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // aws_iot_analytics - computed: false, optional: true, required: false
-  private _awsIotAnalytics = new QuicksightDataSourceParametersAwsIotAnalyticsOutputReference(this, "aws_iot_analytics", true);
+  private _awsIotAnalytics = new QuicksightDataSourceParametersAwsIotAnalyticsOutputReference(this, "aws_iot_analytics");
   public get awsIotAnalytics() {
     return this._awsIotAnalytics;
   }
@@ -2609,7 +2585,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // jira - computed: false, optional: true, required: false
-  private _jira = new QuicksightDataSourceParametersJiraOutputReference(this, "jira", true);
+  private _jira = new QuicksightDataSourceParametersJiraOutputReference(this, "jira");
   public get jira() {
     return this._jira;
   }
@@ -2625,7 +2601,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // maria_db - computed: false, optional: true, required: false
-  private _mariaDb = new QuicksightDataSourceParametersMariaDbOutputReference(this, "maria_db", true);
+  private _mariaDb = new QuicksightDataSourceParametersMariaDbOutputReference(this, "maria_db");
   public get mariaDb() {
     return this._mariaDb;
   }
@@ -2641,7 +2617,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // mysql - computed: false, optional: true, required: false
-  private _mysql = new QuicksightDataSourceParametersMysqlOutputReference(this, "mysql", true);
+  private _mysql = new QuicksightDataSourceParametersMysqlOutputReference(this, "mysql");
   public get mysql() {
     return this._mysql;
   }
@@ -2657,7 +2633,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // oracle - computed: false, optional: true, required: false
-  private _oracle = new QuicksightDataSourceParametersOracleOutputReference(this, "oracle", true);
+  private _oracle = new QuicksightDataSourceParametersOracleOutputReference(this, "oracle");
   public get oracle() {
     return this._oracle;
   }
@@ -2673,7 +2649,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // postgresql - computed: false, optional: true, required: false
-  private _postgresql = new QuicksightDataSourceParametersPostgresqlOutputReference(this, "postgresql", true);
+  private _postgresql = new QuicksightDataSourceParametersPostgresqlOutputReference(this, "postgresql");
   public get postgresql() {
     return this._postgresql;
   }
@@ -2689,7 +2665,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // presto - computed: false, optional: true, required: false
-  private _presto = new QuicksightDataSourceParametersPrestoOutputReference(this, "presto", true);
+  private _presto = new QuicksightDataSourceParametersPrestoOutputReference(this, "presto");
   public get presto() {
     return this._presto;
   }
@@ -2705,7 +2681,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // rds - computed: false, optional: true, required: false
-  private _rds = new QuicksightDataSourceParametersRdsOutputReference(this, "rds", true);
+  private _rds = new QuicksightDataSourceParametersRdsOutputReference(this, "rds");
   public get rds() {
     return this._rds;
   }
@@ -2721,7 +2697,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // redshift - computed: false, optional: true, required: false
-  private _redshift = new QuicksightDataSourceParametersRedshiftOutputReference(this, "redshift", true);
+  private _redshift = new QuicksightDataSourceParametersRedshiftOutputReference(this, "redshift");
   public get redshift() {
     return this._redshift;
   }
@@ -2737,7 +2713,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // s3 - computed: false, optional: true, required: false
-  private _s3 = new QuicksightDataSourceParametersS3OutputReference(this, "s3", true);
+  private _s3 = new QuicksightDataSourceParametersS3OutputReference(this, "s3");
   public get s3() {
     return this._s3;
   }
@@ -2753,7 +2729,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // service_now - computed: false, optional: true, required: false
-  private _serviceNow = new QuicksightDataSourceParametersServiceNowOutputReference(this, "service_now", true);
+  private _serviceNow = new QuicksightDataSourceParametersServiceNowOutputReference(this, "service_now");
   public get serviceNow() {
     return this._serviceNow;
   }
@@ -2769,7 +2745,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // snowflake - computed: false, optional: true, required: false
-  private _snowflake = new QuicksightDataSourceParametersSnowflakeOutputReference(this, "snowflake", true);
+  private _snowflake = new QuicksightDataSourceParametersSnowflakeOutputReference(this, "snowflake");
   public get snowflake() {
     return this._snowflake;
   }
@@ -2785,7 +2761,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // spark - computed: false, optional: true, required: false
-  private _spark = new QuicksightDataSourceParametersSparkOutputReference(this, "spark", true);
+  private _spark = new QuicksightDataSourceParametersSparkOutputReference(this, "spark");
   public get spark() {
     return this._spark;
   }
@@ -2801,7 +2777,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // sql_server - computed: false, optional: true, required: false
-  private _sqlServer = new QuicksightDataSourceParametersSqlServerOutputReference(this, "sql_server", true);
+  private _sqlServer = new QuicksightDataSourceParametersSqlServerOutputReference(this, "sql_server");
   public get sqlServer() {
     return this._sqlServer;
   }
@@ -2817,7 +2793,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // teradata - computed: false, optional: true, required: false
-  private _teradata = new QuicksightDataSourceParametersTeradataOutputReference(this, "teradata", true);
+  private _teradata = new QuicksightDataSourceParametersTeradataOutputReference(this, "teradata");
   public get teradata() {
     return this._teradata;
   }
@@ -2833,7 +2809,7 @@ export class QuicksightDataSourceParametersOutputReference extends cdktf.Complex
   }
 
   // twitter - computed: false, optional: true, required: false
-  private _twitter = new QuicksightDataSourceParametersTwitterOutputReference(this, "twitter", true);
+  private _twitter = new QuicksightDataSourceParametersTwitterOutputReference(this, "twitter");
   public get twitter() {
     return this._twitter;
   }
@@ -2893,10 +2869,9 @@ export class QuicksightDataSourceSslPropertiesOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceSslProperties | undefined {
@@ -2956,10 +2931,9 @@ export class QuicksightDataSourceVpcConnectionPropertiesOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): QuicksightDataSourceVpcConnectionProperties | undefined {
@@ -3005,7 +2979,7 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_quicksight_data_source";
+  public static readonly tfResourceType = "aws_quicksight_data_source";
 
   // ===========
   // INITIALIZER
@@ -3022,7 +2996,9 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_quicksight_data_source',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -3144,7 +3120,7 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   }
 
   // credentials - computed: false, optional: true, required: false
-  private _credentials = new QuicksightDataSourceCredentialsOutputReference(this, "credentials", true);
+  private _credentials = new QuicksightDataSourceCredentialsOutputReference(this, "credentials");
   public get credentials() {
     return this._credentials;
   }
@@ -3160,7 +3136,7 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   }
 
   // parameters - computed: false, optional: false, required: true
-  private _parameters = new QuicksightDataSourceParametersOutputReference(this, "parameters", true);
+  private _parameters = new QuicksightDataSourceParametersOutputReference(this, "parameters");
   public get parameters() {
     return this._parameters;
   }
@@ -3190,7 +3166,7 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   }
 
   // ssl_properties - computed: false, optional: true, required: false
-  private _sslProperties = new QuicksightDataSourceSslPropertiesOutputReference(this, "ssl_properties", true);
+  private _sslProperties = new QuicksightDataSourceSslPropertiesOutputReference(this, "ssl_properties");
   public get sslProperties() {
     return this._sslProperties;
   }
@@ -3206,7 +3182,7 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   }
 
   // vpc_connection_properties - computed: false, optional: true, required: false
-  private _vpcConnectionProperties = new QuicksightDataSourceVpcConnectionPropertiesOutputReference(this, "vpc_connection_properties", true);
+  private _vpcConnectionProperties = new QuicksightDataSourceVpcConnectionPropertiesOutputReference(this, "vpc_connection_properties");
   public get vpcConnectionProperties() {
     return this._vpcConnectionProperties;
   }

@@ -65,10 +65,9 @@ export class RedshiftScheduledActionTargetActionPauseClusterOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RedshiftScheduledActionTargetActionPauseCluster | undefined {
@@ -148,10 +147,9 @@ export class RedshiftScheduledActionTargetActionResizeClusterOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RedshiftScheduledActionTargetActionResizeCluster | undefined {
@@ -299,10 +297,9 @@ export class RedshiftScheduledActionTargetActionResumeClusterOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RedshiftScheduledActionTargetActionResumeCluster | undefined {
@@ -378,10 +375,9 @@ export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RedshiftScheduledActionTargetAction | undefined {
@@ -418,7 +414,7 @@ export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.Co
   }
 
   // pause_cluster - computed: false, optional: true, required: false
-  private _pauseCluster = new RedshiftScheduledActionTargetActionPauseClusterOutputReference(this, "pause_cluster", true);
+  private _pauseCluster = new RedshiftScheduledActionTargetActionPauseClusterOutputReference(this, "pause_cluster");
   public get pauseCluster() {
     return this._pauseCluster;
   }
@@ -434,7 +430,7 @@ export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.Co
   }
 
   // resize_cluster - computed: false, optional: true, required: false
-  private _resizeCluster = new RedshiftScheduledActionTargetActionResizeClusterOutputReference(this, "resize_cluster", true);
+  private _resizeCluster = new RedshiftScheduledActionTargetActionResizeClusterOutputReference(this, "resize_cluster");
   public get resizeCluster() {
     return this._resizeCluster;
   }
@@ -450,7 +446,7 @@ export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.Co
   }
 
   // resume_cluster - computed: false, optional: true, required: false
-  private _resumeCluster = new RedshiftScheduledActionTargetActionResumeClusterOutputReference(this, "resume_cluster", true);
+  private _resumeCluster = new RedshiftScheduledActionTargetActionResumeClusterOutputReference(this, "resume_cluster");
   public get resumeCluster() {
     return this._resumeCluster;
   }
@@ -474,7 +470,7 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_redshift_scheduled_action";
+  public static readonly tfResourceType = "aws_redshift_scheduled_action";
 
   // ===========
   // INITIALIZER
@@ -491,7 +487,9 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_redshift_scheduled_action',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -621,7 +619,7 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
   }
 
   // target_action - computed: false, optional: false, required: true
-  private _targetAction = new RedshiftScheduledActionTargetActionOutputReference(this, "target_action", true);
+  private _targetAction = new RedshiftScheduledActionTargetActionOutputReference(this, "target_action");
   public get targetAction() {
     return this._targetAction;
   }

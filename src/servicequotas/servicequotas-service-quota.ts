@@ -29,7 +29,7 @@ export class ServicequotasServiceQuota extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_servicequotas_service_quota";
+  public static readonly tfResourceType = "aws_servicequotas_service_quota";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class ServicequotasServiceQuota extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_servicequotas_service_quota',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

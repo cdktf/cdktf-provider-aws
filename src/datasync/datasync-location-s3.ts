@@ -61,10 +61,9 @@ export class DatasyncLocationS3S3ConfigOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DatasyncLocationS3S3Config | undefined {
@@ -110,7 +109,7 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_datasync_location_s3";
+  public static readonly tfResourceType = "aws_datasync_location_s3";
 
   // ===========
   // INITIALIZER
@@ -127,7 +126,9 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_datasync_location_s3',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -253,7 +254,7 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
   }
 
   // s3_config - computed: false, optional: false, required: true
-  private _s3Config = new DatasyncLocationS3S3ConfigOutputReference(this, "s3_config", true);
+  private _s3Config = new DatasyncLocationS3S3ConfigOutputReference(this, "s3_config");
   public get s3Config() {
     return this._s3Config;
   }

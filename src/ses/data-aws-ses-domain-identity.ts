@@ -21,7 +21,7 @@ export class DataAwsSesDomainIdentity extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ses_domain_identity";
+  public static readonly tfResourceType = "aws_ses_domain_identity";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class DataAwsSesDomainIdentity extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_ses_domain_identity',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

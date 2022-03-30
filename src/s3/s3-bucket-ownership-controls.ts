@@ -41,10 +41,9 @@ export class S3BucketOwnershipControlsRuleOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketOwnershipControlsRule | undefined {
@@ -90,7 +89,7 @@ export class S3BucketOwnershipControls extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_s3_bucket_ownership_controls";
+  public static readonly tfResourceType = "aws_s3_bucket_ownership_controls";
 
   // ===========
   // INITIALIZER
@@ -107,7 +106,9 @@ export class S3BucketOwnershipControls extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_s3_bucket_ownership_controls',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -141,7 +142,7 @@ export class S3BucketOwnershipControls extends cdktf.TerraformResource {
   }
 
   // rule - computed: false, optional: false, required: true
-  private _rule = new S3BucketOwnershipControlsRuleOutputReference(this, "rule", true);
+  private _rule = new S3BucketOwnershipControlsRuleOutputReference(this, "rule");
   public get rule() {
     return this._rule;
   }

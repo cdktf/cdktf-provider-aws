@@ -41,10 +41,9 @@ export class ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputRefer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConnectUserHierarchyStructureHierarchyStructureLevelFive | undefined {
@@ -114,10 +113,9 @@ export class ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputRefer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConnectUserHierarchyStructureHierarchyStructureLevelFour | undefined {
@@ -187,10 +185,9 @@ export class ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConnectUserHierarchyStructureHierarchyStructureLevelOne | undefined {
@@ -260,10 +257,9 @@ export class ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputRefe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConnectUserHierarchyStructureHierarchyStructureLevelThree | undefined {
@@ -333,10 +329,9 @@ export class ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConnectUserHierarchyStructureHierarchyStructureLevelTwo | undefined {
@@ -436,10 +431,9 @@ export class ConnectUserHierarchyStructureHierarchyStructureOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConnectUserHierarchyStructureHierarchyStructure | undefined {
@@ -488,7 +482,7 @@ export class ConnectUserHierarchyStructureHierarchyStructureOutputReference exte
   }
 
   // level_five - computed: false, optional: true, required: false
-  private _levelFive = new ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference(this, "level_five", true);
+  private _levelFive = new ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference(this, "level_five");
   public get levelFive() {
     return this._levelFive;
   }
@@ -504,7 +498,7 @@ export class ConnectUserHierarchyStructureHierarchyStructureOutputReference exte
   }
 
   // level_four - computed: false, optional: true, required: false
-  private _levelFour = new ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference(this, "level_four", true);
+  private _levelFour = new ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference(this, "level_four");
   public get levelFour() {
     return this._levelFour;
   }
@@ -520,7 +514,7 @@ export class ConnectUserHierarchyStructureHierarchyStructureOutputReference exte
   }
 
   // level_one - computed: false, optional: true, required: false
-  private _levelOne = new ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference(this, "level_one", true);
+  private _levelOne = new ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference(this, "level_one");
   public get levelOne() {
     return this._levelOne;
   }
@@ -536,7 +530,7 @@ export class ConnectUserHierarchyStructureHierarchyStructureOutputReference exte
   }
 
   // level_three - computed: false, optional: true, required: false
-  private _levelThree = new ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference(this, "level_three", true);
+  private _levelThree = new ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference(this, "level_three");
   public get levelThree() {
     return this._levelThree;
   }
@@ -552,7 +546,7 @@ export class ConnectUserHierarchyStructureHierarchyStructureOutputReference exte
   }
 
   // level_two - computed: false, optional: true, required: false
-  private _levelTwo = new ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference(this, "level_two", true);
+  private _levelTwo = new ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference(this, "level_two");
   public get levelTwo() {
     return this._levelTwo;
   }
@@ -576,7 +570,7 @@ export class ConnectUserHierarchyStructure extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_connect_user_hierarchy_structure";
+  public static readonly tfResourceType = "aws_connect_user_hierarchy_structure";
 
   // ===========
   // INITIALIZER
@@ -593,7 +587,9 @@ export class ConnectUserHierarchyStructure extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_connect_user_hierarchy_structure',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -627,7 +623,7 @@ export class ConnectUserHierarchyStructure extends cdktf.TerraformResource {
   }
 
   // hierarchy_structure - computed: false, optional: false, required: true
-  private _hierarchyStructure = new ConnectUserHierarchyStructureHierarchyStructureOutputReference(this, "hierarchy_structure", true);
+  private _hierarchyStructure = new ConnectUserHierarchyStructureHierarchyStructureOutputReference(this, "hierarchy_structure");
   public get hierarchyStructure() {
     return this._hierarchyStructure;
   }

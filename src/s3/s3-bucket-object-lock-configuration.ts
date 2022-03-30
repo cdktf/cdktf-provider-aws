@@ -63,10 +63,9 @@ export class S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketObjectLockConfigurationRuleDefaultRetentionA | undefined {
@@ -175,10 +174,9 @@ export class S3BucketObjectLockConfigurationRuleAOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketObjectLockConfigurationRuleA | undefined {
@@ -203,7 +201,7 @@ export class S3BucketObjectLockConfigurationRuleAOutputReference extends cdktf.C
   }
 
   // default_retention - computed: false, optional: false, required: true
-  private _defaultRetention = new S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference(this, "default_retention", true);
+  private _defaultRetention = new S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference(this, "default_retention");
   public get defaultRetention() {
     return this._defaultRetention;
   }
@@ -224,7 +222,7 @@ export class S3BucketObjectLockConfigurationA extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_s3_bucket_object_lock_configuration";
+  public static readonly tfResourceType = "aws_s3_bucket_object_lock_configuration";
 
   // ===========
   // INITIALIZER
@@ -241,7 +239,9 @@ export class S3BucketObjectLockConfigurationA extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_s3_bucket_object_lock_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -326,7 +326,7 @@ export class S3BucketObjectLockConfigurationA extends cdktf.TerraformResource {
   }
 
   // rule - computed: false, optional: false, required: true
-  private _rule = new S3BucketObjectLockConfigurationRuleAOutputReference(this, "rule", true);
+  private _rule = new S3BucketObjectLockConfigurationRuleAOutputReference(this, "rule");
   public get rule() {
     return this._rule;
   }

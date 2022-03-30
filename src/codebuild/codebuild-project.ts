@@ -194,10 +194,9 @@ export class CodebuildProjectArtifactsOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectArtifacts | undefined {
@@ -460,10 +459,9 @@ export class CodebuildProjectBuildBatchConfigRestrictionsOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectBuildBatchConfigRestrictions | undefined {
@@ -565,10 +563,9 @@ export class CodebuildProjectBuildBatchConfigOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectBuildBatchConfig | undefined {
@@ -656,7 +653,7 @@ export class CodebuildProjectBuildBatchConfigOutputReference extends cdktf.Compl
   }
 
   // restrictions - computed: false, optional: true, required: false
-  private _restrictions = new CodebuildProjectBuildBatchConfigRestrictionsOutputReference(this, "restrictions", true);
+  private _restrictions = new CodebuildProjectBuildBatchConfigRestrictionsOutputReference(this, "restrictions");
   public get restrictions() {
     return this._restrictions;
   }
@@ -704,10 +701,9 @@ export class CodebuildProjectCacheOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectCache | undefined {
@@ -846,10 +842,9 @@ export class CodebuildProjectEnvironmentRegistryCredentialOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectEnvironmentRegistryCredential | undefined {
@@ -967,10 +962,9 @@ export class CodebuildProjectEnvironmentOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectEnvironment | undefined {
@@ -1141,7 +1135,7 @@ export class CodebuildProjectEnvironmentOutputReference extends cdktf.ComplexObj
   }
 
   // registry_credential - computed: false, optional: true, required: false
-  private _registryCredential = new CodebuildProjectEnvironmentRegistryCredentialOutputReference(this, "registry_credential", true);
+  private _registryCredential = new CodebuildProjectEnvironmentRegistryCredentialOutputReference(this, "registry_credential");
   public get registryCredential() {
     return this._registryCredential;
   }
@@ -1226,10 +1220,9 @@ export class CodebuildProjectLogsConfigCloudwatchLogsOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectLogsConfigCloudwatchLogs | undefined {
@@ -1351,10 +1344,9 @@ export class CodebuildProjectLogsConfigS3LogsOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectLogsConfigS3Logs | undefined {
@@ -1492,10 +1484,9 @@ export class CodebuildProjectLogsConfigOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectLogsConfig | undefined {
@@ -1526,7 +1517,7 @@ export class CodebuildProjectLogsConfigOutputReference extends cdktf.ComplexObje
   }
 
   // cloudwatch_logs - computed: false, optional: true, required: false
-  private _cloudwatchLogs = new CodebuildProjectLogsConfigCloudwatchLogsOutputReference(this, "cloudwatch_logs", true);
+  private _cloudwatchLogs = new CodebuildProjectLogsConfigCloudwatchLogsOutputReference(this, "cloudwatch_logs");
   public get cloudwatchLogs() {
     return this._cloudwatchLogs;
   }
@@ -1542,7 +1533,7 @@ export class CodebuildProjectLogsConfigOutputReference extends cdktf.ComplexObje
   }
 
   // s3_logs - computed: false, optional: true, required: false
-  private _s3Logs = new CodebuildProjectLogsConfigS3LogsOutputReference(this, "s3_logs", true);
+  private _s3Logs = new CodebuildProjectLogsConfigS3LogsOutputReference(this, "s3_logs");
   public get s3Logs() {
     return this._s3Logs;
   }
@@ -1669,10 +1660,9 @@ export class CodebuildProjectSecondarySourcesAuthOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectSecondarySourcesAuth | undefined {
@@ -1759,10 +1749,9 @@ export class CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectSecondarySourcesBuildStatusConfig | undefined {
@@ -1847,10 +1836,9 @@ export class CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectSecondarySourcesGitSubmodulesConfig | undefined {
@@ -1983,10 +1971,9 @@ export class CodebuildProjectSourceAuthOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectSourceAuth | undefined {
@@ -2073,10 +2060,9 @@ export class CodebuildProjectSourceBuildStatusConfigOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectSourceBuildStatusConfig | undefined {
@@ -2161,10 +2147,9 @@ export class CodebuildProjectSourceGitSubmodulesConfigOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectSourceGitSubmodulesConfig | undefined {
@@ -2270,10 +2255,9 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectSource | undefined {
@@ -2439,7 +2423,7 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
   }
 
   // auth - computed: false, optional: true, required: false
-  private _auth = new CodebuildProjectSourceAuthOutputReference(this, "auth", true);
+  private _auth = new CodebuildProjectSourceAuthOutputReference(this, "auth");
   public get auth() {
     return this._auth;
   }
@@ -2455,7 +2439,7 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
   }
 
   // build_status_config - computed: false, optional: true, required: false
-  private _buildStatusConfig = new CodebuildProjectSourceBuildStatusConfigOutputReference(this, "build_status_config", true);
+  private _buildStatusConfig = new CodebuildProjectSourceBuildStatusConfigOutputReference(this, "build_status_config");
   public get buildStatusConfig() {
     return this._buildStatusConfig;
   }
@@ -2471,7 +2455,7 @@ export class CodebuildProjectSourceOutputReference extends cdktf.ComplexObject {
   }
 
   // git_submodules_config - computed: false, optional: true, required: false
-  private _gitSubmodulesConfig = new CodebuildProjectSourceGitSubmodulesConfigOutputReference(this, "git_submodules_config", true);
+  private _gitSubmodulesConfig = new CodebuildProjectSourceGitSubmodulesConfigOutputReference(this, "git_submodules_config");
   public get gitSubmodulesConfig() {
     return this._gitSubmodulesConfig;
   }
@@ -2519,10 +2503,9 @@ export class CodebuildProjectVpcConfigOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildProjectVpcConfig | undefined {
@@ -2606,7 +2589,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_codebuild_project";
+  public static readonly tfResourceType = "aws_codebuild_project";
 
   // ===========
   // INITIALIZER
@@ -2623,7 +2606,9 @@ export class CodebuildProject extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_codebuild_project',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2883,7 +2868,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // artifacts - computed: false, optional: false, required: true
-  private _artifacts = new CodebuildProjectArtifactsOutputReference(this, "artifacts", true);
+  private _artifacts = new CodebuildProjectArtifactsOutputReference(this, "artifacts");
   public get artifacts() {
     return this._artifacts;
   }
@@ -2896,7 +2881,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // build_batch_config - computed: false, optional: true, required: false
-  private _buildBatchConfig = new CodebuildProjectBuildBatchConfigOutputReference(this, "build_batch_config", true);
+  private _buildBatchConfig = new CodebuildProjectBuildBatchConfigOutputReference(this, "build_batch_config");
   public get buildBatchConfig() {
     return this._buildBatchConfig;
   }
@@ -2912,7 +2897,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // cache - computed: false, optional: true, required: false
-  private _cache = new CodebuildProjectCacheOutputReference(this, "cache", true);
+  private _cache = new CodebuildProjectCacheOutputReference(this, "cache");
   public get cache() {
     return this._cache;
   }
@@ -2928,7 +2913,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // environment - computed: false, optional: false, required: true
-  private _environment = new CodebuildProjectEnvironmentOutputReference(this, "environment", true);
+  private _environment = new CodebuildProjectEnvironmentOutputReference(this, "environment");
   public get environment() {
     return this._environment;
   }
@@ -2958,7 +2943,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // logs_config - computed: false, optional: true, required: false
-  private _logsConfig = new CodebuildProjectLogsConfigOutputReference(this, "logs_config", true);
+  private _logsConfig = new CodebuildProjectLogsConfigOutputReference(this, "logs_config");
   public get logsConfig() {
     return this._logsConfig;
   }
@@ -3025,7 +3010,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // source - computed: false, optional: false, required: true
-  private _source = new CodebuildProjectSourceOutputReference(this, "source", true);
+  private _source = new CodebuildProjectSourceOutputReference(this, "source");
   public get source() {
     return this._source;
   }
@@ -3038,7 +3023,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // vpc_config - computed: false, optional: true, required: false
-  private _vpcConfig = new CodebuildProjectVpcConfigOutputReference(this, "vpc_config", true);
+  private _vpcConfig = new CodebuildProjectVpcConfigOutputReference(this, "vpc_config");
   public get vpcConfig() {
     return this._vpcConfig;
   }

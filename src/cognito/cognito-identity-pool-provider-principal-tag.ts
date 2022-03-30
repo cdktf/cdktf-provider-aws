@@ -33,7 +33,7 @@ export class CognitoIdentityPoolProviderPrincipalTag extends cdktf.TerraformReso
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cognito_identity_pool_provider_principal_tag";
+  public static readonly tfResourceType = "aws_cognito_identity_pool_provider_principal_tag";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class CognitoIdentityPoolProviderPrincipalTag extends cdktf.TerraformReso
     super(scope, id, {
       terraformResourceType: 'aws_cognito_identity_pool_provider_principal_tag',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -58,10 +58,9 @@ export class ResourcegroupsGroupResourceQueryOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ResourcegroupsGroupResourceQuery | undefined {
@@ -129,7 +128,7 @@ export class ResourcegroupsGroup extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_resourcegroups_group";
+  public static readonly tfResourceType = "aws_resourcegroups_group";
 
   // ===========
   // INITIALIZER
@@ -146,7 +145,9 @@ export class ResourcegroupsGroup extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_resourcegroups_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -236,7 +237,7 @@ export class ResourcegroupsGroup extends cdktf.TerraformResource {
   }
 
   // resource_query - computed: false, optional: false, required: true
-  private _resourceQuery = new ResourcegroupsGroupResourceQueryOutputReference(this, "resource_query", true);
+  private _resourceQuery = new ResourcegroupsGroupResourceQueryOutputReference(this, "resource_query");
   public get resourceQuery() {
     return this._resourceQuery;
   }
