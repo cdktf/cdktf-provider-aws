@@ -33,7 +33,7 @@ export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_neptune_engine_version";
+  public static readonly tfResourceType = "aws_neptune_engine_version";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_neptune_engine_version',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

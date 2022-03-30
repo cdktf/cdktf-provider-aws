@@ -162,7 +162,45 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: RedshiftClusterTimeouts;
 }
-export class RedshiftClusterClusterNodes extends cdktf.ComplexComputedList {
+export interface RedshiftClusterClusterNodes {
+}
+
+export function redshiftClusterClusterNodesToTerraform(struct?: RedshiftClusterClusterNodes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class RedshiftClusterClusterNodesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RedshiftClusterClusterNodes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RedshiftClusterClusterNodes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // node_role - computed: true, optional: false, required: false
   public get nodeRole() {
@@ -177,6 +215,25 @@ export class RedshiftClusterClusterNodes extends cdktf.ComplexComputedList {
   // public_ip_address - computed: true, optional: false, required: false
   public get publicIpAddress() {
     return this.getStringAttribute('public_ip_address');
+  }
+}
+
+export class RedshiftClusterClusterNodesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RedshiftClusterClusterNodesOutputReference {
+    return new RedshiftClusterClusterNodesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface RedshiftClusterLogging {
@@ -212,10 +269,9 @@ export class RedshiftClusterLoggingOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RedshiftClusterLogging | undefined {
@@ -329,10 +385,9 @@ export class RedshiftClusterSnapshotCopyOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RedshiftClusterSnapshotCopy | undefined {
@@ -446,10 +501,9 @@ export class RedshiftClusterTimeoutsOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RedshiftClusterTimeouts | undefined {
@@ -542,7 +596,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_redshift_cluster";
+  public static readonly tfResourceType = "aws_redshift_cluster";
 
   // ===========
   // INITIALIZER
@@ -559,7 +613,9 @@ export class RedshiftCluster extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_redshift_cluster',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -692,8 +748,9 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // cluster_nodes - computed: true, optional: false, required: false
-  public clusterNodes(index: string) {
-    return new RedshiftClusterClusterNodes(this, 'cluster_nodes', index, false);
+  private _clusterNodes = new RedshiftClusterClusterNodesList(this, "cluster_nodes", false);
+  public get clusterNodes() {
+    return this._clusterNodes;
   }
 
   // cluster_parameter_group_name - computed: true, optional: true, required: false
@@ -1168,7 +1225,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // logging - computed: false, optional: true, required: false
-  private _logging = new RedshiftClusterLoggingOutputReference(this, "logging", true);
+  private _logging = new RedshiftClusterLoggingOutputReference(this, "logging");
   public get logging() {
     return this._logging;
   }
@@ -1184,7 +1241,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // snapshot_copy - computed: false, optional: true, required: false
-  private _snapshotCopy = new RedshiftClusterSnapshotCopyOutputReference(this, "snapshot_copy", true);
+  private _snapshotCopy = new RedshiftClusterSnapshotCopyOutputReference(this, "snapshot_copy");
   public get snapshotCopy() {
     return this._snapshotCopy;
   }
@@ -1200,7 +1257,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new RedshiftClusterTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new RedshiftClusterTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

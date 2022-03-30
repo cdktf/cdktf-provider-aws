@@ -53,10 +53,9 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputRefe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LambdaFunctionEventInvokeConfigDestinationConfigOnFailure | undefined {
@@ -116,10 +115,9 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputRefe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess | undefined {
@@ -188,10 +186,9 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LambdaFunctionEventInvokeConfigDestinationConfig | undefined {
@@ -222,7 +219,7 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOutputReference ext
   }
 
   // on_failure - computed: false, optional: true, required: false
-  private _onFailure = new LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference(this, "on_failure", true);
+  private _onFailure = new LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference(this, "on_failure");
   public get onFailure() {
     return this._onFailure;
   }
@@ -238,7 +235,7 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOutputReference ext
   }
 
   // on_success - computed: false, optional: true, required: false
-  private _onSuccess = new LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference(this, "on_success", true);
+  private _onSuccess = new LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference(this, "on_success");
   public get onSuccess() {
     return this._onSuccess;
   }
@@ -262,7 +259,7 @@ export class LambdaFunctionEventInvokeConfig extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_lambda_function_event_invoke_config";
+  public static readonly tfResourceType = "aws_lambda_function_event_invoke_config";
 
   // ===========
   // INITIALIZER
@@ -279,7 +276,9 @@ export class LambdaFunctionEventInvokeConfig extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_lambda_function_event_invoke_config',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -364,7 +363,7 @@ export class LambdaFunctionEventInvokeConfig extends cdktf.TerraformResource {
   }
 
   // destination_config - computed: false, optional: true, required: false
-  private _destinationConfig = new LambdaFunctionEventInvokeConfigDestinationConfigOutputReference(this, "destination_config", true);
+  private _destinationConfig = new LambdaFunctionEventInvokeConfigDestinationConfigOutputReference(this, "destination_config");
   public get destinationConfig() {
     return this._destinationConfig;
   }

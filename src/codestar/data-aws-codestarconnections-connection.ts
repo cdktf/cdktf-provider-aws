@@ -25,7 +25,7 @@ export class DataAwsCodestarconnectionsConnection extends cdktf.TerraformDataSou
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_codestarconnections_connection";
+  public static readonly tfResourceType = "aws_codestarconnections_connection";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class DataAwsCodestarconnectionsConnection extends cdktf.TerraformDataSou
     super(scope, id, {
       terraformResourceType: 'aws_codestarconnections_connection',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

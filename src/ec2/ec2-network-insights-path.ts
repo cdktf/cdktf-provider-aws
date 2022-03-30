@@ -49,7 +49,7 @@ export class Ec2NetworkInsightsPath extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ec2_network_insights_path";
+  public static readonly tfResourceType = "aws_ec2_network_insights_path";
 
   // ===========
   // INITIALIZER
@@ -66,7 +66,9 @@ export class Ec2NetworkInsightsPath extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_network_insights_path',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

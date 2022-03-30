@@ -41,7 +41,7 @@ export class CloudwatchEventApiDestination extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudwatch_event_api_destination";
+  public static readonly tfResourceType = "aws_cloudwatch_event_api_destination";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class CloudwatchEventApiDestination extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_cloudwatch_event_api_destination',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

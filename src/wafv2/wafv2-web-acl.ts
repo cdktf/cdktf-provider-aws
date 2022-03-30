@@ -71,7 +71,7 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_wafv2_web_acl";
+  public static readonly tfResourceType = "aws_wafv2_web_acl";
 
   // ===========
   // INITIALIZER
@@ -88,7 +88,9 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_wafv2_web_acl',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -222,7 +224,7 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
   }
 
   // default_action - computed: false, optional: false, required: true
-  private _defaultAction = new Wafv2WebAclDefaultActionOutputReference(this, "default_action", true);
+  private _defaultAction = new Wafv2WebAclDefaultActionOutputReference(this, "default_action");
   public get defaultAction() {
     return this._defaultAction;
   }
@@ -252,7 +254,7 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
   }
 
   // visibility_config - computed: false, optional: false, required: true
-  private _visibilityConfig = new Wafv2WebAclVisibilityConfigOutputReference(this, "visibility_config", true);
+  private _visibilityConfig = new Wafv2WebAclVisibilityConfigOutputReference(this, "visibility_config");
   public get visibilityConfig() {
     return this._visibilityConfig;
   }

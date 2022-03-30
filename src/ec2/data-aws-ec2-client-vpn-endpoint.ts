@@ -22,7 +22,45 @@ export interface DataAwsEc2ClientVpnEndpointConfig extends cdktf.TerraformMetaAr
   */
   readonly filter?: DataAwsEc2ClientVpnEndpointFilter[] | cdktf.IResolvable;
 }
-export class DataAwsEc2ClientVpnEndpointAuthenticationOptions extends cdktf.ComplexComputedList {
+export interface DataAwsEc2ClientVpnEndpointAuthenticationOptions {
+}
+
+export function dataAwsEc2ClientVpnEndpointAuthenticationOptionsToTerraform(struct?: DataAwsEc2ClientVpnEndpointAuthenticationOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEc2ClientVpnEndpointAuthenticationOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2ClientVpnEndpointAuthenticationOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2ClientVpnEndpointAuthenticationOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // active_directory_id - computed: true, optional: false, required: false
   public get activeDirectoryId() {
@@ -49,7 +87,64 @@ export class DataAwsEc2ClientVpnEndpointAuthenticationOptions extends cdktf.Comp
     return this.getStringAttribute('type');
   }
 }
-export class DataAwsEc2ClientVpnEndpointClientConnectOptions extends cdktf.ComplexComputedList {
+
+export class DataAwsEc2ClientVpnEndpointAuthenticationOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2ClientVpnEndpointAuthenticationOptionsOutputReference {
+    return new DataAwsEc2ClientVpnEndpointAuthenticationOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEc2ClientVpnEndpointClientConnectOptions {
+}
+
+export function dataAwsEc2ClientVpnEndpointClientConnectOptionsToTerraform(struct?: DataAwsEc2ClientVpnEndpointClientConnectOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEc2ClientVpnEndpointClientConnectOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2ClientVpnEndpointClientConnectOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2ClientVpnEndpointClientConnectOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
@@ -61,7 +156,64 @@ export class DataAwsEc2ClientVpnEndpointClientConnectOptions extends cdktf.Compl
     return this.getStringAttribute('lambda_function_arn');
   }
 }
-export class DataAwsEc2ClientVpnEndpointClientLoginBannerOptions extends cdktf.ComplexComputedList {
+
+export class DataAwsEc2ClientVpnEndpointClientConnectOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2ClientVpnEndpointClientConnectOptionsOutputReference {
+    return new DataAwsEc2ClientVpnEndpointClientConnectOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEc2ClientVpnEndpointClientLoginBannerOptions {
+}
+
+export function dataAwsEc2ClientVpnEndpointClientLoginBannerOptionsToTerraform(struct?: DataAwsEc2ClientVpnEndpointClientLoginBannerOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2ClientVpnEndpointClientLoginBannerOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2ClientVpnEndpointClientLoginBannerOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // banner_text - computed: true, optional: false, required: false
   public get bannerText() {
@@ -73,7 +225,64 @@ export class DataAwsEc2ClientVpnEndpointClientLoginBannerOptions extends cdktf.C
     return this.getBooleanAttribute('enabled');
   }
 }
-export class DataAwsEc2ClientVpnEndpointConnectionLogOptions extends cdktf.ComplexComputedList {
+
+export class DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsOutputReference {
+    return new DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEc2ClientVpnEndpointConnectionLogOptions {
+}
+
+export function dataAwsEc2ClientVpnEndpointConnectionLogOptionsToTerraform(struct?: DataAwsEc2ClientVpnEndpointConnectionLogOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2ClientVpnEndpointConnectionLogOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2ClientVpnEndpointConnectionLogOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // cloudwatch_log_group - computed: true, optional: false, required: false
   public get cloudwatchLogGroup() {
@@ -88,6 +297,25 @@ export class DataAwsEc2ClientVpnEndpointConnectionLogOptions extends cdktf.Compl
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
+  }
+}
+
+export class DataAwsEc2ClientVpnEndpointConnectionLogOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference {
+    return new DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsEc2ClientVpnEndpointFilter {
@@ -121,7 +349,7 @@ export class DataAwsEc2ClientVpnEndpoint extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ec2_client_vpn_endpoint";
+  public static readonly tfResourceType = "aws_ec2_client_vpn_endpoint";
 
   // ===========
   // INITIALIZER
@@ -138,7 +366,9 @@ export class DataAwsEc2ClientVpnEndpoint extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_client_vpn_endpoint',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -160,8 +390,9 @@ export class DataAwsEc2ClientVpnEndpoint extends cdktf.TerraformDataSource {
   }
 
   // authentication_options - computed: true, optional: false, required: false
-  public authenticationOptions(index: string) {
-    return new DataAwsEc2ClientVpnEndpointAuthenticationOptions(this, 'authentication_options', index, false);
+  private _authenticationOptions = new DataAwsEc2ClientVpnEndpointAuthenticationOptionsList(this, "authentication_options", false);
+  public get authenticationOptions() {
+    return this._authenticationOptions;
   }
 
   // client_cidr_block - computed: true, optional: false, required: false
@@ -170,13 +401,15 @@ export class DataAwsEc2ClientVpnEndpoint extends cdktf.TerraformDataSource {
   }
 
   // client_connect_options - computed: true, optional: false, required: false
-  public clientConnectOptions(index: string) {
-    return new DataAwsEc2ClientVpnEndpointClientConnectOptions(this, 'client_connect_options', index, false);
+  private _clientConnectOptions = new DataAwsEc2ClientVpnEndpointClientConnectOptionsList(this, "client_connect_options", false);
+  public get clientConnectOptions() {
+    return this._clientConnectOptions;
   }
 
   // client_login_banner_options - computed: true, optional: false, required: false
-  public clientLoginBannerOptions(index: string) {
-    return new DataAwsEc2ClientVpnEndpointClientLoginBannerOptions(this, 'client_login_banner_options', index, false);
+  private _clientLoginBannerOptions = new DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsList(this, "client_login_banner_options", false);
+  public get clientLoginBannerOptions() {
+    return this._clientLoginBannerOptions;
   }
 
   // client_vpn_endpoint_id - computed: true, optional: true, required: false
@@ -196,8 +429,9 @@ export class DataAwsEc2ClientVpnEndpoint extends cdktf.TerraformDataSource {
   }
 
   // connection_log_options - computed: true, optional: false, required: false
-  public connectionLogOptions(index: string) {
-    return new DataAwsEc2ClientVpnEndpointConnectionLogOptions(this, 'connection_log_options', index, false);
+  private _connectionLogOptions = new DataAwsEc2ClientVpnEndpointConnectionLogOptionsList(this, "connection_log_options", false);
+  public get connectionLogOptions() {
+    return this._connectionLogOptions;
   }
 
   // description - computed: true, optional: false, required: false

@@ -63,10 +63,9 @@ export class S3BucketWebsiteConfigurationErrorDocumentOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketWebsiteConfigurationErrorDocument | undefined {
@@ -126,10 +125,9 @@ export class S3BucketWebsiteConfigurationIndexDocumentOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketWebsiteConfigurationIndexDocument | undefined {
@@ -194,10 +192,9 @@ export class S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketWebsiteConfigurationRedirectAllRequestsTo | undefined {
@@ -284,10 +281,9 @@ export class S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketWebsiteConfigurationRoutingRuleCondition | undefined {
@@ -392,10 +388,9 @@ export class S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketWebsiteConfigurationRoutingRuleRedirect | undefined {
@@ -558,7 +553,7 @@ export class S3BucketWebsiteConfiguration extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_s3_bucket_website_configuration";
+  public static readonly tfResourceType = "aws_s3_bucket_website_configuration";
 
   // ===========
   // INITIALIZER
@@ -575,7 +570,9 @@ export class S3BucketWebsiteConfiguration extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_s3_bucket_website_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -639,7 +636,7 @@ export class S3BucketWebsiteConfiguration extends cdktf.TerraformResource {
   }
 
   // error_document - computed: false, optional: true, required: false
-  private _errorDocument = new S3BucketWebsiteConfigurationErrorDocumentOutputReference(this, "error_document", true);
+  private _errorDocument = new S3BucketWebsiteConfigurationErrorDocumentOutputReference(this, "error_document");
   public get errorDocument() {
     return this._errorDocument;
   }
@@ -655,7 +652,7 @@ export class S3BucketWebsiteConfiguration extends cdktf.TerraformResource {
   }
 
   // index_document - computed: false, optional: true, required: false
-  private _indexDocument = new S3BucketWebsiteConfigurationIndexDocumentOutputReference(this, "index_document", true);
+  private _indexDocument = new S3BucketWebsiteConfigurationIndexDocumentOutputReference(this, "index_document");
   public get indexDocument() {
     return this._indexDocument;
   }
@@ -671,7 +668,7 @@ export class S3BucketWebsiteConfiguration extends cdktf.TerraformResource {
   }
 
   // redirect_all_requests_to - computed: false, optional: true, required: false
-  private _redirectAllRequestsTo = new S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference(this, "redirect_all_requests_to", true);
+  private _redirectAllRequestsTo = new S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference(this, "redirect_all_requests_to");
   public get redirectAllRequestsTo() {
     return this._redirectAllRequestsTo;
   }

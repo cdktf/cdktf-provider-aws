@@ -124,10 +124,9 @@ export class ElbAccessLogsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElbAccessLogs | undefined {
@@ -273,10 +272,9 @@ export class ElbHealthCheckOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElbHealthCheck | undefined {
@@ -435,7 +433,7 @@ export class Elb extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_elb";
+  public static readonly tfResourceType = "aws_elb";
 
   // ===========
   // INITIALIZER
@@ -452,7 +450,9 @@ export class Elb extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_elb',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -749,7 +749,7 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // access_logs - computed: false, optional: true, required: false
-  private _accessLogs = new ElbAccessLogsOutputReference(this, "access_logs", true);
+  private _accessLogs = new ElbAccessLogsOutputReference(this, "access_logs");
   public get accessLogs() {
     return this._accessLogs;
   }
@@ -765,7 +765,7 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // health_check - computed: false, optional: true, required: false
-  private _healthCheck = new ElbHealthCheckOutputReference(this, "health_check", true);
+  private _healthCheck = new ElbHealthCheckOutputReference(this, "health_check");
   public get healthCheck() {
     return this._healthCheck;
   }

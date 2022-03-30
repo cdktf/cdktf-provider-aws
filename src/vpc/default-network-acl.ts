@@ -159,7 +159,7 @@ export class DefaultNetworkAcl extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_default_network_acl";
+  public static readonly tfResourceType = "aws_default_network_acl";
 
   // ===========
   // INITIALIZER
@@ -176,7 +176,9 @@ export class DefaultNetworkAcl extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_default_network_acl',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

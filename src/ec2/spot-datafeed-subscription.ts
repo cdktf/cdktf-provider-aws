@@ -25,7 +25,7 @@ export class SpotDatafeedSubscription extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_spot_datafeed_subscription";
+  public static readonly tfResourceType = "aws_spot_datafeed_subscription";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class SpotDatafeedSubscription extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_spot_datafeed_subscription',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

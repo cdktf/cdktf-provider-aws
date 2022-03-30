@@ -49,7 +49,7 @@ export class DatasyncLocationFsxWindowsFileSystem extends cdktf.TerraformResourc
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_datasync_location_fsx_windows_file_system";
+  public static readonly tfResourceType = "aws_datasync_location_fsx_windows_file_system";
 
   // ===========
   // INITIALIZER
@@ -66,7 +66,9 @@ export class DatasyncLocationFsxWindowsFileSystem extends cdktf.TerraformResourc
     super(scope, id, {
       terraformResourceType: 'aws_datasync_location_fsx_windows_file_system',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

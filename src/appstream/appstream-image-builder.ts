@@ -120,10 +120,9 @@ export class AppstreamImageBuilderDomainJoinInfoOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppstreamImageBuilderDomainJoinInfo | undefined {
@@ -213,10 +212,9 @@ export class AppstreamImageBuilderVpcConfigOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppstreamImageBuilderVpcConfig | undefined {
@@ -287,7 +285,7 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appstream_image_builder";
+  public static readonly tfResourceType = "aws_appstream_image_builder";
 
   // ===========
   // INITIALIZER
@@ -304,7 +302,9 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_appstream_image_builder',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -539,7 +539,7 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
   }
 
   // domain_join_info - computed: false, optional: true, required: false
-  private _domainJoinInfo = new AppstreamImageBuilderDomainJoinInfoOutputReference(this, "domain_join_info", true);
+  private _domainJoinInfo = new AppstreamImageBuilderDomainJoinInfoOutputReference(this, "domain_join_info");
   public get domainJoinInfo() {
     return this._domainJoinInfo;
   }
@@ -555,7 +555,7 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
   }
 
   // vpc_config - computed: false, optional: true, required: false
-  private _vpcConfig = new AppstreamImageBuilderVpcConfigOutputReference(this, "vpc_config", true);
+  private _vpcConfig = new AppstreamImageBuilderVpcConfigOutputReference(this, "vpc_config");
   public get vpcConfig() {
     return this._vpcConfig;
   }

@@ -37,7 +37,7 @@ export class DataAwsApiGatewayExport extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_api_gateway_export";
+  public static readonly tfResourceType = "aws_api_gateway_export";
 
   // ===========
   // INITIALIZER
@@ -54,7 +54,9 @@ export class DataAwsApiGatewayExport extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_api_gateway_export',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

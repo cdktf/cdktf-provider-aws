@@ -33,7 +33,7 @@ export class DataexchangeRevision extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_dataexchange_revision";
+  public static readonly tfResourceType = "aws_dataexchange_revision";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class DataexchangeRevision extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_dataexchange_revision',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

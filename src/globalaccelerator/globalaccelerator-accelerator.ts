@@ -40,7 +40,45 @@ export interface GlobalacceleratorAcceleratorConfig extends cdktf.TerraformMetaA
   */
   readonly timeouts?: GlobalacceleratorAcceleratorTimeouts;
 }
-export class GlobalacceleratorAcceleratorIpSets extends cdktf.ComplexComputedList {
+export interface GlobalacceleratorAcceleratorIpSets {
+}
+
+export function globalacceleratorAcceleratorIpSetsToTerraform(struct?: GlobalacceleratorAcceleratorIpSets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GlobalacceleratorAcceleratorIpSetsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlobalacceleratorAcceleratorIpSets | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlobalacceleratorAcceleratorIpSets | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // ip_addresses - computed: true, optional: false, required: false
   public get ipAddresses() {
@@ -50,6 +88,25 @@ export class GlobalacceleratorAcceleratorIpSets extends cdktf.ComplexComputedLis
   // ip_family - computed: true, optional: false, required: false
   public get ipFamily() {
     return this.getStringAttribute('ip_family');
+  }
+}
+
+export class GlobalacceleratorAcceleratorIpSetsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlobalacceleratorAcceleratorIpSetsOutputReference {
+    return new GlobalacceleratorAcceleratorIpSetsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface GlobalacceleratorAcceleratorAttributes {
@@ -85,10 +142,9 @@ export class GlobalacceleratorAcceleratorAttributesOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlobalacceleratorAcceleratorAttributes | undefined {
@@ -200,10 +256,9 @@ export class GlobalacceleratorAcceleratorTimeoutsOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlobalacceleratorAcceleratorTimeouts | undefined {
@@ -274,7 +329,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_globalaccelerator_accelerator";
+  public static readonly tfResourceType = "aws_globalaccelerator_accelerator";
 
   // ===========
   // INITIALIZER
@@ -291,7 +346,9 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_globalaccelerator_accelerator',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -359,8 +416,9 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   }
 
   // ip_sets - computed: true, optional: false, required: false
-  public ipSets(index: string) {
-    return new GlobalacceleratorAcceleratorIpSets(this, 'ip_sets', index, false);
+  private _ipSets = new GlobalacceleratorAcceleratorIpSetsList(this, "ip_sets", false);
+  public get ipSets() {
+    return this._ipSets;
   }
 
   // name - computed: false, optional: false, required: true
@@ -409,7 +467,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   }
 
   // attributes - computed: false, optional: true, required: false
-  private _attributes = new GlobalacceleratorAcceleratorAttributesOutputReference(this, "attributes", true);
+  private _attributes = new GlobalacceleratorAcceleratorAttributesOutputReference(this, "attributes");
   public get attributes() {
     return this._attributes;
   }
@@ -425,7 +483,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new GlobalacceleratorAcceleratorTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new GlobalacceleratorAcceleratorTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

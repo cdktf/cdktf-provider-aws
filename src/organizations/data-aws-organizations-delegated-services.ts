@@ -12,7 +12,45 @@ export interface DataAwsOrganizationsDelegatedServicesConfig extends cdktf.Terra
   */
   readonly accountId: string;
 }
-export class DataAwsOrganizationsDelegatedServicesDelegatedServices extends cdktf.ComplexComputedList {
+export interface DataAwsOrganizationsDelegatedServicesDelegatedServices {
+}
+
+export function dataAwsOrganizationsDelegatedServicesDelegatedServicesToTerraform(struct?: DataAwsOrganizationsDelegatedServicesDelegatedServices): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsOrganizationsDelegatedServicesDelegatedServicesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsOrganizationsDelegatedServicesDelegatedServices | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsOrganizationsDelegatedServicesDelegatedServices | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // delegation_enabled_date - computed: true, optional: false, required: false
   public get delegationEnabledDate() {
@@ -25,6 +63,25 @@ export class DataAwsOrganizationsDelegatedServicesDelegatedServices extends cdkt
   }
 }
 
+export class DataAwsOrganizationsDelegatedServicesDelegatedServicesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsOrganizationsDelegatedServicesDelegatedServicesOutputReference {
+    return new DataAwsOrganizationsDelegatedServicesDelegatedServicesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_services aws_organizations_delegated_services}
 */
@@ -33,7 +90,7 @@ export class DataAwsOrganizationsDelegatedServices extends cdktf.TerraformDataSo
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_organizations_delegated_services";
+  public static readonly tfResourceType = "aws_organizations_delegated_services";
 
   // ===========
   // INITIALIZER
@@ -50,7 +107,9 @@ export class DataAwsOrganizationsDelegatedServices extends cdktf.TerraformDataSo
     super(scope, id, {
       terraformResourceType: 'aws_organizations_delegated_services',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -78,8 +137,9 @@ export class DataAwsOrganizationsDelegatedServices extends cdktf.TerraformDataSo
   }
 
   // delegated_services - computed: true, optional: false, required: false
-  public delegatedServices(index: string) {
-    return new DataAwsOrganizationsDelegatedServicesDelegatedServices(this, 'delegated_services', index, true);
+  private _delegatedServices = new DataAwsOrganizationsDelegatedServicesDelegatedServicesList(this, "delegated_services", true);
+  public get delegatedServices() {
+    return this._delegatedServices;
   }
 
   // id - computed: true, optional: true, required: false

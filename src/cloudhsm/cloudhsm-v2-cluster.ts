@@ -34,7 +34,45 @@ export interface CloudhsmV2ClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: CloudhsmV2ClusterTimeouts;
 }
-export class CloudhsmV2ClusterClusterCertificates extends cdktf.ComplexComputedList {
+export interface CloudhsmV2ClusterClusterCertificates {
+}
+
+export function cloudhsmV2ClusterClusterCertificatesToTerraform(struct?: CloudhsmV2ClusterClusterCertificates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class CloudhsmV2ClusterClusterCertificatesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudhsmV2ClusterClusterCertificates | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudhsmV2ClusterClusterCertificates | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // aws_hardware_certificate - computed: true, optional: false, required: false
   public get awsHardwareCertificate() {
@@ -59,6 +97,25 @@ export class CloudhsmV2ClusterClusterCertificates extends cdktf.ComplexComputedL
   // manufacturer_hardware_certificate - computed: true, optional: false, required: false
   public get manufacturerHardwareCertificate() {
     return this.getStringAttribute('manufacturer_hardware_certificate');
+  }
+}
+
+export class CloudhsmV2ClusterClusterCertificatesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudhsmV2ClusterClusterCertificatesOutputReference {
+    return new CloudhsmV2ClusterClusterCertificatesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface CloudhsmV2ClusterTimeouts {
@@ -94,10 +151,9 @@ export class CloudhsmV2ClusterTimeoutsOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudhsmV2ClusterTimeouts | undefined {
@@ -190,7 +246,7 @@ export class CloudhsmV2Cluster extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudhsm_v2_cluster";
+  public static readonly tfResourceType = "aws_cloudhsm_v2_cluster";
 
   // ===========
   // INITIALIZER
@@ -207,7 +263,9 @@ export class CloudhsmV2Cluster extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_cloudhsm_v2_cluster',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -227,8 +285,9 @@ export class CloudhsmV2Cluster extends cdktf.TerraformResource {
   // ==========
 
   // cluster_certificates - computed: true, optional: false, required: false
-  public clusterCertificates(index: string) {
-    return new CloudhsmV2ClusterClusterCertificates(this, 'cluster_certificates', index, false);
+  private _clusterCertificates = new CloudhsmV2ClusterClusterCertificatesList(this, "cluster_certificates", false);
+  public get clusterCertificates() {
+    return this._clusterCertificates;
   }
 
   // cluster_id - computed: true, optional: false, required: false
@@ -331,7 +390,7 @@ export class CloudhsmV2Cluster extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CloudhsmV2ClusterTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new CloudhsmV2ClusterTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

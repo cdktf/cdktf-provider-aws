@@ -235,7 +235,7 @@ export class Cloudtrail extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudtrail";
+  public static readonly tfResourceType = "aws_cloudtrail";
 
   // ===========
   // INITIALIZER
@@ -252,7 +252,9 @@ export class Cloudtrail extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_cloudtrail',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

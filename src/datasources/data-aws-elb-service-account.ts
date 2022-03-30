@@ -21,7 +21,7 @@ export class DataAwsElbServiceAccount extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_elb_service_account";
+  public static readonly tfResourceType = "aws_elb_service_account";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class DataAwsElbServiceAccount extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_elb_service_account',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

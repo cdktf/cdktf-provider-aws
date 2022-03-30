@@ -21,7 +21,7 @@ export class SecurityhubOrganizationConfiguration extends cdktf.TerraformResourc
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_securityhub_organization_configuration";
+  public static readonly tfResourceType = "aws_securityhub_organization_configuration";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class SecurityhubOrganizationConfiguration extends cdktf.TerraformResourc
     super(scope, id, {
       terraformResourceType: 'aws_securityhub_organization_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

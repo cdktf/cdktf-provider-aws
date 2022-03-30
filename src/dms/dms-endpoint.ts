@@ -144,10 +144,9 @@ export class DmsEndpointElasticsearchSettingsOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DmsEndpointElasticsearchSettings | undefined {
@@ -355,10 +354,9 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DmsEndpointKafkaSettings | undefined {
@@ -832,10 +830,9 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DmsEndpointKinesisSettings | undefined {
@@ -1099,10 +1096,9 @@ export class DmsEndpointMongodbSettingsOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DmsEndpointMongodbSettings | undefined {
@@ -1450,10 +1446,9 @@ export class DmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DmsEndpointS3Settings | undefined {
@@ -2272,7 +2267,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_dms_endpoint";
+  public static readonly tfResourceType = "aws_dms_endpoint";
 
   // ===========
   // INITIALIZER
@@ -2289,7 +2284,9 @@ export class DmsEndpoint extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_dms_endpoint',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2598,7 +2595,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   }
 
   // elasticsearch_settings - computed: false, optional: true, required: false
-  private _elasticsearchSettings = new DmsEndpointElasticsearchSettingsOutputReference(this, "elasticsearch_settings", true);
+  private _elasticsearchSettings = new DmsEndpointElasticsearchSettingsOutputReference(this, "elasticsearch_settings");
   public get elasticsearchSettings() {
     return this._elasticsearchSettings;
   }
@@ -2614,7 +2611,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   }
 
   // kafka_settings - computed: false, optional: true, required: false
-  private _kafkaSettings = new DmsEndpointKafkaSettingsOutputReference(this, "kafka_settings", true);
+  private _kafkaSettings = new DmsEndpointKafkaSettingsOutputReference(this, "kafka_settings");
   public get kafkaSettings() {
     return this._kafkaSettings;
   }
@@ -2630,7 +2627,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   }
 
   // kinesis_settings - computed: false, optional: true, required: false
-  private _kinesisSettings = new DmsEndpointKinesisSettingsOutputReference(this, "kinesis_settings", true);
+  private _kinesisSettings = new DmsEndpointKinesisSettingsOutputReference(this, "kinesis_settings");
   public get kinesisSettings() {
     return this._kinesisSettings;
   }
@@ -2646,7 +2643,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   }
 
   // mongodb_settings - computed: false, optional: true, required: false
-  private _mongodbSettings = new DmsEndpointMongodbSettingsOutputReference(this, "mongodb_settings", true);
+  private _mongodbSettings = new DmsEndpointMongodbSettingsOutputReference(this, "mongodb_settings");
   public get mongodbSettings() {
     return this._mongodbSettings;
   }
@@ -2662,7 +2659,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
   }
 
   // s3_settings - computed: false, optional: true, required: false
-  private _s3Settings = new DmsEndpointS3SettingsOutputReference(this, "s3_settings", true);
+  private _s3Settings = new DmsEndpointS3SettingsOutputReference(this, "s3_settings");
   public get s3Settings() {
     return this._s3Settings;
   }

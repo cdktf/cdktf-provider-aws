@@ -24,14 +24,109 @@ export interface DataAwsConnectQuickConnectConfig extends cdktf.TerraformMetaArg
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsConnectQuickConnectQuickConnectConfigPhoneConfig extends cdktf.ComplexComputedList {
+export interface DataAwsConnectQuickConnectQuickConnectConfigPhoneConfig {
+}
+
+export function dataAwsConnectQuickConnectQuickConnectConfigPhoneConfigToTerraform(struct?: DataAwsConnectQuickConnectQuickConnectConfigPhoneConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsConnectQuickConnectQuickConnectConfigPhoneConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsConnectQuickConnectQuickConnectConfigPhoneConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // phone_number - computed: true, optional: false, required: false
   public get phoneNumber() {
     return this.getStringAttribute('phone_number');
   }
 }
-export class DataAwsConnectQuickConnectQuickConnectConfigQueueConfig extends cdktf.ComplexComputedList {
+
+export class DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference {
+    return new DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsConnectQuickConnectQuickConnectConfigQueueConfig {
+}
+
+export function dataAwsConnectQuickConnectQuickConnectConfigQueueConfigToTerraform(struct?: DataAwsConnectQuickConnectQuickConnectConfigQueueConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsConnectQuickConnectQuickConnectConfigQueueConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsConnectQuickConnectQuickConnectConfigQueueConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsConnectQuickConnectQuickConnectConfigQueueConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // contact_flow_id - computed: true, optional: false, required: false
   public get contactFlowId() {
@@ -43,7 +138,64 @@ export class DataAwsConnectQuickConnectQuickConnectConfigQueueConfig extends cdk
     return this.getStringAttribute('queue_id');
   }
 }
-export class DataAwsConnectQuickConnectQuickConnectConfigUserConfig extends cdktf.ComplexComputedList {
+
+export class DataAwsConnectQuickConnectQuickConnectConfigQueueConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsConnectQuickConnectQuickConnectConfigQueueConfigOutputReference {
+    return new DataAwsConnectQuickConnectQuickConnectConfigQueueConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsConnectQuickConnectQuickConnectConfigUserConfig {
+}
+
+export function dataAwsConnectQuickConnectQuickConnectConfigUserConfigToTerraform(struct?: DataAwsConnectQuickConnectQuickConnectConfigUserConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsConnectQuickConnectQuickConnectConfigUserConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsConnectQuickConnectQuickConnectConfigUserConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // contact_flow_id - computed: true, optional: false, required: false
   public get contactFlowId() {
@@ -55,18 +207,75 @@ export class DataAwsConnectQuickConnectQuickConnectConfigUserConfig extends cdkt
     return this.getStringAttribute('user_id');
   }
 }
-export class DataAwsConnectQuickConnectQuickConnectConfig extends cdktf.ComplexComputedList {
+
+export class DataAwsConnectQuickConnectQuickConnectConfigUserConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference {
+    return new DataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsConnectQuickConnectQuickConnectConfig {
+}
+
+export function dataAwsConnectQuickConnectQuickConnectConfigToTerraform(struct?: DataAwsConnectQuickConnectQuickConnectConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsConnectQuickConnectQuickConnectConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsConnectQuickConnectQuickConnectConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsConnectQuickConnectQuickConnectConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // phone_config - computed: true, optional: false, required: false
+  private _phoneConfig = new DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigList(this, "phone_config", false);
   public get phoneConfig() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('phone_config');
+    return this._phoneConfig;
   }
 
   // queue_config - computed: true, optional: false, required: false
+  private _queueConfig = new DataAwsConnectQuickConnectQuickConnectConfigQueueConfigList(this, "queue_config", false);
   public get queueConfig() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('queue_config');
+    return this._queueConfig;
   }
 
   // quick_connect_type - computed: true, optional: false, required: false
@@ -75,9 +284,28 @@ export class DataAwsConnectQuickConnectQuickConnectConfig extends cdktf.ComplexC
   }
 
   // user_config - computed: true, optional: false, required: false
+  private _userConfig = new DataAwsConnectQuickConnectQuickConnectConfigUserConfigList(this, "user_config", false);
   public get userConfig() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('user_config');
+    return this._userConfig;
+  }
+}
+
+export class DataAwsConnectQuickConnectQuickConnectConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsConnectQuickConnectQuickConnectConfigOutputReference {
+    return new DataAwsConnectQuickConnectQuickConnectConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -89,7 +317,7 @@ export class DataAwsConnectQuickConnect extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_connect_quick_connect";
+  public static readonly tfResourceType = "aws_connect_quick_connect";
 
   // ===========
   // INITIALIZER
@@ -106,7 +334,9 @@ export class DataAwsConnectQuickConnect extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_connect_quick_connect',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -168,8 +398,9 @@ export class DataAwsConnectQuickConnect extends cdktf.TerraformDataSource {
   }
 
   // quick_connect_config - computed: true, optional: false, required: false
-  public quickConnectConfig(index: string) {
-    return new DataAwsConnectQuickConnectQuickConnectConfig(this, 'quick_connect_config', index, false);
+  private _quickConnectConfig = new DataAwsConnectQuickConnectQuickConnectConfigList(this, "quick_connect_config", false);
+  public get quickConnectConfig() {
+    return this._quickConnectConfig;
   }
 
   // quick_connect_id - computed: true, optional: true, required: false

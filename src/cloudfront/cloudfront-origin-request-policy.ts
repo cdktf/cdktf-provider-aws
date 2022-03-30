@@ -57,10 +57,9 @@ export class CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontOriginRequestPolicyCookiesConfigCookies | undefined {
@@ -130,10 +129,9 @@ export class CloudfrontOriginRequestPolicyCookiesConfigOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontOriginRequestPolicyCookiesConfig | undefined {
@@ -177,7 +175,7 @@ export class CloudfrontOriginRequestPolicyCookiesConfigOutputReference extends c
   }
 
   // cookies - computed: false, optional: true, required: false
-  private _cookies = new CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference(this, "cookies", true);
+  private _cookies = new CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference(this, "cookies");
   public get cookies() {
     return this._cookies;
   }
@@ -215,10 +213,9 @@ export class CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontOriginRequestPolicyHeadersConfigHeaders | undefined {
@@ -288,10 +285,9 @@ export class CloudfrontOriginRequestPolicyHeadersConfigOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontOriginRequestPolicyHeadersConfig | undefined {
@@ -338,7 +334,7 @@ export class CloudfrontOriginRequestPolicyHeadersConfigOutputReference extends c
   }
 
   // headers - computed: false, optional: true, required: false
-  private _headers = new CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference(this, "headers", true);
+  private _headers = new CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference(this, "headers");
   public get headers() {
     return this._headers;
   }
@@ -376,10 +372,9 @@ export class CloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsOutputRe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings | undefined {
@@ -449,10 +444,9 @@ export class CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontOriginRequestPolicyQueryStringsConfig | undefined {
@@ -496,7 +490,7 @@ export class CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference exte
   }
 
   // query_strings - computed: false, optional: true, required: false
-  private _queryStrings = new CloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsOutputReference(this, "query_strings", true);
+  private _queryStrings = new CloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsOutputReference(this, "query_strings");
   public get queryStrings() {
     return this._queryStrings;
   }
@@ -520,7 +514,7 @@ export class CloudfrontOriginRequestPolicy extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudfront_origin_request_policy";
+  public static readonly tfResourceType = "aws_cloudfront_origin_request_policy";
 
   // ===========
   // INITIALIZER
@@ -537,7 +531,9 @@ export class CloudfrontOriginRequestPolicy extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_cloudfront_origin_request_policy',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -595,7 +591,7 @@ export class CloudfrontOriginRequestPolicy extends cdktf.TerraformResource {
   }
 
   // cookies_config - computed: false, optional: false, required: true
-  private _cookiesConfig = new CloudfrontOriginRequestPolicyCookiesConfigOutputReference(this, "cookies_config", true);
+  private _cookiesConfig = new CloudfrontOriginRequestPolicyCookiesConfigOutputReference(this, "cookies_config");
   public get cookiesConfig() {
     return this._cookiesConfig;
   }
@@ -608,7 +604,7 @@ export class CloudfrontOriginRequestPolicy extends cdktf.TerraformResource {
   }
 
   // headers_config - computed: false, optional: false, required: true
-  private _headersConfig = new CloudfrontOriginRequestPolicyHeadersConfigOutputReference(this, "headers_config", true);
+  private _headersConfig = new CloudfrontOriginRequestPolicyHeadersConfigOutputReference(this, "headers_config");
   public get headersConfig() {
     return this._headersConfig;
   }
@@ -621,7 +617,7 @@ export class CloudfrontOriginRequestPolicy extends cdktf.TerraformResource {
   }
 
   // query_strings_config - computed: false, optional: false, required: true
-  private _queryStringsConfig = new CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference(this, "query_strings_config", true);
+  private _queryStringsConfig = new CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference(this, "query_strings_config");
   public get queryStringsConfig() {
     return this._queryStringsConfig;
   }

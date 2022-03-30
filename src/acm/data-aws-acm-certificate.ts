@@ -41,7 +41,7 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_acm_certificate";
+  public static readonly tfResourceType = "aws_acm_certificate";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_acm_certificate',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

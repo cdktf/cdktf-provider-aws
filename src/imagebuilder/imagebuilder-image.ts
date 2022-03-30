@@ -48,7 +48,45 @@ export interface ImagebuilderImageConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: ImagebuilderImageTimeouts;
 }
-export class ImagebuilderImageOutputResourcesAmis extends cdktf.ComplexComputedList {
+export interface ImagebuilderImageOutputResourcesAmis {
+}
+
+export function imagebuilderImageOutputResourcesAmisToTerraform(struct?: ImagebuilderImageOutputResourcesAmis): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ImagebuilderImageOutputResourcesAmisOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ImagebuilderImageOutputResourcesAmis | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ImagebuilderImageOutputResourcesAmis | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // account_id - computed: true, optional: false, required: false
   public get accountId() {
@@ -75,12 +113,88 @@ export class ImagebuilderImageOutputResourcesAmis extends cdktf.ComplexComputedL
     return this.getStringAttribute('region');
   }
 }
-export class ImagebuilderImageOutputResources extends cdktf.ComplexComputedList {
+
+export class ImagebuilderImageOutputResourcesAmisList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ImagebuilderImageOutputResourcesAmisOutputReference {
+    return new ImagebuilderImageOutputResourcesAmisOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ImagebuilderImageOutputResources {
+}
+
+export function imagebuilderImageOutputResourcesToTerraform(struct?: ImagebuilderImageOutputResources): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ImagebuilderImageOutputResourcesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ImagebuilderImageOutputResources | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ImagebuilderImageOutputResources | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // amis - computed: true, optional: false, required: false
+  private _amis = new ImagebuilderImageOutputResourcesAmisList(this, "amis", true);
   public get amis() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('amis')));
+    return this._amis;
+  }
+}
+
+export class ImagebuilderImageOutputResourcesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ImagebuilderImageOutputResourcesOutputReference {
+    return new ImagebuilderImageOutputResourcesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface ImagebuilderImageImageTestsConfiguration {
@@ -111,10 +225,9 @@ export class ImagebuilderImageImageTestsConfigurationOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ImagebuilderImageImageTestsConfiguration | undefined {
@@ -199,10 +312,9 @@ export class ImagebuilderImageTimeoutsOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ImagebuilderImageTimeouts | undefined {
@@ -251,7 +363,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_imagebuilder_image";
+  public static readonly tfResourceType = "aws_imagebuilder_image";
 
   // ===========
   // INITIALIZER
@@ -268,7 +380,9 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_imagebuilder_image',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -393,8 +507,9 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
   }
 
   // output_resources - computed: true, optional: false, required: false
-  public outputResources(index: string) {
-    return new ImagebuilderImageOutputResources(this, 'output_resources', index, false);
+  private _outputResources = new ImagebuilderImageOutputResourcesList(this, "output_resources", false);
+  public get outputResources() {
+    return this._outputResources;
   }
 
   // platform - computed: true, optional: false, required: false
@@ -440,7 +555,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
   }
 
   // image_tests_configuration - computed: false, optional: true, required: false
-  private _imageTestsConfiguration = new ImagebuilderImageImageTestsConfigurationOutputReference(this, "image_tests_configuration", true);
+  private _imageTestsConfiguration = new ImagebuilderImageImageTestsConfigurationOutputReference(this, "image_tests_configuration");
   public get imageTestsConfiguration() {
     return this._imageTestsConfiguration;
   }
@@ -456,7 +571,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ImagebuilderImageTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new ImagebuilderImageTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

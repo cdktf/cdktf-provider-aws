@@ -22,7 +22,45 @@ export interface DataAwsEc2TransitGatewayMulticastDomainConfig extends cdktf.Ter
   */
   readonly filter?: DataAwsEc2TransitGatewayMulticastDomainFilter[] | cdktf.IResolvable;
 }
-export class DataAwsEc2TransitGatewayMulticastDomainAssociations extends cdktf.ComplexComputedList {
+export interface DataAwsEc2TransitGatewayMulticastDomainAssociations {
+}
+
+export function dataAwsEc2TransitGatewayMulticastDomainAssociationsToTerraform(struct?: DataAwsEc2TransitGatewayMulticastDomainAssociations): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEc2TransitGatewayMulticastDomainAssociationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2TransitGatewayMulticastDomainAssociations | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2TransitGatewayMulticastDomainAssociations | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // subnet_id - computed: true, optional: false, required: false
   public get subnetId() {
@@ -34,7 +72,64 @@ export class DataAwsEc2TransitGatewayMulticastDomainAssociations extends cdktf.C
     return this.getStringAttribute('transit_gateway_attachment_id');
   }
 }
-export class DataAwsEc2TransitGatewayMulticastDomainMembers extends cdktf.ComplexComputedList {
+
+export class DataAwsEc2TransitGatewayMulticastDomainAssociationsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2TransitGatewayMulticastDomainAssociationsOutputReference {
+    return new DataAwsEc2TransitGatewayMulticastDomainAssociationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEc2TransitGatewayMulticastDomainMembers {
+}
+
+export function dataAwsEc2TransitGatewayMulticastDomainMembersToTerraform(struct?: DataAwsEc2TransitGatewayMulticastDomainMembers): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEc2TransitGatewayMulticastDomainMembersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2TransitGatewayMulticastDomainMembers | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2TransitGatewayMulticastDomainMembers | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // group_ip_address - computed: true, optional: false, required: false
   public get groupIpAddress() {
@@ -46,7 +141,64 @@ export class DataAwsEc2TransitGatewayMulticastDomainMembers extends cdktf.Comple
     return this.getStringAttribute('network_interface_id');
   }
 }
-export class DataAwsEc2TransitGatewayMulticastDomainSources extends cdktf.ComplexComputedList {
+
+export class DataAwsEc2TransitGatewayMulticastDomainMembersList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2TransitGatewayMulticastDomainMembersOutputReference {
+    return new DataAwsEc2TransitGatewayMulticastDomainMembersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEc2TransitGatewayMulticastDomainSources {
+}
+
+export function dataAwsEc2TransitGatewayMulticastDomainSourcesToTerraform(struct?: DataAwsEc2TransitGatewayMulticastDomainSources): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEc2TransitGatewayMulticastDomainSourcesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2TransitGatewayMulticastDomainSources | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2TransitGatewayMulticastDomainSources | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // group_ip_address - computed: true, optional: false, required: false
   public get groupIpAddress() {
@@ -56,6 +208,25 @@ export class DataAwsEc2TransitGatewayMulticastDomainSources extends cdktf.Comple
   // network_interface_id - computed: true, optional: false, required: false
   public get networkInterfaceId() {
     return this.getStringAttribute('network_interface_id');
+  }
+}
+
+export class DataAwsEc2TransitGatewayMulticastDomainSourcesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2TransitGatewayMulticastDomainSourcesOutputReference {
+    return new DataAwsEc2TransitGatewayMulticastDomainSourcesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsEc2TransitGatewayMulticastDomainFilter {
@@ -89,7 +260,7 @@ export class DataAwsEc2TransitGatewayMulticastDomain extends cdktf.TerraformData
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ec2_transit_gateway_multicast_domain";
+  public static readonly tfResourceType = "aws_ec2_transit_gateway_multicast_domain";
 
   // ===========
   // INITIALIZER
@@ -106,7 +277,9 @@ export class DataAwsEc2TransitGatewayMulticastDomain extends cdktf.TerraformData
     super(scope, id, {
       terraformResourceType: 'aws_ec2_transit_gateway_multicast_domain',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -128,8 +301,9 @@ export class DataAwsEc2TransitGatewayMulticastDomain extends cdktf.TerraformData
   }
 
   // associations - computed: true, optional: false, required: false
-  public associations(index: string) {
-    return new DataAwsEc2TransitGatewayMulticastDomainAssociations(this, 'associations', index, false);
+  private _associations = new DataAwsEc2TransitGatewayMulticastDomainAssociationsList(this, "associations", false);
+  public get associations() {
+    return this._associations;
   }
 
   // auto_accept_shared_associations - computed: true, optional: false, required: false
@@ -148,8 +322,9 @@ export class DataAwsEc2TransitGatewayMulticastDomain extends cdktf.TerraformData
   }
 
   // members - computed: true, optional: false, required: false
-  public members(index: string) {
-    return new DataAwsEc2TransitGatewayMulticastDomainMembers(this, 'members', index, false);
+  private _members = new DataAwsEc2TransitGatewayMulticastDomainMembersList(this, "members", false);
+  public get members() {
+    return this._members;
   }
 
   // owner_id - computed: true, optional: false, required: false
@@ -158,8 +333,9 @@ export class DataAwsEc2TransitGatewayMulticastDomain extends cdktf.TerraformData
   }
 
   // sources - computed: true, optional: false, required: false
-  public sources(index: string) {
-    return new DataAwsEc2TransitGatewayMulticastDomainSources(this, 'sources', index, false);
+  private _sources = new DataAwsEc2TransitGatewayMulticastDomainSourcesList(this, "sources", false);
+  public get sources() {
+    return this._sources;
   }
 
   // state - computed: true, optional: false, required: false

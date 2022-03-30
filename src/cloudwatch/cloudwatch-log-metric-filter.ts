@@ -74,10 +74,9 @@ export class CloudwatchLogMetricFilterMetricTransformationOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchLogMetricFilterMetricTransformation | undefined {
@@ -227,7 +226,7 @@ export class CloudwatchLogMetricFilter extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudwatch_log_metric_filter";
+  public static readonly tfResourceType = "aws_cloudwatch_log_metric_filter";
 
   // ===========
   // INITIALIZER
@@ -244,7 +243,9 @@ export class CloudwatchLogMetricFilter extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_cloudwatch_log_metric_filter',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -306,7 +307,7 @@ export class CloudwatchLogMetricFilter extends cdktf.TerraformResource {
   }
 
   // metric_transformation - computed: false, optional: false, required: true
-  private _metricTransformation = new CloudwatchLogMetricFilterMetricTransformationOutputReference(this, "metric_transformation", true);
+  private _metricTransformation = new CloudwatchLogMetricFilterMetricTransformationOutputReference(this, "metric_transformation");
   public get metricTransformation() {
     return this._metricTransformation;
   }

@@ -46,10 +46,9 @@ export class GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptio
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption | undefined {
@@ -139,10 +138,9 @@ export class GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncrypt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption | undefined {
@@ -232,10 +230,9 @@ export class GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputR
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueSecurityConfigurationEncryptionConfigurationS3Encryption | undefined {
@@ -336,10 +333,9 @@ export class GlueSecurityConfigurationEncryptionConfigurationOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueSecurityConfigurationEncryptionConfiguration | undefined {
@@ -376,7 +372,7 @@ export class GlueSecurityConfigurationEncryptionConfigurationOutputReference ext
   }
 
   // cloudwatch_encryption - computed: false, optional: false, required: true
-  private _cloudwatchEncryption = new GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference(this, "cloudwatch_encryption", true);
+  private _cloudwatchEncryption = new GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference(this, "cloudwatch_encryption");
   public get cloudwatchEncryption() {
     return this._cloudwatchEncryption;
   }
@@ -389,7 +385,7 @@ export class GlueSecurityConfigurationEncryptionConfigurationOutputReference ext
   }
 
   // job_bookmarks_encryption - computed: false, optional: false, required: true
-  private _jobBookmarksEncryption = new GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference(this, "job_bookmarks_encryption", true);
+  private _jobBookmarksEncryption = new GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference(this, "job_bookmarks_encryption");
   public get jobBookmarksEncryption() {
     return this._jobBookmarksEncryption;
   }
@@ -402,7 +398,7 @@ export class GlueSecurityConfigurationEncryptionConfigurationOutputReference ext
   }
 
   // s3_encryption - computed: false, optional: false, required: true
-  private _s3Encryption = new GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference(this, "s3_encryption", true);
+  private _s3Encryption = new GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference(this, "s3_encryption");
   public get s3Encryption() {
     return this._s3Encryption;
   }
@@ -423,7 +419,7 @@ export class GlueSecurityConfiguration extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_glue_security_configuration";
+  public static readonly tfResourceType = "aws_glue_security_configuration";
 
   // ===========
   // INITIALIZER
@@ -440,7 +436,9 @@ export class GlueSecurityConfiguration extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_glue_security_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -474,7 +472,7 @@ export class GlueSecurityConfiguration extends cdktf.TerraformResource {
   }
 
   // encryption_configuration - computed: false, optional: false, required: true
-  private _encryptionConfiguration = new GlueSecurityConfigurationEncryptionConfigurationOutputReference(this, "encryption_configuration", true);
+  private _encryptionConfiguration = new GlueSecurityConfigurationEncryptionConfigurationOutputReference(this, "encryption_configuration");
   public get encryptionConfiguration() {
     return this._encryptionConfiguration;
   }

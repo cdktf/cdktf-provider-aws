@@ -65,10 +65,9 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutpu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig | undefined {
@@ -136,10 +135,9 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotif
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig | undefined {
@@ -236,10 +234,9 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutpu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig | undefined {
@@ -305,7 +302,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutpu
   }
 
   // notification_config - computed: false, optional: true, required: false
-  private _notificationConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigOutputReference(this, "notification_config", true);
+  private _notificationConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigOutputReference(this, "notification_config");
   public get notificationConfig() {
     return this._notificationConfig;
   }
@@ -352,10 +349,9 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerEndpointConfigurationAsyncInferenceConfig | undefined {
@@ -386,7 +382,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference e
   }
 
   // client_config - computed: false, optional: true, required: false
-  private _clientConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutputReference(this, "client_config", true);
+  private _clientConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigClientConfigOutputReference(this, "client_config");
   public get clientConfig() {
     return this._clientConfig;
   }
@@ -402,7 +398,7 @@ export class SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference e
   }
 
   // output_config - computed: false, optional: false, required: true
-  private _outputConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference(this, "output_config", true);
+  private _outputConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference(this, "output_config");
   public get outputConfig() {
     return this._outputConfig;
   }
@@ -442,10 +438,9 @@ export class SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeader | undefined {
@@ -576,10 +571,9 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerEndpointConfigurationDataCaptureConfig | undefined {
@@ -692,7 +686,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
   }
 
   // capture_content_type_header - computed: false, optional: true, required: false
-  private _captureContentTypeHeader = new SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderOutputReference(this, "capture_content_type_header", true);
+  private _captureContentTypeHeader = new SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeaderOutputReference(this, "capture_content_type_header");
   public get captureContentTypeHeader() {
     return this._captureContentTypeHeader;
   }
@@ -772,7 +766,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_sagemaker_endpoint_configuration";
+  public static readonly tfResourceType = "aws_sagemaker_endpoint_configuration";
 
   // ===========
   // INITIALIZER
@@ -789,7 +783,9 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_sagemaker_endpoint_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -884,7 +880,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
   }
 
   // async_inference_config - computed: false, optional: true, required: false
-  private _asyncInferenceConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference(this, "async_inference_config", true);
+  private _asyncInferenceConfig = new SagemakerEndpointConfigurationAsyncInferenceConfigOutputReference(this, "async_inference_config");
   public get asyncInferenceConfig() {
     return this._asyncInferenceConfig;
   }
@@ -900,7 +896,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
   }
 
   // data_capture_config - computed: false, optional: true, required: false
-  private _dataCaptureConfig = new SagemakerEndpointConfigurationDataCaptureConfigOutputReference(this, "data_capture_config", true);
+  private _dataCaptureConfig = new SagemakerEndpointConfigurationDataCaptureConfigOutputReference(this, "data_capture_config");
   public get dataCaptureConfig() {
     return this._dataCaptureConfig;
   }

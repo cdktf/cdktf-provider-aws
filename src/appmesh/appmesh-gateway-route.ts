@@ -61,10 +61,9 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputRef
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService | undefined {
@@ -126,10 +125,9 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRouteActionTarget | undefined {
@@ -154,7 +152,7 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference extends
   }
 
   // virtual_service - computed: false, optional: false, required: true
-  private _virtualService = new AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputReference(this, "virtual_service", true);
+  private _virtualService = new AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputReference(this, "virtual_service");
   public get virtualService() {
     return this._virtualService;
   }
@@ -191,10 +189,9 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRouteAction | undefined {
@@ -219,7 +216,7 @@ export class AppmeshGatewayRouteSpecGrpcRouteActionOutputReference extends cdktf
   }
 
   // target - computed: false, optional: false, required: true
-  private _target = new AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference(this, "target", true);
+  private _target = new AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference(this, "target");
   public get target() {
     return this._target;
   }
@@ -254,10 +251,9 @@ export class AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRouteMatch | undefined {
@@ -326,10 +322,9 @@ export class AppmeshGatewayRouteSpecGrpcRouteOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecGrpcRoute | undefined {
@@ -360,7 +355,7 @@ export class AppmeshGatewayRouteSpecGrpcRouteOutputReference extends cdktf.Compl
   }
 
   // action - computed: false, optional: false, required: true
-  private _action = new AppmeshGatewayRouteSpecGrpcRouteActionOutputReference(this, "action", true);
+  private _action = new AppmeshGatewayRouteSpecGrpcRouteActionOutputReference(this, "action");
   public get action() {
     return this._action;
   }
@@ -373,7 +368,7 @@ export class AppmeshGatewayRouteSpecGrpcRouteOutputReference extends cdktf.Compl
   }
 
   // match - computed: false, optional: false, required: true
-  private _match = new AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference(this, "match", true);
+  private _match = new AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference(this, "match");
   public get match() {
     return this._match;
   }
@@ -408,10 +403,9 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputRe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService | undefined {
@@ -473,10 +467,9 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteActionTarget | undefined {
@@ -501,7 +494,7 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference extend
   }
 
   // virtual_service - computed: false, optional: false, required: true
-  private _virtualService = new AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputReference(this, "virtual_service", true);
+  private _virtualService = new AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputReference(this, "virtual_service");
   public get virtualService() {
     return this._virtualService;
   }
@@ -538,10 +531,9 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteAction | undefined {
@@ -566,7 +558,7 @@ export class AppmeshGatewayRouteSpecHttp2RouteActionOutputReference extends cdkt
   }
 
   // target - computed: false, optional: false, required: true
-  private _target = new AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference(this, "target", true);
+  private _target = new AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference(this, "target");
   public get target() {
     return this._target;
   }
@@ -601,10 +593,9 @@ export class AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttp2RouteMatch | undefined {
@@ -673,10 +664,9 @@ export class AppmeshGatewayRouteSpecHttp2RouteOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttp2Route | undefined {
@@ -707,7 +697,7 @@ export class AppmeshGatewayRouteSpecHttp2RouteOutputReference extends cdktf.Comp
   }
 
   // action - computed: false, optional: false, required: true
-  private _action = new AppmeshGatewayRouteSpecHttp2RouteActionOutputReference(this, "action", true);
+  private _action = new AppmeshGatewayRouteSpecHttp2RouteActionOutputReference(this, "action");
   public get action() {
     return this._action;
   }
@@ -720,7 +710,7 @@ export class AppmeshGatewayRouteSpecHttp2RouteOutputReference extends cdktf.Comp
   }
 
   // match - computed: false, optional: false, required: true
-  private _match = new AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference(this, "match", true);
+  private _match = new AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference(this, "match");
   public get match() {
     return this._match;
   }
@@ -755,10 +745,9 @@ export class AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputRef
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService | undefined {
@@ -820,10 +809,9 @@ export class AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttpRouteActionTarget | undefined {
@@ -848,7 +836,7 @@ export class AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference extends
   }
 
   // virtual_service - computed: false, optional: false, required: true
-  private _virtualService = new AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference(this, "virtual_service", true);
+  private _virtualService = new AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference(this, "virtual_service");
   public get virtualService() {
     return this._virtualService;
   }
@@ -885,10 +873,9 @@ export class AppmeshGatewayRouteSpecHttpRouteActionOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttpRouteAction | undefined {
@@ -913,7 +900,7 @@ export class AppmeshGatewayRouteSpecHttpRouteActionOutputReference extends cdktf
   }
 
   // target - computed: false, optional: false, required: true
-  private _target = new AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference(this, "target", true);
+  private _target = new AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference(this, "target");
   public get target() {
     return this._target;
   }
@@ -948,10 +935,9 @@ export class AppmeshGatewayRouteSpecHttpRouteMatchOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttpRouteMatch | undefined {
@@ -1020,10 +1006,9 @@ export class AppmeshGatewayRouteSpecHttpRouteOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpecHttpRoute | undefined {
@@ -1054,7 +1039,7 @@ export class AppmeshGatewayRouteSpecHttpRouteOutputReference extends cdktf.Compl
   }
 
   // action - computed: false, optional: false, required: true
-  private _action = new AppmeshGatewayRouteSpecHttpRouteActionOutputReference(this, "action", true);
+  private _action = new AppmeshGatewayRouteSpecHttpRouteActionOutputReference(this, "action");
   public get action() {
     return this._action;
   }
@@ -1067,7 +1052,7 @@ export class AppmeshGatewayRouteSpecHttpRouteOutputReference extends cdktf.Compl
   }
 
   // match - computed: false, optional: false, required: true
-  private _match = new AppmeshGatewayRouteSpecHttpRouteMatchOutputReference(this, "match", true);
+  private _match = new AppmeshGatewayRouteSpecHttpRouteMatchOutputReference(this, "match");
   public get match() {
     return this._match;
   }
@@ -1118,10 +1103,9 @@ export class AppmeshGatewayRouteSpecOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshGatewayRouteSpec | undefined {
@@ -1158,7 +1142,7 @@ export class AppmeshGatewayRouteSpecOutputReference extends cdktf.ComplexObject 
   }
 
   // grpc_route - computed: false, optional: true, required: false
-  private _grpcRoute = new AppmeshGatewayRouteSpecGrpcRouteOutputReference(this, "grpc_route", true);
+  private _grpcRoute = new AppmeshGatewayRouteSpecGrpcRouteOutputReference(this, "grpc_route");
   public get grpcRoute() {
     return this._grpcRoute;
   }
@@ -1174,7 +1158,7 @@ export class AppmeshGatewayRouteSpecOutputReference extends cdktf.ComplexObject 
   }
 
   // http2_route - computed: false, optional: true, required: false
-  private _http2Route = new AppmeshGatewayRouteSpecHttp2RouteOutputReference(this, "http2_route", true);
+  private _http2Route = new AppmeshGatewayRouteSpecHttp2RouteOutputReference(this, "http2_route");
   public get http2Route() {
     return this._http2Route;
   }
@@ -1190,7 +1174,7 @@ export class AppmeshGatewayRouteSpecOutputReference extends cdktf.ComplexObject 
   }
 
   // http_route - computed: false, optional: true, required: false
-  private _httpRoute = new AppmeshGatewayRouteSpecHttpRouteOutputReference(this, "http_route", true);
+  private _httpRoute = new AppmeshGatewayRouteSpecHttpRouteOutputReference(this, "http_route");
   public get httpRoute() {
     return this._httpRoute;
   }
@@ -1214,7 +1198,7 @@ export class AppmeshGatewayRoute extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appmesh_gateway_route";
+  public static readonly tfResourceType = "aws_appmesh_gateway_route";
 
   // ===========
   // INITIALIZER
@@ -1231,7 +1215,9 @@ export class AppmeshGatewayRoute extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_appmesh_gateway_route',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1364,7 +1350,7 @@ export class AppmeshGatewayRoute extends cdktf.TerraformResource {
   }
 
   // spec - computed: false, optional: false, required: true
-  private _spec = new AppmeshGatewayRouteSpecOutputReference(this, "spec", true);
+  private _spec = new AppmeshGatewayRouteSpecOutputReference(this, "spec");
   public get spec() {
     return this._spec;
   }

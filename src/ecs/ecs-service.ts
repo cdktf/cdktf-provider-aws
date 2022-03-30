@@ -189,10 +189,9 @@ export class EcsServiceDeploymentCircuitBreakerOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EcsServiceDeploymentCircuitBreaker | undefined {
@@ -271,10 +270,9 @@ export class EcsServiceDeploymentControllerOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EcsServiceDeploymentController | undefined {
@@ -379,10 +377,9 @@ export class EcsServiceNetworkConfigurationOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EcsServiceNetworkConfiguration | undefined {
@@ -545,10 +542,9 @@ export class EcsServiceServiceRegistriesOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EcsServiceServiceRegistries | undefined {
@@ -674,10 +670,9 @@ export class EcsServiceTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EcsServiceTimeouts | undefined {
@@ -726,7 +721,7 @@ export class EcsService extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ecs_service";
+  public static readonly tfResourceType = "aws_ecs_service";
 
   // ===========
   // INITIALIZER
@@ -743,7 +738,9 @@ export class EcsService extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_ecs_service',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1091,7 +1088,7 @@ export class EcsService extends cdktf.TerraformResource {
   }
 
   // deployment_circuit_breaker - computed: false, optional: true, required: false
-  private _deploymentCircuitBreaker = new EcsServiceDeploymentCircuitBreakerOutputReference(this, "deployment_circuit_breaker", true);
+  private _deploymentCircuitBreaker = new EcsServiceDeploymentCircuitBreakerOutputReference(this, "deployment_circuit_breaker");
   public get deploymentCircuitBreaker() {
     return this._deploymentCircuitBreaker;
   }
@@ -1107,7 +1104,7 @@ export class EcsService extends cdktf.TerraformResource {
   }
 
   // deployment_controller - computed: false, optional: true, required: false
-  private _deploymentController = new EcsServiceDeploymentControllerOutputReference(this, "deployment_controller", true);
+  private _deploymentController = new EcsServiceDeploymentControllerOutputReference(this, "deployment_controller");
   public get deploymentController() {
     return this._deploymentController;
   }
@@ -1140,7 +1137,7 @@ export class EcsService extends cdktf.TerraformResource {
   }
 
   // network_configuration - computed: false, optional: true, required: false
-  private _networkConfiguration = new EcsServiceNetworkConfigurationOutputReference(this, "network_configuration", true);
+  private _networkConfiguration = new EcsServiceNetworkConfigurationOutputReference(this, "network_configuration");
   public get networkConfiguration() {
     return this._networkConfiguration;
   }
@@ -1190,7 +1187,7 @@ export class EcsService extends cdktf.TerraformResource {
   }
 
   // service_registries - computed: false, optional: true, required: false
-  private _serviceRegistries = new EcsServiceServiceRegistriesOutputReference(this, "service_registries", true);
+  private _serviceRegistries = new EcsServiceServiceRegistriesOutputReference(this, "service_registries");
   public get serviceRegistries() {
     return this._serviceRegistries;
   }
@@ -1206,7 +1203,7 @@ export class EcsService extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new EcsServiceTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new EcsServiceTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

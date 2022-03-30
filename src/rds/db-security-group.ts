@@ -71,7 +71,7 @@ export class DbSecurityGroup extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_db_security_group";
+  public static readonly tfResourceType = "aws_db_security_group";
 
   // ===========
   // INITIALIZER
@@ -88,7 +88,9 @@ export class DbSecurityGroup extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_db_security_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

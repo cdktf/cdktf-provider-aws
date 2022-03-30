@@ -33,7 +33,7 @@ export class AppstreamUserStackAssociation extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appstream_user_stack_association";
+  public static readonly tfResourceType = "aws_appstream_user_stack_association";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class AppstreamUserStackAssociation extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_appstream_user_stack_association',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -53,7 +53,7 @@ export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_identitystore_user";
+  public static readonly tfResourceType = "aws_identitystore_user";
 
   // ===========
   // INITIALIZER
@@ -70,7 +70,9 @@ export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_identitystore_user',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

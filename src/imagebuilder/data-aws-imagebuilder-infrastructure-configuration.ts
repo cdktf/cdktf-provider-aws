@@ -20,7 +20,45 @@ export interface DataAwsImagebuilderInfrastructureConfigurationConfig extends cd
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsImagebuilderInfrastructureConfigurationLoggingS3Logs extends cdktf.ComplexComputedList {
+export interface DataAwsImagebuilderInfrastructureConfigurationLoggingS3Logs {
+}
+
+export function dataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsToTerraform(struct?: DataAwsImagebuilderInfrastructureConfigurationLoggingS3Logs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsImagebuilderInfrastructureConfigurationLoggingS3Logs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsImagebuilderInfrastructureConfigurationLoggingS3Logs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // s3_bucket_name - computed: true, optional: false, required: false
   public get s3BucketName() {
@@ -32,12 +70,88 @@ export class DataAwsImagebuilderInfrastructureConfigurationLoggingS3Logs extends
     return this.getStringAttribute('s3_key_prefix');
   }
 }
-export class DataAwsImagebuilderInfrastructureConfigurationLogging extends cdktf.ComplexComputedList {
+
+export class DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference {
+    return new DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsImagebuilderInfrastructureConfigurationLogging {
+}
+
+export function dataAwsImagebuilderInfrastructureConfigurationLoggingToTerraform(struct?: DataAwsImagebuilderInfrastructureConfigurationLogging): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsImagebuilderInfrastructureConfigurationLoggingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsImagebuilderInfrastructureConfigurationLogging | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsImagebuilderInfrastructureConfigurationLogging | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // s3_logs - computed: true, optional: false, required: false
+  private _s3Logs = new DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsList(this, "s3_logs", false);
   public get s3Logs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('s3_logs');
+    return this._s3Logs;
+  }
+}
+
+export class DataAwsImagebuilderInfrastructureConfigurationLoggingList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsImagebuilderInfrastructureConfigurationLoggingOutputReference {
+    return new DataAwsImagebuilderInfrastructureConfigurationLoggingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -49,7 +163,7 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_imagebuilder_infrastructure_configuration";
+  public static readonly tfResourceType = "aws_imagebuilder_infrastructure_configuration";
 
   // ===========
   // INITIALIZER
@@ -66,7 +180,9 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
     super(scope, id, {
       terraformResourceType: 'aws_imagebuilder_infrastructure_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -131,8 +247,9 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
   }
 
   // logging - computed: true, optional: false, required: false
-  public logging(index: string) {
-    return new DataAwsImagebuilderInfrastructureConfigurationLogging(this, 'logging', index, false);
+  private _logging = new DataAwsImagebuilderInfrastructureConfigurationLoggingList(this, "logging", false);
+  public get logging() {
+    return this._logging;
   }
 
   // name - computed: true, optional: false, required: false

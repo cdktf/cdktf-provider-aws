@@ -16,11 +16,68 @@ export interface DataAwsWafv2RegexPatternSetConfig extends cdktf.TerraformMetaAr
   */
   readonly scope: string;
 }
-export class DataAwsWafv2RegexPatternSetRegularExpression extends cdktf.ComplexComputedList {
+export interface DataAwsWafv2RegexPatternSetRegularExpression {
+}
+
+export function dataAwsWafv2RegexPatternSetRegularExpressionToTerraform(struct?: DataAwsWafv2RegexPatternSetRegularExpression): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsWafv2RegexPatternSetRegularExpressionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsWafv2RegexPatternSetRegularExpression | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsWafv2RegexPatternSetRegularExpression | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // regex_string - computed: true, optional: false, required: false
   public get regexString() {
     return this.getStringAttribute('regex_string');
+  }
+}
+
+export class DataAwsWafv2RegexPatternSetRegularExpressionList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsWafv2RegexPatternSetRegularExpressionOutputReference {
+    return new DataAwsWafv2RegexPatternSetRegularExpressionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -32,7 +89,7 @@ export class DataAwsWafv2RegexPatternSet extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_wafv2_regex_pattern_set";
+  public static readonly tfResourceType = "aws_wafv2_regex_pattern_set";
 
   // ===========
   // INITIALIZER
@@ -49,7 +106,9 @@ export class DataAwsWafv2RegexPatternSet extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_wafv2_regex_pattern_set',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -93,8 +152,9 @@ export class DataAwsWafv2RegexPatternSet extends cdktf.TerraformDataSource {
   }
 
   // regular_expression - computed: true, optional: false, required: false
-  public regularExpression(index: string) {
-    return new DataAwsWafv2RegexPatternSetRegularExpression(this, 'regular_expression', index, true);
+  private _regularExpression = new DataAwsWafv2RegexPatternSetRegularExpressionList(this, "regular_expression", true);
+  public get regularExpression() {
+    return this._regularExpression;
   }
 
   // scope - computed: false, optional: false, required: true

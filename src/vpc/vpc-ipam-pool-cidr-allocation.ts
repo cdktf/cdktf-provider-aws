@@ -37,7 +37,7 @@ export class VpcIpamPoolCidrAllocation extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_vpc_ipam_pool_cidr_allocation";
+  public static readonly tfResourceType = "aws_vpc_ipam_pool_cidr_allocation";
 
   // ===========
   // INITIALIZER
@@ -54,7 +54,9 @@ export class VpcIpamPoolCidrAllocation extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_vpc_ipam_pool_cidr_allocation',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

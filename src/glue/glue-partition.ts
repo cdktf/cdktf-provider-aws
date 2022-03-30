@@ -94,10 +94,9 @@ export class GluePartitionStorageDescriptorSerDeInfoOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GluePartitionStorageDescriptorSerDeInfo | undefined {
@@ -214,10 +213,9 @@ export class GluePartitionStorageDescriptorSkewedInfoOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GluePartitionStorageDescriptorSkewedInfo | undefined {
@@ -409,10 +407,9 @@ export class GluePartitionStorageDescriptorOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GluePartitionStorageDescriptor | undefined {
@@ -648,7 +645,7 @@ export class GluePartitionStorageDescriptorOutputReference extends cdktf.Complex
   }
 
   // ser_de_info - computed: false, optional: true, required: false
-  private _serDeInfo = new GluePartitionStorageDescriptorSerDeInfoOutputReference(this, "ser_de_info", true);
+  private _serDeInfo = new GluePartitionStorageDescriptorSerDeInfoOutputReference(this, "ser_de_info");
   public get serDeInfo() {
     return this._serDeInfo;
   }
@@ -664,7 +661,7 @@ export class GluePartitionStorageDescriptorOutputReference extends cdktf.Complex
   }
 
   // skewed_info - computed: false, optional: true, required: false
-  private _skewedInfo = new GluePartitionStorageDescriptorSkewedInfoOutputReference(this, "skewed_info", true);
+  private _skewedInfo = new GluePartitionStorageDescriptorSkewedInfoOutputReference(this, "skewed_info");
   public get skewedInfo() {
     return this._skewedInfo;
   }
@@ -705,7 +702,7 @@ export class GluePartition extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_glue_partition";
+  public static readonly tfResourceType = "aws_glue_partition";
 
   // ===========
   // INITIALIZER
@@ -722,7 +719,9 @@ export class GluePartition extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_glue_partition',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -833,7 +832,7 @@ export class GluePartition extends cdktf.TerraformResource {
   }
 
   // storage_descriptor - computed: false, optional: true, required: false
-  private _storageDescriptor = new GluePartitionStorageDescriptorOutputReference(this, "storage_descriptor", true);
+  private _storageDescriptor = new GluePartitionStorageDescriptorOutputReference(this, "storage_descriptor");
   public get storageDescriptor() {
     return this._storageDescriptor;
   }

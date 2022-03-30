@@ -74,10 +74,9 @@ export class AppautoscalingScheduledActionScalableTargetActionOutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppautoscalingScheduledActionScalableTargetAction | undefined {
@@ -148,7 +147,7 @@ export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appautoscaling_scheduled_action";
+  public static readonly tfResourceType = "aws_appautoscaling_scheduled_action";
 
   // ===========
   // INITIALIZER
@@ -165,7 +164,9 @@ export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_appautoscaling_scheduled_action',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -311,7 +312,7 @@ export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
   }
 
   // scalable_target_action - computed: false, optional: false, required: true
-  private _scalableTargetAction = new AppautoscalingScheduledActionScalableTargetActionOutputReference(this, "scalable_target_action", true);
+  private _scalableTargetAction = new AppautoscalingScheduledActionScalableTargetActionOutputReference(this, "scalable_target_action");
   public get scalableTargetAction() {
     return this._scalableTargetAction;
   }

@@ -58,7 +58,45 @@ export interface VpcEndpointConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: VpcEndpointTimeouts;
 }
-export class VpcEndpointDnsEntry extends cdktf.ComplexComputedList {
+export interface VpcEndpointDnsEntry {
+}
+
+export function vpcEndpointDnsEntryToTerraform(struct?: VpcEndpointDnsEntry): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class VpcEndpointDnsEntryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): VpcEndpointDnsEntry | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpcEndpointDnsEntry | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
@@ -68,6 +106,25 @@ export class VpcEndpointDnsEntry extends cdktf.ComplexComputedList {
   // hosted_zone_id - computed: true, optional: false, required: false
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
+  }
+}
+
+export class VpcEndpointDnsEntryList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VpcEndpointDnsEntryOutputReference {
+    return new VpcEndpointDnsEntryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface VpcEndpointTimeouts {
@@ -103,10 +160,9 @@ export class VpcEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): VpcEndpointTimeouts | undefined {
@@ -199,7 +255,7 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_vpc_endpoint";
+  public static readonly tfResourceType = "aws_vpc_endpoint";
 
   // ===========
   // INITIALIZER
@@ -216,7 +272,9 @@ export class VpcEndpoint extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_vpc_endpoint',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -268,8 +326,9 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   }
 
   // dns_entry - computed: true, optional: false, required: false
-  public dnsEntry(index: string) {
-    return new VpcEndpointDnsEntry(this, 'dns_entry', index, false);
+  private _dnsEntry = new VpcEndpointDnsEntryList(this, "dns_entry", false);
+  public get dnsEntry() {
+    return this._dnsEntry;
   }
 
   // id - computed: true, optional: true, required: false
@@ -457,7 +516,7 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VpcEndpointTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new VpcEndpointTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

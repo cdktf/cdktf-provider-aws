@@ -68,10 +68,9 @@ export class WorklinkFleetIdentityProviderOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): WorklinkFleetIdentityProvider | undefined {
@@ -160,10 +159,9 @@ export class WorklinkFleetNetworkOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): WorklinkFleetNetwork | undefined {
@@ -247,7 +245,7 @@ export class WorklinkFleet extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_worklink_fleet";
+  public static readonly tfResourceType = "aws_worklink_fleet";
 
   // ===========
   // INITIALIZER
@@ -264,7 +262,9 @@ export class WorklinkFleet extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_worklink_fleet',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -387,7 +387,7 @@ export class WorklinkFleet extends cdktf.TerraformResource {
   }
 
   // identity_provider - computed: false, optional: true, required: false
-  private _identityProvider = new WorklinkFleetIdentityProviderOutputReference(this, "identity_provider", true);
+  private _identityProvider = new WorklinkFleetIdentityProviderOutputReference(this, "identity_provider");
   public get identityProvider() {
     return this._identityProvider;
   }
@@ -403,7 +403,7 @@ export class WorklinkFleet extends cdktf.TerraformResource {
   }
 
   // network - computed: false, optional: true, required: false
-  private _network = new WorklinkFleetNetworkOutputReference(this, "network", true);
+  private _network = new WorklinkFleetNetworkOutputReference(this, "network");
   public get network() {
     return this._network;
   }

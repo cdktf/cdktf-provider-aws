@@ -37,7 +37,7 @@ export class CodeartifactRepositoryPermissionsPolicy extends cdktf.TerraformReso
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_codeartifact_repository_permissions_policy";
+  public static readonly tfResourceType = "aws_codeartifact_repository_permissions_policy";
 
   // ===========
   // INITIALIZER
@@ -54,7 +54,9 @@ export class CodeartifactRepositoryPermissionsPolicy extends cdktf.TerraformReso
     super(scope, id, {
       terraformResourceType: 'aws_codeartifact_repository_permissions_policy',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

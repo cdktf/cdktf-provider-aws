@@ -68,10 +68,9 @@ export class CloudsearchDomainEndpointOptionsOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudsearchDomainEndpointOptions | undefined {
@@ -223,10 +222,9 @@ export class CloudsearchDomainScalingParametersOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudsearchDomainScalingParameters | undefined {
@@ -343,10 +341,9 @@ export class CloudsearchDomainTimeoutsOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudsearchDomainTimeouts | undefined {
@@ -439,7 +436,7 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudsearch_domain";
+  public static readonly tfResourceType = "aws_cloudsearch_domain";
 
   // ===========
   // INITIALIZER
@@ -456,7 +453,9 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_cloudsearch_domain',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -530,7 +529,7 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
   }
 
   // endpoint_options - computed: false, optional: true, required: false
-  private _endpointOptions = new CloudsearchDomainEndpointOptionsOutputReference(this, "endpoint_options", true);
+  private _endpointOptions = new CloudsearchDomainEndpointOptionsOutputReference(this, "endpoint_options");
   public get endpointOptions() {
     return this._endpointOptions;
   }
@@ -563,7 +562,7 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
   }
 
   // scaling_parameters - computed: false, optional: true, required: false
-  private _scalingParameters = new CloudsearchDomainScalingParametersOutputReference(this, "scaling_parameters", true);
+  private _scalingParameters = new CloudsearchDomainScalingParametersOutputReference(this, "scaling_parameters");
   public get scalingParameters() {
     return this._scalingParameters;
   }
@@ -579,7 +578,7 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CloudsearchDomainTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new CloudsearchDomainTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

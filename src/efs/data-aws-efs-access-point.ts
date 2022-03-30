@@ -16,7 +16,45 @@ export interface DataAwsEfsAccessPointConfig extends cdktf.TerraformMetaArgument
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsEfsAccessPointPosixUser extends cdktf.ComplexComputedList {
+export interface DataAwsEfsAccessPointPosixUser {
+}
+
+export function dataAwsEfsAccessPointPosixUserToTerraform(struct?: DataAwsEfsAccessPointPosixUser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEfsAccessPointPosixUserOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEfsAccessPointPosixUser | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEfsAccessPointPosixUser | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // gid - computed: true, optional: false, required: false
   public get gid() {
@@ -33,7 +71,64 @@ export class DataAwsEfsAccessPointPosixUser extends cdktf.ComplexComputedList {
     return this.getNumberAttribute('uid');
   }
 }
-export class DataAwsEfsAccessPointRootDirectoryCreationInfo extends cdktf.ComplexComputedList {
+
+export class DataAwsEfsAccessPointPosixUserList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEfsAccessPointPosixUserOutputReference {
+    return new DataAwsEfsAccessPointPosixUserOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEfsAccessPointRootDirectoryCreationInfo {
+}
+
+export function dataAwsEfsAccessPointRootDirectoryCreationInfoToTerraform(struct?: DataAwsEfsAccessPointRootDirectoryCreationInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEfsAccessPointRootDirectoryCreationInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEfsAccessPointRootDirectoryCreationInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEfsAccessPointRootDirectoryCreationInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // owner_gid - computed: true, optional: false, required: false
   public get ownerGid() {
@@ -50,17 +145,93 @@ export class DataAwsEfsAccessPointRootDirectoryCreationInfo extends cdktf.Comple
     return this.getStringAttribute('permissions');
   }
 }
-export class DataAwsEfsAccessPointRootDirectory extends cdktf.ComplexComputedList {
+
+export class DataAwsEfsAccessPointRootDirectoryCreationInfoList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEfsAccessPointRootDirectoryCreationInfoOutputReference {
+    return new DataAwsEfsAccessPointRootDirectoryCreationInfoOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEfsAccessPointRootDirectory {
+}
+
+export function dataAwsEfsAccessPointRootDirectoryToTerraform(struct?: DataAwsEfsAccessPointRootDirectory): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsEfsAccessPointRootDirectoryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEfsAccessPointRootDirectory | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEfsAccessPointRootDirectory | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // creation_info - computed: true, optional: false, required: false
+  private _creationInfo = new DataAwsEfsAccessPointRootDirectoryCreationInfoList(this, "creation_info", false);
   public get creationInfo() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('creation_info');
+    return this._creationInfo;
   }
 
   // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
+  }
+}
+
+export class DataAwsEfsAccessPointRootDirectoryList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEfsAccessPointRootDirectoryOutputReference {
+    return new DataAwsEfsAccessPointRootDirectoryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -72,7 +243,7 @@ export class DataAwsEfsAccessPoint extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_efs_access_point";
+  public static readonly tfResourceType = "aws_efs_access_point";
 
   // ===========
   // INITIALIZER
@@ -89,7 +260,9 @@ export class DataAwsEfsAccessPoint extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_efs_access_point',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -143,13 +316,15 @@ export class DataAwsEfsAccessPoint extends cdktf.TerraformDataSource {
   }
 
   // posix_user - computed: true, optional: false, required: false
-  public posixUser(index: string) {
-    return new DataAwsEfsAccessPointPosixUser(this, 'posix_user', index, false);
+  private _posixUser = new DataAwsEfsAccessPointPosixUserList(this, "posix_user", false);
+  public get posixUser() {
+    return this._posixUser;
   }
 
   // root_directory - computed: true, optional: false, required: false
-  public rootDirectory(index: string) {
-    return new DataAwsEfsAccessPointRootDirectory(this, 'root_directory', index, false);
+  private _rootDirectory = new DataAwsEfsAccessPointRootDirectoryList(this, "root_directory", false);
+  public get rootDirectory() {
+    return this._rootDirectory;
   }
 
   // tags - computed: false, optional: true, required: false

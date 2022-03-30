@@ -95,10 +95,9 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerCo
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig | undefined {
@@ -217,10 +216,9 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfi
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig | undefined {
@@ -356,10 +354,9 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig | undefined {
@@ -511,10 +508,9 @@ export class AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncGraphqlApiLambdaAuthorizerConfig | undefined {
@@ -628,10 +624,9 @@ export class AppsyncGraphqlApiLogConfigOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncGraphqlApiLogConfig | undefined {
@@ -747,10 +742,9 @@ export class AppsyncGraphqlApiOpenidConnectConfigOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncGraphqlApiOpenidConnectConfig | undefined {
@@ -891,10 +885,9 @@ export class AppsyncGraphqlApiUserPoolConfigOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncGraphqlApiUserPoolConfig | undefined {
@@ -1003,7 +996,7 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appsync_graphql_api";
+  public static readonly tfResourceType = "aws_appsync_graphql_api";
 
   // ===========
   // INITIALIZER
@@ -1020,7 +1013,9 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_appsync_graphql_api',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1167,7 +1162,7 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
   }
 
   // lambda_authorizer_config - computed: false, optional: true, required: false
-  private _lambdaAuthorizerConfig = new AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference(this, "lambda_authorizer_config", true);
+  private _lambdaAuthorizerConfig = new AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference(this, "lambda_authorizer_config");
   public get lambdaAuthorizerConfig() {
     return this._lambdaAuthorizerConfig;
   }
@@ -1183,7 +1178,7 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
   }
 
   // log_config - computed: false, optional: true, required: false
-  private _logConfig = new AppsyncGraphqlApiLogConfigOutputReference(this, "log_config", true);
+  private _logConfig = new AppsyncGraphqlApiLogConfigOutputReference(this, "log_config");
   public get logConfig() {
     return this._logConfig;
   }
@@ -1199,7 +1194,7 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
   }
 
   // openid_connect_config - computed: false, optional: true, required: false
-  private _openidConnectConfig = new AppsyncGraphqlApiOpenidConnectConfigOutputReference(this, "openid_connect_config", true);
+  private _openidConnectConfig = new AppsyncGraphqlApiOpenidConnectConfigOutputReference(this, "openid_connect_config");
   public get openidConnectConfig() {
     return this._openidConnectConfig;
   }
@@ -1215,7 +1210,7 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
   }
 
   // user_pool_config - computed: false, optional: true, required: false
-  private _userPoolConfig = new AppsyncGraphqlApiUserPoolConfigOutputReference(this, "user_pool_config", true);
+  private _userPoolConfig = new AppsyncGraphqlApiUserPoolConfigOutputReference(this, "user_pool_config");
   public get userPoolConfig() {
     return this._userPoolConfig;
   }

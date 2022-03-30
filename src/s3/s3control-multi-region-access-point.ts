@@ -62,10 +62,9 @@ export class S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3ControlMultiRegionAccessPointDetailsPublicAccessBlock | undefined {
@@ -225,10 +224,9 @@ export class S3ControlMultiRegionAccessPointDetailsOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3ControlMultiRegionAccessPointDetails | undefined {
@@ -278,7 +276,7 @@ export class S3ControlMultiRegionAccessPointDetailsOutputReference extends cdktf
   }
 
   // public_access_block - computed: false, optional: true, required: false
-  private _publicAccessBlock = new S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference(this, "public_access_block", true);
+  private _publicAccessBlock = new S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference(this, "public_access_block");
   public get publicAccessBlock() {
     return this._publicAccessBlock;
   }
@@ -335,10 +333,9 @@ export class S3ControlMultiRegionAccessPointTimeoutsOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3ControlMultiRegionAccessPointTimeouts | undefined {
@@ -409,7 +406,7 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_s3control_multi_region_access_point";
+  public static readonly tfResourceType = "aws_s3control_multi_region_access_point";
 
   // ===========
   // INITIALIZER
@@ -426,7 +423,9 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_s3control_multi_region_access_point',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -484,7 +483,7 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
   }
 
   // details - computed: false, optional: false, required: true
-  private _details = new S3ControlMultiRegionAccessPointDetailsOutputReference(this, "details", true);
+  private _details = new S3ControlMultiRegionAccessPointDetailsOutputReference(this, "details");
   public get details() {
     return this._details;
   }
@@ -497,7 +496,7 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new S3ControlMultiRegionAccessPointTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new S3ControlMultiRegionAccessPointTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

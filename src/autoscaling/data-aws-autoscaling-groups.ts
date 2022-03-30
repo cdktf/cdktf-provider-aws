@@ -45,7 +45,7 @@ export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_autoscaling_groups";
+  public static readonly tfResourceType = "aws_autoscaling_groups";
 
   // ===========
   // INITIALIZER
@@ -62,7 +62,9 @@ export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_autoscaling_groups',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

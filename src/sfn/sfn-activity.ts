@@ -29,7 +29,7 @@ export class SfnActivity extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_sfn_activity";
+  public static readonly tfResourceType = "aws_sfn_activity";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class SfnActivity extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_sfn_activity',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

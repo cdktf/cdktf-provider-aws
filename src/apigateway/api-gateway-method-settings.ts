@@ -94,10 +94,9 @@ export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ApiGatewayMethodSettingsSettings | undefined {
@@ -344,7 +343,7 @@ export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_api_gateway_method_settings";
+  public static readonly tfResourceType = "aws_api_gateway_method_settings";
 
   // ===========
   // INITIALIZER
@@ -361,7 +360,9 @@ export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_api_gateway_method_settings',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -423,7 +424,7 @@ export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
   }
 
   // settings - computed: false, optional: false, required: true
-  private _settings = new ApiGatewayMethodSettingsSettingsOutputReference(this, "settings", true);
+  private _settings = new ApiGatewayMethodSettingsSettingsOutputReference(this, "settings");
   public get settings() {
     return this._settings;
   }

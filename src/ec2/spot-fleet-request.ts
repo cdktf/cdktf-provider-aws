@@ -389,10 +389,9 @@ export class SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification | undefined {
@@ -567,10 +566,9 @@ export class SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputRef
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalance | undefined {
@@ -635,10 +633,9 @@ export class SpotFleetRequestSpotMaintenanceStrategiesOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SpotFleetRequestSpotMaintenanceStrategies | undefined {
@@ -663,7 +660,7 @@ export class SpotFleetRequestSpotMaintenanceStrategiesOutputReference extends cd
   }
 
   // capacity_rebalance - computed: false, optional: true, required: false
-  private _capacityRebalance = new SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference(this, "capacity_rebalance", true);
+  private _capacityRebalance = new SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference(this, "capacity_rebalance");
   public get capacityRebalance() {
     return this._capacityRebalance;
   }
@@ -706,10 +703,9 @@ export class SpotFleetRequestTimeoutsOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SpotFleetRequestTimeouts | undefined {
@@ -780,7 +776,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_spot_fleet_request";
+  public static readonly tfResourceType = "aws_spot_fleet_request";
 
   // ===========
   // INITIALIZER
@@ -797,7 +793,9 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_spot_fleet_request',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1198,7 +1196,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
   }
 
   // spot_maintenance_strategies - computed: false, optional: true, required: false
-  private _spotMaintenanceStrategies = new SpotFleetRequestSpotMaintenanceStrategiesOutputReference(this, "spot_maintenance_strategies", true);
+  private _spotMaintenanceStrategies = new SpotFleetRequestSpotMaintenanceStrategiesOutputReference(this, "spot_maintenance_strategies");
   public get spotMaintenanceStrategies() {
     return this._spotMaintenanceStrategies;
   }
@@ -1214,7 +1212,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new SpotFleetRequestTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new SpotFleetRequestTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

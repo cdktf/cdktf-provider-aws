@@ -29,7 +29,7 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ssm_parameters_by_path";
+  public static readonly tfResourceType = "aws_ssm_parameters_by_path";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_ssm_parameters_by_path',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

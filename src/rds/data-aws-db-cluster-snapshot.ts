@@ -45,7 +45,7 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_db_cluster_snapshot";
+  public static readonly tfResourceType = "aws_db_cluster_snapshot";
 
   // ===========
   // INITIALIZER
@@ -62,7 +62,9 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_db_cluster_snapshot',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

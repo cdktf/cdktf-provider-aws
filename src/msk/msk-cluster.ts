@@ -117,10 +117,9 @@ export class MskClusterBrokerNodeGroupInfoOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterBrokerNodeGroupInfo | undefined {
@@ -264,10 +263,9 @@ export class MskClusterClientAuthenticationSaslOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterClientAuthenticationSasl | undefined {
@@ -352,10 +350,9 @@ export class MskClusterClientAuthenticationTlsOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterClientAuthenticationTls | undefined {
@@ -427,10 +424,9 @@ export class MskClusterClientAuthenticationOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterClientAuthentication | undefined {
@@ -461,7 +457,7 @@ export class MskClusterClientAuthenticationOutputReference extends cdktf.Complex
   }
 
   // sasl - computed: false, optional: true, required: false
-  private _sasl = new MskClusterClientAuthenticationSaslOutputReference(this, "sasl", true);
+  private _sasl = new MskClusterClientAuthenticationSaslOutputReference(this, "sasl");
   public get sasl() {
     return this._sasl;
   }
@@ -477,7 +473,7 @@ export class MskClusterClientAuthenticationOutputReference extends cdktf.Complex
   }
 
   // tls - computed: false, optional: true, required: false
-  private _tls = new MskClusterClientAuthenticationTlsOutputReference(this, "tls", true);
+  private _tls = new MskClusterClientAuthenticationTlsOutputReference(this, "tls");
   public get tls() {
     return this._tls;
   }
@@ -520,10 +516,9 @@ export class MskClusterConfigurationInfoOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterConfigurationInfo | undefined {
@@ -607,10 +602,9 @@ export class MskClusterEncryptionInfoEncryptionInTransitOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterEncryptionInfoEncryptionInTransit | undefined {
@@ -702,10 +696,9 @@ export class MskClusterEncryptionInfoOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterEncryptionInfo | undefined {
@@ -752,7 +745,7 @@ export class MskClusterEncryptionInfoOutputReference extends cdktf.ComplexObject
   }
 
   // encryption_in_transit - computed: false, optional: true, required: false
-  private _encryptionInTransit = new MskClusterEncryptionInfoEncryptionInTransitOutputReference(this, "encryption_in_transit", true);
+  private _encryptionInTransit = new MskClusterEncryptionInfoEncryptionInTransitOutputReference(this, "encryption_in_transit");
   public get encryptionInTransit() {
     return this._encryptionInTransit;
   }
@@ -795,10 +788,9 @@ export class MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterLoggingInfoBrokerLogsCloudwatchLogs | undefined {
@@ -885,10 +877,9 @@ export class MskClusterLoggingInfoBrokerLogsFirehoseOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterLoggingInfoBrokerLogsFirehose | undefined {
@@ -980,10 +971,9 @@ export class MskClusterLoggingInfoBrokerLogsS3OutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterLoggingInfoBrokerLogsS3 | undefined {
@@ -1103,10 +1093,9 @@ export class MskClusterLoggingInfoBrokerLogsOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterLoggingInfoBrokerLogs | undefined {
@@ -1143,7 +1132,7 @@ export class MskClusterLoggingInfoBrokerLogsOutputReference extends cdktf.Comple
   }
 
   // cloudwatch_logs - computed: false, optional: true, required: false
-  private _cloudwatchLogs = new MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference(this, "cloudwatch_logs", true);
+  private _cloudwatchLogs = new MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference(this, "cloudwatch_logs");
   public get cloudwatchLogs() {
     return this._cloudwatchLogs;
   }
@@ -1159,7 +1148,7 @@ export class MskClusterLoggingInfoBrokerLogsOutputReference extends cdktf.Comple
   }
 
   // firehose - computed: false, optional: true, required: false
-  private _firehose = new MskClusterLoggingInfoBrokerLogsFirehoseOutputReference(this, "firehose", true);
+  private _firehose = new MskClusterLoggingInfoBrokerLogsFirehoseOutputReference(this, "firehose");
   public get firehose() {
     return this._firehose;
   }
@@ -1175,7 +1164,7 @@ export class MskClusterLoggingInfoBrokerLogsOutputReference extends cdktf.Comple
   }
 
   // s3 - computed: false, optional: true, required: false
-  private _s3 = new MskClusterLoggingInfoBrokerLogsS3OutputReference(this, "s3", true);
+  private _s3 = new MskClusterLoggingInfoBrokerLogsS3OutputReference(this, "s3");
   public get s3() {
     return this._s3;
   }
@@ -1215,10 +1204,9 @@ export class MskClusterLoggingInfoOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterLoggingInfo | undefined {
@@ -1243,7 +1231,7 @@ export class MskClusterLoggingInfoOutputReference extends cdktf.ComplexObject {
   }
 
   // broker_logs - computed: false, optional: false, required: true
-  private _brokerLogs = new MskClusterLoggingInfoBrokerLogsOutputReference(this, "broker_logs", true);
+  private _brokerLogs = new MskClusterLoggingInfoBrokerLogsOutputReference(this, "broker_logs");
   public get brokerLogs() {
     return this._brokerLogs;
   }
@@ -1278,10 +1266,9 @@ export class MskClusterOpenMonitoringPrometheusJmxExporterOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterOpenMonitoringPrometheusJmxExporter | undefined {
@@ -1341,10 +1328,9 @@ export class MskClusterOpenMonitoringPrometheusNodeExporterOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterOpenMonitoringPrometheusNodeExporter | undefined {
@@ -1413,10 +1399,9 @@ export class MskClusterOpenMonitoringPrometheusOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterOpenMonitoringPrometheus | undefined {
@@ -1447,7 +1432,7 @@ export class MskClusterOpenMonitoringPrometheusOutputReference extends cdktf.Com
   }
 
   // jmx_exporter - computed: false, optional: true, required: false
-  private _jmxExporter = new MskClusterOpenMonitoringPrometheusJmxExporterOutputReference(this, "jmx_exporter", true);
+  private _jmxExporter = new MskClusterOpenMonitoringPrometheusJmxExporterOutputReference(this, "jmx_exporter");
   public get jmxExporter() {
     return this._jmxExporter;
   }
@@ -1463,7 +1448,7 @@ export class MskClusterOpenMonitoringPrometheusOutputReference extends cdktf.Com
   }
 
   // node_exporter - computed: false, optional: true, required: false
-  private _nodeExporter = new MskClusterOpenMonitoringPrometheusNodeExporterOutputReference(this, "node_exporter", true);
+  private _nodeExporter = new MskClusterOpenMonitoringPrometheusNodeExporterOutputReference(this, "node_exporter");
   public get nodeExporter() {
     return this._nodeExporter;
   }
@@ -1503,10 +1488,9 @@ export class MskClusterOpenMonitoringOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterOpenMonitoring | undefined {
@@ -1531,7 +1515,7 @@ export class MskClusterOpenMonitoringOutputReference extends cdktf.ComplexObject
   }
 
   // prometheus - computed: false, optional: false, required: true
-  private _prometheus = new MskClusterOpenMonitoringPrometheusOutputReference(this, "prometheus", true);
+  private _prometheus = new MskClusterOpenMonitoringPrometheusOutputReference(this, "prometheus");
   public get prometheus() {
     return this._prometheus;
   }
@@ -1576,10 +1560,9 @@ export class MskClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MskClusterTimeouts | undefined {
@@ -1672,7 +1655,7 @@ export class MskCluster extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_msk_cluster";
+  public static readonly tfResourceType = "aws_msk_cluster";
 
   // ===========
   // INITIALIZER
@@ -1689,7 +1672,9 @@ export class MskCluster extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_msk_cluster',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1848,7 +1833,7 @@ export class MskCluster extends cdktf.TerraformResource {
   }
 
   // broker_node_group_info - computed: false, optional: false, required: true
-  private _brokerNodeGroupInfo = new MskClusterBrokerNodeGroupInfoOutputReference(this, "broker_node_group_info", true);
+  private _brokerNodeGroupInfo = new MskClusterBrokerNodeGroupInfoOutputReference(this, "broker_node_group_info");
   public get brokerNodeGroupInfo() {
     return this._brokerNodeGroupInfo;
   }
@@ -1861,7 +1846,7 @@ export class MskCluster extends cdktf.TerraformResource {
   }
 
   // client_authentication - computed: false, optional: true, required: false
-  private _clientAuthentication = new MskClusterClientAuthenticationOutputReference(this, "client_authentication", true);
+  private _clientAuthentication = new MskClusterClientAuthenticationOutputReference(this, "client_authentication");
   public get clientAuthentication() {
     return this._clientAuthentication;
   }
@@ -1877,7 +1862,7 @@ export class MskCluster extends cdktf.TerraformResource {
   }
 
   // configuration_info - computed: false, optional: true, required: false
-  private _configurationInfo = new MskClusterConfigurationInfoOutputReference(this, "configuration_info", true);
+  private _configurationInfo = new MskClusterConfigurationInfoOutputReference(this, "configuration_info");
   public get configurationInfo() {
     return this._configurationInfo;
   }
@@ -1893,7 +1878,7 @@ export class MskCluster extends cdktf.TerraformResource {
   }
 
   // encryption_info - computed: false, optional: true, required: false
-  private _encryptionInfo = new MskClusterEncryptionInfoOutputReference(this, "encryption_info", true);
+  private _encryptionInfo = new MskClusterEncryptionInfoOutputReference(this, "encryption_info");
   public get encryptionInfo() {
     return this._encryptionInfo;
   }
@@ -1909,7 +1894,7 @@ export class MskCluster extends cdktf.TerraformResource {
   }
 
   // logging_info - computed: false, optional: true, required: false
-  private _loggingInfo = new MskClusterLoggingInfoOutputReference(this, "logging_info", true);
+  private _loggingInfo = new MskClusterLoggingInfoOutputReference(this, "logging_info");
   public get loggingInfo() {
     return this._loggingInfo;
   }
@@ -1925,7 +1910,7 @@ export class MskCluster extends cdktf.TerraformResource {
   }
 
   // open_monitoring - computed: false, optional: true, required: false
-  private _openMonitoring = new MskClusterOpenMonitoringOutputReference(this, "open_monitoring", true);
+  private _openMonitoring = new MskClusterOpenMonitoringOutputReference(this, "open_monitoring");
   public get openMonitoring() {
     return this._openMonitoring;
   }
@@ -1941,7 +1926,7 @@ export class MskCluster extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new MskClusterTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new MskClusterTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

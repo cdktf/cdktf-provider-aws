@@ -73,10 +73,9 @@ export class SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputRefer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerWorkteamMemberDefinitionCognitoMemberDefinition | undefined {
@@ -174,10 +173,9 @@ export class SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReferenc
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerWorkteamMemberDefinitionOidcMemberDefinition | undefined {
@@ -263,10 +261,9 @@ export class SagemakerWorkteamNotificationConfigurationOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerWorkteamNotificationConfiguration | undefined {
@@ -315,7 +312,7 @@ export class SagemakerWorkteam extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_sagemaker_workteam";
+  public static readonly tfResourceType = "aws_sagemaker_workteam";
 
   // ===========
   // INITIALIZER
@@ -332,7 +329,9 @@ export class SagemakerWorkteam extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_sagemaker_workteam',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -453,7 +452,7 @@ export class SagemakerWorkteam extends cdktf.TerraformResource {
   }
 
   // notification_configuration - computed: false, optional: true, required: false
-  private _notificationConfiguration = new SagemakerWorkteamNotificationConfigurationOutputReference(this, "notification_configuration", true);
+  private _notificationConfiguration = new SagemakerWorkteamNotificationConfigurationOutputReference(this, "notification_configuration");
   public get notificationConfiguration() {
     return this._notificationConfiguration;
   }

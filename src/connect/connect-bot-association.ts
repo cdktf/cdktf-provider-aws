@@ -46,10 +46,9 @@ export class ConnectBotAssociationLexBotOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConnectBotAssociationLexBot | undefined {
@@ -117,7 +116,7 @@ export class ConnectBotAssociation extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_connect_bot_association";
+  public static readonly tfResourceType = "aws_connect_bot_association";
 
   // ===========
   // INITIALIZER
@@ -134,7 +133,9 @@ export class ConnectBotAssociation extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_connect_bot_association',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -168,7 +169,7 @@ export class ConnectBotAssociation extends cdktf.TerraformResource {
   }
 
   // lex_bot - computed: false, optional: false, required: true
-  private _lexBot = new ConnectBotAssociationLexBotOutputReference(this, "lex_bot", true);
+  private _lexBot = new ConnectBotAssociationLexBotOutputReference(this, "lex_bot");
   public get lexBot() {
     return this._lexBot;
   }

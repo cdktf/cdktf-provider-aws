@@ -29,7 +29,7 @@ export class IamGroupMembership extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_iam_group_membership";
+  public static readonly tfResourceType = "aws_iam_group_membership";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class IamGroupMembership extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_iam_group_membership',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

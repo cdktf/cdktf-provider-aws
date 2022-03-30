@@ -45,10 +45,9 @@ export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPa
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatterns | undefined {
@@ -142,10 +141,9 @@ export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontFieldLevelEncryptionProfileEncryptionEntities | undefined {
@@ -195,7 +193,7 @@ export class CloudfrontFieldLevelEncryptionProfile extends cdktf.TerraformResour
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudfront_field_level_encryption_profile";
+  public static readonly tfResourceType = "aws_cloudfront_field_level_encryption_profile";
 
   // ===========
   // INITIALIZER
@@ -212,7 +210,9 @@ export class CloudfrontFieldLevelEncryptionProfile extends cdktf.TerraformResour
     super(scope, id, {
       terraformResourceType: 'aws_cloudfront_field_level_encryption_profile',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -273,7 +273,7 @@ export class CloudfrontFieldLevelEncryptionProfile extends cdktf.TerraformResour
   }
 
   // encryption_entities - computed: false, optional: false, required: true
-  private _encryptionEntities = new CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference(this, "encryption_entities", true);
+  private _encryptionEntities = new CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference(this, "encryption_entities");
   public get encryptionEntities() {
     return this._encryptionEntities;
   }

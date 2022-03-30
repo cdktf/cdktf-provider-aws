@@ -2487,7 +2487,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws";
+  public static readonly tfResourceType = "aws";
 
   // ===========
   // INITIALIZER
@@ -2505,6 +2505,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
+        providerVersion: '4.8.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'

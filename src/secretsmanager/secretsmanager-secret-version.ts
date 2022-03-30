@@ -33,7 +33,7 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_secretsmanager_secret_version";
+  public static readonly tfResourceType = "aws_secretsmanager_secret_version";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_secretsmanager_secret_version',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

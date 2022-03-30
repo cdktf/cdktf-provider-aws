@@ -41,7 +41,7 @@ export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ec2_transit_gateway_peering_attachment";
+  public static readonly tfResourceType = "aws_ec2_transit_gateway_peering_attachment";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource 
     super(scope, id, {
       terraformResourceType: 'aws_ec2_transit_gateway_peering_attachment',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

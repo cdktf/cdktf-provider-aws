@@ -46,10 +46,9 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConne
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption | undefined {
@@ -136,10 +135,9 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncry
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest | undefined {
@@ -230,10 +228,9 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutpu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings | undefined {
@@ -264,7 +261,7 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutpu
   }
 
   // connection_password_encryption - computed: false, optional: false, required: true
-  private _connectionPasswordEncryption = new GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference(this, "connection_password_encryption", true);
+  private _connectionPasswordEncryption = new GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference(this, "connection_password_encryption");
   public get connectionPasswordEncryption() {
     return this._connectionPasswordEncryption;
   }
@@ -277,7 +274,7 @@ export class GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutpu
   }
 
   // encryption_at_rest - computed: false, optional: false, required: true
-  private _encryptionAtRest = new GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference(this, "encryption_at_rest", true);
+  private _encryptionAtRest = new GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference(this, "encryption_at_rest");
   public get encryptionAtRest() {
     return this._encryptionAtRest;
   }
@@ -298,7 +295,7 @@ export class GlueDataCatalogEncryptionSettings extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_glue_data_catalog_encryption_settings";
+  public static readonly tfResourceType = "aws_glue_data_catalog_encryption_settings";
 
   // ===========
   // INITIALIZER
@@ -315,7 +312,9 @@ export class GlueDataCatalogEncryptionSettings extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_glue_data_catalog_encryption_settings',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -352,7 +351,7 @@ export class GlueDataCatalogEncryptionSettings extends cdktf.TerraformResource {
   }
 
   // data_catalog_encryption_settings - computed: false, optional: false, required: true
-  private _dataCatalogEncryptionSettings = new GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference(this, "data_catalog_encryption_settings", true);
+  private _dataCatalogEncryptionSettings = new GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference(this, "data_catalog_encryption_settings");
   public get dataCatalogEncryptionSettings() {
     return this._dataCatalogEncryptionSettings;
   }

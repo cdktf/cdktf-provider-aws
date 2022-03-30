@@ -114,10 +114,9 @@ export class FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): FsxOpenzfsFileSystemDiskIopsConfiguration | undefined {
@@ -226,10 +225,9 @@ export class FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReferenc
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): FsxOpenzfsFileSystemRootVolumeConfigurationNfsExports | undefined {
@@ -341,10 +339,9 @@ export class FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): FsxOpenzfsFileSystemRootVolumeConfiguration | undefined {
@@ -441,7 +438,7 @@ export class FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference extends 
   }
 
   // nfs_exports - computed: false, optional: true, required: false
-  private _nfsExports = new FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference(this, "nfs_exports", true);
+  private _nfsExports = new FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference(this, "nfs_exports");
   public get nfsExports() {
     return this._nfsExports;
   }
@@ -506,10 +503,9 @@ export class FsxOpenzfsFileSystemTimeoutsOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): FsxOpenzfsFileSystemTimeouts | undefined {
@@ -602,7 +598,7 @@ export class FsxOpenzfsFileSystem extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_fsx_openzfs_file_system";
+  public static readonly tfResourceType = "aws_fsx_openzfs_file_system";
 
   // ===========
   // INITIALIZER
@@ -619,7 +615,9 @@ export class FsxOpenzfsFileSystem extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_fsx_openzfs_file_system',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -917,7 +915,7 @@ export class FsxOpenzfsFileSystem extends cdktf.TerraformResource {
   }
 
   // disk_iops_configuration - computed: false, optional: true, required: false
-  private _diskIopsConfiguration = new FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference(this, "disk_iops_configuration", true);
+  private _diskIopsConfiguration = new FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference(this, "disk_iops_configuration");
   public get diskIopsConfiguration() {
     return this._diskIopsConfiguration;
   }
@@ -933,7 +931,7 @@ export class FsxOpenzfsFileSystem extends cdktf.TerraformResource {
   }
 
   // root_volume_configuration - computed: false, optional: true, required: false
-  private _rootVolumeConfiguration = new FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference(this, "root_volume_configuration", true);
+  private _rootVolumeConfiguration = new FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference(this, "root_volume_configuration");
   public get rootVolumeConfiguration() {
     return this._rootVolumeConfiguration;
   }
@@ -949,7 +947,7 @@ export class FsxOpenzfsFileSystem extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new FsxOpenzfsFileSystemTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new FsxOpenzfsFileSystemTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

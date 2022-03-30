@@ -50,10 +50,9 @@ export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigur
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambda | undefined {
@@ -137,10 +136,9 @@ export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigur
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformation | undefined {
@@ -165,7 +163,7 @@ export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigur
   }
 
   // aws_lambda - computed: false, optional: false, required: true
-  private _awsLambda = new S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaOutputReference(this, "aws_lambda", true);
+  private _awsLambda = new S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambdaOutputReference(this, "aws_lambda");
   public get awsLambda() {
     return this._awsLambda;
   }
@@ -241,10 +239,9 @@ export class S3ControlObjectLambdaAccessPointConfigurationOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3ControlObjectLambdaAccessPointConfiguration | undefined {
@@ -354,7 +351,7 @@ export class S3ControlObjectLambdaAccessPoint extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_s3control_object_lambda_access_point";
+  public static readonly tfResourceType = "aws_s3control_object_lambda_access_point";
 
   // ===========
   // INITIALIZER
@@ -371,7 +368,9 @@ export class S3ControlObjectLambdaAccessPoint extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_s3control_object_lambda_access_point',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -427,7 +426,7 @@ export class S3ControlObjectLambdaAccessPoint extends cdktf.TerraformResource {
   }
 
   // configuration - computed: false, optional: false, required: true
-  private _configuration = new S3ControlObjectLambdaAccessPointConfigurationOutputReference(this, "configuration", true);
+  private _configuration = new S3ControlObjectLambdaAccessPointConfigurationOutputReference(this, "configuration");
   public get configuration() {
     return this._configuration;
   }

@@ -49,7 +49,7 @@ export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_elastic_beanstalk_application_version";
+  public static readonly tfResourceType = "aws_elastic_beanstalk_application_version";
 
   // ===========
   // INITIALIZER
@@ -66,7 +66,9 @@ export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource 
     super(scope, id, {
       terraformResourceType: 'aws_elastic_beanstalk_application_version',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

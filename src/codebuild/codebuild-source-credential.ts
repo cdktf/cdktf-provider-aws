@@ -33,7 +33,7 @@ export class CodebuildSourceCredential extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_codebuild_source_credential";
+  public static readonly tfResourceType = "aws_codebuild_source_credential";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class CodebuildSourceCredential extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_codebuild_source_credential',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

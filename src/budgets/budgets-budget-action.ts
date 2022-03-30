@@ -78,10 +78,9 @@ export class BudgetsBudgetActionActionThresholdOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): BudgetsBudgetActionActionThreshold | undefined {
@@ -175,10 +174,9 @@ export class BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): BudgetsBudgetActionDefinitionIamActionDefinition | undefined {
@@ -309,10 +307,9 @@ export class BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): BudgetsBudgetActionDefinitionScpActionDefinition | undefined {
@@ -401,10 +398,9 @@ export class BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): BudgetsBudgetActionDefinitionSsmActionDefinition | undefined {
@@ -518,10 +514,9 @@ export class BudgetsBudgetActionDefinitionOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): BudgetsBudgetActionDefinition | undefined {
@@ -558,7 +553,7 @@ export class BudgetsBudgetActionDefinitionOutputReference extends cdktf.ComplexO
   }
 
   // iam_action_definition - computed: false, optional: true, required: false
-  private _iamActionDefinition = new BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference(this, "iam_action_definition", true);
+  private _iamActionDefinition = new BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference(this, "iam_action_definition");
   public get iamActionDefinition() {
     return this._iamActionDefinition;
   }
@@ -574,7 +569,7 @@ export class BudgetsBudgetActionDefinitionOutputReference extends cdktf.ComplexO
   }
 
   // scp_action_definition - computed: false, optional: true, required: false
-  private _scpActionDefinition = new BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference(this, "scp_action_definition", true);
+  private _scpActionDefinition = new BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference(this, "scp_action_definition");
   public get scpActionDefinition() {
     return this._scpActionDefinition;
   }
@@ -590,7 +585,7 @@ export class BudgetsBudgetActionDefinitionOutputReference extends cdktf.ComplexO
   }
 
   // ssm_action_definition - computed: false, optional: true, required: false
-  private _ssmActionDefinition = new BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference(this, "ssm_action_definition", true);
+  private _ssmActionDefinition = new BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference(this, "ssm_action_definition");
   public get ssmActionDefinition() {
     return this._ssmActionDefinition;
   }
@@ -636,7 +631,7 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_budgets_budget_action";
+  public static readonly tfResourceType = "aws_budgets_budget_action";
 
   // ===========
   // INITIALIZER
@@ -653,7 +648,9 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_budgets_budget_action',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -777,7 +774,7 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
   }
 
   // action_threshold - computed: false, optional: false, required: true
-  private _actionThreshold = new BudgetsBudgetActionActionThresholdOutputReference(this, "action_threshold", true);
+  private _actionThreshold = new BudgetsBudgetActionActionThresholdOutputReference(this, "action_threshold");
   public get actionThreshold() {
     return this._actionThreshold;
   }
@@ -790,7 +787,7 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
   }
 
   // definition - computed: false, optional: false, required: true
-  private _definition = new BudgetsBudgetActionDefinitionOutputReference(this, "definition", true);
+  private _definition = new BudgetsBudgetActionDefinitionOutputReference(this, "definition");
   public get definition() {
     return this._definition;
   }

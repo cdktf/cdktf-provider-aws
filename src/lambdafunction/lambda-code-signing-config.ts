@@ -47,10 +47,9 @@ export class LambdaCodeSigningConfigAllowedPublishersOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LambdaCodeSigningConfigAllowedPublishers | undefined {
@@ -110,10 +109,9 @@ export class LambdaCodeSigningConfigPoliciesOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LambdaCodeSigningConfigPolicies | undefined {
@@ -159,7 +157,7 @@ export class LambdaCodeSigningConfig extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_lambda_code_signing_config";
+  public static readonly tfResourceType = "aws_lambda_code_signing_config";
 
   // ===========
   // INITIALIZER
@@ -176,7 +174,9 @@ export class LambdaCodeSigningConfig extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_lambda_code_signing_config',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -229,7 +229,7 @@ export class LambdaCodeSigningConfig extends cdktf.TerraformResource {
   }
 
   // allowed_publishers - computed: false, optional: false, required: true
-  private _allowedPublishers = new LambdaCodeSigningConfigAllowedPublishersOutputReference(this, "allowed_publishers", true);
+  private _allowedPublishers = new LambdaCodeSigningConfigAllowedPublishersOutputReference(this, "allowed_publishers");
   public get allowedPublishers() {
     return this._allowedPublishers;
   }
@@ -242,7 +242,7 @@ export class LambdaCodeSigningConfig extends cdktf.TerraformResource {
   }
 
   // policies - computed: false, optional: true, required: false
-  private _policies = new LambdaCodeSigningConfigPoliciesOutputReference(this, "policies", true);
+  private _policies = new LambdaCodeSigningConfigPoliciesOutputReference(this, "policies");
   public get policies() {
     return this._policies;
   }

@@ -41,7 +41,7 @@ export class SwfDomain extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_swf_domain";
+  public static readonly tfResourceType = "aws_swf_domain";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class SwfDomain extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_swf_domain',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -25,7 +25,7 @@ export class DataAwsOrganizationsResourceTags extends cdktf.TerraformDataSource 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_organizations_resource_tags";
+  public static readonly tfResourceType = "aws_organizations_resource_tags";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class DataAwsOrganizationsResourceTags extends cdktf.TerraformDataSource 
     super(scope, id, {
       terraformResourceType: 'aws_organizations_resource_tags',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -77,10 +77,9 @@ export class CodebuildReportGroupExportConfigS3DestinationOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildReportGroupExportConfigS3Destination | undefined {
@@ -232,10 +231,9 @@ export class CodebuildReportGroupExportConfigOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodebuildReportGroupExportConfig | undefined {
@@ -279,7 +277,7 @@ export class CodebuildReportGroupExportConfigOutputReference extends cdktf.Compl
   }
 
   // s3_destination - computed: false, optional: true, required: false
-  private _s3Destination = new CodebuildReportGroupExportConfigS3DestinationOutputReference(this, "s3_destination", true);
+  private _s3Destination = new CodebuildReportGroupExportConfigS3DestinationOutputReference(this, "s3_destination");
   public get s3Destination() {
     return this._s3Destination;
   }
@@ -303,7 +301,7 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_codebuild_report_group";
+  public static readonly tfResourceType = "aws_codebuild_report_group";
 
   // ===========
   // INITIALIZER
@@ -320,7 +318,9 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_codebuild_report_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -429,7 +429,7 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
   }
 
   // export_config - computed: false, optional: false, required: true
-  private _exportConfig = new CodebuildReportGroupExportConfigOutputReference(this, "export_config", true);
+  private _exportConfig = new CodebuildReportGroupExportConfigOutputReference(this, "export_config");
   public get exportConfig() {
     return this._exportConfig;
   }

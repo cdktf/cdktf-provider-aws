@@ -57,10 +57,9 @@ export class ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConfigDeliveryChannelSnapshotDeliveryProperties | undefined {
@@ -109,7 +108,7 @@ export class ConfigDeliveryChannel extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_config_delivery_channel";
+  public static readonly tfResourceType = "aws_config_delivery_channel";
 
   // ===========
   // INITIALIZER
@@ -126,7 +125,9 @@ export class ConfigDeliveryChannel extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_config_delivery_channel',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -228,7 +229,7 @@ export class ConfigDeliveryChannel extends cdktf.TerraformResource {
   }
 
   // snapshot_delivery_properties - computed: false, optional: true, required: false
-  private _snapshotDeliveryProperties = new ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference(this, "snapshot_delivery_properties", true);
+  private _snapshotDeliveryProperties = new ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference(this, "snapshot_delivery_properties");
   public get snapshotDeliveryProperties() {
     return this._snapshotDeliveryProperties;
   }

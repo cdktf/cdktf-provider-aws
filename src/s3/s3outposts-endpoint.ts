@@ -20,11 +20,68 @@ export interface S3OutpostsEndpointConfig extends cdktf.TerraformMetaArguments {
   */
   readonly subnetId: string;
 }
-export class S3OutpostsEndpointNetworkInterfaces extends cdktf.ComplexComputedList {
+export interface S3OutpostsEndpointNetworkInterfaces {
+}
+
+export function s3OutpostsEndpointNetworkInterfacesToTerraform(struct?: S3OutpostsEndpointNetworkInterfaces): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class S3OutpostsEndpointNetworkInterfacesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3OutpostsEndpointNetworkInterfaces | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3OutpostsEndpointNetworkInterfaces | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // network_interface_id - computed: true, optional: false, required: false
   public get networkInterfaceId() {
     return this.getStringAttribute('network_interface_id');
+  }
+}
+
+export class S3OutpostsEndpointNetworkInterfacesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3OutpostsEndpointNetworkInterfacesOutputReference {
+    return new S3OutpostsEndpointNetworkInterfacesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -36,7 +93,7 @@ export class S3OutpostsEndpoint extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_s3outposts_endpoint";
+  public static readonly tfResourceType = "aws_s3outposts_endpoint";
 
   // ===========
   // INITIALIZER
@@ -53,7 +110,9 @@ export class S3OutpostsEndpoint extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_s3outposts_endpoint',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -90,8 +149,9 @@ export class S3OutpostsEndpoint extends cdktf.TerraformResource {
   }
 
   // network_interfaces - computed: true, optional: false, required: false
-  public networkInterfaces(index: string) {
-    return new S3OutpostsEndpointNetworkInterfaces(this, 'network_interfaces', index, true);
+  private _networkInterfaces = new S3OutpostsEndpointNetworkInterfacesList(this, "network_interfaces", true);
+  public get networkInterfaces() {
+    return this._networkInterfaces;
   }
 
   // outpost_id - computed: false, optional: false, required: true

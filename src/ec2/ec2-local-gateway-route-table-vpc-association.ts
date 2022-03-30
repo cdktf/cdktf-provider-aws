@@ -33,7 +33,7 @@ export class Ec2LocalGatewayRouteTableVpcAssociation extends cdktf.TerraformReso
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ec2_local_gateway_route_table_vpc_association";
+  public static readonly tfResourceType = "aws_ec2_local_gateway_route_table_vpc_association";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class Ec2LocalGatewayRouteTableVpcAssociation extends cdktf.TerraformReso
     super(scope, id, {
       terraformResourceType: 'aws_ec2_local_gateway_route_table_vpc_association',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

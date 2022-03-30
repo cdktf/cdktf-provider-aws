@@ -107,10 +107,9 @@ export class ServiceDiscoveryServiceDnsConfigOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceDiscoveryServiceDnsConfig | undefined {
@@ -222,10 +221,9 @@ export class ServiceDiscoveryServiceHealthCheckConfigOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceDiscoveryServiceHealthCheckConfig | undefined {
@@ -332,10 +330,9 @@ export class ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceDiscoveryServiceHealthCheckCustomConfig | undefined {
@@ -384,7 +381,7 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_service_discovery_service";
+  public static readonly tfResourceType = "aws_service_discovery_service";
 
   // ===========
   // INITIALIZER
@@ -401,7 +398,9 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_service_discovery_service',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -527,7 +526,7 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
   }
 
   // dns_config - computed: false, optional: true, required: false
-  private _dnsConfig = new ServiceDiscoveryServiceDnsConfigOutputReference(this, "dns_config", true);
+  private _dnsConfig = new ServiceDiscoveryServiceDnsConfigOutputReference(this, "dns_config");
   public get dnsConfig() {
     return this._dnsConfig;
   }
@@ -543,7 +542,7 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
   }
 
   // health_check_config - computed: false, optional: true, required: false
-  private _healthCheckConfig = new ServiceDiscoveryServiceHealthCheckConfigOutputReference(this, "health_check_config", true);
+  private _healthCheckConfig = new ServiceDiscoveryServiceHealthCheckConfigOutputReference(this, "health_check_config");
   public get healthCheckConfig() {
     return this._healthCheckConfig;
   }
@@ -559,7 +558,7 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
   }
 
   // health_check_custom_config - computed: false, optional: true, required: false
-  private _healthCheckCustomConfig = new ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference(this, "health_check_custom_config", true);
+  private _healthCheckCustomConfig = new ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference(this, "health_check_custom_config");
   public get healthCheckCustomConfig() {
     return this._healthCheckCustomConfig;
   }

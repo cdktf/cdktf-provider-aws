@@ -25,7 +25,7 @@ export class DataAwsElasticBeanstalkSolutionStack extends cdktf.TerraformDataSou
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_elastic_beanstalk_solution_stack";
+  public static readonly tfResourceType = "aws_elastic_beanstalk_solution_stack";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class DataAwsElasticBeanstalkSolutionStack extends cdktf.TerraformDataSou
     super(scope, id, {
       terraformResourceType: 'aws_elastic_beanstalk_solution_stack',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

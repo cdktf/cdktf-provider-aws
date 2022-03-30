@@ -109,10 +109,9 @@ export class SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputRefer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig | undefined {
@@ -224,10 +223,9 @@ export class SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReferen
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig | undefined {
@@ -323,10 +321,9 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerFeatureGroupOfflineStoreConfig | undefined {
@@ -379,7 +376,7 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
   }
 
   // data_catalog_config - computed: false, optional: true, required: false
-  private _dataCatalogConfig = new SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference(this, "data_catalog_config", true);
+  private _dataCatalogConfig = new SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference(this, "data_catalog_config");
   public get dataCatalogConfig() {
     return this._dataCatalogConfig;
   }
@@ -395,7 +392,7 @@ export class SagemakerFeatureGroupOfflineStoreConfigOutputReference extends cdkt
   }
 
   // s3_storage_config - computed: false, optional: false, required: true
-  private _s3StorageConfig = new SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference(this, "s3_storage_config", true);
+  private _s3StorageConfig = new SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference(this, "s3_storage_config");
   public get s3StorageConfig() {
     return this._s3StorageConfig;
   }
@@ -430,10 +427,9 @@ export class SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerFeatureGroupOnlineStoreConfigSecurityConfig | undefined {
@@ -503,10 +499,9 @@ export class SagemakerFeatureGroupOnlineStoreConfigOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerFeatureGroupOnlineStoreConfig | undefined {
@@ -553,7 +548,7 @@ export class SagemakerFeatureGroupOnlineStoreConfigOutputReference extends cdktf
   }
 
   // security_config - computed: false, optional: true, required: false
-  private _securityConfig = new SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference(this, "security_config", true);
+  private _securityConfig = new SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference(this, "security_config");
   public get securityConfig() {
     return this._securityConfig;
   }
@@ -577,7 +572,7 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_sagemaker_feature_group";
+  public static readonly tfResourceType = "aws_sagemaker_feature_group";
 
   // ===========
   // INITIALIZER
@@ -594,7 +589,9 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_sagemaker_feature_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -742,7 +739,7 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
   }
 
   // offline_store_config - computed: false, optional: true, required: false
-  private _offlineStoreConfig = new SagemakerFeatureGroupOfflineStoreConfigOutputReference(this, "offline_store_config", true);
+  private _offlineStoreConfig = new SagemakerFeatureGroupOfflineStoreConfigOutputReference(this, "offline_store_config");
   public get offlineStoreConfig() {
     return this._offlineStoreConfig;
   }
@@ -758,7 +755,7 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
   }
 
   // online_store_config - computed: false, optional: true, required: false
-  private _onlineStoreConfig = new SagemakerFeatureGroupOnlineStoreConfigOutputReference(this, "online_store_config", true);
+  private _onlineStoreConfig = new SagemakerFeatureGroupOnlineStoreConfigOutputReference(this, "online_store_config");
   public get onlineStoreConfig() {
     return this._onlineStoreConfig;
   }

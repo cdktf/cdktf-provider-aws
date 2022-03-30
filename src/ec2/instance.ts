@@ -219,10 +219,9 @@ export class InstanceCapacityReservationSpecificationCapacityReservationTargetOu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): InstanceCapacityReservationSpecificationCapacityReservationTarget | undefined {
@@ -292,10 +291,9 @@ export class InstanceCapacityReservationSpecificationOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): InstanceCapacityReservationSpecification | undefined {
@@ -342,7 +340,7 @@ export class InstanceCapacityReservationSpecificationOutputReference extends cdk
   }
 
   // capacity_reservation_target - computed: false, optional: true, required: false
-  private _capacityReservationTarget = new InstanceCapacityReservationSpecificationCapacityReservationTargetOutputReference(this, "capacity_reservation_target", true);
+  private _capacityReservationTarget = new InstanceCapacityReservationSpecificationCapacityReservationTargetOutputReference(this, "capacity_reservation_target");
   public get capacityReservationTarget() {
     return this._capacityReservationTarget;
   }
@@ -380,10 +378,9 @@ export class InstanceCreditSpecificationOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): InstanceCreditSpecification | undefined {
@@ -508,10 +505,9 @@ export class InstanceEnclaveOptionsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): InstanceEnclaveOptions | undefined {
@@ -610,10 +606,9 @@ export class InstanceLaunchTemplateOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): InstanceLaunchTemplate | undefined {
@@ -718,10 +713,9 @@ export class InstanceMetadataOptionsOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): InstanceMetadataOptions | undefined {
@@ -912,10 +906,9 @@ export class InstanceRootBlockDeviceOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): InstanceRootBlockDevice | undefined {
@@ -1152,10 +1145,9 @@ export class InstanceTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): InstanceTimeouts | undefined {
@@ -1248,7 +1240,7 @@ export class Instance extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_instance";
+  public static readonly tfResourceType = "aws_instance";
 
   // ===========
   // INITIALIZER
@@ -1265,7 +1257,9 @@ export class Instance extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_instance',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1878,7 +1872,7 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // capacity_reservation_specification - computed: false, optional: true, required: false
-  private _capacityReservationSpecification = new InstanceCapacityReservationSpecificationOutputReference(this, "capacity_reservation_specification", true);
+  private _capacityReservationSpecification = new InstanceCapacityReservationSpecificationOutputReference(this, "capacity_reservation_specification");
   public get capacityReservationSpecification() {
     return this._capacityReservationSpecification;
   }
@@ -1894,7 +1888,7 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // credit_specification - computed: false, optional: true, required: false
-  private _creditSpecification = new InstanceCreditSpecificationOutputReference(this, "credit_specification", true);
+  private _creditSpecification = new InstanceCreditSpecificationOutputReference(this, "credit_specification");
   public get creditSpecification() {
     return this._creditSpecification;
   }
@@ -1927,7 +1921,7 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // enclave_options - computed: false, optional: true, required: false
-  private _enclaveOptions = new InstanceEnclaveOptionsOutputReference(this, "enclave_options", true);
+  private _enclaveOptions = new InstanceEnclaveOptionsOutputReference(this, "enclave_options");
   public get enclaveOptions() {
     return this._enclaveOptions;
   }
@@ -1960,7 +1954,7 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // launch_template - computed: false, optional: true, required: false
-  private _launchTemplate = new InstanceLaunchTemplateOutputReference(this, "launch_template", true);
+  private _launchTemplate = new InstanceLaunchTemplateOutputReference(this, "launch_template");
   public get launchTemplate() {
     return this._launchTemplate;
   }
@@ -1976,7 +1970,7 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // metadata_options - computed: false, optional: true, required: false
-  private _metadataOptions = new InstanceMetadataOptionsOutputReference(this, "metadata_options", true);
+  private _metadataOptions = new InstanceMetadataOptionsOutputReference(this, "metadata_options");
   public get metadataOptions() {
     return this._metadataOptions;
   }
@@ -2009,7 +2003,7 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // root_block_device - computed: false, optional: true, required: false
-  private _rootBlockDevice = new InstanceRootBlockDeviceOutputReference(this, "root_block_device", true);
+  private _rootBlockDevice = new InstanceRootBlockDeviceOutputReference(this, "root_block_device");
   public get rootBlockDevice() {
     return this._rootBlockDevice;
   }
@@ -2025,7 +2019,7 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new InstanceTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new InstanceTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

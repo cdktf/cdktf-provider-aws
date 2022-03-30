@@ -62,7 +62,7 @@ export class DataAwsAcmpcaCertificateAuthority extends cdktf.TerraformDataSource
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_acmpca_certificate_authority";
+  public static readonly tfResourceType = "aws_acmpca_certificate_authority";
 
   // ===========
   // INITIALIZER
@@ -79,7 +79,9 @@ export class DataAwsAcmpcaCertificateAuthority extends cdktf.TerraformDataSource
     super(scope, id, {
       terraformResourceType: 'aws_acmpca_certificate_authority',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

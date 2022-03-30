@@ -25,7 +25,7 @@ export class ConnectLambdaFunctionAssociation extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_connect_lambda_function_association";
+  public static readonly tfResourceType = "aws_connect_lambda_function_association";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class ConnectLambdaFunctionAssociation extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_connect_lambda_function_association',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -71,10 +71,9 @@ export class SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivation
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig | undefined {
@@ -136,10 +135,9 @@ export class SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerFlowDefinitionHumanLoopActivationConfig | undefined {
@@ -164,7 +162,7 @@ export class SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference ext
   }
 
   // human_loop_activation_conditions_config - computed: false, optional: true, required: false
-  private _humanLoopActivationConditionsConfig = new SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference(this, "human_loop_activation_conditions_config", true);
+  private _humanLoopActivationConditionsConfig = new SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference(this, "human_loop_activation_conditions_config");
   public get humanLoopActivationConditionsConfig() {
     return this._humanLoopActivationConditionsConfig;
   }
@@ -212,10 +210,9 @@ export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmoun
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd | undefined {
@@ -324,10 +321,9 @@ export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutpu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice | undefined {
@@ -352,7 +348,7 @@ export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutpu
   }
 
   // amount_in_usd - computed: false, optional: true, required: false
-  private _amountInUsd = new SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference(this, "amount_in_usd", true);
+  private _amountInUsd = new SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference(this, "amount_in_usd");
   public get amountInUsd() {
     return this._amountInUsd;
   }
@@ -432,10 +428,9 @@ export class SagemakerFlowDefinitionHumanLoopConfigOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerFlowDefinitionHumanLoopConfig | undefined {
@@ -621,7 +616,7 @@ export class SagemakerFlowDefinitionHumanLoopConfigOutputReference extends cdktf
   }
 
   // public_workforce_task_price - computed: false, optional: true, required: false
-  private _publicWorkforceTaskPrice = new SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference(this, "public_workforce_task_price", true);
+  private _publicWorkforceTaskPrice = new SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference(this, "public_workforce_task_price");
   public get publicWorkforceTaskPrice() {
     return this._publicWorkforceTaskPrice;
   }
@@ -659,10 +654,9 @@ export class SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerFlowDefinitionHumanLoopRequestSource | undefined {
@@ -727,10 +721,9 @@ export class SagemakerFlowDefinitionOutputConfigOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerFlowDefinitionOutputConfig | undefined {
@@ -798,7 +791,7 @@ export class SagemakerFlowDefinition extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_sagemaker_flow_definition";
+  public static readonly tfResourceType = "aws_sagemaker_flow_definition";
 
   // ===========
   // INITIALIZER
@@ -815,7 +808,9 @@ export class SagemakerFlowDefinition extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_sagemaker_flow_definition',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -905,7 +900,7 @@ export class SagemakerFlowDefinition extends cdktf.TerraformResource {
   }
 
   // human_loop_activation_config - computed: false, optional: true, required: false
-  private _humanLoopActivationConfig = new SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference(this, "human_loop_activation_config", true);
+  private _humanLoopActivationConfig = new SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference(this, "human_loop_activation_config");
   public get humanLoopActivationConfig() {
     return this._humanLoopActivationConfig;
   }
@@ -921,7 +916,7 @@ export class SagemakerFlowDefinition extends cdktf.TerraformResource {
   }
 
   // human_loop_config - computed: false, optional: false, required: true
-  private _humanLoopConfig = new SagemakerFlowDefinitionHumanLoopConfigOutputReference(this, "human_loop_config", true);
+  private _humanLoopConfig = new SagemakerFlowDefinitionHumanLoopConfigOutputReference(this, "human_loop_config");
   public get humanLoopConfig() {
     return this._humanLoopConfig;
   }
@@ -934,7 +929,7 @@ export class SagemakerFlowDefinition extends cdktf.TerraformResource {
   }
 
   // human_loop_request_source - computed: false, optional: true, required: false
-  private _humanLoopRequestSource = new SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference(this, "human_loop_request_source", true);
+  private _humanLoopRequestSource = new SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference(this, "human_loop_request_source");
   public get humanLoopRequestSource() {
     return this._humanLoopRequestSource;
   }
@@ -950,7 +945,7 @@ export class SagemakerFlowDefinition extends cdktf.TerraformResource {
   }
 
   // output_config - computed: false, optional: false, required: true
-  private _outputConfig = new SagemakerFlowDefinitionOutputConfigOutputReference(this, "output_config", true);
+  private _outputConfig = new SagemakerFlowDefinitionOutputConfigOutputReference(this, "output_config");
   public get outputConfig() {
     return this._outputConfig;
   }

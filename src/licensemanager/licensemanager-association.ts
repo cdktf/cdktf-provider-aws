@@ -25,7 +25,7 @@ export class LicensemanagerAssociation extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_licensemanager_association";
+  public static readonly tfResourceType = "aws_licensemanager_association";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class LicensemanagerAssociation extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_licensemanager_association',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

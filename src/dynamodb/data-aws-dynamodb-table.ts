@@ -22,7 +22,45 @@ export interface DataAwsDynamodbTableConfig extends cdktf.TerraformMetaArguments
   */
   readonly serverSideEncryption?: DataAwsDynamodbTableServerSideEncryption;
 }
-export class DataAwsDynamodbTableAttribute extends cdktf.ComplexComputedList {
+export interface DataAwsDynamodbTableAttribute {
+}
+
+export function dataAwsDynamodbTableAttributeToTerraform(struct?: DataAwsDynamodbTableAttribute): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsDynamodbTableAttributeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDynamodbTableAttribute | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDynamodbTableAttribute | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // name - computed: true, optional: false, required: false
   public get name() {
@@ -34,7 +72,64 @@ export class DataAwsDynamodbTableAttribute extends cdktf.ComplexComputedList {
     return this.getStringAttribute('type');
   }
 }
-export class DataAwsDynamodbTableGlobalSecondaryIndex extends cdktf.ComplexComputedList {
+
+export class DataAwsDynamodbTableAttributeList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsDynamodbTableAttributeOutputReference {
+    return new DataAwsDynamodbTableAttributeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsDynamodbTableGlobalSecondaryIndex {
+}
+
+export function dataAwsDynamodbTableGlobalSecondaryIndexToTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndex): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsDynamodbTableGlobalSecondaryIndexOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDynamodbTableGlobalSecondaryIndex | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDynamodbTableGlobalSecondaryIndex | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // hash_key - computed: true, optional: false, required: false
   public get hashKey() {
@@ -71,7 +166,64 @@ export class DataAwsDynamodbTableGlobalSecondaryIndex extends cdktf.ComplexCompu
     return this.getNumberAttribute('write_capacity');
   }
 }
-export class DataAwsDynamodbTableLocalSecondaryIndex extends cdktf.ComplexComputedList {
+
+export class DataAwsDynamodbTableGlobalSecondaryIndexList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsDynamodbTableGlobalSecondaryIndexOutputReference {
+    return new DataAwsDynamodbTableGlobalSecondaryIndexOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsDynamodbTableLocalSecondaryIndex {
+}
+
+export function dataAwsDynamodbTableLocalSecondaryIndexToTerraform(struct?: DataAwsDynamodbTableLocalSecondaryIndex): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsDynamodbTableLocalSecondaryIndexOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDynamodbTableLocalSecondaryIndex | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDynamodbTableLocalSecondaryIndex | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // name - computed: true, optional: false, required: false
   public get name() {
@@ -93,14 +245,128 @@ export class DataAwsDynamodbTableLocalSecondaryIndex extends cdktf.ComplexComput
     return this.getStringAttribute('range_key');
   }
 }
-export class DataAwsDynamodbTablePointInTimeRecovery extends cdktf.ComplexComputedList {
+
+export class DataAwsDynamodbTableLocalSecondaryIndexList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsDynamodbTableLocalSecondaryIndexOutputReference {
+    return new DataAwsDynamodbTableLocalSecondaryIndexOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsDynamodbTablePointInTimeRecovery {
+}
+
+export function dataAwsDynamodbTablePointInTimeRecoveryToTerraform(struct?: DataAwsDynamodbTablePointInTimeRecovery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsDynamodbTablePointInTimeRecoveryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDynamodbTablePointInTimeRecovery | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDynamodbTablePointInTimeRecovery | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 }
-export class DataAwsDynamodbTableReplica extends cdktf.ComplexComputedList {
+
+export class DataAwsDynamodbTablePointInTimeRecoveryList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsDynamodbTablePointInTimeRecoveryOutputReference {
+    return new DataAwsDynamodbTablePointInTimeRecoveryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsDynamodbTableReplica {
+}
+
+export function dataAwsDynamodbTableReplicaToTerraform(struct?: DataAwsDynamodbTableReplica): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsDynamodbTableReplicaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDynamodbTableReplica | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDynamodbTableReplica | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // kms_key_arn - computed: true, optional: false, required: false
   public get kmsKeyArn() {
@@ -112,7 +378,64 @@ export class DataAwsDynamodbTableReplica extends cdktf.ComplexComputedList {
     return this.getStringAttribute('region_name');
   }
 }
-export class DataAwsDynamodbTableTtl extends cdktf.ComplexComputedList {
+
+export class DataAwsDynamodbTableReplicaList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsDynamodbTableReplicaOutputReference {
+    return new DataAwsDynamodbTableReplicaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsDynamodbTableTtl {
+}
+
+export function dataAwsDynamodbTableTtlToTerraform(struct?: DataAwsDynamodbTableTtl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsDynamodbTableTtlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDynamodbTableTtl | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDynamodbTableTtl | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // attribute_name - computed: true, optional: false, required: false
   public get attributeName() {
@@ -122,6 +445,25 @@ export class DataAwsDynamodbTableTtl extends cdktf.ComplexComputedList {
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
+  }
+}
+
+export class DataAwsDynamodbTableTtlList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsDynamodbTableTtlOutputReference {
+    return new DataAwsDynamodbTableTtlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsDynamodbTableServerSideEncryption {
@@ -142,10 +484,9 @@ export class DataAwsDynamodbTableServerSideEncryptionOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DataAwsDynamodbTableServerSideEncryption | undefined {
@@ -182,7 +523,7 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_dynamodb_table";
+  public static readonly tfResourceType = "aws_dynamodb_table";
 
   // ===========
   // INITIALIZER
@@ -199,7 +540,9 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_dynamodb_table',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -221,8 +564,9 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   }
 
   // attribute - computed: true, optional: false, required: false
-  public attribute(index: string) {
-    return new DataAwsDynamodbTableAttribute(this, 'attribute', index, true);
+  private _attribute = new DataAwsDynamodbTableAttributeList(this, "attribute", true);
+  public get attribute() {
+    return this._attribute;
   }
 
   // billing_mode - computed: true, optional: false, required: false
@@ -231,8 +575,9 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   }
 
   // global_secondary_index - computed: true, optional: false, required: false
-  public globalSecondaryIndex(index: string) {
-    return new DataAwsDynamodbTableGlobalSecondaryIndex(this, 'global_secondary_index', index, true);
+  private _globalSecondaryIndex = new DataAwsDynamodbTableGlobalSecondaryIndexList(this, "global_secondary_index", true);
+  public get globalSecondaryIndex() {
+    return this._globalSecondaryIndex;
   }
 
   // hash_key - computed: true, optional: false, required: false
@@ -246,8 +591,9 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   }
 
   // local_secondary_index - computed: true, optional: false, required: false
-  public localSecondaryIndex(index: string) {
-    return new DataAwsDynamodbTableLocalSecondaryIndex(this, 'local_secondary_index', index, true);
+  private _localSecondaryIndex = new DataAwsDynamodbTableLocalSecondaryIndexList(this, "local_secondary_index", true);
+  public get localSecondaryIndex() {
+    return this._localSecondaryIndex;
   }
 
   // name - computed: false, optional: false, required: true
@@ -264,8 +610,9 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   }
 
   // point_in_time_recovery - computed: true, optional: false, required: false
-  public pointInTimeRecovery(index: string) {
-    return new DataAwsDynamodbTablePointInTimeRecovery(this, 'point_in_time_recovery', index, false);
+  private _pointInTimeRecovery = new DataAwsDynamodbTablePointInTimeRecoveryList(this, "point_in_time_recovery", false);
+  public get pointInTimeRecovery() {
+    return this._pointInTimeRecovery;
   }
 
   // range_key - computed: true, optional: false, required: false
@@ -279,8 +626,9 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   }
 
   // replica - computed: true, optional: false, required: false
-  public replica(index: string) {
-    return new DataAwsDynamodbTableReplica(this, 'replica', index, true);
+  private _replica = new DataAwsDynamodbTableReplicaList(this, "replica", true);
+  public get replica() {
+    return this._replica;
   }
 
   // stream_arn - computed: true, optional: false, required: false
@@ -325,8 +673,9 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   }
 
   // ttl - computed: true, optional: false, required: false
-  public ttl(index: string) {
-    return new DataAwsDynamodbTableTtl(this, 'ttl', index, true);
+  private _ttl = new DataAwsDynamodbTableTtlList(this, "ttl", true);
+  public get ttl() {
+    return this._ttl;
   }
 
   // write_capacity - computed: true, optional: false, required: false
@@ -335,7 +684,7 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   }
 
   // server_side_encryption - computed: false, optional: true, required: false
-  private _serverSideEncryption = new DataAwsDynamodbTableServerSideEncryptionOutputReference(this, "server_side_encryption", true);
+  private _serverSideEncryption = new DataAwsDynamodbTableServerSideEncryptionOutputReference(this, "server_side_encryption");
   public get serverSideEncryption() {
     return this._serverSideEncryption;
   }

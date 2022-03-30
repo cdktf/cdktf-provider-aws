@@ -70,10 +70,9 @@ export class NetworkfirewallLoggingConfigurationLoggingConfigurationOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): NetworkfirewallLoggingConfigurationLoggingConfiguration | undefined {
@@ -120,7 +119,7 @@ export class NetworkfirewallLoggingConfiguration extends cdktf.TerraformResource
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_networkfirewall_logging_configuration";
+  public static readonly tfResourceType = "aws_networkfirewall_logging_configuration";
 
   // ===========
   // INITIALIZER
@@ -137,7 +136,9 @@ export class NetworkfirewallLoggingConfiguration extends cdktf.TerraformResource
     super(scope, id, {
       terraformResourceType: 'aws_networkfirewall_logging_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -171,7 +172,7 @@ export class NetworkfirewallLoggingConfiguration extends cdktf.TerraformResource
   }
 
   // logging_configuration - computed: false, optional: false, required: true
-  private _loggingConfiguration = new NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference(this, "logging_configuration", true);
+  private _loggingConfiguration = new NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference(this, "logging_configuration");
   public get loggingConfiguration() {
     return this._loggingConfiguration;
   }

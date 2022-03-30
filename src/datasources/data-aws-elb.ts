@@ -16,7 +16,45 @@ export interface DataAwsElbConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsElbAccessLogs extends cdktf.ComplexComputedList {
+export interface DataAwsElbAccessLogs {
+}
+
+export function dataAwsElbAccessLogsToTerraform(struct?: DataAwsElbAccessLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsElbAccessLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsElbAccessLogs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsElbAccessLogs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // bucket - computed: true, optional: false, required: false
   public get bucket() {
@@ -38,7 +76,64 @@ export class DataAwsElbAccessLogs extends cdktf.ComplexComputedList {
     return this.getNumberAttribute('interval');
   }
 }
-export class DataAwsElbHealthCheck extends cdktf.ComplexComputedList {
+
+export class DataAwsElbAccessLogsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsElbAccessLogsOutputReference {
+    return new DataAwsElbAccessLogsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsElbHealthCheck {
+}
+
+export function dataAwsElbHealthCheckToTerraform(struct?: DataAwsElbHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsElbHealthCheckOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsElbHealthCheck | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsElbHealthCheck | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // healthy_threshold - computed: true, optional: false, required: false
   public get healthyThreshold() {
@@ -65,7 +160,64 @@ export class DataAwsElbHealthCheck extends cdktf.ComplexComputedList {
     return this.getNumberAttribute('unhealthy_threshold');
   }
 }
-export class DataAwsElbListener extends cdktf.ComplexComputedList {
+
+export class DataAwsElbHealthCheckList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsElbHealthCheckOutputReference {
+    return new DataAwsElbHealthCheckOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsElbListener {
+}
+
+export function dataAwsElbListenerToTerraform(struct?: DataAwsElbListener): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsElbListenerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsElbListener | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsElbListener | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // instance_port - computed: true, optional: false, required: false
   public get instancePort() {
@@ -93,6 +245,25 @@ export class DataAwsElbListener extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataAwsElbListenerList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsElbListenerOutputReference {
+    return new DataAwsElbListenerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/elb aws_elb}
 */
@@ -101,7 +272,7 @@ export class DataAwsElb extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_elb";
+  public static readonly tfResourceType = "aws_elb";
 
   // ===========
   // INITIALIZER
@@ -118,7 +289,9 @@ export class DataAwsElb extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_elb',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -134,8 +307,9 @@ export class DataAwsElb extends cdktf.TerraformDataSource {
   // ==========
 
   // access_logs - computed: true, optional: false, required: false
-  public accessLogs(index: string) {
-    return new DataAwsElbAccessLogs(this, 'access_logs', index, false);
+  private _accessLogs = new DataAwsElbAccessLogsList(this, "access_logs", false);
+  public get accessLogs() {
+    return this._accessLogs;
   }
 
   // arn - computed: true, optional: false, required: false
@@ -174,8 +348,9 @@ export class DataAwsElb extends cdktf.TerraformDataSource {
   }
 
   // health_check - computed: true, optional: false, required: false
-  public healthCheck(index: string) {
-    return new DataAwsElbHealthCheck(this, 'health_check', index, false);
+  private _healthCheck = new DataAwsElbHealthCheckList(this, "health_check", false);
+  public get healthCheck() {
+    return this._healthCheck;
   }
 
   // id - computed: true, optional: true, required: false
@@ -199,8 +374,9 @@ export class DataAwsElb extends cdktf.TerraformDataSource {
   }
 
   // listener - computed: true, optional: false, required: false
-  public listener(index: string) {
-    return new DataAwsElbListener(this, 'listener', index, true);
+  private _listener = new DataAwsElbListenerList(this, "listener", true);
+  public get listener() {
+    return this._listener;
   }
 
   // name - computed: false, optional: false, required: true

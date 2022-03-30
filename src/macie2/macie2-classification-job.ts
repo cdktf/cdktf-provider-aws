@@ -60,7 +60,45 @@ export interface Macie2ClassificationJobConfig extends cdktf.TerraformMetaArgume
   */
   readonly scheduleFrequency?: Macie2ClassificationJobScheduleFrequency;
 }
-export class Macie2ClassificationJobUserPausedDetails extends cdktf.ComplexComputedList {
+export interface Macie2ClassificationJobUserPausedDetails {
+}
+
+export function macie2ClassificationJobUserPausedDetailsToTerraform(struct?: Macie2ClassificationJobUserPausedDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class Macie2ClassificationJobUserPausedDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Macie2ClassificationJobUserPausedDetails | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Macie2ClassificationJobUserPausedDetails | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // job_expires_at - computed: true, optional: false, required: false
   public get jobExpiresAt() {
@@ -75,6 +113,25 @@ export class Macie2ClassificationJobUserPausedDetails extends cdktf.ComplexCompu
   // job_paused_at - computed: true, optional: false, required: false
   public get jobPausedAt() {
     return this.getStringAttribute('job_paused_at');
+  }
+}
+
+export class Macie2ClassificationJobUserPausedDetailsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Macie2ClassificationJobUserPausedDetailsOutputReference {
+    return new Macie2ClassificationJobUserPausedDetailsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface Macie2ClassificationJobS3JobDefinitionBucketDefinitions {
@@ -132,10 +189,9 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScope
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTerm | undefined {
@@ -281,10 +337,9 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingExcludesAndTagScopeTerm | undefined {
@@ -442,10 +497,9 @@ export class Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReferenc
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingExcludes | undefined {
@@ -519,10 +573,9 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScope
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm | undefined {
@@ -668,10 +721,9 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm | undefined {
@@ -829,10 +881,9 @@ export class Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReferenc
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScopingIncludes | undefined {
@@ -905,10 +956,9 @@ export class Macie2ClassificationJobS3JobDefinitionScopingOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinitionScoping | undefined {
@@ -939,7 +989,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingOutputReference extend
   }
 
   // excludes - computed: false, optional: true, required: false
-  private _excludes = new Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference(this, "excludes", true);
+  private _excludes = new Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference(this, "excludes");
   public get excludes() {
     return this._excludes;
   }
@@ -955,7 +1005,7 @@ export class Macie2ClassificationJobS3JobDefinitionScopingOutputReference extend
   }
 
   // includes - computed: false, optional: true, required: false
-  private _includes = new Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference(this, "includes", true);
+  private _includes = new Macie2ClassificationJobS3JobDefinitionScopingIncludesOutputReference(this, "includes");
   public get includes() {
     return this._includes;
   }
@@ -1002,10 +1052,9 @@ export class Macie2ClassificationJobS3JobDefinitionOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Macie2ClassificationJobS3JobDefinition | undefined {
@@ -1053,7 +1102,7 @@ export class Macie2ClassificationJobS3JobDefinitionOutputReference extends cdktf
   }
 
   // scoping - computed: false, optional: true, required: false
-  private _scoping = new Macie2ClassificationJobS3JobDefinitionScopingOutputReference(this, "scoping", true);
+  private _scoping = new Macie2ClassificationJobS3JobDefinitionScopingOutputReference(this, "scoping");
   public get scoping() {
     return this._scoping;
   }
@@ -1101,10 +1150,9 @@ export class Macie2ClassificationJobScheduleFrequencyOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Macie2ClassificationJobScheduleFrequency | undefined {
@@ -1197,7 +1245,7 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_macie2_classification_job";
+  public static readonly tfResourceType = "aws_macie2_classification_job";
 
   // ===========
   // INITIALIZER
@@ -1214,7 +1262,9 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_macie2_classification_job',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1417,12 +1467,13 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
   }
 
   // user_paused_details - computed: true, optional: false, required: false
-  public userPausedDetails(index: string) {
-    return new Macie2ClassificationJobUserPausedDetails(this, 'user_paused_details', index, false);
+  private _userPausedDetails = new Macie2ClassificationJobUserPausedDetailsList(this, "user_paused_details", false);
+  public get userPausedDetails() {
+    return this._userPausedDetails;
   }
 
   // s3_job_definition - computed: false, optional: false, required: true
-  private _s3JobDefinition = new Macie2ClassificationJobS3JobDefinitionOutputReference(this, "s3_job_definition", true);
+  private _s3JobDefinition = new Macie2ClassificationJobS3JobDefinitionOutputReference(this, "s3_job_definition");
   public get s3JobDefinition() {
     return this._s3JobDefinition;
   }
@@ -1435,7 +1486,7 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
   }
 
   // schedule_frequency - computed: false, optional: true, required: false
-  private _scheduleFrequency = new Macie2ClassificationJobScheduleFrequencyOutputReference(this, "schedule_frequency", true);
+  private _scheduleFrequency = new Macie2ClassificationJobScheduleFrequencyOutputReference(this, "schedule_frequency");
   public get scheduleFrequency() {
     return this._scheduleFrequency;
   }

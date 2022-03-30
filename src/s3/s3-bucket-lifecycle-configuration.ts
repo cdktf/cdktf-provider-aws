@@ -45,10 +45,9 @@ export class S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOut
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload | undefined {
@@ -121,10 +120,9 @@ export class S3BucketLifecycleConfigurationRuleExpirationOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketLifecycleConfigurationRuleExpiration | undefined {
@@ -246,10 +244,9 @@ export class S3BucketLifecycleConfigurationRuleFilterAndOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketLifecycleConfigurationRuleFilterAnd | undefined {
@@ -383,10 +380,9 @@ export class S3BucketLifecycleConfigurationRuleFilterTagOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketLifecycleConfigurationRuleFilterTag | undefined {
@@ -489,10 +485,9 @@ export class S3BucketLifecycleConfigurationRuleFilterOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketLifecycleConfigurationRuleFilter | undefined {
@@ -589,7 +584,7 @@ export class S3BucketLifecycleConfigurationRuleFilterOutputReference extends cdk
   }
 
   // and - computed: false, optional: true, required: false
-  private _and = new S3BucketLifecycleConfigurationRuleFilterAndOutputReference(this, "and", true);
+  private _and = new S3BucketLifecycleConfigurationRuleFilterAndOutputReference(this, "and");
   public get and() {
     return this._and;
   }
@@ -605,7 +600,7 @@ export class S3BucketLifecycleConfigurationRuleFilterOutputReference extends cdk
   }
 
   // tag - computed: false, optional: true, required: false
-  private _tag = new S3BucketLifecycleConfigurationRuleFilterTagOutputReference(this, "tag", true);
+  private _tag = new S3BucketLifecycleConfigurationRuleFilterTagOutputReference(this, "tag");
   public get tag() {
     return this._tag;
   }
@@ -648,10 +643,9 @@ export class S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutput
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration | undefined {
@@ -845,7 +839,7 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_s3_bucket_lifecycle_configuration";
+  public static readonly tfResourceType = "aws_s3_bucket_lifecycle_configuration";
 
   // ===========
   // INITIALIZER
@@ -862,7 +856,9 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_s3_bucket_lifecycle_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

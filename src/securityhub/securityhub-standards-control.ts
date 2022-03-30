@@ -29,7 +29,7 @@ export class SecurityhubStandardsControl extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_securityhub_standards_control";
+  public static readonly tfResourceType = "aws_securityhub_standards_control";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class SecurityhubStandardsControl extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_securityhub_standards_control',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

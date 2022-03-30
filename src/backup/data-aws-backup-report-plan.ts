@@ -16,7 +16,45 @@ export interface DataAwsBackupReportPlanConfig extends cdktf.TerraformMetaArgume
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsBackupReportPlanReportDeliveryChannel extends cdktf.ComplexComputedList {
+export interface DataAwsBackupReportPlanReportDeliveryChannel {
+}
+
+export function dataAwsBackupReportPlanReportDeliveryChannelToTerraform(struct?: DataAwsBackupReportPlanReportDeliveryChannel): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsBackupReportPlanReportDeliveryChannelOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsBackupReportPlanReportDeliveryChannel | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsBackupReportPlanReportDeliveryChannel | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // formats - computed: true, optional: false, required: false
   public get formats() {
@@ -33,7 +71,64 @@ export class DataAwsBackupReportPlanReportDeliveryChannel extends cdktf.ComplexC
     return this.getStringAttribute('s3_key_prefix');
   }
 }
-export class DataAwsBackupReportPlanReportSetting extends cdktf.ComplexComputedList {
+
+export class DataAwsBackupReportPlanReportDeliveryChannelList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsBackupReportPlanReportDeliveryChannelOutputReference {
+    return new DataAwsBackupReportPlanReportDeliveryChannelOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsBackupReportPlanReportSetting {
+}
+
+export function dataAwsBackupReportPlanReportSettingToTerraform(struct?: DataAwsBackupReportPlanReportSetting): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsBackupReportPlanReportSettingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsBackupReportPlanReportSetting | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsBackupReportPlanReportSetting | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // framework_arns - computed: true, optional: false, required: false
   public get frameworkArns() {
@@ -51,6 +146,25 @@ export class DataAwsBackupReportPlanReportSetting extends cdktf.ComplexComputedL
   }
 }
 
+export class DataAwsBackupReportPlanReportSettingList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsBackupReportPlanReportSettingOutputReference {
+    return new DataAwsBackupReportPlanReportSettingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/backup_report_plan aws_backup_report_plan}
 */
@@ -59,7 +173,7 @@ export class DataAwsBackupReportPlan extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_backup_report_plan";
+  public static readonly tfResourceType = "aws_backup_report_plan";
 
   // ===========
   // INITIALIZER
@@ -76,7 +190,9 @@ export class DataAwsBackupReportPlan extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_backup_report_plan',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -130,13 +246,15 @@ export class DataAwsBackupReportPlan extends cdktf.TerraformDataSource {
   }
 
   // report_delivery_channel - computed: true, optional: false, required: false
-  public reportDeliveryChannel(index: string) {
-    return new DataAwsBackupReportPlanReportDeliveryChannel(this, 'report_delivery_channel', index, false);
+  private _reportDeliveryChannel = new DataAwsBackupReportPlanReportDeliveryChannelList(this, "report_delivery_channel", false);
+  public get reportDeliveryChannel() {
+    return this._reportDeliveryChannel;
   }
 
   // report_setting - computed: true, optional: false, required: false
-  public reportSetting(index: string) {
-    return new DataAwsBackupReportPlanReportSetting(this, 'report_setting', index, false);
+  private _reportSetting = new DataAwsBackupReportPlanReportSettingList(this, "report_setting", false);
+  public get reportSetting() {
+    return this._reportSetting;
   }
 
   // tags - computed: true, optional: true, required: false

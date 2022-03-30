@@ -74,7 +74,7 @@ export class RdsClusterParameterGroup extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_rds_cluster_parameter_group";
+  public static readonly tfResourceType = "aws_rds_cluster_parameter_group";
 
   // ===========
   // INITIALIZER
@@ -91,7 +91,9 @@ export class RdsClusterParameterGroup extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_rds_cluster_parameter_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

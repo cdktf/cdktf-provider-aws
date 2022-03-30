@@ -61,7 +61,7 @@ export class WorkspacesIpGroup extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_workspaces_ip_group";
+  public static readonly tfResourceType = "aws_workspaces_ip_group";
 
   // ===========
   // INITIALIZER
@@ -78,7 +78,9 @@ export class WorkspacesIpGroup extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_workspaces_ip_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -134,10 +134,9 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameter
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters | undefined {
@@ -233,10 +232,9 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOut
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters | undefined {
@@ -348,10 +346,9 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig | undefined {
@@ -446,10 +443,9 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig | undefined {
@@ -634,10 +630,9 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters | undefined {
@@ -850,7 +845,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   }
 
   // cloudwatch_config - computed: false, optional: true, required: false
-  private _cloudwatchConfig = new SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference(this, "cloudwatch_config", true);
+  private _cloudwatchConfig = new SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference(this, "cloudwatch_config");
   public get cloudwatchConfig() {
     return this._cloudwatchConfig;
   }
@@ -866,7 +861,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameter
   }
 
   // notification_config - computed: false, optional: true, required: false
-  private _notificationConfig = new SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference(this, "notification_config", true);
+  private _notificationConfig = new SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference(this, "notification_config");
   public get notificationConfig() {
     return this._notificationConfig;
   }
@@ -926,10 +921,9 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParame
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters | undefined {
@@ -1037,10 +1031,9 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SsmMaintenanceWindowTaskTaskInvocationParameters | undefined {
@@ -1083,7 +1076,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference ext
   }
 
   // automation_parameters - computed: false, optional: true, required: false
-  private _automationParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference(this, "automation_parameters", true);
+  private _automationParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference(this, "automation_parameters");
   public get automationParameters() {
     return this._automationParameters;
   }
@@ -1099,7 +1092,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference ext
   }
 
   // lambda_parameters - computed: false, optional: true, required: false
-  private _lambdaParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference(this, "lambda_parameters", true);
+  private _lambdaParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference(this, "lambda_parameters");
   public get lambdaParameters() {
     return this._lambdaParameters;
   }
@@ -1115,7 +1108,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference ext
   }
 
   // run_command_parameters - computed: false, optional: true, required: false
-  private _runCommandParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference(this, "run_command_parameters", true);
+  private _runCommandParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference(this, "run_command_parameters");
   public get runCommandParameters() {
     return this._runCommandParameters;
   }
@@ -1131,7 +1124,7 @@ export class SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference ext
   }
 
   // step_functions_parameters - computed: false, optional: true, required: false
-  private _stepFunctionsParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference(this, "step_functions_parameters", true);
+  private _stepFunctionsParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference(this, "step_functions_parameters");
   public get stepFunctionsParameters() {
     return this._stepFunctionsParameters;
   }
@@ -1155,7 +1148,7 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ssm_maintenance_window_task";
+  public static readonly tfResourceType = "aws_ssm_maintenance_window_task";
 
   // ===========
   // INITIALIZER
@@ -1172,7 +1165,9 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_ssm_maintenance_window_task',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1381,7 +1376,7 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
   }
 
   // task_invocation_parameters - computed: false, optional: true, required: false
-  private _taskInvocationParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference(this, "task_invocation_parameters", true);
+  private _taskInvocationParameters = new SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference(this, "task_invocation_parameters");
   public get taskInvocationParameters() {
     return this._taskInvocationParameters;
   }

@@ -129,10 +129,9 @@ export class CodedeployDeploymentGroupAlarmConfigurationOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentGroupAlarmConfiguration | undefined {
@@ -244,10 +243,9 @@ export class CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentGroupAutoRollbackConfiguration | undefined {
@@ -337,10 +335,9 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption | undefined {
@@ -425,10 +422,9 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisi
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption | undefined {
@@ -496,10 +492,9 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInst
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess | undefined {
@@ -600,10 +595,9 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentGroupBlueGreenDeploymentConfig | undefined {
@@ -640,7 +634,7 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference e
   }
 
   // deployment_ready_option - computed: false, optional: true, required: false
-  private _deploymentReadyOption = new CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference(this, "deployment_ready_option", true);
+  private _deploymentReadyOption = new CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference(this, "deployment_ready_option");
   public get deploymentReadyOption() {
     return this._deploymentReadyOption;
   }
@@ -656,7 +650,7 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference e
   }
 
   // green_fleet_provisioning_option - computed: false, optional: true, required: false
-  private _greenFleetProvisioningOption = new CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionOutputReference(this, "green_fleet_provisioning_option", true);
+  private _greenFleetProvisioningOption = new CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionOutputReference(this, "green_fleet_provisioning_option");
   public get greenFleetProvisioningOption() {
     return this._greenFleetProvisioningOption;
   }
@@ -672,7 +666,7 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference e
   }
 
   // terminate_blue_instances_on_deployment_success - computed: false, optional: true, required: false
-  private _terminateBlueInstancesOnDeploymentSuccess = new CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessOutputReference(this, "terminate_blue_instances_on_deployment_success", true);
+  private _terminateBlueInstancesOnDeploymentSuccess = new CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessOutputReference(this, "terminate_blue_instances_on_deployment_success");
   public get terminateBlueInstancesOnDeploymentSuccess() {
     return this._terminateBlueInstancesOnDeploymentSuccess;
   }
@@ -715,10 +709,9 @@ export class CodedeployDeploymentGroupDeploymentStyleOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentGroupDeploymentStyle | undefined {
@@ -881,10 +874,9 @@ export class CodedeployDeploymentGroupEcsServiceOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentGroupEcsService | undefined {
@@ -997,10 +989,9 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTra
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute | undefined {
@@ -1077,10 +1068,9 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTra
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute | undefined {
@@ -1156,10 +1146,9 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputR
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo | undefined {
@@ -1196,7 +1185,7 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputR
   }
 
   // prod_traffic_route - computed: false, optional: false, required: true
-  private _prodTrafficRoute = new CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference(this, "prod_traffic_route", true);
+  private _prodTrafficRoute = new CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference(this, "prod_traffic_route");
   public get prodTrafficRoute() {
     return this._prodTrafficRoute;
   }
@@ -1223,7 +1212,7 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputR
   }
 
   // test_traffic_route - computed: false, optional: true, required: false
-  private _testTrafficRoute = new CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteOutputReference(this, "test_traffic_route", true);
+  private _testTrafficRoute = new CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteOutputReference(this, "test_traffic_route");
   public get testTrafficRoute() {
     return this._testTrafficRoute;
   }
@@ -1277,10 +1266,9 @@ export class CodedeployDeploymentGroupLoadBalancerInfoOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CodedeployDeploymentGroupLoadBalancerInfo | undefined {
@@ -1351,7 +1339,7 @@ export class CodedeployDeploymentGroupLoadBalancerInfoOutputReference extends cd
   }
 
   // target_group_pair_info - computed: false, optional: true, required: false
-  private _targetGroupPairInfo = new CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputReference(this, "target_group_pair_info", true);
+  private _targetGroupPairInfo = new CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputReference(this, "target_group_pair_info");
   public get targetGroupPairInfo() {
     return this._targetGroupPairInfo;
   }
@@ -1429,7 +1417,7 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_codedeploy_deployment_group";
+  public static readonly tfResourceType = "aws_codedeploy_deployment_group";
 
   // ===========
   // INITIALIZER
@@ -1446,7 +1434,9 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_codedeploy_deployment_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1600,7 +1590,7 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
   }
 
   // alarm_configuration - computed: false, optional: true, required: false
-  private _alarmConfiguration = new CodedeployDeploymentGroupAlarmConfigurationOutputReference(this, "alarm_configuration", true);
+  private _alarmConfiguration = new CodedeployDeploymentGroupAlarmConfigurationOutputReference(this, "alarm_configuration");
   public get alarmConfiguration() {
     return this._alarmConfiguration;
   }
@@ -1616,7 +1606,7 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
   }
 
   // auto_rollback_configuration - computed: false, optional: true, required: false
-  private _autoRollbackConfiguration = new CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference(this, "auto_rollback_configuration", true);
+  private _autoRollbackConfiguration = new CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference(this, "auto_rollback_configuration");
   public get autoRollbackConfiguration() {
     return this._autoRollbackConfiguration;
   }
@@ -1632,7 +1622,7 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
   }
 
   // blue_green_deployment_config - computed: false, optional: true, required: false
-  private _blueGreenDeploymentConfig = new CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference(this, "blue_green_deployment_config", true);
+  private _blueGreenDeploymentConfig = new CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference(this, "blue_green_deployment_config");
   public get blueGreenDeploymentConfig() {
     return this._blueGreenDeploymentConfig;
   }
@@ -1648,7 +1638,7 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
   }
 
   // deployment_style - computed: false, optional: true, required: false
-  private _deploymentStyle = new CodedeployDeploymentGroupDeploymentStyleOutputReference(this, "deployment_style", true);
+  private _deploymentStyle = new CodedeployDeploymentGroupDeploymentStyleOutputReference(this, "deployment_style");
   public get deploymentStyle() {
     return this._deploymentStyle;
   }
@@ -1698,7 +1688,7 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
   }
 
   // ecs_service - computed: false, optional: true, required: false
-  private _ecsService = new CodedeployDeploymentGroupEcsServiceOutputReference(this, "ecs_service", true);
+  private _ecsService = new CodedeployDeploymentGroupEcsServiceOutputReference(this, "ecs_service");
   public get ecsService() {
     return this._ecsService;
   }
@@ -1714,7 +1704,7 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
   }
 
   // load_balancer_info - computed: false, optional: true, required: false
-  private _loadBalancerInfo = new CodedeployDeploymentGroupLoadBalancerInfoOutputReference(this, "load_balancer_info", true);
+  private _loadBalancerInfo = new CodedeployDeploymentGroupLoadBalancerInfoOutputReference(this, "load_balancer_info");
   public get loadBalancerInfo() {
     return this._loadBalancerInfo;
   }

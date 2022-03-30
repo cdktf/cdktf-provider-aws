@@ -54,10 +54,9 @@ export class CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReferen
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig | undefined {
@@ -143,10 +142,9 @@ export class CloudfrontRealtimeLogConfigEndpointOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudfrontRealtimeLogConfigEndpoint | undefined {
@@ -190,7 +188,7 @@ export class CloudfrontRealtimeLogConfigEndpointOutputReference extends cdktf.Co
   }
 
   // kinesis_stream_config - computed: false, optional: false, required: true
-  private _kinesisStreamConfig = new CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference(this, "kinesis_stream_config", true);
+  private _kinesisStreamConfig = new CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference(this, "kinesis_stream_config");
   public get kinesisStreamConfig() {
     return this._kinesisStreamConfig;
   }
@@ -211,7 +209,7 @@ export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudfront_realtime_log_config";
+  public static readonly tfResourceType = "aws_cloudfront_realtime_log_config";
 
   // ===========
   // INITIALIZER
@@ -228,7 +226,9 @@ export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_cloudfront_realtime_log_config',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -295,7 +295,7 @@ export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
   }
 
   // endpoint - computed: false, optional: false, required: true
-  private _endpoint = new CloudfrontRealtimeLogConfigEndpointOutputReference(this, "endpoint", true);
+  private _endpoint = new CloudfrontRealtimeLogConfigEndpointOutputReference(this, "endpoint");
   public get endpoint() {
     return this._endpoint;
   }

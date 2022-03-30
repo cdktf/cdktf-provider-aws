@@ -115,10 +115,9 @@ export class LambdaEventSourceMappingDestinationConfigOnFailureOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LambdaEventSourceMappingDestinationConfigOnFailure | undefined {
@@ -180,10 +179,9 @@ export class LambdaEventSourceMappingDestinationConfigOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LambdaEventSourceMappingDestinationConfig | undefined {
@@ -208,7 +206,7 @@ export class LambdaEventSourceMappingDestinationConfigOutputReference extends cd
   }
 
   // on_failure - computed: false, optional: true, required: false
-  private _onFailure = new LambdaEventSourceMappingDestinationConfigOnFailureOutputReference(this, "on_failure", true);
+  private _onFailure = new LambdaEventSourceMappingDestinationConfigOnFailureOutputReference(this, "on_failure");
   public get onFailure() {
     return this._onFailure;
   }
@@ -265,10 +263,9 @@ export class LambdaEventSourceMappingFilterCriteriaOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LambdaEventSourceMappingFilterCriteria | undefined {
@@ -332,10 +329,9 @@ export class LambdaEventSourceMappingSelfManagedEventSourceOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LambdaEventSourceMappingSelfManagedEventSource | undefined {
@@ -403,7 +399,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_lambda_event_source_mapping";
+  public static readonly tfResourceType = "aws_lambda_event_source_mapping";
 
   // ===========
   // INITIALIZER
@@ -420,7 +416,9 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_lambda_event_source_mapping',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -725,7 +723,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   }
 
   // destination_config - computed: false, optional: true, required: false
-  private _destinationConfig = new LambdaEventSourceMappingDestinationConfigOutputReference(this, "destination_config", true);
+  private _destinationConfig = new LambdaEventSourceMappingDestinationConfigOutputReference(this, "destination_config");
   public get destinationConfig() {
     return this._destinationConfig;
   }
@@ -741,7 +739,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   }
 
   // filter_criteria - computed: false, optional: true, required: false
-  private _filterCriteria = new LambdaEventSourceMappingFilterCriteriaOutputReference(this, "filter_criteria", true);
+  private _filterCriteria = new LambdaEventSourceMappingFilterCriteriaOutputReference(this, "filter_criteria");
   public get filterCriteria() {
     return this._filterCriteria;
   }
@@ -757,7 +755,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   }
 
   // self_managed_event_source - computed: false, optional: true, required: false
-  private _selfManagedEventSource = new LambdaEventSourceMappingSelfManagedEventSourceOutputReference(this, "self_managed_event_source", true);
+  private _selfManagedEventSource = new LambdaEventSourceMappingSelfManagedEventSourceOutputReference(this, "self_managed_event_source");
   public get selfManagedEventSource() {
     return this._selfManagedEventSource;
   }

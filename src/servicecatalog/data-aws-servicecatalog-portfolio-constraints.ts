@@ -26,7 +26,45 @@ export interface DataAwsServicecatalogPortfolioConstraintsConfig extends cdktf.T
   */
   readonly timeouts?: DataAwsServicecatalogPortfolioConstraintsTimeouts;
 }
-export class DataAwsServicecatalogPortfolioConstraintsDetails extends cdktf.ComplexComputedList {
+export interface DataAwsServicecatalogPortfolioConstraintsDetails {
+}
+
+export function dataAwsServicecatalogPortfolioConstraintsDetailsToTerraform(struct?: DataAwsServicecatalogPortfolioConstraintsDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsServicecatalogPortfolioConstraintsDetails | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsServicecatalogPortfolioConstraintsDetails | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // constraint_id - computed: true, optional: false, required: false
   public get constraintId() {
@@ -58,6 +96,25 @@ export class DataAwsServicecatalogPortfolioConstraintsDetails extends cdktf.Comp
     return this.getStringAttribute('type');
   }
 }
+
+export class DataAwsServicecatalogPortfolioConstraintsDetailsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference {
+    return new DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsServicecatalogPortfolioConstraintsTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_portfolio_constraints#read DataAwsServicecatalogPortfolioConstraints#read}
@@ -81,10 +138,9 @@ export class DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DataAwsServicecatalogPortfolioConstraintsTimeouts | undefined {
@@ -133,7 +189,7 @@ export class DataAwsServicecatalogPortfolioConstraints extends cdktf.TerraformDa
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_servicecatalog_portfolio_constraints";
+  public static readonly tfResourceType = "aws_servicecatalog_portfolio_constraints";
 
   // ===========
   // INITIALIZER
@@ -150,7 +206,9 @@ export class DataAwsServicecatalogPortfolioConstraints extends cdktf.TerraformDa
     super(scope, id, {
       terraformResourceType: 'aws_servicecatalog_portfolio_constraints',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -184,8 +242,9 @@ export class DataAwsServicecatalogPortfolioConstraints extends cdktf.TerraformDa
   }
 
   // details - computed: true, optional: false, required: false
-  public details(index: string) {
-    return new DataAwsServicecatalogPortfolioConstraintsDetails(this, 'details', index, false);
+  private _details = new DataAwsServicecatalogPortfolioConstraintsDetailsList(this, "details", false);
+  public get details() {
+    return this._details;
   }
 
   // id - computed: true, optional: true, required: false
@@ -223,7 +282,7 @@ export class DataAwsServicecatalogPortfolioConstraints extends cdktf.TerraformDa
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

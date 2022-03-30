@@ -29,7 +29,7 @@ export class CodecommitApprovalRuleTemplate extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_codecommit_approval_rule_template";
+  public static readonly tfResourceType = "aws_codecommit_approval_rule_template";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class CodecommitApprovalRuleTemplate extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_codecommit_approval_rule_template',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

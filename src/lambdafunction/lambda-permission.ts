@@ -53,7 +53,7 @@ export class LambdaPermission extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_lambda_permission";
+  public static readonly tfResourceType = "aws_lambda_permission";
 
   // ===========
   // INITIALIZER
@@ -70,7 +70,9 @@ export class LambdaPermission extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_lambda_permission',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

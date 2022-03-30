@@ -251,10 +251,9 @@ export class SpotInstanceRequestCapacityReservationSpecificationCapacityReservat
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget | undefined {
@@ -324,10 +323,9 @@ export class SpotInstanceRequestCapacityReservationSpecificationOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SpotInstanceRequestCapacityReservationSpecification | undefined {
@@ -374,7 +372,7 @@ export class SpotInstanceRequestCapacityReservationSpecificationOutputReference 
   }
 
   // capacity_reservation_target - computed: false, optional: true, required: false
-  private _capacityReservationTarget = new SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference(this, "capacity_reservation_target", true);
+  private _capacityReservationTarget = new SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference(this, "capacity_reservation_target");
   public get capacityReservationTarget() {
     return this._capacityReservationTarget;
   }
@@ -412,10 +410,9 @@ export class SpotInstanceRequestCreditSpecificationOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SpotInstanceRequestCreditSpecification | undefined {
@@ -540,10 +537,9 @@ export class SpotInstanceRequestEnclaveOptionsOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SpotInstanceRequestEnclaveOptions | undefined {
@@ -642,10 +638,9 @@ export class SpotInstanceRequestLaunchTemplateOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SpotInstanceRequestLaunchTemplate | undefined {
@@ -750,10 +745,9 @@ export class SpotInstanceRequestMetadataOptionsOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SpotInstanceRequestMetadataOptions | undefined {
@@ -944,10 +938,9 @@ export class SpotInstanceRequestRootBlockDeviceOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SpotInstanceRequestRootBlockDevice | undefined {
@@ -1179,10 +1172,9 @@ export class SpotInstanceRequestTimeoutsOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SpotInstanceRequestTimeouts | undefined {
@@ -1253,7 +1245,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_spot_instance_request";
+  public static readonly tfResourceType = "aws_spot_instance_request";
 
   // ===========
   // INITIALIZER
@@ -1270,7 +1262,9 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_spot_instance_request',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2034,7 +2028,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // capacity_reservation_specification - computed: false, optional: true, required: false
-  private _capacityReservationSpecification = new SpotInstanceRequestCapacityReservationSpecificationOutputReference(this, "capacity_reservation_specification", true);
+  private _capacityReservationSpecification = new SpotInstanceRequestCapacityReservationSpecificationOutputReference(this, "capacity_reservation_specification");
   public get capacityReservationSpecification() {
     return this._capacityReservationSpecification;
   }
@@ -2050,7 +2044,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // credit_specification - computed: false, optional: true, required: false
-  private _creditSpecification = new SpotInstanceRequestCreditSpecificationOutputReference(this, "credit_specification", true);
+  private _creditSpecification = new SpotInstanceRequestCreditSpecificationOutputReference(this, "credit_specification");
   public get creditSpecification() {
     return this._creditSpecification;
   }
@@ -2083,7 +2077,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // enclave_options - computed: false, optional: true, required: false
-  private _enclaveOptions = new SpotInstanceRequestEnclaveOptionsOutputReference(this, "enclave_options", true);
+  private _enclaveOptions = new SpotInstanceRequestEnclaveOptionsOutputReference(this, "enclave_options");
   public get enclaveOptions() {
     return this._enclaveOptions;
   }
@@ -2116,7 +2110,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // launch_template - computed: false, optional: true, required: false
-  private _launchTemplate = new SpotInstanceRequestLaunchTemplateOutputReference(this, "launch_template", true);
+  private _launchTemplate = new SpotInstanceRequestLaunchTemplateOutputReference(this, "launch_template");
   public get launchTemplate() {
     return this._launchTemplate;
   }
@@ -2132,7 +2126,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // metadata_options - computed: false, optional: true, required: false
-  private _metadataOptions = new SpotInstanceRequestMetadataOptionsOutputReference(this, "metadata_options", true);
+  private _metadataOptions = new SpotInstanceRequestMetadataOptionsOutputReference(this, "metadata_options");
   public get metadataOptions() {
     return this._metadataOptions;
   }
@@ -2165,7 +2159,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // root_block_device - computed: false, optional: true, required: false
-  private _rootBlockDevice = new SpotInstanceRequestRootBlockDeviceOutputReference(this, "root_block_device", true);
+  private _rootBlockDevice = new SpotInstanceRequestRootBlockDeviceOutputReference(this, "root_block_device");
   public get rootBlockDevice() {
     return this._rootBlockDevice;
   }
@@ -2181,7 +2175,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new SpotInstanceRequestTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new SpotInstanceRequestTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

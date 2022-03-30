@@ -29,7 +29,7 @@ export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResourc
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_directory_service_conditional_forwarder";
+  public static readonly tfResourceType = "aws_directory_service_conditional_forwarder";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResourc
     super(scope, id, {
       terraformResourceType: 'aws_directory_service_conditional_forwarder',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

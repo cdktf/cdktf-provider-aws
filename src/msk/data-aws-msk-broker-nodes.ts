@@ -12,7 +12,45 @@ export interface DataAwsMskBrokerNodesConfig extends cdktf.TerraformMetaArgument
   */
   readonly clusterArn: string;
 }
-export class DataAwsMskBrokerNodesNodeInfoList extends cdktf.ComplexComputedList {
+export interface DataAwsMskBrokerNodesNodeInfoList {
+}
+
+export function dataAwsMskBrokerNodesNodeInfoListToTerraform(struct?: DataAwsMskBrokerNodesNodeInfoList): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsMskBrokerNodesNodeInfoListOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsMskBrokerNodesNodeInfoList | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsMskBrokerNodesNodeInfoList | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // attached_eni_id - computed: true, optional: false, required: false
   public get attachedEniId() {
@@ -45,6 +83,25 @@ export class DataAwsMskBrokerNodesNodeInfoList extends cdktf.ComplexComputedList
   }
 }
 
+export class DataAwsMskBrokerNodesNodeInfoListList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsMskBrokerNodesNodeInfoListOutputReference {
+    return new DataAwsMskBrokerNodesNodeInfoListOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/msk_broker_nodes aws_msk_broker_nodes}
 */
@@ -53,7 +110,7 @@ export class DataAwsMskBrokerNodes extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_msk_broker_nodes";
+  public static readonly tfResourceType = "aws_msk_broker_nodes";
 
   // ===========
   // INITIALIZER
@@ -70,7 +127,9 @@ export class DataAwsMskBrokerNodes extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_msk_broker_nodes',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -103,8 +162,9 @@ export class DataAwsMskBrokerNodes extends cdktf.TerraformDataSource {
   }
 
   // node_info_list - computed: true, optional: false, required: false
-  public nodeInfoList(index: string) {
-    return new DataAwsMskBrokerNodesNodeInfoList(this, 'node_info_list', index, false);
+  private _nodeInfoList = new DataAwsMskBrokerNodesNodeInfoListList(this, "node_info_list", false);
+  public get nodeInfoList() {
+    return this._nodeInfoList;
   }
 
   // =========

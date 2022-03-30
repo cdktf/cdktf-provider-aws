@@ -12,7 +12,45 @@ export interface DataAwsCloudfrontRealtimeLogConfigConfig extends cdktf.Terrafor
   */
   readonly name: string;
 }
-export class DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfig extends cdktf.ComplexComputedList {
+export interface DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfig {
+}
+
+export function dataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigToTerraform(struct?: DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // role_arn - computed: true, optional: false, required: false
   public get roleArn() {
@@ -24,17 +62,93 @@ export class DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfig exten
     return this.getStringAttribute('stream_arn');
   }
 }
-export class DataAwsCloudfrontRealtimeLogConfigEndpoint extends cdktf.ComplexComputedList {
+
+export class DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference {
+    return new DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsCloudfrontRealtimeLogConfigEndpoint {
+}
+
+export function dataAwsCloudfrontRealtimeLogConfigEndpointToTerraform(struct?: DataAwsCloudfrontRealtimeLogConfigEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsCloudfrontRealtimeLogConfigEndpointOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsCloudfrontRealtimeLogConfigEndpoint | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsCloudfrontRealtimeLogConfigEndpoint | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // kinesis_stream_config - computed: true, optional: false, required: false
+  private _kinesisStreamConfig = new DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList(this, "kinesis_stream_config", false);
   public get kinesisStreamConfig() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('kinesis_stream_config');
+    return this._kinesisStreamConfig;
   }
 
   // stream_type - computed: true, optional: false, required: false
   public get streamType() {
     return this.getStringAttribute('stream_type');
+  }
+}
+
+export class DataAwsCloudfrontRealtimeLogConfigEndpointList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsCloudfrontRealtimeLogConfigEndpointOutputReference {
+    return new DataAwsCloudfrontRealtimeLogConfigEndpointOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -46,7 +160,7 @@ export class DataAwsCloudfrontRealtimeLogConfig extends cdktf.TerraformDataSourc
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudfront_realtime_log_config";
+  public static readonly tfResourceType = "aws_cloudfront_realtime_log_config";
 
   // ===========
   // INITIALIZER
@@ -63,7 +177,9 @@ export class DataAwsCloudfrontRealtimeLogConfig extends cdktf.TerraformDataSourc
     super(scope, id, {
       terraformResourceType: 'aws_cloudfront_realtime_log_config',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -83,8 +199,9 @@ export class DataAwsCloudfrontRealtimeLogConfig extends cdktf.TerraformDataSourc
   }
 
   // endpoint - computed: true, optional: false, required: false
-  public endpoint(index: string) {
-    return new DataAwsCloudfrontRealtimeLogConfigEndpoint(this, 'endpoint', index, false);
+  private _endpoint = new DataAwsCloudfrontRealtimeLogConfigEndpointList(this, "endpoint", false);
+  public get endpoint() {
+    return this._endpoint;
   }
 
   // fields - computed: true, optional: false, required: false

@@ -49,7 +49,7 @@ export class ConnectContactFlowModule extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_connect_contact_flow_module";
+  public static readonly tfResourceType = "aws_connect_contact_flow_module";
 
   // ===========
   // INITIALIZER
@@ -66,7 +66,9 @@ export class ConnectContactFlowModule extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_connect_contact_flow_module',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

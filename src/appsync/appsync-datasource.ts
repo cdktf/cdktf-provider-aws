@@ -91,10 +91,9 @@ export class AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncDatasourceDynamodbConfigDeltaSyncConfig | undefined {
@@ -220,10 +219,9 @@ export class AppsyncDatasourceDynamodbConfigOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncDatasourceDynamodbConfig | undefined {
@@ -333,7 +331,7 @@ export class AppsyncDatasourceDynamodbConfigOutputReference extends cdktf.Comple
   }
 
   // delta_sync_config - computed: false, optional: true, required: false
-  private _deltaSyncConfig = new AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference(this, "delta_sync_config", true);
+  private _deltaSyncConfig = new AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference(this, "delta_sync_config");
   public get deltaSyncConfig() {
     return this._deltaSyncConfig;
   }
@@ -376,10 +374,9 @@ export class AppsyncDatasourceElasticsearchConfigOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncDatasourceElasticsearchConfig | undefined {
@@ -466,10 +463,9 @@ export class AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputRef
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig | undefined {
@@ -561,10 +557,9 @@ export class AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncDatasourceHttpConfigAuthorizationConfig | undefined {
@@ -611,7 +606,7 @@ export class AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference exten
   }
 
   // aws_iam_config - computed: false, optional: true, required: false
-  private _awsIamConfig = new AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference(this, "aws_iam_config", true);
+  private _awsIamConfig = new AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference(this, "aws_iam_config");
   public get awsIamConfig() {
     return this._awsIamConfig;
   }
@@ -656,10 +651,9 @@ export class AppsyncDatasourceHttpConfigOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncDatasourceHttpConfig | undefined {
@@ -703,7 +697,7 @@ export class AppsyncDatasourceHttpConfigOutputReference extends cdktf.ComplexObj
   }
 
   // authorization_config - computed: false, optional: true, required: false
-  private _authorizationConfig = new AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference(this, "authorization_config", true);
+  private _authorizationConfig = new AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference(this, "authorization_config");
   public get authorizationConfig() {
     return this._authorizationConfig;
   }
@@ -741,10 +735,9 @@ export class AppsyncDatasourceLambdaConfigOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncDatasourceLambdaConfig | undefined {
@@ -824,10 +817,9 @@ export class AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputRe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig | undefined {
@@ -979,10 +971,9 @@ export class AppsyncDatasourceRelationalDatabaseConfigOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppsyncDatasourceRelationalDatabaseConfig | undefined {
@@ -1029,7 +1020,7 @@ export class AppsyncDatasourceRelationalDatabaseConfigOutputReference extends cd
   }
 
   // http_endpoint_config - computed: false, optional: true, required: false
-  private _httpEndpointConfig = new AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference(this, "http_endpoint_config", true);
+  private _httpEndpointConfig = new AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference(this, "http_endpoint_config");
   public get httpEndpointConfig() {
     return this._httpEndpointConfig;
   }
@@ -1053,7 +1044,7 @@ export class AppsyncDatasource extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appsync_datasource";
+  public static readonly tfResourceType = "aws_appsync_datasource";
 
   // ===========
   // INITIALIZER
@@ -1070,7 +1061,9 @@ export class AppsyncDatasource extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_appsync_datasource',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1175,7 +1168,7 @@ export class AppsyncDatasource extends cdktf.TerraformResource {
   }
 
   // dynamodb_config - computed: false, optional: true, required: false
-  private _dynamodbConfig = new AppsyncDatasourceDynamodbConfigOutputReference(this, "dynamodb_config", true);
+  private _dynamodbConfig = new AppsyncDatasourceDynamodbConfigOutputReference(this, "dynamodb_config");
   public get dynamodbConfig() {
     return this._dynamodbConfig;
   }
@@ -1191,7 +1184,7 @@ export class AppsyncDatasource extends cdktf.TerraformResource {
   }
 
   // elasticsearch_config - computed: false, optional: true, required: false
-  private _elasticsearchConfig = new AppsyncDatasourceElasticsearchConfigOutputReference(this, "elasticsearch_config", true);
+  private _elasticsearchConfig = new AppsyncDatasourceElasticsearchConfigOutputReference(this, "elasticsearch_config");
   public get elasticsearchConfig() {
     return this._elasticsearchConfig;
   }
@@ -1207,7 +1200,7 @@ export class AppsyncDatasource extends cdktf.TerraformResource {
   }
 
   // http_config - computed: false, optional: true, required: false
-  private _httpConfig = new AppsyncDatasourceHttpConfigOutputReference(this, "http_config", true);
+  private _httpConfig = new AppsyncDatasourceHttpConfigOutputReference(this, "http_config");
   public get httpConfig() {
     return this._httpConfig;
   }
@@ -1223,7 +1216,7 @@ export class AppsyncDatasource extends cdktf.TerraformResource {
   }
 
   // lambda_config - computed: false, optional: true, required: false
-  private _lambdaConfig = new AppsyncDatasourceLambdaConfigOutputReference(this, "lambda_config", true);
+  private _lambdaConfig = new AppsyncDatasourceLambdaConfigOutputReference(this, "lambda_config");
   public get lambdaConfig() {
     return this._lambdaConfig;
   }
@@ -1239,7 +1232,7 @@ export class AppsyncDatasource extends cdktf.TerraformResource {
   }
 
   // relational_database_config - computed: false, optional: true, required: false
-  private _relationalDatabaseConfig = new AppsyncDatasourceRelationalDatabaseConfigOutputReference(this, "relational_database_config", true);
+  private _relationalDatabaseConfig = new AppsyncDatasourceRelationalDatabaseConfigOutputReference(this, "relational_database_config");
   public get relationalDatabaseConfig() {
     return this._relationalDatabaseConfig;
   }

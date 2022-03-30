@@ -41,7 +41,7 @@ export class SnsSmsPreferences extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_sns_sms_preferences";
+  public static readonly tfResourceType = "aws_sns_sms_preferences";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class SnsSmsPreferences extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_sns_sms_preferences',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

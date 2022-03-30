@@ -16,7 +16,45 @@ export interface DataAwsKmsKeyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly keyId: string;
 }
-export class DataAwsKmsKeyMultiRegionConfigurationPrimaryKey extends cdktf.ComplexComputedList {
+export interface DataAwsKmsKeyMultiRegionConfigurationPrimaryKey {
+}
+
+export function dataAwsKmsKeyMultiRegionConfigurationPrimaryKeyToTerraform(struct?: DataAwsKmsKeyMultiRegionConfigurationPrimaryKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsKmsKeyMultiRegionConfigurationPrimaryKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsKmsKeyMultiRegionConfigurationPrimaryKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -28,7 +66,64 @@ export class DataAwsKmsKeyMultiRegionConfigurationPrimaryKey extends cdktf.Compl
     return this.getStringAttribute('region');
   }
 }
-export class DataAwsKmsKeyMultiRegionConfigurationReplicaKeys extends cdktf.ComplexComputedList {
+
+export class DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference {
+    return new DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsKmsKeyMultiRegionConfigurationReplicaKeys {
+}
+
+export function dataAwsKmsKeyMultiRegionConfigurationReplicaKeysToTerraform(struct?: DataAwsKmsKeyMultiRegionConfigurationReplicaKeys): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsKmsKeyMultiRegionConfigurationReplicaKeys | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsKmsKeyMultiRegionConfigurationReplicaKeys | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -40,7 +135,64 @@ export class DataAwsKmsKeyMultiRegionConfigurationReplicaKeys extends cdktf.Comp
     return this.getStringAttribute('region');
   }
 }
-export class DataAwsKmsKeyMultiRegionConfiguration extends cdktf.ComplexComputedList {
+
+export class DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference {
+    return new DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsKmsKeyMultiRegionConfiguration {
+}
+
+export function dataAwsKmsKeyMultiRegionConfigurationToTerraform(struct?: DataAwsKmsKeyMultiRegionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsKmsKeyMultiRegionConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsKmsKeyMultiRegionConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsKmsKeyMultiRegionConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // multi_region_key_type - computed: true, optional: false, required: false
   public get multiRegionKeyType() {
@@ -48,15 +200,34 @@ export class DataAwsKmsKeyMultiRegionConfiguration extends cdktf.ComplexComputed
   }
 
   // primary_key - computed: true, optional: false, required: false
+  private _primaryKey = new DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyList(this, "primary_key", false);
   public get primaryKey() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('primary_key');
+    return this._primaryKey;
   }
 
   // replica_keys - computed: true, optional: false, required: false
+  private _replicaKeys = new DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList(this, "replica_keys", false);
   public get replicaKeys() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('replica_keys');
+    return this._replicaKeys;
+  }
+}
+
+export class DataAwsKmsKeyMultiRegionConfigurationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsKmsKeyMultiRegionConfigurationOutputReference {
+    return new DataAwsKmsKeyMultiRegionConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -68,7 +239,7 @@ export class DataAwsKmsKey extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_kms_key";
+  public static readonly tfResourceType = "aws_kms_key";
 
   // ===========
   // INITIALIZER
@@ -85,7 +256,9 @@ export class DataAwsKmsKey extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_kms_key',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -195,8 +368,9 @@ export class DataAwsKmsKey extends cdktf.TerraformDataSource {
   }
 
   // multi_region_configuration - computed: true, optional: false, required: false
-  public multiRegionConfiguration(index: string) {
-    return new DataAwsKmsKeyMultiRegionConfiguration(this, 'multi_region_configuration', index, false);
+  private _multiRegionConfiguration = new DataAwsKmsKeyMultiRegionConfigurationList(this, "multi_region_configuration", false);
+  public get multiRegionConfiguration() {
+    return this._multiRegionConfiguration;
   }
 
   // origin - computed: true, optional: false, required: false

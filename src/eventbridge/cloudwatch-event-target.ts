@@ -134,10 +134,9 @@ export class CloudwatchEventTargetBatchTargetOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventTargetBatchTarget | undefined {
@@ -260,10 +259,9 @@ export class CloudwatchEventTargetDeadLetterConfigOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventTargetDeadLetterConfig | undefined {
@@ -336,10 +334,9 @@ export class CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventTargetEcsTargetNetworkConfiguration | undefined {
@@ -519,10 +516,9 @@ export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventTargetEcsTarget | undefined {
@@ -748,7 +744,7 @@ export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.Complex
   }
 
   // network_configuration - computed: false, optional: true, required: false
-  private _networkConfiguration = new CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference(this, "network_configuration", true);
+  private _networkConfiguration = new CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference(this, "network_configuration");
   public get networkConfiguration() {
     return this._networkConfiguration;
   }
@@ -813,10 +809,9 @@ export class CloudwatchEventTargetHttpTargetOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventTargetHttpTarget | undefined {
@@ -928,10 +923,9 @@ export class CloudwatchEventTargetInputTransformerOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventTargetInputTransformer | undefined {
@@ -1013,10 +1007,9 @@ export class CloudwatchEventTargetKinesisTargetOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventTargetKinesisTarget | undefined {
@@ -1104,10 +1097,9 @@ export class CloudwatchEventTargetRedshiftTargetOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventTargetRedshiftTarget | undefined {
@@ -1282,10 +1274,9 @@ export class CloudwatchEventTargetRetryPolicyOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventTargetRetryPolicy | undefined {
@@ -1392,10 +1383,9 @@ export class CloudwatchEventTargetSqsTargetOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CloudwatchEventTargetSqsTarget | undefined {
@@ -1444,7 +1434,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudwatch_event_target";
+  public static readonly tfResourceType = "aws_cloudwatch_event_target";
 
   // ===========
   // INITIALIZER
@@ -1461,7 +1451,9 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_cloudwatch_event_target',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1603,7 +1595,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
   }
 
   // batch_target - computed: false, optional: true, required: false
-  private _batchTarget = new CloudwatchEventTargetBatchTargetOutputReference(this, "batch_target", true);
+  private _batchTarget = new CloudwatchEventTargetBatchTargetOutputReference(this, "batch_target");
   public get batchTarget() {
     return this._batchTarget;
   }
@@ -1619,7 +1611,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
   }
 
   // dead_letter_config - computed: false, optional: true, required: false
-  private _deadLetterConfig = new CloudwatchEventTargetDeadLetterConfigOutputReference(this, "dead_letter_config", true);
+  private _deadLetterConfig = new CloudwatchEventTargetDeadLetterConfigOutputReference(this, "dead_letter_config");
   public get deadLetterConfig() {
     return this._deadLetterConfig;
   }
@@ -1635,7 +1627,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
   }
 
   // ecs_target - computed: false, optional: true, required: false
-  private _ecsTarget = new CloudwatchEventTargetEcsTargetOutputReference(this, "ecs_target", true);
+  private _ecsTarget = new CloudwatchEventTargetEcsTargetOutputReference(this, "ecs_target");
   public get ecsTarget() {
     return this._ecsTarget;
   }
@@ -1651,7 +1643,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
   }
 
   // http_target - computed: false, optional: true, required: false
-  private _httpTarget = new CloudwatchEventTargetHttpTargetOutputReference(this, "http_target", true);
+  private _httpTarget = new CloudwatchEventTargetHttpTargetOutputReference(this, "http_target");
   public get httpTarget() {
     return this._httpTarget;
   }
@@ -1667,7 +1659,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
   }
 
   // input_transformer - computed: false, optional: true, required: false
-  private _inputTransformer = new CloudwatchEventTargetInputTransformerOutputReference(this, "input_transformer", true);
+  private _inputTransformer = new CloudwatchEventTargetInputTransformerOutputReference(this, "input_transformer");
   public get inputTransformer() {
     return this._inputTransformer;
   }
@@ -1683,7 +1675,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
   }
 
   // kinesis_target - computed: false, optional: true, required: false
-  private _kinesisTarget = new CloudwatchEventTargetKinesisTargetOutputReference(this, "kinesis_target", true);
+  private _kinesisTarget = new CloudwatchEventTargetKinesisTargetOutputReference(this, "kinesis_target");
   public get kinesisTarget() {
     return this._kinesisTarget;
   }
@@ -1699,7 +1691,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
   }
 
   // redshift_target - computed: false, optional: true, required: false
-  private _redshiftTarget = new CloudwatchEventTargetRedshiftTargetOutputReference(this, "redshift_target", true);
+  private _redshiftTarget = new CloudwatchEventTargetRedshiftTargetOutputReference(this, "redshift_target");
   public get redshiftTarget() {
     return this._redshiftTarget;
   }
@@ -1715,7 +1707,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
   }
 
   // retry_policy - computed: false, optional: true, required: false
-  private _retryPolicy = new CloudwatchEventTargetRetryPolicyOutputReference(this, "retry_policy", true);
+  private _retryPolicy = new CloudwatchEventTargetRetryPolicyOutputReference(this, "retry_policy");
   public get retryPolicy() {
     return this._retryPolicy;
   }
@@ -1748,7 +1740,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
   }
 
   // sqs_target - computed: false, optional: true, required: false
-  private _sqsTarget = new CloudwatchEventTargetSqsTargetOutputReference(this, "sqs_target", true);
+  private _sqsTarget = new CloudwatchEventTargetSqsTargetOutputReference(this, "sqs_target");
   public get sqsTarget() {
     return this._sqsTarget;
   }

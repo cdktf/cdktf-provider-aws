@@ -53,7 +53,7 @@ export class PinpointApnsVoipSandboxChannel extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_pinpoint_apns_voip_sandbox_channel";
+  public static readonly tfResourceType = "aws_pinpoint_apns_voip_sandbox_channel";
 
   // ===========
   // INITIALIZER
@@ -70,7 +70,9 @@ export class PinpointApnsVoipSandboxChannel extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_pinpoint_apns_voip_sandbox_channel',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

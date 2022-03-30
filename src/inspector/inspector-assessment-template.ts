@@ -41,7 +41,7 @@ export class InspectorAssessmentTemplate extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_inspector_assessment_template";
+  public static readonly tfResourceType = "aws_inspector_assessment_template";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class InspectorAssessmentTemplate extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_inspector_assessment_template',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

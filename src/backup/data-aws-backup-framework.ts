@@ -16,7 +16,45 @@ export interface DataAwsBackupFrameworkConfig extends cdktf.TerraformMetaArgumen
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsBackupFrameworkControlInputParameter extends cdktf.ComplexComputedList {
+export interface DataAwsBackupFrameworkControlInputParameter {
+}
+
+export function dataAwsBackupFrameworkControlInputParameterToTerraform(struct?: DataAwsBackupFrameworkControlInputParameter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsBackupFrameworkControlInputParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsBackupFrameworkControlInputParameter | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsBackupFrameworkControlInputParameter | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // name - computed: true, optional: false, required: false
   public get name() {
@@ -28,7 +66,64 @@ export class DataAwsBackupFrameworkControlInputParameter extends cdktf.ComplexCo
     return this.getStringAttribute('value');
   }
 }
-export class DataAwsBackupFrameworkControlScope extends cdktf.ComplexComputedList {
+
+export class DataAwsBackupFrameworkControlInputParameterList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsBackupFrameworkControlInputParameterOutputReference {
+    return new DataAwsBackupFrameworkControlInputParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsBackupFrameworkControlScope {
+}
+
+export function dataAwsBackupFrameworkControlScopeToTerraform(struct?: DataAwsBackupFrameworkControlScope): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsBackupFrameworkControlScopeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsBackupFrameworkControlScope | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsBackupFrameworkControlScope | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // compliance_resource_ids - computed: true, optional: false, required: false
   public get complianceResourceIds() {
@@ -41,16 +136,73 @@ export class DataAwsBackupFrameworkControlScope extends cdktf.ComplexComputedLis
   }
 
   // tags - computed: true, optional: false, required: false
-  public get tags() {
-    return this.getStringMapAttribute('tags');
+  public tags(key: string): string | cdktf.IResolvable {
+    return new cdktf.StringMap(this, 'tags').lookup(key);
   }
 }
-export class DataAwsBackupFrameworkControl extends cdktf.ComplexComputedList {
+
+export class DataAwsBackupFrameworkControlScopeList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsBackupFrameworkControlScopeOutputReference {
+    return new DataAwsBackupFrameworkControlScopeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsBackupFrameworkControl {
+}
+
+export function dataAwsBackupFrameworkControlToTerraform(struct?: DataAwsBackupFrameworkControl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsBackupFrameworkControlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsBackupFrameworkControl | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsBackupFrameworkControl | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // input_parameter - computed: true, optional: false, required: false
+  private _inputParameter = new DataAwsBackupFrameworkControlInputParameterList(this, "input_parameter", true);
   public get inputParameter() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('input_parameter')));
+    return this._inputParameter;
   }
 
   // name - computed: true, optional: false, required: false
@@ -59,9 +211,28 @@ export class DataAwsBackupFrameworkControl extends cdktf.ComplexComputedList {
   }
 
   // scope - computed: true, optional: false, required: false
+  private _scope = new DataAwsBackupFrameworkControlScopeList(this, "scope", false);
   public get scope() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('scope');
+    return this._scope;
+  }
+}
+
+export class DataAwsBackupFrameworkControlList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsBackupFrameworkControlOutputReference {
+    return new DataAwsBackupFrameworkControlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -73,7 +244,7 @@ export class DataAwsBackupFramework extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_backup_framework";
+  public static readonly tfResourceType = "aws_backup_framework";
 
   // ===========
   // INITIALIZER
@@ -90,7 +261,9 @@ export class DataAwsBackupFramework extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_backup_framework',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -111,8 +284,9 @@ export class DataAwsBackupFramework extends cdktf.TerraformDataSource {
   }
 
   // control - computed: true, optional: false, required: false
-  public control(index: string) {
-    return new DataAwsBackupFrameworkControl(this, 'control', index, true);
+  private _control = new DataAwsBackupFrameworkControlList(this, "control", true);
+  public get control() {
+    return this._control;
   }
 
   // creation_time - computed: true, optional: false, required: false

@@ -66,7 +66,45 @@ export interface ElasticBeanstalkEnvironmentConfig extends cdktf.TerraformMetaAr
   */
   readonly setting?: ElasticBeanstalkEnvironmentSetting[] | cdktf.IResolvable;
 }
-export class ElasticBeanstalkEnvironmentAllSettings extends cdktf.ComplexComputedList {
+export interface ElasticBeanstalkEnvironmentAllSettings {
+}
+
+export function elasticBeanstalkEnvironmentAllSettingsToTerraform(struct?: ElasticBeanstalkEnvironmentAllSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ElasticBeanstalkEnvironmentAllSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ElasticBeanstalkEnvironmentAllSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ElasticBeanstalkEnvironmentAllSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // name - computed: true, optional: false, required: false
   public get name() {
@@ -86,6 +124,25 @@ export class ElasticBeanstalkEnvironmentAllSettings extends cdktf.ComplexCompute
   // value - computed: true, optional: false, required: false
   public get value() {
     return this.getStringAttribute('value');
+  }
+}
+
+export class ElasticBeanstalkEnvironmentAllSettingsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ElasticBeanstalkEnvironmentAllSettingsOutputReference {
+    return new ElasticBeanstalkEnvironmentAllSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface ElasticBeanstalkEnvironmentSetting {
@@ -129,7 +186,7 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_elastic_beanstalk_environment";
+  public static readonly tfResourceType = "aws_elastic_beanstalk_environment";
 
   // ===========
   // INITIALIZER
@@ -146,7 +203,9 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_elastic_beanstalk_environment',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -174,8 +233,9 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
   // ==========
 
   // all_settings - computed: true, optional: false, required: false
-  public allSettings(index: string) {
-    return new ElasticBeanstalkEnvironmentAllSettings(this, 'all_settings', index, true);
+  private _allSettings = new ElasticBeanstalkEnvironmentAllSettingsList(this, "all_settings", true);
+  public get allSettings() {
+    return this._allSettings;
   }
 
   // application - computed: false, optional: false, required: true

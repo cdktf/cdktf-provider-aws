@@ -96,7 +96,45 @@ export interface MwaaEnvironmentConfig extends cdktf.TerraformMetaArguments {
   */
   readonly networkConfiguration: MwaaEnvironmentNetworkConfiguration;
 }
-export class MwaaEnvironmentLastUpdatedError extends cdktf.ComplexComputedList {
+export interface MwaaEnvironmentLastUpdatedError {
+}
+
+export function mwaaEnvironmentLastUpdatedErrorToTerraform(struct?: MwaaEnvironmentLastUpdatedError): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MwaaEnvironmentLastUpdatedErrorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MwaaEnvironmentLastUpdatedError | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MwaaEnvironmentLastUpdatedError | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // error_code - computed: true, optional: false, required: false
   public get errorCode() {
@@ -108,7 +146,64 @@ export class MwaaEnvironmentLastUpdatedError extends cdktf.ComplexComputedList {
     return this.getStringAttribute('error_message');
   }
 }
-export class MwaaEnvironmentLastUpdated extends cdktf.ComplexComputedList {
+
+export class MwaaEnvironmentLastUpdatedErrorList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MwaaEnvironmentLastUpdatedErrorOutputReference {
+    return new MwaaEnvironmentLastUpdatedErrorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MwaaEnvironmentLastUpdated {
+}
+
+export function mwaaEnvironmentLastUpdatedToTerraform(struct?: MwaaEnvironmentLastUpdated): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MwaaEnvironmentLastUpdatedOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MwaaEnvironmentLastUpdated | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MwaaEnvironmentLastUpdated | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // created_at - computed: true, optional: false, required: false
   public get createdAt() {
@@ -116,14 +211,33 @@ export class MwaaEnvironmentLastUpdated extends cdktf.ComplexComputedList {
   }
 
   // error - computed: true, optional: false, required: false
+  private _error = new MwaaEnvironmentLastUpdatedErrorList(this, "error", false);
   public get error() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('error');
+    return this._error;
   }
 
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
+  }
+}
+
+export class MwaaEnvironmentLastUpdatedList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MwaaEnvironmentLastUpdatedOutputReference {
+    return new MwaaEnvironmentLastUpdatedOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface MwaaEnvironmentLoggingConfigurationDagProcessingLogs {
@@ -154,10 +268,9 @@ export class MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MwaaEnvironmentLoggingConfigurationDagProcessingLogs | undefined {
@@ -252,10 +365,9 @@ export class MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MwaaEnvironmentLoggingConfigurationSchedulerLogs | undefined {
@@ -350,10 +462,9 @@ export class MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MwaaEnvironmentLoggingConfigurationTaskLogs | undefined {
@@ -448,10 +559,9 @@ export class MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MwaaEnvironmentLoggingConfigurationWebserverLogs | undefined {
@@ -546,10 +656,9 @@ export class MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MwaaEnvironmentLoggingConfigurationWorkerLogs | undefined {
@@ -669,10 +778,9 @@ export class MwaaEnvironmentLoggingConfigurationOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MwaaEnvironmentLoggingConfiguration | undefined {
@@ -721,7 +829,7 @@ export class MwaaEnvironmentLoggingConfigurationOutputReference extends cdktf.Co
   }
 
   // dag_processing_logs - computed: false, optional: true, required: false
-  private _dagProcessingLogs = new MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference(this, "dag_processing_logs", true);
+  private _dagProcessingLogs = new MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference(this, "dag_processing_logs");
   public get dagProcessingLogs() {
     return this._dagProcessingLogs;
   }
@@ -737,7 +845,7 @@ export class MwaaEnvironmentLoggingConfigurationOutputReference extends cdktf.Co
   }
 
   // scheduler_logs - computed: false, optional: true, required: false
-  private _schedulerLogs = new MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference(this, "scheduler_logs", true);
+  private _schedulerLogs = new MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference(this, "scheduler_logs");
   public get schedulerLogs() {
     return this._schedulerLogs;
   }
@@ -753,7 +861,7 @@ export class MwaaEnvironmentLoggingConfigurationOutputReference extends cdktf.Co
   }
 
   // task_logs - computed: false, optional: true, required: false
-  private _taskLogs = new MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference(this, "task_logs", true);
+  private _taskLogs = new MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference(this, "task_logs");
   public get taskLogs() {
     return this._taskLogs;
   }
@@ -769,7 +877,7 @@ export class MwaaEnvironmentLoggingConfigurationOutputReference extends cdktf.Co
   }
 
   // webserver_logs - computed: false, optional: true, required: false
-  private _webserverLogs = new MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference(this, "webserver_logs", true);
+  private _webserverLogs = new MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference(this, "webserver_logs");
   public get webserverLogs() {
     return this._webserverLogs;
   }
@@ -785,7 +893,7 @@ export class MwaaEnvironmentLoggingConfigurationOutputReference extends cdktf.Co
   }
 
   // worker_logs - computed: false, optional: true, required: false
-  private _workerLogs = new MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference(this, "worker_logs", true);
+  private _workerLogs = new MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference(this, "worker_logs");
   public get workerLogs() {
     return this._workerLogs;
   }
@@ -828,10 +936,9 @@ export class MwaaEnvironmentNetworkConfigurationOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MwaaEnvironmentNetworkConfiguration | undefined {
@@ -896,7 +1003,7 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_mwaa_environment";
+  public static readonly tfResourceType = "aws_mwaa_environment";
 
   // ===========
   // INITIALIZER
@@ -913,7 +1020,9 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_mwaa_environment',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1053,8 +1162,9 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
   }
 
   // last_updated - computed: true, optional: false, required: false
-  public lastUpdated(index: string) {
-    return new MwaaEnvironmentLastUpdated(this, 'last_updated', index, false);
+  private _lastUpdated = new MwaaEnvironmentLastUpdatedList(this, "last_updated", false);
+  public get lastUpdated() {
+    return this._lastUpdated;
   }
 
   // max_workers - computed: true, optional: true, required: false
@@ -1275,7 +1385,7 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
   }
 
   // logging_configuration - computed: false, optional: true, required: false
-  private _loggingConfiguration = new MwaaEnvironmentLoggingConfigurationOutputReference(this, "logging_configuration", true);
+  private _loggingConfiguration = new MwaaEnvironmentLoggingConfigurationOutputReference(this, "logging_configuration");
   public get loggingConfiguration() {
     return this._loggingConfiguration;
   }
@@ -1291,7 +1401,7 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
   }
 
   // network_configuration - computed: false, optional: false, required: true
-  private _networkConfiguration = new MwaaEnvironmentNetworkConfigurationOutputReference(this, "network_configuration", true);
+  private _networkConfiguration = new MwaaEnvironmentNetworkConfigurationOutputReference(this, "network_configuration");
   public get networkConfiguration() {
     return this._networkConfiguration;
   }

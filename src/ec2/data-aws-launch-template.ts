@@ -22,7 +22,45 @@ export interface DataAwsLaunchTemplateConfig extends cdktf.TerraformMetaArgument
   */
   readonly filter?: DataAwsLaunchTemplateFilter[] | cdktf.IResolvable;
 }
-export class DataAwsLaunchTemplateBlockDeviceMappingsEbs extends cdktf.ComplexComputedList {
+export interface DataAwsLaunchTemplateBlockDeviceMappingsEbs {
+}
+
+export function dataAwsLaunchTemplateBlockDeviceMappingsEbsToTerraform(struct?: DataAwsLaunchTemplateBlockDeviceMappingsEbs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateBlockDeviceMappingsEbsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateBlockDeviceMappingsEbs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateBlockDeviceMappingsEbs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // delete_on_termination - computed: true, optional: false, required: false
   public get deleteOnTermination() {
@@ -64,7 +102,64 @@ export class DataAwsLaunchTemplateBlockDeviceMappingsEbs extends cdktf.ComplexCo
     return this.getStringAttribute('volume_type');
   }
 }
-export class DataAwsLaunchTemplateBlockDeviceMappings extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateBlockDeviceMappingsEbsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateBlockDeviceMappingsEbsOutputReference {
+    return new DataAwsLaunchTemplateBlockDeviceMappingsEbsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateBlockDeviceMappings {
+}
+
+export function dataAwsLaunchTemplateBlockDeviceMappingsToTerraform(struct?: DataAwsLaunchTemplateBlockDeviceMappings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateBlockDeviceMappingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateBlockDeviceMappings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateBlockDeviceMappings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // device_name - computed: true, optional: false, required: false
   public get deviceName() {
@@ -72,9 +167,9 @@ export class DataAwsLaunchTemplateBlockDeviceMappings extends cdktf.ComplexCompu
   }
 
   // ebs - computed: true, optional: false, required: false
+  private _ebs = new DataAwsLaunchTemplateBlockDeviceMappingsEbsList(this, "ebs", false);
   public get ebs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ebs');
+    return this._ebs;
   }
 
   // no_device - computed: true, optional: false, required: false
@@ -87,7 +182,64 @@ export class DataAwsLaunchTemplateBlockDeviceMappings extends cdktf.ComplexCompu
     return this.getStringAttribute('virtual_name');
   }
 }
-export class DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTarget extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateBlockDeviceMappingsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateBlockDeviceMappingsOutputReference {
+    return new DataAwsLaunchTemplateBlockDeviceMappingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTarget {
+}
+
+export function dataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetToTerraform(struct?: DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTarget | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTarget | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // capacity_reservation_id - computed: true, optional: false, required: false
   public get capacityReservationId() {
@@ -99,7 +251,64 @@ export class DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReserv
     return this.getStringAttribute('capacity_reservation_resource_group_arn');
   }
 }
-export class DataAwsLaunchTemplateCapacityReservationSpecification extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference {
+    return new DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateCapacityReservationSpecification {
+}
+
+export function dataAwsLaunchTemplateCapacityReservationSpecificationToTerraform(struct?: DataAwsLaunchTemplateCapacityReservationSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateCapacityReservationSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateCapacityReservationSpecification | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateCapacityReservationSpecification | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // capacity_reservation_preference - computed: true, optional: false, required: false
   public get capacityReservationPreference() {
@@ -107,12 +316,69 @@ export class DataAwsLaunchTemplateCapacityReservationSpecification extends cdktf
   }
 
   // capacity_reservation_target - computed: true, optional: false, required: false
+  private _capacityReservationTarget = new DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetList(this, "capacity_reservation_target", false);
   public get capacityReservationTarget() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('capacity_reservation_target');
+    return this._capacityReservationTarget;
   }
 }
-export class DataAwsLaunchTemplateCpuOptions extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateCapacityReservationSpecificationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateCapacityReservationSpecificationOutputReference {
+    return new DataAwsLaunchTemplateCapacityReservationSpecificationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateCpuOptions {
+}
+
+export function dataAwsLaunchTemplateCpuOptionsToTerraform(struct?: DataAwsLaunchTemplateCpuOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateCpuOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateCpuOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateCpuOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // core_count - computed: true, optional: false, required: false
   public get coreCount() {
@@ -124,42 +390,384 @@ export class DataAwsLaunchTemplateCpuOptions extends cdktf.ComplexComputedList {
     return this.getNumberAttribute('threads_per_core');
   }
 }
-export class DataAwsLaunchTemplateCreditSpecification extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateCpuOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateCpuOptionsOutputReference {
+    return new DataAwsLaunchTemplateCpuOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateCreditSpecification {
+}
+
+export function dataAwsLaunchTemplateCreditSpecificationToTerraform(struct?: DataAwsLaunchTemplateCreditSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateCreditSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateCreditSpecification | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateCreditSpecification | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // cpu_credits - computed: true, optional: false, required: false
   public get cpuCredits() {
     return this.getStringAttribute('cpu_credits');
   }
 }
-export class DataAwsLaunchTemplateElasticGpuSpecifications extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateCreditSpecificationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateCreditSpecificationOutputReference {
+    return new DataAwsLaunchTemplateCreditSpecificationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateElasticGpuSpecifications {
+}
+
+export function dataAwsLaunchTemplateElasticGpuSpecificationsToTerraform(struct?: DataAwsLaunchTemplateElasticGpuSpecifications): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateElasticGpuSpecificationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateElasticGpuSpecifications | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateElasticGpuSpecifications | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
   }
 }
-export class DataAwsLaunchTemplateElasticInferenceAccelerator extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateElasticGpuSpecificationsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateElasticGpuSpecificationsOutputReference {
+    return new DataAwsLaunchTemplateElasticGpuSpecificationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateElasticInferenceAccelerator {
+}
+
+export function dataAwsLaunchTemplateElasticInferenceAcceleratorToTerraform(struct?: DataAwsLaunchTemplateElasticInferenceAccelerator): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateElasticInferenceAcceleratorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateElasticInferenceAccelerator | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateElasticInferenceAccelerator | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
   }
 }
-export class DataAwsLaunchTemplateEnclaveOptions extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateElasticInferenceAcceleratorList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateElasticInferenceAcceleratorOutputReference {
+    return new DataAwsLaunchTemplateElasticInferenceAcceleratorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateEnclaveOptions {
+}
+
+export function dataAwsLaunchTemplateEnclaveOptionsToTerraform(struct?: DataAwsLaunchTemplateEnclaveOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateEnclaveOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateEnclaveOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateEnclaveOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 }
-export class DataAwsLaunchTemplateHibernationOptions extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateEnclaveOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateEnclaveOptionsOutputReference {
+    return new DataAwsLaunchTemplateEnclaveOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateHibernationOptions {
+}
+
+export function dataAwsLaunchTemplateHibernationOptionsToTerraform(struct?: DataAwsLaunchTemplateHibernationOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateHibernationOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateHibernationOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateHibernationOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // configured - computed: true, optional: false, required: false
   public get configured() {
     return this.getBooleanAttribute('configured');
   }
 }
-export class DataAwsLaunchTemplateIamInstanceProfile extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateHibernationOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateHibernationOptionsOutputReference {
+    return new DataAwsLaunchTemplateHibernationOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateIamInstanceProfile {
+}
+
+export function dataAwsLaunchTemplateIamInstanceProfileToTerraform(struct?: DataAwsLaunchTemplateIamInstanceProfile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateIamInstanceProfileOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateIamInstanceProfile | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateIamInstanceProfile | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -171,7 +779,64 @@ export class DataAwsLaunchTemplateIamInstanceProfile extends cdktf.ComplexComput
     return this.getStringAttribute('name');
   }
 }
-export class DataAwsLaunchTemplateInstanceMarketOptionsSpotOptions extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateIamInstanceProfileList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateIamInstanceProfileOutputReference {
+    return new DataAwsLaunchTemplateIamInstanceProfileOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateInstanceMarketOptionsSpotOptions {
+}
+
+export function dataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsToTerraform(struct?: DataAwsLaunchTemplateInstanceMarketOptionsSpotOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateInstanceMarketOptionsSpotOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateInstanceMarketOptionsSpotOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // block_duration_minutes - computed: true, optional: false, required: false
   public get blockDurationMinutes() {
@@ -198,7 +863,64 @@ export class DataAwsLaunchTemplateInstanceMarketOptionsSpotOptions extends cdktf
     return this.getStringAttribute('valid_until');
   }
 }
-export class DataAwsLaunchTemplateInstanceMarketOptions extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference {
+    return new DataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateInstanceMarketOptions {
+}
+
+export function dataAwsLaunchTemplateInstanceMarketOptionsToTerraform(struct?: DataAwsLaunchTemplateInstanceMarketOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateInstanceMarketOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateInstanceMarketOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateInstanceMarketOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // market_type - computed: true, optional: false, required: false
   public get marketType() {
@@ -206,19 +928,133 @@ export class DataAwsLaunchTemplateInstanceMarketOptions extends cdktf.ComplexCom
   }
 
   // spot_options - computed: true, optional: false, required: false
+  private _spotOptions = new DataAwsLaunchTemplateInstanceMarketOptionsSpotOptionsList(this, "spot_options", false);
   public get spotOptions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('spot_options');
+    return this._spotOptions;
   }
 }
-export class DataAwsLaunchTemplateLicenseSpecification extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateInstanceMarketOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateInstanceMarketOptionsOutputReference {
+    return new DataAwsLaunchTemplateInstanceMarketOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateLicenseSpecification {
+}
+
+export function dataAwsLaunchTemplateLicenseSpecificationToTerraform(struct?: DataAwsLaunchTemplateLicenseSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateLicenseSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateLicenseSpecification | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateLicenseSpecification | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // license_configuration_arn - computed: true, optional: false, required: false
   public get licenseConfigurationArn() {
     return this.getStringAttribute('license_configuration_arn');
   }
 }
-export class DataAwsLaunchTemplateMetadataOptions extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateLicenseSpecificationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateLicenseSpecificationOutputReference {
+    return new DataAwsLaunchTemplateLicenseSpecificationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateMetadataOptions {
+}
+
+export function dataAwsLaunchTemplateMetadataOptionsToTerraform(struct?: DataAwsLaunchTemplateMetadataOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateMetadataOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateMetadataOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateMetadataOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // http_endpoint - computed: true, optional: false, required: false
   public get httpEndpoint() {
@@ -245,14 +1081,128 @@ export class DataAwsLaunchTemplateMetadataOptions extends cdktf.ComplexComputedL
     return this.getStringAttribute('instance_metadata_tags');
   }
 }
-export class DataAwsLaunchTemplateMonitoring extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateMetadataOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateMetadataOptionsOutputReference {
+    return new DataAwsLaunchTemplateMetadataOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateMonitoring {
+}
+
+export function dataAwsLaunchTemplateMonitoringToTerraform(struct?: DataAwsLaunchTemplateMonitoring): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateMonitoringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateMonitoring | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateMonitoring | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 }
-export class DataAwsLaunchTemplateNetworkInterfaces extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateMonitoringList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateMonitoringOutputReference {
+    return new DataAwsLaunchTemplateMonitoringOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateNetworkInterfaces {
+}
+
+export function dataAwsLaunchTemplateNetworkInterfacesToTerraform(struct?: DataAwsLaunchTemplateNetworkInterfaces): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateNetworkInterfacesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateNetworkInterfaces | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateNetworkInterfaces | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // associate_carrier_ip_address - computed: true, optional: false, required: false
   public get associateCarrierIpAddress() {
@@ -349,7 +1299,64 @@ export class DataAwsLaunchTemplateNetworkInterfaces extends cdktf.ComplexCompute
     return this.getStringAttribute('subnet_id');
   }
 }
-export class DataAwsLaunchTemplatePlacement extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplateNetworkInterfacesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateNetworkInterfacesOutputReference {
+    return new DataAwsLaunchTemplateNetworkInterfacesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplatePlacement {
+}
+
+export function dataAwsLaunchTemplatePlacementToTerraform(struct?: DataAwsLaunchTemplatePlacement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplatePlacementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplatePlacement | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplatePlacement | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // affinity - computed: true, optional: false, required: false
   public get affinity() {
@@ -391,7 +1398,64 @@ export class DataAwsLaunchTemplatePlacement extends cdktf.ComplexComputedList {
     return this.getStringAttribute('tenancy');
   }
 }
-export class DataAwsLaunchTemplatePrivateDnsNameOptions extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplatePlacementList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplatePlacementOutputReference {
+    return new DataAwsLaunchTemplatePlacementOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplatePrivateDnsNameOptions {
+}
+
+export function dataAwsLaunchTemplatePrivateDnsNameOptionsToTerraform(struct?: DataAwsLaunchTemplatePrivateDnsNameOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplatePrivateDnsNameOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplatePrivateDnsNameOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplatePrivateDnsNameOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // enable_resource_name_dns_a_record - computed: true, optional: false, required: false
   public get enableResourceNameDnsARecord() {
@@ -408,7 +1472,64 @@ export class DataAwsLaunchTemplatePrivateDnsNameOptions extends cdktf.ComplexCom
     return this.getStringAttribute('hostname_type');
   }
 }
-export class DataAwsLaunchTemplateTagSpecifications extends cdktf.ComplexComputedList {
+
+export class DataAwsLaunchTemplatePrivateDnsNameOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplatePrivateDnsNameOptionsOutputReference {
+    return new DataAwsLaunchTemplatePrivateDnsNameOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsLaunchTemplateTagSpecifications {
+}
+
+export function dataAwsLaunchTemplateTagSpecificationsToTerraform(struct?: DataAwsLaunchTemplateTagSpecifications): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsLaunchTemplateTagSpecificationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateTagSpecifications | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateTagSpecifications | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // resource_type - computed: true, optional: false, required: false
   public get resourceType() {
@@ -416,8 +1537,27 @@ export class DataAwsLaunchTemplateTagSpecifications extends cdktf.ComplexCompute
   }
 
   // tags - computed: true, optional: false, required: false
-  public get tags() {
-    return this.getStringMapAttribute('tags');
+  public tags(key: string): string | cdktf.IResolvable {
+    return new cdktf.StringMap(this, 'tags').lookup(key);
+  }
+}
+
+export class DataAwsLaunchTemplateTagSpecificationsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateTagSpecificationsOutputReference {
+    return new DataAwsLaunchTemplateTagSpecificationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsLaunchTemplateFilter {
@@ -451,7 +1591,7 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_launch_template";
+  public static readonly tfResourceType = "aws_launch_template";
 
   // ===========
   // INITIALIZER
@@ -468,7 +1608,9 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_launch_template',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -490,23 +1632,27 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
   }
 
   // block_device_mappings - computed: true, optional: false, required: false
-  public blockDeviceMappings(index: string) {
-    return new DataAwsLaunchTemplateBlockDeviceMappings(this, 'block_device_mappings', index, false);
+  private _blockDeviceMappings = new DataAwsLaunchTemplateBlockDeviceMappingsList(this, "block_device_mappings", false);
+  public get blockDeviceMappings() {
+    return this._blockDeviceMappings;
   }
 
   // capacity_reservation_specification - computed: true, optional: false, required: false
-  public capacityReservationSpecification(index: string) {
-    return new DataAwsLaunchTemplateCapacityReservationSpecification(this, 'capacity_reservation_specification', index, false);
+  private _capacityReservationSpecification = new DataAwsLaunchTemplateCapacityReservationSpecificationList(this, "capacity_reservation_specification", false);
+  public get capacityReservationSpecification() {
+    return this._capacityReservationSpecification;
   }
 
   // cpu_options - computed: true, optional: false, required: false
-  public cpuOptions(index: string) {
-    return new DataAwsLaunchTemplateCpuOptions(this, 'cpu_options', index, false);
+  private _cpuOptions = new DataAwsLaunchTemplateCpuOptionsList(this, "cpu_options", false);
+  public get cpuOptions() {
+    return this._cpuOptions;
   }
 
   // credit_specification - computed: true, optional: false, required: false
-  public creditSpecification(index: string) {
-    return new DataAwsLaunchTemplateCreditSpecification(this, 'credit_specification', index, false);
+  private _creditSpecification = new DataAwsLaunchTemplateCreditSpecificationList(this, "credit_specification", false);
+  public get creditSpecification() {
+    return this._creditSpecification;
   }
 
   // default_version - computed: true, optional: false, required: false
@@ -530,28 +1676,33 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
   }
 
   // elastic_gpu_specifications - computed: true, optional: false, required: false
-  public elasticGpuSpecifications(index: string) {
-    return new DataAwsLaunchTemplateElasticGpuSpecifications(this, 'elastic_gpu_specifications', index, false);
+  private _elasticGpuSpecifications = new DataAwsLaunchTemplateElasticGpuSpecificationsList(this, "elastic_gpu_specifications", false);
+  public get elasticGpuSpecifications() {
+    return this._elasticGpuSpecifications;
   }
 
   // elastic_inference_accelerator - computed: true, optional: false, required: false
-  public elasticInferenceAccelerator(index: string) {
-    return new DataAwsLaunchTemplateElasticInferenceAccelerator(this, 'elastic_inference_accelerator', index, false);
+  private _elasticInferenceAccelerator = new DataAwsLaunchTemplateElasticInferenceAcceleratorList(this, "elastic_inference_accelerator", false);
+  public get elasticInferenceAccelerator() {
+    return this._elasticInferenceAccelerator;
   }
 
   // enclave_options - computed: true, optional: false, required: false
-  public enclaveOptions(index: string) {
-    return new DataAwsLaunchTemplateEnclaveOptions(this, 'enclave_options', index, false);
+  private _enclaveOptions = new DataAwsLaunchTemplateEnclaveOptionsList(this, "enclave_options", false);
+  public get enclaveOptions() {
+    return this._enclaveOptions;
   }
 
   // hibernation_options - computed: true, optional: false, required: false
-  public hibernationOptions(index: string) {
-    return new DataAwsLaunchTemplateHibernationOptions(this, 'hibernation_options', index, false);
+  private _hibernationOptions = new DataAwsLaunchTemplateHibernationOptionsList(this, "hibernation_options", false);
+  public get hibernationOptions() {
+    return this._hibernationOptions;
   }
 
   // iam_instance_profile - computed: true, optional: false, required: false
-  public iamInstanceProfile(index: string) {
-    return new DataAwsLaunchTemplateIamInstanceProfile(this, 'iam_instance_profile', index, false);
+  private _iamInstanceProfile = new DataAwsLaunchTemplateIamInstanceProfileList(this, "iam_instance_profile", false);
+  public get iamInstanceProfile() {
+    return this._iamInstanceProfile;
   }
 
   // id - computed: true, optional: true, required: false
@@ -570,8 +1721,9 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
   }
 
   // instance_market_options - computed: true, optional: false, required: false
-  public instanceMarketOptions(index: string) {
-    return new DataAwsLaunchTemplateInstanceMarketOptions(this, 'instance_market_options', index, false);
+  private _instanceMarketOptions = new DataAwsLaunchTemplateInstanceMarketOptionsList(this, "instance_market_options", false);
+  public get instanceMarketOptions() {
+    return this._instanceMarketOptions;
   }
 
   // instance_type - computed: true, optional: false, required: false
@@ -595,18 +1747,21 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
   }
 
   // license_specification - computed: true, optional: false, required: false
-  public licenseSpecification(index: string) {
-    return new DataAwsLaunchTemplateLicenseSpecification(this, 'license_specification', index, false);
+  private _licenseSpecification = new DataAwsLaunchTemplateLicenseSpecificationList(this, "license_specification", false);
+  public get licenseSpecification() {
+    return this._licenseSpecification;
   }
 
   // metadata_options - computed: true, optional: false, required: false
-  public metadataOptions(index: string) {
-    return new DataAwsLaunchTemplateMetadataOptions(this, 'metadata_options', index, false);
+  private _metadataOptions = new DataAwsLaunchTemplateMetadataOptionsList(this, "metadata_options", false);
+  public get metadataOptions() {
+    return this._metadataOptions;
   }
 
   // monitoring - computed: true, optional: false, required: false
-  public monitoring(index: string) {
-    return new DataAwsLaunchTemplateMonitoring(this, 'monitoring', index, false);
+  private _monitoring = new DataAwsLaunchTemplateMonitoringList(this, "monitoring", false);
+  public get monitoring() {
+    return this._monitoring;
   }
 
   // name - computed: true, optional: true, required: false
@@ -626,18 +1781,21 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
   }
 
   // network_interfaces - computed: true, optional: false, required: false
-  public networkInterfaces(index: string) {
-    return new DataAwsLaunchTemplateNetworkInterfaces(this, 'network_interfaces', index, false);
+  private _networkInterfaces = new DataAwsLaunchTemplateNetworkInterfacesList(this, "network_interfaces", false);
+  public get networkInterfaces() {
+    return this._networkInterfaces;
   }
 
   // placement - computed: true, optional: false, required: false
-  public placement(index: string) {
-    return new DataAwsLaunchTemplatePlacement(this, 'placement', index, false);
+  private _placement = new DataAwsLaunchTemplatePlacementList(this, "placement", false);
+  public get placement() {
+    return this._placement;
   }
 
   // private_dns_name_options - computed: true, optional: false, required: false
-  public privateDnsNameOptions(index: string) {
-    return new DataAwsLaunchTemplatePrivateDnsNameOptions(this, 'private_dns_name_options', index, false);
+  private _privateDnsNameOptions = new DataAwsLaunchTemplatePrivateDnsNameOptionsList(this, "private_dns_name_options", false);
+  public get privateDnsNameOptions() {
+    return this._privateDnsNameOptions;
   }
 
   // ram_disk_id - computed: true, optional: false, required: false
@@ -651,8 +1809,9 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
   }
 
   // tag_specifications - computed: true, optional: false, required: false
-  public tagSpecifications(index: string) {
-    return new DataAwsLaunchTemplateTagSpecifications(this, 'tag_specifications', index, false);
+  private _tagSpecifications = new DataAwsLaunchTemplateTagSpecificationsList(this, "tag_specifications", false);
+  public get tagSpecifications() {
+    return this._tagSpecifications;
   }
 
   // tags - computed: true, optional: true, required: false

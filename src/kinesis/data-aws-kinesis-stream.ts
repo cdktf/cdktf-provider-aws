@@ -16,11 +16,68 @@ export interface DataAwsKinesisStreamConfig extends cdktf.TerraformMetaArguments
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsKinesisStreamStreamModeDetails extends cdktf.ComplexComputedList {
+export interface DataAwsKinesisStreamStreamModeDetails {
+}
+
+export function dataAwsKinesisStreamStreamModeDetailsToTerraform(struct?: DataAwsKinesisStreamStreamModeDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsKinesisStreamStreamModeDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsKinesisStreamStreamModeDetails | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsKinesisStreamStreamModeDetails | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // stream_mode - computed: true, optional: false, required: false
   public get streamMode() {
     return this.getStringAttribute('stream_mode');
+  }
+}
+
+export class DataAwsKinesisStreamStreamModeDetailsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsKinesisStreamStreamModeDetailsOutputReference {
+    return new DataAwsKinesisStreamStreamModeDetailsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -32,7 +89,7 @@ export class DataAwsKinesisStream extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_kinesis_stream";
+  public static readonly tfResourceType = "aws_kinesis_stream";
 
   // ===========
   // INITIALIZER
@@ -49,7 +106,9 @@ export class DataAwsKinesisStream extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_kinesis_stream',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -118,8 +177,9 @@ export class DataAwsKinesisStream extends cdktf.TerraformDataSource {
   }
 
   // stream_mode_details - computed: true, optional: false, required: false
-  public streamModeDetails(index: string) {
-    return new DataAwsKinesisStreamStreamModeDetails(this, 'stream_mode_details', index, false);
+  private _streamModeDetails = new DataAwsKinesisStreamStreamModeDetailsList(this, "stream_mode_details", false);
+  public get streamModeDetails() {
+    return this._streamModeDetails;
   }
 
   // tags - computed: true, optional: true, required: false

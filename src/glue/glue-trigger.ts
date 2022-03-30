@@ -91,10 +91,9 @@ export class GlueTriggerActionsNotificationPropertyOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueTriggerActionsNotificationProperty | undefined {
@@ -267,10 +266,9 @@ export class GlueTriggerPredicateOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueTriggerPredicate | undefined {
@@ -358,10 +356,9 @@ export class GlueTriggerTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueTriggerTimeouts | undefined {
@@ -432,7 +429,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_glue_trigger";
+  public static readonly tfResourceType = "aws_glue_trigger";
 
   // ===========
   // INITIALIZER
@@ -449,7 +446,9 @@ export class GlueTrigger extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_glue_trigger',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -660,7 +659,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
   }
 
   // predicate - computed: false, optional: true, required: false
-  private _predicate = new GlueTriggerPredicateOutputReference(this, "predicate", true);
+  private _predicate = new GlueTriggerPredicateOutputReference(this, "predicate");
   public get predicate() {
     return this._predicate;
   }
@@ -676,7 +675,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new GlueTriggerTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new GlueTriggerTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

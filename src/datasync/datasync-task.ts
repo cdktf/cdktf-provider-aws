@@ -84,10 +84,9 @@ export class DatasyncTaskExcludesOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DatasyncTaskExcludes | undefined {
@@ -232,10 +231,9 @@ export class DatasyncTaskOptionsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DatasyncTaskOptions | undefined {
@@ -562,10 +560,9 @@ export class DatasyncTaskScheduleOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DatasyncTaskSchedule | undefined {
@@ -625,10 +622,9 @@ export class DatasyncTaskTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DatasyncTaskTimeouts | undefined {
@@ -677,7 +673,7 @@ export class DatasyncTask extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_datasync_task";
+  public static readonly tfResourceType = "aws_datasync_task";
 
   // ===========
   // INITIALIZER
@@ -694,7 +690,9 @@ export class DatasyncTask extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_datasync_task',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -818,7 +816,7 @@ export class DatasyncTask extends cdktf.TerraformResource {
   }
 
   // excludes - computed: false, optional: true, required: false
-  private _excludes = new DatasyncTaskExcludesOutputReference(this, "excludes", true);
+  private _excludes = new DatasyncTaskExcludesOutputReference(this, "excludes");
   public get excludes() {
     return this._excludes;
   }
@@ -834,7 +832,7 @@ export class DatasyncTask extends cdktf.TerraformResource {
   }
 
   // options - computed: false, optional: true, required: false
-  private _options = new DatasyncTaskOptionsOutputReference(this, "options", true);
+  private _options = new DatasyncTaskOptionsOutputReference(this, "options");
   public get options() {
     return this._options;
   }
@@ -850,7 +848,7 @@ export class DatasyncTask extends cdktf.TerraformResource {
   }
 
   // schedule - computed: false, optional: true, required: false
-  private _schedule = new DatasyncTaskScheduleOutputReference(this, "schedule", true);
+  private _schedule = new DatasyncTaskScheduleOutputReference(this, "schedule");
   public get schedule() {
     return this._schedule;
   }
@@ -866,7 +864,7 @@ export class DatasyncTask extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DatasyncTaskTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new DatasyncTaskTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

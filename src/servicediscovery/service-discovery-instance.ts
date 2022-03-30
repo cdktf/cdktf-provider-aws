@@ -29,7 +29,7 @@ export class ServiceDiscoveryInstance extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_service_discovery_instance";
+  public static readonly tfResourceType = "aws_service_discovery_instance";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class ServiceDiscoveryInstance extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_service_discovery_instance',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

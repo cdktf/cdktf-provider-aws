@@ -232,10 +232,9 @@ export class DataAwsRoute53TrafficPolicyDocumentRulePrimaryOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DataAwsRoute53TrafficPolicyDocumentRulePrimary | undefined {
@@ -416,10 +415,9 @@ export class DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DataAwsRoute53TrafficPolicyDocumentRuleSecondary | undefined {
@@ -598,7 +596,7 @@ export class DataAwsRoute53TrafficPolicyDocument extends cdktf.TerraformDataSour
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_route53_traffic_policy_document";
+  public static readonly tfResourceType = "aws_route53_traffic_policy_document";
 
   // ===========
   // INITIALIZER
@@ -615,7 +613,9 @@ export class DataAwsRoute53TrafficPolicyDocument extends cdktf.TerraformDataSour
     super(scope, id, {
       terraformResourceType: 'aws_route53_traffic_policy_document',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

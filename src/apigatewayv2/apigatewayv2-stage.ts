@@ -90,10 +90,9 @@ export class Apigatewayv2StageAccessLogSettingsOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Apigatewayv2StageAccessLogSettings | undefined {
@@ -192,10 +191,9 @@ export class Apigatewayv2StageDefaultRouteSettingsOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Apigatewayv2StageDefaultRouteSettings | undefined {
@@ -374,7 +372,7 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_apigatewayv2_stage";
+  public static readonly tfResourceType = "aws_apigatewayv2_stage";
 
   // ===========
   // INITIALIZER
@@ -391,7 +389,9 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_apigatewayv2_stage',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -575,7 +575,7 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
   }
 
   // access_log_settings - computed: false, optional: true, required: false
-  private _accessLogSettings = new Apigatewayv2StageAccessLogSettingsOutputReference(this, "access_log_settings", true);
+  private _accessLogSettings = new Apigatewayv2StageAccessLogSettingsOutputReference(this, "access_log_settings");
   public get accessLogSettings() {
     return this._accessLogSettings;
   }
@@ -591,7 +591,7 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
   }
 
   // default_route_settings - computed: false, optional: true, required: false
-  private _defaultRouteSettings = new Apigatewayv2StageDefaultRouteSettingsOutputReference(this, "default_route_settings", true);
+  private _defaultRouteSettings = new Apigatewayv2StageDefaultRouteSettingsOutputReference(this, "default_route_settings");
   public get defaultRouteSettings() {
     return this._defaultRouteSettings;
   }

@@ -56,10 +56,9 @@ export class S3BucketAnalyticsConfigurationFilterOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketAnalyticsConfigurationFilter | undefined {
@@ -159,10 +158,9 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestina
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination | undefined {
@@ -290,10 +288,9 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestina
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestination | undefined {
@@ -318,7 +315,7 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestina
   }
 
   // s3_bucket_destination - computed: false, optional: false, required: true
-  private _s3BucketDestination = new S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationOutputReference(this, "s3_bucket_destination", true);
+  private _s3BucketDestination = new S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationOutputReference(this, "s3_bucket_destination");
   public get s3BucketDestination() {
     return this._s3BucketDestination;
   }
@@ -360,10 +357,9 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputR
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport | undefined {
@@ -410,7 +406,7 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputR
   }
 
   // destination - computed: false, optional: false, required: true
-  private _destination = new S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationOutputReference(this, "destination", true);
+  private _destination = new S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationOutputReference(this, "destination");
   public get destination() {
     return this._destination;
   }
@@ -447,10 +443,9 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3BucketAnalyticsConfigurationStorageClassAnalysis | undefined {
@@ -475,7 +470,7 @@ export class S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference e
   }
 
   // data_export - computed: false, optional: false, required: true
-  private _dataExport = new S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference(this, "data_export", true);
+  private _dataExport = new S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference(this, "data_export");
   public get dataExport() {
     return this._dataExport;
   }
@@ -496,7 +491,7 @@ export class S3BucketAnalyticsConfiguration extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_s3_bucket_analytics_configuration";
+  public static readonly tfResourceType = "aws_s3_bucket_analytics_configuration";
 
   // ===========
   // INITIALIZER
@@ -513,7 +508,9 @@ export class S3BucketAnalyticsConfiguration extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_s3_bucket_analytics_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -562,7 +559,7 @@ export class S3BucketAnalyticsConfiguration extends cdktf.TerraformResource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter = new S3BucketAnalyticsConfigurationFilterOutputReference(this, "filter", true);
+  private _filter = new S3BucketAnalyticsConfigurationFilterOutputReference(this, "filter");
   public get filter() {
     return this._filter;
   }
@@ -578,7 +575,7 @@ export class S3BucketAnalyticsConfiguration extends cdktf.TerraformResource {
   }
 
   // storage_class_analysis - computed: false, optional: true, required: false
-  private _storageClassAnalysis = new S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference(this, "storage_class_analysis", true);
+  private _storageClassAnalysis = new S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference(this, "storage_class_analysis");
   public get storageClassAnalysis() {
     return this._storageClassAnalysis;
   }

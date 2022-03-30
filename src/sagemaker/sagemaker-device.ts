@@ -51,10 +51,9 @@ export class SagemakerDeviceDeviceOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerDeviceDevice | undefined {
@@ -144,7 +143,7 @@ export class SagemakerDevice extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_sagemaker_device";
+  public static readonly tfResourceType = "aws_sagemaker_device";
 
   // ===========
   // INITIALIZER
@@ -161,7 +160,9 @@ export class SagemakerDevice extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_sagemaker_device',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -205,7 +206,7 @@ export class SagemakerDevice extends cdktf.TerraformResource {
   }
 
   // device - computed: false, optional: false, required: true
-  private _device = new SagemakerDeviceDeviceOutputReference(this, "device", true);
+  private _device = new SagemakerDeviceDeviceOutputReference(this, "device");
   public get device() {
     return this._device;
   }

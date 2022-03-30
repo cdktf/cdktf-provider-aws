@@ -62,10 +62,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateF
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile | undefined {
@@ -144,10 +143,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateS
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds | undefined {
@@ -216,10 +214,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate | undefined {
@@ -250,7 +247,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateO
   }
 
   // file - computed: false, optional: true, required: false
-  private _file = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference(this, "file", true);
+  private _file = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference(this, "file");
   public get file() {
     return this._file;
   }
@@ -266,7 +263,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateO
   }
 
   // sds - computed: false, optional: true, required: false
-  private _sds = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference(this, "sds", true);
+  private _sds = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference(this, "sds");
   public get sds() {
     return this._sds;
   }
@@ -304,10 +301,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch | undefined {
@@ -369,10 +365,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames | undefined {
@@ -397,7 +392,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSu
   }
 
   // match - computed: false, optional: false, required: true
-  private _match = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference(this, "match", true);
+  private _match = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference(this, "match");
   public get match() {
     return this._match;
   }
@@ -432,10 +427,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm | undefined {
@@ -495,10 +489,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile | undefined {
@@ -558,10 +551,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds | undefined {
@@ -637,10 +629,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust | undefined {
@@ -677,7 +668,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
   }
 
   // acm - computed: false, optional: true, required: false
-  private _acm = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference(this, "acm", true);
+  private _acm = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference(this, "acm");
   public get acm() {
     return this._acm;
   }
@@ -693,7 +684,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
   }
 
   // file - computed: false, optional: true, required: false
-  private _file = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference(this, "file", true);
+  private _file = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference(this, "file");
   public get file() {
     return this._file;
   }
@@ -709,7 +700,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTr
   }
 
   // sds - computed: false, optional: true, required: false
-  private _sds = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference(this, "sds", true);
+  private _sds = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference(this, "sds");
   public get sds() {
     return this._sds;
   }
@@ -756,10 +747,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation | undefined {
@@ -790,7 +780,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOu
   }
 
   // subject_alternative_names - computed: false, optional: true, required: false
-  private _subjectAlternativeNames = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference(this, "subject_alternative_names", true);
+  private _subjectAlternativeNames = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference(this, "subject_alternative_names");
   public get subjectAlternativeNames() {
     return this._subjectAlternativeNames;
   }
@@ -806,7 +796,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOu
   }
 
   // trust - computed: false, optional: false, required: true
-  private _trust = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference(this, "trust", true);
+  private _trust = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference(this, "trust");
   public get trust() {
     return this._trust;
   }
@@ -860,10 +850,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls | undefined {
@@ -938,7 +927,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputRefere
   }
 
   // certificate - computed: false, optional: true, required: false
-  private _certificate = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateOutputReference(this, "certificate", true);
+  private _certificate = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateOutputReference(this, "certificate");
   public get certificate() {
     return this._certificate;
   }
@@ -954,7 +943,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputRefere
   }
 
   // validation - computed: false, optional: false, required: true
-  private _validation = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOutputReference(this, "validation", true);
+  private _validation = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOutputReference(this, "validation");
   public get validation() {
     return this._validation;
   }
@@ -991,10 +980,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaultsClientPolicy | undefined {
@@ -1019,7 +1007,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference
   }
 
   // tls - computed: false, optional: true, required: false
-  private _tls = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference(this, "tls", true);
+  private _tls = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference(this, "tls");
   public get tls() {
     return this._tls;
   }
@@ -1059,10 +1047,9 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecBackendDefaults | undefined {
@@ -1087,7 +1074,7 @@ export class AppmeshVirtualGatewaySpecBackendDefaultsOutputReference extends cdk
   }
 
   // client_policy - computed: false, optional: true, required: false
-  private _clientPolicy = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference(this, "client_policy", true);
+  private _clientPolicy = new AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference(this, "client_policy");
   public get clientPolicy() {
     return this._clientPolicy;
   }
@@ -1125,10 +1112,9 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc | undefined {
@@ -1193,10 +1179,9 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerConnectionPoolHttp | undefined {
@@ -1278,10 +1263,9 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2 | undefined {
@@ -1357,10 +1341,9 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerConnectionPool | undefined {
@@ -1397,7 +1380,7 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference exte
   }
 
   // grpc - computed: false, optional: true, required: false
-  private _grpc = new AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference(this, "grpc", true);
+  private _grpc = new AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference(this, "grpc");
   public get grpc() {
     return this._grpc;
   }
@@ -1413,7 +1396,7 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference exte
   }
 
   // http - computed: false, optional: true, required: false
-  private _http = new AppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference(this, "http", true);
+  private _http = new AppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference(this, "http");
   public get http() {
     return this._http;
   }
@@ -1429,7 +1412,7 @@ export class AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference exte
   }
 
   // http2 - computed: false, optional: true, required: false
-  private _http2 = new AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference(this, "http2", true);
+  private _http2 = new AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference(this, "http2");
   public get http2() {
     return this._http2;
   }
@@ -1497,10 +1480,9 @@ export class AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerHealthCheck | undefined {
@@ -1685,10 +1667,9 @@ export class AppmeshVirtualGatewaySpecListenerPortMappingOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerPortMapping | undefined {
@@ -1767,10 +1748,9 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsCertificateAcm | undefined {
@@ -1835,10 +1815,9 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsCertificateFile | undefined {
@@ -1917,10 +1896,9 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsCertificateSds | undefined {
@@ -1996,10 +1974,9 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsCertificate | undefined {
@@ -2036,7 +2013,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference exte
   }
 
   // acm - computed: false, optional: true, required: false
-  private _acm = new AppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference(this, "acm", true);
+  private _acm = new AppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference(this, "acm");
   public get acm() {
     return this._acm;
   }
@@ -2052,7 +2029,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference exte
   }
 
   // file - computed: false, optional: true, required: false
-  private _file = new AppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference(this, "file", true);
+  private _file = new AppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference(this, "file");
   public get file() {
     return this._file;
   }
@@ -2068,7 +2045,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference exte
   }
 
   // sds - computed: false, optional: true, required: false
-  private _sds = new AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference(this, "sds", true);
+  private _sds = new AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference(this, "sds");
   public get sds() {
     return this._sds;
   }
@@ -2106,10 +2083,9 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNam
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch | undefined {
@@ -2171,10 +2147,9 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNam
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames | undefined {
@@ -2199,7 +2174,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNam
   }
 
   // match - computed: false, optional: false, required: true
-  private _match = new AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference(this, "match", true);
+  private _match = new AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference(this, "match");
   public get match() {
     return this._match;
   }
@@ -2234,10 +2209,9 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile | undefined {
@@ -2297,10 +2271,9 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReferen
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsValidationTrustSds | undefined {
@@ -2369,10 +2342,9 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsValidationTrust | undefined {
@@ -2403,7 +2375,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference 
   }
 
   // file - computed: false, optional: true, required: false
-  private _file = new AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference(this, "file", true);
+  private _file = new AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference(this, "file");
   public get file() {
     return this._file;
   }
@@ -2419,7 +2391,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference 
   }
 
   // sds - computed: false, optional: true, required: false
-  private _sds = new AppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReference(this, "sds", true);
+  private _sds = new AppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReference(this, "sds");
   public get sds() {
     return this._sds;
   }
@@ -2466,10 +2438,9 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTlsValidation | undefined {
@@ -2500,7 +2471,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference exten
   }
 
   // subject_alternative_names - computed: false, optional: true, required: false
-  private _subjectAlternativeNames = new AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesOutputReference(this, "subject_alternative_names", true);
+  private _subjectAlternativeNames = new AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesOutputReference(this, "subject_alternative_names");
   public get subjectAlternativeNames() {
     return this._subjectAlternativeNames;
   }
@@ -2516,7 +2487,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference exten
   }
 
   // trust - computed: false, optional: false, required: true
-  private _trust = new AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference(this, "trust", true);
+  private _trust = new AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference(this, "trust");
   public get trust() {
     return this._trust;
   }
@@ -2565,10 +2536,9 @@ export class AppmeshVirtualGatewaySpecListenerTlsOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListenerTls | undefined {
@@ -2618,7 +2588,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsOutputReference extends cdktf.C
   }
 
   // certificate - computed: false, optional: false, required: true
-  private _certificate = new AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference(this, "certificate", true);
+  private _certificate = new AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference(this, "certificate");
   public get certificate() {
     return this._certificate;
   }
@@ -2631,7 +2601,7 @@ export class AppmeshVirtualGatewaySpecListenerTlsOutputReference extends cdktf.C
   }
 
   // validation - computed: false, optional: true, required: false
-  private _validation = new AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference(this, "validation", true);
+  private _validation = new AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference(this, "validation");
   public get validation() {
     return this._validation;
   }
@@ -2692,10 +2662,9 @@ export class AppmeshVirtualGatewaySpecListenerOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecListener | undefined {
@@ -2738,7 +2707,7 @@ export class AppmeshVirtualGatewaySpecListenerOutputReference extends cdktf.Comp
   }
 
   // connection_pool - computed: false, optional: true, required: false
-  private _connectionPool = new AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference(this, "connection_pool", true);
+  private _connectionPool = new AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference(this, "connection_pool");
   public get connectionPool() {
     return this._connectionPool;
   }
@@ -2754,7 +2723,7 @@ export class AppmeshVirtualGatewaySpecListenerOutputReference extends cdktf.Comp
   }
 
   // health_check - computed: false, optional: true, required: false
-  private _healthCheck = new AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference(this, "health_check", true);
+  private _healthCheck = new AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference(this, "health_check");
   public get healthCheck() {
     return this._healthCheck;
   }
@@ -2770,7 +2739,7 @@ export class AppmeshVirtualGatewaySpecListenerOutputReference extends cdktf.Comp
   }
 
   // port_mapping - computed: false, optional: false, required: true
-  private _portMapping = new AppmeshVirtualGatewaySpecListenerPortMappingOutputReference(this, "port_mapping", true);
+  private _portMapping = new AppmeshVirtualGatewaySpecListenerPortMappingOutputReference(this, "port_mapping");
   public get portMapping() {
     return this._portMapping;
   }
@@ -2783,7 +2752,7 @@ export class AppmeshVirtualGatewaySpecListenerOutputReference extends cdktf.Comp
   }
 
   // tls - computed: false, optional: true, required: false
-  private _tls = new AppmeshVirtualGatewaySpecListenerTlsOutputReference(this, "tls", true);
+  private _tls = new AppmeshVirtualGatewaySpecListenerTlsOutputReference(this, "tls");
   public get tls() {
     return this._tls;
   }
@@ -2821,10 +2790,9 @@ export class AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecLoggingAccessLogFile | undefined {
@@ -2886,10 +2854,9 @@ export class AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecLoggingAccessLog | undefined {
@@ -2914,7 +2881,7 @@ export class AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference extends cd
   }
 
   // file - computed: false, optional: true, required: false
-  private _file = new AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference(this, "file", true);
+  private _file = new AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference(this, "file");
   public get file() {
     return this._file;
   }
@@ -2954,10 +2921,9 @@ export class AppmeshVirtualGatewaySpecLoggingOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpecLogging | undefined {
@@ -2982,7 +2948,7 @@ export class AppmeshVirtualGatewaySpecLoggingOutputReference extends cdktf.Compl
   }
 
   // access_log - computed: false, optional: true, required: false
-  private _accessLog = new AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference(this, "access_log", true);
+  private _accessLog = new AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference(this, "access_log");
   public get accessLog() {
     return this._accessLog;
   }
@@ -3036,10 +3002,9 @@ export class AppmeshVirtualGatewaySpecOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppmeshVirtualGatewaySpec | undefined {
@@ -3076,7 +3041,7 @@ export class AppmeshVirtualGatewaySpecOutputReference extends cdktf.ComplexObjec
   }
 
   // backend_defaults - computed: false, optional: true, required: false
-  private _backendDefaults = new AppmeshVirtualGatewaySpecBackendDefaultsOutputReference(this, "backend_defaults", true);
+  private _backendDefaults = new AppmeshVirtualGatewaySpecBackendDefaultsOutputReference(this, "backend_defaults");
   public get backendDefaults() {
     return this._backendDefaults;
   }
@@ -3092,7 +3057,7 @@ export class AppmeshVirtualGatewaySpecOutputReference extends cdktf.ComplexObjec
   }
 
   // listener - computed: false, optional: false, required: true
-  private _listener = new AppmeshVirtualGatewaySpecListenerOutputReference(this, "listener", true);
+  private _listener = new AppmeshVirtualGatewaySpecListenerOutputReference(this, "listener");
   public get listener() {
     return this._listener;
   }
@@ -3105,7 +3070,7 @@ export class AppmeshVirtualGatewaySpecOutputReference extends cdktf.ComplexObjec
   }
 
   // logging - computed: false, optional: true, required: false
-  private _logging = new AppmeshVirtualGatewaySpecLoggingOutputReference(this, "logging", true);
+  private _logging = new AppmeshVirtualGatewaySpecLoggingOutputReference(this, "logging");
   public get logging() {
     return this._logging;
   }
@@ -3129,7 +3094,7 @@ export class AppmeshVirtualGateway extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_appmesh_virtual_gateway";
+  public static readonly tfResourceType = "aws_appmesh_virtual_gateway";
 
   // ===========
   // INITIALIZER
@@ -3146,7 +3111,9 @@ export class AppmeshVirtualGateway extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_appmesh_virtual_gateway',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -3265,7 +3232,7 @@ export class AppmeshVirtualGateway extends cdktf.TerraformResource {
   }
 
   // spec - computed: false, optional: false, required: true
-  private _spec = new AppmeshVirtualGatewaySpecOutputReference(this, "spec", true);
+  private _spec = new AppmeshVirtualGatewaySpecOutputReference(this, "spec");
   public get spec() {
     return this._spec;
   }

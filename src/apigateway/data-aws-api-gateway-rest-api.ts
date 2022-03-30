@@ -16,7 +16,45 @@ export interface DataAwsApiGatewayRestApiConfig extends cdktf.TerraformMetaArgum
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsApiGatewayRestApiEndpointConfiguration extends cdktf.ComplexComputedList {
+export interface DataAwsApiGatewayRestApiEndpointConfiguration {
+}
+
+export function dataAwsApiGatewayRestApiEndpointConfigurationToTerraform(struct?: DataAwsApiGatewayRestApiEndpointConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsApiGatewayRestApiEndpointConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsApiGatewayRestApiEndpointConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsApiGatewayRestApiEndpointConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // types - computed: true, optional: false, required: false
   public get types() {
@@ -29,6 +67,25 @@ export class DataAwsApiGatewayRestApiEndpointConfiguration extends cdktf.Complex
   }
 }
 
+export class DataAwsApiGatewayRestApiEndpointConfigurationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsApiGatewayRestApiEndpointConfigurationOutputReference {
+    return new DataAwsApiGatewayRestApiEndpointConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_rest_api aws_api_gateway_rest_api}
 */
@@ -37,7 +94,7 @@ export class DataAwsApiGatewayRestApi extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_api_gateway_rest_api";
+  public static readonly tfResourceType = "aws_api_gateway_rest_api";
 
   // ===========
   // INITIALIZER
@@ -54,7 +111,9 @@ export class DataAwsApiGatewayRestApi extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_api_gateway_rest_api',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -90,8 +149,9 @@ export class DataAwsApiGatewayRestApi extends cdktf.TerraformDataSource {
   }
 
   // endpoint_configuration - computed: true, optional: false, required: false
-  public endpointConfiguration(index: string) {
-    return new DataAwsApiGatewayRestApiEndpointConfiguration(this, 'endpoint_configuration', index, false);
+  private _endpointConfiguration = new DataAwsApiGatewayRestApiEndpointConfigurationList(this, "endpoint_configuration", false);
+  public get endpointConfiguration() {
+    return this._endpointConfiguration;
   }
 
   // execution_arn - computed: true, optional: false, required: false

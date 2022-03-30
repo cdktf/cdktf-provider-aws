@@ -104,24 +104,138 @@ export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly updateConfig?: EksNodeGroupUpdateConfig;
 }
-export class EksNodeGroupResourcesAutoscalingGroups extends cdktf.ComplexComputedList {
+export interface EksNodeGroupResourcesAutoscalingGroups {
+}
+
+export function eksNodeGroupResourcesAutoscalingGroupsToTerraform(struct?: EksNodeGroupResourcesAutoscalingGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class EksNodeGroupResourcesAutoscalingGroupsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EksNodeGroupResourcesAutoscalingGroups | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EksNodeGroupResourcesAutoscalingGroups | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 }
-export class EksNodeGroupResources extends cdktf.ComplexComputedList {
+
+export class EksNodeGroupResourcesAutoscalingGroupsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EksNodeGroupResourcesAutoscalingGroupsOutputReference {
+    return new EksNodeGroupResourcesAutoscalingGroupsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface EksNodeGroupResources {
+}
+
+export function eksNodeGroupResourcesToTerraform(struct?: EksNodeGroupResources): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class EksNodeGroupResourcesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EksNodeGroupResources | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EksNodeGroupResources | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // autoscaling_groups - computed: true, optional: false, required: false
+  private _autoscalingGroups = new EksNodeGroupResourcesAutoscalingGroupsList(this, "autoscaling_groups", false);
   public get autoscalingGroups() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('autoscaling_groups');
+    return this._autoscalingGroups;
   }
 
   // remote_access_security_group_id - computed: true, optional: false, required: false
   public get remoteAccessSecurityGroupId() {
     return this.getStringAttribute('remote_access_security_group_id');
+  }
+}
+
+export class EksNodeGroupResourcesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EksNodeGroupResourcesOutputReference {
+    return new EksNodeGroupResourcesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface EksNodeGroupLaunchTemplate {
@@ -156,10 +270,9 @@ export class EksNodeGroupLaunchTemplateOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EksNodeGroupLaunchTemplate | undefined {
@@ -251,10 +364,9 @@ export class EksNodeGroupRemoteAccessOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EksNodeGroupRemoteAccess | undefined {
@@ -349,10 +461,9 @@ export class EksNodeGroupScalingConfigOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EksNodeGroupScalingConfig | undefined {
@@ -487,10 +598,9 @@ export class EksNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EksNodeGroupTimeouts | undefined {
@@ -602,10 +712,9 @@ export class EksNodeGroupUpdateConfigOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EksNodeGroupUpdateConfig | undefined {
@@ -676,7 +785,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_eks_node_group";
+  public static readonly tfResourceType = "aws_eks_node_group";
 
   // ===========
   // INITIALIZER
@@ -693,7 +802,9 @@ export class EksNodeGroup extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_eks_node_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -908,8 +1019,9 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   }
 
   // resources - computed: true, optional: false, required: false
-  public resources(index: string) {
-    return new EksNodeGroupResources(this, 'resources', index, false);
+  private _resources = new EksNodeGroupResourcesList(this, "resources", false);
+  public get resources() {
+    return this._resources;
   }
 
   // status - computed: true, optional: false, required: false
@@ -979,7 +1091,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   }
 
   // launch_template - computed: false, optional: true, required: false
-  private _launchTemplate = new EksNodeGroupLaunchTemplateOutputReference(this, "launch_template", true);
+  private _launchTemplate = new EksNodeGroupLaunchTemplateOutputReference(this, "launch_template");
   public get launchTemplate() {
     return this._launchTemplate;
   }
@@ -995,7 +1107,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   }
 
   // remote_access - computed: false, optional: true, required: false
-  private _remoteAccess = new EksNodeGroupRemoteAccessOutputReference(this, "remote_access", true);
+  private _remoteAccess = new EksNodeGroupRemoteAccessOutputReference(this, "remote_access");
   public get remoteAccess() {
     return this._remoteAccess;
   }
@@ -1011,7 +1123,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   }
 
   // scaling_config - computed: false, optional: false, required: true
-  private _scalingConfig = new EksNodeGroupScalingConfigOutputReference(this, "scaling_config", true);
+  private _scalingConfig = new EksNodeGroupScalingConfigOutputReference(this, "scaling_config");
   public get scalingConfig() {
     return this._scalingConfig;
   }
@@ -1041,7 +1153,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new EksNodeGroupTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new EksNodeGroupTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
@@ -1057,7 +1169,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   }
 
   // update_config - computed: false, optional: true, required: false
-  private _updateConfig = new EksNodeGroupUpdateConfigOutputReference(this, "update_config", true);
+  private _updateConfig = new EksNodeGroupUpdateConfigOutputReference(this, "update_config");
   public get updateConfig() {
     return this._updateConfig;
   }

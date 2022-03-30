@@ -85,10 +85,9 @@ export class EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration | undefined {
@@ -251,10 +250,9 @@ export class EcsClusterConfigurationExecuteCommandConfigurationOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EcsClusterConfigurationExecuteCommandConfiguration | undefined {
@@ -323,7 +321,7 @@ export class EcsClusterConfigurationExecuteCommandConfigurationOutputReference e
   }
 
   // log_configuration - computed: false, optional: true, required: false
-  private _logConfiguration = new EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference(this, "log_configuration", true);
+  private _logConfiguration = new EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference(this, "log_configuration");
   public get logConfiguration() {
     return this._logConfiguration;
   }
@@ -363,10 +361,9 @@ export class EcsClusterConfigurationOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EcsClusterConfiguration | undefined {
@@ -391,7 +388,7 @@ export class EcsClusterConfigurationOutputReference extends cdktf.ComplexObject 
   }
 
   // execute_command_configuration - computed: false, optional: true, required: false
-  private _executeCommandConfiguration = new EcsClusterConfigurationExecuteCommandConfigurationOutputReference(this, "execute_command_configuration", true);
+  private _executeCommandConfiguration = new EcsClusterConfigurationExecuteCommandConfigurationOutputReference(this, "execute_command_configuration");
   public get executeCommandConfiguration() {
     return this._executeCommandConfiguration;
   }
@@ -464,7 +461,7 @@ export class EcsCluster extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ecs_cluster";
+  public static readonly tfResourceType = "aws_ecs_cluster";
 
   // ===========
   // INITIALIZER
@@ -481,7 +478,9 @@ export class EcsCluster extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_ecs_cluster',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -573,7 +572,7 @@ export class EcsCluster extends cdktf.TerraformResource {
   }
 
   // configuration - computed: false, optional: true, required: false
-  private _configuration = new EcsClusterConfigurationOutputReference(this, "configuration", true);
+  private _configuration = new EcsClusterConfigurationOutputReference(this, "configuration");
   public get configuration() {
     return this._configuration;
   }

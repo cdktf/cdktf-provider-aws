@@ -86,10 +86,9 @@ export class ElastictranscoderPipelineContentConfigOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElastictranscoderPipelineContentConfig | undefined {
@@ -216,10 +215,9 @@ export class ElastictranscoderPipelineNotificationsOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElastictranscoderPipelineNotifications | undefined {
@@ -353,10 +351,9 @@ export class ElastictranscoderPipelineThumbnailConfigOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElastictranscoderPipelineThumbnailConfig | undefined {
@@ -454,7 +451,7 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_elastictranscoder_pipeline";
+  public static readonly tfResourceType = "aws_elastictranscoder_pipeline";
 
   // ===========
   // INITIALIZER
@@ -471,7 +468,9 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_elastictranscoder_pipeline',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -579,7 +578,7 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
   }
 
   // content_config - computed: false, optional: true, required: false
-  private _contentConfig = new ElastictranscoderPipelineContentConfigOutputReference(this, "content_config", true);
+  private _contentConfig = new ElastictranscoderPipelineContentConfigOutputReference(this, "content_config");
   public get contentConfig() {
     return this._contentConfig;
   }
@@ -612,7 +611,7 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
   }
 
   // notifications - computed: false, optional: true, required: false
-  private _notifications = new ElastictranscoderPipelineNotificationsOutputReference(this, "notifications", true);
+  private _notifications = new ElastictranscoderPipelineNotificationsOutputReference(this, "notifications");
   public get notifications() {
     return this._notifications;
   }
@@ -628,7 +627,7 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
   }
 
   // thumbnail_config - computed: false, optional: true, required: false
-  private _thumbnailConfig = new ElastictranscoderPipelineThumbnailConfigOutputReference(this, "thumbnail_config", true);
+  private _thumbnailConfig = new ElastictranscoderPipelineThumbnailConfigOutputReference(this, "thumbnail_config");
   public get thumbnailConfig() {
     return this._thumbnailConfig;
   }

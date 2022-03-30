@@ -25,7 +25,7 @@ export class DataAwsCloudformationStack extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_cloudformation_stack";
+  public static readonly tfResourceType = "aws_cloudformation_stack";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class DataAwsCloudformationStack extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_cloudformation_stack',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

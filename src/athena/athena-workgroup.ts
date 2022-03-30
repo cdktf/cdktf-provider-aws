@@ -61,10 +61,9 @@ export class AthenaWorkgroupConfigurationEngineVersionOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AthenaWorkgroupConfigurationEngineVersion | undefined {
@@ -132,10 +131,9 @@ export class AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AthenaWorkgroupConfigurationResultConfigurationAclConfiguration | undefined {
@@ -200,10 +198,9 @@ export class AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurat
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration | undefined {
@@ -307,10 +304,9 @@ export class AthenaWorkgroupConfigurationResultConfigurationOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AthenaWorkgroupConfigurationResultConfiguration | undefined {
@@ -385,7 +381,7 @@ export class AthenaWorkgroupConfigurationResultConfigurationOutputReference exte
   }
 
   // acl_configuration - computed: false, optional: true, required: false
-  private _aclConfiguration = new AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference(this, "acl_configuration", true);
+  private _aclConfiguration = new AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference(this, "acl_configuration");
   public get aclConfiguration() {
     return this._aclConfiguration;
   }
@@ -401,7 +397,7 @@ export class AthenaWorkgroupConfigurationResultConfigurationOutputReference exte
   }
 
   // encryption_configuration - computed: false, optional: true, required: false
-  private _encryptionConfiguration = new AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference(this, "encryption_configuration", true);
+  private _encryptionConfiguration = new AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference(this, "encryption_configuration");
   public get encryptionConfiguration() {
     return this._encryptionConfiguration;
   }
@@ -468,10 +464,9 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AthenaWorkgroupConfiguration | undefined {
@@ -590,7 +585,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   }
 
   // engine_version - computed: false, optional: true, required: false
-  private _engineVersion = new AthenaWorkgroupConfigurationEngineVersionOutputReference(this, "engine_version", true);
+  private _engineVersion = new AthenaWorkgroupConfigurationEngineVersionOutputReference(this, "engine_version");
   public get engineVersion() {
     return this._engineVersion;
   }
@@ -606,7 +601,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
   }
 
   // result_configuration - computed: false, optional: true, required: false
-  private _resultConfiguration = new AthenaWorkgroupConfigurationResultConfigurationOutputReference(this, "result_configuration", true);
+  private _resultConfiguration = new AthenaWorkgroupConfigurationResultConfigurationOutputReference(this, "result_configuration");
   public get resultConfiguration() {
     return this._resultConfiguration;
   }
@@ -630,7 +625,7 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_athena_workgroup";
+  public static readonly tfResourceType = "aws_athena_workgroup";
 
   // ===========
   // INITIALIZER
@@ -647,7 +642,9 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_athena_workgroup',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -771,7 +768,7 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
   }
 
   // configuration - computed: false, optional: true, required: false
-  private _configuration = new AthenaWorkgroupConfigurationOutputReference(this, "configuration", true);
+  private _configuration = new AthenaWorkgroupConfigurationOutputReference(this, "configuration");
   public get configuration() {
     return this._configuration;
   }

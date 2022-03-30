@@ -33,7 +33,7 @@ export class SesIdentityNotificationTopic extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ses_identity_notification_topic";
+  public static readonly tfResourceType = "aws_ses_identity_notification_topic";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class SesIdentityNotificationTopic extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_ses_identity_notification_topic',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

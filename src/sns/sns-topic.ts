@@ -117,7 +117,7 @@ export class SnsTopic extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_sns_topic";
+  public static readonly tfResourceType = "aws_sns_topic";
 
   // ===========
   // INITIALIZER
@@ -134,7 +134,9 @@ export class SnsTopic extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_sns_topic',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

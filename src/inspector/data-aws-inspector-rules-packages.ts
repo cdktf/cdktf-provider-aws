@@ -17,7 +17,7 @@ export class DataAwsInspectorRulesPackages extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_inspector_rules_packages";
+  public static readonly tfResourceType = "aws_inspector_rules_packages";
 
   // ===========
   // INITIALIZER
@@ -34,7 +34,9 @@ export class DataAwsInspectorRulesPackages extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_inspector_rules_packages',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

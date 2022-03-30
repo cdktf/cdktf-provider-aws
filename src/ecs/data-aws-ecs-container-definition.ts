@@ -25,7 +25,7 @@ export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ecs_container_definition";
+  public static readonly tfResourceType = "aws_ecs_container_definition";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_ecs_container_definition',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

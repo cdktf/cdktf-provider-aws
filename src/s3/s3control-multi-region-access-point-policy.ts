@@ -52,10 +52,9 @@ export class S3ControlMultiRegionAccessPointPolicyDetailsOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3ControlMultiRegionAccessPointPolicyDetails | undefined {
@@ -139,10 +138,9 @@ export class S3ControlMultiRegionAccessPointPolicyTimeoutsOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): S3ControlMultiRegionAccessPointPolicyTimeouts | undefined {
@@ -213,7 +211,7 @@ export class S3ControlMultiRegionAccessPointPolicy extends cdktf.TerraformResour
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_s3control_multi_region_access_point_policy";
+  public static readonly tfResourceType = "aws_s3control_multi_region_access_point_policy";
 
   // ===========
   // INITIALIZER
@@ -230,7 +228,9 @@ export class S3ControlMultiRegionAccessPointPolicy extends cdktf.TerraformResour
     super(scope, id, {
       terraformResourceType: 'aws_s3control_multi_region_access_point_policy',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -278,7 +278,7 @@ export class S3ControlMultiRegionAccessPointPolicy extends cdktf.TerraformResour
   }
 
   // details - computed: false, optional: false, required: true
-  private _details = new S3ControlMultiRegionAccessPointPolicyDetailsOutputReference(this, "details", true);
+  private _details = new S3ControlMultiRegionAccessPointPolicyDetailsOutputReference(this, "details");
   public get details() {
     return this._details;
   }
@@ -291,7 +291,7 @@ export class S3ControlMultiRegionAccessPointPolicy extends cdktf.TerraformResour
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new S3ControlMultiRegionAccessPointPolicyTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new S3ControlMultiRegionAccessPointPolicyTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

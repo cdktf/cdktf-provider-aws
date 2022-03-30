@@ -105,10 +105,9 @@ export class GameliftFleetCertificateConfigurationOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GameliftFleetCertificateConfiguration | undefined {
@@ -208,10 +207,9 @@ export class GameliftFleetResourceCreationLimitPolicyOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GameliftFleetResourceCreationLimitPolicy | undefined {
@@ -335,10 +333,9 @@ export class GameliftFleetRuntimeConfigurationOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GameliftFleetRuntimeConfiguration | undefined {
@@ -451,10 +448,9 @@ export class GameliftFleetTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GameliftFleetTimeouts | undefined {
@@ -525,7 +521,7 @@ export class GameliftFleet extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_gamelift_fleet";
+  public static readonly tfResourceType = "aws_gamelift_fleet";
 
   // ===========
   // INITIALIZER
@@ -542,7 +538,9 @@ export class GameliftFleet extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_gamelift_fleet',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -772,7 +770,7 @@ export class GameliftFleet extends cdktf.TerraformResource {
   }
 
   // certificate_configuration - computed: false, optional: true, required: false
-  private _certificateConfiguration = new GameliftFleetCertificateConfigurationOutputReference(this, "certificate_configuration", true);
+  private _certificateConfiguration = new GameliftFleetCertificateConfigurationOutputReference(this, "certificate_configuration");
   public get certificateConfiguration() {
     return this._certificateConfiguration;
   }
@@ -805,7 +803,7 @@ export class GameliftFleet extends cdktf.TerraformResource {
   }
 
   // resource_creation_limit_policy - computed: false, optional: true, required: false
-  private _resourceCreationLimitPolicy = new GameliftFleetResourceCreationLimitPolicyOutputReference(this, "resource_creation_limit_policy", true);
+  private _resourceCreationLimitPolicy = new GameliftFleetResourceCreationLimitPolicyOutputReference(this, "resource_creation_limit_policy");
   public get resourceCreationLimitPolicy() {
     return this._resourceCreationLimitPolicy;
   }
@@ -821,7 +819,7 @@ export class GameliftFleet extends cdktf.TerraformResource {
   }
 
   // runtime_configuration - computed: false, optional: true, required: false
-  private _runtimeConfiguration = new GameliftFleetRuntimeConfigurationOutputReference(this, "runtime_configuration", true);
+  private _runtimeConfiguration = new GameliftFleetRuntimeConfigurationOutputReference(this, "runtime_configuration");
   public get runtimeConfiguration() {
     return this._runtimeConfiguration;
   }
@@ -837,7 +835,7 @@ export class GameliftFleet extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new GameliftFleetTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new GameliftFleetTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

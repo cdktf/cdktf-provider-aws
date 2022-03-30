@@ -37,7 +37,7 @@ export class ElasticacheUserGroup extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_elasticache_user_group";
+  public static readonly tfResourceType = "aws_elasticache_user_group";
 
   // ===========
   // INITIALIZER
@@ -54,7 +54,9 @@ export class ElasticacheUserGroup extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_elasticache_user_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

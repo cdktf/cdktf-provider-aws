@@ -118,10 +118,9 @@ export class Apigatewayv2ApiCorsConfigurationOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Apigatewayv2ApiCorsConfiguration | undefined {
@@ -280,7 +279,7 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_apigatewayv2_api";
+  public static readonly tfResourceType = "aws_apigatewayv2_api";
 
   // ===========
   // INITIALIZER
@@ -297,7 +296,9 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_apigatewayv2_api',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -564,7 +565,7 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   }
 
   // cors_configuration - computed: false, optional: true, required: false
-  private _corsConfiguration = new Apigatewayv2ApiCorsConfigurationOutputReference(this, "cors_configuration", true);
+  private _corsConfiguration = new Apigatewayv2ApiCorsConfigurationOutputReference(this, "cors_configuration");
   public get corsConfiguration() {
     return this._corsConfiguration;
   }

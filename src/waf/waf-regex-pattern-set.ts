@@ -25,7 +25,7 @@ export class WafRegexPatternSet extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_waf_regex_pattern_set";
+  public static readonly tfResourceType = "aws_waf_regex_pattern_set";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class WafRegexPatternSet extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_waf_regex_pattern_set',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

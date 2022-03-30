@@ -247,10 +247,9 @@ export class AutoscalingGroupInstanceRefreshPreferencesOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AutoscalingGroupInstanceRefreshPreferences | undefined {
@@ -391,10 +390,9 @@ export class AutoscalingGroupInstanceRefreshOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AutoscalingGroupInstanceRefresh | undefined {
@@ -460,7 +458,7 @@ export class AutoscalingGroupInstanceRefreshOutputReference extends cdktf.Comple
   }
 
   // preferences - computed: false, optional: true, required: false
-  private _preferences = new AutoscalingGroupInstanceRefreshPreferencesOutputReference(this, "preferences", true);
+  private _preferences = new AutoscalingGroupInstanceRefreshPreferencesOutputReference(this, "preferences");
   public get preferences() {
     return this._preferences;
   }
@@ -507,10 +505,9 @@ export class AutoscalingGroupLaunchTemplateOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AutoscalingGroupLaunchTemplate | undefined {
@@ -625,10 +622,9 @@ export class AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputRefe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AutoscalingGroupMixedInstancesPolicyInstancesDistribution | undefined {
@@ -811,10 +807,9 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification | undefined {
@@ -931,10 +926,9 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTem
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification | undefined {
@@ -1079,10 +1073,9 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AutoscalingGroupMixedInstancesPolicyLaunchTemplate | undefined {
@@ -1113,7 +1106,7 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference e
   }
 
   // launch_template_specification - computed: false, optional: false, required: true
-  private _launchTemplateSpecification = new AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationOutputReference(this, "launch_template_specification", true);
+  private _launchTemplateSpecification = new AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationOutputReference(this, "launch_template_specification");
   public get launchTemplateSpecification() {
     return this._launchTemplateSpecification;
   }
@@ -1174,10 +1167,9 @@ export class AutoscalingGroupMixedInstancesPolicyOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AutoscalingGroupMixedInstancesPolicy | undefined {
@@ -1208,7 +1200,7 @@ export class AutoscalingGroupMixedInstancesPolicyOutputReference extends cdktf.C
   }
 
   // instances_distribution - computed: false, optional: true, required: false
-  private _instancesDistribution = new AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference(this, "instances_distribution", true);
+  private _instancesDistribution = new AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference(this, "instances_distribution");
   public get instancesDistribution() {
     return this._instancesDistribution;
   }
@@ -1224,7 +1216,7 @@ export class AutoscalingGroupMixedInstancesPolicyOutputReference extends cdktf.C
   }
 
   // launch_template - computed: false, optional: false, required: true
-  private _launchTemplate = new AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference(this, "launch_template", true);
+  private _launchTemplate = new AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference(this, "launch_template");
   public get launchTemplate() {
     return this._launchTemplate;
   }
@@ -1286,10 +1278,9 @@ export class AutoscalingGroupTimeoutsOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AutoscalingGroupTimeouts | undefined {
@@ -1352,10 +1343,9 @@ export class AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AutoscalingGroupWarmPoolInstanceReusePolicy | undefined {
@@ -1435,10 +1425,9 @@ export class AutoscalingGroupWarmPoolOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AutoscalingGroupWarmPool | undefined {
@@ -1529,7 +1518,7 @@ export class AutoscalingGroupWarmPoolOutputReference extends cdktf.ComplexObject
   }
 
   // instance_reuse_policy - computed: false, optional: true, required: false
-  private _instanceReusePolicy = new AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference(this, "instance_reuse_policy", true);
+  private _instanceReusePolicy = new AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference(this, "instance_reuse_policy");
   public get instanceReusePolicy() {
     return this._instanceReusePolicy;
   }
@@ -1553,7 +1542,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_autoscaling_group";
+  public static readonly tfResourceType = "aws_autoscaling_group";
 
   // ===========
   // INITIALIZER
@@ -1570,7 +1559,9 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_autoscaling_group',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2088,7 +2079,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // instance_refresh - computed: false, optional: true, required: false
-  private _instanceRefresh = new AutoscalingGroupInstanceRefreshOutputReference(this, "instance_refresh", true);
+  private _instanceRefresh = new AutoscalingGroupInstanceRefreshOutputReference(this, "instance_refresh");
   public get instanceRefresh() {
     return this._instanceRefresh;
   }
@@ -2104,7 +2095,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // launch_template - computed: false, optional: true, required: false
-  private _launchTemplate = new AutoscalingGroupLaunchTemplateOutputReference(this, "launch_template", true);
+  private _launchTemplate = new AutoscalingGroupLaunchTemplateOutputReference(this, "launch_template");
   public get launchTemplate() {
     return this._launchTemplate;
   }
@@ -2120,7 +2111,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // mixed_instances_policy - computed: false, optional: true, required: false
-  private _mixedInstancesPolicy = new AutoscalingGroupMixedInstancesPolicyOutputReference(this, "mixed_instances_policy", true);
+  private _mixedInstancesPolicy = new AutoscalingGroupMixedInstancesPolicyOutputReference(this, "mixed_instances_policy");
   public get mixedInstancesPolicy() {
     return this._mixedInstancesPolicy;
   }
@@ -2153,7 +2144,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new AutoscalingGroupTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new AutoscalingGroupTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
@@ -2169,7 +2160,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // warm_pool - computed: false, optional: true, required: false
-  private _warmPool = new AutoscalingGroupWarmPoolOutputReference(this, "warm_pool", true);
+  private _warmPool = new AutoscalingGroupWarmPoolOutputReference(this, "warm_pool");
   public get warmPool() {
     return this._warmPool;
   }

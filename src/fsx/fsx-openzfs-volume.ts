@@ -119,10 +119,9 @@ export class FsxOpenzfsVolumeNfsExportsOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): FsxOpenzfsVolumeNfsExports | undefined {
@@ -188,10 +187,9 @@ export class FsxOpenzfsVolumeOriginSnapshotOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): FsxOpenzfsVolumeOriginSnapshot | undefined {
@@ -280,10 +278,9 @@ export class FsxOpenzfsVolumeTimeoutsOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): FsxOpenzfsVolumeTimeouts | undefined {
@@ -403,7 +400,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_fsx_openzfs_volume";
+  public static readonly tfResourceType = "aws_fsx_openzfs_volume";
 
   // ===========
   // INITIALIZER
@@ -420,7 +417,9 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_fsx_openzfs_volume',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -612,7 +611,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   }
 
   // nfs_exports - computed: false, optional: true, required: false
-  private _nfsExports = new FsxOpenzfsVolumeNfsExportsOutputReference(this, "nfs_exports", true);
+  private _nfsExports = new FsxOpenzfsVolumeNfsExportsOutputReference(this, "nfs_exports");
   public get nfsExports() {
     return this._nfsExports;
   }
@@ -628,7 +627,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   }
 
   // origin_snapshot - computed: false, optional: true, required: false
-  private _originSnapshot = new FsxOpenzfsVolumeOriginSnapshotOutputReference(this, "origin_snapshot", true);
+  private _originSnapshot = new FsxOpenzfsVolumeOriginSnapshotOutputReference(this, "origin_snapshot");
   public get originSnapshot() {
     return this._originSnapshot;
   }
@@ -644,7 +643,7 @@ export class FsxOpenzfsVolume extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new FsxOpenzfsVolumeTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new FsxOpenzfsVolumeTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

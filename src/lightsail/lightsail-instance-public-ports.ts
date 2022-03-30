@@ -59,7 +59,7 @@ export class LightsailInstancePublicPorts extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_lightsail_instance_public_ports";
+  public static readonly tfResourceType = "aws_lightsail_instance_public_ports";
 
   // ===========
   // INITIALIZER
@@ -76,7 +76,9 @@ export class LightsailInstancePublicPorts extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_lightsail_instance_public_ports',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

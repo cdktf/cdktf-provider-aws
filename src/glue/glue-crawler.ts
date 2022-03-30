@@ -232,10 +232,9 @@ export class GlueCrawlerLineageConfigurationOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueCrawlerLineageConfiguration | undefined {
@@ -325,10 +324,9 @@ export class GlueCrawlerRecrawlPolicyOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueCrawlerRecrawlPolicy | undefined {
@@ -438,10 +436,9 @@ export class GlueCrawlerSchemaChangePolicyOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GlueCrawlerSchemaChangePolicy | undefined {
@@ -512,7 +509,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_glue_crawler";
+  public static readonly tfResourceType = "aws_glue_crawler";
 
   // ===========
   // INITIALIZER
@@ -529,7 +526,9 @@ export class GlueCrawler extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_glue_crawler',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -808,7 +807,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
   }
 
   // lineage_configuration - computed: false, optional: true, required: false
-  private _lineageConfiguration = new GlueCrawlerLineageConfigurationOutputReference(this, "lineage_configuration", true);
+  private _lineageConfiguration = new GlueCrawlerLineageConfigurationOutputReference(this, "lineage_configuration");
   public get lineageConfiguration() {
     return this._lineageConfiguration;
   }
@@ -841,7 +840,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
   }
 
   // recrawl_policy - computed: false, optional: true, required: false
-  private _recrawlPolicy = new GlueCrawlerRecrawlPolicyOutputReference(this, "recrawl_policy", true);
+  private _recrawlPolicy = new GlueCrawlerRecrawlPolicyOutputReference(this, "recrawl_policy");
   public get recrawlPolicy() {
     return this._recrawlPolicy;
   }
@@ -874,7 +873,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
   }
 
   // schema_change_policy - computed: false, optional: true, required: false
-  private _schemaChangePolicy = new GlueCrawlerSchemaChangePolicyOutputReference(this, "schema_change_policy", true);
+  private _schemaChangePolicy = new GlueCrawlerSchemaChangePolicyOutputReference(this, "schema_change_policy");
   public get schemaChangePolicy() {
     return this._schemaChangePolicy;
   }

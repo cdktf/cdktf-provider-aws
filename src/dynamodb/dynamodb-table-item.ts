@@ -33,7 +33,7 @@ export class DynamodbTableItem extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_dynamodb_table_item";
+  public static readonly tfResourceType = "aws_dynamodb_table_item";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class DynamodbTableItem extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_dynamodb_table_item',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

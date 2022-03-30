@@ -49,7 +49,7 @@ export class DataAwsImagebuilderContainerRecipes extends cdktf.TerraformDataSour
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_imagebuilder_container_recipes";
+  public static readonly tfResourceType = "aws_imagebuilder_container_recipes";
 
   // ===========
   // INITIALIZER
@@ -66,7 +66,9 @@ export class DataAwsImagebuilderContainerRecipes extends cdktf.TerraformDataSour
     super(scope, id, {
       terraformResourceType: 'aws_imagebuilder_container_recipes',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -49,10 +49,9 @@ export class SagemakerHumanTaskUiUiTemplateOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SagemakerHumanTaskUiUiTemplate | undefined {
@@ -111,7 +110,7 @@ export class SagemakerHumanTaskUi extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_sagemaker_human_task_ui";
+  public static readonly tfResourceType = "aws_sagemaker_human_task_ui";
 
   // ===========
   // INITIALIZER
@@ -128,7 +127,9 @@ export class SagemakerHumanTaskUi extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_sagemaker_human_task_ui',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -201,7 +202,7 @@ export class SagemakerHumanTaskUi extends cdktf.TerraformResource {
   }
 
   // ui_template - computed: false, optional: false, required: true
-  private _uiTemplate = new SagemakerHumanTaskUiUiTemplateOutputReference(this, "ui_template", true);
+  private _uiTemplate = new SagemakerHumanTaskUiUiTemplateOutputReference(this, "ui_template");
   public get uiTemplate() {
     return this._uiTemplate;
   }

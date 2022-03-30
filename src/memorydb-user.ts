@@ -58,10 +58,9 @@ export class MemorydbUserAuthenticationModeOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MemorydbUserAuthenticationMode | undefined {
@@ -131,7 +130,7 @@ export class MemorydbUser extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_memorydb_user";
+  public static readonly tfResourceType = "aws_memorydb_user";
 
   // ===========
   // INITIALIZER
@@ -148,7 +147,9 @@ export class MemorydbUser extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_memorydb_user',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -240,7 +241,7 @@ export class MemorydbUser extends cdktf.TerraformResource {
   }
 
   // authentication_mode - computed: false, optional: false, required: true
-  private _authenticationMode = new MemorydbUserAuthenticationModeOutputReference(this, "authentication_mode", true);
+  private _authenticationMode = new MemorydbUserAuthenticationModeOutputReference(this, "authentication_mode");
   public get authenticationMode() {
     return this._authenticationMode;
   }

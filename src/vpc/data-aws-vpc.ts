@@ -34,7 +34,45 @@ export interface DataAwsVpcConfig extends cdktf.TerraformMetaArguments {
   */
   readonly filter?: DataAwsVpcFilter[] | cdktf.IResolvable;
 }
-export class DataAwsVpcCidrBlockAssociations extends cdktf.ComplexComputedList {
+export interface DataAwsVpcCidrBlockAssociations {
+}
+
+export function dataAwsVpcCidrBlockAssociationsToTerraform(struct?: DataAwsVpcCidrBlockAssociations): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsVpcCidrBlockAssociationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsVpcCidrBlockAssociations | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsVpcCidrBlockAssociations | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // association_id - computed: true, optional: false, required: false
   public get associationId() {
@@ -49,6 +87,25 @@ export class DataAwsVpcCidrBlockAssociations extends cdktf.ComplexComputedList {
   // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
+  }
+}
+
+export class DataAwsVpcCidrBlockAssociationsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsVpcCidrBlockAssociationsOutputReference {
+    return new DataAwsVpcCidrBlockAssociationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsVpcFilter {
@@ -82,7 +139,7 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_vpc";
+  public static readonly tfResourceType = "aws_vpc";
 
   // ===========
   // INITIALIZER
@@ -99,7 +156,9 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_vpc',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -140,8 +199,9 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
   }
 
   // cidr_block_associations - computed: true, optional: false, required: false
-  public cidrBlockAssociations(index: string) {
-    return new DataAwsVpcCidrBlockAssociations(this, 'cidr_block_associations', index, false);
+  private _cidrBlockAssociations = new DataAwsVpcCidrBlockAssociationsList(this, "cidr_block_associations", false);
+  public get cidrBlockAssociations() {
+    return this._cidrBlockAssociations;
   }
 
   // default - computed: true, optional: true, required: false

@@ -137,10 +137,9 @@ export class ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputRe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions | undefined {
@@ -259,10 +258,9 @@ export class ElasticsearchDomainAdvancedSecurityOptionsOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainAdvancedSecurityOptions | undefined {
@@ -328,7 +326,7 @@ export class ElasticsearchDomainAdvancedSecurityOptionsOutputReference extends c
   }
 
   // master_user_options - computed: false, optional: true, required: false
-  private _masterUserOptions = new ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference(this, "master_user_options", true);
+  private _masterUserOptions = new ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference(this, "master_user_options");
   public get masterUserOptions() {
     return this._masterUserOptions;
   }
@@ -371,10 +369,9 @@ export class ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutput
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration | undefined {
@@ -494,10 +491,9 @@ export class ElasticsearchDomainAutoTuneOptionsOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainAutoTuneOptions | undefined {
@@ -602,10 +598,9 @@ export class ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainClusterConfigColdStorageOptions | undefined {
@@ -668,10 +663,9 @@ export class ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainClusterConfigZoneAwarenessConfig | undefined {
@@ -788,10 +782,9 @@ export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainClusterConfig | undefined {
@@ -1020,7 +1013,7 @@ export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.Compl
   }
 
   // cold_storage_options - computed: false, optional: true, required: false
-  private _coldStorageOptions = new ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference(this, "cold_storage_options", true);
+  private _coldStorageOptions = new ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference(this, "cold_storage_options");
   public get coldStorageOptions() {
     return this._coldStorageOptions;
   }
@@ -1036,7 +1029,7 @@ export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.Compl
   }
 
   // zone_awareness_config - computed: false, optional: true, required: false
-  private _zoneAwarenessConfig = new ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference(this, "zone_awareness_config", true);
+  private _zoneAwarenessConfig = new ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference(this, "zone_awareness_config");
   public get zoneAwarenessConfig() {
     return this._zoneAwarenessConfig;
   }
@@ -1089,10 +1082,9 @@ export class ElasticsearchDomainCognitoOptionsOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainCognitoOptions | undefined {
@@ -1232,10 +1224,9 @@ export class ElasticsearchDomainDomainEndpointOptionsOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainDomainEndpointOptions | undefined {
@@ -1401,10 +1392,9 @@ export class ElasticsearchDomainEbsOptionsOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainEbsOptions | undefined {
@@ -1535,10 +1525,9 @@ export class ElasticsearchDomainEncryptAtRestOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainEncryptAtRest | undefined {
@@ -1647,10 +1636,9 @@ export class ElasticsearchDomainNodeToNodeEncryptionOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainNodeToNodeEncryption | undefined {
@@ -1710,10 +1698,9 @@ export class ElasticsearchDomainSnapshotOptionsOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainSnapshotOptions | undefined {
@@ -1783,10 +1770,9 @@ export class ElasticsearchDomainTimeoutsOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainTimeouts | undefined {
@@ -1898,10 +1884,9 @@ export class ElasticsearchDomainVpcOptionsOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElasticsearchDomainVpcOptions | undefined {
@@ -1982,7 +1967,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_elasticsearch_domain";
+  public static readonly tfResourceType = "aws_elasticsearch_domain";
 
   // ===========
   // INITIALIZER
@@ -1999,7 +1984,9 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_elasticsearch_domain',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2149,7 +2136,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // advanced_security_options - computed: false, optional: true, required: false
-  private _advancedSecurityOptions = new ElasticsearchDomainAdvancedSecurityOptionsOutputReference(this, "advanced_security_options", true);
+  private _advancedSecurityOptions = new ElasticsearchDomainAdvancedSecurityOptionsOutputReference(this, "advanced_security_options");
   public get advancedSecurityOptions() {
     return this._advancedSecurityOptions;
   }
@@ -2165,7 +2152,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // auto_tune_options - computed: false, optional: true, required: false
-  private _autoTuneOptions = new ElasticsearchDomainAutoTuneOptionsOutputReference(this, "auto_tune_options", true);
+  private _autoTuneOptions = new ElasticsearchDomainAutoTuneOptionsOutputReference(this, "auto_tune_options");
   public get autoTuneOptions() {
     return this._autoTuneOptions;
   }
@@ -2181,7 +2168,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // cluster_config - computed: false, optional: true, required: false
-  private _clusterConfig = new ElasticsearchDomainClusterConfigOutputReference(this, "cluster_config", true);
+  private _clusterConfig = new ElasticsearchDomainClusterConfigOutputReference(this, "cluster_config");
   public get clusterConfig() {
     return this._clusterConfig;
   }
@@ -2197,7 +2184,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // cognito_options - computed: false, optional: true, required: false
-  private _cognitoOptions = new ElasticsearchDomainCognitoOptionsOutputReference(this, "cognito_options", true);
+  private _cognitoOptions = new ElasticsearchDomainCognitoOptionsOutputReference(this, "cognito_options");
   public get cognitoOptions() {
     return this._cognitoOptions;
   }
@@ -2213,7 +2200,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // domain_endpoint_options - computed: false, optional: true, required: false
-  private _domainEndpointOptions = new ElasticsearchDomainDomainEndpointOptionsOutputReference(this, "domain_endpoint_options", true);
+  private _domainEndpointOptions = new ElasticsearchDomainDomainEndpointOptionsOutputReference(this, "domain_endpoint_options");
   public get domainEndpointOptions() {
     return this._domainEndpointOptions;
   }
@@ -2229,7 +2216,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // ebs_options - computed: false, optional: true, required: false
-  private _ebsOptions = new ElasticsearchDomainEbsOptionsOutputReference(this, "ebs_options", true);
+  private _ebsOptions = new ElasticsearchDomainEbsOptionsOutputReference(this, "ebs_options");
   public get ebsOptions() {
     return this._ebsOptions;
   }
@@ -2245,7 +2232,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // encrypt_at_rest - computed: false, optional: true, required: false
-  private _encryptAtRest = new ElasticsearchDomainEncryptAtRestOutputReference(this, "encrypt_at_rest", true);
+  private _encryptAtRest = new ElasticsearchDomainEncryptAtRestOutputReference(this, "encrypt_at_rest");
   public get encryptAtRest() {
     return this._encryptAtRest;
   }
@@ -2278,7 +2265,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // node_to_node_encryption - computed: false, optional: true, required: false
-  private _nodeToNodeEncryption = new ElasticsearchDomainNodeToNodeEncryptionOutputReference(this, "node_to_node_encryption", true);
+  private _nodeToNodeEncryption = new ElasticsearchDomainNodeToNodeEncryptionOutputReference(this, "node_to_node_encryption");
   public get nodeToNodeEncryption() {
     return this._nodeToNodeEncryption;
   }
@@ -2294,7 +2281,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // snapshot_options - computed: false, optional: true, required: false
-  private _snapshotOptions = new ElasticsearchDomainSnapshotOptionsOutputReference(this, "snapshot_options", true);
+  private _snapshotOptions = new ElasticsearchDomainSnapshotOptionsOutputReference(this, "snapshot_options");
   public get snapshotOptions() {
     return this._snapshotOptions;
   }
@@ -2310,7 +2297,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ElasticsearchDomainTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new ElasticsearchDomainTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
@@ -2326,7 +2313,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // vpc_options - computed: false, optional: true, required: false
-  private _vpcOptions = new ElasticsearchDomainVpcOptionsOutputReference(this, "vpc_options", true);
+  private _vpcOptions = new ElasticsearchDomainVpcOptionsOutputReference(this, "vpc_options");
   public get vpcOptions() {
     return this._vpcOptions;
   }

@@ -65,10 +65,9 @@ export class WafregionalWebAclDefaultActionOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): WafregionalWebAclDefaultAction | undefined {
@@ -152,10 +151,9 @@ export class WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): WafregionalWebAclLoggingConfigurationRedactedFields | undefined {
@@ -223,10 +221,9 @@ export class WafregionalWebAclLoggingConfigurationOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): WafregionalWebAclLoggingConfiguration | undefined {
@@ -270,7 +267,7 @@ export class WafregionalWebAclLoggingConfigurationOutputReference extends cdktf.
   }
 
   // redacted_fields - computed: false, optional: true, required: false
-  private _redactedFields = new WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference(this, "redacted_fields", true);
+  private _redactedFields = new WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference(this, "redacted_fields");
   public get redactedFields() {
     return this._redactedFields;
   }
@@ -308,10 +305,9 @@ export class WafregionalWebAclRuleActionOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): WafregionalWebAclRuleAction | undefined {
@@ -371,10 +367,9 @@ export class WafregionalWebAclRuleOverrideActionOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): WafregionalWebAclRuleOverrideAction | undefined {
@@ -461,7 +456,7 @@ export class WafregionalWebAcl extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_wafregional_web_acl";
+  public static readonly tfResourceType = "aws_wafregional_web_acl";
 
   // ===========
   // INITIALIZER
@@ -478,7 +473,9 @@ export class WafregionalWebAcl extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_wafregional_web_acl',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -567,7 +564,7 @@ export class WafregionalWebAcl extends cdktf.TerraformResource {
   }
 
   // default_action - computed: false, optional: false, required: true
-  private _defaultAction = new WafregionalWebAclDefaultActionOutputReference(this, "default_action", true);
+  private _defaultAction = new WafregionalWebAclDefaultActionOutputReference(this, "default_action");
   public get defaultAction() {
     return this._defaultAction;
   }
@@ -580,7 +577,7 @@ export class WafregionalWebAcl extends cdktf.TerraformResource {
   }
 
   // logging_configuration - computed: false, optional: true, required: false
-  private _loggingConfiguration = new WafregionalWebAclLoggingConfigurationOutputReference(this, "logging_configuration", true);
+  private _loggingConfiguration = new WafregionalWebAclLoggingConfigurationOutputReference(this, "logging_configuration");
   public get loggingConfiguration() {
     return this._loggingConfiguration;
   }

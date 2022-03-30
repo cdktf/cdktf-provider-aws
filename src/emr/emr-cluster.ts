@@ -222,10 +222,9 @@ export class EmrClusterAutoTerminationPolicyOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EmrClusterAutoTerminationPolicy | undefined {
@@ -473,10 +472,9 @@ export class EmrClusterCoreInstanceFleetLaunchSpecificationsOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EmrClusterCoreInstanceFleetLaunchSpecifications | undefined {
@@ -587,10 +585,9 @@ export class EmrClusterCoreInstanceFleetOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EmrClusterCoreInstanceFleet | undefined {
@@ -719,7 +716,7 @@ export class EmrClusterCoreInstanceFleetOutputReference extends cdktf.ComplexObj
   }
 
   // launch_specifications - computed: false, optional: true, required: false
-  private _launchSpecifications = new EmrClusterCoreInstanceFleetLaunchSpecificationsOutputReference(this, "launch_specifications", true);
+  private _launchSpecifications = new EmrClusterCoreInstanceFleetLaunchSpecificationsOutputReference(this, "launch_specifications");
   public get launchSpecifications() {
     return this._launchSpecifications;
   }
@@ -816,10 +813,9 @@ export class EmrClusterCoreInstanceGroupOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EmrClusterCoreInstanceGroup | undefined {
@@ -1035,10 +1031,9 @@ export class EmrClusterEc2AttributesOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EmrClusterEc2Attributes | undefined {
@@ -1294,10 +1289,9 @@ export class EmrClusterKerberosAttributesOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EmrClusterKerberosAttributes | undefined {
@@ -1600,10 +1594,9 @@ export class EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EmrClusterMasterInstanceFleetLaunchSpecifications | undefined {
@@ -1714,10 +1707,9 @@ export class EmrClusterMasterInstanceFleetOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EmrClusterMasterInstanceFleet | undefined {
@@ -1846,7 +1838,7 @@ export class EmrClusterMasterInstanceFleetOutputReference extends cdktf.ComplexO
   }
 
   // launch_specifications - computed: false, optional: true, required: false
-  private _launchSpecifications = new EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference(this, "launch_specifications", true);
+  private _launchSpecifications = new EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference(this, "launch_specifications");
   public get launchSpecifications() {
     return this._launchSpecifications;
   }
@@ -1938,10 +1930,9 @@ export class EmrClusterMasterInstanceGroupOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): EmrClusterMasterInstanceGroup | undefined {
@@ -2081,7 +2072,7 @@ export class EmrCluster extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_emr_cluster";
+  public static readonly tfResourceType = "aws_emr_cluster";
 
   // ===========
   // INITIALIZER
@@ -2098,7 +2089,9 @@ export class EmrCluster extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_emr_cluster',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2489,7 +2482,7 @@ export class EmrCluster extends cdktf.TerraformResource {
   }
 
   // auto_termination_policy - computed: false, optional: true, required: false
-  private _autoTerminationPolicy = new EmrClusterAutoTerminationPolicyOutputReference(this, "auto_termination_policy", true);
+  private _autoTerminationPolicy = new EmrClusterAutoTerminationPolicyOutputReference(this, "auto_termination_policy");
   public get autoTerminationPolicy() {
     return this._autoTerminationPolicy;
   }
@@ -2522,7 +2515,7 @@ export class EmrCluster extends cdktf.TerraformResource {
   }
 
   // core_instance_fleet - computed: false, optional: true, required: false
-  private _coreInstanceFleet = new EmrClusterCoreInstanceFleetOutputReference(this, "core_instance_fleet", true);
+  private _coreInstanceFleet = new EmrClusterCoreInstanceFleetOutputReference(this, "core_instance_fleet");
   public get coreInstanceFleet() {
     return this._coreInstanceFleet;
   }
@@ -2538,7 +2531,7 @@ export class EmrCluster extends cdktf.TerraformResource {
   }
 
   // core_instance_group - computed: false, optional: true, required: false
-  private _coreInstanceGroup = new EmrClusterCoreInstanceGroupOutputReference(this, "core_instance_group", true);
+  private _coreInstanceGroup = new EmrClusterCoreInstanceGroupOutputReference(this, "core_instance_group");
   public get coreInstanceGroup() {
     return this._coreInstanceGroup;
   }
@@ -2554,7 +2547,7 @@ export class EmrCluster extends cdktf.TerraformResource {
   }
 
   // ec2_attributes - computed: false, optional: true, required: false
-  private _ec2Attributes = new EmrClusterEc2AttributesOutputReference(this, "ec2_attributes", true);
+  private _ec2Attributes = new EmrClusterEc2AttributesOutputReference(this, "ec2_attributes");
   public get ec2Attributes() {
     return this._ec2Attributes;
   }
@@ -2570,7 +2563,7 @@ export class EmrCluster extends cdktf.TerraformResource {
   }
 
   // kerberos_attributes - computed: false, optional: true, required: false
-  private _kerberosAttributes = new EmrClusterKerberosAttributesOutputReference(this, "kerberos_attributes", true);
+  private _kerberosAttributes = new EmrClusterKerberosAttributesOutputReference(this, "kerberos_attributes");
   public get kerberosAttributes() {
     return this._kerberosAttributes;
   }
@@ -2586,7 +2579,7 @@ export class EmrCluster extends cdktf.TerraformResource {
   }
 
   // master_instance_fleet - computed: false, optional: true, required: false
-  private _masterInstanceFleet = new EmrClusterMasterInstanceFleetOutputReference(this, "master_instance_fleet", true);
+  private _masterInstanceFleet = new EmrClusterMasterInstanceFleetOutputReference(this, "master_instance_fleet");
   public get masterInstanceFleet() {
     return this._masterInstanceFleet;
   }
@@ -2602,7 +2595,7 @@ export class EmrCluster extends cdktf.TerraformResource {
   }
 
   // master_instance_group - computed: false, optional: true, required: false
-  private _masterInstanceGroup = new EmrClusterMasterInstanceGroupOutputReference(this, "master_instance_group", true);
+  private _masterInstanceGroup = new EmrClusterMasterInstanceGroupOutputReference(this, "master_instance_group");
   public get masterInstanceGroup() {
     return this._masterInstanceGroup;
   }

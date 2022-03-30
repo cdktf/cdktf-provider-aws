@@ -33,7 +33,7 @@ export class DevicefarmUpload extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_devicefarm_upload";
+  public static readonly tfResourceType = "aws_devicefarm_upload";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class DevicefarmUpload extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_devicefarm_upload',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

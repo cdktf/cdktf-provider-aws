@@ -21,7 +21,7 @@ export class DataAwsKinesisFirehoseDeliveryStream extends cdktf.TerraformDataSou
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_kinesis_firehose_delivery_stream";
+  public static readonly tfResourceType = "aws_kinesis_firehose_delivery_stream";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class DataAwsKinesisFirehoseDeliveryStream extends cdktf.TerraformDataSou
     super(scope, id, {
       terraformResourceType: 'aws_kinesis_firehose_delivery_stream',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

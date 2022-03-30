@@ -17,7 +17,7 @@ export class DataAwsSesActiveReceiptRuleSet extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_ses_active_receipt_rule_set";
+  public static readonly tfResourceType = "aws_ses_active_receipt_rule_set";
 
   // ===========
   // INITIALIZER
@@ -34,7 +34,9 @@ export class DataAwsSesActiveReceiptRuleSet extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_ses_active_receipt_rule_set',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -78,10 +78,9 @@ export class Apigatewayv2AuthorizerJwtConfigurationOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): Apigatewayv2AuthorizerJwtConfiguration | undefined {
@@ -152,7 +151,7 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_apigatewayv2_authorizer";
+  public static readonly tfResourceType = "aws_apigatewayv2_authorizer";
 
   // ===========
   // INITIALIZER
@@ -169,7 +168,9 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_apigatewayv2_authorizer',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -333,7 +334,7 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
   }
 
   // jwt_configuration - computed: false, optional: true, required: false
-  private _jwtConfiguration = new Apigatewayv2AuthorizerJwtConfigurationOutputReference(this, "jwt_configuration", true);
+  private _jwtConfiguration = new Apigatewayv2AuthorizerJwtConfigurationOutputReference(this, "jwt_configuration");
   public get jwtConfiguration() {
     return this._jwtConfiguration;
   }

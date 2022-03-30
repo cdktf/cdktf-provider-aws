@@ -101,10 +101,9 @@ export class ElastictranscoderPresetAudioOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElastictranscoderPresetAudio | undefined {
@@ -270,10 +269,9 @@ export class ElastictranscoderPresetAudioCodecOptionsOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElastictranscoderPresetAudioCodecOptions | undefined {
@@ -437,10 +435,9 @@ export class ElastictranscoderPresetThumbnailsOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElastictranscoderPresetThumbnails | undefined {
@@ -717,10 +714,9 @@ export class ElastictranscoderPresetVideoOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ElastictranscoderPresetVideo | undefined {
@@ -1095,7 +1091,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_elastictranscoder_preset";
+  public static readonly tfResourceType = "aws_elastictranscoder_preset";
 
   // ===========
   // INITIALIZER
@@ -1112,7 +1108,9 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'aws_elastictranscoder_preset',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1223,7 +1221,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   }
 
   // audio - computed: false, optional: true, required: false
-  private _audio = new ElastictranscoderPresetAudioOutputReference(this, "audio", true);
+  private _audio = new ElastictranscoderPresetAudioOutputReference(this, "audio");
   public get audio() {
     return this._audio;
   }
@@ -1239,7 +1237,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   }
 
   // audio_codec_options - computed: false, optional: true, required: false
-  private _audioCodecOptions = new ElastictranscoderPresetAudioCodecOptionsOutputReference(this, "audio_codec_options", true);
+  private _audioCodecOptions = new ElastictranscoderPresetAudioCodecOptionsOutputReference(this, "audio_codec_options");
   public get audioCodecOptions() {
     return this._audioCodecOptions;
   }
@@ -1255,7 +1253,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   }
 
   // thumbnails - computed: false, optional: true, required: false
-  private _thumbnails = new ElastictranscoderPresetThumbnailsOutputReference(this, "thumbnails", true);
+  private _thumbnails = new ElastictranscoderPresetThumbnailsOutputReference(this, "thumbnails");
   public get thumbnails() {
     return this._thumbnails;
   }
@@ -1271,7 +1269,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   }
 
   // video - computed: false, optional: true, required: false
-  private _video = new ElastictranscoderPresetVideoOutputReference(this, "video", true);
+  private _video = new ElastictranscoderPresetVideoOutputReference(this, "video");
   public get video() {
     return this._video;
   }

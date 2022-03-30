@@ -21,7 +21,7 @@ export class DataAwsArn extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "aws_arn";
+  public static readonly tfResourceType = "aws_arn";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class DataAwsArn extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'aws_arn',
       terraformGeneratorMetadata: {
-        providerName: 'aws'
+        providerName: 'aws',
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
