@@ -59,7 +59,7 @@ export class ApiGatewayApiKey extends cdktf.TerraformResource {
       terraformResourceType: 'aws_api_gateway_api_key',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

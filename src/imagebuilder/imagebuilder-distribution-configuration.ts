@@ -584,6 +584,10 @@ export class ImagebuilderDistributionConfigurationDistributionContainerDistribut
 }
 export interface ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#account_id ImagebuilderDistributionConfiguration#account_id}
+  */
+  readonly accountId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_distribution_configuration#default ImagebuilderDistributionConfiguration#default}
   */
   readonly default?: boolean | cdktf.IResolvable;
@@ -599,6 +603,7 @@ export function imagebuilderDistributionConfigurationDistributionLaunchTemplateC
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    account_id: cdktf.stringToTerraform(struct!.accountId),
     default: cdktf.booleanToTerraform(struct!.default),
     launch_template_id: cdktf.stringToTerraform(struct!.launchTemplateId),
   }
@@ -674,7 +679,7 @@ export class ImagebuilderDistributionConfiguration extends cdktf.TerraformResour
       terraformResourceType: 'aws_imagebuilder_distribution_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

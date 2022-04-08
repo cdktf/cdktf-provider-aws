@@ -24,6 +24,10 @@ export interface LambdaPermissionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly principal: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_permission#principal_org_id LambdaPermission#principal_org_id}
+  */
+  readonly principalOrgId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_permission#qualifier LambdaPermission#qualifier}
   */
   readonly qualifier?: string;
@@ -71,7 +75,7 @@ export class LambdaPermission extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_permission',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -83,6 +87,7 @@ export class LambdaPermission extends cdktf.TerraformResource {
     this._eventSourceToken = config.eventSourceToken;
     this._functionName = config.functionName;
     this._principal = config.principal;
+    this._principalOrgId = config.principalOrgId;
     this._qualifier = config.qualifier;
     this._sourceAccount = config.sourceAccount;
     this._sourceArn = config.sourceArn;
@@ -152,6 +157,22 @@ export class LambdaPermission extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get principalInput() {
     return this._principal;
+  }
+
+  // principal_org_id - computed: false, optional: true, required: false
+  private _principalOrgId?: string; 
+  public get principalOrgId() {
+    return this.getStringAttribute('principal_org_id');
+  }
+  public set principalOrgId(value: string) {
+    this._principalOrgId = value;
+  }
+  public resetPrincipalOrgId() {
+    this._principalOrgId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalOrgIdInput() {
+    return this._principalOrgId;
   }
 
   // qualifier - computed: false, optional: true, required: false
@@ -244,6 +265,7 @@ export class LambdaPermission extends cdktf.TerraformResource {
       event_source_token: cdktf.stringToTerraform(this._eventSourceToken),
       function_name: cdktf.stringToTerraform(this._functionName),
       principal: cdktf.stringToTerraform(this._principal),
+      principal_org_id: cdktf.stringToTerraform(this._principalOrgId),
       qualifier: cdktf.stringToTerraform(this._qualifier),
       source_account: cdktf.stringToTerraform(this._sourceAccount),
       source_arn: cdktf.stringToTerraform(this._sourceArn),

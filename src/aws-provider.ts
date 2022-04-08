@@ -1574,6 +1574,18 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#opensearch AwsProvider#opensearch}
+  */
+  readonly opensearch?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#opensearchservice AwsProvider#opensearchservice}
+  */
+  readonly opensearchservice?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#opsworks AwsProvider#opsworks}
   */
   readonly opsworks?: string;
@@ -2355,6 +2367,8 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     networkfirewall: cdktf.stringToTerraform(struct!.networkfirewall),
     networkmanager: cdktf.stringToTerraform(struct!.networkmanager),
     nimblestudio: cdktf.stringToTerraform(struct!.nimblestudio),
+    opensearch: cdktf.stringToTerraform(struct!.opensearch),
+    opensearchservice: cdktf.stringToTerraform(struct!.opensearchservice),
     opsworks: cdktf.stringToTerraform(struct!.opsworks),
     opsworkscm: cdktf.stringToTerraform(struct!.opsworkscm),
     organizations: cdktf.stringToTerraform(struct!.organizations),
@@ -2505,7 +2519,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'

@@ -19,13 +19,21 @@ export * from './memorydb-parameter-group';
 export * from './memorydb-snapshot';
 export * from './memorydb-subnet-group';
 export * from './memorydb-user';
+export * from './opensearch-domain';
+export * from './opensearch-domain-policy';
+export * from './opensearch-domain-saml-options';
 export * from './data-aws-cloudcontrolapi-resource';
 export * from './data-aws-default-tags';
 export * from './data-aws-grafana-workspace';
 export * from './data-aws-identitystore-group';
 export * from './data-aws-identitystore-user';
+export * from './data-aws-memorydb-acl';
+export * from './data-aws-memorydb-cluster';
 export * from './data-aws-memorydb-parameter-group';
+export * from './data-aws-memorydb-snapshot';
 export * from './data-aws-memorydb-subnet-group';
+export * from './data-aws-memorydb-user';
+export * from './data-aws-opensearch-domain';
 export * from './data-aws-service';
 export * as accessanalyzer from './accessanalyzer'
 export * as acm from './acm'

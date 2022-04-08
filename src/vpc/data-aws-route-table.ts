@@ -168,6 +168,11 @@ export class DataAwsRouteTableRoutesOutputReference extends cdktf.ComplexObject 
     return this.getStringAttribute('cidr_block');
   }
 
+  // core_network_arn - computed: true, optional: false, required: false
+  public get coreNetworkArn() {
+    return this.getStringAttribute('core_network_arn');
+  }
+
   // destination_prefix_list_id - computed: true, optional: false, required: false
   public get destinationPrefixListId() {
     return this.getStringAttribute('destination_prefix_list_id');
@@ -291,7 +296,7 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_route_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface OrganizationsAccountConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_account#close_on_deletion OrganizationsAccount#close_on_deletion}
+  */
+  readonly closeOnDeletion?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_account#email OrganizationsAccount#email}
   */
   readonly email: string;
@@ -63,7 +67,7 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
       terraformResourceType: 'aws_organizations_account',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -71,6 +75,7 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._closeOnDeletion = config.closeOnDeletion;
     this._email = config.email;
     this._iamUserAccessToBilling = config.iamUserAccessToBilling;
     this._name = config.name;
@@ -87,6 +92,22 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // close_on_deletion - computed: false, optional: true, required: false
+  private _closeOnDeletion?: boolean | cdktf.IResolvable; 
+  public get closeOnDeletion() {
+    return this.getBooleanAttribute('close_on_deletion');
+  }
+  public set closeOnDeletion(value: boolean | cdktf.IResolvable) {
+    this._closeOnDeletion = value;
+  }
+  public resetCloseOnDeletion() {
+    this._closeOnDeletion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get closeOnDeletionInput() {
+    return this._closeOnDeletion;
   }
 
   // email - computed: false, optional: false, required: true
@@ -221,6 +242,7 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      close_on_deletion: cdktf.booleanToTerraform(this._closeOnDeletion),
       email: cdktf.stringToTerraform(this._email),
       iam_user_access_to_billing: cdktf.stringToTerraform(this._iamUserAccessToBilling),
       name: cdktf.stringToTerraform(this._name),

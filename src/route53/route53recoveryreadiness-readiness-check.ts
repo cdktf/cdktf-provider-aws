@@ -122,7 +122,7 @@ export class Route53RecoveryreadinessReadinessCheck extends cdktf.TerraformResou
       terraformResourceType: 'aws_route53recoveryreadiness_readiness_check',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

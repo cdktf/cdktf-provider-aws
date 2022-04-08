@@ -22,7 +22,7 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group#auto_minor_version_upgrade ElasticacheReplicationGroup#auto_minor_version_upgrade}
   */
-  readonly autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
+  readonly autoMinorVersionUpgrade?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group#automatic_failover_enabled ElasticacheReplicationGroup#automatic_failover_enabled}
   */
@@ -444,7 +444,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elasticache_replication_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -552,11 +552,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   }
 
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
-  private _autoMinorVersionUpgrade?: boolean | cdktf.IResolvable; 
+  private _autoMinorVersionUpgrade?: string; 
   public get autoMinorVersionUpgrade() {
-    return this.getBooleanAttribute('auto_minor_version_upgrade');
+    return this.getStringAttribute('auto_minor_version_upgrade');
   }
-  public set autoMinorVersionUpgrade(value: boolean | cdktf.IResolvable) {
+  public set autoMinorVersionUpgrade(value: string) {
     this._autoMinorVersionUpgrade = value;
   }
   public resetAutoMinorVersionUpgrade() {
@@ -1185,7 +1185,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
       apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
       at_rest_encryption_enabled: cdktf.booleanToTerraform(this._atRestEncryptionEnabled),
       auth_token: cdktf.stringToTerraform(this._authToken),
-      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
+      auto_minor_version_upgrade: cdktf.stringToTerraform(this._autoMinorVersionUpgrade),
       automatic_failover_enabled: cdktf.booleanToTerraform(this._automaticFailoverEnabled),
       availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
       data_tiering_enabled: cdktf.booleanToTerraform(this._dataTieringEnabled),

@@ -40,6 +40,10 @@ export interface DefaultRouteTableRoute {
   */
   readonly cidrBlock?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_route_table#core_network_arn DefaultRouteTable#core_network_arn}
+  */
+  readonly coreNetworkArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_route_table#destination_prefix_list_id DefaultRouteTable#destination_prefix_list_id}
   */
   readonly destinationPrefixListId?: string;
@@ -88,6 +92,7 @@ export function defaultRouteTableRouteToTerraform(struct?: DefaultRouteTableRout
   }
   return {
     cidr_block: struct!.cidrBlock === undefined ? null : cdktf.stringToTerraform(struct!.cidrBlock),
+    core_network_arn: cdktf.stringToTerraform(struct!.coreNetworkArn),
     destination_prefix_list_id: struct!.destinationPrefixListId === undefined ? null : cdktf.stringToTerraform(struct!.destinationPrefixListId),
     egress_only_gateway_id: struct!.egressOnlyGatewayId === undefined ? null : cdktf.stringToTerraform(struct!.egressOnlyGatewayId),
     gateway_id: struct!.gatewayId === undefined ? null : cdktf.stringToTerraform(struct!.gatewayId),
@@ -220,7 +225,7 @@ export class DefaultRouteTable extends cdktf.TerraformResource {
       terraformResourceType: 'aws_default_route_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
