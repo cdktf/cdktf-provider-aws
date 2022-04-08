@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface VpcIpamConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam#cascade VpcIpam#cascade}
+  */
+  readonly cascade?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam#description VpcIpam#description}
   */
   readonly description?: string;
@@ -70,7 +74,7 @@ export class VpcIpam extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_ipam',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -78,6 +82,7 @@ export class VpcIpam extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._cascade = config.cascade;
     this._description = config.description;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -91,6 +96,22 @@ export class VpcIpam extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // cascade - computed: false, optional: true, required: false
+  private _cascade?: boolean | cdktf.IResolvable; 
+  public get cascade() {
+    return this.getBooleanAttribute('cascade');
+  }
+  public set cascade(value: boolean | cdktf.IResolvable) {
+    this._cascade = value;
+  }
+  public resetCascade() {
+    this._cascade = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cascadeInput() {
+    return this._cascade;
   }
 
   // description - computed: false, optional: true, required: false
@@ -181,6 +202,7 @@ export class VpcIpam extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      cascade: cdktf.booleanToTerraform(this._cascade),
       description: cdktf.stringToTerraform(this._description),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

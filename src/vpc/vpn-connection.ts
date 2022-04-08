@@ -394,7 +394,7 @@ export class VpnConnection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpn_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -460,6 +460,16 @@ export class VpnConnection extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // core_network_arn - computed: true, optional: false, required: false
+  public get coreNetworkArn() {
+    return this.getStringAttribute('core_network_arn');
+  }
+
+  // core_network_attachment_arn - computed: true, optional: false, required: false
+  public get coreNetworkAttachmentArn() {
+    return this.getStringAttribute('core_network_attachment_arn');
   }
 
   // customer_gateway_configuration - computed: true, optional: false, required: false

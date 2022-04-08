@@ -2,6 +2,7 @@
 export * from './db-cluster-snapshot';
 export * from './db-event-subscription';
 export * from './db-instance';
+export * from './db-instance-automated-backups-replication';
 export * from './db-instance-role-association';
 export * from './db-option-group';
 export * from './db-parameter-group';
@@ -13,6 +14,7 @@ export * from './db-security-group';
 export * from './db-snapshot';
 export * from './db-subnet-group';
 export * from './rds-cluster';
+export * from './rds-cluster-activity-stream';
 export * from './rds-cluster-endpoint';
 export * from './rds-cluster-instance';
 export * from './rds-cluster-parameter-group';

@@ -39,7 +39,7 @@ export class DataAwsMskconnectConnector extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_mskconnect_connector',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

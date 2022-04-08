@@ -11,6 +11,7 @@ export * from './ssm-patch-group';
 export * from './ssm-resource-data-sync';
 export * from './data-aws-ssm-document';
 export * from './data-aws-ssm-instances';
+export * from './data-aws-ssm-maintenance-windows';
 export * from './data-aws-ssm-parameter';
 export * from './data-aws-ssm-parameters-by-path';
 export * from './data-aws-ssm-patch-baseline';

@@ -5,6 +5,7 @@ export * from './eks-fargate-profile';
 export * from './eks-identity-provider-config';
 export * from './eks-node-group';
 export * from './data-aws-eks-addon';
+export * from './data-aws-eks-addon-version';
 export * from './data-aws-eks-cluster';
 export * from './data-aws-eks-cluster-auth';
 export * from './data-aws-eks-clusters';

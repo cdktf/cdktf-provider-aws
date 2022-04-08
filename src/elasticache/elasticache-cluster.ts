@@ -12,6 +12,10 @@ export interface ElasticacheClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly applyImmediately?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#auto_minor_version_upgrade ElasticacheCluster#auto_minor_version_upgrade}
+  */
+  readonly autoMinorVersionUpgrade?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#availability_zone ElasticacheCluster#availability_zone}
   */
   readonly availabilityZone?: string;
@@ -248,7 +252,7 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elasticache_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -257,6 +261,7 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._applyImmediately = config.applyImmediately;
+    this._autoMinorVersionUpgrade = config.autoMinorVersionUpgrade;
     this._availabilityZone = config.availabilityZone;
     this._azMode = config.azMode;
     this._clusterId = config.clusterId;
@@ -306,6 +311,22 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // auto_minor_version_upgrade - computed: false, optional: true, required: false
+  private _autoMinorVersionUpgrade?: string; 
+  public get autoMinorVersionUpgrade() {
+    return this.getStringAttribute('auto_minor_version_upgrade');
+  }
+  public set autoMinorVersionUpgrade(value: string) {
+    this._autoMinorVersionUpgrade = value;
+  }
+  public resetAutoMinorVersionUpgrade() {
+    this._autoMinorVersionUpgrade = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoMinorVersionUpgradeInput() {
+    return this._autoMinorVersionUpgrade;
   }
 
   // availability_zone - computed: true, optional: true, required: false
@@ -723,6 +744,7 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
+      auto_minor_version_upgrade: cdktf.stringToTerraform(this._autoMinorVersionUpgrade),
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       az_mode: cdktf.stringToTerraform(this._azMode),
       cluster_id: cdktf.stringToTerraform(this._clusterId),

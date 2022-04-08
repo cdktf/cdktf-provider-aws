@@ -348,7 +348,7 @@ export class AppmeshVirtualService extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appmesh_virtual_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

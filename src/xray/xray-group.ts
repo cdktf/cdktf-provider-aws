@@ -23,6 +23,101 @@ export interface XrayGroupConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_group#tags_all XrayGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * insights_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_group#insights_configuration XrayGroup#insights_configuration}
+  */
+  readonly insightsConfiguration?: XrayGroupInsightsConfiguration;
+}
+export interface XrayGroupInsightsConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_group#insights_enabled XrayGroup#insights_enabled}
+  */
+  readonly insightsEnabled: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_group#notifications_enabled XrayGroup#notifications_enabled}
+  */
+  readonly notificationsEnabled?: boolean | cdktf.IResolvable;
+}
+
+export function xrayGroupInsightsConfigurationToTerraform(struct?: XrayGroupInsightsConfigurationOutputReference | XrayGroupInsightsConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    insights_enabled: cdktf.booleanToTerraform(struct!.insightsEnabled),
+    notifications_enabled: cdktf.booleanToTerraform(struct!.notificationsEnabled),
+  }
+}
+
+export class XrayGroupInsightsConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): XrayGroupInsightsConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._insightsEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.insightsEnabled = this._insightsEnabled;
+    }
+    if (this._notificationsEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notificationsEnabled = this._notificationsEnabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: XrayGroupInsightsConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._insightsEnabled = undefined;
+      this._notificationsEnabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._insightsEnabled = value.insightsEnabled;
+      this._notificationsEnabled = value.notificationsEnabled;
+    }
+  }
+
+  // insights_enabled - computed: false, optional: false, required: true
+  private _insightsEnabled?: boolean | cdktf.IResolvable; 
+  public get insightsEnabled() {
+    return this.getBooleanAttribute('insights_enabled');
+  }
+  public set insightsEnabled(value: boolean | cdktf.IResolvable) {
+    this._insightsEnabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get insightsEnabledInput() {
+    return this._insightsEnabled;
+  }
+
+  // notifications_enabled - computed: true, optional: true, required: false
+  private _notificationsEnabled?: boolean | cdktf.IResolvable; 
+  public get notificationsEnabled() {
+    return this.getBooleanAttribute('notifications_enabled');
+  }
+  public set notificationsEnabled(value: boolean | cdktf.IResolvable) {
+    this._notificationsEnabled = value;
+  }
+  public resetNotificationsEnabled() {
+    this._notificationsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationsEnabledInput() {
+    return this._notificationsEnabled;
+  }
 }
 
 /**
@@ -51,7 +146,7 @@ export class XrayGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_xray_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -63,6 +158,7 @@ export class XrayGroup extends cdktf.TerraformResource {
     this._groupName = config.groupName;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._insightsConfiguration.internalValue = config.insightsConfiguration;
   }
 
   // ==========
@@ -137,6 +233,22 @@ export class XrayGroup extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // insights_configuration - computed: false, optional: true, required: false
+  private _insightsConfiguration = new XrayGroupInsightsConfigurationOutputReference(this, "insights_configuration");
+  public get insightsConfiguration() {
+    return this._insightsConfiguration;
+  }
+  public putInsightsConfiguration(value: XrayGroupInsightsConfiguration) {
+    this._insightsConfiguration.internalValue = value;
+  }
+  public resetInsightsConfiguration() {
+    this._insightsConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get insightsConfigurationInput() {
+    return this._insightsConfiguration.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -147,6 +259,7 @@ export class XrayGroup extends cdktf.TerraformResource {
       group_name: cdktf.stringToTerraform(this._groupName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      insights_configuration: xrayGroupInsightsConfigurationToTerraform(this._insightsConfiguration.internalValue),
     };
   }
 }

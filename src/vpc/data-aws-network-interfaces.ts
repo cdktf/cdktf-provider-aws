@@ -67,7 +67,7 @@ export class DataAwsNetworkInterfaces extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_network_interfaces',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

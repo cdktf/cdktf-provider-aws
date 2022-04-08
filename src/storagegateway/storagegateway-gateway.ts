@@ -72,6 +72,12 @@ export interface StoragegatewayGatewayConfig extends cdktf.TerraformMetaArgument
   */
   readonly tapeDriveType?: string;
   /**
+  * maintenance_start_time block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_gateway#maintenance_start_time StoragegatewayGateway#maintenance_start_time}
+  */
+  readonly maintenanceStartTime?: StoragegatewayGatewayMaintenanceStartTime;
+  /**
   * smb_active_directory_settings block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_gateway#smb_active_directory_settings StoragegatewayGateway#smb_active_directory_settings}
@@ -146,6 +152,149 @@ export class StoragegatewayGatewayGatewayNetworkInterfaceList extends cdktf.Comp
   */
   public get(index: number): StoragegatewayGatewayGatewayNetworkInterfaceOutputReference {
     return new StoragegatewayGatewayGatewayNetworkInterfaceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface StoragegatewayGatewayMaintenanceStartTime {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_gateway#day_of_month StoragegatewayGateway#day_of_month}
+  */
+  readonly dayOfMonth?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_gateway#day_of_week StoragegatewayGateway#day_of_week}
+  */
+  readonly dayOfWeek?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_gateway#hour_of_day StoragegatewayGateway#hour_of_day}
+  */
+  readonly hourOfDay: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_gateway#minute_of_hour StoragegatewayGateway#minute_of_hour}
+  */
+  readonly minuteOfHour?: number;
+}
+
+export function storagegatewayGatewayMaintenanceStartTimeToTerraform(struct?: StoragegatewayGatewayMaintenanceStartTimeOutputReference | StoragegatewayGatewayMaintenanceStartTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    day_of_month: cdktf.stringToTerraform(struct!.dayOfMonth),
+    day_of_week: cdktf.stringToTerraform(struct!.dayOfWeek),
+    hour_of_day: cdktf.numberToTerraform(struct!.hourOfDay),
+    minute_of_hour: cdktf.numberToTerraform(struct!.minuteOfHour),
+  }
+}
+
+export class StoragegatewayGatewayMaintenanceStartTimeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): StoragegatewayGatewayMaintenanceStartTime | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dayOfMonth !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dayOfMonth = this._dayOfMonth;
+    }
+    if (this._dayOfWeek !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dayOfWeek = this._dayOfWeek;
+    }
+    if (this._hourOfDay !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hourOfDay = this._hourOfDay;
+    }
+    if (this._minuteOfHour !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minuteOfHour = this._minuteOfHour;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: StoragegatewayGatewayMaintenanceStartTime | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dayOfMonth = undefined;
+      this._dayOfWeek = undefined;
+      this._hourOfDay = undefined;
+      this._minuteOfHour = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dayOfMonth = value.dayOfMonth;
+      this._dayOfWeek = value.dayOfWeek;
+      this._hourOfDay = value.hourOfDay;
+      this._minuteOfHour = value.minuteOfHour;
+    }
+  }
+
+  // day_of_month - computed: false, optional: true, required: false
+  private _dayOfMonth?: string; 
+  public get dayOfMonth() {
+    return this.getStringAttribute('day_of_month');
+  }
+  public set dayOfMonth(value: string) {
+    this._dayOfMonth = value;
+  }
+  public resetDayOfMonth() {
+    this._dayOfMonth = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayOfMonthInput() {
+    return this._dayOfMonth;
+  }
+
+  // day_of_week - computed: false, optional: true, required: false
+  private _dayOfWeek?: string; 
+  public get dayOfWeek() {
+    return this.getStringAttribute('day_of_week');
+  }
+  public set dayOfWeek(value: string) {
+    this._dayOfWeek = value;
+  }
+  public resetDayOfWeek() {
+    this._dayOfWeek = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayOfWeekInput() {
+    return this._dayOfWeek;
+  }
+
+  // hour_of_day - computed: false, optional: false, required: true
+  private _hourOfDay?: number; 
+  public get hourOfDay() {
+    return this.getNumberAttribute('hour_of_day');
+  }
+  public set hourOfDay(value: number) {
+    this._hourOfDay = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hourOfDayInput() {
+    return this._hourOfDay;
+  }
+
+  // minute_of_hour - computed: false, optional: true, required: false
+  private _minuteOfHour?: number; 
+  public get minuteOfHour() {
+    return this.getNumberAttribute('minute_of_hour');
+  }
+  public set minuteOfHour(value: number) {
+    this._minuteOfHour = value;
+  }
+  public resetMinuteOfHour() {
+    this._minuteOfHour = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minuteOfHourInput() {
+    return this._minuteOfHour;
   }
 }
 export interface StoragegatewayGatewaySmbActiveDirectorySettings {
@@ -436,7 +585,7 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
       terraformResourceType: 'aws_storagegateway_gateway',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -460,6 +609,7 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._tapeDriveType = config.tapeDriveType;
+    this._maintenanceStartTime.internalValue = config.maintenanceStartTime;
     this._smbActiveDirectorySettings.internalValue = config.smbActiveDirectorySettings;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -754,6 +904,22 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
     return this._tapeDriveType;
   }
 
+  // maintenance_start_time - computed: false, optional: true, required: false
+  private _maintenanceStartTime = new StoragegatewayGatewayMaintenanceStartTimeOutputReference(this, "maintenance_start_time");
+  public get maintenanceStartTime() {
+    return this._maintenanceStartTime;
+  }
+  public putMaintenanceStartTime(value: StoragegatewayGatewayMaintenanceStartTime) {
+    this._maintenanceStartTime.internalValue = value;
+  }
+  public resetMaintenanceStartTime() {
+    this._maintenanceStartTime.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceStartTimeInput() {
+    return this._maintenanceStartTime.internalValue;
+  }
+
   // smb_active_directory_settings - computed: false, optional: true, required: false
   private _smbActiveDirectorySettings = new StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference(this, "smb_active_directory_settings");
   public get smbActiveDirectorySettings() {
@@ -808,6 +974,7 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       tape_drive_type: cdktf.stringToTerraform(this._tapeDriveType),
+      maintenance_start_time: storagegatewayGatewayMaintenanceStartTimeToTerraform(this._maintenanceStartTime.internalValue),
       smb_active_directory_settings: storagegatewayGatewaySmbActiveDirectorySettingsToTerraform(this._smbActiveDirectorySettings.internalValue),
       timeouts: storagegatewayGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };

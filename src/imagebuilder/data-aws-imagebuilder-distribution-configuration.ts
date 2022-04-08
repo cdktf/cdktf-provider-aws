@@ -369,6 +369,11 @@ export class DataAwsImagebuilderDistributionConfigurationDistributionLaunchTempl
     }
   }
 
+  // account_id - computed: true, optional: false, required: false
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+
   // default - computed: true, optional: false, required: false
   public get default() {
     return this.getBooleanAttribute('default');
@@ -512,7 +517,7 @@ export class DataAwsImagebuilderDistributionConfiguration extends cdktf.Terrafor
       terraformResourceType: 'aws_imagebuilder_distribution_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
