@@ -2219,9 +2219,9 @@ jsii-rosetta@^1.55.1:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.513:
-  version "0.1.523"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.523.tgz#3eedbde0fdd41c5cabf79ffdb6eeacb321c26fbf"
-  integrity sha512-b7vkOZnBcDYl/32tPn0cSPetl4znNTXP7AHDDi9rhP7rgIQx8YWDaPHZsGSpA6RgvC7aGBgHVVYLsC6qPeLJ7w==
+  version "0.1.524"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.524.tgz#634be50de4b3d82c4c7034255fe4df7f10986c7b"
+  integrity sha512-RPvtPlulxPPfohg/bDXnC1RzEFnJYdsUkobh3xaRNwka1+GUThBC831AHLFfLnBRygwMsTiLYOLTX8tTC23Wfg==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.55.1"
@@ -2484,9 +2484,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lru-cache@^7.4.0, lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
-  version "7.7.3"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.7.3.tgz#98cd19eef89ce6a4a3c4502c17c833888677c252"
-  integrity sha512-WY9wjJNQt9+PZilnLbuFKM+SwDull9+6IAguOrarOMoOHTcJ9GnXSO11+Gw6c7xtDkBkthR57OZMtZKYr+1CEw==
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.8.0.tgz#649aaeb294a56297b5cbc5d70f198dcc5ebe5747"
+  integrity sha512-AmXqneQZL3KZMIgBpaPTeI6pfwh+xQ2vutMsyqOu1TBdEXFZgpG/80wuJ531w2ZN7TI0/oc8CPxzh/DKQudZqg==
 
 make-dir@^3.0.0:
   version "3.1.0"
@@ -3175,10 +3175,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.54.10:
-  version "0.54.10"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.54.10.tgz#b367602fb7b50720fcb77341f686f69ed28a3e18"
-  integrity sha512-loWfftj/DYgRBAj5JAo0GC/oRHObvyMrHB7xt2eZNu9bjaU0AZGmzd5GLjtmZMaWA6890c9th8ydH/3KFIiQAw==
+projen@^0.54.11:
+  version "0.54.11"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.54.11.tgz#fd1c1af0ada0d9cad0a1d338392384da6f95b4e5"
+  integrity sha512-fjv+Dkof4Om2RtqdxJugk3tSlCfuXS8Vm9ZsgKyAQ0dVtsmyByUQGjbFgyL6s5YpSX/+eDCasq/Nz1EXh0G1Qw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -3187,7 +3187,7 @@ projen@^0.54.10:
     fs-extra "^9.1.0"
     glob "^7"
     ini "^2.0.0"
-    semver "^7.3.5"
+    semver "^7.3.6"
     shx "^0.3.4"
     xmlbuilder2 "^2.4.1"
     yaml "2.0.0-11"
@@ -3503,7 +3503,7 @@ semver@^6.0.0, semver@^6.2.0, semver@^6.3.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
-semver@^7.0.0, semver@^7.1.1, semver@^7.3.4, semver@^7.3.5:
+semver@^7.0.0, semver@^7.1.1, semver@^7.3.4, semver@^7.3.5, semver@^7.3.6:
   version "7.3.6"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.6.tgz#5d73886fb9c0c6602e79440b97165c29581cbb2b"
   integrity sha512-HZWqcgwLsjaX1HBD31msI/rXktuIhS+lWvdE4kN9z+8IVT4Itc7vqU2WvYsyD6/sjYCt4dEKH/m1M3dwI9CC5w==
