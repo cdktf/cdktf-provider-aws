@@ -196,7 +196,7 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
       terraformResourceType: 'aws_neptune_event_subscription',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -59,7 +59,7 @@ export class LambdaLayerVersionPermission extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_layer_version_permission',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -43,7 +43,7 @@ export class DataAwsIamUsers extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_iam_users',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

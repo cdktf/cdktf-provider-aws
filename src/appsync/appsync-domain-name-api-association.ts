@@ -43,7 +43,7 @@ export class AppsyncDomainNameApiAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appsync_domain_name_api_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

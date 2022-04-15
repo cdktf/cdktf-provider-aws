@@ -12,6 +12,10 @@ export interface QldbLedgerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly deletionProtection?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/qldb_ledger#kms_key QldbLedger#kms_key}
+  */
+  readonly kmsKey?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/qldb_ledger#name QldbLedger#name}
   */
   readonly name?: string;
@@ -55,7 +59,7 @@ export class QldbLedger extends cdktf.TerraformResource {
       terraformResourceType: 'aws_qldb_ledger',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -64,6 +68,7 @@ export class QldbLedger extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._deletionProtection = config.deletionProtection;
+    this._kmsKey = config.kmsKey;
     this._name = config.name;
     this._permissionsMode = config.permissionsMode;
     this._tags = config.tags;
@@ -98,6 +103,22 @@ export class QldbLedger extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // kms_key - computed: true, optional: true, required: false
+  private _kmsKey?: string; 
+  public get kmsKey() {
+    return this.getStringAttribute('kms_key');
+  }
+  public set kmsKey(value: string) {
+    this._kmsKey = value;
+  }
+  public resetKmsKey() {
+    this._kmsKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyInput() {
+    return this._kmsKey;
   }
 
   // name - computed: true, optional: true, required: false
@@ -168,6 +189,7 @@ export class QldbLedger extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
+      kms_key: cdktf.stringToTerraform(this._kmsKey),
       name: cdktf.stringToTerraform(this._name),
       permissions_mode: cdktf.stringToTerraform(this._permissionsMode),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

@@ -10,11 +10,23 @@ export interface AmiLaunchPermissionConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_launch_permission#account_id AmiLaunchPermission#account_id}
   */
-  readonly accountId: string;
+  readonly accountId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_launch_permission#group AmiLaunchPermission#group}
+  */
+  readonly group?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_launch_permission#image_id AmiLaunchPermission#image_id}
   */
   readonly imageId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_launch_permission#organization_arn AmiLaunchPermission#organization_arn}
+  */
+  readonly organizationArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_launch_permission#organizational_unit_arn AmiLaunchPermission#organizational_unit_arn}
+  */
+  readonly organizationalUnitArn?: string;
 }
 
 /**
@@ -43,7 +55,7 @@ export class AmiLaunchPermission extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ami_launch_permission',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -52,14 +64,17 @@ export class AmiLaunchPermission extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._accountId = config.accountId;
+    this._group = config.group;
     this._imageId = config.imageId;
+    this._organizationArn = config.organizationArn;
+    this._organizationalUnitArn = config.organizationalUnitArn;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: false, required: true
+  // account_id - computed: false, optional: true, required: false
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
@@ -67,9 +82,28 @@ export class AmiLaunchPermission extends cdktf.TerraformResource {
   public set accountId(value: string) {
     this._accountId = value;
   }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
     return this._accountId;
+  }
+
+  // group - computed: false, optional: true, required: false
+  private _group?: string; 
+  public get group() {
+    return this.getStringAttribute('group');
+  }
+  public set group(value: string) {
+    this._group = value;
+  }
+  public resetGroup() {
+    this._group = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupInput() {
+    return this._group;
   }
 
   // id - computed: true, optional: true, required: false
@@ -90,6 +124,38 @@ export class AmiLaunchPermission extends cdktf.TerraformResource {
     return this._imageId;
   }
 
+  // organization_arn - computed: false, optional: true, required: false
+  private _organizationArn?: string; 
+  public get organizationArn() {
+    return this.getStringAttribute('organization_arn');
+  }
+  public set organizationArn(value: string) {
+    this._organizationArn = value;
+  }
+  public resetOrganizationArn() {
+    this._organizationArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationArnInput() {
+    return this._organizationArn;
+  }
+
+  // organizational_unit_arn - computed: false, optional: true, required: false
+  private _organizationalUnitArn?: string; 
+  public get organizationalUnitArn() {
+    return this.getStringAttribute('organizational_unit_arn');
+  }
+  public set organizationalUnitArn(value: string) {
+    this._organizationalUnitArn = value;
+  }
+  public resetOrganizationalUnitArn() {
+    this._organizationalUnitArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationalUnitArnInput() {
+    return this._organizationalUnitArn;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -97,7 +163,10 @@ export class AmiLaunchPermission extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
+      group: cdktf.stringToTerraform(this._group),
       image_id: cdktf.stringToTerraform(this._imageId),
+      organization_arn: cdktf.stringToTerraform(this._organizationArn),
+      organizational_unit_arn: cdktf.stringToTerraform(this._organizationalUnitArn),
     };
   }
 }

@@ -39,7 +39,7 @@ export class VpcIpamOrganizationAdminAccount extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_ipam_organization_admin_account',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

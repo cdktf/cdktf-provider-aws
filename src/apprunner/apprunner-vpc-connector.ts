@@ -51,7 +51,7 @@ export class ApprunnerVpcConnector extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apprunner_vpc_connector',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -33,6 +33,7 @@ export * from './data-aws-iam-policy';
 export * from './data-aws-iam-policy-document';
 export * from './data-aws-iam-role';
 export * from './data-aws-iam-roles';
+export * from './data-aws-iam-saml-provider';
 export * from './data-aws-iam-server-certificate';
 export * from './data-aws-iam-session-context';
 export * from './data-aws-iam-user';

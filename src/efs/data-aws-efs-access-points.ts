@@ -39,7 +39,7 @@ export class DataAwsEfsAccessPoints extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_efs_access_points',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

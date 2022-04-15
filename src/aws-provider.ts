@@ -596,6 +596,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloudwatchevidently AwsProvider#cloudwatchevidently}
+  */
+  readonly cloudwatchevidently?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloudwatchlogs AwsProvider#cloudwatchlogs}
   */
   readonly cloudwatchlogs?: string;
@@ -2204,6 +2210,7 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
     cloudtrail: cdktf.stringToTerraform(struct!.cloudtrail),
     cloudwatch: cdktf.stringToTerraform(struct!.cloudwatch),
     cloudwatchevents: cdktf.stringToTerraform(struct!.cloudwatchevents),
+    cloudwatchevidently: cdktf.stringToTerraform(struct!.cloudwatchevidently),
     cloudwatchlogs: cdktf.stringToTerraform(struct!.cloudwatchlogs),
     cloudwatchrum: cdktf.stringToTerraform(struct!.cloudwatchrum),
     codeartifact: cdktf.stringToTerraform(struct!.codeartifact),
@@ -2519,7 +2526,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'aws'

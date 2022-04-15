@@ -190,7 +190,7 @@ export class CodestarconnectionsHost extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codestarconnections_host',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

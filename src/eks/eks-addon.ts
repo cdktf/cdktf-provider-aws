@@ -20,6 +20,10 @@ export interface EksAddonConfig extends cdktf.TerraformMetaArguments {
   */
   readonly clusterName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_addon#preserve EksAddon#preserve}
+  */
+  readonly preserve?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_addon#resolve_conflicts EksAddon#resolve_conflicts}
   */
   readonly resolveConflicts?: string;
@@ -63,7 +67,7 @@ export class EksAddon extends cdktf.TerraformResource {
       terraformResourceType: 'aws_eks_addon',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -74,6 +78,7 @@ export class EksAddon extends cdktf.TerraformResource {
     this._addonName = config.addonName;
     this._addonVersion = config.addonVersion;
     this._clusterName = config.clusterName;
+    this._preserve = config.preserve;
     this._resolveConflicts = config.resolveConflicts;
     this._serviceAccountRoleArn = config.serviceAccountRoleArn;
     this._tags = config.tags;
@@ -144,6 +149,22 @@ export class EksAddon extends cdktf.TerraformResource {
   // modified_at - computed: true, optional: false, required: false
   public get modifiedAt() {
     return this.getStringAttribute('modified_at');
+  }
+
+  // preserve - computed: false, optional: true, required: false
+  private _preserve?: boolean | cdktf.IResolvable; 
+  public get preserve() {
+    return this.getBooleanAttribute('preserve');
+  }
+  public set preserve(value: boolean | cdktf.IResolvable) {
+    this._preserve = value;
+  }
+  public resetPreserve() {
+    this._preserve = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preserveInput() {
+    return this._preserve;
   }
 
   // resolve_conflicts - computed: false, optional: true, required: false
@@ -219,6 +240,7 @@ export class EksAddon extends cdktf.TerraformResource {
       addon_name: cdktf.stringToTerraform(this._addonName),
       addon_version: cdktf.stringToTerraform(this._addonVersion),
       cluster_name: cdktf.stringToTerraform(this._clusterName),
+      preserve: cdktf.booleanToTerraform(this._preserve),
       resolve_conflicts: cdktf.stringToTerraform(this._resolveConflicts),
       service_account_role_arn: cdktf.stringToTerraform(this._serviceAccountRoleArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
