@@ -28,6 +28,10 @@ export interface AthenaDatabaseConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database#properties AthenaDatabase#properties}
+  */
+  readonly properties?: { [key: string]: string };
+  /**
   * acl_configuration block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database#acl_configuration AthenaDatabase#acl_configuration}
@@ -218,7 +222,7 @@ export class AthenaDatabase extends cdktf.TerraformResource {
       terraformResourceType: 'aws_athena_database',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -231,6 +235,7 @@ export class AthenaDatabase extends cdktf.TerraformResource {
     this._expectedBucketOwner = config.expectedBucketOwner;
     this._forceDestroy = config.forceDestroy;
     this._name = config.name;
+    this._properties = config.properties;
     this._aclConfiguration.internalValue = config.aclConfiguration;
     this._encryptionConfiguration.internalValue = config.encryptionConfiguration;
   }
@@ -321,6 +326,22 @@ export class AthenaDatabase extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // properties - computed: false, optional: true, required: false
+  private _properties?: { [key: string]: string }; 
+  public get properties() {
+    return this.getStringMapAttribute('properties');
+  }
+  public set properties(value: { [key: string]: string }) {
+    this._properties = value;
+  }
+  public resetProperties() {
+    this._properties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propertiesInput() {
+    return this._properties;
+  }
+
   // acl_configuration - computed: false, optional: true, required: false
   private _aclConfiguration = new AthenaDatabaseAclConfigurationOutputReference(this, "acl_configuration");
   public get aclConfiguration() {
@@ -364,6 +385,7 @@ export class AthenaDatabase extends cdktf.TerraformResource {
       expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       name: cdktf.stringToTerraform(this._name),
+      properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
       acl_configuration: athenaDatabaseAclConfigurationToTerraform(this._aclConfiguration.internalValue),
       encryption_configuration: athenaDatabaseEncryptionConfigurationToTerraform(this._encryptionConfiguration.internalValue),
     };

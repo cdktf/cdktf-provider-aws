@@ -112,7 +112,7 @@ export class DataAwsBatchJobQueue extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_batch_job_queue',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

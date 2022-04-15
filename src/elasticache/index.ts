@@ -7,6 +7,7 @@ export * from './elasticache-security-group';
 export * from './elasticache-subnet-group';
 export * from './elasticache-user';
 export * from './elasticache-user-group';
+export * from './elasticache-user-group-association';
 export * from './data-aws-elasticache-cluster';
 export * from './data-aws-elasticache-replication-group';
 export * from './data-aws-elasticache-user';

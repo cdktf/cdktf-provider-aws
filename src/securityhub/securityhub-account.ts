@@ -35,7 +35,7 @@ export class SecurityhubAccount extends cdktf.TerraformResource {
       terraformResourceType: 'aws_securityhub_account',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

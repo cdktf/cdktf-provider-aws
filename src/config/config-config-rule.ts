@@ -190,6 +190,119 @@ export class ConfigConfigRuleScopeOutputReference extends cdktf.ComplexObject {
     return this._tagValue;
   }
 }
+export interface ConfigConfigRuleSourceCustomPolicyDetails {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_config_rule#enable_debug_log_delivery ConfigConfigRule#enable_debug_log_delivery}
+  */
+  readonly enableDebugLogDelivery?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_config_rule#policy_runtime ConfigConfigRule#policy_runtime}
+  */
+  readonly policyRuntime: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_config_rule#policy_text ConfigConfigRule#policy_text}
+  */
+  readonly policyText: string;
+}
+
+export function configConfigRuleSourceCustomPolicyDetailsToTerraform(struct?: ConfigConfigRuleSourceCustomPolicyDetailsOutputReference | ConfigConfigRuleSourceCustomPolicyDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enable_debug_log_delivery: cdktf.booleanToTerraform(struct!.enableDebugLogDelivery),
+    policy_runtime: cdktf.stringToTerraform(struct!.policyRuntime),
+    policy_text: cdktf.stringToTerraform(struct!.policyText),
+  }
+}
+
+export class ConfigConfigRuleSourceCustomPolicyDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ConfigConfigRuleSourceCustomPolicyDetails | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enableDebugLogDelivery !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableDebugLogDelivery = this._enableDebugLogDelivery;
+    }
+    if (this._policyRuntime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.policyRuntime = this._policyRuntime;
+    }
+    if (this._policyText !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.policyText = this._policyText;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ConfigConfigRuleSourceCustomPolicyDetails | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enableDebugLogDelivery = undefined;
+      this._policyRuntime = undefined;
+      this._policyText = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enableDebugLogDelivery = value.enableDebugLogDelivery;
+      this._policyRuntime = value.policyRuntime;
+      this._policyText = value.policyText;
+    }
+  }
+
+  // enable_debug_log_delivery - computed: false, optional: true, required: false
+  private _enableDebugLogDelivery?: boolean | cdktf.IResolvable; 
+  public get enableDebugLogDelivery() {
+    return this.getBooleanAttribute('enable_debug_log_delivery');
+  }
+  public set enableDebugLogDelivery(value: boolean | cdktf.IResolvable) {
+    this._enableDebugLogDelivery = value;
+  }
+  public resetEnableDebugLogDelivery() {
+    this._enableDebugLogDelivery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableDebugLogDeliveryInput() {
+    return this._enableDebugLogDelivery;
+  }
+
+  // policy_runtime - computed: false, optional: false, required: true
+  private _policyRuntime?: string; 
+  public get policyRuntime() {
+    return this.getStringAttribute('policy_runtime');
+  }
+  public set policyRuntime(value: string) {
+    this._policyRuntime = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyRuntimeInput() {
+    return this._policyRuntime;
+  }
+
+  // policy_text - computed: false, optional: false, required: true
+  private _policyText?: string; 
+  public get policyText() {
+    return this.getStringAttribute('policy_text');
+  }
+  public set policyText(value: string) {
+    this._policyText = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyTextInput() {
+    return this._policyText;
+  }
+}
 export interface ConfigConfigRuleSourceSourceDetail {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_config_rule#event_source ConfigConfigRule#event_source}
@@ -225,7 +338,13 @@ export interface ConfigConfigRuleSource {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_config_rule#source_identifier ConfigConfigRule#source_identifier}
   */
-  readonly sourceIdentifier: string;
+  readonly sourceIdentifier?: string;
+  /**
+  * custom_policy_details block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_config_rule#custom_policy_details ConfigConfigRule#custom_policy_details}
+  */
+  readonly customPolicyDetails?: ConfigConfigRuleSourceCustomPolicyDetails;
   /**
   * source_detail block
   * 
@@ -242,6 +361,7 @@ export function configConfigRuleSourceToTerraform(struct?: ConfigConfigRuleSourc
   return {
     owner: cdktf.stringToTerraform(struct!.owner),
     source_identifier: cdktf.stringToTerraform(struct!.sourceIdentifier),
+    custom_policy_details: configConfigRuleSourceCustomPolicyDetailsToTerraform(struct!.customPolicyDetails),
     source_detail: cdktf.listMapper(configConfigRuleSourceSourceDetailToTerraform)(struct!.sourceDetail),
   }
 }
@@ -268,6 +388,10 @@ export class ConfigConfigRuleSourceOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.sourceIdentifier = this._sourceIdentifier;
     }
+    if (this._customPolicyDetails?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customPolicyDetails = this._customPolicyDetails?.internalValue;
+    }
     if (this._sourceDetail !== undefined) {
       hasAnyValues = true;
       internalValueResult.sourceDetail = this._sourceDetail;
@@ -280,12 +404,14 @@ export class ConfigConfigRuleSourceOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this._owner = undefined;
       this._sourceIdentifier = undefined;
+      this._customPolicyDetails.internalValue = undefined;
       this._sourceDetail = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._owner = value.owner;
       this._sourceIdentifier = value.sourceIdentifier;
+      this._customPolicyDetails.internalValue = value.customPolicyDetails;
       this._sourceDetail = value.sourceDetail;
     }
   }
@@ -303,7 +429,7 @@ export class ConfigConfigRuleSourceOutputReference extends cdktf.ComplexObject {
     return this._owner;
   }
 
-  // source_identifier - computed: false, optional: false, required: true
+  // source_identifier - computed: false, optional: true, required: false
   private _sourceIdentifier?: string; 
   public get sourceIdentifier() {
     return this.getStringAttribute('source_identifier');
@@ -311,9 +437,28 @@ export class ConfigConfigRuleSourceOutputReference extends cdktf.ComplexObject {
   public set sourceIdentifier(value: string) {
     this._sourceIdentifier = value;
   }
+  public resetSourceIdentifier() {
+    this._sourceIdentifier = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get sourceIdentifierInput() {
     return this._sourceIdentifier;
+  }
+
+  // custom_policy_details - computed: false, optional: true, required: false
+  private _customPolicyDetails = new ConfigConfigRuleSourceCustomPolicyDetailsOutputReference(this, "custom_policy_details");
+  public get customPolicyDetails() {
+    return this._customPolicyDetails;
+  }
+  public putCustomPolicyDetails(value: ConfigConfigRuleSourceCustomPolicyDetails) {
+    this._customPolicyDetails.internalValue = value;
+  }
+  public resetCustomPolicyDetails() {
+    this._customPolicyDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customPolicyDetailsInput() {
+    return this._customPolicyDetails.internalValue;
   }
 
   // source_detail - computed: false, optional: true, required: false
@@ -360,7 +505,7 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_config_config_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

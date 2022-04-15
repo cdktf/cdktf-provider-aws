@@ -39,7 +39,7 @@ export class Macie2OrganizationAdminAccount extends cdktf.TerraformResource {
       terraformResourceType: 'aws_macie2_organization_admin_account',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

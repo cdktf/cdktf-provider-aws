@@ -51,7 +51,7 @@ export class LightsailKeyPair extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lightsail_key_pair',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

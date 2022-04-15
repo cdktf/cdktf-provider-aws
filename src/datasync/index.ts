@@ -2,6 +2,7 @@
 export * from './datasync-agent';
 export * from './datasync-location-efs';
 export * from './datasync-location-fsx-lustre-file-system';
+export * from './datasync-location-fsx-openzfs-file-system';
 export * from './datasync-location-fsx-windows-file-system';
 export * from './datasync-location-hdfs';
 export * from './datasync-location-nfs';

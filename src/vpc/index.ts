@@ -65,6 +65,7 @@ export * from './vpn-gateway-route-propagation';
 export * from './data-aws-customer-gateway';
 export * from './data-aws-internet-gateway';
 export * from './data-aws-nat-gateway';
+export * from './data-aws-nat-gateways';
 export * from './data-aws-network-acls';
 export * from './data-aws-network-interface';
 export * from './data-aws-network-interfaces';

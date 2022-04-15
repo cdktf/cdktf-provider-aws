@@ -11,6 +11,10 @@ export interface DataAwsQldbLedgerConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/qldb_ledger#name DataAwsQldbLedger#name}
   */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/qldb_ledger#tags DataAwsQldbLedger#tags}
+  */
+  readonly tags?: { [key: string]: string };
 }
 
 /**
@@ -39,7 +43,7 @@ export class DataAwsQldbLedger extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_qldb_ledger',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -48,6 +52,7 @@ export class DataAwsQldbLedger extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._name = config.name;
+    this._tags = config.tags;
   }
 
   // ==========
@@ -69,6 +74,11 @@ export class DataAwsQldbLedger extends cdktf.TerraformDataSource {
     return this.getStringAttribute('id');
   }
 
+  // kms_key - computed: true, optional: false, required: false
+  public get kmsKey() {
+    return this.getStringAttribute('kms_key');
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -87,6 +97,22 @@ export class DataAwsQldbLedger extends cdktf.TerraformDataSource {
     return this.getStringAttribute('permissions_mode');
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -94,6 +120,7 @@ export class DataAwsQldbLedger extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }
