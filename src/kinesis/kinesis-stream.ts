@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface KinesisStreamConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_stream#arn KinesisStream#arn}
+  */
+  readonly arn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_stream#encryption_type KinesisStream#encryption_type}
   */
   readonly encryptionType?: string;
@@ -272,6 +276,7 @@ export class KinesisStream extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._arn = config.arn;
     this._encryptionType = config.encryptionType;
     this._enforceConsumerDeletion = config.enforceConsumerDeletion;
     this._kmsKeyId = config.kmsKeyId;
@@ -290,8 +295,19 @@ export class KinesisStream extends cdktf.TerraformResource {
   // ==========
 
   // arn - computed: true, optional: true, required: false
+  private _arn?: string; 
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+  public set arn(value: string) {
+    this._arn = value;
+  }
+  public resetArn() {
+    this._arn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn;
   }
 
   // encryption_type - computed: false, optional: true, required: false
@@ -478,6 +494,7 @@ export class KinesisStream extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      arn: cdktf.stringToTerraform(this._arn),
       encryption_type: cdktf.stringToTerraform(this._encryptionType),
       enforce_consumer_deletion: cdktf.booleanToTerraform(this._enforceConsumerDeletion),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),

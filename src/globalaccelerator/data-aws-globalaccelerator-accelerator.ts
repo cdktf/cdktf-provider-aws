@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsGlobalacceleratorAcceleratorConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/globalaccelerator_accelerator#arn DataAwsGlobalacceleratorAccelerator#arn}
+  */
+  readonly arn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/globalaccelerator_accelerator#name DataAwsGlobalacceleratorAccelerator#name}
   */
   readonly name?: string;
@@ -194,6 +198,7 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._arn = config.arn;
     this._name = config.name;
     this._tags = config.tags;
   }
@@ -203,8 +208,19 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
   // ==========
 
   // arn - computed: true, optional: true, required: false
+  private _arn?: string; 
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+  public set arn(value: string) {
+    this._arn = value;
+  }
+  public resetArn() {
+    this._arn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn;
   }
 
   // attributes - computed: true, optional: false, required: false
@@ -282,6 +298,7 @@ export class DataAwsGlobalacceleratorAccelerator extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      arn: cdktf.stringToTerraform(this._arn),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };

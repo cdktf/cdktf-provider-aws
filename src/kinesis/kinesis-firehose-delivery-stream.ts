@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface KinesisFirehoseDeliveryStreamConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#arn KinesisFirehoseDeliveryStream#arn}
+  */
+  readonly arn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#destination KinesisFirehoseDeliveryStream#destination}
   */
   readonly destination: string;
@@ -6230,6 +6234,7 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._arn = config.arn;
     this._destination = config.destination;
     this._destinationId = config.destinationId;
     this._name = config.name;
@@ -6251,8 +6256,19 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
   // ==========
 
   // arn - computed: true, optional: true, required: false
+  private _arn?: string; 
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+  public set arn(value: string) {
+    this._arn = value;
+  }
+  public resetArn() {
+    this._arn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn;
   }
 
   // destination - computed: false, optional: false, required: true
@@ -6484,6 +6500,7 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      arn: cdktf.stringToTerraform(this._arn),
       destination: cdktf.stringToTerraform(this._destination),
       destination_id: cdktf.stringToTerraform(this._destinationId),
       name: cdktf.stringToTerraform(this._name),

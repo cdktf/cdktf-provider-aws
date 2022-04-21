@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsAlbListenerConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/alb_listener#arn DataAwsAlbListener#arn}
+  */
+  readonly arn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/alb_listener#load_balancer_arn DataAwsAlbListener#load_balancer_arn}
   */
   readonly loadBalancerArn?: string;
@@ -744,6 +748,7 @@ export class DataAwsAlbListener extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._arn = config.arn;
     this._loadBalancerArn = config.loadBalancerArn;
     this._port = config.port;
     this._tags = config.tags;
@@ -759,8 +764,19 @@ export class DataAwsAlbListener extends cdktf.TerraformDataSource {
   }
 
   // arn - computed: true, optional: true, required: false
+  private _arn?: string; 
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+  public set arn(value: string) {
+    this._arn = value;
+  }
+  public resetArn() {
+    this._arn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn;
   }
 
   // certificate_arn - computed: true, optional: false, required: false
@@ -843,6 +859,7 @@ export class DataAwsAlbListener extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      arn: cdktf.stringToTerraform(this._arn),
       load_balancer_arn: cdktf.stringToTerraform(this._loadBalancerArn),
       port: cdktf.numberToTerraform(this._port),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
