@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsSfnActivityConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/sfn_activity#arn DataAwsSfnActivity#arn}
+  */
+  readonly arn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/sfn_activity#name DataAwsSfnActivity#name}
   */
   readonly name?: string;
@@ -47,6 +51,7 @@ export class DataAwsSfnActivity extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._arn = config.arn;
     this._name = config.name;
   }
 
@@ -55,8 +60,19 @@ export class DataAwsSfnActivity extends cdktf.TerraformDataSource {
   // ==========
 
   // arn - computed: true, optional: true, required: false
+  private _arn?: string; 
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+  public set arn(value: string) {
+    this._arn = value;
+  }
+  public resetArn() {
+    this._arn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn;
   }
 
   // creation_date - computed: true, optional: false, required: false
@@ -91,6 +107,7 @@ export class DataAwsSfnActivity extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      arn: cdktf.stringToTerraform(this._arn),
       name: cdktf.stringToTerraform(this._name),
     };
   }

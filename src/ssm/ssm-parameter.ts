@@ -12,6 +12,10 @@ export interface SsmParameterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly allowedPattern?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_parameter#arn SsmParameter#arn}
+  */
+  readonly arn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_parameter#data_type SsmParameter#data_type}
   */
   readonly dataType?: string;
@@ -88,6 +92,7 @@ export class SsmParameter extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._allowedPattern = config.allowedPattern;
+    this._arn = config.arn;
     this._dataType = config.dataType;
     this._description = config.description;
     this._keyId = config.keyId;
@@ -121,8 +126,19 @@ export class SsmParameter extends cdktf.TerraformResource {
   }
 
   // arn - computed: true, optional: true, required: false
+  private _arn?: string; 
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+  public set arn(value: string) {
+    this._arn = value;
+  }
+  public resetArn() {
+    this._arn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn;
   }
 
   // data_type - computed: true, optional: true, required: false
@@ -293,6 +309,7 @@ export class SsmParameter extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allowed_pattern: cdktf.stringToTerraform(this._allowedPattern),
+      arn: cdktf.stringToTerraform(this._arn),
       data_type: cdktf.stringToTerraform(this._dataType),
       description: cdktf.stringToTerraform(this._description),
       key_id: cdktf.stringToTerraform(this._keyId),

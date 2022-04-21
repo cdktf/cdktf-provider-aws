@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsIamOpenidConnectProviderConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_openid_connect_provider#arn DataAwsIamOpenidConnectProvider#arn}
+  */
+  readonly arn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_openid_connect_provider#tags DataAwsIamOpenidConnectProvider#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -51,6 +55,7 @@ export class DataAwsIamOpenidConnectProvider extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._arn = config.arn;
     this._tags = config.tags;
     this._url = config.url;
   }
@@ -60,8 +65,19 @@ export class DataAwsIamOpenidConnectProvider extends cdktf.TerraformDataSource {
   // ==========
 
   // arn - computed: true, optional: true, required: false
+  private _arn?: string; 
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+  public set arn(value: string) {
+    this._arn = value;
+  }
+  public resetArn() {
+    this._arn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn;
   }
 
   // client_id_list - computed: true, optional: false, required: false
@@ -117,6 +133,7 @@ export class DataAwsIamOpenidConnectProvider extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      arn: cdktf.stringToTerraform(this._arn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       url: cdktf.stringToTerraform(this._url),
     };

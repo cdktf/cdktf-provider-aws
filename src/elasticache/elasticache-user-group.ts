@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface ElasticacheUserGroupConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user_group#arn ElasticacheUserGroup#arn}
+  */
+  readonly arn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user_group#engine ElasticacheUserGroup#engine}
   */
   readonly engine: string;
@@ -63,6 +67,7 @@ export class ElasticacheUserGroup extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._arn = config.arn;
     this._engine = config.engine;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -75,8 +80,19 @@ export class ElasticacheUserGroup extends cdktf.TerraformResource {
   // ==========
 
   // arn - computed: true, optional: true, required: false
+  private _arn?: string; 
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+  public set arn(value: string) {
+    this._arn = value;
+  }
+  public resetArn() {
+    this._arn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn;
   }
 
   // engine - computed: false, optional: false, required: true
@@ -164,6 +180,7 @@ export class ElasticacheUserGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      arn: cdktf.stringToTerraform(this._arn),
       engine: cdktf.stringToTerraform(this._engine),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
