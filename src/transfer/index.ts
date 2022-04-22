@@ -3,5 +3,6 @@ export * from './transfer-access';
 export * from './transfer-server';
 export * from './transfer-ssh-key';
 export * from './transfer-user';
+export * from './transfer-workflow';
 export * from './data-aws-transfer-server';
 

@@ -20,6 +20,75 @@ export interface DataAwsImagebuilderInfrastructureConfigurationConfig extends cd
   */
   readonly tags?: { [key: string]: string };
 }
+export interface DataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptions {
+}
+
+export function dataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptionsToTerraform(struct?: DataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // http_put_response_hop_limit - computed: true, optional: false, required: false
+  public get httpPutResponseHopLimit() {
+    return this.getNumberAttribute('http_put_response_hop_limit');
+  }
+
+  // http_tokens - computed: true, optional: false, required: false
+  public get httpTokens() {
+    return this.getStringAttribute('http_tokens');
+  }
+}
+
+export class DataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference {
+    return new DataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsImagebuilderInfrastructureConfigurationLoggingS3Logs {
 }
 
@@ -181,7 +250,7 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
       terraformResourceType: 'aws_imagebuilder_infrastructure_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -229,6 +298,12 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // instance_metadata_options - computed: true, optional: false, required: false
+  private _instanceMetadataOptions = new DataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptionsList(this, "instance_metadata_options", false);
+  public get instanceMetadataOptions() {
+    return this._instanceMetadataOptions;
   }
 
   // instance_profile_name - computed: true, optional: false, required: false

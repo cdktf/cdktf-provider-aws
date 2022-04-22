@@ -77,6 +77,10 @@ export interface DbProxyAuth {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy#secret_arn DbProxy#secret_arn}
   */
   readonly secretArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy#username DbProxy#username}
+  */
+  readonly username?: string;
 }
 
 export function dbProxyAuthToTerraform(struct?: DbProxyAuth | cdktf.IResolvable): any {
@@ -89,6 +93,7 @@ export function dbProxyAuthToTerraform(struct?: DbProxyAuth | cdktf.IResolvable)
     description: cdktf.stringToTerraform(struct!.description),
     iam_auth: cdktf.stringToTerraform(struct!.iamAuth),
     secret_arn: cdktf.stringToTerraform(struct!.secretArn),
+    username: cdktf.stringToTerraform(struct!.username),
   }
 }
 
@@ -238,7 +243,7 @@ export class DbProxy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_db_proxy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

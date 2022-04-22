@@ -211,7 +211,7 @@ export class CloudfrontFieldLevelEncryptionProfile extends cdktf.TerraformResour
       terraformResourceType: 'aws_cloudfront_field_level_encryption_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

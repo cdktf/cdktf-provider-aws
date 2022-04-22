@@ -233,6 +233,10 @@ export interface SpotInstanceRequestCapacityReservationSpecificationCapacityRese
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#capacity_reservation_id SpotInstanceRequest#capacity_reservation_id}
   */
   readonly capacityReservationId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#capacity_reservation_resource_group_arn SpotInstanceRequest#capacity_reservation_resource_group_arn}
+  */
+  readonly capacityReservationResourceGroupArn?: string;
 }
 
 export function spotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetToTerraform(struct?: SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference | SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget): any {
@@ -242,6 +246,7 @@ export function spotInstanceRequestCapacityReservationSpecificationCapacityReser
   }
   return {
     capacity_reservation_id: cdktf.stringToTerraform(struct!.capacityReservationId),
+    capacity_reservation_resource_group_arn: cdktf.stringToTerraform(struct!.capacityReservationResourceGroupArn),
   }
 }
 
@@ -263,6 +268,10 @@ export class SpotInstanceRequestCapacityReservationSpecificationCapacityReservat
       hasAnyValues = true;
       internalValueResult.capacityReservationId = this._capacityReservationId;
     }
+    if (this._capacityReservationResourceGroupArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.capacityReservationResourceGroupArn = this._capacityReservationResourceGroupArn;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -270,10 +279,12 @@ export class SpotInstanceRequestCapacityReservationSpecificationCapacityReservat
     if (value === undefined) {
       this.isEmptyObject = false;
       this._capacityReservationId = undefined;
+      this._capacityReservationResourceGroupArn = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._capacityReservationId = value.capacityReservationId;
+      this._capacityReservationResourceGroupArn = value.capacityReservationResourceGroupArn;
     }
   }
 
@@ -291,6 +302,22 @@ export class SpotInstanceRequestCapacityReservationSpecificationCapacityReservat
   // Temporarily expose input value. Use with caution.
   public get capacityReservationIdInput() {
     return this._capacityReservationId;
+  }
+
+  // capacity_reservation_resource_group_arn - computed: false, optional: true, required: false
+  private _capacityReservationResourceGroupArn?: string; 
+  public get capacityReservationResourceGroupArn() {
+    return this.getStringAttribute('capacity_reservation_resource_group_arn');
+  }
+  public set capacityReservationResourceGroupArn(value: string) {
+    this._capacityReservationResourceGroupArn = value;
+  }
+  public resetCapacityReservationResourceGroupArn() {
+    this._capacityReservationResourceGroupArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capacityReservationResourceGroupArnInput() {
+    return this._capacityReservationResourceGroupArn;
   }
 }
 export interface SpotInstanceRequestCapacityReservationSpecification {
@@ -863,6 +890,10 @@ export interface SpotInstanceRequestNetworkInterface {
   */
   readonly deviceIndex: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#network_card_index SpotInstanceRequest#network_card_index}
+  */
+  readonly networkCardIndex?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#network_interface_id SpotInstanceRequest#network_interface_id}
   */
   readonly networkInterfaceId: string;
@@ -876,6 +907,7 @@ export function spotInstanceRequestNetworkInterfaceToTerraform(struct?: SpotInst
   return {
     delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
     device_index: cdktf.numberToTerraform(struct!.deviceIndex),
+    network_card_index: cdktf.numberToTerraform(struct!.networkCardIndex),
     network_interface_id: cdktf.stringToTerraform(struct!.networkInterfaceId),
   }
 }
@@ -1263,7 +1295,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
       terraformResourceType: 'aws_spot_instance_request',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

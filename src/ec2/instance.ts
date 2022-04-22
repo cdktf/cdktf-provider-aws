@@ -201,6 +201,10 @@ export interface InstanceCapacityReservationSpecificationCapacityReservationTarg
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#capacity_reservation_id Instance#capacity_reservation_id}
   */
   readonly capacityReservationId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#capacity_reservation_resource_group_arn Instance#capacity_reservation_resource_group_arn}
+  */
+  readonly capacityReservationResourceGroupArn?: string;
 }
 
 export function instanceCapacityReservationSpecificationCapacityReservationTargetToTerraform(struct?: InstanceCapacityReservationSpecificationCapacityReservationTargetOutputReference | InstanceCapacityReservationSpecificationCapacityReservationTarget): any {
@@ -210,6 +214,7 @@ export function instanceCapacityReservationSpecificationCapacityReservationTarge
   }
   return {
     capacity_reservation_id: cdktf.stringToTerraform(struct!.capacityReservationId),
+    capacity_reservation_resource_group_arn: cdktf.stringToTerraform(struct!.capacityReservationResourceGroupArn),
   }
 }
 
@@ -231,6 +236,10 @@ export class InstanceCapacityReservationSpecificationCapacityReservationTargetOu
       hasAnyValues = true;
       internalValueResult.capacityReservationId = this._capacityReservationId;
     }
+    if (this._capacityReservationResourceGroupArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.capacityReservationResourceGroupArn = this._capacityReservationResourceGroupArn;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -238,10 +247,12 @@ export class InstanceCapacityReservationSpecificationCapacityReservationTargetOu
     if (value === undefined) {
       this.isEmptyObject = false;
       this._capacityReservationId = undefined;
+      this._capacityReservationResourceGroupArn = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._capacityReservationId = value.capacityReservationId;
+      this._capacityReservationResourceGroupArn = value.capacityReservationResourceGroupArn;
     }
   }
 
@@ -259,6 +270,22 @@ export class InstanceCapacityReservationSpecificationCapacityReservationTargetOu
   // Temporarily expose input value. Use with caution.
   public get capacityReservationIdInput() {
     return this._capacityReservationId;
+  }
+
+  // capacity_reservation_resource_group_arn - computed: false, optional: true, required: false
+  private _capacityReservationResourceGroupArn?: string; 
+  public get capacityReservationResourceGroupArn() {
+    return this.getStringAttribute('capacity_reservation_resource_group_arn');
+  }
+  public set capacityReservationResourceGroupArn(value: string) {
+    this._capacityReservationResourceGroupArn = value;
+  }
+  public resetCapacityReservationResourceGroupArn() {
+    this._capacityReservationResourceGroupArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capacityReservationResourceGroupArnInput() {
+    return this._capacityReservationResourceGroupArn;
   }
 }
 export interface InstanceCapacityReservationSpecification {
@@ -831,6 +858,10 @@ export interface InstanceNetworkInterface {
   */
   readonly deviceIndex: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#network_card_index Instance#network_card_index}
+  */
+  readonly networkCardIndex?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#network_interface_id Instance#network_interface_id}
   */
   readonly networkInterfaceId: string;
@@ -844,6 +875,7 @@ export function instanceNetworkInterfaceToTerraform(struct?: InstanceNetworkInte
   return {
     delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
     device_index: cdktf.numberToTerraform(struct!.deviceIndex),
+    network_card_index: cdktf.numberToTerraform(struct!.networkCardIndex),
     network_interface_id: cdktf.stringToTerraform(struct!.networkInterfaceId),
   }
 }
@@ -1258,7 +1290,7 @@ export class Instance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

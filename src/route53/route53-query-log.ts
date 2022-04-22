@@ -43,7 +43,7 @@ export class Route53QueryLog extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route53_query_log',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -185,7 +185,7 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codepipeline_webhook',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

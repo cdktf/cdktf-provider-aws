@@ -55,7 +55,7 @@ export class ApiGatewayGatewayResponse extends cdktf.TerraformResource {
       terraformResourceType: 'aws_api_gateway_gateway_response',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

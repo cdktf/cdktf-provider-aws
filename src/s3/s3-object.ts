@@ -135,7 +135,7 @@ export class S3Object extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_object',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

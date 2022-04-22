@@ -43,7 +43,7 @@ export class RamResourceAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ram_resource_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

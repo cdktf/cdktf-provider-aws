@@ -575,6 +575,71 @@ export class OpensearchDomainAutoTuneOptionsOutputReference extends cdktf.Comple
     return this._maintenanceSchedule;
   }
 }
+export interface OpensearchDomainClusterConfigColdStorageOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain#enabled OpensearchDomain#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+}
+
+export function opensearchDomainClusterConfigColdStorageOptionsToTerraform(struct?: OpensearchDomainClusterConfigColdStorageOptionsOutputReference | OpensearchDomainClusterConfigColdStorageOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+export class OpensearchDomainClusterConfigColdStorageOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): OpensearchDomainClusterConfigColdStorageOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OpensearchDomainClusterConfigColdStorageOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: true, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
 export interface OpensearchDomainClusterConfigZoneAwarenessConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain#availability_zone_count OpensearchDomain#availability_zone_count}
@@ -678,6 +743,12 @@ export interface OpensearchDomainClusterConfig {
   */
   readonly zoneAwarenessEnabled?: boolean | cdktf.IResolvable;
   /**
+  * cold_storage_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain#cold_storage_options OpensearchDomain#cold_storage_options}
+  */
+  readonly coldStorageOptions?: OpensearchDomainClusterConfigColdStorageOptions;
+  /**
   * zone_awareness_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain#zone_awareness_config OpensearchDomain#zone_awareness_config}
@@ -700,6 +771,7 @@ export function opensearchDomainClusterConfigToTerraform(struct?: OpensearchDoma
     warm_enabled: cdktf.booleanToTerraform(struct!.warmEnabled),
     warm_type: cdktf.stringToTerraform(struct!.warmType),
     zone_awareness_enabled: cdktf.booleanToTerraform(struct!.zoneAwarenessEnabled),
+    cold_storage_options: opensearchDomainClusterConfigColdStorageOptionsToTerraform(struct!.coldStorageOptions),
     zone_awareness_config: opensearchDomainClusterConfigZoneAwarenessConfigToTerraform(struct!.zoneAwarenessConfig),
   }
 }
@@ -754,6 +826,10 @@ export class OpensearchDomainClusterConfigOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.zoneAwarenessEnabled = this._zoneAwarenessEnabled;
     }
+    if (this._coldStorageOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.coldStorageOptions = this._coldStorageOptions?.internalValue;
+    }
     if (this._zoneAwarenessConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.zoneAwarenessConfig = this._zoneAwarenessConfig?.internalValue;
@@ -773,6 +849,7 @@ export class OpensearchDomainClusterConfigOutputReference extends cdktf.ComplexO
       this._warmEnabled = undefined;
       this._warmType = undefined;
       this._zoneAwarenessEnabled = undefined;
+      this._coldStorageOptions.internalValue = undefined;
       this._zoneAwarenessConfig.internalValue = undefined;
     }
     else {
@@ -786,6 +863,7 @@ export class OpensearchDomainClusterConfigOutputReference extends cdktf.ComplexO
       this._warmEnabled = value.warmEnabled;
       this._warmType = value.warmType;
       this._zoneAwarenessEnabled = value.zoneAwarenessEnabled;
+      this._coldStorageOptions.internalValue = value.coldStorageOptions;
       this._zoneAwarenessConfig.internalValue = value.zoneAwarenessConfig;
     }
   }
@@ -932,6 +1010,22 @@ export class OpensearchDomainClusterConfigOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get zoneAwarenessEnabledInput() {
     return this._zoneAwarenessEnabled;
+  }
+
+  // cold_storage_options - computed: false, optional: true, required: false
+  private _coldStorageOptions = new OpensearchDomainClusterConfigColdStorageOptionsOutputReference(this, "cold_storage_options");
+  public get coldStorageOptions() {
+    return this._coldStorageOptions;
+  }
+  public putColdStorageOptions(value: OpensearchDomainClusterConfigColdStorageOptions) {
+    this._coldStorageOptions.internalValue = value;
+  }
+  public resetColdStorageOptions() {
+    this._coldStorageOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get coldStorageOptionsInput() {
+    return this._coldStorageOptions.internalValue;
   }
 
   // zone_awareness_config - computed: false, optional: true, required: false
@@ -1891,7 +1985,7 @@ export class OpensearchDomain extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opensearch_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
