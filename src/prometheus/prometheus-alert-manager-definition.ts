@@ -43,7 +43,7 @@ export class PrometheusAlertManagerDefinition extends cdktf.TerraformResource {
       terraformResourceType: 'aws_prometheus_alert_manager_definition',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

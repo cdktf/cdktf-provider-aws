@@ -51,7 +51,7 @@ export class IamVirtualMfaDevice extends cdktf.TerraformResource {
       terraformResourceType: 'aws_iam_virtual_mfa_device',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

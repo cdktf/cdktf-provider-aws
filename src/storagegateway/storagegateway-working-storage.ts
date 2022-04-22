@@ -43,7 +43,7 @@ export class StoragegatewayWorkingStorage extends cdktf.TerraformResource {
       terraformResourceType: 'aws_storagegateway_working_storage',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

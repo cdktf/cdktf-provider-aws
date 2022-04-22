@@ -71,6 +71,11 @@ export class DataAwsDbProxyAuthOutputReference extends cdktf.ComplexObject {
   public get secretArn() {
     return this.getStringAttribute('secret_arn');
   }
+
+  // username - computed: true, optional: false, required: false
+  public get username() {
+    return this.getStringAttribute('username');
+  }
 }
 
 export class DataAwsDbProxyAuthList extends cdktf.ComplexList {
@@ -118,7 +123,7 @@ export class DataAwsDbProxy extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_db_proxy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

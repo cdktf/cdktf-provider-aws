@@ -51,7 +51,7 @@ export class AutoscalingAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_autoscaling_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

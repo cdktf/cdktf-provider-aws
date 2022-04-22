@@ -55,7 +55,7 @@ export class DataexchangeDataSet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dataexchange_data_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

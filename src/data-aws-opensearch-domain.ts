@@ -304,6 +304,70 @@ export class DataAwsOpensearchDomainAutoTuneOptionsList extends cdktf.ComplexLis
     return new DataAwsOpensearchDomainAutoTuneOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsOpensearchDomainClusterConfigColdStorageOptions {
+}
+
+export function dataAwsOpensearchDomainClusterConfigColdStorageOptionsToTerraform(struct?: DataAwsOpensearchDomainClusterConfigColdStorageOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsOpensearchDomainClusterConfigColdStorageOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsOpensearchDomainClusterConfigColdStorageOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+}
+
+export class DataAwsOpensearchDomainClusterConfigColdStorageOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference {
+    return new DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsOpensearchDomainClusterConfigZoneAwarenessConfig {
 }
 
@@ -406,6 +470,12 @@ export class DataAwsOpensearchDomainClusterConfigOutputReference extends cdktf.C
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // cold_storage_options - computed: true, optional: false, required: false
+  private _coldStorageOptions = new DataAwsOpensearchDomainClusterConfigColdStorageOptionsList(this, "cold_storage_options", false);
+  public get coldStorageOptions() {
+    return this._coldStorageOptions;
   }
 
   // dedicated_master_count - computed: true, optional: false, required: false
@@ -1013,7 +1083,7 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_opensearch_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

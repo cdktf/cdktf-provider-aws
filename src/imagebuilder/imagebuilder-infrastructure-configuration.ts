@@ -56,11 +56,109 @@ export interface ImagebuilderInfrastructureConfigurationConfig extends cdktf.Ter
   */
   readonly terminateInstanceOnFailure?: boolean | cdktf.IResolvable;
   /**
+  * instance_metadata_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration#instance_metadata_options ImagebuilderInfrastructureConfiguration#instance_metadata_options}
+  */
+  readonly instanceMetadataOptions?: ImagebuilderInfrastructureConfigurationInstanceMetadataOptions;
+  /**
   * logging block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration#logging ImagebuilderInfrastructureConfiguration#logging}
   */
   readonly logging?: ImagebuilderInfrastructureConfigurationLogging;
+}
+export interface ImagebuilderInfrastructureConfigurationInstanceMetadataOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration#http_put_response_hop_limit ImagebuilderInfrastructureConfiguration#http_put_response_hop_limit}
+  */
+  readonly httpPutResponseHopLimit?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration#http_tokens ImagebuilderInfrastructureConfiguration#http_tokens}
+  */
+  readonly httpTokens?: string;
+}
+
+export function imagebuilderInfrastructureConfigurationInstanceMetadataOptionsToTerraform(struct?: ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference | ImagebuilderInfrastructureConfigurationInstanceMetadataOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    http_put_response_hop_limit: cdktf.numberToTerraform(struct!.httpPutResponseHopLimit),
+    http_tokens: cdktf.stringToTerraform(struct!.httpTokens),
+  }
+}
+
+export class ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ImagebuilderInfrastructureConfigurationInstanceMetadataOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._httpPutResponseHopLimit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpPutResponseHopLimit = this._httpPutResponseHopLimit;
+    }
+    if (this._httpTokens !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpTokens = this._httpTokens;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ImagebuilderInfrastructureConfigurationInstanceMetadataOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._httpPutResponseHopLimit = undefined;
+      this._httpTokens = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._httpPutResponseHopLimit = value.httpPutResponseHopLimit;
+      this._httpTokens = value.httpTokens;
+    }
+  }
+
+  // http_put_response_hop_limit - computed: false, optional: true, required: false
+  private _httpPutResponseHopLimit?: number; 
+  public get httpPutResponseHopLimit() {
+    return this.getNumberAttribute('http_put_response_hop_limit');
+  }
+  public set httpPutResponseHopLimit(value: number) {
+    this._httpPutResponseHopLimit = value;
+  }
+  public resetHttpPutResponseHopLimit() {
+    this._httpPutResponseHopLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpPutResponseHopLimitInput() {
+    return this._httpPutResponseHopLimit;
+  }
+
+  // http_tokens - computed: false, optional: true, required: false
+  private _httpTokens?: string; 
+  public get httpTokens() {
+    return this.getStringAttribute('http_tokens');
+  }
+  public set httpTokens(value: string) {
+    this._httpTokens = value;
+  }
+  public resetHttpTokens() {
+    this._httpTokens = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpTokensInput() {
+    return this._httpTokens;
+  }
 }
 export interface ImagebuilderInfrastructureConfigurationLoggingS3Logs {
   /**
@@ -242,7 +340,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
       terraformResourceType: 'aws_imagebuilder_infrastructure_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -262,6 +360,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._terminateInstanceOnFailure = config.terminateInstanceOnFailure;
+    this._instanceMetadataOptions.internalValue = config.instanceMetadataOptions;
     this._logging.internalValue = config.logging;
   }
 
@@ -475,6 +574,22 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
     return this._terminateInstanceOnFailure;
   }
 
+  // instance_metadata_options - computed: false, optional: true, required: false
+  private _instanceMetadataOptions = new ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference(this, "instance_metadata_options");
+  public get instanceMetadataOptions() {
+    return this._instanceMetadataOptions;
+  }
+  public putInstanceMetadataOptions(value: ImagebuilderInfrastructureConfigurationInstanceMetadataOptions) {
+    this._instanceMetadataOptions.internalValue = value;
+  }
+  public resetInstanceMetadataOptions() {
+    this._instanceMetadataOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceMetadataOptionsInput() {
+    return this._instanceMetadataOptions.internalValue;
+  }
+
   // logging - computed: false, optional: true, required: false
   private _logging = new ImagebuilderInfrastructureConfigurationLoggingOutputReference(this, "logging");
   public get logging() {
@@ -509,6 +624,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       terminate_instance_on_failure: cdktf.booleanToTerraform(this._terminateInstanceOnFailure),
+      instance_metadata_options: imagebuilderInfrastructureConfigurationInstanceMetadataOptionsToTerraform(this._instanceMetadataOptions.internalValue),
       logging: imagebuilderInfrastructureConfigurationLoggingToTerraform(this._logging.internalValue),
     };
   }

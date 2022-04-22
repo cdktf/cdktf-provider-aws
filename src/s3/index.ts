@@ -36,6 +36,7 @@ export * from './s3outposts-endpoint';
 export * from './data-aws-s3-bucket';
 export * from './data-aws-s3-bucket-object';
 export * from './data-aws-s3-bucket-objects';
+export * from './data-aws-s3-bucket-policy';
 export * from './data-aws-s3-object';
 export * from './data-aws-s3-objects';
 

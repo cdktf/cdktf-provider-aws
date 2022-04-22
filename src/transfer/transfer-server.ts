@@ -81,6 +81,12 @@ export interface TransferServerConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#endpoint_details TransferServer#endpoint_details}
   */
   readonly endpointDetails?: TransferServerEndpointDetails;
+  /**
+  * workflow_details block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#workflow_details TransferServer#workflow_details}
+  */
+  readonly workflowDetails?: TransferServerWorkflowDetails;
 }
 export interface TransferServerEndpointDetails {
   /**
@@ -255,6 +261,159 @@ export class TransferServerEndpointDetailsOutputReference extends cdktf.ComplexO
     return this._vpcId;
   }
 }
+export interface TransferServerWorkflowDetailsOnUpload {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#execution_role TransferServer#execution_role}
+  */
+  readonly executionRole: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#workflow_id TransferServer#workflow_id}
+  */
+  readonly workflowId: string;
+}
+
+export function transferServerWorkflowDetailsOnUploadToTerraform(struct?: TransferServerWorkflowDetailsOnUploadOutputReference | TransferServerWorkflowDetailsOnUpload): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    execution_role: cdktf.stringToTerraform(struct!.executionRole),
+    workflow_id: cdktf.stringToTerraform(struct!.workflowId),
+  }
+}
+
+export class TransferServerWorkflowDetailsOnUploadOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferServerWorkflowDetailsOnUpload | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._executionRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.executionRole = this._executionRole;
+    }
+    if (this._workflowId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workflowId = this._workflowId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferServerWorkflowDetailsOnUpload | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._executionRole = undefined;
+      this._workflowId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._executionRole = value.executionRole;
+      this._workflowId = value.workflowId;
+    }
+  }
+
+  // execution_role - computed: false, optional: false, required: true
+  private _executionRole?: string; 
+  public get executionRole() {
+    return this.getStringAttribute('execution_role');
+  }
+  public set executionRole(value: string) {
+    this._executionRole = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get executionRoleInput() {
+    return this._executionRole;
+  }
+
+  // workflow_id - computed: false, optional: false, required: true
+  private _workflowId?: string; 
+  public get workflowId() {
+    return this.getStringAttribute('workflow_id');
+  }
+  public set workflowId(value: string) {
+    this._workflowId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workflowIdInput() {
+    return this._workflowId;
+  }
+}
+export interface TransferServerWorkflowDetails {
+  /**
+  * on_upload block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#on_upload TransferServer#on_upload}
+  */
+  readonly onUpload?: TransferServerWorkflowDetailsOnUpload;
+}
+
+export function transferServerWorkflowDetailsToTerraform(struct?: TransferServerWorkflowDetailsOutputReference | TransferServerWorkflowDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    on_upload: transferServerWorkflowDetailsOnUploadToTerraform(struct!.onUpload),
+  }
+}
+
+export class TransferServerWorkflowDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferServerWorkflowDetails | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._onUpload?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.onUpload = this._onUpload?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferServerWorkflowDetails | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._onUpload.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._onUpload.internalValue = value.onUpload;
+    }
+  }
+
+  // on_upload - computed: false, optional: true, required: false
+  private _onUpload = new TransferServerWorkflowDetailsOnUploadOutputReference(this, "on_upload");
+  public get onUpload() {
+    return this._onUpload;
+  }
+  public putOnUpload(value: TransferServerWorkflowDetailsOnUpload) {
+    this._onUpload.internalValue = value;
+  }
+  public resetOnUpload() {
+    this._onUpload.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onUploadInput() {
+    return this._onUpload.internalValue;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/transfer_server aws_transfer_server}
@@ -282,7 +441,7 @@ export class TransferServer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transfer_server',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -308,6 +467,7 @@ export class TransferServer extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._url = config.url;
     this._endpointDetails.internalValue = config.endpointDetails;
+    this._workflowDetails.internalValue = config.workflowDetails;
   }
 
   // ==========
@@ -622,6 +782,22 @@ export class TransferServer extends cdktf.TerraformResource {
     return this._endpointDetails.internalValue;
   }
 
+  // workflow_details - computed: false, optional: true, required: false
+  private _workflowDetails = new TransferServerWorkflowDetailsOutputReference(this, "workflow_details");
+  public get workflowDetails() {
+    return this._workflowDetails;
+  }
+  public putWorkflowDetails(value: TransferServerWorkflowDetails) {
+    this._workflowDetails.internalValue = value;
+  }
+  public resetWorkflowDetails() {
+    this._workflowDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workflowDetailsInput() {
+    return this._workflowDetails.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -646,6 +822,7 @@ export class TransferServer extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       url: cdktf.stringToTerraform(this._url),
       endpoint_details: transferServerEndpointDetailsToTerraform(this._endpointDetails.internalValue),
+      workflow_details: transferServerWorkflowDetailsToTerraform(this._workflowDetails.internalValue),
     };
   }
 }

@@ -67,7 +67,7 @@ export class LicensemanagerLicenseConfiguration extends cdktf.TerraformResource 
       terraformResourceType: 'aws_licensemanager_license_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

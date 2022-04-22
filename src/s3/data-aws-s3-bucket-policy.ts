@@ -1,0 +1,89 @@
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+/**
+* AWS Simple Storage Service
+*/
+export interface DataAwsS3BucketPolicyConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/s3_bucket_policy#bucket DataAwsS3BucketPolicy#bucket}
+  */
+  readonly bucket: string;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/s3_bucket_policy aws_s3_bucket_policy}
+*/
+export class DataAwsS3BucketPolicy extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "aws_s3_bucket_policy";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/s3_bucket_policy aws_s3_bucket_policy} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsS3BucketPolicyConfig
+  */
+  public constructor(scope: Construct, id: string, config: DataAwsS3BucketPolicyConfig) {
+    super(scope, id, {
+      terraformResourceType: 'aws_s3_bucket_policy',
+      terraformGeneratorMetadata: {
+        providerName: 'aws',
+        providerVersion: '4.11.0',
+        providerVersionConstraint: '~> 4.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._bucket = config.bucket;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // bucket - computed: false, optional: false, required: true
+  private _bucket?: string; 
+  public get bucket() {
+    return this.getStringAttribute('bucket');
+  }
+  public set bucket(value: string) {
+    this._bucket = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // policy - computed: true, optional: false, required: false
+  public get policy() {
+    return this.getStringAttribute('policy');
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      bucket: cdktf.stringToTerraform(this._bucket),
+    };
+  }
+}
