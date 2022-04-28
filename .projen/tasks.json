@@ -128,7 +128,10 @@
       },
       "steps": [
         {
-          "exec": "mkdir -p src && rm -rf ./src/* && cdktf get && cp -R .gen/providers/aws/* ./src/"
+          "exec": "mkdir -p src && rm -rf ./src/* && cdktf get && cp -R .gen/providers/aws/* ./src/ && cp .gen/versions.json ./src/version.json"
+        },
+        {
+          "spawn": "default"
         }
       ]
     },

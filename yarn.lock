@@ -93,11 +93,12 @@
     jsii-srcmak "^0.1.520"
 
 "@cdktf/provider-project@^0.2.8":
-  version "0.2.29"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.29.tgz#6a421f8b9f90f504d296b3c30bdbb74ed2860eab"
-  integrity sha512-LcOf7kGIcyLSTO+tUZ4YjwiX0TuGgXG1LsLgaQqfnLfDr+ac8Gzl+6gMSFjMK2n/RzT780EH0YaT0mjltFmayQ==
+  version "0.2.30"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.30.tgz#8fcd641b5a8e1eb08325a9b9e75f0620d780d623"
+  integrity sha512-avOU8rj90fyWS4ySu1G6Ao3gHED1HtYmopaDCMzC8+Gqnz9rzDqYxVrP3iZsfFbHo3lUbq72ZApMhJZUmPoRvQ==
   dependencies:
     change-case "^4.1.2"
+    fs-extra "^10.1.0"
 
 "@gar/promisify@^1.1.3":
   version "1.1.3"
