@@ -101,7 +101,7 @@ export function routeTableRouteToTerraform(struct?: RouteTableRoute | cdktf.IRes
   return {
     carrier_gateway_id: struct!.carrierGatewayId === undefined ? null : cdktf.stringToTerraform(struct!.carrierGatewayId),
     cidr_block: struct!.cidrBlock === undefined ? null : cdktf.stringToTerraform(struct!.cidrBlock),
-    core_network_arn: cdktf.stringToTerraform(struct!.coreNetworkArn),
+    core_network_arn: struct!.coreNetworkArn === undefined ? null : cdktf.stringToTerraform(struct!.coreNetworkArn),
     destination_prefix_list_id: struct!.destinationPrefixListId === undefined ? null : cdktf.stringToTerraform(struct!.destinationPrefixListId),
     egress_only_gateway_id: struct!.egressOnlyGatewayId === undefined ? null : cdktf.stringToTerraform(struct!.egressOnlyGatewayId),
     gateway_id: struct!.gatewayId === undefined ? null : cdktf.stringToTerraform(struct!.gatewayId),
