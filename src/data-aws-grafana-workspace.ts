@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsGrafanaWorkspaceConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/grafana_workspace#tags DataAwsGrafanaWorkspace#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/grafana_workspace#workspace_id DataAwsGrafanaWorkspace#workspace_id}
   */
   readonly workspaceId: string;
@@ -39,7 +43,7 @@ export class DataAwsGrafanaWorkspace extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_grafana_workspace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -47,6 +51,7 @@ export class DataAwsGrafanaWorkspace extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._tags = config.tags;
     this._workspaceId = config.workspaceId;
   }
 
@@ -149,6 +154,22 @@ export class DataAwsGrafanaWorkspace extends cdktf.TerraformDataSource {
     return this.getStringAttribute('status');
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
   // workspace_id - computed: false, optional: false, required: true
   private _workspaceId?: string; 
   public get workspaceId() {
@@ -168,6 +189,7 @@ export class DataAwsGrafanaWorkspace extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
   }

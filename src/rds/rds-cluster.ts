@@ -194,6 +194,12 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly scalingConfiguration?: RdsClusterScalingConfiguration;
   /**
+  * serverlessv2_scaling_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#serverlessv2_scaling_configuration RdsCluster#serverlessv2_scaling_configuration}
+  */
+  readonly serverlessv2ScalingConfiguration?: RdsClusterServerlessv2ScalingConfiguration;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#timeouts RdsCluster#timeouts}
@@ -677,6 +683,92 @@ export class RdsClusterScalingConfigurationOutputReference extends cdktf.Complex
     return this._timeoutAction;
   }
 }
+export interface RdsClusterServerlessv2ScalingConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#max_capacity RdsCluster#max_capacity}
+  */
+  readonly maxCapacity: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#min_capacity RdsCluster#min_capacity}
+  */
+  readonly minCapacity: number;
+}
+
+export function rdsClusterServerlessv2ScalingConfigurationToTerraform(struct?: RdsClusterServerlessv2ScalingConfigurationOutputReference | RdsClusterServerlessv2ScalingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max_capacity: cdktf.numberToTerraform(struct!.maxCapacity),
+    min_capacity: cdktf.numberToTerraform(struct!.minCapacity),
+  }
+}
+
+export class RdsClusterServerlessv2ScalingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RdsClusterServerlessv2ScalingConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxCapacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxCapacity = this._maxCapacity;
+    }
+    if (this._minCapacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minCapacity = this._minCapacity;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RdsClusterServerlessv2ScalingConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maxCapacity = undefined;
+      this._minCapacity = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maxCapacity = value.maxCapacity;
+      this._minCapacity = value.minCapacity;
+    }
+  }
+
+  // max_capacity - computed: false, optional: false, required: true
+  private _maxCapacity?: number; 
+  public get maxCapacity() {
+    return this.getNumberAttribute('max_capacity');
+  }
+  public set maxCapacity(value: number) {
+    this._maxCapacity = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxCapacityInput() {
+    return this._maxCapacity;
+  }
+
+  // min_capacity - computed: false, optional: false, required: true
+  private _minCapacity?: number; 
+  public get minCapacity() {
+    return this.getNumberAttribute('min_capacity');
+  }
+  public set minCapacity(value: number) {
+    this._minCapacity = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minCapacityInput() {
+    return this._minCapacity;
+  }
+}
 export interface RdsClusterTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#create RdsCluster#create}
@@ -823,7 +915,7 @@ export class RdsCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rds_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -876,6 +968,7 @@ export class RdsCluster extends cdktf.TerraformResource {
     this._restoreToPointInTime.internalValue = config.restoreToPointInTime;
     this._s3Import.internalValue = config.s3Import;
     this._scalingConfiguration.internalValue = config.scalingConfiguration;
+    this._serverlessv2ScalingConfiguration.internalValue = config.serverlessv2ScalingConfiguration;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1638,6 +1731,22 @@ export class RdsCluster extends cdktf.TerraformResource {
     return this._scalingConfiguration.internalValue;
   }
 
+  // serverlessv2_scaling_configuration - computed: false, optional: true, required: false
+  private _serverlessv2ScalingConfiguration = new RdsClusterServerlessv2ScalingConfigurationOutputReference(this, "serverlessv2_scaling_configuration");
+  public get serverlessv2ScalingConfiguration() {
+    return this._serverlessv2ScalingConfiguration;
+  }
+  public putServerlessv2ScalingConfiguration(value: RdsClusterServerlessv2ScalingConfiguration) {
+    this._serverlessv2ScalingConfiguration.internalValue = value;
+  }
+  public resetServerlessv2ScalingConfiguration() {
+    this._serverlessv2ScalingConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverlessv2ScalingConfigurationInput() {
+    return this._serverlessv2ScalingConfiguration.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new RdsClusterTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -1705,6 +1814,7 @@ export class RdsCluster extends cdktf.TerraformResource {
       restore_to_point_in_time: rdsClusterRestoreToPointInTimeToTerraform(this._restoreToPointInTime.internalValue),
       s3_import: rdsClusterS3ImportToTerraform(this._s3Import.internalValue),
       scaling_configuration: rdsClusterScalingConfigurationToTerraform(this._scalingConfiguration.internalValue),
+      serverlessv2_scaling_configuration: rdsClusterServerlessv2ScalingConfigurationToTerraform(this._serverlessv2ScalingConfiguration.internalValue),
       timeouts: rdsClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -204,7 +204,7 @@ export class LexSlotType extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lex_slot_type',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -227,7 +227,7 @@ export class ServicecatalogProvisioningArtifact extends cdktf.TerraformResource 
       terraformResourceType: 'aws_servicecatalog_provisioning_artifact',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

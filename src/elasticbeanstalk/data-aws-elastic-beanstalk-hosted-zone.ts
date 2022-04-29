@@ -39,7 +39,7 @@ export class DataAwsElasticBeanstalkHostedZone extends cdktf.TerraformDataSource
       terraformResourceType: 'aws_elastic_beanstalk_hosted_zone',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

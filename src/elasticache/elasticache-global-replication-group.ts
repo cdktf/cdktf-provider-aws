@@ -47,7 +47,7 @@ export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elasticache_global_replication_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

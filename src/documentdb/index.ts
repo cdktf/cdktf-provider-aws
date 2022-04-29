@@ -3,6 +3,7 @@ export * from './docdb-cluster';
 export * from './docdb-cluster-instance';
 export * from './docdb-cluster-parameter-group';
 export * from './docdb-cluster-snapshot';
+export * from './docdb-event-subscription';
 export * from './docdb-global-cluster';
 export * from './docdb-subnet-group';
 export * from './data-aws-docdb-engine-version';

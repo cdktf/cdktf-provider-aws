@@ -172,6 +172,12 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly launchTemplate?: InstanceLaunchTemplate;
   /**
+  * maintenance_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#maintenance_options Instance#maintenance_options}
+  */
+  readonly maintenanceOptions?: InstanceMaintenanceOptions;
+  /**
   * metadata_options block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#metadata_options Instance#metadata_options}
@@ -700,6 +706,71 @@ export class InstanceLaunchTemplateOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get versionInput() {
     return this._version;
+  }
+}
+export interface InstanceMaintenanceOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance#auto_recovery Instance#auto_recovery}
+  */
+  readonly autoRecovery?: string;
+}
+
+export function instanceMaintenanceOptionsToTerraform(struct?: InstanceMaintenanceOptionsOutputReference | InstanceMaintenanceOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    auto_recovery: cdktf.stringToTerraform(struct!.autoRecovery),
+  }
+}
+
+export class InstanceMaintenanceOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): InstanceMaintenanceOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._autoRecovery !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoRecovery = this._autoRecovery;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: InstanceMaintenanceOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._autoRecovery = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._autoRecovery = value.autoRecovery;
+    }
+  }
+
+  // auto_recovery - computed: true, optional: true, required: false
+  private _autoRecovery?: string; 
+  public get autoRecovery() {
+    return this.getStringAttribute('auto_recovery');
+  }
+  public set autoRecovery(value: string) {
+    this._autoRecovery = value;
+  }
+  public resetAutoRecovery() {
+    this._autoRecovery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoRecoveryInput() {
+    return this._autoRecovery;
   }
 }
 export interface InstanceMetadataOptions {
@@ -1290,7 +1361,7 @@ export class Instance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1336,6 +1407,7 @@ export class Instance extends cdktf.TerraformResource {
     this._enclaveOptions.internalValue = config.enclaveOptions;
     this._ephemeralBlockDevice = config.ephemeralBlockDevice;
     this._launchTemplate.internalValue = config.launchTemplate;
+    this._maintenanceOptions.internalValue = config.maintenanceOptions;
     this._metadataOptions.internalValue = config.metadataOptions;
     this._networkInterface = config.networkInterface;
     this._rootBlockDevice.internalValue = config.rootBlockDevice;
@@ -2001,6 +2073,22 @@ export class Instance extends cdktf.TerraformResource {
     return this._launchTemplate.internalValue;
   }
 
+  // maintenance_options - computed: false, optional: true, required: false
+  private _maintenanceOptions = new InstanceMaintenanceOptionsOutputReference(this, "maintenance_options");
+  public get maintenanceOptions() {
+    return this._maintenanceOptions;
+  }
+  public putMaintenanceOptions(value: InstanceMaintenanceOptions) {
+    this._maintenanceOptions.internalValue = value;
+  }
+  public resetMaintenanceOptions() {
+    this._maintenanceOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceOptionsInput() {
+    return this._maintenanceOptions.internalValue;
+  }
+
   // metadata_options - computed: false, optional: true, required: false
   private _metadataOptions = new InstanceMetadataOptionsOutputReference(this, "metadata_options");
   public get metadataOptions() {
@@ -2110,6 +2198,7 @@ export class Instance extends cdktf.TerraformResource {
       enclave_options: instanceEnclaveOptionsToTerraform(this._enclaveOptions.internalValue),
       ephemeral_block_device: cdktf.listMapper(instanceEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
       launch_template: instanceLaunchTemplateToTerraform(this._launchTemplate.internalValue),
+      maintenance_options: instanceMaintenanceOptionsToTerraform(this._maintenanceOptions.internalValue),
       metadata_options: instanceMetadataOptionsToTerraform(this._metadataOptions.internalValue),
       network_interface: cdktf.listMapper(instanceNetworkInterfaceToTerraform)(this._networkInterface),
       root_block_device: instanceRootBlockDeviceToTerraform(this._rootBlockDevice.internalValue),

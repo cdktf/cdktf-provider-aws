@@ -79,7 +79,7 @@ export class ImagebuilderComponent extends cdktf.TerraformResource {
       terraformResourceType: 'aws_imagebuilder_component',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

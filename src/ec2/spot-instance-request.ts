@@ -204,6 +204,12 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   */
   readonly launchTemplate?: SpotInstanceRequestLaunchTemplate;
   /**
+  * maintenance_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#maintenance_options SpotInstanceRequest#maintenance_options}
+  */
+  readonly maintenanceOptions?: SpotInstanceRequestMaintenanceOptions;
+  /**
   * metadata_options block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#metadata_options SpotInstanceRequest#metadata_options}
@@ -732,6 +738,71 @@ export class SpotInstanceRequestLaunchTemplateOutputReference extends cdktf.Comp
   // Temporarily expose input value. Use with caution.
   public get versionInput() {
     return this._version;
+  }
+}
+export interface SpotInstanceRequestMaintenanceOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#auto_recovery SpotInstanceRequest#auto_recovery}
+  */
+  readonly autoRecovery?: string;
+}
+
+export function spotInstanceRequestMaintenanceOptionsToTerraform(struct?: SpotInstanceRequestMaintenanceOptionsOutputReference | SpotInstanceRequestMaintenanceOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    auto_recovery: cdktf.stringToTerraform(struct!.autoRecovery),
+  }
+}
+
+export class SpotInstanceRequestMaintenanceOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SpotInstanceRequestMaintenanceOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._autoRecovery !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoRecovery = this._autoRecovery;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SpotInstanceRequestMaintenanceOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._autoRecovery = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._autoRecovery = value.autoRecovery;
+    }
+  }
+
+  // auto_recovery - computed: true, optional: true, required: false
+  private _autoRecovery?: string; 
+  public get autoRecovery() {
+    return this.getStringAttribute('auto_recovery');
+  }
+  public set autoRecovery(value: string) {
+    this._autoRecovery = value;
+  }
+  public resetAutoRecovery() {
+    this._autoRecovery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoRecoveryInput() {
+    return this._autoRecovery;
   }
 }
 export interface SpotInstanceRequestMetadataOptions {
@@ -1295,7 +1366,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
       terraformResourceType: 'aws_spot_instance_request',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1349,6 +1420,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     this._enclaveOptions.internalValue = config.enclaveOptions;
     this._ephemeralBlockDevice = config.ephemeralBlockDevice;
     this._launchTemplate.internalValue = config.launchTemplate;
+    this._maintenanceOptions.internalValue = config.maintenanceOptions;
     this._metadataOptions.internalValue = config.metadataOptions;
     this._networkInterface = config.networkInterface;
     this._rootBlockDevice.internalValue = config.rootBlockDevice;
@@ -2157,6 +2229,22 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this._launchTemplate.internalValue;
   }
 
+  // maintenance_options - computed: false, optional: true, required: false
+  private _maintenanceOptions = new SpotInstanceRequestMaintenanceOptionsOutputReference(this, "maintenance_options");
+  public get maintenanceOptions() {
+    return this._maintenanceOptions;
+  }
+  public putMaintenanceOptions(value: SpotInstanceRequestMaintenanceOptions) {
+    this._maintenanceOptions.internalValue = value;
+  }
+  public resetMaintenanceOptions() {
+    this._maintenanceOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceOptionsInput() {
+    return this._maintenanceOptions.internalValue;
+  }
+
   // metadata_options - computed: false, optional: true, required: false
   private _metadataOptions = new SpotInstanceRequestMetadataOptionsOutputReference(this, "metadata_options");
   public get metadataOptions() {
@@ -2274,6 +2362,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
       enclave_options: spotInstanceRequestEnclaveOptionsToTerraform(this._enclaveOptions.internalValue),
       ephemeral_block_device: cdktf.listMapper(spotInstanceRequestEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
       launch_template: spotInstanceRequestLaunchTemplateToTerraform(this._launchTemplate.internalValue),
+      maintenance_options: spotInstanceRequestMaintenanceOptionsToTerraform(this._maintenanceOptions.internalValue),
       metadata_options: spotInstanceRequestMetadataOptionsToTerraform(this._metadataOptions.internalValue),
       network_interface: cdktf.listMapper(spotInstanceRequestNetworkInterfaceToTerraform)(this._networkInterface),
       root_block_device: spotInstanceRequestRootBlockDeviceToTerraform(this._rootBlockDevice.internalValue),

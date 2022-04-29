@@ -52,6 +52,14 @@ export interface GrafanaWorkspaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly stackSetName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#tags GrafanaWorkspace#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#tags_all GrafanaWorkspace#tags_all}
+  */
+  readonly tagsAll?: { [key: string]: string };
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#timeouts GrafanaWorkspace#timeouts}
@@ -177,7 +185,7 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
       terraformResourceType: 'aws_grafana_workspace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -196,6 +204,8 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
     this._permissionType = config.permissionType;
     this._roleArn = config.roleArn;
     this._stackSetName = config.stackSetName;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -395,6 +405,38 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
     return this._stackSetName;
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }; 
+  public get tagsAll() {
+    return this.getStringMapAttribute('tags_all');
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GrafanaWorkspaceTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -428,6 +470,8 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
       permission_type: cdktf.stringToTerraform(this._permissionType),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       stack_set_name: cdktf.stringToTerraform(this._stackSetName),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: grafanaWorkspaceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

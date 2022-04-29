@@ -2,4 +2,5 @@
 export * from './mq-broker';
 export * from './mq-configuration';
 export * from './data-aws-mq-broker';
+export * from './data-aws-mq-broker-instance-type-offerings';
 

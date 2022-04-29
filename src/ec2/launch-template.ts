@@ -146,6 +146,12 @@ export interface LaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   */
   readonly licenseSpecification?: LaunchTemplateLicenseSpecification[] | cdktf.IResolvable;
   /**
+  * maintenance_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#maintenance_options LaunchTemplate#maintenance_options}
+  */
+  readonly maintenanceOptions?: LaunchTemplateMaintenanceOptions;
+  /**
   * metadata_options block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#metadata_options LaunchTemplate#metadata_options}
@@ -1395,6 +1401,71 @@ export function launchTemplateLicenseSpecificationToTerraform(struct?: LaunchTem
   }
 }
 
+export interface LaunchTemplateMaintenanceOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#auto_recovery LaunchTemplate#auto_recovery}
+  */
+  readonly autoRecovery?: string;
+}
+
+export function launchTemplateMaintenanceOptionsToTerraform(struct?: LaunchTemplateMaintenanceOptionsOutputReference | LaunchTemplateMaintenanceOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    auto_recovery: cdktf.stringToTerraform(struct!.autoRecovery),
+  }
+}
+
+export class LaunchTemplateMaintenanceOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LaunchTemplateMaintenanceOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._autoRecovery !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoRecovery = this._autoRecovery;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateMaintenanceOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._autoRecovery = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._autoRecovery = value.autoRecovery;
+    }
+  }
+
+  // auto_recovery - computed: false, optional: true, required: false
+  private _autoRecovery?: string; 
+  public get autoRecovery() {
+    return this.getStringAttribute('auto_recovery');
+  }
+  public set autoRecovery(value: string) {
+    this._autoRecovery = value;
+  }
+  public resetAutoRecovery() {
+    this._autoRecovery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoRecoveryInput() {
+    return this._autoRecovery;
+  }
+}
 export interface LaunchTemplateMetadataOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#http_endpoint LaunchTemplate#http_endpoint}
@@ -2162,7 +2233,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_launch_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2199,6 +2270,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
     this._iamInstanceProfile.internalValue = config.iamInstanceProfile;
     this._instanceMarketOptions.internalValue = config.instanceMarketOptions;
     this._licenseSpecification = config.licenseSpecification;
+    this._maintenanceOptions.internalValue = config.maintenanceOptions;
     this._metadataOptions.internalValue = config.metadataOptions;
     this._monitoring.internalValue = config.monitoring;
     this._networkInterfaces = config.networkInterfaces;
@@ -2693,6 +2765,22 @@ export class LaunchTemplate extends cdktf.TerraformResource {
     return this._licenseSpecification;
   }
 
+  // maintenance_options - computed: false, optional: true, required: false
+  private _maintenanceOptions = new LaunchTemplateMaintenanceOptionsOutputReference(this, "maintenance_options");
+  public get maintenanceOptions() {
+    return this._maintenanceOptions;
+  }
+  public putMaintenanceOptions(value: LaunchTemplateMaintenanceOptions) {
+    this._maintenanceOptions.internalValue = value;
+  }
+  public resetMaintenanceOptions() {
+    this._maintenanceOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceOptionsInput() {
+    return this._maintenanceOptions.internalValue;
+  }
+
   // metadata_options - computed: false, optional: true, required: false
   private _metadataOptions = new LaunchTemplateMetadataOptionsOutputReference(this, "metadata_options");
   public get metadataOptions() {
@@ -2826,6 +2914,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
       iam_instance_profile: launchTemplateIamInstanceProfileToTerraform(this._iamInstanceProfile.internalValue),
       instance_market_options: launchTemplateInstanceMarketOptionsToTerraform(this._instanceMarketOptions.internalValue),
       license_specification: cdktf.listMapper(launchTemplateLicenseSpecificationToTerraform)(this._licenseSpecification),
+      maintenance_options: launchTemplateMaintenanceOptionsToTerraform(this._maintenanceOptions.internalValue),
       metadata_options: launchTemplateMetadataOptionsToTerraform(this._metadataOptions.internalValue),
       monitoring: launchTemplateMonitoringToTerraform(this._monitoring.internalValue),
       network_interfaces: cdktf.listMapper(launchTemplateNetworkInterfacesToTerraform)(this._networkInterfaces),
