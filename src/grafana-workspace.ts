@@ -185,7 +185,7 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
       terraformResourceType: 'aws_grafana_workspace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.0',
+        providerVersion: '4.12.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
