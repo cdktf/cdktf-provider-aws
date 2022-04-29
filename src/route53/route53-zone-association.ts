@@ -47,7 +47,7 @@ export class Route53ZoneAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route53_zone_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.0',
+        providerVersion: '4.12.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

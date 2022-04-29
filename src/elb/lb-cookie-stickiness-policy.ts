@@ -51,7 +51,7 @@ export class LbCookieStickinessPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lb_cookie_stickiness_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.0',
+        providerVersion: '4.12.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

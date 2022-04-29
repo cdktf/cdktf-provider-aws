@@ -149,7 +149,7 @@ export class VpcIpv4CidrBlockAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_ipv4_cidr_block_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.0',
+        providerVersion: '4.12.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

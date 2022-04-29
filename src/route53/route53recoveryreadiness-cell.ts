@@ -122,7 +122,7 @@ export class Route53RecoveryreadinessCell extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route53recoveryreadiness_cell',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.0',
+        providerVersion: '4.12.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

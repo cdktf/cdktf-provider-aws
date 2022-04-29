@@ -39,7 +39,7 @@ export class DataAwsDefaultTags extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_default_tags',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.0',
+        providerVersion: '4.12.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
