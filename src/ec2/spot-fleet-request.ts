@@ -72,6 +72,10 @@ export interface SpotFleetRequestConfig extends cdktf.TerraformMetaArguments {
   */
   readonly targetGroupArns?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request#terminate_instances_on_delete SpotFleetRequest#terminate_instances_on_delete}
+  */
+  readonly terminateInstancesOnDelete?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request#terminate_instances_with_expiration SpotFleetRequest#terminate_instances_with_expiration}
   */
   readonly terminateInstancesWithExpiration?: boolean | cdktf.IResolvable;
@@ -684,6 +688,10 @@ export interface SpotFleetRequestTimeouts {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request#delete SpotFleetRequest#delete}
   */
   readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request#update SpotFleetRequest#update}
+  */
+  readonly update?: string;
 }
 
 export function spotFleetRequestTimeoutsToTerraform(struct?: SpotFleetRequestTimeoutsOutputReference | SpotFleetRequestTimeouts | cdktf.IResolvable): any {
@@ -694,6 +702,7 @@ export function spotFleetRequestTimeoutsToTerraform(struct?: SpotFleetRequestTim
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -719,6 +728,10 @@ export class SpotFleetRequestTimeoutsOutputReference extends cdktf.ComplexObject
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -727,11 +740,13 @@ export class SpotFleetRequestTimeoutsOutputReference extends cdktf.ComplexObject
       this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
+      this._update = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
+      this._update = value.update;
     }
   }
 
@@ -766,6 +781,22 @@ export class SpotFleetRequestTimeoutsOutputReference extends cdktf.ComplexObject
   public get deleteInput() {
     return this._delete;
   }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
 }
 
 /**
@@ -794,7 +825,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
       terraformResourceType: 'aws_spot_fleet_request',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -818,6 +849,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._targetCapacity = config.targetCapacity;
     this._targetGroupArns = config.targetGroupArns;
+    this._terminateInstancesOnDelete = config.terminateInstancesOnDelete;
     this._terminateInstancesWithExpiration = config.terminateInstancesWithExpiration;
     this._validFrom = config.validFrom;
     this._validUntil = config.validUntil;
@@ -1097,6 +1129,22 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
     return this._targetGroupArns;
   }
 
+  // terminate_instances_on_delete - computed: false, optional: true, required: false
+  private _terminateInstancesOnDelete?: string; 
+  public get terminateInstancesOnDelete() {
+    return this.getStringAttribute('terminate_instances_on_delete');
+  }
+  public set terminateInstancesOnDelete(value: string) {
+    this._terminateInstancesOnDelete = value;
+  }
+  public resetTerminateInstancesOnDelete() {
+    this._terminateInstancesOnDelete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get terminateInstancesOnDeleteInput() {
+    return this._terminateInstancesOnDelete;
+  }
+
   // terminate_instances_with_expiration - computed: false, optional: true, required: false
   private _terminateInstancesWithExpiration?: boolean | cdktf.IResolvable; 
   public get terminateInstancesWithExpiration() {
@@ -1249,6 +1297,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       target_capacity: cdktf.numberToTerraform(this._targetCapacity),
       target_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._targetGroupArns),
+      terminate_instances_on_delete: cdktf.stringToTerraform(this._terminateInstancesOnDelete),
       terminate_instances_with_expiration: cdktf.booleanToTerraform(this._terminateInstancesWithExpiration),
       valid_from: cdktf.stringToTerraform(this._validFrom),
       valid_until: cdktf.stringToTerraform(this._validUntil),

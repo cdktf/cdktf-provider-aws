@@ -81,7 +81,7 @@ export class SecurityGroupRule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_security_group_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

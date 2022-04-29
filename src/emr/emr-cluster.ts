@@ -40,6 +40,10 @@ export interface EmrClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly keepJobFlowAliveWhenNoSteps?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster#list_steps_states EmrCluster#list_steps_states}
+  */
+  readonly listStepsStates?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster#log_encryption_kms_key_id EmrCluster#log_encryption_kms_key_id}
   */
   readonly logEncryptionKmsKeyId?: string;
@@ -2090,7 +2094,7 @@ export class EmrCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_emr_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2106,6 +2110,7 @@ export class EmrCluster extends cdktf.TerraformResource {
     this._customAmiId = config.customAmiId;
     this._ebsRootVolumeSize = config.ebsRootVolumeSize;
     this._keepJobFlowAliveWhenNoSteps = config.keepJobFlowAliveWhenNoSteps;
+    this._listStepsStates = config.listStepsStates;
     this._logEncryptionKmsKeyId = config.logEncryptionKmsKeyId;
     this._logUri = config.logUri;
     this._name = config.name;
@@ -2274,6 +2279,22 @@ export class EmrCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get keepJobFlowAliveWhenNoStepsInput() {
     return this._keepJobFlowAliveWhenNoSteps;
+  }
+
+  // list_steps_states - computed: false, optional: true, required: false
+  private _listStepsStates?: string[]; 
+  public get listStepsStates() {
+    return cdktf.Fn.tolist(this.getListAttribute('list_steps_states'));
+  }
+  public set listStepsStates(value: string[]) {
+    this._listStepsStates = value;
+  }
+  public resetListStepsStates() {
+    this._listStepsStates = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get listStepsStatesInput() {
+    return this._listStepsStates;
   }
 
   // log_encryption_kms_key_id - computed: false, optional: true, required: false
@@ -2624,6 +2645,7 @@ export class EmrCluster extends cdktf.TerraformResource {
       custom_ami_id: cdktf.stringToTerraform(this._customAmiId),
       ebs_root_volume_size: cdktf.numberToTerraform(this._ebsRootVolumeSize),
       keep_job_flow_alive_when_no_steps: cdktf.booleanToTerraform(this._keepJobFlowAliveWhenNoSteps),
+      list_steps_states: cdktf.listMapper(cdktf.stringToTerraform)(this._listStepsStates),
       log_encryption_kms_key_id: cdktf.stringToTerraform(this._logEncryptionKmsKeyId),
       log_uri: cdktf.stringToTerraform(this._logUri),
       name: cdktf.stringToTerraform(this._name),

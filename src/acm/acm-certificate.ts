@@ -49,6 +49,12 @@ export interface AcmCertificateConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acm_certificate#options AcmCertificate#options}
   */
   readonly options?: AcmCertificateOptions;
+  /**
+  * validation_option block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acm_certificate#validation_option AcmCertificate#validation_option}
+  */
+  readonly validationOption?: AcmCertificateValidationOption[] | cdktf.IResolvable;
 }
 export interface AcmCertificateDomainValidationOptions {
 }
@@ -194,6 +200,28 @@ export class AcmCertificateOptionsOutputReference extends cdktf.ComplexObject {
     return this._certificateTransparencyLoggingPreference;
   }
 }
+export interface AcmCertificateValidationOption {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acm_certificate#domain_name AcmCertificate#domain_name}
+  */
+  readonly domainName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acm_certificate#validation_domain AcmCertificate#validation_domain}
+  */
+  readonly validationDomain: string;
+}
+
+export function acmCertificateValidationOptionToTerraform(struct?: AcmCertificateValidationOption | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    domain_name: cdktf.stringToTerraform(struct!.domainName),
+    validation_domain: cdktf.stringToTerraform(struct!.validationDomain),
+  }
+}
+
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/acm_certificate aws_acm_certificate}
@@ -221,7 +249,7 @@ export class AcmCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_acm_certificate',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -239,6 +267,7 @@ export class AcmCertificate extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._validationMethod = config.validationMethod;
     this._options.internalValue = config.options;
+    this._validationOption = config.validationOption;
   }
 
   // ==========
@@ -431,6 +460,23 @@ export class AcmCertificate extends cdktf.TerraformResource {
     return this._options.internalValue;
   }
 
+  // validation_option - computed: false, optional: true, required: false
+  private _validationOption?: AcmCertificateValidationOption[] | cdktf.IResolvable; 
+  public get validationOption() {
+    // Getting the computed value is not yet implemented
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('validation_option')));
+  }
+  public set validationOption(value: AcmCertificateValidationOption[] | cdktf.IResolvable) {
+    this._validationOption = value;
+  }
+  public resetValidationOption() {
+    this._validationOption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get validationOptionInput() {
+    return this._validationOption;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -447,6 +493,7 @@ export class AcmCertificate extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       validation_method: cdktf.stringToTerraform(this._validationMethod),
       options: acmCertificateOptionsToTerraform(this._options.internalValue),
+      validation_option: cdktf.listMapper(acmCertificateValidationOptionToTerraform)(this._validationOption),
     };
   }
 }

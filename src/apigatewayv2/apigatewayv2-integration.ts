@@ -198,7 +198,7 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apigatewayv2_integration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.11.0',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
