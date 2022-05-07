@@ -167,7 +167,7 @@ export class DataAwsLambdaCodeSigningConfig extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lambda_code_signing_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

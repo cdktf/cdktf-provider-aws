@@ -685,7 +685,7 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
       terraformResourceType: 'aws_synthetics_canary',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

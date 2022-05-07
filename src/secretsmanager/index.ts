@@ -6,4 +6,5 @@ export * from './secretsmanager-secret-version';
 export * from './data-aws-secretsmanager-secret';
 export * from './data-aws-secretsmanager-secret-rotation';
 export * from './data-aws-secretsmanager-secret-version';
+export * from './data-aws-secretsmanager-secrets';
 

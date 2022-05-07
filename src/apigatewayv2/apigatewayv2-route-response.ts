@@ -55,7 +55,7 @@ export class Apigatewayv2RouteResponse extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apigatewayv2_route_response',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -39,7 +39,7 @@ export class Ec2SerialConsoleAccess extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_serial_console_access',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

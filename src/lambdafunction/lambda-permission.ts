@@ -20,6 +20,10 @@ export interface LambdaPermissionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly functionName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_permission#function_url_auth_type LambdaPermission#function_url_auth_type}
+  */
+  readonly functionUrlAuthType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_permission#principal LambdaPermission#principal}
   */
   readonly principal: string;
@@ -75,7 +79,7 @@ export class LambdaPermission extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_permission',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -86,6 +90,7 @@ export class LambdaPermission extends cdktf.TerraformResource {
     this._action = config.action;
     this._eventSourceToken = config.eventSourceToken;
     this._functionName = config.functionName;
+    this._functionUrlAuthType = config.functionUrlAuthType;
     this._principal = config.principal;
     this._principalOrgId = config.principalOrgId;
     this._qualifier = config.qualifier;
@@ -139,6 +144,22 @@ export class LambdaPermission extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get functionNameInput() {
     return this._functionName;
+  }
+
+  // function_url_auth_type - computed: false, optional: true, required: false
+  private _functionUrlAuthType?: string; 
+  public get functionUrlAuthType() {
+    return this.getStringAttribute('function_url_auth_type');
+  }
+  public set functionUrlAuthType(value: string) {
+    this._functionUrlAuthType = value;
+  }
+  public resetFunctionUrlAuthType() {
+    this._functionUrlAuthType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get functionUrlAuthTypeInput() {
+    return this._functionUrlAuthType;
   }
 
   // id - computed: true, optional: true, required: false
@@ -239,7 +260,7 @@ export class LambdaPermission extends cdktf.TerraformResource {
     return this._statementId;
   }
 
-  // statement_id_prefix - computed: false, optional: true, required: false
+  // statement_id_prefix - computed: true, optional: true, required: false
   private _statementIdPrefix?: string; 
   public get statementIdPrefix() {
     return this.getStringAttribute('statement_id_prefix');
@@ -264,6 +285,7 @@ export class LambdaPermission extends cdktf.TerraformResource {
       action: cdktf.stringToTerraform(this._action),
       event_source_token: cdktf.stringToTerraform(this._eventSourceToken),
       function_name: cdktf.stringToTerraform(this._functionName),
+      function_url_auth_type: cdktf.stringToTerraform(this._functionUrlAuthType),
       principal: cdktf.stringToTerraform(this._principal),
       principal_org_id: cdktf.stringToTerraform(this._principalOrgId),
       qualifier: cdktf.stringToTerraform(this._qualifier),

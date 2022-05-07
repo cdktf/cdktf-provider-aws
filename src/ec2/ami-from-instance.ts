@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface AmiFromInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_from_instance#deprecation_time AmiFromInstance#deprecation_time}
+  */
+  readonly deprecationTime?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_from_instance#description AmiFromInstance#description}
   */
   readonly description?: string;
@@ -220,7 +224,7 @@ export class AmiFromInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ami_from_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -228,6 +232,7 @@ export class AmiFromInstance extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._deprecationTime = config.deprecationTime;
     this._description = config.description;
     this._name = config.name;
     this._snapshotWithoutReboot = config.snapshotWithoutReboot;
@@ -256,6 +261,22 @@ export class AmiFromInstance extends cdktf.TerraformResource {
   // boot_mode - computed: true, optional: false, required: false
   public get bootMode() {
     return this.getStringAttribute('boot_mode');
+  }
+
+  // deprecation_time - computed: false, optional: true, required: false
+  private _deprecationTime?: string; 
+  public get deprecationTime() {
+    return this.getStringAttribute('deprecation_time');
+  }
+  public set deprecationTime(value: string) {
+    this._deprecationTime = value;
+  }
+  public resetDeprecationTime() {
+    this._deprecationTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deprecationTimeInput() {
+    return this._deprecationTime;
   }
 
   // description - computed: false, optional: true, required: false
@@ -494,6 +515,7 @@ export class AmiFromInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deprecation_time: cdktf.stringToTerraform(this._deprecationTime),
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       snapshot_without_reboot: cdktf.booleanToTerraform(this._snapshotWithoutReboot),

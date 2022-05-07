@@ -39,7 +39,7 @@ export class DataAwsEksNodeGroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_eks_node_groups',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

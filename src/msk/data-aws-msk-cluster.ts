@@ -43,7 +43,7 @@ export class DataAwsMskCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_msk_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -67,6 +67,21 @@ export class DataAwsMskCluster extends cdktf.TerraformDataSource {
   // bootstrap_brokers - computed: true, optional: false, required: false
   public get bootstrapBrokers() {
     return this.getStringAttribute('bootstrap_brokers');
+  }
+
+  // bootstrap_brokers_public_sasl_iam - computed: true, optional: false, required: false
+  public get bootstrapBrokersPublicSaslIam() {
+    return this.getStringAttribute('bootstrap_brokers_public_sasl_iam');
+  }
+
+  // bootstrap_brokers_public_sasl_scram - computed: true, optional: false, required: false
+  public get bootstrapBrokersPublicSaslScram() {
+    return this.getStringAttribute('bootstrap_brokers_public_sasl_scram');
+  }
+
+  // bootstrap_brokers_public_tls - computed: true, optional: false, required: false
+  public get bootstrapBrokersPublicTls() {
+    return this.getStringAttribute('bootstrap_brokers_public_tls');
   }
 
   // bootstrap_brokers_sasl_iam - computed: true, optional: false, required: false

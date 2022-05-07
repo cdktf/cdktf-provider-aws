@@ -67,7 +67,7 @@ export class DatasyncLocationFsxWindowsFileSystem extends cdktf.TerraformResourc
       terraformResourceType: 'aws_datasync_location_fsx_windows_file_system',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

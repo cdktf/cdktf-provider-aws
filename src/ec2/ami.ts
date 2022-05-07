@@ -16,6 +16,10 @@ export interface AmiConfig extends cdktf.TerraformMetaArguments {
   */
   readonly bootMode?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami#deprecation_time Ami#deprecation_time}
+  */
+  readonly deprecationTime?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami#description Ami#description}
   */
   readonly description?: string;
@@ -303,7 +307,7 @@ export class Ami extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ami',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -313,6 +317,7 @@ export class Ami extends cdktf.TerraformResource {
     });
     this._architecture = config.architecture;
     this._bootMode = config.bootMode;
+    this._deprecationTime = config.deprecationTime;
     this._description = config.description;
     this._enaSupport = config.enaSupport;
     this._imageLocation = config.imageLocation;
@@ -368,6 +373,22 @@ export class Ami extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get bootModeInput() {
     return this._bootMode;
+  }
+
+  // deprecation_time - computed: false, optional: true, required: false
+  private _deprecationTime?: string; 
+  public get deprecationTime() {
+    return this.getStringAttribute('deprecation_time');
+  }
+  public set deprecationTime(value: string) {
+    this._deprecationTime = value;
+  }
+  public resetDeprecationTime() {
+    this._deprecationTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deprecationTimeInput() {
+    return this._deprecationTime;
   }
 
   // description - computed: false, optional: true, required: false
@@ -656,6 +677,7 @@ export class Ami extends cdktf.TerraformResource {
     return {
       architecture: cdktf.stringToTerraform(this._architecture),
       boot_mode: cdktf.stringToTerraform(this._bootMode),
+      deprecation_time: cdktf.stringToTerraform(this._deprecationTime),
       description: cdktf.stringToTerraform(this._description),
       ena_support: cdktf.booleanToTerraform(this._enaSupport),
       image_location: cdktf.stringToTerraform(this._imageLocation),

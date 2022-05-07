@@ -461,7 +461,7 @@ export class CloudformationStackSetInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudformation_stack_set_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

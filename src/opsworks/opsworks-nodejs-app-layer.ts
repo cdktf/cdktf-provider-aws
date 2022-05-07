@@ -344,7 +344,7 @@ export class OpsworksNodejsAppLayer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opsworks_nodejs_app_layer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -47,7 +47,7 @@ export class DataAwsVpcIpamPreviewNextCidr extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_vpc_ipam_preview_next_cidr',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

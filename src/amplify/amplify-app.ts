@@ -534,7 +534,7 @@ export class AmplifyApp extends cdktf.TerraformResource {
       terraformResourceType: 'aws_amplify_app',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -126,7 +126,7 @@ export class ConfigDeliveryChannel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_config_delivery_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -175,7 +175,7 @@ export class Route53RecoverycontrolconfigSafetyRule extends cdktf.TerraformResou
       terraformResourceType: 'aws_route53recoverycontrolconfig_safety_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
