@@ -231,7 +231,7 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ami',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -275,6 +275,11 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   // creation_date - computed: true, optional: false, required: false
   public get creationDate() {
     return this.getStringAttribute('creation_date');
+  }
+
+  // deprecation_time - computed: true, optional: false, required: false
+  public get deprecationTime() {
+    return this.getStringAttribute('deprecation_time');
   }
 
   // description - computed: true, optional: false, required: false

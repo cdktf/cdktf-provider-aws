@@ -206,7 +206,7 @@ export class Route53Record extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route53_record',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

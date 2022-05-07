@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface AmiCopyConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy#deprecation_time AmiCopy#deprecation_time}
+  */
+  readonly deprecationTime?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy#description AmiCopy#description}
   */
   readonly description?: string;
@@ -232,7 +236,7 @@ export class AmiCopy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ami_copy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -240,6 +244,7 @@ export class AmiCopy extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._deprecationTime = config.deprecationTime;
     this._description = config.description;
     this._destinationOutpostArn = config.destinationOutpostArn;
     this._encrypted = config.encrypted;
@@ -271,6 +276,22 @@ export class AmiCopy extends cdktf.TerraformResource {
   // boot_mode - computed: true, optional: false, required: false
   public get bootMode() {
     return this.getStringAttribute('boot_mode');
+  }
+
+  // deprecation_time - computed: false, optional: true, required: false
+  private _deprecationTime?: string; 
+  public get deprecationTime() {
+    return this.getStringAttribute('deprecation_time');
+  }
+  public set deprecationTime(value: string) {
+    this._deprecationTime = value;
+  }
+  public resetDeprecationTime() {
+    this._deprecationTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deprecationTimeInput() {
+    return this._deprecationTime;
   }
 
   // description - computed: false, optional: true, required: false
@@ -554,6 +575,7 @@ export class AmiCopy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deprecation_time: cdktf.stringToTerraform(this._deprecationTime),
       description: cdktf.stringToTerraform(this._description),
       destination_outpost_arn: cdktf.stringToTerraform(this._destinationOutpostArn),
       encrypted: cdktf.booleanToTerraform(this._encrypted),

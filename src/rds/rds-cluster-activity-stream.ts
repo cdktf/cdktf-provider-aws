@@ -51,7 +51,7 @@ export class RdsClusterActivityStream extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rds_cluster_activity_stream',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

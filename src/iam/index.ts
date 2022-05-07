@@ -28,6 +28,7 @@ export * from './iam-virtual-mfa-device';
 export * from './data-aws-iam-account-alias';
 export * from './data-aws-iam-group';
 export * from './data-aws-iam-instance-profile';
+export * from './data-aws-iam-instance-profiles';
 export * from './data-aws-iam-openid-connect-provider';
 export * from './data-aws-iam-policy';
 export * from './data-aws-iam-policy-document';

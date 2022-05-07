@@ -43,7 +43,7 @@ export class LightsailStaticIpAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lightsail_static_ip_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

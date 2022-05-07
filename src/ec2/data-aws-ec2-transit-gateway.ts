@@ -67,7 +67,7 @@ export class DataAwsEc2TransitGateway extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ec2_transit_gateway',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

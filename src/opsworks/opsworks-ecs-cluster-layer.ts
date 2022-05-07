@@ -344,7 +344,7 @@ export class OpsworksEcsClusterLayer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opsworks_ecs_cluster_layer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

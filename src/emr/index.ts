@@ -6,5 +6,7 @@ export * from './emr-managed-scaling-policy';
 export * from './emr-security-configuration';
 export * from './emr-studio';
 export * from './emr-studio-session-mapping';
+export * from './emrcontainers-virtual-cluster';
 export * from './data-aws-emr-release-labels';
+export * from './data-aws-emrcontainers-virtual-cluster';
 

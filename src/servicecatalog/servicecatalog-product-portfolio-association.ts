@@ -176,7 +176,7 @@ export class ServicecatalogProductPortfolioAssociation extends cdktf.TerraformRe
       terraformResourceType: 'aws_servicecatalog_product_portfolio_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

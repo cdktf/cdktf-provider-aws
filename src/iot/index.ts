@@ -13,5 +13,6 @@ export * from './iot-thing-group-membership';
 export * from './iot-thing-principal-attachment';
 export * from './iot-thing-type';
 export * from './iot-topic-rule';
+export * from './iot-topic-rule-destination';
 export * from './data-aws-iot-endpoint';
 

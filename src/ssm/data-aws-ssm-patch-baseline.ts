@@ -24,6 +24,303 @@ export interface DataAwsSsmPatchBaselineConfig extends cdktf.TerraformMetaArgume
   */
   readonly owner: string;
 }
+export interface DataAwsSsmPatchBaselineApprovalRulePatchFilter {
+}
+
+export function dataAwsSsmPatchBaselineApprovalRulePatchFilterToTerraform(struct?: DataAwsSsmPatchBaselineApprovalRulePatchFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsSsmPatchBaselineApprovalRulePatchFilter | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsSsmPatchBaselineApprovalRulePatchFilter | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // values - computed: true, optional: false, required: false
+  public get values() {
+    return this.getListAttribute('values');
+  }
+}
+
+export class DataAwsSsmPatchBaselineApprovalRulePatchFilterList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReference {
+    return new DataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsSsmPatchBaselineApprovalRule {
+}
+
+export function dataAwsSsmPatchBaselineApprovalRuleToTerraform(struct?: DataAwsSsmPatchBaselineApprovalRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsSsmPatchBaselineApprovalRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsSsmPatchBaselineApprovalRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsSsmPatchBaselineApprovalRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // approve_after_days - computed: true, optional: false, required: false
+  public get approveAfterDays() {
+    return this.getNumberAttribute('approve_after_days');
+  }
+
+  // approve_until_date - computed: true, optional: false, required: false
+  public get approveUntilDate() {
+    return this.getStringAttribute('approve_until_date');
+  }
+
+  // compliance_level - computed: true, optional: false, required: false
+  public get complianceLevel() {
+    return this.getStringAttribute('compliance_level');
+  }
+
+  // enable_non_security - computed: true, optional: false, required: false
+  public get enableNonSecurity() {
+    return this.getBooleanAttribute('enable_non_security');
+  }
+
+  // patch_filter - computed: true, optional: false, required: false
+  private _patchFilter = new DataAwsSsmPatchBaselineApprovalRulePatchFilterList(this, "patch_filter", false);
+  public get patchFilter() {
+    return this._patchFilter;
+  }
+}
+
+export class DataAwsSsmPatchBaselineApprovalRuleList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsSsmPatchBaselineApprovalRuleOutputReference {
+    return new DataAwsSsmPatchBaselineApprovalRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsSsmPatchBaselineGlobalFilter {
+}
+
+export function dataAwsSsmPatchBaselineGlobalFilterToTerraform(struct?: DataAwsSsmPatchBaselineGlobalFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsSsmPatchBaselineGlobalFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsSsmPatchBaselineGlobalFilter | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsSsmPatchBaselineGlobalFilter | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // values - computed: true, optional: false, required: false
+  public get values() {
+    return this.getListAttribute('values');
+  }
+}
+
+export class DataAwsSsmPatchBaselineGlobalFilterList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsSsmPatchBaselineGlobalFilterOutputReference {
+    return new DataAwsSsmPatchBaselineGlobalFilterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsSsmPatchBaselineSource {
+}
+
+export function dataAwsSsmPatchBaselineSourceToTerraform(struct?: DataAwsSsmPatchBaselineSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsSsmPatchBaselineSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsSsmPatchBaselineSource | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsSsmPatchBaselineSource | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // configuration - computed: true, optional: false, required: false
+  public get configuration() {
+    return this.getStringAttribute('configuration');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // products - computed: true, optional: false, required: false
+  public get products() {
+    return this.getListAttribute('products');
+  }
+}
+
+export class DataAwsSsmPatchBaselineSourceList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsSsmPatchBaselineSourceOutputReference {
+    return new DataAwsSsmPatchBaselineSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/ssm_patch_baseline aws_ssm_patch_baseline}
@@ -51,7 +348,7 @@ export class DataAwsSsmPatchBaseline extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ssm_patch_baseline',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -68,6 +365,27 @@ export class DataAwsSsmPatchBaseline extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // approval_rule - computed: true, optional: false, required: false
+  private _approvalRule = new DataAwsSsmPatchBaselineApprovalRuleList(this, "approval_rule", false);
+  public get approvalRule() {
+    return this._approvalRule;
+  }
+
+  // approved_patches - computed: true, optional: false, required: false
+  public get approvedPatches() {
+    return this.getListAttribute('approved_patches');
+  }
+
+  // approved_patches_compliance_level - computed: true, optional: false, required: false
+  public get approvedPatchesComplianceLevel() {
+    return this.getStringAttribute('approved_patches_compliance_level');
+  }
+
+  // approved_patches_enable_non_security - computed: true, optional: false, required: false
+  public get approvedPatchesEnableNonSecurity() {
+    return this.getBooleanAttribute('approved_patches_enable_non_security');
+  }
 
   // default_baseline - computed: false, optional: true, required: false
   private _defaultBaseline?: boolean | cdktf.IResolvable; 
@@ -88,6 +406,12 @@ export class DataAwsSsmPatchBaseline extends cdktf.TerraformDataSource {
   // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
+  }
+
+  // global_filter - computed: true, optional: false, required: false
+  private _globalFilter = new DataAwsSsmPatchBaselineGlobalFilterList(this, "global_filter", false);
+  public get globalFilter() {
+    return this._globalFilter;
   }
 
   // id - computed: true, optional: true, required: false
@@ -143,6 +467,22 @@ export class DataAwsSsmPatchBaseline extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get ownerInput() {
     return this._owner;
+  }
+
+  // rejected_patches - computed: true, optional: false, required: false
+  public get rejectedPatches() {
+    return this.getListAttribute('rejected_patches');
+  }
+
+  // rejected_patches_action - computed: true, optional: false, required: false
+  public get rejectedPatchesAction() {
+    return this.getStringAttribute('rejected_patches_action');
+  }
+
+  // source - computed: true, optional: false, required: false
+  private _source = new DataAwsSsmPatchBaselineSourceList(this, "source", false);
+  public get source() {
+    return this._source;
   }
 
   // =========

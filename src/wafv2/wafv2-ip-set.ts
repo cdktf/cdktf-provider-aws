@@ -63,7 +63,7 @@ export class Wafv2IpSet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_wafv2_ip_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
