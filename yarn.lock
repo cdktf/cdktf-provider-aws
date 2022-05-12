@@ -907,9 +907,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.6"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.6.tgz#4ce9da0a43a9aaaeb6010f7aa0fa199d09ce1f01"
-  integrity sha512-67RUgF9MScCUuYQ2jr4SgcVcTV4YWeGa13cLOGUivzlpMVN6DSm0p/OQz5X49GHUeY/i+AMZMxGVy9xN6sM07g==
+  version "10.1.7"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.7.tgz#d96fbeedb8d091720f4d3347c955bd42593abaa2"
+  integrity sha512-U4zMM7Iqa81hzLSfof9IW9R7kUWSMdhzV2JS8lXGISRFXljZrd4qwzYxhSO/VMB+CS24Tt0/YYLyNxET+6/3Mg==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -1472,9 +1472,9 @@ flatted@^3.2.5:
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
 
 foreach@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
-  integrity sha1-C+4AUBiusmDQo6865ljdATbsG5k=
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/foreach/-/foreach-2.0.6.tgz#87bcc8a1a0e74000ff2bf9802110708cfb02eb6e"
+  integrity sha512-k6GAGDyqLe9JaebCsFCoudPPWfihKu8pylYXRlqP1J7ms39iPoTtk2fviNglIeQEwdh0bQeKJ01ZPyuyQvKzwg==
 
 form-data@^3.0.0:
   version "3.0.1"
@@ -1961,9 +1961,9 @@ interpret@^1.0.0:
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
 ip@^1.1.5:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.7.tgz#4f6195d7bdb30435aac35301e7b993c6c8218c0d"
-  integrity sha512-SLm2ERgmBGag79RfrIknk+40ZOJCgUBpCQTl3WE2YER21VR0W3Vt/OAXXaYLSU0AIcBqWnytoTwk2ZcTbxH0xg==
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.8.tgz#ae05948f6b075435ed3307acce04629da8cdbf48"
+  integrity sha512-PuExPYUiu6qMBQb4l06ecm6T6ujzhmh+MeJcW9wa89PoAz5pvd4zPgN5WJV104mb6S2T1AwNIAaB70JNrLQWhg==
 
 is-arguments@^1.0.4, is-arguments@^1.1.0:
   version "1.1.1"
@@ -2299,9 +2299,9 @@ jsii-rosetta@^1.55.1, jsii-rosetta@^1.58.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.520:
-  version "0.1.555"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.555.tgz#f821f6d98b1b2f497b4523191b5c3d37fe5185cf"
-  integrity sha512-VrEphwiJX+jCgaZVExWWqsSW+qzS9VIJUhemym5r+y/QjmwGlq5DND6P4n+cHbpr0BjhDKZuaFAhcRHjbp9l4w==
+  version "0.1.556"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.556.tgz#d1eb1159ecdc625c233371266ebf1f11bf28cb4a"
+  integrity sha512-5JA4iwr3UT1S8FUdqrUUTm8I/ZOe5REp6gl2ewMOwRDd4v8AKZlO0qnpzpduwlaDhVT4jT+nqQOwNduO3TfxdA==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.58.0"
@@ -2564,9 +2564,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
-  version "7.9.0"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.9.0.tgz#29c2a989b6c10f32ceccc66ff44059e1490af3e1"
-  integrity sha512-lkcNMUKqdJk96TuIXUidxaPuEg5sJo/+ZyVE2BDFnuZGzwXem7d8582eG8vbu4todLfT14snP6iHriCHXXi5Rw==
+  version "7.10.1"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.10.1.tgz#db577f42a94c168f676b638d15da8fb073448cab"
+  integrity sha512-BQuhQxPuRl79J5zSXRP+uNzPOyZw2oFI9JLRQ80XswSvg21KMKNtQza9eF42rfI/3Z40RvzBdXgziEkudzjo8A==
 
 make-dir@^3.0.0:
   version "3.1.0"
@@ -3260,10 +3260,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.56.3:
-  version "0.56.3"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.56.3.tgz#3ce01d2d905a3a64e814ad0f922d2ddf101f0379"
-  integrity sha512-XNqD1mYN32gUZ8THqDi8KAo/d24hphBkdj9EHDrQy9oe2mJnXvnZhle+Ql78BvfDOD9IgjaO5j/5ucTfqcjV3Q==
+projen@^0.56.4:
+  version "0.56.4"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.56.4.tgz#55fadb3a52303c6f9cd058d6c298d90dd87f5704"
+  integrity sha512-d9fApsz9HRYjzyulrd9S3W1bUW/c4HHuF52n9knTCAAnTAMRYh67l0qTOaanSXQU/RRBQvYLpjWazjtQH7YLcQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -4347,9 +4347,9 @@ yargs@^16.0.0, yargs@^16.2.0:
     yargs-parser "^20.2.2"
 
 yargs@^17.4:
-  version "17.4.1"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.4.1.tgz#ebe23284207bb75cee7c408c33e722bfb27b5284"
-  integrity sha512-WSZD9jgobAg3ZKuCQZSa3g9QOJeCCqLoLAykiWgmXnDo9EPnn4RPf5qVTtzgOx66o6/oqhcA5tHtJXpG8pMt3g==
+  version "17.5.0"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.5.0.tgz#2706c5431f8c119002a2b106fc9f58b9bb9097a3"
+  integrity sha512-3sLxVhbAB5OC8qvVRebCLWuouhwh/rswsiDYx3WGxajUk/l4G20SKfrKKFeNIHboUFt2JFgv2yfn+5cgOr/t5A==
   dependencies:
     cliui "^7.0.2"
     escalade "^3.1.1"
