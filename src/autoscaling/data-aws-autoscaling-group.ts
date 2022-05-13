@@ -113,7 +113,7 @@ export class DataAwsAutoscalingGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_autoscaling_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.13.0',
+        providerVersion: '4.14.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -146,6 +146,11 @@ export class DataAwsAutoscalingGroup extends cdktf.TerraformDataSource {
   // desired_capacity - computed: true, optional: false, required: false
   public get desiredCapacity() {
     return this.getNumberAttribute('desired_capacity');
+  }
+
+  // enabled_metrics - computed: true, optional: false, required: false
+  public get enabledMetrics() {
+    return cdktf.Fn.tolist(this.getListAttribute('enabled_metrics'));
   }
 
   // health_check_grace_period - computed: true, optional: false, required: false

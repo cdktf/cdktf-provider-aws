@@ -263,7 +263,7 @@ export class DataAwsServicecatalogLaunchPaths extends cdktf.TerraformDataSource 
       terraformResourceType: 'aws_servicecatalog_launch_paths',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.13.0',
+        providerVersion: '4.14.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

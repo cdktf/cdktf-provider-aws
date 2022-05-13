@@ -9,6 +9,7 @@ export * from './connect-queue';
 export * from './connect-quick-connect';
 export * from './connect-routing-profile';
 export * from './connect-security-profile';
+export * from './connect-user-hierarchy-group';
 export * from './connect-user-hierarchy-structure';
 export * from './data-aws-connect-bot-association';
 export * from './data-aws-connect-contact-flow';
@@ -19,4 +20,7 @@ export * from './data-aws-connect-lambda-function-association';
 export * from './data-aws-connect-prompt';
 export * from './data-aws-connect-queue';
 export * from './data-aws-connect-quick-connect';
+export * from './data-aws-connect-routing-profile';
+export * from './data-aws-connect-security-profile';
+export * from './data-aws-connect-user-hierarchy-structure';
 

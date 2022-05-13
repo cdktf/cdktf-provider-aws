@@ -158,7 +158,7 @@ export class QldbStream extends cdktf.TerraformResource {
       terraformResourceType: 'aws_qldb_stream',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.13.0',
+        providerVersion: '4.14.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
