@@ -10,7 +10,11 @@ export interface DataAwsCodestarconnectionsConnectionConfig extends cdktf.Terraf
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codestarconnections_connection#arn DataAwsCodestarconnectionsConnection#arn}
   */
-  readonly arn: string;
+  readonly arn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codestarconnections_connection#name DataAwsCodestarconnectionsConnection#name}
+  */
+  readonly name?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codestarconnections_connection#tags DataAwsCodestarconnectionsConnection#tags}
   */
@@ -36,14 +40,14 @@ export class DataAwsCodestarconnectionsConnection extends cdktf.TerraformDataSou
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataAwsCodestarconnectionsConnectionConfig
+  * @param options DataAwsCodestarconnectionsConnectionConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataAwsCodestarconnectionsConnectionConfig) {
+  public constructor(scope: Construct, id: string, config: DataAwsCodestarconnectionsConnectionConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_codestarconnections_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.13.0',
+        providerVersion: '4.14.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -52,6 +56,7 @@ export class DataAwsCodestarconnectionsConnection extends cdktf.TerraformDataSou
       lifecycle: config.lifecycle
     });
     this._arn = config.arn;
+    this._name = config.name;
     this._tags = config.tags;
   }
 
@@ -59,13 +64,16 @@ export class DataAwsCodestarconnectionsConnection extends cdktf.TerraformDataSou
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: false, optional: false, required: true
+  // arn - computed: true, optional: true, required: false
   private _arn?: string; 
   public get arn() {
     return this.getStringAttribute('arn');
   }
   public set arn(value: string) {
     this._arn = value;
+  }
+  public resetArn() {
+    this._arn = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get arnInput() {
@@ -87,9 +95,20 @@ export class DataAwsCodestarconnectionsConnection extends cdktf.TerraformDataSou
     return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
   }
 
   // provider_type - computed: true, optional: false, required: false
@@ -120,6 +139,7 @@ export class DataAwsCodestarconnectionsConnection extends cdktf.TerraformDataSou
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       arn: cdktf.stringToTerraform(this._arn),
+      name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }

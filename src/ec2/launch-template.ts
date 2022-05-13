@@ -140,6 +140,12 @@ export interface LaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   */
   readonly instanceMarketOptions?: LaunchTemplateInstanceMarketOptions;
   /**
+  * instance_requirements block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#instance_requirements LaunchTemplate#instance_requirements}
+  */
+  readonly instanceRequirements?: LaunchTemplateInstanceRequirements;
+  /**
   * license_specification block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#license_specification LaunchTemplate#license_specification}
@@ -1384,6 +1390,1351 @@ export class LaunchTemplateInstanceMarketOptionsOutputReference extends cdktf.Co
     return this._spotOptions.internalValue;
   }
 }
+export interface LaunchTemplateInstanceRequirementsAcceleratorCount {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#max LaunchTemplate#max}
+  */
+  readonly max?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#min LaunchTemplate#min}
+  */
+  readonly min?: number;
+}
+
+export function launchTemplateInstanceRequirementsAcceleratorCountToTerraform(struct?: LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference | LaunchTemplateInstanceRequirementsAcceleratorCount): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: cdktf.numberToTerraform(struct!.max),
+    min: cdktf.numberToTerraform(struct!.min),
+  }
+}
+
+export class LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LaunchTemplateInstanceRequirementsAcceleratorCount | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateInstanceRequirementsAcceleratorCount | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._max = undefined;
+      this._min = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._max = value.max;
+      this._min = value.min;
+    }
+  }
+
+  // max - computed: false, optional: true, required: false
+  private _max?: number; 
+  public get max() {
+    return this.getNumberAttribute('max');
+  }
+  public set max(value: number) {
+    this._max = value;
+  }
+  public resetMax() {
+    this._max = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: true, required: false
+  private _min?: number; 
+  public get min() {
+    return this.getNumberAttribute('min');
+  }
+  public set min(value: number) {
+    this._min = value;
+  }
+  public resetMin() {
+    this._min = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+}
+export interface LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#max LaunchTemplate#max}
+  */
+  readonly max?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#min LaunchTemplate#min}
+  */
+  readonly min?: number;
+}
+
+export function launchTemplateInstanceRequirementsAcceleratorTotalMemoryMibToTerraform(struct?: LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference | LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: cdktf.numberToTerraform(struct!.max),
+    min: cdktf.numberToTerraform(struct!.min),
+  }
+}
+
+export class LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._max = undefined;
+      this._min = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._max = value.max;
+      this._min = value.min;
+    }
+  }
+
+  // max - computed: false, optional: true, required: false
+  private _max?: number; 
+  public get max() {
+    return this.getNumberAttribute('max');
+  }
+  public set max(value: number) {
+    this._max = value;
+  }
+  public resetMax() {
+    this._max = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: true, required: false
+  private _min?: number; 
+  public get min() {
+    return this.getNumberAttribute('min');
+  }
+  public set min(value: number) {
+    this._min = value;
+  }
+  public resetMin() {
+    this._min = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+}
+export interface LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#max LaunchTemplate#max}
+  */
+  readonly max?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#min LaunchTemplate#min}
+  */
+  readonly min?: number;
+}
+
+export function launchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsToTerraform(struct?: LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference | LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: cdktf.numberToTerraform(struct!.max),
+    min: cdktf.numberToTerraform(struct!.min),
+  }
+}
+
+export class LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._max = undefined;
+      this._min = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._max = value.max;
+      this._min = value.min;
+    }
+  }
+
+  // max - computed: false, optional: true, required: false
+  private _max?: number; 
+  public get max() {
+    return this.getNumberAttribute('max');
+  }
+  public set max(value: number) {
+    this._max = value;
+  }
+  public resetMax() {
+    this._max = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: true, required: false
+  private _min?: number; 
+  public get min() {
+    return this.getNumberAttribute('min');
+  }
+  public set min(value: number) {
+    this._min = value;
+  }
+  public resetMin() {
+    this._min = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+}
+export interface LaunchTemplateInstanceRequirementsMemoryGibPerVcpu {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#max LaunchTemplate#max}
+  */
+  readonly max?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#min LaunchTemplate#min}
+  */
+  readonly min?: number;
+}
+
+export function launchTemplateInstanceRequirementsMemoryGibPerVcpuToTerraform(struct?: LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference | LaunchTemplateInstanceRequirementsMemoryGibPerVcpu): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: cdktf.numberToTerraform(struct!.max),
+    min: cdktf.numberToTerraform(struct!.min),
+  }
+}
+
+export class LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LaunchTemplateInstanceRequirementsMemoryGibPerVcpu | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateInstanceRequirementsMemoryGibPerVcpu | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._max = undefined;
+      this._min = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._max = value.max;
+      this._min = value.min;
+    }
+  }
+
+  // max - computed: false, optional: true, required: false
+  private _max?: number; 
+  public get max() {
+    return this.getNumberAttribute('max');
+  }
+  public set max(value: number) {
+    this._max = value;
+  }
+  public resetMax() {
+    this._max = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: true, required: false
+  private _min?: number; 
+  public get min() {
+    return this.getNumberAttribute('min');
+  }
+  public set min(value: number) {
+    this._min = value;
+  }
+  public resetMin() {
+    this._min = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+}
+export interface LaunchTemplateInstanceRequirementsMemoryMib {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#max LaunchTemplate#max}
+  */
+  readonly max?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#min LaunchTemplate#min}
+  */
+  readonly min: number;
+}
+
+export function launchTemplateInstanceRequirementsMemoryMibToTerraform(struct?: LaunchTemplateInstanceRequirementsMemoryMibOutputReference | LaunchTemplateInstanceRequirementsMemoryMib): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: cdktf.numberToTerraform(struct!.max),
+    min: cdktf.numberToTerraform(struct!.min),
+  }
+}
+
+export class LaunchTemplateInstanceRequirementsMemoryMibOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LaunchTemplateInstanceRequirementsMemoryMib | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateInstanceRequirementsMemoryMib | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._max = undefined;
+      this._min = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._max = value.max;
+      this._min = value.min;
+    }
+  }
+
+  // max - computed: false, optional: true, required: false
+  private _max?: number; 
+  public get max() {
+    return this.getNumberAttribute('max');
+  }
+  public set max(value: number) {
+    this._max = value;
+  }
+  public resetMax() {
+    this._max = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: false, required: true
+  private _min?: number; 
+  public get min() {
+    return this.getNumberAttribute('min');
+  }
+  public set min(value: number) {
+    this._min = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+}
+export interface LaunchTemplateInstanceRequirementsNetworkInterfaceCount {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#max LaunchTemplate#max}
+  */
+  readonly max?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#min LaunchTemplate#min}
+  */
+  readonly min?: number;
+}
+
+export function launchTemplateInstanceRequirementsNetworkInterfaceCountToTerraform(struct?: LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference | LaunchTemplateInstanceRequirementsNetworkInterfaceCount): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: cdktf.numberToTerraform(struct!.max),
+    min: cdktf.numberToTerraform(struct!.min),
+  }
+}
+
+export class LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LaunchTemplateInstanceRequirementsNetworkInterfaceCount | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateInstanceRequirementsNetworkInterfaceCount | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._max = undefined;
+      this._min = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._max = value.max;
+      this._min = value.min;
+    }
+  }
+
+  // max - computed: false, optional: true, required: false
+  private _max?: number; 
+  public get max() {
+    return this.getNumberAttribute('max');
+  }
+  public set max(value: number) {
+    this._max = value;
+  }
+  public resetMax() {
+    this._max = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: true, required: false
+  private _min?: number; 
+  public get min() {
+    return this.getNumberAttribute('min');
+  }
+  public set min(value: number) {
+    this._min = value;
+  }
+  public resetMin() {
+    this._min = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+}
+export interface LaunchTemplateInstanceRequirementsTotalLocalStorageGb {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#max LaunchTemplate#max}
+  */
+  readonly max?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#min LaunchTemplate#min}
+  */
+  readonly min?: number;
+}
+
+export function launchTemplateInstanceRequirementsTotalLocalStorageGbToTerraform(struct?: LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference | LaunchTemplateInstanceRequirementsTotalLocalStorageGb): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: cdktf.numberToTerraform(struct!.max),
+    min: cdktf.numberToTerraform(struct!.min),
+  }
+}
+
+export class LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LaunchTemplateInstanceRequirementsTotalLocalStorageGb | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateInstanceRequirementsTotalLocalStorageGb | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._max = undefined;
+      this._min = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._max = value.max;
+      this._min = value.min;
+    }
+  }
+
+  // max - computed: false, optional: true, required: false
+  private _max?: number; 
+  public get max() {
+    return this.getNumberAttribute('max');
+  }
+  public set max(value: number) {
+    this._max = value;
+  }
+  public resetMax() {
+    this._max = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: true, required: false
+  private _min?: number; 
+  public get min() {
+    return this.getNumberAttribute('min');
+  }
+  public set min(value: number) {
+    this._min = value;
+  }
+  public resetMin() {
+    this._min = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+}
+export interface LaunchTemplateInstanceRequirementsVcpuCount {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#max LaunchTemplate#max}
+  */
+  readonly max?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#min LaunchTemplate#min}
+  */
+  readonly min: number;
+}
+
+export function launchTemplateInstanceRequirementsVcpuCountToTerraform(struct?: LaunchTemplateInstanceRequirementsVcpuCountOutputReference | LaunchTemplateInstanceRequirementsVcpuCount): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: cdktf.numberToTerraform(struct!.max),
+    min: cdktf.numberToTerraform(struct!.min),
+  }
+}
+
+export class LaunchTemplateInstanceRequirementsVcpuCountOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LaunchTemplateInstanceRequirementsVcpuCount | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateInstanceRequirementsVcpuCount | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._max = undefined;
+      this._min = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._max = value.max;
+      this._min = value.min;
+    }
+  }
+
+  // max - computed: false, optional: true, required: false
+  private _max?: number; 
+  public get max() {
+    return this.getNumberAttribute('max');
+  }
+  public set max(value: number) {
+    this._max = value;
+  }
+  public resetMax() {
+    this._max = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: false, required: true
+  private _min?: number; 
+  public get min() {
+    return this.getNumberAttribute('min');
+  }
+  public set min(value: number) {
+    this._min = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+}
+export interface LaunchTemplateInstanceRequirements {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#accelerator_manufacturers LaunchTemplate#accelerator_manufacturers}
+  */
+  readonly acceleratorManufacturers?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#accelerator_names LaunchTemplate#accelerator_names}
+  */
+  readonly acceleratorNames?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#accelerator_types LaunchTemplate#accelerator_types}
+  */
+  readonly acceleratorTypes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#bare_metal LaunchTemplate#bare_metal}
+  */
+  readonly bareMetal?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#burstable_performance LaunchTemplate#burstable_performance}
+  */
+  readonly burstablePerformance?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#cpu_manufacturers LaunchTemplate#cpu_manufacturers}
+  */
+  readonly cpuManufacturers?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#excluded_instance_types LaunchTemplate#excluded_instance_types}
+  */
+  readonly excludedInstanceTypes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#instance_generations LaunchTemplate#instance_generations}
+  */
+  readonly instanceGenerations?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#local_storage LaunchTemplate#local_storage}
+  */
+  readonly localStorage?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#local_storage_types LaunchTemplate#local_storage_types}
+  */
+  readonly localStorageTypes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#on_demand_max_price_percentage_over_lowest_price LaunchTemplate#on_demand_max_price_percentage_over_lowest_price}
+  */
+  readonly onDemandMaxPricePercentageOverLowestPrice?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#require_hibernate_support LaunchTemplate#require_hibernate_support}
+  */
+  readonly requireHibernateSupport?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#spot_max_price_percentage_over_lowest_price LaunchTemplate#spot_max_price_percentage_over_lowest_price}
+  */
+  readonly spotMaxPricePercentageOverLowestPrice?: number;
+  /**
+  * accelerator_count block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#accelerator_count LaunchTemplate#accelerator_count}
+  */
+  readonly acceleratorCount?: LaunchTemplateInstanceRequirementsAcceleratorCount;
+  /**
+  * accelerator_total_memory_mib block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#accelerator_total_memory_mib LaunchTemplate#accelerator_total_memory_mib}
+  */
+  readonly acceleratorTotalMemoryMib?: LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib;
+  /**
+  * baseline_ebs_bandwidth_mbps block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#baseline_ebs_bandwidth_mbps LaunchTemplate#baseline_ebs_bandwidth_mbps}
+  */
+  readonly baselineEbsBandwidthMbps?: LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps;
+  /**
+  * memory_gib_per_vcpu block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#memory_gib_per_vcpu LaunchTemplate#memory_gib_per_vcpu}
+  */
+  readonly memoryGibPerVcpu?: LaunchTemplateInstanceRequirementsMemoryGibPerVcpu;
+  /**
+  * memory_mib block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#memory_mib LaunchTemplate#memory_mib}
+  */
+  readonly memoryMib: LaunchTemplateInstanceRequirementsMemoryMib;
+  /**
+  * network_interface_count block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#network_interface_count LaunchTemplate#network_interface_count}
+  */
+  readonly networkInterfaceCount?: LaunchTemplateInstanceRequirementsNetworkInterfaceCount;
+  /**
+  * total_local_storage_gb block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#total_local_storage_gb LaunchTemplate#total_local_storage_gb}
+  */
+  readonly totalLocalStorageGb?: LaunchTemplateInstanceRequirementsTotalLocalStorageGb;
+  /**
+  * vcpu_count block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#vcpu_count LaunchTemplate#vcpu_count}
+  */
+  readonly vcpuCount: LaunchTemplateInstanceRequirementsVcpuCount;
+}
+
+export function launchTemplateInstanceRequirementsToTerraform(struct?: LaunchTemplateInstanceRequirementsOutputReference | LaunchTemplateInstanceRequirements): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    accelerator_manufacturers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.acceleratorManufacturers),
+    accelerator_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.acceleratorNames),
+    accelerator_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.acceleratorTypes),
+    bare_metal: cdktf.stringToTerraform(struct!.bareMetal),
+    burstable_performance: cdktf.stringToTerraform(struct!.burstablePerformance),
+    cpu_manufacturers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cpuManufacturers),
+    excluded_instance_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedInstanceTypes),
+    instance_generations: cdktf.listMapper(cdktf.stringToTerraform)(struct!.instanceGenerations),
+    local_storage: cdktf.stringToTerraform(struct!.localStorage),
+    local_storage_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.localStorageTypes),
+    on_demand_max_price_percentage_over_lowest_price: cdktf.numberToTerraform(struct!.onDemandMaxPricePercentageOverLowestPrice),
+    require_hibernate_support: cdktf.booleanToTerraform(struct!.requireHibernateSupport),
+    spot_max_price_percentage_over_lowest_price: cdktf.numberToTerraform(struct!.spotMaxPricePercentageOverLowestPrice),
+    accelerator_count: launchTemplateInstanceRequirementsAcceleratorCountToTerraform(struct!.acceleratorCount),
+    accelerator_total_memory_mib: launchTemplateInstanceRequirementsAcceleratorTotalMemoryMibToTerraform(struct!.acceleratorTotalMemoryMib),
+    baseline_ebs_bandwidth_mbps: launchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsToTerraform(struct!.baselineEbsBandwidthMbps),
+    memory_gib_per_vcpu: launchTemplateInstanceRequirementsMemoryGibPerVcpuToTerraform(struct!.memoryGibPerVcpu),
+    memory_mib: launchTemplateInstanceRequirementsMemoryMibToTerraform(struct!.memoryMib),
+    network_interface_count: launchTemplateInstanceRequirementsNetworkInterfaceCountToTerraform(struct!.networkInterfaceCount),
+    total_local_storage_gb: launchTemplateInstanceRequirementsTotalLocalStorageGbToTerraform(struct!.totalLocalStorageGb),
+    vcpu_count: launchTemplateInstanceRequirementsVcpuCountToTerraform(struct!.vcpuCount),
+  }
+}
+
+export class LaunchTemplateInstanceRequirementsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LaunchTemplateInstanceRequirements | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._acceleratorManufacturers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorManufacturers = this._acceleratorManufacturers;
+    }
+    if (this._acceleratorNames !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorNames = this._acceleratorNames;
+    }
+    if (this._acceleratorTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorTypes = this._acceleratorTypes;
+    }
+    if (this._bareMetal !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bareMetal = this._bareMetal;
+    }
+    if (this._burstablePerformance !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.burstablePerformance = this._burstablePerformance;
+    }
+    if (this._cpuManufacturers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cpuManufacturers = this._cpuManufacturers;
+    }
+    if (this._excludedInstanceTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.excludedInstanceTypes = this._excludedInstanceTypes;
+    }
+    if (this._instanceGenerations !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceGenerations = this._instanceGenerations;
+    }
+    if (this._localStorage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.localStorage = this._localStorage;
+    }
+    if (this._localStorageTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.localStorageTypes = this._localStorageTypes;
+    }
+    if (this._onDemandMaxPricePercentageOverLowestPrice !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.onDemandMaxPricePercentageOverLowestPrice = this._onDemandMaxPricePercentageOverLowestPrice;
+    }
+    if (this._requireHibernateSupport !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requireHibernateSupport = this._requireHibernateSupport;
+    }
+    if (this._spotMaxPricePercentageOverLowestPrice !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spotMaxPricePercentageOverLowestPrice = this._spotMaxPricePercentageOverLowestPrice;
+    }
+    if (this._acceleratorCount?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorCount = this._acceleratorCount?.internalValue;
+    }
+    if (this._acceleratorTotalMemoryMib?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorTotalMemoryMib = this._acceleratorTotalMemoryMib?.internalValue;
+    }
+    if (this._baselineEbsBandwidthMbps?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.baselineEbsBandwidthMbps = this._baselineEbsBandwidthMbps?.internalValue;
+    }
+    if (this._memoryGibPerVcpu?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memoryGibPerVcpu = this._memoryGibPerVcpu?.internalValue;
+    }
+    if (this._memoryMib?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memoryMib = this._memoryMib?.internalValue;
+    }
+    if (this._networkInterfaceCount?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkInterfaceCount = this._networkInterfaceCount?.internalValue;
+    }
+    if (this._totalLocalStorageGb?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.totalLocalStorageGb = this._totalLocalStorageGb?.internalValue;
+    }
+    if (this._vcpuCount?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vcpuCount = this._vcpuCount?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LaunchTemplateInstanceRequirements | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._acceleratorManufacturers = undefined;
+      this._acceleratorNames = undefined;
+      this._acceleratorTypes = undefined;
+      this._bareMetal = undefined;
+      this._burstablePerformance = undefined;
+      this._cpuManufacturers = undefined;
+      this._excludedInstanceTypes = undefined;
+      this._instanceGenerations = undefined;
+      this._localStorage = undefined;
+      this._localStorageTypes = undefined;
+      this._onDemandMaxPricePercentageOverLowestPrice = undefined;
+      this._requireHibernateSupport = undefined;
+      this._spotMaxPricePercentageOverLowestPrice = undefined;
+      this._acceleratorCount.internalValue = undefined;
+      this._acceleratorTotalMemoryMib.internalValue = undefined;
+      this._baselineEbsBandwidthMbps.internalValue = undefined;
+      this._memoryGibPerVcpu.internalValue = undefined;
+      this._memoryMib.internalValue = undefined;
+      this._networkInterfaceCount.internalValue = undefined;
+      this._totalLocalStorageGb.internalValue = undefined;
+      this._vcpuCount.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._acceleratorManufacturers = value.acceleratorManufacturers;
+      this._acceleratorNames = value.acceleratorNames;
+      this._acceleratorTypes = value.acceleratorTypes;
+      this._bareMetal = value.bareMetal;
+      this._burstablePerformance = value.burstablePerformance;
+      this._cpuManufacturers = value.cpuManufacturers;
+      this._excludedInstanceTypes = value.excludedInstanceTypes;
+      this._instanceGenerations = value.instanceGenerations;
+      this._localStorage = value.localStorage;
+      this._localStorageTypes = value.localStorageTypes;
+      this._onDemandMaxPricePercentageOverLowestPrice = value.onDemandMaxPricePercentageOverLowestPrice;
+      this._requireHibernateSupport = value.requireHibernateSupport;
+      this._spotMaxPricePercentageOverLowestPrice = value.spotMaxPricePercentageOverLowestPrice;
+      this._acceleratorCount.internalValue = value.acceleratorCount;
+      this._acceleratorTotalMemoryMib.internalValue = value.acceleratorTotalMemoryMib;
+      this._baselineEbsBandwidthMbps.internalValue = value.baselineEbsBandwidthMbps;
+      this._memoryGibPerVcpu.internalValue = value.memoryGibPerVcpu;
+      this._memoryMib.internalValue = value.memoryMib;
+      this._networkInterfaceCount.internalValue = value.networkInterfaceCount;
+      this._totalLocalStorageGb.internalValue = value.totalLocalStorageGb;
+      this._vcpuCount.internalValue = value.vcpuCount;
+    }
+  }
+
+  // accelerator_manufacturers - computed: false, optional: true, required: false
+  private _acceleratorManufacturers?: string[]; 
+  public get acceleratorManufacturers() {
+    return cdktf.Fn.tolist(this.getListAttribute('accelerator_manufacturers'));
+  }
+  public set acceleratorManufacturers(value: string[]) {
+    this._acceleratorManufacturers = value;
+  }
+  public resetAcceleratorManufacturers() {
+    this._acceleratorManufacturers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorManufacturersInput() {
+    return this._acceleratorManufacturers;
+  }
+
+  // accelerator_names - computed: false, optional: true, required: false
+  private _acceleratorNames?: string[]; 
+  public get acceleratorNames() {
+    return cdktf.Fn.tolist(this.getListAttribute('accelerator_names'));
+  }
+  public set acceleratorNames(value: string[]) {
+    this._acceleratorNames = value;
+  }
+  public resetAcceleratorNames() {
+    this._acceleratorNames = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorNamesInput() {
+    return this._acceleratorNames;
+  }
+
+  // accelerator_types - computed: false, optional: true, required: false
+  private _acceleratorTypes?: string[]; 
+  public get acceleratorTypes() {
+    return cdktf.Fn.tolist(this.getListAttribute('accelerator_types'));
+  }
+  public set acceleratorTypes(value: string[]) {
+    this._acceleratorTypes = value;
+  }
+  public resetAcceleratorTypes() {
+    this._acceleratorTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorTypesInput() {
+    return this._acceleratorTypes;
+  }
+
+  // bare_metal - computed: false, optional: true, required: false
+  private _bareMetal?: string; 
+  public get bareMetal() {
+    return this.getStringAttribute('bare_metal');
+  }
+  public set bareMetal(value: string) {
+    this._bareMetal = value;
+  }
+  public resetBareMetal() {
+    this._bareMetal = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bareMetalInput() {
+    return this._bareMetal;
+  }
+
+  // burstable_performance - computed: false, optional: true, required: false
+  private _burstablePerformance?: string; 
+  public get burstablePerformance() {
+    return this.getStringAttribute('burstable_performance');
+  }
+  public set burstablePerformance(value: string) {
+    this._burstablePerformance = value;
+  }
+  public resetBurstablePerformance() {
+    this._burstablePerformance = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get burstablePerformanceInput() {
+    return this._burstablePerformance;
+  }
+
+  // cpu_manufacturers - computed: false, optional: true, required: false
+  private _cpuManufacturers?: string[]; 
+  public get cpuManufacturers() {
+    return cdktf.Fn.tolist(this.getListAttribute('cpu_manufacturers'));
+  }
+  public set cpuManufacturers(value: string[]) {
+    this._cpuManufacturers = value;
+  }
+  public resetCpuManufacturers() {
+    this._cpuManufacturers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cpuManufacturersInput() {
+    return this._cpuManufacturers;
+  }
+
+  // excluded_instance_types - computed: false, optional: true, required: false
+  private _excludedInstanceTypes?: string[]; 
+  public get excludedInstanceTypes() {
+    return cdktf.Fn.tolist(this.getListAttribute('excluded_instance_types'));
+  }
+  public set excludedInstanceTypes(value: string[]) {
+    this._excludedInstanceTypes = value;
+  }
+  public resetExcludedInstanceTypes() {
+    this._excludedInstanceTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludedInstanceTypesInput() {
+    return this._excludedInstanceTypes;
+  }
+
+  // instance_generations - computed: false, optional: true, required: false
+  private _instanceGenerations?: string[]; 
+  public get instanceGenerations() {
+    return cdktf.Fn.tolist(this.getListAttribute('instance_generations'));
+  }
+  public set instanceGenerations(value: string[]) {
+    this._instanceGenerations = value;
+  }
+  public resetInstanceGenerations() {
+    this._instanceGenerations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceGenerationsInput() {
+    return this._instanceGenerations;
+  }
+
+  // local_storage - computed: false, optional: true, required: false
+  private _localStorage?: string; 
+  public get localStorage() {
+    return this.getStringAttribute('local_storage');
+  }
+  public set localStorage(value: string) {
+    this._localStorage = value;
+  }
+  public resetLocalStorage() {
+    this._localStorage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localStorageInput() {
+    return this._localStorage;
+  }
+
+  // local_storage_types - computed: false, optional: true, required: false
+  private _localStorageTypes?: string[]; 
+  public get localStorageTypes() {
+    return cdktf.Fn.tolist(this.getListAttribute('local_storage_types'));
+  }
+  public set localStorageTypes(value: string[]) {
+    this._localStorageTypes = value;
+  }
+  public resetLocalStorageTypes() {
+    this._localStorageTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localStorageTypesInput() {
+    return this._localStorageTypes;
+  }
+
+  // on_demand_max_price_percentage_over_lowest_price - computed: false, optional: true, required: false
+  private _onDemandMaxPricePercentageOverLowestPrice?: number; 
+  public get onDemandMaxPricePercentageOverLowestPrice() {
+    return this.getNumberAttribute('on_demand_max_price_percentage_over_lowest_price');
+  }
+  public set onDemandMaxPricePercentageOverLowestPrice(value: number) {
+    this._onDemandMaxPricePercentageOverLowestPrice = value;
+  }
+  public resetOnDemandMaxPricePercentageOverLowestPrice() {
+    this._onDemandMaxPricePercentageOverLowestPrice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onDemandMaxPricePercentageOverLowestPriceInput() {
+    return this._onDemandMaxPricePercentageOverLowestPrice;
+  }
+
+  // require_hibernate_support - computed: false, optional: true, required: false
+  private _requireHibernateSupport?: boolean | cdktf.IResolvable; 
+  public get requireHibernateSupport() {
+    return this.getBooleanAttribute('require_hibernate_support');
+  }
+  public set requireHibernateSupport(value: boolean | cdktf.IResolvable) {
+    this._requireHibernateSupport = value;
+  }
+  public resetRequireHibernateSupport() {
+    this._requireHibernateSupport = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requireHibernateSupportInput() {
+    return this._requireHibernateSupport;
+  }
+
+  // spot_max_price_percentage_over_lowest_price - computed: false, optional: true, required: false
+  private _spotMaxPricePercentageOverLowestPrice?: number; 
+  public get spotMaxPricePercentageOverLowestPrice() {
+    return this.getNumberAttribute('spot_max_price_percentage_over_lowest_price');
+  }
+  public set spotMaxPricePercentageOverLowestPrice(value: number) {
+    this._spotMaxPricePercentageOverLowestPrice = value;
+  }
+  public resetSpotMaxPricePercentageOverLowestPrice() {
+    this._spotMaxPricePercentageOverLowestPrice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spotMaxPricePercentageOverLowestPriceInput() {
+    return this._spotMaxPricePercentageOverLowestPrice;
+  }
+
+  // accelerator_count - computed: false, optional: true, required: false
+  private _acceleratorCount = new LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference(this, "accelerator_count");
+  public get acceleratorCount() {
+    return this._acceleratorCount;
+  }
+  public putAcceleratorCount(value: LaunchTemplateInstanceRequirementsAcceleratorCount) {
+    this._acceleratorCount.internalValue = value;
+  }
+  public resetAcceleratorCount() {
+    this._acceleratorCount.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorCountInput() {
+    return this._acceleratorCount.internalValue;
+  }
+
+  // accelerator_total_memory_mib - computed: false, optional: true, required: false
+  private _acceleratorTotalMemoryMib = new LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference(this, "accelerator_total_memory_mib");
+  public get acceleratorTotalMemoryMib() {
+    return this._acceleratorTotalMemoryMib;
+  }
+  public putAcceleratorTotalMemoryMib(value: LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib) {
+    this._acceleratorTotalMemoryMib.internalValue = value;
+  }
+  public resetAcceleratorTotalMemoryMib() {
+    this._acceleratorTotalMemoryMib.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorTotalMemoryMibInput() {
+    return this._acceleratorTotalMemoryMib.internalValue;
+  }
+
+  // baseline_ebs_bandwidth_mbps - computed: false, optional: true, required: false
+  private _baselineEbsBandwidthMbps = new LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference(this, "baseline_ebs_bandwidth_mbps");
+  public get baselineEbsBandwidthMbps() {
+    return this._baselineEbsBandwidthMbps;
+  }
+  public putBaselineEbsBandwidthMbps(value: LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps) {
+    this._baselineEbsBandwidthMbps.internalValue = value;
+  }
+  public resetBaselineEbsBandwidthMbps() {
+    this._baselineEbsBandwidthMbps.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get baselineEbsBandwidthMbpsInput() {
+    return this._baselineEbsBandwidthMbps.internalValue;
+  }
+
+  // memory_gib_per_vcpu - computed: false, optional: true, required: false
+  private _memoryGibPerVcpu = new LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference(this, "memory_gib_per_vcpu");
+  public get memoryGibPerVcpu() {
+    return this._memoryGibPerVcpu;
+  }
+  public putMemoryGibPerVcpu(value: LaunchTemplateInstanceRequirementsMemoryGibPerVcpu) {
+    this._memoryGibPerVcpu.internalValue = value;
+  }
+  public resetMemoryGibPerVcpu() {
+    this._memoryGibPerVcpu.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memoryGibPerVcpuInput() {
+    return this._memoryGibPerVcpu.internalValue;
+  }
+
+  // memory_mib - computed: false, optional: false, required: true
+  private _memoryMib = new LaunchTemplateInstanceRequirementsMemoryMibOutputReference(this, "memory_mib");
+  public get memoryMib() {
+    return this._memoryMib;
+  }
+  public putMemoryMib(value: LaunchTemplateInstanceRequirementsMemoryMib) {
+    this._memoryMib.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memoryMibInput() {
+    return this._memoryMib.internalValue;
+  }
+
+  // network_interface_count - computed: false, optional: true, required: false
+  private _networkInterfaceCount = new LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference(this, "network_interface_count");
+  public get networkInterfaceCount() {
+    return this._networkInterfaceCount;
+  }
+  public putNetworkInterfaceCount(value: LaunchTemplateInstanceRequirementsNetworkInterfaceCount) {
+    this._networkInterfaceCount.internalValue = value;
+  }
+  public resetNetworkInterfaceCount() {
+    this._networkInterfaceCount.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInterfaceCountInput() {
+    return this._networkInterfaceCount.internalValue;
+  }
+
+  // total_local_storage_gb - computed: false, optional: true, required: false
+  private _totalLocalStorageGb = new LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference(this, "total_local_storage_gb");
+  public get totalLocalStorageGb() {
+    return this._totalLocalStorageGb;
+  }
+  public putTotalLocalStorageGb(value: LaunchTemplateInstanceRequirementsTotalLocalStorageGb) {
+    this._totalLocalStorageGb.internalValue = value;
+  }
+  public resetTotalLocalStorageGb() {
+    this._totalLocalStorageGb.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get totalLocalStorageGbInput() {
+    return this._totalLocalStorageGb.internalValue;
+  }
+
+  // vcpu_count - computed: false, optional: false, required: true
+  private _vcpuCount = new LaunchTemplateInstanceRequirementsVcpuCountOutputReference(this, "vcpu_count");
+  public get vcpuCount() {
+    return this._vcpuCount;
+  }
+  public putVcpuCount(value: LaunchTemplateInstanceRequirementsVcpuCount) {
+    this._vcpuCount.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vcpuCountInput() {
+    return this._vcpuCount.internalValue;
+  }
+}
 export interface LaunchTemplateLicenseSpecification {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template#license_configuration_arn LaunchTemplate#license_configuration_arn}
@@ -2233,7 +3584,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_launch_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.13.0',
+        providerVersion: '4.14.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2269,6 +3620,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
     this._hibernationOptions.internalValue = config.hibernationOptions;
     this._iamInstanceProfile.internalValue = config.iamInstanceProfile;
     this._instanceMarketOptions.internalValue = config.instanceMarketOptions;
+    this._instanceRequirements.internalValue = config.instanceRequirements;
     this._licenseSpecification = config.licenseSpecification;
     this._maintenanceOptions.internalValue = config.maintenanceOptions;
     this._metadataOptions.internalValue = config.metadataOptions;
@@ -2748,6 +4100,22 @@ export class LaunchTemplate extends cdktf.TerraformResource {
     return this._instanceMarketOptions.internalValue;
   }
 
+  // instance_requirements - computed: false, optional: true, required: false
+  private _instanceRequirements = new LaunchTemplateInstanceRequirementsOutputReference(this, "instance_requirements");
+  public get instanceRequirements() {
+    return this._instanceRequirements;
+  }
+  public putInstanceRequirements(value: LaunchTemplateInstanceRequirements) {
+    this._instanceRequirements.internalValue = value;
+  }
+  public resetInstanceRequirements() {
+    this._instanceRequirements.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceRequirementsInput() {
+    return this._instanceRequirements.internalValue;
+  }
+
   // license_specification - computed: false, optional: true, required: false
   private _licenseSpecification?: LaunchTemplateLicenseSpecification[] | cdktf.IResolvable; 
   public get licenseSpecification() {
@@ -2913,6 +4281,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
       hibernation_options: launchTemplateHibernationOptionsToTerraform(this._hibernationOptions.internalValue),
       iam_instance_profile: launchTemplateIamInstanceProfileToTerraform(this._iamInstanceProfile.internalValue),
       instance_market_options: launchTemplateInstanceMarketOptionsToTerraform(this._instanceMarketOptions.internalValue),
+      instance_requirements: launchTemplateInstanceRequirementsToTerraform(this._instanceRequirements.internalValue),
       license_specification: cdktf.listMapper(launchTemplateLicenseSpecificationToTerraform)(this._licenseSpecification),
       maintenance_options: launchTemplateMaintenanceOptionsToTerraform(this._maintenanceOptions.internalValue),
       metadata_options: launchTemplateMetadataOptionsToTerraform(this._metadataOptions.internalValue),

@@ -87,7 +87,7 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ssm_maintenance_window',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.13.0',
+        providerVersion: '4.14.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

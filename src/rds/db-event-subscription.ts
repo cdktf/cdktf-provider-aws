@@ -196,7 +196,7 @@ export class DbEventSubscription extends cdktf.TerraformResource {
       terraformResourceType: 'aws_db_event_subscription',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.13.0',
+        providerVersion: '4.14.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

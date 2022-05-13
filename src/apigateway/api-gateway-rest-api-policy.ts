@@ -43,7 +43,7 @@ export class ApiGatewayRestApiPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_api_gateway_rest_api_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.13.0',
+        providerVersion: '4.14.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
