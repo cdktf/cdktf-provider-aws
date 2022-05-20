@@ -20,6 +20,10 @@ export interface AutoscalingPolicyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly cooldown?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#enabled AutoscalingPolicy#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy#estimated_instance_warmup AutoscalingPolicy#estimated_instance_warmup}
   */
   readonly estimatedInstanceWarmup?: number;
@@ -2278,7 +2282,7 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_autoscaling_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.14.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2289,6 +2293,7 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
     this._adjustmentType = config.adjustmentType;
     this._autoscalingGroupName = config.autoscalingGroupName;
     this._cooldown = config.cooldown;
+    this._enabled = config.enabled;
     this._estimatedInstanceWarmup = config.estimatedInstanceWarmup;
     this._metricAggregationType = config.metricAggregationType;
     this._minAdjustmentMagnitude = config.minAdjustmentMagnitude;
@@ -2352,6 +2357,22 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get cooldownInput() {
     return this._cooldown;
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
   }
 
   // estimated_instance_warmup - computed: false, optional: true, required: false
@@ -2510,6 +2531,7 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
       adjustment_type: cdktf.stringToTerraform(this._adjustmentType),
       autoscaling_group_name: cdktf.stringToTerraform(this._autoscalingGroupName),
       cooldown: cdktf.numberToTerraform(this._cooldown),
+      enabled: cdktf.booleanToTerraform(this._enabled),
       estimated_instance_warmup: cdktf.numberToTerraform(this._estimatedInstanceWarmup),
       metric_aggregation_type: cdktf.stringToTerraform(this._metricAggregationType),
       min_adjustment_magnitude: cdktf.numberToTerraform(this._minAdjustmentMagnitude),

@@ -71,6 +71,7 @@ export * from './data-aws-network-interface';
 export * from './data-aws-network-interfaces';
 export * from './data-aws-networkmanager-connection';
 export * from './data-aws-networkmanager-connections';
+export * from './data-aws-networkmanager-core-network-policy-document';
 export * from './data-aws-networkmanager-device';
 export * from './data-aws-networkmanager-devices';
 export * from './data-aws-networkmanager-global-network';

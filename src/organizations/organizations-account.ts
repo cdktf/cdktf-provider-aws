@@ -12,6 +12,10 @@ export interface OrganizationsAccountConfig extends cdktf.TerraformMetaArguments
   */
   readonly closeOnDeletion?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_account#create_govcloud OrganizationsAccount#create_govcloud}
+  */
+  readonly createGovcloud?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_account#email OrganizationsAccount#email}
   */
   readonly email: string;
@@ -67,7 +71,7 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
       terraformResourceType: 'aws_organizations_account',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.14.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -76,6 +80,7 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._closeOnDeletion = config.closeOnDeletion;
+    this._createGovcloud = config.createGovcloud;
     this._email = config.email;
     this._iamUserAccessToBilling = config.iamUserAccessToBilling;
     this._name = config.name;
@@ -110,6 +115,22 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
     return this._closeOnDeletion;
   }
 
+  // create_govcloud - computed: false, optional: true, required: false
+  private _createGovcloud?: boolean | cdktf.IResolvable; 
+  public get createGovcloud() {
+    return this.getBooleanAttribute('create_govcloud');
+  }
+  public set createGovcloud(value: boolean | cdktf.IResolvable) {
+    this._createGovcloud = value;
+  }
+  public resetCreateGovcloud() {
+    this._createGovcloud = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createGovcloudInput() {
+    return this._createGovcloud;
+  }
+
   // email - computed: false, optional: false, required: true
   private _email?: string; 
   public get email() {
@@ -121,6 +142,11 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get emailInput() {
     return this._email;
+  }
+
+  // govcloud_id - computed: true, optional: false, required: false
+  public get govcloudId() {
+    return this.getStringAttribute('govcloud_id');
   }
 
   // iam_user_access_to_billing - computed: false, optional: true, required: false
@@ -243,6 +269,7 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       close_on_deletion: cdktf.booleanToTerraform(this._closeOnDeletion),
+      create_govcloud: cdktf.booleanToTerraform(this._createGovcloud),
       email: cdktf.stringToTerraform(this._email),
       iam_user_access_to_billing: cdktf.stringToTerraform(this._iamUserAccessToBilling),
       name: cdktf.stringToTerraform(this._name),

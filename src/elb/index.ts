@@ -22,6 +22,7 @@ export * from './data-aws-alb';
 export * from './data-aws-alb-listener';
 export * from './data-aws-alb-target-group';
 export * from './data-aws-lb';
+export * from './data-aws-lb-hosted-zone-id';
 export * from './data-aws-lb-listener';
 export * from './data-aws-lb-target-group';
 

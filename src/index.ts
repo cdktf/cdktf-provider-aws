@@ -17,6 +17,7 @@ export * from './grafana-role-association';
 export * from './grafana-workspace';
 export * from './grafana-workspace-saml-configuration';
 export * from './keyspaces-keyspace';
+export * from './keyspaces-table';
 export * from './location-map';
 export * from './memorydb-acl';
 export * from './memorydb-cluster';

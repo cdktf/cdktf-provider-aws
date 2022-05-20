@@ -206,6 +206,259 @@ export class MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference extend
     return this._publicAccess.internalValue;
   }
 }
+export interface MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#enabled MskCluster#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#volume_throughput MskCluster#volume_throughput}
+  */
+  readonly volumeThroughput?: number;
+}
+
+export function mskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputToTerraform(struct?: MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputOutputReference | MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    volume_throughput: cdktf.numberToTerraform(struct!.volumeThroughput),
+  }
+}
+
+export class MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._volumeThroughput !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumeThroughput = this._volumeThroughput;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._volumeThroughput = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._volumeThroughput = value.volumeThroughput;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // volume_throughput - computed: false, optional: true, required: false
+  private _volumeThroughput?: number; 
+  public get volumeThroughput() {
+    return this.getNumberAttribute('volume_throughput');
+  }
+  public set volumeThroughput(value: number) {
+    this._volumeThroughput = value;
+  }
+  public resetVolumeThroughput() {
+    this._volumeThroughput = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeThroughputInput() {
+    return this._volumeThroughput;
+  }
+}
+export interface MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#volume_size MskCluster#volume_size}
+  */
+  readonly volumeSize?: number;
+  /**
+  * provisioned_throughput block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#provisioned_throughput MskCluster#provisioned_throughput}
+  */
+  readonly provisionedThroughput?: MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput;
+}
+
+export function mskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoToTerraform(struct?: MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference | MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
+    provisioned_throughput: mskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputToTerraform(struct!.provisionedThroughput),
+  }
+}
+
+export class MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._volumeSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumeSize = this._volumeSize;
+    }
+    if (this._provisionedThroughput?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.provisionedThroughput = this._provisionedThroughput?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._volumeSize = undefined;
+      this._provisionedThroughput.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._volumeSize = value.volumeSize;
+      this._provisionedThroughput.internalValue = value.provisionedThroughput;
+    }
+  }
+
+  // volume_size - computed: false, optional: true, required: false
+  private _volumeSize?: number; 
+  public get volumeSize() {
+    return this.getNumberAttribute('volume_size');
+  }
+  public set volumeSize(value: number) {
+    this._volumeSize = value;
+  }
+  public resetVolumeSize() {
+    this._volumeSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeSizeInput() {
+    return this._volumeSize;
+  }
+
+  // provisioned_throughput - computed: false, optional: true, required: false
+  private _provisionedThroughput = new MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputOutputReference(this, "provisioned_throughput");
+  public get provisionedThroughput() {
+    return this._provisionedThroughput;
+  }
+  public putProvisionedThroughput(value: MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput) {
+    this._provisionedThroughput.internalValue = value;
+  }
+  public resetProvisionedThroughput() {
+    this._provisionedThroughput.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get provisionedThroughputInput() {
+    return this._provisionedThroughput.internalValue;
+  }
+}
+export interface MskClusterBrokerNodeGroupInfoStorageInfo {
+  /**
+  * ebs_storage_info block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#ebs_storage_info MskCluster#ebs_storage_info}
+  */
+  readonly ebsStorageInfo?: MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo;
+}
+
+export function mskClusterBrokerNodeGroupInfoStorageInfoToTerraform(struct?: MskClusterBrokerNodeGroupInfoStorageInfoOutputReference | MskClusterBrokerNodeGroupInfoStorageInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ebs_storage_info: mskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoToTerraform(struct!.ebsStorageInfo),
+  }
+}
+
+export class MskClusterBrokerNodeGroupInfoStorageInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MskClusterBrokerNodeGroupInfoStorageInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ebsStorageInfo?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ebsStorageInfo = this._ebsStorageInfo?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MskClusterBrokerNodeGroupInfoStorageInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._ebsStorageInfo.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._ebsStorageInfo.internalValue = value.ebsStorageInfo;
+    }
+  }
+
+  // ebs_storage_info - computed: false, optional: true, required: false
+  private _ebsStorageInfo = new MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference(this, "ebs_storage_info");
+  public get ebsStorageInfo() {
+    return this._ebsStorageInfo;
+  }
+  public putEbsStorageInfo(value: MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo) {
+    this._ebsStorageInfo.internalValue = value;
+  }
+  public resetEbsStorageInfo() {
+    this._ebsStorageInfo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsStorageInfoInput() {
+    return this._ebsStorageInfo.internalValue;
+  }
+}
 export interface MskClusterBrokerNodeGroupInfo {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#az_distribution MskCluster#az_distribution}
@@ -218,7 +471,7 @@ export interface MskClusterBrokerNodeGroupInfo {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#ebs_volume_size MskCluster#ebs_volume_size}
   */
-  readonly ebsVolumeSize: number;
+  readonly ebsVolumeSize?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#instance_type MskCluster#instance_type}
   */
@@ -233,6 +486,12 @@ export interface MskClusterBrokerNodeGroupInfo {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#connectivity_info MskCluster#connectivity_info}
   */
   readonly connectivityInfo?: MskClusterBrokerNodeGroupInfoConnectivityInfo;
+  /**
+  * storage_info block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#storage_info MskCluster#storage_info}
+  */
+  readonly storageInfo?: MskClusterBrokerNodeGroupInfoStorageInfo;
 }
 
 export function mskClusterBrokerNodeGroupInfoToTerraform(struct?: MskClusterBrokerNodeGroupInfoOutputReference | MskClusterBrokerNodeGroupInfo): any {
@@ -247,6 +506,7 @@ export function mskClusterBrokerNodeGroupInfoToTerraform(struct?: MskClusterBrok
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
     security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
     connectivity_info: mskClusterBrokerNodeGroupInfoConnectivityInfoToTerraform(struct!.connectivityInfo),
+    storage_info: mskClusterBrokerNodeGroupInfoStorageInfoToTerraform(struct!.storageInfo),
   }
 }
 
@@ -288,6 +548,10 @@ export class MskClusterBrokerNodeGroupInfoOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.connectivityInfo = this._connectivityInfo?.internalValue;
     }
+    if (this._storageInfo?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageInfo = this._storageInfo?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -300,6 +564,7 @@ export class MskClusterBrokerNodeGroupInfoOutputReference extends cdktf.ComplexO
       this._instanceType = undefined;
       this._securityGroups = undefined;
       this._connectivityInfo.internalValue = undefined;
+      this._storageInfo.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -309,6 +574,7 @@ export class MskClusterBrokerNodeGroupInfoOutputReference extends cdktf.ComplexO
       this._instanceType = value.instanceType;
       this._securityGroups = value.securityGroups;
       this._connectivityInfo.internalValue = value.connectivityInfo;
+      this._storageInfo.internalValue = value.storageInfo;
     }
   }
 
@@ -341,13 +607,16 @@ export class MskClusterBrokerNodeGroupInfoOutputReference extends cdktf.ComplexO
     return this._clientSubnets;
   }
 
-  // ebs_volume_size - computed: false, optional: false, required: true
+  // ebs_volume_size - computed: true, optional: true, required: false
   private _ebsVolumeSize?: number; 
   public get ebsVolumeSize() {
     return this.getNumberAttribute('ebs_volume_size');
   }
   public set ebsVolumeSize(value: number) {
     this._ebsVolumeSize = value;
+  }
+  public resetEbsVolumeSize() {
+    this._ebsVolumeSize = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ebsVolumeSizeInput() {
@@ -394,6 +663,22 @@ export class MskClusterBrokerNodeGroupInfoOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get connectivityInfoInput() {
     return this._connectivityInfo.internalValue;
+  }
+
+  // storage_info - computed: false, optional: true, required: false
+  private _storageInfo = new MskClusterBrokerNodeGroupInfoStorageInfoOutputReference(this, "storage_info");
+  public get storageInfo() {
+    return this._storageInfo;
+  }
+  public putStorageInfo(value: MskClusterBrokerNodeGroupInfoStorageInfo) {
+    this._storageInfo.internalValue = value;
+  }
+  public resetStorageInfo() {
+    this._storageInfo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageInfoInput() {
+    return this._storageInfo.internalValue;
   }
 }
 export interface MskClusterClientAuthenticationSasl {
@@ -1861,7 +2146,7 @@ export class MskCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_msk_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.14.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

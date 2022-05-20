@@ -226,6 +226,10 @@ export interface AutoscalingGroupInstanceRefreshPreferences {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#min_healthy_percentage AutoscalingGroup#min_healthy_percentage}
   */
   readonly minHealthyPercentage?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#skip_matching AutoscalingGroup#skip_matching}
+  */
+  readonly skipMatching?: boolean | cdktf.IResolvable;
 }
 
 export function autoscalingGroupInstanceRefreshPreferencesToTerraform(struct?: AutoscalingGroupInstanceRefreshPreferencesOutputReference | AutoscalingGroupInstanceRefreshPreferences): any {
@@ -238,6 +242,7 @@ export function autoscalingGroupInstanceRefreshPreferencesToTerraform(struct?: A
     checkpoint_percentages: cdktf.listMapper(cdktf.numberToTerraform)(struct!.checkpointPercentages),
     instance_warmup: cdktf.stringToTerraform(struct!.instanceWarmup),
     min_healthy_percentage: cdktf.numberToTerraform(struct!.minHealthyPercentage),
+    skip_matching: cdktf.booleanToTerraform(struct!.skipMatching),
   }
 }
 
@@ -271,6 +276,10 @@ export class AutoscalingGroupInstanceRefreshPreferencesOutputReference extends c
       hasAnyValues = true;
       internalValueResult.minHealthyPercentage = this._minHealthyPercentage;
     }
+    if (this._skipMatching !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipMatching = this._skipMatching;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -281,6 +290,7 @@ export class AutoscalingGroupInstanceRefreshPreferencesOutputReference extends c
       this._checkpointPercentages = undefined;
       this._instanceWarmup = undefined;
       this._minHealthyPercentage = undefined;
+      this._skipMatching = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -288,6 +298,7 @@ export class AutoscalingGroupInstanceRefreshPreferencesOutputReference extends c
       this._checkpointPercentages = value.checkpointPercentages;
       this._instanceWarmup = value.instanceWarmup;
       this._minHealthyPercentage = value.minHealthyPercentage;
+      this._skipMatching = value.skipMatching;
     }
   }
 
@@ -353,6 +364,22 @@ export class AutoscalingGroupInstanceRefreshPreferencesOutputReference extends c
   // Temporarily expose input value. Use with caution.
   public get minHealthyPercentageInput() {
     return this._minHealthyPercentage;
+  }
+
+  // skip_matching - computed: false, optional: true, required: false
+  private _skipMatching?: boolean | cdktf.IResolvable; 
+  public get skipMatching() {
+    return this.getBooleanAttribute('skip_matching');
+  }
+  public set skipMatching(value: boolean | cdktf.IResolvable) {
+    this._skipMatching = value;
+  }
+  public resetSkipMatching() {
+    this._skipMatching = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipMatchingInput() {
+    return this._skipMatching;
   }
 }
 export interface AutoscalingGroupInstanceRefresh {
@@ -1560,7 +1587,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_autoscaling_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.14.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
