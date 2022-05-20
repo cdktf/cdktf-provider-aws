@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsRoute53ResolverRulesConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route53_resolver_rules#name_regex DataAwsRoute53ResolverRules#name_regex}
+  */
+  readonly nameRegex?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route53_resolver_rules#owner_id DataAwsRoute53ResolverRules#owner_id}
   */
   readonly ownerId?: string;
@@ -51,7 +55,7 @@ export class DataAwsRoute53ResolverRules extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_route53_resolver_rules',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.14.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -59,6 +63,7 @@ export class DataAwsRoute53ResolverRules extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._nameRegex = config.nameRegex;
     this._ownerId = config.ownerId;
     this._resolverEndpointId = config.resolverEndpointId;
     this._ruleType = config.ruleType;
@@ -72,6 +77,22 @@ export class DataAwsRoute53ResolverRules extends cdktf.TerraformDataSource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // name_regex - computed: false, optional: true, required: false
+  private _nameRegex?: string; 
+  public get nameRegex() {
+    return this.getStringAttribute('name_regex');
+  }
+  public set nameRegex(value: string) {
+    this._nameRegex = value;
+  }
+  public resetNameRegex() {
+    this._nameRegex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameRegexInput() {
+    return this._nameRegex;
   }
 
   // owner_id - computed: false, optional: true, required: false
@@ -149,6 +170,7 @@ export class DataAwsRoute53ResolverRules extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      name_regex: cdktf.stringToTerraform(this._nameRegex),
       owner_id: cdktf.stringToTerraform(this._ownerId),
       resolver_endpoint_id: cdktf.stringToTerraform(this._resolverEndpointId),
       rule_type: cdktf.stringToTerraform(this._ruleType),

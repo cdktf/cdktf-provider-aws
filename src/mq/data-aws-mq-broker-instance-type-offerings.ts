@@ -201,7 +201,7 @@ export class DataAwsMqBrokerInstanceTypeOfferings extends cdktf.TerraformDataSou
       terraformResourceType: 'aws_mq_broker_instance_type_offerings',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.14.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

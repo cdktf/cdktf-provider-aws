@@ -12,6 +12,7 @@ export * from './db-proxy-endpoint';
 export * from './db-proxy-target';
 export * from './db-security-group';
 export * from './db-snapshot';
+export * from './db-snapshot-copy';
 export * from './db-subnet-group';
 export * from './rds-cluster';
 export * from './rds-cluster-activity-stream';

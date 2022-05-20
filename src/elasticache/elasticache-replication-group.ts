@@ -444,7 +444,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elasticache_replication_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.14.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -551,7 +551,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     return this._authToken;
   }
 
-  // auto_minor_version_upgrade - computed: false, optional: true, required: false
+  // auto_minor_version_upgrade - computed: true, optional: true, required: false
   private _autoMinorVersionUpgrade?: string; 
   public get autoMinorVersionUpgrade() {
     return this.getStringAttribute('auto_minor_version_upgrade');

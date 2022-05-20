@@ -16,6 +16,10 @@ export interface S3BucketWebsiteConfigurationConfig extends cdktf.TerraformMetaA
   */
   readonly expectedBucketOwner?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_website_configuration#routing_rules S3BucketWebsiteConfiguration#routing_rules}
+  */
+  readonly routingRules?: string;
+  /**
   * error_document block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_website_configuration#error_document S3BucketWebsiteConfiguration#error_document}
@@ -571,7 +575,7 @@ export class S3BucketWebsiteConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_website_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.14.0',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -581,6 +585,7 @@ export class S3BucketWebsiteConfiguration extends cdktf.TerraformResource {
     });
     this._bucket = config.bucket;
     this._expectedBucketOwner = config.expectedBucketOwner;
+    this._routingRules = config.routingRules;
     this._errorDocument.internalValue = config.errorDocument;
     this._indexDocument.internalValue = config.indexDocument;
     this._redirectAllRequestsTo.internalValue = config.redirectAllRequestsTo;
@@ -623,6 +628,22 @@ export class S3BucketWebsiteConfiguration extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // routing_rules - computed: true, optional: true, required: false
+  private _routingRules?: string; 
+  public get routingRules() {
+    return this.getStringAttribute('routing_rules');
+  }
+  public set routingRules(value: string) {
+    this._routingRules = value;
+  }
+  public resetRoutingRules() {
+    this._routingRules = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routingRulesInput() {
+    return this._routingRules;
   }
 
   // website_domain - computed: true, optional: false, required: false
@@ -708,6 +729,7 @@ export class S3BucketWebsiteConfiguration extends cdktf.TerraformResource {
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
       expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
+      routing_rules: cdktf.stringToTerraform(this._routingRules),
       error_document: s3BucketWebsiteConfigurationErrorDocumentToTerraform(this._errorDocument.internalValue),
       index_document: s3BucketWebsiteConfigurationIndexDocumentToTerraform(this._indexDocument.internalValue),
       redirect_all_requests_to: s3BucketWebsiteConfigurationRedirectAllRequestsToToTerraform(this._redirectAllRequestsTo.internalValue),
