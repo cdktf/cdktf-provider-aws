@@ -352,7 +352,7 @@ export class OpsworksGangliaLayer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opsworks_ganglia_layer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.0',
+        providerVersion: '4.15.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

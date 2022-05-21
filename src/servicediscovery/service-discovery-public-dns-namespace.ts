@@ -51,7 +51,7 @@ export class ServiceDiscoveryPublicDnsNamespace extends cdktf.TerraformResource 
       terraformResourceType: 'aws_service_discovery_public_dns_namespace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.0',
+        providerVersion: '4.15.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -161,7 +161,7 @@ export class Ec2TransitGatewayConnectPeer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_transit_gateway_connect_peer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.0',
+        providerVersion: '4.15.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
