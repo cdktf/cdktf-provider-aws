@@ -47,7 +47,7 @@ export class DaxSubnetGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dax_subnet_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.0',
+        providerVersion: '4.15.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

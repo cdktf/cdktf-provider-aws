@@ -39,7 +39,7 @@ export class DataAwsCloudfrontOriginAccessIdentities extends cdktf.TerraformData
       terraformResourceType: 'aws_cloudfront_origin_access_identities',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.0',
+        providerVersion: '4.15.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

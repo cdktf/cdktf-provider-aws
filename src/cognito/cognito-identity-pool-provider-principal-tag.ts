@@ -51,7 +51,7 @@ export class CognitoIdentityPoolProviderPrincipalTag extends cdktf.TerraformReso
       terraformResourceType: 'aws_cognito_identity_pool_provider_principal_tag',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.0',
+        providerVersion: '4.15.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

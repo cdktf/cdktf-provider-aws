@@ -55,7 +55,7 @@ export class DataAwsRoute53ResolverRules extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_route53_resolver_rules',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.0',
+        providerVersion: '4.15.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

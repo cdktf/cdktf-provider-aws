@@ -142,7 +142,7 @@ export class S3BucketVersioningA extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_versioning',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.15.0',
+        providerVersion: '4.15.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
