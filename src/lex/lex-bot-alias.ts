@@ -20,6 +20,13 @@ export interface LexBotAliasConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_bot_alias#id LexBotAlias#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_bot_alias#name LexBotAlias#name}
   */
   readonly name: string;
@@ -68,6 +75,148 @@ export function lexBotAliasConversationLogsLogSettingsToTerraform(struct?: LexBo
   }
 }
 
+export class LexBotAliasConversationLogsLogSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LexBotAliasConversationLogsLogSettings | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destination = this._destination;
+    }
+    if (this._kmsKeyArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyArn = this._kmsKeyArn;
+    }
+    if (this._logType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logType = this._logType;
+    }
+    if (this._resourceArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceArn = this._resourceArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LexBotAliasConversationLogsLogSettings | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._destination = undefined;
+      this._kmsKeyArn = undefined;
+      this._logType = undefined;
+      this._resourceArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._destination = value.destination;
+      this._kmsKeyArn = value.kmsKeyArn;
+      this._logType = value.logType;
+      this._resourceArn = value.resourceArn;
+    }
+  }
+
+  // destination - computed: false, optional: false, required: true
+  private _destination?: string; 
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+  public set destination(value: string) {
+    this._destination = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination;
+  }
+
+  // kms_key_arn - computed: false, optional: true, required: false
+  private _kmsKeyArn?: string; 
+  public get kmsKeyArn() {
+    return this.getStringAttribute('kms_key_arn');
+  }
+  public set kmsKeyArn(value: string) {
+    this._kmsKeyArn = value;
+  }
+  public resetKmsKeyArn() {
+    this._kmsKeyArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyArnInput() {
+    return this._kmsKeyArn;
+  }
+
+  // log_type - computed: false, optional: false, required: true
+  private _logType?: string; 
+  public get logType() {
+    return this.getStringAttribute('log_type');
+  }
+  public set logType(value: string) {
+    this._logType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logTypeInput() {
+    return this._logType;
+  }
+
+  // resource_arn - computed: false, optional: false, required: true
+  private _resourceArn?: string; 
+  public get resourceArn() {
+    return this.getStringAttribute('resource_arn');
+  }
+  public set resourceArn(value: string) {
+    this._resourceArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceArnInput() {
+    return this._resourceArn;
+  }
+
+  // resource_prefix - computed: true, optional: false, required: false
+  public get resourcePrefix() {
+    return this.getStringAttribute('resource_prefix');
+  }
+}
+
+export class LexBotAliasConversationLogsLogSettingsList extends cdktf.ComplexList {
+  public internalValue? : LexBotAliasConversationLogsLogSettings[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LexBotAliasConversationLogsLogSettingsOutputReference {
+    return new LexBotAliasConversationLogsLogSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LexBotAliasConversationLogs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_bot_alias#iam_role_arn LexBotAlias#iam_role_arn}
@@ -110,9 +259,9 @@ export class LexBotAliasConversationLogsOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.iamRoleArn = this._iamRoleArn;
     }
-    if (this._logSettings !== undefined) {
+    if (this._logSettings?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.logSettings = this._logSettings;
+      internalValueResult.logSettings = this._logSettings?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -121,12 +270,12 @@ export class LexBotAliasConversationLogsOutputReference extends cdktf.ComplexObj
     if (value === undefined) {
       this.isEmptyObject = false;
       this._iamRoleArn = undefined;
-      this._logSettings = undefined;
+      this._logSettings.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._iamRoleArn = value.iamRoleArn;
-      this._logSettings = value.logSettings;
+      this._logSettings.internalValue = value.logSettings;
     }
   }
 
@@ -144,20 +293,19 @@ export class LexBotAliasConversationLogsOutputReference extends cdktf.ComplexObj
   }
 
   // log_settings - computed: false, optional: true, required: false
-  private _logSettings?: LexBotAliasConversationLogsLogSettings[] | cdktf.IResolvable; 
+  private _logSettings = new LexBotAliasConversationLogsLogSettingsList(this, "log_settings", true);
   public get logSettings() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('log_settings')));
+    return this._logSettings;
   }
-  public set logSettings(value: LexBotAliasConversationLogsLogSettings[] | cdktf.IResolvable) {
-    this._logSettings = value;
+  public putLogSettings(value: LexBotAliasConversationLogsLogSettings[] | cdktf.IResolvable) {
+    this._logSettings.internalValue = value;
   }
   public resetLogSettings() {
-    this._logSettings = undefined;
+    this._logSettings.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get logSettingsInput() {
-    return this._logSettings;
+    return this._logSettings.internalValue;
   }
 }
 export interface LexBotAliasTimeouts {
@@ -189,6 +337,7 @@ export function lexBotAliasTimeoutsToTerraform(struct?: LexBotAliasTimeoutsOutpu
 
 export class LexBotAliasTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -198,7 +347,10 @@ export class LexBotAliasTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): LexBotAliasTimeouts | undefined {
+  public get internalValue(): LexBotAliasTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -216,15 +368,21 @@ export class LexBotAliasTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexBotAliasTimeouts | undefined) {
+  public set internalValue(value: LexBotAliasTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -317,6 +475,7 @@ export class LexBotAlias extends cdktf.TerraformResource {
     this._botName = config.botName;
     this._botVersion = config.botVersion;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._conversationLogs.internalValue = config.conversationLogs;
     this._timeouts.internalValue = config.timeouts;
@@ -384,8 +543,19 @@ export class LexBotAlias extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // last_updated_date - computed: true, optional: false, required: false
@@ -447,6 +617,7 @@ export class LexBotAlias extends cdktf.TerraformResource {
       bot_name: cdktf.stringToTerraform(this._botName),
       bot_version: cdktf.stringToTerraform(this._botVersion),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       conversation_logs: lexBotAliasConversationLogsToTerraform(this._conversationLogs.internalValue),
       timeouts: lexBotAliasTimeoutsToTerraform(this._timeouts.internalValue),

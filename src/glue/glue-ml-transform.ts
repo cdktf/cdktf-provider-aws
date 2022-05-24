@@ -16,6 +16,13 @@ export interface GlueMlTransformConfig extends cdktf.TerraformMetaArguments {
   */
   readonly glueVersion?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_ml_transform#id GlueMlTransform#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_ml_transform#max_capacity GlueMlTransform#max_capacity}
   */
   readonly maxCapacity?: number;
@@ -165,6 +172,146 @@ export function glueMlTransformInputRecordTablesToTerraform(struct?: GlueMlTrans
   }
 }
 
+export class GlueMlTransformInputRecordTablesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueMlTransformInputRecordTables | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._catalogId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.catalogId = this._catalogId;
+    }
+    if (this._connectionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectionName = this._connectionName;
+    }
+    if (this._databaseName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databaseName = this._databaseName;
+    }
+    if (this._tableName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableName = this._tableName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueMlTransformInputRecordTables | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._catalogId = undefined;
+      this._connectionName = undefined;
+      this._databaseName = undefined;
+      this._tableName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._catalogId = value.catalogId;
+      this._connectionName = value.connectionName;
+      this._databaseName = value.databaseName;
+      this._tableName = value.tableName;
+    }
+  }
+
+  // catalog_id - computed: false, optional: true, required: false
+  private _catalogId?: string; 
+  public get catalogId() {
+    return this.getStringAttribute('catalog_id');
+  }
+  public set catalogId(value: string) {
+    this._catalogId = value;
+  }
+  public resetCatalogId() {
+    this._catalogId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catalogIdInput() {
+    return this._catalogId;
+  }
+
+  // connection_name - computed: false, optional: true, required: false
+  private _connectionName?: string; 
+  public get connectionName() {
+    return this.getStringAttribute('connection_name');
+  }
+  public set connectionName(value: string) {
+    this._connectionName = value;
+  }
+  public resetConnectionName() {
+    this._connectionName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionNameInput() {
+    return this._connectionName;
+  }
+
+  // database_name - computed: false, optional: false, required: true
+  private _databaseName?: string; 
+  public get databaseName() {
+    return this.getStringAttribute('database_name');
+  }
+  public set databaseName(value: string) {
+    this._databaseName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseNameInput() {
+    return this._databaseName;
+  }
+
+  // table_name - computed: false, optional: false, required: true
+  private _tableName?: string; 
+  public get tableName() {
+    return this.getStringAttribute('table_name');
+  }
+  public set tableName(value: string) {
+    this._tableName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableNameInput() {
+    return this._tableName;
+  }
+}
+
+export class GlueMlTransformInputRecordTablesList extends cdktf.ComplexList {
+  public internalValue? : GlueMlTransformInputRecordTables[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueMlTransformInputRecordTablesOutputReference {
+    return new GlueMlTransformInputRecordTablesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GlueMlTransformParametersFindMatchesParameters {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_ml_transform#accuracy_cost_trade_off GlueMlTransform#accuracy_cost_trade_off}
@@ -436,6 +583,7 @@ export class GlueMlTransform extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._glueVersion = config.glueVersion;
+    this._id = config.id;
     this._maxCapacity = config.maxCapacity;
     this._maxRetries = config.maxRetries;
     this._name = config.name;
@@ -445,7 +593,7 @@ export class GlueMlTransform extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._timeout = config.timeout;
     this._workerType = config.workerType;
-    this._inputRecordTables = config.inputRecordTables;
+    this._inputRecordTables.internalValue = config.inputRecordTables;
     this._parameters.internalValue = config.parameters;
   }
 
@@ -491,8 +639,19 @@ export class GlueMlTransform extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // label_count - computed: true, optional: false, required: false
@@ -645,17 +804,16 @@ export class GlueMlTransform extends cdktf.TerraformResource {
   }
 
   // input_record_tables - computed: false, optional: false, required: true
-  private _inputRecordTables?: GlueMlTransformInputRecordTables[] | cdktf.IResolvable; 
+  private _inputRecordTables = new GlueMlTransformInputRecordTablesList(this, "input_record_tables", false);
   public get inputRecordTables() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('input_record_tables');
+    return this._inputRecordTables;
   }
-  public set inputRecordTables(value: GlueMlTransformInputRecordTables[] | cdktf.IResolvable) {
-    this._inputRecordTables = value;
+  public putInputRecordTables(value: GlueMlTransformInputRecordTables[] | cdktf.IResolvable) {
+    this._inputRecordTables.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get inputRecordTablesInput() {
-    return this._inputRecordTables;
+    return this._inputRecordTables.internalValue;
   }
 
   // parameters - computed: false, optional: false, required: true
@@ -679,6 +837,7 @@ export class GlueMlTransform extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       glue_version: cdktf.stringToTerraform(this._glueVersion),
+      id: cdktf.stringToTerraform(this._id),
       max_capacity: cdktf.numberToTerraform(this._maxCapacity),
       max_retries: cdktf.numberToTerraform(this._maxRetries),
       name: cdktf.stringToTerraform(this._name),
@@ -688,7 +847,7 @@ export class GlueMlTransform extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeout: cdktf.numberToTerraform(this._timeout),
       worker_type: cdktf.stringToTerraform(this._workerType),
-      input_record_tables: cdktf.listMapper(glueMlTransformInputRecordTablesToTerraform)(this._inputRecordTables),
+      input_record_tables: cdktf.listMapper(glueMlTransformInputRecordTablesToTerraform)(this._inputRecordTables.internalValue),
       parameters: glueMlTransformParametersToTerraform(this._parameters.internalValue),
     };
   }

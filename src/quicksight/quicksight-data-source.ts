@@ -16,6 +16,13 @@ export interface QuicksightDataSourceConfig extends cdktf.TerraformMetaArguments
   */
   readonly dataSourceId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#id QuicksightDataSource#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#name QuicksightDataSource#name}
   */
   readonly name: string;
@@ -2846,6 +2853,102 @@ export function quicksightDataSourcePermissionToTerraform(struct?: QuicksightDat
   }
 }
 
+export class QuicksightDataSourcePermissionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): QuicksightDataSourcePermission | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._actions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.actions = this._actions;
+    }
+    if (this._principal !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.principal = this._principal;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: QuicksightDataSourcePermission | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._actions = undefined;
+      this._principal = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._actions = value.actions;
+      this._principal = value.principal;
+    }
+  }
+
+  // actions - computed: false, optional: false, required: true
+  private _actions?: string[]; 
+  public get actions() {
+    return cdktf.Fn.tolist(this.getListAttribute('actions'));
+  }
+  public set actions(value: string[]) {
+    this._actions = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionsInput() {
+    return this._actions;
+  }
+
+  // principal - computed: false, optional: false, required: true
+  private _principal?: string; 
+  public get principal() {
+    return this.getStringAttribute('principal');
+  }
+  public set principal(value: string) {
+    this._principal = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalInput() {
+    return this._principal;
+  }
+}
+
+export class QuicksightDataSourcePermissionList extends cdktf.ComplexList {
+  public internalValue? : QuicksightDataSourcePermission[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): QuicksightDataSourcePermissionOutputReference {
+    return new QuicksightDataSourcePermissionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface QuicksightDataSourceSslProperties {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_source#disable_ssl QuicksightDataSource#disable_ssl}
@@ -3007,13 +3110,14 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
     });
     this._awsAccountId = config.awsAccountId;
     this._dataSourceId = config.dataSourceId;
+    this._id = config.id;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._type = config.type;
     this._credentials.internalValue = config.credentials;
     this._parameters.internalValue = config.parameters;
-    this._permission = config.permission;
+    this._permission.internalValue = config.permission;
     this._sslProperties.internalValue = config.sslProperties;
     this._vpcConnectionProperties.internalValue = config.vpcConnectionProperties;
   }
@@ -3057,8 +3161,19 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -3149,20 +3264,19 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
   }
 
   // permission - computed: false, optional: true, required: false
-  private _permission?: QuicksightDataSourcePermission[] | cdktf.IResolvable; 
+  private _permission = new QuicksightDataSourcePermissionList(this, "permission", true);
   public get permission() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('permission')));
+    return this._permission;
   }
-  public set permission(value: QuicksightDataSourcePermission[] | cdktf.IResolvable) {
-    this._permission = value;
+  public putPermission(value: QuicksightDataSourcePermission[] | cdktf.IResolvable) {
+    this._permission.internalValue = value;
   }
   public resetPermission() {
-    this._permission = undefined;
+    this._permission.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get permissionInput() {
-    return this._permission;
+    return this._permission.internalValue;
   }
 
   // ssl_properties - computed: false, optional: true, required: false
@@ -3205,13 +3319,14 @@ export class QuicksightDataSource extends cdktf.TerraformResource {
     return {
       aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
       data_source_id: cdktf.stringToTerraform(this._dataSourceId),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
       credentials: quicksightDataSourceCredentialsToTerraform(this._credentials.internalValue),
       parameters: quicksightDataSourceParametersToTerraform(this._parameters.internalValue),
-      permission: cdktf.listMapper(quicksightDataSourcePermissionToTerraform)(this._permission),
+      permission: cdktf.listMapper(quicksightDataSourcePermissionToTerraform)(this._permission.internalValue),
       ssl_properties: quicksightDataSourceSslPropertiesToTerraform(this._sslProperties.internalValue),
       vpc_connection_properties: quicksightDataSourceVpcConnectionPropertiesToTerraform(this._vpcConnectionProperties.internalValue),
     };

@@ -16,6 +16,13 @@ export interface LexIntentConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#id LexIntent#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#name LexIntent#name}
   */
   readonly name: string;
@@ -103,6 +110,124 @@ export function lexIntentConclusionStatementMessageToTerraform(struct?: LexInten
   }
 }
 
+export class LexIntentConclusionStatementMessageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LexIntentConclusionStatementMessage | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._content !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.content = this._content;
+    }
+    if (this._contentType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contentType = this._contentType;
+    }
+    if (this._groupNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupNumber = this._groupNumber;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LexIntentConclusionStatementMessage | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._content = undefined;
+      this._contentType = undefined;
+      this._groupNumber = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._content = value.content;
+      this._contentType = value.contentType;
+      this._groupNumber = value.groupNumber;
+    }
+  }
+
+  // content - computed: false, optional: false, required: true
+  private _content?: string; 
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+  public set content(value: string) {
+    this._content = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content;
+  }
+
+  // content_type - computed: false, optional: false, required: true
+  private _contentType?: string; 
+  public get contentType() {
+    return this.getStringAttribute('content_type');
+  }
+  public set contentType(value: string) {
+    this._contentType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentTypeInput() {
+    return this._contentType;
+  }
+
+  // group_number - computed: false, optional: true, required: false
+  private _groupNumber?: number; 
+  public get groupNumber() {
+    return this.getNumberAttribute('group_number');
+  }
+  public set groupNumber(value: number) {
+    this._groupNumber = value;
+  }
+  public resetGroupNumber() {
+    this._groupNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupNumberInput() {
+    return this._groupNumber;
+  }
+}
+
+export class LexIntentConclusionStatementMessageList extends cdktf.ComplexList {
+  public internalValue? : LexIntentConclusionStatementMessage[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LexIntentConclusionStatementMessageOutputReference {
+    return new LexIntentConclusionStatementMessageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LexIntentConclusionStatement {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#response_card LexIntent#response_card}
@@ -145,9 +270,9 @@ export class LexIntentConclusionStatementOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.responseCard = this._responseCard;
     }
-    if (this._message !== undefined) {
+    if (this._message?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.message = this._message;
+      internalValueResult.message = this._message?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -156,12 +281,12 @@ export class LexIntentConclusionStatementOutputReference extends cdktf.ComplexOb
     if (value === undefined) {
       this.isEmptyObject = false;
       this._responseCard = undefined;
-      this._message = undefined;
+      this._message.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._responseCard = value.responseCard;
-      this._message = value.message;
+      this._message.internalValue = value.message;
     }
   }
 
@@ -182,17 +307,16 @@ export class LexIntentConclusionStatementOutputReference extends cdktf.ComplexOb
   }
 
   // message - computed: false, optional: false, required: true
-  private _message?: LexIntentConclusionStatementMessage[] | cdktf.IResolvable; 
+  private _message = new LexIntentConclusionStatementMessageList(this, "message", true);
   public get message() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('message')));
+    return this._message;
   }
-  public set message(value: LexIntentConclusionStatementMessage[] | cdktf.IResolvable) {
-    this._message = value;
+  public putMessage(value: LexIntentConclusionStatementMessage[] | cdktf.IResolvable) {
+    this._message.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get messageInput() {
-    return this._message;
+    return this._message.internalValue;
   }
 }
 export interface LexIntentConfirmationPromptMessage {
@@ -222,6 +346,124 @@ export function lexIntentConfirmationPromptMessageToTerraform(struct?: LexIntent
   }
 }
 
+export class LexIntentConfirmationPromptMessageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LexIntentConfirmationPromptMessage | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._content !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.content = this._content;
+    }
+    if (this._contentType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contentType = this._contentType;
+    }
+    if (this._groupNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupNumber = this._groupNumber;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LexIntentConfirmationPromptMessage | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._content = undefined;
+      this._contentType = undefined;
+      this._groupNumber = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._content = value.content;
+      this._contentType = value.contentType;
+      this._groupNumber = value.groupNumber;
+    }
+  }
+
+  // content - computed: false, optional: false, required: true
+  private _content?: string; 
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+  public set content(value: string) {
+    this._content = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content;
+  }
+
+  // content_type - computed: false, optional: false, required: true
+  private _contentType?: string; 
+  public get contentType() {
+    return this.getStringAttribute('content_type');
+  }
+  public set contentType(value: string) {
+    this._contentType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentTypeInput() {
+    return this._contentType;
+  }
+
+  // group_number - computed: false, optional: true, required: false
+  private _groupNumber?: number; 
+  public get groupNumber() {
+    return this.getNumberAttribute('group_number');
+  }
+  public set groupNumber(value: number) {
+    this._groupNumber = value;
+  }
+  public resetGroupNumber() {
+    this._groupNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupNumberInput() {
+    return this._groupNumber;
+  }
+}
+
+export class LexIntentConfirmationPromptMessageList extends cdktf.ComplexList {
+  public internalValue? : LexIntentConfirmationPromptMessage[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LexIntentConfirmationPromptMessageOutputReference {
+    return new LexIntentConfirmationPromptMessageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LexIntentConfirmationPrompt {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#max_attempts LexIntent#max_attempts}
@@ -273,9 +515,9 @@ export class LexIntentConfirmationPromptOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.responseCard = this._responseCard;
     }
-    if (this._message !== undefined) {
+    if (this._message?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.message = this._message;
+      internalValueResult.message = this._message?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -285,13 +527,13 @@ export class LexIntentConfirmationPromptOutputReference extends cdktf.ComplexObj
       this.isEmptyObject = false;
       this._maxAttempts = undefined;
       this._responseCard = undefined;
-      this._message = undefined;
+      this._message.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._maxAttempts = value.maxAttempts;
       this._responseCard = value.responseCard;
-      this._message = value.message;
+      this._message.internalValue = value.message;
     }
   }
 
@@ -325,17 +567,16 @@ export class LexIntentConfirmationPromptOutputReference extends cdktf.ComplexObj
   }
 
   // message - computed: false, optional: false, required: true
-  private _message?: LexIntentConfirmationPromptMessage[] | cdktf.IResolvable; 
+  private _message = new LexIntentConfirmationPromptMessageList(this, "message", true);
   public get message() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('message')));
+    return this._message;
   }
-  public set message(value: LexIntentConfirmationPromptMessage[] | cdktf.IResolvable) {
-    this._message = value;
+  public putMessage(value: LexIntentConfirmationPromptMessage[] | cdktf.IResolvable) {
+    this._message.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get messageInput() {
-    return this._message;
+    return this._message.internalValue;
   }
 }
 export interface LexIntentDialogCodeHook {
@@ -451,6 +692,124 @@ export function lexIntentFollowUpPromptPromptMessageToTerraform(struct?: LexInte
   }
 }
 
+export class LexIntentFollowUpPromptPromptMessageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LexIntentFollowUpPromptPromptMessage | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._content !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.content = this._content;
+    }
+    if (this._contentType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contentType = this._contentType;
+    }
+    if (this._groupNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupNumber = this._groupNumber;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LexIntentFollowUpPromptPromptMessage | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._content = undefined;
+      this._contentType = undefined;
+      this._groupNumber = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._content = value.content;
+      this._contentType = value.contentType;
+      this._groupNumber = value.groupNumber;
+    }
+  }
+
+  // content - computed: false, optional: false, required: true
+  private _content?: string; 
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+  public set content(value: string) {
+    this._content = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content;
+  }
+
+  // content_type - computed: false, optional: false, required: true
+  private _contentType?: string; 
+  public get contentType() {
+    return this.getStringAttribute('content_type');
+  }
+  public set contentType(value: string) {
+    this._contentType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentTypeInput() {
+    return this._contentType;
+  }
+
+  // group_number - computed: false, optional: true, required: false
+  private _groupNumber?: number; 
+  public get groupNumber() {
+    return this.getNumberAttribute('group_number');
+  }
+  public set groupNumber(value: number) {
+    this._groupNumber = value;
+  }
+  public resetGroupNumber() {
+    this._groupNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupNumberInput() {
+    return this._groupNumber;
+  }
+}
+
+export class LexIntentFollowUpPromptPromptMessageList extends cdktf.ComplexList {
+  public internalValue? : LexIntentFollowUpPromptPromptMessage[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LexIntentFollowUpPromptPromptMessageOutputReference {
+    return new LexIntentFollowUpPromptPromptMessageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LexIntentFollowUpPromptPrompt {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#max_attempts LexIntent#max_attempts}
@@ -502,9 +861,9 @@ export class LexIntentFollowUpPromptPromptOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.responseCard = this._responseCard;
     }
-    if (this._message !== undefined) {
+    if (this._message?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.message = this._message;
+      internalValueResult.message = this._message?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -514,13 +873,13 @@ export class LexIntentFollowUpPromptPromptOutputReference extends cdktf.ComplexO
       this.isEmptyObject = false;
       this._maxAttempts = undefined;
       this._responseCard = undefined;
-      this._message = undefined;
+      this._message.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._maxAttempts = value.maxAttempts;
       this._responseCard = value.responseCard;
-      this._message = value.message;
+      this._message.internalValue = value.message;
     }
   }
 
@@ -554,17 +913,16 @@ export class LexIntentFollowUpPromptPromptOutputReference extends cdktf.ComplexO
   }
 
   // message - computed: false, optional: false, required: true
-  private _message?: LexIntentFollowUpPromptPromptMessage[] | cdktf.IResolvable; 
+  private _message = new LexIntentFollowUpPromptPromptMessageList(this, "message", true);
   public get message() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('message')));
+    return this._message;
   }
-  public set message(value: LexIntentFollowUpPromptPromptMessage[] | cdktf.IResolvable) {
-    this._message = value;
+  public putMessage(value: LexIntentFollowUpPromptPromptMessage[] | cdktf.IResolvable) {
+    this._message.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get messageInput() {
-    return this._message;
+    return this._message.internalValue;
   }
 }
 export interface LexIntentFollowUpPromptRejectionStatementMessage {
@@ -594,6 +952,124 @@ export function lexIntentFollowUpPromptRejectionStatementMessageToTerraform(stru
   }
 }
 
+export class LexIntentFollowUpPromptRejectionStatementMessageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LexIntentFollowUpPromptRejectionStatementMessage | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._content !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.content = this._content;
+    }
+    if (this._contentType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contentType = this._contentType;
+    }
+    if (this._groupNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupNumber = this._groupNumber;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LexIntentFollowUpPromptRejectionStatementMessage | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._content = undefined;
+      this._contentType = undefined;
+      this._groupNumber = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._content = value.content;
+      this._contentType = value.contentType;
+      this._groupNumber = value.groupNumber;
+    }
+  }
+
+  // content - computed: false, optional: false, required: true
+  private _content?: string; 
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+  public set content(value: string) {
+    this._content = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content;
+  }
+
+  // content_type - computed: false, optional: false, required: true
+  private _contentType?: string; 
+  public get contentType() {
+    return this.getStringAttribute('content_type');
+  }
+  public set contentType(value: string) {
+    this._contentType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentTypeInput() {
+    return this._contentType;
+  }
+
+  // group_number - computed: false, optional: true, required: false
+  private _groupNumber?: number; 
+  public get groupNumber() {
+    return this.getNumberAttribute('group_number');
+  }
+  public set groupNumber(value: number) {
+    this._groupNumber = value;
+  }
+  public resetGroupNumber() {
+    this._groupNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupNumberInput() {
+    return this._groupNumber;
+  }
+}
+
+export class LexIntentFollowUpPromptRejectionStatementMessageList extends cdktf.ComplexList {
+  public internalValue? : LexIntentFollowUpPromptRejectionStatementMessage[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LexIntentFollowUpPromptRejectionStatementMessageOutputReference {
+    return new LexIntentFollowUpPromptRejectionStatementMessageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LexIntentFollowUpPromptRejectionStatement {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#response_card LexIntent#response_card}
@@ -636,9 +1112,9 @@ export class LexIntentFollowUpPromptRejectionStatementOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.responseCard = this._responseCard;
     }
-    if (this._message !== undefined) {
+    if (this._message?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.message = this._message;
+      internalValueResult.message = this._message?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -647,12 +1123,12 @@ export class LexIntentFollowUpPromptRejectionStatementOutputReference extends cd
     if (value === undefined) {
       this.isEmptyObject = false;
       this._responseCard = undefined;
-      this._message = undefined;
+      this._message.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._responseCard = value.responseCard;
-      this._message = value.message;
+      this._message.internalValue = value.message;
     }
   }
 
@@ -673,17 +1149,16 @@ export class LexIntentFollowUpPromptRejectionStatementOutputReference extends cd
   }
 
   // message - computed: false, optional: false, required: true
-  private _message?: LexIntentFollowUpPromptRejectionStatementMessage[] | cdktf.IResolvable; 
+  private _message = new LexIntentFollowUpPromptRejectionStatementMessageList(this, "message", true);
   public get message() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('message')));
+    return this._message;
   }
-  public set message(value: LexIntentFollowUpPromptRejectionStatementMessage[] | cdktf.IResolvable) {
-    this._message = value;
+  public putMessage(value: LexIntentFollowUpPromptRejectionStatementMessage[] | cdktf.IResolvable) {
+    this._message.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get messageInput() {
-    return this._message;
+    return this._message.internalValue;
   }
 }
 export interface LexIntentFollowUpPrompt {
@@ -980,6 +1455,124 @@ export function lexIntentRejectionStatementMessageToTerraform(struct?: LexIntent
   }
 }
 
+export class LexIntentRejectionStatementMessageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LexIntentRejectionStatementMessage | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._content !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.content = this._content;
+    }
+    if (this._contentType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contentType = this._contentType;
+    }
+    if (this._groupNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupNumber = this._groupNumber;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LexIntentRejectionStatementMessage | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._content = undefined;
+      this._contentType = undefined;
+      this._groupNumber = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._content = value.content;
+      this._contentType = value.contentType;
+      this._groupNumber = value.groupNumber;
+    }
+  }
+
+  // content - computed: false, optional: false, required: true
+  private _content?: string; 
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+  public set content(value: string) {
+    this._content = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content;
+  }
+
+  // content_type - computed: false, optional: false, required: true
+  private _contentType?: string; 
+  public get contentType() {
+    return this.getStringAttribute('content_type');
+  }
+  public set contentType(value: string) {
+    this._contentType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentTypeInput() {
+    return this._contentType;
+  }
+
+  // group_number - computed: false, optional: true, required: false
+  private _groupNumber?: number; 
+  public get groupNumber() {
+    return this.getNumberAttribute('group_number');
+  }
+  public set groupNumber(value: number) {
+    this._groupNumber = value;
+  }
+  public resetGroupNumber() {
+    this._groupNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupNumberInput() {
+    return this._groupNumber;
+  }
+}
+
+export class LexIntentRejectionStatementMessageList extends cdktf.ComplexList {
+  public internalValue? : LexIntentRejectionStatementMessage[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LexIntentRejectionStatementMessageOutputReference {
+    return new LexIntentRejectionStatementMessageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LexIntentRejectionStatement {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#response_card LexIntent#response_card}
@@ -1022,9 +1615,9 @@ export class LexIntentRejectionStatementOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.responseCard = this._responseCard;
     }
-    if (this._message !== undefined) {
+    if (this._message?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.message = this._message;
+      internalValueResult.message = this._message?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1033,12 +1626,12 @@ export class LexIntentRejectionStatementOutputReference extends cdktf.ComplexObj
     if (value === undefined) {
       this.isEmptyObject = false;
       this._responseCard = undefined;
-      this._message = undefined;
+      this._message.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._responseCard = value.responseCard;
-      this._message = value.message;
+      this._message.internalValue = value.message;
     }
   }
 
@@ -1059,17 +1652,16 @@ export class LexIntentRejectionStatementOutputReference extends cdktf.ComplexObj
   }
 
   // message - computed: false, optional: false, required: true
-  private _message?: LexIntentRejectionStatementMessage[] | cdktf.IResolvable; 
+  private _message = new LexIntentRejectionStatementMessageList(this, "message", true);
   public get message() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('message')));
+    return this._message;
   }
-  public set message(value: LexIntentRejectionStatementMessage[] | cdktf.IResolvable) {
-    this._message = value;
+  public putMessage(value: LexIntentRejectionStatementMessage[] | cdktf.IResolvable) {
+    this._message.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get messageInput() {
-    return this._message;
+    return this._message.internalValue;
   }
 }
 export interface LexIntentSlotValueElicitationPromptMessage {
@@ -1099,6 +1691,124 @@ export function lexIntentSlotValueElicitationPromptMessageToTerraform(struct?: L
   }
 }
 
+export class LexIntentSlotValueElicitationPromptMessageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LexIntentSlotValueElicitationPromptMessage | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._content !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.content = this._content;
+    }
+    if (this._contentType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contentType = this._contentType;
+    }
+    if (this._groupNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupNumber = this._groupNumber;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LexIntentSlotValueElicitationPromptMessage | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._content = undefined;
+      this._contentType = undefined;
+      this._groupNumber = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._content = value.content;
+      this._contentType = value.contentType;
+      this._groupNumber = value.groupNumber;
+    }
+  }
+
+  // content - computed: false, optional: false, required: true
+  private _content?: string; 
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+  public set content(value: string) {
+    this._content = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content;
+  }
+
+  // content_type - computed: false, optional: false, required: true
+  private _contentType?: string; 
+  public get contentType() {
+    return this.getStringAttribute('content_type');
+  }
+  public set contentType(value: string) {
+    this._contentType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentTypeInput() {
+    return this._contentType;
+  }
+
+  // group_number - computed: false, optional: true, required: false
+  private _groupNumber?: number; 
+  public get groupNumber() {
+    return this.getNumberAttribute('group_number');
+  }
+  public set groupNumber(value: number) {
+    this._groupNumber = value;
+  }
+  public resetGroupNumber() {
+    this._groupNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupNumberInput() {
+    return this._groupNumber;
+  }
+}
+
+export class LexIntentSlotValueElicitationPromptMessageList extends cdktf.ComplexList {
+  public internalValue? : LexIntentSlotValueElicitationPromptMessage[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LexIntentSlotValueElicitationPromptMessageOutputReference {
+    return new LexIntentSlotValueElicitationPromptMessageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LexIntentSlotValueElicitationPrompt {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#max_attempts LexIntent#max_attempts}
@@ -1150,9 +1860,9 @@ export class LexIntentSlotValueElicitationPromptOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.responseCard = this._responseCard;
     }
-    if (this._message !== undefined) {
+    if (this._message?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.message = this._message;
+      internalValueResult.message = this._message?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1162,13 +1872,13 @@ export class LexIntentSlotValueElicitationPromptOutputReference extends cdktf.Co
       this.isEmptyObject = false;
       this._maxAttempts = undefined;
       this._responseCard = undefined;
-      this._message = undefined;
+      this._message.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._maxAttempts = value.maxAttempts;
       this._responseCard = value.responseCard;
-      this._message = value.message;
+      this._message.internalValue = value.message;
     }
   }
 
@@ -1202,17 +1912,16 @@ export class LexIntentSlotValueElicitationPromptOutputReference extends cdktf.Co
   }
 
   // message - computed: false, optional: false, required: true
-  private _message?: LexIntentSlotValueElicitationPromptMessage[] | cdktf.IResolvable; 
+  private _message = new LexIntentSlotValueElicitationPromptMessageList(this, "message", true);
   public get message() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('message')));
+    return this._message;
   }
-  public set message(value: LexIntentSlotValueElicitationPromptMessage[] | cdktf.IResolvable) {
-    this._message = value;
+  public putMessage(value: LexIntentSlotValueElicitationPromptMessage[] | cdktf.IResolvable) {
+    this._message.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get messageInput() {
-    return this._message;
+    return this._message.internalValue;
   }
 }
 export interface LexIntentSlot {
@@ -1274,6 +1983,253 @@ export function lexIntentSlotToTerraform(struct?: LexIntentSlot | cdktf.IResolva
   }
 }
 
+export class LexIntentSlotOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LexIntentSlot | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    if (this._responseCard !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.responseCard = this._responseCard;
+    }
+    if (this._sampleUtterances !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sampleUtterances = this._sampleUtterances;
+    }
+    if (this._slotConstraint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.slotConstraint = this._slotConstraint;
+    }
+    if (this._slotType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.slotType = this._slotType;
+    }
+    if (this._slotTypeVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.slotTypeVersion = this._slotTypeVersion;
+    }
+    if (this._valueElicitationPrompt?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.valueElicitationPrompt = this._valueElicitationPrompt?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LexIntentSlot | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._name = undefined;
+      this._priority = undefined;
+      this._responseCard = undefined;
+      this._sampleUtterances = undefined;
+      this._slotConstraint = undefined;
+      this._slotType = undefined;
+      this._slotTypeVersion = undefined;
+      this._valueElicitationPrompt.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._name = value.name;
+      this._priority = value.priority;
+      this._responseCard = value.responseCard;
+      this._sampleUtterances = value.sampleUtterances;
+      this._slotConstraint = value.slotConstraint;
+      this._slotType = value.slotType;
+      this._slotTypeVersion = value.slotTypeVersion;
+      this._valueElicitationPrompt.internalValue = value.valueElicitationPrompt;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // priority - computed: false, optional: true, required: false
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  public resetPriority() {
+    this._priority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+
+  // response_card - computed: false, optional: true, required: false
+  private _responseCard?: string; 
+  public get responseCard() {
+    return this.getStringAttribute('response_card');
+  }
+  public set responseCard(value: string) {
+    this._responseCard = value;
+  }
+  public resetResponseCard() {
+    this._responseCard = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get responseCardInput() {
+    return this._responseCard;
+  }
+
+  // sample_utterances - computed: false, optional: true, required: false
+  private _sampleUtterances?: string[]; 
+  public get sampleUtterances() {
+    return this.getListAttribute('sample_utterances');
+  }
+  public set sampleUtterances(value: string[]) {
+    this._sampleUtterances = value;
+  }
+  public resetSampleUtterances() {
+    this._sampleUtterances = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sampleUtterancesInput() {
+    return this._sampleUtterances;
+  }
+
+  // slot_constraint - computed: false, optional: false, required: true
+  private _slotConstraint?: string; 
+  public get slotConstraint() {
+    return this.getStringAttribute('slot_constraint');
+  }
+  public set slotConstraint(value: string) {
+    this._slotConstraint = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get slotConstraintInput() {
+    return this._slotConstraint;
+  }
+
+  // slot_type - computed: false, optional: false, required: true
+  private _slotType?: string; 
+  public get slotType() {
+    return this.getStringAttribute('slot_type');
+  }
+  public set slotType(value: string) {
+    this._slotType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get slotTypeInput() {
+    return this._slotType;
+  }
+
+  // slot_type_version - computed: false, optional: true, required: false
+  private _slotTypeVersion?: string; 
+  public get slotTypeVersion() {
+    return this.getStringAttribute('slot_type_version');
+  }
+  public set slotTypeVersion(value: string) {
+    this._slotTypeVersion = value;
+  }
+  public resetSlotTypeVersion() {
+    this._slotTypeVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get slotTypeVersionInput() {
+    return this._slotTypeVersion;
+  }
+
+  // value_elicitation_prompt - computed: false, optional: true, required: false
+  private _valueElicitationPrompt = new LexIntentSlotValueElicitationPromptOutputReference(this, "value_elicitation_prompt");
+  public get valueElicitationPrompt() {
+    return this._valueElicitationPrompt;
+  }
+  public putValueElicitationPrompt(value: LexIntentSlotValueElicitationPrompt) {
+    this._valueElicitationPrompt.internalValue = value;
+  }
+  public resetValueElicitationPrompt() {
+    this._valueElicitationPrompt.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueElicitationPromptInput() {
+    return this._valueElicitationPrompt.internalValue;
+  }
+}
+
+export class LexIntentSlotList extends cdktf.ComplexList {
+  public internalValue? : LexIntentSlot[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LexIntentSlotOutputReference {
+    return new LexIntentSlotOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LexIntentTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent#create LexIntent#create}
@@ -1303,6 +2259,7 @@ export function lexIntentTimeoutsToTerraform(struct?: LexIntentTimeoutsOutputRef
 
 export class LexIntentTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1312,7 +2269,10 @@ export class LexIntentTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): LexIntentTimeouts | undefined {
+  public get internalValue(): LexIntentTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -1330,15 +2290,21 @@ export class LexIntentTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LexIntentTimeouts | undefined) {
+  public set internalValue(value: LexIntentTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -1430,6 +2396,7 @@ export class LexIntent extends cdktf.TerraformResource {
     });
     this._createVersion = config.createVersion;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._parentIntentSignature = config.parentIntentSignature;
     this._sampleUtterances = config.sampleUtterances;
@@ -1439,7 +2406,7 @@ export class LexIntent extends cdktf.TerraformResource {
     this._followUpPrompt.internalValue = config.followUpPrompt;
     this._fulfillmentActivity.internalValue = config.fulfillmentActivity;
     this._rejectionStatement.internalValue = config.rejectionStatement;
-    this._slot = config.slot;
+    this._slot.internalValue = config.slot;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1495,8 +2462,19 @@ export class LexIntent extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // last_updated_date - computed: true, optional: false, required: false
@@ -1648,20 +2626,19 @@ export class LexIntent extends cdktf.TerraformResource {
   }
 
   // slot - computed: false, optional: true, required: false
-  private _slot?: LexIntentSlot[] | cdktf.IResolvable; 
+  private _slot = new LexIntentSlotList(this, "slot", true);
   public get slot() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('slot')));
+    return this._slot;
   }
-  public set slot(value: LexIntentSlot[] | cdktf.IResolvable) {
-    this._slot = value;
+  public putSlot(value: LexIntentSlot[] | cdktf.IResolvable) {
+    this._slot.internalValue = value;
   }
   public resetSlot() {
-    this._slot = undefined;
+    this._slot.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get slotInput() {
-    return this._slot;
+    return this._slot.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -1688,6 +2665,7 @@ export class LexIntent extends cdktf.TerraformResource {
     return {
       create_version: cdktf.booleanToTerraform(this._createVersion),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       parent_intent_signature: cdktf.stringToTerraform(this._parentIntentSignature),
       sample_utterances: cdktf.listMapper(cdktf.stringToTerraform)(this._sampleUtterances),
@@ -1697,7 +2675,7 @@ export class LexIntent extends cdktf.TerraformResource {
       follow_up_prompt: lexIntentFollowUpPromptToTerraform(this._followUpPrompt.internalValue),
       fulfillment_activity: lexIntentFulfillmentActivityToTerraform(this._fulfillmentActivity.internalValue),
       rejection_statement: lexIntentRejectionStatementToTerraform(this._rejectionStatement.internalValue),
-      slot: cdktf.listMapper(lexIntentSlotToTerraform)(this._slot),
+      slot: cdktf.listMapper(lexIntentSlotToTerraform)(this._slot.internalValue),
       timeouts: lexIntentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

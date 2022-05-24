@@ -24,6 +24,13 @@ export interface ImagebuilderContainerRecipeConfig extends cdktf.TerraformMetaAr
   */
   readonly dockerfileTemplateUri?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe#id ImagebuilderContainerRecipe#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe#kms_key_id ImagebuilderContainerRecipe#kms_key_id}
   */
   readonly kmsKeyId?: string;
@@ -92,6 +99,102 @@ export function imagebuilderContainerRecipeComponentParameterToTerraform(struct?
   }
 }
 
+export class ImagebuilderContainerRecipeComponentParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ImagebuilderContainerRecipeComponentParameter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ImagebuilderContainerRecipeComponentParameter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ImagebuilderContainerRecipeComponentParameterList extends cdktf.ComplexList {
+  public internalValue? : ImagebuilderContainerRecipeComponentParameter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ImagebuilderContainerRecipeComponentParameterOutputReference {
+    return new ImagebuilderContainerRecipeComponentParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ImagebuilderContainerRecipeComponent {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe#component_arn ImagebuilderContainerRecipe#component_arn}
@@ -116,6 +219,105 @@ export function imagebuilderContainerRecipeComponentToTerraform(struct?: Imagebu
   }
 }
 
+export class ImagebuilderContainerRecipeComponentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ImagebuilderContainerRecipeComponent | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._componentArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.componentArn = this._componentArn;
+    }
+    if (this._parameter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameter = this._parameter?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ImagebuilderContainerRecipeComponent | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._componentArn = undefined;
+      this._parameter.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._componentArn = value.componentArn;
+      this._parameter.internalValue = value.parameter;
+    }
+  }
+
+  // component_arn - computed: false, optional: false, required: true
+  private _componentArn?: string; 
+  public get componentArn() {
+    return this.getStringAttribute('component_arn');
+  }
+  public set componentArn(value: string) {
+    this._componentArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get componentArnInput() {
+    return this._componentArn;
+  }
+
+  // parameter - computed: false, optional: true, required: false
+  private _parameter = new ImagebuilderContainerRecipeComponentParameterList(this, "parameter", true);
+  public get parameter() {
+    return this._parameter;
+  }
+  public putParameter(value: ImagebuilderContainerRecipeComponentParameter[] | cdktf.IResolvable) {
+    this._parameter.internalValue = value;
+  }
+  public resetParameter() {
+    this._parameter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterInput() {
+    return this._parameter.internalValue;
+  }
+}
+
+export class ImagebuilderContainerRecipeComponentList extends cdktf.ComplexList {
+  public internalValue? : ImagebuilderContainerRecipeComponent[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ImagebuilderContainerRecipeComponentOutputReference {
+    return new ImagebuilderContainerRecipeComponentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe#delete_on_termination ImagebuilderContainerRecipe#delete_on_termination}
@@ -377,6 +579,152 @@ export function imagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappi
   }
 }
 
+export class ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._deviceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deviceName = this._deviceName;
+    }
+    if (this._noDevice !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.noDevice = this._noDevice;
+    }
+    if (this._virtualName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.virtualName = this._virtualName;
+    }
+    if (this._ebs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ebs = this._ebs?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._deviceName = undefined;
+      this._noDevice = undefined;
+      this._virtualName = undefined;
+      this._ebs.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._deviceName = value.deviceName;
+      this._noDevice = value.noDevice;
+      this._virtualName = value.virtualName;
+      this._ebs.internalValue = value.ebs;
+    }
+  }
+
+  // device_name - computed: false, optional: true, required: false
+  private _deviceName?: string; 
+  public get deviceName() {
+    return this.getStringAttribute('device_name');
+  }
+  public set deviceName(value: string) {
+    this._deviceName = value;
+  }
+  public resetDeviceName() {
+    this._deviceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceNameInput() {
+    return this._deviceName;
+  }
+
+  // no_device - computed: false, optional: true, required: false
+  private _noDevice?: boolean | cdktf.IResolvable; 
+  public get noDevice() {
+    return this.getBooleanAttribute('no_device');
+  }
+  public set noDevice(value: boolean | cdktf.IResolvable) {
+    this._noDevice = value;
+  }
+  public resetNoDevice() {
+    this._noDevice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noDeviceInput() {
+    return this._noDevice;
+  }
+
+  // virtual_name - computed: false, optional: true, required: false
+  private _virtualName?: string; 
+  public get virtualName() {
+    return this.getStringAttribute('virtual_name');
+  }
+  public set virtualName(value: string) {
+    this._virtualName = value;
+  }
+  public resetVirtualName() {
+    this._virtualName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get virtualNameInput() {
+    return this._virtualName;
+  }
+
+  // ebs - computed: false, optional: true, required: false
+  private _ebs = new ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference(this, "ebs");
+  public get ebs() {
+    return this._ebs;
+  }
+  public putEbs(value: ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs) {
+    this._ebs.internalValue = value;
+  }
+  public resetEbs() {
+    this._ebs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsInput() {
+    return this._ebs.internalValue;
+  }
+}
+
+export class ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList extends cdktf.ComplexList {
+  public internalValue? : ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference {
+    return new ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ImagebuilderContainerRecipeInstanceConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe#image ImagebuilderContainerRecipe#image}
@@ -419,9 +767,9 @@ export class ImagebuilderContainerRecipeInstanceConfigurationOutputReference ext
       hasAnyValues = true;
       internalValueResult.image = this._image;
     }
-    if (this._blockDeviceMapping !== undefined) {
+    if (this._blockDeviceMapping?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.blockDeviceMapping = this._blockDeviceMapping;
+      internalValueResult.blockDeviceMapping = this._blockDeviceMapping?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -430,12 +778,12 @@ export class ImagebuilderContainerRecipeInstanceConfigurationOutputReference ext
     if (value === undefined) {
       this.isEmptyObject = false;
       this._image = undefined;
-      this._blockDeviceMapping = undefined;
+      this._blockDeviceMapping.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._image = value.image;
-      this._blockDeviceMapping = value.blockDeviceMapping;
+      this._blockDeviceMapping.internalValue = value.blockDeviceMapping;
     }
   }
 
@@ -456,20 +804,19 @@ export class ImagebuilderContainerRecipeInstanceConfigurationOutputReference ext
   }
 
   // block_device_mapping - computed: false, optional: true, required: false
-  private _blockDeviceMapping?: ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping[] | cdktf.IResolvable; 
+  private _blockDeviceMapping = new ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList(this, "block_device_mapping", true);
   public get blockDeviceMapping() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('block_device_mapping')));
+    return this._blockDeviceMapping;
   }
-  public set blockDeviceMapping(value: ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping[] | cdktf.IResolvable) {
-    this._blockDeviceMapping = value;
+  public putBlockDeviceMapping(value: ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping[] | cdktf.IResolvable) {
+    this._blockDeviceMapping.internalValue = value;
   }
   public resetBlockDeviceMapping() {
-    this._blockDeviceMapping = undefined;
+    this._blockDeviceMapping.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get blockDeviceMappingInput() {
-    return this._blockDeviceMapping;
+    return this._blockDeviceMapping.internalValue;
   }
 }
 export interface ImagebuilderContainerRecipeTargetRepository {
@@ -597,6 +944,7 @@ export class ImagebuilderContainerRecipe extends cdktf.TerraformResource {
     this._description = config.description;
     this._dockerfileTemplateData = config.dockerfileTemplateData;
     this._dockerfileTemplateUri = config.dockerfileTemplateUri;
+    this._id = config.id;
     this._kmsKeyId = config.kmsKeyId;
     this._name = config.name;
     this._parentImage = config.parentImage;
@@ -604,7 +952,7 @@ export class ImagebuilderContainerRecipe extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._version = config.version;
     this._workingDirectory = config.workingDirectory;
-    this._component = config.component;
+    this._component.internalValue = config.component;
     this._instanceConfiguration.internalValue = config.instanceConfiguration;
     this._targetRepository.internalValue = config.targetRepository;
   }
@@ -690,8 +1038,19 @@ export class ImagebuilderContainerRecipe extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_key_id - computed: false, optional: true, required: false
@@ -808,17 +1167,16 @@ export class ImagebuilderContainerRecipe extends cdktf.TerraformResource {
   }
 
   // component - computed: false, optional: false, required: true
-  private _component?: ImagebuilderContainerRecipeComponent[] | cdktf.IResolvable; 
+  private _component = new ImagebuilderContainerRecipeComponentList(this, "component", false);
   public get component() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('component');
+    return this._component;
   }
-  public set component(value: ImagebuilderContainerRecipeComponent[] | cdktf.IResolvable) {
-    this._component = value;
+  public putComponent(value: ImagebuilderContainerRecipeComponent[] | cdktf.IResolvable) {
+    this._component.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get componentInput() {
-    return this._component;
+    return this._component.internalValue;
   }
 
   // instance_configuration - computed: false, optional: true, required: false
@@ -860,6 +1218,7 @@ export class ImagebuilderContainerRecipe extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       dockerfile_template_data: cdktf.stringToTerraform(this._dockerfileTemplateData),
       dockerfile_template_uri: cdktf.stringToTerraform(this._dockerfileTemplateUri),
+      id: cdktf.stringToTerraform(this._id),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       name: cdktf.stringToTerraform(this._name),
       parent_image: cdktf.stringToTerraform(this._parentImage),
@@ -867,7 +1226,7 @@ export class ImagebuilderContainerRecipe extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       version: cdktf.stringToTerraform(this._version),
       working_directory: cdktf.stringToTerraform(this._workingDirectory),
-      component: cdktf.listMapper(imagebuilderContainerRecipeComponentToTerraform)(this._component),
+      component: cdktf.listMapper(imagebuilderContainerRecipeComponentToTerraform)(this._component.internalValue),
       instance_configuration: imagebuilderContainerRecipeInstanceConfigurationToTerraform(this._instanceConfiguration.internalValue),
       target_repository: imagebuilderContainerRecipeTargetRepositoryToTerraform(this._targetRepository.internalValue),
     };

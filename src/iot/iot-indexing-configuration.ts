@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface IotIndexingConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_indexing_configuration#id IotIndexingConfiguration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * thing_group_indexing_configuration block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_indexing_configuration#thing_group_indexing_configuration IotIndexingConfiguration#thing_group_indexing_configuration}
@@ -42,6 +49,108 @@ export function iotIndexingConfigurationThingGroupIndexingConfigurationCustomFie
   }
 }
 
+export class IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotIndexingConfigurationThingGroupIndexingConfigurationCustomField | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotIndexingConfigurationThingGroupIndexingConfigurationCustomField | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList extends cdktf.ComplexList {
+  public internalValue? : IotIndexingConfigurationThingGroupIndexingConfigurationCustomField[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference {
+    return new IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotIndexingConfigurationThingGroupIndexingConfigurationManagedField {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_indexing_configuration#name IotIndexingConfiguration#name}
@@ -64,6 +173,108 @@ export function iotIndexingConfigurationThingGroupIndexingConfigurationManagedFi
   }
 }
 
+export class IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotIndexingConfigurationThingGroupIndexingConfigurationManagedField | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotIndexingConfigurationThingGroupIndexingConfigurationManagedField | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList extends cdktf.ComplexList {
+  public internalValue? : IotIndexingConfigurationThingGroupIndexingConfigurationManagedField[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference {
+    return new IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotIndexingConfigurationThingGroupIndexingConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_indexing_configuration#thing_group_indexing_mode IotIndexingConfiguration#thing_group_indexing_mode}
@@ -113,13 +324,13 @@ export class IotIndexingConfigurationThingGroupIndexingConfigurationOutputRefere
       hasAnyValues = true;
       internalValueResult.thingGroupIndexingMode = this._thingGroupIndexingMode;
     }
-    if (this._customField !== undefined) {
+    if (this._customField?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.customField = this._customField;
+      internalValueResult.customField = this._customField?.internalValue;
     }
-    if (this._managedField !== undefined) {
+    if (this._managedField?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.managedField = this._managedField;
+      internalValueResult.managedField = this._managedField?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -128,14 +339,14 @@ export class IotIndexingConfigurationThingGroupIndexingConfigurationOutputRefere
     if (value === undefined) {
       this.isEmptyObject = false;
       this._thingGroupIndexingMode = undefined;
-      this._customField = undefined;
-      this._managedField = undefined;
+      this._customField.internalValue = undefined;
+      this._managedField.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._thingGroupIndexingMode = value.thingGroupIndexingMode;
-      this._customField = value.customField;
-      this._managedField = value.managedField;
+      this._customField.internalValue = value.customField;
+      this._managedField.internalValue = value.managedField;
     }
   }
 
@@ -153,37 +364,35 @@ export class IotIndexingConfigurationThingGroupIndexingConfigurationOutputRefere
   }
 
   // custom_field - computed: false, optional: true, required: false
-  private _customField?: IotIndexingConfigurationThingGroupIndexingConfigurationCustomField[] | cdktf.IResolvable; 
+  private _customField = new IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList(this, "custom_field", true);
   public get customField() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('custom_field')));
+    return this._customField;
   }
-  public set customField(value: IotIndexingConfigurationThingGroupIndexingConfigurationCustomField[] | cdktf.IResolvable) {
-    this._customField = value;
+  public putCustomField(value: IotIndexingConfigurationThingGroupIndexingConfigurationCustomField[] | cdktf.IResolvable) {
+    this._customField.internalValue = value;
   }
   public resetCustomField() {
-    this._customField = undefined;
+    this._customField.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get customFieldInput() {
-    return this._customField;
+    return this._customField.internalValue;
   }
 
   // managed_field - computed: false, optional: true, required: false
-  private _managedField?: IotIndexingConfigurationThingGroupIndexingConfigurationManagedField[] | cdktf.IResolvable; 
+  private _managedField = new IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList(this, "managed_field", true);
   public get managedField() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('managed_field')));
+    return this._managedField;
   }
-  public set managedField(value: IotIndexingConfigurationThingGroupIndexingConfigurationManagedField[] | cdktf.IResolvable) {
-    this._managedField = value;
+  public putManagedField(value: IotIndexingConfigurationThingGroupIndexingConfigurationManagedField[] | cdktf.IResolvable) {
+    this._managedField.internalValue = value;
   }
   public resetManagedField() {
-    this._managedField = undefined;
+    this._managedField.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get managedFieldInput() {
-    return this._managedField;
+    return this._managedField.internalValue;
   }
 }
 export interface IotIndexingConfigurationThingIndexingConfigurationCustomField {
@@ -208,6 +417,108 @@ export function iotIndexingConfigurationThingIndexingConfigurationCustomFieldToT
   }
 }
 
+export class IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotIndexingConfigurationThingIndexingConfigurationCustomField | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotIndexingConfigurationThingIndexingConfigurationCustomField | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class IotIndexingConfigurationThingIndexingConfigurationCustomFieldList extends cdktf.ComplexList {
+  public internalValue? : IotIndexingConfigurationThingIndexingConfigurationCustomField[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference {
+    return new IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotIndexingConfigurationThingIndexingConfigurationManagedField {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_indexing_configuration#name IotIndexingConfiguration#name}
@@ -230,6 +541,108 @@ export function iotIndexingConfigurationThingIndexingConfigurationManagedFieldTo
   }
 }
 
+export class IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotIndexingConfigurationThingIndexingConfigurationManagedField | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotIndexingConfigurationThingIndexingConfigurationManagedField | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class IotIndexingConfigurationThingIndexingConfigurationManagedFieldList extends cdktf.ComplexList {
+  public internalValue? : IotIndexingConfigurationThingIndexingConfigurationManagedField[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference {
+    return new IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotIndexingConfigurationThingIndexingConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_indexing_configuration#device_defender_indexing_mode IotIndexingConfiguration#device_defender_indexing_mode}
@@ -306,13 +719,13 @@ export class IotIndexingConfigurationThingIndexingConfigurationOutputReference e
       hasAnyValues = true;
       internalValueResult.thingIndexingMode = this._thingIndexingMode;
     }
-    if (this._customField !== undefined) {
+    if (this._customField?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.customField = this._customField;
+      internalValueResult.customField = this._customField?.internalValue;
     }
-    if (this._managedField !== undefined) {
+    if (this._managedField?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.managedField = this._managedField;
+      internalValueResult.managedField = this._managedField?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -324,8 +737,8 @@ export class IotIndexingConfigurationThingIndexingConfigurationOutputReference e
       this._namedShadowIndexingMode = undefined;
       this._thingConnectivityIndexingMode = undefined;
       this._thingIndexingMode = undefined;
-      this._customField = undefined;
-      this._managedField = undefined;
+      this._customField.internalValue = undefined;
+      this._managedField.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -333,8 +746,8 @@ export class IotIndexingConfigurationThingIndexingConfigurationOutputReference e
       this._namedShadowIndexingMode = value.namedShadowIndexingMode;
       this._thingConnectivityIndexingMode = value.thingConnectivityIndexingMode;
       this._thingIndexingMode = value.thingIndexingMode;
-      this._customField = value.customField;
-      this._managedField = value.managedField;
+      this._customField.internalValue = value.customField;
+      this._managedField.internalValue = value.managedField;
     }
   }
 
@@ -400,37 +813,35 @@ export class IotIndexingConfigurationThingIndexingConfigurationOutputReference e
   }
 
   // custom_field - computed: false, optional: true, required: false
-  private _customField?: IotIndexingConfigurationThingIndexingConfigurationCustomField[] | cdktf.IResolvable; 
+  private _customField = new IotIndexingConfigurationThingIndexingConfigurationCustomFieldList(this, "custom_field", true);
   public get customField() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('custom_field')));
+    return this._customField;
   }
-  public set customField(value: IotIndexingConfigurationThingIndexingConfigurationCustomField[] | cdktf.IResolvable) {
-    this._customField = value;
+  public putCustomField(value: IotIndexingConfigurationThingIndexingConfigurationCustomField[] | cdktf.IResolvable) {
+    this._customField.internalValue = value;
   }
   public resetCustomField() {
-    this._customField = undefined;
+    this._customField.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get customFieldInput() {
-    return this._customField;
+    return this._customField.internalValue;
   }
 
   // managed_field - computed: false, optional: true, required: false
-  private _managedField?: IotIndexingConfigurationThingIndexingConfigurationManagedField[] | cdktf.IResolvable; 
+  private _managedField = new IotIndexingConfigurationThingIndexingConfigurationManagedFieldList(this, "managed_field", true);
   public get managedField() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('managed_field')));
+    return this._managedField;
   }
-  public set managedField(value: IotIndexingConfigurationThingIndexingConfigurationManagedField[] | cdktf.IResolvable) {
-    this._managedField = value;
+  public putManagedField(value: IotIndexingConfigurationThingIndexingConfigurationManagedField[] | cdktf.IResolvable) {
+    this._managedField.internalValue = value;
   }
   public resetManagedField() {
-    this._managedField = undefined;
+    this._managedField.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get managedFieldInput() {
-    return this._managedField;
+    return this._managedField.internalValue;
   }
 }
 
@@ -468,6 +879,7 @@ export class IotIndexingConfiguration extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._thingGroupIndexingConfiguration.internalValue = config.thingGroupIndexingConfiguration;
     this._thingIndexingConfiguration.internalValue = config.thingIndexingConfiguration;
   }
@@ -477,8 +889,19 @@ export class IotIndexingConfiguration extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // thing_group_indexing_configuration - computed: false, optional: true, required: false
@@ -519,6 +942,7 @@ export class IotIndexingConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       thing_group_indexing_configuration: iotIndexingConfigurationThingGroupIndexingConfigurationToTerraform(this._thingGroupIndexingConfiguration.internalValue),
       thing_indexing_configuration: iotIndexingConfigurationThingIndexingConfigurationToTerraform(this._thingIndexingConfiguration.internalValue),
     };

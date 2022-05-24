@@ -16,6 +16,13 @@ export interface Ec2TransitGatewayVpcAttachmentConfig extends cdktf.TerraformMet
   */
   readonly dnsSupport?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_vpc_attachment#id Ec2TransitGatewayVpcAttachment#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_vpc_attachment#ipv6_support Ec2TransitGatewayVpcAttachment#ipv6_support}
   */
   readonly ipv6Support?: string;
@@ -85,6 +92,7 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
     });
     this._applianceModeSupport = config.applianceModeSupport;
     this._dnsSupport = config.dnsSupport;
+    this._id = config.id;
     this._ipv6Support = config.ipv6Support;
     this._subnetIds = config.subnetIds;
     this._tags = config.tags;
@@ -132,8 +140,19 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ipv6_support - computed: false, optional: true, required: false
@@ -268,6 +287,7 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
     return {
       appliance_mode_support: cdktf.stringToTerraform(this._applianceModeSupport),
       dns_support: cdktf.stringToTerraform(this._dnsSupport),
+      id: cdktf.stringToTerraform(this._id),
       ipv6_support: cdktf.stringToTerraform(this._ipv6Support),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

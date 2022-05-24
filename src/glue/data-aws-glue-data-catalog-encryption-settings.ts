@@ -11,6 +11,13 @@ export interface DataAwsGlueDataCatalogEncryptionSettingsConfig extends cdktf.Te
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/glue_data_catalog_encryption_settings#catalog_id DataAwsGlueDataCatalogEncryptionSettings#catalog_id}
   */
   readonly catalogId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/glue_data_catalog_encryption_settings#id DataAwsGlueDataCatalogEncryptionSettings#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
 }
 export interface DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption {
 }
@@ -257,6 +264,7 @@ export class DataAwsGlueDataCatalogEncryptionSettings extends cdktf.TerraformDat
       lifecycle: config.lifecycle
     });
     this._catalogId = config.catalogId;
+    this._id = config.id;
   }
 
   // ==========
@@ -283,8 +291,19 @@ export class DataAwsGlueDataCatalogEncryptionSettings extends cdktf.TerraformDat
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // =========
@@ -294,6 +313,7 @@ export class DataAwsGlueDataCatalogEncryptionSettings extends cdktf.TerraformDat
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       catalog_id: cdktf.stringToTerraform(this._catalogId),
+      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

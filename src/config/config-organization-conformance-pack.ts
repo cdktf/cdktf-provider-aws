@@ -20,6 +20,13 @@ export interface ConfigOrganizationConformancePackConfig extends cdktf.Terraform
   */
   readonly excludedAccounts?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_organization_conformance_pack#id ConfigOrganizationConformancePack#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_organization_conformance_pack#name ConfigOrganizationConformancePack#name}
   */
   readonly name: string;
@@ -66,6 +73,102 @@ export function configOrganizationConformancePackInputParameterToTerraform(struc
   }
 }
 
+export class ConfigOrganizationConformancePackInputParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ConfigOrganizationConformancePackInputParameter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._parameterName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterName = this._parameterName;
+    }
+    if (this._parameterValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ConfigOrganizationConformancePackInputParameter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._parameterName = undefined;
+      this._parameterValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._parameterName = value.parameterName;
+      this._parameterValue = value.parameterValue;
+    }
+  }
+
+  // parameter_name - computed: false, optional: false, required: true
+  private _parameterName?: string; 
+  public get parameterName() {
+    return this.getStringAttribute('parameter_name');
+  }
+  public set parameterName(value: string) {
+    this._parameterName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterNameInput() {
+    return this._parameterName;
+  }
+
+  // parameter_value - computed: false, optional: false, required: true
+  private _parameterValue?: string; 
+  public get parameterValue() {
+    return this.getStringAttribute('parameter_value');
+  }
+  public set parameterValue(value: string) {
+    this._parameterValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue;
+  }
+}
+
+export class ConfigOrganizationConformancePackInputParameterList extends cdktf.ComplexList {
+  public internalValue? : ConfigOrganizationConformancePackInputParameter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ConfigOrganizationConformancePackInputParameterOutputReference {
+    return new ConfigOrganizationConformancePackInputParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ConfigOrganizationConformancePackTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_organization_conformance_pack#create ConfigOrganizationConformancePack#create}
@@ -95,6 +198,7 @@ export function configOrganizationConformancePackTimeoutsToTerraform(struct?: Co
 
 export class ConfigOrganizationConformancePackTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -104,7 +208,10 @@ export class ConfigOrganizationConformancePackTimeoutsOutputReference extends cd
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): ConfigOrganizationConformancePackTimeouts | undefined {
+  public get internalValue(): ConfigOrganizationConformancePackTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -122,15 +229,21 @@ export class ConfigOrganizationConformancePackTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConfigOrganizationConformancePackTimeouts | undefined) {
+  public set internalValue(value: ConfigOrganizationConformancePackTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -223,10 +336,11 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
     this._deliveryS3Bucket = config.deliveryS3Bucket;
     this._deliveryS3KeyPrefix = config.deliveryS3KeyPrefix;
     this._excludedAccounts = config.excludedAccounts;
+    this._id = config.id;
     this._name = config.name;
     this._templateBody = config.templateBody;
     this._templateS3Uri = config.templateS3Uri;
-    this._inputParameter = config.inputParameter;
+    this._inputParameter.internalValue = config.inputParameter;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -288,8 +402,19 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -338,20 +463,19 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
   }
 
   // input_parameter - computed: false, optional: true, required: false
-  private _inputParameter?: ConfigOrganizationConformancePackInputParameter[] | cdktf.IResolvable; 
+  private _inputParameter = new ConfigOrganizationConformancePackInputParameterList(this, "input_parameter", true);
   public get inputParameter() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('input_parameter')));
+    return this._inputParameter;
   }
-  public set inputParameter(value: ConfigOrganizationConformancePackInputParameter[] | cdktf.IResolvable) {
-    this._inputParameter = value;
+  public putInputParameter(value: ConfigOrganizationConformancePackInputParameter[] | cdktf.IResolvable) {
+    this._inputParameter.internalValue = value;
   }
   public resetInputParameter() {
-    this._inputParameter = undefined;
+    this._inputParameter.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get inputParameterInput() {
-    return this._inputParameter;
+    return this._inputParameter.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -379,10 +503,11 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
       delivery_s3_bucket: cdktf.stringToTerraform(this._deliveryS3Bucket),
       delivery_s3_key_prefix: cdktf.stringToTerraform(this._deliveryS3KeyPrefix),
       excluded_accounts: cdktf.listMapper(cdktf.stringToTerraform)(this._excludedAccounts),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       template_body: cdktf.stringToTerraform(this._templateBody),
       template_s3_uri: cdktf.stringToTerraform(this._templateS3Uri),
-      input_parameter: cdktf.listMapper(configOrganizationConformancePackInputParameterToTerraform)(this._inputParameter),
+      input_parameter: cdktf.listMapper(configOrganizationConformancePackInputParameterToTerraform)(this._inputParameter.internalValue),
       timeouts: configOrganizationConformancePackTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

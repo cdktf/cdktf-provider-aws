@@ -12,6 +12,13 @@ export interface GlueDataCatalogEncryptionSettingsConfig extends cdktf.Terraform
   */
   readonly catalogId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings#id GlueDataCatalogEncryptionSettings#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * data_catalog_encryption_settings block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings#data_catalog_encryption_settings GlueDataCatalogEncryptionSettings#data_catalog_encryption_settings}
@@ -322,6 +329,7 @@ export class GlueDataCatalogEncryptionSettings extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._catalogId = config.catalogId;
+    this._id = config.id;
     this._dataCatalogEncryptionSettings.internalValue = config.dataCatalogEncryptionSettings;
   }
 
@@ -346,8 +354,19 @@ export class GlueDataCatalogEncryptionSettings extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // data_catalog_encryption_settings - computed: false, optional: false, required: true
@@ -370,6 +389,7 @@ export class GlueDataCatalogEncryptionSettings extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       catalog_id: cdktf.stringToTerraform(this._catalogId),
+      id: cdktf.stringToTerraform(this._id),
       data_catalog_encryption_settings: glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsToTerraform(this._dataCatalogEncryptionSettings.internalValue),
     };
   }

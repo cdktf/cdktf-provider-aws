@@ -24,6 +24,13 @@ export interface CloudtrailConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enableLogging?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail#id Cloudtrail#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail#include_global_service_events Cloudtrail#include_global_service_events}
   */
   readonly includeGlobalServiceEvents?: boolean | cdktf.IResolvable;
@@ -129,6 +136,215 @@ export function cloudtrailAdvancedEventSelectorFieldSelectorToTerraform(struct?:
   }
 }
 
+export class CloudtrailAdvancedEventSelectorFieldSelectorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudtrailAdvancedEventSelectorFieldSelector | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endsWith !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endsWith = this._endsWith;
+    }
+    if (this._equals !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.equalTo = this._equals;
+    }
+    if (this._field !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.field = this._field;
+    }
+    if (this._notEndsWith !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notEndsWith = this._notEndsWith;
+    }
+    if (this._notEquals !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notEquals = this._notEquals;
+    }
+    if (this._notStartsWith !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notStartsWith = this._notStartsWith;
+    }
+    if (this._startsWith !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startsWith = this._startsWith;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudtrailAdvancedEventSelectorFieldSelector | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._endsWith = undefined;
+      this._equals = undefined;
+      this._field = undefined;
+      this._notEndsWith = undefined;
+      this._notEquals = undefined;
+      this._notStartsWith = undefined;
+      this._startsWith = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._endsWith = value.endsWith;
+      this._equals = value.equalTo;
+      this._field = value.field;
+      this._notEndsWith = value.notEndsWith;
+      this._notEquals = value.notEquals;
+      this._notStartsWith = value.notStartsWith;
+      this._startsWith = value.startsWith;
+    }
+  }
+
+  // ends_with - computed: false, optional: true, required: false
+  private _endsWith?: string[]; 
+  public get endsWith() {
+    return this.getListAttribute('ends_with');
+  }
+  public set endsWith(value: string[]) {
+    this._endsWith = value;
+  }
+  public resetEndsWith() {
+    this._endsWith = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endsWithInput() {
+    return this._endsWith;
+  }
+
+  // equals - computed: false, optional: true, required: false
+  private _equals?: string[]; 
+  public get equalTo() {
+    return this.getListAttribute('equals');
+  }
+  public set equalTo(value: string[]) {
+    this._equals = value;
+  }
+  public resetEqualTo() {
+    this._equals = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get equalToInput() {
+    return this._equals;
+  }
+
+  // field - computed: false, optional: false, required: true
+  private _field?: string; 
+  public get field() {
+    return this.getStringAttribute('field');
+  }
+  public set field(value: string) {
+    this._field = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldInput() {
+    return this._field;
+  }
+
+  // not_ends_with - computed: false, optional: true, required: false
+  private _notEndsWith?: string[]; 
+  public get notEndsWith() {
+    return this.getListAttribute('not_ends_with');
+  }
+  public set notEndsWith(value: string[]) {
+    this._notEndsWith = value;
+  }
+  public resetNotEndsWith() {
+    this._notEndsWith = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notEndsWithInput() {
+    return this._notEndsWith;
+  }
+
+  // not_equals - computed: false, optional: true, required: false
+  private _notEquals?: string[]; 
+  public get notEquals() {
+    return this.getListAttribute('not_equals');
+  }
+  public set notEquals(value: string[]) {
+    this._notEquals = value;
+  }
+  public resetNotEquals() {
+    this._notEquals = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notEqualsInput() {
+    return this._notEquals;
+  }
+
+  // not_starts_with - computed: false, optional: true, required: false
+  private _notStartsWith?: string[]; 
+  public get notStartsWith() {
+    return this.getListAttribute('not_starts_with');
+  }
+  public set notStartsWith(value: string[]) {
+    this._notStartsWith = value;
+  }
+  public resetNotStartsWith() {
+    this._notStartsWith = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notStartsWithInput() {
+    return this._notStartsWith;
+  }
+
+  // starts_with - computed: false, optional: true, required: false
+  private _startsWith?: string[]; 
+  public get startsWith() {
+    return this.getListAttribute('starts_with');
+  }
+  public set startsWith(value: string[]) {
+    this._startsWith = value;
+  }
+  public resetStartsWith() {
+    this._startsWith = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startsWithInput() {
+    return this._startsWith;
+  }
+}
+
+export class CloudtrailAdvancedEventSelectorFieldSelectorList extends cdktf.ComplexList {
+  public internalValue? : CloudtrailAdvancedEventSelectorFieldSelector[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudtrailAdvancedEventSelectorFieldSelectorOutputReference {
+    return new CloudtrailAdvancedEventSelectorFieldSelectorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudtrailAdvancedEventSelector {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail#name Cloudtrail#name}
@@ -153,6 +369,105 @@ export function cloudtrailAdvancedEventSelectorToTerraform(struct?: CloudtrailAd
   }
 }
 
+export class CloudtrailAdvancedEventSelectorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudtrailAdvancedEventSelector | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._fieldSelector?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fieldSelector = this._fieldSelector?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudtrailAdvancedEventSelector | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._fieldSelector.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._fieldSelector.internalValue = value.fieldSelector;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // field_selector - computed: false, optional: false, required: true
+  private _fieldSelector = new CloudtrailAdvancedEventSelectorFieldSelectorList(this, "field_selector", true);
+  public get fieldSelector() {
+    return this._fieldSelector;
+  }
+  public putFieldSelector(value: CloudtrailAdvancedEventSelectorFieldSelector[] | cdktf.IResolvable) {
+    this._fieldSelector.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldSelectorInput() {
+    return this._fieldSelector.internalValue;
+  }
+}
+
+export class CloudtrailAdvancedEventSelectorList extends cdktf.ComplexList {
+  public internalValue? : CloudtrailAdvancedEventSelector[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudtrailAdvancedEventSelectorOutputReference {
+    return new CloudtrailAdvancedEventSelectorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudtrailEventSelectorDataResource {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail#type Cloudtrail#type}
@@ -175,6 +490,102 @@ export function cloudtrailEventSelectorDataResourceToTerraform(struct?: Cloudtra
   }
 }
 
+export class CloudtrailEventSelectorDataResourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudtrailEventSelectorDataResource | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudtrailEventSelectorDataResource | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+      this._values = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+      this._values = value.values;
+    }
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class CloudtrailEventSelectorDataResourceList extends cdktf.ComplexList {
+  public internalValue? : CloudtrailEventSelectorDataResource[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudtrailEventSelectorDataResourceOutputReference {
+    return new CloudtrailEventSelectorDataResourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudtrailEventSelector {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail#exclude_management_event_sources Cloudtrail#exclude_management_event_sources}
@@ -209,6 +620,152 @@ export function cloudtrailEventSelectorToTerraform(struct?: CloudtrailEventSelec
   }
 }
 
+export class CloudtrailEventSelectorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudtrailEventSelector | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._excludeManagementEventSources !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.excludeManagementEventSources = this._excludeManagementEventSources;
+    }
+    if (this._includeManagementEvents !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includeManagementEvents = this._includeManagementEvents;
+    }
+    if (this._readWriteType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readWriteType = this._readWriteType;
+    }
+    if (this._dataResource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataResource = this._dataResource?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudtrailEventSelector | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._excludeManagementEventSources = undefined;
+      this._includeManagementEvents = undefined;
+      this._readWriteType = undefined;
+      this._dataResource.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._excludeManagementEventSources = value.excludeManagementEventSources;
+      this._includeManagementEvents = value.includeManagementEvents;
+      this._readWriteType = value.readWriteType;
+      this._dataResource.internalValue = value.dataResource;
+    }
+  }
+
+  // exclude_management_event_sources - computed: false, optional: true, required: false
+  private _excludeManagementEventSources?: string[]; 
+  public get excludeManagementEventSources() {
+    return cdktf.Fn.tolist(this.getListAttribute('exclude_management_event_sources'));
+  }
+  public set excludeManagementEventSources(value: string[]) {
+    this._excludeManagementEventSources = value;
+  }
+  public resetExcludeManagementEventSources() {
+    this._excludeManagementEventSources = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludeManagementEventSourcesInput() {
+    return this._excludeManagementEventSources;
+  }
+
+  // include_management_events - computed: false, optional: true, required: false
+  private _includeManagementEvents?: boolean | cdktf.IResolvable; 
+  public get includeManagementEvents() {
+    return this.getBooleanAttribute('include_management_events');
+  }
+  public set includeManagementEvents(value: boolean | cdktf.IResolvable) {
+    this._includeManagementEvents = value;
+  }
+  public resetIncludeManagementEvents() {
+    this._includeManagementEvents = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeManagementEventsInput() {
+    return this._includeManagementEvents;
+  }
+
+  // read_write_type - computed: false, optional: true, required: false
+  private _readWriteType?: string; 
+  public get readWriteType() {
+    return this.getStringAttribute('read_write_type');
+  }
+  public set readWriteType(value: string) {
+    this._readWriteType = value;
+  }
+  public resetReadWriteType() {
+    this._readWriteType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readWriteTypeInput() {
+    return this._readWriteType;
+  }
+
+  // data_resource - computed: false, optional: true, required: false
+  private _dataResource = new CloudtrailEventSelectorDataResourceList(this, "data_resource", false);
+  public get dataResource() {
+    return this._dataResource;
+  }
+  public putDataResource(value: CloudtrailEventSelectorDataResource[] | cdktf.IResolvable) {
+    this._dataResource.internalValue = value;
+  }
+  public resetDataResource() {
+    this._dataResource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataResourceInput() {
+    return this._dataResource.internalValue;
+  }
+}
+
+export class CloudtrailEventSelectorList extends cdktf.ComplexList {
+  public internalValue? : CloudtrailEventSelector[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudtrailEventSelectorOutputReference {
+    return new CloudtrailEventSelectorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudtrailInsightSelector {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail#insight_type Cloudtrail#insight_type}
@@ -226,6 +783,83 @@ export function cloudtrailInsightSelectorToTerraform(struct?: CloudtrailInsightS
   }
 }
 
+export class CloudtrailInsightSelectorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudtrailInsightSelector | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._insightType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.insightType = this._insightType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudtrailInsightSelector | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._insightType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._insightType = value.insightType;
+    }
+  }
+
+  // insight_type - computed: false, optional: false, required: true
+  private _insightType?: string; 
+  public get insightType() {
+    return this.getStringAttribute('insight_type');
+  }
+  public set insightType(value: string) {
+    this._insightType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get insightTypeInput() {
+    return this._insightType;
+  }
+}
+
+export class CloudtrailInsightSelectorList extends cdktf.ComplexList {
+  public internalValue? : CloudtrailInsightSelector[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudtrailInsightSelectorOutputReference {
+    return new CloudtrailInsightSelectorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail aws_cloudtrail}
@@ -265,6 +899,7 @@ export class Cloudtrail extends cdktf.TerraformResource {
     this._cloudWatchLogsRoleArn = config.cloudWatchLogsRoleArn;
     this._enableLogFileValidation = config.enableLogFileValidation;
     this._enableLogging = config.enableLogging;
+    this._id = config.id;
     this._includeGlobalServiceEvents = config.includeGlobalServiceEvents;
     this._isMultiRegionTrail = config.isMultiRegionTrail;
     this._isOrganizationTrail = config.isOrganizationTrail;
@@ -275,9 +910,9 @@ export class Cloudtrail extends cdktf.TerraformResource {
     this._snsTopicName = config.snsTopicName;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._advancedEventSelector = config.advancedEventSelector;
-    this._eventSelector = config.eventSelector;
-    this._insightSelector = config.insightSelector;
+    this._advancedEventSelector.internalValue = config.advancedEventSelector;
+    this._eventSelector.internalValue = config.eventSelector;
+    this._insightSelector.internalValue = config.insightSelector;
   }
 
   // ==========
@@ -359,8 +994,19 @@ export class Cloudtrail extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // include_global_service_events - computed: false, optional: true, required: false
@@ -518,54 +1164,51 @@ export class Cloudtrail extends cdktf.TerraformResource {
   }
 
   // advanced_event_selector - computed: false, optional: true, required: false
-  private _advancedEventSelector?: CloudtrailAdvancedEventSelector[] | cdktf.IResolvable; 
+  private _advancedEventSelector = new CloudtrailAdvancedEventSelectorList(this, "advanced_event_selector", false);
   public get advancedEventSelector() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('advanced_event_selector');
+    return this._advancedEventSelector;
   }
-  public set advancedEventSelector(value: CloudtrailAdvancedEventSelector[] | cdktf.IResolvable) {
-    this._advancedEventSelector = value;
+  public putAdvancedEventSelector(value: CloudtrailAdvancedEventSelector[] | cdktf.IResolvable) {
+    this._advancedEventSelector.internalValue = value;
   }
   public resetAdvancedEventSelector() {
-    this._advancedEventSelector = undefined;
+    this._advancedEventSelector.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get advancedEventSelectorInput() {
-    return this._advancedEventSelector;
+    return this._advancedEventSelector.internalValue;
   }
 
   // event_selector - computed: false, optional: true, required: false
-  private _eventSelector?: CloudtrailEventSelector[] | cdktf.IResolvable; 
+  private _eventSelector = new CloudtrailEventSelectorList(this, "event_selector", false);
   public get eventSelector() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('event_selector');
+    return this._eventSelector;
   }
-  public set eventSelector(value: CloudtrailEventSelector[] | cdktf.IResolvable) {
-    this._eventSelector = value;
+  public putEventSelector(value: CloudtrailEventSelector[] | cdktf.IResolvable) {
+    this._eventSelector.internalValue = value;
   }
   public resetEventSelector() {
-    this._eventSelector = undefined;
+    this._eventSelector.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get eventSelectorInput() {
-    return this._eventSelector;
+    return this._eventSelector.internalValue;
   }
 
   // insight_selector - computed: false, optional: true, required: false
-  private _insightSelector?: CloudtrailInsightSelector[] | cdktf.IResolvable; 
+  private _insightSelector = new CloudtrailInsightSelectorList(this, "insight_selector", false);
   public get insightSelector() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('insight_selector');
+    return this._insightSelector;
   }
-  public set insightSelector(value: CloudtrailInsightSelector[] | cdktf.IResolvable) {
-    this._insightSelector = value;
+  public putInsightSelector(value: CloudtrailInsightSelector[] | cdktf.IResolvable) {
+    this._insightSelector.internalValue = value;
   }
   public resetInsightSelector() {
-    this._insightSelector = undefined;
+    this._insightSelector.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get insightSelectorInput() {
-    return this._insightSelector;
+    return this._insightSelector.internalValue;
   }
 
   // =========
@@ -578,6 +1221,7 @@ export class Cloudtrail extends cdktf.TerraformResource {
       cloud_watch_logs_role_arn: cdktf.stringToTerraform(this._cloudWatchLogsRoleArn),
       enable_log_file_validation: cdktf.booleanToTerraform(this._enableLogFileValidation),
       enable_logging: cdktf.booleanToTerraform(this._enableLogging),
+      id: cdktf.stringToTerraform(this._id),
       include_global_service_events: cdktf.booleanToTerraform(this._includeGlobalServiceEvents),
       is_multi_region_trail: cdktf.booleanToTerraform(this._isMultiRegionTrail),
       is_organization_trail: cdktf.booleanToTerraform(this._isOrganizationTrail),
@@ -588,9 +1232,9 @@ export class Cloudtrail extends cdktf.TerraformResource {
       sns_topic_name: cdktf.stringToTerraform(this._snsTopicName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      advanced_event_selector: cdktf.listMapper(cloudtrailAdvancedEventSelectorToTerraform)(this._advancedEventSelector),
-      event_selector: cdktf.listMapper(cloudtrailEventSelectorToTerraform)(this._eventSelector),
-      insight_selector: cdktf.listMapper(cloudtrailInsightSelectorToTerraform)(this._insightSelector),
+      advanced_event_selector: cdktf.listMapper(cloudtrailAdvancedEventSelectorToTerraform)(this._advancedEventSelector.internalValue),
+      event_selector: cdktf.listMapper(cloudtrailEventSelectorToTerraform)(this._eventSelector.internalValue),
+      insight_selector: cdktf.listMapper(cloudtrailInsightSelectorToTerraform)(this._insightSelector.internalValue),
     };
   }
 }

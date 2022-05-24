@@ -20,6 +20,13 @@ export interface Ec2ClientVpnRouteConfig extends cdktf.TerraformMetaArguments {
   */
   readonly destinationCidrBlock: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_route#id Ec2ClientVpnRoute#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_route#target_vpc_subnet_id Ec2ClientVpnRoute#target_vpc_subnet_id}
   */
   readonly targetVpcSubnetId: string;
@@ -54,6 +61,7 @@ export function ec2ClientVpnRouteTimeoutsToTerraform(struct?: Ec2ClientVpnRouteT
 
 export class Ec2ClientVpnRouteTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -63,7 +71,10 @@ export class Ec2ClientVpnRouteTimeoutsOutputReference extends cdktf.ComplexObjec
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Ec2ClientVpnRouteTimeouts | undefined {
+  public get internalValue(): Ec2ClientVpnRouteTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -77,14 +88,20 @@ export class Ec2ClientVpnRouteTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Ec2ClientVpnRouteTimeouts | undefined) {
+  public set internalValue(value: Ec2ClientVpnRouteTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -160,6 +177,7 @@ export class Ec2ClientVpnRoute extends cdktf.TerraformResource {
     this._clientVpnEndpointId = config.clientVpnEndpointId;
     this._description = config.description;
     this._destinationCidrBlock = config.destinationCidrBlock;
+    this._id = config.id;
     this._targetVpcSubnetId = config.targetVpcSubnetId;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -211,8 +229,19 @@ export class Ec2ClientVpnRoute extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // origin - computed: true, optional: false, required: false
@@ -263,6 +292,7 @@ export class Ec2ClientVpnRoute extends cdktf.TerraformResource {
       client_vpn_endpoint_id: cdktf.stringToTerraform(this._clientVpnEndpointId),
       description: cdktf.stringToTerraform(this._description),
       destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
+      id: cdktf.stringToTerraform(this._id),
       target_vpc_subnet_id: cdktf.stringToTerraform(this._targetVpcSubnetId),
       timeouts: ec2ClientVpnRouteTimeoutsToTerraform(this._timeouts.internalValue),
     };

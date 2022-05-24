@@ -16,6 +16,13 @@ export interface S3BucketRequestPaymentConfigurationConfig extends cdktf.Terrafo
   */
   readonly expectedBucketOwner?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_request_payment_configuration#id S3BucketRequestPaymentConfiguration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_request_payment_configuration#payer S3BucketRequestPaymentConfiguration#payer}
   */
   readonly payer: string;
@@ -57,6 +64,7 @@ export class S3BucketRequestPaymentConfiguration extends cdktf.TerraformResource
     });
     this._bucket = config.bucket;
     this._expectedBucketOwner = config.expectedBucketOwner;
+    this._id = config.id;
     this._payer = config.payer;
   }
 
@@ -94,8 +102,19 @@ export class S3BucketRequestPaymentConfiguration extends cdktf.TerraformResource
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // payer - computed: false, optional: false, required: true
@@ -119,6 +138,7 @@ export class S3BucketRequestPaymentConfiguration extends cdktf.TerraformResource
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
       expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
+      id: cdktf.stringToTerraform(this._id),
       payer: cdktf.stringToTerraform(this._payer),
     };
   }

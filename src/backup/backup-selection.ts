@@ -12,6 +12,13 @@ export interface BackupSelectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly iamRoleArn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection#id BackupSelection#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection#name BackupSelection#name}
   */
   readonly name: string;
@@ -62,6 +69,102 @@ export function backupSelectionConditionStringEqualsToTerraform(struct?: BackupS
   }
 }
 
+export class BackupSelectionConditionStringEqualsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BackupSelectionConditionStringEquals | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BackupSelectionConditionStringEquals | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class BackupSelectionConditionStringEqualsList extends cdktf.ComplexList {
+  public internalValue? : BackupSelectionConditionStringEquals[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BackupSelectionConditionStringEqualsOutputReference {
+    return new BackupSelectionConditionStringEqualsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BackupSelectionConditionStringLike {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection#key BackupSelection#key}
@@ -84,6 +187,102 @@ export function backupSelectionConditionStringLikeToTerraform(struct?: BackupSel
   }
 }
 
+export class BackupSelectionConditionStringLikeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BackupSelectionConditionStringLike | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BackupSelectionConditionStringLike | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class BackupSelectionConditionStringLikeList extends cdktf.ComplexList {
+  public internalValue? : BackupSelectionConditionStringLike[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BackupSelectionConditionStringLikeOutputReference {
+    return new BackupSelectionConditionStringLikeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BackupSelectionConditionStringNotEquals {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection#key BackupSelection#key}
@@ -106,6 +305,102 @@ export function backupSelectionConditionStringNotEqualsToTerraform(struct?: Back
   }
 }
 
+export class BackupSelectionConditionStringNotEqualsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BackupSelectionConditionStringNotEquals | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BackupSelectionConditionStringNotEquals | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class BackupSelectionConditionStringNotEqualsList extends cdktf.ComplexList {
+  public internalValue? : BackupSelectionConditionStringNotEquals[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BackupSelectionConditionStringNotEqualsOutputReference {
+    return new BackupSelectionConditionStringNotEqualsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BackupSelectionConditionStringNotLike {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection#key BackupSelection#key}
@@ -128,6 +423,102 @@ export function backupSelectionConditionStringNotLikeToTerraform(struct?: Backup
   }
 }
 
+export class BackupSelectionConditionStringNotLikeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BackupSelectionConditionStringNotLike | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BackupSelectionConditionStringNotLike | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class BackupSelectionConditionStringNotLikeList extends cdktf.ComplexList {
+  public internalValue? : BackupSelectionConditionStringNotLike[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BackupSelectionConditionStringNotLikeOutputReference {
+    return new BackupSelectionConditionStringNotLikeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BackupSelectionCondition {
   /**
   * string_equals block
@@ -168,6 +559,152 @@ export function backupSelectionConditionToTerraform(struct?: BackupSelectionCond
   }
 }
 
+export class BackupSelectionConditionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BackupSelectionCondition | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._stringEquals?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringEquals = this._stringEquals?.internalValue;
+    }
+    if (this._stringLike?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringLike = this._stringLike?.internalValue;
+    }
+    if (this._stringNotEquals?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringNotEquals = this._stringNotEquals?.internalValue;
+    }
+    if (this._stringNotLike?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringNotLike = this._stringNotLike?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BackupSelectionCondition | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._stringEquals.internalValue = undefined;
+      this._stringLike.internalValue = undefined;
+      this._stringNotEquals.internalValue = undefined;
+      this._stringNotLike.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._stringEquals.internalValue = value.stringEquals;
+      this._stringLike.internalValue = value.stringLike;
+      this._stringNotEquals.internalValue = value.stringNotEquals;
+      this._stringNotLike.internalValue = value.stringNotLike;
+    }
+  }
+
+  // string_equals - computed: false, optional: true, required: false
+  private _stringEquals = new BackupSelectionConditionStringEqualsList(this, "string_equals", true);
+  public get stringEquals() {
+    return this._stringEquals;
+  }
+  public putStringEquals(value: BackupSelectionConditionStringEquals[] | cdktf.IResolvable) {
+    this._stringEquals.internalValue = value;
+  }
+  public resetStringEquals() {
+    this._stringEquals.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringEqualsInput() {
+    return this._stringEquals.internalValue;
+  }
+
+  // string_like - computed: false, optional: true, required: false
+  private _stringLike = new BackupSelectionConditionStringLikeList(this, "string_like", true);
+  public get stringLike() {
+    return this._stringLike;
+  }
+  public putStringLike(value: BackupSelectionConditionStringLike[] | cdktf.IResolvable) {
+    this._stringLike.internalValue = value;
+  }
+  public resetStringLike() {
+    this._stringLike.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringLikeInput() {
+    return this._stringLike.internalValue;
+  }
+
+  // string_not_equals - computed: false, optional: true, required: false
+  private _stringNotEquals = new BackupSelectionConditionStringNotEqualsList(this, "string_not_equals", true);
+  public get stringNotEquals() {
+    return this._stringNotEquals;
+  }
+  public putStringNotEquals(value: BackupSelectionConditionStringNotEquals[] | cdktf.IResolvable) {
+    this._stringNotEquals.internalValue = value;
+  }
+  public resetStringNotEquals() {
+    this._stringNotEquals.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringNotEqualsInput() {
+    return this._stringNotEquals.internalValue;
+  }
+
+  // string_not_like - computed: false, optional: true, required: false
+  private _stringNotLike = new BackupSelectionConditionStringNotLikeList(this, "string_not_like", true);
+  public get stringNotLike() {
+    return this._stringNotLike;
+  }
+  public putStringNotLike(value: BackupSelectionConditionStringNotLike[] | cdktf.IResolvable) {
+    this._stringNotLike.internalValue = value;
+  }
+  public resetStringNotLike() {
+    this._stringNotLike.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringNotLikeInput() {
+    return this._stringNotLike.internalValue;
+  }
+}
+
+export class BackupSelectionConditionList extends cdktf.ComplexList {
+  public internalValue? : BackupSelectionCondition[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BackupSelectionConditionOutputReference {
+    return new BackupSelectionConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BackupSelectionSelectionTag {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_selection#key BackupSelection#key}
@@ -195,6 +732,121 @@ export function backupSelectionSelectionTagToTerraform(struct?: BackupSelectionS
   }
 }
 
+export class BackupSelectionSelectionTagOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BackupSelectionSelectionTag | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BackupSelectionSelectionTag | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._type = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._type = value.type;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class BackupSelectionSelectionTagList extends cdktf.ComplexList {
+  public internalValue? : BackupSelectionSelectionTag[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BackupSelectionSelectionTagOutputReference {
+    return new BackupSelectionSelectionTagOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/backup_selection aws_backup_selection}
@@ -231,12 +883,13 @@ export class BackupSelection extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._iamRoleArn = config.iamRoleArn;
+    this._id = config.id;
     this._name = config.name;
     this._notResources = config.notResources;
     this._planId = config.planId;
     this._resources = config.resources;
-    this._condition = config.condition;
-    this._selectionTag = config.selectionTag;
+    this._condition.internalValue = config.condition;
+    this._selectionTag.internalValue = config.selectionTag;
   }
 
   // ==========
@@ -257,8 +910,19 @@ export class BackupSelection extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -320,37 +984,35 @@ export class BackupSelection extends cdktf.TerraformResource {
   }
 
   // condition - computed: false, optional: true, required: false
-  private _condition?: BackupSelectionCondition[] | cdktf.IResolvable; 
+  private _condition = new BackupSelectionConditionList(this, "condition", true);
   public get condition() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('condition')));
+    return this._condition;
   }
-  public set condition(value: BackupSelectionCondition[] | cdktf.IResolvable) {
-    this._condition = value;
+  public putCondition(value: BackupSelectionCondition[] | cdktf.IResolvable) {
+    this._condition.internalValue = value;
   }
   public resetCondition() {
-    this._condition = undefined;
+    this._condition.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get conditionInput() {
-    return this._condition;
+    return this._condition.internalValue;
   }
 
   // selection_tag - computed: false, optional: true, required: false
-  private _selectionTag?: BackupSelectionSelectionTag[] | cdktf.IResolvable; 
+  private _selectionTag = new BackupSelectionSelectionTagList(this, "selection_tag", true);
   public get selectionTag() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('selection_tag')));
+    return this._selectionTag;
   }
-  public set selectionTag(value: BackupSelectionSelectionTag[] | cdktf.IResolvable) {
-    this._selectionTag = value;
+  public putSelectionTag(value: BackupSelectionSelectionTag[] | cdktf.IResolvable) {
+    this._selectionTag.internalValue = value;
   }
   public resetSelectionTag() {
-    this._selectionTag = undefined;
+    this._selectionTag.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get selectionTagInput() {
-    return this._selectionTag;
+    return this._selectionTag.internalValue;
   }
 
   // =========
@@ -360,12 +1022,13 @@ export class BackupSelection extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       not_resources: cdktf.listMapper(cdktf.stringToTerraform)(this._notResources),
       plan_id: cdktf.stringToTerraform(this._planId),
       resources: cdktf.listMapper(cdktf.stringToTerraform)(this._resources),
-      condition: cdktf.listMapper(backupSelectionConditionToTerraform)(this._condition),
-      selection_tag: cdktf.listMapper(backupSelectionSelectionTagToTerraform)(this._selectionTag),
+      condition: cdktf.listMapper(backupSelectionConditionToTerraform)(this._condition.internalValue),
+      selection_tag: cdktf.listMapper(backupSelectionSelectionTagToTerraform)(this._selectionTag.internalValue),
     };
   }
 }

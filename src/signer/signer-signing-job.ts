@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface SignerSigningJobConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job#id SignerSigningJob#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job#ignore_signing_job_failure SignerSigningJob#ignore_signing_job_failure}
   */
   readonly ignoreSigningJobFailure?: boolean | cdktf.IResolvable;
@@ -598,6 +605,7 @@ export class SignerSigningJob extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._ignoreSigningJobFailure = config.ignoreSigningJobFailure;
     this._profileName = config.profileName;
     this._destination.internalValue = config.destination;
@@ -619,8 +627,19 @@ export class SignerSigningJob extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ignore_signing_job_failure - computed: false, optional: true, required: false
@@ -746,6 +765,7 @@ export class SignerSigningJob extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       ignore_signing_job_failure: cdktf.booleanToTerraform(this._ignoreSigningJobFailure),
       profile_name: cdktf.stringToTerraform(this._profileName),
       destination: signerSigningJobDestinationToTerraform(this._destination.internalValue),

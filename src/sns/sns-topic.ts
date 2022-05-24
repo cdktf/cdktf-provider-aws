@@ -60,6 +60,13 @@ export interface SnsTopicConfig extends cdktf.TerraformMetaArguments {
   */
   readonly httpSuccessFeedbackSampleRate?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic#id SnsTopic#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic#kms_master_key_id SnsTopic#kms_master_key_id}
   */
   readonly kmsMasterKeyId?: string;
@@ -156,6 +163,7 @@ export class SnsTopic extends cdktf.TerraformResource {
     this._httpFailureFeedbackRoleArn = config.httpFailureFeedbackRoleArn;
     this._httpSuccessFeedbackRoleArn = config.httpSuccessFeedbackRoleArn;
     this._httpSuccessFeedbackSampleRate = config.httpSuccessFeedbackSampleRate;
+    this._id = config.id;
     this._kmsMasterKeyId = config.kmsMasterKeyId;
     this._lambdaFailureFeedbackRoleArn = config.lambdaFailureFeedbackRoleArn;
     this._lambdaSuccessFeedbackRoleArn = config.lambdaSuccessFeedbackRoleArn;
@@ -388,8 +396,19 @@ export class SnsTopic extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_master_key_id - computed: false, optional: true, required: false
@@ -608,6 +627,7 @@ export class SnsTopic extends cdktf.TerraformResource {
       http_failure_feedback_role_arn: cdktf.stringToTerraform(this._httpFailureFeedbackRoleArn),
       http_success_feedback_role_arn: cdktf.stringToTerraform(this._httpSuccessFeedbackRoleArn),
       http_success_feedback_sample_rate: cdktf.numberToTerraform(this._httpSuccessFeedbackSampleRate),
+      id: cdktf.stringToTerraform(this._id),
       kms_master_key_id: cdktf.stringToTerraform(this._kmsMasterKeyId),
       lambda_failure_feedback_role_arn: cdktf.stringToTerraform(this._lambdaFailureFeedbackRoleArn),
       lambda_success_feedback_role_arn: cdktf.stringToTerraform(this._lambdaSuccessFeedbackRoleArn),

@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface DataAwsCloudwatchLogGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudwatch_log_groups#id DataAwsCloudwatchLogGroups#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudwatch_log_groups#log_group_name_prefix DataAwsCloudwatchLogGroups#log_group_name_prefix}
   */
   readonly logGroupNamePrefix: string;
@@ -47,6 +54,7 @@ export class DataAwsCloudwatchLogGroups extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._logGroupNamePrefix = config.logGroupNamePrefix;
   }
 
@@ -60,8 +68,19 @@ export class DataAwsCloudwatchLogGroups extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // log_group_name_prefix - computed: false, optional: false, required: true
@@ -88,6 +107,7 @@ export class DataAwsCloudwatchLogGroups extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       log_group_name_prefix: cdktf.stringToTerraform(this._logGroupNamePrefix),
     };
   }

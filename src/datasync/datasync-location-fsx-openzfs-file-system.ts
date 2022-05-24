@@ -12,6 +12,13 @@ export interface DatasyncLocationFsxOpenzfsFileSystemConfig extends cdktf.Terraf
   */
   readonly fsxFilesystemArn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_fsx_openzfs_file_system#id DatasyncLocationFsxOpenzfsFileSystem#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_fsx_openzfs_file_system#security_group_arns DatasyncLocationFsxOpenzfsFileSystem#security_group_arns}
   */
   readonly securityGroupArns: string[];
@@ -263,6 +270,7 @@ export class DatasyncLocationFsxOpenzfsFileSystem extends cdktf.TerraformResourc
       lifecycle: config.lifecycle
     });
     this._fsxFilesystemArn = config.fsxFilesystemArn;
+    this._id = config.id;
     this._securityGroupArns = config.securityGroupArns;
     this._subdirectory = config.subdirectory;
     this._tags = config.tags;
@@ -298,8 +306,19 @@ export class DatasyncLocationFsxOpenzfsFileSystem extends cdktf.TerraformResourc
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // security_group_arns - computed: false, optional: false, required: true
@@ -388,6 +407,7 @@ export class DatasyncLocationFsxOpenzfsFileSystem extends cdktf.TerraformResourc
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       fsx_filesystem_arn: cdktf.stringToTerraform(this._fsxFilesystemArn),
+      id: cdktf.stringToTerraform(this._id),
       security_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupArns),
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

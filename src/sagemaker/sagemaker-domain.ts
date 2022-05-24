@@ -20,6 +20,13 @@ export interface SagemakerDomainConfig extends cdktf.TerraformMetaArguments {
   */
   readonly domainName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#id SagemakerDomain#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#kms_key_id SagemakerDomain#kms_key_id}
   */
   readonly kmsKeyId?: string;
@@ -319,6 +326,124 @@ export function sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustom
   }
 }
 
+export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImage | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._appImageConfigName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.appImageConfigName = this._appImageConfigName;
+    }
+    if (this._imageName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imageName = this._imageName;
+    }
+    if (this._imageVersionNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imageVersionNumber = this._imageVersionNumber;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImage | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._appImageConfigName = undefined;
+      this._imageName = undefined;
+      this._imageVersionNumber = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._appImageConfigName = value.appImageConfigName;
+      this._imageName = value.imageName;
+      this._imageVersionNumber = value.imageVersionNumber;
+    }
+  }
+
+  // app_image_config_name - computed: false, optional: false, required: true
+  private _appImageConfigName?: string; 
+  public get appImageConfigName() {
+    return this.getStringAttribute('app_image_config_name');
+  }
+  public set appImageConfigName(value: string) {
+    this._appImageConfigName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appImageConfigNameInput() {
+    return this._appImageConfigName;
+  }
+
+  // image_name - computed: false, optional: false, required: true
+  private _imageName?: string; 
+  public get imageName() {
+    return this.getStringAttribute('image_name');
+  }
+  public set imageName(value: string) {
+    this._imageName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageNameInput() {
+    return this._imageName;
+  }
+
+  // image_version_number - computed: false, optional: true, required: false
+  private _imageVersionNumber?: number; 
+  public get imageVersionNumber() {
+    return this.getNumberAttribute('image_version_number');
+  }
+  public set imageVersionNumber(value: number) {
+    this._imageVersionNumber = value;
+  }
+  public resetImageVersionNumber() {
+    this._imageVersionNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageVersionNumberInput() {
+    return this._imageVersionNumber;
+  }
+}
+
+export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageList extends cdktf.ComplexList {
+  public internalValue? : SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImage[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageOutputReference {
+    return new SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_domain#instance_type SagemakerDomain#instance_type}
@@ -514,9 +639,9 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputRef
       hasAnyValues = true;
       internalValueResult.lifecycleConfigArns = this._lifecycleConfigArns;
     }
-    if (this._customImage !== undefined) {
+    if (this._customImage?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.customImage = this._customImage;
+      internalValueResult.customImage = this._customImage?.internalValue;
     }
     if (this._defaultResourceSpec?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -529,13 +654,13 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputRef
     if (value === undefined) {
       this.isEmptyObject = false;
       this._lifecycleConfigArns = undefined;
-      this._customImage = undefined;
+      this._customImage.internalValue = undefined;
       this._defaultResourceSpec.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._lifecycleConfigArns = value.lifecycleConfigArns;
-      this._customImage = value.customImage;
+      this._customImage.internalValue = value.customImage;
       this._defaultResourceSpec.internalValue = value.defaultResourceSpec;
     }
   }
@@ -557,20 +682,19 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputRef
   }
 
   // custom_image - computed: false, optional: true, required: false
-  private _customImage?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImage[] | cdktf.IResolvable; 
+  private _customImage = new SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageList(this, "custom_image", false);
   public get customImage() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_image');
+    return this._customImage;
   }
-  public set customImage(value: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImage[] | cdktf.IResolvable) {
-    this._customImage = value;
+  public putCustomImage(value: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImage[] | cdktf.IResolvable) {
+    this._customImage.internalValue = value;
   }
   public resetCustomImage() {
-    this._customImage = undefined;
+    this._customImage.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get customImageInput() {
-    return this._customImage;
+    return this._customImage.internalValue;
   }
 
   // default_resource_spec - computed: false, optional: true, required: false
@@ -1229,6 +1353,7 @@ export class SagemakerDomain extends cdktf.TerraformResource {
     this._appNetworkAccessType = config.appNetworkAccessType;
     this._authMode = config.authMode;
     this._domainName = config.domainName;
+    this._id = config.id;
     this._kmsKeyId = config.kmsKeyId;
     this._subnetIds = config.subnetIds;
     this._tags = config.tags;
@@ -1295,8 +1420,19 @@ export class SagemakerDomain extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_key_id - computed: false, optional: true, required: false
@@ -1421,6 +1557,7 @@ export class SagemakerDomain extends cdktf.TerraformResource {
       app_network_access_type: cdktf.stringToTerraform(this._appNetworkAccessType),
       auth_mode: cdktf.stringToTerraform(this._authMode),
       domain_name: cdktf.stringToTerraform(this._domainName),
+      id: cdktf.stringToTerraform(this._id),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

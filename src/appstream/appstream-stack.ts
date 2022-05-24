@@ -24,6 +24,13 @@ export interface AppstreamStackConfig extends cdktf.TerraformMetaArguments {
   */
   readonly feedbackUrl?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_stack#id AppstreamStack#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_stack#name AppstreamStack#name}
   */
   readonly name: string;
@@ -86,6 +93,105 @@ export function appstreamStackAccessEndpointsToTerraform(struct?: AppstreamStack
   }
 }
 
+export class AppstreamStackAccessEndpointsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppstreamStackAccessEndpoints | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endpointType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpointType = this._endpointType;
+    }
+    if (this._vpceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpceId = this._vpceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppstreamStackAccessEndpoints | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._endpointType = undefined;
+      this._vpceId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._endpointType = value.endpointType;
+      this._vpceId = value.vpceId;
+    }
+  }
+
+  // endpoint_type - computed: false, optional: false, required: true
+  private _endpointType?: string; 
+  public get endpointType() {
+    return this.getStringAttribute('endpoint_type');
+  }
+  public set endpointType(value: string) {
+    this._endpointType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointTypeInput() {
+    return this._endpointType;
+  }
+
+  // vpce_id - computed: true, optional: true, required: false
+  private _vpceId?: string; 
+  public get vpceId() {
+    return this.getStringAttribute('vpce_id');
+  }
+  public set vpceId(value: string) {
+    this._vpceId = value;
+  }
+  public resetVpceId() {
+    this._vpceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpceIdInput() {
+    return this._vpceId;
+  }
+}
+
+export class AppstreamStackAccessEndpointsList extends cdktf.ComplexList {
+  public internalValue? : AppstreamStackAccessEndpoints[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppstreamStackAccessEndpointsOutputReference {
+    return new AppstreamStackAccessEndpointsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppstreamStackApplicationSettings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_stack#enabled AppstreamStack#enabled}
@@ -205,6 +311,127 @@ export function appstreamStackStorageConnectorsToTerraform(struct?: AppstreamSta
   }
 }
 
+export class AppstreamStackStorageConnectorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppstreamStackStorageConnectors | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._connectorType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectorType = this._connectorType;
+    }
+    if (this._domains !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domains = this._domains;
+    }
+    if (this._resourceIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceIdentifier = this._resourceIdentifier;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppstreamStackStorageConnectors | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._connectorType = undefined;
+      this._domains = undefined;
+      this._resourceIdentifier = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._connectorType = value.connectorType;
+      this._domains = value.domains;
+      this._resourceIdentifier = value.resourceIdentifier;
+    }
+  }
+
+  // connector_type - computed: false, optional: false, required: true
+  private _connectorType?: string; 
+  public get connectorType() {
+    return this.getStringAttribute('connector_type');
+  }
+  public set connectorType(value: string) {
+    this._connectorType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectorTypeInput() {
+    return this._connectorType;
+  }
+
+  // domains - computed: true, optional: true, required: false
+  private _domains?: string[]; 
+  public get domains() {
+    return this.getListAttribute('domains');
+  }
+  public set domains(value: string[]) {
+    this._domains = value;
+  }
+  public resetDomains() {
+    this._domains = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainsInput() {
+    return this._domains;
+  }
+
+  // resource_identifier - computed: true, optional: true, required: false
+  private _resourceIdentifier?: string; 
+  public get resourceIdentifier() {
+    return this.getStringAttribute('resource_identifier');
+  }
+  public set resourceIdentifier(value: string) {
+    this._resourceIdentifier = value;
+  }
+  public resetResourceIdentifier() {
+    this._resourceIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceIdentifierInput() {
+    return this._resourceIdentifier;
+  }
+}
+
+export class AppstreamStackStorageConnectorsList extends cdktf.ComplexList {
+  public internalValue? : AppstreamStackStorageConnectors[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppstreamStackStorageConnectorsOutputReference {
+    return new AppstreamStackStorageConnectorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppstreamStackUserSettings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_stack#action AppstreamStack#action}
@@ -227,6 +454,102 @@ export function appstreamStackUserSettingsToTerraform(struct?: AppstreamStackUse
   }
 }
 
+export class AppstreamStackUserSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppstreamStackUserSettings | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._action !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.action = this._action;
+    }
+    if (this._permission !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.permission = this._permission;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppstreamStackUserSettings | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._action = undefined;
+      this._permission = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._action = value.action;
+      this._permission = value.permission;
+    }
+  }
+
+  // action - computed: false, optional: false, required: true
+  private _action?: string; 
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+  public set action(value: string) {
+    this._action = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
+
+  // permission - computed: false, optional: false, required: true
+  private _permission?: string; 
+  public get permission() {
+    return this.getStringAttribute('permission');
+  }
+  public set permission(value: string) {
+    this._permission = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionInput() {
+    return this._permission;
+  }
+}
+
+export class AppstreamStackUserSettingsList extends cdktf.ComplexList {
+  public internalValue? : AppstreamStackUserSettings[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppstreamStackUserSettingsOutputReference {
+    return new AppstreamStackUserSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/appstream_stack aws_appstream_stack}
@@ -266,14 +589,15 @@ export class AppstreamStack extends cdktf.TerraformResource {
     this._displayName = config.displayName;
     this._embedHostDomains = config.embedHostDomains;
     this._feedbackUrl = config.feedbackUrl;
+    this._id = config.id;
     this._name = config.name;
     this._redirectUrl = config.redirectUrl;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._accessEndpoints = config.accessEndpoints;
+    this._accessEndpoints.internalValue = config.accessEndpoints;
     this._applicationSettings.internalValue = config.applicationSettings;
-    this._storageConnectors = config.storageConnectors;
-    this._userSettings = config.userSettings;
+    this._storageConnectors.internalValue = config.storageConnectors;
+    this._userSettings.internalValue = config.userSettings;
   }
 
   // ==========
@@ -355,8 +679,19 @@ export class AppstreamStack extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -421,20 +756,19 @@ export class AppstreamStack extends cdktf.TerraformResource {
   }
 
   // access_endpoints - computed: false, optional: true, required: false
-  private _accessEndpoints?: AppstreamStackAccessEndpoints[] | cdktf.IResolvable; 
+  private _accessEndpoints = new AppstreamStackAccessEndpointsList(this, "access_endpoints", true);
   public get accessEndpoints() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('access_endpoints')));
+    return this._accessEndpoints;
   }
-  public set accessEndpoints(value: AppstreamStackAccessEndpoints[] | cdktf.IResolvable) {
-    this._accessEndpoints = value;
+  public putAccessEndpoints(value: AppstreamStackAccessEndpoints[] | cdktf.IResolvable) {
+    this._accessEndpoints.internalValue = value;
   }
   public resetAccessEndpoints() {
-    this._accessEndpoints = undefined;
+    this._accessEndpoints.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accessEndpointsInput() {
-    return this._accessEndpoints;
+    return this._accessEndpoints.internalValue;
   }
 
   // application_settings - computed: false, optional: true, required: false
@@ -454,37 +788,35 @@ export class AppstreamStack extends cdktf.TerraformResource {
   }
 
   // storage_connectors - computed: false, optional: true, required: false
-  private _storageConnectors?: AppstreamStackStorageConnectors[] | cdktf.IResolvable; 
+  private _storageConnectors = new AppstreamStackStorageConnectorsList(this, "storage_connectors", true);
   public get storageConnectors() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('storage_connectors')));
+    return this._storageConnectors;
   }
-  public set storageConnectors(value: AppstreamStackStorageConnectors[] | cdktf.IResolvable) {
-    this._storageConnectors = value;
+  public putStorageConnectors(value: AppstreamStackStorageConnectors[] | cdktf.IResolvable) {
+    this._storageConnectors.internalValue = value;
   }
   public resetStorageConnectors() {
-    this._storageConnectors = undefined;
+    this._storageConnectors.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get storageConnectorsInput() {
-    return this._storageConnectors;
+    return this._storageConnectors.internalValue;
   }
 
   // user_settings - computed: false, optional: true, required: false
-  private _userSettings?: AppstreamStackUserSettings[] | cdktf.IResolvable; 
+  private _userSettings = new AppstreamStackUserSettingsList(this, "user_settings", true);
   public get userSettings() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('user_settings')));
+    return this._userSettings;
   }
-  public set userSettings(value: AppstreamStackUserSettings[] | cdktf.IResolvable) {
-    this._userSettings = value;
+  public putUserSettings(value: AppstreamStackUserSettings[] | cdktf.IResolvable) {
+    this._userSettings.internalValue = value;
   }
   public resetUserSettings() {
-    this._userSettings = undefined;
+    this._userSettings.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get userSettingsInput() {
-    return this._userSettings;
+    return this._userSettings.internalValue;
   }
 
   // =========
@@ -497,14 +829,15 @@ export class AppstreamStack extends cdktf.TerraformResource {
       display_name: cdktf.stringToTerraform(this._displayName),
       embed_host_domains: cdktf.listMapper(cdktf.stringToTerraform)(this._embedHostDomains),
       feedback_url: cdktf.stringToTerraform(this._feedbackUrl),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       redirect_url: cdktf.stringToTerraform(this._redirectUrl),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      access_endpoints: cdktf.listMapper(appstreamStackAccessEndpointsToTerraform)(this._accessEndpoints),
+      access_endpoints: cdktf.listMapper(appstreamStackAccessEndpointsToTerraform)(this._accessEndpoints.internalValue),
       application_settings: appstreamStackApplicationSettingsToTerraform(this._applicationSettings.internalValue),
-      storage_connectors: cdktf.listMapper(appstreamStackStorageConnectorsToTerraform)(this._storageConnectors),
-      user_settings: cdktf.listMapper(appstreamStackUserSettingsToTerraform)(this._userSettings),
+      storage_connectors: cdktf.listMapper(appstreamStackStorageConnectorsToTerraform)(this._storageConnectors.internalValue),
+      user_settings: cdktf.listMapper(appstreamStackUserSettingsToTerraform)(this._userSettings.internalValue),
     };
   }
 }

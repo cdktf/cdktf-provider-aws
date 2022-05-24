@@ -20,6 +20,13 @@ export interface DataAwsCodeartifactRepositoryEndpointConfig extends cdktf.Terra
   */
   readonly format: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint#id DataAwsCodeartifactRepositoryEndpoint#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint#repository DataAwsCodeartifactRepositoryEndpoint#repository}
   */
   readonly repository: string;
@@ -62,6 +69,7 @@ export class DataAwsCodeartifactRepositoryEndpoint extends cdktf.TerraformDataSo
     this._domain = config.domain;
     this._domainOwner = config.domainOwner;
     this._format = config.format;
+    this._id = config.id;
     this._repository = config.repository;
   }
 
@@ -112,8 +120,19 @@ export class DataAwsCodeartifactRepositoryEndpoint extends cdktf.TerraformDataSo
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -143,6 +162,7 @@ export class DataAwsCodeartifactRepositoryEndpoint extends cdktf.TerraformDataSo
       domain: cdktf.stringToTerraform(this._domain),
       domain_owner: cdktf.stringToTerraform(this._domainOwner),
       format: cdktf.stringToTerraform(this._format),
+      id: cdktf.stringToTerraform(this._id),
       repository: cdktf.stringToTerraform(this._repository),
     };
   }

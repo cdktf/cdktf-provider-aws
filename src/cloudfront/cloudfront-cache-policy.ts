@@ -16,6 +16,13 @@ export interface CloudfrontCachePolicyConfig extends cdktf.TerraformMetaArgument
   */
   readonly defaultTtl?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#id CloudfrontCachePolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy#max_ttl CloudfrontCachePolicy#max_ttl}
   */
   readonly maxTtl?: number;
@@ -712,6 +719,7 @@ export class CloudfrontCachePolicy extends cdktf.TerraformResource {
     });
     this._comment = config.comment;
     this._defaultTtl = config.defaultTtl;
+    this._id = config.id;
     this._maxTtl = config.maxTtl;
     this._minTtl = config.minTtl;
     this._name = config.name;
@@ -760,8 +768,19 @@ export class CloudfrontCachePolicy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // max_ttl - computed: false, optional: true, required: false
@@ -830,6 +849,7 @@ export class CloudfrontCachePolicy extends cdktf.TerraformResource {
     return {
       comment: cdktf.stringToTerraform(this._comment),
       default_ttl: cdktf.numberToTerraform(this._defaultTtl),
+      id: cdktf.stringToTerraform(this._id),
       max_ttl: cdktf.numberToTerraform(this._maxTtl),
       min_ttl: cdktf.numberToTerraform(this._minTtl),
       name: cdktf.stringToTerraform(this._name),

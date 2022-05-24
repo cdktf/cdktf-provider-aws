@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface SagemakerEndpointConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#id SagemakerEndpointConfiguration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#kms_key_arn SagemakerEndpointConfiguration#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
@@ -519,6 +526,83 @@ export function sagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsToT
   }
 }
 
+export class SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._captureMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.captureMode = this._captureMode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._captureMode = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._captureMode = value.captureMode;
+    }
+  }
+
+  // capture_mode - computed: false, optional: false, required: true
+  private _captureMode?: string; 
+  public get captureMode() {
+    return this.getStringAttribute('capture_mode');
+  }
+  public set captureMode(value: string) {
+    this._captureMode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get captureModeInput() {
+    return this._captureMode;
+  }
+}
+
+export class SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList extends cdktf.ComplexList {
+  public internalValue? : SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsOutputReference {
+    return new SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SagemakerEndpointConfigurationDataCaptureConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration#destination_s3_uri SagemakerEndpointConfiguration#destination_s3_uri}
@@ -599,9 +683,9 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
       hasAnyValues = true;
       internalValueResult.captureContentTypeHeader = this._captureContentTypeHeader?.internalValue;
     }
-    if (this._captureOptions !== undefined) {
+    if (this._captureOptions?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.captureOptions = this._captureOptions;
+      internalValueResult.captureOptions = this._captureOptions?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -614,7 +698,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
       this._initialSamplingPercentage = undefined;
       this._kmsKeyId = undefined;
       this._captureContentTypeHeader.internalValue = undefined;
-      this._captureOptions = undefined;
+      this._captureOptions.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -623,7 +707,7 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
       this._initialSamplingPercentage = value.initialSamplingPercentage;
       this._kmsKeyId = value.kmsKeyId;
       this._captureContentTypeHeader.internalValue = value.captureContentTypeHeader;
-      this._captureOptions = value.captureOptions;
+      this._captureOptions.internalValue = value.captureOptions;
     }
   }
 
@@ -702,17 +786,16 @@ export class SagemakerEndpointConfigurationDataCaptureConfigOutputReference exte
   }
 
   // capture_options - computed: false, optional: false, required: true
-  private _captureOptions?: SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions[] | cdktf.IResolvable; 
+  private _captureOptions = new SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList(this, "capture_options", false);
   public get captureOptions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('capture_options');
+    return this._captureOptions;
   }
-  public set captureOptions(value: SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions[] | cdktf.IResolvable) {
-    this._captureOptions = value;
+  public putCaptureOptions(value: SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions[] | cdktf.IResolvable) {
+    this._captureOptions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get captureOptionsInput() {
-    return this._captureOptions;
+    return this._captureOptions.internalValue;
   }
 }
 export interface SagemakerEndpointConfigurationProductionVariants {
@@ -757,6 +840,187 @@ export function sagemakerEndpointConfigurationProductionVariantsToTerraform(stru
   }
 }
 
+export class SagemakerEndpointConfigurationProductionVariantsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerEndpointConfigurationProductionVariants | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._acceleratorType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorType = this._acceleratorType;
+    }
+    if (this._initialInstanceCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initialInstanceCount = this._initialInstanceCount;
+    }
+    if (this._initialVariantWeight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initialVariantWeight = this._initialVariantWeight;
+    }
+    if (this._instanceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceType = this._instanceType;
+    }
+    if (this._modelName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelName = this._modelName;
+    }
+    if (this._variantName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.variantName = this._variantName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerEndpointConfigurationProductionVariants | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._acceleratorType = undefined;
+      this._initialInstanceCount = undefined;
+      this._initialVariantWeight = undefined;
+      this._instanceType = undefined;
+      this._modelName = undefined;
+      this._variantName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._acceleratorType = value.acceleratorType;
+      this._initialInstanceCount = value.initialInstanceCount;
+      this._initialVariantWeight = value.initialVariantWeight;
+      this._instanceType = value.instanceType;
+      this._modelName = value.modelName;
+      this._variantName = value.variantName;
+    }
+  }
+
+  // accelerator_type - computed: false, optional: true, required: false
+  private _acceleratorType?: string; 
+  public get acceleratorType() {
+    return this.getStringAttribute('accelerator_type');
+  }
+  public set acceleratorType(value: string) {
+    this._acceleratorType = value;
+  }
+  public resetAcceleratorType() {
+    this._acceleratorType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorTypeInput() {
+    return this._acceleratorType;
+  }
+
+  // initial_instance_count - computed: false, optional: false, required: true
+  private _initialInstanceCount?: number; 
+  public get initialInstanceCount() {
+    return this.getNumberAttribute('initial_instance_count');
+  }
+  public set initialInstanceCount(value: number) {
+    this._initialInstanceCount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initialInstanceCountInput() {
+    return this._initialInstanceCount;
+  }
+
+  // initial_variant_weight - computed: false, optional: true, required: false
+  private _initialVariantWeight?: number; 
+  public get initialVariantWeight() {
+    return this.getNumberAttribute('initial_variant_weight');
+  }
+  public set initialVariantWeight(value: number) {
+    this._initialVariantWeight = value;
+  }
+  public resetInitialVariantWeight() {
+    this._initialVariantWeight = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initialVariantWeightInput() {
+    return this._initialVariantWeight;
+  }
+
+  // instance_type - computed: false, optional: false, required: true
+  private _instanceType?: string; 
+  public get instanceType() {
+    return this.getStringAttribute('instance_type');
+  }
+  public set instanceType(value: string) {
+    this._instanceType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType;
+  }
+
+  // model_name - computed: false, optional: false, required: true
+  private _modelName?: string; 
+  public get modelName() {
+    return this.getStringAttribute('model_name');
+  }
+  public set modelName(value: string) {
+    this._modelName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelNameInput() {
+    return this._modelName;
+  }
+
+  // variant_name - computed: true, optional: true, required: false
+  private _variantName?: string; 
+  public get variantName() {
+    return this.getStringAttribute('variant_name');
+  }
+  public set variantName(value: string) {
+    this._variantName = value;
+  }
+  public resetVariantName() {
+    this._variantName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get variantNameInput() {
+    return this._variantName;
+  }
+}
+
+export class SagemakerEndpointConfigurationProductionVariantsList extends cdktf.ComplexList {
+  public internalValue? : SagemakerEndpointConfigurationProductionVariants[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerEndpointConfigurationProductionVariantsOutputReference {
+    return new SagemakerEndpointConfigurationProductionVariantsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration aws_sagemaker_endpoint_configuration}
@@ -792,13 +1056,14 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._kmsKeyArn = config.kmsKeyArn;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._asyncInferenceConfig.internalValue = config.asyncInferenceConfig;
     this._dataCaptureConfig.internalValue = config.dataCaptureConfig;
-    this._productionVariants = config.productionVariants;
+    this._productionVariants.internalValue = config.productionVariants;
   }
 
   // ==========
@@ -811,8 +1076,19 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_key_arn - computed: false, optional: true, required: false
@@ -912,17 +1188,16 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
   }
 
   // production_variants - computed: false, optional: false, required: true
-  private _productionVariants?: SagemakerEndpointConfigurationProductionVariants[] | cdktf.IResolvable; 
+  private _productionVariants = new SagemakerEndpointConfigurationProductionVariantsList(this, "production_variants", false);
   public get productionVariants() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('production_variants');
+    return this._productionVariants;
   }
-  public set productionVariants(value: SagemakerEndpointConfigurationProductionVariants[] | cdktf.IResolvable) {
-    this._productionVariants = value;
+  public putProductionVariants(value: SagemakerEndpointConfigurationProductionVariants[] | cdktf.IResolvable) {
+    this._productionVariants.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get productionVariantsInput() {
-    return this._productionVariants;
+    return this._productionVariants.internalValue;
   }
 
   // =========
@@ -931,13 +1206,14 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       async_inference_config: sagemakerEndpointConfigurationAsyncInferenceConfigToTerraform(this._asyncInferenceConfig.internalValue),
       data_capture_config: sagemakerEndpointConfigurationDataCaptureConfigToTerraform(this._dataCaptureConfig.internalValue),
-      production_variants: cdktf.listMapper(sagemakerEndpointConfigurationProductionVariantsToTerraform)(this._productionVariants),
+      production_variants: cdktf.listMapper(sagemakerEndpointConfigurationProductionVariantsToTerraform)(this._productionVariants.internalValue),
     };
   }
 }

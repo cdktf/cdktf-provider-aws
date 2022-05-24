@@ -16,6 +16,13 @@ export interface CloudfrontResponseHeadersPolicyConfig extends cdktf.TerraformMe
   */
   readonly etag?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy#id CloudfrontResponseHeadersPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy#name CloudfrontResponseHeadersPolicy#name}
   */
   readonly name: string;
@@ -545,6 +552,121 @@ export function cloudfrontResponseHeadersPolicyCustomHeadersConfigItemsToTerrafo
   }
 }
 
+export class CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudfrontResponseHeadersPolicyCustomHeadersConfigItems | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._header !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.header = this._header;
+    }
+    if (this._override !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.override = this._override;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._header = undefined;
+      this._override = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._header = value.header;
+      this._override = value.override;
+      this._value = value.value;
+    }
+  }
+
+  // header - computed: false, optional: false, required: true
+  private _header?: string; 
+  public get header() {
+    return this.getStringAttribute('header');
+  }
+  public set header(value: string) {
+    this._header = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerInput() {
+    return this._header;
+  }
+
+  // override - computed: false, optional: false, required: true
+  private _override?: boolean | cdktf.IResolvable; 
+  public get override() {
+    return this.getBooleanAttribute('override');
+  }
+  public set override(value: boolean | cdktf.IResolvable) {
+    this._override = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overrideInput() {
+    return this._override;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList extends cdktf.ComplexList {
+  public internalValue? : CloudfrontResponseHeadersPolicyCustomHeadersConfigItems[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference {
+    return new CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudfrontResponseHeadersPolicyCustomHeadersConfig {
   /**
   * items block
@@ -578,9 +700,9 @@ export class CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference e
   public get internalValue(): CloudfrontResponseHeadersPolicyCustomHeadersConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._items !== undefined) {
+    if (this._items?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.items = this._items;
+      internalValueResult.items = this._items?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -588,29 +710,28 @@ export class CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference e
   public set internalValue(value: CloudfrontResponseHeadersPolicyCustomHeadersConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._items = undefined;
+      this._items.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._items = value.items;
+      this._items.internalValue = value.items;
     }
   }
 
   // items - computed: false, optional: true, required: false
-  private _items?: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems[] | cdktf.IResolvable; 
+  private _items = new CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList(this, "items", true);
   public get items() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('items')));
+    return this._items;
   }
-  public set items(value: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems[] | cdktf.IResolvable) {
-    this._items = value;
+  public putItems(value: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems[] | cdktf.IResolvable) {
+    this._items.internalValue = value;
   }
   public resetItems() {
-    this._items = undefined;
+    this._items.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get itemsInput() {
-    return this._items;
+    return this._items.internalValue;
   }
 }
 export interface CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy {
@@ -1462,6 +1583,7 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
     });
     this._comment = config.comment;
     this._etag = config.etag;
+    this._id = config.id;
     this._name = config.name;
     this._corsConfig.internalValue = config.corsConfig;
     this._customHeadersConfig.internalValue = config.customHeadersConfig;
@@ -1505,8 +1627,19 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -1578,6 +1711,7 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
     return {
       comment: cdktf.stringToTerraform(this._comment),
       etag: cdktf.stringToTerraform(this._etag),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       cors_config: cloudfrontResponseHeadersPolicyCorsConfigToTerraform(this._corsConfig.internalValue),
       custom_headers_config: cloudfrontResponseHeadersPolicyCustomHeadersConfigToTerraform(this._customHeadersConfig.internalValue),

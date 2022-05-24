@@ -12,6 +12,13 @@ export interface ImagebuilderInfrastructureConfigurationConfig extends cdktf.Ter
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration#id ImagebuilderInfrastructureConfiguration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration#instance_profile_name ImagebuilderInfrastructureConfiguration#instance_profile_name}
   */
   readonly instanceProfileName: string;
@@ -349,6 +356,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._instanceProfileName = config.instanceProfileName;
     this._instanceTypes = config.instanceTypes;
     this._keyPair = config.keyPair;
@@ -400,8 +408,19 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_profile_name - computed: false, optional: false, required: true
@@ -613,6 +632,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       instance_profile_name: cdktf.stringToTerraform(this._instanceProfileName),
       instance_types: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceTypes),
       key_pair: cdktf.stringToTerraform(this._keyPair),

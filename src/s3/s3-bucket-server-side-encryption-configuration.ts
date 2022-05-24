@@ -16,6 +16,13 @@ export interface S3BucketServerSideEncryptionConfigurationAConfig extends cdktf.
   */
   readonly expectedBucketOwner?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_server_side_encryption_configuration#id S3BucketServerSideEncryptionConfigurationA#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * rule block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_server_side_encryption_configuration#rule S3BucketServerSideEncryptionConfigurationA#rule}
@@ -135,6 +142,108 @@ export function s3BucketServerSideEncryptionConfigurationRuleAToTerraform(struct
   }
 }
 
+export class S3BucketServerSideEncryptionConfigurationRuleAOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3BucketServerSideEncryptionConfigurationRuleA | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bucketKeyEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bucketKeyEnabled = this._bucketKeyEnabled;
+    }
+    if (this._applyServerSideEncryptionByDefault?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.applyServerSideEncryptionByDefault = this._applyServerSideEncryptionByDefault?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3BucketServerSideEncryptionConfigurationRuleA | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._bucketKeyEnabled = undefined;
+      this._applyServerSideEncryptionByDefault.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._bucketKeyEnabled = value.bucketKeyEnabled;
+      this._applyServerSideEncryptionByDefault.internalValue = value.applyServerSideEncryptionByDefault;
+    }
+  }
+
+  // bucket_key_enabled - computed: false, optional: true, required: false
+  private _bucketKeyEnabled?: boolean | cdktf.IResolvable; 
+  public get bucketKeyEnabled() {
+    return this.getBooleanAttribute('bucket_key_enabled');
+  }
+  public set bucketKeyEnabled(value: boolean | cdktf.IResolvable) {
+    this._bucketKeyEnabled = value;
+  }
+  public resetBucketKeyEnabled() {
+    this._bucketKeyEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketKeyEnabledInput() {
+    return this._bucketKeyEnabled;
+  }
+
+  // apply_server_side_encryption_by_default - computed: false, optional: true, required: false
+  private _applyServerSideEncryptionByDefault = new S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference(this, "apply_server_side_encryption_by_default");
+  public get applyServerSideEncryptionByDefault() {
+    return this._applyServerSideEncryptionByDefault;
+  }
+  public putApplyServerSideEncryptionByDefault(value: S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultA) {
+    this._applyServerSideEncryptionByDefault.internalValue = value;
+  }
+  public resetApplyServerSideEncryptionByDefault() {
+    this._applyServerSideEncryptionByDefault.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applyServerSideEncryptionByDefaultInput() {
+    return this._applyServerSideEncryptionByDefault.internalValue;
+  }
+}
+
+export class S3BucketServerSideEncryptionConfigurationRuleAList extends cdktf.ComplexList {
+  public internalValue? : S3BucketServerSideEncryptionConfigurationRuleA[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3BucketServerSideEncryptionConfigurationRuleAOutputReference {
+    return new S3BucketServerSideEncryptionConfigurationRuleAOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_server_side_encryption_configuration aws_s3_bucket_server_side_encryption_configuration}
@@ -172,7 +281,8 @@ export class S3BucketServerSideEncryptionConfigurationA extends cdktf.TerraformR
     });
     this._bucket = config.bucket;
     this._expectedBucketOwner = config.expectedBucketOwner;
-    this._rule = config.rule;
+    this._id = config.id;
+    this._rule.internalValue = config.rule;
   }
 
   // ==========
@@ -209,22 +319,32 @@ export class S3BucketServerSideEncryptionConfigurationA extends cdktf.TerraformR
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
 
   // rule - computed: false, optional: false, required: true
-  private _rule?: S3BucketServerSideEncryptionConfigurationRuleA[] | cdktf.IResolvable; 
+  private _rule = new S3BucketServerSideEncryptionConfigurationRuleAList(this, "rule", true);
   public get rule() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('rule')));
+    return this._rule;
   }
-  public set rule(value: S3BucketServerSideEncryptionConfigurationRuleA[] | cdktf.IResolvable) {
-    this._rule = value;
+  public putRule(value: S3BucketServerSideEncryptionConfigurationRuleA[] | cdktf.IResolvable) {
+    this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get ruleInput() {
-    return this._rule;
+    return this._rule.internalValue;
   }
 
   // =========
@@ -235,7 +355,8 @@ export class S3BucketServerSideEncryptionConfigurationA extends cdktf.TerraformR
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
       expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
-      rule: cdktf.listMapper(s3BucketServerSideEncryptionConfigurationRuleAToTerraform)(this._rule),
+      id: cdktf.stringToTerraform(this._id),
+      rule: cdktf.listMapper(s3BucketServerSideEncryptionConfigurationRuleAToTerraform)(this._rule.internalValue),
     };
   }
 }

@@ -16,6 +16,13 @@ export interface PinpointSmsChannelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_sms_channel#id PinpointSmsChannel#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}
   */
   readonly senderId?: string;
@@ -61,6 +68,7 @@ export class PinpointSmsChannel extends cdktf.TerraformResource {
     });
     this._applicationId = config.applicationId;
     this._enabled = config.enabled;
+    this._id = config.id;
     this._senderId = config.senderId;
     this._shortCode = config.shortCode;
   }
@@ -99,8 +107,19 @@ export class PinpointSmsChannel extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // promotional_messages_per_second - computed: true, optional: false, required: false
@@ -153,6 +172,7 @@ export class PinpointSmsChannel extends cdktf.TerraformResource {
     return {
       application_id: cdktf.stringToTerraform(this._applicationId),
       enabled: cdktf.booleanToTerraform(this._enabled),
+      id: cdktf.stringToTerraform(this._id),
       sender_id: cdktf.stringToTerraform(this._senderId),
       short_code: cdktf.stringToTerraform(this._shortCode),
     };

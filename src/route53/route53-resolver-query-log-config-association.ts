@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface Route53ResolverQueryLogConfigAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_query_log_config_association#id Route53ResolverQueryLogConfigAssociation#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_query_log_config_association#resolver_query_log_config_id Route53ResolverQueryLogConfigAssociation#resolver_query_log_config_id}
   */
   readonly resolverQueryLogConfigId: string;
@@ -51,6 +58,7 @@ export class Route53ResolverQueryLogConfigAssociation extends cdktf.TerraformRes
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._resolverQueryLogConfigId = config.resolverQueryLogConfigId;
     this._resourceId = config.resourceId;
   }
@@ -60,8 +68,19 @@ export class Route53ResolverQueryLogConfigAssociation extends cdktf.TerraformRes
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // resolver_query_log_config_id - computed: false, optional: false, required: true
@@ -96,6 +115,7 @@ export class Route53ResolverQueryLogConfigAssociation extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       resolver_query_log_config_id: cdktf.stringToTerraform(this._resolverQueryLogConfigId),
       resource_id: cdktf.stringToTerraform(this._resourceId),
     };

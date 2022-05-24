@@ -16,6 +16,13 @@ export interface DataAwsLakeformationPermissionsConfig extends cdktf.TerraformMe
   */
   readonly catalogResource?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lakeformation_permissions#id DataAwsLakeformationPermissions#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lakeformation_permissions#principal DataAwsLakeformationPermissions#principal}
   */
   readonly principal: string;
@@ -596,6 +603,7 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
     });
     this._catalogId = config.catalogId;
     this._catalogResource = config.catalogResource;
+    this._id = config.id;
     this._principal = config.principal;
     this._dataLocation.internalValue = config.dataLocation;
     this._database.internalValue = config.database;
@@ -640,8 +648,19 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // permissions - computed: true, optional: false, required: false
@@ -739,6 +758,7 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
     return {
       catalog_id: cdktf.stringToTerraform(this._catalogId),
       catalog_resource: cdktf.booleanToTerraform(this._catalogResource),
+      id: cdktf.stringToTerraform(this._id),
       principal: cdktf.stringToTerraform(this._principal),
       data_location: dataAwsLakeformationPermissionsDataLocationToTerraform(this._dataLocation.internalValue),
       database: dataAwsLakeformationPermissionsDatabaseToTerraform(this._database.internalValue),

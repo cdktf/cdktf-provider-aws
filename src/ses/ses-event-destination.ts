@@ -16,6 +16,13 @@ export interface SesEventDestinationConfig extends cdktf.TerraformMetaArguments 
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_event_destination#id SesEventDestination#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_event_destination#matching_types SesEventDestination#matching_types}
   */
   readonly matchingTypes: string[];
@@ -69,6 +76,121 @@ export function sesEventDestinationCloudwatchDestinationToTerraform(struct?: Ses
   }
 }
 
+export class SesEventDestinationCloudwatchDestinationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SesEventDestinationCloudwatchDestination | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultValue = this._defaultValue;
+    }
+    if (this._dimensionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensionName = this._dimensionName;
+    }
+    if (this._valueSource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.valueSource = this._valueSource;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SesEventDestinationCloudwatchDestination | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._defaultValue = undefined;
+      this._dimensionName = undefined;
+      this._valueSource = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._defaultValue = value.defaultValue;
+      this._dimensionName = value.dimensionName;
+      this._valueSource = value.valueSource;
+    }
+  }
+
+  // default_value - computed: false, optional: false, required: true
+  private _defaultValue?: string; 
+  public get defaultValue() {
+    return this.getStringAttribute('default_value');
+  }
+  public set defaultValue(value: string) {
+    this._defaultValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultValueInput() {
+    return this._defaultValue;
+  }
+
+  // dimension_name - computed: false, optional: false, required: true
+  private _dimensionName?: string; 
+  public get dimensionName() {
+    return this.getStringAttribute('dimension_name');
+  }
+  public set dimensionName(value: string) {
+    this._dimensionName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionNameInput() {
+    return this._dimensionName;
+  }
+
+  // value_source - computed: false, optional: false, required: true
+  private _valueSource?: string; 
+  public get valueSource() {
+    return this.getStringAttribute('value_source');
+  }
+  public set valueSource(value: string) {
+    this._valueSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueSourceInput() {
+    return this._valueSource;
+  }
+}
+
+export class SesEventDestinationCloudwatchDestinationList extends cdktf.ComplexList {
+  public internalValue? : SesEventDestinationCloudwatchDestination[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SesEventDestinationCloudwatchDestinationOutputReference {
+    return new SesEventDestinationCloudwatchDestinationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SesEventDestinationKinesisDestination {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_event_destination#role_arn SesEventDestination#role_arn}
@@ -254,9 +376,10 @@ export class SesEventDestination extends cdktf.TerraformResource {
     });
     this._configurationSetName = config.configurationSetName;
     this._enabled = config.enabled;
+    this._id = config.id;
     this._matchingTypes = config.matchingTypes;
     this._name = config.name;
-    this._cloudwatchDestination = config.cloudwatchDestination;
+    this._cloudwatchDestination.internalValue = config.cloudwatchDestination;
     this._kinesisDestination.internalValue = config.kinesisDestination;
     this._snsDestination.internalValue = config.snsDestination;
   }
@@ -300,8 +423,19 @@ export class SesEventDestination extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // matching_types - computed: false, optional: false, required: true
@@ -331,20 +465,19 @@ export class SesEventDestination extends cdktf.TerraformResource {
   }
 
   // cloudwatch_destination - computed: false, optional: true, required: false
-  private _cloudwatchDestination?: SesEventDestinationCloudwatchDestination[] | cdktf.IResolvable; 
+  private _cloudwatchDestination = new SesEventDestinationCloudwatchDestinationList(this, "cloudwatch_destination", true);
   public get cloudwatchDestination() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('cloudwatch_destination')));
+    return this._cloudwatchDestination;
   }
-  public set cloudwatchDestination(value: SesEventDestinationCloudwatchDestination[] | cdktf.IResolvable) {
-    this._cloudwatchDestination = value;
+  public putCloudwatchDestination(value: SesEventDestinationCloudwatchDestination[] | cdktf.IResolvable) {
+    this._cloudwatchDestination.internalValue = value;
   }
   public resetCloudwatchDestination() {
-    this._cloudwatchDestination = undefined;
+    this._cloudwatchDestination.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get cloudwatchDestinationInput() {
-    return this._cloudwatchDestination;
+    return this._cloudwatchDestination.internalValue;
   }
 
   // kinesis_destination - computed: false, optional: true, required: false
@@ -387,9 +520,10 @@ export class SesEventDestination extends cdktf.TerraformResource {
     return {
       configuration_set_name: cdktf.stringToTerraform(this._configurationSetName),
       enabled: cdktf.booleanToTerraform(this._enabled),
+      id: cdktf.stringToTerraform(this._id),
       matching_types: cdktf.listMapper(cdktf.stringToTerraform)(this._matchingTypes),
       name: cdktf.stringToTerraform(this._name),
-      cloudwatch_destination: cdktf.listMapper(sesEventDestinationCloudwatchDestinationToTerraform)(this._cloudwatchDestination),
+      cloudwatch_destination: cdktf.listMapper(sesEventDestinationCloudwatchDestinationToTerraform)(this._cloudwatchDestination.internalValue),
       kinesis_destination: sesEventDestinationKinesisDestinationToTerraform(this._kinesisDestination.internalValue),
       sns_destination: sesEventDestinationSnsDestinationToTerraform(this._snsDestination.internalValue),
     };

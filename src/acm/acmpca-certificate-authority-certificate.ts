@@ -19,6 +19,13 @@ export interface AcmpcaCertificateAuthorityCertificateConfig extends cdktf.Terra
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority_certificate#certificate_chain AcmpcaCertificateAuthorityCertificate#certificate_chain}
   */
   readonly certificateChain?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority_certificate#id AcmpcaCertificateAuthorityCertificate#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
 }
 
 /**
@@ -58,6 +65,7 @@ export class AcmpcaCertificateAuthorityCertificate extends cdktf.TerraformResour
     this._certificate = config.certificate;
     this._certificateAuthorityArn = config.certificateAuthorityArn;
     this._certificateChain = config.certificateChain;
+    this._id = config.id;
   }
 
   // ==========
@@ -107,8 +115,19 @@ export class AcmpcaCertificateAuthorityCertificate extends cdktf.TerraformResour
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // =========
@@ -120,6 +139,7 @@ export class AcmpcaCertificateAuthorityCertificate extends cdktf.TerraformResour
       certificate: cdktf.stringToTerraform(this._certificate),
       certificate_authority_arn: cdktf.stringToTerraform(this._certificateAuthorityArn),
       certificate_chain: cdktf.stringToTerraform(this._certificateChain),
+      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

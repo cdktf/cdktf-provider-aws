@@ -28,6 +28,13 @@ export interface GrafanaWorkspaceSamlConfigurationConfig extends cdktf.Terraform
   */
   readonly groupsAssertion?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace_saml_configuration#id GrafanaWorkspaceSamlConfiguration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace_saml_configuration#idp_metadata_url GrafanaWorkspaceSamlConfiguration#idp_metadata_url}
   */
   readonly idpMetadataUrl?: string;
@@ -90,6 +97,7 @@ export function grafanaWorkspaceSamlConfigurationTimeoutsToTerraform(struct?: Gr
 
 export class GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -99,7 +107,10 @@ export class GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference extends cd
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GrafanaWorkspaceSamlConfigurationTimeouts | undefined {
+  public get internalValue(): GrafanaWorkspaceSamlConfigurationTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -113,14 +124,20 @@ export class GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GrafanaWorkspaceSamlConfigurationTimeouts | undefined) {
+  public set internalValue(value: GrafanaWorkspaceSamlConfigurationTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -198,6 +215,7 @@ export class GrafanaWorkspaceSamlConfiguration extends cdktf.TerraformResource {
     this._editorRoleValues = config.editorRoleValues;
     this._emailAssertion = config.emailAssertion;
     this._groupsAssertion = config.groupsAssertion;
+    this._id = config.id;
     this._idpMetadataUrl = config.idpMetadataUrl;
     this._idpMetadataXml = config.idpMetadataXml;
     this._loginAssertion = config.loginAssertion;
@@ -291,8 +309,19 @@ export class GrafanaWorkspaceSamlConfiguration extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // idp_metadata_url - computed: false, optional: true, required: false
@@ -452,6 +481,7 @@ export class GrafanaWorkspaceSamlConfiguration extends cdktf.TerraformResource {
       editor_role_values: cdktf.listMapper(cdktf.stringToTerraform)(this._editorRoleValues),
       email_assertion: cdktf.stringToTerraform(this._emailAssertion),
       groups_assertion: cdktf.stringToTerraform(this._groupsAssertion),
+      id: cdktf.stringToTerraform(this._id),
       idp_metadata_url: cdktf.stringToTerraform(this._idpMetadataUrl),
       idp_metadata_xml: cdktf.stringToTerraform(this._idpMetadataXml),
       login_assertion: cdktf.stringToTerraform(this._loginAssertion),

@@ -12,6 +12,13 @@ export interface KeyspacesTableConfig extends cdktf.TerraformMetaArguments {
   */
   readonly defaultTimeToLive?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/keyspaces_table#id KeyspacesTable#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/keyspaces_table#keyspace_name KeyspacesTable#keyspace_name}
   */
   readonly keyspaceName: string;
@@ -433,6 +440,102 @@ export function keyspacesTableSchemaDefinitionClusteringKeyToTerraform(struct?: 
   }
 }
 
+export class KeyspacesTableSchemaDefinitionClusteringKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KeyspacesTableSchemaDefinitionClusteringKey | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._orderBy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.orderBy = this._orderBy;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KeyspacesTableSchemaDefinitionClusteringKey | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._orderBy = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._orderBy = value.orderBy;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // order_by - computed: false, optional: false, required: true
+  private _orderBy?: string; 
+  public get orderBy() {
+    return this.getStringAttribute('order_by');
+  }
+  public set orderBy(value: string) {
+    this._orderBy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orderByInput() {
+    return this._orderBy;
+  }
+}
+
+export class KeyspacesTableSchemaDefinitionClusteringKeyList extends cdktf.ComplexList {
+  public internalValue? : KeyspacesTableSchemaDefinitionClusteringKey[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KeyspacesTableSchemaDefinitionClusteringKeyOutputReference {
+    return new KeyspacesTableSchemaDefinitionClusteringKeyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KeyspacesTableSchemaDefinitionColumn {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/keyspaces_table#name KeyspacesTable#name}
@@ -455,6 +558,102 @@ export function keyspacesTableSchemaDefinitionColumnToTerraform(struct?: Keyspac
   }
 }
 
+export class KeyspacesTableSchemaDefinitionColumnOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KeyspacesTableSchemaDefinitionColumn | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KeyspacesTableSchemaDefinitionColumn | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class KeyspacesTableSchemaDefinitionColumnList extends cdktf.ComplexList {
+  public internalValue? : KeyspacesTableSchemaDefinitionColumn[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KeyspacesTableSchemaDefinitionColumnOutputReference {
+    return new KeyspacesTableSchemaDefinitionColumnOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KeyspacesTableSchemaDefinitionPartitionKey {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/keyspaces_table#name KeyspacesTable#name}
@@ -472,6 +671,83 @@ export function keyspacesTableSchemaDefinitionPartitionKeyToTerraform(struct?: K
   }
 }
 
+export class KeyspacesTableSchemaDefinitionPartitionKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KeyspacesTableSchemaDefinitionPartitionKey | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KeyspacesTableSchemaDefinitionPartitionKey | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class KeyspacesTableSchemaDefinitionPartitionKeyList extends cdktf.ComplexList {
+  public internalValue? : KeyspacesTableSchemaDefinitionPartitionKey[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KeyspacesTableSchemaDefinitionPartitionKeyOutputReference {
+    return new KeyspacesTableSchemaDefinitionPartitionKeyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KeyspacesTableSchemaDefinitionStaticColumn {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/keyspaces_table#name KeyspacesTable#name}
@@ -489,6 +765,83 @@ export function keyspacesTableSchemaDefinitionStaticColumnToTerraform(struct?: K
   }
 }
 
+export class KeyspacesTableSchemaDefinitionStaticColumnOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KeyspacesTableSchemaDefinitionStaticColumn | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KeyspacesTableSchemaDefinitionStaticColumn | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class KeyspacesTableSchemaDefinitionStaticColumnList extends cdktf.ComplexList {
+  public internalValue? : KeyspacesTableSchemaDefinitionStaticColumn[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KeyspacesTableSchemaDefinitionStaticColumnOutputReference {
+    return new KeyspacesTableSchemaDefinitionStaticColumnOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KeyspacesTableSchemaDefinition {
   /**
   * clustering_key block
@@ -543,21 +896,21 @@ export class KeyspacesTableSchemaDefinitionOutputReference extends cdktf.Complex
   public get internalValue(): KeyspacesTableSchemaDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clusteringKey !== undefined) {
+    if (this._clusteringKey?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.clusteringKey = this._clusteringKey;
+      internalValueResult.clusteringKey = this._clusteringKey?.internalValue;
     }
-    if (this._column !== undefined) {
+    if (this._column?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.column = this._column;
+      internalValueResult.column = this._column?.internalValue;
     }
-    if (this._partitionKey !== undefined) {
+    if (this._partitionKey?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.partitionKey = this._partitionKey;
+      internalValueResult.partitionKey = this._partitionKey?.internalValue;
     }
-    if (this._staticColumn !== undefined) {
+    if (this._staticColumn?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.staticColumn = this._staticColumn;
+      internalValueResult.staticColumn = this._staticColumn?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -565,80 +918,76 @@ export class KeyspacesTableSchemaDefinitionOutputReference extends cdktf.Complex
   public set internalValue(value: KeyspacesTableSchemaDefinition | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._clusteringKey = undefined;
-      this._column = undefined;
-      this._partitionKey = undefined;
-      this._staticColumn = undefined;
+      this._clusteringKey.internalValue = undefined;
+      this._column.internalValue = undefined;
+      this._partitionKey.internalValue = undefined;
+      this._staticColumn.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._clusteringKey = value.clusteringKey;
-      this._column = value.column;
-      this._partitionKey = value.partitionKey;
-      this._staticColumn = value.staticColumn;
+      this._clusteringKey.internalValue = value.clusteringKey;
+      this._column.internalValue = value.column;
+      this._partitionKey.internalValue = value.partitionKey;
+      this._staticColumn.internalValue = value.staticColumn;
     }
   }
 
   // clustering_key - computed: false, optional: true, required: false
-  private _clusteringKey?: KeyspacesTableSchemaDefinitionClusteringKey[] | cdktf.IResolvable; 
+  private _clusteringKey = new KeyspacesTableSchemaDefinitionClusteringKeyList(this, "clustering_key", true);
   public get clusteringKey() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('clustering_key')));
+    return this._clusteringKey;
   }
-  public set clusteringKey(value: KeyspacesTableSchemaDefinitionClusteringKey[] | cdktf.IResolvable) {
-    this._clusteringKey = value;
+  public putClusteringKey(value: KeyspacesTableSchemaDefinitionClusteringKey[] | cdktf.IResolvable) {
+    this._clusteringKey.internalValue = value;
   }
   public resetClusteringKey() {
-    this._clusteringKey = undefined;
+    this._clusteringKey.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get clusteringKeyInput() {
-    return this._clusteringKey;
+    return this._clusteringKey.internalValue;
   }
 
   // column - computed: false, optional: false, required: true
-  private _column?: KeyspacesTableSchemaDefinitionColumn[] | cdktf.IResolvable; 
+  private _column = new KeyspacesTableSchemaDefinitionColumnList(this, "column", true);
   public get column() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('column')));
+    return this._column;
   }
-  public set column(value: KeyspacesTableSchemaDefinitionColumn[] | cdktf.IResolvable) {
-    this._column = value;
+  public putColumn(value: KeyspacesTableSchemaDefinitionColumn[] | cdktf.IResolvable) {
+    this._column.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get columnInput() {
-    return this._column;
+    return this._column.internalValue;
   }
 
   // partition_key - computed: false, optional: false, required: true
-  private _partitionKey?: KeyspacesTableSchemaDefinitionPartitionKey[] | cdktf.IResolvable; 
+  private _partitionKey = new KeyspacesTableSchemaDefinitionPartitionKeyList(this, "partition_key", true);
   public get partitionKey() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('partition_key')));
+    return this._partitionKey;
   }
-  public set partitionKey(value: KeyspacesTableSchemaDefinitionPartitionKey[] | cdktf.IResolvable) {
-    this._partitionKey = value;
+  public putPartitionKey(value: KeyspacesTableSchemaDefinitionPartitionKey[] | cdktf.IResolvable) {
+    this._partitionKey.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get partitionKeyInput() {
-    return this._partitionKey;
+    return this._partitionKey.internalValue;
   }
 
   // static_column - computed: false, optional: true, required: false
-  private _staticColumn?: KeyspacesTableSchemaDefinitionStaticColumn[] | cdktf.IResolvable; 
+  private _staticColumn = new KeyspacesTableSchemaDefinitionStaticColumnList(this, "static_column", true);
   public get staticColumn() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('static_column')));
+    return this._staticColumn;
   }
-  public set staticColumn(value: KeyspacesTableSchemaDefinitionStaticColumn[] | cdktf.IResolvable) {
-    this._staticColumn = value;
+  public putStaticColumn(value: KeyspacesTableSchemaDefinitionStaticColumn[] | cdktf.IResolvable) {
+    this._staticColumn.internalValue = value;
   }
   public resetStaticColumn() {
-    this._staticColumn = undefined;
+    this._staticColumn.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get staticColumnInput() {
-    return this._staticColumn;
+    return this._staticColumn.internalValue;
   }
 }
 export interface KeyspacesTableTimeouts {
@@ -670,6 +1019,7 @@ export function keyspacesTableTimeoutsToTerraform(struct?: KeyspacesTableTimeout
 
 export class KeyspacesTableTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -679,7 +1029,10 @@ export class KeyspacesTableTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): KeyspacesTableTimeouts | undefined {
+  public get internalValue(): KeyspacesTableTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -697,15 +1050,21 @@ export class KeyspacesTableTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyspacesTableTimeouts | undefined) {
+  public set internalValue(value: KeyspacesTableTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -858,6 +1217,7 @@ export class KeyspacesTable extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._defaultTimeToLive = config.defaultTimeToLive;
+    this._id = config.id;
     this._keyspaceName = config.keyspaceName;
     this._tableName = config.tableName;
     this._tags = config.tags;
@@ -897,8 +1257,19 @@ export class KeyspacesTable extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // keyspace_name - computed: false, optional: false, required: true
@@ -1075,6 +1446,7 @@ export class KeyspacesTable extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       default_time_to_live: cdktf.numberToTerraform(this._defaultTimeToLive),
+      id: cdktf.stringToTerraform(this._id),
       keyspace_name: cdktf.stringToTerraform(this._keyspaceName),
       table_name: cdktf.stringToTerraform(this._tableName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

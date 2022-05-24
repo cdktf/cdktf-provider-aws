@@ -28,6 +28,13 @@ export interface BudgetsBudgetActionConfig extends cdktf.TerraformMetaArguments 
   */
   readonly executionRoleArn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#id BudgetsBudgetAction#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action#notification_type BudgetsBudgetAction#notification_type}
   */
   readonly notificationType: string;
@@ -622,6 +629,102 @@ export function budgetsBudgetActionSubscriberToTerraform(struct?: BudgetsBudgetA
   }
 }
 
+export class BudgetsBudgetActionSubscriberOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BudgetsBudgetActionSubscriber | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._address !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.address = this._address;
+    }
+    if (this._subscriptionType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subscriptionType = this._subscriptionType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetActionSubscriber | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._address = undefined;
+      this._subscriptionType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._address = value.address;
+      this._subscriptionType = value.subscriptionType;
+    }
+  }
+
+  // address - computed: false, optional: false, required: true
+  private _address?: string; 
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+  public set address(value: string) {
+    this._address = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressInput() {
+    return this._address;
+  }
+
+  // subscription_type - computed: false, optional: false, required: true
+  private _subscriptionType?: string; 
+  public get subscriptionType() {
+    return this.getStringAttribute('subscription_type');
+  }
+  public set subscriptionType(value: string) {
+    this._subscriptionType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subscriptionTypeInput() {
+    return this._subscriptionType;
+  }
+}
+
+export class BudgetsBudgetActionSubscriberList extends cdktf.ComplexList {
+  public internalValue? : BudgetsBudgetActionSubscriber[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BudgetsBudgetActionSubscriberOutputReference {
+    return new BudgetsBudgetActionSubscriberOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget_action aws_budgets_budget_action}
@@ -662,10 +765,11 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
     this._approvalModel = config.approvalModel;
     this._budgetName = config.budgetName;
     this._executionRoleArn = config.executionRoleArn;
+    this._id = config.id;
     this._notificationType = config.notificationType;
     this._actionThreshold.internalValue = config.actionThreshold;
     this._definition.internalValue = config.definition;
-    this._subscriber = config.subscriber;
+    this._subscriber.internalValue = config.subscriber;
   }
 
   // ==========
@@ -751,8 +855,19 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // notification_type - computed: false, optional: false, required: true
@@ -800,17 +915,16 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
   }
 
   // subscriber - computed: false, optional: false, required: true
-  private _subscriber?: BudgetsBudgetActionSubscriber[] | cdktf.IResolvable; 
+  private _subscriber = new BudgetsBudgetActionSubscriberList(this, "subscriber", true);
   public get subscriber() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('subscriber')));
+    return this._subscriber;
   }
-  public set subscriber(value: BudgetsBudgetActionSubscriber[] | cdktf.IResolvable) {
-    this._subscriber = value;
+  public putSubscriber(value: BudgetsBudgetActionSubscriber[] | cdktf.IResolvable) {
+    this._subscriber.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get subscriberInput() {
-    return this._subscriber;
+    return this._subscriber.internalValue;
   }
 
   // =========
@@ -824,10 +938,11 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
       approval_model: cdktf.stringToTerraform(this._approvalModel),
       budget_name: cdktf.stringToTerraform(this._budgetName),
       execution_role_arn: cdktf.stringToTerraform(this._executionRoleArn),
+      id: cdktf.stringToTerraform(this._id),
       notification_type: cdktf.stringToTerraform(this._notificationType),
       action_threshold: budgetsBudgetActionActionThresholdToTerraform(this._actionThreshold.internalValue),
       definition: budgetsBudgetActionDefinitionToTerraform(this._definition.internalValue),
-      subscriber: cdktf.listMapper(budgetsBudgetActionSubscriberToTerraform)(this._subscriber),
+      subscriber: cdktf.listMapper(budgetsBudgetActionSubscriberToTerraform)(this._subscriber.internalValue),
     };
   }
 }

@@ -16,6 +16,13 @@ export interface AppconfigEnvironmentConfig extends cdktf.TerraformMetaArguments
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appconfig_environment#id AppconfigEnvironment#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appconfig_environment#name AppconfigEnvironment#name}
   */
   readonly name: string;
@@ -56,6 +63,105 @@ export function appconfigEnvironmentMonitorToTerraform(struct?: AppconfigEnviron
   }
 }
 
+export class AppconfigEnvironmentMonitorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppconfigEnvironmentMonitor | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alarmArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alarmArn = this._alarmArn;
+    }
+    if (this._alarmRoleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alarmRoleArn = this._alarmRoleArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppconfigEnvironmentMonitor | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._alarmArn = undefined;
+      this._alarmRoleArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._alarmArn = value.alarmArn;
+      this._alarmRoleArn = value.alarmRoleArn;
+    }
+  }
+
+  // alarm_arn - computed: false, optional: false, required: true
+  private _alarmArn?: string; 
+  public get alarmArn() {
+    return this.getStringAttribute('alarm_arn');
+  }
+  public set alarmArn(value: string) {
+    this._alarmArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alarmArnInput() {
+    return this._alarmArn;
+  }
+
+  // alarm_role_arn - computed: false, optional: true, required: false
+  private _alarmRoleArn?: string; 
+  public get alarmRoleArn() {
+    return this.getStringAttribute('alarm_role_arn');
+  }
+  public set alarmRoleArn(value: string) {
+    this._alarmRoleArn = value;
+  }
+  public resetAlarmRoleArn() {
+    this._alarmRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alarmRoleArnInput() {
+    return this._alarmRoleArn;
+  }
+}
+
+export class AppconfigEnvironmentMonitorList extends cdktf.ComplexList {
+  public internalValue? : AppconfigEnvironmentMonitor[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppconfigEnvironmentMonitorOutputReference {
+    return new AppconfigEnvironmentMonitorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/appconfig_environment aws_appconfig_environment}
@@ -93,10 +199,11 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
     });
     this._applicationId = config.applicationId;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._monitor = config.monitor;
+    this._monitor.internalValue = config.monitor;
   }
 
   // ==========
@@ -143,8 +250,19 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -198,20 +316,19 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
   }
 
   // monitor - computed: false, optional: true, required: false
-  private _monitor?: AppconfigEnvironmentMonitor[] | cdktf.IResolvable; 
+  private _monitor = new AppconfigEnvironmentMonitorList(this, "monitor", true);
   public get monitor() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('monitor')));
+    return this._monitor;
   }
-  public set monitor(value: AppconfigEnvironmentMonitor[] | cdktf.IResolvable) {
-    this._monitor = value;
+  public putMonitor(value: AppconfigEnvironmentMonitor[] | cdktf.IResolvable) {
+    this._monitor.internalValue = value;
   }
   public resetMonitor() {
-    this._monitor = undefined;
+    this._monitor.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get monitorInput() {
-    return this._monitor;
+    return this._monitor.internalValue;
   }
 
   // =========
@@ -222,10 +339,11 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
     return {
       application_id: cdktf.stringToTerraform(this._applicationId),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      monitor: cdktf.listMapper(appconfigEnvironmentMonitorToTerraform)(this._monitor),
+      monitor: cdktf.listMapper(appconfigEnvironmentMonitorToTerraform)(this._monitor.internalValue),
     };
   }
 }

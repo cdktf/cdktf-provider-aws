@@ -20,6 +20,13 @@ export interface CodeartifactRepositoryConfig extends cdktf.TerraformMetaArgumen
   */
   readonly domainOwner?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codeartifact_repository#id CodeartifactRepository#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codeartifact_repository#repository CodeartifactRepository#repository}
   */
   readonly repository: string;
@@ -133,6 +140,83 @@ export function codeartifactRepositoryUpstreamToTerraform(struct?: CodeartifactR
   }
 }
 
+export class CodeartifactRepositoryUpstreamOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CodeartifactRepositoryUpstream | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._repositoryName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repositoryName = this._repositoryName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodeartifactRepositoryUpstream | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._repositoryName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._repositoryName = value.repositoryName;
+    }
+  }
+
+  // repository_name - computed: false, optional: false, required: true
+  private _repositoryName?: string; 
+  public get repositoryName() {
+    return this.getStringAttribute('repository_name');
+  }
+  public set repositoryName(value: string) {
+    this._repositoryName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryNameInput() {
+    return this._repositoryName;
+  }
+}
+
+export class CodeartifactRepositoryUpstreamList extends cdktf.ComplexList {
+  public internalValue? : CodeartifactRepositoryUpstream[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CodeartifactRepositoryUpstreamOutputReference {
+    return new CodeartifactRepositoryUpstreamOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/codeartifact_repository aws_codeartifact_repository}
@@ -171,11 +255,12 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
     this._description = config.description;
     this._domain = config.domain;
     this._domainOwner = config.domainOwner;
+    this._id = config.id;
     this._repository = config.repository;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._externalConnections.internalValue = config.externalConnections;
-    this._upstream = config.upstream;
+    this._upstream.internalValue = config.upstream;
   }
 
   // ==========
@@ -238,8 +323,19 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -304,20 +400,19 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
   }
 
   // upstream - computed: false, optional: true, required: false
-  private _upstream?: CodeartifactRepositoryUpstream[] | cdktf.IResolvable; 
+  private _upstream = new CodeartifactRepositoryUpstreamList(this, "upstream", false);
   public get upstream() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('upstream');
+    return this._upstream;
   }
-  public set upstream(value: CodeartifactRepositoryUpstream[] | cdktf.IResolvable) {
-    this._upstream = value;
+  public putUpstream(value: CodeartifactRepositoryUpstream[] | cdktf.IResolvable) {
+    this._upstream.internalValue = value;
   }
   public resetUpstream() {
-    this._upstream = undefined;
+    this._upstream.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get upstreamInput() {
-    return this._upstream;
+    return this._upstream.internalValue;
   }
 
   // =========
@@ -329,11 +424,12 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       domain: cdktf.stringToTerraform(this._domain),
       domain_owner: cdktf.stringToTerraform(this._domainOwner),
+      id: cdktf.stringToTerraform(this._id),
       repository: cdktf.stringToTerraform(this._repository),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       external_connections: codeartifactRepositoryExternalConnectionsToTerraform(this._externalConnections.internalValue),
-      upstream: cdktf.listMapper(codeartifactRepositoryUpstreamToTerraform)(this._upstream),
+      upstream: cdktf.listMapper(codeartifactRepositoryUpstreamToTerraform)(this._upstream.internalValue),
     };
   }
 }

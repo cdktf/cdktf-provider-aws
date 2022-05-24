@@ -40,6 +40,13 @@ export interface ElasticacheClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly finalSnapshotIdentifier?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#id ElasticacheCluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster#maintenance_window ElasticacheCluster#maintenance_window}
   */
   readonly maintenanceWindow?: string;
@@ -225,6 +232,140 @@ export function elasticacheClusterLogDeliveryConfigurationToTerraform(struct?: E
   }
 }
 
+export class ElasticacheClusterLogDeliveryConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ElasticacheClusterLogDeliveryConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destination = this._destination;
+    }
+    if (this._destinationType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationType = this._destinationType;
+    }
+    if (this._logFormat !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logFormat = this._logFormat;
+    }
+    if (this._logType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logType = this._logType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ElasticacheClusterLogDeliveryConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._destination = undefined;
+      this._destinationType = undefined;
+      this._logFormat = undefined;
+      this._logType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._destination = value.destination;
+      this._destinationType = value.destinationType;
+      this._logFormat = value.logFormat;
+      this._logType = value.logType;
+    }
+  }
+
+  // destination - computed: false, optional: false, required: true
+  private _destination?: string; 
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+  public set destination(value: string) {
+    this._destination = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination;
+  }
+
+  // destination_type - computed: false, optional: false, required: true
+  private _destinationType?: string; 
+  public get destinationType() {
+    return this.getStringAttribute('destination_type');
+  }
+  public set destinationType(value: string) {
+    this._destinationType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationTypeInput() {
+    return this._destinationType;
+  }
+
+  // log_format - computed: false, optional: false, required: true
+  private _logFormat?: string; 
+  public get logFormat() {
+    return this.getStringAttribute('log_format');
+  }
+  public set logFormat(value: string) {
+    this._logFormat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logFormatInput() {
+    return this._logFormat;
+  }
+
+  // log_type - computed: false, optional: false, required: true
+  private _logType?: string; 
+  public get logType() {
+    return this.getStringAttribute('log_type');
+  }
+  public set logType(value: string) {
+    this._logType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logTypeInput() {
+    return this._logType;
+  }
+}
+
+export class ElasticacheClusterLogDeliveryConfigurationList extends cdktf.ComplexList {
+  public internalValue? : ElasticacheClusterLogDeliveryConfiguration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ElasticacheClusterLogDeliveryConfigurationOutputReference {
+    return new ElasticacheClusterLogDeliveryConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticache_cluster aws_elasticache_cluster}
@@ -268,6 +409,7 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
     this._engine = config.engine;
     this._engineVersion = config.engineVersion;
     this._finalSnapshotIdentifier = config.finalSnapshotIdentifier;
+    this._id = config.id;
     this._maintenanceWindow = config.maintenanceWindow;
     this._nodeType = config.nodeType;
     this._notificationTopicArn = config.notificationTopicArn;
@@ -285,7 +427,7 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
     this._subnetGroupName = config.subnetGroupName;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._logDeliveryConfiguration = config.logDeliveryConfiguration;
+    this._logDeliveryConfiguration.internalValue = config.logDeliveryConfiguration;
   }
 
   // ==========
@@ -444,8 +586,19 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // maintenance_window - computed: true, optional: true, required: false
@@ -721,20 +874,19 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
   }
 
   // log_delivery_configuration - computed: false, optional: true, required: false
-  private _logDeliveryConfiguration?: ElasticacheClusterLogDeliveryConfiguration[] | cdktf.IResolvable; 
+  private _logDeliveryConfiguration = new ElasticacheClusterLogDeliveryConfigurationList(this, "log_delivery_configuration", true);
   public get logDeliveryConfiguration() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('log_delivery_configuration')));
+    return this._logDeliveryConfiguration;
   }
-  public set logDeliveryConfiguration(value: ElasticacheClusterLogDeliveryConfiguration[] | cdktf.IResolvable) {
-    this._logDeliveryConfiguration = value;
+  public putLogDeliveryConfiguration(value: ElasticacheClusterLogDeliveryConfiguration[] | cdktf.IResolvable) {
+    this._logDeliveryConfiguration.internalValue = value;
   }
   public resetLogDeliveryConfiguration() {
-    this._logDeliveryConfiguration = undefined;
+    this._logDeliveryConfiguration.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get logDeliveryConfigurationInput() {
-    return this._logDeliveryConfiguration;
+    return this._logDeliveryConfiguration.internalValue;
   }
 
   // =========
@@ -751,6 +903,7 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
       engine: cdktf.stringToTerraform(this._engine),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
       final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
+      id: cdktf.stringToTerraform(this._id),
       maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
       node_type: cdktf.stringToTerraform(this._nodeType),
       notification_topic_arn: cdktf.stringToTerraform(this._notificationTopicArn),
@@ -768,7 +921,7 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
       subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      log_delivery_configuration: cdktf.listMapper(elasticacheClusterLogDeliveryConfigurationToTerraform)(this._logDeliveryConfiguration),
+      log_delivery_configuration: cdktf.listMapper(elasticacheClusterLogDeliveryConfigurationToTerraform)(this._logDeliveryConfiguration.internalValue),
     };
   }
 }

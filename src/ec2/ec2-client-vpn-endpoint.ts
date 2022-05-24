@@ -20,6 +20,13 @@ export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments
   */
   readonly dnsServers?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint#id Ec2ClientVpnEndpoint#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint#security_group_ids Ec2ClientVpnEndpoint#security_group_ids}
   */
   readonly securityGroupIds?: string[];
@@ -121,6 +128,171 @@ export function ec2ClientVpnEndpointAuthenticationOptionsToTerraform(struct?: Ec
   }
 }
 
+export class Ec2ClientVpnEndpointAuthenticationOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Ec2ClientVpnEndpointAuthenticationOptions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._activeDirectoryId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.activeDirectoryId = this._activeDirectoryId;
+    }
+    if (this._rootCertificateChainArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rootCertificateChainArn = this._rootCertificateChainArn;
+    }
+    if (this._samlProviderArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.samlProviderArn = this._samlProviderArn;
+    }
+    if (this._selfServiceSamlProviderArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.selfServiceSamlProviderArn = this._selfServiceSamlProviderArn;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Ec2ClientVpnEndpointAuthenticationOptions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._activeDirectoryId = undefined;
+      this._rootCertificateChainArn = undefined;
+      this._samlProviderArn = undefined;
+      this._selfServiceSamlProviderArn = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._activeDirectoryId = value.activeDirectoryId;
+      this._rootCertificateChainArn = value.rootCertificateChainArn;
+      this._samlProviderArn = value.samlProviderArn;
+      this._selfServiceSamlProviderArn = value.selfServiceSamlProviderArn;
+      this._type = value.type;
+    }
+  }
+
+  // active_directory_id - computed: false, optional: true, required: false
+  private _activeDirectoryId?: string; 
+  public get activeDirectoryId() {
+    return this.getStringAttribute('active_directory_id');
+  }
+  public set activeDirectoryId(value: string) {
+    this._activeDirectoryId = value;
+  }
+  public resetActiveDirectoryId() {
+    this._activeDirectoryId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get activeDirectoryIdInput() {
+    return this._activeDirectoryId;
+  }
+
+  // root_certificate_chain_arn - computed: false, optional: true, required: false
+  private _rootCertificateChainArn?: string; 
+  public get rootCertificateChainArn() {
+    return this.getStringAttribute('root_certificate_chain_arn');
+  }
+  public set rootCertificateChainArn(value: string) {
+    this._rootCertificateChainArn = value;
+  }
+  public resetRootCertificateChainArn() {
+    this._rootCertificateChainArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rootCertificateChainArnInput() {
+    return this._rootCertificateChainArn;
+  }
+
+  // saml_provider_arn - computed: false, optional: true, required: false
+  private _samlProviderArn?: string; 
+  public get samlProviderArn() {
+    return this.getStringAttribute('saml_provider_arn');
+  }
+  public set samlProviderArn(value: string) {
+    this._samlProviderArn = value;
+  }
+  public resetSamlProviderArn() {
+    this._samlProviderArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get samlProviderArnInput() {
+    return this._samlProviderArn;
+  }
+
+  // self_service_saml_provider_arn - computed: false, optional: true, required: false
+  private _selfServiceSamlProviderArn?: string; 
+  public get selfServiceSamlProviderArn() {
+    return this.getStringAttribute('self_service_saml_provider_arn');
+  }
+  public set selfServiceSamlProviderArn(value: string) {
+    this._selfServiceSamlProviderArn = value;
+  }
+  public resetSelfServiceSamlProviderArn() {
+    this._selfServiceSamlProviderArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selfServiceSamlProviderArnInput() {
+    return this._selfServiceSamlProviderArn;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class Ec2ClientVpnEndpointAuthenticationOptionsList extends cdktf.ComplexList {
+  public internalValue? : Ec2ClientVpnEndpointAuthenticationOptions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Ec2ClientVpnEndpointAuthenticationOptionsOutputReference {
+    return new Ec2ClientVpnEndpointAuthenticationOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Ec2ClientVpnEndpointClientConnectOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint#enabled Ec2ClientVpnEndpoint#enabled}
@@ -459,6 +631,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
     this._clientCidrBlock = config.clientCidrBlock;
     this._description = config.description;
     this._dnsServers = config.dnsServers;
+    this._id = config.id;
     this._securityGroupIds = config.securityGroupIds;
     this._selfServicePortal = config.selfServicePortal;
     this._serverCertificateArn = config.serverCertificateArn;
@@ -469,7 +642,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
     this._transportProtocol = config.transportProtocol;
     this._vpcId = config.vpcId;
     this._vpnPort = config.vpnPort;
-    this._authenticationOptions = config.authenticationOptions;
+    this._authenticationOptions.internalValue = config.authenticationOptions;
     this._clientConnectOptions.internalValue = config.clientConnectOptions;
     this._clientLoginBannerOptions.internalValue = config.clientLoginBannerOptions;
     this._connectionLogOptions.internalValue = config.connectionLogOptions;
@@ -535,8 +708,19 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // security_group_ids - computed: true, optional: true, required: false
@@ -702,17 +886,16 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   }
 
   // authentication_options - computed: false, optional: false, required: true
-  private _authenticationOptions?: Ec2ClientVpnEndpointAuthenticationOptions[] | cdktf.IResolvable; 
+  private _authenticationOptions = new Ec2ClientVpnEndpointAuthenticationOptionsList(this, "authentication_options", false);
   public get authenticationOptions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('authentication_options');
+    return this._authenticationOptions;
   }
-  public set authenticationOptions(value: Ec2ClientVpnEndpointAuthenticationOptions[] | cdktf.IResolvable) {
-    this._authenticationOptions = value;
+  public putAuthenticationOptions(value: Ec2ClientVpnEndpointAuthenticationOptions[] | cdktf.IResolvable) {
+    this._authenticationOptions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get authenticationOptionsInput() {
-    return this._authenticationOptions;
+    return this._authenticationOptions.internalValue;
   }
 
   // client_connect_options - computed: false, optional: true, required: false
@@ -769,6 +952,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
       client_cidr_block: cdktf.stringToTerraform(this._clientCidrBlock),
       description: cdktf.stringToTerraform(this._description),
       dns_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._dnsServers),
+      id: cdktf.stringToTerraform(this._id),
       security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
       self_service_portal: cdktf.stringToTerraform(this._selfServicePortal),
       server_certificate_arn: cdktf.stringToTerraform(this._serverCertificateArn),
@@ -779,7 +963,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
       transport_protocol: cdktf.stringToTerraform(this._transportProtocol),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       vpn_port: cdktf.numberToTerraform(this._vpnPort),
-      authentication_options: cdktf.listMapper(ec2ClientVpnEndpointAuthenticationOptionsToTerraform)(this._authenticationOptions),
+      authentication_options: cdktf.listMapper(ec2ClientVpnEndpointAuthenticationOptionsToTerraform)(this._authenticationOptions.internalValue),
       client_connect_options: ec2ClientVpnEndpointClientConnectOptionsToTerraform(this._clientConnectOptions.internalValue),
       client_login_banner_options: ec2ClientVpnEndpointClientLoginBannerOptionsToTerraform(this._clientLoginBannerOptions.internalValue),
       connection_log_options: ec2ClientVpnEndpointConnectionLogOptionsToTerraform(this._connectionLogOptions.internalValue),

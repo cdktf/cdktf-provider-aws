@@ -24,6 +24,13 @@ export interface GlueCrawlerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#id GlueCrawler#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#name GlueCrawler#name}
   */
   readonly name: string;
@@ -128,6 +135,102 @@ export function glueCrawlerCatalogTargetToTerraform(struct?: GlueCrawlerCatalogT
   }
 }
 
+export class GlueCrawlerCatalogTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCrawlerCatalogTarget | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._databaseName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databaseName = this._databaseName;
+    }
+    if (this._tables !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tables = this._tables;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCrawlerCatalogTarget | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._databaseName = undefined;
+      this._tables = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._databaseName = value.databaseName;
+      this._tables = value.tables;
+    }
+  }
+
+  // database_name - computed: false, optional: false, required: true
+  private _databaseName?: string; 
+  public get databaseName() {
+    return this.getStringAttribute('database_name');
+  }
+  public set databaseName(value: string) {
+    this._databaseName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseNameInput() {
+    return this._databaseName;
+  }
+
+  // tables - computed: false, optional: false, required: true
+  private _tables?: string[]; 
+  public get tables() {
+    return this.getListAttribute('tables');
+  }
+  public set tables(value: string[]) {
+    this._tables = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tablesInput() {
+    return this._tables;
+  }
+}
+
+export class GlueCrawlerCatalogTargetList extends cdktf.ComplexList {
+  public internalValue? : GlueCrawlerCatalogTarget[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCrawlerCatalogTargetOutputReference {
+    return new GlueCrawlerCatalogTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GlueCrawlerDeltaTarget {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#connection_name GlueCrawler#connection_name}
@@ -155,6 +258,121 @@ export function glueCrawlerDeltaTargetToTerraform(struct?: GlueCrawlerDeltaTarge
   }
 }
 
+export class GlueCrawlerDeltaTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCrawlerDeltaTarget | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._connectionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectionName = this._connectionName;
+    }
+    if (this._deltaTables !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deltaTables = this._deltaTables;
+    }
+    if (this._writeManifest !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.writeManifest = this._writeManifest;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCrawlerDeltaTarget | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._connectionName = undefined;
+      this._deltaTables = undefined;
+      this._writeManifest = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._connectionName = value.connectionName;
+      this._deltaTables = value.deltaTables;
+      this._writeManifest = value.writeManifest;
+    }
+  }
+
+  // connection_name - computed: false, optional: false, required: true
+  private _connectionName?: string; 
+  public get connectionName() {
+    return this.getStringAttribute('connection_name');
+  }
+  public set connectionName(value: string) {
+    this._connectionName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionNameInput() {
+    return this._connectionName;
+  }
+
+  // delta_tables - computed: false, optional: false, required: true
+  private _deltaTables?: string[]; 
+  public get deltaTables() {
+    return cdktf.Fn.tolist(this.getListAttribute('delta_tables'));
+  }
+  public set deltaTables(value: string[]) {
+    this._deltaTables = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deltaTablesInput() {
+    return this._deltaTables;
+  }
+
+  // write_manifest - computed: false, optional: false, required: true
+  private _writeManifest?: boolean | cdktf.IResolvable; 
+  public get writeManifest() {
+    return this.getBooleanAttribute('write_manifest');
+  }
+  public set writeManifest(value: boolean | cdktf.IResolvable) {
+    this._writeManifest = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get writeManifestInput() {
+    return this._writeManifest;
+  }
+}
+
+export class GlueCrawlerDeltaTargetList extends cdktf.ComplexList {
+  public internalValue? : GlueCrawlerDeltaTarget[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCrawlerDeltaTargetOutputReference {
+    return new GlueCrawlerDeltaTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GlueCrawlerDynamodbTarget {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#path GlueCrawler#path}
@@ -182,6 +400,127 @@ export function glueCrawlerDynamodbTargetToTerraform(struct?: GlueCrawlerDynamod
   }
 }
 
+export class GlueCrawlerDynamodbTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCrawlerDynamodbTarget | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._scanAll !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scanAll = this._scanAll;
+    }
+    if (this._scanRate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scanRate = this._scanRate;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCrawlerDynamodbTarget | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._path = undefined;
+      this._scanAll = undefined;
+      this._scanRate = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._path = value.path;
+      this._scanAll = value.scanAll;
+      this._scanRate = value.scanRate;
+    }
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // scan_all - computed: false, optional: true, required: false
+  private _scanAll?: boolean | cdktf.IResolvable; 
+  public get scanAll() {
+    return this.getBooleanAttribute('scan_all');
+  }
+  public set scanAll(value: boolean | cdktf.IResolvable) {
+    this._scanAll = value;
+  }
+  public resetScanAll() {
+    this._scanAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scanAllInput() {
+    return this._scanAll;
+  }
+
+  // scan_rate - computed: false, optional: true, required: false
+  private _scanRate?: number; 
+  public get scanRate() {
+    return this.getNumberAttribute('scan_rate');
+  }
+  public set scanRate(value: number) {
+    this._scanRate = value;
+  }
+  public resetScanRate() {
+    this._scanRate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scanRateInput() {
+    return this._scanRate;
+  }
+}
+
+export class GlueCrawlerDynamodbTargetList extends cdktf.ComplexList {
+  public internalValue? : GlueCrawlerDynamodbTarget[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCrawlerDynamodbTargetOutputReference {
+    return new GlueCrawlerDynamodbTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GlueCrawlerJdbcTarget {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#connection_name GlueCrawler#connection_name}
@@ -209,6 +548,124 @@ export function glueCrawlerJdbcTargetToTerraform(struct?: GlueCrawlerJdbcTarget 
   }
 }
 
+export class GlueCrawlerJdbcTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCrawlerJdbcTarget | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._connectionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectionName = this._connectionName;
+    }
+    if (this._exclusions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exclusions = this._exclusions;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCrawlerJdbcTarget | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._connectionName = undefined;
+      this._exclusions = undefined;
+      this._path = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._connectionName = value.connectionName;
+      this._exclusions = value.exclusions;
+      this._path = value.path;
+    }
+  }
+
+  // connection_name - computed: false, optional: false, required: true
+  private _connectionName?: string; 
+  public get connectionName() {
+    return this.getStringAttribute('connection_name');
+  }
+  public set connectionName(value: string) {
+    this._connectionName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionNameInput() {
+    return this._connectionName;
+  }
+
+  // exclusions - computed: false, optional: true, required: false
+  private _exclusions?: string[]; 
+  public get exclusions() {
+    return this.getListAttribute('exclusions');
+  }
+  public set exclusions(value: string[]) {
+    this._exclusions = value;
+  }
+  public resetExclusions() {
+    this._exclusions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exclusionsInput() {
+    return this._exclusions;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+}
+
+export class GlueCrawlerJdbcTargetList extends cdktf.ComplexList {
+  public internalValue? : GlueCrawlerJdbcTarget[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCrawlerJdbcTargetOutputReference {
+    return new GlueCrawlerJdbcTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GlueCrawlerLineageConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#crawler_lineage_settings GlueCrawler#crawler_lineage_settings}
@@ -301,6 +758,124 @@ export function glueCrawlerMongodbTargetToTerraform(struct?: GlueCrawlerMongodbT
   }
 }
 
+export class GlueCrawlerMongodbTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCrawlerMongodbTarget | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._connectionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectionName = this._connectionName;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._scanAll !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scanAll = this._scanAll;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCrawlerMongodbTarget | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._connectionName = undefined;
+      this._path = undefined;
+      this._scanAll = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._connectionName = value.connectionName;
+      this._path = value.path;
+      this._scanAll = value.scanAll;
+    }
+  }
+
+  // connection_name - computed: false, optional: false, required: true
+  private _connectionName?: string; 
+  public get connectionName() {
+    return this.getStringAttribute('connection_name');
+  }
+  public set connectionName(value: string) {
+    this._connectionName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionNameInput() {
+    return this._connectionName;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // scan_all - computed: false, optional: true, required: false
+  private _scanAll?: boolean | cdktf.IResolvable; 
+  public get scanAll() {
+    return this.getBooleanAttribute('scan_all');
+  }
+  public set scanAll(value: boolean | cdktf.IResolvable) {
+    this._scanAll = value;
+  }
+  public resetScanAll() {
+    this._scanAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scanAllInput() {
+    return this._scanAll;
+  }
+}
+
+export class GlueCrawlerMongodbTargetList extends cdktf.ComplexList {
+  public internalValue? : GlueCrawlerMongodbTarget[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCrawlerMongodbTargetOutputReference {
+    return new GlueCrawlerMongodbTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GlueCrawlerRecrawlPolicy {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#recrawl_behavior GlueCrawler#recrawl_behavior}
@@ -408,6 +983,193 @@ export function glueCrawlerS3TargetToTerraform(struct?: GlueCrawlerS3Target | cd
   }
 }
 
+export class GlueCrawlerS3TargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCrawlerS3Target | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._connectionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectionName = this._connectionName;
+    }
+    if (this._dlqEventQueueArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dlqEventQueueArn = this._dlqEventQueueArn;
+    }
+    if (this._eventQueueArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eventQueueArn = this._eventQueueArn;
+    }
+    if (this._exclusions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exclusions = this._exclusions;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._sampleSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sampleSize = this._sampleSize;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCrawlerS3Target | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._connectionName = undefined;
+      this._dlqEventQueueArn = undefined;
+      this._eventQueueArn = undefined;
+      this._exclusions = undefined;
+      this._path = undefined;
+      this._sampleSize = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._connectionName = value.connectionName;
+      this._dlqEventQueueArn = value.dlqEventQueueArn;
+      this._eventQueueArn = value.eventQueueArn;
+      this._exclusions = value.exclusions;
+      this._path = value.path;
+      this._sampleSize = value.sampleSize;
+    }
+  }
+
+  // connection_name - computed: false, optional: true, required: false
+  private _connectionName?: string; 
+  public get connectionName() {
+    return this.getStringAttribute('connection_name');
+  }
+  public set connectionName(value: string) {
+    this._connectionName = value;
+  }
+  public resetConnectionName() {
+    this._connectionName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionNameInput() {
+    return this._connectionName;
+  }
+
+  // dlq_event_queue_arn - computed: false, optional: true, required: false
+  private _dlqEventQueueArn?: string; 
+  public get dlqEventQueueArn() {
+    return this.getStringAttribute('dlq_event_queue_arn');
+  }
+  public set dlqEventQueueArn(value: string) {
+    this._dlqEventQueueArn = value;
+  }
+  public resetDlqEventQueueArn() {
+    this._dlqEventQueueArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dlqEventQueueArnInput() {
+    return this._dlqEventQueueArn;
+  }
+
+  // event_queue_arn - computed: false, optional: true, required: false
+  private _eventQueueArn?: string; 
+  public get eventQueueArn() {
+    return this.getStringAttribute('event_queue_arn');
+  }
+  public set eventQueueArn(value: string) {
+    this._eventQueueArn = value;
+  }
+  public resetEventQueueArn() {
+    this._eventQueueArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventQueueArnInput() {
+    return this._eventQueueArn;
+  }
+
+  // exclusions - computed: false, optional: true, required: false
+  private _exclusions?: string[]; 
+  public get exclusions() {
+    return this.getListAttribute('exclusions');
+  }
+  public set exclusions(value: string[]) {
+    this._exclusions = value;
+  }
+  public resetExclusions() {
+    this._exclusions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exclusionsInput() {
+    return this._exclusions;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // sample_size - computed: false, optional: true, required: false
+  private _sampleSize?: number; 
+  public get sampleSize() {
+    return this.getNumberAttribute('sample_size');
+  }
+  public set sampleSize(value: number) {
+    this._sampleSize = value;
+  }
+  public resetSampleSize() {
+    this._sampleSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sampleSizeInput() {
+    return this._sampleSize;
+  }
+}
+
+export class GlueCrawlerS3TargetList extends cdktf.ComplexList {
+  public internalValue? : GlueCrawlerS3Target[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCrawlerS3TargetOutputReference {
+    return new GlueCrawlerS3TargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GlueCrawlerSchemaChangePolicy {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#delete_behavior GlueCrawler#delete_behavior}
@@ -539,6 +1301,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
     this._configuration = config.configuration;
     this._databaseName = config.databaseName;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._role = config.role;
     this._schedule = config.schedule;
@@ -546,14 +1309,14 @@ export class GlueCrawler extends cdktf.TerraformResource {
     this._tablePrefix = config.tablePrefix;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._catalogTarget = config.catalogTarget;
-    this._deltaTarget = config.deltaTarget;
-    this._dynamodbTarget = config.dynamodbTarget;
-    this._jdbcTarget = config.jdbcTarget;
+    this._catalogTarget.internalValue = config.catalogTarget;
+    this._deltaTarget.internalValue = config.deltaTarget;
+    this._dynamodbTarget.internalValue = config.dynamodbTarget;
+    this._jdbcTarget.internalValue = config.jdbcTarget;
     this._lineageConfiguration.internalValue = config.lineageConfiguration;
-    this._mongodbTarget = config.mongodbTarget;
+    this._mongodbTarget.internalValue = config.mongodbTarget;
     this._recrawlPolicy.internalValue = config.recrawlPolicy;
-    this._s3Target = config.s3Target;
+    this._s3Target.internalValue = config.s3Target;
     this._schemaChangePolicy.internalValue = config.schemaChangePolicy;
   }
 
@@ -628,8 +1391,19 @@ export class GlueCrawler extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -739,71 +1513,67 @@ export class GlueCrawler extends cdktf.TerraformResource {
   }
 
   // catalog_target - computed: false, optional: true, required: false
-  private _catalogTarget?: GlueCrawlerCatalogTarget[] | cdktf.IResolvable; 
+  private _catalogTarget = new GlueCrawlerCatalogTargetList(this, "catalog_target", false);
   public get catalogTarget() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('catalog_target');
+    return this._catalogTarget;
   }
-  public set catalogTarget(value: GlueCrawlerCatalogTarget[] | cdktf.IResolvable) {
-    this._catalogTarget = value;
+  public putCatalogTarget(value: GlueCrawlerCatalogTarget[] | cdktf.IResolvable) {
+    this._catalogTarget.internalValue = value;
   }
   public resetCatalogTarget() {
-    this._catalogTarget = undefined;
+    this._catalogTarget.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get catalogTargetInput() {
-    return this._catalogTarget;
+    return this._catalogTarget.internalValue;
   }
 
   // delta_target - computed: false, optional: true, required: false
-  private _deltaTarget?: GlueCrawlerDeltaTarget[] | cdktf.IResolvable; 
+  private _deltaTarget = new GlueCrawlerDeltaTargetList(this, "delta_target", false);
   public get deltaTarget() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('delta_target');
+    return this._deltaTarget;
   }
-  public set deltaTarget(value: GlueCrawlerDeltaTarget[] | cdktf.IResolvable) {
-    this._deltaTarget = value;
+  public putDeltaTarget(value: GlueCrawlerDeltaTarget[] | cdktf.IResolvable) {
+    this._deltaTarget.internalValue = value;
   }
   public resetDeltaTarget() {
-    this._deltaTarget = undefined;
+    this._deltaTarget.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get deltaTargetInput() {
-    return this._deltaTarget;
+    return this._deltaTarget.internalValue;
   }
 
   // dynamodb_target - computed: false, optional: true, required: false
-  private _dynamodbTarget?: GlueCrawlerDynamodbTarget[] | cdktf.IResolvable; 
+  private _dynamodbTarget = new GlueCrawlerDynamodbTargetList(this, "dynamodb_target", false);
   public get dynamodbTarget() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dynamodb_target');
+    return this._dynamodbTarget;
   }
-  public set dynamodbTarget(value: GlueCrawlerDynamodbTarget[] | cdktf.IResolvable) {
-    this._dynamodbTarget = value;
+  public putDynamodbTarget(value: GlueCrawlerDynamodbTarget[] | cdktf.IResolvable) {
+    this._dynamodbTarget.internalValue = value;
   }
   public resetDynamodbTarget() {
-    this._dynamodbTarget = undefined;
+    this._dynamodbTarget.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get dynamodbTargetInput() {
-    return this._dynamodbTarget;
+    return this._dynamodbTarget.internalValue;
   }
 
   // jdbc_target - computed: false, optional: true, required: false
-  private _jdbcTarget?: GlueCrawlerJdbcTarget[] | cdktf.IResolvable; 
+  private _jdbcTarget = new GlueCrawlerJdbcTargetList(this, "jdbc_target", false);
   public get jdbcTarget() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('jdbc_target');
+    return this._jdbcTarget;
   }
-  public set jdbcTarget(value: GlueCrawlerJdbcTarget[] | cdktf.IResolvable) {
-    this._jdbcTarget = value;
+  public putJdbcTarget(value: GlueCrawlerJdbcTarget[] | cdktf.IResolvable) {
+    this._jdbcTarget.internalValue = value;
   }
   public resetJdbcTarget() {
-    this._jdbcTarget = undefined;
+    this._jdbcTarget.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get jdbcTargetInput() {
-    return this._jdbcTarget;
+    return this._jdbcTarget.internalValue;
   }
 
   // lineage_configuration - computed: false, optional: true, required: false
@@ -823,20 +1593,19 @@ export class GlueCrawler extends cdktf.TerraformResource {
   }
 
   // mongodb_target - computed: false, optional: true, required: false
-  private _mongodbTarget?: GlueCrawlerMongodbTarget[] | cdktf.IResolvable; 
+  private _mongodbTarget = new GlueCrawlerMongodbTargetList(this, "mongodb_target", false);
   public get mongodbTarget() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('mongodb_target');
+    return this._mongodbTarget;
   }
-  public set mongodbTarget(value: GlueCrawlerMongodbTarget[] | cdktf.IResolvable) {
-    this._mongodbTarget = value;
+  public putMongodbTarget(value: GlueCrawlerMongodbTarget[] | cdktf.IResolvable) {
+    this._mongodbTarget.internalValue = value;
   }
   public resetMongodbTarget() {
-    this._mongodbTarget = undefined;
+    this._mongodbTarget.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get mongodbTargetInput() {
-    return this._mongodbTarget;
+    return this._mongodbTarget.internalValue;
   }
 
   // recrawl_policy - computed: false, optional: true, required: false
@@ -856,20 +1625,19 @@ export class GlueCrawler extends cdktf.TerraformResource {
   }
 
   // s3_target - computed: false, optional: true, required: false
-  private _s3Target?: GlueCrawlerS3Target[] | cdktf.IResolvable; 
+  private _s3Target = new GlueCrawlerS3TargetList(this, "s3_target", false);
   public get s3Target() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('s3_target');
+    return this._s3Target;
   }
-  public set s3Target(value: GlueCrawlerS3Target[] | cdktf.IResolvable) {
-    this._s3Target = value;
+  public putS3Target(value: GlueCrawlerS3Target[] | cdktf.IResolvable) {
+    this._s3Target.internalValue = value;
   }
   public resetS3Target() {
-    this._s3Target = undefined;
+    this._s3Target.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get s3TargetInput() {
-    return this._s3Target;
+    return this._s3Target.internalValue;
   }
 
   // schema_change_policy - computed: false, optional: true, required: false
@@ -898,6 +1666,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
       configuration: cdktf.stringToTerraform(this._configuration),
       database_name: cdktf.stringToTerraform(this._databaseName),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       role: cdktf.stringToTerraform(this._role),
       schedule: cdktf.stringToTerraform(this._schedule),
@@ -905,14 +1674,14 @@ export class GlueCrawler extends cdktf.TerraformResource {
       table_prefix: cdktf.stringToTerraform(this._tablePrefix),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      catalog_target: cdktf.listMapper(glueCrawlerCatalogTargetToTerraform)(this._catalogTarget),
-      delta_target: cdktf.listMapper(glueCrawlerDeltaTargetToTerraform)(this._deltaTarget),
-      dynamodb_target: cdktf.listMapper(glueCrawlerDynamodbTargetToTerraform)(this._dynamodbTarget),
-      jdbc_target: cdktf.listMapper(glueCrawlerJdbcTargetToTerraform)(this._jdbcTarget),
+      catalog_target: cdktf.listMapper(glueCrawlerCatalogTargetToTerraform)(this._catalogTarget.internalValue),
+      delta_target: cdktf.listMapper(glueCrawlerDeltaTargetToTerraform)(this._deltaTarget.internalValue),
+      dynamodb_target: cdktf.listMapper(glueCrawlerDynamodbTargetToTerraform)(this._dynamodbTarget.internalValue),
+      jdbc_target: cdktf.listMapper(glueCrawlerJdbcTargetToTerraform)(this._jdbcTarget.internalValue),
       lineage_configuration: glueCrawlerLineageConfigurationToTerraform(this._lineageConfiguration.internalValue),
-      mongodb_target: cdktf.listMapper(glueCrawlerMongodbTargetToTerraform)(this._mongodbTarget),
+      mongodb_target: cdktf.listMapper(glueCrawlerMongodbTargetToTerraform)(this._mongodbTarget.internalValue),
       recrawl_policy: glueCrawlerRecrawlPolicyToTerraform(this._recrawlPolicy.internalValue),
-      s3_target: cdktf.listMapper(glueCrawlerS3TargetToTerraform)(this._s3Target),
+      s3_target: cdktf.listMapper(glueCrawlerS3TargetToTerraform)(this._s3Target.internalValue),
       schema_change_policy: glueCrawlerSchemaChangePolicyToTerraform(this._schemaChangePolicy.internalValue),
     };
   }

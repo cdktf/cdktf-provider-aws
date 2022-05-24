@@ -28,6 +28,13 @@ export interface SnsTopicSubscriptionConfig extends cdktf.TerraformMetaArguments
   */
   readonly filterPolicy?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription#id SnsTopicSubscription#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription#protocol SnsTopicSubscription#protocol}
   */
   readonly protocol: string;
@@ -88,6 +95,7 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
     this._endpoint = config.endpoint;
     this._endpointAutoConfirms = config.endpointAutoConfirms;
     this._filterPolicy = config.filterPolicy;
+    this._id = config.id;
     this._protocol = config.protocol;
     this._rawMessageDelivery = config.rawMessageDelivery;
     this._redrivePolicy = config.redrivePolicy;
@@ -187,8 +195,19 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // owner_id - computed: true, optional: false, required: false
@@ -286,6 +305,7 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
       endpoint: cdktf.stringToTerraform(this._endpoint),
       endpoint_auto_confirms: cdktf.booleanToTerraform(this._endpointAutoConfirms),
       filter_policy: cdktf.stringToTerraform(this._filterPolicy),
+      id: cdktf.stringToTerraform(this._id),
       protocol: cdktf.stringToTerraform(this._protocol),
       raw_message_delivery: cdktf.booleanToTerraform(this._rawMessageDelivery),
       redrive_policy: cdktf.stringToTerraform(this._redrivePolicy),

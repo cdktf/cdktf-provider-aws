@@ -20,6 +20,13 @@ export interface GuarddutyPublishingDestinationConfig extends cdktf.TerraformMet
   */
   readonly detectorId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_publishing_destination#id GuarddutyPublishingDestination#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_publishing_destination#kms_key_arn GuarddutyPublishingDestination#kms_key_arn}
   */
   readonly kmsKeyArn: string;
@@ -62,6 +69,7 @@ export class GuarddutyPublishingDestination extends cdktf.TerraformResource {
     this._destinationArn = config.destinationArn;
     this._destinationType = config.destinationType;
     this._detectorId = config.detectorId;
+    this._id = config.id;
     this._kmsKeyArn = config.kmsKeyArn;
   }
 
@@ -112,8 +120,19 @@ export class GuarddutyPublishingDestination extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_key_arn - computed: false, optional: false, required: true
@@ -138,6 +157,7 @@ export class GuarddutyPublishingDestination extends cdktf.TerraformResource {
       destination_arn: cdktf.stringToTerraform(this._destinationArn),
       destination_type: cdktf.stringToTerraform(this._destinationType),
       detector_id: cdktf.stringToTerraform(this._detectorId),
+      id: cdktf.stringToTerraform(this._id),
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
     };
   }

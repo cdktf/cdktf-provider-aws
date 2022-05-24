@@ -16,6 +16,13 @@ export interface IotTopicRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#id IotTopicRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#name IotTopicRule#name}
   */
   readonly name: string;
@@ -188,6 +195,140 @@ export function iotTopicRuleCloudwatchAlarmToTerraform(struct?: IotTopicRuleClou
   }
 }
 
+export class IotTopicRuleCloudwatchAlarmOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleCloudwatchAlarm | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alarmName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alarmName = this._alarmName;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._stateReason !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stateReason = this._stateReason;
+    }
+    if (this._stateValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stateValue = this._stateValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleCloudwatchAlarm | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._alarmName = undefined;
+      this._roleArn = undefined;
+      this._stateReason = undefined;
+      this._stateValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._alarmName = value.alarmName;
+      this._roleArn = value.roleArn;
+      this._stateReason = value.stateReason;
+      this._stateValue = value.stateValue;
+    }
+  }
+
+  // alarm_name - computed: false, optional: false, required: true
+  private _alarmName?: string; 
+  public get alarmName() {
+    return this.getStringAttribute('alarm_name');
+  }
+  public set alarmName(value: string) {
+    this._alarmName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alarmNameInput() {
+    return this._alarmName;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // state_reason - computed: false, optional: false, required: true
+  private _stateReason?: string; 
+  public get stateReason() {
+    return this.getStringAttribute('state_reason');
+  }
+  public set stateReason(value: string) {
+    this._stateReason = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateReasonInput() {
+    return this._stateReason;
+  }
+
+  // state_value - computed: false, optional: false, required: true
+  private _stateValue?: string; 
+  public get stateValue() {
+    return this.getStringAttribute('state_value');
+  }
+  public set stateValue(value: string) {
+    this._stateValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateValueInput() {
+    return this._stateValue;
+  }
+}
+
+export class IotTopicRuleCloudwatchAlarmList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleCloudwatchAlarm[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleCloudwatchAlarmOutputReference {
+    return new IotTopicRuleCloudwatchAlarmOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleCloudwatchLogs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#log_group_name IotTopicRule#log_group_name}
@@ -210,6 +351,102 @@ export function iotTopicRuleCloudwatchLogsToTerraform(struct?: IotTopicRuleCloud
   }
 }
 
+export class IotTopicRuleCloudwatchLogsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleCloudwatchLogs | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._logGroupName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logGroupName = this._logGroupName;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleCloudwatchLogs | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._logGroupName = undefined;
+      this._roleArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._logGroupName = value.logGroupName;
+      this._roleArn = value.roleArn;
+    }
+  }
+
+  // log_group_name - computed: false, optional: false, required: true
+  private _logGroupName?: string; 
+  public get logGroupName() {
+    return this.getStringAttribute('log_group_name');
+  }
+  public set logGroupName(value: string) {
+    this._logGroupName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logGroupNameInput() {
+    return this._logGroupName;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+}
+
+export class IotTopicRuleCloudwatchLogsList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleCloudwatchLogs[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleCloudwatchLogsOutputReference {
+    return new IotTopicRuleCloudwatchLogsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleCloudwatchMetric {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#metric_name IotTopicRule#metric_name}
@@ -252,6 +489,181 @@ export function iotTopicRuleCloudwatchMetricToTerraform(struct?: IotTopicRuleClo
   }
 }
 
+export class IotTopicRuleCloudwatchMetricOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleCloudwatchMetric | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._metricName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricName = this._metricName;
+    }
+    if (this._metricNamespace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricNamespace = this._metricNamespace;
+    }
+    if (this._metricTimestamp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricTimestamp = this._metricTimestamp;
+    }
+    if (this._metricUnit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricUnit = this._metricUnit;
+    }
+    if (this._metricValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricValue = this._metricValue;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleCloudwatchMetric | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._metricName = undefined;
+      this._metricNamespace = undefined;
+      this._metricTimestamp = undefined;
+      this._metricUnit = undefined;
+      this._metricValue = undefined;
+      this._roleArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._metricName = value.metricName;
+      this._metricNamespace = value.metricNamespace;
+      this._metricTimestamp = value.metricTimestamp;
+      this._metricUnit = value.metricUnit;
+      this._metricValue = value.metricValue;
+      this._roleArn = value.roleArn;
+    }
+  }
+
+  // metric_name - computed: false, optional: false, required: true
+  private _metricName?: string; 
+  public get metricName() {
+    return this.getStringAttribute('metric_name');
+  }
+  public set metricName(value: string) {
+    this._metricName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricNameInput() {
+    return this._metricName;
+  }
+
+  // metric_namespace - computed: false, optional: false, required: true
+  private _metricNamespace?: string; 
+  public get metricNamespace() {
+    return this.getStringAttribute('metric_namespace');
+  }
+  public set metricNamespace(value: string) {
+    this._metricNamespace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricNamespaceInput() {
+    return this._metricNamespace;
+  }
+
+  // metric_timestamp - computed: false, optional: true, required: false
+  private _metricTimestamp?: string; 
+  public get metricTimestamp() {
+    return this.getStringAttribute('metric_timestamp');
+  }
+  public set metricTimestamp(value: string) {
+    this._metricTimestamp = value;
+  }
+  public resetMetricTimestamp() {
+    this._metricTimestamp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricTimestampInput() {
+    return this._metricTimestamp;
+  }
+
+  // metric_unit - computed: false, optional: false, required: true
+  private _metricUnit?: string; 
+  public get metricUnit() {
+    return this.getStringAttribute('metric_unit');
+  }
+  public set metricUnit(value: string) {
+    this._metricUnit = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricUnitInput() {
+    return this._metricUnit;
+  }
+
+  // metric_value - computed: false, optional: false, required: true
+  private _metricValue?: string; 
+  public get metricValue() {
+    return this.getStringAttribute('metric_value');
+  }
+  public set metricValue(value: string) {
+    this._metricValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricValueInput() {
+    return this._metricValue;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+}
+
+export class IotTopicRuleCloudwatchMetricList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleCloudwatchMetric[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleCloudwatchMetricOutputReference {
+    return new IotTopicRuleCloudwatchMetricOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleDynamodb {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}
@@ -314,6 +726,272 @@ export function iotTopicRuleDynamodbToTerraform(struct?: IotTopicRuleDynamodb | 
   }
 }
 
+export class IotTopicRuleDynamodbOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleDynamodb | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hashKeyField !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hashKeyField = this._hashKeyField;
+    }
+    if (this._hashKeyType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hashKeyType = this._hashKeyType;
+    }
+    if (this._hashKeyValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hashKeyValue = this._hashKeyValue;
+    }
+    if (this._operation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operation = this._operation;
+    }
+    if (this._payloadField !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.payloadField = this._payloadField;
+    }
+    if (this._rangeKeyField !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rangeKeyField = this._rangeKeyField;
+    }
+    if (this._rangeKeyType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rangeKeyType = this._rangeKeyType;
+    }
+    if (this._rangeKeyValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rangeKeyValue = this._rangeKeyValue;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._tableName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableName = this._tableName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleDynamodb | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._hashKeyField = undefined;
+      this._hashKeyType = undefined;
+      this._hashKeyValue = undefined;
+      this._operation = undefined;
+      this._payloadField = undefined;
+      this._rangeKeyField = undefined;
+      this._rangeKeyType = undefined;
+      this._rangeKeyValue = undefined;
+      this._roleArn = undefined;
+      this._tableName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._hashKeyField = value.hashKeyField;
+      this._hashKeyType = value.hashKeyType;
+      this._hashKeyValue = value.hashKeyValue;
+      this._operation = value.operation;
+      this._payloadField = value.payloadField;
+      this._rangeKeyField = value.rangeKeyField;
+      this._rangeKeyType = value.rangeKeyType;
+      this._rangeKeyValue = value.rangeKeyValue;
+      this._roleArn = value.roleArn;
+      this._tableName = value.tableName;
+    }
+  }
+
+  // hash_key_field - computed: false, optional: false, required: true
+  private _hashKeyField?: string; 
+  public get hashKeyField() {
+    return this.getStringAttribute('hash_key_field');
+  }
+  public set hashKeyField(value: string) {
+    this._hashKeyField = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hashKeyFieldInput() {
+    return this._hashKeyField;
+  }
+
+  // hash_key_type - computed: false, optional: true, required: false
+  private _hashKeyType?: string; 
+  public get hashKeyType() {
+    return this.getStringAttribute('hash_key_type');
+  }
+  public set hashKeyType(value: string) {
+    this._hashKeyType = value;
+  }
+  public resetHashKeyType() {
+    this._hashKeyType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hashKeyTypeInput() {
+    return this._hashKeyType;
+  }
+
+  // hash_key_value - computed: false, optional: false, required: true
+  private _hashKeyValue?: string; 
+  public get hashKeyValue() {
+    return this.getStringAttribute('hash_key_value');
+  }
+  public set hashKeyValue(value: string) {
+    this._hashKeyValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hashKeyValueInput() {
+    return this._hashKeyValue;
+  }
+
+  // operation - computed: false, optional: true, required: false
+  private _operation?: string; 
+  public get operation() {
+    return this.getStringAttribute('operation');
+  }
+  public set operation(value: string) {
+    this._operation = value;
+  }
+  public resetOperation() {
+    this._operation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationInput() {
+    return this._operation;
+  }
+
+  // payload_field - computed: false, optional: true, required: false
+  private _payloadField?: string; 
+  public get payloadField() {
+    return this.getStringAttribute('payload_field');
+  }
+  public set payloadField(value: string) {
+    this._payloadField = value;
+  }
+  public resetPayloadField() {
+    this._payloadField = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get payloadFieldInput() {
+    return this._payloadField;
+  }
+
+  // range_key_field - computed: false, optional: true, required: false
+  private _rangeKeyField?: string; 
+  public get rangeKeyField() {
+    return this.getStringAttribute('range_key_field');
+  }
+  public set rangeKeyField(value: string) {
+    this._rangeKeyField = value;
+  }
+  public resetRangeKeyField() {
+    this._rangeKeyField = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeKeyFieldInput() {
+    return this._rangeKeyField;
+  }
+
+  // range_key_type - computed: false, optional: true, required: false
+  private _rangeKeyType?: string; 
+  public get rangeKeyType() {
+    return this.getStringAttribute('range_key_type');
+  }
+  public set rangeKeyType(value: string) {
+    this._rangeKeyType = value;
+  }
+  public resetRangeKeyType() {
+    this._rangeKeyType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeKeyTypeInput() {
+    return this._rangeKeyType;
+  }
+
+  // range_key_value - computed: false, optional: true, required: false
+  private _rangeKeyValue?: string; 
+  public get rangeKeyValue() {
+    return this.getStringAttribute('range_key_value');
+  }
+  public set rangeKeyValue(value: string) {
+    this._rangeKeyValue = value;
+  }
+  public resetRangeKeyValue() {
+    this._rangeKeyValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeKeyValueInput() {
+    return this._rangeKeyValue;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // table_name - computed: false, optional: false, required: true
+  private _tableName?: string; 
+  public get tableName() {
+    return this.getStringAttribute('table_name');
+  }
+  public set tableName(value: string) {
+    this._tableName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableNameInput() {
+    return this._tableName;
+  }
+}
+
+export class IotTopicRuleDynamodbList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleDynamodb[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleDynamodbOutputReference {
+    return new IotTopicRuleDynamodbOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleDynamodbv2PutItem {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#table_name IotTopicRule#table_name}
@@ -400,6 +1078,105 @@ export function iotTopicRuleDynamodbv2ToTerraform(struct?: IotTopicRuleDynamodbv
   }
 }
 
+export class IotTopicRuleDynamodbv2OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleDynamodbv2 | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._putItem?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.putItem = this._putItem?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleDynamodbv2 | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._roleArn = undefined;
+      this._putItem.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._roleArn = value.roleArn;
+      this._putItem.internalValue = value.putItem;
+    }
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // put_item - computed: false, optional: true, required: false
+  private _putItem = new IotTopicRuleDynamodbv2PutItemOutputReference(this, "put_item");
+  public get putItem() {
+    return this._putItem;
+  }
+  public putPutItem(value: IotTopicRuleDynamodbv2PutItem) {
+    this._putItem.internalValue = value;
+  }
+  public resetPutItem() {
+    this._putItem.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get putItemInput() {
+    return this._putItem.internalValue;
+  }
+}
+
+export class IotTopicRuleDynamodbv2List extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleDynamodbv2[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleDynamodbv2OutputReference {
+    return new IotTopicRuleDynamodbv2OutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleElasticsearch {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#endpoint IotTopicRule#endpoint}
@@ -407,6 +1184,9 @@ export interface IotTopicRuleElasticsearch {
   readonly endpoint: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#id IotTopicRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -437,6 +1217,159 @@ export function iotTopicRuleElasticsearchToTerraform(struct?: IotTopicRuleElasti
   }
 }
 
+export class IotTopicRuleElasticsearchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleElasticsearch | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpoint = this._endpoint;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._index !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.index = this._index;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleElasticsearch | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._endpoint = undefined;
+      this._id = undefined;
+      this._index = undefined;
+      this._roleArn = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._endpoint = value.endpoint;
+      this._id = value.id;
+      this._index = value.index;
+      this._roleArn = value.roleArn;
+      this._type = value.type;
+    }
+  }
+
+  // endpoint - computed: false, optional: false, required: true
+  private _endpoint?: string; 
+  public get endpoint() {
+    return this.getStringAttribute('endpoint');
+  }
+  public set endpoint(value: string) {
+    this._endpoint = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointInput() {
+    return this._endpoint;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // index - computed: false, optional: false, required: true
+  private _index?: string; 
+  public get index() {
+    return this.getStringAttribute('index');
+  }
+  public set index(value: string) {
+    this._index = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get indexInput() {
+    return this._index;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class IotTopicRuleElasticsearchList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleElasticsearch[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleElasticsearchOutputReference {
+    return new IotTopicRuleElasticsearchOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleErrorActionCloudwatchAlarm {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#alarm_name IotTopicRule#alarm_name}
@@ -1298,6 +2231,9 @@ export interface IotTopicRuleErrorActionElasticsearch {
   readonly endpoint: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#id IotTopicRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -1584,6 +2520,102 @@ export function iotTopicRuleErrorActionHttpHttpHeaderToTerraform(struct?: IotTop
   }
 }
 
+export class IotTopicRuleErrorActionHttpHttpHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleErrorActionHttpHttpHeader | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleErrorActionHttpHttpHeader | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class IotTopicRuleErrorActionHttpHttpHeaderList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleErrorActionHttpHttpHeader[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleErrorActionHttpHttpHeaderOutputReference {
+    return new IotTopicRuleErrorActionHttpHttpHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleErrorActionHttp {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}
@@ -1635,9 +2667,9 @@ export class IotTopicRuleErrorActionHttpOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.url = this._url;
     }
-    if (this._httpHeader !== undefined) {
+    if (this._httpHeader?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.httpHeader = this._httpHeader;
+      internalValueResult.httpHeader = this._httpHeader?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1647,13 +2679,13 @@ export class IotTopicRuleErrorActionHttpOutputReference extends cdktf.ComplexObj
       this.isEmptyObject = false;
       this._confirmationUrl = undefined;
       this._url = undefined;
-      this._httpHeader = undefined;
+      this._httpHeader.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._confirmationUrl = value.confirmationUrl;
       this._url = value.url;
-      this._httpHeader = value.httpHeader;
+      this._httpHeader.internalValue = value.httpHeader;
     }
   }
 
@@ -1687,20 +2719,19 @@ export class IotTopicRuleErrorActionHttpOutputReference extends cdktf.ComplexObj
   }
 
   // http_header - computed: false, optional: true, required: false
-  private _httpHeader?: IotTopicRuleErrorActionHttpHttpHeader[] | cdktf.IResolvable; 
+  private _httpHeader = new IotTopicRuleErrorActionHttpHttpHeaderList(this, "http_header", false);
   public get httpHeader() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('http_header');
+    return this._httpHeader;
   }
-  public set httpHeader(value: IotTopicRuleErrorActionHttpHttpHeader[] | cdktf.IResolvable) {
-    this._httpHeader = value;
+  public putHttpHeader(value: IotTopicRuleErrorActionHttpHttpHeader[] | cdktf.IResolvable) {
+    this._httpHeader.internalValue = value;
   }
   public resetHttpHeader() {
-    this._httpHeader = undefined;
+    this._httpHeader.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get httpHeaderInput() {
-    return this._httpHeader;
+    return this._httpHeader.internalValue;
   }
 }
 export interface IotTopicRuleErrorActionIotAnalytics {
@@ -2849,6 +3880,102 @@ export function iotTopicRuleErrorActionTimestreamDimensionToTerraform(struct?: I
   }
 }
 
+export class IotTopicRuleErrorActionTimestreamDimensionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleErrorActionTimestreamDimension | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleErrorActionTimestreamDimension | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class IotTopicRuleErrorActionTimestreamDimensionList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleErrorActionTimestreamDimension[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleErrorActionTimestreamDimensionOutputReference {
+    return new IotTopicRuleErrorActionTimestreamDimensionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleErrorActionTimestreamTimestamp {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#unit IotTopicRule#unit}
@@ -3002,9 +4129,9 @@ export class IotTopicRuleErrorActionTimestreamOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.tableName = this._tableName;
     }
-    if (this._dimension !== undefined) {
+    if (this._dimension?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.dimension = this._dimension;
+      internalValueResult.dimension = this._dimension?.internalValue;
     }
     if (this._timestamp?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -3019,7 +4146,7 @@ export class IotTopicRuleErrorActionTimestreamOutputReference extends cdktf.Comp
       this._databaseName = undefined;
       this._roleArn = undefined;
       this._tableName = undefined;
-      this._dimension = undefined;
+      this._dimension.internalValue = undefined;
       this._timestamp.internalValue = undefined;
     }
     else {
@@ -3027,7 +4154,7 @@ export class IotTopicRuleErrorActionTimestreamOutputReference extends cdktf.Comp
       this._databaseName = value.databaseName;
       this._roleArn = value.roleArn;
       this._tableName = value.tableName;
-      this._dimension = value.dimension;
+      this._dimension.internalValue = value.dimension;
       this._timestamp.internalValue = value.timestamp;
     }
   }
@@ -3072,17 +4199,16 @@ export class IotTopicRuleErrorActionTimestreamOutputReference extends cdktf.Comp
   }
 
   // dimension - computed: false, optional: false, required: true
-  private _dimension?: IotTopicRuleErrorActionTimestreamDimension[] | cdktf.IResolvable; 
+  private _dimension = new IotTopicRuleErrorActionTimestreamDimensionList(this, "dimension", true);
   public get dimension() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('dimension')));
+    return this._dimension;
   }
-  public set dimension(value: IotTopicRuleErrorActionTimestreamDimension[] | cdktf.IResolvable) {
-    this._dimension = value;
+  public putDimension(value: IotTopicRuleErrorActionTimestreamDimension[] | cdktf.IResolvable) {
+    this._dimension.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get dimensionInput() {
-    return this._dimension;
+    return this._dimension.internalValue;
   }
 
   // timestamp - computed: false, optional: true, required: false
@@ -3717,6 +4843,124 @@ export function iotTopicRuleFirehoseToTerraform(struct?: IotTopicRuleFirehose | 
   }
 }
 
+export class IotTopicRuleFirehoseOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleFirehose | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._deliveryStreamName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deliveryStreamName = this._deliveryStreamName;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._separator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.separator = this._separator;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleFirehose | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._deliveryStreamName = undefined;
+      this._roleArn = undefined;
+      this._separator = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._deliveryStreamName = value.deliveryStreamName;
+      this._roleArn = value.roleArn;
+      this._separator = value.separator;
+    }
+  }
+
+  // delivery_stream_name - computed: false, optional: false, required: true
+  private _deliveryStreamName?: string; 
+  public get deliveryStreamName() {
+    return this.getStringAttribute('delivery_stream_name');
+  }
+  public set deliveryStreamName(value: string) {
+    this._deliveryStreamName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deliveryStreamNameInput() {
+    return this._deliveryStreamName;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // separator - computed: false, optional: true, required: false
+  private _separator?: string; 
+  public get separator() {
+    return this.getStringAttribute('separator');
+  }
+  public set separator(value: string) {
+    this._separator = value;
+  }
+  public resetSeparator() {
+    this._separator = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get separatorInput() {
+    return this._separator;
+  }
+}
+
+export class IotTopicRuleFirehoseList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleFirehose[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleFirehoseOutputReference {
+    return new IotTopicRuleFirehoseOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleHttpHttpHeader {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#key IotTopicRule#key}
@@ -3739,6 +4983,102 @@ export function iotTopicRuleHttpHttpHeaderToTerraform(struct?: IotTopicRuleHttpH
   }
 }
 
+export class IotTopicRuleHttpHttpHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleHttpHttpHeader | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleHttpHttpHeader | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class IotTopicRuleHttpHttpHeaderList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleHttpHttpHeader[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleHttpHttpHeaderOutputReference {
+    return new IotTopicRuleHttpHttpHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleHttp {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}
@@ -3768,6 +5108,127 @@ export function iotTopicRuleHttpToTerraform(struct?: IotTopicRuleHttp | cdktf.IR
   }
 }
 
+export class IotTopicRuleHttpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleHttp | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._confirmationUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.confirmationUrl = this._confirmationUrl;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    if (this._httpHeader?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpHeader = this._httpHeader?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleHttp | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._confirmationUrl = undefined;
+      this._url = undefined;
+      this._httpHeader.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._confirmationUrl = value.confirmationUrl;
+      this._url = value.url;
+      this._httpHeader.internalValue = value.httpHeader;
+    }
+  }
+
+  // confirmation_url - computed: false, optional: true, required: false
+  private _confirmationUrl?: string; 
+  public get confirmationUrl() {
+    return this.getStringAttribute('confirmation_url');
+  }
+  public set confirmationUrl(value: string) {
+    this._confirmationUrl = value;
+  }
+  public resetConfirmationUrl() {
+    this._confirmationUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get confirmationUrlInput() {
+    return this._confirmationUrl;
+  }
+
+  // url - computed: false, optional: false, required: true
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
+  }
+
+  // http_header - computed: false, optional: true, required: false
+  private _httpHeader = new IotTopicRuleHttpHttpHeaderList(this, "http_header", false);
+  public get httpHeader() {
+    return this._httpHeader;
+  }
+  public putHttpHeader(value: IotTopicRuleHttpHttpHeader[] | cdktf.IResolvable) {
+    this._httpHeader.internalValue = value;
+  }
+  public resetHttpHeader() {
+    this._httpHeader.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpHeaderInput() {
+    return this._httpHeader.internalValue;
+  }
+}
+
+export class IotTopicRuleHttpList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleHttp[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleHttpOutputReference {
+    return new IotTopicRuleHttpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleIotAnalytics {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#channel_name IotTopicRule#channel_name}
@@ -3790,6 +5251,102 @@ export function iotTopicRuleIotAnalyticsToTerraform(struct?: IotTopicRuleIotAnal
   }
 }
 
+export class IotTopicRuleIotAnalyticsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleIotAnalytics | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._channelName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.channelName = this._channelName;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleIotAnalytics | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._channelName = undefined;
+      this._roleArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._channelName = value.channelName;
+      this._roleArn = value.roleArn;
+    }
+  }
+
+  // channel_name - computed: false, optional: false, required: true
+  private _channelName?: string; 
+  public get channelName() {
+    return this.getStringAttribute('channel_name');
+  }
+  public set channelName(value: string) {
+    this._channelName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get channelNameInput() {
+    return this._channelName;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+}
+
+export class IotTopicRuleIotAnalyticsList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleIotAnalytics[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleIotAnalyticsOutputReference {
+    return new IotTopicRuleIotAnalyticsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleIotEvents {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#input_name IotTopicRule#input_name}
@@ -3817,6 +5374,124 @@ export function iotTopicRuleIotEventsToTerraform(struct?: IotTopicRuleIotEvents 
   }
 }
 
+export class IotTopicRuleIotEventsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleIotEvents | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._inputName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inputName = this._inputName;
+    }
+    if (this._messageId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.messageId = this._messageId;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleIotEvents | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._inputName = undefined;
+      this._messageId = undefined;
+      this._roleArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._inputName = value.inputName;
+      this._messageId = value.messageId;
+      this._roleArn = value.roleArn;
+    }
+  }
+
+  // input_name - computed: false, optional: false, required: true
+  private _inputName?: string; 
+  public get inputName() {
+    return this.getStringAttribute('input_name');
+  }
+  public set inputName(value: string) {
+    this._inputName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputNameInput() {
+    return this._inputName;
+  }
+
+  // message_id - computed: false, optional: true, required: false
+  private _messageId?: string; 
+  public get messageId() {
+    return this.getStringAttribute('message_id');
+  }
+  public set messageId(value: string) {
+    this._messageId = value;
+  }
+  public resetMessageId() {
+    this._messageId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get messageIdInput() {
+    return this._messageId;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+}
+
+export class IotTopicRuleIotEventsList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleIotEvents[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleIotEventsOutputReference {
+    return new IotTopicRuleIotEventsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleKafka {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#client_properties IotTopicRule#client_properties}
@@ -3854,6 +5529,165 @@ export function iotTopicRuleKafkaToTerraform(struct?: IotTopicRuleKafka | cdktf.
   }
 }
 
+export class IotTopicRuleKafkaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleKafka | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clientProperties !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientProperties = this._clientProperties;
+    }
+    if (this._destinationArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationArn = this._destinationArn;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._partition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.partition = this._partition;
+    }
+    if (this._topic !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.topic = this._topic;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleKafka | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._clientProperties = undefined;
+      this._destinationArn = undefined;
+      this._key = undefined;
+      this._partition = undefined;
+      this._topic = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._clientProperties = value.clientProperties;
+      this._destinationArn = value.destinationArn;
+      this._key = value.key;
+      this._partition = value.partition;
+      this._topic = value.topic;
+    }
+  }
+
+  // client_properties - computed: false, optional: false, required: true
+  private _clientProperties?: { [key: string]: string }; 
+  public get clientProperties() {
+    return this.getStringMapAttribute('client_properties');
+  }
+  public set clientProperties(value: { [key: string]: string }) {
+    this._clientProperties = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientPropertiesInput() {
+    return this._clientProperties;
+  }
+
+  // destination_arn - computed: false, optional: false, required: true
+  private _destinationArn?: string; 
+  public get destinationArn() {
+    return this.getStringAttribute('destination_arn');
+  }
+  public set destinationArn(value: string) {
+    this._destinationArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationArnInput() {
+    return this._destinationArn;
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // partition - computed: false, optional: true, required: false
+  private _partition?: string; 
+  public get partition() {
+    return this.getStringAttribute('partition');
+  }
+  public set partition(value: string) {
+    this._partition = value;
+  }
+  public resetPartition() {
+    this._partition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partitionInput() {
+    return this._partition;
+  }
+
+  // topic - computed: false, optional: false, required: true
+  private _topic?: string; 
+  public get topic() {
+    return this.getStringAttribute('topic');
+  }
+  public set topic(value: string) {
+    this._topic = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get topicInput() {
+    return this._topic;
+  }
+}
+
+export class IotTopicRuleKafkaList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleKafka[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleKafkaOutputReference {
+    return new IotTopicRuleKafkaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleKinesis {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#partition_key IotTopicRule#partition_key}
@@ -3881,6 +5715,124 @@ export function iotTopicRuleKinesisToTerraform(struct?: IotTopicRuleKinesis | cd
   }
 }
 
+export class IotTopicRuleKinesisOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleKinesis | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._partitionKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.partitionKey = this._partitionKey;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._streamName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.streamName = this._streamName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleKinesis | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._partitionKey = undefined;
+      this._roleArn = undefined;
+      this._streamName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._partitionKey = value.partitionKey;
+      this._roleArn = value.roleArn;
+      this._streamName = value.streamName;
+    }
+  }
+
+  // partition_key - computed: false, optional: true, required: false
+  private _partitionKey?: string; 
+  public get partitionKey() {
+    return this.getStringAttribute('partition_key');
+  }
+  public set partitionKey(value: string) {
+    this._partitionKey = value;
+  }
+  public resetPartitionKey() {
+    this._partitionKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partitionKeyInput() {
+    return this._partitionKey;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // stream_name - computed: false, optional: false, required: true
+  private _streamName?: string; 
+  public get streamName() {
+    return this.getStringAttribute('stream_name');
+  }
+  public set streamName(value: string) {
+    this._streamName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get streamNameInput() {
+    return this._streamName;
+  }
+}
+
+export class IotTopicRuleKinesisList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleKinesis[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleKinesisOutputReference {
+    return new IotTopicRuleKinesisOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleLambda {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#function_arn IotTopicRule#function_arn}
@@ -3898,6 +5850,83 @@ export function iotTopicRuleLambdaToTerraform(struct?: IotTopicRuleLambda | cdkt
   }
 }
 
+export class IotTopicRuleLambdaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleLambda | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._functionArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.functionArn = this._functionArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleLambda | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._functionArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._functionArn = value.functionArn;
+    }
+  }
+
+  // function_arn - computed: false, optional: false, required: true
+  private _functionArn?: string; 
+  public get functionArn() {
+    return this.getStringAttribute('function_arn');
+  }
+  public set functionArn(value: string) {
+    this._functionArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get functionArnInput() {
+    return this._functionArn;
+  }
+}
+
+export class IotTopicRuleLambdaList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleLambda[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleLambdaOutputReference {
+    return new IotTopicRuleLambdaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleRepublish {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#qos IotTopicRule#qos}
@@ -3925,6 +5954,124 @@ export function iotTopicRuleRepublishToTerraform(struct?: IotTopicRuleRepublish 
   }
 }
 
+export class IotTopicRuleRepublishOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleRepublish | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._qos !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.qos = this._qos;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._topic !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.topic = this._topic;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleRepublish | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._qos = undefined;
+      this._roleArn = undefined;
+      this._topic = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._qos = value.qos;
+      this._roleArn = value.roleArn;
+      this._topic = value.topic;
+    }
+  }
+
+  // qos - computed: false, optional: true, required: false
+  private _qos?: number; 
+  public get qos() {
+    return this.getNumberAttribute('qos');
+  }
+  public set qos(value: number) {
+    this._qos = value;
+  }
+  public resetQos() {
+    this._qos = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get qosInput() {
+    return this._qos;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // topic - computed: false, optional: false, required: true
+  private _topic?: string; 
+  public get topic() {
+    return this.getStringAttribute('topic');
+  }
+  public set topic(value: string) {
+    this._topic = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get topicInput() {
+    return this._topic;
+  }
+}
+
+export class IotTopicRuleRepublishList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleRepublish[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleRepublishOutputReference {
+    return new IotTopicRuleRepublishOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleS3 {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#bucket_name IotTopicRule#bucket_name}
@@ -3957,6 +6104,143 @@ export function iotTopicRuleS3ToTerraform(struct?: IotTopicRuleS3 | cdktf.IResol
   }
 }
 
+export class IotTopicRuleS3OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleS3 | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bucketName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bucketName = this._bucketName;
+    }
+    if (this._cannedAcl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cannedAcl = this._cannedAcl;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleS3 | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._bucketName = undefined;
+      this._cannedAcl = undefined;
+      this._key = undefined;
+      this._roleArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._bucketName = value.bucketName;
+      this._cannedAcl = value.cannedAcl;
+      this._key = value.key;
+      this._roleArn = value.roleArn;
+    }
+  }
+
+  // bucket_name - computed: false, optional: false, required: true
+  private _bucketName?: string; 
+  public get bucketName() {
+    return this.getStringAttribute('bucket_name');
+  }
+  public set bucketName(value: string) {
+    this._bucketName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketNameInput() {
+    return this._bucketName;
+  }
+
+  // canned_acl - computed: false, optional: true, required: false
+  private _cannedAcl?: string; 
+  public get cannedAcl() {
+    return this.getStringAttribute('canned_acl');
+  }
+  public set cannedAcl(value: string) {
+    this._cannedAcl = value;
+  }
+  public resetCannedAcl() {
+    this._cannedAcl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cannedAclInput() {
+    return this._cannedAcl;
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+}
+
+export class IotTopicRuleS3List extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleS3[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleS3OutputReference {
+    return new IotTopicRuleS3OutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleSns {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#message_format IotTopicRule#message_format}
@@ -3984,6 +6268,124 @@ export function iotTopicRuleSnsToTerraform(struct?: IotTopicRuleSns | cdktf.IRes
   }
 }
 
+export class IotTopicRuleSnsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleSns | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._messageFormat !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.messageFormat = this._messageFormat;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._targetArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetArn = this._targetArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleSns | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._messageFormat = undefined;
+      this._roleArn = undefined;
+      this._targetArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._messageFormat = value.messageFormat;
+      this._roleArn = value.roleArn;
+      this._targetArn = value.targetArn;
+    }
+  }
+
+  // message_format - computed: false, optional: true, required: false
+  private _messageFormat?: string; 
+  public get messageFormat() {
+    return this.getStringAttribute('message_format');
+  }
+  public set messageFormat(value: string) {
+    this._messageFormat = value;
+  }
+  public resetMessageFormat() {
+    this._messageFormat = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get messageFormatInput() {
+    return this._messageFormat;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // target_arn - computed: false, optional: false, required: true
+  private _targetArn?: string; 
+  public get targetArn() {
+    return this.getStringAttribute('target_arn');
+  }
+  public set targetArn(value: string) {
+    this._targetArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetArnInput() {
+    return this._targetArn;
+  }
+}
+
+export class IotTopicRuleSnsList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleSns[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleSnsOutputReference {
+    return new IotTopicRuleSnsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleSqs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#queue_url IotTopicRule#queue_url}
@@ -4011,6 +6413,121 @@ export function iotTopicRuleSqsToTerraform(struct?: IotTopicRuleSqs | cdktf.IRes
   }
 }
 
+export class IotTopicRuleSqsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleSqs | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._queueUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queueUrl = this._queueUrl;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._useBase64 !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useBase64 = this._useBase64;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleSqs | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._queueUrl = undefined;
+      this._roleArn = undefined;
+      this._useBase64 = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._queueUrl = value.queueUrl;
+      this._roleArn = value.roleArn;
+      this._useBase64 = value.useBase64;
+    }
+  }
+
+  // queue_url - computed: false, optional: false, required: true
+  private _queueUrl?: string; 
+  public get queueUrl() {
+    return this.getStringAttribute('queue_url');
+  }
+  public set queueUrl(value: string) {
+    this._queueUrl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueUrlInput() {
+    return this._queueUrl;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // use_base64 - computed: false, optional: false, required: true
+  private _useBase64?: boolean | cdktf.IResolvable; 
+  public get useBase64() {
+    return this.getBooleanAttribute('use_base64');
+  }
+  public set useBase64(value: boolean | cdktf.IResolvable) {
+    this._useBase64 = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useBase64Input() {
+    return this._useBase64;
+  }
+}
+
+export class IotTopicRuleSqsList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleSqs[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleSqsOutputReference {
+    return new IotTopicRuleSqsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleStepFunctions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}
@@ -4038,6 +6555,124 @@ export function iotTopicRuleStepFunctionsToTerraform(struct?: IotTopicRuleStepFu
   }
 }
 
+export class IotTopicRuleStepFunctionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleStepFunctions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._executionNamePrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.executionNamePrefix = this._executionNamePrefix;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._stateMachineName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stateMachineName = this._stateMachineName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleStepFunctions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._executionNamePrefix = undefined;
+      this._roleArn = undefined;
+      this._stateMachineName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._executionNamePrefix = value.executionNamePrefix;
+      this._roleArn = value.roleArn;
+      this._stateMachineName = value.stateMachineName;
+    }
+  }
+
+  // execution_name_prefix - computed: false, optional: true, required: false
+  private _executionNamePrefix?: string; 
+  public get executionNamePrefix() {
+    return this.getStringAttribute('execution_name_prefix');
+  }
+  public set executionNamePrefix(value: string) {
+    this._executionNamePrefix = value;
+  }
+  public resetExecutionNamePrefix() {
+    this._executionNamePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get executionNamePrefixInput() {
+    return this._executionNamePrefix;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // state_machine_name - computed: false, optional: false, required: true
+  private _stateMachineName?: string; 
+  public get stateMachineName() {
+    return this.getStringAttribute('state_machine_name');
+  }
+  public set stateMachineName(value: string) {
+    this._stateMachineName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateMachineNameInput() {
+    return this._stateMachineName;
+  }
+}
+
+export class IotTopicRuleStepFunctionsList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleStepFunctions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleStepFunctionsOutputReference {
+    return new IotTopicRuleStepFunctionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleTimestreamDimension {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#name IotTopicRule#name}
@@ -4060,6 +6695,102 @@ export function iotTopicRuleTimestreamDimensionToTerraform(struct?: IotTopicRule
   }
 }
 
+export class IotTopicRuleTimestreamDimensionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleTimestreamDimension | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleTimestreamDimension | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class IotTopicRuleTimestreamDimensionList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleTimestreamDimension[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleTimestreamDimensionOutputReference {
+    return new IotTopicRuleTimestreamDimensionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IotTopicRuleTimestreamTimestamp {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule#unit IotTopicRule#unit}
@@ -4187,6 +6918,162 @@ export function iotTopicRuleTimestreamToTerraform(struct?: IotTopicRuleTimestrea
   }
 }
 
+export class IotTopicRuleTimestreamOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IotTopicRuleTimestream | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._databaseName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databaseName = this._databaseName;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._tableName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableName = this._tableName;
+    }
+    if (this._dimension?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimension = this._dimension?.internalValue;
+    }
+    if (this._timestamp?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timestamp = this._timestamp?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IotTopicRuleTimestream | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._databaseName = undefined;
+      this._roleArn = undefined;
+      this._tableName = undefined;
+      this._dimension.internalValue = undefined;
+      this._timestamp.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._databaseName = value.databaseName;
+      this._roleArn = value.roleArn;
+      this._tableName = value.tableName;
+      this._dimension.internalValue = value.dimension;
+      this._timestamp.internalValue = value.timestamp;
+    }
+  }
+
+  // database_name - computed: false, optional: false, required: true
+  private _databaseName?: string; 
+  public get databaseName() {
+    return this.getStringAttribute('database_name');
+  }
+  public set databaseName(value: string) {
+    this._databaseName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseNameInput() {
+    return this._databaseName;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // table_name - computed: false, optional: false, required: true
+  private _tableName?: string; 
+  public get tableName() {
+    return this.getStringAttribute('table_name');
+  }
+  public set tableName(value: string) {
+    this._tableName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableNameInput() {
+    return this._tableName;
+  }
+
+  // dimension - computed: false, optional: false, required: true
+  private _dimension = new IotTopicRuleTimestreamDimensionList(this, "dimension", true);
+  public get dimension() {
+    return this._dimension;
+  }
+  public putDimension(value: IotTopicRuleTimestreamDimension[] | cdktf.IResolvable) {
+    this._dimension.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionInput() {
+    return this._dimension.internalValue;
+  }
+
+  // timestamp - computed: false, optional: true, required: false
+  private _timestamp = new IotTopicRuleTimestreamTimestampOutputReference(this, "timestamp");
+  public get timestamp() {
+    return this._timestamp;
+  }
+  public putTimestamp(value: IotTopicRuleTimestreamTimestamp) {
+    this._timestamp.internalValue = value;
+  }
+  public resetTimestamp() {
+    this._timestamp.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timestampInput() {
+    return this._timestamp.internalValue;
+  }
+}
+
+export class IotTopicRuleTimestreamList extends cdktf.ComplexList {
+  public internalValue? : IotTopicRuleTimestream[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IotTopicRuleTimestreamOutputReference {
+    return new IotTopicRuleTimestreamOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_topic_rule aws_iot_topic_rule}
@@ -4224,31 +7111,32 @@ export class IotTopicRule extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._enabled = config.enabled;
+    this._id = config.id;
     this._name = config.name;
     this._sql = config.sql;
     this._sqlVersion = config.sqlVersion;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._cloudwatchAlarm = config.cloudwatchAlarm;
-    this._cloudwatchLogs = config.cloudwatchLogs;
-    this._cloudwatchMetric = config.cloudwatchMetric;
-    this._dynamodb = config.dynamodb;
-    this._dynamodbv2 = config.dynamodbv2;
-    this._elasticsearch = config.elasticsearch;
+    this._cloudwatchAlarm.internalValue = config.cloudwatchAlarm;
+    this._cloudwatchLogs.internalValue = config.cloudwatchLogs;
+    this._cloudwatchMetric.internalValue = config.cloudwatchMetric;
+    this._dynamodb.internalValue = config.dynamodb;
+    this._dynamodbv2.internalValue = config.dynamodbv2;
+    this._elasticsearch.internalValue = config.elasticsearch;
     this._errorAction.internalValue = config.errorAction;
-    this._firehose = config.firehose;
-    this._http = config.http;
-    this._iotAnalytics = config.iotAnalytics;
-    this._iotEvents = config.iotEvents;
-    this._kafka = config.kafka;
-    this._kinesis = config.kinesis;
-    this._lambda = config.lambda;
-    this._republish = config.republish;
-    this._s3 = config.s3;
-    this._sns = config.sns;
-    this._sqs = config.sqs;
-    this._stepFunctions = config.stepFunctions;
-    this._timestream = config.timestream;
+    this._firehose.internalValue = config.firehose;
+    this._http.internalValue = config.http;
+    this._iotAnalytics.internalValue = config.iotAnalytics;
+    this._iotEvents.internalValue = config.iotEvents;
+    this._kafka.internalValue = config.kafka;
+    this._kinesis.internalValue = config.kinesis;
+    this._lambda.internalValue = config.lambda;
+    this._republish.internalValue = config.republish;
+    this._s3.internalValue = config.s3;
+    this._sns.internalValue = config.sns;
+    this._sqs.internalValue = config.sqs;
+    this._stepFunctions.internalValue = config.stepFunctions;
+    this._timestream.internalValue = config.timestream;
   }
 
   // ==========
@@ -4290,8 +7178,19 @@ export class IotTopicRule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -4366,105 +7265,99 @@ export class IotTopicRule extends cdktf.TerraformResource {
   }
 
   // cloudwatch_alarm - computed: false, optional: true, required: false
-  private _cloudwatchAlarm?: IotTopicRuleCloudwatchAlarm[] | cdktf.IResolvable; 
+  private _cloudwatchAlarm = new IotTopicRuleCloudwatchAlarmList(this, "cloudwatch_alarm", true);
   public get cloudwatchAlarm() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('cloudwatch_alarm')));
+    return this._cloudwatchAlarm;
   }
-  public set cloudwatchAlarm(value: IotTopicRuleCloudwatchAlarm[] | cdktf.IResolvable) {
-    this._cloudwatchAlarm = value;
+  public putCloudwatchAlarm(value: IotTopicRuleCloudwatchAlarm[] | cdktf.IResolvable) {
+    this._cloudwatchAlarm.internalValue = value;
   }
   public resetCloudwatchAlarm() {
-    this._cloudwatchAlarm = undefined;
+    this._cloudwatchAlarm.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get cloudwatchAlarmInput() {
-    return this._cloudwatchAlarm;
+    return this._cloudwatchAlarm.internalValue;
   }
 
   // cloudwatch_logs - computed: false, optional: true, required: false
-  private _cloudwatchLogs?: IotTopicRuleCloudwatchLogs[] | cdktf.IResolvable; 
+  private _cloudwatchLogs = new IotTopicRuleCloudwatchLogsList(this, "cloudwatch_logs", true);
   public get cloudwatchLogs() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('cloudwatch_logs')));
+    return this._cloudwatchLogs;
   }
-  public set cloudwatchLogs(value: IotTopicRuleCloudwatchLogs[] | cdktf.IResolvable) {
-    this._cloudwatchLogs = value;
+  public putCloudwatchLogs(value: IotTopicRuleCloudwatchLogs[] | cdktf.IResolvable) {
+    this._cloudwatchLogs.internalValue = value;
   }
   public resetCloudwatchLogs() {
-    this._cloudwatchLogs = undefined;
+    this._cloudwatchLogs.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get cloudwatchLogsInput() {
-    return this._cloudwatchLogs;
+    return this._cloudwatchLogs.internalValue;
   }
 
   // cloudwatch_metric - computed: false, optional: true, required: false
-  private _cloudwatchMetric?: IotTopicRuleCloudwatchMetric[] | cdktf.IResolvable; 
+  private _cloudwatchMetric = new IotTopicRuleCloudwatchMetricList(this, "cloudwatch_metric", true);
   public get cloudwatchMetric() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('cloudwatch_metric')));
+    return this._cloudwatchMetric;
   }
-  public set cloudwatchMetric(value: IotTopicRuleCloudwatchMetric[] | cdktf.IResolvable) {
-    this._cloudwatchMetric = value;
+  public putCloudwatchMetric(value: IotTopicRuleCloudwatchMetric[] | cdktf.IResolvable) {
+    this._cloudwatchMetric.internalValue = value;
   }
   public resetCloudwatchMetric() {
-    this._cloudwatchMetric = undefined;
+    this._cloudwatchMetric.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get cloudwatchMetricInput() {
-    return this._cloudwatchMetric;
+    return this._cloudwatchMetric.internalValue;
   }
 
   // dynamodb - computed: false, optional: true, required: false
-  private _dynamodb?: IotTopicRuleDynamodb[] | cdktf.IResolvable; 
+  private _dynamodb = new IotTopicRuleDynamodbList(this, "dynamodb", true);
   public get dynamodb() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('dynamodb')));
+    return this._dynamodb;
   }
-  public set dynamodb(value: IotTopicRuleDynamodb[] | cdktf.IResolvable) {
-    this._dynamodb = value;
+  public putDynamodb(value: IotTopicRuleDynamodb[] | cdktf.IResolvable) {
+    this._dynamodb.internalValue = value;
   }
   public resetDynamodb() {
-    this._dynamodb = undefined;
+    this._dynamodb.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get dynamodbInput() {
-    return this._dynamodb;
+    return this._dynamodb.internalValue;
   }
 
   // dynamodbv2 - computed: false, optional: true, required: false
-  private _dynamodbv2?: IotTopicRuleDynamodbv2[] | cdktf.IResolvable; 
+  private _dynamodbv2 = new IotTopicRuleDynamodbv2List(this, "dynamodbv2", true);
   public get dynamodbv2() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('dynamodbv2')));
+    return this._dynamodbv2;
   }
-  public set dynamodbv2(value: IotTopicRuleDynamodbv2[] | cdktf.IResolvable) {
-    this._dynamodbv2 = value;
+  public putDynamodbv2(value: IotTopicRuleDynamodbv2[] | cdktf.IResolvable) {
+    this._dynamodbv2.internalValue = value;
   }
   public resetDynamodbv2() {
-    this._dynamodbv2 = undefined;
+    this._dynamodbv2.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get dynamodbv2Input() {
-    return this._dynamodbv2;
+    return this._dynamodbv2.internalValue;
   }
 
   // elasticsearch - computed: false, optional: true, required: false
-  private _elasticsearch?: IotTopicRuleElasticsearch[] | cdktf.IResolvable; 
+  private _elasticsearch = new IotTopicRuleElasticsearchList(this, "elasticsearch", true);
   public get elasticsearch() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('elasticsearch')));
+    return this._elasticsearch;
   }
-  public set elasticsearch(value: IotTopicRuleElasticsearch[] | cdktf.IResolvable) {
-    this._elasticsearch = value;
+  public putElasticsearch(value: IotTopicRuleElasticsearch[] | cdktf.IResolvable) {
+    this._elasticsearch.internalValue = value;
   }
   public resetElasticsearch() {
-    this._elasticsearch = undefined;
+    this._elasticsearch.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get elasticsearchInput() {
-    return this._elasticsearch;
+    return this._elasticsearch.internalValue;
   }
 
   // error_action - computed: false, optional: true, required: false
@@ -4484,224 +7377,211 @@ export class IotTopicRule extends cdktf.TerraformResource {
   }
 
   // firehose - computed: false, optional: true, required: false
-  private _firehose?: IotTopicRuleFirehose[] | cdktf.IResolvable; 
+  private _firehose = new IotTopicRuleFirehoseList(this, "firehose", true);
   public get firehose() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('firehose')));
+    return this._firehose;
   }
-  public set firehose(value: IotTopicRuleFirehose[] | cdktf.IResolvable) {
-    this._firehose = value;
+  public putFirehose(value: IotTopicRuleFirehose[] | cdktf.IResolvable) {
+    this._firehose.internalValue = value;
   }
   public resetFirehose() {
-    this._firehose = undefined;
+    this._firehose.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get firehoseInput() {
-    return this._firehose;
+    return this._firehose.internalValue;
   }
 
   // http - computed: false, optional: true, required: false
-  private _http?: IotTopicRuleHttp[] | cdktf.IResolvable; 
+  private _http = new IotTopicRuleHttpList(this, "http", true);
   public get http() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('http')));
+    return this._http;
   }
-  public set http(value: IotTopicRuleHttp[] | cdktf.IResolvable) {
-    this._http = value;
+  public putHttp(value: IotTopicRuleHttp[] | cdktf.IResolvable) {
+    this._http.internalValue = value;
   }
   public resetHttp() {
-    this._http = undefined;
+    this._http.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get httpInput() {
-    return this._http;
+    return this._http.internalValue;
   }
 
   // iot_analytics - computed: false, optional: true, required: false
-  private _iotAnalytics?: IotTopicRuleIotAnalytics[] | cdktf.IResolvable; 
+  private _iotAnalytics = new IotTopicRuleIotAnalyticsList(this, "iot_analytics", true);
   public get iotAnalytics() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('iot_analytics')));
+    return this._iotAnalytics;
   }
-  public set iotAnalytics(value: IotTopicRuleIotAnalytics[] | cdktf.IResolvable) {
-    this._iotAnalytics = value;
+  public putIotAnalytics(value: IotTopicRuleIotAnalytics[] | cdktf.IResolvable) {
+    this._iotAnalytics.internalValue = value;
   }
   public resetIotAnalytics() {
-    this._iotAnalytics = undefined;
+    this._iotAnalytics.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get iotAnalyticsInput() {
-    return this._iotAnalytics;
+    return this._iotAnalytics.internalValue;
   }
 
   // iot_events - computed: false, optional: true, required: false
-  private _iotEvents?: IotTopicRuleIotEvents[] | cdktf.IResolvable; 
+  private _iotEvents = new IotTopicRuleIotEventsList(this, "iot_events", true);
   public get iotEvents() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('iot_events')));
+    return this._iotEvents;
   }
-  public set iotEvents(value: IotTopicRuleIotEvents[] | cdktf.IResolvable) {
-    this._iotEvents = value;
+  public putIotEvents(value: IotTopicRuleIotEvents[] | cdktf.IResolvable) {
+    this._iotEvents.internalValue = value;
   }
   public resetIotEvents() {
-    this._iotEvents = undefined;
+    this._iotEvents.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get iotEventsInput() {
-    return this._iotEvents;
+    return this._iotEvents.internalValue;
   }
 
   // kafka - computed: false, optional: true, required: false
-  private _kafka?: IotTopicRuleKafka[] | cdktf.IResolvable; 
+  private _kafka = new IotTopicRuleKafkaList(this, "kafka", true);
   public get kafka() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('kafka')));
+    return this._kafka;
   }
-  public set kafka(value: IotTopicRuleKafka[] | cdktf.IResolvable) {
-    this._kafka = value;
+  public putKafka(value: IotTopicRuleKafka[] | cdktf.IResolvable) {
+    this._kafka.internalValue = value;
   }
   public resetKafka() {
-    this._kafka = undefined;
+    this._kafka.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get kafkaInput() {
-    return this._kafka;
+    return this._kafka.internalValue;
   }
 
   // kinesis - computed: false, optional: true, required: false
-  private _kinesis?: IotTopicRuleKinesis[] | cdktf.IResolvable; 
+  private _kinesis = new IotTopicRuleKinesisList(this, "kinesis", true);
   public get kinesis() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('kinesis')));
+    return this._kinesis;
   }
-  public set kinesis(value: IotTopicRuleKinesis[] | cdktf.IResolvable) {
-    this._kinesis = value;
+  public putKinesis(value: IotTopicRuleKinesis[] | cdktf.IResolvable) {
+    this._kinesis.internalValue = value;
   }
   public resetKinesis() {
-    this._kinesis = undefined;
+    this._kinesis.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get kinesisInput() {
-    return this._kinesis;
+    return this._kinesis.internalValue;
   }
 
   // lambda - computed: false, optional: true, required: false
-  private _lambda?: IotTopicRuleLambda[] | cdktf.IResolvable; 
+  private _lambda = new IotTopicRuleLambdaList(this, "lambda", true);
   public get lambda() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('lambda')));
+    return this._lambda;
   }
-  public set lambda(value: IotTopicRuleLambda[] | cdktf.IResolvable) {
-    this._lambda = value;
+  public putLambda(value: IotTopicRuleLambda[] | cdktf.IResolvable) {
+    this._lambda.internalValue = value;
   }
   public resetLambda() {
-    this._lambda = undefined;
+    this._lambda.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get lambdaInput() {
-    return this._lambda;
+    return this._lambda.internalValue;
   }
 
   // republish - computed: false, optional: true, required: false
-  private _republish?: IotTopicRuleRepublish[] | cdktf.IResolvable; 
+  private _republish = new IotTopicRuleRepublishList(this, "republish", true);
   public get republish() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('republish')));
+    return this._republish;
   }
-  public set republish(value: IotTopicRuleRepublish[] | cdktf.IResolvable) {
-    this._republish = value;
+  public putRepublish(value: IotTopicRuleRepublish[] | cdktf.IResolvable) {
+    this._republish.internalValue = value;
   }
   public resetRepublish() {
-    this._republish = undefined;
+    this._republish.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get republishInput() {
-    return this._republish;
+    return this._republish.internalValue;
   }
 
   // s3 - computed: false, optional: true, required: false
-  private _s3?: IotTopicRuleS3[] | cdktf.IResolvable; 
+  private _s3 = new IotTopicRuleS3List(this, "s3", true);
   public get s3() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('s3')));
+    return this._s3;
   }
-  public set s3(value: IotTopicRuleS3[] | cdktf.IResolvable) {
-    this._s3 = value;
+  public putS3(value: IotTopicRuleS3[] | cdktf.IResolvable) {
+    this._s3.internalValue = value;
   }
   public resetS3() {
-    this._s3 = undefined;
+    this._s3.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get s3Input() {
-    return this._s3;
+    return this._s3.internalValue;
   }
 
   // sns - computed: false, optional: true, required: false
-  private _sns?: IotTopicRuleSns[] | cdktf.IResolvable; 
+  private _sns = new IotTopicRuleSnsList(this, "sns", true);
   public get sns() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('sns')));
+    return this._sns;
   }
-  public set sns(value: IotTopicRuleSns[] | cdktf.IResolvable) {
-    this._sns = value;
+  public putSns(value: IotTopicRuleSns[] | cdktf.IResolvable) {
+    this._sns.internalValue = value;
   }
   public resetSns() {
-    this._sns = undefined;
+    this._sns.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get snsInput() {
-    return this._sns;
+    return this._sns.internalValue;
   }
 
   // sqs - computed: false, optional: true, required: false
-  private _sqs?: IotTopicRuleSqs[] | cdktf.IResolvable; 
+  private _sqs = new IotTopicRuleSqsList(this, "sqs", true);
   public get sqs() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('sqs')));
+    return this._sqs;
   }
-  public set sqs(value: IotTopicRuleSqs[] | cdktf.IResolvable) {
-    this._sqs = value;
+  public putSqs(value: IotTopicRuleSqs[] | cdktf.IResolvable) {
+    this._sqs.internalValue = value;
   }
   public resetSqs() {
-    this._sqs = undefined;
+    this._sqs.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get sqsInput() {
-    return this._sqs;
+    return this._sqs.internalValue;
   }
 
   // step_functions - computed: false, optional: true, required: false
-  private _stepFunctions?: IotTopicRuleStepFunctions[] | cdktf.IResolvable; 
+  private _stepFunctions = new IotTopicRuleStepFunctionsList(this, "step_functions", true);
   public get stepFunctions() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('step_functions')));
+    return this._stepFunctions;
   }
-  public set stepFunctions(value: IotTopicRuleStepFunctions[] | cdktf.IResolvable) {
-    this._stepFunctions = value;
+  public putStepFunctions(value: IotTopicRuleStepFunctions[] | cdktf.IResolvable) {
+    this._stepFunctions.internalValue = value;
   }
   public resetStepFunctions() {
-    this._stepFunctions = undefined;
+    this._stepFunctions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get stepFunctionsInput() {
-    return this._stepFunctions;
+    return this._stepFunctions.internalValue;
   }
 
   // timestream - computed: false, optional: true, required: false
-  private _timestream?: IotTopicRuleTimestream[] | cdktf.IResolvable; 
+  private _timestream = new IotTopicRuleTimestreamList(this, "timestream", true);
   public get timestream() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('timestream')));
+    return this._timestream;
   }
-  public set timestream(value: IotTopicRuleTimestream[] | cdktf.IResolvable) {
-    this._timestream = value;
+  public putTimestream(value: IotTopicRuleTimestream[] | cdktf.IResolvable) {
+    this._timestream.internalValue = value;
   }
   public resetTimestream() {
-    this._timestream = undefined;
+    this._timestream.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timestreamInput() {
-    return this._timestream;
+    return this._timestream.internalValue;
   }
 
   // =========
@@ -4712,31 +7592,32 @@ export class IotTopicRule extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       sql: cdktf.stringToTerraform(this._sql),
       sql_version: cdktf.stringToTerraform(this._sqlVersion),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      cloudwatch_alarm: cdktf.listMapper(iotTopicRuleCloudwatchAlarmToTerraform)(this._cloudwatchAlarm),
-      cloudwatch_logs: cdktf.listMapper(iotTopicRuleCloudwatchLogsToTerraform)(this._cloudwatchLogs),
-      cloudwatch_metric: cdktf.listMapper(iotTopicRuleCloudwatchMetricToTerraform)(this._cloudwatchMetric),
-      dynamodb: cdktf.listMapper(iotTopicRuleDynamodbToTerraform)(this._dynamodb),
-      dynamodbv2: cdktf.listMapper(iotTopicRuleDynamodbv2ToTerraform)(this._dynamodbv2),
-      elasticsearch: cdktf.listMapper(iotTopicRuleElasticsearchToTerraform)(this._elasticsearch),
+      cloudwatch_alarm: cdktf.listMapper(iotTopicRuleCloudwatchAlarmToTerraform)(this._cloudwatchAlarm.internalValue),
+      cloudwatch_logs: cdktf.listMapper(iotTopicRuleCloudwatchLogsToTerraform)(this._cloudwatchLogs.internalValue),
+      cloudwatch_metric: cdktf.listMapper(iotTopicRuleCloudwatchMetricToTerraform)(this._cloudwatchMetric.internalValue),
+      dynamodb: cdktf.listMapper(iotTopicRuleDynamodbToTerraform)(this._dynamodb.internalValue),
+      dynamodbv2: cdktf.listMapper(iotTopicRuleDynamodbv2ToTerraform)(this._dynamodbv2.internalValue),
+      elasticsearch: cdktf.listMapper(iotTopicRuleElasticsearchToTerraform)(this._elasticsearch.internalValue),
       error_action: iotTopicRuleErrorActionToTerraform(this._errorAction.internalValue),
-      firehose: cdktf.listMapper(iotTopicRuleFirehoseToTerraform)(this._firehose),
-      http: cdktf.listMapper(iotTopicRuleHttpToTerraform)(this._http),
-      iot_analytics: cdktf.listMapper(iotTopicRuleIotAnalyticsToTerraform)(this._iotAnalytics),
-      iot_events: cdktf.listMapper(iotTopicRuleIotEventsToTerraform)(this._iotEvents),
-      kafka: cdktf.listMapper(iotTopicRuleKafkaToTerraform)(this._kafka),
-      kinesis: cdktf.listMapper(iotTopicRuleKinesisToTerraform)(this._kinesis),
-      lambda: cdktf.listMapper(iotTopicRuleLambdaToTerraform)(this._lambda),
-      republish: cdktf.listMapper(iotTopicRuleRepublishToTerraform)(this._republish),
-      s3: cdktf.listMapper(iotTopicRuleS3ToTerraform)(this._s3),
-      sns: cdktf.listMapper(iotTopicRuleSnsToTerraform)(this._sns),
-      sqs: cdktf.listMapper(iotTopicRuleSqsToTerraform)(this._sqs),
-      step_functions: cdktf.listMapper(iotTopicRuleStepFunctionsToTerraform)(this._stepFunctions),
-      timestream: cdktf.listMapper(iotTopicRuleTimestreamToTerraform)(this._timestream),
+      firehose: cdktf.listMapper(iotTopicRuleFirehoseToTerraform)(this._firehose.internalValue),
+      http: cdktf.listMapper(iotTopicRuleHttpToTerraform)(this._http.internalValue),
+      iot_analytics: cdktf.listMapper(iotTopicRuleIotAnalyticsToTerraform)(this._iotAnalytics.internalValue),
+      iot_events: cdktf.listMapper(iotTopicRuleIotEventsToTerraform)(this._iotEvents.internalValue),
+      kafka: cdktf.listMapper(iotTopicRuleKafkaToTerraform)(this._kafka.internalValue),
+      kinesis: cdktf.listMapper(iotTopicRuleKinesisToTerraform)(this._kinesis.internalValue),
+      lambda: cdktf.listMapper(iotTopicRuleLambdaToTerraform)(this._lambda.internalValue),
+      republish: cdktf.listMapper(iotTopicRuleRepublishToTerraform)(this._republish.internalValue),
+      s3: cdktf.listMapper(iotTopicRuleS3ToTerraform)(this._s3.internalValue),
+      sns: cdktf.listMapper(iotTopicRuleSnsToTerraform)(this._sns.internalValue),
+      sqs: cdktf.listMapper(iotTopicRuleSqsToTerraform)(this._sqs.internalValue),
+      step_functions: cdktf.listMapper(iotTopicRuleStepFunctionsToTerraform)(this._stepFunctions.internalValue),
+      timestream: cdktf.listMapper(iotTopicRuleTimestreamToTerraform)(this._timestream.internalValue),
     };
   }
 }

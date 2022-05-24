@@ -24,6 +24,13 @@ export interface DataAwsS3BucketObjectsConfig extends cdktf.TerraformMetaArgumen
   */
   readonly fetchOwner?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/s3_bucket_objects#id DataAwsS3BucketObjects#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/s3_bucket_objects#max_keys DataAwsS3BucketObjects#max_keys}
   */
   readonly maxKeys?: number;
@@ -75,6 +82,7 @@ export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
     this._delimiter = config.delimiter;
     this._encodingType = config.encodingType;
     this._fetchOwner = config.fetchOwner;
+    this._id = config.id;
     this._maxKeys = config.maxKeys;
     this._prefix = config.prefix;
     this._startAfter = config.startAfter;
@@ -151,8 +159,19 @@ export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // keys - computed: true, optional: false, required: false
@@ -223,6 +242,7 @@ export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
       delimiter: cdktf.stringToTerraform(this._delimiter),
       encoding_type: cdktf.stringToTerraform(this._encodingType),
       fetch_owner: cdktf.booleanToTerraform(this._fetchOwner),
+      id: cdktf.stringToTerraform(this._id),
       max_keys: cdktf.numberToTerraform(this._maxKeys),
       prefix: cdktf.stringToTerraform(this._prefix),
       start_after: cdktf.stringToTerraform(this._startAfter),

@@ -19,6 +19,13 @@ export interface DataAwsStoragegatewayLocalDiskConfig extends cdktf.TerraformMet
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/storagegateway_local_disk#gateway_arn DataAwsStoragegatewayLocalDisk#gateway_arn}
   */
   readonly gatewayArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/storagegateway_local_disk#id DataAwsStoragegatewayLocalDisk#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
 }
 
 /**
@@ -58,6 +65,7 @@ export class DataAwsStoragegatewayLocalDisk extends cdktf.TerraformDataSource {
     this._diskNode = config.diskNode;
     this._diskPath = config.diskPath;
     this._gatewayArn = config.gatewayArn;
+    this._id = config.id;
   }
 
   // ==========
@@ -115,8 +123,19 @@ export class DataAwsStoragegatewayLocalDisk extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // =========
@@ -128,6 +147,7 @@ export class DataAwsStoragegatewayLocalDisk extends cdktf.TerraformDataSource {
       disk_node: cdktf.stringToTerraform(this._diskNode),
       disk_path: cdktf.stringToTerraform(this._diskPath),
       gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
+      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

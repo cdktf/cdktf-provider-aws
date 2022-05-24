@@ -23,6 +23,13 @@ export interface DxGatewayAssociationProposalConfig extends cdktf.TerraformMetaA
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_gateway_association_proposal#dx_gateway_owner_account_id DxGatewayAssociationProposal#dx_gateway_owner_account_id}
   */
   readonly dxGatewayOwnerAccountId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_gateway_association_proposal#id DxGatewayAssociationProposal#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
 }
 
 /**
@@ -63,6 +70,7 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
     this._associatedGatewayId = config.associatedGatewayId;
     this._dxGatewayId = config.dxGatewayId;
     this._dxGatewayOwnerAccountId = config.dxGatewayOwnerAccountId;
+    this._id = config.id;
   }
 
   // ==========
@@ -135,8 +143,19 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // =========
@@ -149,6 +168,7 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
       associated_gateway_id: cdktf.stringToTerraform(this._associatedGatewayId),
       dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
       dx_gateway_owner_account_id: cdktf.stringToTerraform(this._dxGatewayOwnerAccountId),
+      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

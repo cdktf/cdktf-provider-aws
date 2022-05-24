@@ -19,6 +19,13 @@ export interface WorklinkWebsiteCertificateAuthorityAssociationConfig extends cd
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/worklink_website_certificate_authority_association#fleet_arn WorklinkWebsiteCertificateAuthorityAssociation#fleet_arn}
   */
   readonly fleetArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/worklink_website_certificate_authority_association#id WorklinkWebsiteCertificateAuthorityAssociation#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
 }
 
 /**
@@ -58,6 +65,7 @@ export class WorklinkWebsiteCertificateAuthorityAssociation extends cdktf.Terraf
     this._certificate = config.certificate;
     this._displayName = config.displayName;
     this._fleetArn = config.fleetArn;
+    this._id = config.id;
   }
 
   // ==========
@@ -107,8 +115,19 @@ export class WorklinkWebsiteCertificateAuthorityAssociation extends cdktf.Terraf
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // website_ca_id - computed: true, optional: false, required: false
@@ -125,6 +144,7 @@ export class WorklinkWebsiteCertificateAuthorityAssociation extends cdktf.Terraf
       certificate: cdktf.stringToTerraform(this._certificate),
       display_name: cdktf.stringToTerraform(this._displayName),
       fleet_arn: cdktf.stringToTerraform(this._fleetArn),
+      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

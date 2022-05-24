@@ -16,6 +16,13 @@ export interface SecurityhubStandardsControlConfig extends cdktf.TerraformMetaAr
   */
   readonly disabledReason?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_standards_control#id SecurityhubStandardsControl#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_standards_control#standards_control_arn SecurityhubStandardsControl#standards_control_arn}
   */
   readonly standardsControlArn: string;
@@ -57,6 +64,7 @@ export class SecurityhubStandardsControl extends cdktf.TerraformResource {
     });
     this._controlStatus = config.controlStatus;
     this._disabledReason = config.disabledReason;
+    this._id = config.id;
     this._standardsControlArn = config.standardsControlArn;
   }
 
@@ -109,8 +117,19 @@ export class SecurityhubStandardsControl extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // related_requirements - computed: true, optional: false, required: false
@@ -154,6 +173,7 @@ export class SecurityhubStandardsControl extends cdktf.TerraformResource {
     return {
       control_status: cdktf.stringToTerraform(this._controlStatus),
       disabled_reason: cdktf.stringToTerraform(this._disabledReason),
+      id: cdktf.stringToTerraform(this._id),
       standards_control_arn: cdktf.stringToTerraform(this._standardsControlArn),
     };
   }

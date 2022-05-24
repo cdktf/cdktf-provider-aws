@@ -20,6 +20,13 @@ export interface CognitoIdentityPoolConfig extends cdktf.TerraformMetaArguments 
   */
   readonly developerProviderName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_pool#id CognitoIdentityPool#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_pool#identity_pool_name CognitoIdentityPool#identity_pool_name}
   */
   readonly identityPoolName: string;
@@ -77,6 +84,130 @@ export function cognitoIdentityPoolCognitoIdentityProvidersToTerraform(struct?: 
   }
 }
 
+export class CognitoIdentityPoolCognitoIdentityProvidersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CognitoIdentityPoolCognitoIdentityProviders | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientId = this._clientId;
+    }
+    if (this._providerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.providerName = this._providerName;
+    }
+    if (this._serverSideTokenCheck !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serverSideTokenCheck = this._serverSideTokenCheck;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CognitoIdentityPoolCognitoIdentityProviders | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._clientId = undefined;
+      this._providerName = undefined;
+      this._serverSideTokenCheck = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._clientId = value.clientId;
+      this._providerName = value.providerName;
+      this._serverSideTokenCheck = value.serverSideTokenCheck;
+    }
+  }
+
+  // client_id - computed: false, optional: true, required: false
+  private _clientId?: string; 
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+  public set clientId(value: string) {
+    this._clientId = value;
+  }
+  public resetClientId() {
+    this._clientId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdInput() {
+    return this._clientId;
+  }
+
+  // provider_name - computed: false, optional: true, required: false
+  private _providerName?: string; 
+  public get providerName() {
+    return this.getStringAttribute('provider_name');
+  }
+  public set providerName(value: string) {
+    this._providerName = value;
+  }
+  public resetProviderName() {
+    this._providerName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerNameInput() {
+    return this._providerName;
+  }
+
+  // server_side_token_check - computed: false, optional: true, required: false
+  private _serverSideTokenCheck?: boolean | cdktf.IResolvable; 
+  public get serverSideTokenCheck() {
+    return this.getBooleanAttribute('server_side_token_check');
+  }
+  public set serverSideTokenCheck(value: boolean | cdktf.IResolvable) {
+    this._serverSideTokenCheck = value;
+  }
+  public resetServerSideTokenCheck() {
+    this._serverSideTokenCheck = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverSideTokenCheckInput() {
+    return this._serverSideTokenCheck;
+  }
+}
+
+export class CognitoIdentityPoolCognitoIdentityProvidersList extends cdktf.ComplexList {
+  public internalValue? : CognitoIdentityPoolCognitoIdentityProviders[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CognitoIdentityPoolCognitoIdentityProvidersOutputReference {
+    return new CognitoIdentityPoolCognitoIdentityProvidersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_pool aws_cognito_identity_pool}
@@ -115,13 +246,14 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
     this._allowClassicFlow = config.allowClassicFlow;
     this._allowUnauthenticatedIdentities = config.allowUnauthenticatedIdentities;
     this._developerProviderName = config.developerProviderName;
+    this._id = config.id;
     this._identityPoolName = config.identityPoolName;
     this._openidConnectProviderArns = config.openidConnectProviderArns;
     this._samlProviderArns = config.samlProviderArns;
     this._supportedLoginProviders = config.supportedLoginProviders;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._cognitoIdentityProviders = config.cognitoIdentityProviders;
+    this._cognitoIdentityProviders.internalValue = config.cognitoIdentityProviders;
   }
 
   // ==========
@@ -182,8 +314,19 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // identity_pool_name - computed: false, optional: false, required: true
@@ -280,20 +423,19 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
   }
 
   // cognito_identity_providers - computed: false, optional: true, required: false
-  private _cognitoIdentityProviders?: CognitoIdentityPoolCognitoIdentityProviders[] | cdktf.IResolvable; 
+  private _cognitoIdentityProviders = new CognitoIdentityPoolCognitoIdentityProvidersList(this, "cognito_identity_providers", true);
   public get cognitoIdentityProviders() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('cognito_identity_providers')));
+    return this._cognitoIdentityProviders;
   }
-  public set cognitoIdentityProviders(value: CognitoIdentityPoolCognitoIdentityProviders[] | cdktf.IResolvable) {
-    this._cognitoIdentityProviders = value;
+  public putCognitoIdentityProviders(value: CognitoIdentityPoolCognitoIdentityProviders[] | cdktf.IResolvable) {
+    this._cognitoIdentityProviders.internalValue = value;
   }
   public resetCognitoIdentityProviders() {
-    this._cognitoIdentityProviders = undefined;
+    this._cognitoIdentityProviders.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get cognitoIdentityProvidersInput() {
-    return this._cognitoIdentityProviders;
+    return this._cognitoIdentityProviders.internalValue;
   }
 
   // =========
@@ -305,13 +447,14 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
       allow_classic_flow: cdktf.booleanToTerraform(this._allowClassicFlow),
       allow_unauthenticated_identities: cdktf.booleanToTerraform(this._allowUnauthenticatedIdentities),
       developer_provider_name: cdktf.stringToTerraform(this._developerProviderName),
+      id: cdktf.stringToTerraform(this._id),
       identity_pool_name: cdktf.stringToTerraform(this._identityPoolName),
       openid_connect_provider_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._openidConnectProviderArns),
       saml_provider_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._samlProviderArns),
       supported_login_providers: cdktf.hashMapper(cdktf.stringToTerraform)(this._supportedLoginProviders),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      cognito_identity_providers: cdktf.listMapper(cognitoIdentityPoolCognitoIdentityProvidersToTerraform)(this._cognitoIdentityProviders),
+      cognito_identity_providers: cdktf.listMapper(cognitoIdentityPoolCognitoIdentityProvidersToTerraform)(this._cognitoIdentityProviders.internalValue),
     };
   }
 }

@@ -28,6 +28,13 @@ export interface GlobalacceleratorEndpointGroupConfig extends cdktf.TerraformMet
   */
   readonly healthCheckProtocol?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_endpoint_group#id GlobalacceleratorEndpointGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_endpoint_group#listener_arn GlobalacceleratorEndpointGroup#listener_arn}
   */
   readonly listenerArn: string;
@@ -85,6 +92,130 @@ export function globalacceleratorEndpointGroupEndpointConfigurationToTerraform(s
   }
 }
 
+export class GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlobalacceleratorEndpointGroupEndpointConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clientIpPreservationEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientIpPreservationEnabled = this._clientIpPreservationEnabled;
+    }
+    if (this._endpointId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpointId = this._endpointId;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlobalacceleratorEndpointGroupEndpointConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._clientIpPreservationEnabled = undefined;
+      this._endpointId = undefined;
+      this._weight = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._clientIpPreservationEnabled = value.clientIpPreservationEnabled;
+      this._endpointId = value.endpointId;
+      this._weight = value.weight;
+    }
+  }
+
+  // client_ip_preservation_enabled - computed: true, optional: true, required: false
+  private _clientIpPreservationEnabled?: boolean | cdktf.IResolvable; 
+  public get clientIpPreservationEnabled() {
+    return this.getBooleanAttribute('client_ip_preservation_enabled');
+  }
+  public set clientIpPreservationEnabled(value: boolean | cdktf.IResolvable) {
+    this._clientIpPreservationEnabled = value;
+  }
+  public resetClientIpPreservationEnabled() {
+    this._clientIpPreservationEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIpPreservationEnabledInput() {
+    return this._clientIpPreservationEnabled;
+  }
+
+  // endpoint_id - computed: false, optional: true, required: false
+  private _endpointId?: string; 
+  public get endpointId() {
+    return this.getStringAttribute('endpoint_id');
+  }
+  public set endpointId(value: string) {
+    this._endpointId = value;
+  }
+  public resetEndpointId() {
+    this._endpointId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointIdInput() {
+    return this._endpointId;
+  }
+
+  // weight - computed: false, optional: true, required: false
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  public resetWeight() {
+    this._weight = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+}
+
+export class GlobalacceleratorEndpointGroupEndpointConfigurationList extends cdktf.ComplexList {
+  public internalValue? : GlobalacceleratorEndpointGroupEndpointConfiguration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference {
+    return new GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GlobalacceleratorEndpointGroupPortOverride {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_endpoint_group#endpoint_port GlobalacceleratorEndpointGroup#endpoint_port}
@@ -107,6 +238,102 @@ export function globalacceleratorEndpointGroupPortOverrideToTerraform(struct?: G
   }
 }
 
+export class GlobalacceleratorEndpointGroupPortOverrideOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlobalacceleratorEndpointGroupPortOverride | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endpointPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpointPort = this._endpointPort;
+    }
+    if (this._listenerPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.listenerPort = this._listenerPort;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlobalacceleratorEndpointGroupPortOverride | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._endpointPort = undefined;
+      this._listenerPort = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._endpointPort = value.endpointPort;
+      this._listenerPort = value.listenerPort;
+    }
+  }
+
+  // endpoint_port - computed: false, optional: false, required: true
+  private _endpointPort?: number; 
+  public get endpointPort() {
+    return this.getNumberAttribute('endpoint_port');
+  }
+  public set endpointPort(value: number) {
+    this._endpointPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointPortInput() {
+    return this._endpointPort;
+  }
+
+  // listener_port - computed: false, optional: false, required: true
+  private _listenerPort?: number; 
+  public get listenerPort() {
+    return this.getNumberAttribute('listener_port');
+  }
+  public set listenerPort(value: number) {
+    this._listenerPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get listenerPortInput() {
+    return this._listenerPort;
+  }
+}
+
+export class GlobalacceleratorEndpointGroupPortOverrideList extends cdktf.ComplexList {
+  public internalValue? : GlobalacceleratorEndpointGroupPortOverride[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlobalacceleratorEndpointGroupPortOverrideOutputReference {
+    return new GlobalacceleratorEndpointGroupPortOverrideOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GlobalacceleratorEndpointGroupTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_endpoint_group#create GlobalacceleratorEndpointGroup#create}
@@ -136,6 +363,7 @@ export function globalacceleratorEndpointGroupTimeoutsToTerraform(struct?: Globa
 
 export class GlobalacceleratorEndpointGroupTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -145,7 +373,10 @@ export class GlobalacceleratorEndpointGroupTimeoutsOutputReference extends cdktf
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GlobalacceleratorEndpointGroupTimeouts | undefined {
+  public get internalValue(): GlobalacceleratorEndpointGroupTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -163,15 +394,21 @@ export class GlobalacceleratorEndpointGroupTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlobalacceleratorEndpointGroupTimeouts | undefined) {
+  public set internalValue(value: GlobalacceleratorEndpointGroupTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -266,11 +503,12 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
     this._healthCheckPath = config.healthCheckPath;
     this._healthCheckPort = config.healthCheckPort;
     this._healthCheckProtocol = config.healthCheckProtocol;
+    this._id = config.id;
     this._listenerArn = config.listenerArn;
     this._thresholdCount = config.thresholdCount;
     this._trafficDialPercentage = config.trafficDialPercentage;
-    this._endpointConfiguration = config.endpointConfiguration;
-    this._portOverride = config.portOverride;
+    this._endpointConfiguration.internalValue = config.endpointConfiguration;
+    this._portOverride.internalValue = config.portOverride;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -364,8 +602,19 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // listener_arn - computed: false, optional: false, required: true
@@ -414,37 +663,35 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
   }
 
   // endpoint_configuration - computed: false, optional: true, required: false
-  private _endpointConfiguration?: GlobalacceleratorEndpointGroupEndpointConfiguration[] | cdktf.IResolvable; 
+  private _endpointConfiguration = new GlobalacceleratorEndpointGroupEndpointConfigurationList(this, "endpoint_configuration", true);
   public get endpointConfiguration() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('endpoint_configuration')));
+    return this._endpointConfiguration;
   }
-  public set endpointConfiguration(value: GlobalacceleratorEndpointGroupEndpointConfiguration[] | cdktf.IResolvable) {
-    this._endpointConfiguration = value;
+  public putEndpointConfiguration(value: GlobalacceleratorEndpointGroupEndpointConfiguration[] | cdktf.IResolvable) {
+    this._endpointConfiguration.internalValue = value;
   }
   public resetEndpointConfiguration() {
-    this._endpointConfiguration = undefined;
+    this._endpointConfiguration.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get endpointConfigurationInput() {
-    return this._endpointConfiguration;
+    return this._endpointConfiguration.internalValue;
   }
 
   // port_override - computed: false, optional: true, required: false
-  private _portOverride?: GlobalacceleratorEndpointGroupPortOverride[] | cdktf.IResolvable; 
+  private _portOverride = new GlobalacceleratorEndpointGroupPortOverrideList(this, "port_override", true);
   public get portOverride() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('port_override')));
+    return this._portOverride;
   }
-  public set portOverride(value: GlobalacceleratorEndpointGroupPortOverride[] | cdktf.IResolvable) {
-    this._portOverride = value;
+  public putPortOverride(value: GlobalacceleratorEndpointGroupPortOverride[] | cdktf.IResolvable) {
+    this._portOverride.internalValue = value;
   }
   public resetPortOverride() {
-    this._portOverride = undefined;
+    this._portOverride.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get portOverrideInput() {
-    return this._portOverride;
+    return this._portOverride.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -474,11 +721,12 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
       health_check_path: cdktf.stringToTerraform(this._healthCheckPath),
       health_check_port: cdktf.numberToTerraform(this._healthCheckPort),
       health_check_protocol: cdktf.stringToTerraform(this._healthCheckProtocol),
+      id: cdktf.stringToTerraform(this._id),
       listener_arn: cdktf.stringToTerraform(this._listenerArn),
       threshold_count: cdktf.numberToTerraform(this._thresholdCount),
       traffic_dial_percentage: cdktf.numberToTerraform(this._trafficDialPercentage),
-      endpoint_configuration: cdktf.listMapper(globalacceleratorEndpointGroupEndpointConfigurationToTerraform)(this._endpointConfiguration),
-      port_override: cdktf.listMapper(globalacceleratorEndpointGroupPortOverrideToTerraform)(this._portOverride),
+      endpoint_configuration: cdktf.listMapper(globalacceleratorEndpointGroupEndpointConfigurationToTerraform)(this._endpointConfiguration.internalValue),
+      port_override: cdktf.listMapper(globalacceleratorEndpointGroupPortOverrideToTerraform)(this._portOverride.internalValue),
       timeouts: globalacceleratorEndpointGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

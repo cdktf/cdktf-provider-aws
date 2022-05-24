@@ -12,6 +12,13 @@ export interface GameliftGameSessionQueueConfig extends cdktf.TerraformMetaArgum
   */
   readonly destinations?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_game_session_queue#id GameliftGameSessionQueue#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_game_session_queue#name GameliftGameSessionQueue#name}
   */
   readonly name: string;
@@ -56,6 +63,105 @@ export function gameliftGameSessionQueuePlayerLatencyPolicyToTerraform(struct?: 
   }
 }
 
+export class GameliftGameSessionQueuePlayerLatencyPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GameliftGameSessionQueuePlayerLatencyPolicy | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maximumIndividualPlayerLatencyMilliseconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maximumIndividualPlayerLatencyMilliseconds = this._maximumIndividualPlayerLatencyMilliseconds;
+    }
+    if (this._policyDurationSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.policyDurationSeconds = this._policyDurationSeconds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GameliftGameSessionQueuePlayerLatencyPolicy | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._maximumIndividualPlayerLatencyMilliseconds = undefined;
+      this._policyDurationSeconds = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._maximumIndividualPlayerLatencyMilliseconds = value.maximumIndividualPlayerLatencyMilliseconds;
+      this._policyDurationSeconds = value.policyDurationSeconds;
+    }
+  }
+
+  // maximum_individual_player_latency_milliseconds - computed: false, optional: false, required: true
+  private _maximumIndividualPlayerLatencyMilliseconds?: number; 
+  public get maximumIndividualPlayerLatencyMilliseconds() {
+    return this.getNumberAttribute('maximum_individual_player_latency_milliseconds');
+  }
+  public set maximumIndividualPlayerLatencyMilliseconds(value: number) {
+    this._maximumIndividualPlayerLatencyMilliseconds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumIndividualPlayerLatencyMillisecondsInput() {
+    return this._maximumIndividualPlayerLatencyMilliseconds;
+  }
+
+  // policy_duration_seconds - computed: false, optional: true, required: false
+  private _policyDurationSeconds?: number; 
+  public get policyDurationSeconds() {
+    return this.getNumberAttribute('policy_duration_seconds');
+  }
+  public set policyDurationSeconds(value: number) {
+    this._policyDurationSeconds = value;
+  }
+  public resetPolicyDurationSeconds() {
+    this._policyDurationSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyDurationSecondsInput() {
+    return this._policyDurationSeconds;
+  }
+}
+
+export class GameliftGameSessionQueuePlayerLatencyPolicyList extends cdktf.ComplexList {
+  public internalValue? : GameliftGameSessionQueuePlayerLatencyPolicy[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GameliftGameSessionQueuePlayerLatencyPolicyOutputReference {
+    return new GameliftGameSessionQueuePlayerLatencyPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/gamelift_game_session_queue aws_gamelift_game_session_queue}
@@ -92,11 +198,12 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._destinations = config.destinations;
+    this._id = config.id;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._timeoutInSeconds = config.timeoutInSeconds;
-    this._playerLatencyPolicy = config.playerLatencyPolicy;
+    this._playerLatencyPolicy.internalValue = config.playerLatencyPolicy;
   }
 
   // ==========
@@ -125,8 +232,19 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -191,20 +309,19 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
   }
 
   // player_latency_policy - computed: false, optional: true, required: false
-  private _playerLatencyPolicy?: GameliftGameSessionQueuePlayerLatencyPolicy[] | cdktf.IResolvable; 
+  private _playerLatencyPolicy = new GameliftGameSessionQueuePlayerLatencyPolicyList(this, "player_latency_policy", false);
   public get playerLatencyPolicy() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('player_latency_policy');
+    return this._playerLatencyPolicy;
   }
-  public set playerLatencyPolicy(value: GameliftGameSessionQueuePlayerLatencyPolicy[] | cdktf.IResolvable) {
-    this._playerLatencyPolicy = value;
+  public putPlayerLatencyPolicy(value: GameliftGameSessionQueuePlayerLatencyPolicy[] | cdktf.IResolvable) {
+    this._playerLatencyPolicy.internalValue = value;
   }
   public resetPlayerLatencyPolicy() {
-    this._playerLatencyPolicy = undefined;
+    this._playerLatencyPolicy.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get playerLatencyPolicyInput() {
-    return this._playerLatencyPolicy;
+    return this._playerLatencyPolicy.internalValue;
   }
 
   // =========
@@ -214,11 +331,12 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       destinations: cdktf.listMapper(cdktf.stringToTerraform)(this._destinations),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeout_in_seconds: cdktf.numberToTerraform(this._timeoutInSeconds),
-      player_latency_policy: cdktf.listMapper(gameliftGameSessionQueuePlayerLatencyPolicyToTerraform)(this._playerLatencyPolicy),
+      player_latency_policy: cdktf.listMapper(gameliftGameSessionQueuePlayerLatencyPolicyToTerraform)(this._playerLatencyPolicy.internalValue),
     };
   }
 }

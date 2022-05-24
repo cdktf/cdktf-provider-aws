@@ -16,6 +16,13 @@ export interface ElastictranscoderPresetConfig extends cdktf.TerraformMetaArgume
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastictranscoder_preset#id ElastictranscoderPreset#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastictranscoder_preset#name ElastictranscoderPreset#name}
   */
   readonly name?: string;
@@ -1031,6 +1038,9 @@ export interface ElastictranscoderPresetVideoWatermarks {
   readonly horizontalOffset?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastictranscoder_preset#id ElastictranscoderPreset#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -1082,6 +1092,284 @@ export function elastictranscoderPresetVideoWatermarksToTerraform(struct?: Elast
   }
 }
 
+export class ElastictranscoderPresetVideoWatermarksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ElastictranscoderPresetVideoWatermarks | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._horizontalAlign !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.horizontalAlign = this._horizontalAlign;
+    }
+    if (this._horizontalOffset !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.horizontalOffset = this._horizontalOffset;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._maxHeight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxHeight = this._maxHeight;
+    }
+    if (this._maxWidth !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxWidth = this._maxWidth;
+    }
+    if (this._opacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.opacity = this._opacity;
+    }
+    if (this._sizingPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sizingPolicy = this._sizingPolicy;
+    }
+    if (this._target !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    if (this._verticalAlign !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.verticalAlign = this._verticalAlign;
+    }
+    if (this._verticalOffset !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.verticalOffset = this._verticalOffset;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ElastictranscoderPresetVideoWatermarks | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._horizontalAlign = undefined;
+      this._horizontalOffset = undefined;
+      this._id = undefined;
+      this._maxHeight = undefined;
+      this._maxWidth = undefined;
+      this._opacity = undefined;
+      this._sizingPolicy = undefined;
+      this._target = undefined;
+      this._verticalAlign = undefined;
+      this._verticalOffset = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._horizontalAlign = value.horizontalAlign;
+      this._horizontalOffset = value.horizontalOffset;
+      this._id = value.id;
+      this._maxHeight = value.maxHeight;
+      this._maxWidth = value.maxWidth;
+      this._opacity = value.opacity;
+      this._sizingPolicy = value.sizingPolicy;
+      this._target = value.target;
+      this._verticalAlign = value.verticalAlign;
+      this._verticalOffset = value.verticalOffset;
+    }
+  }
+
+  // horizontal_align - computed: false, optional: true, required: false
+  private _horizontalAlign?: string; 
+  public get horizontalAlign() {
+    return this.getStringAttribute('horizontal_align');
+  }
+  public set horizontalAlign(value: string) {
+    this._horizontalAlign = value;
+  }
+  public resetHorizontalAlign() {
+    this._horizontalAlign = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get horizontalAlignInput() {
+    return this._horizontalAlign;
+  }
+
+  // horizontal_offset - computed: false, optional: true, required: false
+  private _horizontalOffset?: string; 
+  public get horizontalOffset() {
+    return this.getStringAttribute('horizontal_offset');
+  }
+  public set horizontalOffset(value: string) {
+    this._horizontalOffset = value;
+  }
+  public resetHorizontalOffset() {
+    this._horizontalOffset = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get horizontalOffsetInput() {
+    return this._horizontalOffset;
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // max_height - computed: false, optional: true, required: false
+  private _maxHeight?: string; 
+  public get maxHeight() {
+    return this.getStringAttribute('max_height');
+  }
+  public set maxHeight(value: string) {
+    this._maxHeight = value;
+  }
+  public resetMaxHeight() {
+    this._maxHeight = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxHeightInput() {
+    return this._maxHeight;
+  }
+
+  // max_width - computed: false, optional: true, required: false
+  private _maxWidth?: string; 
+  public get maxWidth() {
+    return this.getStringAttribute('max_width');
+  }
+  public set maxWidth(value: string) {
+    this._maxWidth = value;
+  }
+  public resetMaxWidth() {
+    this._maxWidth = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxWidthInput() {
+    return this._maxWidth;
+  }
+
+  // opacity - computed: false, optional: true, required: false
+  private _opacity?: string; 
+  public get opacity() {
+    return this.getStringAttribute('opacity');
+  }
+  public set opacity(value: string) {
+    this._opacity = value;
+  }
+  public resetOpacity() {
+    this._opacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get opacityInput() {
+    return this._opacity;
+  }
+
+  // sizing_policy - computed: false, optional: true, required: false
+  private _sizingPolicy?: string; 
+  public get sizingPolicy() {
+    return this.getStringAttribute('sizing_policy');
+  }
+  public set sizingPolicy(value: string) {
+    this._sizingPolicy = value;
+  }
+  public resetSizingPolicy() {
+    this._sizingPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizingPolicyInput() {
+    return this._sizingPolicy;
+  }
+
+  // target - computed: false, optional: true, required: false
+  private _target?: string; 
+  public get target() {
+    return this.getStringAttribute('target');
+  }
+  public set target(value: string) {
+    this._target = value;
+  }
+  public resetTarget() {
+    this._target = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target;
+  }
+
+  // vertical_align - computed: false, optional: true, required: false
+  private _verticalAlign?: string; 
+  public get verticalAlign() {
+    return this.getStringAttribute('vertical_align');
+  }
+  public set verticalAlign(value: string) {
+    this._verticalAlign = value;
+  }
+  public resetVerticalAlign() {
+    this._verticalAlign = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get verticalAlignInput() {
+    return this._verticalAlign;
+  }
+
+  // vertical_offset - computed: false, optional: true, required: false
+  private _verticalOffset?: string; 
+  public get verticalOffset() {
+    return this.getStringAttribute('vertical_offset');
+  }
+  public set verticalOffset(value: string) {
+    this._verticalOffset = value;
+  }
+  public resetVerticalOffset() {
+    this._verticalOffset = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get verticalOffsetInput() {
+    return this._verticalOffset;
+  }
+}
+
+export class ElastictranscoderPresetVideoWatermarksList extends cdktf.ComplexList {
+  public internalValue? : ElastictranscoderPresetVideoWatermarks[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ElastictranscoderPresetVideoWatermarksOutputReference {
+    return new ElastictranscoderPresetVideoWatermarksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/elastictranscoder_preset aws_elastictranscoder_preset}
@@ -1119,6 +1407,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
     });
     this._container = config.container;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._type = config.type;
     this._videoCodecOptions = config.videoCodecOptions;
@@ -1126,7 +1415,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
     this._audioCodecOptions.internalValue = config.audioCodecOptions;
     this._thumbnails.internalValue = config.thumbnails;
     this._video.internalValue = config.video;
-    this._videoWatermarks = config.videoWatermarks;
+    this._videoWatermarks.internalValue = config.videoWatermarks;
   }
 
   // ==========
@@ -1168,8 +1457,19 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: true, required: false
@@ -1285,20 +1585,19 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   }
 
   // video_watermarks - computed: false, optional: true, required: false
-  private _videoWatermarks?: ElastictranscoderPresetVideoWatermarks[] | cdktf.IResolvable; 
+  private _videoWatermarks = new ElastictranscoderPresetVideoWatermarksList(this, "video_watermarks", true);
   public get videoWatermarks() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('video_watermarks')));
+    return this._videoWatermarks;
   }
-  public set videoWatermarks(value: ElastictranscoderPresetVideoWatermarks[] | cdktf.IResolvable) {
-    this._videoWatermarks = value;
+  public putVideoWatermarks(value: ElastictranscoderPresetVideoWatermarks[] | cdktf.IResolvable) {
+    this._videoWatermarks.internalValue = value;
   }
   public resetVideoWatermarks() {
-    this._videoWatermarks = undefined;
+    this._videoWatermarks.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get videoWatermarksInput() {
-    return this._videoWatermarks;
+    return this._videoWatermarks.internalValue;
   }
 
   // =========
@@ -1309,6 +1608,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
     return {
       container: cdktf.stringToTerraform(this._container),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
       video_codec_options: cdktf.hashMapper(cdktf.stringToTerraform)(this._videoCodecOptions),
@@ -1316,7 +1616,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
       audio_codec_options: elastictranscoderPresetAudioCodecOptionsToTerraform(this._audioCodecOptions.internalValue),
       thumbnails: elastictranscoderPresetThumbnailsToTerraform(this._thumbnails.internalValue),
       video: elastictranscoderPresetVideoToTerraform(this._video.internalValue),
-      video_watermarks: cdktf.listMapper(elastictranscoderPresetVideoWatermarksToTerraform)(this._videoWatermarks),
+      video_watermarks: cdktf.listMapper(elastictranscoderPresetVideoWatermarksToTerraform)(this._videoWatermarks.internalValue),
     };
   }
 }

@@ -16,6 +16,13 @@ export interface DbProxyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly engineFamily: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy#id DbProxy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}
   */
   readonly idleClientTimeout?: number;
@@ -97,6 +104,174 @@ export function dbProxyAuthToTerraform(struct?: DbProxyAuth | cdktf.IResolvable)
   }
 }
 
+export class DbProxyAuthOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DbProxyAuth | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._authScheme !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authScheme = this._authScheme;
+    }
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._iamAuth !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.iamAuth = this._iamAuth;
+    }
+    if (this._secretArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretArn = this._secretArn;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DbProxyAuth | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._authScheme = undefined;
+      this._description = undefined;
+      this._iamAuth = undefined;
+      this._secretArn = undefined;
+      this._username = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._authScheme = value.authScheme;
+      this._description = value.description;
+      this._iamAuth = value.iamAuth;
+      this._secretArn = value.secretArn;
+      this._username = value.username;
+    }
+  }
+
+  // auth_scheme - computed: false, optional: true, required: false
+  private _authScheme?: string; 
+  public get authScheme() {
+    return this.getStringAttribute('auth_scheme');
+  }
+  public set authScheme(value: string) {
+    this._authScheme = value;
+  }
+  public resetAuthScheme() {
+    this._authScheme = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authSchemeInput() {
+    return this._authScheme;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // iam_auth - computed: false, optional: true, required: false
+  private _iamAuth?: string; 
+  public get iamAuth() {
+    return this.getStringAttribute('iam_auth');
+  }
+  public set iamAuth(value: string) {
+    this._iamAuth = value;
+  }
+  public resetIamAuth() {
+    this._iamAuth = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iamAuthInput() {
+    return this._iamAuth;
+  }
+
+  // secret_arn - computed: false, optional: true, required: false
+  private _secretArn?: string; 
+  public get secretArn() {
+    return this.getStringAttribute('secret_arn');
+  }
+  public set secretArn(value: string) {
+    this._secretArn = value;
+  }
+  public resetSecretArn() {
+    this._secretArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretArnInput() {
+    return this._secretArn;
+  }
+
+  // username - computed: false, optional: true, required: false
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+}
+
+export class DbProxyAuthList extends cdktf.ComplexList {
+  public internalValue? : DbProxyAuth[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DbProxyAuthOutputReference {
+    return new DbProxyAuthOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DbProxyTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy#create DbProxy#create}
@@ -126,6 +301,7 @@ export function dbProxyTimeoutsToTerraform(struct?: DbProxyTimeoutsOutputReferen
 
 export class DbProxyTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -135,7 +311,10 @@ export class DbProxyTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DbProxyTimeouts | undefined {
+  public get internalValue(): DbProxyTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -153,15 +332,21 @@ export class DbProxyTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DbProxyTimeouts | undefined) {
+  public set internalValue(value: DbProxyTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -253,6 +438,7 @@ export class DbProxy extends cdktf.TerraformResource {
     });
     this._debugLogging = config.debugLogging;
     this._engineFamily = config.engineFamily;
+    this._id = config.id;
     this._idleClientTimeout = config.idleClientTimeout;
     this._name = config.name;
     this._requireTls = config.requireTls;
@@ -261,7 +447,7 @@ export class DbProxy extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
     this._vpcSubnetIds = config.vpcSubnetIds;
-    this._auth = config.auth;
+    this._auth.internalValue = config.auth;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -309,8 +495,19 @@ export class DbProxy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // idle_client_timeout - computed: true, optional: true, required: false
@@ -433,17 +630,16 @@ export class DbProxy extends cdktf.TerraformResource {
   }
 
   // auth - computed: false, optional: false, required: true
-  private _auth?: DbProxyAuth[] | cdktf.IResolvable; 
+  private _auth = new DbProxyAuthList(this, "auth", true);
   public get auth() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('auth')));
+    return this._auth;
   }
-  public set auth(value: DbProxyAuth[] | cdktf.IResolvable) {
-    this._auth = value;
+  public putAuth(value: DbProxyAuth[] | cdktf.IResolvable) {
+    this._auth.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get authInput() {
-    return this._auth;
+    return this._auth.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -470,6 +666,7 @@ export class DbProxy extends cdktf.TerraformResource {
     return {
       debug_logging: cdktf.booleanToTerraform(this._debugLogging),
       engine_family: cdktf.stringToTerraform(this._engineFamily),
+      id: cdktf.stringToTerraform(this._id),
       idle_client_timeout: cdktf.numberToTerraform(this._idleClientTimeout),
       name: cdktf.stringToTerraform(this._name),
       require_tls: cdktf.booleanToTerraform(this._requireTls),
@@ -478,7 +675,7 @@ export class DbProxy extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
       vpc_subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSubnetIds),
-      auth: cdktf.listMapper(dbProxyAuthToTerraform)(this._auth),
+      auth: cdktf.listMapper(dbProxyAuthToTerraform)(this._auth.internalValue),
       timeouts: dbProxyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

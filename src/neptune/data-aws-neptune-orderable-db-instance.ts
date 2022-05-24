@@ -16,6 +16,13 @@ export interface DataAwsNeptuneOrderableDbInstanceConfig extends cdktf.Terraform
   */
   readonly engineVersion?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/neptune_orderable_db_instance#id DataAwsNeptuneOrderableDbInstance#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/neptune_orderable_db_instance#instance_class DataAwsNeptuneOrderableDbInstance#instance_class}
   */
   readonly instanceClass?: string;
@@ -69,6 +76,7 @@ export class DataAwsNeptuneOrderableDbInstance extends cdktf.TerraformDataSource
     });
     this._engine = config.engine;
     this._engineVersion = config.engineVersion;
+    this._id = config.id;
     this._instanceClass = config.instanceClass;
     this._licenseModel = config.licenseModel;
     this._preferredInstanceClasses = config.preferredInstanceClasses;
@@ -117,8 +125,19 @@ export class DataAwsNeptuneOrderableDbInstance extends cdktf.TerraformDataSource
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_class - computed: true, optional: true, required: false
@@ -263,6 +282,7 @@ export class DataAwsNeptuneOrderableDbInstance extends cdktf.TerraformDataSource
     return {
       engine: cdktf.stringToTerraform(this._engine),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
+      id: cdktf.stringToTerraform(this._id),
       instance_class: cdktf.stringToTerraform(this._instanceClass),
       license_model: cdktf.stringToTerraform(this._licenseModel),
       preferred_instance_classes: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredInstanceClasses),

@@ -16,6 +16,13 @@ export interface FlowLogConfig extends cdktf.TerraformMetaArguments {
   */
   readonly iamRoleArn?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#id FlowLog#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log#log_destination FlowLog#log_destination}
   */
   readonly logDestination?: string;
@@ -218,6 +225,7 @@ export class FlowLog extends cdktf.TerraformResource {
     });
     this._eniId = config.eniId;
     this._iamRoleArn = config.iamRoleArn;
+    this._id = config.id;
     this._logDestination = config.logDestination;
     this._logDestinationType = config.logDestinationType;
     this._logFormat = config.logFormat;
@@ -273,8 +281,19 @@ export class FlowLog extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // log_destination - computed: true, optional: true, required: false
@@ -458,6 +477,7 @@ export class FlowLog extends cdktf.TerraformResource {
     return {
       eni_id: cdktf.stringToTerraform(this._eniId),
       iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
+      id: cdktf.stringToTerraform(this._id),
       log_destination: cdktf.stringToTerraform(this._logDestination),
       log_destination_type: cdktf.stringToTerraform(this._logDestinationType),
       log_format: cdktf.stringToTerraform(this._logFormat),

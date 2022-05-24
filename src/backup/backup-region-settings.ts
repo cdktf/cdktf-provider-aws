@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface BackupRegionSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_region_settings#id BackupRegionSettings#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_region_settings#resource_type_management_preference BackupRegionSettings#resource_type_management_preference}
   */
   readonly resourceTypeManagementPreference?: { [key: string]: (boolean | cdktf.IResolvable) };
@@ -51,6 +58,7 @@ export class BackupRegionSettings extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._resourceTypeManagementPreference = config.resourceTypeManagementPreference;
     this._resourceTypeOptInPreference = config.resourceTypeOptInPreference;
   }
@@ -60,8 +68,19 @@ export class BackupRegionSettings extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // resource_type_management_preference - computed: true, optional: true, required: false
@@ -99,6 +118,7 @@ export class BackupRegionSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       resource_type_management_preference: cdktf.hashMapper(cdktf.booleanToTerraform)(this._resourceTypeManagementPreference),
       resource_type_opt_in_preference: cdktf.hashMapper(cdktf.booleanToTerraform)(this._resourceTypeOptInPreference),
     };

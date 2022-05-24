@@ -20,6 +20,13 @@ export interface EfsFileSystemConfig extends cdktf.TerraformMetaArguments {
   */
   readonly encrypted?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_file_system#id EfsFileSystem#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_file_system#kms_key_id EfsFileSystem#kms_key_id}
   */
   readonly kmsKeyId?: string;
@@ -146,6 +153,108 @@ export function efsFileSystemLifecyclePolicyToTerraform(struct?: EfsFileSystemLi
   }
 }
 
+export class EfsFileSystemLifecyclePolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EfsFileSystemLifecyclePolicy | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._transitionToIa !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transitionToIa = this._transitionToIa;
+    }
+    if (this._transitionToPrimaryStorageClass !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transitionToPrimaryStorageClass = this._transitionToPrimaryStorageClass;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EfsFileSystemLifecyclePolicy | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._transitionToIa = undefined;
+      this._transitionToPrimaryStorageClass = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._transitionToIa = value.transitionToIa;
+      this._transitionToPrimaryStorageClass = value.transitionToPrimaryStorageClass;
+    }
+  }
+
+  // transition_to_ia - computed: false, optional: true, required: false
+  private _transitionToIa?: string; 
+  public get transitionToIa() {
+    return this.getStringAttribute('transition_to_ia');
+  }
+  public set transitionToIa(value: string) {
+    this._transitionToIa = value;
+  }
+  public resetTransitionToIa() {
+    this._transitionToIa = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitionToIaInput() {
+    return this._transitionToIa;
+  }
+
+  // transition_to_primary_storage_class - computed: false, optional: true, required: false
+  private _transitionToPrimaryStorageClass?: string; 
+  public get transitionToPrimaryStorageClass() {
+    return this.getStringAttribute('transition_to_primary_storage_class');
+  }
+  public set transitionToPrimaryStorageClass(value: string) {
+    this._transitionToPrimaryStorageClass = value;
+  }
+  public resetTransitionToPrimaryStorageClass() {
+    this._transitionToPrimaryStorageClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitionToPrimaryStorageClassInput() {
+    return this._transitionToPrimaryStorageClass;
+  }
+}
+
+export class EfsFileSystemLifecyclePolicyList extends cdktf.ComplexList {
+  public internalValue? : EfsFileSystemLifecyclePolicy[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EfsFileSystemLifecyclePolicyOutputReference {
+    return new EfsFileSystemLifecyclePolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/efs_file_system aws_efs_file_system}
@@ -184,13 +293,14 @@ export class EfsFileSystem extends cdktf.TerraformResource {
     this._availabilityZoneName = config.availabilityZoneName;
     this._creationToken = config.creationToken;
     this._encrypted = config.encrypted;
+    this._id = config.id;
     this._kmsKeyId = config.kmsKeyId;
     this._performanceMode = config.performanceMode;
     this._provisionedThroughputInMibps = config.provisionedThroughputInMibps;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._throughputMode = config.throughputMode;
-    this._lifecyclePolicy = config.lifecyclePolicy;
+    this._lifecyclePolicy.internalValue = config.lifecyclePolicy;
   }
 
   // ==========
@@ -261,8 +371,19 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_key_id - computed: true, optional: true, required: false
@@ -378,20 +499,19 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   }
 
   // lifecycle_policy - computed: false, optional: true, required: false
-  private _lifecyclePolicy?: EfsFileSystemLifecyclePolicy[] | cdktf.IResolvable; 
+  private _lifecyclePolicy = new EfsFileSystemLifecyclePolicyList(this, "lifecycle_policy", false);
   public get lifecyclePolicy() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('lifecycle_policy');
+    return this._lifecyclePolicy;
   }
-  public set lifecyclePolicy(value: EfsFileSystemLifecyclePolicy[] | cdktf.IResolvable) {
-    this._lifecyclePolicy = value;
+  public putLifecyclePolicy(value: EfsFileSystemLifecyclePolicy[] | cdktf.IResolvable) {
+    this._lifecyclePolicy.internalValue = value;
   }
   public resetLifecyclePolicy() {
-    this._lifecyclePolicy = undefined;
+    this._lifecyclePolicy.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get lifecyclePolicyInput() {
-    return this._lifecyclePolicy;
+    return this._lifecyclePolicy.internalValue;
   }
 
   // =========
@@ -403,13 +523,14 @@ export class EfsFileSystem extends cdktf.TerraformResource {
       availability_zone_name: cdktf.stringToTerraform(this._availabilityZoneName),
       creation_token: cdktf.stringToTerraform(this._creationToken),
       encrypted: cdktf.booleanToTerraform(this._encrypted),
+      id: cdktf.stringToTerraform(this._id),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       performance_mode: cdktf.stringToTerraform(this._performanceMode),
       provisioned_throughput_in_mibps: cdktf.numberToTerraform(this._provisionedThroughputInMibps),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       throughput_mode: cdktf.stringToTerraform(this._throughputMode),
-      lifecycle_policy: cdktf.listMapper(efsFileSystemLifecyclePolicyToTerraform)(this._lifecyclePolicy),
+      lifecycle_policy: cdktf.listMapper(efsFileSystemLifecyclePolicyToTerraform)(this._lifecyclePolicy.internalValue),
     };
   }
 }

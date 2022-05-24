@@ -12,6 +12,13 @@ export interface SagemakerEndpointConfig extends cdktf.TerraformMetaArguments {
   */
   readonly endpointConfigName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#id SagemakerEndpoint#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint#name SagemakerEndpoint#name}
   */
   readonly name?: string;
@@ -47,6 +54,83 @@ export function sagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms
   }
 }
 
+export class SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alarmName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alarmName = this._alarmName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._alarmName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._alarmName = value.alarmName;
+    }
+  }
+
+  // alarm_name - computed: false, optional: false, required: true
+  private _alarmName?: string; 
+  public get alarmName() {
+    return this.getStringAttribute('alarm_name');
+  }
+  public set alarmName(value: string) {
+    this._alarmName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alarmNameInput() {
+    return this._alarmName;
+  }
+}
+
+export class SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList extends cdktf.ComplexList {
+  public internalValue? : SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference {
+    return new SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SagemakerEndpointDeploymentConfigAutoRollbackConfiguration {
   /**
   * alarms block
@@ -80,9 +164,9 @@ export class SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputRef
   public get internalValue(): SagemakerEndpointDeploymentConfigAutoRollbackConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._alarms !== undefined) {
+    if (this._alarms?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.alarms = this._alarms;
+      internalValueResult.alarms = this._alarms?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -90,29 +174,28 @@ export class SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputRef
   public set internalValue(value: SagemakerEndpointDeploymentConfigAutoRollbackConfiguration | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._alarms = undefined;
+      this._alarms.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._alarms = value.alarms;
+      this._alarms.internalValue = value.alarms;
     }
   }
 
   // alarms - computed: false, optional: true, required: false
-  private _alarms?: SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms[] | cdktf.IResolvable; 
+  private _alarms = new SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList(this, "alarms", true);
   public get alarms() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('alarms')));
+    return this._alarms;
   }
-  public set alarms(value: SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms[] | cdktf.IResolvable) {
-    this._alarms = value;
+  public putAlarms(value: SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms[] | cdktf.IResolvable) {
+    this._alarms.internalValue = value;
   }
   public resetAlarms() {
-    this._alarms = undefined;
+    this._alarms.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get alarmsInput() {
-    return this._alarms;
+    return this._alarms.internalValue;
   }
 }
 export interface SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize {
@@ -678,6 +761,7 @@ export class SagemakerEndpoint extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._endpointConfigName = config.endpointConfigName;
+    this._id = config.id;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -707,8 +791,19 @@ export class SagemakerEndpoint extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: true, required: false
@@ -782,6 +877,7 @@ export class SagemakerEndpoint extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       endpoint_config_name: cdktf.stringToTerraform(this._endpointConfigName),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

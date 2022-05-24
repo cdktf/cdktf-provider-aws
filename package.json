@@ -43,8 +43,8 @@
   "devDependencies": {
     "@cdktf/provider-project": "^0.2.8",
     "@types/node": "^14",
-    "cdktf": "^0.10.3",
-    "cdktf-cli": "^0.10.3",
+    "cdktf": "^0.11.0",
+    "cdktf-cli": "^0.11.0",
     "constructs": "^10.0.0",
     "dot-prop": "^5.2.0",
     "jsii": "^1.53.0",
@@ -52,12 +52,12 @@
     "jsii-docgen": "^1.8.110",
     "jsii-pacmak": "^1.59.0",
     "npm-check-updates": "^12",
-    "projen": "^0.56.28",
+    "projen": "^0.56.29",
     "standard-version": "^9",
     "typescript": "^3.9.10"
   },
   "peerDependencies": {
-    "cdktf": "^0.10.3",
+    "cdktf": "^0.11.0",
     "constructs": "^10.0.0"
   },
   "keywords": [

@@ -48,6 +48,13 @@ export interface CloudwatchMetricAlarmConfig extends cdktf.TerraformMetaArgument
   */
   readonly extendedStatistic?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#id CloudwatchMetricAlarm#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#insufficient_data_actions CloudwatchMetricAlarm#insufficient_data_actions}
   */
   readonly insufficientDataActions?: string[];
@@ -304,6 +311,9 @@ export interface CloudwatchMetricAlarmMetricQuery {
   readonly expression?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#id CloudwatchMetricAlarm#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -337,6 +347,193 @@ export function cloudwatchMetricAlarmMetricQueryToTerraform(struct?: CloudwatchM
   }
 }
 
+export class CloudwatchMetricAlarmMetricQueryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudwatchMetricAlarmMetricQuery | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accountId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accountId = this._accountId;
+    }
+    if (this._expression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._label !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.label = this._label;
+    }
+    if (this._returnData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.returnData = this._returnData;
+    }
+    if (this._metric?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metric = this._metric?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudwatchMetricAlarmMetricQuery | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._accountId = undefined;
+      this._expression = undefined;
+      this._id = undefined;
+      this._label = undefined;
+      this._returnData = undefined;
+      this._metric.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._accountId = value.accountId;
+      this._expression = value.expression;
+      this._id = value.id;
+      this._label = value.label;
+      this._returnData = value.returnData;
+      this._metric.internalValue = value.metric;
+    }
+  }
+
+  // account_id - computed: false, optional: true, required: false
+  private _accountId?: string; 
+  public get accountId() {
+    return this.getStringAttribute('account_id');
+  }
+  public set accountId(value: string) {
+    this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId;
+  }
+
+  // expression - computed: false, optional: true, required: false
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  public resetExpression() {
+    this._expression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // label - computed: false, optional: true, required: false
+  private _label?: string; 
+  public get label() {
+    return this.getStringAttribute('label');
+  }
+  public set label(value: string) {
+    this._label = value;
+  }
+  public resetLabel() {
+    this._label = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelInput() {
+    return this._label;
+  }
+
+  // return_data - computed: false, optional: true, required: false
+  private _returnData?: boolean | cdktf.IResolvable; 
+  public get returnData() {
+    return this.getBooleanAttribute('return_data');
+  }
+  public set returnData(value: boolean | cdktf.IResolvable) {
+    this._returnData = value;
+  }
+  public resetReturnData() {
+    this._returnData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get returnDataInput() {
+    return this._returnData;
+  }
+
+  // metric - computed: false, optional: true, required: false
+  private _metric = new CloudwatchMetricAlarmMetricQueryMetricOutputReference(this, "metric");
+  public get metric() {
+    return this._metric;
+  }
+  public putMetric(value: CloudwatchMetricAlarmMetricQueryMetric) {
+    this._metric.internalValue = value;
+  }
+  public resetMetric() {
+    this._metric.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricInput() {
+    return this._metric.internalValue;
+  }
+}
+
+export class CloudwatchMetricAlarmMetricQueryList extends cdktf.ComplexList {
+  public internalValue? : CloudwatchMetricAlarmMetricQuery[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudwatchMetricAlarmMetricQueryOutputReference {
+    return new CloudwatchMetricAlarmMetricQueryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm}
@@ -382,6 +579,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
     this._evaluateLowSampleCountPercentiles = config.evaluateLowSampleCountPercentiles;
     this._evaluationPeriods = config.evaluationPeriods;
     this._extendedStatistic = config.extendedStatistic;
+    this._id = config.id;
     this._insufficientDataActions = config.insufficientDataActions;
     this._metricName = config.metricName;
     this._namespace = config.namespace;
@@ -394,7 +592,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
     this._thresholdMetricId = config.thresholdMetricId;
     this._treatMissingData = config.treatMissingData;
     this._unit = config.unit;
-    this._metricQuery = config.metricQuery;
+    this._metricQuery.internalValue = config.metricQuery;
   }
 
   // ==========
@@ -558,8 +756,19 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // insufficient_data_actions - computed: false, optional: true, required: false
@@ -755,20 +964,19 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   }
 
   // metric_query - computed: false, optional: true, required: false
-  private _metricQuery?: CloudwatchMetricAlarmMetricQuery[] | cdktf.IResolvable; 
+  private _metricQuery = new CloudwatchMetricAlarmMetricQueryList(this, "metric_query", true);
   public get metricQuery() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('metric_query')));
+    return this._metricQuery;
   }
-  public set metricQuery(value: CloudwatchMetricAlarmMetricQuery[] | cdktf.IResolvable) {
-    this._metricQuery = value;
+  public putMetricQuery(value: CloudwatchMetricAlarmMetricQuery[] | cdktf.IResolvable) {
+    this._metricQuery.internalValue = value;
   }
   public resetMetricQuery() {
-    this._metricQuery = undefined;
+    this._metricQuery.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get metricQueryInput() {
-    return this._metricQuery;
+    return this._metricQuery.internalValue;
   }
 
   // =========
@@ -787,6 +995,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
       evaluate_low_sample_count_percentiles: cdktf.stringToTerraform(this._evaluateLowSampleCountPercentiles),
       evaluation_periods: cdktf.numberToTerraform(this._evaluationPeriods),
       extended_statistic: cdktf.stringToTerraform(this._extendedStatistic),
+      id: cdktf.stringToTerraform(this._id),
       insufficient_data_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._insufficientDataActions),
       metric_name: cdktf.stringToTerraform(this._metricName),
       namespace: cdktf.stringToTerraform(this._namespace),
@@ -799,7 +1008,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
       threshold_metric_id: cdktf.stringToTerraform(this._thresholdMetricId),
       treat_missing_data: cdktf.stringToTerraform(this._treatMissingData),
       unit: cdktf.stringToTerraform(this._unit),
-      metric_query: cdktf.listMapper(cloudwatchMetricAlarmMetricQueryToTerraform)(this._metricQuery),
+      metric_query: cdktf.listMapper(cloudwatchMetricAlarmMetricQueryToTerraform)(this._metricQuery.internalValue),
     };
   }
 }

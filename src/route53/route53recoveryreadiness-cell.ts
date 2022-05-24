@@ -16,6 +16,13 @@ export interface Route53RecoveryreadinessCellConfig extends cdktf.TerraformMetaA
   */
   readonly cells?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53recoveryreadiness_cell#id Route53RecoveryreadinessCell#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53recoveryreadiness_cell#tags Route53RecoveryreadinessCell#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -49,6 +56,7 @@ export function route53RecoveryreadinessCellTimeoutsToTerraform(struct?: Route53
 
 export class Route53RecoveryreadinessCellTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -58,7 +66,10 @@ export class Route53RecoveryreadinessCellTimeoutsOutputReference extends cdktf.C
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Route53RecoveryreadinessCellTimeouts | undefined {
+  public get internalValue(): Route53RecoveryreadinessCellTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete !== undefined) {
@@ -68,13 +79,19 @@ export class Route53RecoveryreadinessCellTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53RecoveryreadinessCellTimeouts | undefined) {
+  public set internalValue(value: Route53RecoveryreadinessCellTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._delete = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._delete = value.delete;
     }
   }
@@ -132,6 +149,7 @@ export class Route53RecoveryreadinessCell extends cdktf.TerraformResource {
     });
     this._cellName = config.cellName;
     this._cells = config.cells;
+    this._id = config.id;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._timeouts.internalValue = config.timeouts;
@@ -176,8 +194,19 @@ export class Route53RecoveryreadinessCell extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // parent_readiness_scopes - computed: true, optional: false, required: false
@@ -241,6 +270,7 @@ export class Route53RecoveryreadinessCell extends cdktf.TerraformResource {
     return {
       cell_name: cdktf.stringToTerraform(this._cellName),
       cells: cdktf.listMapper(cdktf.stringToTerraform)(this._cells),
+      id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: route53RecoveryreadinessCellTimeoutsToTerraform(this._timeouts.internalValue),

@@ -12,6 +12,13 @@ export interface ApprunnerServiceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly autoScalingConfigurationArn?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#id ApprunnerService#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_service#service_name ApprunnerService#service_name}
   */
   readonly serviceName: string;
@@ -1572,6 +1579,7 @@ export class ApprunnerService extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._autoScalingConfigurationArn = config.autoScalingConfigurationArn;
+    this._id = config.id;
     this._serviceName = config.serviceName;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -1608,8 +1616,19 @@ export class ApprunnerService extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // service_id - computed: true, optional: false, required: false
@@ -1756,6 +1775,7 @@ export class ApprunnerService extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       auto_scaling_configuration_arn: cdktf.stringToTerraform(this._autoScalingConfigurationArn),
+      id: cdktf.stringToTerraform(this._id),
       service_name: cdktf.stringToTerraform(this._serviceName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

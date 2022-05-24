@@ -12,6 +12,13 @@ export interface MskScramSecretAssociationConfig extends cdktf.TerraformMetaArgu
   */
   readonly clusterArn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_scram_secret_association#id MskScramSecretAssociation#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_scram_secret_association#secret_arn_list MskScramSecretAssociation#secret_arn_list}
   */
   readonly secretArnList: string[];
@@ -52,6 +59,7 @@ export class MskScramSecretAssociation extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._clusterArn = config.clusterArn;
+    this._id = config.id;
     this._secretArnList = config.secretArnList;
   }
 
@@ -73,8 +81,19 @@ export class MskScramSecretAssociation extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // secret_arn_list - computed: false, optional: false, required: true
@@ -97,6 +116,7 @@ export class MskScramSecretAssociation extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_arn: cdktf.stringToTerraform(this._clusterArn),
+      id: cdktf.stringToTerraform(this._id),
       secret_arn_list: cdktf.listMapper(cdktf.stringToTerraform)(this._secretArnList),
     };
   }

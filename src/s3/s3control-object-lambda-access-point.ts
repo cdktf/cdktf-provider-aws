@@ -12,6 +12,13 @@ export interface S3ControlObjectLambdaAccessPointConfig extends cdktf.TerraformM
   */
   readonly accountId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#id S3ControlObjectLambdaAccessPoint#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#name S3ControlObjectLambdaAccessPoint#name}
   */
   readonly name: string;
@@ -199,6 +206,102 @@ export function s3ControlObjectLambdaAccessPointConfigurationTransformationConfi
   }
 }
 
+export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._actions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.actions = this._actions;
+    }
+    if (this._contentTransformation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contentTransformation = this._contentTransformation?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._actions = undefined;
+      this._contentTransformation.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._actions = value.actions;
+      this._contentTransformation.internalValue = value.contentTransformation;
+    }
+  }
+
+  // actions - computed: false, optional: false, required: true
+  private _actions?: string[]; 
+  public get actions() {
+    return cdktf.Fn.tolist(this.getListAttribute('actions'));
+  }
+  public set actions(value: string[]) {
+    this._actions = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionsInput() {
+    return this._actions;
+  }
+
+  // content_transformation - computed: false, optional: false, required: true
+  private _contentTransformation = new S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference(this, "content_transformation");
+  public get contentTransformation() {
+    return this._contentTransformation;
+  }
+  public putContentTransformation(value: S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformation) {
+    this._contentTransformation.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentTransformationInput() {
+    return this._contentTransformation.internalValue;
+  }
+}
+
+export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList extends cdktf.ComplexList {
+  public internalValue? : S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference {
+    return new S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface S3ControlObjectLambdaAccessPointConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point#allowed_features S3ControlObjectLambdaAccessPoint#allowed_features}
@@ -259,9 +362,9 @@ export class S3ControlObjectLambdaAccessPointConfigurationOutputReference extend
       hasAnyValues = true;
       internalValueResult.supportingAccessPoint = this._supportingAccessPoint;
     }
-    if (this._transformationConfiguration !== undefined) {
+    if (this._transformationConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.transformationConfiguration = this._transformationConfiguration;
+      internalValueResult.transformationConfiguration = this._transformationConfiguration?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -272,14 +375,14 @@ export class S3ControlObjectLambdaAccessPointConfigurationOutputReference extend
       this._allowedFeatures = undefined;
       this._cloudWatchMetricsEnabled = undefined;
       this._supportingAccessPoint = undefined;
-      this._transformationConfiguration = undefined;
+      this._transformationConfiguration.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._allowedFeatures = value.allowedFeatures;
       this._cloudWatchMetricsEnabled = value.cloudWatchMetricsEnabled;
       this._supportingAccessPoint = value.supportingAccessPoint;
-      this._transformationConfiguration = value.transformationConfiguration;
+      this._transformationConfiguration.internalValue = value.transformationConfiguration;
     }
   }
 
@@ -329,17 +432,16 @@ export class S3ControlObjectLambdaAccessPointConfigurationOutputReference extend
   }
 
   // transformation_configuration - computed: false, optional: false, required: true
-  private _transformationConfiguration?: S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration[] | cdktf.IResolvable; 
+  private _transformationConfiguration = new S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList(this, "transformation_configuration", true);
   public get transformationConfiguration() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('transformation_configuration')));
+    return this._transformationConfiguration;
   }
-  public set transformationConfiguration(value: S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration[] | cdktf.IResolvable) {
-    this._transformationConfiguration = value;
+  public putTransformationConfiguration(value: S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration[] | cdktf.IResolvable) {
+    this._transformationConfiguration.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get transformationConfigurationInput() {
-    return this._transformationConfiguration;
+    return this._transformationConfiguration.internalValue;
   }
 }
 
@@ -378,6 +480,7 @@ export class S3ControlObjectLambdaAccessPoint extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._accountId = config.accountId;
+    this._id = config.id;
     this._name = config.name;
     this._configuration.internalValue = config.configuration;
   }
@@ -408,8 +511,19 @@ export class S3ControlObjectLambdaAccessPoint extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -445,6 +559,7 @@ export class S3ControlObjectLambdaAccessPoint extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       configuration: s3ControlObjectLambdaAccessPointConfigurationToTerraform(this._configuration.internalValue),
     };

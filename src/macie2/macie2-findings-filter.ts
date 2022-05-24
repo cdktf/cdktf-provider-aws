@@ -16,6 +16,13 @@ export interface Macie2FindingsFilterConfig extends cdktf.TerraformMetaArguments
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_findings_filter#id Macie2FindingsFilter#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_findings_filter#name Macie2FindingsFilter#name}
   */
   readonly name?: string;
@@ -94,6 +101,237 @@ export function macie2FindingsFilterFindingCriteriaCriterionToTerraform(struct?:
   }
 }
 
+export class Macie2FindingsFilterFindingCriteriaCriterionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Macie2FindingsFilterFindingCriteriaCriterion | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._eq !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eq = this._eq;
+    }
+    if (this._eqExactMatch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eqExactMatch = this._eqExactMatch;
+    }
+    if (this._field !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.field = this._field;
+    }
+    if (this._gt !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gt = this._gt;
+    }
+    if (this._gte !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gte = this._gte;
+    }
+    if (this._lt !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lt = this._lt;
+    }
+    if (this._lte !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lte = this._lte;
+    }
+    if (this._neq !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.neq = this._neq;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Macie2FindingsFilterFindingCriteriaCriterion | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._eq = undefined;
+      this._eqExactMatch = undefined;
+      this._field = undefined;
+      this._gt = undefined;
+      this._gte = undefined;
+      this._lt = undefined;
+      this._lte = undefined;
+      this._neq = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._eq = value.eq;
+      this._eqExactMatch = value.eqExactMatch;
+      this._field = value.field;
+      this._gt = value.gt;
+      this._gte = value.gte;
+      this._lt = value.lt;
+      this._lte = value.lte;
+      this._neq = value.neq;
+    }
+  }
+
+  // eq - computed: false, optional: true, required: false
+  private _eq?: string[]; 
+  public get eq() {
+    return cdktf.Fn.tolist(this.getListAttribute('eq'));
+  }
+  public set eq(value: string[]) {
+    this._eq = value;
+  }
+  public resetEq() {
+    this._eq = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eqInput() {
+    return this._eq;
+  }
+
+  // eq_exact_match - computed: false, optional: true, required: false
+  private _eqExactMatch?: string[]; 
+  public get eqExactMatch() {
+    return cdktf.Fn.tolist(this.getListAttribute('eq_exact_match'));
+  }
+  public set eqExactMatch(value: string[]) {
+    this._eqExactMatch = value;
+  }
+  public resetEqExactMatch() {
+    this._eqExactMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eqExactMatchInput() {
+    return this._eqExactMatch;
+  }
+
+  // field - computed: false, optional: false, required: true
+  private _field?: string; 
+  public get field() {
+    return this.getStringAttribute('field');
+  }
+  public set field(value: string) {
+    this._field = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldInput() {
+    return this._field;
+  }
+
+  // gt - computed: false, optional: true, required: false
+  private _gt?: string; 
+  public get gt() {
+    return this.getStringAttribute('gt');
+  }
+  public set gt(value: string) {
+    this._gt = value;
+  }
+  public resetGt() {
+    this._gt = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gtInput() {
+    return this._gt;
+  }
+
+  // gte - computed: false, optional: true, required: false
+  private _gte?: string; 
+  public get gte() {
+    return this.getStringAttribute('gte');
+  }
+  public set gte(value: string) {
+    this._gte = value;
+  }
+  public resetGte() {
+    this._gte = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gteInput() {
+    return this._gte;
+  }
+
+  // lt - computed: false, optional: true, required: false
+  private _lt?: string; 
+  public get lt() {
+    return this.getStringAttribute('lt');
+  }
+  public set lt(value: string) {
+    this._lt = value;
+  }
+  public resetLt() {
+    this._lt = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ltInput() {
+    return this._lt;
+  }
+
+  // lte - computed: false, optional: true, required: false
+  private _lte?: string; 
+  public get lte() {
+    return this.getStringAttribute('lte');
+  }
+  public set lte(value: string) {
+    this._lte = value;
+  }
+  public resetLte() {
+    this._lte = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lteInput() {
+    return this._lte;
+  }
+
+  // neq - computed: false, optional: true, required: false
+  private _neq?: string[]; 
+  public get neq() {
+    return cdktf.Fn.tolist(this.getListAttribute('neq'));
+  }
+  public set neq(value: string[]) {
+    this._neq = value;
+  }
+  public resetNeq() {
+    this._neq = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get neqInput() {
+    return this._neq;
+  }
+}
+
+export class Macie2FindingsFilterFindingCriteriaCriterionList extends cdktf.ComplexList {
+  public internalValue? : Macie2FindingsFilterFindingCriteriaCriterion[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Macie2FindingsFilterFindingCriteriaCriterionOutputReference {
+    return new Macie2FindingsFilterFindingCriteriaCriterionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Macie2FindingsFilterFindingCriteria {
   /**
   * criterion block
@@ -127,9 +365,9 @@ export class Macie2FindingsFilterFindingCriteriaOutputReference extends cdktf.Co
   public get internalValue(): Macie2FindingsFilterFindingCriteria | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._criterion !== undefined) {
+    if (this._criterion?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.criterion = this._criterion;
+      internalValueResult.criterion = this._criterion?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -137,29 +375,28 @@ export class Macie2FindingsFilterFindingCriteriaOutputReference extends cdktf.Co
   public set internalValue(value: Macie2FindingsFilterFindingCriteria | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._criterion = undefined;
+      this._criterion.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._criterion = value.criterion;
+      this._criterion.internalValue = value.criterion;
     }
   }
 
   // criterion - computed: false, optional: true, required: false
-  private _criterion?: Macie2FindingsFilterFindingCriteriaCriterion[] | cdktf.IResolvable; 
+  private _criterion = new Macie2FindingsFilterFindingCriteriaCriterionList(this, "criterion", true);
   public get criterion() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('criterion')));
+    return this._criterion;
   }
-  public set criterion(value: Macie2FindingsFilterFindingCriteriaCriterion[] | cdktf.IResolvable) {
-    this._criterion = value;
+  public putCriterion(value: Macie2FindingsFilterFindingCriteriaCriterion[] | cdktf.IResolvable) {
+    this._criterion.internalValue = value;
   }
   public resetCriterion() {
-    this._criterion = undefined;
+    this._criterion.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get criterionInput() {
-    return this._criterion;
+    return this._criterion.internalValue;
   }
 }
 
@@ -199,6 +436,7 @@ export class Macie2FindingsFilter extends cdktf.TerraformResource {
     });
     this._action = config.action;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._namePrefix = config.namePrefix;
     this._position = config.position;
@@ -246,8 +484,19 @@ export class Macie2FindingsFilter extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: true, required: false
@@ -351,6 +600,7 @@ export class Macie2FindingsFilter extends cdktf.TerraformResource {
     return {
       action: cdktf.stringToTerraform(this._action),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       position: cdktf.numberToTerraform(this._position),

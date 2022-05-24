@@ -16,6 +16,13 @@ export interface ServicecatalogConstraintConfig extends cdktf.TerraformMetaArgum
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_constraint#id ServicecatalogConstraint#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_constraint#parameters ServicecatalogConstraint#parameters}
   */
   readonly parameters: string;
@@ -72,6 +79,7 @@ export function servicecatalogConstraintTimeoutsToTerraform(struct?: Servicecata
 
 export class ServicecatalogConstraintTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -81,7 +89,10 @@ export class ServicecatalogConstraintTimeoutsOutputReference extends cdktf.Compl
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): ServicecatalogConstraintTimeouts | undefined {
+  public get internalValue(): ServicecatalogConstraintTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -103,16 +114,22 @@ export class ServicecatalogConstraintTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicecatalogConstraintTimeouts | undefined) {
+  public set internalValue(value: ServicecatalogConstraintTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
@@ -221,6 +238,7 @@ export class ServicecatalogConstraint extends cdktf.TerraformResource {
     });
     this._acceptLanguage = config.acceptLanguage;
     this._description = config.description;
+    this._id = config.id;
     this._parameters = config.parameters;
     this._portfolioId = config.portfolioId;
     this._productId = config.productId;
@@ -265,8 +283,19 @@ export class ServicecatalogConstraint extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // owner - computed: true, optional: false, required: false
@@ -355,6 +384,7 @@ export class ServicecatalogConstraint extends cdktf.TerraformResource {
     return {
       accept_language: cdktf.stringToTerraform(this._acceptLanguage),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       parameters: cdktf.stringToTerraform(this._parameters),
       portfolio_id: cdktf.stringToTerraform(this._portfolioId),
       product_id: cdktf.stringToTerraform(this._productId),

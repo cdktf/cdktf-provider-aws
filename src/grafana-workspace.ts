@@ -24,6 +24,13 @@ export interface GrafanaWorkspaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#id GrafanaWorkspace#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#name GrafanaWorkspace#name}
   */
   readonly name?: string;
@@ -90,6 +97,7 @@ export function grafanaWorkspaceTimeoutsToTerraform(struct?: GrafanaWorkspaceTim
 
 export class GrafanaWorkspaceTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -99,7 +107,10 @@ export class GrafanaWorkspaceTimeoutsOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GrafanaWorkspaceTimeouts | undefined {
+  public get internalValue(): GrafanaWorkspaceTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -113,14 +124,20 @@ export class GrafanaWorkspaceTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GrafanaWorkspaceTimeouts | undefined) {
+  public set internalValue(value: GrafanaWorkspaceTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._update = value.update;
     }
@@ -197,6 +214,7 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
     this._authenticationProviders = config.authenticationProviders;
     this._dataSources = config.dataSources;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._notificationDestinations = config.notificationDestinations;
     this._organizationRoleName = config.organizationRoleName;
@@ -287,8 +305,19 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: true, required: false
@@ -463,6 +492,7 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
       authentication_providers: cdktf.listMapper(cdktf.stringToTerraform)(this._authenticationProviders),
       data_sources: cdktf.listMapper(cdktf.stringToTerraform)(this._dataSources),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       notification_destinations: cdktf.listMapper(cdktf.stringToTerraform)(this._notificationDestinations),
       organization_role_name: cdktf.stringToTerraform(this._organizationRoleName),

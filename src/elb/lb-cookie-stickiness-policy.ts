@@ -12,6 +12,13 @@ export interface LbCookieStickinessPolicyConfig extends cdktf.TerraformMetaArgum
   */
   readonly cookieExpirationPeriod?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_cookie_stickiness_policy#id LbCookieStickinessPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_cookie_stickiness_policy#lb_port LbCookieStickinessPolicy#lb_port}
   */
   readonly lbPort: number;
@@ -60,6 +67,7 @@ export class LbCookieStickinessPolicy extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._cookieExpirationPeriod = config.cookieExpirationPeriod;
+    this._id = config.id;
     this._lbPort = config.lbPort;
     this._loadBalancer = config.loadBalancer;
     this._name = config.name;
@@ -86,8 +94,19 @@ export class LbCookieStickinessPolicy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // lb_port - computed: false, optional: false, required: true
@@ -136,6 +155,7 @@ export class LbCookieStickinessPolicy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cookie_expiration_period: cdktf.numberToTerraform(this._cookieExpirationPeriod),
+      id: cdktf.stringToTerraform(this._id),
       lb_port: cdktf.numberToTerraform(this._lbPort),
       load_balancer: cdktf.stringToTerraform(this._loadBalancer),
       name: cdktf.stringToTerraform(this._name),

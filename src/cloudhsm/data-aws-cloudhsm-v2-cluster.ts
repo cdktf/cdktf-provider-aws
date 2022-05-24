@@ -15,6 +15,13 @@ export interface DataAwsCloudhsmV2ClusterConfig extends cdktf.TerraformMetaArgum
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudhsm_v2_cluster#cluster_state DataAwsCloudhsmV2Cluster#cluster_state}
   */
   readonly clusterState?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudhsm_v2_cluster#id DataAwsCloudhsmV2Cluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
 }
 export interface DataAwsCloudhsmV2ClusterClusterCertificates {
 }
@@ -137,6 +144,7 @@ export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
     });
     this._clusterId = config.clusterId;
     this._clusterState = config.clusterState;
+    this._id = config.id;
   }
 
   // ==========
@@ -179,8 +187,19 @@ export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // security_group_id - computed: true, optional: false, required: false
@@ -206,6 +225,7 @@ export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       cluster_state: cdktf.stringToTerraform(this._clusterState),
+      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

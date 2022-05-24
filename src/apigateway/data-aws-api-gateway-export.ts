@@ -16,6 +16,13 @@ export interface DataAwsApiGatewayExportConfig extends cdktf.TerraformMetaArgume
   */
   readonly exportType: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_export#id DataAwsApiGatewayExport#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_export#parameters DataAwsApiGatewayExport#parameters}
   */
   readonly parameters?: { [key: string]: string };
@@ -65,6 +72,7 @@ export class DataAwsApiGatewayExport extends cdktf.TerraformDataSource {
     });
     this._accepts = config.accepts;
     this._exportType = config.exportType;
+    this._id = config.id;
     this._parameters = config.parameters;
     this._restApiId = config.restApiId;
     this._stageName = config.stageName;
@@ -119,8 +127,19 @@ export class DataAwsApiGatewayExport extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // parameters - computed: false, optional: true, required: false
@@ -173,6 +192,7 @@ export class DataAwsApiGatewayExport extends cdktf.TerraformDataSource {
     return {
       accepts: cdktf.stringToTerraform(this._accepts),
       export_type: cdktf.stringToTerraform(this._exportType),
+      id: cdktf.stringToTerraform(this._id),
       parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
       rest_api_id: cdktf.stringToTerraform(this._restApiId),
       stage_name: cdktf.stringToTerraform(this._stageName),

@@ -12,6 +12,13 @@ export interface DevicefarmDevicePoolConfig extends cdktf.TerraformMetaArguments
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_device_pool#id DevicefarmDevicePool#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_device_pool#max_devices DevicefarmDevicePool#max_devices}
   */
   readonly maxDevices?: number;
@@ -65,6 +72,130 @@ export function devicefarmDevicePoolRuleToTerraform(struct?: DevicefarmDevicePoo
   }
 }
 
+export class DevicefarmDevicePoolRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DevicefarmDevicePoolRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attribute !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attribute = this._attribute;
+    }
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DevicefarmDevicePoolRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._attribute = undefined;
+      this._operator = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._attribute = value.attribute;
+      this._operator = value.operator;
+      this._value = value.value;
+    }
+  }
+
+  // attribute - computed: false, optional: true, required: false
+  private _attribute?: string; 
+  public get attribute() {
+    return this.getStringAttribute('attribute');
+  }
+  public set attribute(value: string) {
+    this._attribute = value;
+  }
+  public resetAttribute() {
+    this._attribute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeInput() {
+    return this._attribute;
+  }
+
+  // operator - computed: false, optional: true, required: false
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  public resetOperator() {
+    this._operator = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class DevicefarmDevicePoolRuleList extends cdktf.ComplexList {
+  public internalValue? : DevicefarmDevicePoolRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DevicefarmDevicePoolRuleOutputReference {
+    return new DevicefarmDevicePoolRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_device_pool aws_devicefarm_device_pool}
@@ -101,12 +232,13 @@ export class DevicefarmDevicePool extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._maxDevices = config.maxDevices;
     this._name = config.name;
     this._projectArn = config.projectArn;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._rule = config.rule;
+    this._rule.internalValue = config.rule;
   }
 
   // ==========
@@ -135,8 +267,19 @@ export class DevicefarmDevicePool extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // max_devices - computed: false, optional: true, required: false
@@ -219,17 +362,16 @@ export class DevicefarmDevicePool extends cdktf.TerraformResource {
   }
 
   // rule - computed: false, optional: false, required: true
-  private _rule?: DevicefarmDevicePoolRule[] | cdktf.IResolvable; 
+  private _rule = new DevicefarmDevicePoolRuleList(this, "rule", true);
   public get rule() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('rule')));
+    return this._rule;
   }
-  public set rule(value: DevicefarmDevicePoolRule[] | cdktf.IResolvable) {
-    this._rule = value;
+  public putRule(value: DevicefarmDevicePoolRule[] | cdktf.IResolvable) {
+    this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get ruleInput() {
-    return this._rule;
+    return this._rule.internalValue;
   }
 
   // =========
@@ -239,12 +381,13 @@ export class DevicefarmDevicePool extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       max_devices: cdktf.numberToTerraform(this._maxDevices),
       name: cdktf.stringToTerraform(this._name),
       project_arn: cdktf.stringToTerraform(this._projectArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      rule: cdktf.listMapper(devicefarmDevicePoolRuleToTerraform)(this._rule),
+      rule: cdktf.listMapper(devicefarmDevicePoolRuleToTerraform)(this._rule.internalValue),
     };
   }
 }

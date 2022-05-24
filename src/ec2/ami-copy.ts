@@ -24,6 +24,13 @@ export interface AmiCopyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly encrypted?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy#id AmiCopy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy#kms_key_id AmiCopy#kms_key_id}
   */
   readonly kmsKeyId?: string;
@@ -78,6 +85,109 @@ export function amiCopyEbsBlockDeviceToTerraform(struct?: AmiCopyEbsBlockDevice 
   }
 }
 
+export class AmiCopyEbsBlockDeviceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AmiCopyEbsBlockDevice | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AmiCopyEbsBlockDevice | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // delete_on_termination - computed: true, optional: false, required: false
+  public get deleteOnTermination() {
+    return this.getBooleanAttribute('delete_on_termination');
+  }
+
+  // device_name - computed: true, optional: false, required: false
+  public get deviceName() {
+    return this.getStringAttribute('device_name');
+  }
+
+  // encrypted - computed: true, optional: false, required: false
+  public get encrypted() {
+    return this.getBooleanAttribute('encrypted');
+  }
+
+  // iops - computed: true, optional: false, required: false
+  public get iops() {
+    return this.getNumberAttribute('iops');
+  }
+
+  // outpost_arn - computed: true, optional: false, required: false
+  public get outpostArn() {
+    return this.getStringAttribute('outpost_arn');
+  }
+
+  // snapshot_id - computed: true, optional: false, required: false
+  public get snapshotId() {
+    return this.getStringAttribute('snapshot_id');
+  }
+
+  // throughput - computed: true, optional: false, required: false
+  public get throughput() {
+    return this.getNumberAttribute('throughput');
+  }
+
+  // volume_size - computed: true, optional: false, required: false
+  public get volumeSize() {
+    return this.getNumberAttribute('volume_size');
+  }
+
+  // volume_type - computed: true, optional: false, required: false
+  public get volumeType() {
+    return this.getStringAttribute('volume_type');
+  }
+}
+
+export class AmiCopyEbsBlockDeviceList extends cdktf.ComplexList {
+  public internalValue? : AmiCopyEbsBlockDevice[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AmiCopyEbsBlockDeviceOutputReference {
+    return new AmiCopyEbsBlockDeviceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AmiCopyEphemeralBlockDevice {
 }
 
@@ -90,6 +200,74 @@ export function amiCopyEphemeralBlockDeviceToTerraform(struct?: AmiCopyEphemeral
   }
 }
 
+export class AmiCopyEphemeralBlockDeviceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AmiCopyEphemeralBlockDevice | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AmiCopyEphemeralBlockDevice | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // device_name - computed: true, optional: false, required: false
+  public get deviceName() {
+    return this.getStringAttribute('device_name');
+  }
+
+  // virtual_name - computed: true, optional: false, required: false
+  public get virtualName() {
+    return this.getStringAttribute('virtual_name');
+  }
+}
+
+export class AmiCopyEphemeralBlockDeviceList extends cdktf.ComplexList {
+  public internalValue? : AmiCopyEphemeralBlockDevice[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AmiCopyEphemeralBlockDeviceOutputReference {
+    return new AmiCopyEphemeralBlockDeviceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AmiCopyTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy#create AmiCopy#create}
@@ -119,6 +297,7 @@ export function amiCopyTimeoutsToTerraform(struct?: AmiCopyTimeoutsOutputReferen
 
 export class AmiCopyTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -128,7 +307,10 @@ export class AmiCopyTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): AmiCopyTimeouts | undefined {
+  public get internalValue(): AmiCopyTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -146,15 +328,21 @@ export class AmiCopyTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AmiCopyTimeouts | undefined) {
+  public set internalValue(value: AmiCopyTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -248,14 +436,15 @@ export class AmiCopy extends cdktf.TerraformResource {
     this._description = config.description;
     this._destinationOutpostArn = config.destinationOutpostArn;
     this._encrypted = config.encrypted;
+    this._id = config.id;
     this._kmsKeyId = config.kmsKeyId;
     this._name = config.name;
     this._sourceAmiId = config.sourceAmiId;
     this._sourceAmiRegion = config.sourceAmiRegion;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._ebsBlockDevice = config.ebsBlockDevice;
-    this._ephemeralBlockDevice = config.ephemeralBlockDevice;
+    this._ebsBlockDevice.internalValue = config.ebsBlockDevice;
+    this._ephemeralBlockDevice.internalValue = config.ephemeralBlockDevice;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -353,8 +542,19 @@ export class AmiCopy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // image_location - computed: true, optional: false, required: false
@@ -520,37 +720,35 @@ export class AmiCopy extends cdktf.TerraformResource {
   }
 
   // ebs_block_device - computed: false, optional: true, required: false
-  private _ebsBlockDevice?: AmiCopyEbsBlockDevice[] | cdktf.IResolvable; 
+  private _ebsBlockDevice = new AmiCopyEbsBlockDeviceList(this, "ebs_block_device", true);
   public get ebsBlockDevice() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ebs_block_device')));
+    return this._ebsBlockDevice;
   }
-  public set ebsBlockDevice(value: AmiCopyEbsBlockDevice[] | cdktf.IResolvable) {
-    this._ebsBlockDevice = value;
+  public putEbsBlockDevice(value: AmiCopyEbsBlockDevice[] | cdktf.IResolvable) {
+    this._ebsBlockDevice.internalValue = value;
   }
   public resetEbsBlockDevice() {
-    this._ebsBlockDevice = undefined;
+    this._ebsBlockDevice.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ebsBlockDeviceInput() {
-    return this._ebsBlockDevice;
+    return this._ebsBlockDevice.internalValue;
   }
 
   // ephemeral_block_device - computed: false, optional: true, required: false
-  private _ephemeralBlockDevice?: AmiCopyEphemeralBlockDevice[] | cdktf.IResolvable; 
+  private _ephemeralBlockDevice = new AmiCopyEphemeralBlockDeviceList(this, "ephemeral_block_device", true);
   public get ephemeralBlockDevice() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ephemeral_block_device')));
+    return this._ephemeralBlockDevice;
   }
-  public set ephemeralBlockDevice(value: AmiCopyEphemeralBlockDevice[] | cdktf.IResolvable) {
-    this._ephemeralBlockDevice = value;
+  public putEphemeralBlockDevice(value: AmiCopyEphemeralBlockDevice[] | cdktf.IResolvable) {
+    this._ephemeralBlockDevice.internalValue = value;
   }
   public resetEphemeralBlockDevice() {
-    this._ephemeralBlockDevice = undefined;
+    this._ephemeralBlockDevice.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ephemeralBlockDeviceInput() {
-    return this._ephemeralBlockDevice;
+    return this._ephemeralBlockDevice.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -579,14 +777,15 @@ export class AmiCopy extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       destination_outpost_arn: cdktf.stringToTerraform(this._destinationOutpostArn),
       encrypted: cdktf.booleanToTerraform(this._encrypted),
+      id: cdktf.stringToTerraform(this._id),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       name: cdktf.stringToTerraform(this._name),
       source_ami_id: cdktf.stringToTerraform(this._sourceAmiId),
       source_ami_region: cdktf.stringToTerraform(this._sourceAmiRegion),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      ebs_block_device: cdktf.listMapper(amiCopyEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
-      ephemeral_block_device: cdktf.listMapper(amiCopyEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
+      ebs_block_device: cdktf.listMapper(amiCopyEbsBlockDeviceToTerraform)(this._ebsBlockDevice.internalValue),
+      ephemeral_block_device: cdktf.listMapper(amiCopyEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice.internalValue),
       timeouts: amiCopyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

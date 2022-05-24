@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface Wafv2WebAclLoggingConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl_logging_configuration#id Wafv2WebAclLoggingConfiguration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * AWS Kinesis Firehose Delivery Stream ARNs
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl_logging_configuration#log_destination_configs Wafv2WebAclLoggingConfiguration#log_destination_configs}
@@ -182,6 +189,108 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToTer
   }
 }
 
+export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._actionCondition?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.actionCondition = this._actionCondition?.internalValue;
+    }
+    if (this._labelNameCondition?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.labelNameCondition = this._labelNameCondition?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._actionCondition.internalValue = undefined;
+      this._labelNameCondition.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._actionCondition.internalValue = value.actionCondition;
+      this._labelNameCondition.internalValue = value.labelNameCondition;
+    }
+  }
+
+  // action_condition - computed: false, optional: true, required: false
+  private _actionCondition = new Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference(this, "action_condition");
+  public get actionCondition() {
+    return this._actionCondition;
+  }
+  public putActionCondition(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition) {
+    this._actionCondition.internalValue = value;
+  }
+  public resetActionCondition() {
+    this._actionCondition.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionConditionInput() {
+    return this._actionCondition.internalValue;
+  }
+
+  // label_name_condition - computed: false, optional: true, required: false
+  private _labelNameCondition = new Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference(this, "label_name_condition");
+  public get labelNameCondition() {
+    return this._labelNameCondition;
+  }
+  public putLabelNameCondition(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition) {
+    this._labelNameCondition.internalValue = value;
+  }
+  public resetLabelNameCondition() {
+    this._labelNameCondition.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelNameConditionInput() {
+    return this._labelNameCondition.internalValue;
+  }
+}
+
+export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList extends cdktf.ComplexList {
+  public internalValue? : Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference {
+    return new Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Wafv2WebAclLoggingConfigurationLoggingFilterFilter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl_logging_configuration#behavior Wafv2WebAclLoggingConfiguration#behavior}
@@ -211,6 +320,121 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterFilterToTerraform(st
   }
 }
 
+export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Wafv2WebAclLoggingConfigurationLoggingFilterFilter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._behavior !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.behavior = this._behavior;
+    }
+    if (this._requirement !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requirement = this._requirement;
+    }
+    if (this._condition?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.condition = this._condition?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._behavior = undefined;
+      this._requirement = undefined;
+      this._condition.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._behavior = value.behavior;
+      this._requirement = value.requirement;
+      this._condition.internalValue = value.condition;
+    }
+  }
+
+  // behavior - computed: false, optional: false, required: true
+  private _behavior?: string; 
+  public get behavior() {
+    return this.getStringAttribute('behavior');
+  }
+  public set behavior(value: string) {
+    this._behavior = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get behaviorInput() {
+    return this._behavior;
+  }
+
+  // requirement - computed: false, optional: false, required: true
+  private _requirement?: string; 
+  public get requirement() {
+    return this.getStringAttribute('requirement');
+  }
+  public set requirement(value: string) {
+    this._requirement = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requirementInput() {
+    return this._requirement;
+  }
+
+  // condition - computed: false, optional: false, required: true
+  private _condition = new Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList(this, "condition", true);
+  public get condition() {
+    return this._condition;
+  }
+  public putCondition(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition[] | cdktf.IResolvable) {
+    this._condition.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get conditionInput() {
+    return this._condition.internalValue;
+  }
+}
+
+export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterList extends cdktf.ComplexList {
+  public internalValue? : Wafv2WebAclLoggingConfigurationLoggingFilterFilter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference {
+    return new Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Wafv2WebAclLoggingConfigurationLoggingFilter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl_logging_configuration#default_behavior Wafv2WebAclLoggingConfiguration#default_behavior}
@@ -253,9 +477,9 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference extends
       hasAnyValues = true;
       internalValueResult.defaultBehavior = this._defaultBehavior;
     }
-    if (this._filter !== undefined) {
+    if (this._filter?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.filter = this._filter;
+      internalValueResult.filter = this._filter?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -264,12 +488,12 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference extends
     if (value === undefined) {
       this.isEmptyObject = false;
       this._defaultBehavior = undefined;
-      this._filter = undefined;
+      this._filter.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._defaultBehavior = value.defaultBehavior;
-      this._filter = value.filter;
+      this._filter.internalValue = value.filter;
     }
   }
 
@@ -287,17 +511,16 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference extends
   }
 
   // filter - computed: false, optional: false, required: true
-  private _filter?: Wafv2WebAclLoggingConfigurationLoggingFilterFilter[] | cdktf.IResolvable; 
+  private _filter = new Wafv2WebAclLoggingConfigurationLoggingFilterFilterList(this, "filter", true);
   public get filter() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter')));
+    return this._filter;
   }
-  public set filter(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilter[] | cdktf.IResolvable) {
-    this._filter = value;
+  public putFilter(value: Wafv2WebAclLoggingConfigurationLoggingFilterFilter[] | cdktf.IResolvable) {
+    this._filter.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get filterInput() {
-    return this._filter;
+    return this._filter.internalValue;
   }
 }
 export interface Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments {
@@ -675,6 +898,218 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsToTerraform(struct?
   }
 }
 
+export class Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Wafv2WebAclLoggingConfigurationRedactedFields | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allQueryArguments?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allQueryArguments = this._allQueryArguments?.internalValue;
+    }
+    if (this._body?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.body = this._body?.internalValue;
+    }
+    if (this._method?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.method = this._method?.internalValue;
+    }
+    if (this._queryString?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queryString = this._queryString?.internalValue;
+    }
+    if (this._singleHeader?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.singleHeader = this._singleHeader?.internalValue;
+    }
+    if (this._singleQueryArgument?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.singleQueryArgument = this._singleQueryArgument?.internalValue;
+    }
+    if (this._uriPath?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uriPath = this._uriPath?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Wafv2WebAclLoggingConfigurationRedactedFields | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allQueryArguments.internalValue = undefined;
+      this._body.internalValue = undefined;
+      this._method.internalValue = undefined;
+      this._queryString.internalValue = undefined;
+      this._singleHeader.internalValue = undefined;
+      this._singleQueryArgument.internalValue = undefined;
+      this._uriPath.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allQueryArguments.internalValue = value.allQueryArguments;
+      this._body.internalValue = value.body;
+      this._method.internalValue = value.method;
+      this._queryString.internalValue = value.queryString;
+      this._singleHeader.internalValue = value.singleHeader;
+      this._singleQueryArgument.internalValue = value.singleQueryArgument;
+      this._uriPath.internalValue = value.uriPath;
+    }
+  }
+
+  // all_query_arguments - computed: false, optional: true, required: false
+  private _allQueryArguments = new Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArgumentsOutputReference(this, "all_query_arguments");
+  public get allQueryArguments() {
+    return this._allQueryArguments;
+  }
+  public putAllQueryArguments(value: Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments) {
+    this._allQueryArguments.internalValue = value;
+  }
+  public resetAllQueryArguments() {
+    this._allQueryArguments.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allQueryArgumentsInput() {
+    return this._allQueryArguments.internalValue;
+  }
+
+  // body - computed: false, optional: true, required: false
+  private _body = new Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference(this, "body");
+  public get body() {
+    return this._body;
+  }
+  public putBody(value: Wafv2WebAclLoggingConfigurationRedactedFieldsBody) {
+    this._body.internalValue = value;
+  }
+  public resetBody() {
+    this._body.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bodyInput() {
+    return this._body.internalValue;
+  }
+
+  // method - computed: false, optional: true, required: false
+  private _method = new Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference(this, "method");
+  public get method() {
+    return this._method;
+  }
+  public putMethod(value: Wafv2WebAclLoggingConfigurationRedactedFieldsMethod) {
+    this._method.internalValue = value;
+  }
+  public resetMethod() {
+    this._method.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodInput() {
+    return this._method.internalValue;
+  }
+
+  // query_string - computed: false, optional: true, required: false
+  private _queryString = new Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference(this, "query_string");
+  public get queryString() {
+    return this._queryString;
+  }
+  public putQueryString(value: Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString) {
+    this._queryString.internalValue = value;
+  }
+  public resetQueryString() {
+    this._queryString.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryStringInput() {
+    return this._queryString.internalValue;
+  }
+
+  // single_header - computed: false, optional: true, required: false
+  private _singleHeader = new Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference(this, "single_header");
+  public get singleHeader() {
+    return this._singleHeader;
+  }
+  public putSingleHeader(value: Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader) {
+    this._singleHeader.internalValue = value;
+  }
+  public resetSingleHeader() {
+    this._singleHeader.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get singleHeaderInput() {
+    return this._singleHeader.internalValue;
+  }
+
+  // single_query_argument - computed: false, optional: true, required: false
+  private _singleQueryArgument = new Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference(this, "single_query_argument");
+  public get singleQueryArgument() {
+    return this._singleQueryArgument;
+  }
+  public putSingleQueryArgument(value: Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument) {
+    this._singleQueryArgument.internalValue = value;
+  }
+  public resetSingleQueryArgument() {
+    this._singleQueryArgument.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get singleQueryArgumentInput() {
+    return this._singleQueryArgument.internalValue;
+  }
+
+  // uri_path - computed: false, optional: true, required: false
+  private _uriPath = new Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference(this, "uri_path");
+  public get uriPath() {
+    return this._uriPath;
+  }
+  public putUriPath(value: Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath) {
+    this._uriPath.internalValue = value;
+  }
+  public resetUriPath() {
+    this._uriPath.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uriPathInput() {
+    return this._uriPath.internalValue;
+  }
+}
+
+export class Wafv2WebAclLoggingConfigurationRedactedFieldsList extends cdktf.ComplexList {
+  public internalValue? : Wafv2WebAclLoggingConfigurationRedactedFields[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference {
+    return new Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration}
@@ -710,10 +1145,11 @@ export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._logDestinationConfigs = config.logDestinationConfigs;
     this._resourceArn = config.resourceArn;
     this._loggingFilter.internalValue = config.loggingFilter;
-    this._redactedFields = config.redactedFields;
+    this._redactedFields.internalValue = config.redactedFields;
   }
 
   // ==========
@@ -721,8 +1157,19 @@ export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // log_destination_configs - computed: false, optional: false, required: true
@@ -768,20 +1215,19 @@ export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
   }
 
   // redacted_fields - computed: false, optional: true, required: false
-  private _redactedFields?: Wafv2WebAclLoggingConfigurationRedactedFields[] | cdktf.IResolvable; 
+  private _redactedFields = new Wafv2WebAclLoggingConfigurationRedactedFieldsList(this, "redacted_fields", false);
   public get redactedFields() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('redacted_fields');
+    return this._redactedFields;
   }
-  public set redactedFields(value: Wafv2WebAclLoggingConfigurationRedactedFields[] | cdktf.IResolvable) {
-    this._redactedFields = value;
+  public putRedactedFields(value: Wafv2WebAclLoggingConfigurationRedactedFields[] | cdktf.IResolvable) {
+    this._redactedFields.internalValue = value;
   }
   public resetRedactedFields() {
-    this._redactedFields = undefined;
+    this._redactedFields.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get redactedFieldsInput() {
-    return this._redactedFields;
+    return this._redactedFields.internalValue;
   }
 
   // =========
@@ -790,10 +1236,11 @@ export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       log_destination_configs: cdktf.listMapper(cdktf.stringToTerraform)(this._logDestinationConfigs),
       resource_arn: cdktf.stringToTerraform(this._resourceArn),
       logging_filter: wafv2WebAclLoggingConfigurationLoggingFilterToTerraform(this._loggingFilter.internalValue),
-      redacted_fields: cdktf.listMapper(wafv2WebAclLoggingConfigurationRedactedFieldsToTerraform)(this._redactedFields),
+      redacted_fields: cdktf.listMapper(wafv2WebAclLoggingConfigurationRedactedFieldsToTerraform)(this._redactedFields.internalValue),
     };
   }
 }

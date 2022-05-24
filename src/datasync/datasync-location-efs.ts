@@ -12,6 +12,13 @@ export interface DatasyncLocationEfsConfig extends cdktf.TerraformMetaArguments 
   */
   readonly efsFileSystemArn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_efs#id DatasyncLocationEfs#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_efs#subdirectory DatasyncLocationEfs#subdirectory}
   */
   readonly subdirectory?: string;
@@ -152,6 +159,7 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._efsFileSystemArn = config.efsFileSystemArn;
+    this._id = config.id;
     this._subdirectory = config.subdirectory;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -181,8 +189,19 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // subdirectory - computed: false, optional: true, required: false
@@ -258,6 +277,7 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       efs_file_system_arn: cdktf.stringToTerraform(this._efsFileSystemArn),
+      id: cdktf.stringToTerraform(this._id),
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

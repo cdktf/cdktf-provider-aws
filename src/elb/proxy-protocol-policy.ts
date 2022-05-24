@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface ProxyProtocolPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/proxy_protocol_policy#id ProxyProtocolPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/proxy_protocol_policy#instance_ports ProxyProtocolPolicy#instance_ports}
   */
   readonly instancePorts: string[];
@@ -51,6 +58,7 @@ export class ProxyProtocolPolicy extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._instancePorts = config.instancePorts;
     this._loadBalancer = config.loadBalancer;
   }
@@ -60,8 +68,19 @@ export class ProxyProtocolPolicy extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_ports - computed: false, optional: false, required: true
@@ -96,6 +115,7 @@ export class ProxyProtocolPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       instance_ports: cdktf.listMapper(cdktf.stringToTerraform)(this._instancePorts),
       load_balancer: cdktf.stringToTerraform(this._loadBalancer),
     };

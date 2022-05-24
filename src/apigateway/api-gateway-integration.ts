@@ -36,6 +36,13 @@ export interface ApiGatewayIntegrationConfig extends cdktf.TerraformMetaArgument
   */
   readonly httpMethod: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_integration#id ApiGatewayIntegration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_integration#integration_http_method ApiGatewayIntegration#integration_http_method}
   */
   readonly integrationHttpMethod?: string;
@@ -185,6 +192,7 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
     this._contentHandling = config.contentHandling;
     this._credentials = config.credentials;
     this._httpMethod = config.httpMethod;
+    this._id = config.id;
     this._integrationHttpMethod = config.integrationHttpMethod;
     this._passthroughBehavior = config.passthroughBehavior;
     this._requestParameters = config.requestParameters;
@@ -311,8 +319,19 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // integration_http_method - computed: false, optional: true, required: false
@@ -479,6 +498,7 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
       content_handling: cdktf.stringToTerraform(this._contentHandling),
       credentials: cdktf.stringToTerraform(this._credentials),
       http_method: cdktf.stringToTerraform(this._httpMethod),
+      id: cdktf.stringToTerraform(this._id),
       integration_http_method: cdktf.stringToTerraform(this._integrationHttpMethod),
       passthrough_behavior: cdktf.stringToTerraform(this._passthroughBehavior),
       request_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._requestParameters),

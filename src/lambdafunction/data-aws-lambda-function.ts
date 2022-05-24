@@ -12,6 +12,13 @@ export interface DataAwsLambdaFunctionConfig extends cdktf.TerraformMetaArgument
   */
   readonly functionName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_function#id DataAwsLambdaFunction#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_function#qualifier DataAwsLambdaFunction#qualifier}
   */
   readonly qualifier?: string;
@@ -125,8 +132,9 @@ export class DataAwsLambdaFunctionEnvironmentOutputReference extends cdktf.Compl
   }
 
   // variables - computed: true, optional: false, required: false
-  public variables(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'variables').lookup(key);
+  private _variables = new cdktf.StringMap(this, "variables");
+  public get variables() {
+    return this._variables;
   }
 }
 
@@ -455,6 +463,7 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._functionName = config.functionName;
+    this._id = config.id;
     this._qualifier = config.qualifier;
     this._tags = config.tags;
   }
@@ -526,8 +535,19 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // image_uri - computed: true, optional: false, required: false
@@ -661,6 +681,7 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       function_name: cdktf.stringToTerraform(this._functionName),
+      id: cdktf.stringToTerraform(this._id),
       qualifier: cdktf.stringToTerraform(this._qualifier),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };

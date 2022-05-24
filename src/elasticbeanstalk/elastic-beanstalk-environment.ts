@@ -20,6 +20,13 @@ export interface ElasticBeanstalkEnvironmentConfig extends cdktf.TerraformMetaAr
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_environment#id ElasticBeanstalkEnvironment#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_environment#name ElasticBeanstalkEnvironment#name}
   */
   readonly name: string;
@@ -177,6 +184,143 @@ export function elasticBeanstalkEnvironmentSettingToTerraform(struct?: ElasticBe
   }
 }
 
+export class ElasticBeanstalkEnvironmentSettingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ElasticBeanstalkEnvironmentSetting | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._namespace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.namespace = this._namespace;
+    }
+    if (this._resource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resource = this._resource;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ElasticBeanstalkEnvironmentSetting | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._namespace = undefined;
+      this._resource = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._namespace = value.namespace;
+      this._resource = value.resource;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // namespace - computed: false, optional: false, required: true
+  private _namespace?: string; 
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+  public set namespace(value: string) {
+    this._namespace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace;
+  }
+
+  // resource - computed: false, optional: true, required: false
+  private _resource?: string; 
+  public get resource() {
+    return this.getStringAttribute('resource');
+  }
+  public set resource(value: string) {
+    this._resource = value;
+  }
+  public resetResource() {
+    this._resource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceInput() {
+    return this._resource;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ElasticBeanstalkEnvironmentSettingList extends cdktf.ComplexList {
+  public internalValue? : ElasticBeanstalkEnvironmentSetting[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ElasticBeanstalkEnvironmentSettingOutputReference {
+    return new ElasticBeanstalkEnvironmentSettingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_environment aws_elastic_beanstalk_environment}
@@ -215,6 +359,7 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
     this._application = config.application;
     this._cnamePrefix = config.cnamePrefix;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._platformArn = config.platformArn;
     this._pollInterval = config.pollInterval;
@@ -225,7 +370,7 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
     this._tier = config.tier;
     this._versionLabel = config.versionLabel;
     this._waitForReadyTimeout = config.waitForReadyTimeout;
-    this._setting = config.setting;
+    this._setting.internalValue = config.setting;
   }
 
   // ==========
@@ -304,8 +449,19 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instances - computed: true, optional: false, required: false
@@ -491,20 +647,19 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
   }
 
   // setting - computed: false, optional: true, required: false
-  private _setting?: ElasticBeanstalkEnvironmentSetting[] | cdktf.IResolvable; 
+  private _setting = new ElasticBeanstalkEnvironmentSettingList(this, "setting", true);
   public get setting() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('setting')));
+    return this._setting;
   }
-  public set setting(value: ElasticBeanstalkEnvironmentSetting[] | cdktf.IResolvable) {
-    this._setting = value;
+  public putSetting(value: ElasticBeanstalkEnvironmentSetting[] | cdktf.IResolvable) {
+    this._setting.internalValue = value;
   }
   public resetSetting() {
-    this._setting = undefined;
+    this._setting.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get settingInput() {
-    return this._setting;
+    return this._setting.internalValue;
   }
 
   // =========
@@ -516,6 +671,7 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
       application: cdktf.stringToTerraform(this._application),
       cname_prefix: cdktf.stringToTerraform(this._cnamePrefix),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       platform_arn: cdktf.stringToTerraform(this._platformArn),
       poll_interval: cdktf.stringToTerraform(this._pollInterval),
@@ -526,7 +682,7 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
       tier: cdktf.stringToTerraform(this._tier),
       version_label: cdktf.stringToTerraform(this._versionLabel),
       wait_for_ready_timeout: cdktf.stringToTerraform(this._waitForReadyTimeout),
-      setting: cdktf.listMapper(elasticBeanstalkEnvironmentSettingToTerraform)(this._setting),
+      setting: cdktf.listMapper(elasticBeanstalkEnvironmentSettingToTerraform)(this._setting.internalValue),
     };
   }
 }

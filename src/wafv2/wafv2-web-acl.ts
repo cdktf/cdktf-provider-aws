@@ -1,15 +1,17 @@
 // generated from terraform resource schema
 
 import { Wafv2WebAclCustomResponseBody, 
+wafv2WebAclCustomResponseBodyToTerraform, 
+Wafv2WebAclCustomResponseBodyList, 
 Wafv2WebAclDefaultAction, 
-Wafv2WebAclRule, 
-Wafv2WebAclVisibilityConfig} from './wafv2-web-acl-structs'
-import { wafv2WebAclCustomResponseBodyToTerraform, 
 wafv2WebAclDefaultActionToTerraform, 
+Wafv2WebAclDefaultActionOutputReference, 
+Wafv2WebAclRule, 
 wafv2WebAclRuleToTerraform, 
-wafv2WebAclVisibilityConfigToTerraform} from './wafv2-web-acl-structs'
-import { Wafv2WebAclDefaultActionOutputReference,
-Wafv2WebAclVisibilityConfigOutputReference } from './wafv2-web-acl-structs'
+Wafv2WebAclRuleList, 
+Wafv2WebAclVisibilityConfig, 
+wafv2WebAclVisibilityConfigToTerraform, 
+Wafv2WebAclVisibilityConfigOutputReference} from './wafv2-web-acl-structs'
 import { Construct } from 'constructs';
 import * as cdktf from 'cdktf';
 
@@ -21,6 +23,13 @@ export interface Wafv2WebAclConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#description Wafv2WebAcl#description}
   */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#id Wafv2WebAcl#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#name Wafv2WebAcl#name}
   */
@@ -98,13 +107,14 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._scope = config.scope;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._customResponseBody = config.customResponseBody;
+    this._customResponseBody.internalValue = config.customResponseBody;
     this._defaultAction.internalValue = config.defaultAction;
-    this._rule = config.rule;
+    this._rule.internalValue = config.rule;
     this._visibilityConfig.internalValue = config.visibilityConfig;
   }
 
@@ -139,8 +149,19 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // lock_token - computed: true, optional: false, required: false
@@ -207,20 +228,19 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
   }
 
   // custom_response_body - computed: false, optional: true, required: false
-  private _customResponseBody?: Wafv2WebAclCustomResponseBody[] | cdktf.IResolvable; 
+  private _customResponseBody = new Wafv2WebAclCustomResponseBodyList(this, "custom_response_body", true);
   public get customResponseBody() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('custom_response_body')));
+    return this._customResponseBody;
   }
-  public set customResponseBody(value: Wafv2WebAclCustomResponseBody[] | cdktf.IResolvable) {
-    this._customResponseBody = value;
+  public putCustomResponseBody(value: Wafv2WebAclCustomResponseBody[] | cdktf.IResolvable) {
+    this._customResponseBody.internalValue = value;
   }
   public resetCustomResponseBody() {
-    this._customResponseBody = undefined;
+    this._customResponseBody.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get customResponseBodyInput() {
-    return this._customResponseBody;
+    return this._customResponseBody.internalValue;
   }
 
   // default_action - computed: false, optional: false, required: true
@@ -237,20 +257,19 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
   }
 
   // rule - computed: false, optional: true, required: false
-  private _rule?: Wafv2WebAclRule[] | cdktf.IResolvable; 
+  private _rule = new Wafv2WebAclRuleList(this, "rule", true);
   public get rule() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('rule')));
+    return this._rule;
   }
-  public set rule(value: Wafv2WebAclRule[] | cdktf.IResolvable) {
-    this._rule = value;
+  public putRule(value: Wafv2WebAclRule[] | cdktf.IResolvable) {
+    this._rule.internalValue = value;
   }
   public resetRule() {
-    this._rule = undefined;
+    this._rule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ruleInput() {
-    return this._rule;
+    return this._rule.internalValue;
   }
 
   // visibility_config - computed: false, optional: false, required: true
@@ -273,13 +292,14 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       scope: cdktf.stringToTerraform(this._scope),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      custom_response_body: cdktf.listMapper(wafv2WebAclCustomResponseBodyToTerraform)(this._customResponseBody),
+      custom_response_body: cdktf.listMapper(wafv2WebAclCustomResponseBodyToTerraform)(this._customResponseBody.internalValue),
       default_action: wafv2WebAclDefaultActionToTerraform(this._defaultAction.internalValue),
-      rule: cdktf.listMapper(wafv2WebAclRuleToTerraform)(this._rule),
+      rule: cdktf.listMapper(wafv2WebAclRuleToTerraform)(this._rule.internalValue),
       visibility_config: wafv2WebAclVisibilityConfigToTerraform(this._visibilityConfig.internalValue),
     };
   }

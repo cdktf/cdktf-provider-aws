@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface CloudsearchDomainConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudsearch_domain#id CloudsearchDomain#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudsearch_domain#multi_az CloudsearchDomain#multi_az}
   */
   readonly multiAz?: boolean | cdktf.IResolvable;
@@ -189,6 +196,256 @@ export function cloudsearchDomainIndexFieldToTerraform(struct?: CloudsearchDomai
   }
 }
 
+export class CloudsearchDomainIndexFieldOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudsearchDomainIndexField | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._analysisScheme !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.analysisScheme = this._analysisScheme;
+    }
+    if (this._defaultValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultValue = this._defaultValue;
+    }
+    if (this._facet !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.facet = this._facet;
+    }
+    if (this._highlight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.highlight = this._highlight;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._return !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.return = this._return;
+    }
+    if (this._search !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.search = this._search;
+    }
+    if (this._sort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sort = this._sort;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudsearchDomainIndexField | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._analysisScheme = undefined;
+      this._defaultValue = undefined;
+      this._facet = undefined;
+      this._highlight = undefined;
+      this._name = undefined;
+      this._return = undefined;
+      this._search = undefined;
+      this._sort = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._analysisScheme = value.analysisScheme;
+      this._defaultValue = value.defaultValue;
+      this._facet = value.facet;
+      this._highlight = value.highlight;
+      this._name = value.name;
+      this._return = value.return;
+      this._search = value.search;
+      this._sort = value.sort;
+      this._type = value.type;
+    }
+  }
+
+  // analysis_scheme - computed: false, optional: true, required: false
+  private _analysisScheme?: string; 
+  public get analysisScheme() {
+    return this.getStringAttribute('analysis_scheme');
+  }
+  public set analysisScheme(value: string) {
+    this._analysisScheme = value;
+  }
+  public resetAnalysisScheme() {
+    this._analysisScheme = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get analysisSchemeInput() {
+    return this._analysisScheme;
+  }
+
+  // default_value - computed: false, optional: true, required: false
+  private _defaultValue?: string; 
+  public get defaultValue() {
+    return this.getStringAttribute('default_value');
+  }
+  public set defaultValue(value: string) {
+    this._defaultValue = value;
+  }
+  public resetDefaultValue() {
+    this._defaultValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultValueInput() {
+    return this._defaultValue;
+  }
+
+  // facet - computed: false, optional: true, required: false
+  private _facet?: boolean | cdktf.IResolvable; 
+  public get facet() {
+    return this.getBooleanAttribute('facet');
+  }
+  public set facet(value: boolean | cdktf.IResolvable) {
+    this._facet = value;
+  }
+  public resetFacet() {
+    this._facet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get facetInput() {
+    return this._facet;
+  }
+
+  // highlight - computed: false, optional: true, required: false
+  private _highlight?: boolean | cdktf.IResolvable; 
+  public get highlight() {
+    return this.getBooleanAttribute('highlight');
+  }
+  public set highlight(value: boolean | cdktf.IResolvable) {
+    this._highlight = value;
+  }
+  public resetHighlight() {
+    this._highlight = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get highlightInput() {
+    return this._highlight;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // return - computed: false, optional: true, required: false
+  private _return?: boolean | cdktf.IResolvable; 
+  public get return() {
+    return this.getBooleanAttribute('return');
+  }
+  public set return(value: boolean | cdktf.IResolvable) {
+    this._return = value;
+  }
+  public resetReturn() {
+    this._return = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get returnInput() {
+    return this._return;
+  }
+
+  // search - computed: false, optional: true, required: false
+  private _search?: boolean | cdktf.IResolvable; 
+  public get search() {
+    return this.getBooleanAttribute('search');
+  }
+  public set search(value: boolean | cdktf.IResolvable) {
+    this._search = value;
+  }
+  public resetSearch() {
+    this._search = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get searchInput() {
+    return this._search;
+  }
+
+  // sort - computed: false, optional: true, required: false
+  private _sort?: boolean | cdktf.IResolvable; 
+  public get sort() {
+    return this.getBooleanAttribute('sort');
+  }
+  public set sort(value: boolean | cdktf.IResolvable) {
+    this._sort = value;
+  }
+  public resetSort() {
+    this._sort = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sortInput() {
+    return this._sort;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class CloudsearchDomainIndexFieldList extends cdktf.ComplexList {
+  public internalValue? : CloudsearchDomainIndexField[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudsearchDomainIndexFieldOutputReference {
+    return new CloudsearchDomainIndexFieldOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudsearchDomainScalingParameters {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudsearch_domain#desired_instance_type CloudsearchDomain#desired_instance_type}
@@ -337,6 +594,7 @@ export function cloudsearchDomainTimeoutsToTerraform(struct?: CloudsearchDomainT
 
 export class CloudsearchDomainTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -346,7 +604,10 @@ export class CloudsearchDomainTimeoutsOutputReference extends cdktf.ComplexObjec
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): CloudsearchDomainTimeouts | undefined {
+  public get internalValue(): CloudsearchDomainTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -364,15 +625,21 @@ export class CloudsearchDomainTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudsearchDomainTimeouts | undefined) {
+  public set internalValue(value: CloudsearchDomainTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -462,10 +729,11 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._multiAz = config.multiAz;
     this._name = config.name;
     this._endpointOptions.internalValue = config.endpointOptions;
-    this._indexField = config.indexField;
+    this._indexField.internalValue = config.indexField;
     this._scalingParameters.internalValue = config.scalingParameters;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -490,8 +758,19 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // multi_az - computed: true, optional: true, required: false
@@ -545,20 +824,19 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
   }
 
   // index_field - computed: false, optional: true, required: false
-  private _indexField?: CloudsearchDomainIndexField[] | cdktf.IResolvable; 
+  private _indexField = new CloudsearchDomainIndexFieldList(this, "index_field", true);
   public get indexField() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('index_field')));
+    return this._indexField;
   }
-  public set indexField(value: CloudsearchDomainIndexField[] | cdktf.IResolvable) {
-    this._indexField = value;
+  public putIndexField(value: CloudsearchDomainIndexField[] | cdktf.IResolvable) {
+    this._indexField.internalValue = value;
   }
   public resetIndexField() {
-    this._indexField = undefined;
+    this._indexField.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get indexFieldInput() {
-    return this._indexField;
+    return this._indexField.internalValue;
   }
 
   // scaling_parameters - computed: false, optional: true, required: false
@@ -599,10 +877,11 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       multi_az: cdktf.booleanToTerraform(this._multiAz),
       name: cdktf.stringToTerraform(this._name),
       endpoint_options: cloudsearchDomainEndpointOptionsToTerraform(this._endpointOptions.internalValue),
-      index_field: cdktf.listMapper(cloudsearchDomainIndexFieldToTerraform)(this._indexField),
+      index_field: cdktf.listMapper(cloudsearchDomainIndexFieldToTerraform)(this._indexField.internalValue),
       scaling_parameters: cloudsearchDomainScalingParametersToTerraform(this._scalingParameters.internalValue),
       timeouts: cloudsearchDomainTimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -16,6 +16,13 @@ export interface SagemakerImageConfig extends cdktf.TerraformMetaArguments {
   */
   readonly displayName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_image#id SagemakerImage#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_image#image_name SagemakerImage#image_name}
   */
   readonly imageName: string;
@@ -69,6 +76,7 @@ export class SagemakerImage extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._displayName = config.displayName;
+    this._id = config.id;
     this._imageName = config.imageName;
     this._roleArn = config.roleArn;
     this._tags = config.tags;
@@ -117,8 +125,19 @@ export class SagemakerImage extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // image_name - computed: false, optional: false, required: true
@@ -187,6 +206,7 @@ export class SagemakerImage extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
+      id: cdktf.stringToTerraform(this._id),
       image_name: cdktf.stringToTerraform(this._imageName),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

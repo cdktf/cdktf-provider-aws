@@ -16,6 +16,13 @@ export interface DbSnapshotCopyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly destinationRegion?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_snapshot_copy#id DbSnapshotCopy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_snapshot_copy#kms_key_id DbSnapshotCopy#kms_key_id}
   */
   readonly kmsKeyId?: string;
@@ -73,6 +80,7 @@ export function dbSnapshotCopyTimeoutsToTerraform(struct?: DbSnapshotCopyTimeout
 
 export class DbSnapshotCopyTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -82,7 +90,10 @@ export class DbSnapshotCopyTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DbSnapshotCopyTimeouts | undefined {
+  public get internalValue(): DbSnapshotCopyTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -92,13 +103,19 @@ export class DbSnapshotCopyTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DbSnapshotCopyTimeouts | undefined) {
+  public set internalValue(value: DbSnapshotCopyTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
     }
   }
@@ -156,6 +173,7 @@ export class DbSnapshotCopy extends cdktf.TerraformResource {
     });
     this._copyTags = config.copyTags;
     this._destinationRegion = config.destinationRegion;
+    this._id = config.id;
     this._kmsKeyId = config.kmsKeyId;
     this._optionGroupName = config.optionGroupName;
     this._presignedUrl = config.presignedUrl;
@@ -234,8 +252,19 @@ export class DbSnapshotCopy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // iops - computed: true, optional: false, required: false
@@ -419,6 +448,7 @@ export class DbSnapshotCopy extends cdktf.TerraformResource {
     return {
       copy_tags: cdktf.booleanToTerraform(this._copyTags),
       destination_region: cdktf.stringToTerraform(this._destinationRegion),
+      id: cdktf.stringToTerraform(this._id),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       option_group_name: cdktf.stringToTerraform(this._optionGroupName),
       presigned_url: cdktf.stringToTerraform(this._presignedUrl),

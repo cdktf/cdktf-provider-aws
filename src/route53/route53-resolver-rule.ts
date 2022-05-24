@@ -12,6 +12,13 @@ export interface Route53ResolverRuleConfig extends cdktf.TerraformMetaArguments 
   */
   readonly domainName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_rule#id Route53ResolverRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_rule#name Route53ResolverRule#name}
   */
   readonly name?: string;
@@ -66,6 +73,105 @@ export function route53ResolverRuleTargetIpToTerraform(struct?: Route53ResolverR
   }
 }
 
+export class Route53ResolverRuleTargetIpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Route53ResolverRuleTargetIp | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ip !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ip = this._ip;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Route53ResolverRuleTargetIp | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ip = undefined;
+      this._port = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ip = value.ip;
+      this._port = value.port;
+    }
+  }
+
+  // ip - computed: false, optional: false, required: true
+  private _ip?: string; 
+  public get ip() {
+    return this.getStringAttribute('ip');
+  }
+  public set ip(value: string) {
+    this._ip = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipInput() {
+    return this._ip;
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+}
+
+export class Route53ResolverRuleTargetIpList extends cdktf.ComplexList {
+  public internalValue? : Route53ResolverRuleTargetIp[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Route53ResolverRuleTargetIpOutputReference {
+    return new Route53ResolverRuleTargetIpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Route53ResolverRuleTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_rule#create Route53ResolverRule#create}
@@ -95,6 +201,7 @@ export function route53ResolverRuleTimeoutsToTerraform(struct?: Route53ResolverR
 
 export class Route53ResolverRuleTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -104,7 +211,10 @@ export class Route53ResolverRuleTimeoutsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Route53ResolverRuleTimeouts | undefined {
+  public get internalValue(): Route53ResolverRuleTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -122,15 +232,21 @@ export class Route53ResolverRuleTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53ResolverRuleTimeouts | undefined) {
+  public set internalValue(value: Route53ResolverRuleTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -221,12 +337,13 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._domainName = config.domainName;
+    this._id = config.id;
     this._name = config.name;
     this._resolverEndpointId = config.resolverEndpointId;
     this._ruleType = config.ruleType;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._targetIp = config.targetIp;
+    this._targetIp.internalValue = config.targetIp;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -253,8 +370,19 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: true, required: false
@@ -345,20 +473,19 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
   }
 
   // target_ip - computed: false, optional: true, required: false
-  private _targetIp?: Route53ResolverRuleTargetIp[] | cdktf.IResolvable; 
+  private _targetIp = new Route53ResolverRuleTargetIpList(this, "target_ip", true);
   public get targetIp() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('target_ip')));
+    return this._targetIp;
   }
-  public set targetIp(value: Route53ResolverRuleTargetIp[] | cdktf.IResolvable) {
-    this._targetIp = value;
+  public putTargetIp(value: Route53ResolverRuleTargetIp[] | cdktf.IResolvable) {
+    this._targetIp.internalValue = value;
   }
   public resetTargetIp() {
-    this._targetIp = undefined;
+    this._targetIp.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get targetIpInput() {
-    return this._targetIp;
+    return this._targetIp.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -384,12 +511,13 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       domain_name: cdktf.stringToTerraform(this._domainName),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       resolver_endpoint_id: cdktf.stringToTerraform(this._resolverEndpointId),
       rule_type: cdktf.stringToTerraform(this._ruleType),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      target_ip: cdktf.listMapper(route53ResolverRuleTargetIpToTerraform)(this._targetIp),
+      target_ip: cdktf.listMapper(route53ResolverRuleTargetIpToTerraform)(this._targetIp.internalValue),
       timeouts: route53ResolverRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

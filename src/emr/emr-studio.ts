@@ -24,6 +24,13 @@ export interface EmrStudioConfig extends cdktf.TerraformMetaArguments {
   */
   readonly engineSecurityGroupId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_studio#id EmrStudio#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_studio#idp_auth_url EmrStudio#idp_auth_url}
   */
   readonly idpAuthUrl?: string;
@@ -103,6 +110,7 @@ export class EmrStudio extends cdktf.TerraformResource {
     this._defaultS3Location = config.defaultS3Location;
     this._description = config.description;
     this._engineSecurityGroupId = config.engineSecurityGroupId;
+    this._id = config.id;
     this._idpAuthUrl = config.idpAuthUrl;
     this._idpRelayStateParameterName = config.idpRelayStateParameterName;
     this._name = config.name;
@@ -180,8 +188,19 @@ export class EmrStudio extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // idp_auth_url - computed: false, optional: true, required: false
@@ -344,6 +363,7 @@ export class EmrStudio extends cdktf.TerraformResource {
       default_s3_location: cdktf.stringToTerraform(this._defaultS3Location),
       description: cdktf.stringToTerraform(this._description),
       engine_security_group_id: cdktf.stringToTerraform(this._engineSecurityGroupId),
+      id: cdktf.stringToTerraform(this._id),
       idp_auth_url: cdktf.stringToTerraform(this._idpAuthUrl),
       idp_relay_state_parameter_name: cdktf.stringToTerraform(this._idpRelayStateParameterName),
       name: cdktf.stringToTerraform(this._name),

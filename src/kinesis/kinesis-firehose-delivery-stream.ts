@@ -20,6 +20,13 @@ export interface KinesisFirehoseDeliveryStreamConfig extends cdktf.TerraformMeta
   */
   readonly destinationId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#id KinesisFirehoseDeliveryStream#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#name KinesisFirehoseDeliveryStream#name}
   */
   readonly name: string;
@@ -225,6 +232,102 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessin
   }
 }
 
+export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._parameterName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterName = this._parameterName;
+    }
+    if (this._parameterValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._parameterName = undefined;
+      this._parameterValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._parameterName = value.parameterName;
+      this._parameterValue = value.parameterValue;
+    }
+  }
+
+  // parameter_name - computed: false, optional: false, required: true
+  private _parameterName?: string; 
+  public get parameterName() {
+    return this.getStringAttribute('parameter_name');
+  }
+  public set parameterName(value: string) {
+    this._parameterName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterNameInput() {
+    return this._parameterName;
+  }
+
+  // parameter_value - computed: false, optional: false, required: true
+  private _parameterValue?: string; 
+  public get parameterValue() {
+    return this.getStringAttribute('parameter_value');
+  }
+  public set parameterValue(value: string) {
+    this._parameterValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue;
+  }
+}
+
+export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersList extends cdktf.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersOutputReference {
+    return new KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#type KinesisFirehoseDeliveryStream#type}
@@ -249,6 +352,105 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessin
   }
 }
 
+export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._parameters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameters = this._parameters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+      this._parameters.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+      this._parameters.internalValue = value.parameters;
+    }
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // parameters - computed: false, optional: true, required: false
+  private _parameters = new KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersList(this, "parameters", false);
+  public get parameters() {
+    return this._parameters;
+  }
+  public putParameters(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable) {
+    this._parameters.internalValue = value;
+  }
+  public resetParameters() {
+    this._parameters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parametersInput() {
+    return this._parameters.internalValue;
+  }
+}
+
+export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsList extends cdktf.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsOutputReference {
+    return new KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
@@ -291,9 +493,9 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._processors !== undefined) {
+    if (this._processors?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.processors = this._processors;
+      internalValueResult.processors = this._processors?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -302,12 +504,12 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
     if (value === undefined) {
       this.isEmptyObject = false;
       this._enabled = undefined;
-      this._processors = undefined;
+      this._processors.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
-      this._processors = value.processors;
+      this._processors.internalValue = value.processors;
     }
   }
 
@@ -328,20 +530,19 @@ export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingCo
   }
 
   // processors - computed: false, optional: true, required: false
-  private _processors?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable; 
+  private _processors = new KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsList(this, "processors", false);
   public get processors() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('processors');
+    return this._processors;
   }
-  public set processors(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
-    this._processors = value;
+  public putProcessors(value: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
+    this._processors.internalValue = value;
   }
   public resetProcessors() {
-    this._processors = undefined;
+    this._processors.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get processorsInput() {
-    return this._processors;
+    return this._processors.internalValue;
   }
 }
 export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig {
@@ -2427,6 +2628,102 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingCo
   }
 }
 
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._parameterName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterName = this._parameterName;
+    }
+    if (this._parameterValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._parameterName = undefined;
+      this._parameterValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._parameterName = value.parameterName;
+      this._parameterValue = value.parameterValue;
+    }
+  }
+
+  // parameter_name - computed: false, optional: false, required: true
+  private _parameterName?: string; 
+  public get parameterName() {
+    return this.getStringAttribute('parameter_name');
+  }
+  public set parameterName(value: string) {
+    this._parameterName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterNameInput() {
+    return this._parameterName;
+  }
+
+  // parameter_value - computed: false, optional: false, required: true
+  private _parameterValue?: string; 
+  public get parameterValue() {
+    return this.getStringAttribute('parameter_value');
+  }
+  public set parameterValue(value: string) {
+    this._parameterValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue;
+  }
+}
+
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersList extends cdktf.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersOutputReference {
+    return new KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#type KinesisFirehoseDeliveryStream#type}
@@ -2451,6 +2748,105 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingCo
   }
 }
 
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._parameters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameters = this._parameters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+      this._parameters.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+      this._parameters.internalValue = value.parameters;
+    }
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // parameters - computed: false, optional: true, required: false
+  private _parameters = new KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersList(this, "parameters", false);
+  public get parameters() {
+    return this._parameters;
+  }
+  public putParameters(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable) {
+    this._parameters.internalValue = value;
+  }
+  public resetParameters() {
+    this._parameters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parametersInput() {
+    return this._parameters.internalValue;
+  }
+}
+
+export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsList extends cdktf.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsOutputReference {
+    return new KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
@@ -2493,9 +2889,9 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._processors !== undefined) {
+    if (this._processors?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.processors = this._processors;
+      internalValueResult.processors = this._processors?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -2504,12 +2900,12 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
     if (value === undefined) {
       this.isEmptyObject = false;
       this._enabled = undefined;
-      this._processors = undefined;
+      this._processors.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
-      this._processors = value.processors;
+      this._processors.internalValue = value.processors;
     }
   }
 
@@ -2530,20 +2926,19 @@ export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfi
   }
 
   // processors - computed: false, optional: true, required: false
-  private _processors?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable; 
+  private _processors = new KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsList(this, "processors", false);
   public get processors() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('processors');
+    return this._processors;
   }
-  public set processors(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
-    this._processors = value;
+  public putProcessors(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
+    this._processors.internalValue = value;
   }
   public resetProcessors() {
-    this._processors = undefined;
+    this._processors.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get processorsInput() {
-    return this._processors;
+    return this._processors.internalValue;
   }
 }
 export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions {
@@ -3503,6 +3898,102 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessing
   }
 }
 
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._parameterName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterName = this._parameterName;
+    }
+    if (this._parameterValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._parameterName = undefined;
+      this._parameterValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._parameterName = value.parameterName;
+      this._parameterValue = value.parameterValue;
+    }
+  }
+
+  // parameter_name - computed: false, optional: false, required: true
+  private _parameterName?: string; 
+  public get parameterName() {
+    return this.getStringAttribute('parameter_name');
+  }
+  public set parameterName(value: string) {
+    this._parameterName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterNameInput() {
+    return this._parameterName;
+  }
+
+  // parameter_value - computed: false, optional: false, required: true
+  private _parameterValue?: string; 
+  public get parameterValue() {
+    return this.getStringAttribute('parameter_value');
+  }
+  public set parameterValue(value: string) {
+    this._parameterValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue;
+  }
+}
+
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersList extends cdktf.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersOutputReference {
+    return new KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#type KinesisFirehoseDeliveryStream#type}
@@ -3527,6 +4018,105 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessing
   }
 }
 
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._parameters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameters = this._parameters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+      this._parameters.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+      this._parameters.internalValue = value.parameters;
+    }
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // parameters - computed: false, optional: true, required: false
+  private _parameters = new KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersList(this, "parameters", false);
+  public get parameters() {
+    return this._parameters;
+  }
+  public putParameters(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable) {
+    this._parameters.internalValue = value;
+  }
+  public resetParameters() {
+    this._parameters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parametersInput() {
+    return this._parameters.internalValue;
+  }
+}
+
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList extends cdktf.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsOutputReference {
+    return new KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
@@ -3569,9 +4159,9 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._processors !== undefined) {
+    if (this._processors?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.processors = this._processors;
+      internalValueResult.processors = this._processors?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -3580,12 +4170,12 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
     if (value === undefined) {
       this.isEmptyObject = false;
       this._enabled = undefined;
-      this._processors = undefined;
+      this._processors.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
-      this._processors = value.processors;
+      this._processors.internalValue = value.processors;
     }
   }
 
@@ -3606,20 +4196,19 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingCon
   }
 
   // processors - computed: false, optional: true, required: false
-  private _processors?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable; 
+  private _processors = new KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList(this, "processors", false);
   public get processors() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('processors');
+    return this._processors;
   }
-  public set processors(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
-    this._processors = value;
+  public putProcessors(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
+    this._processors.internalValue = value;
   }
   public resetProcessors() {
-    this._processors = undefined;
+    this._processors.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get processorsInput() {
-    return this._processors;
+    return this._processors.internalValue;
   }
 }
 export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes {
@@ -3644,6 +4233,102 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestCon
   }
 }
 
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesList extends cdktf.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesOutputReference {
+    return new KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#content_encoding KinesisFirehoseDeliveryStream#content_encoding}
@@ -3686,9 +4371,9 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfig
       hasAnyValues = true;
       internalValueResult.contentEncoding = this._contentEncoding;
     }
-    if (this._commonAttributes !== undefined) {
+    if (this._commonAttributes?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.commonAttributes = this._commonAttributes;
+      internalValueResult.commonAttributes = this._commonAttributes?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -3697,12 +4382,12 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfig
     if (value === undefined) {
       this.isEmptyObject = false;
       this._contentEncoding = undefined;
-      this._commonAttributes = undefined;
+      this._commonAttributes.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._contentEncoding = value.contentEncoding;
-      this._commonAttributes = value.commonAttributes;
+      this._commonAttributes.internalValue = value.commonAttributes;
     }
   }
 
@@ -3723,20 +4408,19 @@ export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfig
   }
 
   // common_attributes - computed: false, optional: true, required: false
-  private _commonAttributes?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes[] | cdktf.IResolvable; 
+  private _commonAttributes = new KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesList(this, "common_attributes", false);
   public get commonAttributes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('common_attributes');
+    return this._commonAttributes;
   }
-  public set commonAttributes(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes[] | cdktf.IResolvable) {
-    this._commonAttributes = value;
+  public putCommonAttributes(value: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes[] | cdktf.IResolvable) {
+    this._commonAttributes.internalValue = value;
   }
   public resetCommonAttributes() {
-    this._commonAttributes = undefined;
+    this._commonAttributes.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get commonAttributesInput() {
-    return this._commonAttributes;
+    return this._commonAttributes.internalValue;
   }
 }
 export interface KinesisFirehoseDeliveryStreamHttpEndpointConfiguration {
@@ -4304,6 +4988,102 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConf
   }
 }
 
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._parameterName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterName = this._parameterName;
+    }
+    if (this._parameterValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._parameterName = undefined;
+      this._parameterValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._parameterName = value.parameterName;
+      this._parameterValue = value.parameterValue;
+    }
+  }
+
+  // parameter_name - computed: false, optional: false, required: true
+  private _parameterName?: string; 
+  public get parameterName() {
+    return this.getStringAttribute('parameter_name');
+  }
+  public set parameterName(value: string) {
+    this._parameterName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterNameInput() {
+    return this._parameterName;
+  }
+
+  // parameter_value - computed: false, optional: false, required: true
+  private _parameterValue?: string; 
+  public get parameterValue() {
+    return this.getStringAttribute('parameter_value');
+  }
+  public set parameterValue(value: string) {
+    this._parameterValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue;
+  }
+}
+
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersList extends cdktf.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersOutputReference {
+    return new KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#type KinesisFirehoseDeliveryStream#type}
@@ -4328,6 +5108,105 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConf
   }
 }
 
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._parameters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameters = this._parameters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+      this._parameters.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+      this._parameters.internalValue = value.parameters;
+    }
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // parameters - computed: false, optional: true, required: false
+  private _parameters = new KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersList(this, "parameters", false);
+  public get parameters() {
+    return this._parameters;
+  }
+  public putParameters(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable) {
+    this._parameters.internalValue = value;
+  }
+  public resetParameters() {
+    this._parameters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parametersInput() {
+    return this._parameters.internalValue;
+  }
+}
+
+export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsList extends cdktf.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsOutputReference {
+    return new KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
@@ -4370,9 +5249,9 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._processors !== undefined) {
+    if (this._processors?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.processors = this._processors;
+      internalValueResult.processors = this._processors?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -4381,12 +5260,12 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
     if (value === undefined) {
       this.isEmptyObject = false;
       this._enabled = undefined;
-      this._processors = undefined;
+      this._processors.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
-      this._processors = value.processors;
+      this._processors.internalValue = value.processors;
     }
   }
 
@@ -4407,20 +5286,19 @@ export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigu
   }
 
   // processors - computed: false, optional: true, required: false
-  private _processors?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable; 
+  private _processors = new KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsList(this, "processors", false);
   public get processors() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('processors');
+    return this._processors;
   }
-  public set processors(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
-    this._processors = value;
+  public putProcessors(value: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
+    this._processors.internalValue = value;
   }
   public resetProcessors() {
-    this._processors = undefined;
+    this._processors.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get processorsInput() {
-    return this._processors;
+    return this._processors.internalValue;
   }
 }
 export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions {
@@ -5828,6 +6706,102 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfig
   }
 }
 
+export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._parameterName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterName = this._parameterName;
+    }
+    if (this._parameterValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterValue = this._parameterValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._parameterName = undefined;
+      this._parameterValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._parameterName = value.parameterName;
+      this._parameterValue = value.parameterValue;
+    }
+  }
+
+  // parameter_name - computed: false, optional: false, required: true
+  private _parameterName?: string; 
+  public get parameterName() {
+    return this.getStringAttribute('parameter_name');
+  }
+  public set parameterName(value: string) {
+    this._parameterName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterNameInput() {
+    return this._parameterName;
+  }
+
+  // parameter_value - computed: false, optional: false, required: true
+  private _parameterValue?: string; 
+  public get parameterValue() {
+    return this.getStringAttribute('parameter_value');
+  }
+  public set parameterValue(value: string) {
+    this._parameterValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterValueInput() {
+    return this._parameterValue;
+  }
+}
+
+export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersList extends cdktf.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersOutputReference {
+    return new KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#type KinesisFirehoseDeliveryStream#type}
@@ -5852,6 +6826,105 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfig
   }
 }
 
+export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._parameters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameters = this._parameters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+      this._parameters.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+      this._parameters.internalValue = value.parameters;
+    }
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // parameters - computed: false, optional: true, required: false
+  private _parameters = new KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersList(this, "parameters", false);
+  public get parameters() {
+    return this._parameters;
+  }
+  public putParameters(value: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters[] | cdktf.IResolvable) {
+    this._parameters.internalValue = value;
+  }
+  public resetParameters() {
+    this._parameters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parametersInput() {
+    return this._parameters.internalValue;
+  }
+}
+
+export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsList extends cdktf.ComplexList {
+  public internalValue? : KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsOutputReference {
+    return new KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream#enabled KinesisFirehoseDeliveryStream#enabled}
@@ -5894,9 +6967,9 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._processors !== undefined) {
+    if (this._processors?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.processors = this._processors;
+      internalValueResult.processors = this._processors?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -5905,12 +6978,12 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
     if (value === undefined) {
       this.isEmptyObject = false;
       this._enabled = undefined;
-      this._processors = undefined;
+      this._processors.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
-      this._processors = value.processors;
+      this._processors.internalValue = value.processors;
     }
   }
 
@@ -5931,20 +7004,19 @@ export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigura
   }
 
   // processors - computed: false, optional: true, required: false
-  private _processors?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable; 
+  private _processors = new KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsList(this, "processors", false);
   public get processors() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('processors');
+    return this._processors;
   }
-  public set processors(value: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
-    this._processors = value;
+  public putProcessors(value: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors[] | cdktf.IResolvable) {
+    this._processors.internalValue = value;
   }
   public resetProcessors() {
-    this._processors = undefined;
+    this._processors.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get processorsInput() {
-    return this._processors;
+    return this._processors.internalValue;
   }
 }
 export interface KinesisFirehoseDeliveryStreamSplunkConfiguration {
@@ -6237,6 +7309,7 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
     this._arn = config.arn;
     this._destination = config.destination;
     this._destinationId = config.destinationId;
+    this._id = config.id;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -6301,8 +7374,19 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -6503,6 +7587,7 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
       arn: cdktf.stringToTerraform(this._arn),
       destination: cdktf.stringToTerraform(this._destination),
       destination_id: cdktf.stringToTerraform(this._destinationId),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),

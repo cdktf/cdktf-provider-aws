@@ -16,6 +16,13 @@ export interface VpcIpamConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam#id VpcIpam#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam#tags VpcIpam#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -47,6 +54,83 @@ export function vpcIpamOperatingRegionsToTerraform(struct?: VpcIpamOperatingRegi
   }
 }
 
+export class VpcIpamOperatingRegionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): VpcIpamOperatingRegions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._regionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regionName = this._regionName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpcIpamOperatingRegions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._regionName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._regionName = value.regionName;
+    }
+  }
+
+  // region_name - computed: false, optional: false, required: true
+  private _regionName?: string; 
+  public get regionName() {
+    return this.getStringAttribute('region_name');
+  }
+  public set regionName(value: string) {
+    this._regionName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionNameInput() {
+    return this._regionName;
+  }
+}
+
+export class VpcIpamOperatingRegionsList extends cdktf.ComplexList {
+  public internalValue? : VpcIpamOperatingRegions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VpcIpamOperatingRegionsOutputReference {
+    return new VpcIpamOperatingRegionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam aws_vpc_ipam}
@@ -84,9 +168,10 @@ export class VpcIpam extends cdktf.TerraformResource {
     });
     this._cascade = config.cascade;
     this._description = config.description;
+    this._id = config.id;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._operatingRegions = config.operatingRegions;
+    this._operatingRegions.internalValue = config.operatingRegions;
   }
 
   // ==========
@@ -131,8 +216,19 @@ export class VpcIpam extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // private_default_scope_id - computed: true, optional: false, required: false
@@ -183,17 +279,16 @@ export class VpcIpam extends cdktf.TerraformResource {
   }
 
   // operating_regions - computed: false, optional: false, required: true
-  private _operatingRegions?: VpcIpamOperatingRegions[] | cdktf.IResolvable; 
+  private _operatingRegions = new VpcIpamOperatingRegionsList(this, "operating_regions", true);
   public get operatingRegions() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('operating_regions')));
+    return this._operatingRegions;
   }
-  public set operatingRegions(value: VpcIpamOperatingRegions[] | cdktf.IResolvable) {
-    this._operatingRegions = value;
+  public putOperatingRegions(value: VpcIpamOperatingRegions[] | cdktf.IResolvable) {
+    this._operatingRegions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get operatingRegionsInput() {
-    return this._operatingRegions;
+    return this._operatingRegions.internalValue;
   }
 
   // =========
@@ -204,9 +299,10 @@ export class VpcIpam extends cdktf.TerraformResource {
     return {
       cascade: cdktf.booleanToTerraform(this._cascade),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      operating_regions: cdktf.listMapper(vpcIpamOperatingRegionsToTerraform)(this._operatingRegions),
+      operating_regions: cdktf.listMapper(vpcIpamOperatingRegionsToTerraform)(this._operatingRegions.internalValue),
     };
   }
 }

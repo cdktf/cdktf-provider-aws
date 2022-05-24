@@ -12,6 +12,13 @@ export interface OpsworksUserProfileConfig extends cdktf.TerraformMetaArguments 
   */
   readonly allowSelfManagement?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_user_profile#id OpsworksUserProfile#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_user_profile#ssh_public_key OpsworksUserProfile#ssh_public_key}
   */
   readonly sshPublicKey?: string;
@@ -60,6 +67,7 @@ export class OpsworksUserProfile extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._allowSelfManagement = config.allowSelfManagement;
+    this._id = config.id;
     this._sshPublicKey = config.sshPublicKey;
     this._sshUsername = config.sshUsername;
     this._userArn = config.userArn;
@@ -86,8 +94,19 @@ export class OpsworksUserProfile extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ssh_public_key - computed: false, optional: true, required: false
@@ -139,6 +158,7 @@ export class OpsworksUserProfile extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_self_management: cdktf.booleanToTerraform(this._allowSelfManagement),
+      id: cdktf.stringToTerraform(this._id),
       ssh_public_key: cdktf.stringToTerraform(this._sshPublicKey),
       ssh_username: cdktf.stringToTerraform(this._sshUsername),
       user_arn: cdktf.stringToTerraform(this._userArn),

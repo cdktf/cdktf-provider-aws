@@ -24,6 +24,13 @@ export interface ImagebuilderImagePipelineConfig extends cdktf.TerraformMetaArgu
   */
   readonly enhancedImageMetadataEnabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_pipeline#id ImagebuilderImagePipeline#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_pipeline#image_recipe_arn ImagebuilderImagePipeline#image_recipe_arn}
   */
   readonly imageRecipeArn?: string;
@@ -307,6 +314,7 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
     this._description = config.description;
     this._distributionConfigurationArn = config.distributionConfigurationArn;
     this._enhancedImageMetadataEnabled = config.enhancedImageMetadataEnabled;
+    this._id = config.id;
     this._imageRecipeArn = config.imageRecipeArn;
     this._infrastructureConfigurationArn = config.infrastructureConfigurationArn;
     this._name = config.name;
@@ -411,8 +419,19 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // image_recipe_arn - computed: false, optional: true, required: false
@@ -552,6 +571,7 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       distribution_configuration_arn: cdktf.stringToTerraform(this._distributionConfigurationArn),
       enhanced_image_metadata_enabled: cdktf.booleanToTerraform(this._enhancedImageMetadataEnabled),
+      id: cdktf.stringToTerraform(this._id),
       image_recipe_arn: cdktf.stringToTerraform(this._imageRecipeArn),
       infrastructure_configuration_arn: cdktf.stringToTerraform(this._infrastructureConfigurationArn),
       name: cdktf.stringToTerraform(this._name),

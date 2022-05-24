@@ -20,6 +20,13 @@ export interface BudgetsBudgetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly costFilters?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget#id BudgetsBudget#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget#limit_amount BudgetsBudget#limit_amount}
   */
   readonly limitAmount: string;
@@ -88,6 +95,102 @@ export function budgetsBudgetCostFilterToTerraform(struct?: BudgetsBudgetCostFil
   }
 }
 
+export class BudgetsBudgetCostFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BudgetsBudgetCostFilter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetCostFilter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._values = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._values = value.values;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class BudgetsBudgetCostFilterList extends cdktf.ComplexList {
+  public internalValue? : BudgetsBudgetCostFilter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BudgetsBudgetCostFilterOutputReference {
+    return new BudgetsBudgetCostFilterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BudgetsBudgetCostTypes {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget#include_credit BudgetsBudget#include_credit}
@@ -465,6 +568,184 @@ export function budgetsBudgetNotificationToTerraform(struct?: BudgetsBudgetNotif
   }
 }
 
+export class BudgetsBudgetNotificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BudgetsBudgetNotification | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._comparisonOperator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.comparisonOperator = this._comparisonOperator;
+    }
+    if (this._notificationType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notificationType = this._notificationType;
+    }
+    if (this._subscriberEmailAddresses !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subscriberEmailAddresses = this._subscriberEmailAddresses;
+    }
+    if (this._subscriberSnsTopicArns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subscriberSnsTopicArns = this._subscriberSnsTopicArns;
+    }
+    if (this._threshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.threshold = this._threshold;
+    }
+    if (this._thresholdType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.thresholdType = this._thresholdType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetNotification | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._comparisonOperator = undefined;
+      this._notificationType = undefined;
+      this._subscriberEmailAddresses = undefined;
+      this._subscriberSnsTopicArns = undefined;
+      this._threshold = undefined;
+      this._thresholdType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._comparisonOperator = value.comparisonOperator;
+      this._notificationType = value.notificationType;
+      this._subscriberEmailAddresses = value.subscriberEmailAddresses;
+      this._subscriberSnsTopicArns = value.subscriberSnsTopicArns;
+      this._threshold = value.threshold;
+      this._thresholdType = value.thresholdType;
+    }
+  }
+
+  // comparison_operator - computed: false, optional: false, required: true
+  private _comparisonOperator?: string; 
+  public get comparisonOperator() {
+    return this.getStringAttribute('comparison_operator');
+  }
+  public set comparisonOperator(value: string) {
+    this._comparisonOperator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get comparisonOperatorInput() {
+    return this._comparisonOperator;
+  }
+
+  // notification_type - computed: false, optional: false, required: true
+  private _notificationType?: string; 
+  public get notificationType() {
+    return this.getStringAttribute('notification_type');
+  }
+  public set notificationType(value: string) {
+    this._notificationType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationTypeInput() {
+    return this._notificationType;
+  }
+
+  // subscriber_email_addresses - computed: false, optional: true, required: false
+  private _subscriberEmailAddresses?: string[]; 
+  public get subscriberEmailAddresses() {
+    return cdktf.Fn.tolist(this.getListAttribute('subscriber_email_addresses'));
+  }
+  public set subscriberEmailAddresses(value: string[]) {
+    this._subscriberEmailAddresses = value;
+  }
+  public resetSubscriberEmailAddresses() {
+    this._subscriberEmailAddresses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subscriberEmailAddressesInput() {
+    return this._subscriberEmailAddresses;
+  }
+
+  // subscriber_sns_topic_arns - computed: false, optional: true, required: false
+  private _subscriberSnsTopicArns?: string[]; 
+  public get subscriberSnsTopicArns() {
+    return cdktf.Fn.tolist(this.getListAttribute('subscriber_sns_topic_arns'));
+  }
+  public set subscriberSnsTopicArns(value: string[]) {
+    this._subscriberSnsTopicArns = value;
+  }
+  public resetSubscriberSnsTopicArns() {
+    this._subscriberSnsTopicArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subscriberSnsTopicArnsInput() {
+    return this._subscriberSnsTopicArns;
+  }
+
+  // threshold - computed: false, optional: false, required: true
+  private _threshold?: number; 
+  public get threshold() {
+    return this.getNumberAttribute('threshold');
+  }
+  public set threshold(value: number) {
+    this._threshold = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdInput() {
+    return this._threshold;
+  }
+
+  // threshold_type - computed: false, optional: false, required: true
+  private _thresholdType?: string; 
+  public get thresholdType() {
+    return this.getStringAttribute('threshold_type');
+  }
+  public set thresholdType(value: string) {
+    this._thresholdType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdTypeInput() {
+    return this._thresholdType;
+  }
+}
+
+export class BudgetsBudgetNotificationList extends cdktf.ComplexList {
+  public internalValue? : BudgetsBudgetNotification[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BudgetsBudgetNotificationOutputReference {
+    return new BudgetsBudgetNotificationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget aws_budgets_budget}
@@ -503,6 +784,7 @@ export class BudgetsBudget extends cdktf.TerraformResource {
     this._accountId = config.accountId;
     this._budgetType = config.budgetType;
     this._costFilters = config.costFilters;
+    this._id = config.id;
     this._limitAmount = config.limitAmount;
     this._limitUnit = config.limitUnit;
     this._name = config.name;
@@ -510,9 +792,9 @@ export class BudgetsBudget extends cdktf.TerraformResource {
     this._timePeriodEnd = config.timePeriodEnd;
     this._timePeriodStart = config.timePeriodStart;
     this._timeUnit = config.timeUnit;
-    this._costFilter = config.costFilter;
+    this._costFilter.internalValue = config.costFilter;
     this._costTypes.internalValue = config.costTypes;
-    this._notification = config.notification;
+    this._notification.internalValue = config.notification;
   }
 
   // ==========
@@ -570,8 +852,19 @@ export class BudgetsBudget extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // limit_amount - computed: false, optional: false, required: true
@@ -678,20 +971,19 @@ export class BudgetsBudget extends cdktf.TerraformResource {
   }
 
   // cost_filter - computed: false, optional: true, required: false
-  private _costFilter?: BudgetsBudgetCostFilter[] | cdktf.IResolvable; 
+  private _costFilter = new BudgetsBudgetCostFilterList(this, "cost_filter", true);
   public get costFilter() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('cost_filter')));
+    return this._costFilter;
   }
-  public set costFilter(value: BudgetsBudgetCostFilter[] | cdktf.IResolvable) {
-    this._costFilter = value;
+  public putCostFilter(value: BudgetsBudgetCostFilter[] | cdktf.IResolvable) {
+    this._costFilter.internalValue = value;
   }
   public resetCostFilter() {
-    this._costFilter = undefined;
+    this._costFilter.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get costFilterInput() {
-    return this._costFilter;
+    return this._costFilter.internalValue;
   }
 
   // cost_types - computed: false, optional: true, required: false
@@ -711,20 +1003,19 @@ export class BudgetsBudget extends cdktf.TerraformResource {
   }
 
   // notification - computed: false, optional: true, required: false
-  private _notification?: BudgetsBudgetNotification[] | cdktf.IResolvable; 
+  private _notification = new BudgetsBudgetNotificationList(this, "notification", true);
   public get notification() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('notification')));
+    return this._notification;
   }
-  public set notification(value: BudgetsBudgetNotification[] | cdktf.IResolvable) {
-    this._notification = value;
+  public putNotification(value: BudgetsBudgetNotification[] | cdktf.IResolvable) {
+    this._notification.internalValue = value;
   }
   public resetNotification() {
-    this._notification = undefined;
+    this._notification.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get notificationInput() {
-    return this._notification;
+    return this._notification.internalValue;
   }
 
   // =========
@@ -736,6 +1027,7 @@ export class BudgetsBudget extends cdktf.TerraformResource {
       account_id: cdktf.stringToTerraform(this._accountId),
       budget_type: cdktf.stringToTerraform(this._budgetType),
       cost_filters: cdktf.hashMapper(cdktf.stringToTerraform)(this._costFilters),
+      id: cdktf.stringToTerraform(this._id),
       limit_amount: cdktf.stringToTerraform(this._limitAmount),
       limit_unit: cdktf.stringToTerraform(this._limitUnit),
       name: cdktf.stringToTerraform(this._name),
@@ -743,9 +1035,9 @@ export class BudgetsBudget extends cdktf.TerraformResource {
       time_period_end: cdktf.stringToTerraform(this._timePeriodEnd),
       time_period_start: cdktf.stringToTerraform(this._timePeriodStart),
       time_unit: cdktf.stringToTerraform(this._timeUnit),
-      cost_filter: cdktf.listMapper(budgetsBudgetCostFilterToTerraform)(this._costFilter),
+      cost_filter: cdktf.listMapper(budgetsBudgetCostFilterToTerraform)(this._costFilter.internalValue),
       cost_types: budgetsBudgetCostTypesToTerraform(this._costTypes.internalValue),
-      notification: cdktf.listMapper(budgetsBudgetNotificationToTerraform)(this._notification),
+      notification: cdktf.listMapper(budgetsBudgetNotificationToTerraform)(this._notification.internalValue),
     };
   }
 }

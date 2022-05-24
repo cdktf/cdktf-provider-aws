@@ -16,6 +16,13 @@ export interface IamAccountPasswordPolicyConfig extends cdktf.TerraformMetaArgum
   */
   readonly hardExpiry?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_account_password_policy#id IamAccountPasswordPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_account_password_policy#max_password_age IamAccountPasswordPolicy#max_password_age}
   */
   readonly maxPasswordAge?: number;
@@ -81,6 +88,7 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
     });
     this._allowUsersToChangePassword = config.allowUsersToChangePassword;
     this._hardExpiry = config.hardExpiry;
+    this._id = config.id;
     this._maxPasswordAge = config.maxPasswordAge;
     this._minimumPasswordLength = config.minimumPasswordLength;
     this._passwordReusePrevention = config.passwordReusePrevention;
@@ -132,8 +140,19 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // max_password_age - computed: true, optional: true, required: false
@@ -256,6 +275,7 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
     return {
       allow_users_to_change_password: cdktf.booleanToTerraform(this._allowUsersToChangePassword),
       hard_expiry: cdktf.booleanToTerraform(this._hardExpiry),
+      id: cdktf.stringToTerraform(this._id),
       max_password_age: cdktf.numberToTerraform(this._maxPasswordAge),
       minimum_password_length: cdktf.numberToTerraform(this._minimumPasswordLength),
       password_reuse_prevention: cdktf.numberToTerraform(this._passwordReusePrevention),

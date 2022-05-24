@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface LoadBalancerListenerPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/load_balancer_listener_policy#id LoadBalancerListenerPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/load_balancer_listener_policy#load_balancer_name LoadBalancerListenerPolicy#load_balancer_name}
   */
   readonly loadBalancerName: string;
@@ -55,6 +62,7 @@ export class LoadBalancerListenerPolicy extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._loadBalancerName = config.loadBalancerName;
     this._loadBalancerPort = config.loadBalancerPort;
     this._policyNames = config.policyNames;
@@ -65,8 +73,19 @@ export class LoadBalancerListenerPolicy extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // load_balancer_name - computed: false, optional: false, required: true
@@ -117,6 +136,7 @@ export class LoadBalancerListenerPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       load_balancer_name: cdktf.stringToTerraform(this._loadBalancerName),
       load_balancer_port: cdktf.numberToTerraform(this._loadBalancerPort),
       policy_names: cdktf.listMapper(cdktf.stringToTerraform)(this._policyNames),

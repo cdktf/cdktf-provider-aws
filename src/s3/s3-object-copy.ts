@@ -84,6 +84,13 @@ export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy#id S3ObjectCopy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy#key S3ObjectCopy#key}
   */
   readonly key: string;
@@ -173,6 +180,9 @@ export interface S3ObjectCopyGrant {
   readonly email?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy#id S3ObjectCopy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -203,6 +213,168 @@ export function s3ObjectCopyGrantToTerraform(struct?: S3ObjectCopyGrant | cdktf.
   }
 }
 
+export class S3ObjectCopyGrantOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3ObjectCopyGrant | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._permissions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.permissions = this._permissions;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uri = this._uri;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3ObjectCopyGrant | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._email = undefined;
+      this._id = undefined;
+      this._permissions = undefined;
+      this._type = undefined;
+      this._uri = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._email = value.email;
+      this._id = value.id;
+      this._permissions = value.permissions;
+      this._type = value.type;
+      this._uri = value.uri;
+    }
+  }
+
+  // email - computed: false, optional: true, required: false
+  private _email?: string; 
+  public get email() {
+    return this.getStringAttribute('email');
+  }
+  public set email(value: string) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // permissions - computed: false, optional: false, required: true
+  private _permissions?: string[]; 
+  public get permissions() {
+    return cdktf.Fn.tolist(this.getListAttribute('permissions'));
+  }
+  public set permissions(value: string[]) {
+    this._permissions = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionsInput() {
+    return this._permissions;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // uri - computed: false, optional: true, required: false
+  private _uri?: string; 
+  public get uri() {
+    return this.getStringAttribute('uri');
+  }
+  public set uri(value: string) {
+    this._uri = value;
+  }
+  public resetUri() {
+    this._uri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uriInput() {
+    return this._uri;
+  }
+}
+
+export class S3ObjectCopyGrantList extends cdktf.ComplexList {
+  public internalValue? : S3ObjectCopyGrant[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3ObjectCopyGrantOutputReference {
+    return new S3ObjectCopyGrantOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy aws_s3_object_copy}
@@ -257,6 +429,7 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
     this._expectedSourceBucketOwner = config.expectedSourceBucketOwner;
     this._expires = config.expires;
     this._forceDestroy = config.forceDestroy;
+    this._id = config.id;
     this._key = config.key;
     this._kmsEncryptionContext = config.kmsEncryptionContext;
     this._kmsKeyId = config.kmsKeyId;
@@ -276,7 +449,7 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._websiteRedirect = config.websiteRedirect;
-    this._grant = config.grant;
+    this._grant.internalValue = config.grant;
   }
 
   // ==========
@@ -595,8 +768,19 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // key - computed: false, optional: false, required: true
@@ -918,20 +1102,19 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   }
 
   // grant - computed: false, optional: true, required: false
-  private _grant?: S3ObjectCopyGrant[] | cdktf.IResolvable; 
+  private _grant = new S3ObjectCopyGrantList(this, "grant", true);
   public get grant() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('grant')));
+    return this._grant;
   }
-  public set grant(value: S3ObjectCopyGrant[] | cdktf.IResolvable) {
-    this._grant = value;
+  public putGrant(value: S3ObjectCopyGrant[] | cdktf.IResolvable) {
+    this._grant.internalValue = value;
   }
   public resetGrant() {
-    this._grant = undefined;
+    this._grant.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get grantInput() {
-    return this._grant;
+    return this._grant.internalValue;
   }
 
   // =========
@@ -959,6 +1142,7 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
       expected_source_bucket_owner: cdktf.stringToTerraform(this._expectedSourceBucketOwner),
       expires: cdktf.stringToTerraform(this._expires),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
       kms_encryption_context: cdktf.stringToTerraform(this._kmsEncryptionContext),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
@@ -978,7 +1162,7 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       website_redirect: cdktf.stringToTerraform(this._websiteRedirect),
-      grant: cdktf.listMapper(s3ObjectCopyGrantToTerraform)(this._grant),
+      grant: cdktf.listMapper(s3ObjectCopyGrantToTerraform)(this._grant.internalValue),
     };
   }
 }

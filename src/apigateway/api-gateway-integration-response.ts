@@ -16,6 +16,13 @@ export interface ApiGatewayIntegrationResponseConfig extends cdktf.TerraformMeta
   */
   readonly httpMethod: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_integration_response#id ApiGatewayIntegrationResponse#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_integration_response#resource_id ApiGatewayIntegrationResponse#resource_id}
   */
   readonly resourceId: string;
@@ -77,6 +84,7 @@ export class ApiGatewayIntegrationResponse extends cdktf.TerraformResource {
     });
     this._contentHandling = config.contentHandling;
     this._httpMethod = config.httpMethod;
+    this._id = config.id;
     this._resourceId = config.resourceId;
     this._responseParameters = config.responseParameters;
     this._responseTemplates = config.responseTemplates;
@@ -119,8 +127,19 @@ export class ApiGatewayIntegrationResponse extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // resource_id - computed: false, optional: false, required: true
@@ -218,6 +237,7 @@ export class ApiGatewayIntegrationResponse extends cdktf.TerraformResource {
     return {
       content_handling: cdktf.stringToTerraform(this._contentHandling),
       http_method: cdktf.stringToTerraform(this._httpMethod),
+      id: cdktf.stringToTerraform(this._id),
       resource_id: cdktf.stringToTerraform(this._resourceId),
       response_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._responseParameters),
       response_templates: cdktf.hashMapper(cdktf.stringToTerraform)(this._responseTemplates),

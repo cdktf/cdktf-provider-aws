@@ -28,6 +28,13 @@ export interface MwaaEnvironmentConfig extends cdktf.TerraformMetaArguments {
   */
   readonly executionRoleArn: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#id MwaaEnvironment#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment#kms_key MwaaEnvironment#kms_key}
   */
   readonly kmsKey?: string;
@@ -1034,6 +1041,7 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
     this._dagS3Path = config.dagS3Path;
     this._environmentClass = config.environmentClass;
     this._executionRoleArn = config.executionRoleArn;
+    this._id = config.id;
     this._kmsKey = config.kmsKey;
     this._maxWorkers = config.maxWorkers;
     this._minWorkers = config.minWorkers;
@@ -1141,8 +1149,19 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_key - computed: false, optional: true, required: false
@@ -1424,6 +1443,7 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
       dag_s3_path: cdktf.stringToTerraform(this._dagS3Path),
       environment_class: cdktf.stringToTerraform(this._environmentClass),
       execution_role_arn: cdktf.stringToTerraform(this._executionRoleArn),
+      id: cdktf.stringToTerraform(this._id),
       kms_key: cdktf.stringToTerraform(this._kmsKey),
       max_workers: cdktf.numberToTerraform(this._maxWorkers),
       min_workers: cdktf.numberToTerraform(this._minWorkers),

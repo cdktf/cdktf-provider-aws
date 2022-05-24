@@ -12,6 +12,13 @@ export interface ApiGatewayUsagePlanConfig extends cdktf.TerraformMetaArguments 
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan#id ApiGatewayUsagePlan#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan#name ApiGatewayUsagePlan#name}
   */
   readonly name: string;
@@ -73,6 +80,127 @@ export function apiGatewayUsagePlanApiStagesThrottleToTerraform(struct?: ApiGate
   }
 }
 
+export class ApiGatewayUsagePlanApiStagesThrottleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ApiGatewayUsagePlanApiStagesThrottle | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._burstLimit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.burstLimit = this._burstLimit;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._rateLimit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rateLimit = this._rateLimit;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApiGatewayUsagePlanApiStagesThrottle | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._burstLimit = undefined;
+      this._path = undefined;
+      this._rateLimit = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._burstLimit = value.burstLimit;
+      this._path = value.path;
+      this._rateLimit = value.rateLimit;
+    }
+  }
+
+  // burst_limit - computed: false, optional: true, required: false
+  private _burstLimit?: number; 
+  public get burstLimit() {
+    return this.getNumberAttribute('burst_limit');
+  }
+  public set burstLimit(value: number) {
+    this._burstLimit = value;
+  }
+  public resetBurstLimit() {
+    this._burstLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get burstLimitInput() {
+    return this._burstLimit;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // rate_limit - computed: false, optional: true, required: false
+  private _rateLimit?: number; 
+  public get rateLimit() {
+    return this.getNumberAttribute('rate_limit');
+  }
+  public set rateLimit(value: number) {
+    this._rateLimit = value;
+  }
+  public resetRateLimit() {
+    this._rateLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rateLimitInput() {
+    return this._rateLimit;
+  }
+}
+
+export class ApiGatewayUsagePlanApiStagesThrottleList extends cdktf.ComplexList {
+  public internalValue? : ApiGatewayUsagePlanApiStagesThrottle[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ApiGatewayUsagePlanApiStagesThrottleOutputReference {
+    return new ApiGatewayUsagePlanApiStagesThrottleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ApiGatewayUsagePlanApiStages {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan#api_id ApiGatewayUsagePlan#api_id}
@@ -102,6 +230,124 @@ export function apiGatewayUsagePlanApiStagesToTerraform(struct?: ApiGatewayUsage
   }
 }
 
+export class ApiGatewayUsagePlanApiStagesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ApiGatewayUsagePlanApiStages | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._apiId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.apiId = this._apiId;
+    }
+    if (this._stage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stage = this._stage;
+    }
+    if (this._throttle?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.throttle = this._throttle?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApiGatewayUsagePlanApiStages | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._apiId = undefined;
+      this._stage = undefined;
+      this._throttle.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._apiId = value.apiId;
+      this._stage = value.stage;
+      this._throttle.internalValue = value.throttle;
+    }
+  }
+
+  // api_id - computed: false, optional: false, required: true
+  private _apiId?: string; 
+  public get apiId() {
+    return this.getStringAttribute('api_id');
+  }
+  public set apiId(value: string) {
+    this._apiId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiIdInput() {
+    return this._apiId;
+  }
+
+  // stage - computed: false, optional: false, required: true
+  private _stage?: string; 
+  public get stage() {
+    return this.getStringAttribute('stage');
+  }
+  public set stage(value: string) {
+    this._stage = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stageInput() {
+    return this._stage;
+  }
+
+  // throttle - computed: false, optional: true, required: false
+  private _throttle = new ApiGatewayUsagePlanApiStagesThrottleList(this, "throttle", true);
+  public get throttle() {
+    return this._throttle;
+  }
+  public putThrottle(value: ApiGatewayUsagePlanApiStagesThrottle[] | cdktf.IResolvable) {
+    this._throttle.internalValue = value;
+  }
+  public resetThrottle() {
+    this._throttle.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get throttleInput() {
+    return this._throttle.internalValue;
+  }
+}
+
+export class ApiGatewayUsagePlanApiStagesList extends cdktf.ComplexList {
+  public internalValue? : ApiGatewayUsagePlanApiStages[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ApiGatewayUsagePlanApiStagesOutputReference {
+    return new ApiGatewayUsagePlanApiStagesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ApiGatewayUsagePlanQuotaSettings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan#limit ApiGatewayUsagePlan#limit}
@@ -343,11 +589,12 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._productCode = config.productCode;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
-    this._apiStages = config.apiStages;
+    this._apiStages.internalValue = config.apiStages;
     this._quotaSettings.internalValue = config.quotaSettings;
     this._throttleSettings.internalValue = config.throttleSettings;
   }
@@ -378,8 +625,19 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -444,20 +702,19 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
   }
 
   // api_stages - computed: false, optional: true, required: false
-  private _apiStages?: ApiGatewayUsagePlanApiStages[] | cdktf.IResolvable; 
+  private _apiStages = new ApiGatewayUsagePlanApiStagesList(this, "api_stages", true);
   public get apiStages() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('api_stages')));
+    return this._apiStages;
   }
-  public set apiStages(value: ApiGatewayUsagePlanApiStages[] | cdktf.IResolvable) {
-    this._apiStages = value;
+  public putApiStages(value: ApiGatewayUsagePlanApiStages[] | cdktf.IResolvable) {
+    this._apiStages.internalValue = value;
   }
   public resetApiStages() {
-    this._apiStages = undefined;
+    this._apiStages.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get apiStagesInput() {
-    return this._apiStages;
+    return this._apiStages.internalValue;
   }
 
   // quota_settings - computed: false, optional: true, required: false
@@ -499,11 +756,12 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       product_code: cdktf.stringToTerraform(this._productCode),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
-      api_stages: cdktf.listMapper(apiGatewayUsagePlanApiStagesToTerraform)(this._apiStages),
+      api_stages: cdktf.listMapper(apiGatewayUsagePlanApiStagesToTerraform)(this._apiStages.internalValue),
       quota_settings: apiGatewayUsagePlanQuotaSettingsToTerraform(this._quotaSettings.internalValue),
       throttle_settings: apiGatewayUsagePlanThrottleSettingsToTerraform(this._throttleSettings.internalValue),
     };

@@ -28,6 +28,13 @@ export interface ApiGatewayMethodConfig extends cdktf.TerraformMetaArguments {
   */
   readonly httpMethod: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method#id ApiGatewayMethod#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method#operation_name ApiGatewayMethod#operation_name}
   */
   readonly operationName?: string;
@@ -92,6 +99,7 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
     this._authorizationScopes = config.authorizationScopes;
     this._authorizerId = config.authorizerId;
     this._httpMethod = config.httpMethod;
+    this._id = config.id;
     this._operationName = config.operationName;
     this._requestModels = config.requestModels;
     this._requestParameters = config.requestParameters;
@@ -179,8 +187,19 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // operation_name - computed: false, optional: true, required: false
@@ -284,6 +303,7 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
       authorization_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._authorizationScopes),
       authorizer_id: cdktf.stringToTerraform(this._authorizerId),
       http_method: cdktf.stringToTerraform(this._httpMethod),
+      id: cdktf.stringToTerraform(this._id),
       operation_name: cdktf.stringToTerraform(this._operationName),
       request_models: cdktf.hashMapper(cdktf.stringToTerraform)(this._requestModels),
       request_parameters: cdktf.hashMapper(cdktf.booleanToTerraform)(this._requestParameters),

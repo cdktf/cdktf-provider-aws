@@ -12,6 +12,13 @@ export interface DatasyncLocationS3Config extends cdktf.TerraformMetaArguments {
   */
   readonly agentArns?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_s3#id DatasyncLocationS3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_s3#s3_bucket_arn DatasyncLocationS3#s3_bucket_arn}
   */
   readonly s3BucketArn: string;
@@ -136,6 +143,7 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._agentArns = config.agentArns;
+    this._id = config.id;
     this._s3BucketArn = config.s3BucketArn;
     this._s3StorageClass = config.s3StorageClass;
     this._subdirectory = config.subdirectory;
@@ -170,8 +178,19 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // s3_bucket_arn - computed: false, optional: false, required: true
@@ -273,6 +292,7 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       agent_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._agentArns),
+      id: cdktf.stringToTerraform(this._id),
       s3_bucket_arn: cdktf.stringToTerraform(this._s3BucketArn),
       s3_storage_class: cdktf.stringToTerraform(this._s3StorageClass),
       subdirectory: cdktf.stringToTerraform(this._subdirectory),

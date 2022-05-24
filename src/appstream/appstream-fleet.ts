@@ -32,6 +32,13 @@ export interface AppstreamFleetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly iamRoleArn?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet#id AppstreamFleet#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet#idle_disconnect_timeout_in_seconds AppstreamFleet#idle_disconnect_timeout_in_seconds}
   */
   readonly idleDisconnectTimeoutInSeconds?: number;
@@ -388,6 +395,7 @@ export class AppstreamFleet extends cdktf.TerraformResource {
     this._enableDefaultInternetAccess = config.enableDefaultInternetAccess;
     this._fleetType = config.fleetType;
     this._iamRoleArn = config.iamRoleArn;
+    this._id = config.id;
     this._idleDisconnectTimeoutInSeconds = config.idleDisconnectTimeoutInSeconds;
     this._imageArn = config.imageArn;
     this._imageName = config.imageName;
@@ -513,8 +521,19 @@ export class AppstreamFleet extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // idle_disconnect_timeout_in_seconds - computed: false, optional: true, required: false
@@ -717,6 +736,7 @@ export class AppstreamFleet extends cdktf.TerraformResource {
       enable_default_internet_access: cdktf.booleanToTerraform(this._enableDefaultInternetAccess),
       fleet_type: cdktf.stringToTerraform(this._fleetType),
       iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
+      id: cdktf.stringToTerraform(this._id),
       idle_disconnect_timeout_in_seconds: cdktf.numberToTerraform(this._idleDisconnectTimeoutInSeconds),
       image_arn: cdktf.stringToTerraform(this._imageArn),
       image_name: cdktf.stringToTerraform(this._imageName),

@@ -60,6 +60,13 @@ export interface OpsworksStackConfig extends cdktf.TerraformMetaArguments {
   */
   readonly hostnameTheme?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack#id OpsworksStack#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack#manage_berkshelf OpsworksStack#manage_berkshelf}
   */
   readonly manageBerkshelf?: boolean | cdktf.IResolvable;
@@ -144,6 +151,190 @@ export function opsworksStackCustomCookbooksSourceToTerraform(struct?: OpsworksS
   }
 }
 
+export class OpsworksStackCustomCookbooksSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): OpsworksStackCustomCookbooksSource | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._password !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.password = this._password;
+    }
+    if (this._revision !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.revision = this._revision;
+    }
+    if (this._sshKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sshKey = this._sshKey;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OpsworksStackCustomCookbooksSource | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._password = undefined;
+      this._revision = undefined;
+      this._sshKey = undefined;
+      this._type = undefined;
+      this._url = undefined;
+      this._username = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._password = value.password;
+      this._revision = value.revision;
+      this._sshKey = value.sshKey;
+      this._type = value.type;
+      this._url = value.url;
+      this._username = value.username;
+    }
+  }
+
+  // password - computed: false, optional: true, required: false
+  private _password?: string; 
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+  public set password(value: string) {
+    this._password = value;
+  }
+  public resetPassword() {
+    this._password = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password;
+  }
+
+  // revision - computed: false, optional: true, required: false
+  private _revision?: string; 
+  public get revision() {
+    return this.getStringAttribute('revision');
+  }
+  public set revision(value: string) {
+    this._revision = value;
+  }
+  public resetRevision() {
+    this._revision = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get revisionInput() {
+    return this._revision;
+  }
+
+  // ssh_key - computed: false, optional: true, required: false
+  private _sshKey?: string; 
+  public get sshKey() {
+    return this.getStringAttribute('ssh_key');
+  }
+  public set sshKey(value: string) {
+    this._sshKey = value;
+  }
+  public resetSshKey() {
+    this._sshKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sshKeyInput() {
+    return this._sshKey;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // url - computed: false, optional: false, required: true
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
+  }
+
+  // username - computed: false, optional: true, required: false
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+}
+
+export class OpsworksStackCustomCookbooksSourceList extends cdktf.ComplexList {
+  public internalValue? : OpsworksStackCustomCookbooksSource[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OpsworksStackCustomCookbooksSourceOutputReference {
+    return new OpsworksStackCustomCookbooksSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack aws_opsworks_stack}
@@ -192,6 +383,7 @@ export class OpsworksStack extends cdktf.TerraformResource {
     this._defaultSshKeyName = config.defaultSshKeyName;
     this._defaultSubnetId = config.defaultSubnetId;
     this._hostnameTheme = config.hostnameTheme;
+    this._id = config.id;
     this._manageBerkshelf = config.manageBerkshelf;
     this._name = config.name;
     this._region = config.region;
@@ -201,7 +393,7 @@ export class OpsworksStack extends cdktf.TerraformResource {
     this._useCustomCookbooks = config.useCustomCookbooks;
     this._useOpsworksSecurityGroups = config.useOpsworksSecurityGroups;
     this._vpcId = config.vpcId;
-    this._customCookbooksSource = config.customCookbooksSource;
+    this._customCookbooksSource.internalValue = config.customCookbooksSource;
   }
 
   // ==========
@@ -419,8 +611,19 @@ export class OpsworksStack extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // manage_berkshelf - computed: false, optional: true, required: false
@@ -564,20 +767,19 @@ export class OpsworksStack extends cdktf.TerraformResource {
   }
 
   // custom_cookbooks_source - computed: false, optional: true, required: false
-  private _customCookbooksSource?: OpsworksStackCustomCookbooksSource[] | cdktf.IResolvable; 
+  private _customCookbooksSource = new OpsworksStackCustomCookbooksSourceList(this, "custom_cookbooks_source", false);
   public get customCookbooksSource() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_cookbooks_source');
+    return this._customCookbooksSource;
   }
-  public set customCookbooksSource(value: OpsworksStackCustomCookbooksSource[] | cdktf.IResolvable) {
-    this._customCookbooksSource = value;
+  public putCustomCookbooksSource(value: OpsworksStackCustomCookbooksSource[] | cdktf.IResolvable) {
+    this._customCookbooksSource.internalValue = value;
   }
   public resetCustomCookbooksSource() {
-    this._customCookbooksSource = undefined;
+    this._customCookbooksSource.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get customCookbooksSourceInput() {
-    return this._customCookbooksSource;
+    return this._customCookbooksSource.internalValue;
   }
 
   // =========
@@ -599,6 +801,7 @@ export class OpsworksStack extends cdktf.TerraformResource {
       default_ssh_key_name: cdktf.stringToTerraform(this._defaultSshKeyName),
       default_subnet_id: cdktf.stringToTerraform(this._defaultSubnetId),
       hostname_theme: cdktf.stringToTerraform(this._hostnameTheme),
+      id: cdktf.stringToTerraform(this._id),
       manage_berkshelf: cdktf.booleanToTerraform(this._manageBerkshelf),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
@@ -608,7 +811,7 @@ export class OpsworksStack extends cdktf.TerraformResource {
       use_custom_cookbooks: cdktf.booleanToTerraform(this._useCustomCookbooks),
       use_opsworks_security_groups: cdktf.booleanToTerraform(this._useOpsworksSecurityGroups),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      custom_cookbooks_source: cdktf.listMapper(opsworksStackCustomCookbooksSourceToTerraform)(this._customCookbooksSource),
+      custom_cookbooks_source: cdktf.listMapper(opsworksStackCustomCookbooksSourceToTerraform)(this._customCookbooksSource.internalValue),
     };
   }
 }

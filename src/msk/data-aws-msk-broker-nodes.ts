@@ -11,6 +11,13 @@ export interface DataAwsMskBrokerNodesConfig extends cdktf.TerraformMetaArgument
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/msk_broker_nodes#cluster_arn DataAwsMskBrokerNodes#cluster_arn}
   */
   readonly clusterArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/msk_broker_nodes#id DataAwsMskBrokerNodes#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
 }
 export interface DataAwsMskBrokerNodesNodeInfoList {
 }
@@ -137,6 +144,7 @@ export class DataAwsMskBrokerNodes extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._clusterArn = config.clusterArn;
+    this._id = config.id;
   }
 
   // ==========
@@ -157,8 +165,19 @@ export class DataAwsMskBrokerNodes extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // node_info_list - computed: true, optional: false, required: false
@@ -174,6 +193,7 @@ export class DataAwsMskBrokerNodes extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_arn: cdktf.stringToTerraform(this._clusterArn),
+      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

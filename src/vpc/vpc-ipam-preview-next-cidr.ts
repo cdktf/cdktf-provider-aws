@@ -12,6 +12,13 @@ export interface VpcIpamPreviewNextCidrConfig extends cdktf.TerraformMetaArgumen
   */
   readonly disallowedCidrs?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_preview_next_cidr#id VpcIpamPreviewNextCidr#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_preview_next_cidr#ipam_pool_id VpcIpamPreviewNextCidr#ipam_pool_id}
   */
   readonly ipamPoolId: string;
@@ -56,6 +63,7 @@ export class VpcIpamPreviewNextCidr extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._disallowedCidrs = config.disallowedCidrs;
+    this._id = config.id;
     this._ipamPoolId = config.ipamPoolId;
     this._netmaskLength = config.netmaskLength;
   }
@@ -86,8 +94,19 @@ export class VpcIpamPreviewNextCidr extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ipam_pool_id - computed: false, optional: false, required: true
@@ -126,6 +145,7 @@ export class VpcIpamPreviewNextCidr extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       disallowed_cidrs: cdktf.listMapper(cdktf.stringToTerraform)(this._disallowedCidrs),
+      id: cdktf.stringToTerraform(this._id),
       ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
       netmask_length: cdktf.numberToTerraform(this._netmaskLength),
     };

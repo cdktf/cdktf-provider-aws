@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 */
 export interface ConnectUserHierarchyStructureConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_user_hierarchy_structure#id ConnectUserHierarchyStructure#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_user_hierarchy_structure#instance_id ConnectUserHierarchyStructure#instance_id}
   */
   readonly instanceId: string;
@@ -596,6 +603,7 @@ export class ConnectUserHierarchyStructure extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._instanceId = config.instanceId;
     this._hierarchyStructure.internalValue = config.hierarchyStructure;
   }
@@ -605,8 +613,19 @@ export class ConnectUserHierarchyStructure extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_id - computed: false, optional: false, required: true
@@ -641,6 +660,7 @@ export class ConnectUserHierarchyStructure extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       instance_id: cdktf.stringToTerraform(this._instanceId),
       hierarchy_structure: connectUserHierarchyStructureHierarchyStructureToTerraform(this._hierarchyStructure.internalValue),
     };

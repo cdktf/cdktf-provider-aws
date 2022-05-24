@@ -68,6 +68,13 @@ export interface OpsworksHaproxyLayerConfig extends cdktf.TerraformMetaArguments
   */
   readonly healthcheckUrl?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_haproxy_layer#id OpsworksHaproxyLayer#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_haproxy_layer#install_updates_on_boot OpsworksHaproxyLayer#install_updates_on_boot}
   */
   readonly installUpdatesOnBoot?: boolean | cdktf.IResolvable;
@@ -195,6 +202,300 @@ export function opsworksHaproxyLayerCloudwatchConfigurationLogStreamsToTerraform
   }
 }
 
+export class OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): OpsworksHaproxyLayerCloudwatchConfigurationLogStreams | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._batchCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.batchCount = this._batchCount;
+    }
+    if (this._batchSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.batchSize = this._batchSize;
+    }
+    if (this._bufferDuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bufferDuration = this._bufferDuration;
+    }
+    if (this._datetimeFormat !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.datetimeFormat = this._datetimeFormat;
+    }
+    if (this._encoding !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encoding = this._encoding;
+    }
+    if (this._file !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.file = this._file;
+    }
+    if (this._fileFingerprintLines !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileFingerprintLines = this._fileFingerprintLines;
+    }
+    if (this._initialPosition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initialPosition = this._initialPosition;
+    }
+    if (this._logGroupName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logGroupName = this._logGroupName;
+    }
+    if (this._multilineStartPattern !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.multilineStartPattern = this._multilineStartPattern;
+    }
+    if (this._timeZone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeZone = this._timeZone;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OpsworksHaproxyLayerCloudwatchConfigurationLogStreams | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._batchCount = undefined;
+      this._batchSize = undefined;
+      this._bufferDuration = undefined;
+      this._datetimeFormat = undefined;
+      this._encoding = undefined;
+      this._file = undefined;
+      this._fileFingerprintLines = undefined;
+      this._initialPosition = undefined;
+      this._logGroupName = undefined;
+      this._multilineStartPattern = undefined;
+      this._timeZone = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._batchCount = value.batchCount;
+      this._batchSize = value.batchSize;
+      this._bufferDuration = value.bufferDuration;
+      this._datetimeFormat = value.datetimeFormat;
+      this._encoding = value.encoding;
+      this._file = value.file;
+      this._fileFingerprintLines = value.fileFingerprintLines;
+      this._initialPosition = value.initialPosition;
+      this._logGroupName = value.logGroupName;
+      this._multilineStartPattern = value.multilineStartPattern;
+      this._timeZone = value.timeZone;
+    }
+  }
+
+  // batch_count - computed: false, optional: true, required: false
+  private _batchCount?: number; 
+  public get batchCount() {
+    return this.getNumberAttribute('batch_count');
+  }
+  public set batchCount(value: number) {
+    this._batchCount = value;
+  }
+  public resetBatchCount() {
+    this._batchCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get batchCountInput() {
+    return this._batchCount;
+  }
+
+  // batch_size - computed: false, optional: true, required: false
+  private _batchSize?: number; 
+  public get batchSize() {
+    return this.getNumberAttribute('batch_size');
+  }
+  public set batchSize(value: number) {
+    this._batchSize = value;
+  }
+  public resetBatchSize() {
+    this._batchSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get batchSizeInput() {
+    return this._batchSize;
+  }
+
+  // buffer_duration - computed: false, optional: true, required: false
+  private _bufferDuration?: number; 
+  public get bufferDuration() {
+    return this.getNumberAttribute('buffer_duration');
+  }
+  public set bufferDuration(value: number) {
+    this._bufferDuration = value;
+  }
+  public resetBufferDuration() {
+    this._bufferDuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bufferDurationInput() {
+    return this._bufferDuration;
+  }
+
+  // datetime_format - computed: false, optional: true, required: false
+  private _datetimeFormat?: string; 
+  public get datetimeFormat() {
+    return this.getStringAttribute('datetime_format');
+  }
+  public set datetimeFormat(value: string) {
+    this._datetimeFormat = value;
+  }
+  public resetDatetimeFormat() {
+    this._datetimeFormat = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datetimeFormatInput() {
+    return this._datetimeFormat;
+  }
+
+  // encoding - computed: false, optional: true, required: false
+  private _encoding?: string; 
+  public get encoding() {
+    return this.getStringAttribute('encoding');
+  }
+  public set encoding(value: string) {
+    this._encoding = value;
+  }
+  public resetEncoding() {
+    this._encoding = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encodingInput() {
+    return this._encoding;
+  }
+
+  // file - computed: false, optional: false, required: true
+  private _file?: string; 
+  public get file() {
+    return this.getStringAttribute('file');
+  }
+  public set file(value: string) {
+    this._file = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileInput() {
+    return this._file;
+  }
+
+  // file_fingerprint_lines - computed: false, optional: true, required: false
+  private _fileFingerprintLines?: string; 
+  public get fileFingerprintLines() {
+    return this.getStringAttribute('file_fingerprint_lines');
+  }
+  public set fileFingerprintLines(value: string) {
+    this._fileFingerprintLines = value;
+  }
+  public resetFileFingerprintLines() {
+    this._fileFingerprintLines = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileFingerprintLinesInput() {
+    return this._fileFingerprintLines;
+  }
+
+  // initial_position - computed: false, optional: true, required: false
+  private _initialPosition?: string; 
+  public get initialPosition() {
+    return this.getStringAttribute('initial_position');
+  }
+  public set initialPosition(value: string) {
+    this._initialPosition = value;
+  }
+  public resetInitialPosition() {
+    this._initialPosition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initialPositionInput() {
+    return this._initialPosition;
+  }
+
+  // log_group_name - computed: false, optional: false, required: true
+  private _logGroupName?: string; 
+  public get logGroupName() {
+    return this.getStringAttribute('log_group_name');
+  }
+  public set logGroupName(value: string) {
+    this._logGroupName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logGroupNameInput() {
+    return this._logGroupName;
+  }
+
+  // multiline_start_pattern - computed: false, optional: true, required: false
+  private _multilineStartPattern?: string; 
+  public get multilineStartPattern() {
+    return this.getStringAttribute('multiline_start_pattern');
+  }
+  public set multilineStartPattern(value: string) {
+    this._multilineStartPattern = value;
+  }
+  public resetMultilineStartPattern() {
+    this._multilineStartPattern = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get multilineStartPatternInput() {
+    return this._multilineStartPattern;
+  }
+
+  // time_zone - computed: false, optional: true, required: false
+  private _timeZone?: string; 
+  public get timeZone() {
+    return this.getStringAttribute('time_zone');
+  }
+  public set timeZone(value: string) {
+    this._timeZone = value;
+  }
+  public resetTimeZone() {
+    this._timeZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeZoneInput() {
+    return this._timeZone;
+  }
+}
+
+export class OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsList extends cdktf.ComplexList {
+  public internalValue? : OpsworksHaproxyLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference {
+    return new OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface OpsworksHaproxyLayerCloudwatchConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_haproxy_layer#enabled OpsworksHaproxyLayer#enabled}
@@ -237,9 +538,9 @@ export class OpsworksHaproxyLayerCloudwatchConfigurationOutputReference extends 
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._logStreams !== undefined) {
+    if (this._logStreams?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.logStreams = this._logStreams;
+      internalValueResult.logStreams = this._logStreams?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -248,12 +549,12 @@ export class OpsworksHaproxyLayerCloudwatchConfigurationOutputReference extends 
     if (value === undefined) {
       this.isEmptyObject = false;
       this._enabled = undefined;
-      this._logStreams = undefined;
+      this._logStreams.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
-      this._logStreams = value.logStreams;
+      this._logStreams.internalValue = value.logStreams;
     }
   }
 
@@ -274,20 +575,19 @@ export class OpsworksHaproxyLayerCloudwatchConfigurationOutputReference extends 
   }
 
   // log_streams - computed: false, optional: true, required: false
-  private _logStreams?: OpsworksHaproxyLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable; 
+  private _logStreams = new OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsList(this, "log_streams", false);
   public get logStreams() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('log_streams');
+    return this._logStreams;
   }
-  public set logStreams(value: OpsworksHaproxyLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable) {
-    this._logStreams = value;
+  public putLogStreams(value: OpsworksHaproxyLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable) {
+    this._logStreams.internalValue = value;
   }
   public resetLogStreams() {
-    this._logStreams = undefined;
+    this._logStreams.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get logStreamsInput() {
-    return this._logStreams;
+    return this._logStreams.internalValue;
   }
 }
 export interface OpsworksHaproxyLayerEbsVolume {
@@ -337,6 +637,209 @@ export function opsworksHaproxyLayerEbsVolumeToTerraform(struct?: OpsworksHaprox
   }
 }
 
+export class OpsworksHaproxyLayerEbsVolumeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): OpsworksHaproxyLayerEbsVolume | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._encrypted !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encrypted = this._encrypted;
+    }
+    if (this._iops !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.iops = this._iops;
+    }
+    if (this._mountPoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mountPoint = this._mountPoint;
+    }
+    if (this._numberOfDisks !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberOfDisks = this._numberOfDisks;
+    }
+    if (this._raidLevel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.raidLevel = this._raidLevel;
+    }
+    if (this._size !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OpsworksHaproxyLayerEbsVolume | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._encrypted = undefined;
+      this._iops = undefined;
+      this._mountPoint = undefined;
+      this._numberOfDisks = undefined;
+      this._raidLevel = undefined;
+      this._size = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._encrypted = value.encrypted;
+      this._iops = value.iops;
+      this._mountPoint = value.mountPoint;
+      this._numberOfDisks = value.numberOfDisks;
+      this._raidLevel = value.raidLevel;
+      this._size = value.size;
+      this._type = value.type;
+    }
+  }
+
+  // encrypted - computed: false, optional: true, required: false
+  private _encrypted?: boolean | cdktf.IResolvable; 
+  public get encrypted() {
+    return this.getBooleanAttribute('encrypted');
+  }
+  public set encrypted(value: boolean | cdktf.IResolvable) {
+    this._encrypted = value;
+  }
+  public resetEncrypted() {
+    this._encrypted = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptedInput() {
+    return this._encrypted;
+  }
+
+  // iops - computed: false, optional: true, required: false
+  private _iops?: number; 
+  public get iops() {
+    return this.getNumberAttribute('iops');
+  }
+  public set iops(value: number) {
+    this._iops = value;
+  }
+  public resetIops() {
+    this._iops = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iopsInput() {
+    return this._iops;
+  }
+
+  // mount_point - computed: false, optional: false, required: true
+  private _mountPoint?: string; 
+  public get mountPoint() {
+    return this.getStringAttribute('mount_point');
+  }
+  public set mountPoint(value: string) {
+    this._mountPoint = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mountPointInput() {
+    return this._mountPoint;
+  }
+
+  // number_of_disks - computed: false, optional: false, required: true
+  private _numberOfDisks?: number; 
+  public get numberOfDisks() {
+    return this.getNumberAttribute('number_of_disks');
+  }
+  public set numberOfDisks(value: number) {
+    this._numberOfDisks = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberOfDisksInput() {
+    return this._numberOfDisks;
+  }
+
+  // raid_level - computed: false, optional: true, required: false
+  private _raidLevel?: string; 
+  public get raidLevel() {
+    return this.getStringAttribute('raid_level');
+  }
+  public set raidLevel(value: string) {
+    this._raidLevel = value;
+  }
+  public resetRaidLevel() {
+    this._raidLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get raidLevelInput() {
+    return this._raidLevel;
+  }
+
+  // size - computed: false, optional: false, required: true
+  private _size?: number; 
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+  public set size(value: number) {
+    this._size = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class OpsworksHaproxyLayerEbsVolumeList extends cdktf.ComplexList {
+  public internalValue? : OpsworksHaproxyLayerEbsVolume[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OpsworksHaproxyLayerEbsVolumeOutputReference {
+    return new OpsworksHaproxyLayerEbsVolumeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_haproxy_layer aws_opsworks_haproxy_layer}
@@ -387,6 +890,7 @@ export class OpsworksHaproxyLayer extends cdktf.TerraformResource {
     this._elasticLoadBalancer = config.elasticLoadBalancer;
     this._healthcheckMethod = config.healthcheckMethod;
     this._healthcheckUrl = config.healthcheckUrl;
+    this._id = config.id;
     this._installUpdatesOnBoot = config.installUpdatesOnBoot;
     this._instanceShutdownTimeout = config.instanceShutdownTimeout;
     this._name = config.name;
@@ -400,7 +904,7 @@ export class OpsworksHaproxyLayer extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._useEbsOptimizedInstances = config.useEbsOptimizedInstances;
     this._cloudwatchConfiguration.internalValue = config.cloudwatchConfiguration;
-    this._ebsVolume = config.ebsVolume;
+    this._ebsVolume.internalValue = config.ebsVolume;
   }
 
   // ==========
@@ -653,8 +1157,19 @@ export class OpsworksHaproxyLayer extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // install_updates_on_boot - computed: false, optional: true, required: false
@@ -860,20 +1375,19 @@ export class OpsworksHaproxyLayer extends cdktf.TerraformResource {
   }
 
   // ebs_volume - computed: false, optional: true, required: false
-  private _ebsVolume?: OpsworksHaproxyLayerEbsVolume[] | cdktf.IResolvable; 
+  private _ebsVolume = new OpsworksHaproxyLayerEbsVolumeList(this, "ebs_volume", true);
   public get ebsVolume() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('ebs_volume')));
+    return this._ebsVolume;
   }
-  public set ebsVolume(value: OpsworksHaproxyLayerEbsVolume[] | cdktf.IResolvable) {
-    this._ebsVolume = value;
+  public putEbsVolume(value: OpsworksHaproxyLayerEbsVolume[] | cdktf.IResolvable) {
+    this._ebsVolume.internalValue = value;
   }
   public resetEbsVolume() {
-    this._ebsVolume = undefined;
+    this._ebsVolume.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ebsVolumeInput() {
-    return this._ebsVolume;
+    return this._ebsVolume.internalValue;
   }
 
   // =========
@@ -897,6 +1411,7 @@ export class OpsworksHaproxyLayer extends cdktf.TerraformResource {
       elastic_load_balancer: cdktf.stringToTerraform(this._elasticLoadBalancer),
       healthcheck_method: cdktf.stringToTerraform(this._healthcheckMethod),
       healthcheck_url: cdktf.stringToTerraform(this._healthcheckUrl),
+      id: cdktf.stringToTerraform(this._id),
       install_updates_on_boot: cdktf.booleanToTerraform(this._installUpdatesOnBoot),
       instance_shutdown_timeout: cdktf.numberToTerraform(this._instanceShutdownTimeout),
       name: cdktf.stringToTerraform(this._name),
@@ -910,7 +1425,7 @@ export class OpsworksHaproxyLayer extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       use_ebs_optimized_instances: cdktf.booleanToTerraform(this._useEbsOptimizedInstances),
       cloudwatch_configuration: opsworksHaproxyLayerCloudwatchConfigurationToTerraform(this._cloudwatchConfiguration.internalValue),
-      ebs_volume: cdktf.listMapper(opsworksHaproxyLayerEbsVolumeToTerraform)(this._ebsVolume),
+      ebs_volume: cdktf.listMapper(opsworksHaproxyLayerEbsVolumeToTerraform)(this._ebsVolume.internalValue),
     };
   }
 }

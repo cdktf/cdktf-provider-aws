@@ -16,6 +16,13 @@ export interface XrayGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly groupName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_group#id XrayGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_group#tags XrayGroup#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -156,6 +163,7 @@ export class XrayGroup extends cdktf.TerraformResource {
     });
     this._filterExpression = config.filterExpression;
     this._groupName = config.groupName;
+    this._id = config.id;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._insightsConfiguration.internalValue = config.insightsConfiguration;
@@ -197,8 +205,19 @@ export class XrayGroup extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -257,6 +276,7 @@ export class XrayGroup extends cdktf.TerraformResource {
     return {
       filter_expression: cdktf.stringToTerraform(this._filterExpression),
       group_name: cdktf.stringToTerraform(this._groupName),
+      id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       insights_configuration: xrayGroupInsightsConfigurationToTerraform(this._insightsConfiguration.internalValue),

@@ -16,6 +16,13 @@ export interface MskClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enhancedMonitoring?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#id MskCluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster#kafka_version MskCluster#kafka_version}
   */
   readonly kafkaVersion: string;
@@ -2029,6 +2036,7 @@ export function mskClusterTimeoutsToTerraform(struct?: MskClusterTimeoutsOutputR
 
 export class MskClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2038,7 +2046,10 @@ export class MskClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): MskClusterTimeouts | undefined {
+  public get internalValue(): MskClusterTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -2056,15 +2067,21 @@ export class MskClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MskClusterTimeouts | undefined) {
+  public set internalValue(value: MskClusterTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -2156,6 +2173,7 @@ export class MskCluster extends cdktf.TerraformResource {
     });
     this._clusterName = config.clusterName;
     this._enhancedMonitoring = config.enhancedMonitoring;
+    this._id = config.id;
     this._kafkaVersion = config.kafkaVersion;
     this._numberOfBrokerNodes = config.numberOfBrokerNodes;
     this._tags = config.tags;
@@ -2248,8 +2266,19 @@ export class MskCluster extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kafka_version - computed: false, optional: false, required: true
@@ -2437,6 +2466,7 @@ export class MskCluster extends cdktf.TerraformResource {
     return {
       cluster_name: cdktf.stringToTerraform(this._clusterName),
       enhanced_monitoring: cdktf.stringToTerraform(this._enhancedMonitoring),
+      id: cdktf.stringToTerraform(this._id),
       kafka_version: cdktf.stringToTerraform(this._kafkaVersion),
       number_of_broker_nodes: cdktf.numberToTerraform(this._numberOfBrokerNodes),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

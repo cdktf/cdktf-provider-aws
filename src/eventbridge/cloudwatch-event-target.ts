@@ -16,6 +16,13 @@ export interface CloudwatchEventTargetConfig extends cdktf.TerraformMetaArgument
   */
   readonly eventBusName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target#id CloudwatchEventTarget#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target#input CloudwatchEventTarget#input}
   */
   readonly input?: string;
@@ -439,6 +446,105 @@ export function cloudwatchEventTargetEcsTargetPlacementConstraintToTerraform(str
   }
 }
 
+export class CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudwatchEventTargetEcsTargetPlacementConstraint | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._expression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudwatchEventTargetEcsTargetPlacementConstraint | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._expression = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._expression = value.expression;
+      this._type = value.type;
+    }
+  }
+
+  // expression - computed: false, optional: true, required: false
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  public resetExpression() {
+    this._expression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class CloudwatchEventTargetEcsTargetPlacementConstraintList extends cdktf.ComplexList {
+  public internalValue? : CloudwatchEventTargetEcsTargetPlacementConstraint[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference {
+    return new CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudwatchEventTargetEcsTarget {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target#enable_ecs_managed_tags CloudwatchEventTarget#enable_ecs_managed_tags}
@@ -564,9 +670,9 @@ export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.networkConfiguration = this._networkConfiguration?.internalValue;
     }
-    if (this._placementConstraint !== undefined) {
+    if (this._placementConstraint?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.placementConstraint = this._placementConstraint;
+      internalValueResult.placementConstraint = this._placementConstraint?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -584,7 +690,7 @@ export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.Complex
       this._taskCount = undefined;
       this._taskDefinitionArn = undefined;
       this._networkConfiguration.internalValue = undefined;
-      this._placementConstraint = undefined;
+      this._placementConstraint.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -598,7 +704,7 @@ export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.Complex
       this._taskCount = value.taskCount;
       this._taskDefinitionArn = value.taskDefinitionArn;
       this._networkConfiguration.internalValue = value.networkConfiguration;
-      this._placementConstraint = value.placementConstraint;
+      this._placementConstraint.internalValue = value.placementConstraint;
     }
   }
 
@@ -760,20 +866,19 @@ export class CloudwatchEventTargetEcsTargetOutputReference extends cdktf.Complex
   }
 
   // placement_constraint - computed: false, optional: true, required: false
-  private _placementConstraint?: CloudwatchEventTargetEcsTargetPlacementConstraint[] | cdktf.IResolvable; 
+  private _placementConstraint = new CloudwatchEventTargetEcsTargetPlacementConstraintList(this, "placement_constraint", true);
   public get placementConstraint() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('placement_constraint')));
+    return this._placementConstraint;
   }
-  public set placementConstraint(value: CloudwatchEventTargetEcsTargetPlacementConstraint[] | cdktf.IResolvable) {
-    this._placementConstraint = value;
+  public putPlacementConstraint(value: CloudwatchEventTargetEcsTargetPlacementConstraint[] | cdktf.IResolvable) {
+    this._placementConstraint.internalValue = value;
   }
   public resetPlacementConstraint() {
-    this._placementConstraint = undefined;
+    this._placementConstraint.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get placementConstraintInput() {
-    return this._placementConstraint;
+    return this._placementConstraint.internalValue;
   }
 }
 export interface CloudwatchEventTargetHttpTarget {
@@ -1360,6 +1465,102 @@ export function cloudwatchEventTargetRunCommandTargetsToTerraform(struct?: Cloud
   }
 }
 
+export class CloudwatchEventTargetRunCommandTargetsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CloudwatchEventTargetRunCommandTargets | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudwatchEventTargetRunCommandTargets | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._values = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class CloudwatchEventTargetRunCommandTargetsList extends cdktf.ComplexList {
+  public internalValue? : CloudwatchEventTargetRunCommandTargets[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CloudwatchEventTargetRunCommandTargetsOutputReference {
+    return new CloudwatchEventTargetRunCommandTargetsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CloudwatchEventTargetSqsTarget {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target#message_group_id CloudwatchEventTarget#message_group_id}
@@ -1462,6 +1663,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
     });
     this._arn = config.arn;
     this._eventBusName = config.eventBusName;
+    this._id = config.id;
     this._input = config.input;
     this._inputPath = config.inputPath;
     this._roleArn = config.roleArn;
@@ -1475,7 +1677,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
     this._kinesisTarget.internalValue = config.kinesisTarget;
     this._redshiftTarget.internalValue = config.redshiftTarget;
     this._retryPolicy.internalValue = config.retryPolicy;
-    this._runCommandTargets = config.runCommandTargets;
+    this._runCommandTargets.internalValue = config.runCommandTargets;
     this._sqsTarget.internalValue = config.sqsTarget;
   }
 
@@ -1513,8 +1715,19 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // input - computed: false, optional: true, required: false
@@ -1723,20 +1936,19 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
   }
 
   // run_command_targets - computed: false, optional: true, required: false
-  private _runCommandTargets?: CloudwatchEventTargetRunCommandTargets[] | cdktf.IResolvable; 
+  private _runCommandTargets = new CloudwatchEventTargetRunCommandTargetsList(this, "run_command_targets", false);
   public get runCommandTargets() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('run_command_targets');
+    return this._runCommandTargets;
   }
-  public set runCommandTargets(value: CloudwatchEventTargetRunCommandTargets[] | cdktf.IResolvable) {
-    this._runCommandTargets = value;
+  public putRunCommandTargets(value: CloudwatchEventTargetRunCommandTargets[] | cdktf.IResolvable) {
+    this._runCommandTargets.internalValue = value;
   }
   public resetRunCommandTargets() {
-    this._runCommandTargets = undefined;
+    this._runCommandTargets.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get runCommandTargetsInput() {
-    return this._runCommandTargets;
+    return this._runCommandTargets.internalValue;
   }
 
   // sqs_target - computed: false, optional: true, required: false
@@ -1763,6 +1975,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
     return {
       arn: cdktf.stringToTerraform(this._arn),
       event_bus_name: cdktf.stringToTerraform(this._eventBusName),
+      id: cdktf.stringToTerraform(this._id),
       input: cdktf.stringToTerraform(this._input),
       input_path: cdktf.stringToTerraform(this._inputPath),
       role_arn: cdktf.stringToTerraform(this._roleArn),
@@ -1776,7 +1989,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
       kinesis_target: cloudwatchEventTargetKinesisTargetToTerraform(this._kinesisTarget.internalValue),
       redshift_target: cloudwatchEventTargetRedshiftTargetToTerraform(this._redshiftTarget.internalValue),
       retry_policy: cloudwatchEventTargetRetryPolicyToTerraform(this._retryPolicy.internalValue),
-      run_command_targets: cdktf.listMapper(cloudwatchEventTargetRunCommandTargetsToTerraform)(this._runCommandTargets),
+      run_command_targets: cdktf.listMapper(cloudwatchEventTargetRunCommandTargetsToTerraform)(this._runCommandTargets.internalValue),
       sqs_target: cloudwatchEventTargetSqsTargetToTerraform(this._sqsTarget.internalValue),
     };
   }

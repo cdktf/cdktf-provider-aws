@@ -16,6 +16,13 @@ export interface VolumeAttachmentConfig extends cdktf.TerraformMetaArguments {
   */
   readonly forceDetach?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/volume_attachment#id VolumeAttachment#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/volume_attachment#instance_id VolumeAttachment#instance_id}
   */
   readonly instanceId: string;
@@ -62,6 +69,7 @@ export function volumeAttachmentTimeoutsToTerraform(struct?: VolumeAttachmentTim
 
 export class VolumeAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -71,7 +79,10 @@ export class VolumeAttachmentTimeoutsOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): VolumeAttachmentTimeouts | undefined {
+  public get internalValue(): VolumeAttachmentTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -85,14 +96,20 @@ export class VolumeAttachmentTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VolumeAttachmentTimeouts | undefined) {
+  public set internalValue(value: VolumeAttachmentTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -167,6 +184,7 @@ export class VolumeAttachment extends cdktf.TerraformResource {
     });
     this._deviceName = config.deviceName;
     this._forceDetach = config.forceDetach;
+    this._id = config.id;
     this._instanceId = config.instanceId;
     this._skipDestroy = config.skipDestroy;
     this._stopInstanceBeforeDetaching = config.stopInstanceBeforeDetaching;
@@ -208,8 +226,19 @@ export class VolumeAttachment extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_id - computed: false, optional: false, required: true
@@ -294,6 +323,7 @@ export class VolumeAttachment extends cdktf.TerraformResource {
     return {
       device_name: cdktf.stringToTerraform(this._deviceName),
       force_detach: cdktf.booleanToTerraform(this._forceDetach),
+      id: cdktf.stringToTerraform(this._id),
       instance_id: cdktf.stringToTerraform(this._instanceId),
       skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
       stop_instance_before_detaching: cdktf.booleanToTerraform(this._stopInstanceBeforeDetaching),

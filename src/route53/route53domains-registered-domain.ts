@@ -20,6 +20,13 @@ export interface Route53DomainsRegisteredDomainConfig extends cdktf.TerraformMet
   */
   readonly domainName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53domains_registered_domain#id Route53DomainsRegisteredDomain#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53domains_registered_domain#registrant_privacy Route53DomainsRegisteredDomain#registrant_privacy}
   */
   readonly registrantPrivacy?: boolean | cdktf.IResolvable;
@@ -508,6 +515,105 @@ export function route53DomainsRegisteredDomainNameServerToTerraform(struct?: Rou
   }
 }
 
+export class Route53DomainsRegisteredDomainNameServerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Route53DomainsRegisteredDomainNameServer | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._glueIps !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.glueIps = this._glueIps;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Route53DomainsRegisteredDomainNameServer | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._glueIps = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._glueIps = value.glueIps;
+      this._name = value.name;
+    }
+  }
+
+  // glue_ips - computed: false, optional: true, required: false
+  private _glueIps?: string[]; 
+  public get glueIps() {
+    return cdktf.Fn.tolist(this.getListAttribute('glue_ips'));
+  }
+  public set glueIps(value: string[]) {
+    this._glueIps = value;
+  }
+  public resetGlueIps() {
+    this._glueIps = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get glueIpsInput() {
+    return this._glueIps;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class Route53DomainsRegisteredDomainNameServerList extends cdktf.ComplexList {
+  public internalValue? : Route53DomainsRegisteredDomainNameServer[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Route53DomainsRegisteredDomainNameServerOutputReference {
+    return new Route53DomainsRegisteredDomainNameServerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Route53DomainsRegisteredDomainRegistrantContact {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53domains_registered_domain#address_line_1 Route53DomainsRegisteredDomain#address_line_1}
@@ -1364,6 +1470,7 @@ export function route53DomainsRegisteredDomainTimeoutsToTerraform(struct?: Route
 
 export class Route53DomainsRegisteredDomainTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1373,7 +1480,10 @@ export class Route53DomainsRegisteredDomainTimeoutsOutputReference extends cdktf
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Route53DomainsRegisteredDomainTimeouts | undefined {
+  public get internalValue(): Route53DomainsRegisteredDomainTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -1387,14 +1497,20 @@ export class Route53DomainsRegisteredDomainTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Route53DomainsRegisteredDomainTimeouts | undefined) {
+  public set internalValue(value: Route53DomainsRegisteredDomainTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._update = value.update;
     }
@@ -1470,13 +1586,14 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
     this._adminPrivacy = config.adminPrivacy;
     this._autoRenew = config.autoRenew;
     this._domainName = config.domainName;
+    this._id = config.id;
     this._registrantPrivacy = config.registrantPrivacy;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._techPrivacy = config.techPrivacy;
     this._transferLock = config.transferLock;
     this._adminContact.internalValue = config.adminContact;
-    this._nameServer = config.nameServer;
+    this._nameServer.internalValue = config.nameServer;
     this._registrantContact.internalValue = config.registrantContact;
     this._techContact.internalValue = config.techContact;
     this._timeouts.internalValue = config.timeouts;
@@ -1552,8 +1669,19 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // registrant_privacy - computed: false, optional: true, required: false
@@ -1683,20 +1811,19 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
   }
 
   // name_server - computed: false, optional: true, required: false
-  private _nameServer?: Route53DomainsRegisteredDomainNameServer[] | cdktf.IResolvable; 
+  private _nameServer = new Route53DomainsRegisteredDomainNameServerList(this, "name_server", false);
   public get nameServer() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('name_server');
+    return this._nameServer;
   }
-  public set nameServer(value: Route53DomainsRegisteredDomainNameServer[] | cdktf.IResolvable) {
-    this._nameServer = value;
+  public putNameServer(value: Route53DomainsRegisteredDomainNameServer[] | cdktf.IResolvable) {
+    this._nameServer.internalValue = value;
   }
   public resetNameServer() {
-    this._nameServer = undefined;
+    this._nameServer.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameServerInput() {
-    return this._nameServer;
+    return this._nameServer.internalValue;
   }
 
   // registrant_contact - computed: false, optional: true, required: false
@@ -1756,13 +1883,14 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
       admin_privacy: cdktf.booleanToTerraform(this._adminPrivacy),
       auto_renew: cdktf.booleanToTerraform(this._autoRenew),
       domain_name: cdktf.stringToTerraform(this._domainName),
+      id: cdktf.stringToTerraform(this._id),
       registrant_privacy: cdktf.booleanToTerraform(this._registrantPrivacy),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       tech_privacy: cdktf.booleanToTerraform(this._techPrivacy),
       transfer_lock: cdktf.booleanToTerraform(this._transferLock),
       admin_contact: route53DomainsRegisteredDomainAdminContactToTerraform(this._adminContact.internalValue),
-      name_server: cdktf.listMapper(route53DomainsRegisteredDomainNameServerToTerraform)(this._nameServer),
+      name_server: cdktf.listMapper(route53DomainsRegisteredDomainNameServerToTerraform)(this._nameServer.internalValue),
       registrant_contact: route53DomainsRegisteredDomainRegistrantContactToTerraform(this._registrantContact.internalValue),
       tech_contact: route53DomainsRegisteredDomainTechContactToTerraform(this._techContact.internalValue),
       timeouts: route53DomainsRegisteredDomainTimeoutsToTerraform(this._timeouts.internalValue),
