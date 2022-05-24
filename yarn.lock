@@ -926,9 +926,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.15"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.15.tgz#b1e9ae3d2e96992ad4060a4581036f9a2f40811e"
-  integrity sha512-fvGJ3AXx4uf0W4PoDnHa7s6IwSGprGYO9lhTG0jlRMzUyW7QtKLUKaTMT0zK621tTiCuZnBk6m26x4AnVYqkNw==
+  version "10.1.16"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.16.tgz#01acfd7e7dcf86f386a37e70006fde37f17c6355"
+  integrity sha512-X5jdsYqpQ+d7jQZd1Cwoi5QQLNm3QrRYdVcHMB2WiCzjfjxOhcCELj2jEdJtAYprj5m6wg4hXhSHdCL7Rgj+Ow==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2315,9 +2315,9 @@ jsii-rosetta@^1.55.1, jsii-rosetta@^1.59.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.520:
-  version "0.1.568"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.568.tgz#0133fd8106e71bf3e39e35848f849389f9f39333"
-  integrity sha512-3YgxAlngECrJ9AwYQlhrE71XimmQCnxKWwrl8qoaAQva3TiK9ODGtYO0WOJERxDoDL5HfuRP1u/DWnYOeTb7lg==
+  version "0.1.569"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.569.tgz#fe22ac984ce2ce23ad37ac19961c97807015db4c"
+  integrity sha512-S5Z8oF5qmSVAndeW8mMT66nbRMtxpdjSfGI+9PRPUWuHnl9YvHDHGCT1vBL4DgZD1wpkCxTBv7fmJ/jYWTFohA==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.59.0"
@@ -2545,15 +2545,15 @@ lodash@^4.17.15, lodash@^4.17.21:
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 log4js@^6.4.6:
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/log4js/-/log4js-6.5.0.tgz#b754a898f26f1d7db7c749c4685654848d89ec33"
-  integrity sha512-VT8b+k4nS7feV3p2nTdI5UqO2+7KRi4sfb6YKlnZlQU0d1DnvA18dvPhxKElgVTRTjS3GtChvvR67yMpp/xAfQ==
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/log4js/-/log4js-6.5.1.tgz#06f771ae231c8e930ac2c7381242c8cdeff0dca1"
+  integrity sha512-z1hRRe5DDPzsP73PgN/GYmeSbIAl/g9kX3GLjABCpcU1ojns8S4cyjpJ21jU1P7z1wWkm69PjyMcEGqYYdDqaA==
   dependencies:
     date-format "^4.0.10"
     debug "^4.3.4"
     flatted "^3.2.5"
     rfdc "^1.3.0"
-    streamroller "^3.1.0"
+    streamroller "^3.1.1"
 
 lower-case@^2.0.2:
   version "2.0.2"
@@ -3271,10 +3271,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.56.27:
-  version "0.56.27"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.56.27.tgz#6a8808cbc82755b7722e9e4be8dc23e76eb65d02"
-  integrity sha512-BfwNEhCrgXIRGWk4C7VhjCYZ5C2VqiaFsjBeMv9rXUsdNcx/1OmdRbHxJyHh3HO2Hqhsi1o/UW75THiyLy72CA==
+projen@^0.56.28:
+  version "0.56.28"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.56.28.tgz#14090863947116f49b62616ae017f85187db0d63"
+  integrity sha512-p7uamZw/V0xW+B2NjAvAiG9uFpz2YVQKpRLfY45O3khxmfL/LdXhP6Cfht/PsoOXmwTfk6fuZ0Tt1YepMHCmaQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -3808,10 +3808,10 @@ standard-version@^9:
     stringify-package "^1.0.1"
     yargs "^16.0.0"
 
-streamroller@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/streamroller/-/streamroller-3.1.0.tgz#99c6814708ad6ec9a6a2c2a4bb80cc794fa25556"
-  integrity sha512-9+fOFZX3qeo5lEdq9AnPxyRqdrh0MhlX5uqDN6+OLGuGK0PnyyKjMicwcUYIzjYRut5Pfbc0AV6WKdv6di3YGA==
+streamroller@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/streamroller/-/streamroller-3.1.1.tgz#679aae10a4703acdf2740755307df0a05ad752e6"
+  integrity sha512-iPhtd9unZ6zKdWgMeYGfSBuqCngyJy1B/GPi/lTpwGpa3bajuX30GjUVd0/Tn/Xhg0mr4DOSENozz9Y06qyonQ==
   dependencies:
     date-format "^4.0.10"
     debug "^4.3.4"
